@@ -1,0 +1,42 @@
+.two-columns-container {
+  display: flex;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  flex: 1;
+
+  .textBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  ul li {
+    &:first-child {
+      margin-top: 24px;
+    }
+    &:last-child {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.categoriesList {
+  margin-left: 1.5rem;
+  padding: 24px 0;
+}
+
+@media (max-width: 820px) {
+  .two-columns-container {
+    flex-direction: column;
+    gap: 40px !important;
+
+    .column {
+      gap: 40px !important;
+    }
+  }
+}

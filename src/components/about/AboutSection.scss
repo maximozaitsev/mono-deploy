@@ -1,0 +1,70 @@
+@use "../../styles/colors.scss" as *;
+@use "../../styles/typography.scss" as *;
+
+.about-section {
+  background: $color-background-secondary;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 64px 0;
+
+    @media (max-width: 1220px) {
+      padding: 40px 64px;
+      gap: 40px;
+    }
+
+    @media (max-width: 475px) {
+      padding: 40px 24px;
+      gap: 40px;
+    }
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .about-text {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 50%;
+
+      @media (max-width: 1220px) {
+        width: 100%;
+      }
+
+      ul {
+        margin-left: 1.5rem;
+      }
+    }
+
+    .about-image {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // img {
+      //   margin-right: -35px;
+      // }
+
+      @media (max-width: 1380px) {
+        max-width: 650px;
+        width: 100%;
+      }
+
+      @media (max-width: 1220px) {
+        display: none;
+      }
+    }
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,24 @@
+import Button from "../../components/__common__/button/Button";
+import styles from "./WelcomeSection.module.scss";
+
+export default function WelcomeSection() {
+  return (
+    <section
+      id="welcome-section"
+      className={`${styles.welcomeSection} section`}
+    >
+      <div className="container">
+        <div className={styles.welcomeContent}>
+          <div className={styles.welcomeText}>
+            <h2>Welcome Bonus</h2>
+            <div>
+              <p>Exclusive welcome offer of 2’000 </p>
+              <p>AUD and 275 FREE SPINS</p>
+            </div>
+            <Button text="claim bonus" variant="primary" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,47 @@
+.leftContent {
+  width: 60%;
+
+  :global(.h2-heading) {
+    margin-bottom: 48px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.supportContent {
+  display: flex;
+  gap: 48px;
+
+  ul {
+    margin-left: 1.5rem;
+    padding: 24px 0;
+  }
+
+  @media (max-width: 1050px) {
+    h2 {
+      margin-bottom: 40px !important;
+    }
+  }
+}
+
+.rightImage {
+  display: flex;
+  align-items: center;
+
+  img {
+    position: absolute;
+    right: 55px;
+  }
+
+  @media (max-width: 1380px) {
+    img {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 1220px) {
+    display: none;
+  }
+}

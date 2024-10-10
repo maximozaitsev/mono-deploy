@@ -1,0 +1,73 @@
+@import "../../styles/colors.scss";
+
+.licensesSection {
+  background: $color-background-secondary;
+  padding: 64px 0;
+
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  .licensesContent {
+    display: flex;
+    margin-bottom: -115px;
+
+    .leftContent {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      flex: 2.5;
+      margin-right: 20px;
+    }
+
+    .rightImage {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: auto;
+        margin-top: -165px;
+        margin-right: -130px;
+
+        @media (max-width: 1400px) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @media (max-width: 980px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .licensesContent {
+      flex-direction: column;
+      margin-bottom: 40px;
+
+      .leftContent {
+        order: 2;
+        margin-right: 0;
+      }
+
+      .rightImage {
+        order: 1;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        img {
+          margin-top: -100px;
+          margin-bottom: -100px;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}

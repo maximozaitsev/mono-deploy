@@ -1,0 +1,152 @@
+@import "../styles/colors";
+@import "../styles/typography";
+@import "../styles/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $color-background;
+  font-family: $font-primary;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+
+  @media (max-width: 1180px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0 20px;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 140px;
+  scroll-margin-top: 99px;
+
+  @media (max-width: 1120px) {
+    margin-bottom: 96px;
+  }
+
+  @media (max-width: 768px) {
+    gap: 40px;
+  }
+}
+
+.h2-heading {
+  color: $text-color-third;
+  font-family: $font-secondary;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+  &.white {
+    color: $text-color-third;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 570px) {
+    font-size: 26px;
+  }
+}
+
+.h3-heading {
+  color: $text-color-third;
+  font-family: $font-secondary;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 570px) {
+    font-size: 20px;
+  }
+}
+
+.h4-heading {
+  color: $text-color-third;
+  font-family: $font-secondary;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.paragraph-text {
+  color: $text-color-third;
+  font-family: $font-primary;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+
+  &.black {
+    color: $text-color-third;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100vh;
+  text-align: center;
+
+  h2 {
+    margin-top: 3rem;
+    margin-top: auto;
+  }
+
+  p {
+    font-family: $font-primary;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  button {
+    align-self: center;
+    margin-bottom: auto;
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}

@@ -1,0 +1,169 @@
+@import "../../styles/colors";
+@import "../../styles/typography";
+
+.footer {
+  position: relative;
+  background: #333;
+  display: flex;
+  padding: 24px 0;
+  text-align: center;
+
+  :global(.container) {
+    width: 100%;
+  }
+
+  .partners {
+    margin-bottom: 24px;
+
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 24px;
+
+      &:first-child {
+        display: flex;
+        flex-wrap: wrap;
+
+        .logoWrapper {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 0;
+
+          svg {
+            margin-top: 16px;
+            margin-left: 47px;
+            position: absolute;
+            left: 160px;
+            fill: #fff !important;
+
+            @media (max-width: 1320px) {
+              left: 40px;
+            }
+
+            @media (max-width: 768px) {
+              margin-top: 10px;
+              margin-left: 0;
+            }
+          }
+        }
+
+        &:first-child {
+          margin-top: -16px;
+
+          @media (max-width: 768px) {
+            margin-top: -26px;
+          }
+        }
+      }
+
+      .partnerLogo {
+        mix-blend-mode: luminosity;
+        opacity: 0.8;
+
+        &:hover {
+          mix-blend-mode: normal;
+          opacity: 1;
+        }
+
+        @media (max-width: 1080px) {
+          height: 22px !important;
+          width: auto;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        flex-wrap: wrap;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .copyright {
+    color: rgba(255, 255, 255, 0.34);
+    font-family: $font-primary;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span:first-child {
+      font-size: 32px;
+      margin-right: 16px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+
+      span {
+        font-size: 18px !important;
+
+        &:first-child {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .row {
+      &:first-child {
+        .logoWrapper {
+          margin-bottom: 16px;
+
+          svg {
+            position: static !important;
+          }
+        }
+
+        .partnerLogo {
+          height: 22px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 24px 0 12px 0;
+
+    .partners {
+      margin-bottom: -16px;
+    }
+
+    .row {
+      flex-wrap: wrap;
+      margin-bottom: 16px !important;
+      gap: 10px !important;
+
+      .partnerLogo {
+        width: auto;
+      }
+
+      svg {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .row {
+      .partnerLogo {
+        height: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .hiddenSpan {
+      display: none !important;
+    }
+  }
+}
