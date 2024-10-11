@@ -29,8 +29,12 @@
       height: 77px;
     }
 
+    @media (max-width: 420px) {
+      font-size: 18px;
+      padding: 10px 14px;
+    }
+
     @media (max-width: 300px) {
-      padding: 2px 16px;
       width: auto;
       height: auto;
     }

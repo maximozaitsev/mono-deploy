@@ -37,6 +37,7 @@
             position: absolute;
             left: 160px;
             fill: #fff !important;
+            cursor: pointer;
 
             @media (max-width: 1320px) {
               left: 40px;
@@ -109,6 +110,10 @@
         &:first-child {
           margin-right: 8px;
         }
+
+        @media (max-width: 420px) {
+          font-size: 16px !important;
+        }
       }
     }
   }
@@ -161,7 +166,7 @@
     }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 300px) {
     .hiddenSpan {
       display: none !important;
     }

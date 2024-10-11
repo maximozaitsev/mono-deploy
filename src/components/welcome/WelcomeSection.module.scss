@@ -29,6 +29,12 @@
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
+    background-size: auto 70%;
+  }
+
+  @media (max-width: 420px) {
+    background-size: auto 60%;
+    padding-top: 20.35rem;
   }
 }
 
@@ -57,6 +63,10 @@
   max-width: 50%;
   margin-left: -20px;
 
+  .bonusText {
+    display: none;
+  }
+
   @media (max-width: 1280px) {
     margin-left: 0;
   }
@@ -65,6 +75,15 @@
     width: 100%;
     max-width: 100%;
     gap: 40px;
+  }
+
+  @media (max-width: 576px) {
+    .bonusText {
+      display: block;
+    }
+    .offerText {
+      display: none;
+    }
   }
 }
 
@@ -88,8 +107,8 @@
     width: 50%;
   }
 
-  @media (max-width: 400px) {
-    font-size: 36px;
+  @media (max-width: 576px) {
+    display: none;
   }
 }
 

@@ -144,6 +144,11 @@
           max-width: 200px;
           width: 100%;
         }
+
+        @media (max-width: 320px) {
+          flex-direction: column;
+          gap: 10px;
+        }
       }
 
       .payment-method-details {
@@ -169,7 +174,7 @@
           }
 
           strong {
-            background: $text-color-fourth;
+            background: #006eff;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

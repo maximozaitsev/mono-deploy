@@ -12,7 +12,12 @@ export default function WelcomeSection() {
           <div className={styles.welcomeText}>
             <h2>Welcome Bonus</h2>
             <div>
-              <p>Exclusive welcome offer of 2’000 </p>
+              <p className={styles.offerText}>
+                Exclusive welcome offer of 2’000{" "}
+              </p>
+              <p className={styles.bonusText}>
+                Exclusive welcome bonus of 2’000{" "}
+              </p>
               <p>AUD and 275 FREE SPINS</p>
             </div>
             <Button text="claim bonus" variant="primary" />
