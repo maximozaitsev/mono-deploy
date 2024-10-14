@@ -16,9 +16,7 @@ import PromotionsSection from "@/components/promotion/PromotionsSection";
 import AdvantageSection from "@/components/advantage/AdvantageSection";
 import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
-import { fetchPayments } from "@/utils/fetchPayments";
 import { fetchProviders } from "@/utils/fetchProviders";
-import { PaymentMethod } from "@/types/payment";
 import { Provider } from "@/types/provider";
 import { faqs } from "@/components/faq/faqContent";
 
@@ -26,7 +24,6 @@ import "./globals.scss";
 
 export default async function HomePage() {
   const games = await fetchGames("gambling");
-  const paymentMethods: PaymentMethod[] = await fetchPayments();
   const providers: Provider[] = await fetchProviders();
 
   return (
@@ -38,7 +35,7 @@ export default async function HomePage() {
       <MobileSection />
       <TopGamesSection games={games} />
       <AboutSection />
-      <PaymentMethodsSection initialPaymentMethods={paymentMethods} />
+      <PaymentMethodsSection initialPaymentMethods={[]} />
       <LicensesSection />
       <ProvidersSection initialProviders={providers} />
       <AppSection />
