@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Offer } from "../../types/offer";
-import Button from "../../components/__common__/button/Button";
+import Button from "../__common__/button/Button";
 import { fetchOffers } from "@/utils/fetchOffers";
 import "./BonusDetailsSection.scss";
 
@@ -39,10 +39,7 @@ const BonusDetailsSection: React.FC = () => {
   };
 
   return (
-    <section
-      id="bonuses"
-      className="bonus-details-section section container"
-    >
+    <section id="bonuses" className="bonus-details-section section container">
       <h2 className="h2-heading">Bonus details</h2>
 
       <div className="table">

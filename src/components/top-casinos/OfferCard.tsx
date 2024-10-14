@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import Button from "../../components/__common__/button/Button";
+import Button from "../__common__/button/Button";
 import { Offer } from "../../types/offer";
 import styles from "./OfferCard.module.scss";
 

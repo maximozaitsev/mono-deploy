@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Game } from "@/types/game";
-import Button from "../../components/__common__/button/Button";
+import Button from "../__common__/button/Button";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
 import styles from "./TopGamesSection.module.scss";
 

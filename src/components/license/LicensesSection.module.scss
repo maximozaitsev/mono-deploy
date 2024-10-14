@@ -3,6 +3,8 @@
 .licensesSection {
   background: $color-background-secondary;
   padding: 64px 0;
+  border-top: 1px solid #00041a;
+  border-bottom: 1px solid #00041a;
 
   h2 {
     margin-bottom: 24px;
@@ -10,7 +12,7 @@
 
   .licensesContent {
     display: flex;
-    margin-bottom: -115px;
+    margin-bottom: 48px;
 
     .leftContent {
       display: flex;
@@ -27,17 +29,8 @@
 
       img {
         width: auto;
-        margin-top: -165px;
-        margin-right: -130px;
-
-        @media (max-width: 1400px) {
-          margin-right: 0;
-        }
+        scale: 1.2;
       }
-    }
-
-    @media (max-width: 980px) {
-      margin-bottom: 48px;
     }
   }
 
@@ -62,9 +55,7 @@
         margin-bottom: 40px;
 
         img {
-          margin-top: -100px;
-          margin-bottom: -100px;
-          max-width: 225px;
+          width: auto;
           height: auto;
         }
       }

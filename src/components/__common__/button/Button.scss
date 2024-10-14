@@ -19,6 +19,7 @@
     color: $text-color-primary;
     font-size: 28px;
     border: none;
+    border-radius: 6px;
     min-width: 280px;
     height: 87px;
 
@@ -49,6 +50,7 @@
     color: $text-color-primary;
     font-size: 20px;
     border: none;
+    border-radius: 6px;
     height: 52px;
 
     @media (max-width: 768px) {

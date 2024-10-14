@@ -5,6 +5,8 @@
   padding: 64px 0;
   overflow-wrap: break-word;
   word-break: break-word;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 
   :global(.container) {
     display: flex;

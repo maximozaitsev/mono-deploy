@@ -14,7 +14,7 @@ export default function LicensesSection() {
             <p className="paragraph-text">{content.licenses.text[0]}</p>
           </div>
           <div className={styles.rightImage}>
-            <Image src={licenceImage} alt="Licenses" />
+            <Image src={licenceImage} alt="Licenses" width={240} height={240} />
           </div>
         </div>
         <TwoColumns
@@ -37,6 +37,7 @@ export default function LicensesSection() {
                   type: "text",
                   content: content.licenses.softwareText[0],
                 },
+
                 {
                   type: "additionalText",
                   content: content.licenses.softwareText[1] || [],

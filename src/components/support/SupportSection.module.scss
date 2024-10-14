@@ -32,13 +32,12 @@
   align-items: center;
 
   img {
-    position: absolute;
-    right: -96px;
+    margin-right: -100px;
   }
 
   @media (max-width: 1380px) {
     img {
-      right: -40px;
+      margin-right: 0;
     }
   }
 

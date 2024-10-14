@@ -3,7 +3,7 @@
 import Image from "next/image";
 import mobileAppImage from "../../../public/block-images/mobile.webp";
 import StarIcon from "../../../public/assets/Vector.png";
-import Button from "../../components/__common__/button/Button";
+import Button from "../__common__/button/Button";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
 import { content } from "@/content/content";
 

@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { Offer } from "../../types/offer";
 import OfferCard from "./OfferCard";
-import Button from "../../components/__common__/button/Button";
+import Button from "../__common__/button/Button";
 import { fetchOffers } from "@/utils/fetchOffers";
 import "./TopCasinosSection.scss";
 

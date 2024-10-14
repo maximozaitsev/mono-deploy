@@ -3,7 +3,7 @@
 
 .footer {
   position: relative;
-  background: #333;
+  background: #afb5be;
   display: flex;
   padding: 24px 0;
   text-align: center;
@@ -31,12 +31,12 @@
           justify-content: center;
           margin-bottom: 0;
 
-          svg {
-            margin-top: 16px;
-            margin-left: 47px;
+          img {
+            margin-top: 10px;
+            margin-left: -10px;
+            scale: 1.4;
             position: absolute;
             left: 160px;
-            fill: #fff !important;
             cursor: pointer;
 
             @media (max-width: 1320px) {
@@ -61,11 +61,9 @@
 
       .partnerLogo {
         mix-blend-mode: luminosity;
-        opacity: 0.8;
 
         &:hover {
           mix-blend-mode: normal;
-          opacity: 1;
         }
 
         @media (max-width: 1080px) {
@@ -124,7 +122,7 @@
         .logoWrapper {
           margin-bottom: 16px;
 
-          svg {
+          img {
             position: static !important;
           }
         }
@@ -152,7 +150,7 @@
         width: auto;
       }
 
-      svg {
+      img {
         margin-top: 0;
       }
     }

@@ -10,11 +10,9 @@ export async function fetchPayments(): Promise<PaymentMethod[]> {
     const response = await fetch(
       `https://api.adkey-seo.com/api/website/get-payments/${siteId}`
     );
-
     if (!response.ok) {
       throw new Error(`Error fetching payment methods: ${response.statusText}`);
     }
-
     const paymentMethods: PaymentMethod[] = await response.json();
 
     const updatedPaymentMethods = paymentMethods.map(

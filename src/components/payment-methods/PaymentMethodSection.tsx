@@ -5,7 +5,7 @@ import Image from "next/image";
 import { PaymentMethod } from "@/types/payment";
 import { fetchPayments } from "@/utils/fetchPayments";
 import "./PaymentMethodsSection.scss";
-import Button from "../../components/__common__/button/Button";
+import Button from "../__common__/button/Button";
 
 interface PaymentMethodsSectionProps {
   initialPaymentMethods: PaymentMethod[];

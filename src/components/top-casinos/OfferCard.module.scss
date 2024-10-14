@@ -34,15 +34,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    // color: $text-color-fourth;
+    color: $text-color-fourth;
 
-    background: $text-color-fourth;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: linear-gradient($text-color-secondary-gradient);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
-
-
 
   p {
     color: $text-color-third;
@@ -60,7 +58,8 @@
 
   button {
     margin-top: auto;
-    width: 217px;
+    width: 206px;
+    margin-left: 5px;
   }
 
   @media (max-width: 768px) {

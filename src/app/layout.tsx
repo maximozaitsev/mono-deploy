@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "https://skycity-adelaide.com";
+const url = "https://betriot-casino.com";
 const ogTitle =
-  "Skycity Adelaide Casino Australia: A Review of the Popular Casino";
-const ogSiteName = "Skycity Adelaide Casino";
+  "Betriot Casino - Ihre erste Wahl für Online-Spiele in Deutschland";
+const ogSiteName = "Betriot Casino";
 const metaDescription =
-  "Skycity Adelaide Casino Australia: what you need to know about the popular gambling establishment. Range of gambling games, bonuses and promotions, payment methods and many other useful information. Find out about it first";
+  "Tauchen Sie ein in die Welt des Betriot Casinos in Deutschland, eine Oase des erstklassigen Glücksspiels, wo Integrität und Sicherheit aufeinander treffen. Garantiert faires Spiel bietet eine sichere und angenehme Umgebung. ";
 
-const locale = "en-AU";
+const locale = "AU";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {

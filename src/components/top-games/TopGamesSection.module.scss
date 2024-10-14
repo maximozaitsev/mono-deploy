@@ -93,7 +93,7 @@
   .gameName {
     text-align: center;
     font-family: $font-primary;
-    color: #006fff;
+    color: $text-color-fourth;
     // background: linear-gradient($text-color-secondary-gradient);
     // background-clip: text;
     // -webkit-background-clip: text;
@@ -121,7 +121,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: #006fff;
+    color: $text-color-fourth;
     // background: linear-gradient($text-color-secondary-gradient);
     // background-clip: text;
     // -webkit-background-clip: text;

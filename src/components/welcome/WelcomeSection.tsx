@@ -1,4 +1,4 @@
-import Button from "../../components/__common__/button/Button";
+import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 
 export default function WelcomeSection() {
