@@ -108,6 +108,7 @@ const Footer = () => {
                 className={styles.partnerLogo}
                 onMouseEnter={() => setHoveredLogoIndex(index + 7)}
                 onMouseLeave={() => setHoveredLogoIndex(null)}
+                style={{ width: "auto", height: "36px" }}
               />
             ))}
           </div>
@@ -122,6 +123,7 @@ const Footer = () => {
                 className={styles.partnerLogo}
                 onMouseEnter={() => setHoveredLogoIndex(index + 12)}
                 onMouseLeave={() => setHoveredLogoIndex(null)}
+                style={{ width: "auto", height: "36px" }}
               />
             ))}
           </div>

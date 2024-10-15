@@ -18,11 +18,15 @@
     width: 100%;
   }
 
+  @media (max-width: 1020px) {
+    background-position: right 20px top 80px;
+  }
+
   @media (max-width: 768px) {
     padding-top: 20.35rem;
     height: auto;
     justify-content: flex-end;
-    background-size: auto 54%;
+    background-size: auto 60%;
     background-position: top center;
     margin: 0 auto 96px auto;
   }
@@ -76,15 +80,19 @@
     width: 100%;
     max-width: 100%;
     gap: 40px;
-  }
+    align-items: center;
+    text-align: center;
 
-  @media (max-width: 576px) {
     .bonusText {
       display: block;
     }
     .offerText {
       display: none;
     }
+  }
+
+  @media (max-width: 380px) {
+    gap: 20px;
   }
 }
 
@@ -104,11 +112,6 @@
   // -webkit-text-fill-color: transparent;
 
   @media (max-width: 768px) {
-    font-size: 56px;
-    width: 50%;
-  }
-
-  @media (max-width: 576px) {
     display: none;
   }
 }
@@ -123,6 +126,8 @@
 
   @media (max-width: 768px) {
     font-size: 24px;
+    font-family: $font-secondary;
+    font-weight: 900;
   }
 
   @media (max-width: 380px) {

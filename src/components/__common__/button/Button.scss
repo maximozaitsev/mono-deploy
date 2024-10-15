@@ -35,6 +35,10 @@
       padding: 10px 14px;
     }
 
+    @media (max-width: 380px) {
+      height: 60px;
+    }
+
     @media (max-width: 300px) {
       width: auto;
       height: auto;
@@ -47,7 +51,7 @@
     padding: 2px 18px;
     outline-color: #2e2e2e3b;
     background: $color-button-small;
-    color: $text-color-primary;
+    color: #fff;
     font-size: 20px;
     border: none;
     border-radius: 6px;

@@ -60,6 +60,9 @@ body {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 
   &.white {
     color: $text-color-primary;
@@ -83,6 +86,9 @@ body {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 
   @media (max-width: 768px) {
     font-size: 24px;
@@ -102,6 +108,9 @@ body {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 
   @media (max-width: 768px) {
     font-size: 18px;

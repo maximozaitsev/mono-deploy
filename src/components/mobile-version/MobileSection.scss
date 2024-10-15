@@ -179,4 +179,14 @@
       }
     }
   }
+
+  @media (max-width: 380px) {
+    .mobile-content {
+      .advantages-block {
+        button {
+          height: 60px;
+        }
+      }
+    }
+  }
 }

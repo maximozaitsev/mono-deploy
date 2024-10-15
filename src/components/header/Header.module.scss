@@ -21,10 +21,16 @@
 
   @media (max-width: 768px) {
     height: 96px;
+  }
 
-    // img {
-    //   width: 106px;
-    // }
+  @media (max-width: 380px) {
+    padding: 5px 10px;
+    height: 64px;
+
+    img {
+      margin-left: 0;
+      scale: 1;
+    }
   }
 }
 
@@ -85,6 +91,10 @@
     li a {
       font-size: 32px;
     }
+  }
+
+  @media (max-width: 380px) {
+    top: 64px;
   }
 }
 

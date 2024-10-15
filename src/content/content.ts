@@ -1,8 +1,8 @@
 export const content = {
-  projectName: "Betriot Kasino",
+  projectName: "Betriot",
   advantages: {
     // title: "",
-    subTitle: "Betriot Сasino Vorteile",
+    subTitle: "Betriot Casino Vorteile",
     text: [
       `Betriot Casino bietet ein umfassendes Online-Spielangebot, das sich durch eine Mischung von Funktionen auszeichnet, die sowohl für neue als auch für erfahrene Spieler geeignet sind. Im Folgenden finden Sie eine übersichtliche Aufschlüsselung der Vor- und Nachteile:`,
     ],
