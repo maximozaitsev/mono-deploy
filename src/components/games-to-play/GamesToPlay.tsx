@@ -6,7 +6,7 @@ export default function GamesToPlay() {
   return (
     <section className={`${styles.gamesToPlay} section `}>
       <div className="container">
-        <h2 className="h2-heading white">{content.gamesToPlay.title[0]}</h2>
+        <h2 className="h2-heading white">{content.gamesToPlay.title}</h2>
         <p className="paragraph-text">{content.gamesToPlay.text[0]}</p>
         <TwoColumns
           leftColumnContent={[
@@ -26,6 +26,17 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[1].text,
                 },
+                // {
+                //   type: "list",
+                //   content:
+                //     content.gamesToPlay.leftColumnContent[1].categories || [],
+                // },
+                // {
+                //   type: "additionalText",
+                //   content:
+                //     content.gamesToPlay.leftColumnContent[1].additionalText ||
+                //     [],
+                // },
               ],
             },
           ]}
@@ -37,21 +48,30 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.gamesRightColumn[0].text,
                 },
+                // {
+                //   type: "list",
+                //   content:
+                //     content.gamesToPlay.gamesRightColumn[0].categories || [],
+                // },
+                // {
+                //   type: "additionalText",
+                //   content:
+                //     content.gamesToPlay.gamesRightColumn[0].additionalText ||
+                //     [],
+                // },
               ],
             },
             {
-              heading: content.gamesToPlay.gamesRightColumn[1].heading,
+              heading: content.gamesToPlay.gamesRightColumn[0].heading,
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[1].text,
+                  content: content.gamesToPlay.gamesRightColumn[0].text,
                 },
               ],
             },
           ]}
         />
-        <h2 className="h2-heading white">{content.gamesToPlay.title[1]}</h2>
-        <p className="paragraph-text">{content.gamesToPlay.text[1]}</p>
       </div>
     </section>
   );

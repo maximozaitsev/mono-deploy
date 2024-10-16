@@ -1,49 +1,45 @@
 export const content = {
-  projectName: "Betriot",
+  projectName: "Great Blue Heron",
   advantages: {
     // title: "",
-    subTitle: "Betriot Casino Vorteile",
+    subTitle: "Casino Great Blue Heron Advantages",
     text: [
-      `Betriot Casino bietet ein umfassendes Online-Spielangebot, das sich durch eine Mischung von Funktionen auszeichnet, die sowohl für neue als auch für erfahrene Spieler geeignet sind. Im Folgenden finden Sie eine übersichtliche Aufschlüsselung der Vor- und Nachteile:`,
+      `The Great Blue Heron Casino offers a range of benefits that make it a special and attractive destination for both players and tourists. With its large number of slot machines and table games, 24-hour operation, and a variety of additional amenities, this establishment appeals to both professional gamblers and newcomers to the world of gaming.`,
     ],
-    advantagesTitle: "Vorteile:",
-    disadvantagesTitle: "Benachteiligungen:",
+    advantagesTitle: "Advantages:",
+    disadvantagesTitle: "Disadvantages:",
     advantages: [
-      "Große Auswahl an Spielen",
-      "Fortschrittliche Sicherheitsmaßnahmen",
-      "Benutzerfreundliche Schnittstelle",
-      "Mehrere Zahlungsoptionen",
-      "Reaktionsschneller Kundensupport",
-      "Regelmäßige Werbeaktionen und Boni",
-      "Mobile Kompatibilität",
+      "More than 600 slot machines",
+      "40 gaming tables",
+      "The casino is open 24 hours a day",
+      "High level of comfort",
     ],
     disadvantages: [
-      "Eingeschränkt in einigen Ländern",
-      "Begrenzte Öffnungszeiten des Kundensupports",
-      "Weniger Spieloptionen für Live-Dealer-Spiele",
-      "Wettanforderungen für Boni",
+      "No possibility of playing online",
+      "Not enough bonuses for new customers",
     ],
   },
   about: {
-    title: "Betriot Kasino",
-    intro: [
-      "100% Bonus bis zu €500",
-      "50% Bonus bis zu €700",
-      "15% zurück auf Verluste bis zu €3000",
-    ],
+    title: "Great Blue Heron Casino – An Exciting Gaming Experience in Canada",
+    intro: ["More than 600 slots", "Works 24/7", "High level of security"],
     description: [
-      `Betriot Casino zeichnet sich als führende Online-Glücksspielplattform aus, die sich der Bereitstellung eines fesselnden und dynamischen Glücksspielerlebnisses verschrieben hat. Es bietet eine große Auswahl an Spieloptionen, von der zeitlosen Attraktivität klassischer Spielautomaten bis hin zum aufregenden Realismus von Live-Dealer-Tischen. Dies gewährleistet eine umfassende Spielumgebung, die sowohl Neulinge als auch erfahrene Enthusiasten anspricht. `,
-      `Das Design der Plattform legt den Schwerpunkt auf eine benutzerfreundliche Navigation und leichte Zugänglichkeit, was das allgemeine Benutzererlebnis verbessert. Betriot Recensioni hat sich hohen ethischen Standards verschrieben und ist vollständig lizenziert und reguliert, um die Prinzipien des Fair Play und des verantwortungsvollen Glücksspiels zu wahren. Diese Verpflichtung sichert ein vertrauenswürdiges und zufriedenstellendes Online-Casino-Erlebnis für alle Spieler.`,
+      `Where is Great Blue Heron Casino? It  is located in the scenic area of Port Perry, Ontario, on Scugog Island, is a popular venue attracting both locals and tourists. Owned by the First Nations and operating 24 hours a day, the casino offers an impressive array of gaming, entertainment, and relaxation options. With a large gaming floor, modern hotel rooms, and diverse dining options, this place is perfect for those seeking a full-fledged entertainment experience.`,
+      `Additionally, the Great Blue Heron Casino stands out with its attention to detail, ensuring a comfortable stay for all visitors, whether they are gambling enthusiasts or people simply looking to enjoy a peaceful atmosphere. The Great Blue Heron Casino reviews is renowned not only for its variety of games and amenities but also for its high level of service and unique ambiance, hard to find elsewhere.`,
       // `p3`,
     ],
     signIn: {
-      title: "Über Betriot Casino Anmeldung",
+      title: "Great Blue Heron Charity Casino Address and Login",
       text: [
-        `Betriot Casino hebt sich in der Online-Glücksspielbranche durch sein vielfältiges Angebot an Spieloptionen ab, die auf alle Spielertypen zugeschnitten sind. Von den neuesten Spielautomaten über traditionelle Tischspiele bis hin zu einem fesselnden Live-Casino-Erlebnis - bei Betriot ist für jeden etwas dabei. Das Casino ist stolz auf sein Engagement für Fairness und Sicherheit und setzt fortschrittliche Verschlüsselungstechnologien ein, um Spielerdaten und Transaktionen zu schützen.`,
-        `Der Zugang zum Nervenkitzel des Betriot Casinos ist durch den optimierten Anmeldeprozess sehr einfach. Neue Spieler können ganz einfach ein Konto erstellen, indem sie grundlegende Informationen wie ihren Namen, ihre E-Mail-Adresse und ihr Geburtsdatum angeben und anschließend ein sicheres Passwort festlegen. Bestehende Spieler können sich anmelden, indem sie ihren Benutzernamen und ihr Passwort auf der Betriot Casino-Homepage eingeben, wodurch sie sofortigen Zugriff auf ihre Profile und das gesamte Spielangebot erhalten. Dieses effiziente System stellt sicher, dass die Spieler ihr Spiel mit minimalem Aufwand genießen können.`,
-        // `p3`,
+        `Great Blue Heron Casino latest news offers convenient options for planning your visit. You can register on the official casino website to reserve a hotel room or a table in one of the restaurants:`,
+        `Next, you will be able to log in to your account via email and password. This is especially useful during peak hours, as having a reservation ensures a smooth experience without delays and easy access to all amenities. To fully enjoy the casino gaming experience, you must purchase a player card, which can be obtained on-site during your first visit. This card allows you to participate in loyalty programs, earn bonus points for playing, and exchange them for future bets or purchases in the casino's restaurants and bars.`,
+        `It is important to note that Great Blue Heron Casino photos have a strict dress code. Although semi-formal attire is generally acceptable, visitors are advised to avoid overly casual or sporty clothing. The dress code helps maintain a sophisticated atmosphere and ensures a high level of service for all guests. Please remember that all games are offline, meaning that you will need to visit the casino in person to take part in the gaming activities.`,
       ],
-      // list: ["li1", "li2", "li3"],
+      list: [
+        "Open the official website.",
+        "Click on Registration.",
+        "Fill in a short description of yourself.",
+        "Confirm your registration.",
+      ],
       // list2: ["li1", "li2"],
     },
     // verification: {
@@ -51,79 +47,82 @@ export const content = {
     //   text: [`VerificationText1`, `VerificationText2`, `VerificationText3`],
     // },
     depositMethods: {
-      title: "Einzahlungsmethoden",
+      title: "Deposit Methods",
       text: [
-        `Betriot Casino unterstützt eine Reihe von Einzahlungsmethoden, um den Wünschen der Spieler entgegenzukommen und sichere Transaktionen zu gewährleisten. Die Spieler können Einzahlungen mit Visa und MasterCard vornehmen, die beide wegen ihrer Bequemlichkeit und Sicherheit weithin akzeptiert werden. Für diejenigen, die Kryptowährungen bevorzugen, akzeptiert Betriot auch Bitcoin, Ethereum und Litecoin, die eine schnelle und anonyme Möglichkeit bieten, Konten zu finanzieren. Zusätzlich bietet das Casino regionale Optionen wie Trustly und ecoPayz an, die für ihre Benutzerfreundlichkeit und schnellen Bearbeitungszeiten beliebt sind.`,
+        `Since Great Blue Heron Casino poker does not support online gaming, deposits can only be made for booking services through the casino’s website. Credit and debit cards are accepted for this purpose. Payment systems can also be used for acquiring a player card or paying for hotel accommodations.`,
         // `p2`,
       ],
       // list: ["li1", "li2", "li3"],
       // additionalText: `p1`,
     },
     withdrawalMethods: {
-      title: "Auszahlungsmethoden",
+      title: "Withdrawal Methods",
       text: [
-        `Wenn es um Auszahlungen geht, stellt Betriot Casino sicher, dass die Spieler effizient auf ihre Gewinne zugreifen können. Das Casino unterstützt Abhebungen mit den wichtigsten Kreditkarten wie Visa und MasterCard. Kryptowährungsbenutzer können ihre Gelder auch in Bitcoin, Ethereum und Litecoin abheben, die die Vorteile von hoher Sicherheit und Privatsphäre bieten. Trustly und ecoPayz sind ebenfalls für Auszahlungen verfügbar und für ihre schnellen Transferzeiten bekannt. Diese Betriot Auszahlung Methoden spiegeln das Engagement von Betriot wider, bequeme und zuverlässige Bankoptionen für alle Spieler anzubieten.`,
+        `Withdrawals at Great Blue Heron Casino are made on-site. Players can exchange their chips for cash at the casino’s cashier desk. Online withdrawal methods are not available, as the casino does not support internet platforms.`,
         // `p2`,
       ],
       list: [],
     },
   },
   licenses: {
-    title: "Lizenzen",
+    title: "Great Blue Heron Casino Opening Licenses",
     text: [
-      `Betriot Casino arbeitet unter der angesehenen Lizenz der Malta Gaming Authority und erfüllt strenge regulatorische Standards, die faires Spiel und transparente Abläufe gewährleisten. Diese seriöse Lizenzierung schreibt regelmäßige Tests aller Spiele auf Fairness vor und garantiert den Spielern eine vertrauenswürdige Spielumgebung. Darüber hinaus wird sichergestellt, dass das Casino sowohl die rechtlichen als auch die ethischen Standards strikt einhält, was den Spielern zusätzliche Sicherheit bietet.`,
-      // `p2`,
+      `Great Blue Heron Casino operates under licenses issued by the Ontario Gaming Commission, ensuring its legal operation and compliance with all necessary standards and regulations. As a First Nations casino, Great Blue Heron also follows the laws and rules established by the Mississaugas of Scugog Island.`,
+      `The casino’s licensing confirms its commitment to fair and transparent gaming, ensuring that players can trust the safety of their data and that games are conducted according to established rules and standards.`,
       // `p3`,
     ],
-    security: "Sicherheit",
+    security: "Security",
     securityText: [
-      `Um die Sicherheit der Spielerdaten und Finanztransaktionen zu gewährleisten, setzt Betriot Casino robuste Sicherheitsmaßnahmen ein. Die Website verwendet SSL-Verschlüsselung zur Sicherung von Datenübertragungen und entspricht den PCI DSS-Standards zum Schutz von Finanzdaten. Regelmäßige Audits durch unabhängige Sicherheitsfirmen bestätigen die Integrität und Sicherheit des Casinos und machen es zu einer vertrauenswürdigen Plattform für Online-Spiele.`,
-      // `p2`,
+      `Security is a top priority at Great Blue Heron Casino. The casino is equipped with a modern surveillance system, operating 24/7, covering all key areas, including the gaming floor, hotel, restaurants, and parking lot. These high-definition cameras allow for quick response to any incidents, ensuring the safety of both players and staff.`,
+      `In addition, the casino strictly adheres to the rules and regulations set by the Ontario Gaming Commission. All transactions go through certified systems, ensuring transparency and data protection. On-site security staff are also available to ensure order and provide assistance to visitors when needed.`,
     ],
-    software: "Software Technologien",
+    software: "Great Blue Heron Casino Blackjack Software Technologies",
     softwareText: [
-      `Betriot Casino ist mit Software von Top-Anbietern wie NetEnt, Microgaming und Playtech ausgestattet. Diese Zusammenarbeit gewährleistet den Zugang zu einer großen Auswahl an Spielen mit der neuesten Spieltechnologie, hochauflösenden Grafiken und fesselnden Soundeffekten. Das Casino aktualisiert seine Spielauswahl ständig, um die neuesten Veröffentlichungen und innovativen Funktionen einzubeziehen, und bietet so eine dynamische Spielumgebung, die die Spieler bei der Stange hält.`,
+      `Although Great Blue Heron Casino does not offer online gaming, it uses modern technologies on-site to ensure the smooth operation of its slot machines and table games. The casino regularly updates its software to ensure a secure and enjoyable gaming experience. All slot machines are equipped with state-of-the-art technology to ensure fair play and fast transactions.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Kasino-App",
+    title: "Great Blue Heron Casino Open and App",
     text: [
-      `Die Betriot Casino Mobile App bietet ein vollwertiges Casino-Erlebnis auf Android- und iOS-Geräten. Die Betriot App Optionen sind so konzipiert, dass sie eine benutzerfreundliche Oberfläche, schnellen Zugriff auf eine breite Palette von Spielen und die gleiche Sicherheit und Funktionalität wie die Desktop-Version bieten. Dies ermöglicht es den Spielern, ihre Lieblingsspiele auch unterwegs zu genießen, mit minimalen Leistungsunterschieden zum Desktop-Erlebnis.`,
-      // `p2`,
+      `At this time, Great Blue Heron Casino does not offer a mobile application for online gaming, as all gaming activities take place offline at the casino. However, the casino’s website is mobile-friendly, allowing visitors to easily book hotel rooms, and restaurant tables, or check event information from any device.`,
+      `The mobile version of the website is user-friendly, providing quick navigation. This makes it easy to make reservations even at the last minute. The mobile site also contains complete information about available games, rules, and loyalty programs, helping players familiarize themselves with the casino’s offerings in advance.`,
     ],
-    languages: "Sprachen",
+    languages: "Languages",
     languagesText: [
-      `Um ein internationales Publikum anzusprechen, bietet Betriot Casino seine Dienste in mehreren Sprachen an, darunter Englisch, Spanisch, Deutsch und Französisch. Diese mehrsprachige Unterstützung verbessert die Betriot Casino Erfahrungen, indem sie den Spielern die Möglichkeit gibt, auf der Seite zu navigieren, Spielregeln zu verstehen und mit dem Kundendienst in ihrer bevorzugten Sprache zu kommunizieren.`,
+      `The official language of Great Blue Heron Casino is English, as it is located in the English-speaking region of Canada. However, the casino welcomes international guests, and staff members strive to offer assistance and service in multiple languages depending on visitors' needs. For guests from other countries, support may be available in French and other languages depending on staff qualifications and demand. This ensures a comfortable experience for all types of clients.`,
       // `p2`,
       // `p3`,
     ],
-    currencies: "Währungen",
+    currencies: "Currencies",
     currenciesText: [
-      `Betriot Casino unterstützt Transaktionen in mehreren Hauptwährungen, einschließlich Euro (EUR), US-Dollar (USD) und Bitcoin (BTC), um ein vielfältiges globales Publikum zu bedienen. Diese Währungsflexibilität ist besonders für internationale Spieler von Vorteil, die Einzahlungen und Auszahlungen in ihrer bevorzugten Währung vornehmen können und so mögliche Wechselkursgebühren und Komplikationen vermeiden. `,
+      `Great Blue Heron Casino only accepts Canadian dollars (CAD). All transactions, including bets, deposits, and cash-outs, are conducted exclusively in this currency. For international guests, it is recommended to exchange currency in advance, as there are limited options for currency conversion on-site. Direct transactions in foreign currencies are not supported, but international credit cards can be used, with automatic currency conversion to Canadian dollars.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: [`Verfügbare Spiele bei Betriot Casino`, `Spezialisierte Spiele`],
+    title: "Games Available to Play at Great Blue Heron Casino",
     text: [
-      `Betriot Casino bietet eine breite Palette von Spieloptionen, die den unterschiedlichsten Geschmäckern und Vorlieben gerecht werden. Von klassischen Spielautomaten bis hin zu strategischeren Spielen wie Poker garantiert Betriot ein qualitativ hochwertiges Spielvergnügen mit jeder Option, die sowohl Spaß als auch das Potenzial für Gewinne bietet. Nachfolgend finden Sie einen detaillierten Überblick über die im Betriot Casino verfügbaren Spieltypen:`,
-      `Neben den traditionellen Casinoangeboten bietet Betriot Casino auch eine Reihe von Spezialspielen. Diese Spiele, wie Keno, Rubbellose und Bingo, sind auf Spieler zugeschnitten, die rasante Action und den Nervenkitzel von Sofortgewinnen suchen. Diese Spiele erfordern nur eine minimale Strategie, was sie für alle Spieler zugänglich und unterhaltsam macht. Jedes Spiel bietet einzigartige Themen und schnelle Ergebnisse, perfekt für eine unterhaltsame und leichte Spielsession.`,
+      `A wide range of games guarantees the popularity and quality of the Great Blue Heron Casino directory. There is a huge hall with slot machines, table games, poker and much more. Study the details by section before visiting.`,
+      // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Spielautomaten",
-        text: `Spieler im Betriot Casino können in ein riesiges Meer von Spielautomaten eintauchen, das von der Nostalgie klassischer Spielautomaten über die innovative Spannung von Video-Spielautomaten bis hin zum lebensverändernden Potenzial progressiver Jackpot-Slots reicht. Jeder Spielautomat ist mit einzigartigen Themen gestaltet - von Abenteuer und Fantasie bis hin zu Popkultur und Mythologie - und wird durch gestochen scharfe, hochwertige Grafiken und Animationen ergänzt. Aufregende Bonusfunktionen wie Freispiele, Multiplikatoren und interaktive Bonusrunden bereichern das Spielen von Betriot Erfahrungen und machen jeden Spin sowohl spannend als auch potentiell lohnend.`,
+        heading: "Slot Machines",
+        text: [
+          `One of the key attractions at Great Blue Heron Casino bus is its extensive selection of slot machines. With over 600 slots, visitors can enjoy a wide variety of both classic and modern slot games. The casino offers traditional one-armed bandits that appeal to fans of retro games, as well as cutting-edge video slots with more complex stories and mechanics. Video slots often include bonus rounds, special symbols, and multi-line betting options, making the gameplay more dynamic and engaging.`,
+          `The excellent graphics and sound effects of modern slot machines create an immersive atmosphere. Depending on your preferences, you can choose from a wide range of themes, from adventure stories to classic fruit machines. Some slots also offer progressive jackpot opportunities, adding even more excitement to the game.`,
+        ],
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
-        heading: "Tischspiele",
+        heading: "Great Blue Heron Casino Table Games",
         text: [
-          `Die Auswahl an Tischspielen im Betriot Casino ist sehr umfangreich und bietet zahlreiche Variationen von beliebten Klassikern wie Blackjack, Roulette, Baccarat und Craps. Jedes Spiel hat seine eigenen Regeln und Variationen, die den unterschiedlichen Vorlieben der Spieler gerecht werden. Ob Sie nun ein High Roller oder ein Gelegenheitsspieler sind, Sie werden Wettoptionen finden, die Ihrem Stil entsprechen. Das raffinierte Ambiente und die strategische Spielweise bieten eine anregende Umgebung für alle, die Geschicklichkeits- und Glücksspiele mögen.`,
-          // `p2`,
+          `Table games are the backbone of any casino, and Great Blue Heron Casino directions offers a wide selection for its visitors. With 40 tables available, there is something for everyone. Traditional table games such as blackjack, baccarat, and roulette attract players looking to test their luck and skills.`,
+          `Blackjack is one of the most popular games, where players try to score 21 points while competing against the dealer. For those who prefer games of chance, roulette provides the classic experience of betting on numbers or colors as the wheel spins. Baccarat, with its simple rules, allows players to bet on the “player,” “banker,” or “tie,” adding an element of unpredictability to the game.`,
           // `p3`,
         ],
         // categories: ["li1", "li2", "li3"],
@@ -132,54 +131,55 @@ export const content = {
     ],
     gamesRightColumn: [
       {
-        heading: "Video-Poker",
+        heading: "Great Blue Heron Casino Poker Room",
         text: [
-          `Bei Betriot nimmt Videopoker mit seiner Mischung aus einfachen Spielautomaten und Pokerstrategie einen besonderen Platz ein. Das Casino bietet mehrere beliebte Varianten an, darunter Deuces Wild, Jacks or Better und Aces and Faces. Jedes Spiel fordert die Spieler heraus, das bestmögliche Blatt zu bilden, und bietet Auszahlungen, die auf der Rangfolge der Pokerblätter basieren. Die strategischen Entscheidungen beim Videopoker ermöglichen es den Spielern, das Ergebnis zu beeinflussen, was das Spiel sowohl spannend als auch potenziell profitabel macht.`,
+          `Unlike many other casinos where poker rooms are set apart in dedicated spaces, in directions to Great Blue Heron Casino, the poker tables are located on the main gaming floor. Although this may not suit those who prefer a more secluded environment, poker remains a popular game among visitors. Several versions of poker are available, including Texas Hold'em. The dynamic and intense nature of poker draws in both beginners and seasoned players alike.`,
           // `p2`,
           // `p3`,
         ],
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
-      {
-        heading: "Live-Dealer-Spiele",
-        text: [
-          `Für Spieler, die ein wirklich fesselndes Glücksspielerlebnis suchen, sind die Live-Dealer-Spiele von Betriot Casino die perfekte Wahl. Echte Dealer leiten die Spiele aus professionellen Studios, die in Echtzeit auf die Geräte der Spieler gestreamt werden. Diese Einrichtung vermittelt das Gefühl eines echten Casinos und bietet interaktive Funktionen wie Live-Chat. Zu den verfügbaren Spielen gehören verschiedene Formen von Blackjack, Roulette, Baccarat und mehrere Pokervarianten, die alle in atemberaubender High-Definition-Auflösung präsentiert werden, um das Spielerlebnis zu verbessern.`,
-          // `p2`,
-          // `p3`,
-        ],
-      },
+      // {
+      //   heading: "game4Heading",
+      //   text: [
+      //     `p1`,
+      //     // `p2`,
+      //     // `p3`,
+      //   ],
+      // },
     ],
   },
   support: {
-    title: "Betriot Trustpilot Unterstützung",
+    title: "Great Blue Heron Casino Hours and Support",
     text: [
-      `Das Kundenserviceteam von Betriot Casino ist für seine Erreichbarkeit und Effizienz bekannt. Es ist rund um die Uhr per Live-Chat, E-Mail und Telefon erreichbar, um den Spielern bei allen Fragen und Problemen zu helfen. Ganz gleich, ob die Spieler Hilfe bei der Kontoverwaltung, der Zahlungsabwicklung, den Spielregeln oder bei technischen Problemen benötigen, das engagierte Support-Team ist in der Lage, schnelle und umfassende Hilfe zu leisten. Diese Rund-um-die-Uhr-Verfügbarkeit stellt sicher, dass alle Spieler, unabhängig von ihrer Zeitzone oder der Art ihrer Anfrage, eine minimale Unterbrechung ihres Spielvergnügens erfahren.`,
+      `The support team at Great Blue Heron Casino is available 24/7, assisting both on-site and via phone or email. If you have any questions regarding the casino's operations, bookings, or participation in loyalty programs, you can reach out for help. A dedicated team is always stationed at the front desk to assist with any issues related to your stay, gaming, or casino services. Support is also available over the phone, where you can quickly get the information or resolution you need.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Betriot Casino Boni und Promotionen",
+    title: "Bonuses and Promotions",
     text: [
-      `Betriot Casino bietet eine Vielzahl von Boni und Promotionen an, um das Spielvergnügen zu steigern:`,
+      `Compared to online casinos, there are far fewer bonus offers. However, players can still count on rewards under the loyalty program. From time to time, visitors can count on a drawing for a free hotel room, drinks, and more.`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Willkommensbonus",
+        heading:
+          "Great Blue Heron Casino Poker Tournament Schedule and Welcome Offers",
         text: [
-          `Der Willkommensbonus von Betriot Casino bietet neuen Spielern einen erheblichen Anreiz. Nach der Registrierung und einer ersten Einzahlung von mindestens 20 € erhalten sie einen 100%igen Bonus bis zu 500 €, was eine Verdoppelung ihrer ersten Einzahlung bedeutet. Zusätzlich beinhaltet der Bonus 200 Freispiele, die in Schritten von 20 pro Tag über 10 Tage verteilt werden, um die Spannung und das Engagement zu erhöhen. Der Bonus ist mit einem 35-fachen Wetteinsatz verbunden, der das Potenzial für hohe Gewinne mit einer vernünftigen Durchspiel-Erwartung ausgleicht, so dass genügend Zeit bleibt, um eine Vielzahl von Spielen zu erkunden.`,
-          // `p2`,
+          `Although Great Blue Heron Casino coupons primarily focus on offline gaming, it offers several special promotions for new players. Unlike most online casinos, where welcome bonuses are usually offered as cash rewards, here new visitors can benefit from discounts on hotel stays or special offers at the restaurants.`,
+          `Welcome offers often vary depending on the season and ongoing promotions, so it's advisable to check for available bonuses when visiting the Great Blue Heron Casino news. Despite the lack of traditional cash welcome bonuses, the opportunity to enjoy other services at a reduced rate makes this casino an attractive spot for newcomers.`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
       {
-        heading: "Wochenend-Reload-Bonus",
+        heading: "Great Blue Heron Casino Jobs and Loyalty Program",
         text: [
-          `Der Weekend Reload Bonus im Betriot Casino peppt das Ende der Woche auf, indem er einen 50% Bonus bis zu 700€ für Einzahlungen während des Wochenendes bietet. Dies erfordert eine Mindesteinzahlung von 20 € und beinhaltet wie der Willkommensbonus eine 35-fache Wettanforderung. Außerdem erhalten die Spieler zusätzlich 50 Freispiele, was den Gesamtwert des Bonus erhöht. Diese Mischung aus Bargeld und Freispielen richtet sich sowohl an Gelegenheitsspieler als auch an engagierte Spieler und sorgt für zusätzliche Spannung und Gewinnchancen während des freizeitintensiven Wochenendes.`,
-          // `p2`,
+          `One of the main tools for retaining regular customers at Great Blue Heron Casino blackjack conditions is its loyalty program, which operates through the player card. Regular players can accumulate bonus points for every game they play at the casino. These points can be redeemed for various rewards, including free bets, drinks, and meals at restaurants, or hotel services.`,
+          `The loyalty program also includes tier levels, offering more privileges the more time players spend at the casino. These privileges may include access to exclusive events, invitations to private tournaments, and other perks.`,
           // `p3`,
         ],
         // categories: ["li1", "li2", "li3"],
@@ -188,10 +188,10 @@ export const content = {
     ],
     rightColumnContent: [
       {
-        heading: "Wöchentlicher Cashback-Bonus und Betriot Bonus Code",
+        heading: "Special Promotions and Great Blue Heron Casino Rewards Card",
         text: [
-          `Der Wöchentliche Cashback-Bonus bei Betriot Casino dient als finanzielles Sicherheitsnetz und bietet 15 % Rückerstattung auf Verluste bis zu €3000. Mit einer minimalen Einzahlungsanforderung von nur €5 und einer niedrigen Wettanforderung von 1x ist dieser Bonus besonders attraktiv für Spieler, die einige der mit dem Glücksspiel verbundenen Risiken abmildern möchten. Er bietet die Möglichkeit, Verluste auszugleichen und das Angebot des Casinos weiterhin zu genießen, ohne die üblichen hohen Einsätze, die mit Rückgewinnungsboni verbunden sind. Dieser Betriot casino no deposit bonus unterstützt ein nachhaltiges Engagement, indem er den Schlag von Pechsträhnen abmildert.`,
-          // `p2`,
+          `Great Blue Heron Casino regularly holds promotions and special events for its guests. These events are typically tied to holidays, special dates, or seasons. For example, during the New Year's holidays, prize draws may be held, while in the summer, tournaments with additional rewards for winners can take place.`,
+          `These promotions are not always advertised in advance, so visitors are encouraged to check the event calendar on the casino’s website or inquire at the front desk upon arrival. Special promotions often come as a pleasant surprise for regular players and add an extra layer of excitement to the gaming experience.`,
           // `p3`,
         ],
         // additionalText: `p1`,
@@ -207,6 +207,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "Betriot Casino Review FAQ",
+    title: "FAQ",
   },
 };

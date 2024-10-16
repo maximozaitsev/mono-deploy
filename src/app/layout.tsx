@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "https://betriot-casino.com";
+const url = "https://great-blue-heron-casino.com";
 const ogTitle =
-  "Betriot Casino - Ihre erste Wahl für Online-Spiele in Deutschland";
-const ogSiteName = "Betriot Casino";
+  "Great Blue Heron Casino – The Complete Guide to Port Perry Casinos";
+const ogSiteName = "Great Blue Heron";
 const metaDescription =
-  "Tauchen Sie ein in die Welt des Betriot Casinos in Deutschland, eine Oase des erstklassigen Glücksspiels, wo Integrität und Sicherheit aufeinander treffen. Garantiert faires Spiel bietet eine sichere und angenehme Umgebung. ";
+  "Find out all about Great Blue Heron Casino in Port Perry, Ontario: new gaming features, bonuses, deposit and withdrawal methods, and available amenities. Visit soon to join the loyalty program.";
 
-const locale = "de";
+const locale = "CA";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {

@@ -3,7 +3,7 @@
 
 .footer {
   position: relative;
-  background: #afb5be;
+  background: $color-background-footer;
   display: flex;
   padding: 24px 0;
   text-align: center;
@@ -32,9 +32,8 @@
           margin-bottom: 0;
 
           img {
-            margin-top: 10px;
-            margin-left: -10px;
-            scale: 1.4;
+            margin-top: 16px;
+            margin-left: 15px;
             position: absolute;
             left: 160px;
             cursor: pointer;
@@ -92,7 +91,7 @@
     font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
-    line-height: 40px;
+    line-height: 20px;
 
     display: flex;
     align-items: center;
@@ -105,6 +104,7 @@
 
     @media (max-width: 768px) {
       font-size: 18px;
+      margin-top: 36px;
 
       span {
         font-size: 18px !important;
@@ -114,7 +114,7 @@
         }
 
         @media (max-width: 420px) {
-          font-size: 16px !important;
+          font-size: 15px !important;
         }
       }
     }

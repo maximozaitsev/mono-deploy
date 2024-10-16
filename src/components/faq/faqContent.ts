@@ -1,55 +1,27 @@
 export const faqs = [
   {
-    question: "Kann ich bei Betriot Casino Wettlimits festlegen?",
+    question: "Is the Great Blue Heron Casino open?",
     answer:
-      "Ja, Spieler können tägliche, wöchentliche oder monatliche Einsatzlimits festlegen, um ihre Glücksspielaktivitäten verantwortungsvoll zu verwalten.",
+      "Yes, Great Blue Heron Casino is open 24/7, allowing visitors to play at any time they choose.",
   },
   {
-    question: "Gibt es ein VIP-Programm bei Betriot Casino?",
+    question: "Can I play online at the casino?",
     answer:
-      "Ja, Betriot Casino bietet ein VIP-Programm mit exklusiven Belohnungen und personalisierten Dienstleistungen für treue Spieler.",
+      "No, all games at Great Blue Heron Casino are offline. The casino does not support online gaming, so players need to visit the venue in person to participate in gaming activities.",
   },
   {
-    question: "Wie lange dauern Abhebungen bei Betriot Casino?",
+    question: "What currencies are accepted at the casino?",
     answer:
-      "Die Abhebungszeiten variieren je nach Methode, reichen aber in der Regel von sofort für Kryptowährungen bis zu 5 Werktagen für Kreditkarten.",
+      "The casino only accepts Canadian dollars (CAD). International visitors should arrange for currency exchange beforehand.",
   },
   {
-    question:
-      "Gibt es Gebühren für die Abhebung von Gewinnen bei Betriot Casino?",
+    question: "Is there a mobile application for the casino?",
     answer:
-      "Betriot Casino erhebt keine Gebühren für Abhebungen, aber Ihr Zahlungsanbieter könnte eine Gebühr erheben.",
+      "Currently, there is no mobile application. However, you can use the mobile version of the website to book hotel rooms or restaurant tables.",
   },
   {
-    question: "Kann ich bei Betriot Casino kostenlos spielen?",
+    question: "Is there a loyalty program at the casino?",
     answer:
-      "Ja, viele Spiele bei Betriot Casino sind in einem Demo-Modus verfügbar, so dass Sie sie kostenlos ausprobieren können, bevor Sie echtes Geld einsetzen.",
-  },
-  {
-    question: "Ist Betriot Casino auf allen mobilen Geräten zugänglich?",
-    answer:
-      "Ja, das Casino ist vollständig für mobile Geräte optimiert und unterstützt sowohl Android- als auch iOS-Plattformen, ohne dass eine separate App erforderlich ist.",
-  },
-  {
-    question:
-      "Welche Maßnahmen ergreift Betriot Casino, um verantwortungsvolles Spielen zu fördern?",
-    answer:
-      "Betriot Casino bietet Tools wie Selbstausschluss und Realitätschecks und arbeitet mit Organisationen wie GamCare für verantwortungsvolles Spielen zusammen.",
-  },
-  {
-    question: "Kann ich eine Auszahlung bei Betriot Casino stornieren?",
-    answer:
-      "Ja, Spieler können einen Auszahlungsantrag innerhalb der Wartezeit stornieren, bevor er bearbeitet wird.",
-  },
-  {
-    question: "Sind Live-Dealer-Spiele rund um die Uhr verfügbar?",
-    answer:
-      "Ja, Betriot Casino bietet Live-Dealer-Spiele rund um die Uhr an, mit Tischen, die 24/7 verfügbar sind.",
-  },
-  {
-    question:
-      "Bietet Betriot Erfahrungen Trustpilot Casino einen Kundendienst in mehreren Sprachen an?",
-    answer:
-      "Ja, der Kundensupport ist in mehreren Sprachen verfügbar, um Spielern aus verschiedenen Regionen zu helfen.",
+      "Yes, the casino offers a loyalty program for regular players, allowing them to accumulate bonus points for playing and redeem them for services or free bets.",
   },
 ];

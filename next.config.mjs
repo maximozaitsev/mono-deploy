@@ -23,7 +23,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "betriot-casino.com",
+        hostname: "great-blue-heron-casino.com",
       },
     ],
   },

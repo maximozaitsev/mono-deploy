@@ -3,11 +3,10 @@
 .licensesSection {
   background: $color-background-secondary;
   padding: 64px 0;
-  border-top: 1px solid #00041a;
-  border-bottom: 1px solid #00041a;
 
   h2 {
     margin-bottom: 24px;
+    width: 70%;
   }
 
   .licensesContent {
@@ -27,9 +26,25 @@
       display: flex;
       justify-content: flex-end;
 
-      img {
-        width: auto;
-        scale: 1.2;
+      .imageDesk {
+        width: 338px;
+        height: 190px;
+        margin-right: -70px;
+
+        @media (max-width: 1290px) {
+          margin-right: 0;
+        }
+      }
+
+      .imageMobile {
+        display: none;
+
+        @media (max-width: 768px) {
+          display: block;
+          width: 100%;
+          max-width: 472px;
+          height: auto;
+        }
       }
     }
   }
@@ -54,9 +69,8 @@
         justify-content: center;
         margin-bottom: 40px;
 
-        img {
-          max-width: 160px;
-          height: auto;
+        .imageDesk {
+          display: none;
         }
       }
     }

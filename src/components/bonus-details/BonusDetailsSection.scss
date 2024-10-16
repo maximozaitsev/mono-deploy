@@ -27,13 +27,14 @@
   display: grid;
   grid-template-columns: 18% 22% 12% 13% 12% 23%;
   align-items: center;
-  border-radius: $border-radius;
+  border-radius: 50px;
   background: $color-background-third;
 
   .secondary {
     width: 218px;
     height: 56px;
     box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
+    color: $text-color-primary;
     margin-left: 6px;
   }
 
@@ -63,12 +64,7 @@
   justify-content: center;
   position: relative;
   height: 88px;
-  border-top: $border-width solid $border-color;
-  border-bottom: $border-width solid $border-color;
 
-  &:first-child {
-    border-left: $border-width solid $border-color;
-  }
   &::after {
     content: "";
     position: absolute;
@@ -78,9 +74,6 @@
     background-color: rgba(0, 0, 0, 0.2);
   }
 
-  &.last-cell {
-    border-right: $border-width solid $border-color;
-  }
   &.last-cell::after {
     display: none;
   }
@@ -92,10 +85,6 @@
   @media (max-width: 850px) {
     font-size: 18px;
     height: 80px;
-
-    &:nth-child(5) {
-      border-right: $border-width solid $border-color;
-    }
 
     &::after {
       display: none;
@@ -200,7 +189,7 @@
       }
 
       button {
-        width: 205px;
+        width: 221px;
       }
     }
   }
@@ -242,7 +231,7 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: #fff;
+  color: $text-color-primary;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;

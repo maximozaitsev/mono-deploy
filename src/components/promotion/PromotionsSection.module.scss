@@ -5,17 +5,11 @@
   padding: 64px 0;
   overflow-wrap: break-word;
   word-break: break-word;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
 
   :global(.container) {
     display: flex;
     flex-direction: column;
     gap: 48px;
-
-    :global(.h3-heading) {
-      margin-bottom: 24px;
-    }
   }
 
   @media (max-width: 768px) {
