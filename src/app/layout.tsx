@@ -7,7 +7,7 @@ const ogSiteName = "Great Blue Heron";
 const metaDescription =
   "Find out all about Great Blue Heron Casino in Port Perry, Ontario: new gaming features, bonuses, deposit and withdrawal methods, and available amenities. Visit soon to join the loyalty program.";
 
-const locale = "CA";
+const locale = "en-CA";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {
@@ -42,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <head>
+        <meta name="language" content="English" />
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
         <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
