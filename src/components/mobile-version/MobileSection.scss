@@ -185,9 +185,15 @@
 
   @media (max-width: 380px) {
     .mobile-content {
-      .advantages-block {
-        button {
-          height: 60px;
+      .app-info-block {
+        .app-image {
+          max-width: 100%;
+
+          .advantages-block {
+            button {
+              height: 60px;
+            }
+          }
         }
       }
     }
