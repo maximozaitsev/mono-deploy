@@ -7,7 +7,7 @@ const ogSiteName = "Betriot Casino";
 const metaDescription =
   "Tauchen Sie ein in die Welt des Betriot Casinos in Deutschland, eine Oase des erstklassigen Glücksspiels, wo Integrität und Sicherheit aufeinander treffen. Garantiert faires Spiel bietet eine sichere und angenehme Umgebung. ";
 
-const locale = "AU";
+const locale = "de";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {
