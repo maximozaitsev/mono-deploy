@@ -11,7 +11,7 @@ export default function SupportSection() {
           <div className={styles.leftContent}>
             <h2 className="h2-heading">{content.support.title}</h2>
             <p className="paragraph-text black">{content.support.text[0]}</p>
-            {/* {content.support.list && content.support.list.length > 0 && (
+            {content.support.list && content.support.list.length > 0 && (
               <ul className={`${styles.list} paragraph-text black`}>
                 {content.support.list.map((item, index) => (
                   <li key={index} className="paragraph-text black">
@@ -19,7 +19,7 @@ export default function SupportSection() {
                   </li>
                 ))}
               </ul>
-            )} */}
+            )}
             <p className="paragraph-text black">{content.support.text[1]}</p>
           </div>
           <div className={styles.rightImage}>

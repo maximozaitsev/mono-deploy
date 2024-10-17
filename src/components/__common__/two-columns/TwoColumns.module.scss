@@ -9,6 +9,10 @@
   gap: 48px;
   flex: 1;
 
+  h3 {
+    margin-bottom: 24px;
+  }
+
   ul li {
     &:first-child {
       margin-top: 24px;

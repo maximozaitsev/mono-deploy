@@ -6,7 +6,6 @@
 
   h2 {
     margin-bottom: 24px;
-    width: 70%;
   }
 
   .licensesContent {
@@ -26,25 +25,8 @@
       display: flex;
       justify-content: flex-end;
 
-      .imageDesk {
-        width: 338px;
-        height: 190px;
-        margin-right: -70px;
-
-        @media (max-width: 1290px) {
-          margin-right: 0;
-        }
-      }
-
-      .imageMobile {
-        display: none;
-
-        @media (max-width: 768px) {
-          display: block;
-          width: 100%;
-          max-width: 472px;
-          height: auto;
-        }
+      img {
+        width: auto;
       }
     }
   }
@@ -69,8 +51,9 @@
         justify-content: center;
         margin-bottom: 40px;
 
-        .imageDesk {
-          display: none;
+        img {
+          max-width: 160px;
+          height: auto;
         }
       }
     }

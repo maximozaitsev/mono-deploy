@@ -61,17 +61,9 @@ export default function GamesToPlay() {
                 // },
               ],
             },
-            {
-              heading: content.gamesToPlay.gamesRightColumn[0].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[0].text,
-                },
-              ],
-            },
           ]}
         />
+        <p className="paragraph-text">{content.gamesToPlay.text[1]}</p>
       </div>
     </section>
   );

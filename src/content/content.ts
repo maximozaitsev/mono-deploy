@@ -1,128 +1,148 @@
 export const content = {
-  projectName: "Great Blue Heron",
+  projectName: "Betify",
   advantages: {
     // title: "",
-    subTitle: "Casino Great Blue Heron Advantages",
+    subTitle: "Avantages du Casino Betify",
     text: [
-      `The Great Blue Heron Casino offers a range of benefits that make it a special and attractive destination for both players and tourists. With its large number of slot machines and table games, 24-hour operation, and a variety of additional amenities, this establishment appeals to both professional gamblers and newcomers to the world of gaming.`,
+      `Betify Casino offre plusieurs caractéristiques uniques qui en font l'une des meilleures options sur le marché des casinos en ligne. Le casino propose à la fois des jeux classiques et les dernières nouveautés des principaux développeurs. Les joueurs peuvent profiter de diverses promotions et offres de code promo Betify sans dépôt . Consultez la liste complète des avantages et des inconvénients du casino. `,
+      `Ces avantages font de Betify Casino une option attrayante pour les joueurs débutants et expérimentés. Les inconvénients sont mineurs et n'affectent pas de manière significative le gameplay.`,
     ],
-    advantagesTitle: "Advantages:",
-    disadvantagesTitle: "Disadvantages:",
+    advantagesTitle: "Avantages du casino Betify :",
+    disadvantagesTitle: "Inconvénients :",
     advantages: [
-      "More than 600 slot machines",
-      "40 gaming tables",
-      "The casino is open 24 hours a day",
-      "High level of comfort",
+      "Une large sélection de jeux.",
+      "Des Betify code promo généreux.",
+      "Sécurité des données.",
+      "Inscription rapide et connexion facile.",
+      "Version adaptée aux mobiles.",
     ],
     disadvantages: [
-      "No possibility of playing online",
-      "Not enough bonuses for new customers",
+      "Pas d'application à télécharger",
+      "Exigences de mise élevées pour les bonus",
     ],
   },
   about: {
-    title: "Great Blue Heron Casino – An Exciting Gaming Experience in Canada",
-    intro: ["More than 600 slots", "Works 24/7", "High level of security"],
+    title: "Betify Casino : Revue complète",
+    intro: ["Bonus jusqu'à 500 euros", "Plus de 1000 jeux", "Assistance 24/7"],
     description: [
-      `Where is Great Blue Heron Casino? It  is located in the scenic area of Port Perry, Ontario, on Scugog Island, is a popular venue attracting both locals and tourists. Owned by the First Nations and operating 24 hours a day, the casino offers an impressive array of gaming, entertainment, and relaxation options. With a large gaming floor, modern hotel rooms, and diverse dining options, this place is perfect for those seeking a full-fledged entertainment experience.`,
-      `Additionally, the Great Blue Heron Casino stands out with its attention to detail, ensuring a comfortable stay for all visitors, whether they are gambling enthusiasts or people simply looking to enjoy a peaceful atmosphere. The Great Blue Heron Casino reviews is renowned not only for its variety of games and amenities but also for its high level of service and unique ambiance, hard to find elsewhere.`,
-      // `p3`,
+      `Betify Casino est un casino en ligne dynamique qui attire les joueurs avec une large gamme de jeux, des bonus généreux et des méthodes de dépôt et de retrait modernes. Le casino opère sous une licence internationale et supporte plusieurs langues, ce qui le rend accessible à un large public. Dans cet Betify avis, nous allons couvrir tous les aspects de Betify Casino, depuis le processus d'inscription et de connexion jusqu'aux jeux disponibles et aux offres de bonus.`,
+      `Le casino Betify est sans aucun doute un paradis pour les amateurs de jeux en ligne, où chaque clic ouvre la porte à une expérience de jeu fascinante. La plateforme est fière d'offrir une énorme sélection de plus de 3 jeux, des machines à sous aux jeux de table tels que la roulette et le blackjack. Les partenariats de Betify avec des fournisseurs renommés tels que Microgaming, NetEnt, Evolution Gaming et Betsoft témoignent d'un engagement à offrir une expérience de jeu variée et de qualité. `,
+      `En outre, le site souligne l'importance de l'équité et de la transparence de ses jeux, en précisant que chaque jeu disponible a été testé, approuvé et certifié pour garantir l'équité des jeux. Cette étude examinera attentivement tous les aspects du site et évaluera les offres en détail. L'objectif est de fournir une analyse complète qui permettra aux lecteurs de se faire une opinion précise des services et de l'expérience offerts par Betify.`,
     ],
     signIn: {
-      title: "Great Blue Heron Charity Casino Address and Login",
+      title: "Connexion à Betify Casino",
       text: [
-        `Great Blue Heron Casino latest news offers convenient options for planning your visit. You can register on the official casino website to reserve a hotel room or a table in one of the restaurants:`,
-        `Next, you will be able to log in to your account via email and password. This is especially useful during peak hours, as having a reservation ensures a smooth experience without delays and easy access to all amenities. To fully enjoy the casino gaming experience, you must purchase a player card, which can be obtained on-site during your first visit. This card allows you to participate in loyalty programs, earn bonus points for playing, and exchange them for future bets or purchases in the casino's restaurants and bars.`,
-        `It is important to note that Great Blue Heron Casino photos have a strict dress code. Although semi-formal attire is generally acceptable, visitors are advised to avoid overly casual or sporty clothing. The dress code helps maintain a sophisticated atmosphere and ensures a high level of service for all guests. Please remember that all games are offline, meaning that you will need to visit the casino in person to take part in the gaming activities.`,
+        `L'inscription et la connexion à Betify Casino sont simples et pratiques. Le processus consiste en plusieurs étapes qui vous donneront rapidement accès à votre compte de jeu afin que vous puissiez commencer à jouer immédiatement.`,
+        `Les joueurs doivent absolument suivre les recommandations des joueurs expérimentés et des experts. `,
+        `Conseils de sécurité pour la connexion :`,
+        `Ainsi, la connexion à Betify Casino ne prend que quelques minutes et vous pouvez commencer à profiter de vos jeux immédiatement.`,
       ],
       list: [
-        "Open the official website.",
-        "Click on Registration.",
-        "Fill in a short description of yourself.",
-        "Confirm your registration.",
+        "Etape 1 : Ouvrez le site officiel de Betify Casino. ",
+        "Etape 2 : Cliquez sur le bouton « S'inscrire » ou « Se connecter ». ",
+        "Etape 3 : Entrez vos informations d'identification. ",
+        "Etape 4 : Terminer la connexion.",
       ],
-      // list2: ["li1", "li2"],
+      list2: [
+        "Veillez à utiliser un mot de passe fort et unique.",
+        "N'enregistrez jamais vos informations de connexion sur des appareils publics.",
+        "Si vous remarquez une activité suspecte sur votre compte, contactez immédiatement le service clientèle.",
+      ],
     },
     // verification: {
     //   title: "VerificationTitle",
     //   text: [`VerificationText1`, `VerificationText2`, `VerificationText3`],
     // },
     depositMethods: {
-      title: "Deposit Methods",
+      title: "Betify Casino Review Méthodes de dépôt",
       text: [
-        `Since Great Blue Heron Casino poker does not support online gaming, deposits can only be made for booking services through the casino’s website. Credit and debit cards are accepted for this purpose. Payment systems can also be used for acquiring a player card or paying for hotel accommodations.`,
+        `Betify Casino avis prend en charge une variété de méthodes de dépôt, permettant aux joueurs de choisir celle qui leur convient le mieux.\nPrincipales méthodes de dépôt :`,
         // `p2`,
       ],
-      // list: ["li1", "li2", "li3"],
-      // additionalText: `p1`,
+      list: [
+        "Cartes bancaires. Visa et MasterCard sont prises en charge.",
+        "Portefeuilles électroniques. Skrill, Neteller et d'autres systèmes populaires sont disponibles.",
+        "Cryptocurrencies. Les joueurs peuvent déposer en utilisant Bitcoin, Ethereum et d'autres crypto-monnaies.",
+        "Cartes prépayées. Paysafecard et d'autres systèmes permettent des dépôts anonymes.",
+      ],
+      additionalText: `Ces méthodes de dépôt garantissent un traitement rapide des transactions et un niveau élevé de protection des données.`,
     },
     withdrawalMethods: {
-      title: "Withdrawal Methods",
+      title: "Casino en Ligne Betify Méthodes de Retrait",
       text: [
-        `Withdrawals at Great Blue Heron Casino are made on-site. Players can exchange their chips for cash at the casino’s cashier desk. Online withdrawal methods are not available, as the casino does not support internet platforms.`,
-        // `p2`,
+        `Retirer des fonds du casino Betify est également simple et sécurisé. Le casino offre plusieurs façons de retirer vos gains.\nPrincipales méthodes de retrait :`,
+        `La méthode de retrait que vous préférez dépend de vos préférences et le temps de traitement de la transaction peut varier de quelques heures à quelques jours.`,
       ],
-      list: [],
+      list: [
+        "Transferts bancaires. Il s'agit d'une méthode fiable mais relativement lente.",
+        "Portefeuilles électroniques. Skrill, Neteller et d'autres permettent des retraits rapides.",
+        "Cryptocurrences. Les retraits en crypto-monnaie sont possibles vers n'importe quel portefeuille de crypto-monnaie.",
+        "Visa et MasterCard. Les retraits vers les cartes bancaires sont également pris en charge.",
+      ],
     },
   },
   licenses: {
-    title: "Great Blue Heron Casino Opening Licenses",
+    title: "LicensesTitle",
     text: [
-      `Great Blue Heron Casino operates under licenses issued by the Ontario Gaming Commission, ensuring its legal operation and compliance with all necessary standards and regulations. As a First Nations casino, Great Blue Heron also follows the laws and rules established by the Mississaugas of Scugog Island.`,
-      `The casino’s licensing confirms its commitment to fair and transparent gaming, ensuring that players can trust the safety of their data and that games are conducted according to established rules and standards.`,
+      `p1`,
+      // `p2`,
       // `p3`,
     ],
-    security: "Security",
+    security: "Sécurité",
     securityText: [
-      `Security is a top priority at Great Blue Heron Casino. The casino is equipped with a modern surveillance system, operating 24/7, covering all key areas, including the gaming floor, hotel, restaurants, and parking lot. These high-definition cameras allow for quick response to any incidents, ensuring the safety of both players and staff.`,
-      `In addition, the casino strictly adheres to the rules and regulations set by the Ontario Gaming Commission. All transactions go through certified systems, ensuring transparency and data protection. On-site security staff are also available to ensure order and provide assistance to visitors when needed.`,
-    ],
-    software: "Great Blue Heron Casino Blackjack Software Technologies",
-    softwareText: [
-      `Although Great Blue Heron Casino does not offer online gaming, it uses modern technologies on-site to ensure the smooth operation of its slot machines and table games. The casino regularly updates its software to ensure a secure and enjoyable gaming experience. All slot machines are equipped with state-of-the-art technology to ensure fair play and fast transactions.`,
+      `Betify Casino garantit sa crédibilité et sa fiabilité grâce à sa licence officielle de Curaçao. La plateforme adhère strictement aux politiques de sécurité et de confidentialité, en mettant en œuvre des protocoles avancés pour protéger les données et les transactions des utilisateurs. Ces mesures offrent aux joueurs une totale tranquillité d'esprit dans un environnement où la sécurité et l'éthique sont de la plus haute importance.`,
       // `p2`,
     ],
-    // list: ["li1", "li2", "li3"],
+    software: "Betify Casino en Ligne Technologies du logiciel",
+    softwareText: [
+      `Betify Casino s'associe à des développeurs de logiciels de premier plan, ce qui garantit des jeux de haute qualité. Principaux fournisseurs de logiciels :`,
+      `Ces sociétés sont connues pour leur innovation dans l'industrie du jeu, ce qui rend les jeux de Betify Casino visuellement attrayants et techniquement fiables.`,
+    ],
+    list: [
+      "NetEnt",
+      "Microgaming",
+      "Play'n GO",
+      "Pragmatic Play",
+      "Evolution Gaming",
+    ],
   },
   app: {
-    title: "Great Blue Heron Casino Open and App",
+    title: "Applications de casino",
     text: [
-      `At this time, Great Blue Heron Casino does not offer a mobile application for online gaming, as all gaming activities take place offline at the casino. However, the casino’s website is mobile-friendly, allowing visitors to easily book hotel rooms, and restaurant tables, or check event information from any device.`,
-      `The mobile version of the website is user-friendly, providing quick navigation. This makes it easy to make reservations even at the last minute. The mobile site also contains complete information about available games, rules, and loyalty programs, helping players familiarize themselves with the casino’s offerings in advance.`,
-    ],
-    languages: "Languages",
-    languagesText: [
-      `The official language of Great Blue Heron Casino is English, as it is located in the English-speaking region of Canada. However, the casino welcomes international guests, and staff members strive to offer assistance and service in multiple languages depending on visitors' needs. For guests from other countries, support may be available in French and other languages depending on staff qualifications and demand. This ensures a comfortable experience for all types of clients.`,
+      `Bien que Betify n'ait pas encore développé d'application dédiée, il a optimisé sa plateforme pour qu'elle fonctionne parfaitement sur les appareils mobiles, et les commentaires de Betify sont unanimes sur ce point. Accessible directement via le navigateur de n'importe quel smartphone ou tablette, le site s'adapte parfaitement aux différents écrans, offrant une expérience de pari intuitive et réactive. Les joueurs peuvent profiter de tout, des machines à sous et des paris sportifs aux jeux de table et au casino en direct, le tout à travers une interface mobile conviviale conçue pour l'efficacité et la facilité d'utilisation.`,
       // `p2`,
+    ],
+    languages: "Langues",
+    languagesText: [
+      `Betify Casino prend en charge plusieurs langues, ce qui le rend accessible aux joueurs du monde entier. Les langues prises en charge sont les suivantes : Français, Anglais, Russe, Espagnol, Allemand`,
+      `Le casino accepte diverses devises, notamment l'euro (EUR), le dollar américain (USD), la livre sterling (GBP) et les crypto-monnaies telles que le bitcoin.`,
       // `p3`,
     ],
-    currencies: "Currencies",
+    currencies: "Devises",
     currenciesText: [
-      `Great Blue Heron Casino only accepts Canadian dollars (CAD). All transactions, including bets, deposits, and cash-outs, are conducted exclusively in this currency. For international guests, it is recommended to exchange currency in advance, as there are limited options for currency conversion on-site. Direct transactions in foreign currencies are not supported, but international credit cards can be used, with automatic currency conversion to Canadian dollars.`,
+      `Le casino accepte diverses devises, notamment l'euro (EUR), le dollar américain (USD), la livre sterling (GBP) et les crypto-monnaies telles que le bitcoin.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play at Great Blue Heron Casino",
+    title: "Jeux disponibles au Betify Casino Avis",
     text: [
-      `A wide range of games guarantees the popularity and quality of the Great Blue Heron Casino directory. There is a huge hall with slot machines, table games, poker and much more. Study the details by section before visiting.`,
+      `La sélection de jeux sur Betify Casino est vraiment impressionnante, grâce à la collaboration avec les principaux fournisseurs de logiciels. Vous trouverez des jeux pour tous les goûts, des machines à sous aux jeux de table et aux jeux avec croupier en direct.`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Slot Machines",
-        text: [
-          `One of the key attractions at Great Blue Heron Casino bus is its extensive selection of slot machines. With over 600 slots, visitors can enjoy a wide variety of both classic and modern slot games. The casino offers traditional one-armed bandits that appeal to fans of retro games, as well as cutting-edge video slots with more complex stories and mechanics. Video slots often include bonus rounds, special symbols, and multi-line betting options, making the gameplay more dynamic and engaging.`,
-          `The excellent graphics and sound effects of modern slot machines create an immersive atmosphere. Depending on your preferences, you can choose from a wide range of themes, from adventure stories to classic fruit machines. Some slots also offer progressive jackpot opportunities, adding even more excitement to the game.`,
-        ],
+        heading: "Machines à sous",
+        text: `Il s'agit de la catégorie de jeux de casino la plus populaire. Betify propose des machines à sous classiques à trois rouleaux, des machines à sous vidéo modernes avec des thèmes passionnants et des jackpots progressifs. Les jeux peuvent être filtrés par développeur et par thème.`,
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
-        heading: "Great Blue Heron Casino Table Games",
+        heading: "Jeux de table",
         text: [
-          `Table games are the backbone of any casino, and Great Blue Heron Casino directions offers a wide selection for its visitors. With 40 tables available, there is something for everyone. Traditional table games such as blackjack, baccarat, and roulette attract players looking to test their luck and skills.`,
-          `Blackjack is one of the most popular games, where players try to score 21 points while competing against the dealer. For those who prefer games of chance, roulette provides the classic experience of betting on numbers or colors as the wheel spins. Baccarat, with its simple rules, allows players to bet on the “player,” “banker,” or “tie,” adding an element of unpredictability to the game.`,
+          `Pour les amateurs de jeux de casino traditionnels, il existe une large sélection de jeux de table tels que le blackjack, la roulette, le baccarat et le poker. Tous les jeux sont disponibles en version démo. La variété est impressionnante.`,
+          // `p2`,
           // `p3`,
         ],
         // categories: ["li1", "li2", "li3"],
@@ -131,9 +151,9 @@ export const content = {
     ],
     gamesRightColumn: [
       {
-        heading: "Great Blue Heron Casino Poker Room",
+        heading: "Casino en direct",
         text: [
-          `Unlike many other casinos where poker rooms are set apart in dedicated spaces, in directions to Great Blue Heron Casino, the poker tables are located on the main gaming floor. Although this may not suit those who prefer a more secluded environment, poker remains a popular game among visitors. Several versions of poker are available, including Texas Hold'em. The dynamic and intense nature of poker draws in both beginners and seasoned players alike.`,
+          `Les jeux avec de vrais croupiers sont un excellent moyen de se plonger dans l'atmosphère d'un casino terrestre sans quitter son domicile. Les jeux les plus populaires avec croupier en direct sont la roulette, le blackjack et le baccarat. L'émission est diffusée dans une véritable salle de casino. En choisissant ce jeu, vous bénéficierez d'une expérience de jeu passionnante avec d'excellents graphismes et un gameplay excitant.`,
           // `p2`,
           // `p3`,
         ],
@@ -151,47 +171,46 @@ export const content = {
     ],
   },
   support: {
-    title: "Great Blue Heron Casino Hours and Support",
+    title: "Assistance",
     text: [
-      `The support team at Great Blue Heron Casino is available 24/7, assisting both on-site and via phone or email. If you have any questions regarding the casino's operations, bookings, or participation in loyalty programs, you can reach out for help. A dedicated team is always stationed at the front desk to assist with any issues related to your stay, gaming, or casino services. Support is also available over the phone, where you can quickly get the information or resolution you need.`,
-      // `p2`,
+      `Betify connexion offre une assistance à la clientèle 24 heures sur 24 et 7 jours sur 7 par le biais de :`,
+      `L'assistance est disponible en plusieurs langues, dont le russe, ce qui facilite la communication pour les utilisateurs russophones. Casino Betify est un excellent choix pour les amateurs de jeux, offrant une large sélection de jeux, des bonus généreux et des méthodes de paiement sécurisées. Le casino opère sous une licence internationale et offre un service clientèle de haute qualité.`,
     ],
-    // list: ["li1", "li2", "li3"],
+    list: ["Chat en direct", "Courriel", "Formulaire de contact sur le site."],
   },
   promotions: {
-    title: "Bonuses and Promotions",
+    title: "Betify Casino No Deposit Bonus et promotions",
     text: [
-      `Compared to online casinos, there are far fewer bonus offers. However, players can still count on rewards under the loyalty program. From time to time, visitors can count on a drawing for a free hotel room, drinks, and more.`,
+      `Si le code ptomo Betify et les promotions font partie de vos critères de sélection d'un casino, alors ne cherchez pas plus loin. La gamme de code promo Betify 2024 a été conçue pour enrichir l'expérience des joueurs. Allant des bonus de bienvenue aux promotions régulières, ces offres sont conçues pour récompenser à la fois les nouveaux inscrits et les clients fidèles de la plateforme. Explorons ensemble ces opportunités utiles pour voir comment elles peuvent augmenter les chances de gagner et prolonger le temps de jeu des membres de Betify France.`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading:
-          "Great Blue Heron Casino Poker Tournament Schedule and Welcome Offers",
+        heading: "Betify Casino Bonus Code et code promo",
         text: [
-          `Although Great Blue Heron Casino coupons primarily focus on offline gaming, it offers several special promotions for new players. Unlike most online casinos, where welcome bonuses are usually offered as cash rewards, here new visitors can benefit from discounts on hotel stays or special offers at the restaurants.`,
-          `Welcome offers often vary depending on the season and ongoing promotions, so it's advisable to check for available bonuses when visiting the Great Blue Heron Casino news. Despite the lack of traditional cash welcome bonuses, the opportunity to enjoy other services at a reduced rate makes this casino an attractive spot for newcomers.`,
+          `Le bonus de bienvenue de Betify est une ouverture généreuse qui double les mises des nouveaux arrivants avec une correspondance de 100 % sur le premier dépôt jusqu'à un maximum de 500 €. Aucun code promo Betify bonus n'est requis. En outre, un dépôt minimum de 20 € est requis pour que les joueurs puissent en profiter, ce qui place le seuil d'entrée à un niveau accessible à la plupart des joueurs. L'attrait de ce bonus Betify réside dans son potentiel maximal de 500 €, qui permet aux joueurs de maximiser leur capital de jeu initial. Ce bonus n'est cependant pas sans conditions. Il y a une exigence de mise ou une exigence de mise de 35 fois le montant du bonus plus le dépôt. `,
+          // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
-      {
-        heading: "Great Blue Heron Casino Jobs and Loyalty Program",
-        text: [
-          `One of the main tools for retaining regular customers at Great Blue Heron Casino blackjack conditions is its loyalty program, which operates through the player card. Regular players can accumulate bonus points for every game they play at the casino. These points can be redeemed for various rewards, including free bets, drinks, and meals at restaurants, or hotel services.`,
-          `The loyalty program also includes tier levels, offering more privileges the more time players spend at the casino. These privileges may include access to exclusive events, invitations to private tournaments, and other perks.`,
-          // `p3`,
-        ],
-        // categories: ["li1", "li2", "li3"],
-        // additionalText: `p1`,
-      },
+      // {
+      //   heading: "bonus2Heading",
+      //   text: [
+      //     `p1`,
+      //     // `p2`,
+      //     // `p3`,
+      //   ],
+      //   categories: ["li1", "li2", "li3"],
+      //   additionalText: `p1`,
+      // },
     ],
     rightColumnContent: [
       {
-        heading: "Special Promotions and Great Blue Heron Casino Rewards Card",
+        heading: "Betify Casino Big Win, programme de fidélité et club VIP",
         text: [
-          `Great Blue Heron Casino regularly holds promotions and special events for its guests. These events are typically tied to holidays, special dates, or seasons. For example, during the New Year's holidays, prize draws may be held, while in the summer, tournaments with additional rewards for winners can take place.`,
-          `These promotions are not always advertised in advance, so visitors are encouraged to check the event calendar on the casino’s website or inquire at the front desk upon arrival. Special promotions often come as a pleasant surprise for regular players and add an extra layer of excitement to the gaming experience.`,
+          `Le programme VIP de Betify PRO est conçu pour fournir une expérience de jeu améliorée et personnalisée en offrant aux joueurs des privilèges exclusifs. Dès qu'un joueur entre dans les rangs VIP, les portes s'ouvrent sur des offres spéciales et des récompenses qui viennent avec la promesse d'un traitement royal. Les membres VIP bénéficient d'avantages financiers spéciaux, y compris des limites de retrait plus élevées, ainsi que la possibilité de recevoir jusqu'à 20% de cashback sur leurs pertes nettes de la semaine précédente tous les lundis, ajoutant ainsi une couche de sécurité à leur stratégie de jeu.`,
+          // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
@@ -207,6 +226,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "FAQ",
+    title: "FAQ CASINO",
   },
 };

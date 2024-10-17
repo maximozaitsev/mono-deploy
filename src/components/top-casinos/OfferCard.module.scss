@@ -34,12 +34,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    // color: $text-color-welcome-small;
+    color: $text-color-fourth;
 
-    background: $text-color-welcome-small;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: linear-gradient($text-color-secondary-gradient);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   p {
@@ -58,8 +58,8 @@
 
   button {
     margin-top: auto;
-    width: 217px;
-    margin-left: 2px;
+    width: 206px;
+    margin-left: 5px;
   }
 
   @media (max-width: 768px) {

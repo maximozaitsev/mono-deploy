@@ -44,11 +44,8 @@ body {
   }
 
   @media (max-width: 768px) {
+    margin-bottom: 64px;
     gap: 40px;
-  }
-
-  @media (max-width: 420px) {
-    margin-bottom: 72px;
   }
 }
 
@@ -70,6 +67,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 32px;
+    font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -91,6 +89,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 24px;
+    font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -162,10 +161,4 @@ body {
       line-height: 26px;
     }
   }
-}
-
-.inner-column {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }

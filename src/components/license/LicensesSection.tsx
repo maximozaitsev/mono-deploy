@@ -1,6 +1,5 @@
 import Image from "next/image";
-import licenceImage from "../../../public/block-images/licence.webp";
-import licenceImageMobile from "../../../public/block-images/licence-mobile.webp";
+// import licenceImage from "../../../public/block-images/licence.webp";
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { content } from "@/content/content";
 import styles from "./LicensesSection.module.scss";
@@ -9,25 +8,15 @@ export default function LicensesSection() {
   return (
     <section className={`${styles.licensesSection} section`}>
       <div className="container">
-        <h2 className="h3-heading">{content.licenses.title}</h2>
+        {/* <h2 className="h3-heading">{content.licenses.title}</h2>
         <div className={styles.licensesContent}>
           <div className={styles.leftContent}>
             <p className="paragraph-text">{content.licenses.text[0]}</p>
-            <p className="paragraph-text">{content.licenses.text[1]}</p>
           </div>
           <div className={styles.rightImage}>
-            <Image
-              className={styles.imageDesk}
-              src={licenceImage}
-              alt="Licenses"
-            />
-            <Image
-              className={styles.imageMobile}
-              src={licenceImageMobile}
-              alt="Licenses"
-            />
+            <Image src={licenceImage} alt="Licenses" width={240} height={240} />
           </div>
-        </div>
+        </div> */}
         <TwoColumns
           leftColumnContent={[
             {
@@ -37,7 +26,6 @@ export default function LicensesSection() {
                   type: "text",
                   content: content.licenses.securityText[0],
                 },
-                { type: "text", content: content.licenses.securityText[1] },
               ],
             },
           ]}
@@ -49,7 +37,10 @@ export default function LicensesSection() {
                   type: "text",
                   content: content.licenses.softwareText[0],
                 },
-
+                {
+                  type: "list",
+                  content: content.licenses.list,
+                },
                 {
                   type: "additionalText",
                   content: content.licenses.softwareText[1] || [],

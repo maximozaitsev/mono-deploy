@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "https://great-blue-heron-casino.com";
+const url = "https://betify-casino-online.com";
 const ogTitle =
-  "Great Blue Heron Casino – The Complete Guide to Port Perry Casinos";
-const ogSiteName = "Great Blue Heron";
+  "Revue du Casino Betify : Connexion, jeux, bonus et méthodes de paiement";
+const ogSiteName = "Revue du Casino Betify";
 const metaDescription =
-  "Find out all about Great Blue Heron Casino in Port Perry, Ontario: new gaming features, bonuses, deposit and withdrawal methods, and available amenities. Visit soon to join the loyalty program.";
+  "Ce site est un guide complet sur le casino Betify : inscription et connexion, jeux disponibles, bonus, méthodes de paiement, et plus encore. Lisez notre revue pour tout savoir sur ce casino.";
 
-const locale = "en-CA";
+const locale = "fr-FR";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <meta name="language" content="English" />
+        <meta name="language" content="French" />
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
         <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
