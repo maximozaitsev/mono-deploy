@@ -70,7 +70,7 @@ const BonusDetailsSection: React.FC = () => {
               {offer.bonuses.free_spins > 0 && `${offer.bonuses.free_spins} FS`}
             </div>
 
-            <div className="cell">
+            <div className="cell info-cell">
               <button
                 onClick={() => toggleAccordion(offer.id)}
                 className="icon-button"
