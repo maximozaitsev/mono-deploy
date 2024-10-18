@@ -1,5 +1,5 @@
 export const content = {
-  projectName: "SG Kasino",
+  projectName: "SG Casino",
   advantages: {
     // title: "",
     subTitle: "Vorteile und Nachteile: Free Credit Online Casino SG",
