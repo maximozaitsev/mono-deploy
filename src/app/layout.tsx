@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "https://betify-casino-online.com";
+const url = "https://sgcasino-online.net";
 const ogTitle =
-  "Revue du Casino Betify : Connexion, jeux, bonus et méthodes de paiement";
-const ogSiteName = "Revue du Casino Betify";
+  "SG Casino Deutschland: Detaillierte Übersicht und Hauptmerkmale";
+const ogSiteName = "SG Casino";
 const metaDescription =
-  "Ce site est un guide complet sur le casino Betify : inscription et connexion, jeux disponibles, bonus, méthodes de paiement, et plus encore. Lisez notre revue pour tout savoir sur ce casino.";
+  "SG Casino Deutschland: Testbericht über den beliebten Glücksspielanbieter. Angebot an Spielen, Sportwetten, Bonusangeboten und einzigartigen Aktionen. Auswahl an Zahlungssystemen für Spieler aus Deutschland und weitere interessante Details";
 
-const locale = "fr-FR";
+const locale = "de";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {
@@ -42,7 +42,6 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <meta name="language" content="French" />
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
         <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
