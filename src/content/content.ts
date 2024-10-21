@@ -1,148 +1,125 @@
 export const content = {
-  projectName: "SG Casino",
+  projectName: "Casino Cabourg",
   advantages: {
     // title: "",
-    subTitle: "Vorteile und Nachteile: Free Credit Online Casino SG",
+    subTitle: "Cabourg les jardins du Casino Avantages",
     text: [
-      `Die Möglichkeit, einen großzügigen SG Casino Bonus zu erhalten, ist ein wichtiger, aber bei weitem nicht der einzige Vorteil dieser Plattform. Damit Sie sich eine objektive Meinung über diesen Dienst bilden können, lohnt es sich, die wichtigsten Vor- und Nachteile zu untersuchen.`,
+      `Le Casino de Cabourg offre une expérience de jeu unique dans un cadre magnifique en bord de mer. Vous trouverez ci-dessous les principaux avantages et inconvénients du casino:`,
     ],
-    advantagesTitle: "Vorteile",
-    disadvantagesTitle: "Nachteile",
+    advantagesTitle: "Avantages :",
+    disadvantagesTitle: "Inconvénients :",
     advantages: [
-      "eine große Auswahl an Spielen;",
-      "Live-Kasino;",
-      "Sportwetten;",
-      "großzügiger Willkommensbonus;",
-      "lukrative Promotionen und Sonderangebote;",
-      "obligatorische Verifizierung;",
-      "ausgezeichnete technische Unterstützung.",
+      "Situation exceptionnelle en bord de mer",
+      "Variété d'options de jeu",
+      "Architecture élégante et historique",
+      "Restauration et divertissements",
+      "Atmosphère accueillante ",
     ],
     disadvantages: [
-      "eingeschränkter Zugang in einigen Ländern;",
-      "keine Anmeldung.",
+      "Options de jeux en ligne limitées",
+      "Fluctuations saisonnières du nombre de visiteurs",
     ],
   },
   about: {
-    title: "SG Kasino",
-    intro: ["große Auswahl an Spielen", "100% Willkommensbonus", "Sportwetten"],
-    description: [
-      `Nutzer des SG Casino Service aus Deutschland können ihre bevorzugte Glücksspielunterhaltung genießen und zahlreiche Boni erhalten. Diese Glücksspielplattform ist offiziell in vielen Ländern vertreten und eröffnet den Fans von Slots, Live-Casinos und anderen Arten der Online-Freizeitgestaltung erstaunliche Möglichkeiten.`,
-      `Zu den unbestreitbaren Vorteilen von SG Casino Erfahrungen gehört die ständig wachsende Auswahl an Spielen. Hier findet jeder Kunde etwas zu tun und wie er seine Freizeit verbringen kann. Die Plattform bietet die Möglichkeit, im Demo-Modus zu spielen oder echtes Geld zu setzen.`,
-      `Wer an echten Gewinnen interessiert ist, muss sich zwingend im SG Casino login. Dieser Vorgang dauert nur ein paar Minuten.`,
+    title: "Casino Cabourg",
+    intro: [
+      "50 tours gratuits",
+      "bonus sans dépôt disponible",
+      "Assistance clientèle 24 heures sur 24, 7 jours sur 7",
     ],
-    signIn: {
-      title: "Anmeldung: B9 Casino SG",
-      text: [
-        `Wenn Sie die Website von SG Casino online zum ersten Mal besuchen, können Sie ganz einfach die Registrierungsschaltfläche finden und das Formular ausfüllen, um ein neues Konto zu erstellen. Dies ist eine notwendige Prozedur für diejenigen, die um echtes Geld spielen, faire Gewinne und zahlreiche Boni erhalten möchten, einschließlich des SG Casino no deposit bonus.`,
-        `Um ein Konto zu erstellen, befolgen Sie diese Schritt-für-Schritt-Anleitung:`,
-        `Nach dem Absenden des Anmeldeformulars erhalten Sie eine E-Mail von SG online Casino an die angegebene E-Mail-Adresse. Öffnen Sie also die E-Mail und folgen Sie dem Link. Nun müssen Sie sich nur noch mit Ihrem Login und Passwort anmelden.`,
-        `Bereits bei der Anmeldung können Sie den SG Casino Promo Code verwenden oder der Teilnahme an der Aktion „Willkommensbonus“ zustimmen. Um diese Angebote zu aktivieren, erfüllen Sie die entsprechenden Voraussetzungen. Für einen Willkommensbonus müssen Sie zum Beispiel eine Mindesteinzahlung leisten.`,
-        `Um in Zukunft Gewinne von SG bet Casino abheben zu können, müssen Sie Ihr Konto verifizieren.`,
-      ],
-      list: [
-        "Gehen Sie auf die Hauptseite der offiziellen Website des Online-Dienstes;",
-        "Klicken Sie auf die Schaltfläche „Registrieren“ am oberen Rand des Bildschirms;",
-        "Wählen Sie im neuen Fenster den Bonus aus, den Sie bei der Registrierung erhalten möchten;",
-        "Falls gewünscht, lehnen Sie den Willkommensbonus und den Promo-Code ab;",
-        "Geben Sie eine gültige E-Mail Adresse an;",
-        "Erstellen Sie ein Original-Login;",
-        "Erstellen Sie das sicherste Passwort für den Zugang zur Website;",
-        "Bestätigen Sie Ihr Alter und erklären Sie sich mit den Allgemeinen Geschäftsbedingungen des Dienstes einverstanden;",
-        "Fahren Sie mit der nächsten Phase der Registrierung fort;",
-        "Füllen Sie das Formular mit Ihren persönlichen Daten aus, einschließlich Telefonnummer, Land, Währung, etc;",
-        "Schließen Sie die Einrichtung des Kontos ab.",
-      ],
-      // list2: ["li1", "li2"],
-    },
-    verification: {
-      title: "Verifizierung: SG Casino Opinie",
-      text: [
-        `Die logische Fortsetzung dieses SG Casino review Testberichts ist die Betrachtung des Themas der Konto-Verifizierung. Zur Verifizierung müssen Sie Ihre Identität und Ihr Alter bestätigen.`,
-        `Um das Verfahren erfolgreich abzuschließen, gehen Sie zu Ihrem persönlichen Konto und füllen Sie die Seite mit den persönlichen Daten aus. Sie müssen Ihr Geschlecht, Ihren vollständigen Namen, Ihre Wohnanschrift usw. angeben. Außerdem sollten Sie eine Kopie oder ein Foto der Dokumente einscannen, die in der Liste der Empfehlungen auf der Website des Online-Casinos aufgeführt sind. Wenn die Seite ausgefüllt ist, schicken Sie das Formular zur Überprüfung an den Sicherheitsdienst. Dieses Verifizierungsverfahren dauert in der Regel nicht länger als 1 bis 2 Arbeitstage. Über den erfolgreichen Abschluss der Kontoverifizierung werden Sie durch eine Benachrichtigung des Glücksspieldienstes informiert.`,
-        // `VerificationText3`,
-      ],
-    },
-    depositMethods: {
-      title: "Einzahlungsmethoden Offres SG Casino",
-      text: [
-        `Um alle Funktionen von Casino SG digital nutzen zu können, müssen Sie Ihre erste Einzahlung tätigen. Wenn Sie um echtes Geld spielen, können Sie Bonusangebote in Anspruch nehmen, Punkte sammeln, um Ihre Stufe im Treueprogramm zu erhöhen, und regelmäßig persönliche Geschenke erhalten.`,
-        `Für Spieler aus Deutschland stehen mehrere Hauptmethoden für Einzahlungen zur Verfügung:`,
-      ],
-      list: ["FunID;", "Mastercard;", "Jeton;", "MiFinity;", "Kryptowallets."],
-      additionalText: `Die vorgestellten Systeme bieten eine Mindesteinlage von 10 Euro. Die maximale Einzahlung für eine Transaktion liegt zwischen 2.000 und 5.000 Euro. Gleichzeitig müssen Sie keine zusätzliche Kommission zahlen.`,
-    },
-    withdrawalMethods: {
-      title: "Auszahlungsmethoden SG E Wallet Casino",
-      text: [
-        `Nach erfolgreicher Kontoverifizierung können Sie sich Ihre Gewinne problemlos auszahlen lassen. Hierfür bietet der Service deutschen Kunden mehrere Zahlungsinstrumente an:`,
-        `Die Limits reichen von 10 bis 5.000 Euro. Beachten Sie die Bedingungen für jede Zahlungsmethode, um die beste Lösung zu wählen. Für die Auszahlung von Gewinnen wird keine Gebühr erhoben. In den meisten Fällen beträgt die Wartezeit für die Bearbeitung des Antrags 1-3 Tage.`,
-      ],
-      list: [
-        "FunID;",
-        "Visa;",
-        "Mastercard;",
-        "Banküberweisung;",
-        "Jeton;",
-        "Mifinity;",
-        "Krypto.",
-      ],
-    },
-  },
-  licenses: {
-    title: "Lizenzen: SG Digital Online Casino",
-    text: [
-      `In Deutschland ist man sehr streng, was die Einhaltung der Gesetzgebung im Bereich des Online-Glücksspiels angeht. Daher hat kein Dienst das Recht, auf dem Territorium des Staates ohne eine entsprechende Lizenz zu arbeiten. Im Falle der SG-Plattform gibt es keine Probleme. Dieser Online-Dienst arbeitet auf der Grundlage einer gültigen Lizenz von Curacao.`,
+    description: [
+      `Le Casino Cabourg, situé dans la ville pittoresque de Cabourg en Normandie, France, est une destination renommée pour le divertissement et la détente. Situé dans un cadre magnifique surplombant la côte, le casino offre un mélange d'équipements de jeu modernes et de charme traditionnel. Les visiteurs peuvent profiter d'une variété d'options de jeu, notamment des machines à sous, des tables de jeu et du poker, le tout dans le Casino Cabourg intérieur. Avec son histoire riche et la proximité de la magnifique plage de Cabourg, avis sur Casino de Cabourg est une escapade parfaite pour ceux qui recherchent à la fois le loisir et l'excitation.`,
       // `p2`,
       // `p3`,
     ],
-    security: "Die Sicherheit: Das Best SG Interactive Online Casino",
+    signIn: {
+      title: "A propos de Cabourg Casino Login",
+      text: [
+        `Le processus de connexion au site en ligne du casino de Cabourg est conçu pour être simple et sécurisé. Pour accéder au site, les utilisateurs doivent d'abord créer un compte en fournissant des informations personnelles de base, en vérifiant leur identité et en choisissant un mot de passe sécurisé. Après l'inscription, les utilisateurs peuvent se connecter en saisissant leur adresse électronique ou leur nom d'utilisateur et leur mot de passe sur la page de connexion. Le site utilise un système de cryptage avancé pour garantir la protection des données des utilisateurs, et une option permet de récupérer les informations de connexion en cas de problème.`,
+        // `p2`,
+        // `p3`,
+      ],
+      // list: ["li1", "li2", "li3"],
+      // list2: ["li1", "li2"],
+    },
+    // verification: {
+    //   title: "VerificationTitle",
+    //   text: [`VerificationText1`, `VerificationText2`, `VerificationText3`],
+    // },
+    depositMethods: {
+      title: "Méthodes de dépôt du Casino à Cabourg",
+      text: [
+        `L'Hôtel Casino Cabourg propose plusieurs méthodes de dépôt sécurisées et pratiques pour permettre aux participants d'approvisionner leurs comptes. Les méthodes les plus couramment utilisées sont les cartes de crédit et de débit comme Visa et MasterCard, qui sont largement acceptées et offrent des transactions instantanées. Les joueurs peuvent également utiliser les virements bancaires pour les dépôts directs, bien que leur traitement puisse prendre plus de temps. En outre, les cartes prépayées telles que Paysafecard sont une option pour ceux qui préfèrent ne pas lier leurs coordonnées bancaires à leur compte de casino. Toutes les méthodes de dépôt garantissent des niveaux élevés de sécurité et de cryptage.`,
+        // `p2`,
+      ],
+      // list: ["li1", "li2", "li3"],
+      // additionalText: `p1`,
+    },
+    withdrawalMethods: {
+      title: "Méthodes de retrait",
+      text: [
+        `Pour les retraits, le nouveau Casino Cabourg offre une gamme de méthodes qui permettent aux participants d'accéder à leurs gains de manière efficace. Les principales options sont Visa et MasterCard, dont le traitement peut prendre quelques jours après approbation. Les virements bancaires sont également disponibles pour les retraits plus importants, bien qu'ils aient tendance à avoir un temps de traitement plus long. Il est conseillé aux joueurs de vérifier leurs comptes à l'avance afin d'accélérer le processus de retrait. Toutes les méthodes adhèrent à des normes de sécurité strictes pour garantir que les transactions sont traitées en toute sécurité.`,
+        // `p2`,
+      ],
+      list: [],
+    },
+  },
+  licenses: {
+    title: "Licences du Supermarché Casino Cabourg",
+    text: [
+      `Le Casino de Cabourg opère sous une licence délivrée par la Commission Française des Jeux, garantissant qu'il adhère à des réglementations strictes en matière d'équité, de sécurité et de jeu responsable. Cette licence garantit que le casino est soumis à des audits réguliers et à des contrôles de conformité.`,
+      // `p2`,
+      // `p3`,
+    ],
+    security: "Casino Cabourg Pass Sanitaire et Sécurité",
     securityText: [
-      `Um die Sicherheit seiner Kunden zu gewährleisten, verwendet dieser Dienst ein mehrstufiges Ende-zu-Ende-Verschlüsselungssystem und hält sich an strenge KYC-Regeln und Grundsätze. All diese Maßnahmen zielen darauf ab, die Registrierung von minderjährigen Nutzern auszuschließen und Betrug auf der Seite zu verhindern.`,
+      `Le Futur Casino Cabourg assure une sécurité de premier ordre en utilisant la technologie de cryptage SSL pour protéger les données personnelles et financières des utilisateurs lors de toutes les transactions. Cette norme de cryptage empêche l'accès non autorisé aux informations sensibles et garantit un jeu sûr et sécurisé. De plus, tous les titres sont régulièrement audités par des agences indépendantes afin de garantir l'équité.`,
       // `p2`,
     ],
-    software: "Software-Technologien: SG Casino 3",
+    software: "Technologies du logiciel",
     softwareText: [
-      `Eine beliebte Glücksspielplattform in Deutschland arbeitet offiziell mit vielen Anbietern zusammen. Sie können die Suche nach Spielen Ihres Lieblingsentwicklers nutzen. Zu den bekanntesten Anbietern gehören ELA, Evolution, Pragmatic, PayNGo, NetEnt, Playtech, Quickspin und viele andere. Jeder Spielautomat verfügt über alle notwendigen Genehmigungen und Zertifikate.`,
+      `Le Nouveau Casino de Cabourg utilise une variété de fournisseurs de logiciels de haute qualité pour alimenter ses titres. Les développeurs les plus importants sont IGT, Playtech et Microgaming, qui sont connus pour créer des jeux sécurisés et équitables. Le site est optimisé pour un jeu fluide, à la fois dans le navigateur et par le biais d'applications téléchargeables.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "App: SG Casino Bonus Without Deposit",
+    title: "Application du casino",
     text: [
-      `Neu- und Stammkunden müssen nicht nach der SG Casino App suchen und zusätzliche Software auf ihre mobilen Geräte herunterladen. Stattdessen bietet das Casino an, die mobile Version der Seite zu nutzen. Dank des HTML5-Formats ist der Webservice vollständig an die mobilen Betriebssysteme angepasst. Daher werden Sie maximalen Komfort erleben, wenn Sie über einen Browser auf einem Tablet oder Smartphone spielen.`,
+      `Le Casino Partouche Cabourg propose des applications mobiles dédiées pour les appareils iOS et Android. Ces applications offrent aux participants un accès complet aux fonctionnalités du casino, y compris les machines à sous, les titres de table et les outils de gestion de compte. Les applications sont conçues pour un jeu fluide, en déplacement, avec une navigation facile et des temps de chargement rapides.`,
       // `p2`,
     ],
-    languages: "Sprachen: SG Casino Casino",
+    languages: "Langues du Casino Cabourg Noel",
     languagesText: [
-      `Das Casino bietet eine mehrsprachige Oberfläche, da es offiziell in vielen Ländern der Welt vertreten ist. Englisch ist hier standardmäßig eingestellt. Sie können jedoch mit einem praktischen Schalter auf Deutsch, Spanisch, Portugiesisch, Italienisch, Finnisch, Türkisch, Norwegisch und andere Sprachen umschalten.`,
+      `La langue principale du Casino Cabourg soirée est le français, car il s'adresse principalement aux participants français. Cependant, le site Web et le service clientèle sont également en anglais pour répondre aux besoins des participants internationaux qui visitent le casino.`,
       // `p2`,
       // `p3`,
     ],
-    currencies: "Währungen: SG Casino Code",
+    currencies: "Brasserie du Casino Cabourg Devises",
     currenciesText: [
-      `Deutschland ist ein offizielles Mitglied der EU und verwendet eine einheitliche nationale Währung. Daher werden alle Finanztransaktionen ausschließlich in Euro abgewickelt.`,
+      `Le Casino de Cabourg avis utilise principalement l'euro (EUR), étant donné qu'il s'agit d'un établissement français. Les joueurs d'autres régions peuvent avoir besoin de convertir leur monnaie locale en euros lorsqu'ils effectuent des dépôts ou des retraits, en fonction de leur méthode de paiement.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Verfügbare Spiele: SG Trusted Online Casino",
+    title: "Casino jeux Cabourg",
     text: [
-      `Die Kunden von Casino en ligne SG Casino haben Zugang zu einem überwältigenden Angebot an Spielunterhaltung. Es gibt Spiele für jeden Geschmack und die Möglichkeit, Wetten auf zahlreiche Sportereignisse zu platzieren. Bevor Sie Ihre erste Einzahlung bei SG Casino bewertung machen, ist es für Sie nützlich und interessant, sich mit den wichtigsten Unterhaltungskategorien vertraut zu machen.`,
+      `Le casino de Cabourg offre une gamme variée d'options de jeux qui s'adressent aussi bien aux joueurs occasionnels qu'aux joueurs chevronnés. Que vous souhaitiez tenter votre chance sur les machines à sous ou tester vos compétences sur les tables de Casino Cabourg restaurant, le casino a quelque chose à offrir à chacun. Vous trouverez ci-dessous les principales options de jeu disponibles au Casino Cabourg:`,
+      // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Spielautomaten: Casino SG",
-        text: `Wenn Sie es bereits geschafft haben, SG Casino auszahlung Dauer im Demomodus kennenzulernen, dann wissen Sie, wie zahlreich die Slot-Kategorie ist. Es handelt sich um eine unglaubliche Welt mit Walzen und besonderen Symbolen, die Ihnen die einmalige Gelegenheit bieten, mit einem einzigen Dreh einen großen Gewinn zu erzielen. Für die Bequemlichkeit der Nutzer von Casino online SG digital bietet die Kategorie „Casino“ gleich mehrere Unterkategorien. So können Sie die klassischen Spielautomaten, die TOP-Spiele, die beliebtesten Spiele mit der Megaways-Funktion, Bonuskäufe und Jackpots auswählen.`,
+        heading: "Machines à sous",
+        text: `Le Casino de Cabourg propose une large sélection de machines à sous aux thèmes et aux mises variés. Les joueurs peuvent choisir entre des rouleaux classiques, des machines à sous vidéo et des machines à jackpot progressif, offrant différents niveaux d'excitation et de gains potentiels.`,
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
-        heading: "Tischspiele: SG Casino Guru",
+        heading: "Jeux de table",
         text: [
-          `Dank verschiedener Bonusangebote können Sie bei SG Casino free credit erhalten und es für Einsätze bei Tischspielen verwenden. Dies ist ein beliebtes Format der Glücksspielunterhaltung, bei dem Sie verschiedene Taktiken und Strategien anwenden können, um maximale Ergebnisse zu erzielen.`,
-          `Unter den Unterhaltungsspielen dieser Kategorie heben die Kunden von mejor Casino SG digital besonders Blackjack, Roulette, Baccarat und Poker hervor. In jedem Spiel finden Sie atemberaubende Grafiken und die Möglichkeit, einen absolut ehrlichen und fairen Gewinn zu erzielen.`,
+          `Le casino propose des jeux de table traditionnels tels que la roulette et le blackjack. Les amateurs de roulette peuvent profiter des versions française et américaine, tandis que les tables de blackjack offrent la possibilité d'un jeu stratégique et d'une compétition amusante.`,
+          // `p2`,
           // `p3`,
         ],
         // categories: ["li1", "li2", "li3"],
@@ -151,85 +128,81 @@ export const content = {
     ],
     gamesRightColumn: [
       {
-        heading: "Live-Dealer: Casino SG Casino",
+        heading: "Tournoi Poker Casino Cabourg",
         text: [
-          `Wenn man die grundlegenden informations of SG Casino studiert, kommt man nicht umhin, eines der beliebtesten Formate der heutigen Glücksspielunterhaltung zu erwähnen. Dank der Zusammenarbeit mit den besten Anbietern von Glücksspielsoftware können die deutschen Nutzer dieses Dienstes rund um die Uhr Spiele mit Live-Dealern genießen.`,
-          `Zur Auswahl stehen Glücksspiele wie Roulette, Mega Wheel, Poker, Würfelspiele, Blackjack, Baccarat, Spielshows und vieles mehr. Unglaubliche und charmante Gastgeber arbeiten in jedem Spiel. Sie werden also doppeltes Vergnügen an diesem Format der Glücksspielunterhaltung haben und bestimmt immer wieder hierher zurückkommen.`,
+          `Les amateurs de poker peuvent participer à des tournois et à des jeux d'argent organisés régulièrement au casino. La salle de poker dédiée offre un cadre confortable pour les participants amateurs et expérimentés, le Texas Hold'em étant la variante la plus populaire.`,
+          // `p2`,
           // `p3`,
         ],
+        // categories: ["li1", "li2", "li3"],
+        // additionalText: `p1`,
       },
       {
-        heading: "Sportwetten: SG Casino Askgamblers",
+        heading: "Jeux électroniques",
         text: [
-          `Ein weiteres wichtiges Merkmal von SG Casino recensioni ist die Möglichkeit für Kunden aus Deutschland, Sportwetten zu platzieren. Zu diesem Zweck ist ein spezieller Bereich auf der Seite „Sport“ eingerichtet.`,
-          `Der Glücksspielservice hat ständig viele Linien zur Verfügung, sowie ehrliche und faire Quoten. Sie können Wetten auf verschiedene Ereignisse verfolgen und platzieren, darunter Fußball, Tennis, Basketball, Hockey, Volleyball, eSports-Wettbewerbe und vieles mehr.`,
+          `Pour une expérience de jeu plus moderne, le casino de Cabourg propose également des versions électroniques de titres traditionnels, comme la roulette électronique, qui permet aux participants de profiter d'une action rapide sans avoir besoin d'un croupier en chair et en os.`,
+          // `p2`,
           // `p3`,
         ],
       },
     ],
   },
   support: {
-    title: "Unterstützung: SG Casino Promocode",
+    title: "Les Jardins du Casino Cabourg Assistance",
     text: [
-      `Es gibt mehrere Möglichkeiten, den technischen Support zu kontaktieren:`,
-      `Sie können leicht qualifizierte Hilfe bekommen und alle Probleme durch den technischen Support lösen.`,
+      `Le Jardin du Casino Cabourg offre une assistance à la clientèle par le biais de plusieurs canaux, y compris le chat en direct, l'email et l'assistance téléphonique. L'équipe d'assistance et Casino Partouche Cabourg avis sont disponibles en français et en anglais, ce qui permet aux participants de résoudre leurs problèmes rapidement et efficacement. L'option de chat en direct est le moyen le plus rapide d'obtenir de l'aide, les réponses étant généralement fournies en quelques minutes.`,
+      // `p2`,
     ],
-    list: ["24/7 Online-Chat;", "E-Mail;", "FAQ-Bereich."],
+    // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Boni und Promotionen: SG Online Casino Förderung",
+    title: "Bonus et mises à jour du Casino de Cabourg",
     text: [
-      `Zusätzlich zum Zugang zu den SG interactive Casino haben Sie die Möglichkeit, von erstaunlichen und großzügigen Bonusangeboten zu profitieren. Der Bereich „Promotionen“ wird regelmäßig aktualisiert. Es gibt auch ständige Boni für neue Kunden.`,
-      `Unter allen SG Casino offres ist für deutsche Neukunden der Willkommensbonus besonders interessant. Sie sollten jedoch wissen, dass dies nicht der einzige Preis ist, den man für eine Einzahlung erhalten kann.`,
+      `Cabourg Casino offre une gamme de bonus pour améliorer l'expérience de jeu de ses participants. Vous trouverez ci-dessous quelques-uns des meilleurs bonus disponibles, chacun d'entre eux étant conçu pour apporter une valeur ajoutée et une excitation supplémentaire.`,
+      // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Willkommensbonus: SG Gaming Casino",
+        heading: "Bonus de 50 tours gratuits",
         text: [
-          `Sie können ganz einfach einen tollen SG Casino Bonus für die Registrierung erhalten, sobald Sie ein Konto erstellen und Ihre erste Einzahlung tätigen. Dies sind die beiden Hauptbedingungen, die es Ihnen ermöglichen, diese Belohnung zu erhalten.`,
-          `Gemäß den Aktionsbedingungen zahlt das Casino neuen Spielern 100% in Form eines Bonus von bis zu 500 Euro. Darüber hinaus erhalten Sie zusätzlich 200 Freispiele. Ein solches Willkommenspaket erfreut neue Kunden wirklich.`,
+          `Tous les mercredis, Cabourg Casino propose une promotion où les participants peuvent obtenir 50 tours gratuits sur des titres de machines à sous sélectionnés. Ce bonus est un excellent moyen de profiter de jeux supplémentaires sans avoir à effectuer de dépôt. Il s'agit d'un coup de pouce idéal en milieu de semaine pour les joueurs réguliers de machines à sous et peut potentiellement conduire à des gains en argent réel.`,
+          // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
       {
-        heading: "Willkommens-Krypto-Paket",
+        heading: "Bonus sans dépôt",
         text: [
-          `Wenn Sie sich bei der Registrierung für eine déposer sur SG Casino mit einer Krypto-Brieftasche entscheiden, erhalten Sie eine besondere Belohnung in Form von Kryptowährung.`,
-          `Die Bedingungen dieser Aktion sehen vor, dass Sie je nach Einzahlungsbetrag bis zu 100 mBTC erhalten können. Das ist aber noch nicht alles. Darüber hinaus schreibt der Service weitere 100 Freispiele auf dem Bonuskonto gut.`,
+          `Pour les nouveaux participants, Cabourg Casino offre un bonus sans dépôt, permettant aux utilisateurs d'explorer le site et ses titres sans risquer leur propre argent. Ce bonus est particulièrement utile pour ceux qui souhaitent tester les offres du casino avant de s'engager à effectuer un dépôt. Les termes et conditions s'appliquent, y compris les exigences de mise.`,
+          // `p2`,
           // `p3`,
         ],
-      },
-      {
-        heading: "Cashback",
-        text: [
-          `Wie die SG Casino Analyse zeigt, hat dieser deutsche Dienst 2 Bonusangebote, die mit Cashback zu tun haben.`,
-          `Der erste Cashback ist für Spieler gedacht, die sich für Slots entscheiden und Tischspiele spielen. Am Ende der Spielwoche können sie 15% Cashback in Höhe von bis zu 3.000 Euro erhalten. Der Prozentsatz der Rückerstattung hängt direkt davon ab, wie viel Geld Sie während der Spielwoche verlieren.`,
-          `Die zweite „Cashback“-Aktion ist für Spieler geeignet, die sich für ein SG Live Casino entscheiden. In diesem Fall können Sie gemäß den Bedingungen des Bonusangebots bis zu 25% Cashback auf einen Gesamtbetrag von bis zu 200 Euro erhalten.`,
-        ],
+        categories: ["li1", "li2", "li3"],
+        additionalText: `p1`,
       },
     ],
     rightColumnContent: [
       {
-        heading: "Reload-Bonusse",
+        heading: "Réveillon Cabourg Casino Mises à jour saisonnières",
         text: [
-          `Wenn Sie während der Woche spielen und Einzahlungen tätigen, können Sie Reload-Boni erhalten. Das Casino schreibt Ihnen 50 Freispiele für jede Einzahlung in Höhe des Mindestbetrags gut.`,
-          `Es gibt auch einen Reload-Bonus, der an Wochenenden gültig ist. Je höher Ihre Einzahlung ist, desto großzügiger fällt der Bonus aus. Nach den Bedingungen dieser Aktion können Sie bis zu 700 Euro sowie 50 Freispiele erhalten.`,
-          `Jeder deutsche Nutzer von SG live Casino entscheidet selbst, welchen der vielen Boni er nutzen möchte.`,
+          `Tout au long de l'année, le casino Cabourg propose des mises à jour saisonnières liées aux fêtes et aux événements spéciaux. Ces mises à jour incluent souvent des tours gratuits supplémentaires, des offres de cashback et des bonus de dépôt. Gardez un œil sur le site Web du casino pour connaître les dernières offres saisonnières afin de tirer le meilleur parti de votre aventure de jeu.`,
+          // `p2`,
+          // `p3`,
         ],
         // additionalText: `p1`,
       },
-      {
-        heading: "Promo-Codes",
-        text: [
-          `Bei der Registrierung können Sie den SG Casino Code Promo wählen, um eine Willkommensprämie zu erhalten. Außerdem können Promo-Codes bei jeder weiteren Einzahlung aktiviert werden. Dies ist ein zusätzlicher Bonus zu Ihrem Hauptgeld auf dem Spielkonto.`,
-          `Mit Hilfe von Promo-Codes können Sie verschiedene Arten von Geschenken erhalten, darunter Spielgeld, Freispiele und persönliche Preise. Sobald Sie Ihr free credit Casino SG erhalten haben, müssen Sie die Umsatzbedingungen beachten.`,
-          // `p3`,
-        ],
-      },
+      // {
+      //   heading: "bonus4Heading",
+      //   text: [
+      //     `p1`,
+      //     // `p2`,
+      //     // `p3`,
+      //   ],
+      // },
     ],
   },
   faq: {
-    title: "FAQ",
+    title: "Le Casino de Cabourg FAQ",
   },
 };

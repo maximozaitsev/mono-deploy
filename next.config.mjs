@@ -23,7 +23,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "sgcasino-online.net",
+        hostname: "casino-cabourg.com",
       },
     ],
   },

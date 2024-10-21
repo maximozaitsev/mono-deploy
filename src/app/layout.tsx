@@ -1,13 +1,14 @@
 import { Metadata } from "next";
 
-const url = "https://sgcasino-online.net";
+const url = "https://casino-cabourg.com";
 const ogTitle =
-  "SG Casino Deutschland: Detaillierte Übersicht und Hauptmerkmale";
-const ogSiteName = "SG Casino";
+  "Le Casino de Cabourg France : Les meilleurs jeux et les bonus ";
+const ogSiteName = "Casino de Cabourg";
 const metaDescription =
-  "SG Casino Deutschland: Testbericht über den beliebten Glücksspielanbieter. Angebot an Spielen, Sportwetten, Bonusangeboten und einzigartigen Aktionen. Auswahl an Zahlungssystemen für Spieler aus Deutschland und weitere interessante Details";
+  "Le casino de Cabourg en France propose une large sélection de jeux, des machines à sous aux croupiers en direct. Profitez de bonus exclusifs dès aujourd'hui et améliorez votre expérience de jeu dans ce lieu emblématique. Jouez maintenant et gagnez gros !";
 
-const locale = "de";
+const locale = "FR";
+const language = "French";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <head>
+        <meta name="language" content={language} />
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
         <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />

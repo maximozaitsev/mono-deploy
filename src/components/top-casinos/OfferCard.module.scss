@@ -34,12 +34,20 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: $text-color-fourth;
+    // color: linear-gradient(180deg, #8fee00 0%, #00c725 100%);
 
-    // background: linear-gradient($text-color-secondary-gradient);
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
+    background: $text-color-secondary-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media (max-width: 768px) {
+      background: $text-color-fourth;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: $text-color-fourth;
+    }
   }
 
   p {

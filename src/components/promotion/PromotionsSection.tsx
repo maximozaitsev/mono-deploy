@@ -9,7 +9,6 @@ export default function PromotionsSection() {
         <h2 className="h2-heading white">{content.promotions.title}</h2>
         <div className={styles.promotionsContent}>
           <p className="paragraph-text">{content.promotions.text[0]}</p>
-          <p className="paragraph-text">{content.promotions.text[1]}</p>
         </div>
         <TwoColumns
           leftColumnContent={[
@@ -20,10 +19,6 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[0].text[0],
                 },
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[0].text[1],
-                },
               ],
             },
             {
@@ -33,29 +28,25 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[1].text[0],
                 },
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[1].text[1],
-                },
               ],
             },
-            {
-              heading: content.promotions.leftColumnContent[2].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[2].text[0],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[2].text[1],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[2].text[2],
-                },
-              ],
-            },
+            // {
+            //   heading: content.promotions.leftColumnContent[2].heading,
+            //   items: [
+            //     {
+            //       type: "text",
+            //       content: content.promotions.leftColumnContent[2].text[0],
+            //     },
+            //     {
+            //       type: "text",
+            //       content: content.promotions.leftColumnContent[2].text[1],
+            //     },
+            //     {
+            //       type: "text",
+            //       content: content.promotions.leftColumnContent[2].text[2],
+            //     },
+            //   ],
+            // },
           ]}
           rightColumnContent={[
             {
@@ -65,29 +56,21 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.rightColumnContent[0].text[0],
                 },
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[0].text[1],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[0].text[2],
-                },
               ],
             },
-            {
-              heading: content.promotions.rightColumnContent[1].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[1].text[0],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[1].text[1],
-                },
-              ],
-            },
+            // {
+            //   heading: content.promotions.rightColumnContent[1].heading,
+            //   items: [
+            //     {
+            //       type: "text",
+            //       content: content.promotions.rightColumnContent[1].text[0],
+            //     },
+            //     {
+            //       type: "text",
+            //       content: content.promotions.rightColumnContent[1].text[1],
+            //     },
+            //   ],
+            // },
           ]}
         />
       </div>

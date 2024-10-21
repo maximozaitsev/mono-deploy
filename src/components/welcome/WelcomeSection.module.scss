@@ -2,12 +2,7 @@
 @import "../../styles/typography.scss";
 
 .welcomeSection {
-  background: radial-gradient(
-      59.26% 59.26% at 50% 50%,
-      #3c2a7e 0%,
-      #0f0c29 100%
-    ),
-    #302b56;
+  background: $color-background-secondary;
   margin-bottom: 140px;
   width: 100%;
 
@@ -22,8 +17,8 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-size: 53% auto;
-  background-position: right 33px top 0px;
+  background-size: 45% auto;
+  background-position: right 60px top 0px;
   max-width: 90rem;
   margin: 0 auto;
   height: 578px;
@@ -121,7 +116,8 @@
   font-style: normal;
   font-weight: 900;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: normal;
+  line-height: 120%;
+  letter-spacing: 1.92px;
   text-transform: uppercase;
   color: $text-color-secondary;
 
@@ -148,6 +144,7 @@
     font-family: $font-secondary;
     font-weight: 900;
     text-transform: uppercase;
+    line-height: 120%;
   }
 
   @media (max-width: 380px) {

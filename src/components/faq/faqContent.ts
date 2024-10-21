@@ -1,14 +1,18 @@
 export const faqs = [
   {
-    question: "Unter welcher Lizenz arbeitet das Casino?",
-    answer: "Dieses Casino verfügt über eine gültige Lizenz aus Curacao.",
+    question: "Y a-t-il des frais de dépôt au Casino de Cabourg a fuir ?",
+    answer:
+      "Non, le Casino de Cabourg ne facture pas de frais pour les dépôts, mais vérifiez auprès de votre fournisseur de paiement pour d'éventuels frais externes.",
   },
   {
-    question: "Kann ich mit einem mobilen Gerät spielen?",
-    answer: "Ja. Verwenden Sie die mobile Version der Website.",
+    question: "Puis-je jouer aux jeux du Casino a Cabourg gratuitement ?",
+    answer:
+      "Oui, de nombreux titres du Casino Cabourg proposent des versions de démonstration qui vous permettent de jouer gratuitement avant de miser de l'argent réel.",
   },
   {
-    question: "Wie hoch ist die Mindesteinlage für den Service?",
-    answer: "Sie können eine Spieleinlage von 10 Euro oder mehr machen.",
+    question:
+      "Y a-t-il des jeux de Cabourg Casino poker et de croupiers en direct ?",
+    answer:
+      "Oui, Cabourg Casino propose une variété de jeux avec croupier en direct, y compris la roulette, le blackjack et le poker.",
   },
 ];
