@@ -69,7 +69,7 @@
           mix-blend-mode: normal;
         }
 
-        @media (max-width: 1180px) {
+        @media (max-width: 1080px) {
           height: 22px !important;
           width: auto;
         }
@@ -121,7 +121,7 @@
     }
   }
 
-  @media (max-width: 1180px) {
+  @media (max-width: 1080px) {
     .row {
       &:first-child {
         .logoWrapper {
