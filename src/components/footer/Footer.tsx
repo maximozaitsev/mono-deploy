@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../header/Logo";
+import LogoFooter from "../footer/LogoFooter";
 import { content } from "@/content/content";
 import styles from "./Footer.module.scss";
 
@@ -80,7 +80,7 @@ const Footer = () => {
         <div className={styles.partners}>
           <div className={styles.row}>
             <div className={styles.logoWrapper}>
-              <Logo onClick={scrollToWelcomeSection} />
+              <LogoFooter onClick={scrollToWelcomeSection} />
             </div>
 
             {partnerLogos.slice(0, 7).map((logo, index) => (

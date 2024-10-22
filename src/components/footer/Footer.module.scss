@@ -32,18 +32,20 @@
           margin-bottom: 0;
 
           img {
-            margin-top: 16px;
-            margin-left: -16px;
+            margin-top: 11px;
+            margin-left: -4px;
+            scale: 1.8;
             position: absolute;
             left: 160px;
             cursor: pointer;
 
-            @media (max-width: 1320px) {
-              left: 50px;
+            @media (max-width: 1350px) {
+              left: 70px;
             }
 
             @media (max-width: 768px) {
-              margin-top: 14px;
+              margin-top: 3px;
+              margin-bottom: -10px;
               margin-left: 0;
             }
           }
@@ -105,7 +107,7 @@
     @media (max-width: 768px) {
       font-size: 18px;
       line-height: 24px;
-      margin-top: 28px;
+      margin-top: 34px;
 
       span {
         font-size: 18px !important;
@@ -121,7 +123,7 @@
     }
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 1170px) {
     .row {
       &:first-child {
         .logoWrapper {

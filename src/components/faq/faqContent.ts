@@ -1,18 +1,20 @@
 export const faqs = [
   {
-    question: "Y a-t-il des frais de dépôt au Casino de Cabourg a fuir ?",
-    answer:
-      "Non, le Casino de Cabourg ne facture pas de frais pour les dépôts, mais vérifiez auprès de votre fournisseur de paiement pour d'éventuels frais externes.",
+    question: "Le Casino de Royat dispose-t-il d'une version en ligne ?",
+    answer: "Pas pour le moment. Le casino est un établissement terrestre.",
   },
   {
-    question: "Puis-je jouer aux jeux du Casino a Cabourg gratuitement ?",
+    question: "Comment puis-je réserver une table au restaurant ?",
     answer:
-      "Oui, de nombreux titres du Casino Cabourg proposent des versions de démonstration qui vous permettent de jouer gratuitement avant de miser de l'argent réel.",
+      "L'inscription sur le site du casino permet de réserver des tables et des tables de jeux.",
   },
   {
-    question:
-      "Y a-t-il des jeux de Cabourg Casino poker et de croupiers en direct ?",
+    question: "Quels sont les types de jeux proposés par le casino ?",
     answer:
-      "Oui, Cabourg Casino propose une variété de jeux avec croupier en direct, y compris la roulette, le blackjack et le poker.",
+      "Le casino propose des machines à sous, de la roulette, du blackjack et du poker.",
+  },
+  {
+    question: "Quels sont les moyens de paiement acceptés par le casino ?",
+    answer: "Le casino accepte les espèces et les cartes de crédit.",
   },
 ];

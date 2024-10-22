@@ -9,7 +9,7 @@ export default function AdvantageSection() {
     <section className={`${styles.advantageSection} section`}>
       <div className="container">
         <h2 className="h2-heading">{subTitle}</h2>
-        <p className="paragraph-text ">{content.advantages.text[0]}</p>
+        <P>{content.advantages.text[0]}</P>
         <div className={styles.columns}>
           <div className={styles.column}>
             <h4 className="h4-heading">{content.advantages.advantagesTitle}</h4>
@@ -30,7 +30,6 @@ export default function AdvantageSection() {
             </ul>
           </div>
         </div>
-        <P>{content.advantages.text[1]}</P>
       </div>
     </section>
   );

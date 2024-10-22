@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "https://casino-cabourg.com";
-const ogTitle =
-  "Le Casino de Cabourg France : Les meilleurs jeux et les bonus ";
-const ogSiteName = "Casino de Cabourg";
+const url = "https://casino-royat.com";
+const ogTitle = "Casino de Royat : Casino français avec histoire et tradition";
+const ogSiteName = "Casino de Royat";
 const metaDescription =
-  "Le casino de Cabourg en France propose une large sélection de jeux, des machines à sous aux croupiers en direct. Profitez de bonus exclusifs dès aujourd'hui et améliorez votre expérience de jeu dans ce lieu emblématique. Jouez maintenant et gagnez gros !";
+  "Le Casino de Royat est un casino terrestre prestigieux qui propose une riche sélection de jeux. Réservez une table et découvrez une atmosphère de luxe et de jeu. Remportez des gains lucratifs à une variété de jeux.";
 
 const locale = "FR";
 const language = "French";

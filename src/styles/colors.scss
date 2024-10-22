@@ -1,28 +1,19 @@
 // colors
-$color-background: #120100;
-$color-background-secondary: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    #120100 100%
-  ),
-  #8d0600;
-$color-background-third: #6a2a27;
-$color-background-fourth: #ac0700;
-$color-background-header: #790500;
-$color-background-footer: #790500;
-$color-background-providers-blocks: #6a2a27;
-$color-button-large: linear-gradient(180deg, #8fee00 0%, #00c725 100%);
-$color-button-small: linear-gradient(180deg, #00a6ff 0%, #2200b9 100%);
+$color-background: #141414;
+$color-background-secondary: #141414;
+$color-background-third: #fff;
+$color-background-fourth: #343435;
+$color-background-header: #141414;
+$color-background-footer: #cb2b2b;
+$color-background-providers-blocks: #343435;
+$color-button-large: #ef2b2b;
+$color-button-small: #2f00ff;
 $color-border-primary: #484646;
 
 // text color
 $text-color-primary: #fff;
-$text-color-primary-gradient-hover: #f50;
-$text-color-secondary: #fff;
-$text-color-secondary-gradient: linear-gradient(
-  180deg,
-  #8fee00 0%,
-  #00c725 100%
-);
+$text-color-primary-gradient-hover: #ef2b2b;
+$text-color-secondary: #fdde2c;
+// $text-color-secondary-gradient: (90deg, #932093 0%, #730fee 100%);
 $text-color-third: #00041a;
-$text-color-fourth: #f50;
+$text-color-fourth: #ef2b2b;

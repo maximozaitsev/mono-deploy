@@ -24,12 +24,13 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[1].text[0],
+                  content: content.gamesToPlay.leftColumnContent[1].text,
                 },
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[1].text[1],
-                },
+                // {
+                //   type: "list",
+                //   content:
+                //     content.gamesToPlay.leftColumnContent[1].categories || [],
+                // },
                 // {
                 //   type: "additionalText",
                 //   content:
@@ -45,17 +46,19 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[0].text[0],
+                  content: content.gamesToPlay.gamesRightColumn[0].text,
                 },
                 // {
                 //   type: "list",
                 //   content:
                 //     content.gamesToPlay.gamesRightColumn[0].categories || [],
                 // },
-                {
-                  type: "additionalText",
-                  content: content.gamesToPlay.gamesRightColumn[0].text[1],
-                },
+                // {
+                //   type: "additionalText",
+                //   content:
+                //     content.gamesToPlay.gamesRightColumn[0].additionalText ||
+                //     [],
+                // },
               ],
             },
             {
@@ -63,11 +66,7 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[1].text[0],
-                },
-                {
-                  type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[1].text[1],
+                  content: content.gamesToPlay.gamesRightColumn[1].text,
                 },
               ],
             },

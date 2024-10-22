@@ -31,7 +31,7 @@
 
     .primary {
       height: 82px;
-      padding: 19px 48px;
+      padding: 20px 48px;
     }
   }
 
@@ -83,8 +83,8 @@
 
     img {
       position: absolute;
-      left: -38px;
-      top: 12px;
+      left: -155px;
+      top: 6px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -104,7 +104,7 @@
 
       .app-image {
         height: 405px;
-        width: 365px;
+        width: 348px;
         object-fit: contain;
       }
     }
@@ -139,7 +139,7 @@
 
         .app-image {
           /* margin-left: -35px; */
-          margin-bottom: 2px;
+          // margin-bottom: 10px;
           padding-bottom: 20px;
         }
 

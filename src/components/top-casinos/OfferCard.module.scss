@@ -34,20 +34,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    // color: linear-gradient(180deg, #8fee00 0%, #00c725 100%);
+    color: $text-color-fourth;
 
-    background: $text-color-secondary-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    @media (max-width: 768px) {
-      background: $text-color-fourth;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: $text-color-fourth;
-    }
+    // background: linear-gradient($text-color-secondary-gradient);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   p {
@@ -72,6 +64,7 @@
 
   @media (max-width: 768px) {
     width: 240px;
+    height: 264px;
     padding: 16px;
 
     img {

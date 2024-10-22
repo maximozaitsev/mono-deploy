@@ -2,56 +2,45 @@
 @import "../../styles/typography.scss";
 
 .welcomeSection {
-  background: $color-background-secondary;
-  margin-bottom: 140px;
-  width: 100%;
-
-  @media (max-width: 768px) {
-    margin-bottom: 62px;
-  }
-}
-
-.welcomeBg {
   display: flex;
   justify-content: center;
-  width: 100%;
+  background: $color-background;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-size: 45% auto;
-  background-position: right 60px top 0px;
+  background-size: 48% auto;
+  background-position: right 100px top 0px;
+  width: 100%;
+  height: 540px;
   max-width: 90rem;
-  margin: 0 auto;
-  height: 578px;
+  margin: 0 auto 140px auto;
 
   & :global(.container) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
   }
-
   @media (max-width: 1100px) {
     background-position: right 20px top 0;
   }
 
   @media (max-width: 1020px) {
-    background-position: right 0px top 80px;
+    background-position: right 20px top 80px;
   }
 
   @media (max-width: 768px) {
-    padding-top: 22.35rem;
+    padding-top: 21.35rem;
     height: auto;
     justify-content: flex-end;
-    background-size: auto 65%;
+    background-size: auto 60%;
     background-position: top center;
-    margin: 0 auto 24px auto;
+    margin: 0 auto 84px auto;
   }
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
+    background-size: auto 61%;
   }
 
   @media (max-width: 420px) {
+    margin: 0 auto 72px auto;
     background-size: auto 50%;
     padding-top: 14.35rem;
   }
@@ -80,7 +69,7 @@
   gap: 48px;
   width: 500px;
   max-width: 50%;
-  margin-left: -20px;
+  // margin-left: -20px;
 
   .bonusText {
     display: none;
@@ -116,8 +105,7 @@
   font-style: normal;
   font-weight: 900;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: 120%;
-  letter-spacing: 1.92px;
+  line-height: 72px;
   text-transform: uppercase;
   color: $text-color-secondary;
 
@@ -144,7 +132,6 @@
     font-family: $font-secondary;
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 120%;
   }
 
   @media (max-width: 380px) {

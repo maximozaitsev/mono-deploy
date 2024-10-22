@@ -12,7 +12,7 @@
     width: 100%;
 
     .faq-question {
-      color: $text-color-primary;
+      color: $text-color-third;
       font-family: $font-secondary;
       background: $color-background-third;
       font-size: 24px;
@@ -23,7 +23,6 @@
       cursor: pointer;
       display: flex;
       align-items: center;
-      line-height: 120%;
 
       transition: background-color 0.3s ease;
 
@@ -48,10 +47,9 @@
       max-height: 0;
       overflow: hidden;
       padding: 0 10px;
-      line-height: 120%;
 
       p {
-        margin: 10px 0 5px 0;
+        margin: 15px 0 5px 0;
       }
 
       &.active {

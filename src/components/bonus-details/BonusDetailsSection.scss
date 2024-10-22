@@ -52,7 +52,7 @@
 }
 
 .cell {
-  color: $text-color-primary;
+  color: $text-color-third;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
@@ -123,7 +123,7 @@
   background: $color-background;
   display: grid;
   grid-template-columns: 18% 82%;
-  color: $text-color-primary;
+  color: $text-color-third;
   font-family: $font-primary;
   font-size: 20px;
   font-style: normal;
@@ -165,10 +165,11 @@
 .accordion-title,
 .accordion-value {
   background: $color-background;
+  color: $text-color-primary;
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   &::after {
     content: "";
@@ -177,7 +178,7 @@
     top: 15%;
     height: 70%;
     width: 1px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   &:last-child::after {
