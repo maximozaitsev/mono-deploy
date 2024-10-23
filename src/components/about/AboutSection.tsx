@@ -27,7 +27,7 @@ export default function AboutSection() {
             )}
           </div>
           <div className="about-image">
-            <Image src={aboutImage} alt="About Image" />
+            <Image src={aboutImage} alt="About Image" quality={100} />
           </div>
         </div>
         <div className="about-text">

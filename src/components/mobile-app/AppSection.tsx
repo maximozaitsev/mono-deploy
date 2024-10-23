@@ -28,6 +28,7 @@ export default function AppSection() {
                   alt="Download on the Google Play"
                   width={175}
                   height={53}
+                  quality={100}
                 />
               </button>
               <button
@@ -39,12 +40,18 @@ export default function AppSection() {
                   alt="Download on the App Store"
                   width={175}
                   height={53}
+                  quality={100}
                 />
               </button>
             </div>
           </div>
           <div className={styles.imageBlock}>
-            <Image src={AppImage} alt="App preview" className={styles.image} />
+            <Image
+              src={AppImage}
+              alt="App preview"
+              className={styles.image}
+              quality={100}
+            />
           </div>
         </div>
         <TwoColumns
