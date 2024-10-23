@@ -11,16 +11,22 @@
 
   img {
     margin-top: 3px;
-    margin-left: 51px;
-    scale: 1.8;
+    margin-left: -2px;
+    scale: 1.15;
   }
 
-  @media (max-width: 1050px) {
+  @media (max-width: 980px) {
     padding: 24px 40px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     height: 96px;
+
+    img {
+      margin-top: -6px;
+      margin-left: -10px;
+      scale: 1;
+    }
   }
 
   @media (max-width: 380px) {
@@ -67,10 +73,10 @@
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
-    top: 95px;
+    top: 96px;
     right: -100%;
     width: 100%;
     height: 100%;
@@ -94,7 +100,7 @@
   }
 
   @media (max-width: 380px) {
-    top: 63px;
+    top: 64px;
   }
 }
 
@@ -152,7 +158,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .burger-menu {
     display: block;
   }

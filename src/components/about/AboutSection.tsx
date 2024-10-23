@@ -10,17 +10,17 @@ export default function AboutSection() {
   return (
     <section className="about-section section">
       <div className="container">
-        <h1 className="h2-heading white">{content.about.title}</h1>
+        <h1 className="h2-heading black">{content.about.title}</h1>
         <div className="about-content">
-          <div className="about-text paragraph-text">
-            {/* <ul>
+          <div className="about-text paragraph-text black">
+            <ul>
               {content.about.intro.map((item: string, index: number) => (
                 <li key={index}>{item}</li>
               ))}
-            </ul> */}
+            </ul>
             {content.about.description.map(
               (paragraph: string, index: number) => (
-                <p key={index} className="paragraph-text">
+                <p key={index} className="paragraph-text black">
                   {paragraph}
                 </p>
               )
@@ -31,15 +31,15 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="about-text">
-          <h3 id="sign-in" className="h3-heading">
+          <h3 id="sign-in" className="h3-heading black">
             {content.about.signIn.title}
           </h3>
-          <P>{content.about.signIn.text[0]}</P>
-          <P>{content.about.signIn.text[1]}</P>
-          <List items={content.about.signIn.list} ordered />
-          <P>{content.about.signIn.text[2]}</P>
-          {/* <h4 className="h4-heading white">{content.about.signIn.text[2]}</h4>
-          <List items={content.about.signIn.list2} /> */}
+          <p className="paragraph-text black">{content.about.signIn.text[0]}</p>
+          {/* <List items={content.about.signIn.list} ordered /> */}
+          <p className="paragraph-text black">{content.about.signIn.text[1]}</p>
+
+          {/* <List items={content.about.signIn.list2} /> */}
+          {/* <P>{content.about.signIn.text[3]}</P> */}
         </div>
         <TwoColumns
           leftColumnContent={[
@@ -50,14 +50,14 @@ export default function AboutSection() {
                   type: "text",
                   content: content.about.depositMethods.text[0],
                 },
-                {
-                  type: "list",
-                  content: content.about.depositMethods.list || [],
-                },
-                {
-                  type: "additionalText",
-                  content: content.about.depositMethods.additionalText || [],
-                },
+                // {
+                //   type: "list",
+                //   content: content.about.depositMethods.list || [],
+                // },
+                // {
+                //   type: "additionalText",
+                //   content: content.about.depositMethods.additionalText || [],
+                // },
               ],
             },
           ]}
@@ -68,14 +68,6 @@ export default function AboutSection() {
                 {
                   type: "text",
                   content: content.about.withdrawalMethods.text[0],
-                },
-                {
-                  type: "list",
-                  content: content.about.withdrawalMethods.list || [],
-                },
-                {
-                  type: "text",
-                  content: content.about.withdrawalMethods.text[1],
                 },
               ],
             },

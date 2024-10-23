@@ -23,13 +23,14 @@ export default function AdvantageSection() {
             <h4 className="h4-heading">
               {content.advantages.disadvantagesTitle}
             </h4>
-            <ul className="paragraph-text ">
+            <ul className="paragraph-text">
               {disadvantages.map((disadvantage, index) => (
                 <li key={index}>{disadvantage}</li>
               ))}
             </ul>
           </div>
         </div>
+        <P>{content.advantages.text[1]}</P>
       </div>
     </section>
   );

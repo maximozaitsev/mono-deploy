@@ -39,8 +39,8 @@
 
     .image {
       position: absolute;
-      top: -61px;
-      right: -56px;
+      top: -90px;
+      right: -60px;
       overflow: hidden;
       height: auto;
     }
@@ -49,8 +49,8 @@
   @media (max-width: 1320px) {
     .imageBlock {
       .image {
-        right: 14px;
-        max-width: 85%;
+        right: -23px;
+        max-width: 116%;
       }
     }
   }
@@ -105,7 +105,7 @@
 
     .imageBlock {
       img {
-        top: -9px !important;
+        top: -102px !important;
       }
 
       position: absolute;

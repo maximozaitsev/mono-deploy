@@ -8,12 +8,15 @@ export default function LicensesSection() {
   return (
     <section className={`${styles.licensesSection} section`}>
       <div className="container">
-        <h2 className="h3-heading">{content.licenses.title}</h2>
+        {/* <h2 className="h3-heading">{content.licenses.title}</h2>
         <div className={styles.licensesContent}>
           <div className={styles.leftContent}>
             <p className="paragraph-text">{content.licenses.text[0]}</p>
           </div>
-        </div>
+          <div className={styles.rightImage}>
+            <Image src={licenceImage} alt="Licenses" width={240} height={240} />
+          </div>
+        </div> */}
         <TwoColumns
           leftColumnContent={[
             {
@@ -34,14 +37,6 @@ export default function LicensesSection() {
                   type: "text",
                   content: content.licenses.softwareText[0],
                 },
-                // {
-                //   type: "list",
-                //   content: content.licenses.list,
-                // },
-                // {
-                //   type: "additionalText",
-                //   content: content.licenses.softwareText[1] || [],
-                // },
               ],
             },
           ]}

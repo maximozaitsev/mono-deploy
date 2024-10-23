@@ -33,19 +33,18 @@
 
           img {
             margin-top: 11px;
-            margin-left: -4px;
-            scale: 1.8;
+            margin-left: 22px;
+            scale: 0.88;
             position: absolute;
             left: 160px;
             cursor: pointer;
 
-            @media (max-width: 1350px) {
-              left: 70px;
+            @media (max-width: 1320px) {
+              left: 50px;
             }
 
             @media (max-width: 768px) {
-              margin-top: 3px;
-              margin-bottom: -10px;
+              margin-top: 14px;
               margin-left: 0;
             }
           }
@@ -61,7 +60,11 @@
       }
 
       &:nth-child(2) {
-        gap: 20px;
+        gap: 8px;
+
+        @media (max-width: 768px) {
+          gap: 4px !important;
+        }
       }
 
       .partnerLogo {
@@ -89,7 +92,7 @@
   }
 
   .copyright {
-    color: rgba(255, 255, 255, 0.34);
+    color: rgba(0, 0, 0, 0.34);
     font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
@@ -123,7 +126,7 @@
     }
   }
 
-  @media (max-width: 1170px) {
+  @media (max-width: 1080px) {
     .row {
       &:first-child {
         .logoWrapper {

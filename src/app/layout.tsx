@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "https://casino-royat.com";
-const ogTitle = "Casino de Royat : Casino français avec histoire et tradition";
-const ogSiteName = "Casino de Royat";
+const url = "https://casino-evian.net";
+const ogTitle =
+  "Casino Evian, France : Une destination de choix pour les jeux ";
+const ogSiteName = "Casino Evian, France";
 const metaDescription =
-  "Le Casino de Royat est un casino terrestre prestigieux qui propose une riche sélection de jeux. Réservez une table et découvrez une atmosphère de luxe et de jeu. Remportez des gains lucratifs à une variété de jeux.";
+  "Le Casino d'Evian, en France, offre une expérience de jeu de classe mondiale avec une vue imprenable sur le lac. Profitez de jeux variés, d'une cuisine raffinée et de promotions exclusives. Visitez-le maintenant pour une expérience de casino inoubliable !";
 
 const locale = "FR";
 const language = "French";

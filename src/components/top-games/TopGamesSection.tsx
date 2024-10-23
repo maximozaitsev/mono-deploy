@@ -32,6 +32,7 @@ export default function TopGamesSection({ games }: TopGamesProps) {
               className={styles.gameImage}
               width={300}
               height={200}
+              quality={100}
             />
             <div
               className={`${styles.overlay} ${

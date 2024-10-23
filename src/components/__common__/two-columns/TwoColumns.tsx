@@ -28,7 +28,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
       switch (item.type) {
         case "text":
           return (
-            <p key={index} className="paragraph-text">
+            <p key={index} className="paragraph-text black">
               {item.content as string}
             </p>
           );
@@ -36,7 +36,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
           return <List key={index} items={item.content as string[]} />;
         case "additionalText":
           return (
-            <p key={index} className="paragraph-text">
+            <p key={index} className="paragraph-text black">
               {item.content as string}
             </p>
           );
@@ -51,7 +51,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
       <div className={styles.column}>
         {leftColumnContent.map((content, index) => (
           <div key={index}>
-            <h3 className="h3-heading">{content.heading}</h3>
+            <h3 className="h3-heading black">{content.heading}</h3>
             {renderContent(content.items)}
           </div>
         ))}
@@ -60,7 +60,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
       <div className={styles.column}>
         {rightColumnContent.map((content, index) => (
           <div key={index}>
-            <h3 className="h3-heading">{content.heading}</h3>
+            <h3 className="h3-heading black">{content.heading}</h3>
             {renderContent(content.items)}
           </div>
         ))}

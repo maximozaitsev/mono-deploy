@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-const LogoFooter = ({ onClick }: { onClick: () => void }) => {
+const Logo = ({ onClick }: { onClick: () => void }) => {
   return (
     <div onClick={onClick} style={{ cursor: "pointer" }}>
       <Image
         src="/logo-footer.svg"
-        alt="Footer Logo"
+        alt="Logo"
         width={128}
         height={48}
         priority
@@ -15,4 +15,4 @@ const LogoFooter = ({ onClick }: { onClick: () => void }) => {
   );
 };
 
-export default LogoFooter;
+export default Logo;

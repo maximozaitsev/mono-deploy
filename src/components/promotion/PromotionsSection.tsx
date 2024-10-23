@@ -6,8 +6,8 @@ export default function PromotionsSection() {
   return (
     <section className={`${styles.promotionsSection} section`}>
       <div className="container">
-        <h2 className="h2-heading white">{content.promotions.title}</h2>
-        <p className="paragraph-text">{content.promotions.text[0]}</p>
+        <h2 className="h2-heading black">{content.promotions.title}</h2>
+        <p className="paragraph-text black">{content.promotions.text[0]}</p>
         <TwoColumns
           leftColumnContent={[
             {

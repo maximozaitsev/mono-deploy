@@ -64,8 +64,8 @@ body {
   overflow-wrap: break-word;
   word-break: break-word;
 
-  &.white {
-    color: $text-color-primary;
+  &.black {
+    color: $text-color-third;
   }
 
   @media (max-width: 768px) {
@@ -90,6 +90,10 @@ body {
   overflow-wrap: break-word;
   word-break: break-word;
 
+  &.black {
+    color: $text-color-third;
+  }
+
   @media (max-width: 768px) {
     font-size: 24px;
     font-weight: 900;
@@ -111,6 +115,10 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
+
+  &.black {
+    color: $text-color-third;
+  }
 
   @media (max-width: 768px) {
     font-size: 18px;
@@ -149,7 +157,6 @@ body {
 
   p {
     font-family: $font-primary;
-    color: $text-color-primary;
     font-size: 28px;
     font-weight: 500;
   }

@@ -27,11 +27,10 @@
   .app-info-block {
     flex: 1;
     align-items: flex-start;
-    color: $text-color-primary;
+    color: $text-color-third;
 
     .primary {
       height: 82px;
-      padding: 20px 48px;
     }
   }
 
@@ -83,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -155px;
-      top: 6px;
+      left: -115px;
+      top: -4px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -139,7 +138,7 @@
 
         .app-image {
           /* margin-left: -35px; */
-          // margin-bottom: 10px;
+          margin-bottom: 5px;
           padding-bottom: 20px;
         }
 
