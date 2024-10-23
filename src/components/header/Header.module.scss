@@ -141,6 +141,10 @@
     &:after {
       top: 10px;
     }
+
+    @media (max-width: 380px) {
+      top: 25px;
+    }
   }
 
   &.open .burger-lines {
