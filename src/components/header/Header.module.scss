@@ -10,9 +10,13 @@
   height: 96px;
 
   img {
-    margin-top: 3px;
-    margin-left: -2px;
-    scale: 1.15;
+    margin-top: 4px;
+    margin-left: 9px;
+    scale: 1.14;
+
+    @media (max-width: 768px) {
+      margin-top: -5px;
+    }
   }
 
   @media (max-width: 980px) {
@@ -21,12 +25,6 @@
 
   @media (max-width: 768px) {
     height: 96px;
-
-    img {
-      margin-top: -6px;
-      margin-left: -10px;
-      scale: 1;
-    }
   }
 
   @media (max-width: 380px) {
@@ -140,10 +138,6 @@
 
     &:after {
       top: 10px;
-    }
-
-    @media (max-width: 380px) {
-      top: 25px;
     }
   }
 

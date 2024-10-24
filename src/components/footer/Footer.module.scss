@@ -32,9 +32,9 @@
           margin-bottom: 0;
 
           img {
-            margin-top: 11px;
+            margin-top: 16px;
             margin-left: 22px;
-            scale: 0.88;
+            scale: 1.22;
             position: absolute;
             left: 160px;
             cursor: pointer;
@@ -44,8 +44,10 @@
             }
 
             @media (max-width: 768px) {
-              margin-top: 14px;
+              margin-top: 6px;
+              margin-bottom: -5px;
               margin-left: 0;
+              scale: 1.14;
             }
           }
         }
@@ -60,7 +62,7 @@
       }
 
       &:nth-child(2) {
-        gap: 8px;
+        gap: 7px;
 
         @media (max-width: 768px) {
           gap: 4px !important;
@@ -92,7 +94,7 @@
   }
 
   .copyright {
-    color: rgba(0, 0, 0, 0.34);
+    color: rgba(255, 255, 255, 0.34);
     font-family: $font-primary;
     font-size: 20px;
     font-style: normal;

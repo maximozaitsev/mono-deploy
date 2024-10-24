@@ -27,7 +27,7 @@
   .app-info-block {
     flex: 1;
     align-items: flex-start;
-    color: $text-color-third;
+    color: $text-color-primary;
 
     .primary {
       height: 82px;
@@ -82,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -115px;
-      top: -4px;
+      left: -156px;
+      top: -42px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -138,7 +138,7 @@
 
         .app-image {
           /* margin-left: -35px; */
-          margin-bottom: 5px;
+          margin-bottom: 2px;
           padding-bottom: 20px;
         }
 

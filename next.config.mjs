@@ -23,7 +23,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "casino-evian.net",
+        hostname: "billy-barker-casino.com",
       },
     ],
   },

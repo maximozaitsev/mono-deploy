@@ -16,7 +16,7 @@ export default function MobileSection() {
     <section className="mobile-section">
       <div className="container mobile-content">
         <div className="advantages-block">
-          <h3 className="h3-heading black">Advantages</h3>
+          <h3 className="h3-heading">Advantages</h3>
           <ul className="advantages-list">
             {content.advantages.advantages.map((advantage, index) => (
               <li key={index}>
@@ -35,14 +35,13 @@ export default function MobileSection() {
         </div>
 
         <div className="app-info-block">
-          <h3 className="h3-heading black">{content.projectName} App</h3>
+          <h3 className="h3-heading">{content.projectName} App</h3>
           <div className="mobile-image show-1080">
             <Image
               src={mobileAppImage}
               alt="Mobile App"
               className="app-image"
               priority
-              quality={100}
             />
           </div>
           <div className="app-buttons">

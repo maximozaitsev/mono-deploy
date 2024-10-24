@@ -1,28 +1,29 @@
 export const faqs = [
   {
-    question: "Quel est l'âge minimum pour entrer à l'Adresse Casino Evian ?",
+    question: "What are the operating hours of Billy Barker Casino?",
     answer:
-      "Les joueurs doivent être âgés d'au moins 18 ans et fournir une pièce d'identité valide délivrée par le gouvernement pour entrer dans les zones de jeu.",
-  },
-  {
-    question: "Existe-t-il un Casino Evian Tenue Vestimentaire ?",
-    answer:
-      "Oui, le Restaurant du Casino Evian exige une tenue décontractée et les joueurs doivent éviter de porter des vêtements de sport ou de plage dans les salles de jeu.",
-  },
-  {
-    question: "Puis-je réserver le Casino Evian Diner Spectacle ?",
-    answer:
-      "Oui, les réservations au Casino Evian restaurant peuvent être effectuées directement sur le site Internet du casino ou en appelant le service clientèle du casino.",
-  },
-  {
-    question: "Y a-t-il des Spectacle Casino Evian ?",
-    answer:
-      "Oui, le Casino Evian spectacle accueille régulièrement des tournois de poker Texas Hold'em et Omaha avec différents niveaux de buy-in.",
+      "Billy Barker Casino operates 24/7, ensuring guests can enjoy gaming at any time.",
   },
   {
     question:
-      "Quelle est la mise minimum pour les jeux de table selon le Email Casino Evian ?",
+      "How many pokies are at Billy Barker hotel and Casino Quesnel BC?",
     answer:
-      "Les mises minimales pour les jeux de table, tels que le blackjack ou la roulette, commencent généralement à 5 €, selon le jeu.",
+      "The casino features approximately 140 pokies, offering a variety of themes and progressive jackpots.",
+  },
+  {
+    question: "Is there a buffet at Billy Barker Casino Hotel Quesnel BC?",
+    answer:
+      "Yes, a Sunday breakfast buffet is available from 8 AM to 1 PM, featuring a variety of dishes.",
+  },
+  {
+    question: "Are dining options and Billy Barker Casino Photos available?",
+    answer:
+      "Billy Barker Casino Restaurant offers breakfast, lunch, and dinner, with a menu that caters to diverse tastes.",
+  },
+  {
+    question:
+      "Can I book events or private functions at Billy Barker Casino Hotel Restaurant?",
+    answer:
+      "Yes, the casino offers a 100-seat banquet hall for private events and conventions.",
   },
 ];

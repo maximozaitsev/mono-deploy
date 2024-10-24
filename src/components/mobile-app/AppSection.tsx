@@ -16,8 +16,8 @@ export default function AppSection() {
       <div className="container">
         <div className={styles.topRow}>
           <div className={styles.textBlock}>
-            <h3 className="h3-heading black">{content.app.title}</h3>
-            <p className="paragraph-text black">{content.app.text[0]}</p>
+            <h3 className="h3-heading">{content.app.title}</h3>
+            <p className="paragraph-text">{content.app.text[0]}</p>
             <div className={styles.buttons}>
               <button
                 className="google-play"

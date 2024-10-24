@@ -39,18 +39,23 @@
 
     .image {
       position: absolute;
-      top: -90px;
-      right: -60px;
+      top: -160px;
+      right: -50px;
       overflow: hidden;
       height: auto;
+
+      @media (max-width: 1080px) {
+        top: -80px;
+      }
     }
   }
 
   @media (max-width: 1320px) {
     .imageBlock {
       .image {
-        right: -23px;
-        max-width: 116%;
+        right: -12px;
+        max-width: 115%;
+        transform: rotate(4deg);
       }
     }
   }
@@ -105,7 +110,7 @@
 
     .imageBlock {
       img {
-        top: -102px !important;
+        top: -105px !important;
       }
 
       position: absolute;

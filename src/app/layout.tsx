@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "https://casino-evian.net";
+const url = "https://billy-barker-casino.com";
 const ogTitle =
-  "Casino Evian, France : Une destination de choix pour les jeux ";
-const ogSiteName = "Casino Evian, France";
+  "Billy Barker Casino in Canada: Games, Rewards, and Entertainment";
+const ogSiteName = "Billy Barker Casino";
 const metaDescription =
-  "Le Casino d'Evian, en France, offre une expérience de jeu de classe mondiale avec une vue imprenable sur le lac. Profitez de jeux variés, d'une cuisine raffinée et de promotions exclusives. Visitez-le maintenant pour une expérience de casino inoubliable !";
+  "Billy Barker Casino in Canada offers 140 pokies and progressive jackpots. Enjoy on-site dining and the Encore Rewards Program. Discover more about the games and promotions today! Visit to start your winning experience.";
 
-const locale = "fr-FR";
-const language = "French";
+const locale = "en-CA";
+const language = "English";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/icons/ico-192.png",
+    icon: "/icons/xxxhdpi.png",
   },
 };
 
@@ -44,39 +44,43 @@ export default function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="language" content={language} />
-        <link rel="icon" href="/icons/ico-192.png" />
-        <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
-        <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
-        <link rel="apple-touch-icon" href="/icons/ico-72.png" sizes="72x72" />
-        <link rel="apple-touch-icon" href="/icons/ico-76.png" sizes="76x76" />
+        <link rel="icon" href="/icons/xxxhdpi.png" />
+        <link rel="apple-touch-icon" href="/icons/Icon.png" sizes="57x57" />
         <link
           rel="apple-touch-icon"
-          href="/icons/ico-114.png"
+          href="/icons/Icon-Notification@3x.png"
+          sizes="60x60"
+        />
+        <link rel="apple-touch-icon" href="/icons/Icon-72.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="/icons/Icon-76.png" sizes="76x76" />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/Icon@2x.png"
           sizes="114x114"
         />
         <link
           rel="apple-touch-icon"
-          href="/icons/ico-120.png"
+          href="/icons/Icon-60@2x.png"
           sizes="120x120"
         />
         <link
           rel="apple-touch-icon"
-          href="/icons/ico-144.png"
+          href="/icons/Icon-72@2x.png"
           sizes="144x144"
         />
         <link
           rel="apple-touch-icon"
-          href="/icons/ico-152.png"
+          href="/icons/Icon-76@2x.png"
           sizes="152x152"
         />
         <link
           rel="apple-touch-icon"
-          href="/icons/ico-180.png"
+          href="/icons/Icon-60@3x.png"
           sizes="180x180"
         />
         <link
           rel="icon"
-          href="/icons/ico-192.png"
+          href="/icons/xxxhdpi.png"
           type="image/png"
           sizes="192x192"
         />

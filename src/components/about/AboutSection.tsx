@@ -10,9 +10,9 @@ export default function AboutSection() {
   return (
     <section className="about-section section">
       <div className="container">
-        <h1 className="h2-heading black">{content.about.title}</h1>
+        <h1 className="h2-heading white">{content.about.title}</h1>
         <div className="about-content">
-          <div className="about-text paragraph-text black">
+          <div className="about-text paragraph-text">
             <ul>
               {content.about.intro.map((item: string, index: number) => (
                 <li key={index}>{item}</li>
@@ -20,7 +20,7 @@ export default function AboutSection() {
             </ul>
             {content.about.description.map(
               (paragraph: string, index: number) => (
-                <p key={index} className="paragraph-text black">
+                <p key={index} className="paragraph-text">
                   {paragraph}
                 </p>
               )
@@ -31,13 +31,13 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="about-text">
-          <h3 id="sign-in" className="h3-heading black">
+          <h3 id="sign-in" className="h3-heading">
             {content.about.signIn.title}
           </h3>
-          <p className="paragraph-text black">{content.about.signIn.text[0]}</p>
+          <P>{content.about.signIn.text[0]}</P>
           {/* <List items={content.about.signIn.list} ordered /> */}
-          <p className="paragraph-text black">{content.about.signIn.text[1]}</p>
-
+          <P>{content.about.signIn.text[1]}</P>
+          {/* <h4 className="h4-heading white">{content.about.signIn.text[2]}</h4> */}
           {/* <List items={content.about.signIn.list2} /> */}
           {/* <P>{content.about.signIn.text[3]}</P> */}
         </div>
@@ -50,14 +50,6 @@ export default function AboutSection() {
                   type: "text",
                   content: content.about.depositMethods.text[0],
                 },
-                // {
-                //   type: "list",
-                //   content: content.about.depositMethods.list || [],
-                // },
-                // {
-                //   type: "additionalText",
-                //   content: content.about.depositMethods.additionalText || [],
-                // },
               ],
             },
           ]}

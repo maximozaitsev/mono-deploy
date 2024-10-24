@@ -6,8 +6,8 @@ export default function GamesToPlay() {
   return (
     <section className={`${styles.gamesToPlay} section `}>
       <div className="container">
-        <h2 className="h2-heading black">{content.gamesToPlay.title}</h2>
-        <p className="paragraph-text black">{content.gamesToPlay.text[0]}</p>
+        <h2 className="h2-heading white">{content.gamesToPlay.title}</h2>
+        <p className="paragraph-text">{content.gamesToPlay.text[0]}</p>
         <TwoColumns
           leftColumnContent={[
             {
@@ -61,17 +61,9 @@ export default function GamesToPlay() {
                 // },
               ],
             },
-            {
-              heading: content.gamesToPlay.gamesRightColumn[1].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[1].text,
-                },
-              ],
-            },
           ]}
         />
+        {/* <p className="paragraph-text">{content.gamesToPlay.text[1]}</p> */}
       </div>
     </section>
   );

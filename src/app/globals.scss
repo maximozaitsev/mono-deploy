@@ -53,19 +53,19 @@ body {
 }
 
 .h2-heading {
-  color: $text-color-primary;
+  color: $text-color-third;
   font-family: $font-secondary;
   font-size: 56px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
 
-  &.black {
-    color: $text-color-third;
+  &.white {
+    color: $text-color-primary;
   }
 
   @media (max-width: 768px) {
@@ -83,16 +83,12 @@ body {
   font-family: $font-secondary;
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
-
-  &.black {
-    color: $text-color-third;
-  }
 
   @media (max-width: 768px) {
     font-size: 24px;
@@ -105,20 +101,16 @@ body {
 }
 
 .h4-heading {
-  color: $text-color-primary;
+  color: $text-color-third;
   font-family: $font-secondary;
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
-
-  &.black {
-    color: $text-color-third;
-  }
 
   @media (max-width: 768px) {
     font-size: 18px;
@@ -153,14 +145,12 @@ body {
   h2 {
     margin-top: 3rem;
     margin-top: auto;
-    color: $text-color-primary;
   }
 
   p {
     font-family: $font-primary;
     font-size: 28px;
     font-weight: 500;
-    color: $text-color-primary;
   }
 
   button {
