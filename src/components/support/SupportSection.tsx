@@ -13,7 +13,7 @@ export default function SupportSection() {
             <p className="paragraph-text ">{content.support.text[0]}</p>
           </div>
           <div className={styles.rightImage}>
-            <Image src={support} alt="Support"  />
+            <Image src={support} alt="Support" quality={100} />
           </div>
         </div>
       </div>
