@@ -17,8 +17,9 @@
   & :global(.container) {
     width: 100%;
   }
-  @media (max-width: 1100px) {
-    background-position: right 20px top 0;
+
+  @media (max-width: 1180px) {
+    background-position: right 60px top 0;
   }
 
   @media (max-width: 1020px) {
