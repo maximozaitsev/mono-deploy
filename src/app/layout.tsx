@@ -7,7 +7,7 @@ const ogSiteName = "Casino Evian, France";
 const metaDescription =
   "Le Casino d'Evian, en France, offre une expérience de jeu de classe mondiale avec une vue imprenable sur le lac. Profitez de jeux variés, d'une cuisine raffinée et de promotions exclusives. Visitez-le maintenant pour une expérience de casino inoubliable !";
 
-const locale = "FR";
+const locale = "fr-FR";
 const language = "French";
 const ogImage = `${url}/og-image.webp`;
 
