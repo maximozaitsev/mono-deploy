@@ -55,6 +55,10 @@
     background-size: auto 50%;
     padding-top: 14.35rem;
   }
+
+  @media (max-width: 380px) {
+    background-size: auto 60%;
+  }
 }
 
 .welcomeContent {
@@ -146,6 +150,6 @@
   }
 
   @media (max-width: 380px) {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
