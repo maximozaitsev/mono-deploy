@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import AppImage from "../../../public/block-images/app.webp";
+import AppImageMobile from "../../../public/block-images/app-mobile.webp";
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
 import { content } from "@/content/content";
@@ -17,6 +18,11 @@ export default function AppSection() {
         <div className={styles.topRow}>
           <div className={styles.textBlock}>
             <h3 className="h3-heading">{content.app.title}</h3>
+            <Image
+              src={AppImageMobile}
+              alt="App preview"
+              className={styles.imageMobile}
+            />
             <p className="paragraph-text">{content.app.text[0]}</p>
             <div className={styles.buttons}>
               <button
@@ -28,7 +34,6 @@ export default function AppSection() {
                   alt="Download on the Google Play"
                   width={175}
                   height={53}
-                  quality={100}
                 />
               </button>
               <button
@@ -40,18 +45,12 @@ export default function AppSection() {
                   alt="Download on the App Store"
                   width={175}
                   height={53}
-                  quality={100}
                 />
               </button>
             </div>
           </div>
           <div className={styles.imageBlock}>
-            <Image
-              src={AppImage}
-              alt="App preview"
-              className={styles.image}
-              quality={100}
-            />
+            <Image src={AppImage} alt="App preview" className={styles.image} />
           </div>
         </div>
         <TwoColumns

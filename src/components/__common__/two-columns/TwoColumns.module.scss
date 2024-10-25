@@ -8,19 +8,6 @@
   flex-direction: column;
   gap: 48px;
   flex: 1;
-
-  h3 {
-    margin-bottom: 24px;
-  }
-
-  ul li {
-    &:first-child {
-      margin-top: 24px;
-    }
-    &:last-child {
-      margin-bottom: 24px;
-    }
-  }
 }
 
 .categoriesList {
@@ -37,4 +24,10 @@
       gap: 40px !important;
     }
   }
+}
+
+.innerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }

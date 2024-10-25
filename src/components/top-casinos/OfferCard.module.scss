@@ -34,7 +34,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: $text-color-fourth;
+    color: #f50;
 
     // background: linear-gradient($text-color-secondary-gradient);
     // background-clip: text;
@@ -58,13 +58,12 @@
 
   button {
     margin-top: auto;
-    width: 206px;
+    width: 217px;
     margin-left: 5px;
   }
 
   @media (max-width: 768px) {
     width: 240px;
-    height: 264px;
     padding: 16px;
 
     img {

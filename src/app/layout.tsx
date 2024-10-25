@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "https://billy-barker-casino.com";
+const url = "https://hastings-casino-canada.com";
 const ogTitle =
-  "Billy Barker Casino in Canada: Games, Rewards, and Entertainment";
-const ogSiteName = "Billy Barker Casino";
+  "Hastings Casino Canada: Your Top Gaming and Horse Racing Venue";
+const ogSiteName = "Hastings Casino Canada";
 const metaDescription =
-  "Billy Barker Casino in Canada offers 140 pokies and progressive jackpots. Enjoy on-site dining and the Encore Rewards Program. Discover more about the games and promotions today! Visit to start your winning experience.";
+  "Hastings Casino in Canada offers exciting slot machines and electronic games alongside live horse racing. Enjoy scenic views and thrilling gameplay. Visit now and experience exclusive promotions and rewards!";
 
 const locale = "en-CA";
 const language = "English";

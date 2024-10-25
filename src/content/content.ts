@@ -1,44 +1,43 @@
 export const content = {
-  projectName: "Billy Barker Casino",
+  projectName: "Hastings Casino",
   advantages: {
     // title: "",
-    subTitle: "Billy Barker Casino Advantages",
+    subTitle: "Hastings Casino Vancouver BC Advantages",
     text: [
-      `Billy Barker Casino and hotel offers a unique blend of historical charm and modern entertainment, making it a popular destination for gamers and visitors alike. Below are some key advantages and disadvantages of the casino:`,
+      `Hastings Casino offers a variety of gaming and entertainment options that cater to both casual visitors and seasoned players. Below are the main advantages and disadvantages of the casino.`,
     ],
     advantagesTitle: "Advantages:",
     disadvantagesTitle: "Disadvantages:",
     advantages: [
-      "Diverse selection of games",
-      "Historic atmosphere ",
-      "On-site hotel and dining options",
-      "Central location ",
-      "Friendly and welcoming staff",
-      "Frequent promotions ",
+      "Unique combination of horse racing and casino gaming",
+      "Wide variety of slot machines and electronic games",
+      "Scenic views and lively atmosphere during races",
+      "Regular promotions and seasonal events",
+      "Convenient on-site dining options",
     ],
     disadvantages: [
-      "Limited variety of games compared to larger casinos",
-      "No online gaming platform for remote players",
-      "Smaller venue, which can get crowded during peak times",
+      "liLimited table game offerings1",
+      "Seasonal limitations due to horse racing schedule",
+      // "li3",
     ],
   },
   about: {
-    title: "Billy Barker Hotel Casino",
+    title: "Hastings Casino",
     intro: [
-      "C$10 in free play",
-      "Billy Barker Golf Club",
-      "24/7 customer support",
+      "$10 in free play",
+      "$1,000 in special giveaways",
+      "Fan Appreciation Day",
     ],
     description: [
-      `Billy Barker Casino, located in the heart of Quesnel, British Columbia, offers a unique gaming experience inspired by the area's rich Gold Rush history. Named after the famous gold prospector Billy Barker, this casino combines modern entertainment with a touch of historical charm. It features a variety of gaming options, including pokies, table games, and off-track betting, appealing to both casual visitors and seasoned players. `,
+      `Hastings Casino, located in Vancouver, British Columbia, is a popular destination for gaming enthusiasts. Known for its horse racing track, the casino offers a unique blend of thrilling races and traditional casino games such as slot machines, Blackjack, and electronic gaming tables. Alongside the gaming experience, visitors can enjoy a variety of dining options and regular promotions that enhance the overall entertainment atmosphere. Whether you're there for the excitement of live racing or to try your luck on the gaming floor, Hastings Racecourse & Casino Vancouver, BC delivers a diverse and vibrant experience for all types of players.`,
       // `p2`,
       // `p3`,
     ],
     signIn: {
-      title: "About Billy Barker Casino Login",
+      title: "About Hastings Casino Login",
       text: [
-        `Billy Barker Casino is a well-known establishment in Quesnel, British Columbia, offering a range of entertainment options, from exciting gaming to comfortable lodging. The casino draws inspiration from the Gold Rush era, creating an immersive atmosphere for guests. Visitors can enjoy a wide selection of pokies, table games, and other entertainment in a setting that blends history with modern amenities. Whether guests are staying in the on-site hotel or simply enjoying a night of gaming and dining, Billy Barker Casino hours today offer a complete experience tailored to both tourists and local patrons.`,
-        `To access the casino's online platform, users must complete the Billy Barker Casino about login process. This typically involves visiting the official website and entering their registered email address and password. New users can quickly create an account by providing basic personal information and agreeing to the site's terms and conditions. Once logged in, players can manage their accounts, view promotional offers, and, if available, enjoy a range of online gaming options. `,
+        `Hastings Casino, located in Vancouver, British Columbia, offers a dynamic gaming environment that combines the excitement of horse racing with traditional casino entertainment. Visitors can enjoy a variety of slot machines, electronic table games, and seasonal promotions. The casino is well-known for its scenic horse racing track, providing a unique gaming experience with live races during the season, while also offering convenient on-site dining options.`,
+        `For accessing the online features of Hastings racecourse & Casino, users need to go through a simple login process. Players can log in via the official website by entering their registered email address and password. For new users, the platform offers an easy registration process. After logging in, players can manage their accounts, view promotions, track rewards, and access other personalized features, making the experience seamless and user-friendly.`,
         // `p3`,
       ],
       // list: ["li1", "li2", "li3"],
@@ -51,7 +50,7 @@ export const content = {
     depositMethods: {
       title: "Deposit Methods",
       text: [
-        `Billy Barker Casino offers a range of deposit methods to ensure that players can fund their accounts with ease and security. Players can use traditional methods such as Visa and Mastercard credit and debit cards, which are widely accepted and provide a straightforward way to deposit funds. Additionally, Interac e-Transfer is available, allowing Canadian players to transfer money directly from their bank accounts with minimal hassle. This method is favored for its security and speed, making it a popular choice for many. For those who prefer pre-paid options, Paysafecard is also supported, giving players the ability to deposit without sharing personal banking details.`,
+        `Hastings Casino offers a range of secure deposit methods for players to fund their accounts quickly and conveniently. The casino accepts traditional payment options such as Visa and Mastercard, which allow users to deposit funds using their credit or debit cards. Players can also use Interac, a widely used payment service in Canada, which enables fast and secure transfers directly from Canadian bank accounts. Another option is the prepaid Paysafecard, which allows players to deposit money without sharing sensitive banking details, offering an added layer of security. These methods ensure quick processing times, allowing players to start gaming immediately after making a deposit.`,
         // `p2`,
       ],
       // list: ["li1", "li2", "li3"],
@@ -60,7 +59,7 @@ export const content = {
     withdrawalMethods: {
       title: "Withdrawal Methods",
       text: [
-        `When it comes to withdrawals, Billy Barker Casino offers several reliable methods for cashing out winnings. Players can request withdrawals via bank transfer, a secure option that sends funds directly to a player’s bank account, though processing times may vary depending on the bank. Interac e-Transfer is also available for withdrawals, providing a fast and convenient way to receive funds. Additionally, players can choose to withdraw using Visa and Mastercard, allowing them to transfer winnings back to their cards, depending on their card provider’s policies. All withdrawal methods are designed to prioritize security and efficiency, ensuring that players receive their funds promptly.`,
+        `When it comes to withdrawing winnings, Hastings racecourse Casino provides players with reliable options to access their funds. Players can withdraw their winnings directly to their Visa or Mastercard, though processing times may vary due to standard bank procedures, typically taking a few business days. Another convenient method is Interac e-Transfer, which allows users to transfer their funds securely and directly into their Canadian bank accounts. This method is known for its speed and ease of use, making it a popular choice for players looking to cash out their winnings. Both methods ensure the security of financial transactions and provide players with straightforward options to access their funds.`,
         // `p2`,
       ],
       list: [],
@@ -69,18 +68,18 @@ export const content = {
   licenses: {
     title: "Licenses",
     text: [
-      `Billy Barker Casino hours operate under the regulation of the British Columbia Lottery Corporation (BCLC). It adheres to provincial gaming regulations, ensuring that all operations are legal, fair, and transparent. The BCLC license guarantees that the casino complies with strict standards related to fairness, security, and responsible gaming, providing players with a safe and trustworthy gaming environment.`,
+      `Hastings racecourse and Casino operates under the jurisdiction of the British Columbia Lottery Corporation (BCLC), which ensures that all its gaming activities comply with provincial regulations. This license guarantees that the casino operates fairly, transparently, and with a focus on responsible gambling. The BCLC oversees the casino’s gaming practices, ensuring compliance with Canadian law.`,
       // `p2`,
       // `p3`,
     ],
     security: "Security",
     securityText: [
-      `The security at Billy Barker Casino adheres to industry standards to protect both players' personal information and financial data. It uses SSL encryption on its website and throughout its online operations to ensure that all transactions and sensitive details are secure. The casino also complies with British Columbia's gambling regulations, which include strict guidelines for data protection, ensuring that all players' information is handled safely and responsibly.`,
+      `Hastings Casino employs advanced security measures to protect its players' data and financial transactions. The casino uses 128-bit SSL (Secure Socket Layer) encryption to ensure all sensitive information is securely transmitted. This level of encryption is standard in the industry, providing a strong safeguard against potential breaches. Additionally, the casino adheres to strict Canadian privacy laws, ensuring that all player information remains confidential and secure.`,
       // `p2`,
     ],
     software: "Software Technologies",
     softwareText: [
-      `Billy Barker Casino primarily uses IGT, Bally, Konami, and Aristocrat as the software providers for its pokies. These well-known companies are industry leaders in gaming technology, providing high-quality graphics, sound, and gameplay. Each provider brings its unique style to the games, offering players a diverse and engaging experience. The casino focuses on pokies and does not feature live or digital table games at this time, relying solely on these providers for its gaming technology.`,
+      `Hastings Casino utilizes state-of-the-art gaming software to provide an immersive and seamless gaming experience. The software powering the games comes from leading providers like IGT, Aristocrat, and Scientific Games, ensuring a wide range of high-quality slot machines and electronic games. These platforms offer fast, reliable gameplay with cutting-edge graphics and interactive features, catering to both casual players and high-stakes gamblers. The software also ensures fairness, with random number generators (RNGs) guaranteeing unbiased game outcomes.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
@@ -88,39 +87,39 @@ export const content = {
   app: {
     title: "Casino App",
     text: [
-      `At present, Billy Barker Casino does not offer a dedicated mobile app. However, its website and online features are fully optimized for mobile browsers, allowing players to access the casino's services from smartphones and tablets. The mobile experience mirrors the desktop version, providing easy navigation and access to essential services such as promotions and account management, although the gaming experience is focused on the physical casino.`,
+      `While Hastings Casino does not offer a dedicated mobile app, its website is fully optimized for mobile use. Players can access their accounts, deposit funds, and play a wide selection of games directly from their smartphones or tablets. The Hastings Casino online site provides the same functionality and ease of use as the desktop version, allowing for a seamless gaming experience on the go.`,
       // `p2`,
     ],
-    languages: "Billy Barker Casino Quesnel Hours and Languages",
+    languages: "Languages",
     languagesText: [
-      `The primary language of operation at Billy Barker Casino is English. This includes all aspects of communication, including customer service, promotions, and on-site interactions. There are currently no additional language options available, either online or in-person, catering mainly to an English-speaking audience`,
+      `The primary language of operation at Hastings Casino is English, reflecting its location and primary demographic. All services, games, and customer support are provided in English, ensuring that players have a consistent and clear experience. There is currently no multilingual support for other languages.`,
       // `p2`,
       // `p3`,
     ],
-    currencies: "Billy Barker Casino Prices and Currencies",
+    currencies: "Currencies",
     currenciesText: [
-      `Billy Barker Casino exclusively accepts Canadian Dollars (CAD) for all transactions. Players are required to deposit, wager, and withdraw using CAD, ensuring a consistent and localized financial experience for Canadian residents. Foreign currency is not accepted at this time, so international visitors need to exchange their funds before participating in gaming activities.`,
+      `Hastings Casino operates exclusively in Canadian Dollars (CAD). All transactions, including deposits, withdrawals, and in-game wagers, are conducted in CAD. This focus on a single currency eliminates exchange rate fluctuations and provides a straightforward experience for Canadian players.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play at Billy Barker Casino",
+    title: "Games Available to Play at Wayne Hastings Casino",
     text: [
-      `Quesnel Billy Barker Casino offers a variety of gaming options that cater to both casual players and seasoned gamblers. The casino’s selection provides an engaging experience, blending traditional casino games with the charm of its historic setting. Here's a breakdown of the available games:`,
+      `Hastings Casino offers a unique gaming experience that blends traditional casino entertainment with the excitement of live horse racing. Visitors can enjoy a range of gaming options designed to cater to both casual players and seasoned gamblers, providing a diverse and vibrant gaming environment.`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Pokies",
-        text: `Billy Barker Casino offers an extensive selection of pokies, ranging from classic games with traditional symbols to more modern, interactive pokies with a variety of themes. Players can immerse themselves in a gaming experience that spans everything from fruit machines to themed pokies inspired by movies, history, and fantasy worlds. With various denominations available, both low-stakes players and high rollers will find a machine that fits their style. Additionally, the casino features several machines with progressive jackpots, where the prize pools grow with each spin, providing players with the chance to win life-changing sums. The diversity in game styles and potential payouts makes the pokies section one of the most exciting aspects of Billy Barker Casino Quesnel.`,
+        heading: "Slot Machines",
+        text: `Hastings Casino boasts a broad variety of slot machines, catering to different preferences and player levels. The slot selection includes both classic reel machines for those who enjoy traditional gameplay and modern video slots with advanced graphics and interactive bonus rounds. Players can select from a wide range of denominations, which makes the slots accessible to both low-budget and high-stakes players. Themes range from adventure and fantasy to sports and pop culture, offering an engaging experience for every type of player. Additionally, many of the slot machines feature progressive jackpots, where the prize pool grows with each play, giving players the opportunity to win significant amounts, adding to the overall excitement.`,
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
-        heading: "Off-Track Betting",
+        heading: "Electronic Table Games and Roulette Casino Hastings",
         text: [
-          `Billy Barker Hotel and Casino goes beyond traditional gaming by offering off-track betting for horse racing fans. This service allows guests to place bets on live races happening around the world, adding an extra layer of excitement to the casino's offerings. In a comfortable and relaxed setting, players can follow live race broadcasts and wager on their favorite horses and jockeys, with different betting options available to suit every preference. Whether you’re a seasoned bettor or new to horse racing, off-track betting at Billy Barker Casino provides a thrilling alternative to the typical casino experience. This unique option draws in sports enthusiasts and casual players alike, making it a standout feature of the casino's entertainment lineup.`,
+          `While traditional table games may be limited, Hastings Casino compensates with its high-tech electronic gaming tables, offering modern versions of classic games like Blackjack and Roulette. These electronic tables create a fast-paced gaming environment, ideal for players who prefer quicker gameplay without the need to wait for a dealer or other players. The touch-screen interfaces are user-friendly and provide clear game instructions, making it easy for newcomers to understand the rules. Additionally, the electronic tables replicate the thrill of live games, offering real-time results and interactive features, which maintain the excitement and competitiveness of traditional table games.`,
           // `p2`,
           // `p3`,
         ],
@@ -130,9 +129,9 @@ export const content = {
     ],
     gamesRightColumn: [
       {
-        heading: "Table Games",
+        heading: "Live Horse Racing",
         text: [
-          `For players who enjoy the thrill and strategy of table games, Billy Barker Casino offers a variety of popular options, including blackjack, poker, and more. Each table is staffed by professional and friendly dealers, ensuring a welcoming environment for all. Whether you're a novice learning the ropes or a seasoned player seeking a challenge, the casino caters to all skill levels. Blackjack fans can enjoy multiple tables with different rule variations, while poker enthusiasts can test their luck and skills in various formats. The betting limits at each table are designed to suit all kinds of players, allowing for both low-stakes casual games and higher-stakes, more competitive sessions. The vibrant atmosphere around the tables makes it a must-visit for those who enjoy a social and interactive gaming experience.`,
+          `One of the most unique attractions at Hastings Casino is its live horse racing track, which operates during the racing season. The races are held outdoors with scenic views of Vancouver’s beautiful landscape, making it a prime destination for both racing enthusiasts and casual bettors. Patrons can place bets on a variety of races, ranging from local events to larger-scale competitions, providing a thrilling, high-energy experience. The live horse racing events also enhance the social aspect of the casino, as spectators gather to watch the action unfold, adding a different layer of excitement to the overall gaming environment. For many, the blend of live racing and casino games makes Hastings Casino a one-of-a-kind venue.`,
           // `p2`,
           // `p3`,
         ],
@@ -150,33 +149,33 @@ export const content = {
     ],
   },
   support: {
-    title: "Billy Barker Casino Reviews and Support",
+    title: "Support",
     text: [
-      `Customer support at Billy Barker Casino is available via phone and email, offering assistance with general inquiries, account issues, and gaming concerns. While the casino does not provide 24/7 live chat, its staff is responsive during operating hours, ensuring that players can receive help as needed. The phone support is especially useful for immediate issues, while email support is available for less urgent matters.`,
+      `Customer support at Hastings park Casino is available through multiple channels. Players can reach the support team via phone or email, receiving assistance with account management, technical issues, or game-related queries. The support team is available during the casino’s operating hours, ensuring players can get timely help when needed. Additionally, the website includes a detailed FAQ section for quick troubleshooting.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Billy Barker Casino Hotel Quesnel, BC Bonuses",
+    title: "Hastings Casino Bonuses and Promotions",
     text: [
-      `Billy Barker Casino offers a range of bonuses and promotions designed to enhance the experience of its players. These promotions cater to both new and returning visitors, providing various rewards that can make gaming more exciting.`,
+      `Hastings Casino offers a variety of bonuses and promotions to enhance the gaming experience for its visitors. These Hastings Casino promotions cater to both new and returning players, offering valuable rewards and incentives for frequent play.`,
       // `p2`,
     ],
     leftColumnContent: [
       {
         heading: "Encore Rewards Program",
         text: [
-          `The Encore Rewards Program at Billy Barker Casino Quesnel BC offers a fantastic opportunity for players to earn rewards while enjoying their favorite games. New members who sign up for the program instantly receive C$10 in free play, which can be used across a variety of pokies. As players continue to gamble, they accumulate points at a rate of 1 point for every C$1 spent on pokies. These points can be redeemed for additional free play, exclusive offers, and other exciting perks that enhance the gaming experience. Moreover, this card isn't limited to Billy Barker Casino hotel alone—it can be used at participating casinos throughout British Columbia, making it a valuable resource for frequent visitors to multiple establishments. The program adds an extra layer of excitement by rewarding loyalty and gameplay, giving players even more reasons to keep coming back.`,
+          `The Encore Rewards Program at Hastings Casino is a comprehensive loyalty initiative that rewards players for every dollar they spend on the gaming floor. Players earn 1 point for every $1 wagered on slot machines, which they can accumulate and later redeem for rewards such as free slot play. Once a player reaches 2,000 points, they can exchange them for $10 in free play, offering a tangible incentive for frequent play. Beyond free play, the program provides additional perks like a complimentary birthday gift, exclusive personalized offers, and discounts at the casino’s restaurants. As players advance through the program’s tiers—starting from the basic level up to Double Diamond, Triple Diamond, and Elite—they unlock even more rewards, such as bonus points, enhanced promotional offers, and status upgrades. The Encore Rewards Program is designed to elevate the overall gaming experience by giving back to loyal patrons through continuous play, ensuring that regular visitors feel appreciated and engaged.`,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
       {
-        heading: "Stay & Play Package",
+        heading: "Holiday Gift Away Promotion",
         text: [
-          `For guests looking to combine accommodation with entertainment, the Stay & Play Package at Billy Barker Casino offers exceptional value. This promotion is tailored for hotel guests, allowing them to enjoy discounted access to local activities, such as rounds of golf at the nearby Billy Barker Golf Club. The package not only provides a comfortable stay at the casino's charming hotel but also opens up more recreational opportunities during their visit. This combination of gaming and local experiences makes the Stay & Play Package an appealing choice for both tourists and local players looking for a mini getaway. By bundling lodging with entertainment, Billy Barker Casino ensures that guests can make the most out of their stay, blending relaxation with excitement.`,
+          `During the holiday season, Hastings Casino Vancouver hosts its festive “Holiday Gift Away” promotion, a popular event where players have the chance to win up to $1,000 in special giveaways. Running every Friday leading up to Christmas, this promotion adds an extra layer of excitement to the casino atmosphere, with patrons eagerly participating for a shot at substantial holiday rewards. The promotion is designed to engage both casual visitors and regular players, creating a festive spirit within the casino as participants vie for these valuable cash prizes. The “Holiday Gift Away” promotion is a great way for Hastings Casino to enhance the holiday experience, offering patrons not just gaming entertainment but also the potential to walk away with a little extra to celebrate the season.`,
           // `p2`,
           // `p3`,
         ],
@@ -186,25 +185,17 @@ export const content = {
     ],
     rightColumnContent: [
       {
-        heading: "Progressive Jackpot Pokies",
+        heading: "Fan Appreciation Day",
         text: [
-          `For players chasing life-changing wins, Billy Barker Casino’s progressive jackpot pokies offer the ultimate thrill. These machines are linked across a broader network, allowing the jackpot amounts to grow progressively as more players contribute to the pot. Popular titles like BC Gold and Wheel of Fortune Cash Link are among the casino’s top progressive pokies, known for their large potential payouts. The progressive jackpots often reach impressive amounts, making them a favorite among those looking to strike it big. The excitement lies in the fact that each spin could result in a massive win, adding an extra layer of anticipation to the gaming experience. This unique feature of the casino’s pokies offering makes it a standout choice for players seeking big rewards.`,
+          `Hastings Casino hosts Fan Appreciation Day during key horse racing events, offering patrons a unique blend of entertainment and rewards. This special day is designed to thank loyal customers by providing exclusive discounts on food and beverages, allowing visitors to enjoy the thrilling race day with great value. In addition to discounts, the casino runs exciting prize giveaways, such as the opportunity to win an Ultimate Sports Package, which adds to the day's excitement. Fan Appreciation Day transforms a regular race day into a festive event, with the casino ensuring patrons feel valued and involved. It fosters a sense of community while enhancing the experience of live racing, making it a highlight for both regular attendees and newcomers alike.`,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
-      // {
-      //   heading: "bonus4Heading",
-      //   text: [
-      //     `p1`,
-      //     // `p2`,
-      //     // `p3`,
-      //   ],
-      // },
     ],
   },
   faq: {
-    title: "Billy Barker Casino Hotel Quesnel FAQ",
+    title: "Casino Hastings FAQ ",
   },
 };

@@ -33,9 +33,9 @@
     width: 218px;
     height: 56px;
     box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
-    color: $text-color-primary;
+    color: #fff;
     margin-top: -3px;
-    margin-left: 10px;
+    margin-left: 6px;
   }
 
   @media (max-width: 1080px) {
@@ -65,19 +65,15 @@
   justify-content: center;
   position: relative;
   height: 88px;
-  border-top: $border-width solid $border-color;
-  border-bottom: $border-width solid $border-color;
 
   &:first-child {
     border-top-left-radius: $border-radius;
     border-bottom-left-radius: $border-radius;
-    border-left: $border-width solid $border-color;
   }
 
   &.last-cell {
     border-top-right-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
-    border-right: $border-width solid $border-color;
   }
 
   &::after {
@@ -104,7 +100,6 @@
     &.info-cell {
       border-top-right-radius: $border-radius;
       border-bottom-right-radius: $border-radius;
-      border-right: $border-width solid $border-color;
     }
 
     &::after {
@@ -205,14 +200,12 @@
       justify-content: flex-end;
       border-bottom: none;
       padding: 16px 0 0 !important;
-
       &::after {
         display: none;
       }
 
       button {
-        width: 207px;
-        margin-top: -5px;
+        width: 221px;
       }
     }
   }
@@ -254,7 +247,7 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: $text-color-primary;
+  color: #fff;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;

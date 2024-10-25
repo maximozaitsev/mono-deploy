@@ -23,7 +23,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "billy-barker-casino.com",
+        hostname: "hastings-casino-canada.com",
       },
     ],
   },

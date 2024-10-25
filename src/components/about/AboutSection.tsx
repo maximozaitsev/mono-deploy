@@ -27,7 +27,7 @@ export default function AboutSection() {
             )}
           </div>
           <div className="about-image">
-            <Image src={aboutImage} alt="About Image" quality={100} />
+            <Image src={aboutImage} alt="About Image" />
           </div>
         </div>
         <div className="about-text">
@@ -35,11 +35,14 @@ export default function AboutSection() {
             {content.about.signIn.title}
           </h3>
           <P>{content.about.signIn.text[0]}</P>
-          {/* <List items={content.about.signIn.list} ordered /> */}
           <P>{content.about.signIn.text[1]}</P>
-          {/* <h4 className="h4-heading white">{content.about.signIn.text[2]}</h4> */}
-          {/* <List items={content.about.signIn.list2} /> */}
-          {/* <P>{content.about.signIn.text[3]}</P> */}
+          {/* <List items={content.about.signIn.list} ordered /> */}
+          {/* <P>{content.about.signIn.text[2]}</P>
+          <P>{content.about.signIn.text[3]}</P>
+          <P>{content.about.signIn.text[4]}</P> */}
+          {/* <h3 className="h3-heading">{content.about.verification.title}</h3>
+          <P>{content.about.verification.text[0]}</P>
+          <P>{content.about.verification.text[1]}</P> */}
         </div>
         <TwoColumns
           leftColumnContent={[

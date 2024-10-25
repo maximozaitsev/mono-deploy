@@ -11,8 +11,10 @@
     flex-direction: column;
     gap: 48px;
 
-    :global(.h3-heading) {
-      margin-bottom: 24px;
+    .promotionsContent {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
     }
   }
 

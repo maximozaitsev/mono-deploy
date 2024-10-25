@@ -7,7 +7,10 @@ export default function PromotionsSection() {
     <section className={`${styles.promotionsSection} section`}>
       <div className="container">
         <h2 className="h2-heading white">{content.promotions.title}</h2>
-        <p className="paragraph-text">{content.promotions.text[0]}</p>
+        <div className={styles.promotionsContent}>
+          <p className="paragraph-text">{content.promotions.text[0]}</p>
+          <p className="paragraph-text">{content.promotions.text[1]}</p>
+        </div>
         <TwoColumns
           leftColumnContent={[
             {
@@ -15,7 +18,7 @@ export default function PromotionsSection() {
               items: [
                 {
                   type: "text",
-                  content: content.promotions.leftColumnContent[0].text,
+                  content: content.promotions.leftColumnContent[0].text[0],
                 },
               ],
             },
@@ -24,7 +27,7 @@ export default function PromotionsSection() {
               items: [
                 {
                   type: "text",
-                  content: content.promotions.leftColumnContent[1].text,
+                  content: content.promotions.leftColumnContent[1].text[0],
                 },
               ],
             },
@@ -35,7 +38,7 @@ export default function PromotionsSection() {
               items: [
                 {
                   type: "text",
-                  content: content.promotions.rightColumnContent[0].text,
+                  content: content.promotions.rightColumnContent[0].text[0],
                 },
               ],
             },

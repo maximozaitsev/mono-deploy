@@ -14,13 +14,7 @@ export default function LicensesSection() {
             <p className="paragraph-text">{content.licenses.text[0]}</p>
           </div>
           <div className={styles.rightImage}>
-            <Image
-              src={licenceImage}
-              alt="Licenses"
-              width={240}
-              height={240}
-              quality={100}
-            />
+            <Image src={licenceImage} alt="Licenses" width={200} height={200} />
           </div>
         </div>
         <TwoColumns

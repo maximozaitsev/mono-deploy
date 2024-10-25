@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: $text-color-primary;
+        color: #fff;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
@@ -144,6 +144,10 @@
         button {
           max-width: 200px;
           width: 100%;
+        }
+
+        @media (max-width: 850px) {
+          border-radius: $border-radius $border-radius 0 0;
         }
 
         @media (max-width: 320px) {

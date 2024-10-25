@@ -24,19 +24,8 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[1].text,
+                  content: content.gamesToPlay.leftColumnContent[1].text[0],
                 },
-                // {
-                //   type: "list",
-                //   content:
-                //     content.gamesToPlay.leftColumnContent[1].categories || [],
-                // },
-                // {
-                //   type: "additionalText",
-                //   content:
-                //     content.gamesToPlay.leftColumnContent[1].additionalText ||
-                //     [],
-                // },
               ],
             },
           ]}
@@ -46,24 +35,12 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[0].text,
+                  content: content.gamesToPlay.gamesRightColumn[0].text[0],
                 },
-                // {
-                //   type: "list",
-                //   content:
-                //     content.gamesToPlay.gamesRightColumn[0].categories || [],
-                // },
-                // {
-                //   type: "additionalText",
-                //   content:
-                //     content.gamesToPlay.gamesRightColumn[0].additionalText ||
-                //     [],
-                // },
               ],
             },
           ]}
         />
-        {/* <p className="paragraph-text">{content.gamesToPlay.text[1]}</p> */}
       </div>
     </section>
   );
