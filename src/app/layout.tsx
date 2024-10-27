@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "https://hastings-casino-canada.com";
+const url = "one-casino-online.com";
 const ogTitle =
-  "Hastings Casino Canada: Your Top Gaming and Horse Racing Venue";
-const ogSiteName = "Hastings Casino Canada";
+  "One Casino España - El mejor casino en línea con bonos y juego seguro";
+const ogSiteName = "One Casino España";
 const metaDescription =
-  "Hastings Casino in Canada offers exciting slot machines and electronic games alongside live horse racing. Enjoy scenic views and thrilling gameplay. Visit now and experience exclusive promotions and rewards!";
+  "One Casino España ofrece emocionantes juegos, incluyendo tragaperras y crupieres en vivo, con generosos bonos. Regístrese hoy y obtenga su bono sin depósito de 10 euros para empezar a jugar con dinero real. ¡Regístrate ahora!";
 
-const locale = "en-CA";
-const language = "English";
+const locale = "es-ES";
+const language = "Spanish";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {

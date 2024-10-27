@@ -1,34 +1,18 @@
 export const faqs = [
   {
-    question: "What are the operating hours of Hastings Casino?",
-    answer: "Hastings Casino hours are daily from 10 AM to 2 AM, offering both gaming and racing options throughout these hours.",
+    question: "¿Existe un bono sin depósito en One Casino?",
+    answer:
+      "Sí, los nuevos participantes reciben un bono sin depósito de 10 euros al registrarse, que se puede utilizar inmediatamente para jugar.",
   },
   {
-    question: "Can I bet on horse races outside of Hastings Racecourse Casino Vancouver?",
-    answer: "Yes, Hastings race track Casino offers simulcast betting, allowing players to bet on live races happening at other tracks across Canada and the U.S.",
+    question:
+      "¿Existen requisitos de apuesta para los One Casino no deposit bonus codes 2022?",
+    answer:
+      "Sí, la mayoría de los bonos de One Casino tienen un requisito de apuesta de 35 veces antes de poder retirar cualquier ganancia.",
   },
   {
-    question: "Is there a poker room at Treasure Island Casino Hastings MN?",
-    answer: "No, Hastings Casino does not have a dedicated poker room, but it offers a variety of slot machines and electronic games.",
-  },
-  {
-    question: "Can I play games online at Hastings Casino?",
-    answer: "Currently, Hastings Casino does not offer online gaming services. Players can only enjoy games on-site.",
-  },
-  {
-    question: "Does Casino in Hastings offer live dealer games?",
-    answer: "No, Hastings Casino focuses on electronic games and slot machines. It does not offer live dealer games at this time.",
-  },
-  {
-    question: "Is parking available at Hastings Casino?",
-    answer: "Yes, Hastings Casino provides free parking for all visitors, with ample spaces available during both gaming and racing events.",
-  },
-  {
-    question: "Does Hastings Casino offer dining options?",
-    answer: "Yes, Hastings Casino features several dining options, including a buffet and casual eateries, offering a range of meals to suit different tastes.",
-  },
-  {
-    question: "Can I host private events at Hastings Casino Buffet?",
-    answer: "Yes, Hastings Casino offers event spaces for private parties, corporate events, and gatherings, including rooms with views of the racecourse.",
+    question: "¿Puedo jugar a juegos gratis y hacer Fotos de One Casino?",
+    answer:
+      "Sí, puede probar las versiones de demostración de la mayoría de los juegos de forma gratuita antes de comprometer dinero real.",
   },
 ];

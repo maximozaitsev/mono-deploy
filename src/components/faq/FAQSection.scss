@@ -12,13 +12,14 @@
     width: 100%;
 
     .faq-question {
-      color: $text-color-third;
+      color: $text-color-primary;
       font-family: $font-secondary;
-      background: $color-background-third;
+      background: $color-background;
       font-size: 24px;
       font-weight: 700;
       text-transform: uppercase;
       padding: 8px 32px;
+      border: 2px solid #65ff93;
       border-radius: $border-radius;
       cursor: pointer;
       display: flex;
@@ -39,7 +40,7 @@
     }
 
     .faq-answer {
-      color: $text-color-third;
+      color: $text-color-primary;
       font-family: $font-primary;
       font-size: 20px;
       font-weight: 500;
@@ -49,7 +50,7 @@
       padding: 0 10px;
 
       p {
-        margin: 10px 0 5px 0;
+        margin: 15px 0 5px 0;
       }
 
       &.active {

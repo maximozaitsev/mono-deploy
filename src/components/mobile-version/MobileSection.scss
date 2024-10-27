@@ -21,6 +21,11 @@
 
   .app-info-block {
     padding-left: 32px;
+    max-width: 300px;
+
+    @media (max-width: 1160px) {
+      max-width: none;
+    }
   }
 
   .advantages-block,
@@ -82,8 +87,8 @@
 
     img {
       position: absolute;
-      left: -99px;
-      top: 52px;
+      left: -110px;
+      top: -11px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -138,8 +143,8 @@
 
         .app-image {
           /* margin-left: -35px; */
-          margin-bottom: 10px;
-          padding-bottom: 13px;
+          // margin-bottom: 10px;
+          padding-bottom: 20px;
         }
 
         h3 {

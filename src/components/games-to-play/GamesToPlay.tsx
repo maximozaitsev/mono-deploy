@@ -24,7 +24,16 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[1].text[0],
+                  content: content.gamesToPlay.leftColumnContent[1].text,
+                },
+              ],
+            },
+            {
+              heading: content.gamesToPlay.leftColumnContent[2].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.gamesToPlay.leftColumnContent[2].text,
                 },
               ],
             },
@@ -35,7 +44,16 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[0].text[0],
+                  content: content.gamesToPlay.gamesRightColumn[0].text,
+                },
+              ],
+            },
+            {
+              heading: content.gamesToPlay.gamesRightColumn[1].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[1].text,
                 },
               ],
             },

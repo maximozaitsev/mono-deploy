@@ -50,7 +50,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
     <div className={styles["two-columns-container"]} style={{ gap: columnGap }}>
       <div className={styles.column}>
         {leftColumnContent.map((content, index) => (
-          <div className={styles.innerColumn} key={index}>
+          <div className="content-block" key={index}>
             <h3 className="h3-heading">{content.heading}</h3>
             {renderContent(content.items)}
           </div>
@@ -59,7 +59,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
 
       <div className={styles.column}>
         {rightColumnContent.map((content, index) => (
-          <div className={styles.innerColumn} key={index}>
+          <div className="content-block" key={index}>
             <h3 className="h3-heading">{content.heading}</h3>
             {renderContent(content.items)}
           </div>

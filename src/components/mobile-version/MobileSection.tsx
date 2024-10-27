@@ -20,7 +20,13 @@ export default function MobileSection() {
           <ul className="advantages-list">
             {content.advantages.advantages.map((advantage, index) => (
               <li key={index}>
-                <Image src={StarIcon} alt="Star" width={30} height={30} />
+                <Image
+                  src={StarIcon}
+                  alt="Star"
+                  width={30}
+                  height={30}
+                  quality={100}
+                />
                 {advantage}
               </li>
             ))}
@@ -48,6 +54,7 @@ export default function MobileSection() {
                 alt="Download on the App Store"
                 width={181}
                 height={53}
+                quality={100}
               />
             </button>
             <button
@@ -59,6 +66,7 @@ export default function MobileSection() {
                 alt="Download on the Google Play"
                 width={181}
                 height={53}
+                quality={100}
               />
             </button>
           </div>
@@ -70,6 +78,7 @@ export default function MobileSection() {
             alt="Mobile App"
             className="app-image"
             priority
+            quality={100}
           />
         </div>
       </div>

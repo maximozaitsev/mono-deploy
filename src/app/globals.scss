@@ -40,21 +40,20 @@ body {
   scroll-margin-top: 99px;
 
   @media (max-width: 1120px) {
-    margin-bottom: 96px;
+    margin-bottom: 64px;
   }
 
   @media (max-width: 768px) {
     gap: 40px;
-    margin-bottom: 64px;
   }
 
   @media (max-width: 420px) {
-    margin-bottom: 50px;
+    margin-bottom: 72px;
   }
 }
 
 .h2-heading {
-  color: $text-color-third;
+  color: $text-color-primary;
   font-family: $font-secondary;
   font-size: 56px;
   font-style: normal;
@@ -102,7 +101,7 @@ body {
 }
 
 .h4-heading {
-  color: $text-color-third;
+  color: $text-color-primary;
   font-family: $font-secondary;
   font-size: 24px;
   font-style: normal;
@@ -127,7 +126,7 @@ body {
   line-height: 40px;
 
   &.black {
-    color: $text-color-third;
+    color: $text-color-primary;
   }
 
   @media (max-width: 768px) {
@@ -149,6 +148,7 @@ body {
   }
 
   p {
+    color: $text-color-primary;
     font-family: $font-primary;
     font-size: 28px;
     font-weight: 500;
@@ -165,4 +165,10 @@ body {
       line-height: 26px;
     }
   }
+}
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }

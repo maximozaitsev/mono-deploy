@@ -62,6 +62,7 @@ const BonusDetailsSection: React.FC = () => {
                 width={140}
                 height={56}
                 style={{ maxWidth: "100%", height: "auto" }}
+                quality={100}
               />
             </div>
             <div className="cell hide-1020">Welcome Bonus</div>
@@ -80,6 +81,7 @@ const BonusDetailsSection: React.FC = () => {
                   alt="Info Icon"
                   width={24}
                   height={24}
+                  quality={100}
                 />
               </button>
             </div>

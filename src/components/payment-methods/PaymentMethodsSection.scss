@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: #fff;
+        color: $text-color-primary;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
@@ -69,6 +69,7 @@
       tr {
         height: 88px;
         background: none;
+        color: #181a1d;
 
         td {
           background: $color-background-third;
@@ -146,10 +147,6 @@
           width: 100%;
         }
 
-        @media (max-width: 850px) {
-          border-radius: $border-radius $border-radius 0 0;
-        }
-
         @media (max-width: 320px) {
           flex-direction: column;
           gap: 10px;
@@ -163,7 +160,7 @@
         flex-direction: column;
         padding: 8px 16px;
         border: $border-width solid $border-color;
-        border-radius: 0 0 $border-radius $border-radius;
+        border-radius: $border-radius;
 
         p {
           color: $text-color-third;
@@ -180,7 +177,7 @@
           }
 
           strong {
-            background: $text-color-fourth;
+            background: #2d2c58;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
