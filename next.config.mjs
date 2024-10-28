@@ -11,6 +11,23 @@ const withPWA = nextPWA({
   disable: false,
   workboxOptions: {
     disableDevLogs: true,
+    runtimeCaching: [
+      {
+        urlPattern:
+          /^https:\/\/one-casino-online\.com\/_next\/static\/.*\/_buildManifest\.js$/,
+        handler: "NetworkOnly",
+      },
+      {
+        urlPattern: /^https:\/\/one-casino-online\.com\/_next\/static\/.*/,
+        handler: "CacheFirst",
+        options: {
+          cacheName: "static-resources",
+          expiration: {
+            maxEntries: 50,
+          },
+        },
+      },
+    ],
   },
 });
 
