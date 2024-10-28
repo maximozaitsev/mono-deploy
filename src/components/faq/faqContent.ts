@@ -1,18 +1,53 @@
 export const faqs = [
   {
-    question: "¿Existe un bono sin depósito en One Casino?",
+    question: "What are Elements Casino Chilliwack's operating hours?",
     answer:
-      "Sí, los nuevos participantes reciben un bono sin depósito de 10 euros al registrarse, que se puede utilizar inmediatamente para jugar.",
+      "The casino is open daily from 9 AM to 1 AM, except on Fridays, Saturdays, and Sundays, when it remains open until 2 AM.",
+  },
+  {
+    question: "Is there a dress code at Elements Casino Chilliwack?",
+    answer:
+      "There is no strict dress code, but players are expected to dress appropriately and avoid offensive or gang-related attire.",
+  },
+  {
+    question: "Are minors allowed at Elements Casino Chilliwack?",
+    answer:
+      "No, you must be at least 19 years old to enter or play and make Elements Casino Chilliwack photos.",
+  },
+  {
+    question: "Does Elements Casino Chilliwack have live table games?",
+    answer:
+      "Yes, the casino offers live table games, including blackjack and poker, with professional dealers.",
+  },
+  {
+    question: "Is parking available at the casino?",
+    answer:
+      "Yes, Elements Casino Chilliwack offers free parking for all its visitors.",
   },
   {
     question:
-      "¿Existen requisitos de apuesta para los One Casino no deposit bonus codes 2022?",
+      "Are there special events or live entertainment at Elements Casino?",
     answer:
-      "Sí, la mayoría de los bonos de One Casino tienen un requisito de apuesta de 35 veces antes de poder retirar cualquier ganancia.",
+      "Yes, The Well Public House regularly hosts live music events featuring local and cover bands.",
   },
   {
-    question: "¿Puedo jugar a juegos gratis y hacer Fotos de One Casino?",
+    question: "Can I earn loyalty points at Elements Casino?",
     answer:
-      "Sí, puede probar las versiones de demostración de la mayoría de los juegos de forma gratuita antes de comprometer dinero real.",
+      "Yes, through the Encore Rewards program, players earn points that can be redeemed for free play and other perks.",
+  },
+  {
+    question: "Does the casino have a restaurant?",
+    answer:
+      "Elements Casino Chilliwack menu called The Well Public House, serving a variety of meals throughout the day.",
+  },
+  {
+    question: "Does Elements Casino Chilliwack have a VIP program?",
+    answer:
+      "Yes, the Privé program offers exclusive rewards, Elements Casino Chilliwack events, and access to the VIP lounge for frequent high-rollers.",
+  },
+  {
+    question: "Is Wi-Fi available at the casino?",
+    answer:
+      "Yes, complimentary Wi-Fi is available for all visitors within the casino.",
   },
 ];

@@ -28,15 +28,6 @@ export default function GamesToPlay() {
                 },
               ],
             },
-            {
-              heading: content.gamesToPlay.leftColumnContent[2].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[2].text,
-                },
-              ],
-            },
           ]}
           rightColumnContent={[
             {
@@ -59,6 +50,7 @@ export default function GamesToPlay() {
             },
           ]}
         />
+        {/* <p className="paragraph-text">{content.gamesToPlay.text[1]}</p> */}
       </div>
     </section>
   );

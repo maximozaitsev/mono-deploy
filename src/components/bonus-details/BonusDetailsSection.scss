@@ -33,9 +33,10 @@
     width: 218px;
     height: 56px;
     box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
-    color: #0e1013;
+    color: #fff;
     margin-top: -3px;
     margin-left: 6px;
+    padding: 0;
   }
 
   @media (max-width: 1080px) {
@@ -165,7 +166,6 @@
 .accordion-title,
 .accordion-value {
   background: $color-background;
-  color: $text-color-primary;
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
@@ -206,7 +206,7 @@
       }
 
       button {
-        width: 200px;
+        width: 236px;
       }
     }
   }
@@ -248,7 +248,7 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: $text-color-primary;
+  color: #fff;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;

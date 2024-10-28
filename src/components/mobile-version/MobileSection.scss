@@ -21,11 +21,6 @@
 
   .app-info-block {
     padding-left: 32px;
-    max-width: 300px;
-
-    @media (max-width: 1160px) {
-      max-width: none;
-    }
   }
 
   .advantages-block,
@@ -87,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -110px;
-      top: -11px;
+      left: -103px;
+      top: -2px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -143,7 +138,7 @@
 
         .app-image {
           /* margin-left: -35px; */
-          // margin-bottom: 10px;
+          margin-bottom: 3px;
           padding-bottom: 20px;
         }
 
@@ -176,7 +171,7 @@
         button {
           align-self: center;
           margin-top: 40px;
-          max-width: 267px;
+          max-width: 271px;
           height: 77px;
         }
       }

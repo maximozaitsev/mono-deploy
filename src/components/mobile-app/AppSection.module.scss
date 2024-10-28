@@ -20,6 +20,10 @@
     gap: 48px;
     width: 548px;
 
+    .imageMobile {
+      display: none;
+    }
+
     .buttons {
       display: flex;
       gap: 24px;
@@ -39,22 +43,19 @@
 
     .image {
       position: absolute;
-      top: -90px;
-      right: -87px;
+      top: -38px;
+      right: -13px;
       overflow: hidden;
       height: auto;
-
-      @media (max-width: 1020px) {
-        top: -60px;
-      }
     }
   }
 
   @media (max-width: 1320px) {
     .imageBlock {
       .image {
-        right: -9px;
-        max-width: 97%;
+        right: 0;
+
+        max-width: 105%;
       }
     }
   }
@@ -65,16 +66,21 @@
     .textBlock {
       width: 100%;
 
+      .imageMobile {
+        display: block;
+        max-width: 244px;
+        width: 100%;
+        height: auto;
+        align-self: center;
+      }
+
       h3 {
-        width: 50%;
+        width: 80%;
       }
     }
 
     .imageBlock {
-      position: absolute;
-      top: -10rem;
-      right: -10px;
-      width: 250px;
+      display: none;
     }
   }
 
@@ -84,10 +90,6 @@
 
     .textBlock {
       gap: 24px;
-
-      p {
-        width: 75%;
-      }
 
       h3:first-child {
         font-size: 32px;
@@ -109,7 +111,7 @@
 
     .imageBlock {
       img {
-        top: -63px !important;
+        top: -105px !important;
       }
 
       position: absolute;

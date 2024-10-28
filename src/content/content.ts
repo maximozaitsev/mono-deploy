@@ -1,45 +1,42 @@
 export const content = {
-  projectName: "One Casino",
+  projectName: "Elements Casino Chilliwack",
   advantages: {
     // title: "",
-    subTitle: "Ventajas de One Casino",
+    subTitle: "Elements Casino Rewards and Advantages",
     text: [
-      `One Casino es fiable y ofrece varias ventajas que lo convierten en una opción atractiva para los participantes en España, aunque también tiene algunos inconvenientes. A continuación se enumeran los principales pros y contras:`,
+      `Elements Casino offers a variety of benefits for players looking for an exciting gaming experience. However, like any casino, it also comes with a few downsides. Here are the key advantages and disadvantages:`,
     ],
-    advantagesTitle: "Ventajas:",
-    disadvantagesTitle: "Desventajas:",
+    advantagesTitle: "Advantages:",
+    disadvantagesTitle: "Disadvantages:",
     advantages: [
-      "Amplia selección de juegos",
-      "Interfaz fácil de usar",
-      "Disponible en móvil y escritorio",
-      "Local seguro y con licencia",
-      "Generosas promociones y bonificaciones",
-      "Atención al cliente 24 horas al día, 7 días a la semana",
-      "Rápidas opciones de retirada",
+      "Wide range of slot machines and table games",
+      "Welcoming atmosphere for all players",
+      "On-site dining and entertainment options",
+      "Rewards program for loyal customers",
+      "Convenient location in Chilliwack",
     ],
     disadvantages: [
-      "Métodos de pago limitados",
-      "Acceso restringido en algunos países",
-      "Requisitos de apuesta en los bonos",
+      "Limited online gaming options",
+      "Not available to players outside British Columbia",
     ],
   },
   about: {
-    title: "One Casino España",
+    title: "Elements Casino Chilliwack",
     intro: [
-      "Requisito de apuesta 35x",
-      "Bono sin depósito de 10 euros",
-      "hasta el 10% de las pérdidas netas del jugador",
+      "C$20,000 in Free Play prizes",
+      "C$10,000 worth of Free Play prizes",
+      "24/7 customer support",
     ],
     description: [
-      `One Casino España es un popular casino en línea que ofrece a los participantes españoles una amplia variedad de juegos y emocionantes experiencias de juego. Conocido por su interfaz fácil de usar y su amplia selección de juegos, que incluye tragaperras, juegos de mesa y opciones de crupier en vivo, la One Casino review se dirige tanto a participantes ocasionales como experimentados. El lugar está totalmente autorizado y regulado, lo que garantiza un entorno de juego seguro y justo. Además, las One Casino opiniones ofrecen diversas promociones y bonificaciones diseñadas para mejorar la experiencia de juego, lo que lo convierte en la mejor opción para aquellos que buscan disfrutar del juego en línea en España.`,
+      `Elements Casino Chilliwack is a popular entertainment destination located in the heart of Chilliwack, British Columbia. Known for its welcoming atmosphere and diverse gaming options, and comfortable Elements Casino Chilliwack location it offers a wide variety of slot machines, table games, and live entertainment to suit all types of visitors. Whether you're looking for a night out filled with excitement or a more casual gaming experience, Elements Casino Chilliwack reviews provide a vibrant setting for both locals and tourists. In addition to gaming, the venue also features a restaurant and bar, making it a perfect spot for dining and socializing.`,
       // `p2`,
       // `p3`,
     ],
     signIn: {
-      title: "Acerca de One Casino opiniones",
+      title: "About Elements Casino Login",
       text: [
-        `One Casino España es un lugar de juego en línea bien establecido que ofrece una amplia selección de juegos de casino a los participantes españoles, con un énfasis en el entretenimiento de calidad y una experiencia de usuario sin problemas. El sitio cuenta con una gran variedad de tragaperras, juegos de mesa y experiencias con crupier en vivo, todos ellos proporcionados por desarrolladores de juegos de primer nivel. `,
-        `El proceso de inicio de One Casino login es sencillo y está diseñado para ofrecer comodidad y seguridad. Para empezar, los participantes deben visitar el sitio web oficial o la móvil de One Casino app e introducir su correo electrónico y contraseña registrados en la sección de inicio de sesión. Una vez autenticados, los usuarios obtienen acceso a su cuenta personal, donde pueden gestionar su saldo, consultar las promociones y empezar a jugar al instante.`,
+        `The well public house at Elements Casino Chilliwack offers a dynamic and engaging gaming experience for players in Chilliwack and beyond. With a wide selection of slot machines, table games, and exciting live events, the casino is a hub of entertainment. In addition to its gaming options, Elements Casino also features a restaurant and bar, providing a well-rounded experience for visitors. The casino's atmosphere is welcoming, catering to both seasoned players and newcomers alike, ensuring everyone can enjoy a night of fun and excitement.`,
+        `Accessing your account through the Elements Casino login is simple and user-friendly. Players can easily log in by visiting the casino's official website, where they will find the login portal. Once there, they can enter their username and password to access their account. This secure login process allows players to manage their account details, view their rewards, and stay updated on promotions and events. The login system is designed to provide convenience while ensuring the safety and privacy of users’ information.`,
         // `p3`,
       ],
       // list: ["li1", "li2", "li3"],
@@ -50,79 +47,90 @@ export const content = {
     //   text: [`VerificationText1`, `VerificationText2`, `VerificationText3`],
     // },
     depositMethods: {
-      title: "Métodos de depósito",
+      title: "Deposit Methods",
       text: [
-        `Casino One ofrece varias opciones de depósito seguras y fiables para los participantes. Los usuarios pueden ingresar fondos en sus cuentas utilizando tarjetas bancarias tradicionales como Visa y Mastercard, ambas ampliamente aceptadas y seguras. Para aquellos que prefieran soluciones de banca en línea, Sofort Banking está disponible, ofreciendo una forma cómoda de depositar directamente desde una cuenta bancaria. Además, PaySafeCard permite realizar depósitos de prepago, lo que resulta ideal para los participantes que buscan un nivel adicional de privacidad y control sobre sus gastos. ApplePay también es compatible con las transacciones móviles.`,
+        `Elements Casino Chilliwack offers several convenient deposit methods for players. The most common options include credit cards (Visa and MasterCard) and Interac e-Transfer, which allows players to fund their accounts directly from their bank. Players can also use direct bank transfers for higher limits, providing flexibility depending on their preferred funding amount. These methods ensure quick processing times, making it easy to start playing almost immediately after the deposit is made.`,
         // `p2`,
       ],
       // list: ["li1", "li2", "li3"],
       // additionalText: `p1`,
     },
     withdrawalMethods: {
-      title: "Métodos One Casino Retiros",
+      title: "Withdrawal Methods",
       text: [
-        `Para los retiros, One Casino online admite varias opciones para cobrar sus ganancias de forma segura. Los participantes pueden utilizar sus tarjetas de crédito o débito Visa o Mastercard, lo que garantiza que las retiradas se procesen directamente a la tarjeta utilizada para los depósitos.`,
-        `Alternativamente, Sofort Banking permite realizar transferencias directas a su cuenta bancaria.`,
+        `When it comes to withdrawing winnings, players at Elements Casino Chilliwack can typically use methods like bank transfers and Interac e-Transfer. These options provide a reliable and secure way to access funds, with processing times that may vary depending on the specific method chosen. Bank transfers usually take a few business days, while Interac e-Transfers can be processed more quickly, allowing players to enjoy their winnings without long delays.`,
+        // `p2`,
       ],
       list: [],
     },
   },
   licenses: {
-    title: "Licencias",
+    title: "Licenses",
     text: [
-      `One Casino opera bajo la autoridad de licencias de la Autoridad del Juego de Malta (MGA), lo que garantiza que cumple con los altos estándares regulatorios en imparcialidad, transparencia y protección del jugador.`,
-      `El número de licencia es MGA/B2C/327/2016, lo que otorga a la sala el derecho legal de ofrecer sus servicios a participantes de varias jurisdicciones.`,
+      `Elements Casino Chilliwack operates under the regulations of the British Columbia Lottery Corporation (BCLC), which ensures the casino adheres to the laws and standards set by the Canadian government. The BCLC license ensures fairness in gaming, transparency in operations, and protection for players, making it a trustworthy gaming venue.`,
+      // `p2`,
       // `p3`,
     ],
-    security: "Opiniones One Casino Seguridad",
+    security: "Elements Casino Online Security",
     securityText: [
-      `La seguridad en One Casino ES se toma muy en serio, con tecnología de encriptación como SSL (Secure Socket Layer) implementada para proteger los datos y las transacciones de los usuarios. El casino asegura que toda la información personal y financiera está encriptada, protegiéndola contra accesos no autorizados. Además, el lugar se adhiere a estrictos protocolos de seguridad, incluyendo la protección de datos y el procesamiento seguro de pagos.`,
+      `The casino places a strong emphasis on security, implementing the latest encryption technologies to protect player data and financial transactions. SSL (Secure Socket Layer) encryption is used to ensure all communications between users and the casino servers are securely encrypted. This protects sensitive information such as personal details and payment credentials from unauthorized access. Additionally, Elements Casino complies with stringent regulatory requirements, ensuring a safe and secure gaming environment.`,
       // `p2`,
     ],
-    software: "Tecnologías de software",
+    software: "Software Technologies",
     softwareText: [
-      `One Casino Nederland utiliza una infraestructura de software robusta y moderna que ofrece una experiencia de juego perfecta en múltiples sitios. Los juegos proceden de los principales desarrolladores de software, como NetEnt, Play'n GO y Microgaming, lo que garantiza gráficos de alta calidad, una jugabilidad fluida y diversas opciones de juego. `,
+      `Elements Casino Chilliwack Chilliwack, BC uses advanced software platforms from leading providers to ensure smooth, efficient gaming experiences. The casino integrates cutting-edge gaming technologies to offer reliable, fast-loading games across various devices. This software guarantees compatibility with different systems and maintains a stable user experience for both desktop and mobile users. However, detailed information about specific software providers used by Elements Casino is generally not disclosed to the public.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Aplicación del casino",
+    title: "Casino App",
     text: [
-      `Aunque One Casino no ofrece una aplicación móvil específica, su sitio web está totalmente optimizado para el uso móvil. Los participantes pueden acceder a toda la gama de juegos, gestionar sus cuentas y disfrutar de promociones directamente desde su smartphone o tableta utilizando su navegador. La versión móvil reproduce la experiencia de escritorio sin comprometer la funcionalidad ni la calidad de los juegos.`,
+      `Elements Casino Chilliwack does not have a dedicated mobile app but offers a fully optimized mobile gaming experience through its website. Players can access the casino’s games, promotions, and account features seamlessly from their smartphones and tablets without the need to download an app. The mobile version of the site is compatible with both iOS and Android devices, ensuring accessibility for a wide range of users.`,
       // `p2`,
     ],
-    languages: "Idiomas de Come One Casino",
+    languages: "Languages",
     languagesText: [
-      `One Casino admite varios idiomas para atender a su variada base de jugadores. Actualmente, está disponible en inglés, español, alemán y holandés. Esto garantiza que los participantes de diferentes regiones puedan navegar y jugar cómodamente en su lengua materna.`,
+      `The primary language supported at Elements Casino Chilliwack is English. While there may be assistance for speakers of other languages depending on staff availability, the casino’s games, website, and customer support primarily function in English to cater to its local and international visitors.`,
       // `p2`,
       // `p3`,
     ],
-    currencies: "Divisas de One Go Casino",
+    currencies: "Currencies",
     currenciesText: [
-      `La plataforma admite varias divisas principales para acomodar a participantes de varios países.`,
-      `Las divisas aceptadas incluyen el euro (EUR), la libra esterlina (GBP) y el dólar estadounidense (USD).`,
-      `Esta flexibilidad permite a los usuarios gestionar sus fondos en la divisa que prefieran, lo que facilita las transacciones.`,
+      `The primary currency accepted at Chilliwack Elements Casino is the Canadian dollar (CAD). All transactions, including deposits and withdrawals, are processed in CAD. Players from other countries will need to convert their currency before participating in gaming activities or making transactions at the casino.`,
+      // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Juegos disponibles en One Casino",
+    title: "Games Available to Play at Elements Casino",
     text: [
-      `One Casino NL ofrece una amplia gama de juegos diseñados para satisfacer a todo tipo de jugadores, desde los que prefieren las tragaperras hasta los aficionados a los juegos de mesa clásicos y las experiencias con crupier en vivo. Con proveedores de juegos de primer nivel, los participantes pueden esperar gráficos de alta calidad, un juego fluido y una variedad de temas y formatos para que la experiencia siga siendo atractiva. A continuación se detallan las principales opciones de juego disponibles en One Casino:`,
+      `Elements Casino Chilliwack offers a diverse range of gaming options, catering to both casual players and seasoned gamblers. Whether you're a fan of the fast-paced excitement of slot machines or prefer the strategic play of table games, there is something for everyone at this casino. Here’s a closer look at the gaming options available:`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Tragaperras",
-        text: `One Casino cuenta con una amplia colección de tragaperras en línea para todo tipo de participantes, tanto si prefieren la sencillez de las clásicas máquinas de 3 rodillos como si prefieren el juego más intrincado de las tragaperras de vídeo con temas y argumentos envolventes.`,
+        heading: "Slot Machines",
+        text: `Elements Casino Chilliwack boasts an extensive collection of slot machines, providing a wide range of gaming experiences for its visitors. From traditional three-reel classics that evoke the nostalgia of old-school casinos to modern video slots packed with exciting themes, animations, and bonus features, there’s something to suit every preference. The casino’s slot machines come with varying denominations, ensuring that players of all budgets can find the perfect game for them. Whether you prefer low-stakes penny slots for longer play sessions or high-stakes machines for the chance at bigger payouts, you’ll find plenty of options. Many of these machines also offer progressive jackpots, adding to the thrill as players vie for potentially life-changing wins.`,
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
-        heading: "Juegos de mesa",
+        heading: "Table Games",
         text: [
-          `Para los aficionados a los juegos de casino clásicos, One Casino ofrece una impresionante gama de opciones. La selección incluye los favoritos tradicionales como el blackjack, la ruleta y el baccarat, pero también ofrece múltiples variaciones de juego para mantener las cosas frescas e interesantes. Los participantes pueden probar suerte en la ruleta europea o americana, cambiar entre distintos formatos de blackjack o enfrentarse al crupier en juegos como Casino Hold'em o Pontoon. Cada juego está diseñado para ser fácil de aprender, pero ofrece suficiente profundidad para que los participantes experimentados disfruten.`,
+          `For those who thrive on strategy and skill, Elements Casino offers an impressive variety of table games that provide a more traditional and interactive casino experience. Whether you’re drawn to the challenge of blackjack, the suspense of roulette, or the elegance of baccarat, the casino has something to cater to your tastes. Each table is manned by professional dealers who not only guide the games but also create an engaging atmosphere. Players can choose from different betting limits, allowing both newcomers and high rollers to enjoy the action. The wide selection of games and the camaraderie of live play make table games a favorite among many casino-goers.`,
+          // `p2`,
+          // `p3`,
+        ],
+        // categories: ["li1", "li2", "li3"],
+        // additionalText: `p1`,
+      },
+    ],
+    gamesRightColumn: [
+      {
+        heading: "Elements Casino Poker",
+        text: [
+          `Poker enthusiasts will feel right at home at Elements Casino, which offers several poker tables for both cash games and tournaments. Whether you’re a casual player looking to enjoy a few hands or a seasoned pro seeking competition, you’ll find a welcoming environment at the poker tables. Texas Hold'em is the most popular game, with tournaments held regularly, attracting players of all skill levels. The atmosphere at the poker tables is electric, with players competing against each other, bluffing, and strategizing in hopes of walking away with the pot. This social and competitive aspect of poker is what makes it one of the most exhilarating options at the casino.`,
           // `p2`,
           // `p3`,
         ],
@@ -130,23 +138,9 @@ export const content = {
         // additionalText: `p1`,
       },
       {
-        heading: "Casino en vivo",
+        heading: "Electronic Table Games",
         text: [
-          `La sección de crupieres en vivo de One Casino ofrece una experiencia de juego superior que combina la comodidad del juego en línea con el ambiente de un casino real. Los participantes pueden unirse a retransmisiones en directo organizadas por crupieres profesionales en tiempo real, lo que les permite interactuar tanto con el crupier como con otros participantes, lo que mejora el aspecto social del juego. El casino en vivo ofrece juegos clásicos como el Blackjack en vivo, la Ruleta en vivo y el Baccarat en vivo, todos ellos transmitidos en alta definición para una experiencia envolvente.`,
-        ],
-      },
-    ],
-    gamesRightColumn: [
-      {
-        heading: "Vídeo póquer",
-        text: [
-          `Para los participantes que disfrutan con una mezcla de suerte y estrategia, One Casino ofrece una gama de juegos de vídeo póquer. A diferencia del póquer estándar, el vídeo póquer es más rápido y se centra en la habilidad del jugador para formar la mejor mano posible con las cartas repartidas. Opciones populares como Jacks or Better y Deuces Wild dan a los participantes la oportunidad de poner a prueba sus habilidades en el póquer a la vez que ofrecen una ventaja de la casa relativamente baja.`,
-        ],
-      },
-      {
-        heading: "Bingo One Casino y juegos especiales",
-        text: [
-          `Además de su gama estándar de tragaperras, juegos de mesa y opciones con crupier en vivo, One Casino también ofrece una selección de juegos especiales. Entre ellos se incluyen juegos con premios instantáneos, como las tarjetas rasca y gana, y juegos de lotería, como el keno, que ofrecen un juego más informal. Estos juegos son perfectos para los participantes que buscan opciones rápidas y fáciles de jugar que no requieran tanta estrategia o compromiso de tiempo.`,
+          `For those who prefer a faster-paced gaming experience or want to avoid waiting for an open seat at a live table, Elements Casino Chilliwack offers electronic versions of popular table games. Digital versions of games like blackjack and Elements Casino Chilliwack bingo allow players to enjoy their favorite games with the added convenience of touch-screen technology and faster play times. These electronic table games provide an excellent blend of the traditional casino feel with modern gaming technology, making them ideal for players who enjoy the excitement of table games but with more streamlined and private gameplay. The user-friendly interface and constant availability make electronic table games an increasingly popular choice among visitors.`,
           // `p2`,
           // `p3`,
         ],
@@ -154,61 +148,61 @@ export const content = {
     ],
   },
   support: {
-    title: "Uno. Casino Soporte",
+    title: "Support",
     text: [
-      `One Casino ofrece atención al cliente a través de múltiples canales, incluyendo chat en vivo y correo electrónico.`,
-      `El equipo de asistencia está disponible 24 horas al día, 7 días a la semana, lo que garantiza que los participantes puedan recibir ayuda en cualquier momento.`,
-      `La función de chat en vivo permite una asistencia inmediata, mientras que el soporte por correo electrónico gestiona consultas más detalladas o problemas que requieren una investigación adicional.`,
+      `Customer support at Elements Casino Chilliwack is available through multiple channels, including phone and in-person assistance at the casino. The staff is trained to handle inquiries related to account management, payment processing, and technical issues. However, the casino does not currently offer 24/7 live chat support, so visitors may need to rely on contacting support during the Elements Casino Chilliwack hours.`,
+      // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "One Casino Promociones",
+    title: "Elements Casino Promotions",
     text: [
-      `One Casino ofrece varias bonificaciones y promociones atractivas para mejorar la experiencia de juego tanto de los participantes nuevos como de los existentes. A continuación encontrará un resumen de los principales Bono One Casino disponibles:`,
+      `Elements Casino Chilliwack offers a variety of bonuses and promotions to enhance the gaming experience for its visitors. These promotions range from Free Play prizes to exclusive member rewards, catering to both casual players and dedicated casino-goers.`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Bono de Bienvenida y  One Casino Tiradas Gratis",
+        heading: "Fall Frenzy",
         text: [
-          `Los nuevos participantes en One Casino son recibidos con un generoso bono de depósito del 100% en su primer depósito. Esta promoción duplica efectivamente su depósito inicial, permitiéndo comenzar su viaje de juego con el doble de fondos. Por ejemplo, si deposita 10 euros, recibirá un One Casino 10 euros gratis en fondos de bonificación, lo que le dará 100 euros para jugar. Sin embargo, los fondos de la bonificación de One Casino 10 € vienen con un requisito de apuesta de 35x, lo que significa que la cantidad total de la bonificación debe apostarse 35 veces antes de poder retirar cualquier ganancia. `,
+          `The Fall Frenzy promotion at Elements Casino Chilliwack gives players a chance to win a substantial portion of over C$20,000 in Free Play prizes. This promotion adds excitement to the casino experience with weekly draws taking place every Tuesday, Wednesday, and Thursday at 7 PM. To participate, players earn one ballot for every 500 Encore Rewards points collected while playing on slot machines during the promotional period. The rewards system is further enhanced on Tuesdays, when players can earn double the ballots—two for every 500 points—maximizing their chances of winning. With a combination of generous prize pools and frequent draw opportunities, Fall Frenzy creates an engaging environment for regular players looking to boost their winnings with minimal effort.`,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
-      {
-        heading: "Bono sin depósito de 10 euros",
-        text: [
-          `Una de las características más atractivas de One Casino es el bono sin depósito de 10 euros que se ofrece a los nuevos participantes al registrarse.`,
-          `A diferencia de la bonificación por depósito de bienvenida, esta promoción permite a los usuarios probar el lugar sin tener que depositar dinero propio. Es una forma sin riesgos de probar los juegos y hacerse una idea del casino. El One Casino bono viene con un requisito de apuesta de 35x, lo que significa que tienes que apostar tus ganancias de este bono de Cupon One Casino 35 veces antes de poder convertirlas en dinero real y retirarlas.`,
-          // `p3`,
-        ],
-      },
+      // {
+      //   heading: "bonus2Heading",
+      //   text: [
+      //     `p1`,
+      //     // `p2`,
+      //     // `p3`,
+      //   ],
+      //   categories: ["li1", "li2", "li3"],
+      //   additionalText: `p1`,
+      // },
     ],
     rightColumnContent: [
       {
-        heading: "Bonos semanales de dinero gratis y One Casino 50 Free spins",
+        heading: "Jackpot Mania",
         text: [
-          `Como parte del Club One, el programa de fidelidad de One Casino, los participantes disfrutan de promociones exclusivas, incluyendo bonos semanales de dinero gratis.`,
-          `Cada semana, los miembros reciben un correo electrónico promocional que contiene un bono sin depósito, giros gratis o una oferta de bono por depósito.`,
-          `Estas bonificaciones y Cupón One Casino permiten a los participantes ganar fondos extra para jugar sin utilizar su propio dinero. Los bonos de dinero gratis, como muchas otras ofertas en One Casino, tienen un requisito de apuesta de 35x antes de poder retirar cualquier ganancia.`,
-          `Estos bonos semanales de Megaball One Casino mantienen la emoción del juego y proporcionan a los participantes leales oportunidades frecuentes de aumentar su bankroll sin tener que depositar fondos adicionales.`,
+          `Jackpot Mania is another highly anticipated promotion at Elements Casino, offering participants the opportunity to share in C$10,000 worth of Free Play prizes. This promotion is designed to make weekend visits even more exciting, with bi-weekly draws scheduled on Sundays at 2 PM and 4 PM. Players automatically earn one ballot for each jackpot hit on Fridays, Saturdays, and Sundays, giving them multiple chances to qualify for the draw. The allure of Jackpot Mania lies in its simple yet rewarding mechanics, providing frequent players with an added incentive to play, as even a single jackpot could translate into a substantial Free Play prize. This promotion is perfect for those looking to elevate their gaming experience with the possibility of big rewards.`,
+          // `p2`,
+          // `p3`,
         ],
         // additionalText: `p1`,
       },
-      {
-        heading: "Bono de Cash Back y One Casino Bono sin Depósito",
-        text: [
-          `Para suavizar el golpe de una racha de mala suerte, One Casino ofrece un bono de devolución de dinero que devuelve hasta el 10% de las pérdidas netas del jugador como bono sin depósito.`,
-          `Esto significa que si ha tenido una serie de pérdidas, puede recuperar un porcentaje de sus fondos perdidos, que podrá utilizar para seguir jugando.`,
-          `La ventaja clave de este One Casino cupón de One Casino es que no hay requisitos de apuesta en la cantidad de devolución: cualquier ganancia generada por este One Casino bonus es suya y puede retirarla inmediatamente.`,
-        ],
-      },
+      // {
+      //   heading: "bonus4Heading",
+      //   text: [
+      //     `p1`,
+      //     // `p2`,
+      //     // `p3`,
+      //   ],
+      // },
     ],
   },
   faq: {
-    title: "Opiniones de One Casino FAQ",
+    title: "Casino Elements FAQ ",
   },
 };

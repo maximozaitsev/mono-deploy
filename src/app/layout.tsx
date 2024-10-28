@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "one-casino-online.com";
+const url = "https://elements-casino-chilliwack.com";
 const ogTitle =
-  "One Casino España - El mejor casino en línea con bonos y juego seguro";
-const ogSiteName = "One Casino España";
+  "Elements Casino Chilliwack: Canada’s Top Gaming & Entertainment Spot";
+const ogSiteName = "Elements Casino Chilliwack";
 const metaDescription =
-  "One Casino España ofrece emocionantes juegos, incluyendo tragaperras y crupieres en vivo, con generosos bonos. Regístrese hoy y obtenga su bono sin depósito de 10 euros para empezar a jugar con dinero real. ¡Regístrate ahora!";
+  "Elements Casino Chilliwack in Canada offers top-tier gaming, live table games, and exciting events. Visit the casino today for a thrilling gaming experience and exclusive member perks. Discover more fun by joining the action now!";
 
-const locale = "es-ES";
-const language = "Spanish";
+const locale = "en-CA";
+const language = "English";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {

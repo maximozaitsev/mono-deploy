@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: $text-color-primary;
+        color: #fff;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
@@ -69,7 +69,6 @@
       tr {
         height: 88px;
         background: none;
-        color: #181a1d;
 
         td {
           background: $color-background-third;
@@ -129,7 +128,7 @@
         align-items: center;
         margin-bottom: 8px;
         padding: 8px;
-        border-radius: $border-radius;
+        border-radius: $border-radius $border-radius 0 0;
 
         img {
           width: 110px;
@@ -160,7 +159,7 @@
         flex-direction: column;
         padding: 8px 16px;
         border: $border-width solid $border-color;
-        border-radius: $border-radius;
+        border-radius: 0 0 $border-radius $border-radius;
 
         p {
           color: $text-color-third;
@@ -177,7 +176,7 @@
           }
 
           strong {
-            background: #2d2c58;
+            background: $text-color-fourth;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -194,11 +193,5 @@
     .payment-methods-table {
       display: none;
     }
-  }
-}
-
-.payment-method-card:first-child {
-  .payment-method-details {
-    background: #ccc !important;
   }
 }
