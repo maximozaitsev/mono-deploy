@@ -196,3 +196,9 @@
     }
   }
 }
+
+.payment-method-card:first-child {
+  .payment-method-details {
+    background: #ccc !important;
+  }
+}
