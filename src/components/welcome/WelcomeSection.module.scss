@@ -17,9 +17,14 @@
   & :global(.container) {
     width: 100%;
   }
-  @media (max-width: 1100px) {
-    background-position: right 20px top 0;
+
+  @media (max-width: 1180px) {
+    background-position: right 70px top 0;
   }
+
+  // @media (max-width: 1100px) {
+  //   background-position: right 20px top 0;
+  // }
 
   @media (max-width: 1020px) {
     background-position: right 20px top 80px;
@@ -39,10 +44,14 @@
     background-size: auto 63%;
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 540px) {
     margin: 0 auto 72px auto;
     background-size: auto 50%;
     padding-top: 14.35rem;
+  }
+
+  @media (max-width: 400px) {
+    padding-top: 13.3rem;
   }
 }
 
