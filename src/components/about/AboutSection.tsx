@@ -35,7 +35,7 @@ export default function AboutSection() {
             {content.about.signIn.title}
           </h3>
           <P>{content.about.signIn.text[0]}</P>
-          {/* <List items={content.about.signIn.list} ordered /> */}
+          <List items={content.about.signIn.list} ordered />
           <P>{content.about.signIn.text[1]}</P>
           {/* <h4 className="h4-heading white">{content.about.signIn.text[2]}</h4> */}
           {/* <List items={content.about.signIn.list2} /> */}
@@ -60,14 +60,6 @@ export default function AboutSection() {
                 {
                   type: "text",
                   content: content.about.withdrawalMethods.text[0],
-                },
-                {
-                  type: "list",
-                  content: content.about.withdrawalMethods.list || [],
-                },
-                {
-                  type: "text",
-                  content: content.about.withdrawalMethods.text[1],
                 },
               ],
             },

@@ -11,17 +11,17 @@
 
   img {
     margin-top: 4px;
-    margin-left: 65px;
-    scale: 2.02;
+    margin-left: 27px;
+    scale: 1.43;
 
-    @media (max-width: 850px) {
-      margin-top: -6px;
-      margin-left: 27px;
-      scale: 1.43;
+    @media (max-width: 768px) {
+      margin-top: -4px;
+      margin-left: 17px;
+      scale: 1.2;
     }
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 980px) {
     padding: 24px 40px;
   }
 
@@ -76,7 +76,7 @@
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
-    top: 95px;
+    top: 96px;
     right: -100%;
     width: 100%;
     height: 100%;

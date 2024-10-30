@@ -1,14 +1,13 @@
 import { Metadata } from "next";
 
-const url = "https://elements-casino-chilliwack.com";
-const ogTitle =
-  "Elements Casino Chilliwack: Canada’s Top Gaming & Entertainment Spot";
-const ogSiteName = "Elements Casino Chilliwack";
+const url = "https://ruleta-casino-online.com";
+const ogTitle = "Ruleta Casino Espana: Reseña de un casino seguro y fiable";
+const ogSiteName = "Ruleta Casino Espana";
 const metaDescription =
-  "Elements Casino Chilliwack in Canada offers top-tier gaming, live table games, and exciting events. Visit the casino today for a thrilling gaming experience and exclusive member perks. Discover more fun by joining the action now!";
+  "Una selección de los mejores juegos en Ruleta Casino España. Regístrate para empezar a jugar con dinero real y ganar un bote. Regístrese hoy para ganar a lo grande mañana.";
 
-const locale = "en-CA";
-const language = "English";
+const locale = "es-ES";
+const language = "Spanish";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {

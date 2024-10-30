@@ -50,7 +50,7 @@
       font-family: $font-primary;
       font-size: 24px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
     }
   }
@@ -82,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -103px;
-      top: -2px;
+      left: -89px;
+      top: 19px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -137,8 +137,8 @@
         padding: 24px;
 
         .app-image {
-          /* margin-left: -35px; */
-          margin-bottom: 3px;
+          margin-left: 50px;
+          margin-bottom: 4px;
           padding-bottom: 20px;
         }
 
@@ -171,7 +171,7 @@
         button {
           align-self: center;
           margin-top: 40px;
-          max-width: 271px;
+          max-width: 267px;
           height: 77px;
         }
       }

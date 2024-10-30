@@ -5,10 +5,11 @@
 .offerCard {
   display: flex;
   width: 260px;
+  height: 353px;
   padding: 32px 24px;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  // gap: 16px;
 
   outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
@@ -16,6 +17,7 @@
 
   img {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
+    margin-bottom: 16px;
   }
 
   h3 {
@@ -26,6 +28,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 16px;
   }
 
   h4 {
@@ -34,7 +37,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: #df2124;
+    color: $text-color-fourth;
+    margin-bottom: 16px;
 
     // background: linear-gradient($text-color-secondary-gradient);
     // background-clip: text;
@@ -58,7 +62,7 @@
 
   button {
     margin-top: auto;
-    width: 225px;
+    width: 178px;
     // margin-left: 5px;
   }
 
@@ -75,12 +79,12 @@
       display: none;
     }
 
-    h4 {
-      margin-bottom: -8px;
-    }
+    // h4 {
+    //   margin-bottom: -8px;
+    // }
 
     button {
-      width: 209px;
+      width: 202px;
     }
   }
 

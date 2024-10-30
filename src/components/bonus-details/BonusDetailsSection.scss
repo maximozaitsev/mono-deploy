@@ -33,10 +33,9 @@
     width: 218px;
     height: 56px;
     box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
-    color: #fff;
+    color: #414141;
     margin-top: -3px;
     margin-left: 6px;
-    padding: 0;
   }
 
   @media (max-width: 1080px) {
@@ -206,7 +205,7 @@
       }
 
       button {
-        width: 236px;
+        width: 200px;
       }
     }
   }
@@ -217,7 +216,6 @@
 
     button {
       width: auto !important;
-      padding: 0 10px !important;
     }
   }
 
@@ -249,7 +247,7 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: #fff;
+  color: $text-color-primary;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;

@@ -40,7 +40,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "elements-casino-chilliwack.com",
+        hostname: "ruleta-casino-online.com",
       },
     ],
   },
