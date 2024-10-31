@@ -1,13 +1,14 @@
 import { Metadata } from "next";
 
-const url = "https://ruleta-casino-online.com";
-const ogTitle = "Ruleta Casino Espana: Reseña de un casino seguro y fiable";
-const ogSiteName = "Ruleta Casino Espana";
+const url = "https://one-casino-nz.com";
+const ogTitle =
+  "One Casino New Zealand: quality games, high payouts and a high level of security";
+const ogSiteName = "One Casino New Zealand";
 const metaDescription =
-  "Una selección de los mejores juegos en Ruleta Casino España. Regístrate para empezar a jugar con dinero real y ganar un bote. Regístrese hoy para ganar a lo grande mañana.";
+  "Register at One Casino and get up to 100% welcome bonus on your first six deposits. Choose the entertainment to your taste, enjoy more than 2000 games, and benefit from the best loyalty program.";
 
-const locale = "es-ES";
-const language = "Spanish";
+const locale = "en-NZ";
+const language = "English";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {

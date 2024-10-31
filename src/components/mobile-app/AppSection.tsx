@@ -24,6 +24,7 @@ export default function AppSection() {
               className={styles.imageMobile}
             />
             <p className="paragraph-text">{content.app.text[0]}</p>
+            <p className="paragraph-text">{content.app.text[1]}</p>
             <div className={styles.buttons}>
               <button
                 className="google-play"

@@ -40,7 +40,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "ruleta-casino-online.com",
+        hostname: "one-casino-nz.com",
       },
     ],
   },

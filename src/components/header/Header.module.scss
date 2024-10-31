@@ -10,15 +10,9 @@
   height: 96px;
 
   img {
-    margin-top: 4px;
-    margin-left: 27px;
-    scale: 1.43;
-
-    @media (max-width: 768px) {
-      margin-top: -4px;
-      margin-left: 17px;
-      scale: 1.2;
-    }
+    margin-top: 3px;
+    margin-left: 23px;
+    scale: 1.36;
   }
 
   @media (max-width: 980px) {

@@ -43,6 +43,14 @@ export default function LicensesSection() {
                   type: "text",
                   content: content.licenses.softwareText[0],
                 },
+                {
+                  type: "list",
+                  content: content.licenses.list,
+                },
+                {
+                  type: "text",
+                  content: content.licenses.softwareText[1],
+                },
               ],
             },
           ]}

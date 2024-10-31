@@ -1,13 +1,12 @@
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { content } from "@/content/content";
-import List from "../__common__/list/List";
 import styles from "./GamesToPlay.module.scss";
 
 export default function GamesToPlay() {
   return (
     <section className={`${styles.gamesToPlay} section `}>
       <div className="container">
-        <h2 className="h2-heading white">{content.gamesToPlay.title[0]}</h2>
+        <h2 className="h2-heading white">{content.gamesToPlay.title}</h2>
         <p className="paragraph-text">{content.gamesToPlay.text[0]}</p>
         <TwoColumns
           leftColumnContent={[
@@ -26,15 +25,6 @@ export default function GamesToPlay() {
                 {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[1].text,
-                },
-              ],
-            },
-            {
-              heading: content.gamesToPlay.leftColumnContent[2].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[2].text,
                 },
               ],
             },
@@ -60,12 +50,6 @@ export default function GamesToPlay() {
             },
           ]}
         />
-        <div className={styles.liveGames}>
-          <h2 className="h2-heading white">{content.gamesToPlay.title[1]}</h2>
-          <p className="paragraph-text">{content.gamesToPlay.text[1]}</p>
-          <List items={content.gamesToPlay.list} />
-          <p className="paragraph-text">{content.gamesToPlay.text[2]}</p>
-        </div>
       </div>
     </section>
   );

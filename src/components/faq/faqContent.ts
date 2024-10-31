@@ -1,26 +1,22 @@
 export const faqs = [
   {
-    question: "¿Es legal el casino Ruleta - juegos de tragaperras?",
+    question: "Is One Casino legit and safe to use?",
     answer:
-      "Por supuesto, es legal. El sitio opera bajo licencia de Gibraltar y la ES.",
+      "Yes, One Casino is licensed by the Malta Gaming Authority and uses SSL encryption to protect your data, ensuring a safe and secure gaming environment.",
   },
   {
-    question: "¿Es seguro Ruleta Casino?",
+    question: "How long do withdrawals take at One Casino?",
     answer:
-      "Sí, Ruleta Casino es completamente seguro para jugar y se puede disfrutar con confianza. Todos los datos de los jugadores están encriptados de forma segura.",
+      "Ewallet withdrawals are typically processed within 24 hours, while bank transfers and card withdrawals may take 25 business days.",
   },
   {
-    question: "¿Hay algún bono exclusivo en la reseña de Ruleta Casino?",
+    question: "Does One Casino offer a mobile app?",
     answer:
-      "El casino amplía constantemente su gama de bonos, así como sus torneos exclusivos regulares.",
+      "While there is no dedicated app, One Casino’s website is fully optimized for mobile browsers, providing a seamless experience on smartphones and tablets.",
   },
   {
-    question: "¿Puedo jugar con dinero real en Ruleta Casino?",
+    question: "What bonuses can I claim at One Casino?",
     answer:
-      "Sí, puede jugar con dinero real en Ruleta Casino. Simplemente cree una cuenta y haga su primer depósito.",
-  },
-  {
-    question: "¿Cuántos juegos de casino ofrece Ruleta Casino?",
-    answer: "Actualmente hay 400 populares juegos de tragaperras disponibles.",
+      "New players can enjoy a 100% welcome bonus up to €100 with no wagering requirements. One Casino also offers weekly promotions, loyalty rewards, and a no deposit bonus for new signups.",
   },
 ];
