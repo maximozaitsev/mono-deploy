@@ -45,8 +45,12 @@
   }
 
   @media (max-width: 1080px) {
-    background-position: right 80px top 0px;
+    background-position: right 80px top 70px;
     background-size: 45% auto;
+  }
+
+  @media (max-width: 870px) {
+    background-position: right 40px top 70px;
   }
 
   @media (max-width: 768px) {
@@ -113,7 +117,18 @@
   background-repeat: no-repeat;
   background-position: right 0;
 
+  @media (max-width: 1080px) {
+    background-size: auto 90%;
+    top: 152px;
+  }
+
+  @media (max-width: 980px) {
+    background-size: auto 80%;
+    top: 204px;
+  }
+
   @media (max-width: 768px) {
+    background-size: auto 100%;
     top: 96px;
     height: 315px;
     background-image: url("/block-images/monster-mobile.webp");
