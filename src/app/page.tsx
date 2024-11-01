@@ -17,7 +17,6 @@ import AdvantageSection from "@/components/advantage/AdvantageSection";
 import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
 import { fetchProviders } from "@/utils/fetchProviders";
-import { fetchOffers } from "@/utils/fetchOffers";
 import { Provider } from "@/types/provider";
 import { faqs } from "@/components/faq/faqContent";
 
@@ -26,13 +25,11 @@ import "./globals.scss";
 export default async function HomePage() {
   const games = await fetchGames("gambling");
   const providers: Provider[] = await fetchProviders();
-  const offersData = await fetchOffers();
-  const welcomeBonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
 
   return (
     <main>
       <Header />
-      <WelcomeSection welcomeBonus={welcomeBonus} />
+      <WelcomeSection />
       <TopCasinosSection />
       <BonusDetailsSection />
       <MobileSection />

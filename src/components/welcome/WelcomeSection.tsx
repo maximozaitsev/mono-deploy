@@ -1,11 +1,27 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
+import { fetchOffers } from "@/utils/fetchOffers";
 
-type WelcomeSectionProps = {
-  welcomeBonus: string;
-};
+export default function WelcomeSection() {
+  const [welcomeBonus, setWelcomeBonus] = useState("");
 
-export default function WelcomeSection({ welcomeBonus }: WelcomeSectionProps) {
+  useEffect(() => {
+    const fetchWelcomeBonus = async () => {
+      try {
+        const offersData = await fetchOffers();
+        const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
+        setWelcomeBonus(bonus);
+      } catch (error) {
+        console.error("Failed to fetch welcome bonus:", error);
+      }
+    };
+
+    fetchWelcomeBonus();
+  }, []);
+
   return (
     <section
       id="welcome-section"
