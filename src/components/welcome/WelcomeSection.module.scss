@@ -5,6 +5,7 @@
   background: #722dd7;
   margin-bottom: 140px;
   width: 100%;
+  gap: 0;
 
   @media (max-width: 768px) {
     margin-bottom: 62px;
@@ -61,26 +62,26 @@
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
     background-size: auto 61%;
-    background-position: right 80px top 1px;
+    background-position: center top 1px;
   }
 
   @media (max-width: 530px) {
     background-size: auto 45%;
-    background-position: right 125px top 35px;
+    background-position: center top 35px;
   }
 
   @media (max-width: 500px) {
-    background-position: right 80px top 35px;
+    background-position: center top 35px;
   }
 
   @media (max-width: 420px) {
     background-size: auto 42%;
-    background-position: right 80px top 0px;
+    background-position: center top 0px;
     padding-top: 14.35rem;
   }
 
   @media (max-width: 380px) {
-    background-position: right 80px top 10px;
+    background-position: center top 10px;
   }
 }
 
