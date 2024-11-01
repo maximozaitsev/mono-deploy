@@ -154,10 +154,6 @@
   max-width: 50%;
   // margin-left: -20px;
 
-  .bonusText {
-    display: none;
-  }
-
   @media (max-width: 1280px) {
     margin-left: 0;
   }
@@ -168,13 +164,6 @@
     gap: 24px;
     align-items: center;
     text-align: center;
-
-    .bonusText {
-      display: block;
-    }
-    .offerText {
-      display: none;
-    }
   }
 
   @media (max-width: 380px) {
@@ -215,6 +204,7 @@
     font-family: $font-secondary;
     font-weight: 700;
     text-transform: uppercase;
+    max-width: 480px;
   }
 
   @media (max-width: 380px) {
