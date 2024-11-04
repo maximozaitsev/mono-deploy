@@ -107,6 +107,10 @@
   }
 }
 
+.welcomeMobile {
+  display: none;
+}
+
 .welcomeText h2 {
   font-family: $font-tertiary;
   font-size: 64px;
@@ -125,6 +129,13 @@
   @media (max-width: 768px) {
     display: none;
   }
+}
+
+.welcomeDesktop {
+  display: none;
+}
+.welcomeMobile {
+  display: block;
 }
 
 .welcomeText p {
