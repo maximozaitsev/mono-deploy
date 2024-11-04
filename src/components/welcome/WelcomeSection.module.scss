@@ -90,11 +90,22 @@
   max-width: 50%;
   // margin-left: -20px;
 
+  .welcomeMobile {
+    display: none;
+  }
+
   @media (max-width: 1280px) {
     margin-left: 0;
   }
 
   @media (max-width: 768px) {
+    .welcomeDesktop {
+      display: none;
+    }
+    .welcomeMobile {
+      display: block;
+    }
+
     width: 100%;
     max-width: 100%;
     gap: 24px;
@@ -105,10 +116,6 @@
   @media (max-width: 380px) {
     gap: 20px;
   }
-}
-
-.welcomeMobile {
-  display: none;
 }
 
 .welcomeText h2 {
@@ -129,13 +136,6 @@
   @media (max-width: 768px) {
     display: none;
   }
-}
-
-.welcomeDesktop {
-  display: none;
-}
-.welcomeMobile {
-  display: block;
 }
 
 .welcomeText p {
