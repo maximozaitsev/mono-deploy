@@ -1,7 +1,9 @@
 // src/app/api/manifest/route.ts
 
 import { NextResponse } from "next/server";
-import { ogSiteName, shortSiteName } from "@/app/layout";
+
+const ogSiteName = "Captain Cook Casino New Zealand";
+const shortSiteName = "Captain Cook Casino";
 
 export async function GET() {
   const manifestData = {

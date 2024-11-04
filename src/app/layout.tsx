@@ -2,8 +2,7 @@ import { Metadata } from "next";
 
 const url = process.env.NEXT_PUBLIC_BASE_URL;
 const ogTitle = "Captain Cook Casino New Zealand 2024: Complete Guide to Games";
-export const ogSiteName = "Captain Cook Casino New Zealand";
-export const shortSiteName = "Captain Cook Casino";
+const ogSiteName = "Captain Cook Casino New Zealand";
 const metaDescription =
   "Explore the full details about Captain Cook Casino, from its rich selection of Microgaming games to exclusive promotions, security features, and a step-by-step registration guide.";
 
