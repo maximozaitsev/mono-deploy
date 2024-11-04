@@ -33,8 +33,10 @@
     width: 218px;
     height: 56px;
     box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
+    color: #030300;
     margin-top: -3px;
     margin-left: 6px;
+    padding: 2px 10px;
   }
 
   @media (max-width: 1080px) {
@@ -51,7 +53,7 @@
 }
 
 .cell {
-  color: #181a1d;
+  color: $text-color-third;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
@@ -204,7 +206,7 @@
       }
 
       button {
-        width: 200px;
+        width: 231px;
       }
     }
   }

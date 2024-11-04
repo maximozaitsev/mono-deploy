@@ -1,22 +1,27 @@
 export const faqs = [
   {
-    question: "Is One Casino legit and safe to use?",
+    question: "Is Captain Cook Casino legit? ",
     answer:
-      "Yes, One Casino is licensed by the Malta Gaming Authority and uses SSL encryption to protect your data, ensuring a safe and secure gaming environment.",
+      "Yes, Captain Cook Casino employs 128-bit SSL encryption and is certified by eCOGRA for fairness and security. It is also licensed by the Malta Gaming Authority and the Kahnawake Gaming Commission.",
   },
   {
-    question: "How long do withdrawals take at One Casino?",
+    question: "How do I register at Captain Cook Casino Online?  ",
     answer:
-      "Ewallet withdrawals are typically processed within 24 hours, while bank transfers and card withdrawals may take 25 business days.",
+      "Registering at Captain Cook Casino is a simple process that can be completed in just a few minutes. ",
   },
   {
-    question: "Does One Casino offer a mobile app?",
+    question: "What are the minimum deposit and withdrawal amounts?  ",
     answer:
-      "While there is no dedicated app, One Casino’s website is fully optimized for mobile browsers, providing a seamless experience on smartphones and tablets.",
+      "The minimum deposit is $10 for most methods, while withdrawals have a minimum of $50 for e-wallets and $300 for bank transfers and cheques.",
   },
   {
-    question: "What bonuses can I claim at One Casino?",
+    question: "Can I play games on mobile at Captain Cook Casino?  ",
     answer:
-      "New players can enjoy a 100% welcome bonus up to €100 with no wagering requirements. One Casino also offers weekly promotions, loyalty rewards, and a no deposit bonus for new signups.",
+      "Yes, Captain Cook Casino's website is optimized for mobile devices. You can access the casino and play games directly through your mobile browser.",
+  },
+  {
+    question: "What is the Casino Rewards loyalty program? ",
+    answer:
+      "The Casino Rewards program allows players to earn points for every wager placed. These points can be redeemed for Captain Cook Casino bonus codes and other perks across multiple Casino Rewards Group casinos.",
   },
 ];

@@ -36,13 +36,14 @@
 
           img {
             margin-top: 4px;
-            scale: 1.36;
+            scale: 1.2;
             position: absolute;
             left: 220px;
             cursor: pointer;
 
             @media (max-width: 768px) {
-              scale: 1.43;
+              margin-top: -17px !important;
+              margin-bottom: 10px;
             }
           }
         }
@@ -99,7 +100,8 @@
 
           img {
             position: static !important;
-            margin-top: -12px !important;
+            margin-top: -11px !important;
+            margin-bottom: 4px;
           }
         }
 

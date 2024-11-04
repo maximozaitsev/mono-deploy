@@ -27,9 +27,7 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
-      <div className={styles.additionalBg}></div>
       <div className={styles.welcomeBg}>
-        <div className={styles.welcomeHero}></div>
         <div className="container">
           <div className={styles.welcomeContent}>
             <div className={styles.welcomeText}>

@@ -5,11 +5,10 @@
 .offerCard {
   display: flex;
   width: 260px;
-  min-height: 353px;
   padding: 32px 24px;
   flex-direction: column;
   align-items: center;
-  // gap: 16px;
+  gap: 16px;
 
   outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
@@ -17,18 +16,16 @@
 
   img {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
-    margin-bottom: 16px;
   }
 
   h3 {
-    color: #181a1d;
+    color: $text-color-third;
     text-align: center;
     font-family: $font-secondary;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 12px;
   }
 
   h4 {
@@ -37,8 +34,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: #fff;
-    margin-bottom: 16px;
+    color: $text-color-fourth;
 
     // background: linear-gradient($text-color-secondary-gradient);
     // background-clip: text;
@@ -47,7 +43,7 @@
   }
 
   p {
-    color: #181a1d;
+    color: $text-color-third;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
@@ -62,13 +58,13 @@
 
   button {
     margin-top: auto;
-    width: 197px;
+    width: 222px;
     // margin-left: 5px;
   }
 
   @media (max-width: 768px) {
     width: 240px;
-    min-height: 264px;
+    height: 264px;
     padding: 16px;
 
     img {
@@ -79,12 +75,12 @@
       display: none;
     }
 
-    // h4 {
-    //   margin-bottom: -8px;
-    // }
+    h4 {
+      margin-bottom: -8px;
+    }
 
     button {
-      width: 202px;
+      width: 207px;
     }
   }
 

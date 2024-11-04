@@ -6,6 +6,11 @@
 
   h2 {
     margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 32px !important;
+      margin-bottom: 40px;
+    }
   }
 
   .licensesContent {
@@ -23,21 +28,20 @@
     .rightImage {
       flex: 1;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: flex-end;
 
       img {
-        width: auto;
+        // width: auto;
+
+        &:first-child {
+          margin-bottom: 10px;
+        }
       }
     }
-  }
 
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-
-    .licensesContent {
+    @media (max-width: 768px) {
       flex-direction: column;
       margin-bottom: 40px;
 
@@ -49,12 +53,21 @@
       .rightImage {
         order: 1;
         justify-content: center;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
 
         img {
-          max-width: 160px;
-          width: 100%;
-          height: auto;
+          &:first-child {
+            max-width: 160px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 60px;
+          }
+
+          &:last-child {
+            max-width: 361px;
+            width: 100%;
+            margin-left: -20px;
+          }
         }
       }
     }

@@ -2,14 +2,12 @@
 @import "../../styles/typography.scss";
 
 .welcomeSection {
-  background: #722dd7;
+  background: $color-background-secondary;
   margin-bottom: 140px;
   width: 100%;
-  gap: 0;
 
   @media (max-width: 768px) {
     margin-bottom: 62px;
-    background: $color-background-secondary;
   }
 }
 
@@ -19,8 +17,8 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  // background-size: 53% auto;
-  background-position: right 173px top 0px;
+  background-size: 45% auto;
+  background-position: right 139px top 44px;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -32,115 +30,30 @@
     width: 100%;
   }
 
-  @media (max-width: 1300px) {
-    background-position: right 70px top 0px;
-  }
-
-  @media (max-width: 1175px) {
-    background-position: right 20px top 0;
-  }
-
   @media (max-width: 1100px) {
-    background-position: right 0px top 0px;
+    background-position: right 20px center;
   }
 
-  @media (max-width: 1080px) {
-    background-position: right 80px top 70px;
-    background-size: 45% auto;
-  }
-
-  @media (max-width: 870px) {
-    background-position: right 40px top 70px;
+  @media (max-width: 1020px) {
+    background-position: right 0px top 80px;
   }
 
   @media (max-width: 768px) {
     padding-top: 21.35rem;
     height: auto;
     justify-content: flex-end;
-    background-size: auto 63%;
+    background-size: auto 62%;
     background-position: top center;
-    margin: 0 auto 12px auto;
-    z-index: 1;
+    margin: 0 auto 24px auto;
   }
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 61%;
-    background-position: center top 1px;
-  }
-
-  @media (max-width: 530px) {
-    background-size: auto 45%;
-    background-position: center top 35px;
-  }
-
-  @media (max-width: 500px) {
-    background-position: center top 35px;
   }
 
   @media (max-width: 420px) {
-    background-size: auto 42%;
-    background-position: center top 0px;
+    background-size: auto 50%;
     padding-top: 14.35rem;
-  }
-
-  @media (max-width: 380px) {
-    background-position: center top 10px;
-  }
-}
-
-.additionalBg {
-  @media (max-width: 768px) {
-    position: absolute;
-    background: #722dd7;
-    top: 96px;
-    height: 315px;
-    width: 100%;
-    z-index: 0;
-  }
-
-  @media (max-width: 420px) {
-    height: 190px;
-  }
-
-  @media (max-width: 380px) {
-    top: 60px;
-  }
-}
-
-.welcomeHero {
-  position: absolute;
-  right: 0;
-  height: 540px;
-  width: 100%;
-  background-image: url("/block-images/monster.webp");
-  background-repeat: no-repeat;
-  background-position: right 0;
-
-  @media (max-width: 1080px) {
-    background-size: auto 90%;
-    top: 152px;
-  }
-
-  @media (max-width: 980px) {
-    background-size: auto 80%;
-    top: 204px;
-  }
-
-  @media (max-width: 768px) {
-    background-size: auto 100%;
-    top: 96px;
-    height: 315px;
-    background-image: url("/block-images/monster-mobile.webp");
-    z-index: 2;
-  }
-
-  @media (max-width: 420px) {
-    background-size: auto 61%;
-  }
-
-  @media (max-width: 380px) {
-    top: 60px;
   }
 }
 
@@ -152,10 +65,18 @@
   z-index: 1;
   max-width: 72.5rem;
 
+  button {
+    max-width: 317px;
+    width: 100%;
+  }
+
   @media (max-width: 768px) {
     button {
       align-self: center;
       max-height: 77px;
+      max-width: 286px !important;
+      width: 100%;
+      padding: 0 !important;
     }
   }
 }
@@ -187,12 +108,12 @@
 }
 
 .welcomeText h2 {
-  font-family: $font-secondary;
+  font-family: $font-tertiary;
   font-size: 64px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: normal;
+  line-height: 64px;
   text-transform: uppercase;
   color: $text-color-secondary;
 
@@ -215,11 +136,11 @@
   line-height: normal;
 
   @media (max-width: 768px) {
+    font-family: $font-tertiary;
+    color: #fffe31;
     font-size: 24px;
-    font-family: $font-secondary;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
-    max-width: 480px;
   }
 
   @media (max-width: 380px) {

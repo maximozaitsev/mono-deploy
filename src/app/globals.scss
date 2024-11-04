@@ -69,8 +69,9 @@ body {
   }
 
   @media (max-width: 768px) {
+    font-family: $font-tertiary;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -91,8 +92,9 @@ body {
   word-break: break-word;
 
   @media (max-width: 768px) {
+    font-family: $font-tertiary;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -149,7 +151,7 @@ body {
 
   p {
     font-family: $font-primary;
-    color: #fff;
+    color: $text-color-third;
     font-size: 28px;
     font-weight: 500;
   }

@@ -1,18 +1,18 @@
 import { Metadata } from "next";
 
-const url = "https://one-casino-nz.com";
-const ogTitle =
-  "One Casino New Zealand: quality games, high payouts and a high level of security";
-const ogSiteName = "One Casino New Zealand";
+const url = process.env.NEXT_PUBLIC_BASE_URL;
+const ogTitle = "Captain Cook Casino New Zealand 2024: Complete Guide to Games";
+export const ogSiteName = "Captain Cook Casino New Zealand";
+export const shortSiteName = "Captain Cook Casino";
 const metaDescription =
-  "Register at One Casino and get up to 100% welcome bonus on your first six deposits. Choose the entertainment to your taste, enjoy more than 2000 games, and benefit from the best loyalty program.";
+  "Explore the full details about Captain Cook Casino, from its rich selection of Microgaming games to exclusive promotions, security features, and a step-by-step registration guide.";
 
 const locale = "en-NZ";
 const language = "English";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {
-  manifest: "/manifest.json",
+  manifest: "/api/manifest",
   title: ogTitle,
   description: metaDescription,
   openGraph: {

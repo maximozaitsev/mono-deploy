@@ -1,3 +1,4 @@
+// next.config.mjs
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
@@ -13,12 +14,9 @@ const withPWA = nextPWA({
     disableDevLogs: true,
     runtimeCaching: [
       {
-        urlPattern:
-          /^https:\/\/one-casino-online\.com\/_next\/static\/.*\/_buildManifest\.js$/,
-        handler: "NetworkOnly",
-      },
-      {
-        urlPattern: /^https:\/\/one-casino-online\.com\/_next\/static\/.*/,
+        urlPattern: new RegExp(
+          `^${process.env.NEXT_PUBLIC_BASE_URL}/_next/static/.*`
+        ),
         handler: "CacheFirst",
         options: {
           cacheName: "static-resources",
@@ -26,6 +24,12 @@ const withPWA = nextPWA({
             maxEntries: 50,
           },
         },
+      },
+      {
+        urlPattern: new RegExp(
+          `^${process.env.NEXT_PUBLIC_BASE_URL}/_next/static/.*?/buildManifest\\.js$`
+        ),
+        handler: "NetworkOnly",
       },
     ],
   },
@@ -40,7 +44,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "one-casino-nz.com",
+        hostname: process.env.NEXT_PUBLIC_BASE_URL.replace(/^https?:\/\//, ""),
       },
     ],
   },

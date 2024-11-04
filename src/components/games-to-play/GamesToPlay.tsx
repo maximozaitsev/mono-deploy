@@ -17,6 +17,15 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[0].text,
                 },
+                {
+                  type: "list",
+                  content: content.gamesToPlay.leftColumnContent[0].categories,
+                },
+                {
+                  type: "text",
+                  content:
+                    content.gamesToPlay.leftColumnContent[0].additionalText,
+                },
               ],
             },
             {
@@ -25,6 +34,17 @@ export default function GamesToPlay() {
                 {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[1].text,
+                },
+                {
+                  type: "list",
+                  content:
+                    content.gamesToPlay.leftColumnContent[1].categories || [],
+                },
+                {
+                  type: "additionalText",
+                  content:
+                    content.gamesToPlay.leftColumnContent[1].additionalText ||
+                    [],
                 },
               ],
             },
@@ -37,14 +57,16 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.gamesRightColumn[0].text,
                 },
-              ],
-            },
-            {
-              heading: content.gamesToPlay.gamesRightColumn[1].heading,
-              items: [
                 {
-                  type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[1].text,
+                  type: "list",
+                  content:
+                    content.gamesToPlay.gamesRightColumn[0].categories || [],
+                },
+                {
+                  type: "additionalText",
+                  content:
+                    content.gamesToPlay.gamesRightColumn[0].additionalText ||
+                    [],
                 },
               ],
             },
