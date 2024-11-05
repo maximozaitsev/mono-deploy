@@ -1,9 +1,10 @@
 @import "../../../styles/colors.scss";
 @import "../../../styles/typography.scss";
+@import "../../../../public/fonts/style";
 
 .button {
   cursor: pointer;
-  font-family: $font-tertiary;
+  font-family: "Arial Black", sans-serif;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
   font-weight: 900;
@@ -13,19 +14,19 @@
   &.primary {
     outline: 4px solid;
     outline-offset: -4px;
-    padding: 0 48px;
-    outline-color: #fff;
+    padding: 4px 48px;
+    outline-color: #f9f8f83b;
     background: $color-button-large;
-    color: $text-color-primary;
+    color: #2e3d49;
     font-size: 28px;
     border: none;
-    // border-radius: 20px;
+    border-radius: 100px;
     min-width: 280px;
     height: 87px;
 
     @media (max-width: 768px) {
       font-size: 24px;
-      padding: 0 48px;
+      padding: 4px 48px;
       min-width: 240px;
       height: 77px;
     }
@@ -51,10 +52,10 @@
     padding: 2px 18px;
     outline-color: #2e2e2e3b;
     background: $color-button-small;
-    color: #030300;
+    color: #fff;
     font-size: 20px;
     border: none;
-    // border-radius: 15px;
+    border-radius: 50px;
     height: 52px;
 
     @media (max-width: 768px) {

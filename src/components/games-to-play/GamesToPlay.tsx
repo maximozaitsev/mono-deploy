@@ -15,16 +15,11 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[0].text,
-                },
-                {
-                  type: "list",
-                  content: content.gamesToPlay.leftColumnContent[0].categories,
+                  content: content.gamesToPlay.leftColumnContent[0].text[0],
                 },
                 {
                   type: "text",
-                  content:
-                    content.gamesToPlay.leftColumnContent[0].additionalText,
+                  content: content.gamesToPlay.leftColumnContent[0].text[1],
                 },
               ],
             },
@@ -33,18 +28,11 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[1].text,
+                  content: content.gamesToPlay.leftColumnContent[1].text[0],
                 },
                 {
-                  type: "list",
-                  content:
-                    content.gamesToPlay.leftColumnContent[1].categories || [],
-                },
-                {
-                  type: "additionalText",
-                  content:
-                    content.gamesToPlay.leftColumnContent[1].additionalText ||
-                    [],
+                  type: "text",
+                  content: content.gamesToPlay.leftColumnContent[1].text[1],
                 },
               ],
             },
@@ -55,23 +43,30 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[0].text,
+                  content: content.gamesToPlay.gamesRightColumn[0].text[0],
                 },
                 {
-                  type: "list",
-                  content:
-                    content.gamesToPlay.gamesRightColumn[0].categories || [],
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[0].text[1],
+                },
+              ],
+            },
+            {
+              heading: content.gamesToPlay.gamesRightColumn[1].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[1].text[0],
                 },
                 {
-                  type: "additionalText",
-                  content:
-                    content.gamesToPlay.gamesRightColumn[0].additionalText ||
-                    [],
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[1].text[1],
                 },
               ],
             },
           ]}
         />
+        <p className="paragraph-text">{content.gamesToPlay.text[1]}</p>
       </div>
     </section>
   );

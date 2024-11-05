@@ -1,13 +1,14 @@
 import { Metadata } from "next";
 
 const url = process.env.NEXT_PUBLIC_BASE_URL;
-const ogTitle = "Captain Cook Casino New Zealand 2024: Complete Guide to Games";
-const ogSiteName = "Captain Cook Casino New Zealand";
+const ogTitle = "Codere Casino España: Casino en línea asombroso y confiable";
+const ogSiteName = "Codere Casino España";
+// const shortSiteName = "Codere Casino";
 const metaDescription =
-  "Explore the full details about Captain Cook Casino, from its rich selection of Microgaming games to exclusive promotions, security features, and a step-by-step registration guide.";
+  "Codere Casino España: todos los detalles y la información más útil sobre la plataforma de juego. Paquete de bonos de bienvenida, juegos, apuestas deportivas y mucho más. Lo que los jugadores nuevos y experimentados necesitan saber";
 
-const locale = "en-NZ";
-const language = "English";
+const locale = "es-ES";
+const language = "Spanish";
 const ogImage = `${url}/og-image.webp`;
 
 export const metadata: Metadata = {
