@@ -3,9 +3,7 @@ export const content = {
   advantages: {
     // title: "",
     subTitle: "Ventajas y desventajas: Codere Bono Casino",
-    text: [
-      `Hay bastantes opiniones sobre bono Casino Codere, pero la mayoría de ellas muestran que este servicio merece un alto nivel de confianza. Sin embargo, para una evaluación objetiva, es necesario tener en cuenta no sólo las ventajas, sino también algunas desventajas.`,
-    ],
+    text: "Hay bastantes opiniones sobre bono Casino Codere, pero la mayoría de ellas muestran que este servicio merece un alto nivel de confianza. Sin embargo, para una evaluación objetiva, es necesario tener en cuenta no sólo las ventajas, sino también algunas desventajas.",
     advantagesTitle: "Ventajas",
     disadvantagesTitle: "Desventajas",
     advantages: [
