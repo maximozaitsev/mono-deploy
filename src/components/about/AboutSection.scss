@@ -47,14 +47,25 @@
       justify-content: center;
       align-items: center;
 
-      // img {
-      //   margin-right: -35px;
-      // }
+      img {
+        margin-right: -35px;
 
-      @media (max-width: 1380px) {
-        max-width: 650px;
-        width: 100%;
+        @media (max-width: 1439px) {
+          max-width: 100%;
+          width: auto;
+          height: auto;
+          scale: 1.5;
+        }
+
+        @media (max-width: 1320px) {
+          margin-right: 0px;
+        }
       }
+
+      // @media (max-width: 1380px) {
+      //   max-width: 650px;
+      //   width: 100%;
+      // }
 
       @media (max-width: 1220px) {
         display: none;

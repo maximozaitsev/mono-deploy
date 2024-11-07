@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns: 18% 22% 12% 13% 12% 23%;
   align-items: center;
-  border-radius: $border-radius;
+  border-radius: 15px;
 
   .secondary {
     width: 218px;
@@ -36,7 +36,6 @@
     color: $text-color-primary;
     margin-top: -3px;
     margin-left: 6px;
-    padding: 2px 10px;
   }
 
   @media (max-width: 1080px) {
@@ -115,6 +114,7 @@
   @media (max-width: 480px) {
     font-size: 16px;
     padding: 4px 8px;
+    line-height: normal;
   }
 }
 
@@ -206,7 +206,7 @@
       }
 
       button {
-        width: 231px;
+        width: 221px;
       }
     }
   }

@@ -1,24 +1,24 @@
 import { Metadata } from "next";
 
-const url = process.env.NEXT_PUBLIC_BASE_URL;
-const ogTitle = "Codere Casino España: Casino en línea asombroso y confiable";
-const ogSiteName = "Codere Casino España";
-// const shortSiteName = "Codere Casino";
+const url = "spin-casino-online.com";
+const ogTitle =
+  "Spin Casino New Zealand: Premium Games, Bonuses & Secure Gaming";
+const ogSiteName = "Spin Casino";
 const metaDescription =
-  "Codere Casino España: todos los detalles y la información más útil sobre la plataforma de juego. Paquete de bonos de bienvenida, juegos, apuestas deportivas y mucho más. Lo que los jugadores nuevos y experimentados necesitan saber";
+  "Spin Casino New Zealand delivers top games, secure banking, and a lucrative welcome offer. Start playing today for exciting rewards and a trusted gaming experience!";
 
-const locale = "es-ES";
-const language = "Spanish";
-const ogImage = `${url}/og-image.webp`;
+const locale = "en-NZ";
+const language = "English";
+const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
-  manifest: "/api/manifest",
+  manifest: "/manifest.json",
   title: ogTitle,
   description: metaDescription,
   openGraph: {
     locale: locale,
     type: "website",
-    url: url,
+    url: `https://${url}`,
     title: ogTitle,
     description: metaDescription,
     images: [

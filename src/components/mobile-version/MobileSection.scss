@@ -82,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -130px;
-      top: 3px;
+      left: -134px;
+      top: 74px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -138,8 +138,10 @@
 
         .app-image {
           /* margin-left: -35px; */
-          margin-bottom: 4px;
+          margin-top: 10px;
+          margin-bottom: 13px;
           padding-bottom: 20px;
+          scale: 1.07;
         }
 
         h3 {
@@ -180,6 +182,11 @@
 
   @media (max-width: 380px) {
     .mobile-content {
+      .app-info-block,
+      .advantages-block {
+        padding: 24px 0;
+      }
+
       .advantages-block {
         button {
           height: 60px;

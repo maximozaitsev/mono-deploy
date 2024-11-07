@@ -19,6 +19,10 @@
     }
   }
 
+  @media (max-width: 380px) {
+    padding: 24px 20px;
+  }
+
   @media (max-width: 1180px) {
     .offers-grid {
       justify-content: center;

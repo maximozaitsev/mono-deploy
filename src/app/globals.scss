@@ -1,7 +1,6 @@
 @import "../styles/colors";
 @import "../styles/typography";
 @import "../styles/variables";
-@import "../../public/fonts/style";
 
 * {
   margin: 0;
@@ -58,7 +57,7 @@ body {
   font-family: $font-secondary;
   font-size: 56px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -70,9 +69,8 @@ body {
   }
 
   @media (max-width: 768px) {
-    font-family: "Arial Black", sans-serif;
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   @media (max-width: 570px) {
@@ -85,7 +83,7 @@ body {
   font-family: $font-secondary;
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -93,9 +91,8 @@ body {
   word-break: break-word;
 
   @media (max-width: 768px) {
-    font-family: "Arial Black", sans-serif;
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   @media (max-width: 570px) {

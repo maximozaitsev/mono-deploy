@@ -1,7 +1,7 @@
 import Image from "next/image";
 import aboutImage from "../../../public/block-images/laptop.webp";
 import P from "../__common__/Paragraph";
-import List from "../__common__/list/List";
+// import List from "../__common__/list/List";
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { content } from "@/content/content";
 import "./AboutSection.scss";
@@ -35,14 +35,11 @@ export default function AboutSection() {
             {content.about.signIn.title}
           </h3>
           <P>{content.about.signIn.text[0]}</P>
+          {/* <List items={content.about.signIn.list} ordered /> */}
           <P>{content.about.signIn.text[1]}</P>
-          <List items={content.about.signIn.list} />
-          <P>{content.about.signIn.text[2]}</P>
-
+          {/* <h4 className="h4-heading white">{content.about.signIn.text[2]}</h4> */}
           {/* <List items={content.about.signIn.list2} /> */}
-          <h3 className="h3-heading"> {content.about.verification.title}</h3>
-          <P>{content.about.verification.text[0]}</P>
-          <P>{content.about.verification.text[1]}</P>
+          {/* <P>{content.about.signIn.text[3]}</P> */}
         </div>
         <TwoColumns
           leftColumnContent={[
@@ -52,10 +49,6 @@ export default function AboutSection() {
                 {
                   type: "text",
                   content: content.about.depositMethods.text[0],
-                },
-                {
-                  type: "text",
-                  content: content.about.depositMethods.text[1],
                 },
                 {
                   type: "list",
@@ -76,10 +69,14 @@ export default function AboutSection() {
                   type: "text",
                   content: content.about.withdrawalMethods.text[0],
                 },
-                {
-                  type: "text",
-                  content: content.about.withdrawalMethods.text[1],
-                },
+                // {
+                //   type: "list",
+                //   content: content.about.withdrawalMethods.list || [],
+                // },
+                // {
+                //   type: "text",
+                //   content: content.about.withdrawalMethods.text[1],
+                // },
               ],
             },
           ]}

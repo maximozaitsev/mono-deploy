@@ -1,10 +1,9 @@
 @import "../../../styles/colors.scss";
 @import "../../../styles/typography.scss";
-@import "../../../../public/fonts/style";
 
 .button {
   cursor: pointer;
-  font-family: "Arial Black", sans-serif;
+  font-family: $font-secondary;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
   font-weight: 900;
@@ -17,10 +16,10 @@
     padding: 4px 48px;
     outline-color: #f9f8f83b;
     background: $color-button-large;
-    color: #2e3d49;
+    color: $text-color-primary;
     font-size: 28px;
     border: none;
-    border-radius: 100px;
+    border-radius: 25px;
     min-width: 280px;
     height: 87px;
 
@@ -55,7 +54,7 @@
     color: #fff;
     font-size: 20px;
     border: none;
-    border-radius: 50px;
+    border-radius: 15px;
     height: 52px;
 
     @media (max-width: 768px) {

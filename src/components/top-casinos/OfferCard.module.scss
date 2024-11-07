@@ -58,13 +58,12 @@
 
   button {
     margin-top: auto;
-    width: 222px;
-    margin-left: 5px;
+    width: 217px;
   }
 
   @media (max-width: 768px) {
     width: 240px;
-    height: 264px;
+    height: 256px;
     padding: 16px;
 
     img {
@@ -80,7 +79,7 @@
     }
 
     button {
-      width: 207px;
+      width: 202px;
     }
   }
 

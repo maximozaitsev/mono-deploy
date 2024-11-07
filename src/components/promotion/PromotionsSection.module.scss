@@ -10,10 +10,6 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-
-    :global(.h3-heading) {
-      margin-bottom: 24px;
-    }
   }
 
   @media (max-width: 768px) {

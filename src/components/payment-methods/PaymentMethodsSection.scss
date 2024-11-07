@@ -11,7 +11,7 @@
     border-spacing: 0 16px;
     text-align: center;
     table-layout: auto;
-    // margin-top: -15px;
+    margin-top: -15px;
     margin-bottom: -25px;
 
     thead th,
@@ -53,13 +53,13 @@
           font-weight: 500;
 
           &:first-child {
-            border-top-left-radius: $border-radius;
-            border-bottom-left-radius: $border-radius;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
           }
 
           &:last-child {
-            border-top-right-radius: $border-radius;
-            border-bottom-right-radius: $border-radius;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
           }
         }
       }
@@ -82,16 +82,16 @@
             justify-content: center;
             align-items: center;
             border-left: $border-width solid $border-color;
-            border-top-left-radius: $border-radius;
-            border-bottom-left-radius: $border-radius;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
             height: 88px;
             overflow: hidden;
           }
 
           &:last-child {
             border-right: $border-width solid $border-color;
-            border-top-right-radius: $border-radius;
-            border-bottom-right-radius: $border-radius;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
           }
 
           img {
@@ -128,7 +128,7 @@
         align-items: center;
         margin-bottom: 8px;
         padding: 8px;
-        border-radius: $border-radius;
+        border-radius: 15px;
 
         img {
           width: 110px;
@@ -159,7 +159,7 @@
         flex-direction: column;
         padding: 8px 16px;
         border: $border-width solid $border-color;
-        border-radius: $border-radius;
+        border-radius: 15px;
 
         p {
           color: $text-color-third;

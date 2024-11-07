@@ -2,6 +2,7 @@
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
+const url = "spin-casino-online.com";
 
 const withPWA = nextPWA({
   dest: "public",
@@ -14,9 +15,7 @@ const withPWA = nextPWA({
     disableDevLogs: true,
     runtimeCaching: [
       {
-        urlPattern: new RegExp(
-          `^${process.env.NEXT_PUBLIC_BASE_URL}/_next/static/.*`
-        ),
+        urlPattern: new RegExp(`^${url}/_next/static/.*`),
         handler: "CacheFirst",
         options: {
           cacheName: "static-resources",
@@ -26,9 +25,7 @@ const withPWA = nextPWA({
         },
       },
       {
-        urlPattern: new RegExp(
-          `^${process.env.NEXT_PUBLIC_BASE_URL}/_next/static/.*?/buildManifest\\.js$`
-        ),
+        urlPattern: new RegExp(`^${url}/_next/static/.*?/buildManifest\\.js$`),
         handler: "NetworkOnly",
       },
     ],
@@ -44,7 +41,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: process.env.NEXT_PUBLIC_BASE_URL.replace(/^https?:\/\//, ""),
+        hostname: url,
       },
     ],
   },

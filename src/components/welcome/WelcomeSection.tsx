@@ -32,10 +32,10 @@ export default function WelcomeSection() {
           <div className={styles.welcomeContent}>
             <div className={styles.welcomeText}>
               <h2>Welcome Bonus</h2>
-              <p className={styles.offerText}>
+              <p className={styles.welcomeDesktop}>
                 Exclusive welcome offer of {welcomeBonus}
               </p>
-              <p className={styles.bonusText}>
+              <p className={styles.welcomeMobile}>
                 Exclusive welcome bonus of {welcomeBonus}
               </p>
               <Button text="claim bonus" variant="primary" />
