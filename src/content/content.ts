@@ -1,45 +1,40 @@
 export const content = {
-  projectName: "Just Casino",
+  projectName: "Grand Mondial Casino",
   advantages: {
     // title: "",
-    subTitle: "Just Casino Advantages",
+    subTitle: "Grand Mondial Сasino Advantages",
     text: [
-      `Just Casino offers a variety of benefits for players seeking a secure and enjoyable online playing venture. Below are some of the main advantages and disadvantages:`,
+      `This venue offers a number of benefits that make it a popular option for people who gamble online; but, just like any other venue, it also has a few drawbacks that participants should be aware of. A list of both can be seen below:`,
     ],
     advantagesTitle: "Advantages:",
     disadvantagesTitle: "Disadvantages:",
     advantages: [
-      "Extensive game library",
-      "User-friendly interface",
-      "Secure and encrypted platform",
-      "Wide range of payment options",
-      "Responsive customer support",
-      "Mobile compatibility",
-      "Frequent bonuses and promotions",
+      "Wide lineup of Microgaming titles",
+      "Part of the trusted Casino Rewards Group",
+      "Offers captivating titles",
+      "Generous welcome bonus",
+      "Secure and regulated venue",
+      "Available on both desktop and mobile devices",
     ],
     disadvantages: [
-      "Limited availability in certain countries",
-      "Withdrawal times may vary",
-      "Few specialty game options",
+      "Limited number of software developers",
+      "Cashout processing times can be slow",
+      "Restricted in some countries",
     ],
   },
   about: {
-    title: "Just Casino Online",
-    intro: [
-      "50% bonus up to $300",
-      "Weekly Milky Way",
-      "$4,000 and 300 free spins",
-    ],
+    title: "Online Casino Grand Mondial",
+    intro: ["150 free spins", "100% match bonus", "24/7 customer assistance"],
     description: [
-      `Just Casino stands out in the online gaming landscape as a platform dedicated to providing an exceptional playing venture. Known for its sleek design and user-friendly interface, Just Casino offers a vast choice of games, including popular slots, table games, and live dealer options, catering to both novice and seasoned players alike. The platform emphasizes fair play, security, and ease of access, with flexible payment methods and responsive customer support. Whether seeking thrilling jackpots or interactive live gaming, Just Casino review positions itself as a one-stop destination for high-quality online entertainment.`,
+      `Casino Grand Mondial is a famous online gambling venue known for delivering participants a unique chance to become millionaires with just a small deposit. This reputable gambling establishment has been welcoming customers since 2006 and is a member of the well-known Casino Rewards network. It uses titles developed by industry giant Microgaming, so you can play slots, table titles, and even have live dealers if you want. Participants are particularly drawn to Grand Mondial Casino review for its captivating upgrades, and a strong focus on customer security and fairness.`,
       // `p2`,
       // `p3`,
     ],
     signIn: {
-      title: "About Just Casino Login",
+      title: "Casino Rewards Grand Mondial Login",
       text: [
-        `Just Casino is a dynamic online platform catering to players with a robust choice of games and an engaging, streamlined design. Known for its extensive game library, Just Casino brings together classic slots, table games, and immersive live dealer options, making it a versatile choice for all types of players. Security and user satisfaction are key priorities, with the platform implementing top-tier encryption to protect player data and transactions. Just Casino further enhances the user experience with a responsive support team and seamless payment options, creating a trustworthy environment for entertainment and rewards.`,
-        `Just Casino login process is simple and secure, allowing players quick access to their accounts. On the main page, users will find the login button, which leads to a secure entry field where they can enter their email and password. For new players, there’s an easy registration process just below the login area, making it convenient to join the casino in minutes. Once logged in, players can access their personalized dashboard, view account balances, and navigate games effortlessly. The venue ensures a smooth experience, with fast Just spin Casino login speeds and responsive design across devices, whether accessing via desktop or mobile.`,
+        `Thanks to its tempting welcome bonuses and amazing collection of titles, the venue has gathered a big player base and is a respected online gaming location. The venue offers a vast lineup of titles, including slots, table titles, and jackpots, all powered by Microgaming. It is run by the reputable Casino Rewards Group, which is well-known for its reliability, safety, and support for customers. The venue is regulated and has a license, so participants can be sure they're playing in a safe environment. Participants love the opportunity to win life-changing rewards through the venue's network and the frequent improvements.`,
+        `The Grand Mondial Casino NZ login process is straightforward, designed to provide easy access for both new and returning participants. To begin, users need to visit the venue's official website and locate the Grand Mondial Casino mobile login button, typically positioned at the top of the homepage. The next step is for users to log in using the email address and password they provided when signing up. Prior to logging in, new users are required to finish a brief registration process by creating an account. All attendees may be certain that their private and protected data will be securely protected during the login procedure thanks to the venue's emphasis on security.`,
         // `p3`,
       ],
       // list: ["li1", "li2", "li3"],
@@ -52,76 +47,76 @@ export const content = {
     depositMethods: {
       title: "Deposit Methods",
       text: [
-        `Just Casino NZ provides a range of deposit methods for quick and secure transactions. Players can fund their accounts using traditional options such as Visa and Mastercard for straightforward card transactions. Alternative e-wallets like ecoPayz, MuchBetter, and MiFinity are available for those who prefer digital wallets, and bank transfers provide a direct option for larger transactions. Additionally, cryptocurrency enthusiasts can use CoinsPaid, supporting Bitcoin, Tether, Litecoin, and more for decentralized payments, ensuring diverse options for all players.`,
+        `The casino delivers a plethora of secure and convenient deposit options to cater to participants from diverse regions. Participants can fund their accounts using major credit and debit cards like Visa, MasterCard, and American Express. Additionally, other payment solutions such as Interac, Instadebit, Paysafecard, Ecopayz, Flexepin, Payz, MuchBetter, and Echeck are available. Deposits are processed instantly, allowing participants to begin gaming right away. The minimum deposit requirement is typically NZD10, making it accessible for participants looking to start with a smaller amount.`,
         // `p2`,
       ],
       // list: ["li1", "li2", "li3"],
       // additionalText: `p1`,
     },
     withdrawalMethods: {
-      title: "Just Casino Withdrawal Methods",
+      title: "Grand Mondial Casino Withdrawal Rules",
       text: [
-        `For withdrawals, Just Casino offers multiple convenient options to facilitate smooth cashouts. Players can withdraw funds through Visa and Mastercard, which deliver reliability for direct bank card withdrawals. For digital wallets, options like ecoPayz, MuchBetter, and MiFinity provide secure online transactions. Just Casino also supports crypto withdrawals through CoinsPaid, allowing Bitcoin, Tether, Litecoin, and other cryptocurrency payouts, meeting the needs of both traditional and crypto-focused players.`,
+        `When it comes to cashouts, Grand Mondial Casino NZ provides several reliable methods, ensuring that participants can easily access their winnings. Cashouts can be made through Visa, MasterCard, Interac, Ecopayz, MuchBetter, Instadebit, and Echeck. While deposits are instant, cashouts usually take a bit longer due to processing times, which range from 48 hours for e-wallets like MuchBetter and Ecopayz to 2-5 business days for credit cards such as Visa and MasterCard. The minimum cashout amount is typically NZD10, ensuring participants can cash out even smaller winnings efficiently.`,
         // `p2`,
       ],
       list: [],
     },
   },
   licenses: {
-    title: "Is Just Casino legit?",
+    title: "Licenses",
     text: [
-      `Is Just Casino legit? Just Casino operates under a license issued by the Malta Gaming Authority (MGA), adhering to international regulations and standards for fair play and transparency. This licensing underscores their commitment to offering a secure and regulated gaming environment.`,
+      `Is Grand Mondial Casino legit? The venue holds licenses from several reputable regulatory bodies, including the UK Gambling Commission (UKGC), the Malta Gaming Authority (MGA), and the Kahnawake Gaming Commission. These licenses ensure that the venue adheres to strict standards of fair play, security, and responsible gambling practices.`,
       // `p2`,
       // `p3`,
     ],
-    security: "Is Just Casino safe?",
+    security: "Security at Grand Mondial Casino Online Casino Players Dream",
     securityText: [
-      `The casino employs 128-bit SSL encryption to secure user data and financial transactions, protecting player information and funds. Anti-fraud technology is also used to monitor activity and prevent unauthorized access, providing a safe environment for all users.`,
+      `The venue employs 128-bit SSL encryption to safeguard participants' private and protected and financial data, ensuring a secure atmosphere for all transactions. Additionally, the casino is eCOGRA-certified, meaning its titles are regularly audited for fairness and transparency. This certification ensures that the outcomes of titles are random, and that participants have a fair chance of winning.`,
       // `p2`,
     ],
     software: "Software Technologies",
     softwareText: [
-      `Just Casino’s platform is powered by leading software providers such as Microgaming, Pragmatic Play, and BGaming, delivering smooth and high-quality gameplay across a range of games. Their integration of advanced software ensures optimal load times and visual quality, making the experience immersive for users.`,
+      `The venue operates using Microgaming software, one of the industry leaders in online casino technology. This software provider ensures that the venue delivers a wide scope of titles with high-quality graphics, smooth gameplay, and innovative attributes. Microgaming’s venue also allows for easy integration of new titles, ensuring that participants have access to the latest releases and updates. The titles are designed using HTML5 technology, making them compatible with both desktop and mobile devices.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Just Casino Download App",
+    title: "Grand Mondial Casino Mobile App",
     text: [
-      `There is a web Just Casino app accessible on both Android and iOS, ensuring seamless gameplay across devices without needing a separate download. The app supports all features available on the desktop version, from game access to secure deposits and withdrawals.`,
+      `Although there is no Grand Mondial Casino app download, the venue is quite optimized for mobile browsers. Participants can access the venue via their mobile devices by simply visiting the website, where they will find the same titles and attributes available on the desktop version. The Grand Mondial Casino app venue assists a wide scope of smartphones and tablets, allowing for a seamless playing venture on the go.`,
       // `p2`,
     ],
-    languages: "Languages",
+    languages: "Grand Mondial Casino Unlockables and Languages",
     languagesText: [
-      `To accommodate a global audience, Just Casino supports multiple languages, including English, French, German, and Spanish. This multilingual accessibility ensures players worldwide can comfortably navigate the platform and access support in their preferred language.`,
+      `The venue assists multiple languages to accommodate its international player base. The available languages include English, German, French, Spanish, and Portuguese. This allows participants from various regions to enjoy the venue in their preferred language.`,
       // `p2`,
       // `p3`,
     ],
     currencies: "Currencies",
     currenciesText: [
-      `Just Casino accepts several currencies to make transactions accessible and convenient. Supported options include EUR, USD, CAD, AUD, and cryptocurrencies like Bitcoin, Tether, and Litecoin, allowing for both fiat and crypto flexibility in deposits and withdrawals.`,
+      `The Grand Mondial online Casino accepts a plethora of currencies, including USD, CAD, EUR, GBP, and NZD. This flexibility in currency options ensures that participants from diverse parts of the world can easily deposit and withdraw funds without needing to convert their money.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Just Casino Games",
+    title: "Grand Mondial Casino Online Review of Titles",
     text: [
-      `Just Casino offers a diverse gaming library designed to cater to various player preferences, from traditional table games to engaging slot titles and immersive live dealer experiences. With high-quality graphics and smooth gameplay, Just Casino ensures that players have access to an exciting range of games suited for all levels.`,
+      `The venue delivers a diverse lineup of titles that cater to all types of participants, providing captivating opportunities to enjoy both classic and modern playing ventures. Powered primarily by Microgaming, the venue attributes a wide scope of gaming options, ensuring participants have access to top-quality entertainment. Here’s a breakdown of the main categories available at the venue:`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
         heading: "Slots",
-        text: `Just Casino hosts an extensive choice of slots, appealing to every type of player, from those who enjoy classic games to those looking for the latest innovations. The collection includes traditional three-reel slots, which evoke the nostalgia of classic casino games, as well as multi-payline video slots filled with interactive features, stunning animations, and engaging soundtracks. For those aiming to win substantial jackpots, progressive slots offer the chance to score life-changing sums as their prize pools grow with every spin.`,
+        text: `Participants of all stripes will find what they're looking for at the casino's extensive and varied lineup of slot machines, from the timeless charm of three-reel titles to the cutting-edge complexity of five-reel video slots. Some of the most beloved and recognizable slot machine titles in the world are available at this venue. Slots are known for their record-breaking payouts that have made many fortunate participants instant millionaires, Mega Moolah, is at the head of the pack. Playable alongside progressive slots, themed titles such as Thunderstruck II and Immortal Romance offer participants captivating plots, special bonuses, and visually breathtaking visuals. Participants are guaranteed access to fresh content and the latest releases in the industry with its frequently updated slot selection.`,
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
-        heading: "Table Games",
+        heading: "Table Titles",
         text: [
-          `For fans of traditional casino experiences, Just Casino provides an impressive choice of table games that capture the essence of real-life casinos. The table games section includes numerous versions of Blackjack, Roulette, and Baccarat, each featuring distinct rule variations and customizable options. Players can adjust betting limits, access side bets, and even choose games that incorporate unique features such as multi-hand play or fast-paced rounds. Blackjack enthusiasts, for example, can select from classic, European, or Vegas Strip variations, while Roulette fans have options like American, European, and French Roulette. `,
+          `For those who enjoy the classic thrill of traditional titles, the venue delivers a robust collection of table titles. Participants can indulge in various versions of blackjack, roulette, and baccarat, providing ample choice whether you’re a seasoned pro or just learning the ropes. Fans of blackjack can try their hand at European Blackjack or Classic Blackjack, each delivering diverse strategies and rules to keep the gameplay engaging. Roulette enthusiasts can spin the wheel in versions such as American Roulette and French Roulette, each providing a distinct playing venture. These table titles are designed to cater to a wide scope of participants, delivering both low-stakes options for beginners and high-stakes tables for more experienced gamers looking to test their strategies.`,
           // `p2`,
           // `p3`,
         ],
@@ -129,17 +124,21 @@ export const content = {
         // additionalText: `p1`,
       },
       {
-        heading: "Live Dealer Games",
+        heading: "Grand Mondial Casino the Pokies King",
         text: [
-          `Just Casino’s live dealer section offers players a highly immersive experience that replicates the excitement of being in a real casino. Powered by leading software providers, this live section features high-definition streaming for popular games like Blackjack, Roulette, and Baccarat, hosted by professional dealers who interact with players in real-time. Players can chat with the dealer and fellow participants, adding a social layer to the game and heightening the overall experience. Additionally, some games may feature unique rules or side bets to enhance gameplay. This section also caters to various player preferences by offering different table limits and game variations, allowing users to pick a game that aligns with their desired pace and stakes, all from the convenience of their device.`,
+          `The venue also excels in delivering a wide scope of video poker titles, perfect for participants who enjoy combining skill with the thrill of chance. The venue attributes admired video poker alternatives like Jacks or Better, Deuces Wild, and Aces & Faces, ensuring there's a game to suit every player’s preference. These Grand Mondial Casino best game to win options are available in both single-hand and multi-hand formats, allowing participants to choose between a more straightforward, relaxed game or a fast-paced, multi-hand version that increases the excitement and the potential for big wins. `,
+          // `p2`,
+          // `p3`,
         ],
+        // categories: ["li1", "li2", "li3"],
+        // additionalText: `p1`,
       },
     ],
     gamesRightColumn: [
       {
-        heading: "Video Poker",
+        heading: "Live Dealer Titles",
         text: [
-          `Just Casino’s video poker games blend the strategic appeal of poker with the simplicity of slots, offering players a unique playing venture. The video poker section includes popular variations such as Jacks or Better and Deuces Wild, known for their straightforward gameplay and significant payout potential for skilled players. Each game is designed with clear rules, making it easy for both beginners and seasoned players to jump in. With high RTP rates, video poker appeals to those who appreciate a mix of chance and strategy. Additionally, some games offer multi-hand options, allowing players to increase their chances of winning by playing multiple hands at once. This selection is ideal for poker enthusiasts who want to test their skills in a streamlined, fast-paced format.`,
+          `For participants seeking the full immersive venture of a real casino from the comfort of their home, the venue delivers a fantastic lineup of live dealer titles. Powered by Evolution Gaming, these live titles allow participants to engage with professional dealers in real time, providing an authentic and interactive playing venture. Admired options include Live Blackjack, Live Roulette, and Live Baccarat, all streamed in high definition, making it feel like you're sitting right at the casino table.`,
           // `p2`,
           // `p3`,
         ],
@@ -147,9 +146,9 @@ export const content = {
         // additionalText: `p1`,
       },
       {
-        heading: "Specialty Games",
+        heading: "Progressive Jackpots",
         text: [
-          `Just Casino’s specialty games section rounds out the playing venture with options like Keno, Scratch Cards, and Bingo, catering to players seeking quick and casual gaming sessions. These games are easy to understand and play, making them a great choice for those who enjoy a relaxed pace without needing advanced strategies. Keno offers players the chance to choose their numbers and win based on matching draws, while Scratch Cards provide instant-win opportunities. Bingo games add a social element, allowing players to compete against others in a friendly setting. `,
+          `Grand Mondial Casino is renowned for its incredible lineup of titles, delivering participants the chance to win life-changing amounts of money. The most famous of these is Mega Moolah, a slot that has earned a reputation for regularly awarding multi-million-dollar jackpots. The potential for massive wins on Mega Moolah has made it a favorite among online slot participants worldwide. `,
           // `p2`,
           // `p3`,
         ],
@@ -157,65 +156,44 @@ export const content = {
     ],
   },
   support: {
-    title: "Support",
+    title: "Customer Support",
     text: [
-      `Just Casino provides customer support through live chat and email, available 24/7. Their support team assists with account management,Just Casino reviews, bonus information, and technical issues, ensuring users receive prompt responses and solutions to enhance their experience on the platform.`,
+      `The venue provides 24/7 customer assistance through live chat and email. Participants can reach out to the assistance team at any time for assistance with technical issues, account inquiries, or any other concerns. The live chat function presents instant help, while email assistance provides detailed responses to more complex queries.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Just Casino Bonus Options",
+    title: "Grand Mondial Casino Reward Program",
     text: [
-      `Just Casino offers a wide range of bonuses and promotions that appeal to both new players and regular users. Here’s a breakdown of their primary bonuses:`,
+      `There are lots of Grand Mondial Casino rewards to enhance the playing venture for both new and returning participants. Below are the main Casino rewards Grand Mondial available, presented with accurate details:`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Welcome Bonus",
+        heading: "Grand Mondial Casino 150 free spins promo code ",
         text: [
-          `New players at Just Casino can kick-start their experience with a choice between two welcome packages tailored to different playing styles. The standard welcome bonus, spread across the first four deposits, provides up to $4,000 and 300 free spins on select slot games. For those preferring higher stakes, the Supernova welcome option offers a 125% match up to $8,000, 10% cashback on weekly losses, and 150 free spins. Both Just Casino free chip options come with specific wagering requirements, making them adaptable for all types of players.`,
+          `An enticing offer of 150 free spins, or "chances," is available to new participants at Grand Mondial Casino with a just NZD10 investment. These Grand Mondial Casino 150 free spins are specifically allocated to the admired Mega Moolah slot, a game that has gained a reputation for its life-changing payouts. The Grand Mondial Casino free spins give participants an chance to start off their casino venture with a bang, presenting a real chance to hit one of the largest jackpots in online gaming. Whether you are a seasoned player or new to online casinos, this Grand Mondial Casino no deposit bonus makes it easy to dive straight into the action. This offer is perfect for participants who want to try out the casino with the chance to win big on their first spins on Mega Moolah because of how big the wins may get. `,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
-      },
-      {
-        heading: "Weekly Milky Way and Just Casino no deposit bonus 2024",
-        text: [
-          `The Weekly Milky Way bonus rewards players every Monday based on their previous week’s deposits and wagering activity. By depositing a minimum of $50 and meeting the wagering conditions, players can earn cash bonuses up to $400. This Just Casino no deposit bonus incentivizes regular play and provides a substantial boost to start the week, allowing players to access bonus funds proportional to their prior week's activity, with clear conditions to maintain transparency.`,
-          // `p2`,
-          // `p3`,
-        ],
-      },
-      {
-        heading: "Just Cashback and Just Casino Codes",
-        text: [
-          `Just Casino’s cashback program offers regular players a cushion against losses by providing 10% cashback each Monday, up to $1,000. To qualify, players must have made a deposit in the previous week, with the cashback calculated based on their net losses. This Just Casino no deposit bonus codes promotion effectively minimizes weekly losses and adds an extra layer of security, allowing players to recoup some of their expenses and reinvest in gameplay, enhancing retention and ongoing engagement.`,
-        ],
       },
     ],
     rightColumnContent: [
       {
-        heading: "Space Spin and Just spin Casino no deposit bonus",
+        heading: "100% Match Bonus on Second Deposit",
         text: [
-          `On Thursdays, players can add excitement to their gaming week with the Space Spin promotion. By depositing a minimum of $20 and using the Just Casino promo code “SPACESPIN,” players unlock 77 free spins on the “Book of Panda” slot. This Just spin Casino bonus caters specifically to slot enthusiasts looking to extend their gameplay with free spins on a featured title, making it a fun and rewarding addition to Just Casino’s weekly promotions lineup.`,
+          `The site has become well-known and renowned among online gamblers as a result of its enticing welcome bonuses and incredible library of titles. Slot machines, table titles, are all available at this venue, and they're all powered by Microgaming. It is operated by the respectable Casino Rewards Group, which has a stellar reputation for customer service, security, and dependability. Participants may rest certain that they are playing at a controlled and licensed venue. The jackpot network and the regular upgrades provide participants the chance to win rewards that can change their lives.`,
           // `p2`,
           // `p3`,
         ],
+        // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
-      },
-      {
-        heading: "Power Up Fridays and Just Casino bonus code",
-        text: [
-          `Just Casino encourages players to gear up for the weekend with the Power Up Fridays promotion. A deposit of $20 or more on Fridays, accompanied by the promo code “POW50,” qualifies players for a 50% bonus up to $300. This bonus is ideal for players who want a mid-weekend boost, adding bonus funds to extend playtime on their favorite games. The Just Casino free chip no deposit promotion combines accessibility with valuable bonuses, fitting seamlessly into a regular player’s weekly schedule.`,
-          // `p2`,
-          // `p3`,
-        ],
       },
     ],
   },
   faq: {
-    title: "CASINO FAQ",
+    title: "Grand Mondial Casino Phone Number FAQ",
   },
 };

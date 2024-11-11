@@ -1,41 +1,34 @@
 export const faqs = [
   {
     question: "What is the minimum deposit?",
-    answer: "The minimum deposit at Just Casino is €20 or currency equivalent.",
-  },
-  {
-    question: "Is there a maximum withdrawal limit?",
-    answer: "Yes, players can withdraw up to €30,000 per month.",
-  },
-  {
-    question: "What is the bonus wagering requirement?",
-    answer: "Just Casino bonuses have a 40x wagering requirement.",
-  },
-  {
-    question: "What is Just Casino withdrawal times?",
     answer:
-      "Cryptocurrency Just Casino withdrawal time is processed within minutes.",
+      "The minimum deposit required at the Casino is NZD10. This amount qualifies participants for the welcome bonus and other upgrades.",
   },
   {
-    question: "Does Just Casino charge deposit fees?",
-    answer: "No, Just Casino does not apply fees on deposits.",
+    question: "How long does it take to process cashouts?",
+    answer:
+      "Cashout times range from 48 hours for e-wallets to 2-5 business days for credit cards and bank transfers.",
   },
   {
-    question: "What games are restricted from bonus wagering?",
-    answer: "Jackpot slots are not eligible for bonus wagering.",
+    question: "Are there any fees for cashouts?",
+    answer:
+      "The venue does not charge fees for cashouts. However, your payment provider may apply its own fees.",
+  },
+  {
+    question: "Can I use cryptocurrencies for payments?",
+    answer:
+      "No, Grand Mondial Casino does not currently assistance cryptocurrencies. Participants can use methods like Visa, MasterCard, and e-wallets.s",
   },
   {
     question:
-      "What is the maximum bet allowed with Just spin Casino bonus code?",
-    answer: "The maximum bet with bonus funds is €5 or equivalent.",
-  },
-  {
-    question: "Can I use promo code Just Casino on my tablet?",
-    answer: "Yes, the mobile-optimized site supports tablets.",
-  },
-  {
-    question: "How long does verification take?",
+      "What titles contribute to Casino Grand Mondial Bonus wagering requirements?",
     answer:
-      "Verification typically takes up to 24 hours once documents are submitted.",
+      "Slots contribute 100%, while table titles like blackjack contribute 10%, and video poker contributes 2%.",
+  },
+  {
+    question:
+      "Is there a VIP program or Grand Mondial Casino free spins promo code offer?",
+    answer:
+      "Yes, Grand Mondial is part of the Casino Rewards Group, delivering a multi-tiered VIP program with exclusive benefits and upgrades.",
   },
 ];

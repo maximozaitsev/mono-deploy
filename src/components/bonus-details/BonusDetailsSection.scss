@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns: 18% 22% 12% 13% 12% 23%;
   align-items: center;
-  border-radius: 20px;
+  border-radius: $border-radius;
 
   .secondary {
     width: 218px;
@@ -67,13 +67,13 @@
   height: 88px;
 
   &:first-child {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
   }
 
   &.last-cell {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
   }
 
   &::after {
@@ -98,8 +98,8 @@
     height: 80px;
 
     &.info-cell {
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
     }
 
     &::after {
@@ -168,7 +168,7 @@
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(253, 252, 252, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   &::after {
     content: "";
@@ -205,7 +205,7 @@
       }
 
       button {
-        width: 212px;
+        width: 207px;
       }
     }
   }
@@ -228,18 +228,6 @@
   }
 }
 
-.accordion-title {
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 15%;
-    height: 70%;
-    width: 1px;
-    background-color: rgba(253, 252, 252, 0.4);
-  }
-}
-
 @media (max-width: 1080px) {
   .hide-1020 {
     display: none !important;
@@ -259,7 +247,7 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: #060606;
+  color: $text-color-primary;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;

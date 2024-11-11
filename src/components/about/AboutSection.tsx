@@ -61,14 +61,6 @@ export default function AboutSection() {
                   type: "text",
                   content: content.about.withdrawalMethods.text[0],
                 },
-                // {
-                //   type: "list",
-                //   content: content.about.withdrawalMethods.list || [],
-                // },
-                // {
-                //   type: "text",
-                //   content: content.about.withdrawalMethods.text[1],
-                // },
               ],
             },
           ]}

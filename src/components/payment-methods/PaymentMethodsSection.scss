@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: #060606;
+        color: $text-color-primary;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
@@ -53,13 +53,13 @@
           font-weight: 500;
 
           &:first-child {
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
           }
 
           &:last-child {
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
           }
         }
       }
@@ -82,16 +82,16 @@
             justify-content: center;
             align-items: center;
             border-left: $border-width solid $border-color;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
             height: 88px;
             overflow: hidden;
           }
 
           &:last-child {
             border-right: $border-width solid $border-color;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
           }
 
           img {
@@ -128,7 +128,7 @@
         align-items: center;
         margin-bottom: 8px;
         padding: 8px;
-        border-radius: 20px;
+        border-radius: $border-radius;
 
         img {
           width: 110px;
@@ -159,7 +159,7 @@
         flex-direction: column;
         padding: 8px 16px;
         border: $border-width solid $border-color;
-        border-radius: 20px;
+        border-radius: $border-radius;
 
         p {
           color: $text-color-third;

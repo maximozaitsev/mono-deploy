@@ -6,7 +6,7 @@
   font-family: $font-secondary;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
 
@@ -14,16 +14,17 @@
     outline: 4px solid;
     outline-offset: -4px;
     padding: 4px 48px;
-    outline-color: #f9f8f83b;
+    outline-color: #63636349;
     background: $color-button-large;
-    color: $text-color-primary;
+    color: $text-color-third;
     font-size: 28px;
     border: none;
-    border-radius: 40px;
+    border-radius: 16px;
     min-width: 280px;
     height: 87px;
 
     @media (max-width: 768px) {
+      border-radius: 12px;
       font-size: 24px;
       padding: 4px 48px;
       min-width: 240px;
@@ -48,13 +49,13 @@
   &.secondary {
     outline: 3px solid;
     outline-offset: -3px;
-    padding: 2px 8px;
+    padding: 2px 18px;
     outline-color: #2e2e2e3b;
     background: $color-button-small;
     color: #fff;
     font-size: 20px;
     border: none;
-    border-radius: 40px;
+    border-radius: 8px;
     height: 52px;
 
     @media (max-width: 768px) {

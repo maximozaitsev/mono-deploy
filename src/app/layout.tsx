@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "just-casino-nz.com";
+const url = "grandmondialcasino-online.com";
 const ogTitle =
-  "Just Casino Canada: Play Slots, Table Games, and Live Dealer Options";
-const ogSiteName = "Just Casino";
+  "Grand Mondial Casino Canada: Trusted Online Gaming with Top Slots";
+const ogSiteName = "Grand Mondial Casino";
 const metaDescription =
-  "Just Casino offers Canadian players top games, secure transactions, and rewarding bonuses. Explore the excitement with a vast game selection today! Register now and enjoy exclusive offers.";
+  "Grand Mondial Casino Canada is known for its top-tier game selection powered by Microgaming, offering players a secure and enjoyable experience. Explore hundreds of games, including progressive jackpots and table games. Sign up now and enjoy the world of safe online gaming!";
 
 const locale = "en-NZ";
 const language = "English";

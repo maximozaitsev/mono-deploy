@@ -2,12 +2,10 @@
 @import "../../styles/typography.scss";
 
 .mobile-section {
-  background: $color-background-secondary;
+  background: $color-background-fourth;
 
   padding: 64px 0;
   margin-bottom: 140px;
-  border-bottom: 3px solid #ffc100;
-  border-top: 3px solid #ffc100;
 
   .mobile-content {
     display: flex;
@@ -84,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -55px;
-      top: 11px;
+      left: -155px;
+      top: 8px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -105,7 +103,7 @@
 
       .app-image {
         height: 405px;
-        width: 419px;
+        width: 348px;
         object-fit: contain;
       }
     }
