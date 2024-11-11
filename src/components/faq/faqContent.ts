@@ -1,52 +1,41 @@
 export const faqs = [
   {
-    question: "What is the minimum deposit amount at Spin Casino?",
-    answer:
-      "The minimum deposit at Spin Casino is $10, which allows participants to access most promotions, including the welcome bonus.",
+    question: "What is the minimum deposit?",
+    answer: "The minimum deposit at Just Casino is €20 or currency equivalent.",
   },
   {
-    question: "What is the maximum withdrawal limit?",
-    answer:
-      "The maximum withdrawal amount is $10,000 per transaction, depending on the payment method chosen.",
+    question: "Is there a maximum withdrawal limit?",
+    answer: "Yes, players can withdraw up to €30,000 per month.",
   },
   {
-    question: "How long does it take to process withdrawals?",
-    answer:
-      "Withdrawals have a pending period of up to 24 hours, after which processing takes 1-5 business days based on the payment method.",
+    question: "What is the bonus wagering requirement?",
+    answer: "Just Casino bonuses have a 40x wagering requirement.",
   },
   {
-    question: "Can I reverse a withdrawal?",
+    question: "What is Just Casino withdrawal times?",
     answer:
-      "Yes, during the 24-hour pending period, you can cancel a withdrawal request from your account.",
+      "Cryptocurrency Just Casino withdrawal time is processed within minutes.",
   },
   {
-    question: "Does Spin Casino offer live dealer games?",
-    answer:
-      "Yes, Spin Casino has a range of live dealer games, including blackjack, baccarat, and roulette, powered by Evolution Gaming.",
+    question: "Does Just Casino charge deposit fees?",
+    answer: "No, Just Casino does not apply fees on deposits.",
   },
   {
-    question: "Are there transaction fees for deposits or withdrawals?",
-    answer:
-      "Spin Casino does not charge any fees on deposits or withdrawals, but third-party fees may apply based on the payment method.",
+    question: "What games are restricted from bonus wagering?",
+    answer: "Jackpot slots are not eligible for bonus wagering.",
   },
   {
-    question: "Can I play without downloading the app?",
-    answer:
-      "Yes, Spin Casino offers instant play directly through a web browser on mobile and desktop without the need for an app.",
+    question:
+      "What is the maximum bet allowed with Just spin Casino bonus code?",
+    answer: "The maximum bet with bonus funds is €5 or equivalent.",
   },
   {
-    question: "What happens if my game freezes?",
-    answer:
-      "If your game freezes, bets remain valid, and any winnings are credited. Simply log back in and continue.",
+    question: "Can I use promo code Just Casino on my tablet?",
+    answer: "Yes, the mobile-optimized site supports tablets.",
   },
   {
-    question: "Is there a free Spin Casino no deposit bonus?",
+    question: "How long does verification take?",
     answer:
-      "Spin Casino has a loyalty program with multiple tiers, but there is no VIP program as rewards are based on loyalty points.",
-  },
-  {
-    question: "How do I reset my password?",
-    answer:
-      "Click 'Forgot Password' on the login page, enter your registered email, and follow the reset instructions.",
+      "Verification typically takes up to 24 hours once documents are submitted.",
   },
 ];

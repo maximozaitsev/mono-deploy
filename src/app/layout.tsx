@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "spin-casino-online.com";
+const url = "just-casino-nz.com";
 const ogTitle =
-  "Spin Casino New Zealand: Premium Games, Bonuses & Secure Gaming";
-const ogSiteName = "Spin Casino";
+  "Just Casino Canada: Play Slots, Table Games, and Live Dealer Options";
+const ogSiteName = "Just Casino";
 const metaDescription =
-  "Spin Casino New Zealand delivers top games, secure banking, and a lucrative welcome offer. Start playing today for exciting rewards and a trusted gaming experience!";
+  "Just Casino offers Canadian players top games, secure transactions, and rewarding bonuses. Explore the excitement with a vast game selection today! Register now and enjoy exclusive offers.";
 
 const locale = "en-NZ";
 const language = "English";

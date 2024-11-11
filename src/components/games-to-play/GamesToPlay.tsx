@@ -26,17 +26,15 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[1].text,
                 },
-                // {
-                //   type: "list",
-                //   content:
-                //     content.gamesToPlay.leftColumnContent[1].categories || [],
-                // },
-                // {
-                //   type: "additionalText",
-                //   content:
-                //     content.gamesToPlay.leftColumnContent[1].additionalText ||
-                //     [],
-                // },
+              ],
+            },
+            {
+              heading: content.gamesToPlay.leftColumnContent[2].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.gamesToPlay.leftColumnContent[2].text,
+                },
               ],
             },
           ]}

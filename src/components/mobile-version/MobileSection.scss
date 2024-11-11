@@ -6,6 +6,8 @@
 
   padding: 64px 0;
   margin-bottom: 140px;
+  border-bottom: 3px solid #ffc100;
+  border-top: 3px solid #ffc100;
 
   .mobile-content {
     display: flex;
@@ -82,8 +84,8 @@
 
     img {
       position: absolute;
-      left: -134px;
-      top: 74px;
+      left: -55px;
+      top: 11px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -103,7 +105,7 @@
 
       .app-image {
         height: 405px;
-        width: 348px;
+        width: 419px;
         object-fit: contain;
       }
     }
@@ -138,10 +140,8 @@
 
         .app-image {
           /* margin-left: -35px; */
-          margin-top: 10px;
-          margin-bottom: 13px;
+          margin-bottom: 4px;
           padding-bottom: 20px;
-          scale: 1.07;
         }
 
         h3 {

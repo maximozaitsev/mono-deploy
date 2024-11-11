@@ -3,6 +3,8 @@
 .appSection {
   background: $color-background-secondary;
   padding: 64px;
+  border-bottom: 3px solid #ffc100;
+  border-top: 3px solid #ffc100;
 
   @media (max-width: 768px) {
     padding: 64px 0;
@@ -43,8 +45,8 @@
 
     .image {
       position: absolute;
-      top: -62px;
-      right: -124px;
+      top: -170px;
+      right: -87px;
       overflow: hidden;
       height: auto;
     }
@@ -76,12 +78,12 @@
 
       .imageMobile {
         display: block;
-        max-width: 475px;
+        max-width: 440px;
         width: 100%;
         height: auto;
         align-self: center;
-        margin-top: 16px;
-        margin-bottom: 16px;
+        margin-top: 13px;
+        margin-bottom: 15px;
       }
 
       h3 {
@@ -101,8 +103,13 @@
     .textBlock {
       gap: 24px;
 
+      p {
+        width: 75%;
+      }
+
       h3:first-child {
         font-size: 32px;
+        padding-top: 32px;
       }
 
       .buttons {

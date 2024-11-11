@@ -3,13 +3,14 @@
 .licensesSection {
   background: $color-background-secondary;
   padding: 64px 0;
+  border-bottom: 3px solid #ffc100;
+  border-top: 3px solid #ffc100;
 
   h2 {
     margin-bottom: 24px;
   }
 
   .licensesContent {
-    width: 100%;
     display: flex;
     margin-bottom: 48px;
 
@@ -17,69 +18,17 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
-      // flex: 2.5;
+      flex: 2.5;
       margin-right: 20px;
-      width: 85%;
-
-      @media (max-width: 1380px) {
-        width: 70%;
-      }
-
-      @media (max-width: 930px) {
-        width: 60%;
-      }
-
-      @media (max-width: 769px) {
-        width: 100%;
-      }
     }
 
     .rightImage {
-      // flex: 1;
+      flex: 1;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: flex-end;
-      position: relative;
-      width: 15%;
-
-      @media (max-width: 930px) {
-        width: 20%;
-      }
-
-      @media (max-width: 768px) {
-        width: 100%;
-      }
 
       img {
-        position: absolute;
-
-        &:nth-child(1) {
-          right: -85px;
-          top: -72px;
-        }
-
-        &:nth-child(2) {
-          right: -131px;
-          top: 128px;
-        }
-
-        @media (max-width: 768px) {
-          position: static;
-
-          &:nth-child(1) {
-            max-width: 162px;
-            width: 100%;
-            height: auto;
-            margin-bottom: 40px;
-          }
-
-          &:nth-child(2) {
-            max-width: 420px;
-            width: 100%;
-            height: auto;
-          }
-        }
+        width: auto;
       }
     }
   }
@@ -93,7 +42,6 @@
     .licensesContent {
       flex-direction: column;
       margin-bottom: 40px;
-      align-items: center;
 
       .leftContent {
         order: 2;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import aboutImage from "../../../public/block-images/laptop.webp";
 import P from "../__common__/Paragraph";
-// import List from "../__common__/list/List";
+import List from "../__common__/list/List";
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { content } from "@/content/content";
 import "./AboutSection.scss";

@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: $text-color-primary;
+        color: #060606;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
@@ -53,13 +53,13 @@
           font-weight: 500;
 
           &:first-child {
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
           }
 
           &:last-child {
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
           }
         }
       }
@@ -82,16 +82,16 @@
             justify-content: center;
             align-items: center;
             border-left: $border-width solid $border-color;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
             height: 88px;
             overflow: hidden;
           }
 
           &:last-child {
             border-right: $border-width solid $border-color;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
           }
 
           img {
@@ -128,7 +128,7 @@
         align-items: center;
         margin-bottom: 8px;
         padding: 8px;
-        border-radius: 15px;
+        border-radius: 20px;
 
         img {
           width: 110px;
@@ -159,7 +159,7 @@
         flex-direction: column;
         padding: 8px 16px;
         border: $border-width solid $border-color;
-        border-radius: 15px;
+        border-radius: 20px;
 
         p {
           color: $text-color-third;

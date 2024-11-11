@@ -57,7 +57,7 @@ body {
   font-family: $font-secondary;
   font-size: 56px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -70,7 +70,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -83,7 +83,7 @@ body {
   font-family: $font-secondary;
   font-size: 40px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -92,7 +92,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -105,7 +105,7 @@ body {
   font-family: $font-secondary;
   font-size: 24px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -114,7 +114,6 @@ body {
 
   @media (max-width: 768px) {
     font-size: 18px;
-    font-weight: 700;
   }
 }
 

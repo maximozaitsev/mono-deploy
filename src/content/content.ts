@@ -1,45 +1,45 @@
 export const content = {
-  projectName: "Spin Casino",
+  projectName: "Just Casino",
   advantages: {
     // title: "",
-    subTitle: "Spin Сasino Advantages",
+    subTitle: "Just Casino Advantages",
     text: [
-      `Spin Casino is a popular online gaming platform recognized for its user-friendly interface and wide range of games. Here’s a quick look at some of its key advantages and disadvantages.`,
+      `Just Casino offers a variety of benefits for players seeking a secure and enjoyable online playing venture. Below are some of the main advantages and disadvantages:`,
     ],
     advantagesTitle: "Advantages:",
     disadvantagesTitle: "Disadvantages:",
     advantages: [
-      "Extensive game selection",
+      "Extensive game library",
+      "User-friendly interface",
+      "Secure and encrypted platform",
+      "Wide range of payment options",
+      "Responsive customer support",
       "Mobile compatibility",
-      "Generous welcome bonuses and promotions",
-      "24/7 customer support",
-      "Secure and licensed platform",
-      "Multiple trusted payment options",
-      "High-quality graphics and gameplay",
+      "Frequent bonuses and promotions",
     ],
     disadvantages: [
-      "Restricted in certain countries",
-      "Wagering requirements on bonusess",
-      "Limited availability of certain payment methods",
+      "Limited availability in certain countries",
+      "Withdrawal times may vary",
+      "Few specialty game options",
     ],
   },
   about: {
-    title: "Spin Casino New Zealand",
+    title: "Just Casino Online",
     intro: [
-      "100% match up to $400",
-      "100% match up to $300",
-      "Game of the Week promotion",
+      "50% bonus up to $300",
+      "Weekly Milky Way",
+      "$4,000 and 300 free spins",
     ],
     description: [
-      `Spin Casino is a well-established online gaming platform known for its impressive selection of games and user-friendly experience. It has been operating for several years, catering to both new and experienced participants with a vast range of casino games, including slots, table games, and live dealer options. Spin Casino is licensed and regulated, prioritizing player safety and responsible gambling. Participants are drawn to its seamless interface, mobile compatibility, and enticing bonuses, which enhance the overall playing venture. With a reputation for high-quality graphics, reliable customer support, and secure payment options, Spin Casino appeals to those seeking an immersive and trustworthy gaming environment.`,
+      `Just Casino stands out in the online gaming landscape as a platform dedicated to providing an exceptional playing venture. Known for its sleek design and user-friendly interface, Just Casino offers a vast choice of games, including popular slots, table games, and live dealer options, catering to both novice and seasoned players alike. The platform emphasizes fair play, security, and ease of access, with flexible payment methods and responsive customer support. Whether seeking thrilling jackpots or interactive live gaming, Just Casino review positions itself as a one-stop destination for high-quality online entertainment.`,
       // `p2`,
       // `p3`,
     ],
     signIn: {
-      title: "About Spin Casino Login NZ",
+      title: "About Just Casino Login",
       text: [
-        `Spin Casino has built a reputation as a premium online casino destination, offering an extensive library of games that includes slots, table games, and live casino options. Known for its sleek design and user-focused features, Spin Casino ensures an immersive experience through high-quality graphics, mobile compatibility, and engaging gameplay. The platform is licensed and regulated, prioritizing a secure and responsible gaming environment where participants can enjoy a variety of promotions and bonuses. With 24/7 customer support and a range of trusted payment methods, Spin Casino attracts participants seeking both excitement and reliability.`,
-        `Spin Casino login is a straightforward and secure process designed to ensure player convenience and privacy. Participants can access their accounts by navigating to the Spin city Casino NZ login section on the homepage and entering their registered email and password. For additional security, the platform may prompt users to verify their identity through multi-factor authentication, especially on new devices. After Spin Casino NZ login, participants gain full access to their account dashboard, where they can manage deposits, withdrawals, game preferences, and bonus activations. Spin Casino’s login process is optimized for both desktop and mobile devices, making it easy for participants to switch between platforms seamlessly.`,
+        `Just Casino is a dynamic online platform catering to players with a robust choice of games and an engaging, streamlined design. Known for its extensive game library, Just Casino brings together classic slots, table games, and immersive live dealer options, making it a versatile choice for all types of players. Security and user satisfaction are key priorities, with the platform implementing top-tier encryption to protect player data and transactions. Just Casino further enhances the user experience with a responsive support team and seamless payment options, creating a trustworthy environment for entertainment and rewards.`,
+        `Just Casino login process is simple and secure, allowing players quick access to their accounts. On the main page, users will find the login button, which leads to a secure entry field where they can enter their email and password. For new players, there’s an easy registration process just below the login area, making it convenient to join the casino in minutes. Once logged in, players can access their personalized dashboard, view account balances, and navigate games effortlessly. The venue ensures a smooth experience, with fast Just spin Casino login speeds and responsive design across devices, whether accessing via desktop or mobile.`,
         // `p3`,
       ],
       // list: ["li1", "li2", "li3"],
@@ -52,88 +52,94 @@ export const content = {
     depositMethods: {
       title: "Deposit Methods",
       text: [
-        `Spin Casino provides participants with multiple convenient methods to deposit funds into their accounts instantly. Major credit and debit cards, including Visa and Mastercard, are widely accepted for fast deposits. For bank transfer options, Interac and eCheck are popular in Canada, ensuring a secure, direct link between the player’s bank and their casino account. Apple Pay and Google Pay offer seamless mobile-friendly options, allowing participants to add funds with just a few taps. Additionally, prepaid voucher methods like paysafecard and Flexepin are available for participants who prefer an added layer of anonymity, making it a straightforward process to deposit funds without linking directly to a bank account.`,
+        `Just Casino NZ provides a range of deposit methods for quick and secure transactions. Players can fund their accounts using traditional options such as Visa and Mastercard for straightforward card transactions. Alternative e-wallets like ecoPayz, MuchBetter, and MiFinity are available for those who prefer digital wallets, and bank transfers provide a direct option for larger transactions. Additionally, cryptocurrency enthusiasts can use CoinsPaid, supporting Bitcoin, Tether, Litecoin, and more for decentralized payments, ensuring diverse options for all players.`,
         // `p2`,
       ],
       // list: ["li1", "li2", "li3"],
       // additionalText: `p1`,
     },
     withdrawalMethods: {
-      title: "Spin Casino Withdrawal Time and Methods",
+      title: "Just Casino Withdrawal Methods",
       text: [
-        `Withdrawal processes at Spin Casino are designed to be secure and efficient, with multiple methods available. Visa and Mastercard are commonly used for direct transfers back to a player’s bank, while Interac and eCheck provide reliable bank transfer options for cashing out. For e-wallet convenience, ecoPayz and MuchBetter are also supported, offering participants the flexibility to manage withdrawals without delays. Withdrawals typically undergo a processing period of 24-72 hours, ensuring all necessary verifications are completed before the funds are released to the player’s account.`,
+        `For withdrawals, Just Casino offers multiple convenient options to facilitate smooth cashouts. Players can withdraw funds through Visa and Mastercard, which deliver reliability for direct bank card withdrawals. For digital wallets, options like ecoPayz, MuchBetter, and MiFinity provide secure online transactions. Just Casino also supports crypto withdrawals through CoinsPaid, allowing Bitcoin, Tether, Litecoin, and other cryptocurrency payouts, meeting the needs of both traditional and crypto-focused players.`,
         // `p2`,
       ],
       list: [],
     },
   },
   licenses: {
-    title: "Licenses",
+    title: "Is Just Casino legit?",
     text: [
-      `Spin Casino operates under licenses from reputable authorities, including the Malta Gaming Authority (MGA) and the Kahnawake Gaming Commission. These licenses ensure adherence to strict regulatory standards, including fair play, data protection, and responsible gambling practices.`,
+      `Is Just Casino legit? Just Casino operates under a license issued by the Malta Gaming Authority (MGA), adhering to international regulations and standards for fair play and transparency. This licensing underscores their commitment to offering a secure and regulated gaming environment.`,
       // `p2`,
       // `p3`,
     ],
-    security: "Security",
+    security: "Is Just Casino safe?",
     securityText: [
-      `Spin Casino employs SSL encryption to safeguard personal and financial data, mirroring standards used by major banks. Security is enhanced by two-factor authentication and anti-fraud measures, ensuring user accounts remain protected. The platform undergoes regular audits to uphold strict security protocols, providing a safe gaming environment.`,
+      `The casino employs 128-bit SSL encryption to secure user data and financial transactions, protecting player information and funds. Anti-fraud technology is also used to monitor activity and prevent unauthorized access, providing a safe environment for all users.`,
       // `p2`,
     ],
     software: "Software Technologies",
     softwareText: [
-      `Spin Casino partners with industry leaders like Games Global, Evolution, and Pragmatic Play, offering a diverse range of games optimized for smooth performance and high-quality graphics across all devices. The software includes advanced random number generation for fair play, ensuring each outcome is unbiased and verified by third-party auditors.`,
+      `Just Casino’s platform is powered by leading software providers such as Microgaming, Pragmatic Play, and BGaming, delivering smooth and high-quality gameplay across a range of games. Their integration of advanced software ensures optimal load times and visual quality, making the experience immersive for users.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Spin Casino NZ Login Mobile App",
+    title: "Just Casino Download App",
     text: [
-      `Available on both iOS and Android, the Spin Casino mobile login app offers a mobile-optimized experience with full access to games, banking options, and account management. The app features streamlined navigation, secure payment methods, and the same security layers as the desktop site, making mobile gaming convenient and secure.`,
+      `There is a web Just Casino app accessible on both Android and iOS, ensuring seamless gameplay across devices without needing a separate download. The app supports all features available on the desktop version, from game access to secure deposits and withdrawals.`,
       // `p2`,
     ],
     languages: "Languages",
     languagesText: [
-      `Spin Casino supports multiple languages, including English, French, Spanish, German, and Portuguese, catering to a broad global audience and enhancing accessibility for non-English-speaking participants.`,
+      `To accommodate a global audience, Just Casino supports multiple languages, including English, French, German, and Spanish. This multilingual accessibility ensures players worldwide can comfortably navigate the platform and access support in their preferred language.`,
       // `p2`,
       // `p3`,
     ],
     currencies: "Currencies",
     currenciesText: [
-      `Spin Casino accommodates a variety of currencies such as USD, EUR, CAD, and NZD, allowing participants to deposit, wager, and withdraw funds in their preferred currency. This flexibility reduces currency conversion fees and simplifies transactions for users in different regions.`,
+      `Just Casino accepts several currencies to make transactions accessible and convenient. Supported options include EUR, USD, CAD, AUD, and cryptocurrencies like Bitcoin, Tether, and Litecoin, allowing for both fiat and crypto flexibility in deposits and withdrawals.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play at Spin Casino",
+    title: "Just Casino Games",
     text: [
-      `Spin Casino NZ offers a diverse selection of games designed to cater to all types of participants, from slot enthusiasts to table game strategists and live casino fans. With high-quality graphics and smooth gameplay, Spin Casino provides an immersive experience across multiple gaming categories.`,
+      `Just Casino offers a diverse gaming library designed to cater to various player preferences, from traditional table games to engaging slot titles and immersive live dealer experiences. With high-quality graphics and smooth gameplay, Just Casino ensures that players have access to an exciting range of games suited for all levels.`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
         heading: "Slots",
-        text: `Spin Casino boasts an impressive selection of slot games that cater to all types of participants, from fans of classic slots to those seeking high-tech video slots with immersive themes and advanced graphics. The classic three-reel slots are reminiscent of traditional casino machines, providing a nostalgic experience with straightforward gameplay. Meanwhile, modern video slots offer vibrant themes and storylines, engaging participants with detailed animations, sound effects, and bonus rounds that keep gameplay exciting. Popular progressive jackpot slots like Mega Moolah and Wheel of Wishes provide a thrilling chance to win significant cash prizes, often reaching millions. `,
+        text: `Just Casino hosts an extensive choice of slots, appealing to every type of player, from those who enjoy classic games to those looking for the latest innovations. The collection includes traditional three-reel slots, which evoke the nostalgia of classic casino games, as well as multi-payline video slots filled with interactive features, stunning animations, and engaging soundtracks. For those aiming to win substantial jackpots, progressive slots offer the chance to score life-changing sums as their prize pools grow with every spin.`,
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
         heading: "Table Games",
         text: [
-          `For those who appreciate traditional casino gaming, Spin Casino offers a well-rounded collection of table games that includes multiple variations of blackjack, roulette, and baccarat. Each table game offers distinct gameplay experiences, with options like European Roulette, which features a single zero, and American Roulette, known for its double-zero layout, catering to different strategies and preferences. The casino also provides versions such as Multi-hand Blackjack, allowing participants to place multiple bets at once for a faster-paced experience. Baccarat fans can enjoy both classic and advanced versions, making it a choice for beginners and seasoned participants alike. `,
+          `For fans of traditional casino experiences, Just Casino provides an impressive choice of table games that capture the essence of real-life casinos. The table games section includes numerous versions of Blackjack, Roulette, and Baccarat, each featuring distinct rule variations and customizable options. Players can adjust betting limits, access side bets, and even choose games that incorporate unique features such as multi-hand play or fast-paced rounds. Blackjack enthusiasts, for example, can select from classic, European, or Vegas Strip variations, while Roulette fans have options like American, European, and French Roulette. `,
           // `p2`,
           // `p3`,
         ],
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
+      },
+      {
+        heading: "Live Dealer Games",
+        text: [
+          `Just Casino’s live dealer section offers players a highly immersive experience that replicates the excitement of being in a real casino. Powered by leading software providers, this live section features high-definition streaming for popular games like Blackjack, Roulette, and Baccarat, hosted by professional dealers who interact with players in real-time. Players can chat with the dealer and fellow participants, adding a social layer to the game and heightening the overall experience. Additionally, some games may feature unique rules or side bets to enhance gameplay. This section also caters to various player preferences by offering different table limits and game variations, allowing users to pick a game that aligns with their desired pace and stakes, all from the convenience of their device.`,
+        ],
       },
     ],
     gamesRightColumn: [
       {
-        heading: "Live Casino",
+        heading: "Video Poker",
         text: [
-          `The live casino section at Spin Casino transports participants into a real-time gaming environment, simulating the ambiance of a physical casino with live dealers and interactive gameplay. Powered by top-tier providers like Evolution Gaming, the live casino selection includes popular options such as live blackjack, roulette, and baccarat, alongside innovative game show-style experiences like Dream Catcher and Crazy Time. Participants can interact with live dealers through chat, adding a social element that heightens the immersion and makes each session feel unique. These live games are streamed in high-definition, allowing participants to enjoy crisp visuals and clear sound from their desktop or mobile devices, creating an authentic casino experience that’s available anytime and anywhere, enhancing the appeal for participants seeking real-time excitement.`,
+          `Just Casino’s video poker games blend the strategic appeal of poker with the simplicity of slots, offering players a unique playing venture. The video poker section includes popular variations such as Jacks or Better and Deuces Wild, known for their straightforward gameplay and significant payout potential for skilled players. Each game is designed with clear rules, making it easy for both beginners and seasoned players to jump in. With high RTP rates, video poker appeals to those who appreciate a mix of chance and strategy. Additionally, some games offer multi-hand options, allowing players to increase their chances of winning by playing multiple hands at once. This selection is ideal for poker enthusiasts who want to test their skills in a streamlined, fast-paced format.`,
           // `p2`,
           // `p3`,
         ],
@@ -141,9 +147,9 @@ export const content = {
         // additionalText: `p1`,
       },
       {
-        heading: "Spin. Casino Video Poker",
+        heading: "Specialty Games",
         text: [
-          `Spin Casino also caters to video poker enthusiasts with a diverse collection of video poker games that combine the elements of classic poker with the fast-paced nature of slots. Titles like Jacks or Better and Deuces Wild offer different payout structures and strategic opportunities, enabling participants to choose a game that aligns with their preferred level of risk and reward. With a variety of betting options, participants can select wagers that fit their budget, making video poker an accessible choice for both newcomers and experienced participants seeking strategic play. `,
+          `Just Casino’s specialty games section rounds out the playing venture with options like Keno, Scratch Cards, and Bingo, catering to players seeking quick and casual gaming sessions. These games are easy to understand and play, making them a great choice for those who enjoy a relaxed pace without needing advanced strategies. Keno offers players the chance to choose their numbers and win based on matching draws, while Scratch Cards provide instant-win opportunities. Bingo games add a social element, allowing players to compete against others in a friendly setting. `,
           // `p2`,
           // `p3`,
         ],
@@ -153,52 +159,63 @@ export const content = {
   support: {
     title: "Support",
     text: [
-      `Customer support at Spin Casino is available 24/7 via live chat and email, providing assistance with account issues, payment inquiries, and game support. The support team is trained to handle a variety of player needs, ensuring prompt and professional responses across all time zones.`,
+      `Just Casino provides customer support through live chat and email, available 24/7. Their support team assists with account management,Just Casino reviews, bonus information, and technical issues, ensuring users receive prompt responses and solutions to enhance their experience on the platform.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Spin Online Casino Bonuses and Promotions",
+    title: "Just Casino Bonus Options",
     text: [
-      `Spin Casino online offers a range of bonuses and promotions to enhance the playing venture, rewarding both new and returning participants with attractive incentives. Below are some of the primary bonuses currently available:`,
+      `Just Casino offers a wide range of bonuses and promotions that appeal to both new players and regular users. Here’s a breakdown of their primary bonuses:`,
       // `p2`,
     ],
     leftColumnContent: [
       {
         heading: "Welcome Bonus",
         text: [
-          `New participants at Spin Casino are welcomed with a substantial bonus package spread over their first three deposits, allowing them to start with extra funds. The first deposit qualifies for a 100% match up to $400, effectively doubling the player’s initial funds and giving ample opportunity to explore the platform’s offerings. This is followed by a 100% match up to $300 on both the second and third deposits, allowing new participants to enjoy up to $1,000 in bonus funds as they ease into the casino’s games. A minimum deposit of $10 is required to activate each stage of the welcome bonus, with a standard wagering requirement of 35x on the bonus funds, which must be met before any winnings from the bonus can be withdrawn. This Spin Casino $1 deposit bonus structure provides participants with additional resources across multiple deposits, enhancing their initial experience on the platform.`,
+          `New players at Just Casino can kick-start their experience with a choice between two welcome packages tailored to different playing styles. The standard welcome bonus, spread across the first four deposits, provides up to $4,000 and 300 free spins on select slot games. For those preferring higher stakes, the Supernova welcome option offers a 125% match up to $8,000, 10% cashback on weekly losses, and 150 free spins. Both Just Casino free chip options come with specific wagering requirements, making them adaptable for all types of players.`,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
       {
-        heading: "Game of the Week and Spin Casino no Deposit Bonus",
+        heading: "Weekly Milky Way and Just Casino no deposit bonus 2024",
         text: [
-          `Every week, Spin Casino introduces a Game of the Week promotion, which encourages participants to engage with a specific game selected by the casino. By playing the designated game, participants earn extra loyalty points, accelerating their progress through the loyalty program and gaining access to greater rewards. This Spin Casino free Spins no deposit feature allows participants to try out different games and potentially discover new favorites while reaping additional benefits. The Game of the Week is updated every Tuesday, ensuring fresh and exciting options that keep the playing venture dynamic.`,
+          `The Weekly Milky Way bonus rewards players every Monday based on their previous week’s deposits and wagering activity. By depositing a minimum of $50 and meeting the wagering conditions, players can earn cash bonuses up to $400. This Just Casino no deposit bonus incentivizes regular play and provides a substantial boost to start the week, allowing players to access bonus funds proportional to their prior week's activity, with clear conditions to maintain transparency.`,
           // `p2`,
           // `p3`,
         ],
-        // categories: ["li1", "li2", "li3"],
-        // additionalText: `p1`,
+      },
+      {
+        heading: "Just Cashback and Just Casino Codes",
+        text: [
+          `Just Casino’s cashback program offers regular players a cushion against losses by providing 10% cashback each Monday, up to $1,000. To qualify, players must have made a deposit in the previous week, with the cashback calculated based on their net losses. This Just Casino no deposit bonus codes promotion effectively minimizes weekly losses and adds an extra layer of security, allowing players to recoup some of their expenses and reinvest in gameplay, enhancing retention and ongoing engagement.`,
+        ],
       },
     ],
     rightColumnContent: [
       {
-        heading:
-          "Loyalty Program and Spin Casino NZ Free Spins no Deposit Bonus Codes",
+        heading: "Space Spin and Just spin Casino no deposit bonus",
         text: [
-          `Spin Casino’s loyalty program rewards participants for consistent engagement with real-money wagers. As participants wager, they accumulate loyalty points that can later be redeemed for bonus credits or other rewards, adding extra value to each game. The free Spin Casino no deposit free $25 program is divided into various loyalty tiers, each offering unique benefits that grow more exclusive as participants progress through the ranks. Higher tiers unlock access to personalized offers, faster withdrawal times, and other free Spin Casino $100 no deposit bonus codes tailored to enhance the player’s experience. `,
+          `On Thursdays, players can add excitement to their gaming week with the Space Spin promotion. By depositing a minimum of $20 and using the Just Casino promo code “SPACESPIN,” players unlock 77 free spins on the “Book of Panda” slot. This Just spin Casino bonus caters specifically to slot enthusiasts looking to extend their gameplay with free spins on a featured title, making it a fun and rewarding addition to Just Casino’s weekly promotions lineup.`,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
+      {
+        heading: "Power Up Fridays and Just Casino bonus code",
+        text: [
+          `Just Casino encourages players to gear up for the weekend with the Power Up Fridays promotion. A deposit of $20 or more on Fridays, accompanied by the promo code “POW50,” qualifies players for a 50% bonus up to $300. This bonus is ideal for players who want a mid-weekend boost, adding bonus funds to extend playtime on their favorite games. The Just Casino free chip no deposit promotion combines accessibility with valuable bonuses, fitting seamlessly into a regular player’s weekly schedule.`,
+          // `p2`,
+          // `p3`,
+        ],
+      },
     ],
   },
   faq: {
-    title: "Spin Casino Review FAQ",
+    title: "CASINO FAQ",
   },
 };

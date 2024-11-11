@@ -14,12 +14,12 @@
     outline: 4px solid;
     outline-offset: -4px;
     padding: 4px 48px;
-    outline-color: rgb(255 255 255 / 40%);
+    outline-color: #f9f8f83b;
     background: $color-button-large;
     color: $text-color-primary;
     font-size: 28px;
     border: none;
-    border-radius: 25px;
+    border-radius: 40px;
     min-width: 280px;
     height: 87px;
 
@@ -54,7 +54,7 @@
     color: #fff;
     font-size: 20px;
     border: none;
-    border-radius: 15px;
+    border-radius: 40px;
     height: 52px;
 
     @media (max-width: 768px) {
