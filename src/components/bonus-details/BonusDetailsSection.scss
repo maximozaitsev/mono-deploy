@@ -168,7 +168,7 @@
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(253, 252, 252, 0.4);
 
   &::after {
     content: "";
@@ -225,6 +225,18 @@
 
   @media (max-width: 300px) {
     padding: 0;
+  }
+}
+
+.accordion-title {
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background-color: rgba(253, 252, 252, 0.4);
   }
 }
 
