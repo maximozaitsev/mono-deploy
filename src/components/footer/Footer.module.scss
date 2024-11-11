@@ -36,13 +36,13 @@
 
           img {
             margin-top: 4px;
-            scale: 1.8;
+            scale: 1.07;
             position: absolute;
             left: 220px;
             cursor: pointer;
 
             @media (max-width: 768px) {
-              scale: 1.6;
+              scale: 1;
               margin-top: 0px !important;
               margin-bottom: 10px;
             }
