@@ -2,7 +2,7 @@
 @import "../../styles/typography.scss";
 
 .mobile-section {
-  background: $color-background-fourth;
+  background: $color-background-secondary;
 
   padding: 64px 0;
   margin-bottom: 140px;
@@ -82,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -155px;
-      top: 8px;
+      left: -69px;
+      top: 0px;
 
       @media (max-width: 1370px) {
         position: static;

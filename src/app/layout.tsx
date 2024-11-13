@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "grandmondialcasino-online.com";
+const url = "elements-casino-surrey.com";
 const ogTitle =
-  "Grand Mondial Casino Canada: Trusted Online Gaming with Top Slots";
-const ogSiteName = "Grand Mondial Casino";
+  "Elements Casino Surrey, Canada – Gaming, Dining, and Entertainment";
+const ogSiteName = "Elements Casino Surrey";
 const metaDescription =
-  "Grand Mondial Casino Canada is known for its top-tier game selection powered by Microgaming, offering players a secure and enjoyable experience. Explore hundreds of games, including progressive jackpots and table games. Sign up now and enjoy the world of safe online gaming!";
+  "Elements Casino Surrey in Canada offers an exciting mix of gaming, dining, and live entertainment. Explore slots, table games, and enjoy live shows. Join the Encore Rewards program for exclusive bonuses and rewards! Visit today for an unforgettable experience!";
 
-const locale = "en-NZ";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

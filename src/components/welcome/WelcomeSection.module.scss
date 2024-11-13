@@ -2,7 +2,7 @@
 @import "../../styles/typography.scss";
 
 .welcomeSection {
-  background: $color-background-fourth;
+  background: #12091a;
   margin-bottom: 140px;
   width: 100%;
 
@@ -17,8 +17,8 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  /* background-size: 34% auto; */
-  background-position: right 160px center;
+  // background-size: 55% auto;
+  background-position: right 160px top 12px;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -30,30 +30,39 @@
     width: 100%;
   }
 
-  @media (max-width: 1100px) {
-    background-position: right 20px center;
+  @media (max-width: 1180px) {
+    background-position: right 20px top 0;
   }
 
-  @media (max-width: 1100px) {
-    background-position: right -20px center;
+  @media (max-width: 1020px) {
+    background-position: right 0px center;
+  }
+
+  @media (max-width: 990px) {
+    background-size: 45% auto;
   }
 
   @media (max-width: 768px) {
-    padding-top: 21.35rem;
+    padding-top: 21rem;
     height: auto;
     justify-content: flex-end;
-    background-size: auto 62%;
+    background-size: auto 64%;
     background-position: top center;
-    margin: 0 auto 19px auto;
+    margin: 0 auto 24px auto;
   }
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
   }
 
-  @media (max-width: 420px) {
+  @media (max-width: 530px) {
     background-size: auto 50%;
     padding-top: 14.35rem;
+  }
+
+  @media (max-width: 380px) {
+    background-size: auto 60%;
+    padding-top: 12.35rem;
   }
 }
 
@@ -65,18 +74,10 @@
   z-index: 1;
   max-width: 72.5rem;
 
-  button {
-    max-width: 297px;
-    width: 100%;
-  }
-
   @media (max-width: 768px) {
     button {
       align-self: center;
       max-height: 77px;
-      max-width: 269px !important;
-      width: 100%;
-      padding: 0 !important;
     }
   }
 }
@@ -90,7 +91,15 @@
   max-width: 50%;
   // margin-left: -20px;
 
-  .welcomeMobile {
+  button {
+    min-width: 311px !important;
+
+    @media (max-width: 768px) {
+      min-width: 276px !important;
+    }
+  }
+
+  .bonusText {
     display: none;
   }
 
@@ -99,18 +108,18 @@
   }
 
   @media (max-width: 768px) {
-    .welcomeDesktop {
-      display: none;
-    }
-    .welcomeMobile {
-      display: block;
-    }
-
     width: 100%;
     max-width: 100%;
     gap: 24px;
     align-items: center;
     text-align: center;
+
+    .bonusText {
+      display: block;
+    }
+    .offerText {
+      display: none;
+    }
   }
 
   @media (max-width: 380px) {
@@ -123,15 +132,15 @@
   font-size: 64px;
   font-style: normal;
   font-weight: 900;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: 74px;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  line-height: normal;
   text-transform: uppercase;
-  color: $text-color-secondary;
+  // color: $text-color-secondary;
 
-  // background: linear-gradient($text-color-secondary-gradient);
-  // background-clip: text;
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
+  background: $text-color-secondary;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media (max-width: 768px) {
     display: none;
@@ -140,21 +149,20 @@
 
 .welcomeText p {
   font-family: $font-primary;
-  color: $text-color-primary;
+  color: #fff;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 
   @media (max-width: 768px) {
-    font-family: $font-secondary;
-    color: #fff;
     font-size: 24px;
-    font-weight: 700;
+    font-family: $font-secondary;
+    font-weight: 900;
     text-transform: uppercase;
   }
 
   @media (max-width: 380px) {
-    font-size: 20px;
+    font-size: 15px;
   }
 }

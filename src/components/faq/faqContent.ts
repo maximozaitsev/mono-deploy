@@ -1,34 +1,26 @@
 export const faqs = [
   {
-    question: "What is the minimum deposit?",
+    question: "What are the operating hours of Elements Casino Surrey?",
     answer:
-      "The minimum deposit required at the Casino is NZD10. This amount qualifies participants for the welcome bonus and other upgrades.",
+      "The casino is open daily from 10 AM to 4 AM, with extended hours on weekends for live events and special promotions.",
   },
   {
-    question: "How long does it take to process cashouts?",
-    answer:
-      "Cashout times range from 48 hours for e-wallets to 2-5 business days for credit cards and bank transfers.",
+    question: "Does Elements Casino Surrey offer free parking?",
+    answer: "Yes, free parking is available for all visitors at the casino.",
   },
   {
-    question: "Are there any fees for cashouts?",
+    question: "Are there any smoking and Elements Casino Surrey Photos areas?",
     answer:
-      "The venue does not charge fees for cashouts. However, your payment provider may apply its own fees.",
+      "Yes, Elements Casino Surrey has a designated glass-enclosed smoking area for guests.",
   },
   {
-    question: "Can I use cryptocurrencies for payments?",
+    question: "Is there an Elements Casino Surrey Buffet Menu?",
     answer:
-      "No, Grand Mondial Casino does not currently assistance cryptocurrencies. Participants can use methods like Visa, MasterCard, and e-wallets.s",
+      "Yes, dining options include casual eateries like Foodies and a more upscale experience at Homestretch on race days.",
   },
   {
-    question:
-      "What titles contribute to Casino Grand Mondial Bonus wagering requirements?",
+    question: "Can I use my Encore points for Elements Casino Surrey Buffet?",
     answer:
-      "Slots contribute 100%, while table titles like blackjack contribute 10%, and video poker contributes 2%.",
-  },
-  {
-    question:
-      "Is there a VIP program or Grand Mondial Casino free spins promo code offer?",
-    answer:
-      "Yes, Grand Mondial is part of the Casino Rewards Group, delivering a multi-tiered VIP program with exclusive benefits and upgrades.",
+      "Yes, Encore Rewards points can be redeemed for dining discounts at select restaurants within the casino.",
   },
 ];

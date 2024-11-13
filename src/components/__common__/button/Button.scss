@@ -14,17 +14,16 @@
     outline: 4px solid;
     outline-offset: -4px;
     padding: 4px 48px;
-    outline-color: #63636349;
+    outline-color: #f9f8f83b;
     background: $color-button-large;
-    color: $text-color-third;
+    color: $text-color-primary;
     font-size: 28px;
     border: none;
-    border-radius: 16px;
+    border-radius: 100px;
     min-width: 280px;
     height: 87px;
 
     @media (max-width: 768px) {
-      border-radius: 12px;
       font-size: 24px;
       padding: 4px 48px;
       min-width: 240px;
@@ -55,7 +54,7 @@
     color: #fff;
     font-size: 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 100px;
     height: 52px;
 
     @media (max-width: 768px) {

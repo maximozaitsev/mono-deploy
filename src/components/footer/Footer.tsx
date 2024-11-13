@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../header/Logo";
+import Logo from "./Logo";
 import { content } from "@/content/content";
 import styles from "./Footer.module.scss";
 

@@ -1,40 +1,42 @@
 export const content = {
-  projectName: "Grand Mondial Casino",
+  projectName: "Elements Casino Surrey",
   advantages: {
     // title: "",
-    subTitle: "Grand Mondial Сasino Advantages",
+    subTitle: "Elements Casino Surrey Location and Advantages",
     text: [
-      `This venue offers a number of benefits that make it a popular option for people who gamble online; but, just like any other venue, it also has a few drawbacks that participants should be aware of. A list of both can be seen below:`,
+      `Elements Casino Surrey offers a range of exciting features that make it a popular destination for entertainment. Below are the key advantages and disadvantages of this casino.`,
     ],
     advantagesTitle: "Advantages:",
     disadvantagesTitle: "Disadvantages:",
     advantages: [
-      "Wide lineup of Microgaming titles",
-      "Part of the trusted Casino Rewards Group",
-      "Offers captivating titles",
-      "Generous welcome bonus",
-      "Secure and regulated venue",
-      "Available on both desktop and mobile devices",
+      "Variety of gaming options",
+      "Live entertainment and events",
+      "Multiple dining choices",
+      "Rewards and loyalty programs",
     ],
     disadvantages: [
-      "Limited number of software developers",
-      "Cashout processing times can be slow",
-      "Restricted in some countries",
+      "Limited online gaming options",
+      "Can get crowded during peak times",
+      "Limited parking during events",
     ],
   },
   about: {
-    title: "Online Casino Grand Mondial",
-    intro: ["150 free spins", "100% match bonus", "24/7 customer assistance"],
+    title: "Elements Casino Surrey",
+    intro: [
+      "C$10 in gaming credits",
+      "24/7 customer support",
+      "monthly promotions",
+    ],
     description: [
-      `Casino Grand Mondial is a famous online gambling venue known for delivering participants a unique chance to become millionaires with just a small deposit. This reputable gambling establishment has been welcoming customers since 2006 and is a member of the well-known Casino Rewards network. It uses titles developed by industry giant Microgaming, so you can play slots, table titles, and even have live dealers if you want. Participants are particularly drawn to Grand Mondial Casino review for its captivating upgrades, and a strong focus on customer security and fairness.`,
+      `Elements Casino Surrey, located in the heart of Surrey, British Columbia, offers an exciting entertainment experience with a variety of gaming options, including over 500 slot machines, table games, and a lively poker room. Known for its welcoming atmosphere, Elements Casino Surrey caters to both seasoned participants and newcomers, offering something for everyone. Beyond gaming, the casino features dining options and live entertainment, making it a vibrant destination for a night out. Whether you're looking to try your luck or enjoy a casual evening with friends, Elements Casino Surrey is a popular choice in the region.`,
       // `p2`,
       // `p3`,
     ],
     signIn: {
-      title: "Casino Rewards Grand Mondial Login",
+      title: "About Elements Casino Surrey Login",
       text: [
-        `Thanks to its tempting welcome bonuses and amazing collection of titles, the venue has gathered a big player base and is a respected online gaming location. The venue offers a vast lineup of titles, including slots, table titles, and jackpots, all powered by Microgaming. It is run by the reputable Casino Rewards Group, which is well-known for its reliability, safety, and support for customers. The venue is regulated and has a license, so participants can be sure they're playing in a safe environment. Participants love the opportunity to win life-changing rewards through the venue's network and the frequent improvements.`,
-        `The Grand Mondial Casino NZ login process is straightforward, designed to provide easy access for both new and returning participants. To begin, users need to visit the venue's official website and locate the Grand Mondial Casino mobile login button, typically positioned at the top of the homepage. The next step is for users to log in using the email address and password they provided when signing up. Prior to logging in, new users are required to finish a brief registration process by creating an account. All attendees may be certain that their private and protected data will be securely protected during the login procedure thanks to the venue's emphasis on security.`,
+        `Elements Casino Surrey is a premier gaming destination in British Columbia, known for its wide range of entertainment options. With a diverse selection of slot machines, table games, and poker, it caters to various gaming preferences. The casino is also home to several dining options and regular live events, creating an all-encompassing entertainment experience for visitors. Whether you're a casual gamer or a seasoned pro, Elements Casino Surrey offers a welcoming environment for participants seeking fun and excitement.`,
+        `To access the online services, including promotions, rewards, or event updates, participants can log in through the casino’s official website. The login process is straightforward: simply visit the site, locate the login section, and enter your registered email and password. For first-time users, registration is quick and requires basic personal information to create an account. Once logged in, participants can manage their profiles, check loyalty rewards, and stay updated on upcoming events or exclusive offers, all from the convenience of their devices.`,
         // `p3`,
       ],
       // list: ["li1", "li2", "li3"],
@@ -45,78 +47,76 @@ export const content = {
     //   text: [`VerificationText1`, `VerificationText2`, `VerificationText3`],
     // },
     depositMethods: {
-      title: "Deposit Methods",
+      title: "Surrey Elements Casino Deposit Methods",
       text: [
-        `The casino delivers a plethora of secure and convenient deposit options to cater to participants from diverse regions. Participants can fund their accounts using major credit and debit cards like Visa, MasterCard, and American Express. Additionally, other payment solutions such as Interac, Instadebit, Paysafecard, Ecopayz, Flexepin, Payz, MuchBetter, and Echeck are available. Deposits are processed instantly, allowing participants to begin gaming right away. The minimum deposit requirement is typically NZD10, making it accessible for participants looking to start with a smaller amount.`,
+        `Elements Casino Surrey offers several convenient deposit methods for participants looking to fund their playing venture. The main deposit options include credit and debit cards like Visa and Mastercard, which are widely accepted for both in-person and online transactions. Participants can also use Interac, a popular choice in Canada, which allows for secure and instant deposits directly from their bank accounts. For those who prefer prepaid cards, the casino supports Paysafecard, providing an additional layer of security and anonymity when depositing funds. These methods are designed to ensure that participants have a range of flexible, reliable options to quickly access their gaming funds.`,
         // `p2`,
       ],
-      // list: ["li1", "li2", "li3"],
-      // additionalText: `p1`,
     },
     withdrawalMethods: {
-      title: "Grand Mondial Casino Withdrawal Rules",
+      title: "Elements Casino Surrey BC Withdrawal Methods",
       text: [
-        `When it comes to cashouts, Grand Mondial Casino NZ provides several reliable methods, ensuring that participants can easily access their winnings. Cashouts can be made through Visa, MasterCard, Interac, Ecopayz, MuchBetter, Instadebit, and Echeck. While deposits are instant, cashouts usually take a bit longer due to processing times, which range from 48 hours for e-wallets like MuchBetter and Ecopayz to 2-5 business days for credit cards such as Visa and MasterCard. The minimum cashout amount is typically NZD10, ensuring participants can cash out even smaller winnings efficiently.`,
+        `Withdrawing winnings from Elements Casino Surrey is a straightforward process, though options are somewhat more limited than deposit methods. Participants can withdraw their funds directly to their bank accounts via Interac, which provides a fast and secure way to access winnings. Credit card withdrawals are also available for Visa users, though processing times may vary depending on the issuing bank. Additionally, cash withdrawals are available at the casino’s cashier desk, allowing participants to immediately access their funds after a successful gaming session. Each of these methods ensures that participants have access to safe and efficient options to claim their winnings.`,
         // `p2`,
       ],
       list: [],
     },
   },
   licenses: {
-    title: "Licenses",
+    title: "Elements Casino Surrey Surrey, BC Licenses",
     text: [
-      `Is Grand Mondial Casino legit? The venue holds licenses from several reputable regulatory bodies, including the UK Gambling Commission (UKGC), the Malta Gaming Authority (MGA), and the Kahnawake Gaming Commission. These licenses ensure that the venue adheres to strict standards of fair play, security, and responsible gambling practices.`,
+      `Elements Casino Surrey operates under the regulation and licensing of the British Columbia Lottery Corporation (BCLC). The casino is part of Great Canadian Entertainment, ensuring that it adheres to all legal and regulatory standards required in British Columbia. These licenses guarantee that the casino offers a secure, fair, and regulated environment for its participants.`,
       // `p2`,
       // `p3`,
     ],
-    security: "Security at Grand Mondial Casino Online Casino Players Dream",
+    security: "Elements Casino Surrey Jobs and Security",
     securityText: [
-      `The venue employs 128-bit SSL encryption to safeguard participants' private and protected and financial data, ensuring a secure atmosphere for all transactions. Additionally, the casino is eCOGRA-certified, meaning its titles are regularly audited for fairness and transparency. This certification ensures that the outcomes of titles are random, and that participants have a fair chance of winning.`,
+      `Security at Elements Casino Surrey is a top priority, with robust measures in place to protect participants' personal and financial information. The casino employs advanced encryption protocols, ensuring that all data transmitted during deposits, withdrawals, and account management is safeguarded. Additionally, on-site, the casino is monitored 24/7 by CCTV cameras and a professional security team to ensure player safety, while strict ID verification processes prevent unauthorized access to accounts.`,
       // `p2`,
     ],
     software: "Software Technologies",
     softwareText: [
-      `The venue operates using Microgaming software, one of the industry leaders in online casino technology. This software provider ensures that the venue delivers a wide scope of titles with high-quality graphics, smooth gameplay, and innovative attributes. Microgaming’s venue also allows for easy integration of new titles, ensuring that participants have access to the latest releases and updates. The titles are designed using HTML5 technology, making them compatible with both desktop and mobile devices.`,
+      `Elements Casino Surrey is powered by modern gaming software from industry-leading developers to ensure smooth, immersive gameplay. The casino features slot machines and electronic table games from top providers like IGT and Scientific Games, which are known for their high-quality graphics, seamless functionality, and fair gaming algorithms. These technologies ensure that participants experience both reliability and a wide variety of gaming options, from classic slots to interactive video slots and virtual table games.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Grand Mondial Casino Mobile App",
+    title: "Casino App",
     text: [
-      `Although there is no Grand Mondial Casino app download, the venue is quite optimized for mobile browsers. Participants can access the venue via their mobile devices by simply visiting the website, where they will find the same titles and attributes available on the desktop version. The Grand Mondial Casino app venue assists a wide scope of smartphones and tablets, allowing for a seamless playing venture on the go.`,
+      `Currently, Elements Casino does not offer a dedicated mobile app. However, participants can access the casino’s online features and services, including the Encore Rewards program, via mobile browsers. This mobile-friendly platform allows users to track points, view upcoming promotions, and manage their accounts conveniently from their smartphones or tablets.`,
       // `p2`,
     ],
-    languages: "Grand Mondial Casino Unlockables and Languages",
+    languages: "Elements Casino Surrey, BC Languages",
     languagesText: [
-      `The venue assists multiple languages to accommodate its international player base. The available languages include English, German, French, Spanish, and Portuguese. This allows participants from various regions to enjoy the venue in their preferred language.`,
+      `The primary language used at Elements Casino Surrey is English, which covers both on-site communication and customer support. There may also be multilingual support available for select participants, especially in the context of localized assistance, given the casino's diverse clientele.`,
       // `p2`,
       // `p3`,
     ],
     currencies: "Currencies",
     currenciesText: [
-      `The Grand Mondial online Casino accepts a plethora of currencies, including USD, CAD, EUR, GBP, and NZD. This flexibility in currency options ensures that participants from diverse parts of the world can easily deposit and withdraw funds without needing to convert their money.`,
+      `Elements Casino Surrey primarily accepts the Canadian Dollar (CAD) for all transactions. This includes deposits, withdrawals, and in-casino purchases. Participants from Canada and international visitors are encouraged to use CAD for the best convenience and to avoid currency exchange fees.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Grand Mondial Casino Online Review of Titles",
+    title: "Games Available to Play at Elements Casino Surrey - Surrey, BC",
     text: [
-      `The venue delivers a diverse lineup of titles that cater to all types of participants, providing captivating opportunities to enjoy both classic and modern playing ventures. Powered primarily by Microgaming, the venue attributes a wide scope of gaming options, ensuring participants have access to top-quality entertainment. Here’s a breakdown of the main categories available at the venue:`,
+      `Elements Casino Surrey offers a diverse range of gaming options, catering to participants of all levels and preferences. Whether you enjoy the fast-paced excitement of slots or prefer the strategic play of table games, the casino provides a variety of experiences to suit every type of gamer.`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Slots",
-        text: `Participants of all stripes will find what they're looking for at the casino's extensive and varied lineup of slot machines, from the timeless charm of three-reel titles to the cutting-edge complexity of five-reel video slots. Some of the most beloved and recognizable slot machine titles in the world are available at this venue. Slots are known for their record-breaking payouts that have made many fortunate participants instant millionaires, Mega Moolah, is at the head of the pack. Playable alongside progressive slots, themed titles such as Thunderstruck II and Immortal Romance offer participants captivating plots, special bonuses, and visually breathtaking visuals. Participants are guaranteed access to fresh content and the latest releases in the industry with its frequently updated slot selection.`,
+        heading: "Slot Machines",
+        text: `With over 500 slot machines available, Elements Casino Surrey is a haven for slot enthusiasts, offering a diverse selection that caters to all types of participants. Whether you prefer the simplicity of classic three-reel slots or the immersive experience of modern video slots, there’s something for everyone. Progressive jackpot slots are also a major draw, giving participants the chance to win life-changing sums with a single spin. These machines feature various denominations, making them accessible to both casual participants and high rollers. The vibrant atmosphere around the slot area adds to the excitement, making it a thrilling spot for those seeking big wins and endless entertainment.`,
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
-        heading: "Table Titles",
+        heading: "Table Games",
         text: [
-          `For those who enjoy the classic thrill of traditional titles, the venue delivers a robust collection of table titles. Participants can indulge in various versions of blackjack, roulette, and baccarat, providing ample choice whether you’re a seasoned pro or just learning the ropes. Fans of blackjack can try their hand at European Blackjack or Classic Blackjack, each delivering diverse strategies and rules to keep the gameplay engaging. Roulette enthusiasts can spin the wheel in versions such as American Roulette and French Roulette, each providing a distinct playing venture. These table titles are designed to cater to a wide scope of participants, delivering both low-stakes options for beginners and high-stakes tables for more experienced gamers looking to test their strategies.`,
+          `For those who thrive on strategy and skill, Casino Elements boasts an impressive variety of table games, offering a classic casino experience. Whether you're a fan of the fast-paced action of blackjack or the suspense of baccarat, the casino’s well-maintained tables provide a top-notch gaming environment. Roulette enthusiasts can also try their luck at multiple tables, betting on their favorite numbers and colors. Each table offers different betting limits, ensuring that everyone, from beginners to seasoned participants, finds a game that suits their style. With professional dealers and a lively atmosphere, the table games area is perfect for participants seeking the authentic excitement of a traditional casino.`,
           // `p2`,
           // `p3`,
         ],
@@ -124,31 +124,25 @@ export const content = {
         // additionalText: `p1`,
       },
       {
-        heading: "Grand Mondial Casino the Pokies King",
+        heading: "Poker",
         text: [
-          `The venue also excels in delivering a wide scope of video poker titles, perfect for participants who enjoy combining skill with the thrill of chance. The venue attributes admired video poker alternatives like Jacks or Better, Deuces Wild, and Aces & Faces, ensuring there's a game to suit every player’s preference. These Grand Mondial Casino best game to win options are available in both single-hand and multi-hand formats, allowing participants to choose between a more straightforward, relaxed game or a fast-paced, multi-hand version that increases the excitement and the potential for big wins. `,
-          // `p2`,
-          // `p3`,
+          `The poker room at Elements Casino Surrey is a go-to destination for poker lovers, providing a dedicated space for both casual and competitive play. Here, participants can participate in a variety of poker formats, with Texas Hold'em being the most popular choice. The Elements Casino poker room frequently hosts cash games and tournaments, attracting a mix of local participants and visitors, making for an exciting and competitive environment. The social aspect of poker is enhanced in this room, where participants can chat, share strategies, and enjoy the thrill of each hand. Whether you're a seasoned poker player looking for a challenge or a novice wanting to learn, the poker room provides a welcoming and engaging atmosphere.`,
         ],
-        // categories: ["li1", "li2", "li3"],
-        // additionalText: `p1`,
       },
     ],
     gamesRightColumn: [
       {
-        heading: "Live Dealer Titles",
+        heading: "Electronic Table Games",
         text: [
-          `For participants seeking the full immersive venture of a real casino from the comfort of their home, the venue delivers a fantastic lineup of live dealer titles. Powered by Evolution Gaming, these live titles allow participants to engage with professional dealers in real time, providing an authentic and interactive playing venture. Admired options include Live Blackjack, Live Roulette, and Live Baccarat, all streamed in high definition, making it feel like you're sitting right at the casino table.`,
+          `In addition to traditional table games, Elements Casino online offers a modern twist with electronic table games. These include electronic versions of popular games such as roulette and blackjack, allowing participants to enjoy the games they love with the convenience of digital play. Electronic table games offer a faster-paced experience, with minimal wait times between hands or spins. They also provide a more private and relaxed setting for participants who prefer to game at their own pace without the pressure of live dealers or fellow participants. The touch-screen interfaces are user-friendly and make for a seamless playing venture, combining the best of traditional and modern casino gaming.`,
           // `p2`,
           // `p3`,
         ],
-        // categories: ["li1", "li2", "li3"],
-        // additionalText: `p1`,
       },
       {
-        heading: "Progressive Jackpots",
+        heading: "Bingo",
         text: [
-          `Grand Mondial Casino is renowned for its incredible lineup of titles, delivering participants the chance to win life-changing amounts of money. The most famous of these is Mega Moolah, a slot that has earned a reputation for regularly awarding multi-million-dollar jackpots. The potential for massive wins on Mega Moolah has made it a favorite among online slot participants worldwide. `,
+          `For those seeking a more laid-back and communal playing venture, Elements Casino Surrey’s bingo hall is the perfect spot. Regular bingo sessions draw a crowd of enthusiastic participants, all hoping to hit that lucky combination for cash prizes. The bingo hall offers a fun, social atmosphere where participants can enjoy the camaraderie that comes with this classic game. Whether you’re a seasoned bingo player or trying it for the first time, the friendly environment and easy-to-follow format make it accessible to all. `,
           // `p2`,
           // `p3`,
         ],
@@ -156,44 +150,51 @@ export const content = {
     ],
   },
   support: {
-    title: "Customer Support",
+    title: "Elements Casino Surrey Directory and Support",
     text: [
-      `The venue provides 24/7 customer assistance through live chat and email. Participants can reach out to the assistance team at any time for assistance with technical issues, account inquiries, or any other concerns. The live chat function presents instant help, while email assistance provides detailed responses to more complex queries.`,
+      `Customer support at Elements Casino Surrey is available through several channels, including phone support and in-person assistance at the casino's Guest Services desk. The support team assists participants with inquiries about promotions, account management, and technical issues. Support is generally offered during operating hours, ensuring that participants have access to help when needed​.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Grand Mondial Casino Reward Program",
+    title: "The Elements Casino Surrey Bonuses and Promotions",
     text: [
-      `There are lots of Grand Mondial Casino rewards to enhance the playing venture for both new and returning participants. Below are the main Casino rewards Grand Mondial available, presented with accurate details:`,
+      `Elements Casino Surrey offers several enticing promotions and bonuses to enhance the playing venture for its visitors. Below is an overview of some of the key Elements Casino promotions currently available.`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Grand Mondial Casino 150 free spins promo code ",
+        heading: "Welcome Bonus",
         text: [
-          `An enticing offer of 150 free spins, or "chances," is available to new participants at Grand Mondial Casino with a just NZD10 investment. These Grand Mondial Casino 150 free spins are specifically allocated to the admired Mega Moolah slot, a game that has gained a reputation for its life-changing payouts. The Grand Mondial Casino free spins give participants an chance to start off their casino venture with a bang, presenting a real chance to hit one of the largest jackpots in online gaming. Whether you are a seasoned player or new to online casinos, this Grand Mondial Casino no deposit bonus makes it easy to dive straight into the action. This offer is perfect for participants who want to try out the casino with the chance to win big on their first spins on Mega Moolah because of how big the wins may get. `,
+          `New members who join the Encore Rewards program at Elements Casino Surrey are greeted with a special welcome bonus designed to give them a head start on their playing venture. This typically includes a free play offer, often valued at around C$10 in gaming credits. These credits can be used across a variety of slot machines and table games, allowing new participants to explore the casino without initially using their own funds. This bonus is a great way to ease into the atmosphere of the casino, providing new visitors with an incentive to try different games and begin accumulating loyalty points. The welcome bonus not only enhances the overall experience but also introduces participants to the Elements Casino rewards of the Encore Rewards program from the moment they join.`,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
-    ],
-    rightColumnContent: [
       {
-        heading: "100% Match Bonus on Second Deposit",
+        heading: "Encore Rewards Program",
         text: [
-          `The site has become well-known and renowned among online gamblers as a result of its enticing welcome bonuses and incredible library of titles. Slot machines, table titles, are all available at this venue, and they're all powered by Microgaming. It is operated by the respectable Casino Rewards Group, which has a stellar reputation for customer service, security, and dependability. Participants may rest certain that they are playing at a controlled and licensed venue. The jackpot network and the regular upgrades provide participants the chance to win rewards that can change their lives.`,
+          `The Encore Rewards Program at Elements Casino Surrey is designed to reward regular participants with points for every dollar they spend on the casino floor, whether it's on slot machines or table games. For every 1,000 points collected, participants can redeem C$5 in free play credits, which can be used to continue playing their favorite games. This loyalty program is multi-tiered, meaning the more you play, the faster you accumulate points and unlock additional rewards. Higher-tier members can enjoy even greater benefits, including exclusive VIP offers, birthday promotions, and invitations to special events. Beyond gaming, points can also be earned through dining, further enhancing the value for members.`,
           // `p2`,
           // `p3`,
         ],
-        // categories: ["li1", "li2", "li3"],
+      },
+    ],
+    rightColumnContent: [
+      {
+        heading: "Monthly Promotions",
+        text: [
+          `To keep things exciting, Elements Casino Surrey online offers a rotating calendar of monthly promotions aimed at both slot and table game participants. These promotions include bonus points days, where participants can earn double or even triple points for their play, adding significant value to their Encore Rewards membership. Other promotions include special cash draws, where participants have the chance to win substantial cash prizes, and free spins events, which are particularly popular among slot enthusiasts. These offers vary each month, encouraging participants to check the casino's promotional calendar regularly to take full advantage of the bonuses available.`,
+          // `p2`,
+          // `p3`,
+        ],
         // additionalText: `p1`,
       },
     ],
   },
   faq: {
-    title: "Grand Mondial Casino Phone Number FAQ",
+    title: "Elements Casino Surrey Reviews FAQ",
   },
 };

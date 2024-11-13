@@ -19,6 +19,15 @@ export default function PromotionsSection() {
                 },
               ],
             },
+            {
+              heading: content.promotions.leftColumnContent[1].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[1].text,
+                },
+              ],
+            },
           ]}
           rightColumnContent={[
             {

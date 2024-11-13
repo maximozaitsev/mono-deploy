@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns: 18% 22% 12% 13% 12% 23%;
   align-items: center;
-  border-radius: $border-radius;
+  border-radius: 100px;
 
   .secondary {
     width: 218px;
@@ -44,6 +44,7 @@
 
   @media (max-width: 850px) {
     grid-template-columns: 36% 22% 22% 20%;
+    border-radius: 8px;
 
     button {
       width: auto;
@@ -67,13 +68,18 @@
   height: 88px;
 
   &:first-child {
-    border-top-left-radius: $border-radius;
-    border-bottom-left-radius: $border-radius;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+
+    @media (max-width: 850px) {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
   }
 
   &.last-cell {
-    border-top-right-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
   }
 
   &::after {
@@ -98,8 +104,8 @@
     height: 80px;
 
     &.info-cell {
-      border-top-right-radius: $border-radius;
-      border-bottom-right-radius: $border-radius;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
     }
 
     &::after {
@@ -205,7 +211,7 @@
       }
 
       button {
-        width: 207px;
+        width: 221px;
       }
     }
   }
