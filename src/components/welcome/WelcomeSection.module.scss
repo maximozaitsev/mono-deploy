@@ -18,12 +18,12 @@
     width: 100%;
   }
   @media (max-width: 1180px) {
-    background-position: right 0px center;
+    background-position: right 20px center;
     background-size: 50% auto;
   }
 
   @media (max-width: 768px) {
-    padding-top: 21.35rem;
+    padding-top: 21.15rem;
     height: auto;
     justify-content: flex-end;
     background-size: auto 65%;
@@ -33,7 +33,7 @@
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 63%;
+    background-size: auto 63.5%;
   }
 
   @media (max-width: 420px) {
@@ -101,7 +101,7 @@
   font-family: $font-secondary;
   font-size: 64px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   line-height: normal;
   text-transform: uppercase;
@@ -128,7 +128,7 @@
   @media (max-width: 768px) {
     font-size: 24px;
     font-family: $font-secondary;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
   }
 

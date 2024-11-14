@@ -1,12 +1,13 @@
 import { Metadata } from "next";
 
-const url = "bcasino-online.com";
-const ogTitle = "Bcasino Online New Zealand: The Magnificent World of Gambling";
-const ogSiteName = "Bcasino Online";
+const url = "kahuna-casino-australia.com";
+const ogTitle =
+  "Kahuna Casino Australia: Top Games & Bonuses in a Tropical Setting";
+const ogSiteName = "Kahuna Casino";
 const metaDescription =
-  "Bcasino Online New Zealand: a detailed introduction to the popular service. Current promotions, welcome bonus, gambling entertainment and payment methods. What beginners and experienced players need to know";
+  "Kahuna Casino Australia offers a vast selection of games and generous bonuses, all set within a unique tropical theme. Discover exciting slots, live casino options, and secure payment methods today!";
 
-const locale = "en-NZ";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

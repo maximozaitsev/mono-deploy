@@ -52,7 +52,7 @@
 }
 
 .cell {
-  color: $text-color-third;
+  color: #02041c;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
@@ -82,7 +82,7 @@
     right: 0;
     height: 40px;
     width: 1px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   &.last-cell::after {
@@ -205,7 +205,7 @@
       }
 
       button {
-        width: 202px;
+        width: 207px;
       }
     }
   }
