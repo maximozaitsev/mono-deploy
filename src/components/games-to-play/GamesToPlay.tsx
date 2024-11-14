@@ -28,15 +28,6 @@ export default function GamesToPlay() {
                 },
               ],
             },
-            {
-              heading: content.gamesToPlay.leftColumnContent[2].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[2].text,
-                },
-              ],
-            },
           ]}
           rightColumnContent={[
             {

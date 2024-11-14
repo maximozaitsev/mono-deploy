@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 
-const url = "elements-casino-surrey.com";
-const ogTitle =
-  "Elements Casino Surrey, Canada – Gaming, Dining, and Entertainment";
-const ogSiteName = "Elements Casino Surrey";
+const url = "bcasino-online.com";
+const ogTitle = "Bcasino Online New Zealand: The Magnificent World of Gambling";
+const ogSiteName = "Bcasino Online";
 const metaDescription =
-  "Elements Casino Surrey in Canada offers an exciting mix of gaming, dining, and live entertainment. Explore slots, table games, and enjoy live shows. Join the Encore Rewards program for exclusive bonuses and rewards! Visit today for an unforgettable experience!";
+  "Bcasino Online New Zealand: a detailed introduction to the popular service. Current promotions, welcome bonus, gambling entertainment and payment methods. What beginners and experienced players need to know";
 
-const locale = "en-CA";
+const locale = "en-NZ";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

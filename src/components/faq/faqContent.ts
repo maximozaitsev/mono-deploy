@@ -1,26 +1,18 @@
 export const faqs = [
   {
-    question: "What are the operating hours of Elements Casino Surrey?",
-    answer:
-      "The casino is open daily from 10 AM to 4 AM, with extended hours on weekends for live events and special promotions.",
+    question: "What license does the site operate under?",
+    answer: "This is a Malta license.",
   },
   {
-    question: "Does Elements Casino Surrey offer free parking?",
-    answer: "Yes, free parking is available for all visitors at the casino.",
+    question: "How many interface languages ​​does the service have?",
+    answer: "Four. These are English, Spanish, French, and Portuguese.",
   },
   {
-    question: "Are there any smoking and Elements Casino Surrey Photos areas?",
-    answer:
-      "Yes, Elements Casino Surrey has a designated glass-enclosed smoking area for guests.",
+    question: "At what age can you play in an online casino?",
+    answer: "Access to gambling is open from the age of 18.",
   },
   {
-    question: "Is there an Elements Casino Surrey Buffet Menu?",
-    answer:
-      "Yes, dining options include casual eateries like Foodies and a more upscale experience at Homestretch on race days.",
-  },
-  {
-    question: "Can I use my Encore points for Elements Casino Surrey Buffet?",
-    answer:
-      "Yes, Encore Rewards points can be redeemed for dining discounts at select restaurants within the casino.",
+    question: "How to get a welcome bonus?",
+    answer: "You need to register and make your first deposit.",
   },
 ];

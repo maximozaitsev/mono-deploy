@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns: 18% 22% 12% 13% 12% 23%;
   align-items: center;
-  border-radius: 100px;
+  border-radius: $border-radius;
 
   .secondary {
     width: 218px;
@@ -44,7 +44,6 @@
 
   @media (max-width: 850px) {
     grid-template-columns: 36% 22% 22% 20%;
-    border-radius: 8px;
 
     button {
       width: auto;
@@ -68,18 +67,13 @@
   height: 88px;
 
   &:first-child {
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-
-    @media (max-width: 850px) {
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
-    }
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
   }
 
   &.last-cell {
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
   }
 
   &::after {
@@ -88,7 +82,7 @@
     right: 0;
     height: 40px;
     width: 1px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &.last-cell::after {
@@ -104,8 +98,8 @@
     height: 80px;
 
     &.info-cell {
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
     }
 
     &::after {
@@ -174,7 +168,7 @@
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   &::after {
     content: "";
@@ -183,7 +177,7 @@
     top: 15%;
     height: 70%;
     width: 1px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &:last-child::after {
@@ -211,7 +205,7 @@
       }
 
       button {
-        width: 221px;
+        width: 202px;
       }
     }
   }
