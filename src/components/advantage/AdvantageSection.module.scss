@@ -41,3 +41,9 @@
     word-break: break-word;
   }
 }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

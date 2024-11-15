@@ -15,18 +15,75 @@ export default function PromotionsSection() {
               items: [
                 {
                   type: "text",
-                  content: content.promotions.leftColumnContent[0].text,
+                  content: content.promotions.leftColumnContent[0].text[0],
+                },
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[0].text[1],
+                },
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[0].text[2],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[1].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[1].text[0],
+                },
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[1].text[1],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[2].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[2].text[0],
                 },
               ],
             },
           ]}
           rightColumnContent={[
             {
+              heading: content.promotions.leftColumnContent[3].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[3].text[0],
+                },
+              ],
+            },
+            {
               heading: content.promotions.rightColumnContent[0].heading,
               items: [
                 {
                   type: "text",
                   content: content.promotions.rightColumnContent[0].text,
+                },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[1].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[1].text,
+                },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[2].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[2].text,
                 },
               ],
             },

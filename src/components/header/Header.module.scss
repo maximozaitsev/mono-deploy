@@ -10,13 +10,19 @@
   height: 96px;
 
   img {
-    margin-top: 4px;
+    margin-top: 3px;
     margin-left: 0px;
 
     @media (max-width: 768px) {
       margin-top: -7px;
-      margin-left: -16px;
-      scale: 0.8;
+      margin-left: -12px;
+      scale: 0.86;
+    }
+
+    @media (max-width: 380px) {
+      scale: 0.66;
+      margin-left: -12px;
+      margin-top: 0px;
     }
   }
 
@@ -31,11 +37,6 @@
   @media (max-width: 380px) {
     padding: 5px 10px;
     height: 64px;
-
-    img {
-      margin-left: 0;
-      scale: 1;
-    }
   }
 }
 

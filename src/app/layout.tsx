@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "kahuna-casino-australia.com";
+const url = "drake-casino-online.com";
 const ogTitle =
-  "Kahuna Casino Australia: Top Games & Bonuses in a Tropical Setting";
-const ogSiteName = "Kahuna Casino";
+  "Drake Casino Australia: A Complete Review of a Popular Service";
+const ogSiteName = "Drake Casino Australia";
 const metaDescription =
-  "Kahuna Casino Australia offers a vast selection of games and generous bonuses, all set within a unique tropical theme. Discover exciting slots, live casino options, and secure payment methods today!";
+  "Drake Casino Australia: What New and Experienced Gamblers Need to Know. A detailed overview of games, current promotions, payment methods and much more. Stay up to date with the latest information about the casino";
 
 const locale = "en-AU";
 const language = "English";

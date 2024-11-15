@@ -19,7 +19,7 @@
   }
 
   h3 {
-    color: #02041c;
+    color: $text-color-third;
     text-align: center;
     font-family: $font-secondary;
     font-size: 20px;
@@ -43,7 +43,7 @@
   }
 
   p {
-    color: #02041c;
+    color: $text-color-third;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
@@ -58,8 +58,7 @@
 
   button {
     margin-top: auto;
-    width: 203px;
-    // margin-left: 5px;
+    width: 222px;
   }
 
   @media (max-width: 768px) {
@@ -80,7 +79,7 @@
     }
 
     button {
-      width: 202px;
+      width: 207px;
     }
   }
 

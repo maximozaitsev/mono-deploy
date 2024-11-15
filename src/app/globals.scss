@@ -1,6 +1,7 @@
 @import "../styles/colors";
 @import "../styles/typography";
 @import "../styles/variables";
+@import "../../public/fonts/style.css";
 
 * {
   margin: 0;
@@ -69,8 +70,9 @@ body {
   }
 
   @media (max-width: 768px) {
+    font-family: "Arial Black";
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -91,8 +93,9 @@ body {
   word-break: break-word;
 
   @media (max-width: 768px) {
+    font-family: "Arial Black";
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 900;
   }
 
   @media (max-width: 570px) {
