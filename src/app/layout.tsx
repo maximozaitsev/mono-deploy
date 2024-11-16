@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "lucky7even-casino-online.com";
+const url = "crown-pokies-online.com";
 const ogTitle =
-  "Lucky7even Casino Australia: Top Games, Bonuses, and Secure Gaming";
-const ogSiteName = "Lucky7even Casino";
+  "Crown Pokies Review: Full Guide on Gameplay, Features, and Honest Tips";
+const ogSiteName = "Crown Pokies";
 const metaDescription =
-  "Explore Lucky7even Casino Australia for thrilling games, bonuses, and secure play. Join now to enjoy an exceptional casino experience tailored for Australian players.";
+  "A detailed review of Crown Pokies with a full breakdown of symbols, game mechanics, mobile compatibility and fair winning strategies. Standard mechanics, but generous winnings for you.";
 
 const locale = "en-AU";
 const language = "English";

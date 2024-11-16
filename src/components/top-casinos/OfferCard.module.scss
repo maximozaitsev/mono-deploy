@@ -11,7 +11,7 @@
   gap: 16px;
 
   outline: $border-width solid $color-border-primary;
-  border-radius: $border-radius;
+  border-radius: 0px 0px 32px 32px;
   background: $color-background-third;
 
   img {
@@ -66,6 +66,7 @@
     width: 240px;
     height: 264px;
     padding: 16px;
+    border-radius: 0px 0px 24px 24px;
 
     img {
       width: 160px;

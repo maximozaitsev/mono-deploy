@@ -1,41 +1,43 @@
+import { list } from "postcss";
+
 export const content = {
-  projectName: "Lucky7even Casino",
+  projectName: "Crown Pokies Casino",
   advantages: {
     // title: "",
-    subTitle: "Lucky7even Сasino Advantages",
+    subTitle: "Pros and Cons of Pokies Crown",
     text: [
-      `Lucky7even Casino is a modern online gaming platform that offers a comprehensive range of features to enhance the player experience.`,
+      `Before diving into Crown Pokies, consider both its strengths and potential drawbacks. This overview of its pros and cons will help you determine if it’s the right choice for your gaming preferences.`,
+      `Despite these limitations, Crown Casino Melbourne Pokies remains a solid choice for those who appreciate a traditional slot setup without extra frills.`,
     ],
-    advantagesTitle: "Advantages:",
-    disadvantagesTitle: "Disadvantages:",
+    advantagesTitle: "Advantages of Crown Pokies Slot:",
+    disadvantagesTitle: "Disadvantages of Crown Pokies Slot:",
     advantages: [
-      "Extensive game selection",
-      "Generous promotions",
-      "User-friendly interface",
-      "Supports multiple payment methods",
-      "Responsive 24/7 customer support",
+      "Straightforward gameplay with classic slot appeal.",
+      "Medium volatility for balanced payouts.",
+      "Fully optimized for mobile devices.",
+      "Suitable for players of all skill levels due to its simplicity.",
     ],
     disadvantages: [
-      "Restricted access for players from certain countries",
-      "No dedicated mobile app",
-      "Higher wagering requirements",
-      "Limited responsible gambling tools",
+      "Lacks additional bonus rounds or free spins.",
+      "Limited payline options compared to more complex slots.",
+      "No progressive jackpot or major bonus features.",
     ],
   },
   about: {
-    title: "Lucky7even Casino",
-    intro: ["50 free spins", "50% match bonus", "Thursday Deposit Bonus"],
+    title:
+      "Complete Online Pokies Golden Crown Review: Everything You Need to Know",
+    // intro: ["li1", "li2", "li3"],
     description: [
-      `Lucky7even Casino is a dynamic online gaming platform designed to deliver a top-tier casino experience with a wide range of games, generous bonuses, and a secure environment for players worldwide. Known for its user-friendly interface and responsive customer support, Lucky7even Casino review caters to both new and seasoned players by offering diverse options, including classic table games, innovative pokies, and immersive live dealer experiences. With a commitment to fair play and player satisfaction, the casino employs state-of-the-art technology to ensure safe transactions and protect user data, making it a trusted destination for online entertainment.`,
+      `Crown Pokies stands out as a straightforward, classic online slot that’s ideal for players who enjoy a traditional gaming experience without too many extra frills. Designed with familiar mechanics, Сrown Сasino online pokies keeps its gameplay accessible to all types of players, from beginners to seasoned slot enthusiasts. With simple yet engaging visuals and a standard reel setup, this slot provides steady, reliable payouts in a format that doesn’t overwhelm with complex bonus rounds or special effects. Here, we’ll cover all essential details, from its paytable and symbols to mobile compatibility and betting strategies.`,
       // `p2`,
       // `p3`,
     ],
     signIn: {
-      title: "About Lucky7even Casino Login",
+      title: "Crown Pokies Casino No Bonus Rounds or Additional Features",
       text: [
-        `Lucky7even Casino is a well-established online gaming platform, celebrated for its extensive game library and player-centric approach. It combines modern gaming technology with a sleek, intuitive design that attracts players from around the world. The casino offers a variety of games, including video pokies, table games, and live dealer options, all from top-tier providers. Lucky7even Online Casino also boasts enticing promotions and loyalty rewards, designed to enhance the gaming experience and give players an exciting edge. Licensed and regulated, the casino upholds high standards of security and fairness, providing players with a reliable and entertaining environment.`,
-        `Lucky7even Casino login process is straightforward, prioritizing security and convenience. Players can quickly log in by entering their registered email and password on the casino’s official website. The site incorporates advanced security measures, such as encryption protocols, to protect user information during login. For returning players, the login process is streamlined, allowing them to resume their gaming activities within seconds. Additionally, users can enable two-factor authentication for extra security, ensuring their accounts are safeguarded as they explore the platform’s extensive gaming options.`,
-        // `p3`,
+        `Unlike many modern slots that come with a variety of bonus rounds and special features, Crown Pokies is intentionally simplified. It avoids the common approach of including multiple bonus rounds, progressive jackpots, or even free spins. While some players may find this lack of additional features limiting, it’s part of what makes Golden Crown Pokies appealing to those who prefer a more traditional slot experience. The absence of bonus rounds keeps the game focused on straightforward gameplay without distractions.`,
+        `Without any additional bonus features, Crown Casino Sydney Pokies creates a steady rhythm of gameplay that allows players to focus solely on the base game and its payouts. This simplicity can be an advantage for players who prefer to avoid the complexities of bonus mechanics and who enjoy predictable outcomes. The design caters to fans of old school slots who appreciate a minimalistic approach that allows them to concentrate on their betting strategy and enjoy a more classic slot experience.`,
+        `By forgoing bonuses and extra features, Crown Casino Online Pokies Australia provides an unembellished gaming experience that appeals to purists. This straightforward setup ensures that every spin offers the same chance of a win, maintaining consistency without relying on promotional gimmicks.`,
       ],
       // list: ["li1", "li2", "li3"],
       // list2: ["li1", "li2"],
@@ -44,99 +46,105 @@ export const content = {
     //   title: "VerificationTitle",
     //   text: [`VerificationText1`, `VerificationText2`, `VerificationText3`],
     // },
-    depositMethods: {
-      title: "Deposit Methods",
-      text: [
-        `Lucky7even Casino offers a variety of deposit methods to accommodate players' preferences. Players can fund their accounts using credit and debit cards such as Visa, Mastercard, and Maestro. For those who prefer prepaid solutions, Paysafecard is available. Additionally, the casino supports various cryptocurrencies, including Bitcoin, Ethereum, and Litecoin, providing a secure and efficient option for digital currency users. The minimum deposit amount varies depending on the chosen method, typically ranging from AUD10 to AUD30. Deposits are processed instantly, allowing players to start gaming without delay.`,
-        // `p2`,
-      ],
-    },
-    withdrawalMethods: {
-      title: "Withdrawal Methods",
-      text: [
-        `When it comes to withdrawing winnings, Lucky7even Casino provides several options to ensure convenience and security. Players can request withdrawals to their credit or debit cards, including Visa and Mastercard. Bank transfers are also available for those who prefer direct transactions to their bank accounts. For cryptocurrency users, withdrawals can be made in Bitcoin, Ethereum, and Litecoin, offering a swift and secure method. The minimum withdrawal amount is generally AUD20, and processing times vary by method: e-wallets and cryptocurrencies typically process instantly, while credit/debit card withdrawals may take 1-5 business days, and bank transfers can take 3-10 business days.`,
-        // `p2`,
-      ],
-      list: [],
-    },
+    // depositMethods: {
+    //   title: "DepositMethodsTitle",
+    //   text: [
+    //     `p1`,
+    //     // `p2`,
+    //   ],
+    //   list: ["li1", "li2", "li3"],
+    //   additionalText: `p1`,
+    // },
+    // withdrawalMethods: {
+    //   title: "WithdrawalMethodsTitle",
+    //   text: [
+    //     `p1`,
+    //     // `p2`,
+    //   ],
+    //   list: [],
+    // },
   },
   licenses: {
-    title: "Licenses",
+    title: "LicensesTitle",
     text: [
-      `The casino operates under a license issued by the Government of Curaçao, ensuring adherence to international gaming standards and regulations. This licensing underscores the casino's commitment to providing a safe and regulated gaming environment for its players.`,
+      `p1`,
       // `p2`,
       // `p3`,
     ],
-    security: "Security",
+    security: "SecurityTitle",
     securityText: [
-      `The casino employs advanced security measures to protect player information and transactions. Utilizing the latest SSL encryption technology, Lucky7even ensures that all data transmitted between players and the casino remains confidential and secure.`,
+      `p1`,
       // `p2`,
     ],
-    software: "Software Technologies",
+    software: "SoftwareTitle",
     softwareText: [
-      `Lucky7even Casino collaborates with over 100 renowned software providers to deliver a diverse gaming experience. Notable partners include Microgaming, NetEnt, Play'n GO, Big Time Gaming, Yggdrasil, and Evolution Gaming.`,
+      `p1`,
       // `p2`,
     ],
-    // list: ["li1", "li2", "li3"],
+    list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Casino App",
+    title: "Crown Pokies App Review",
     text: [
-      `Lucky7even Casino offers a mobile-optimized website compatible with various devices, including smartphones and tablets. While there is no dedicated Lucky7even Casino mobile , the responsive design ensures seamless gaming on the go, providing access to the full range of games and features without compromising quality.`,
-      // `p2`,
-    ],
-    languages: "Languages",
-    languagesText: [
-      `To cater to a global audience, Lucky7even Casino supports multiple languages, including English, German, Spanish, Finnish, French, Italian, Norwegian, Portuguese, and Russian. This multilingual support enhances accessibility and user experience for players worldwide.`,
-      // `p2`,
-      // `p3`,
-    ],
-    currencies: "Currencies",
-    currenciesText: [
-      `The casino accepts a variety of currencies to accommodate players from different regions. Supported fiat currencies include EUR, USD, CAD, AUD, NZD, NOK, PLN, RUB, JPY, ZAR, and INR. Additionally, the platform supports cryptocurrencies.`,
-      // `p2`,
+      `For players who prefer gaming on the go, sky Crown online Pokies is optimized for mobile play on both Android and iOS devices. The mobile version is fully responsive, meaning that it adjusts seamlessly to different screen sizes without compromising on graphics or gameplay quality.`,
+      `The mobile version of Crown Pokies retains all the functionality of the desktop game, with easy to use touch controls that make it simple to adjust bets, activate autoplay, and spin the reels with just a tap. The mobile game’s graphics remain sharp, while the layout adapts to provide a smooth, immersive experience regardless of device type.`,
+      `Thanks to its mobile compatibility, Crown Pokies card is accessible from anywhere, allowing players to enjoy a classic slot experience at their convenience. This flexibility is especially useful for those who enjoy short gaming sessions on the go, as well as players who prefer gaming on tablets or smartphones.`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play at Lucky7even Casino",
+    title: [
+      "The Crown Pokies Info",
+      "Crown of Egypt Pokie Symbols and Payouts",
+    ],
     text: [
-      `Lucky7even Casino offers a diverse and extensive selection of games, catering to a wide range of player preferences. With over 5,000 titles from leading software providers, players can enjoy various gaming options, including pokies, table games, live dealer experiences, and crash games.`,
-      // `p2`,
-      // `p3`,
+      `In order to fully appreciate Crown Pokies, it’s essential to start by understanding the foundational aspects of the game, including its layout, paylines, and payout mechanics. Below, we provide an overview of each of these features, highlighting how they work together to create a balanced gameplay experience. `,
+      `Crown Pokies includes a variety of symbols that contribute to its gameplay experience, each with different payout levels. The crown symbol is the highest paying, adding a touch of luxury to the game, while other symbols include jewels and classic card values. The payout structure is straightforward, making it easy for players to determine the potential rewards of each symbol combination.`,
+      `By combining these features, Crown Casino Online Pokies real money creates a well rounded game that appeals to players who prefer consistency and straightforward mechanics. This slot is suitable for those looking to enjoy steady gameplay without being overwhelmed by elaborate bonus structures or progressive jackpots.`,
+      `Understanding the payout values and significance of each symbol is key to developing an effective betting strategy. Crown Casino Pokies Online follow a clear hierarchy of symbols, each contributing to the slot’s potential winnings in a unique way. Here’s a closer look at each symbol and its respective payout value. Main Symbols in Crown Pokies:`,
+      `Each of these symbols plays a role in balancing the game’s payout structure, with high value symbols appearing less often, while lower value symbols maintain regular small wins. This arrangement ensures that Crown Casino Melbourne Online Pokies remains fair and accessible, making it easier for players to predict potential returns and strategize accordingly.`,
+    ],
+    list: [
+      "Crown Symbol: Representing the highest value in the game, the crown symbol is the most rewarding and offers the best payout for matching combinations on active paylines. This symbol plays a central role in the slot’s payout structure, making it essential for players to aim for crown combinations for the most substantial wins.",
+      "Gemstone Symbols (Ruby, Sapphire, Emerald): These high value symbols add a luxurious feel to the slot. They offer significant payouts, though they don’t match the top level rewards of the crown symbol. The gemstones are designed to enhance the game’s atmosphere and give players more opportunities for mid tier wins.",
+      "Playing Card Symbols (10, J, Q, K, A): The slot’s low value symbols are represented by the classic playing card values. Though these symbols yield smaller payouts, they appear more frequently, creating steady but modest wins. These symbols help balance the game by contributing to consistent returns without overwhelming volatility.",
+      "Wild Symbol: The wild in Crown Pokies replaces all other symbols except the scatter, helping to complete winning combinations and maximize payout potential.",
+      "Scatter Symbol: Although the scatter typically unlocks bonus rounds in many slots, Crown Pokies keeps things simple. The scatter provides increased payouts but doesn’t activate any special rounds or free spins, adding a straightforward payout boost to the base game.",
     ],
     leftColumnContent: [
       {
-        heading: "Online Pokies",
-        text: `Lucky7even Casino's pokies collection boasts a vast selection of thousands of titles, covering everything from classic three-reel pokies to the latest video pokies and high-stakes progressive jackpots. This extensive variety ensures that every player can find something to suit their style, whether they prefer the simplicity of traditional pokies or the thrilling graphics and features of modern games. Among the most popular titles are fan favorites like "Book of Dead," "Starburst," and "Mega Moolah," each offering unique themes, bonus rounds, and rewarding paylines. Many of these pokies include exciting features like free spins, multipliers, and mini-games that enhance gameplay and increase winning potential. With engaging animations, a wide range of betting options, and numerous themes, the online pokies at Lucky7even provide an immersive experience for every player, from beginners to high rollers.`,
-        // categories: ["li1", "li2", "li3"],
-        // additionalText: `p1`,
-      },
-      {
-        heading: "Table Games",
+        heading: "Pokies Crown Casino Layout and Reels",
         text: [
-          `For fans of traditional casino games, Lucky7even offers a robust selection of table games that deliver classic casino thrills. The casino provides multiple versions of popular games like blackjack, roulette, baccarat, and poker, allowing players to explore different game styles and strategies. Each game is designed to accommodate a range of betting preferences, making them suitable for both conservative players and those who enjoy high-stakes action. For instance, blackjack enthusiasts can find various iterations that allow them to practice skills and explore new techniques, while roulette players can experience European, American, and French variations. The table games at Lucky7even are crafted to capture the authenticity of a real casino, providing smooth gameplay, realistic graphics, and adjustable features that enhance the overall experience for any level of player.`,
+          `Crown Pokies online is structured in a 5x3 layout, featuring 5 reels and 3 rows. This setup is common among classic and modern slots, offering a comfortable, user-friendly layout that allows players to easily keep track of winning combinations across the screen. The consistent reel structure makes it easy to understand, especially for those familiar with traditional slot machines.`,
           // `p2`,
           // `p3`,
         ],
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
+      },
+      {
+        heading: "Crown Perth Pokies Paylines and Bet Range",
+        text: [
+          `Crown Online Pokies gives players control over the number of active paylines, ranging from 10 to 25 lines. This customization allows for flexible betting, as players can adjust the number of active lines to suit their risk tolerance and budget. The more paylines activated, the higher the total bet, but also the better the chances of hitting a winning combination.`,
+          // `p2`,
+          // `p3`,
+        ],
       },
     ],
     gamesRightColumn: [
       {
-        heading: "Live Casino",
+        heading: "Pokies Crown RTP (Return to Player)",
         text: [
-          `The live casino section at Lucky7even elevates the gaming experience by bringing the excitement of a real casino to players’ screens. Featuring high-definition streaming and professional live dealers, the live casino allows players to engage in real-time games of blackjack, roulette, baccarat, and poker. This immersive setup creates a captivating atmosphere where players can interact with dealers and fellow players, mirroring the social aspects of land-based casinos. In addition to traditional table games, the live casino offers entertaining game-show style games, such as "Crazy Time" and "Mega Wheel," which introduce a unique twist with engaging hosts and additional betting options. The high production quality and variety of game choices in the live casino section ensure that players feel connected and entertained, regardless of their gaming preferences or experience levels.`,
+          `Crown Pokies has an RTP of approximately 96%. This figure represents the theoretical payout rate over an extended period of play. With an RTP in this range, Crown Casino Pokies offers a balanced payout potential, making it competitive with other popular online slots.`,
           // `p2`,
           // `p3`,
         ],
         // categories: ["li1", "li2", "li3"],
-        // additionalText: `p1`,
+        // additionalText: ``,
       },
       {
-        heading: "Crash Games",
+        heading: "Volatility Level",
         text: [
-          `Lucky7even has embraced the latest trends in online gaming with its selection of crash games, offering players an innovative and strategic gaming option. In crash games like "Aviator," players place bets as they watch a multiplier increase while an object—often an airplane—ascends. The goal is to cash out at the right moment before the object crashes, requiring players to make quick, strategic decisions. The longer players wait to cash out, the higher the potential payout, but the risk of crashing adds a suspenseful edge. This unique format combines elements of chance and skill, appealing to players looking for an adrenaline-pumping experience. With simple mechanics yet highly engaging gameplay, crash games at Lucky7even add an exciting layer of variety to the casino’s extensive library.`,
+          `The game has a medium volatility level, which means it offers a mix of smaller, frequent wins and occasional larger payouts. This makes Crown Pokies App an ideal choice for players who enjoy a blend of excitement without the high stakes of high volatility slots or the minimal returns of low volatility games.`,
           // `p2`,
           // `p3`,
         ],
@@ -144,70 +152,32 @@ export const content = {
     ],
   },
   support: {
-    title: "Support",
+    title: "How to Play Crown Pokies Club Number 12 ",
     text: [
-      `Lucky7even Casino provides 24/7 customer support to assist players with any inquiries or issues. Support channels include live chat and email ([email protected]). The support team is responsive and equipped to handle a wide range of player concerns, ensuring a smooth and satisfactory gaming experience.`,
-      // `p2`,
+      `Getting started with Crown Pokies is easy, thanks to its intuitive layout and simple controls. Follow these steps to get the most out of your gaming session and understand the key elements of the gameplay process. Step-by-Step Guide to Playing Crown Sydney Pokies:`,
+      `By following these steps, players can quickly get accustomed to the gameplay mechanics of Crown Melbourne Pokies. Each round provides an opportunity to win based on the set bet and paylines, making every spin an exciting chance to score a payout.`,
     ],
-    // list: ["li1", "li2", "li3"],
+    list: [
+      "Set Your Bet: Start by selecting your preferred bet level. Use the controls to adjust the coin size or total bet amount to fit your budget. Players can also control the total number of active paylines, which will affect the total bet size.",
+      "Choose the Number of Paylines: Crown Pokies lets you choose how many paylines you want to activate. With up to 25 paylines, players can choose to play conservatively with fewer lines or go for maximum coverage to increase winning chances.",
+      "Spin the Reels: Once your bet is set, press the spin button to start the game. Each spin has a chance to land winning combinations along active paylines, and winnings are calculated based on the symbols aligned on those lines.",
+      "Autoplay Option: Crown Pokies includes an autoplay feature, allowing players to set a series of spins to play automatically. This feature is convenient for those who prefer a hands off experience, as it enables multiple spins at a fixed bet level.",
+    ],
   },
   promotions: {
-    title: "Lucky7even Casino Bonus Offers",
+    title: "Tips and Strategies for Playing Crown of Egypt Pokies Free",
     text: [
-      `Lucky7even Casino offers a variety of bonuses and promotions designed to enhance the gaming experience for both new and existing players. Below is an overview of the current bonus options:`,
-      // `p2`,
+      `Although Crown Pokies lack intricate bonus rounds or progressive jackpots, there are still a few effective strategies players can use to make the most of each session. The tips below offer insights into optimizing your bets and managing your bankroll. Effective Strategies for online pokies Crown Casino:`,
+      `Using these strategies, players can enjoy a more controlled gaming session that minimizes risks and maximizes enjoyment. While no strategy guarantees a win, adopting a disciplined approach helps players enjoy longer sessions without overspending.`,
     ],
-    leftColumnContent: [
-      {
-        heading: "Welcome Bonus Package",
-        text: [
-          `Lucky7even Casino rolls out an impressive welcome bonus package for newcomers, giving them a rewarding start across their first four deposits. The initial deposit grants players a 100% match bonus up to AUD500, accompanied by 50 free spins, doubling their funds right from the start. The second deposit offers a 50% match bonus up to AUD500 along with 50 additional free spins when players enter the bonus code PLAY2. This is followed by a 75% match bonus on the third deposit, again up to AUD500 with 50 free spins, using the code PLAY3. Finally, the fourth deposit rounds off the welcome package with another 100% match bonus up to AUD500, plus 50 free spins, activated by the code PLAY4. `,
-          // `p2`,
-          // `p3`,
-        ],
-        // additionalText: `p1`,
-      },
-      {
-        heading: "Special Tuesday Reload and Lucky7even Casino promo code",
-        text: [
-          `Every Tuesday, Lucky7even Casino offers players a chance to boost their gameplay with free spins through the Special Tuesday Reload promotion. Depending on the deposit amount, players can receive a range of free spins to enjoy on selected games. For a deposit of AUD30 or more, using the code TUESDAY30 unlocks 30 free spins. Players who deposit AUD75 or more can use code TUESDAY60 to receive 60 free spins, while a deposit of AUD150 or above with the code TUESDAY110 awards a generous 110 free spins. `,
-          // `p2`,
-          // `p3`,
-        ],
-      },
-      {
-        heading:
-          "Thursday Deposit Bonus and Lucky7even Casino no deposit bonus code",
-        text: [
-          `The Thursday Deposit Bonus at Lucky7even Casino adds excitement to midweek play with a valuable boost for those looking to top up their accounts. By depositing on a Thursday and using the code WINTHUR, players can claim a 30% match bonus up to AUD150, along with an extra 30 free spins to enhance their gaming options. This offer provides a valuable opportunity for players to increase their balance and enjoy more chances to play their favorite games.`,
-          // `p2`,
-          // `p3`,
-        ],
-        // additionalText: `p1`,
-      },
-    ],
-    rightColumnContent: [
-      {
-        heading:
-          "Saturday Booster and Lucky7even Casino no deposit bonus codes",
-        text: [
-          `Saturday Booster Lucky7even Casino no deposit bonus offers players two unique options to elevate their weekend gaming. Players can choose between free spins or a match bonus, depending on their preferred gaming style. By depositing with the code SATFS, players receive 50 free spins, giving them a chance to explore selected pokies. Alternatively, for those looking to increase their deposit, the code SATBONUS provides a 50% match bonus up to AUD150. `,
-          // `p2`,
-          // `p3`,
-        ],
-        // additionalText: `p1`,
-      },
-      {
-        heading: "VIP Program and Lucky7even Casino no deposit bonus code",
-        text: [
-          `The VIP Program at Lucky7even Casino rewards dedicated players with exclusive benefits and personalized rewards. This seven-tier program allows players to earn loyalty points with every wager, helping them progress through levels and unlock increasingly valuable perks. Rewards in the VIP Program include cashback offers, mystery prizes, and unique bonuses tailored to enhance the player experience. As players ascend the tiers, the benefits become more substantial, providing frequent players with additional incentives to stay engaged. `,
-          // `p2`,
-          // `p3`,
-        ],
-      },
+    list: [
+      "Start with a Lower Bet: If you’re new to Crown Pokies, begin with a smaller bet size to familiarize yourself with the game’s payout frequency. Once you feel comfortable, you can gradually increase your wager.",
+      "Use All Paylines: While activating all paylines may increase the total bet, it also boosts your chances of landing a winning combination. Crown Pokies is more rewarding when more paylines are active, making it easier to hit winning spins.",
+      "Check the Paytable: Reviewing the paytable before playing is an effective way to understand which symbols are most valuable. Knowing this helps you identify winning combinations quickly and strategize around the highest paying symbols.",
+      "Set a Budget Limit: One of the most important tips for any slot game, especially a straightforward one like Crown Pokies, is to set a budget and stick to it. Decide beforehand how much you’re willing to spend, and avoid exceeding this limit.",
     ],
   },
   faq: {
-    title: "CASINO FAQ",
+    title: "FAQ",
   },
 };

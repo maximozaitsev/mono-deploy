@@ -1,27 +1,35 @@
 export const faqs = [
   {
-    question: "Are there any fees for deposits or withdrawals?",
+    question: "Does Crown Pokies Slot Offer a Welcome Bonus?  ",
     answer:
-      "Lucky7even Casino does not charge fees for deposits or withdrawals; however, your payment provider may apply its own fees.",
+      "No, there is no welcome bonus or any bonus feature associated with Crown Pokies. The game is straightforward and focused solely on its base gameplay.",
   },
   {
-    question: "What is the minimum age requirement to play?",
+    question: "What Is the RTP of Crown Pokies Slot?",
     answer:
-      "Players must be at least 18 years old or meet the legal age requirement in their jurisdiction to participate.",
+      "The RTP of Crown Pokies is approximately 96%, making it a well balanced slot for longterm play.",
   },
   {
-    question: "Can I set limits on my account to promote responsible gaming?",
+    question: "Are Crown Pokies Available on Mobile?",
     answer:
-      "Yes, you can set deposit, loss, and wagering limits through your account settings to manage your gaming activity responsibly.",
+      "Yes, Crown Pokies is fully optimized for mobile play on Android and iOS devices.",
   },
   {
-    question: "How long does it take to verify my account?",
-    answer:
-      "Account verification typically takes up to 24 hours after submitting the required documents.",
+    question: "Which Symbol Is the Most Valuable?",
+    answer: "The crown symbol is the highest paying symbol in the game.",
   },
   {
-    question: "Are the games at Lucky7even Casino fair?",
+    question: "Do Crown Pokies Have a Progressive Jackpot? ",
+    answer: "No, there is no progressive jackpot feature in Crown Pokies.",
+  },
+  {
+    question: "Can I adjust the number of paylines in Crown Pokies?",
     answer:
-      "All games use Random Number Generators (RNGs) and are regularly audited to ensure fairness and transparency.",
+      "Yes, players can customize the number of active paylines in Crown Pokies, selecting anywhere from 10 to 25 paylines.",
+  },
+  {
+    question: "Is there an autoplay feature in Crown Pokies?",
+    answer:
+      "Yes, Crown Pokies includes an autoplay option, allowing players to set a predetermined number of spins to play automatically at a chosen bet level.",
   },
 ];

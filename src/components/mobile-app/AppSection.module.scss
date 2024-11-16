@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    width: 548px;
+    width: 50%;
 
     .imageMobile {
       display: none;
@@ -43,9 +43,8 @@
 
     .image {
       position: absolute;
-      top: -90px;
-      right: -13px;
-      scale: 0.85;
+      top: 7px;
+      right: -62px;
       overflow: hidden;
       height: auto;
     }

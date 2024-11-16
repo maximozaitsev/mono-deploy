@@ -1,64 +1,18 @@
-import TwoColumns from "../__common__/two-columns/TwoColumns";
+// import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { content } from "@/content/content";
 import styles from "./PromotionsSection.module.scss";
+import List from "../__common__/list/List";
 
 export default function PromotionsSection() {
   return (
     <section className={`${styles.promotionsSection} section`}>
       <div className="container">
         <h2 className="h2-heading white">{content.promotions.title}</h2>
-        <p className="paragraph-text">{content.promotions.text[0]}</p>
-        <TwoColumns
-          leftColumnContent={[
-            {
-              heading: content.promotions.leftColumnContent[0].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[0].text,
-                },
-              ],
-            },
-            {
-              heading: content.promotions.leftColumnContent[1].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[1].text,
-                },
-              ],
-            },
-            {
-              heading: content.promotions.leftColumnContent[2].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[2].text,
-                },
-              ],
-            },
-          ]}
-          rightColumnContent={[
-            {
-              heading: content.promotions.rightColumnContent[0].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[0].text,
-                },
-              ],
-            },
-            {
-              heading: content.promotions.rightColumnContent[1].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[1].text,
-                },
-              ],
-            },
-          ]}
-        />
+        <div className={styles.promotionsContent}>
+          <p className="paragraph-text">{content.promotions.text[0]}</p>
+          <List items={content.promotions.list} />
+          <p className="paragraph-text">{content.promotions.text[1]}</p>
+        </div>
       </div>
     </section>
   );

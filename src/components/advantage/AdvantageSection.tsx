@@ -30,7 +30,7 @@ export default function AdvantageSection() {
             </ul>
           </div>
         </div>
-        {/* <P>{content.advantages.text[1]}</P> */}
+        <P>{content.advantages.text[1]}</P>
       </div>
     </section>
   );
