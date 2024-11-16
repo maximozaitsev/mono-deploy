@@ -2,7 +2,7 @@
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
-const url = "drake-casino-online.com";
+const url = "lucky7even-casino-online.com";
 
 const withPWA = nextPWA({
   dest: "public",
@@ -44,6 +44,19 @@ const nextConfig = {
         hostname: url,
       },
     ],
+  },
+  headers: async () => {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Referrer-Policy",
+            value: "no-referrer",
+          },
+        ],
+      },
+    ];
   },
   webpack(config, options) {
     config.module.rules.push({

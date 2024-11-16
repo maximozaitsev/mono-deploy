@@ -1,6 +1,5 @@
 @import "../../styles/colors.scss";
 @import "../../styles/typography.scss";
-@import "../../../public/fonts/style.css";
 
 .welcomeSection {
   display: flex;
@@ -18,8 +17,8 @@
     width: 100%;
   }
   @media (max-width: 1180px) {
+    background-size: 50% auto;
     background-position: right 20px center;
-    background-size: 40% auto;
   }
 
   @media (max-width: 768px) {
@@ -33,7 +32,7 @@
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 62%;
+    background-size: auto 63%;
   }
 
   @media (max-width: 420px) {
@@ -98,12 +97,12 @@
 }
 
 .welcomeText h2 {
-  font-family: "Arial Black";
+  font-family: $font-secondary;
   font-size: 64px;
   font-style: normal;
   font-weight: 900;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: 78px;
+  line-height: normal;
   text-transform: uppercase;
   color: $text-color-secondary;
 
@@ -119,7 +118,7 @@
 
 .welcomeText p {
   font-family: $font-primary;
-  color: $text-color-third;
+  color: $text-color-primary;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -127,10 +126,9 @@
 
   @media (max-width: 768px) {
     font-size: 24px;
-    font-family: "Arial Black";
+    font-family: $font-secondary;
     font-weight: 900;
     text-transform: uppercase;
-    color: $text-color-secondary;
   }
 
   @media (max-width: 380px) {

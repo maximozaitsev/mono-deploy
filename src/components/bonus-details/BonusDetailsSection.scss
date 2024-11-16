@@ -96,6 +96,7 @@
   @media (max-width: 850px) {
     font-size: 18px;
     height: 80px;
+    line-height: normal;
 
     &.info-cell {
       border-top-right-radius: $border-radius;
@@ -168,7 +169,8 @@
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
 
   &::after {
     content: "";
@@ -177,7 +179,7 @@
     top: 15%;
     height: 70%;
     width: 1px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &:last-child::after {
@@ -205,7 +207,7 @@
       }
 
       button {
-        width: 231px;
+        width: 221px;
       }
     }
   }

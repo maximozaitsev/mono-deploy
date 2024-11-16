@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "drake-casino-online.com";
+const url = "lucky7even-casino-online.com";
 const ogTitle =
-  "Drake Casino Australia: A Complete Review of a Popular Service";
-const ogSiteName = "Drake Casino Australia";
+  "Lucky7even Casino Australia: Top Games, Bonuses, and Secure Gaming";
+const ogSiteName = "Lucky7even Casino";
 const metaDescription =
-  "Drake Casino Australia: What New and Experienced Gamblers Need to Know. A detailed overview of games, current promotions, payment methods and much more. Stay up to date with the latest information about the casino";
+  "Explore Lucky7even Casino Australia for thrilling games, bonuses, and secure play. Join now to enjoy an exceptional casino experience tailored for Australian players.";
 
 const locale = "en-AU";
 const language = "English";

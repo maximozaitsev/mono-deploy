@@ -1,177 +1,142 @@
 export const content = {
-  projectName: "Drake Casino",
+  projectName: "Lucky7even Casino",
   advantages: {
     // title: "",
-    subTitle: "Advantages and Disadvantages: Drake Stake Casino",
+    subTitle: "Lucky7even Сasino Advantages",
     text: [
-      `Each gambling service has its own objective advantages and disadvantages. Therefore, for many potential clients, it is very important to study the strengths and weaknesses in advance in order to check the site for compliance with personal requirements.`,
-      `Of course, the ability to use Drake Casino bonus codes is a good advantage, but not the only one. And for an objective assessment of the casino, you should also look at the current disadvantages.`,
+      `Lucky7even Casino is a modern online gaming platform that offers a comprehensive range of features to enhance the player experience.`,
     ],
-    advantagesTitle: "Advantages",
-    disadvantagesTitle: "Disadvantages",
+    advantagesTitle: "Advantages:",
+    disadvantagesTitle: "Disadvantages:",
     advantages: [
-      "live casino;",
-      "generous welcome bonuses;",
-      "numerous promotions;",
-      "loyalty program;",
-      "variety of games;",
-      "excellent technical support;",
-      "mobile friendly;",
-      "fast deposits.",
+      "Extensive game selection",
+      "Generous promotions",
+      "User-friendly interface",
+      "Supports multiple payment methods",
+      "Responsive 24/7 customer support",
     ],
     disadvantages: [
-      "no app;",
-      "small selection of withdrawal methods;",
-      "high minimum withdrawal limits.",
+      "Restricted access for players from certain countries",
+      "No dedicated mobile app",
+      "Higher wagering requirements",
+      "Limited responsible gambling tools",
     ],
   },
   about: {
-    title: "Drake Casino",
-    intro: ["live casino", "300% welcome bonus", "numerous promotions"],
+    title: "Lucky7even Casino",
+    intro: ["50 free spins", "50% match bonus", "Thursday Deposit Bonus"],
     description: [
-      `New and regular customers of Drake Casino can enjoy a stunning range of games every day, participate in various promotions and tournaments, and also improve their experience with the help of a unique loyalty program.`,
-      `The official website, which operates on the basis of a valid license, is made in a rather original style. In the background, you can see the outlines of a large city, as if before dawn or at sunset. The minimalistic interface allows you to easily find all the necessary sections and categories, create an account, learn about current promotions and study the range of games.`,
-      `Among the key features of this service are the presence of a demo mode, numerous games with jackpots, the ability to play with live dealers, and also to receive several original welcome bonuses at once.`,
+      `Lucky7even Casino is a dynamic online gaming platform designed to deliver a top-tier casino experience with a wide range of games, generous bonuses, and a secure environment for players worldwide. Known for its user-friendly interface and responsive customer support, Lucky7even Casino review caters to both new and seasoned players by offering diverse options, including classic table games, innovative pokies, and immersive live dealer experiences. With a commitment to fair play and player satisfaction, the casino employs state-of-the-art technology to ensure safe transactions and protect user data, making it a trusted destination for online entertainment.`,
+      // `p2`,
+      // `p3`,
     ],
     signIn: {
-      title: "Login: Drake To Casino",
+      title: "About Lucky7even Casino Login",
       text: [
-        `Despite the fact that the gambling platform offers the opportunity to play in demo mode, most players from Australia prefer to register. This not only allows you to receive a Drake Casino no deposit bonus, but also to enjoy the unique benefits of playing for real money. In addition, having an account gives you access to various bonuses, a loyalty program, tournaments and much more.`,
-        `Creating a Drake Casino login is quite easy. To do this, you need to go to the main page of the official website and click on the registration button. A form for quick subscription will open in front of you. Here you should specify the following data:`,
-        `Now check the box below that you are 18 years of age or older and accept all terms and conditions, as well as allow sending notifications via SMS and email.`,
-        `An automatically generated letter from Drake Online Casino will be sent to the email address you specified during registration. You need to open this message and follow the link. This will confirm the creation of a new account.`,
-        `After following the link, you will be able to make your first deposit, receive welcome bonuses, and enjoy the benefits of real money games.`,
+        `Lucky7even Casino is a well-established online gaming platform, celebrated for its extensive game library and player-centric approach. It combines modern gaming technology with a sleek, intuitive design that attracts players from around the world. The casino offers a variety of games, including video pokies, table games, and live dealer options, all from top-tier providers. Lucky7even Online Casino also boasts enticing promotions and loyalty rewards, designed to enhance the gaming experience and give players an exciting edge. Licensed and regulated, the casino upholds high standards of security and fairness, providing players with a reliable and entertaining environment.`,
+        `Lucky7even Casino login process is straightforward, prioritizing security and convenience. Players can quickly log in by entering their registered email and password on the casino’s official website. The site incorporates advanced security measures, such as encryption protocols, to protect user information during login. For returning players, the login process is streamlined, allowing them to resume their gaming activities within seconds. Additionally, users can enable two-factor authentication for extra security, ensuring their accounts are safeguarded as they explore the platform’s extensive gaming options.`,
+        // `p3`,
       ],
-      list: [
-        "name;",
-        "surname;",
-        "username;",
-        "password;",
-        "valid email address;",
-        "country of origin (Australia);",
-        "phone number.",
-      ],
+      // list: ["li1", "li2", "li3"],
       // list2: ["li1", "li2"],
     },
-    verification: {
-      title: "Verification: Drake Casino No Deposit",
-      text: [
-        `Having an account allows you to play in two modes - for fun and for real money. If you later want to withdraw your winnings by wagering the Drake Casino no deposit bonus codes, you will need to verify your account.`,
-        `The verification procedure is a standard procedure for many licensed and official gambling platforms. This is done in order to prevent fraud, illegal money laundering through online casinos, as well as registration of users under other people's and fictitious names. By following the KYC principles on this service, you can feel as safe as possible.`,
-        `The site has the right to request account confirmation at any time. Therefore, it is better to do this immediately after registration. To do this, you need to open a personal account and fill out a page with personal data. Be sure to indicate your gender, address of residence, confirm your sources of income, etc. Fill out a special form and upload copies of your documents. After verification, the Drake Casino Win security service will send you a corresponding notification of successful verification.`,
-      ],
-    },
+    // verification: {
+    //   title: "VerificationTitle",
+    //   text: [`VerificationText1`, `VerificationText2`, `VerificationText3`],
+    // },
     depositMethods: {
-      title: "Deposit Methods: Drake Casino No Deposit Bonus",
+      title: "Deposit Methods",
       text: [
-        `To activate Drake Casino codes, in most cases you need to make a deposit. Players from Australia can do this in several ways:`,
+        `Lucky7even Casino offers a variety of deposit methods to accommodate players' preferences. Players can fund their accounts using credit and debit cards such as Visa, Mastercard, and Maestro. For those who prefer prepaid solutions, Paysafecard is available. Additionally, the casino supports various cryptocurrencies, including Bitcoin, Ethereum, and Litecoin, providing a secure and efficient option for digital currency users. The minimum deposit amount varies depending on the chosen method, typically ranging from AUD10 to AUD30. Deposits are processed instantly, allowing players to start gaming without delay.`,
         // `p2`,
       ],
-      list: [
-        "Visa;",
-        "Mastercard;",
-        "Bank transfer;",
-        "Ripple;",
-        "Litecoin;",
-        "Bitcoin.",
-      ],
-      additionalText: `Depending on the system, the minimum deposit is AUD 15-25. There is no commission required, and the crediting time is up to 30 minutes.`,
     },
     withdrawalMethods: {
-      title: "Withdrawal Methods: Free Spins Drake Casino",
+      title: "Withdrawal Methods",
       text: [
-        `The choice of methods for withdrawing funds is quite limited. You can use a crypto wallet or a bank transfer. The minimum application size is AUD 100-125. The waiting time is from 1 to 12 days.`,
+        `When it comes to withdrawing winnings, Lucky7even Casino provides several options to ensure convenience and security. Players can request withdrawals to their credit or debit cards, including Visa and Mastercard. Bank transfers are also available for those who prefer direct transactions to their bank accounts. For cryptocurrency users, withdrawals can be made in Bitcoin, Ethereum, and Litecoin, offering a swift and secure method. The minimum withdrawal amount is generally AUD20, and processing times vary by method: e-wallets and cryptocurrencies typically process instantly, while credit/debit card withdrawals may take 1-5 business days, and bank transfers can take 3-10 business days.`,
         // `p2`,
       ],
       list: [],
     },
   },
   licenses: {
-    title: "Licenses: No Deposit Drake Casino",
+    title: "Licenses",
     text: [
-      `The service operates officially and legally. Confirmation is the presence of a valid Curacao license. Information about the license can be found on the official website on the main page.`,
+      `The casino operates under a license issued by the Government of Curaçao, ensuring adherence to international gaming standards and regulations. This licensing underscores the casino's commitment to providing a safe and regulated gaming environment for its players.`,
       // `p2`,
       // `p3`,
     ],
-    security: "Security: Drake Casino Bonus Codes For Existing Players",
+    security: "Security",
     securityText: [
-      `The site uses the KYC system, SSL encryption and a multi-level data protection system. Therefore, you can be sure of the security of personal information, as well as financial transactions.`,
+      `The casino employs advanced security measures to protect player information and transactions. Utilizing the latest SSL encryption technology, Lucky7even ensures that all data transmitted between players and the casino remains confidential and secure.`,
       // `p2`,
     ],
-    software: "Software Technologies: Drake Casino Free Spins Code",
+    software: "Software Technologies",
     softwareText: [
-      `The popular gambling platform cooperates with various providers of gaming software. You probably know such providers as Betsoft, Rival, Arrows Edge, Microgaming, NetEnt, etc.`,
+      `Lucky7even Casino collaborates with over 100 renowned software providers to deliver a diverse gaming experience. Notable partners include Microgaming, NetEnt, Play'n GO, Big Time Gaming, Yggdrasil, and Evolution Gaming.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "App: Drake Casino Free Chips No Deposit",
+    title: "Casino App",
     text: [
-      `The casino does not offer a mobile application. However, this is not a problem, since you can enjoy the game at Stake Casino Drake through the mobile version of the site. Thanks to the HTML5 format, the website is perfectly adapted for mobile OS.`,
+      `Lucky7even Casino offers a mobile-optimized website compatible with various devices, including smartphones and tablets. While there is no dedicated Lucky7even Casino mobile , the responsive design ensures seamless gaming on the go, providing access to the full range of games and features without compromising quality.`,
       // `p2`,
     ],
-    languages: "Languages: Drake Casino No Deposit Coupon Code",
+    languages: "Languages",
     languagesText: [
-      `Currently, the site has only one interface language available - English. There is no option to switch to another language. However, you can use the built-in translator in your browser.`,
+      `To cater to a global audience, Lucky7even Casino supports multiple languages, including English, German, Spanish, Finnish, French, Italian, Norwegian, Portuguese, and Russian. This multilingual support enhances accessibility and user experience for players worldwide.`,
       // `p2`,
       // `p3`,
     ],
-    currencies: "Currencies: No Deposit Bonus Drake Casino Today",
+    currencies: "Currencies",
     currenciesText: [
-      `The game currency for customers from Australia is Australian dollars. Customers from other countries where the site is officially available can use the currency of their region.`,
+      `The casino accepts a variety of currencies to accommodate players from different regions. Supported fiat currencies include EUR, USD, CAD, AUD, NZD, NOK, PLN, RUB, JPY, ZAR, and INR. Additionally, the platform supports cryptocurrencies.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play: Redeemable Winnings Drake Casino",
+    title: "Games Available to Play at Lucky7even Casino",
     text: [
-      `When choosing a gaming platform, most customers also pay close attention to what gambling opportunities will be available on a particular service. As Drake Casino reviews show, Australians highly value this platform, as it offers a great variety of games for every taste.`,
+      `Lucky7even Casino offers a diverse and extensive selection of games, catering to a wide range of player preferences. With over 5,000 titles from leading software providers, players can enjoy various gaming options, including pokies, table games, live dealer experiences, and crash games.`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Pokies",
-        text: [
-          `In Australia, there is a special attitude towards pokies, as these are the simplest, but incredibly exciting gambling games. Here you can play for the minimum bet, and still have fun and feel the adrenaline rush.`,
-          `There are pokies with a wide variety of functions and additional features to choose from. Therefore, you can easily find the game option that fully meets your requirements and preferences. For the convenience of players, the games section is divided into several thematic categories. This allows you to go to the section with pokies that have 3 or 5 reels. The filter system opens up amazing opportunities to find a game with additional features, the desired number of winning lines, and so on.`,
-        ],
-        // categories: ["li1", "li2", "li3"],
-        // additionalText: `p1`,
-      },
-      {
-        heading: "Jackpot Games",
-        text: [
-          `Australian players always strive for maximum winnings. Therefore, the Drake Casino Watch service offers great opportunities for goal-oriented customers who want to take a really big win.`,
-          `Here are special games that are distinguished by the presence of jackpot functions. Moreover, you can choose from several categories at once: Mini, Major and Mega.`,
-          // `p3`,
-        ],
+        heading: "Online Pokies",
+        text: `Lucky7even Casino's pokies collection boasts a vast selection of thousands of titles, covering everything from classic three-reel pokies to the latest video pokies and high-stakes progressive jackpots. This extensive variety ensures that every player can find something to suit their style, whether they prefer the simplicity of traditional pokies or the thrilling graphics and features of modern games. Among the most popular titles are fan favorites like "Book of Dead," "Starburst," and "Mega Moolah," each offering unique themes, bonus rounds, and rewarding paylines. Many of these pokies include exciting features like free spins, multipliers, and mini-games that enhance gameplay and increase winning potential. With engaging animations, a wide range of betting options, and numerous themes, the online pokies at Lucky7even provide an immersive experience for every player, from beginners to high rollers.`,
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
         heading: "Table Games",
         text: [
-          `After activating Drake Casino no bonus codes, you will probably want to try to collect your winnings with the help of bonus and your own money. And not all players from Australia are suitable for this pokies. To take control of the game and influence the outcome, you should try to play table games.`,
-          `The site has an impressive collection of games. You can test your strength and skills in blackjack, roulette, baccarat, Sic Bo, poker, Red Dog, PaiGow and much more.`,
+          `For fans of traditional casino games, Lucky7even offers a robust selection of table games that deliver classic casino thrills. The casino provides multiple versions of popular games like blackjack, roulette, baccarat, and poker, allowing players to explore different game styles and strategies. Each game is designed to accommodate a range of betting preferences, making them suitable for both conservative players and those who enjoy high-stakes action. For instance, blackjack enthusiasts can find various iterations that allow them to practice skills and explore new techniques, while roulette players can experience European, American, and French variations. The table games at Lucky7even are crafted to capture the authenticity of a real casino, providing smooth gameplay, realistic graphics, and adjustable features that enhance the overall experience for any level of player.`,
+          // `p2`,
           // `p3`,
         ],
+        // categories: ["li1", "li2", "li3"],
+        // additionalText: `p1`,
       },
     ],
     gamesRightColumn: [
       {
         heading: "Live Casino",
         text: [
-          `This format of gambling entertainment gives players from Australia the opportunity to get as close as possible to the atmosphere of a land-based casino. Here you play with real dealers and presenters, watching their actions through cameras online.`,
-          `The live casino category offers a huge variety of games. However, most of all, Australians like roulette, blackjack, Sic Bo, baccarat and poker.`,
+          `The live casino section at Lucky7even elevates the gaming experience by bringing the excitement of a real casino to players’ screens. Featuring high-definition streaming and professional live dealers, the live casino allows players to engage in real-time games of blackjack, roulette, baccarat, and poker. This immersive setup creates a captivating atmosphere where players can interact with dealers and fellow players, mirroring the social aspects of land-based casinos. In addition to traditional table games, the live casino offers entertaining game-show style games, such as "Crazy Time" and "Mega Wheel," which introduce a unique twist with engaging hosts and additional betting options. The high production quality and variety of game choices in the live casino section ensure that players feel connected and entertained, regardless of their gaming preferences or experience levels.`,
+          // `p2`,
           // `p3`,
         ],
+        // categories: ["li1", "li2", "li3"],
+        // additionalText: `p1`,
       },
       {
-        heading: "Special Games",
+        heading: "Crash Games",
         text: [
-          `Another interesting category on the official website, where the most unusual gambling entertainment is collected. These are not poke and not classic card games. It uses completely different game mechanics, unique rules and ways to win. Therefore, beginners should definitely choose this section and try to play at least a few rounds.`,
+          `Lucky7even has embraced the latest trends in online gaming with its selection of crash games, offering players an innovative and strategic gaming option. In crash games like "Aviator," players place bets as they watch a multiplier increase while an object—often an airplane—ascends. The goal is to cash out at the right moment before the object crashes, requiring players to make quick, strategic decisions. The longer players wait to cash out, the higher the potential payout, but the risk of crashing adds a suspenseful edge. This unique format combines elements of chance and skill, appealing to players looking for an adrenaline-pumping experience. With simple mechanics yet highly engaging gameplay, crash games at Lucky7even add an exciting layer of variety to the casino’s extensive library.`,
           // `p2`,
           // `p3`,
         ],
@@ -179,52 +144,42 @@ export const content = {
     ],
   },
   support: {
-    title: "Support: Drake Casino Deposit Bonus Codes",
+    title: "Support",
     text: [
-      `You can use several communication channels to contact support:`,
-      `Depending on your request, several different email addresses are provided at once.`,
+      `Lucky7even Casino provides 24/7 customer support to assist players with any inquiries or issues. Support channels include live chat and email ([email protected]). The support team is responsive and equipped to handle a wide range of player concerns, ensuring a smooth and satisfactory gaming experience.`,
+      // `p2`,
     ],
-    list: ["phone number;", "online chat;", "email addresses."],
+    // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Bonuses and Promotions: Drake Casino No Deposit Bonus Codes",
+    title: "Lucky7even Casino Bonus Offers",
     text: [
-      `To attract new and regular customers, each gambling platform tries to offer a variety of bonuses and conduct special promotions. Many players from Australia like the opportunity to get Drake Casino free chips, but this is far from the only promotion that is held here.`,
+      `Lucky7even Casino offers a variety of bonuses and promotions designed to enhance the gaming experience for both new and existing players. Below is an overview of the current bonus options:`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Welcome Cash Bonus: Welcome Code For Drake Online Casino",
+        heading: "Welcome Bonus Package",
         text: [
-          `You do not have to enter a special Drake Casino bonus code to collect the welcome reward. However, you will have the opportunity to choose which prize you will take as a welcome bonus.`,
-          `One of the most attractive options is rightly called the cash welcome bonus. According to the terms of the promotion, new users can get a 300% bonus for the first 3 deposits for a total of up to AUD 6,000. This is a really large reward that not all competitors can offer.`,
-          `To activate this reward, it is enough to make a minimum deposit to the game balance. It is from AUD 25.`,
-        ],
-        // additionalText: `p1`,
-      },
-      {
-        heading: "Welcome Free Spins: Drake Casino Bonus Code",
-        text: [
-          `There is another great option to get the Drake Casino welcome bonus. This time, players are awarded free spins. The terms of the promotion are the same as the previous reward. For your first 3 deposits, you will receive up to 540 free spins in total.`,
-          `To activate this offer, deposit at least AUD 25 or more. The higher the deposit amount, the more spins you will receive absolutely free.`,
-          // `p3`,
-        ],
-        // categories: ["li1", "li2", "li3"],
-        // additionalText: `p1`,
-      },
-      {
-        heading: "Crypto Welcome Bonus: No Deposit Bonus Drake Casino",
-        text: [
-          `Since this online casino allows you to use cryptocurrency wallets, a special welcome offer has been created for this category of players. The essence of the promotion is to make your first 3 deposits via cryptocurrency and receive a reward of 333% on an amount of up to AUD 500.`,
+          `Lucky7even Casino rolls out an impressive welcome bonus package for newcomers, giving them a rewarding start across their first four deposits. The initial deposit grants players a 100% match bonus up to AUD500, accompanied by 50 free spins, doubling their funds right from the start. The second deposit offers a 50% match bonus up to AUD500 along with 50 additional free spins when players enter the bonus code PLAY2. This is followed by a 75% match bonus on the third deposit, again up to AUD500 with 50 free spins, using the code PLAY3. Finally, the fourth deposit rounds off the welcome package with another 100% match bonus up to AUD500, plus 50 free spins, activated by the code PLAY4. `,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
       {
-        heading: "Weekly Cash Bonuses",
+        heading: "Special Tuesday Reload and Lucky7even Casino promo code",
         text: [
-          `Every Tuesday, Thursday and Sunday you can get special rewards for deposits. For example, on Tuesdays for a deposit the casino returns you 75% of the amount. On Thursdays you get a 100% bonus. If you make a deposit on Sunday, this will allow you to collect a double reload bonus.`,
+          `Every Tuesday, Lucky7even Casino offers players a chance to boost their gameplay with free spins through the Special Tuesday Reload promotion. Depending on the deposit amount, players can receive a range of free spins to enjoy on selected games. For a deposit of AUD30 or more, using the code TUESDAY30 unlocks 30 free spins. Players who deposit AUD75 or more can use code TUESDAY60 to receive 60 free spins, while a deposit of AUD150 or above with the code TUESDAY110 awards a generous 110 free spins. `,
+          // `p2`,
+          // `p3`,
+        ],
+      },
+      {
+        heading:
+          "Thursday Deposit Bonus and Lucky7even Casino no deposit bonus code",
+        text: [
+          `The Thursday Deposit Bonus at Lucky7even Casino adds excitement to midweek play with a valuable boost for those looking to top up their accounts. By depositing on a Thursday and using the code WINTHUR, players can claim a 30% match bonus up to AUD150, along with an extra 30 free spins to enhance their gaming options. This offer provides a valuable opportunity for players to increase their balance and enjoy more chances to play their favorite games.`,
           // `p2`,
           // `p3`,
         ],
@@ -233,26 +188,19 @@ export const content = {
     ],
     rightColumnContent: [
       {
-        heading: "Weekly Free Spins",
+        heading:
+          "Saturday Booster and Lucky7even Casino no deposit bonus codes",
         text: [
-          `You can make deposits on Monday, Thursday and Sunday, and get a lot of free spins for this. The higher the deposit amount, the more benefits you get. However, keep in mind that to activate the bonus, you need to deposit at least AUD 25 to the game balance. So, if you want Drake Casino 60 free spins, then take advantage of the weekly offer.`,
+          `Saturday Booster Lucky7even Casino no deposit bonus offers players two unique options to elevate their weekend gaming. Players can choose between free spins or a match bonus, depending on their preferred gaming style. By depositing with the code SATFS, players receive 50 free spins, giving them a chance to explore selected pokies. Alternatively, for those looking to increase their deposit, the code SATBONUS provides a 50% match bonus up to AUD150. `,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
       {
-        heading: "Daily Cashback",
+        heading: "VIP Program and Lucky7even Casino no deposit bonus code",
         text: [
-          `If luck was not on your side this game day, then take advantage of another great offer. Depending on the amount of loss during the game day, you can return 7% to the game balance. The promotion is valid every day, which allows you to regularly compensate for losses.`,
-          // `p2`,
-          // `p3`,
-        ],
-      },
-      {
-        heading: "Loyalty Program",
-        text: [
-          `Use Drake Casino no rules bonus codes and get the most out of playing on this service by taking part in the loyalty program. All you need to do is play, place bets and be active. For this, you will gradually increase your level, receive increased withdrawal and deposit limits, and also collect numerous rewards.`,
+          `The VIP Program at Lucky7even Casino rewards dedicated players with exclusive benefits and personalized rewards. This seven-tier program allows players to earn loyalty points with every wager, helping them progress through levels and unlock increasingly valuable perks. Rewards in the VIP Program include cashback offers, mystery prizes, and unique bonuses tailored to enhance the player experience. As players ascend the tiers, the benefits become more substantial, providing frequent players with additional incentives to stay engaged. `,
           // `p2`,
           // `p3`,
         ],
@@ -260,6 +208,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "FAQ",
+    title: "CASINO FAQ",
   },
 };

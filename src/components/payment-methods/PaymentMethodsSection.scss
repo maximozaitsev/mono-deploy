@@ -76,6 +76,7 @@
           border-top: $border-width solid $border-color;
           border-bottom: $border-width solid $border-color;
           line-height: normal !important;
+          color: #0e0e25;
 
           &:first-child {
             display: flex;
@@ -169,7 +170,7 @@
           line-height: normal;
           font-weight: 500;
           padding: 8px;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
           &:last-child {
             border-bottom: none;

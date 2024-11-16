@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import { fetchOffers } from "../../../utils/fetchOffers";
 import Header from "../../../components/header/Header";
 import Footer from "@/components/footer/Footer";
@@ -12,7 +12,6 @@ import styles from "./PreloaderPage.module.scss";
 
 const PreloaderPage = () => {
   const { id } = useParams();
-  const router = useRouter();
 
   useEffect(() => {
     async function redirectToOffer() {
@@ -38,7 +37,13 @@ const PreloaderPage = () => {
 
           await new Promise((resolve) => setTimeout(resolve, 1500));
 
-          window.location.replace(targetOfferLink);
+          if (targetOfferLink) {
+            window.history.replaceState(null, "", "/");
+            const anchor = document.createElement("a");
+            anchor.href = targetOfferLink;
+            anchor.rel = "noopener noreferrer";
+            anchor.click();
+          }
         } else {
           console.error("No offers available");
         }

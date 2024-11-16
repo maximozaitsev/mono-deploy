@@ -28,7 +28,12 @@ const Button: React.FC<ButtonProps> = ({
   const { handleNavigation } = useNavigateWithPreloader();
 
   const handleClick = () => {
-    if (useNavigation && url) {
+    if (url?.startsWith("http")) {
+      const a = document.createElement("a");
+      a.href = url;
+      a.rel = "noopener noreferrer";
+      a.click();
+    } else if (useNavigation && url) {
       handleNavigation(url, onClick);
     } else if (useNavigation && navigateHome) {
       handleNavigation("/", onClick);

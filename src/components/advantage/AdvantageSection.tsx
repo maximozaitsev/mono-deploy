@@ -1,6 +1,6 @@
 import styles from "./AdvantageSection.module.scss";
 import { content } from "@/content/content";
-// import P from "../__common__/Paragraph";
+import P from "../__common__/Paragraph";
 
 export default function AdvantageSection() {
   const { advantages, disadvantages, subTitle, text } = content.advantages;
@@ -9,10 +9,7 @@ export default function AdvantageSection() {
     <section className={`${styles.advantageSection} section`}>
       <div className="container">
         <h2 className="h2-heading">{subTitle}</h2>
-        <div className={styles.text}>
-          <p className="paragraph-text black">{content.advantages.text[0]}</p>
-          <p className="paragraph-text black">{content.advantages.text[1]}</p>
-        </div>
+        <p className="paragraph-text black">{content.advantages.text}</p>
         <div className={styles.columns}>
           <div className={styles.column}>
             <h4 className="h4-heading">{content.advantages.advantagesTitle}</h4>

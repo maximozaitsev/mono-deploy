@@ -22,6 +22,7 @@ export default function AppSection() {
               src={AppImageMobile}
               alt="App preview"
               className={styles.imageMobile}
+              quality={100}
             />
             <p className="paragraph-text">{content.app.text[0]}</p>
             <div className={styles.buttons}>
