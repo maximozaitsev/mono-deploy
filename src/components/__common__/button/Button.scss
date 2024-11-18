@@ -16,10 +16,10 @@
     padding: 4px 48px;
     outline-color: #f9f8f83b;
     background: $color-button-large;
-    color: #0d131a;
+    color: $text-color-primary;
     font-size: 28px;
     border: none;
-    border-radius: 32px;
+    // border-radius: 20px;
     min-width: 280px;
     height: 87px;
 
@@ -28,7 +28,6 @@
       padding: 4px 48px;
       min-width: 240px;
       height: 77px;
-      border-radius: 24px;
     }
 
     @media (max-width: 420px) {
@@ -52,15 +51,14 @@
     padding: 2px 18px;
     outline-color: #2e2e2e3b;
     background: $color-button-small;
-    color: #0d131a;
+    color: #fff;
     font-size: 20px;
     border: none;
-    border-radius: 24px;
+    // border-radius: 15px;
     height: 52px;
 
     @media (max-width: 768px) {
       font-size: 18px;
-      border-radius: 16px;
     }
 
     @media (max-width: 300px) {

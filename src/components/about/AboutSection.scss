@@ -3,6 +3,8 @@
 
 .about-section {
   background: $color-background-secondary;
+  border-top: 2px solid #2c0000;
+  border-bottom: 2px solid #2c0000;
 
   .container {
     display: flex;
@@ -47,9 +49,9 @@
       justify-content: center;
       align-items: center;
 
-      img {
-        margin-right: -35px;
-      }
+      // img {
+      //   margin-right: -35px;
+      // }
 
       @media (max-width: 1380px) {
         max-width: 650px;

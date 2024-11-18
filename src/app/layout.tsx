@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "crown-pokies-online.com";
+const url = "boombet-casino-online.com";
 const ogTitle =
-  "Crown Pokies Review: Full Guide on Gameplay, Features, and Honest Tips";
-const ogSiteName = "Crown Pokies";
+  "Boombet Casino Australia: The World of Amazing Online Gambling";
+const ogSiteName = "Boombet Casino";
 const metaDescription =
-  "A detailed review of Crown Pokies with a full breakdown of symbols, game mechanics, mobile compatibility and fair winning strategies. Standard mechanics, but generous winnings for you.";
+  "Boombet Casino Australia: A detailed review of the gambling platform. Current promotions, welcome bonus, range of games and payment methods. Useful information for beginners and experienced players";
 
 const locale = "en-AU";
 const language = "English";

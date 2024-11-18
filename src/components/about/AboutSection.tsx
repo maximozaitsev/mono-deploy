@@ -13,11 +13,11 @@ export default function AboutSection() {
         <h1 className="h2-heading white">{content.about.title}</h1>
         <div className="about-content">
           <div className="about-text paragraph-text">
-            {/* <ul>
+            <ul>
               {content.about.intro.map((item: string, index: number) => (
                 <li key={index}>{item}</li>
               ))}
-            </ul> */}
+            </ul>
             {content.about.description.map(
               (paragraph: string, index: number) => (
                 <p key={index} className="paragraph-text">
@@ -41,7 +41,43 @@ export default function AboutSection() {
           {/* <h4 className="h4-heading white">{content.about.signIn.text[2]}</h4> */}
           {/* <List items={content.about.signIn.list2} /> */}
           {/* <P>{content.about.signIn.text[3]}</P> */}
+          <h3 className="h3-heading">{content.about.verification.title}</h3>
+          <P>{content.about.verification.text[0]}</P>
+          <P>{content.about.verification.text[1]}</P>
+          <P>{content.about.verification.text[2]}</P>
         </div>
+        <TwoColumns
+          leftColumnContent={[
+            {
+              heading: content.about.depositMethods.title,
+              items: [
+                {
+                  type: "text",
+                  content: content.about.depositMethods.text[0],
+                },
+                {
+                  type: "text",
+                  content: content.about.depositMethods.text[1],
+                },
+              ],
+            },
+          ]}
+          rightColumnContent={[
+            {
+              heading: content.about.withdrawalMethods.title,
+              items: [
+                {
+                  type: "text",
+                  content: content.about.withdrawalMethods.text[0],
+                },
+                {
+                  type: "text",
+                  content: content.about.withdrawalMethods.text[1],
+                },
+              ],
+            },
+          ]}
+        />
       </div>
     </section>
   );

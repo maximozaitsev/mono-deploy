@@ -4,6 +4,9 @@
   background: $color-background-secondary;
   padding: 64px;
 
+  border-top: 2px solid #2c0000;
+  border-bottom: 2px solid #2c0000;
+
   @media (max-width: 768px) {
     padding: 64px 0;
   }
@@ -18,7 +21,7 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    width: 50%;
+    width: 548px;
 
     .imageMobile {
       display: none;
@@ -43,8 +46,8 @@
 
     .image {
       position: absolute;
-      top: 7px;
-      right: -62px;
+      top: -33px;
+      right: -60px;
       overflow: hidden;
       height: auto;
     }

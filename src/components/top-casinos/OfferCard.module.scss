@@ -11,7 +11,7 @@
   gap: 16px;
 
   outline: $border-width solid $color-border-primary;
-  border-radius: 0px 0px 32px 32px;
+  border-radius: $border-radius;
   background: $color-background-third;
 
   img {
@@ -58,7 +58,7 @@
 
   button {
     margin-top: auto;
-    width: 217px;
+    width: 203px;
     // margin-left: 5px;
   }
 
@@ -66,7 +66,6 @@
     width: 240px;
     height: 264px;
     padding: 16px;
-    border-radius: 0px 0px 24px 24px;
 
     img {
       width: 160px;

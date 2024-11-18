@@ -6,7 +6,7 @@ import TopGamesSection from "@/components/top-games/TopGamesSection";
 import BonusDetailsSection from "@/components/bonus-details/BonusDetailsSection";
 import AboutSection from "@/components/about/AboutSection";
 import PaymentMethodsSection from "@/components/payment-methods/PaymentMethodSection";
-// import LicensesSection from "@/components/license/LicensesSection";
+import LicensesSection from "@/components/license/LicensesSection";
 import ProvidersSection from "@/components/providers/ProvidersSection";
 import AppSection from "@/components/mobile-app/AppSection";
 import FAQSection from "@/components/faq/FAQSection";
@@ -36,7 +36,7 @@ export default async function HomePage() {
       <TopGamesSection games={games} />
       <AboutSection />
       <PaymentMethodsSection initialPaymentMethods={[]} />
-      {/* <LicensesSection /> */}
+      <LicensesSection />
       <ProvidersSection initialProviders={providers} />
       <AppSection />
       <FAQSection faqs={faqs} />

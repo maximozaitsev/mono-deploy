@@ -25,8 +25,6 @@ export default function AppSection() {
               quality={100}
             />
             <p className="paragraph-text">{content.app.text[0]}</p>
-            <p className="paragraph-text">{content.app.text[1]}</p>
-            <p className="paragraph-text">{content.app.text[2]}</p>
             <div className={styles.buttons}>
               <button
                 className="google-play"
@@ -58,6 +56,31 @@ export default function AppSection() {
             <Image src={AppImage} alt="App preview" className={styles.image} />
           </div>
         </div>
+        <TwoColumns
+          leftColumnContent={[
+            {
+              heading: content.app.languages,
+              items: [
+                {
+                  type: "text",
+                  content: content.app.languagesText[0],
+                },
+              ],
+            },
+          ]}
+          rightColumnContent={[
+            {
+              heading: content.app.currencies,
+              items: [
+                {
+                  type: "text",
+                  content: content.app.currenciesText[0],
+                },
+              ],
+            },
+          ]}
+          columnGap="48px"
+        />
       </div>
     </section>
   );

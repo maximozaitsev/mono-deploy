@@ -1,0 +1,65 @@
+@import "../../styles/colors.scss";
+
+.licensesSection {
+  background: $color-background-secondary;
+  padding: 64px 0;
+
+  border-top: 2px solid #2c0000;
+  border-bottom: 2px solid #2c0000;
+
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  .licensesContent {
+    display: flex;
+    margin-bottom: 48px;
+
+    .leftContent {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      flex: 2.5;
+      margin-right: 20px;
+    }
+
+    .rightImage {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: auto;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .licensesContent {
+      flex-direction: column;
+      margin-bottom: 40px;
+
+      .leftContent {
+        order: 2;
+        margin-right: 0;
+      }
+
+      .rightImage {
+        order: 1;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        img {
+          max-width: 160px;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,9 @@
   padding: 64px 0;
   background: $color-background-secondary;
 
+  border-top: 2px solid #2c0000;
+  border-bottom: 2px solid #2c0000;
+
   :global(.container) {
     display: flex;
     flex-direction: column;
@@ -23,7 +26,7 @@
   }
 }
 
-.div2 {
+.textGames {
   display: flex;
   flex-direction: column;
   gap: 24px;
