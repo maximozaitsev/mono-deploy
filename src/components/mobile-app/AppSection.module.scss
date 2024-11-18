@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    width: 548px;
+    width: 50%;
 
     .imageMobile {
       display: none;
@@ -43,15 +43,14 @@
 
     .image {
       position: absolute;
-      top: -13px;
-      right: -113px;
-
+      top: 7px;
+      right: -62px;
       overflow: hidden;
       height: auto;
     }
   }
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1320px) {
     .imageBlock {
       .image {
         right: 0;

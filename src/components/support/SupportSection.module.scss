@@ -1,5 +1,5 @@
 .leftContent {
-  width: 60%;
+  width: 100%;
 
   :global(.h2-heading) {
     margin-bottom: 48px;
@@ -33,7 +33,6 @@
 
   img {
     margin-right: -100px;
-    margin-top: -170px;
   }
 
   @media (max-width: 1380px) {
