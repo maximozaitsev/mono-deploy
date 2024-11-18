@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "crown-pokies-online.com";
-const ogTitle =
-  "Crown Pokies Review: Full Guide on Gameplay, Features, and Honest Tips";
-const ogSiteName = "Crown Pokies";
+const url = "viperspin-australia.com";
+const ogTitle = "Viperspin Casino Australia: Top Games, Bonuses & Secure Play";
+const ogSiteName = "Viperspin Casino";
 const metaDescription =
-  "A detailed review of Crown Pokies with a full breakdown of symbols, game mechanics, mobile compatibility and fair winning strategies. Standard mechanics, but generous winnings for you.";
+  "Viperspin Casino Australia offers top games, generous bonuses, and secure transactions for Aussie players. Sign up now to enjoy a premium online casino experience!";
 
 const locale = "en-AU";
 const language = "English";

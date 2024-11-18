@@ -27,7 +27,7 @@
   display: grid;
   grid-template-columns: 18% 22% 12% 13% 12% 23%;
   align-items: center;
-  border-radius: 32px 32px 0px 0px;
+  border-radius: $border-radius;
 
   .secondary {
     width: 218px;
@@ -36,7 +36,6 @@
     color: $text-color-primary;
     margin-top: -3px;
     margin-left: 6px;
-    color: #0d131a;
   }
 
   @media (max-width: 1080px) {
@@ -68,17 +67,13 @@
   height: 88px;
 
   &:first-child {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 32px;
-
-    @media (max-width: 850px) {
-      border-bottom-left-radius: 24px;
-    }
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   &.last-cell {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 32px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   &::after {
@@ -104,8 +99,8 @@
     line-height: normal;
 
     &.info-cell {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 24px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
 
     &::after {
@@ -174,7 +169,7 @@
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
   &::after {
     content: "";
@@ -183,7 +178,7 @@
     top: 15%;
     height: 70%;
     width: 1px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
   }
 
   &:last-child::after {
@@ -211,7 +206,7 @@
       }
 
       button {
-        width: 221px;
+        width: 211px;
       }
     }
   }
