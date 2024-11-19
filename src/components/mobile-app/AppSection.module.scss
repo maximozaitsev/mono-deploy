@@ -3,9 +3,25 @@
 .appSection {
   background: $color-background-secondary;
   padding: 64px;
+  position: relative;
 
-  border-top: 2px solid #2c0000;
-  border-bottom: 2px solid #2c0000;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(50deg, #2c0000 0%, #b90000 50%, #2c0000 100%);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
 
   @media (max-width: 768px) {
     padding: 64px 0;
