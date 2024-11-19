@@ -7,6 +7,7 @@
   display: flex;
   padding: 24px 0;
   text-align: center;
+  border-top: 1px solid #fceb1d;
 
   :global(.container) {
     width: 100%;
@@ -32,7 +33,7 @@
           margin-bottom: 0;
 
           img {
-            margin-top: 16px;
+            margin-top: 9px;
             margin-left: 0px;
             position: absolute;
             left: 160px;

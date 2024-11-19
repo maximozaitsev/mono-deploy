@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "boombet-casino-online.com";
-const ogTitle =
-  "Boombet Casino Australia: The World of Amazing Online Gambling";
-const ogSiteName = "Boombet Casino";
+const url = "moonwin-casino-online.com";
+const ogTitle = "Moonwin Casino Australia: Bonuses, Payments, and Game Library";
+const ogSiteName = "Moonwin Casino";
 const metaDescription =
-  "Boombet Casino Australia: A detailed review of the gambling platform. Current promotions, welcome bonus, range of games and payment methods. Useful information for beginners and experienced players";
+  "Discover the Moonwin Casino review for players from Australia. Explore available pokies, table games, bonuses, and payment conditions. See how the casino protects your personal data.";
 
 const locale = "en-AU";
 const language = "English";

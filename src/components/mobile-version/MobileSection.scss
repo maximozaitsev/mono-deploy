@@ -2,28 +2,10 @@
 @import "../../styles/typography.scss";
 
 .mobile-section {
-  position: relative;
   background: $color-background-secondary;
+
   padding: 64px 0;
   margin-bottom: 140px;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(50deg, #2c0000 0%, #b90000 50%, #2c0000 100%);
-  }
-
-  &::before {
-    top: 0;
-  }
-
-  &::after {
-    bottom: 0;
-  }
 
   .mobile-content {
     display: flex;
@@ -100,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -85px;
-      top: -11px;
+      left: -48px;
+      top: 69px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -121,8 +103,9 @@
 
       .app-image {
         height: 405px;
-        width: 307px;
+        width: 436px;
         object-fit: contain;
+        margin-left: 10px;
       }
     }
   }
