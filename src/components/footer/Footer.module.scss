@@ -39,7 +39,7 @@
             left: 160px;
             cursor: pointer;
 
-            @media (max-width: 1320px) {
+            @media (max-width: 1360px) {
               left: 50px;
             }
 
@@ -74,7 +74,7 @@
           mix-blend-mode: normal;
         }
 
-        @media (max-width: 1080px) {
+        @media (max-width: 1140px) {
           height: 22px !important;
           width: auto;
         }
@@ -127,7 +127,7 @@
     }
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 1140px) {
     .row {
       &:first-child {
         .logoWrapper {
