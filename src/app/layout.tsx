@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "moonwin-casino-online.com";
-const ogTitle = "Moonwin Casino Australia: Bonuses, Payments, and Game Library";
-const ogSiteName = "Moonwin Casino";
+const url = "rabona-casino-australia.com";
+const ogTitle =
+  "Rabona Casino Australia: Secure Games, Top Bonuses, & Reliable Banking";
+const ogSiteName = "Rabona Casino";
 const metaDescription =
-  "Discover the Moonwin Casino review for players from Australia. Explore available pokies, table games, bonuses, and payment conditions. See how the casino protects your personal data.";
+  "Explore Rabona Online Casino for Australian players: a full review of bonuses, games, tournaments, loyalty programs, secure payment methods, fast withdrawals, and 24/7 support. ";
 
 const locale = "en-AU";
 const language = "English";

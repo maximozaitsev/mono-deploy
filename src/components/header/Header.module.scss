@@ -8,12 +8,17 @@
   top: 0;
   z-index: 1000;
   height: 96px;
-  border-bottom: 2px solid #fceb1d;
 
   img {
     margin-top: 1px;
     margin-left: 0px;
     scale: 1;
+
+    @media (max-width: 768px) {
+      margin-top: -6px;
+      margin-left: -21px;
+      scale: 0.75;
+    }
   }
 
   @media (max-width: 1080px) {

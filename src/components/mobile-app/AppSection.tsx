@@ -76,14 +76,6 @@ export default function AppSection() {
                   type: "text",
                   content: content.app.currenciesText[0],
                 },
-                {
-                  type: "list",
-                  content: content.app.list || [],
-                },
-                {
-                  type: "text",
-                  content: content.app.currenciesText[1],
-                },
               ],
             },
           ]}

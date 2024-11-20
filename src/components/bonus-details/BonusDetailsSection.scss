@@ -169,7 +169,7 @@
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   &::after {
     content: "";
@@ -178,7 +178,7 @@
     top: 15%;
     height: 70%;
     width: 1px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &:last-child::after {
@@ -206,7 +206,7 @@
       }
 
       button {
-        width: 205px;
+        width: 231px;
       }
     }
   }
@@ -248,11 +248,11 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: #0b090a;
+  color: $text-color-primary;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   position: relative;
   box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);

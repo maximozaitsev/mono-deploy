@@ -17,8 +17,8 @@ export default function LicensesSection() {
             <Image
               src={licenceImage}
               alt="Licenses"
-              width={200}
-              height={200}
+              width={240}
+              height={240}
               quality={100}
             />
           </div>
@@ -32,6 +32,18 @@ export default function LicensesSection() {
                   type: "text",
                   content: content.licenses.securityText[0],
                 },
+                {
+                  type: "text",
+                  content: content.licenses.securityText[1],
+                },
+                {
+                  type: "list",
+                  content: content.licenses.list1,
+                },
+                {
+                  type: "text",
+                  content: content.licenses.securityText[2],
+                },
               ],
             },
           ]}
@@ -43,14 +55,14 @@ export default function LicensesSection() {
                   type: "text",
                   content: content.licenses.softwareText[0],
                 },
-                // {
-                //   type: "list",
-                //   content: content.licenses.list,
-                // },
-                // {
-                //   type: "additionalText",
-                //   content: content.licenses.softwareText[1] || [],
-                // },
+                {
+                  type: "list",
+                  content: content.licenses.list,
+                },
+                {
+                  type: "additionalText",
+                  content: content.licenses.softwareText[1] || [],
+                },
               ],
             },
           ]}
