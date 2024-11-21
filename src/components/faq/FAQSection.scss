@@ -12,9 +12,9 @@
     width: 100%;
 
     .faq-question {
-      color: $text-color-third;
-      font-family: "Arial";
-      background: $color-background-third;
+      color: $text-color-primary;
+      font-family: $font-secondary;
+      background: #448e69;
       font-size: 24px;
       font-weight: 700;
       text-transform: uppercase;
@@ -39,7 +39,7 @@
     }
 
     .faq-answer {
-      color: $text-color-third;
+      color: $text-color-primary;
       font-family: $font-primary;
       font-size: 20px;
       font-weight: 500;

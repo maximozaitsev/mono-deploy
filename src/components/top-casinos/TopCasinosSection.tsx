@@ -35,7 +35,7 @@ const TopCasinosSection: React.FC = () => {
       id="top-casinos-section"
       className="top-casinos-section section container"
     >
-      <h2 className="h2-heading">Top Casinos {country}</h2>
+      <h2 className="h2-heading white">Top Casinos {country}</h2>
       <div className="offers-grid">
         {visibleOffers.map((offer) => (
           <OfferCard key={offer.id} offer={offer} />

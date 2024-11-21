@@ -31,6 +31,10 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="about-text">
+          <h3 className="h3-heading">{content.about.verification.title}</h3>
+          <P>{content.about.verification.text[0]}</P>
+          <List items={content.about.verification.list} ordered />
+          <P>{content.about.verification.text[1]}</P>
           <h3 id="sign-in" className="h3-heading">
             {content.about.signIn.title}
           </h3>
@@ -55,8 +59,16 @@ export default function AboutSection() {
                   content: content.about.depositMethods.list || [],
                 },
                 {
-                  type: "additionalText",
-                  content: content.about.depositMethods.additionalText || [],
+                  type: "text",
+                  content: content.about.depositMethods.text[1],
+                },
+                {
+                  type: "list",
+                  content: content.about.depositMethods.list2 || [],
+                },
+                {
+                  type: "text",
+                  content: content.about.depositMethods.text[2],
                 },
               ],
             },

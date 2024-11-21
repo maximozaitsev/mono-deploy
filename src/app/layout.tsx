@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "rabona-casino-australia.com";
+const url = "inetbet-online.com";
 const ogTitle =
-  "Rabona Casino Australia: Secure Games, Top Bonuses, & Reliable Banking";
-const ogSiteName = "Rabona Casino";
+  "InetBet Casino Review 2024: Trusted Platform for Secure Gaming";
+const ogSiteName = "InetBet Casino";
 const metaDescription =
-  "Explore Rabona Online Casino for Australian players: a full review of bonuses, games, tournaments, loyalty programs, secure payment methods, fast withdrawals, and 24/7 support. ";
+  " Explore InetBet Casino: detailed 2024 review of games, bonuses, secure banking options, wagering requirements, and 24/7 customer support. Register now and play with bonus money!";
 
 const locale = "en-AU";
 const language = "English";

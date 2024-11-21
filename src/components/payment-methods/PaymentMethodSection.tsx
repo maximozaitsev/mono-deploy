@@ -43,7 +43,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
 
   return (
     <section className="payment-methods-section section container">
-      <h2 className="h2-heading">Payment methods</h2>
+      <h2 className="h2-heading white">Payment methods</h2>
       {isMobileView ? (
         <div className="mobile-payment-methods">
           {paymentMethods.map((method) => (

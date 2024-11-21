@@ -10,14 +10,14 @@
   height: 96px;
 
   img {
-    margin-top: 1px;
+    margin-top: 4px;
     margin-left: 0px;
     scale: 1;
 
     @media (max-width: 768px) {
       margin-top: -6px;
-      margin-left: -21px;
-      scale: 0.75;
+      margin-left: -11px;
+      scale: 0.85;
     }
   }
 

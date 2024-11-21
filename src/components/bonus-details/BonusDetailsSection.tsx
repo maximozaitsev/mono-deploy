@@ -40,7 +40,7 @@ const BonusDetailsSection: React.FC = () => {
 
   return (
     <section id="bonuses" className="bonus-details-section section container">
-      <h2 className="h2-heading">Bonus details</h2>
+      <h2 className="h2-heading white">Bonus details</h2>
 
       <div className="table">
         <div className="head-row row">

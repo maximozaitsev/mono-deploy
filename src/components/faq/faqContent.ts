@@ -1,25 +1,21 @@
 export const faqs = [
   {
-    question: "Is Rabona Casino safe for Australian players?",
+    question: "Is InetBet Casino safe? ",
     answer:
-      "Yes, Rabona Casino is licensed and uses encryption technology to ensure player safety.  ",
+      "Yes, InetBet Casino employs SSL encryption and RNG certification to ensure a secure and fair gaming experience.",
   },
   {
-    question: "Can I deposit in AUD?  ",
-    answer: "Yes, AUD is supported for deposits and withdrawals.  ",
-  },
-  {
-    question: "What games are available? ",
+    question: "What bonuses are available?",
     answer:
-      "Rabona Casino offers Pokies, table games, live dealer games, and a sportsbook.  ",
+      "Players can claim a Inetbet casino no deposit welcome bonus, reload bonuses, cashback offers, and free spins promotions.",
   },
   {
-    question: "Are there bonuses for Australian players? ",
+    question: "What are the wagering requirements?  ",
     answer:
-      "Yes, Rabona provides a welcome bonus and regular promotions tailored for Australian users.  ",
+      "Wagering requirements for bonuses typically range from 30x to 40x, depending on the promotion.  ",
   },
   {
-    question: "How do I contact support?  ",
-    answer: "You can reach support via live chat or email, available 24/7.  ",
+    question: "What is the minimum withdrawal amount?  ",
+    answer: "The minimum withdrawal at InetBet Casino is AU$50.  ",
   },
 ];

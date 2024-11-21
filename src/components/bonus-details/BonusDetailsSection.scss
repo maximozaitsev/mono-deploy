@@ -166,6 +166,7 @@
 .accordion-title,
 .accordion-value {
   background: $color-background;
+  color: $text-color-primary;
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
@@ -206,7 +207,7 @@
       }
 
       button {
-        width: 231px;
+        width: 221px;
       }
     }
   }
