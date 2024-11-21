@@ -137,9 +137,13 @@
         padding: 24px;
 
         .app-image {
-           margin-left: 52px; 
+          margin-left: 52px;
           margin-bottom: 4px;
           padding-bottom: 20px;
+
+          @media (max-width: 420px) {
+            margin-left: 0px;
+          }
         }
 
         h3 {
