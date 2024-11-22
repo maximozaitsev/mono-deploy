@@ -17,7 +17,7 @@ export default function TopGamesSection({ games }: TopGamesProps) {
 
   return (
     <section id="games" className={`${styles.topGames} container`}>
-      <h2 className="h2-heading white">Top Games</h2>
+      <h2 className="h2-heading">Top Games</h2>
       <div className={styles.grid}>
         {games.map((game) => (
           <div

@@ -15,7 +15,11 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[0].text,
+                  content: content.gamesToPlay.leftColumnContent[0].text[0],
+                },
+                {
+                  type: "text",
+                  content: content.gamesToPlay.leftColumnContent[0].text[1],
                 },
                 {
                   type: "list",
@@ -24,19 +28,37 @@ export default function GamesToPlay() {
                 },
                 {
                   type: "text",
-                  content:
-                    content.gamesToPlay.leftColumnContent[0].additionalText,
+                  content: content.gamesToPlay.leftColumnContent[0].text[2],
                 },
               ],
             },
           ]}
           rightColumnContent={[
             {
+              heading: content.gamesToPlay.leftColumnContent[1].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.gamesToPlay.leftColumnContent[1].text[0],
+                },
+                {
+                  type: "list",
+                  content:
+                    content.gamesToPlay.leftColumnContent[1].categories || [],
+                },
+                {
+                  type: "additionalText",
+                  content:
+                    content.gamesToPlay.leftColumnContent[1].text[1] || [],
+                },
+              ],
+            },
+            {
               heading: content.gamesToPlay.gamesRightColumn[0].heading,
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[0].text,
+                  content: content.gamesToPlay.gamesRightColumn[0].text[0],
                 },
                 {
                   type: "list",
@@ -46,26 +68,7 @@ export default function GamesToPlay() {
                 {
                   type: "additionalText",
                   content:
-                    content.gamesToPlay.gamesRightColumn[0].additionalText ||
-                    [],
-                },
-              ],
-            },
-            {
-              heading: content.gamesToPlay.gamesRightColumn[1].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[1].text[0],
-                },
-                {
-                  type: "list",
-                  content:
-                    content.gamesToPlay.gamesRightColumn[1].categories || [],
-                },
-                {
-                  type: "additionalText",
-                  content: content.gamesToPlay.gamesRightColumn[1].text[1],
+                    content.gamesToPlay.gamesRightColumn[0].text[1] || [],
                 },
               ],
             },

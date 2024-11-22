@@ -62,14 +62,6 @@ export default function AboutSection() {
                   type: "text",
                   content: content.about.depositMethods.text[1],
                 },
-                {
-                  type: "list",
-                  content: content.about.depositMethods.list2 || [],
-                },
-                {
-                  type: "text",
-                  content: content.about.depositMethods.text[2],
-                },
               ],
             },
           ]}

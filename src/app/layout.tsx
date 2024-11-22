@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "inetbet-online.com";
+const url = "slots-garden-canada.com";
 const ogTitle =
-  "InetBet Casino Review 2024: Trusted Platform for Secure Gaming";
-const ogSiteName = "InetBet Casino";
+  "Slots Garden Casino Review: Top Bonuses and Perks for Canadians";
+const ogSiteName = "Slots Garden Casino";
 const metaDescription =
-  " Explore InetBet Casino: detailed 2024 review of games, bonuses, secure banking options, wagering requirements, and 24/7 customer support. Register now and play with bonus money!";
+  "Discover Slots Garden Casino and enjoy a wide range of games with bonuses. A reliable gambling platform with a license, offering secure payment methods and impeccable customer support.";
 
-const locale = "en-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

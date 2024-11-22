@@ -11,7 +11,7 @@
     border-spacing: 0 16px;
     text-align: center;
     table-layout: auto;
-    margin-top: -15px;
+    // margin-top: -15px;
     margin-bottom: -25px;
 
     thead th,
@@ -71,7 +71,7 @@
         background: none;
 
         td {
-          background: $color-background-third;
+          background: $color-background-providers-blocks;
           padding: 10px;
           border-top: $border-width solid $border-color;
           border-bottom: $border-width solid $border-color;
@@ -154,7 +154,7 @@
       }
 
       .payment-method-details {
-        background: $color-background-third;
+        background: $color-background-providers-blocks;
         display: flex;
         flex-direction: column;
         padding: 8px 16px;
@@ -176,7 +176,7 @@
           }
 
           strong {
-            background: $text-color-fourth;
+            background: #7b3f18;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

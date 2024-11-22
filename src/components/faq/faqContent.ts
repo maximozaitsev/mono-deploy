@@ -1,21 +1,27 @@
 export const faqs = [
   {
-    question: "Is InetBet Casino safe? ",
+    question: "Is Slots Garden Casino login legal for Canadian players?",
     answer:
-      "Yes, InetBet Casino employs SSL encryption and RNG certification to ensure a secure and fair gaming experience.",
+      "Yes, Slots Garden Casino is legal and accepts players from Canada.",
   },
   {
-    question: "What bonuses are available?",
+    question: "What bonuses are available for Canadian players?",
     answer:
-      "Players can claim a Inetbet casino no deposit welcome bonus, reload bonuses, cashback offers, and free spins promotions.",
+      "Canadian players can claim a welcome bonus of up to C$2,500, as well as a C$50 no-deposit bonus.",
   },
   {
-    question: "What are the wagering requirements?  ",
+    question: "Does Garden Party Slots real money support CAD?",
     answer:
-      "Wagering requirements for bonuses typically range from 30x to 40x, depending on the promotion.  ",
+      "Yes, the casino supports Canadian Dollars, making transactions simple and cost-effective for Canadian players.",
   },
   {
-    question: "What is the minimum withdrawal amount?  ",
-    answer: "The minimum withdrawal at InetBet Casino is AU$50.  ",
+    question: "Are the games fair?",
+    answer:
+      "Absolutely. All games use certified Random Number Generators (RNGs) to ensure fair and random outcomes.",
+  },
+  {
+    question: "Can I play on my mobile phone?",
+    answer:
+      "Yes, the casino’s mobile-optimized website is compatible with both iOS and Android devices.",
   },
 ];
