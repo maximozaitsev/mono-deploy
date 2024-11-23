@@ -28,15 +28,6 @@ export default function PromotionsSection() {
                 },
               ],
             },
-            {
-              heading: content.promotions.leftColumnContent[2].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[2].text,
-                },
-              ],
-            },
           ]}
           rightColumnContent={[
             {
@@ -53,15 +44,7 @@ export default function PromotionsSection() {
               items: [
                 {
                   type: "text",
-                  content: content.promotions.rightColumnContent[1].text[0],
-                },
-                {
-                  type: "list",
-                  content: content.promotions.rightColumnContent[1].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[1].text[1],
+                  content: content.promotions.rightColumnContent[1].text,
                 },
               ],
             },

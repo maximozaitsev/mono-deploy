@@ -11,45 +11,31 @@ export default function GamesToPlay() {
         <TwoColumns
           leftColumnContent={[
             {
-              heading: content.gamesToPlay.leftColumnContent[0].heading,
+              heading: content.gamesToPlay.leftColumnContent[1].heading,
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[0].text[0],
+                  content: content.gamesToPlay.leftColumnContent[1].text,
                 },
+              ],
+            },
+            {
+              heading: content.gamesToPlay.leftColumnContent[2].heading,
+              items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[0].text[1],
-                },
-                {
-                  type: "list",
-                  content:
-                    content.gamesToPlay.leftColumnContent[0].categories || [],
-                },
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[0].text[2],
+                  content: content.gamesToPlay.leftColumnContent[2].text,
                 },
               ],
             },
           ]}
           rightColumnContent={[
             {
-              heading: content.gamesToPlay.leftColumnContent[1].heading,
+              heading: content.gamesToPlay.leftColumnContent[0].heading,
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[1].text[0],
-                },
-                {
-                  type: "list",
-                  content:
-                    content.gamesToPlay.leftColumnContent[1].categories || [],
-                },
-                {
-                  type: "additionalText",
-                  content:
-                    content.gamesToPlay.leftColumnContent[1].text[1] || [],
+                  content: content.gamesToPlay.leftColumnContent[0].text,
                 },
               ],
             },
@@ -58,17 +44,16 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[0].text[0],
+                  content: content.gamesToPlay.gamesRightColumn[0].text,
                 },
+              ],
+            },
+            {
+              heading: content.gamesToPlay.gamesRightColumn[1].heading,
+              items: [
                 {
-                  type: "list",
-                  content:
-                    content.gamesToPlay.gamesRightColumn[0].categories || [],
-                },
-                {
-                  type: "additionalText",
-                  content:
-                    content.gamesToPlay.gamesRightColumn[0].text[1] || [],
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[1].text,
                 },
               ],
             },

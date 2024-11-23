@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "slots-garden-canada.com";
+const url = "levelupcasino-online.com";
 const ogTitle =
-  "Slots Garden Casino Review: Top Bonuses and Perks for Canadians";
-const ogSiteName = "Slots Garden Casino";
+  "Level Up Casino Australia – Your Ultimate Online Gaming Destination";
+const ogSiteName = "Level Up Casino";
 const metaDescription =
-  "Discover Slots Garden Casino and enjoy a wide range of games with bonuses. A reliable gambling platform with a license, offering secure payment methods and impeccable customer support.";
+  "Level Up Casino Australia delivers an exceptional gaming experience with a vast selection of pokies, table games, and live casino options. Enjoy generous bonuses, secure transactions, and fast payouts. Join now and start your winning journey today!";
 
-const locale = "en-CA";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

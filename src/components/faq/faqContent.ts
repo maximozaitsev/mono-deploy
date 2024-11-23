@@ -1,27 +1,30 @@
 export const faqs = [
   {
-    question: "Is Slots Garden Casino login legal for Canadian players?",
+    question: "What should I do if I forget my password? ",
     answer:
-      "Yes, Slots Garden Casino is legal and accepts players from Canada.",
+      "Use the 'Forgot Password' link on the login page to reset your password via email instructions.",
   },
   {
-    question: "What bonuses are available for Canadian players?",
-    answer:
-      "Canadian players can claim a welcome bonus of up to C$2,500, as well as a C$50 no-deposit bonus.",
+    question: "Can I change my registered Level Up Casino log in address? ",
+    answer: "No, once registered, the email address cannot be changed.",
   },
   {
-    question: "Does Garden Party Slots real money support CAD?",
-    answer:
-      "Yes, the casino supports Canadian Dollars, making transactions simple and cost-effective for Canadian players.",
+    question: "Is it possible to have multiple accounts? ",
+    answer: "No, only one account per user/IP/computer/household is allowed.",
   },
   {
-    question: "Are the games fair?",
+    question: "How do I add another currency to my account? ",
     answer:
-      "Absolutely. All games use certified Random Number Generators (RNGs) to ensure fair and random outcomes.",
+      "Log in, go to your profile, select 'Add Currency', and choose from the dropdown menu.",
   },
   {
-    question: "Can I play on my mobile phone?",
+    question: "How do I switch between currencies?",
     answer:
-      "Yes, the casino’s mobile-optimized website is compatible with both iOS and Android devices.",
+      "After adding a new currency, select it in your profile to make it active.",
+  },
+  {
+    question: "Are there fees for deposits or withdrawals?",
+    answer:
+      "Level Up Casino does not charge fees for deposits or withdrawals; however, payment providers may apply their own fees.",
   },
 ];
