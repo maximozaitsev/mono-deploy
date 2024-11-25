@@ -37,7 +37,7 @@
   //   grid-template-columns: repeat(3, 1fr);
   // }
 
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -88,6 +88,10 @@
     &:hover {
       cursor: pointer;
     }
+
+    @media (max-width: 1000px) {
+      gap: 10px;
+    }
   }
 
   .gameName {
@@ -103,12 +107,19 @@
     font-weight: 500;
     line-height: normal;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       font-size: 24px;
     }
 
     @media (max-width: 480px) {
       font-size: 20px;
+    }
+  }
+
+  .playIcon {
+    @media (max-width: 1000px) {
+      height: 25px;
+      width: 25px;
     }
   }
 
@@ -127,11 +138,7 @@
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
 
-    @media (max-width: 768px) {
-      font-size: 20px;
-    }
-
-    @media (max-width: 480px) {
+    @media (max-width: 1000px) {
       font-size: 18px;
     }
   }
