@@ -1,41 +1,42 @@
 export const content = {
-  projectName: "Level Up Casino",
+  projectName: "Casino Mate",
   advantages: {
     // title: "",
-    subTitle: "Level Up 4 Casino Advantages",
+    subTitle: "Mate Сasino Advantages",
     text: [
-      `Level Up Casino offers an exciting playing venture with numerous features designed to cater to a wide range of players. However, like any platform, it has its advantages and disadvantages. Here’s a clear overview:`,
+      `Mate Casino has become a popular choice for online gaming enthusiasts, thanks to its wide scope of features and services. Below is a concise list of the casino's advantages and disadvantages.`,
     ],
-    advantagesTitle: "Advantages",
-    disadvantagesTitle: "Disadvantages",
+    advantagesTitle: "Advantages:",
+    disadvantagesTitle: "Disadvantages:",
     advantages: [
       "Extensive game library",
-      "User-friendly interface",
-      "Mobile compatibility",
-      "Secure and fast payment methods",
-      "Generous bonuses and promotions",
-      "Licensed and regulated for safe gameplay",
-      "Reliable customer support",
+      "Generous perks and advancements",
+      "Mobile-friendly venue",
+      "Secure and encrypted transactions",
+      "Reliable client assistance",
     ],
     disadvantages: [
-      "Restricted in some countries",
-      "Limited withdrawal options for certain regions",
-      "Wagering requirements on bonuses",
+      "Restricted access in some regions",
+      "Limited payment methods for certain countries",
     ],
   },
   about: {
-    title: "Casino Level Up",
-    intro: ["200 free spins", "100% match bonus", "AUD200 and 40 free spins"],
+    title: "Casino Mate Online",
+    intro: [
+      "100% match bonus of up to AU$200",
+      "20 free spins",
+      "AU$1,500 in bonus funds",
+    ],
     description: [
-      `Level Up Casino is a modern online gambling platform designed for players who seek a seamless blend of entertainment, innovation, and rewards. Known for its vibrant interface and extensive game library, it offers everything from classic pokies to immersive live dealer games, catering to both seasoned players and newcomers. The casino prides itself on providing top-notch security, quick payment processing, and a user-friendly experience across devices. With generous bonuses and a dedication to responsible gaming, Level Up Casino review ensures an enjoyable and trustworthy gaming environment for all. Whether you’re looking to spin the reels or test your strategy at the tables, this platform is designed to take your gaming journey to the next level.`,
+      `Casino Mate Australia is a popular online casino that has carved out a reputation for providing exceptional playing ventures to participants worldwide. Catering to both seasoned gamblers and newcomers, this venue combines a vast choice of titles, generous bonuses, and robust security features to ensure a safe and enjoyable environment. With its user-friendly interface, responsive client assistance, and compatibility across multiple devices, Casino Mate review stands out as a reliable and entertaining choice for those seeking top-tier online gaming.`,
       // `p2`,
       // `p3`,
     ],
     signIn: {
-      title: "About Level Up Casino 8 Login",
+      title: "About Pokie Mate Casino Login",
       text: [
-        `Level Up Casino is a cutting-edge online gaming platform that caters to players worldwide with its diverse collection of high-quality casino games. Offering everything from popular pokies titles to immersive live dealer experiences, the casino stands out for its sleek design and user-focused features. Licensed and regulated by a reputable authority, Level Up Casino ensures a secure and fair gaming environment, complemented by fast payment methods and reliable customer support. Its vibrant themes and engaging promotions make it a go-to destination for those seeking both excitement and a trustworthy platform to enjoy online gambling.`,
-        `Level Up Casino login is designed to be quick and hassle-free. Players simply need to visit the casino’s official website and click on the "Level Up Casino login Australia" button prominently displayed on the homepage. Entering your registered email and password grants immediate access to your personalized dashboard, where you can explore games, manage your balance, and claim Level Up Casino free chip bonuses. For added convenience, the platform supports seamless Level Up Casino sign up across desktop and mobile devices, ensuring uninterrupted gameplay. In case of any issues, Level Up Casino Australia login provides robust support to assist users with account recovery or login troubleshooting.`,
+        `Casino Mate is a leading online gaming venue known for its impressive scope of titles, appealing advancements, and commitment to user satisfaction. Designed with participants in mind, the casino delivers a seamless playing venture across various devices, including desktops, smartphones, and tablets. The venue boasts a library filled with top-quality titles from renowned software providers, covering everything from classic pokies and table titles to live dealer options. With a strong focus on security and responsible gaming, Casino Mate login Australia ensures that all participants enjoy a safe and fair gaming environment. Its user-friendly design and vibrant theme create an inviting atmosphere that appeals to both new and experienced participants.`,
+        `Casino Mate login is a straightforward process designed to provide hassle-free entry into the gaming world. On the casino’s homepage, the login button is prominently displayed, ensuring quick access for returning users. Participants only need to enter their registered email address and password to sign in securely. The venue utilizes advanced Casino-Mate login encryption technology to protect user credentials, giving participants peace of mind while logging in. For added convenience, the login page also delivers options to recover forgotten passwords or seek assistance from client assistance if needed. With its efficient and secure login system, Casino-Mate ensures participants can swiftly transition to enjoying their favorite titles.`,
         // `p3`,
       ],
       // list: ["li1", "li2", "li3"],
@@ -46,78 +47,78 @@ export const content = {
     //   text: [`VerificationText1`, `VerificationText2`, `VerificationText3`],
     // },
     depositMethods: {
-      title: "Deposit Methods",
+      title: "Casino Mate Australia Real Money Deposit Methods",
       text: [
-        `Level Up Casino Australia offers a variety of deposit options to accommodate players' preferences. Traditional methods include credit and debit cards such as Visa and MasterCard, providing instant deposits for immediate gameplay. For those preferring alternative payment solutions, the casino supports e-wallets like ecoPayz and MiFinity, which also facilitate quick transactions. Additionally, players can utilize prepaid cards such as Neosurf for secure deposits without sharing bank details. `,
+        `Casino Mate delivers a variety of secure deposit options to accommodate participants' preferences. Accepted methods include credit and debit cards such as Visa and MasterCard, which provide instant fund transfers. For those preferring e-wallets, options like ecoPayz and Instadebit are available, offering quick and secure transactions. Additionally, prepaid cards and vouchers such as Neosurf and CASHlib are supported, allowing for immediate deposits without the need to share bank details. The minimum deposit amount is typically AU$10, enabling Casino Mate Australia players to start gaming with a modest investment. It's important to note that while Casino Mate does not charge fees for deposits, some payment providers may impose their own charges.`,
         // `p2`,
       ],
       // list: ["li1", "li2", "li3"],
       // additionalText: `p1`,
     },
     withdrawalMethods: {
-      title: "Withdrawal Methods",
+      title: "Casino Mate Casino Cashout Methods",
       text: [
-        `When it comes to withdrawing winnings, Level Up Casino provides several reliable options. Players can choose Level Up Casino withdrawal funds back to their Visa or MasterCard, with processing times varying depending on the issuing bank. E-wallets like ecoPayz and MiFinity are available for withdrawals, often offering faster processing times compared to traditional banking methods. Bank transfers are also supported, though they may take longer to process. `,
+        `When it comes to withdrawing winnings, Casino Mate provides several reliable options. Participants can opt for bank transfers, which, while secure, may take 2-5 business days to process. E-wallets like ecoPayz and Instadebit are also available for cashouts, typically offering faster processing times compared to traditional bank transfers. The minimum cashout amount is generally AU$50, with a maximum limit of AU$10,000 per week. It's advisable to check with the chosen payment provider for any potential fees associated with cashouts, as Casino Mate does not impose cashout fees unless the deposited amount has not been wagered at least once, in which case a 10% fee may apply.`,
         // `p2`,
       ],
       list: [],
     },
   },
   licenses: {
-    title: "Is Level Up Casino legit?",
+    title: "Licenses",
     text: [
-      `The casino operates under a license issued by Antillephone N.V., with license number 8048/JAZ2020-13, authorized by the government of Curacao. This licensing ensures that Level Up Casino adheres to established standards of fairness and security in its operations.`,
+      `Casino Mate AU operates under a license from the Government of Curaçao, a reputable regulatory authority in the online gambling industry. This license ensures that the casino adheres to strict standards of fairness, security, and responsible gaming practices.`,
       // `p2`,
       // `p3`,
     ],
-    security: "Security",
+    security: "Casino Mate Sister Sites Security",
     securityText: [
-      `To safeguard player information and financial transactions, Level Up Casino AUS employs 128-bit SSL encryption technology. This industry-standard security measure ensures that all data transmitted between the player's device and the casino's servers remains confidential and protected from unauthorized access.`,
+      `Security is a top priority at Casino Mate. The venue employs 128-bit SSL encryption to safeguard all financial transactions and personal data, ensuring confidentiality and protection against unauthorized access. Additionally, Casino Mate is eCOGRA certified, which means its games are regularly audited for fairness and integrity.`,
       // `p2`,
     ],
-    software: "Software Technologies",
+    software: "Casino Mate Software Technologies",
     softwareText: [
-      `Level Up Casino collaborates with over 35 renowned software providers to deliver a diverse and high-quality playing venture. Notable partners include Pragmatic Play, Yggdrasil, Play'n GO, and Betsoft, among others. This collaboration ensures a vast selection of games, ranging from classic pokies to immersive live dealer options, all featuring advanced graphics and seamless gameplay.`,
+      `Casino Mate collaborates with leading software providers to deliver a diverse and high-quality playing venture. Notable partners include Microgaming, Play'n GO, Quickspin, and Betsoft Gaming. These collaborations ensure a vast choice of titles with engaging graphics and smooth gameplay. The venue utilizes HTML5 technology, enabling seamless access across various devices without the need for additional downloads.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Level Up Casino downloadable content and App",
+    title: "Casino Mate App",
     text: [
-      `Level Up Casino offers a mobile-optimized website compatible with both iOS and Android devices, providing players with access to their favorite games on the go. While there is no dedicated Level Up Casino app download, the responsive design ensures a seamless playing venture across various screen sizes and devices.`,
+      `While there is no dedicated Casino Mate app application, its website is fully optimized for mobile use. Participants can access the casino's full scope of games directly through Casino Mate mobile browsers on iOS, Android, and Windows devices, ensuring a consistent and enjoyable playing venture across all venues.`,
       // `p2`,
     ],
     languages: "Languages",
     languagesText: [
-      `To cater to a global audience, Level Up Casino supports multiple languages, including English, German, Italian, Norwegian, and French. This multilingual support enhances accessibility for players from various regions.`,
+      `Casino Mate com venue is primarily available in English, catering to a broad audience of English-speaking participants. This focus ensures clear communication and assistance for its user base.`,
       // `p2`,
       // `p3`,
     ],
-    currencies: "Currencies",
+    currencies: "Pokie Mate Casino Aussie Currencies",
     currenciesText: [
-      `Level Up Casino accommodates a wide range of currencies to facilitate convenient transactions for its players. Supported currencies include the Australian Dollar (AUD), Brazilian Real (BRL), Canadian Dollar (CAD), Euro (EUR), Japanese Yen (JPY), Kazakhstani Tenge (KZT), Norwegian Krone (NOK), New Zealand Dollar (NZD), Polish Zloty (PLN), Russian Ruble (RUB), US Dollar (USD), and South African Rand (ZAR).`,
+      `Casino Mate supports multiple currencies to accommodate participants from various regions. Accepted currencies include Australian Dollars (AUD), Canadian Dollars (CAD), Euros (EUR), and New Zealand Dollars (NZD). This variety allows participants to transact in their preferred currency, enhancing convenience and reducing conversion fees.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play at Level Up Casino",
+    title: "Casino Mate Download Games and Play Online",
     text: [
-      `Level Up online Casino offers a diverse and extensive gaming library, catering to a wide range of player preferences. Here's an overview of the available gaming options:`,
+      `Casino Mate delivers a diverse choice of titles to cater to various participant preferences. Below is an overview of the gaming options available:`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Pokies",
-        text: `Level Up Casino boasts an impressive collection of pokies games, offering thousands of titles that cater to both traditional and modern preferences. Classic pokies enthusiasts can indulge in nostalgic, straightforward gameplay, while those seeking advanced features and captivating themes can explore video pokies with stunning graphics and immersive soundtracks. Popular titles such as "Olympian Gods," "Buddha’s Fortune," and "Howling Wolves" showcase the diversity of options available. `,
+        heading: "Online Pokies",
+        text: `Mate boasts an impressive array of online Casino Mate pokies designed to cater to all types of participants. From timeless classic three-reel pokies that evoke the charm of traditional pokies machines to advanced video pokies with captivating themes, participants are spoilt for choice. Each pokie is packed with exciting features like cascading reels, multipliers, wild symbols, and Casino Mate hidden free spins. The venue partners with leading software providers like Microgaming and Play’n GO to ensure participants experience top-tier graphics, innovative gameplay mechanics, and fair outcomes.`,
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
         heading: "Table Games",
         text: [
-          `For players who enjoy classic casino table games, Level Up Casino provides a wide array of options to satisfy every preference. The platform features multiple variations of blackjack, roulette, baccarat, and poker, ensuring there’s something for everyone. The games are designed with intuitive interfaces, making it easy for players to learn the rules and place bets. Adjustable bet limits allow both casual players and high rollers to enjoy the thrill of table games at their comfort level. Whether you’re testing your strategies in blackjack or spinning the roulette wheel, Level Up Casino delivers a smooth and engaging playing venture. The detailed graphics and authentic gameplay make it a top choice for table game enthusiasts.`,
+          `Fans of classic casino titles will find plenty to love in the extensive table titles section. This collection includes all-time favorites available in various versions to keep the gameplay fresh and exciting. Participants can explore European, American, and French roulette, or dive into the fast-paced action of blackjack variants like Atlantic City or Vegas Strip. Baccarat enthusiasts can try their luck with standard or no-commission versions, while poker lovers have access to thrilling options like Texas Hold’em and Caribbean Stud. `,
           // `p2`,
           // `p3`,
         ],
@@ -125,9 +126,9 @@ export const content = {
         // additionalText: `p1`,
       },
       {
-        heading: "Live Casino",
+        heading: "Live Dealer Games",
         text: [
-          `The live casino at Level Up Casino elevates the online playing venture by bringing the excitement of a physical casino straight to players’ screens. With real-time gaming, professional dealers, and high-definition streaming, players can immerse themselves in the action from the comfort of their homes. The live casino section offers a wide variety of games, including favorites like Immersive Roulette, Infinite Blackjack, and Dragon Tiger. With over 250 tables to choose from, the options cater to both casual players and seasoned gamblers. The interactive nature of live casino gaming allows players to engage with dealers and other participants, creating a dynamic and social experience. This feature adds an extra layer of realism and excitement to the gaming journey.`,
+          `The venue elevates the online playing venture with its state-of-the-art live dealer titles. Offering a choice of live options, these titles are hosted by professional dealers and streamed in high-definition video for a truly immersive experience. Participants can interact with dealers and other participants, creating a social and dynamic atmosphere that closely mimics a land-based casino. `,
           // `p2`,
           // `p3`,
         ],
@@ -137,9 +138,9 @@ export const content = {
     ],
     gamesRightColumn: [
       {
-        heading: "Jackpot Games",
+        heading: "Video Poker",
         text: [
-          `Level Up Casino’s jackpot games are a thrilling option for players chasing big wins. The platform features an enticing selection of games with substantial prize pools, providing the chance to win life-changing amounts. Popular jackpot titles like "Greedy Goblins" by BetSoft and "Super Fast Hot Hot" are designed to keep players on the edge of their seats. These games combine engaging themes, high-quality graphics, and the potential for massive payouts. `,
+          `For participants who enjoy a mix of strategy and luck, venue’s video poker offerings are an excellent choice. This section features iconic titles like Jacks or Better, Deuces Wild, and Joker Poker, each offering unique gameplay twists and payout structures. Video poker requires more than just chance—participants can use strategy and decision-making to maximize their potential winnings. `,
           // `p2`,
           // `p3`,
         ],
@@ -147,9 +148,9 @@ export const content = {
         // additionalText: `p1`,
       },
       {
-        heading: "Specialty Games",
+        heading: "Specialty Titles",
         text: [
-          `For those seeking something different from traditional pokies and table games, Level Up Casino offers a variety of specialty games. These include scratch cards, keno, bingo, and other unique options that provide quick and engaging gameplay. Specialty games are ideal for players looking to explore casual playing ventures with the chance to win prizes. They feature vibrant designs and straightforward mechanics, making them accessible to all types of players. `,
+          `Mate Casino specialty titles section is perfect for participants looking for a fun and laid-back playing venture. This category includes keno, scratch cards, and other instant-win titles that are easy to play and offer the potential for quick rewards. Keno provides a lottery-style format, where participants can choose numbers and wait for the draw to see if they win. Scratch cards, on the other hand, deliver instant gratification with simple gameplay mechanics—just scratch and reveal. `,
           // `p2`,
           // `p3`,
         ],
@@ -157,56 +158,61 @@ export const content = {
     ],
   },
   support: {
-    title: "Support",
+    title: "Pokie Mate Casino Online Support",
     text: [
-      `Customer support at Level Up Casino is available 24/7 to assist players with any inquiries or issues. Players can reach the support team via live chat for immediate assistance or through email at [email protected] for less urgent matters. The support team is responsive and knowledgeable, ensuring a satisfactory resolution to player concerns.`,
+      `Casino Mate delivers comprehensive client assistance services available 24/7. Participants can reach the assistance team via live chat for immediate assistance or through email for less urgent inquiries. The assistance staff is knowledgeable and responsive, ensuring that participant concerns are addressed promptly and effectively.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Level Up Casino Bonus Offers and Promotions",
+    title: "Mate Casino Perks and Upgrades",
     text: [
-      `Level Up Casino offers a variety of bonuses and promotions designed to enhance the playing venture for both new and existing players. Below is an overview of the current bonus options:`,
+      `The venue delivers a variety of perks and advancements to enhance the playing venture for both new and existing participants. Below is an overview of the current bonus options:`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Welcome Bonus and Level Up Casino bonus codes",
+        heading: "Casino Mate Welcome Bonus Code",
         text: [
-          `New players at Level Up Casino are welcomed with an impressive bonus package that significantly enhances their starting balance. This comprehensive offer is spread across the first four deposits, providing up to €8,000 in bonus funds and 200 free spins. On the first deposit, players receive a 100% match bonus up to €2,000 along with 100 free spins, setting the stage for a rewarding experience. The second deposit brings a 50% match bonus up to €2,000 and an additional Level Up Casino 40 free spins, giving players a substantial boost to explore more games. For the third deposit, another 50% match bonus up to €2,000 is available, while the fourth deposit includes a generous 100% match bonus up to €2,000 plus 50 free spins. `,
+          `Pokie Mate Casino online delivers an impressive welcome package that spans across the first four deposits for new participants, making it one of the most generous offers in the industry. On the first deposit, participants receive a 100% match bonus of up to AU$200, effectively doubling their initial funds. The second deposit rewards participants with a 50% match bonus of up to AU$300, while the third deposit presents another 50% bonus up to AU$400. Finally, the fourth deposit brings an additional 50% match bonus up to AU$600. In total, new participants can enjoy up to AU$1,500 in bonus funds, significantly boosting their starting bankroll. `,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
       {
-        heading: "Level Up 8 Casino Workaday Reload Bonus",
+        heading: "Weekly Reload Bonus and Slot Mate Casino Free Coins",
         text: [
-          `Level Up Casino keeps the excitement going during the week with its Workaday Reload Bonus. Available from Monday to Thursday, this promotion offers players a 50% match bonus up to €100, accompanied by 20 free spins. To take advantage of this bonus, players need to make a qualifying deposit and use the specified bonus code. This Level Up Casino no deposit bonus codes 2024 incentive is perfect for keeping the momentum alive, giving players additional funds and free spins to explore the casino's extensive game library. The Workaday Reload Bonus and Level Up Casino promo code ensure that weekdays are as thrilling as the weekends at Level Up Casino.`,
+          `For participants looking to extend their gameplay and maximize their deposits, Casino Mate delivers a weekly reload bonus available every Monday. Known as the Monday Reload Bonus, this promotion provides a 40% match bonus of up to AU$200. It is an excellent incentive for regular participants to top up their accounts at the beginning of the week and enjoy more gaming opportunities. The Casino Mate no deposit bonus bonus is available to all registered participants who have made at least one previous deposit, making it an inclusive offer designed to keep the excitement alive week after week. `,
           // `p2`,
           // `p3`,
         ],
-        // categories: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Free Spins Wednesday and Casino Mate Bonus Codes",
+        text: [
+          `Every Wednesday, Casino Mate gives participants a reason to look forward to the midweek with its Free Spins promotion. Participants who deposit AU$20 or more on Wednesdays are rewarded with 20 free spins on a featured pokies game. The specific pokies game changes weekly, giving participants the chance to explore and enjoy diverse popular titles. This promotion is perfect for pokies enthusiasts who want to try new titles without committing extra funds. `,
+          // `p2`,
+          // `p3`,
+        ],
         // additionalText: `p1`,
       },
     ],
     rightColumnContent: [
       {
-        heading:
-          "Weekend Reload Bonus and Level Up Casino no deposit bonus codes",
+        heading: "Loyalty Program",
         text: [
-          `The Weekend Reload Bonus is designed to elevate the playing venture from Friday to Sunday, offering players a 50% match bonus up to €200 and 40 free spins. This Level Up Casino no deposit bonus promotion caters to those looking to unwind and enjoy their favorite games with a significant boost to their bankroll. By making a qualifying deposit and entering the appropriate bonus code, players can claim this rewarding offer.`,
+          `Casino Mate mobile Casino values its loyal participants and shows its appreciation through a robust tiered loyalty program. This program is structured into five levels: Bronze, Silver, Gold, Platinum, and Diamond. Participants can progress through these tiers by accumulating loyalty points, which are earned by wagering on the casino’s titles. Each tier unlocks exclusive benefits, such as increased cashout limits, personalized bonuses tailored to the participant’s preferences, and access to a dedicated account manager for the highest tiers. The Casino Mate VIP program ensures that participants feel rewarded for their continued engagement, offering incentives that enhance their overall playing venture. `,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
       {
-        heading:
-          "Loyalty Program: 'Boost to the Top' and Level Up Casino codes",
+        heading: "Rules and Regulations",
         text: [
-          `Regular players are rewarded generously through the "Boost to the Top" loyalty program at Level Up Casino 8. The program allows players to earn points as they play their favorite games, which can be exchanged for cash rewards once they accumulate over 100 points. In addition to the standard point-based rewards, the loyalty program includes special perks such as the "Dive into the Games" and "Anniversary" bonuses. These exclusive rewards provide extra incentives for loyal players, enhancing their playing venture. The Level Up Casino no deposit bonus Australia program is designed to ensure that frequent players feel valued and continue to enjoy additional benefits as they progress.`,
+          `All perks and advancements offered by Casino-Mate mobile are subject to specific rules and regulations to ensure fair play and transparency. These conditions typically include wager, which specify how many times the bonus amount must be wagered before any winnings can be withdrawn. Additionally, certain titles may contribute diversity towards fulfilling these requirements, and time limits often apply to bonus usage. Participants are strongly advised to review the rules and regulations on Casino Mate’s official website to fully understand the requirements and restrictions associated with each promotion.`,
           // `p2`,
           // `p3`,
         ],
@@ -214,6 +220,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "Level Up Casino Reviews FAQ",
+    title: "Casino Mate Mobile Review FAQ",
   },
 };

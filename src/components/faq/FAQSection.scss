@@ -14,9 +14,9 @@
     .faq-question {
       color: $text-color-third;
       font-family: $font-secondary;
-      background: #7b7b7b;
+      background: $color-background-third;
       font-size: 24px;
-      font-weight: 800;
+      font-weight: 700;
       text-transform: uppercase;
       padding: 8px 32px;
       border-radius: $border-radius;
@@ -39,7 +39,7 @@
     }
 
     .faq-answer {
-      color: $text-color-third;
+      color: $text-color-primary;
       font-family: $font-primary;
       font-size: 20px;
       font-weight: 500;

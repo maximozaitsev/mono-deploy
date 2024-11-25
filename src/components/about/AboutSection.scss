@@ -15,8 +15,8 @@
       gap: 40px;
     }
 
-    @media (max-width: 475px) {
-      padding: 40px 24px;
+    @media (max-width: 375px) {
+      padding: 40px 20px;
       gap: 40px;
     }
   }
@@ -47,9 +47,9 @@
       justify-content: center;
       align-items: center;
 
-      img {
-        margin-right: -35px;
-      }
+      // img {
+      //   margin-right: -35px;
+      // }
 
       @media (max-width: 1380px) {
         max-width: 650px;

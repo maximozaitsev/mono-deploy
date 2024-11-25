@@ -11,6 +11,15 @@ export default function GamesToPlay() {
         <TwoColumns
           leftColumnContent={[
             {
+              heading: content.gamesToPlay.leftColumnContent[0].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.gamesToPlay.leftColumnContent[0].text,
+                },
+              ],
+            },
+            {
               heading: content.gamesToPlay.leftColumnContent[1].heading,
               items: [
                 {
@@ -19,23 +28,14 @@ export default function GamesToPlay() {
                 },
               ],
             },
+          ]}
+          rightColumnContent={[
             {
               heading: content.gamesToPlay.leftColumnContent[2].heading,
               items: [
                 {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[2].text,
-                },
-              ],
-            },
-          ]}
-          rightColumnContent={[
-            {
-              heading: content.gamesToPlay.leftColumnContent[0].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[0].text,
                 },
               ],
             },

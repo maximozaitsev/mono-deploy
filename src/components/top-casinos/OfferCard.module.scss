@@ -11,7 +11,7 @@
   gap: 16px;
 
   outline: $border-width solid $color-border-primary;
-  border-radius: 30px;
+  border-radius: $border-radius;
   background: $color-background-third;
 
   img {
@@ -19,7 +19,7 @@
   }
 
   h3 {
-    color: #101010;
+    color: $text-color-third;
     text-align: center;
     font-family: $font-secondary;
     font-size: 20px;
@@ -34,7 +34,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: #ff611f;
+    color: $text-color-fourth;
 
     // background: linear-gradient($text-color-secondary-gradient);
     // background-clip: text;
@@ -43,7 +43,7 @@
   }
 
   p {
-    color: #101010;
+    color: $text-color-third;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
@@ -59,7 +59,7 @@
   button {
     margin-top: auto;
     width: 206px;
-    // margin-left: 5px;
+    margin-left: 5px;
   }
 
   @media (max-width: 768px) {

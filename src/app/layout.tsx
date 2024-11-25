@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "levelupcasino-online.com";
+const url = "casino-mate-online.com";
 const ogTitle =
-  "Level Up Casino Australia – Your Ultimate Online Gaming Destination";
-const ogSiteName = "Level Up Casino";
+  "Casino Mate Australia – Best Online Casino for Aussie Players 2024";
+const ogSiteName = "Casino Mate";
 const metaDescription =
-  "Level Up Casino Australia delivers an exceptional gaming experience with a vast selection of pokies, table games, and live casino options. Enjoy generous bonuses, secure transactions, and fast payouts. Join now and start your winning journey today!";
+  "Casino Mate is the ultimate online casino for Australian players, offering a wide variety of games, top-tier bonuses, and a secure platform. Sign up today to experience premium gaming and start winning with ease! Don’t miss out—play now and claim your rewards!";
 
 const locale = "en-AU";
 const language = "English";

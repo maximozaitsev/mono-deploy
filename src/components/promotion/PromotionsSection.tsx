@@ -28,6 +28,15 @@ export default function PromotionsSection() {
                 },
               ],
             },
+            {
+              heading: content.promotions.leftColumnContent[2].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[2].text,
+                },
+              ],
+            },
           ]}
           rightColumnContent={[
             {

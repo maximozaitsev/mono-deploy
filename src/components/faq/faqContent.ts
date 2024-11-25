@@ -1,30 +1,27 @@
 export const faqs = [
   {
-    question: "What should I do if I forget my password? ",
+    question: "Are there any fees for deposits or cashouts?",
     answer:
-      "Use the 'Forgot Password' link on the login page to reset your password via email instructions.",
+      "Casino Mate does not charge fees for deposits or cashouts; however, your payment provider may impose its own fees.",
   },
   {
-    question: "Can I change my registered Level Up Casino log in address? ",
-    answer: "No, once registered, the email address cannot be changed.",
-  },
-  {
-    question: "Is it possible to have multiple accounts? ",
-    answer: "No, only one account per user/IP/computer/household is allowed.",
-  },
-  {
-    question: "How do I add another currency to my account? ",
+    question: "What is the minimum deposit amount at Casino Mate?",
     answer:
-      "Log in, go to your profile, select 'Add Currency', and choose from the dropdown menu.",
+      "The minimum deposit amount is AU$10, allowing participants to start gaming with a modest investment.",
   },
   {
-    question: "How do I switch between currencies?",
+    question: "How long does it take to process cashouts?",
     answer:
-      "After adding a new currency, select it in your profile to make it active.",
+      "Cashout processing times vary by method: e-wallets are typically instant, while bank transfers and credit/debit cards may take 2-5 business days.",
   },
   {
-    question: "Are there fees for deposits or withdrawals?",
+    question: "Can I complete Casino Mate mobile login on my mobile device?",
     answer:
-      "Level Up Casino does not charge fees for deposits or withdrawals; however, payment providers may apply their own fees.",
+      "Yes, Casino Mate's website is optimized for mobile use, allowing access to games via web browsers on iOS, Android, and Windows devices.",
+  },
+  {
+    question: "Is there a loyalty program at Casino Mate?",
+    answer:
+      "Yes, Casino Mate delivers a tiered loyalty program where participants earn points through wagering, unlocking benefits like higher cashout limits and personalized bonuses.",
   },
 ];

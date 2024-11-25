@@ -71,7 +71,7 @@
         background: none;
 
         td {
-          background: #7b7b7b;
+          background: $color-background-third;
           padding: 10px;
           border-top: $border-width solid $border-color;
           border-bottom: $border-width solid $border-color;
@@ -128,7 +128,7 @@
         align-items: center;
         margin-bottom: 8px;
         padding: 8px;
-        border-radius: 100px;
+        border-radius: 8px 8px $border-radius $border-radius;
 
         img {
           width: 110px;
@@ -154,12 +154,12 @@
       }
 
       .payment-method-details {
-        background: #7b7b7b;
+        background: $color-background-third;
         display: flex;
         flex-direction: column;
         padding: 8px 16px;
         border: $border-width solid $border-color;
-        border-radius: 30px;
+        border-radius: $border-radius $border-radius 8px 8px;
 
         p {
           color: $text-color-third;
@@ -169,7 +169,7 @@
           line-height: normal;
           font-weight: 500;
           padding: 8px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
           &:last-child {
             border-bottom: none;
