@@ -1,124 +1,160 @@
 export const content = {
-  projectName: "Casino Mate",
+  projectName: "Sportium Casino",
   advantages: {
     // title: "",
-    subTitle: "Mate Сasino Advantages",
+    subTitle: "Ventajas y desventajas: Sportium Casino Promociones",
     text: [
-      `Mate Casino has become a popular choice for online gaming enthusiasts, thanks to its wide scope of features and services. Below is a concise list of the casino's advantages and disadvantages.`,
+      `En esta plataforma de juego bono Casino Sportium condiciones, usted puede convertirse en un miembro del programa VIP, disfrutar de numerosos torneos y apuestas deportivas. Pero para una evaluación objetiva del casino, es necesario tener en cuenta no sólo las ventajas, sino también las desventajas.`,
     ],
-    advantagesTitle: "Advantages:",
-    disadvantagesTitle: "Disadvantages:",
+    advantagesTitle: "Ventajas",
+    disadvantagesTitle: "Desventajas",
     advantages: [
-      "Extensive game library",
-      "Generous perks and advancements",
-      "Mobile-friendly venue",
-      "Secure and encrypted transactions",
-      "Reliable client assistance",
+      "una gran selección de tragaperras",
+      "casino en vivo",
+      "apuestas deportivas;",
+      "bono de bienvenida;",
+      "aplicaciones móviles;",
+      "sistemas de pago fiables;",
+      "depósitos mínimos bajos.",
     ],
     disadvantages: [
-      "Restricted access in some regions",
-      "Limited payment methods for certain countries",
+      "Restricciones geográficas;",
+      "diseño anticuado de la web.",
     ],
   },
   about: {
-    title: "Casino Mate Online",
+    title: "Sportium Casino análisis",
     intro: [
-      "100% match bonus of up to AU$200",
-      "20 free spins",
-      "AU$1,500 in bonus funds",
+      "casino en vivo",
+      "bono de bienvenida del 200",
+      "apuestas deportivas",
     ],
     description: [
-      `Casino Mate Australia is a popular online casino that has carved out a reputation for providing exceptional playing ventures to participants worldwide. Catering to both seasoned gamblers and newcomers, this venue combines a vast choice of titles, generous bonuses, and robust security features to ensure a safe and enjoyable environment. With its user-friendly interface, responsive client assistance, and compatibility across multiple devices, Casino Mate review stands out as a reliable and entertaining choice for those seeking top-tier online gaming.`,
-      // `p2`,
-      // `p3`,
+      `Los jugadores españoles son bastante exigentes a la hora de elegir servicios de casino online. Por ello, plataformas como Sportium Casino son muy populares y gozan de gran confianza. Esto se debe al hecho de que se trata de un servicio con licencia, en el que hay disponible un gran número de juegos, incluido un casino en vivo.`,
+      `Una de las características únicas de Sportium Casino es la combinación de un casino tradicional y una casa de apuestas. Esto significa que aquí puede hacer girar las tragaperras, jugar con crupieres en vivo o apostar en varios deportes.`,
+      `Además, activando el código promocional Casino Sportium y participando en promociones especiales, siempre podrás recibir beneficios adicionales y generosas recompensas. Si quieres saber más sobre este casino, crear una cuenta, hacer un depósito y aprovechar los bonos, entonces lee esta reseña.`,
     ],
     signIn: {
-      title: "About Pokie Mate Casino Login",
+      title: "Iniciar sesión: Bonos De Casino Sportium Como Funcionan",
       text: [
-        `Casino Mate is a leading online gaming venue known for its impressive scope of titles, appealing advancements, and commitment to user satisfaction. Designed with participants in mind, the casino delivers a seamless playing venture across various devices, including desktops, smartphones, and tablets. The venue boasts a library filled with top-quality titles from renowned software providers, covering everything from classic pokies and table titles to live dealer options. With a strong focus on security and responsible gaming, Casino Mate login Australia ensures that all participants enjoy a safe and fair gaming environment. Its user-friendly design and vibrant theme create an inviting atmosphere that appeals to both new and experienced participants.`,
-        `Casino Mate login is a straightforward process designed to provide hassle-free entry into the gaming world. On the casino’s homepage, the login button is prominently displayed, ensuring quick access for returning users. Participants only need to enter their registered email address and password to sign in securely. The venue utilizes advanced Casino-Mate login encryption technology to protect user credentials, giving participants peace of mind while logging in. For added convenience, the login page also delivers options to recover forgotten passwords or seek assistance from client assistance if needed. With its efficient and secure login system, Casino-Mate ensures participants can swiftly transition to enjoying their favorite titles.`,
+        `Obviamente, la posibilidad de activar el codigo promocional de Casino Sportium no es la unica razon para registrarse. Los usuarios con una cuenta podrán disfrutar de increíbles juegos, apostar en competiciones deportivas. Muchos nuevos jugadores españoles están interesados en una pregunta importante: ¿cómo retirar ganancias pendientes bono Casino Sportium? Para ello, tendrá que crear una cuenta y también pasar la verificación. Si ya has conseguido crear una cuenta en Casino Sportium, accede a ella y rellena la página con tus datos personales. Aquí también tendrá que subir una foto o una copia escaneada de la lista de documentos especificada. Los especialistas en seguridad del Sportium bono Casino comprobarán sus datos en un plazo de 1-2 días laborables, tras lo cual le enviarán una notificación de verificación satisfactoria.`,
+        // `p2`,
         // `p3`,
       ],
       // list: ["li1", "li2", "li3"],
       // list2: ["li1", "li2"],
     },
-    // verification: {
-    //   title: "VerificationTitle",
-    //   text: [`VerificationText1`, `VerificationText2`, `VerificationText3`],
-    // },
-    depositMethods: {
-      title: "Casino Mate Australia Real Money Deposit Methods",
+    verification: {
+      title:
+        "Proceso de Registro: Como Pasar Dinero De Casino A Apuestas Sportium",
       text: [
-        `Casino Mate delivers a variety of secure deposit options to accommodate participants' preferences. Accepted methods include credit and debit cards such as Visa and MasterCard, which provide instant fund transfers. For those preferring e-wallets, options like ecoPayz and Instadebit are available, offering quick and secure transactions. Additionally, prepaid cards and vouchers such as Neosurf and CASHlib are supported, allowing for immediate deposits without the need to share bank details. The minimum deposit amount is typically AU$10, enabling Casino Mate Australia players to start gaming with a modest investment. It's important to note that while Casino Mate does not charge fees for deposits, some payment providers may impose their own charges.`,
-        // `p2`,
+        `Si aún no ha tenido la oportunidad de familiarizarse con bono Casino Sportium, entonces ahora es el momento perfecto para arreglarlo. Usted puede obtener una experiencia de juego inolvidable inmediatamente después de crear una cuenta. El proceso de registro es bastante sencillo y sólo lleva unos minutos:`,
+        `Con la ayuda de los códigos promocionales, puedes conseguir Casino Sportium 10 euros gratis u otras recompensas. Después de rellenar el formulario, abra su correo electrónico. Un mensaje especial del casino será enviado a la dirección que especificó durante el registro. Dentro del correo electrónico, habrá un enlace que deberás seguir para completar la activación de la cuenta.`,
+        `Ahora puedes recibir fácilmente ganancias pendientes bono Casino Sportium y disfrutar de todas las características y beneficios de una cuenta en este servicio.`,
       ],
-      // list: ["li1", "li2", "li3"],
-      // additionalText: `p1`,
+      list: [
+        "Vaya al sitio web oficial y haga clic en el botón para crear una nueva cuenta;",
+        "Rellene el formulario en línea que se abrirá en una nueva página;",
+        "Indique su nacionalidad, país de residencia, sexo y fecha de nacimiento;",
+        "Indique su dirección de residencia, correo electrónico y número de teléfono;",
+        "Cree un nombre de usuario y una contraseña segura;",
+        "En esta etapa, puede introducir el código promocional Casino Sportium y activar la recompensa;",
+        "Acepta los términos y condiciones del casino;",
+        "Completar el procedimiento de registro.",
+      ],
+    },
+    depositMethods: {
+      title: "Métodos de depósito: Bono 5 Euros Casino Sportium",
+      text: [
+        `Para jugar y realizar apuestas en este servicio, debes registrarte y recargar tu saldo de juego. Para ello, los usuarios españoles pueden utilizar varios sistemas de pago fiables y seguros:`,
+        `El depósito mínimo es de sólo 10 euros. Los pagos se procesan al instante, excepto las transferencias bancarias. En este caso, deberá esperar entre 1 y 2 días laborables.`,
+      ],
+      list: [
+        "Visa;",
+        "Mastercard;",
+        "Bizum;",
+        "PayPal;",
+        "MuchBetter;",
+        "Skrill;",
+        "Neteller;",
+        "Rapid;",
+        "Paysafecard;",
+        "Transferencia bancaria.",
+      ],
     },
     withdrawalMethods: {
-      title: "Casino Mate Casino Cashout Methods",
+      title: "Métodos de retirada: Bono Bienvenida Sportium Casino",
       text: [
-        `When it comes to withdrawing winnings, Casino Mate provides several reliable options. Participants can opt for bank transfers, which, while secure, may take 2-5 business days to process. E-wallets like ecoPayz and Instadebit are also available for cashouts, typically offering faster processing times compared to traditional bank transfers. The minimum cashout amount is generally AU$50, with a maximum limit of AU$10,000 per week. It's advisable to check with the chosen payment provider for any potential fees associated with cashouts, as Casino Mate does not impose cashout fees unless the deposited amount has not been wagered at least once, in which case a 10% fee may apply.`,
-        // `p2`,
+        `Cuando recibas tus ganancias y cumplas los requisitos de apuesta de los bonos activados, podrás retirar tu dinero. Para ello puedes utilizar varios sistemas de pago:`,
+        `No tendrá que pagar comisión por retirada de fondos. El importe mínimo es de sólo 10 euros. Puedes solicitar una retirada de hasta 5.000 euros por transacción, y el límite diario es de 15.000 euros`,
       ],
-      list: [],
+      list: [
+        "Visa;",
+        "Mastercard;",
+        "PayPal;",
+        "MuchBetter;",
+        "Skrill;",
+        "Neteller;",
+        "Transferencia bancaria.",
+      ],
     },
   },
   licenses: {
-    title: "Licenses",
+    title: "Licencias: Retirar Dinero Sportium Casino",
     text: [
-      `Casino Mate AU operates under a license from the Government of Curaçao, a reputable regulatory authority in the online gambling industry. This license ensures that the casino adheres to strict standards of fairness, security, and responsible gaming practices.`,
+      `En España, las actividades de los servicios de juegos de azar están estrictamente reguladas. Por lo tanto, un requisito obligatorio para cualquier sitio es una licencia. Esta plataforma de juego opera sobre la base de una licencia válida emitida por la Comisión Española del Juego.`,
       // `p2`,
       // `p3`,
     ],
-    security: "Casino Mate Sister Sites Security",
+    security: "Seguridad: Sportium Casino España",
     securityText: [
-      `Security is a top priority at Casino Mate. The venue employs 128-bit SSL encryption to safeguard all financial transactions and personal data, ensuring confidentiality and protection against unauthorized access. Additionally, Casino Mate is eCOGRA certified, which means its games are regularly audited for fairness and integrity.`,
+      `El sitio ofrece el más alto nivel de protección y garantiza la confidencialidad de los datos. Utiliza activamente normas y principios KYC, un sistema de encriptación SSL multinivel y otras soluciones de seguridad muy eficaces.`,
       // `p2`,
     ],
-    software: "Casino Mate Software Technologies",
+    software: "Tecnologías de software: Juego Casino Sportium Ganar Dinero",
     softwareText: [
-      `Casino Mate collaborates with leading software providers to deliver a diverse and high-quality playing venture. Notable partners include Microgaming, Play'n GO, Quickspin, and Betsoft Gaming. These collaborations ensure a vast choice of titles with engaging graphics and smooth gameplay. The venue utilizes HTML5 technology, enabling seamless access across various devices without the need for additional downloads.`,
+      `La plataforma de juego de España coopera con los principales proveedores de software de juego. En el sitio encontrarás juegos de proveedores como Hacksaw, Playtech, Pragmatic Play, Playson, MGA, Relax Gaming y muchos otros.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Casino Mate App",
+    title: "Sportium App Casino",
     text: [
-      `While there is no dedicated Casino Mate app application, its website is fully optimized for mobile use. Participants can access the casino's full scope of games directly through Casino Mate mobile browsers on iOS, Android, and Windows devices, ensuring a consistent and enjoyable playing venture across all venues.`,
-      // `p2`,
+      `Si prefiere jugar a través de dispositivos móviles, tiene dos opciones: instalar la Sportium Casino app o jugar a través de la versión móvil del sitio.`,
+      `Este servicio ofrece dos tipos de aplicaciones. El primer tipo es un asistente para apuestas deportivas. Con este programa, puede controlar su bankroll y realizar apuestas a través de puntos de venta terrestres. La segunda opción es una app de apuestas deportivas para hacer pronósticos en línea.`,
+      `Lamentablemente, por el momento no hay ninguna app de juegos en la que puedas jugar a tragaperras o juegos de casino. Pero puedes utilizar la versión móvil de la página web de Sportium Casino movil.`,
     ],
-    languages: "Languages",
+    languages: "Idiomas: Sportium Casino Experiencia",
     languagesText: [
-      `Casino Mate com venue is primarily available in English, catering to a broad audience of English-speaking participants. This focus ensures clear communication and assistance for its user base.`,
+      `Dado que el sitio está dirigido únicamente a jugadores españoles, es obvio que el idioma principal de la interfaz aquí es el español. No hay ninguna opción para cambiar el idioma de la interfaz en el sitio y en las aplicaciones.`,
       // `p2`,
       // `p3`,
     ],
-    currencies: "Pokie Mate Casino Aussie Currencies",
+    currencies: "Monedas: Sportium Casino Tiradas Gratis",
     currenciesText: [
-      `Casino Mate supports multiple currencies to accommodate participants from various regions. Accepted currencies include Australian Dollars (AUD), Canadian Dollars (CAD), Euros (EUR), and New Zealand Dollars (NZD). This variety allows participants to transact in their preferred currency, enhancing convenience and reducing conversion fees.`,
+      `Para jugar y hacer apuestas, necesitas depositar dinero en tu cuenta de juego. Aquí se utiliza el euro como moneda de juego. Puedes utilizar la conversión o el cambio de divisas online para comprar euros y depositar este dinero en tu saldo.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Casino Mate Download Games and Play Online",
+    title: "Juegos disponibles para jugar: Bono Casino Sportium Forocoches",
     text: [
-      `Casino Mate delivers a diverse choice of titles to cater to various participant preferences. Below is an overview of the gaming options available:`,
+      `Si quieres saber aún más sobre bono de Casino Sportium, entonces tienes que familiarizarte con la gama de entretenimiento de juego. Aquí tienes una impresionante colección de juegos que te brindarán una oportunidad increíble de pasar un buen rato y posibilidades reales de obtener ganancias justas.`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Online Pokies",
-        text: `Mate boasts an impressive array of online Casino Mate pokies designed to cater to all types of participants. From timeless classic three-reel pokies that evoke the charm of traditional pokies machines to advanced video pokies with captivating themes, participants are spoilt for choice. Each pokie is packed with exciting features like cascading reels, multipliers, wild symbols, and Casino Mate hidden free spins. The venue partners with leading software providers like Microgaming and Play’n GO to ensure participants experience top-tier graphics, innovative gameplay mechanics, and fair outcomes.`,
+        heading: "Sportium Casino Slots",
+        text: `Este bono Sportium Casino cuenta con una enorme variedad de tragaperras. Gracias a la cómoda función de búsqueda y a los filtros incorporados, podrá encontrar fácilmente juegos con las funciones necesarias o de su proveedor favorito. El casino español ofrece tragaperras con jackpots, Megaways, compras de bonos y otras características. Incluso con una apuesta mínima, tiene posibilidades reales de llevarse grandes ganancias gracias a las altas probabilidades y a los botes progresivos.`,
         // categories: ["li1", "li2", "li3"],
         // additionalText: `p1`,
       },
       {
-        heading: "Table Games",
+        heading: "Blackjack Sportium Casino y Juegos de Mesa",
         text: [
-          `Fans of classic casino titles will find plenty to love in the extensive table titles section. This collection includes all-time favorites available in various versions to keep the gameplay fresh and exciting. Participants can explore European, American, and French roulette, or dive into the fast-paced action of blackjack variants like Atlantic City or Vegas Strip. Baccarat enthusiasts can try their luck with standard or no-commission versions, while poker lovers have access to thrilling options like Texas Hold’em and Caribbean Stud. `,
+          `Después de registrarse y activar el codigo promocional Sportium Casino, muchos jugadores quieren probar sus fuerzas y habilidades en los populares juegos de mesa. Puedes elegir entre entretenimientos tan populares como el blackjack, la ruleta, el video poker, el baccarat y mucho más. Aquí no debe confiar sólo en la suerte. El resultado de cada juego depende en gran medida de sus habilidades y su deseo de asumir riesgos.`,
           // `p2`,
           // `p3`,
         ],
@@ -126,10 +162,10 @@ export const content = {
         // additionalText: `p1`,
       },
       {
-        heading: "Live Dealer Games",
+        heading: "Sportium Casino Blackjack y crupieres en vivo",
         text: [
-          `The venue elevates the online playing venture with its state-of-the-art live dealer titles. Offering a choice of live options, these titles are hosted by professional dealers and streamed in high-definition video for a truly immersive experience. Participants can interact with dealers and other participants, creating a social and dynamic atmosphere that closely mimics a land-based casino. `,
-          // `p2`,
+          `Los clientes nuevos y habituales de Sportium Casino online están encantados de elegir la sección de casino en vivo. Después de todo, este es un formato único de entretenimiento de juego. Aquí interactuará con crupieres reales y otros jugadores en una mesa virtual común. Esta es una gran oportunidad para acercarse lo más posible a la atmósfera de un casino presencial.`,
+          `Si activas un codigo promocional especial de Casino Sportium, puedes obtener una recompensa en efectivo adicional que se puede utilizar en juegos con crupieres en vivo. No es de extrañar que live Casino Sportium presentadora sean tan populares entre los jugadores españoles.`,
           // `p3`,
         ],
         // categories: ["li1", "li2", "li3"],
@@ -138,9 +174,55 @@ export const content = {
     ],
     gamesRightColumn: [
       {
-        heading: "Video Poker",
+        heading: "Sportium Casino En Línea Poker",
         text: [
-          `For participants who enjoy a mix of strategy and luck, venue’s video poker offerings are an excellent choice. This section features iconic titles like Jacks or Better, Deuces Wild, and Joker Poker, each offering unique gameplay twists and payout structures. Video poker requires more than just chance—participants can use strategy and decision-making to maximize their potential winnings. `,
+          `Otra característica única de liberar bono Casino Sportium es la oportunidad de jugar al póquer y participar en varios torneos de póquer.`,
+          `Tenga en cuenta que para acceder a los juegos y torneos de póquer, puede instalar una aplicación móvil o un software especial para su ordenador. Una opción alternativa es jugar a través de un navegador.`,
+          // `p3`,
+        ],
+      },
+      {
+        heading: "Sportium Codigo Casino: Apuestas deportivas",
+        text: [
+          `Si te interesan activamente los deportes, entonces en el servicio en live Casino Sportium puedes conseguir una experiencia inolvidable y emociones vivas con la ayuda de las apuestas. Para ello, debe abrir la sección correspondiente en el sitio. Verá una lista de las líneas actuales, así como las cuotas más altas.`,
+          `Para los aficionados a las apuestas deportivas, se abren regularmente nuevas líneas en deportes como fútbol, baloncesto, tenis, boxeo, hockey y muchos más.`,
+          // `p3`,
+        ],
+      },
+    ],
+  },
+  support: {
+    title: "Ayuda: Ganancias Pendientes Bono Casino Sportium Como Retirar",
+    text: [
+      `Tienes varios canales para contactar con el servicio de soporte:`,
+      `Lamentablemente, aquí no hay chat en línea para la atención al cliente.`,
+    ],
+    list: [
+      "teléfono;",
+      "correo electrónico;",
+      "sección de preguntas frecuentes.",
+    ],
+  },
+  promotions: {
+    title: "Bonos y promociones: Sportium Casino Bono",
+    text: [
+      `Incluso en la fase de creación de una cuenta, puede introducir el código registro Sportium Casino  único para activar una recompensa adicional. Este servicio cuenta con un gran número de promociones y ofertas especiales. Una de las ventajas únicas del casino es la oportunidad de recibir un bono sin depósito.`,
+      // `p2`,
+    ],
+    leftColumnContent: [
+      {
+        heading: "Bono de Registro: Codigos Promocionales Casino Sportium",
+        text: [
+          `El primer bono que le espera es el Sportium Casino bono sin depósito. Las condiciones para participar en la promoción son de lo más sencillas. Tienes que registrarte y crear una cuenta. Después, tendrás 30 días para beneficiarte del bono especial. Se trata de una pequeña recompensa, que es de 10 euros.`,
+          // `p2`,
+          // `p3`,
+        ],
+        // additionalText: `p1`,
+      },
+      {
+        heading: "Bono de Bienvenida: Sportium Casino Free Spins",
+        text: [
+          `Los nuevos miembros como retirar bono Casino Sportium también pueden recibir una recompensa de bienvenida por su primer depósito. Según las condiciones de la promoción, es necesario realizar un depósito inicial para recibir un premio del 200%. La recompensa máxima es de 200 euros. Sólo tiene que recargar su saldo de juego con 10 euros para participar en la promoción.`,
           // `p2`,
           // `p3`,
         ],
@@ -148,52 +230,10 @@ export const content = {
         // additionalText: `p1`,
       },
       {
-        heading: "Specialty Titles",
+        heading: "Bonos de los proveedores: Sportium Casino Descargar",
         text: [
-          `Mate Casino specialty titles section is perfect for participants looking for a fun and laid-back playing venture. This category includes keno, scratch cards, and other instant-win titles that are easy to play and offer the potential for quick rewards. Keno provides a lottery-style format, where participants can choose numbers and wait for the draw to see if they win. Scratch cards, on the other hand, deliver instant gratification with simple gameplay mechanics—just scratch and reveal. `,
-          // `p2`,
-          // `p3`,
-        ],
-      },
-    ],
-  },
-  support: {
-    title: "Pokie Mate Casino Online Support",
-    text: [
-      `Casino Mate delivers comprehensive client assistance services available 24/7. Participants can reach the assistance team via live chat for immediate assistance or through email for less urgent inquiries. The assistance staff is knowledgeable and responsive, ensuring that participant concerns are addressed promptly and effectively.`,
-      // `p2`,
-    ],
-    // list: ["li1", "li2", "li3"],
-  },
-  promotions: {
-    title: "Mate Casino Perks and Upgrades",
-    text: [
-      `The venue delivers a variety of perks and advancements to enhance the playing venture for both new and existing participants. Below is an overview of the current bonus options:`,
-      // `p2`,
-    ],
-    leftColumnContent: [
-      {
-        heading: "Casino Mate Welcome Bonus Code",
-        text: [
-          `Pokie Mate Casino online delivers an impressive welcome package that spans across the first four deposits for new participants, making it one of the most generous offers in the industry. On the first deposit, participants receive a 100% match bonus of up to AU$200, effectively doubling their initial funds. The second deposit rewards participants with a 50% match bonus of up to AU$300, while the third deposit presents another 50% bonus up to AU$400. Finally, the fourth deposit brings an additional 50% match bonus up to AU$600. In total, new participants can enjoy up to AU$1,500 in bonus funds, significantly boosting their starting bankroll. `,
-          // `p2`,
-          // `p3`,
-        ],
-        // additionalText: `p1`,
-      },
-      {
-        heading: "Weekly Reload Bonus and Slot Mate Casino Free Coins",
-        text: [
-          `For participants looking to extend their gameplay and maximize their deposits, Casino Mate delivers a weekly reload bonus available every Monday. Known as the Monday Reload Bonus, this promotion provides a 40% match bonus of up to AU$200. It is an excellent incentive for regular participants to top up their accounts at the beginning of the week and enjoy more gaming opportunities. The Casino Mate no deposit bonus bonus is available to all registered participants who have made at least one previous deposit, making it an inclusive offer designed to keep the excitement alive week after week. `,
-          // `p2`,
-          // `p3`,
-        ],
-      },
-      {
-        heading: "Free Spins Wednesday and Casino Mate Bonus Codes",
-        text: [
-          `Every Wednesday, Casino Mate gives participants a reason to look forward to the midweek with its Free Spins promotion. Participants who deposit AU$20 or more on Wednesdays are rewarded with 20 free spins on a featured pokies game. The specific pokies game changes weekly, giving participants the chance to explore and enjoy diverse popular titles. This promotion is perfect for pokies enthusiasts who want to try new titles without committing extra funds. `,
-          // `p2`,
+          `El sitio presenta regularmente nuevas promociones de temporada y ofertas especiales de los proveedores. Esta es tu gran oportunidad para participar en los sorteos, cumplir unos sencillos requisitos y conseguir una merecida recompensa.`,
+          `Cada proveedor ofrece ciertas condiciones y premios especiales. Por ejemplo, puedes conseguir tiradas gratis, dinero para jugar, dinero en metálico, regalos personales y mucho más. Lee las condiciones y recoge tus lucrativas recompensas.`,
           // `p3`,
         ],
         // additionalText: `p1`,
@@ -201,25 +241,25 @@ export const content = {
     ],
     rightColumnContent: [
       {
-        heading: "Loyalty Program",
+        heading: "Torneos",
         text: [
-          `Casino Mate mobile Casino values its loyal participants and shows its appreciation through a robust tiered loyalty program. This program is structured into five levels: Bronze, Silver, Gold, Platinum, and Diamond. Participants can progress through these tiers by accumulating loyalty points, which are earned by wagering on the casino’s titles. Each tier unlocks exclusive benefits, such as increased cashout limits, personalized bonuses tailored to the participant’s preferences, and access to a dedicated account manager for the highest tiers. The Casino Mate VIP program ensures that participants feel rewarded for their continued engagement, offering incentives that enhance their overall playing venture. `,
+          `Cada torneo es una gran oportunidad para llevarte tu parte del bote de premios o la recompensa principal para el ganador. Cuanto más alto estés en la tabla del torneo, mayores serán tus ganancias. Puedes luchar por tiradas gratis, dinero de bonificación y dinero en metálico.`,
           // `p2`,
           // `p3`,
         ],
         // additionalText: `p1`,
       },
       {
-        heading: "Rules and Regulations",
+        heading: "Club VIP",
         text: [
-          `All perks and advancements offered by Casino-Mate mobile are subject to specific rules and regulations to ensure fair play and transparency. These conditions typically include wager, which specify how many times the bonus amount must be wagered before any winnings can be withdrawn. Additionally, certain titles may contribute diversity towards fulfilling these requirements, and time limits often apply to bonus usage. Participants are strongly advised to review the rules and regulations on Casino Mate’s official website to fully understand the requirements and restrictions associated with each promotion.`,
-          // `p2`,
+          `Puedes hacerte miembro del Club VIP y recibir regularmente recompensas especiales. Según los términos de la promoción, necesitas crear una cuenta, hacer un depósito y conseguir el primer nivel inicial. Tu tarea es jugar y aumentar tu nivel. Para ello, tienes que completar misiones semanales.`,
+          `Gracias a la participación en el VIP del club Casino Sportium, podrás ganar hasta 4800 euros cada semana. Cuanto más alto sea el nivel que alcances, más regalos, recompensas y oportunidades adicionales recibirás.`,
           // `p3`,
         ],
       },
     ],
   },
   faq: {
-    title: "Casino Mate Mobile Review FAQ",
+    title: "PREGUNTAS FRECUENTES",
   },
 };

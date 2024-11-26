@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "casino-mate-online.com";
+const url = "sportium-casino-online.com";
 const ogTitle =
-  "Casino Mate Australia – Best Online Casino for Aussie Players 2024";
-const ogSiteName = "Casino Mate";
+  "Sportium Casino España: Revisión de la plataforma de juego popular";
+const ogSiteName = "Sportium Casino";
 const metaDescription =
-  "Casino Mate is the ultimate online casino for Australian players, offering a wide variety of games, top-tier bonuses, and a secure platform. Sign up today to experience premium gaming and start winning with ease! Don’t miss out—play now and claim your rewards!";
+  "Sportium Casino España: información útil y guías de registro paso a paso. Todo lo que necesitas saber para principiantes y jugadores experimentados. Bonos actuales, juegos de casino y ventajas del club VIP.";
 
-const locale = "en-AU";
-const language = "English";
+const locale = "es-ES";
+const language = "Spanish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

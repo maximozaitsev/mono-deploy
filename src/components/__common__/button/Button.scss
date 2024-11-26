@@ -11,15 +11,16 @@
   text-transform: uppercase;
 
   &.primary {
-    outline: 4px solid;
-    outline-offset: -4px;
+    // outline: 4px solid;
+    // outline-offset: -4px;
     padding: 4px 48px;
-    outline-color: #f9f8f83b;
+    // outline-color: #f9f8f83b;
     background: $color-button-large;
-    color: $text-color-primary;
+    color: #445811;
     font-size: 28px;
-    border: none;
-    // border-radius: 20px;
+    border-bottom: 5px solid rgba(95, 125, 20, 0.2);
+    border-width: 0 0 5px 0;
+    border-radius: 10px;
     min-width: 280px;
     height: 87px;
 
@@ -46,15 +47,15 @@
   }
 
   &.secondary {
-    outline: 3px solid;
-    outline-offset: -3px;
+    // outline: 3px solid;
+    // outline-offset: -3px;
     padding: 2px 18px;
-    outline-color: #2e2e2e3b;
+    // outline-color: #2e2e2e3b;
     background: $color-button-small;
-    color: #230900;
+    color: #fff;
     font-size: 20px;
     border: none;
-    // border-radius: 15px;
+    border-radius: 10px;
     height: 52px;
 
     @media (max-width: 768px) {
