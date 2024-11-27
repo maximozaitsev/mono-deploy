@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "sportium-casino-online.com";
+const url = "drake-casino-us.com";
 const ogTitle =
-  "Sportium Casino España: Revisión de la plataforma de juego popular";
-const ogSiteName = "Sportium Casino";
+  "Drake Casino USA: A Detailed Guide to the Popular Gambling Platform";
+const ogSiteName = "Drake Casino";
 const metaDescription =
-  "Sportium Casino España: información útil y guías de registro paso a paso. Todo lo que necesitas saber para principiantes y jugadores experimentados. Bonos actuales, juegos de casino y ventajas del club VIP.";
+  "Drake Casino USA: How to register and get a welcome bonus. A detailed review of the casino and unique features of the platform. Up-to-date information for new customers";
 
-const locale = "es-ES";
-const language = "Spanish";
+const locale = "en-US";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

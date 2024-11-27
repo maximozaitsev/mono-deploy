@@ -24,25 +24,14 @@ export default function GamesToPlay() {
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[1].text,
-                },
-              ],
-            },
-            {
-              heading: content.gamesToPlay.gamesRightColumn[0].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[0].text[0],
+                  content: content.gamesToPlay.leftColumnContent[1].text[0],
                 },
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[0].text[1],
+                  content: content.gamesToPlay.leftColumnContent[1].text[1],
                 },
               ],
             },
-          ]}
-          rightColumnContent={[
             {
               heading: content.gamesToPlay.leftColumnContent[2].heading,
               items: [
@@ -53,6 +42,21 @@ export default function GamesToPlay() {
                 {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[2].text[1],
+                },
+              ],
+            },
+          ]}
+          rightColumnContent={[
+            {
+              heading: content.gamesToPlay.gamesRightColumn[0].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[0].text[0],
+                },
+                {
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[0].text[1],
                 },
               ],
             },

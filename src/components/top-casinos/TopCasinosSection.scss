@@ -9,6 +9,14 @@
 
   button {
     align-self: center;
+
+    &.primary {
+      width: 353px;
+
+      @media (max-width: 768px) {
+        max-width: 266px;
+      }
+    }
   }
 
   @media (max-width: 768px) {

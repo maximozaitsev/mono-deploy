@@ -5,7 +5,7 @@
 .offerCard {
   display: flex;
   width: 260px;
-  height: 353px;
+  // height: 357px;
   padding: 32px 24px;
   flex-direction: column;
   align-items: center;
@@ -59,8 +59,8 @@
 
   button {
     margin-top: auto;
-    width: 217px;
-    margin-left: 5px;
+    width: 200px;
+    // margin-left: 5px;
   }
 
   @media (max-width: 768px) {

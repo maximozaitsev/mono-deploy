@@ -1,19 +1,27 @@
 // colors
-$color-background: #fff;
-$color-background-secondary: #a8000b;
-$color-background-third: #cbcbcb;
-$color-background-fourth: #a8000b;
-$color-background-header: #d61427;
-$color-background-footer: #a8000b;
-$color-background-providers-blocks: #cbcbcb;
-$color-button-large: #b6ff00;
-$color-button-small: #ff8000;
+$color-background: #080001;
+$color-background-secondary: #261316;
+$color-background-third: #261316;
+$color-background-fourth: #b2001e;
+$color-background-header: #1a0d0f;
+$color-background-footer: #1a0d0f;
+$color-background-providers-blocks: #261316;
+$color-button-large: linear-gradient(
+  51deg,
+  #e59900 55%,
+  rgba(255, 213, 0, 0.9) 45%
+);
+$color-button-small: linear-gradient(
+  56deg,
+  rgba(229, 153, 0, 0.2) 58%,
+  rgba(255, 213, 0, 0.4) 42%
+);
 $color-border-primary: #484646;
 
 // text color
 $text-color-primary: #fff;
-$text-color-primary-gradient-hover: #b6ff00;
-$text-color-secondary: #00041a;
+$text-color-primary-gradient-hover: #fa0;
+$text-color-secondary: #b2001e;
 // $text-color-secondary-gradient: (90deg, #932093 0%, #730fee 100%);
-$text-color-third: #00041a;
-$text-color-fourth: #f01;
+$text-color-third: #fff;
+$text-color-fourth: #fa0;

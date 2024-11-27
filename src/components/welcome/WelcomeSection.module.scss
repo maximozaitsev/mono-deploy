@@ -16,8 +16,8 @@
   & :global(.container) {
     width: 100%;
   }
-  @media (max-width: 1180px) {
-    background-size: 50% auto;
+  @media (max-width: 1250px) {
+    background-size: 45% auto;
     background-position: right 20px center;
   }
 
@@ -32,7 +32,7 @@
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 63%;
+    background-size: auto 50%;
   }
 
   @media (max-width: 420px) {
@@ -50,10 +50,15 @@
   z-index: 1;
   max-width: 72.5rem;
 
+  button {
+    width: 382px;
+  }
+
   @media (max-width: 768px) {
     button {
       align-self: center;
       max-height: 77px;
+      max-width: 291px;
     }
   }
 }

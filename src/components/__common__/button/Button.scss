@@ -11,16 +11,11 @@
   text-transform: uppercase;
 
   &.primary {
-    // outline: 4px solid;
-    // outline-offset: -4px;
     padding: 4px 48px;
-    // outline-color: #f9f8f83b;
     background: $color-button-large;
-    color: #445811;
+    color: #080001;
     font-size: 28px;
-    border-bottom: 5px solid rgba(95, 125, 20, 0.2);
-    border-width: 0 0 5px 0;
-    border-radius: 10px;
+    border: none;
     min-width: 280px;
     height: 87px;
 
@@ -47,15 +42,14 @@
   }
 
   &.secondary {
-    // outline: 3px solid;
-    // outline-offset: -3px;
+    outline: 4px solid;
+    outline-offset: -4px;
     padding: 2px 18px;
-    // outline-color: #2e2e2e3b;
+    outline-color: #e59900;
     background: $color-button-small;
     color: #fff;
     font-size: 20px;
     border: none;
-    border-radius: 10px;
     height: 52px;
 
     @media (max-width: 768px) {

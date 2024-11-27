@@ -15,6 +15,8 @@
 
   button {
     align-self: center;
+    height: 88px;
+    width: 344px;
   }
 
   @media (max-width: 768px) {
@@ -23,6 +25,10 @@
 
     h2 {
       margin-left: 0;
+    }
+
+    button {
+      max-width: 258px;
     }
   }
 }
@@ -33,7 +39,7 @@
   grid-template-rows: repeat(3, auto);
   gap: 24px;
 
-  @media (max-width: 890px) {
+  @media (max-width: 896px) {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -89,7 +95,7 @@
       cursor: pointer;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       gap: 8px;
     }
   }
@@ -108,10 +114,6 @@
     line-height: normal;
 
     @media (max-width: 1000px) {
-      font-size: 24px;
-    }
-
-    @media (max-width: 480px) {
       font-size: 20px;
     }
   }
@@ -131,7 +133,11 @@
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 480px) {
       font-size: 18px;
     }
   }
