@@ -15,8 +15,6 @@
 
   button {
     align-self: center;
-    height: 88px;
-    width: 344px;
   }
 
   @media (max-width: 768px) {
@@ -25,10 +23,6 @@
 
     h2 {
       margin-left: 0;
-    }
-
-    button {
-      max-width: 258px;
     }
   }
 }
@@ -39,7 +33,7 @@
   grid-template-rows: repeat(3, auto);
   gap: 24px;
 
-  @media (max-width: 896px) {
+  @media (max-width: 890px) {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -63,7 +57,7 @@
 
   &:hover {
     transform: scale(1.05);
-    outline: 2px solid rgba(0, 0, 0, 0.4);
+    outline: 2px solid #b2a26b;
   }
 
   .gameImage {
@@ -114,7 +108,25 @@
     line-height: normal;
 
     @media (max-width: 1000px) {
-      font-size: 20px;
+      font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+
+  .playIcon {
+    @media (max-width: 1000px) {
+      height: 25px;
+    }
+
+    @media (max-width: 768px) {
+      height: 30px;
+    }
+
+    @media (max-width: 576px) {
+      height: 25px;
     }
   }
 
@@ -137,8 +149,8 @@
       font-size: 20px;
     }
 
-    @media (max-width: 480px) {
-      font-size: 18px;
+    @media (max-width: 768px) {
+      font-size: 24px;
     }
   }
 

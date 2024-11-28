@@ -15,11 +15,7 @@ export default function PromotionsSection() {
               items: [
                 {
                   type: "text",
-                  content: content.promotions.leftColumnContent[0].text[0],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[0].text[1],
+                  content: content.promotions.leftColumnContent[0].text,
                 },
               ],
             },
@@ -28,33 +24,7 @@ export default function PromotionsSection() {
               items: [
                 {
                   type: "text",
-                  content: content.promotions.leftColumnContent[1].text[0],
-                },
-              ],
-            },
-            {
-              heading: content.promotions.leftColumnContent[2].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[2].text[0],
-                },
-              ],
-            },
-            {
-              heading: content.promotions.leftColumnContent[3].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[3].text[0],
-                },
-                {
-                  type: "list",
-                  content: content.promotions.leftColumnContent[3].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[3].text[1],
+                  content: content.promotions.leftColumnContent[1].text,
                 },
               ],
             },
@@ -65,38 +35,19 @@ export default function PromotionsSection() {
               items: [
                 {
                   type: "text",
-                  content: content.promotions.rightColumnContent[0].text,
-                },
-              ],
-            },
-            {
-              heading: content.promotions.rightColumnContent[1].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[1].text,
-                },
-              ],
-            },
-            {
-              heading: content.promotions.rightColumnContent[2].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[2].text,
-                },
-              ],
-            },
-            {
-              heading: content.promotions.rightColumnContent[3].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[3].text[0],
+                  content: content.promotions.rightColumnContent[0].text[0],
                 },
                 {
                   type: "text",
-                  content: content.promotions.rightColumnContent[3].text[1],
+                  content: content.promotions.rightColumnContent[0].text[1],
+                },
+                {
+                  type: "list",
+                  content: content.promotions.rightColumnContent[0].list || [],
+                },
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[0].text[2],
                 },
               ],
             },

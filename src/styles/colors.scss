@@ -1,27 +1,19 @@
 // colors
-$color-background: #080001;
-$color-background-secondary: #261316;
-$color-background-third: #261316;
-$color-background-fourth: #b2001e;
-$color-background-header: #1a0d0f;
-$color-background-footer: #1a0d0f;
-$color-background-providers-blocks: #261316;
-$color-button-large: linear-gradient(
-  51deg,
-  #e59900 55%,
-  rgba(255, 213, 0, 0.9) 45%
-);
-$color-button-small: linear-gradient(
-  56deg,
-  rgba(229, 153, 0, 0.2) 58%,
-  rgba(255, 213, 0, 0.4) 42%
-);
+$color-background: #f5f9ff;
+$color-background-secondary: url("/bg.png") repeat, #dce6f5;
+$color-background-third: #dce6f5;
+$color-background-fourth: #ccc2a3;
+$color-background-header: #0d121a;
+$color-background-footer: #0d121a;
+$color-background-providers-blocks: #ccc2a3;
+$color-button-large: #296acc;
+$color-button-small: #b2a26b;
 $color-border-primary: #484646;
 
 // text color
-$text-color-primary: #fff;
-$text-color-primary-gradient-hover: #fa0;
-$text-color-secondary: #b2001e;
+$text-color-primary: #f5f9ff;
+$text-color-primary-gradient-hover: #b2a26b;
+$text-color-secondary: #b2a26b;
 // $text-color-secondary-gradient: (90deg, #932093 0%, #730fee 100%);
-$text-color-third: #fff;
-$text-color-fourth: #fa0;
+$text-color-third: #04080f;
+$text-color-fourth: #06f;

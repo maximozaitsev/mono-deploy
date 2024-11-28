@@ -30,8 +30,7 @@
     color: $text-color-primary;
 
     .primary {
-      height: 88px;
-      width: 364px;
+      height: 82px;
     }
   }
 
@@ -53,6 +52,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      color: $text-color-third;
     }
   }
 
@@ -83,8 +83,8 @@
 
     img {
       position: absolute;
-      left: -43px;
-      top: 0px;
+      left: -85px;
+      top: -11px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -138,9 +138,15 @@
         padding: 24px;
 
         .app-image {
-          /* margin-left: -35px; */
-          margin-bottom: 0px;
+          margin-left: -95px;
+          margin-top: -9px;
+          margin-bottom: 4px;
           padding-bottom: 20px;
+          scale: 1.05;
+
+          @media (max-width: 575px) {
+            margin-left: 0px;
+          }
         }
 
         h3 {
@@ -173,7 +179,7 @@
           align-self: center;
           margin-top: 40px;
           max-width: 267px;
-          height: 77px;
+          height: 68px;
         }
       }
     }

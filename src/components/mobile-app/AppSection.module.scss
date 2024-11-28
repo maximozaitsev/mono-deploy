@@ -43,8 +43,9 @@
 
     .image {
       position: absolute;
-      top: -49px;
-      right: -66px;
+      top: -58px;
+      right: -80px;
+      scale: 0.9;
       overflow: hidden;
       height: auto;
     }
@@ -55,6 +56,7 @@
       .image {
         right: 0;
         max-width: 105%;
+        
       }
     }
   }

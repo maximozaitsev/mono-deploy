@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "drake-casino-us.com";
+const url = "casino-de-montecarlo-online.com";
 const ogTitle =
-  "Drake Casino USA: A Detailed Guide to the Popular Gambling Platform";
-const ogSiteName = "Drake Casino";
+  "Casino Monte Carlo France : Une expérience de jeu incroyable pour chaque client";
+const ogSiteName = "Casino Monte Carlo";
 const metaDescription =
-  "Drake Casino USA: How to register and get a welcome bonus. A detailed review of the casino and unique features of the platform. Up-to-date information for new customers";
+  "Casino Monte Carlo France : un lieu exceptionnel avec des opportunités uniques. Revue de détail, jeux, programme de fidélité. Tout ce que les nouveaux clients et les fans de ce casino luxueux doivent savoir.";
 
-const locale = "en-US";
-const language = "English";
+const locale = "fr_FR";
+const language = "French";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
