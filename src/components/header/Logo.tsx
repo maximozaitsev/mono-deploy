@@ -4,7 +4,7 @@ import Image from "next/image";
 const Logo = ({ onClick }: { onClick: () => void }) => {
   return (
     <div onClick={onClick} style={{ cursor: "pointer" }}>
-      <Image src="/logo.svg" alt="Logo" width={162} height={48} priority />
+      <Image src="/logo.svg" alt="Logo" width={141} height={48} priority />
     </div>
   );
 };

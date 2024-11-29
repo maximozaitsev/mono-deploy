@@ -15,10 +15,6 @@ html {
 body {
   background: $color-background;
   font-family: $font-primary;
-
-  p {
-    font-weight: 400;
-  }
 }
 
 .container {
@@ -61,22 +57,20 @@ body {
   font-family: $font-secondary;
   font-size: 56px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
-  letter-spacing: -3.36px;
 
   &.white {
-    color: $text-color-third;
+    color: $text-color-primary;
   }
 
   @media (max-width: 768px) {
     font-size: 32px;
-    font-weight: 700;
-    letter-spacing: normal;
+    font-weight: 800;
   }
 
   @media (max-width: 570px) {
@@ -85,26 +79,24 @@ body {
 }
 
 .h3-heading {
-  color: $text-color-third;
+  color: $text-color-primary;
   font-family: $font-secondary;
   font-size: 40px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
-  letter-spacing: -2.4px;
 
   @media (max-width: 768px) {
     font-size: 24px;
-    font-weight: 700;
-    letter-spacing: normal;
+    font-weight: 800;
   }
 
   @media (max-width: 570px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -113,26 +105,28 @@ body {
   font-family: $font-secondary;
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
-  letter-spacing: -1.44px;
+
+  &.white {
+    color: $text-color-primary;
+  }
 
   @media (max-width: 768px) {
     font-size: 18px;
-    letter-spacing: normal;
   }
 }
 
 .paragraph-text {
-  color: $text-color-third;
+  color: $text-color-primary;
   font-family: $font-primary;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 40px;
 
   &.black {
@@ -161,7 +155,7 @@ body {
     font-family: $font-primary;
     color: $text-color-third;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   button {

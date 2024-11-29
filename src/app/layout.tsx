@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "casino-de-montecarlo-online.com";
+const url = "mrbeastcasino-online-uk.com";
 const ogTitle =
-  "Casino Monte Carlo France : Une expérience de jeu incroyable pour chaque client";
-const ogSiteName = "Casino Monte Carlo";
+  "Mr Beast Casino UK: Detailed App Review and Introduction of Features";
+const ogSiteName = "Mr Beast Casino";
 const metaDescription =
-  "Casino Monte Carlo France : un lieu exceptionnel avec des opportunités uniques. Revue de détail, jeux, programme de fidélité. Tout ce que les nouveaux clients et les fans de ce casino luxueux doivent savoir.";
+  "Mr Beast Casino UK: key features and capabilities of the gambling app. What you need to know about the official casino service of the popular youtuber. Useful information for beginners and experienced players";
 
-const locale = "fr_FR";
-const language = "French";
+const locale = "en-UK";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

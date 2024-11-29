@@ -52,7 +52,6 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      color: $text-color-third;
     }
   }
 
@@ -84,7 +83,7 @@
     img {
       position: absolute;
       left: -85px;
-      top: -11px;
+      top: -4px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -138,15 +137,9 @@
         padding: 24px;
 
         .app-image {
-          margin-left: -95px;
-          margin-top: -9px;
+          /* margin-left: -35px; */
           margin-bottom: 4px;
           padding-bottom: 20px;
-          scale: 1.05;
-
-          @media (max-width: 575px) {
-            margin-left: 0px;
-          }
         }
 
         h3 {
@@ -179,7 +172,7 @@
           align-self: center;
           margin-top: 40px;
           max-width: 267px;
-          height: 68px;
+          height: 77px;
         }
       }
     }

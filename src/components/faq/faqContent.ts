@@ -1,22 +1,20 @@
 export const faqs = [
   {
-    question: "Quelle est la licence du casino ?",
+    question: "What license does the mobile casino app operate under?",
     answer:
-      "Il s'agit de la licence de la Commission des jeux de Monaco et de France.",
+      "This is a license issued by the UK Gambling Commission for the Regulation of Gambling.",
   },
   {
-    question: "Comment devenir client du casino ?",
+    question: "Can I play a casino on the website?",
     answer:
-      "Vous devez présenter des documents, respecter le code vestimentaire et payer un droit d'entrée. Les clients VIP ne paient pas de droit d'entrée.",
+      "No. At the moment, the casino is only available in the format of mobile applications.",
   },
   {
-    question: "Quels sont les avantages du programme de fidélité ?",
-    answer:
-      "Les participants à ce programme reçoivent des cadeaux exclusifs, des offres spéciales, des invitations VIP, etc.",
+    question: "What OS does the application work on?",
+    answer: "You can install special programs for iOS and Android.",
   },
   {
-    question: "A partir de quel âge peut-on jouer dans ce casino ?",
-    answer:
-      "Selon les lois de Monaco, vous pouvez jouer aux jeux d'argent à partir de 18 ans et 1 jour.",
+    question: "What is the minimum deposit to receive a welcome bonus?",
+    answer: "You can deposit £10 or more to receive a welcome reward.",
   },
 ];

@@ -35,19 +35,16 @@ export default function PromotionsSection() {
               items: [
                 {
                   type: "text",
-                  content: content.promotions.rightColumnContent[0].text[0],
+                  content: content.promotions.rightColumnContent[0].text,
                 },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[1].heading,
+              items: [
                 {
                   type: "text",
-                  content: content.promotions.rightColumnContent[0].text[1],
-                },
-                {
-                  type: "list",
-                  content: content.promotions.rightColumnContent[0].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[0].text[2],
+                  content: content.promotions.rightColumnContent[1].text,
                 },
               ],
             },
