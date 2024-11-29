@@ -7,7 +7,7 @@ const ogSiteName = "Mr Beast Casino";
 const metaDescription =
   "Mr Beast Casino UK: key features and capabilities of the gambling app. What you need to know about the official casino service of the popular youtuber. Useful information for beginners and experienced players";
 
-const locale = "en-UK";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
