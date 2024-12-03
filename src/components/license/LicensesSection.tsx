@@ -17,8 +17,8 @@ export default function LicensesSection() {
             <Image
               src={licenceImage}
               alt="Licenses"
-              width={444}
-              height={135}
+              width={200}
+              height={200}
               quality={100}
             />
           </div>

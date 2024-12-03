@@ -18,8 +18,8 @@
     .row {
       display: flex;
       justify-content: center;
-      gap: 14px 8px;
-      margin-bottom: 20px;
+      gap: 16px;
+      margin-bottom: 24px;
 
       &:first-child {
         display: flex;
@@ -59,7 +59,7 @@
       }
 
       &:nth-child(2) {
-        gap: 0px;
+        gap: 7px;
 
         @media (max-width: 768px) {
           gap: 4px !important;
@@ -91,7 +91,7 @@
   }
 
   .copyright {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.34);
     font-family: $font-primary;
     font-size: 20px;
     font-style: normal;

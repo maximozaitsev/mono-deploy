@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "mrbeastcasino-online-uk.com";
+const url = "crownplay-de.com";
 const ogTitle =
-  "Mr Beast Casino UK: Detailed App Review and Introduction of Features";
-const ogSiteName = "Mr Beast Casino";
+  "Crownplay Casino Review in Deutschland: Boni, Auszahlungen und Spiele";
+const ogSiteName = "Crownplay Casino";
 const metaDescription =
-  "Mr Beast Casino UK: key features and capabilities of the gambling app. What you need to know about the official casino service of the popular youtuber. Useful information for beginners and experienced players";
+  "Crownplay Casino in Deutschland bietet Slots und Live-Spiele mit schnellen Auszahlungen und einem 250% Bonus. Sehen Sie, was Crownplay zu einem guten Ziel für deutsche Online-Glücksspieler macht.";
 
-const locale = "en-GB";
-const language = "English";
+const locale = "de-DE";
+const language = "German";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

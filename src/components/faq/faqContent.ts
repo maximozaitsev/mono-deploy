@@ -1,20 +1,39 @@
 export const faqs = [
   {
-    question: "What license does the mobile casino app operate under?",
+    question: "Kann ich einen Crownplay-Bonus ohne Einzahlung erhalten?",
     answer:
-      "This is a license issued by the UK Gambling Commission for the Regulation of Gambling.",
+      "Nein, denn alle Boni werden nach der ersten Einzahlung aktiviert. Der Crownplay casino no deposit bonus ist ein Mythos.",
   },
   {
-    question: "Can I play a casino on the website?",
+    question:
+      "Wie hoch ist die Mindesteinzahlung für den Zugang zu Spielen und Wetten?",
     answer:
-      "No. At the moment, the casino is only available in the format of mobile applications.",
+      "Alle Zahlungsmethoden erfordern eine Mindesteinzahlung von 20 EUR. Die maximale Transaktion auf einmal beträgt 5.000 EUR. ",
   },
   {
-    question: "What OS does the application work on?",
-    answer: "You can install special programs for iOS and Android.",
+    question: "Benötige ich ein weiteres Konto für Sportwetten?",
+    answer:
+      "Nein, Sie können innerhalb eines Profils spielen und auf Sportarten wetten.",
   },
   {
-    question: "What is the minimum deposit to receive a welcome bonus?",
-    answer: "You can deposit £10 or more to receive a welcome reward.",
+    question: "Kann ich alle Willkommensaktionen in Anspruch nehmen?",
+    answer:
+      "Sie können nur einen Bonus auswählen. Dabei handelt es sich entweder um einen Casino-Bonus, eine Sportprämie oder einen Sonderbonus mit einem Promo-Code. ",
+  },
+  {
+    question: "Wo bekomme ich einen Crownplay Promo Code?",
+    answer:
+      "Die meisten Boni erfordern keine Promo-Codes und werden automatisch aktiviert. Sie können einzigartige Codes auf Partner-Websites und in Bewertungen finden, aber das ist eine seltene Option.",
+  },
+  {
+    question: "Was ist das Crownplay Casino-Logo?",
+    answer:
+      "Um eine offizielle und zuverlässige Seite zu finden, suchen Sie nach der Seite von Crownplay mit einem Kronen-Miniaturlogo und der .com-Domäne. Vermeiden Sie nicht lizenzierte Plattformen. ",
+  },
+  {
+    question:
+      "Welche Informationen benötige ich für die Anmeldung bei Crownplay Casino?",
+    answer:
+      "Wenn Sie bereits ein Profil haben, geben Sie einfach Ihre E-Mail-Adresse und Ihr Passwort ein. Falls Sie das Passwort vergessen haben, stellen Sie Ihr Profil wieder her. ",
   },
 ];
