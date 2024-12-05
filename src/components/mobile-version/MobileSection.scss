@@ -82,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -132px;
-      top: -31px;
+      left: -112px;
+      top: 19px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -137,9 +137,13 @@
         padding: 24px;
 
         .app-image {
-          /* margin-left: -35px; */
-          margin-bottom: 37px;
+          margin-left: -76px;
+          margin-bottom: 3px;
           padding-bottom: 20px;
+
+          @media (max-width: 500px) {
+            margin-left: 0px;
+          }
         }
 
         h3 {

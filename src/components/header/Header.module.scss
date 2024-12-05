@@ -14,10 +14,8 @@
     margin-left: 0px;
     scale: 1;
 
-    @media (max-width: 768px) {
-      margin-top: -7px;
-      margin-left: -25px;
-      scale: 0.75;
+    @media (max-width: 380px) {
+      scale: 0.8;
     }
   }
 

@@ -1,16 +1,16 @@
 export const faqs = [
   {
     question: "¿Con qué licencia opera el casino?",
-    answer:
-      "Se trata de una licencia de la Dirección General del Juego española.",
+    answer: "Se trata de una licencia de la Comisión Española del Juego.",
   },
   {
-    question: "¿Qué edad hay que tener para registrarse?",
+    question: "¿A partir de qué edad puedes registrarte en el sitio?",
     answer:
-      "El acceso al juego online en el servicio está disponible a partir de los 18 años.",
+      "Según la legislación española, se puede jugar a partir de los 18 años.",
   },
   {
-    question: "¿Puedo instalar una aplicación móvil?",
-    answer: "Sí. El casino ofrece aplicaciones oficiales para iOS y Android.",
+    question: "¿Cuál es el depósito mínimo?",
+    answer:
+      "Dependiendo del sistema de pago, el depósito mínimo es de 5 ó 10 euros.",
   },
 ];

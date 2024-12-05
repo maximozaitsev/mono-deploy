@@ -70,7 +70,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 32px;
-    font-weight: 900;
+    // font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -92,7 +92,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 24px;
-    font-weight: 900;
+    // font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -111,10 +111,6 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
-
-  &.white {
-    color: $text-color-primary;
-  }
 
   @media (max-width: 768px) {
     font-size: 18px;

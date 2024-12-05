@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 
-const url = "partycasino-online.com";
-const ogTitle =
-  "PartyCasino España: Primer contacto con la popular plataforma de juego";
-const ogSiteName = "PartyCasino";
+const url = "daznbet-online.com";
+const ogTitle = "DaznBet Casino España: Características únicas y beneficios";
+const ogSiteName = "DaznBet Casino";
 const metaDescription =
-  "PartyCasino España: reseña de un casino online exclusivo, seguro y fiable. Promociones actuales, oferta de entretenimiento de juego y pagos rápidos. Todo lo que necesitas para principiantes y jugadores experimentados";
+  "DaznBet Casino España: una revisión detallada de la plataforma de juego. Lo que necesitas saber sobre el popular casino: juegos, bonos, sistemas de pago, registro paso a paso y mucho más.";
 
-const locale = "en-ES";
+const locale = "es-ES";
 const language = "Spanish";
 const ogImage = `https://${url}/og-image.webp`;
 
