@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "crownplay-de.com";
+const url = "partycasino-online.com";
 const ogTitle =
-  "Crownplay Casino Review in Deutschland: Boni, Auszahlungen und Spiele";
-const ogSiteName = "Crownplay Casino";
+  "PartyCasino España: Primer contacto con la popular plataforma de juego";
+const ogSiteName = "PartyCasino";
 const metaDescription =
-  "Crownplay Casino in Deutschland bietet Slots und Live-Spiele mit schnellen Auszahlungen und einem 250% Bonus. Sehen Sie, was Crownplay zu einem guten Ziel für deutsche Online-Glücksspieler macht.";
+  "PartyCasino España: reseña de un casino online exclusivo, seguro y fiable. Promociones actuales, oferta de entretenimiento de juego y pagos rápidos. Todo lo que necesitas para principiantes y jugadores experimentados";
 
-const locale = "de-DE";
-const language = "German";
+const locale = "en-ES";
+const language = "Spanish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

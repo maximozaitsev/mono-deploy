@@ -3,7 +3,7 @@
 
 .button {
   cursor: pointer;
-  font-family: $font-primary;
+  font-family: $font-secondary;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
   font-weight: 900;
@@ -11,15 +11,15 @@
   text-transform: uppercase;
 
   &.primary {
-    outline: 4px solid;
-    outline-offset: -4px;
+    // outline: 4px solid;
+    // outline-offset: -4px;
     padding: 4px 48px;
-    outline-color: #f9f8f83b;
+    // outline-color: #f9f8f83b;
     background: $color-button-large;
     color: $text-color-primary;
     font-size: 28px;
     border: none;
-    border-radius: 13px;
+    border-radius: 20px;
     min-width: 280px;
     height: 87px;
 
@@ -49,12 +49,12 @@
     outline: 3px solid;
     outline-offset: -3px;
     padding: 2px 18px;
-    outline-color: rgba(0, 0, 0, 0.2);
+    outline-color: #2e2e2e3b;
     background: $color-button-small;
     color: #fff;
     font-size: 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     height: 52px;
 
     @media (max-width: 768px) {

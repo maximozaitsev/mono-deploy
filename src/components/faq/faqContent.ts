@@ -1,39 +1,16 @@
 export const faqs = [
   {
-    question: "Kann ich einen Crownplay-Bonus ohne Einzahlung erhalten?",
+    question: "¿Con qué licencia opera el casino?",
     answer:
-      "Nein, denn alle Boni werden nach der ersten Einzahlung aktiviert. Der Crownplay casino no deposit bonus ist ein Mythos.",
+      "Se trata de una licencia de la Dirección General del Juego española.",
   },
   {
-    question:
-      "Wie hoch ist die Mindesteinzahlung für den Zugang zu Spielen und Wetten?",
+    question: "¿Qué edad hay que tener para registrarse?",
     answer:
-      "Alle Zahlungsmethoden erfordern eine Mindesteinzahlung von 20 EUR. Die maximale Transaktion auf einmal beträgt 5.000 EUR. ",
+      "El acceso al juego online en el servicio está disponible a partir de los 18 años.",
   },
   {
-    question: "Benötige ich ein weiteres Konto für Sportwetten?",
-    answer:
-      "Nein, Sie können innerhalb eines Profils spielen und auf Sportarten wetten.",
-  },
-  {
-    question: "Kann ich alle Willkommensaktionen in Anspruch nehmen?",
-    answer:
-      "Sie können nur einen Bonus auswählen. Dabei handelt es sich entweder um einen Casino-Bonus, eine Sportprämie oder einen Sonderbonus mit einem Promo-Code. ",
-  },
-  {
-    question: "Wo bekomme ich einen Crownplay Promo Code?",
-    answer:
-      "Die meisten Boni erfordern keine Promo-Codes und werden automatisch aktiviert. Sie können einzigartige Codes auf Partner-Websites und in Bewertungen finden, aber das ist eine seltene Option.",
-  },
-  {
-    question: "Was ist das Crownplay Casino-Logo?",
-    answer:
-      "Um eine offizielle und zuverlässige Seite zu finden, suchen Sie nach der Seite von Crownplay mit einem Kronen-Miniaturlogo und der .com-Domäne. Vermeiden Sie nicht lizenzierte Plattformen. ",
-  },
-  {
-    question:
-      "Welche Informationen benötige ich für die Anmeldung bei Crownplay Casino?",
-    answer:
-      "Wenn Sie bereits ein Profil haben, geben Sie einfach Ihre E-Mail-Adresse und Ihr Passwort ein. Falls Sie das Passwort vergessen haben, stellen Sie Ihr Profil wieder her. ",
+    question: "¿Puedo instalar una aplicación móvil?",
+    answer: "Sí. El casino ofrece aplicaciones oficiales para iOS y Android.",
   },
 ];

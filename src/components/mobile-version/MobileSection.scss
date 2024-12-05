@@ -82,23 +82,14 @@
 
     img {
       position: absolute;
-      left: -51px;
-      top: 33px;
+      left: -132px;
+      top: -31px;
 
       @media (max-width: 1370px) {
         position: static;
         width: 450px;
         height: auto;
       }
-
-      @media (max-width: 768px) {
-        max-width: 382px;
-        width: 100%;
-      }
-    }
-
-    &.mobile {
-      display: none;
     }
 
     @media (max-width: 1330px) {
@@ -111,19 +102,9 @@
       }
 
       .app-image {
+        height: 405px;
+        width: 348px;
         object-fit: contain;
-      }
-    }
-
-    @media (max-width: 768px) {
-      &.mobile {
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-      }
-
-      &.desktop {
-        display: none !important;
       }
     }
   }
@@ -157,7 +138,7 @@
 
         .app-image {
           /* margin-left: -35px; */
-          margin-bottom: 4px;
+          margin-bottom: 37px;
           padding-bottom: 20px;
         }
 

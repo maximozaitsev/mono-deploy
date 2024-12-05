@@ -27,6 +27,11 @@
 
       img {
         width: auto;
+        margin-right: -75px;
+
+        @media (max-width: 1290px) {
+          margin-right: 0px;
+        }
       }
     }
   }
@@ -52,7 +57,7 @@
         margin-bottom: 40px;
 
         img {
-          max-width: 160px;
+          max-width: 256px;
           width: 100%;
           height: auto;
         }

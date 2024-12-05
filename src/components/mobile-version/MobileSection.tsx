@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import mobileAppImage from "../../../public/block-images/mobile.webp";
-import mobileAppImageMobile from "../../../public/block-images/mobile-mobile.webp";
 import StarIcon from "../../../public/assets/Vector.png";
 import Button from "../__common__/button/Button";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
@@ -37,21 +36,12 @@ export default function MobileSection() {
 
         <div className="app-info-block">
           <h3 className="h3-heading">{content.projectName} App</h3>
-          <div className="mobile-image show-1080 desktop">
+          <div className="mobile-image show-1080">
             <Image
               src={mobileAppImage}
               alt="Mobile App"
               className="app-image"
               priority
-            />
-          </div>
-          <div className="mobile-image mobile">
-            <Image
-              src={mobileAppImageMobile}
-              alt="Mobile App"
-              className="app-image"
-              priority
-              quality={100}
             />
           </div>
           <div className="app-buttons">
@@ -82,7 +72,7 @@ export default function MobileSection() {
           </div>
         </div>
 
-        <div className="mobile-image hide-1080 desktop">
+        <div className="mobile-image hide-1080">
           <Image
             src={mobileAppImage}
             alt="Mobile App"
