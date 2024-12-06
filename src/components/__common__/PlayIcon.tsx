@@ -8,7 +8,7 @@ const PlayIcon: React.FC = () => (
     xmlns="http://www.w3.org/2000/svg"
     style={{ fill: "var(--icon-color)" }}
   >
-    <g id="free-icon-play-button-109197 1">
+    <g>
       <g clipPath="url(#clip0_392_282)">
         <path
           id="Vector"
