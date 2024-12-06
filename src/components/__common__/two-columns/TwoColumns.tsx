@@ -3,7 +3,7 @@ import styles from "./TwoColumns.module.scss";
 import List from "../list/List";
 
 type ColumnItem = {
-  type: "text" | "list" | "additionalText";
+  type: "text" | "list";
   content: string | string[];
 };
 
@@ -34,12 +34,6 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
           );
         case "list":
           return <List key={index} items={item.content as string[]} />;
-        case "additionalText":
-          return (
-            <p key={index} className="paragraph-text">
-              {item.content as string}
-            </p>
-          );
         default:
           return null;
       }

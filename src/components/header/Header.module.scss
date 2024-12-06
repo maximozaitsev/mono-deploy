@@ -14,8 +14,10 @@
     margin-left: 0px;
     scale: 1;
 
-    @media (max-width: 380px) {
-      scale: 0.8;
+    @media (max-width: 768px) {
+      margin-top: -5px;
+      margin-left: -15px;
+      scale: 0.87;
     }
   }
 
@@ -52,7 +54,7 @@
 
   li a {
     color: $text-color-primary;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -63,8 +65,8 @@
     cursor: pointer;
 
     &:hover {
-      color: $text-color-primary-gradient-hover;
-      // background-image: $text-color-primary-gradient-hover;
+      color: $text-color-header-hover;
+      // background-image: $text-color-header-hover;
       // -webkit-background-clip: text;
       // background-clip: text;
     }

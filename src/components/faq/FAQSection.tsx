@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Image from "next/image";
 import { content } from "@/content/content";
+import PlusIcon from "../__common__/PlusIcon";
+import MinusIcon from "../__common__/MinusIcon";
 import "./FAQSection.scss";
 
 interface FAQItem {
@@ -41,17 +42,11 @@ const FAQSection = ({ faqs }: { faqs: FAQItem[] }) => {
         <div key={index} className="faq-item">
           <div className="faq-question" onClick={() => toggleAccordion(index)}>
             <span className="icon">
-              <Image
-                src={
-                  activeIndices.includes(index)
-                    ? "/assets/minus.svg"
-                    : "/assets/plus.svg"
-                }
-                alt={activeIndices.includes(index) ? "Collapse" : "Expand"}
-                width={32}
-                height={32}
-                className="icon-svg"
-              />
+              {activeIndices.includes(index) ? (
+                <MinusIcon size={32} />
+              ) : (
+                <PlusIcon size={32} />
+              )}
             </span>
             {faq.question}
           </div>

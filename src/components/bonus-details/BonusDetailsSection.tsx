@@ -3,8 +3,9 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Offer } from "../../types/offer";
-import Button from "../__common__/button/Button";
 import { fetchOffers } from "@/utils/fetchOffers";
+import Button from "../__common__/button/Button";
+import InfoIcon from "../__common__/InfoIcon";
 import "./BonusDetailsSection.scss";
 
 const BonusDetailsSection: React.FC = () => {
@@ -76,13 +77,7 @@ const BonusDetailsSection: React.FC = () => {
                 onClick={() => toggleAccordion(offer.id)}
                 className="icon-button"
               >
-                <Image
-                  src="/assets/info.svg"
-                  alt="Info Icon"
-                  width={24}
-                  height={24}
-                  quality={100}
-                />
+                <InfoIcon />
               </button>
             </div>
             <div className="cell hide-768 last-cell">

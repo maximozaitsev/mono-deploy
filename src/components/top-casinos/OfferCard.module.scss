@@ -19,7 +19,7 @@
   }
 
   h3 {
-    color: $text-color-third;
+    color: $text-color-secondary;
     text-align: center;
     font-family: $font-secondary;
     font-size: 20px;
@@ -36,14 +36,14 @@
     line-height: normal;
     color: $text-color-fourth;
 
-    // background: linear-gradient($text-color-secondary-gradient);
+    // background: linear-gradient($text-color-fourth);
     // background-clip: text;
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
   }
 
   p {
-    color: $text-color-third;
+    color: $text-color-secondary;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
@@ -58,8 +58,8 @@
 
   button {
     margin-top: auto;
-    width: 196px;
-    // margin-left: 5px;
+    width: 206px;
+    margin-left: 5px;
   }
 
   @media (max-width: 768px) {

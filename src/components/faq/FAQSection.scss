@@ -12,7 +12,7 @@
     width: 100%;
 
     .faq-question {
-      color: $text-color-third;
+      color: $text-color-secondary;
       font-family: $font-secondary;
       background: $color-background-third;
       font-size: 24px;
@@ -31,15 +31,16 @@
         display: flex;
         align-items: center;
 
-        .icon-svg {
+        svg {
           width: 32px;
           height: 32px;
+          fill: $color-faq-icon;
         }
       }
     }
 
     .faq-answer {
-      color: $text-color-third;
+      color: $text-color-secondary;
       font-family: $font-primary;
       font-size: 20px;
       font-weight: 500;
@@ -69,7 +70,7 @@
         .icon {
           margin-right: 16px;
 
-          .icon-svg {
+          svg {
             width: 24px;
             height: 24px;
           }

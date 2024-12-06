@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { Game } from "@/types/game";
-import Button from "../__common__/button/Button";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
+import Image from "next/image";
+import Button from "../__common__/button/Button";
+import PlayIcon from "../__common__/PlayIcon";
+
 import styles from "./TopGamesSection.module.scss";
 
 interface TopGamesProps {
@@ -41,13 +43,9 @@ export default function TopGamesSection({ games }: TopGamesProps) {
             >
               <h3 className={styles.gameName}>{game.name}</h3>
               <p className={styles.playButton}>
-                <Image
-                  src="/assets/play-button.svg"
-                  alt="Play Icon"
-                  className={styles.playIcon}
-                  width={32}
-                  height={32}
-                />
+                <span className={styles.playIcon}>
+                  <PlayIcon />
+                </span>
                 Play Now
               </p>
             </div>

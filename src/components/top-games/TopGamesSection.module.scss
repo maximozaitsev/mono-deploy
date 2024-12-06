@@ -98,7 +98,7 @@
     text-align: center;
     font-family: $font-primary;
     color: $text-color-fourth;
-    // background: linear-gradient($text-color-secondary-gradient);
+    // background: linear-gradient($text-color-fourth);
     // background-clip: text;
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
@@ -116,20 +116,6 @@
     }
   }
 
-  .playIcon {
-    @media (max-width: 1000px) {
-      height: 25px;
-    }
-
-    @media (max-width: 768px) {
-      height: 30px;
-    }
-
-    @media (max-width: 576px) {
-      height: 25px;
-    }
-  }
-
   .playButton {
     display: flex;
     align-items: center;
@@ -140,7 +126,7 @@
     font-weight: 500;
     line-height: normal;
     color: $text-color-fourth;
-    // background: linear-gradient($text-color-secondary-gradient);
+    // background: linear-gradient($text-color-fourth;
     // background-clip: text;
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
@@ -151,6 +137,37 @@
 
     @media (max-width: 768px) {
       font-size: 24px;
+    }
+
+    .playIcon {
+      --icon-color: #{$text-color-fourth}; 
+      display: flex;
+
+      svg {
+        width: 33px;
+        height: 32px;
+      }
+
+      @media (max-width: 1000px) {
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+      }
     }
   }
 

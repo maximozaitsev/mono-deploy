@@ -21,7 +21,7 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer }) => {
         style={{ maxWidth: "100%", height: "auto" }}
       />
       <h3>{offer.name}</h3>
-      <h4>Welcome Bonus</h4>
+      <h4>Welcome bonus</h4>
       <p>{offer.bonuses.welcome_bonus}</p>
       <Button
         text="Claim Bonus"

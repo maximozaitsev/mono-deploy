@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
-const url = "daznbet-online.com";
-const ogTitle = "DaznBet Casino España: Características únicas y beneficios";
-const ogSiteName = "DaznBet Casino";
+const url = "botemania-online.com";
+const ogTitle = "Botemania Casino España: Reseña detallada e información útil";
+const ogSiteName = "Botemania Casino";
 const metaDescription =
-  "DaznBet Casino España: una revisión detallada de la plataforma de juego. Lo que necesitas saber sobre el popular casino: juegos, bonos, sistemas de pago, registro paso a paso y mucho más.";
+  "Botemania Casino España: todo lo que necesitas saber para principiantes y jugadores experimentados. Una visión detallada de los juegos, promociones, métodos de pago y otras características de la plataforma de juego.";
 
 const locale = "es-ES";
 const language = "Spanish";
