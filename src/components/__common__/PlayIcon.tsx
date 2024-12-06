@@ -17,7 +17,7 @@ const PlayIcon: React.FC = () => (
       </g>
     </g>
     <defs>
-      <clipPath id="clip0_392_282">
+      <clipPath>
         <rect
           x="0.767548"
           y="0.078125"
