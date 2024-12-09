@@ -1,36 +1,50 @@
 export const faqs = [
   {
-    question:
-      "Wie hoch ist die Mindesteinlage, um mit dem Spielen zu beginnen?",
+    question: "Wie hoch ist die Mindesteinzahlung bei Zodiac Casino?",
     answer:
-      "Die Mindesteinlage beträgt 10 €, so dass die Teilnehmer mit einer bescheidenen Anfangsinvestition Zugang zu Titeln und Fortschritten haben.",
+      "Die Mindesteinzahlung beträgt 1 € für die erste Einzahlung und 10 € für weitere Einzahlungen.",
   },
   {
-    question: "Fallen bei Einzahlungen oder Abhebungen Gebühren an?",
+    question: "Wie lange dauert es, bis eine Abhebung bearbeitet wird?",
     answer:
-      "Quatro Casino erhebt keine Gebühren für Einzahlungen oder Abhebungen; einige Zahlungsanbieter können jedoch ihre eigenen Gebühren erheben.",
+      "Die Abhebungszeiten variieren: E-Wallets benötigen 1-5 Tage, Kreditkarten 3-5 Tage und Banküberweisungen 6-10 Tage.",
   },
   {
-    question:
-      "Wie kann ich mein Kontopasswort zurücksetzen, wenn ich es vergessen habe?",
+    question: "Fallen bei Abhebungen Gebühren an?",
     answer:
-      "Wenn Sie Ihr Passwort vergessen haben, verwenden Sie den Link „Passwort vergessen“ auf der Anmeldeseite, um Anweisungen über Ihre registrierte E-Mail zu erhalten.",
+      "Bei Banküberweisungen unter 3.000 € kann eine Gebühr von 35 € anfallen; bei Überweisungen über 3.000 € kann eine Gebühr von 70 € anfallen.",
   },
   {
-    question:
-      "Bietet die Plattform ein VIP-Programm oder einen Quatro Casino Bonus Code?",
+    question: "Gibt es im Zodiac Casino free spins no deposit?",
     answer:
-      "Ja, Quatro Casino ist Teil der Casino Rewards Group, die ein Treueprogramm mit exklusiven Casino rewards Quatro und Vorteilen für regelmäßige Teilnehmer anbietet.",
+      "Ja, Zodiac Casino ist Teil des Casino Rewards Treueprogramms, das verschiedene Vorteile für Spieler bietet.",
   },
   {
-    question: "Sind die Quatro Casino VIP fair und geprüft?",
+    question: "Kann ich Zodiac Casino Spiele auf meinem mobilen Gerät spielen?",
     answer:
-      "Alle Titel im Quatro Casino werden regelmäßig von unabhängigen Organisationen auf Fairness geprüft, um unvoreingenommene Ergebnisse zu gewährleisten.",
+      "Ja, die Website des Casinos ist für mobile Browser optimiert und bietet ein nahtloses Erlebnis ohne eine spezielle App.",
   },
   {
-    question:
-      "Was sollte ich tun, wenn ich beim Spielen im Quatro Casino Casino auf technische Probleme stoße?",
+    question: "Welche Kundenbetreuung Optionen sind verfügbar?",
+    answer: "Zodiac Casino bietet 24/7 Support über Live-Chat und E-Mail.",
+  },
+  {
+    question: "Sind die Spiele bei Zodiac Casino fair?",
     answer:
-      "Bei technischen Problemen wenden Sie sich bitte an den 24/7-Kundenservice von Quatro Casino per Live-Chat oder E-Mail an support@quatrocasino.com.",
+      "Ja, die Spiele werden regelmäßig von eCOGRA auditiert, um Fairness und Integrität zu gewährleisten.",
+  },
+  {
+    question: "Welche Sprachen werden von Zodiac Casino unterstützt?",
+    answer:
+      "Die Plattform unterstützt Englisch, Deutsch, Französisch, Portugiesisch und Italienisch.",
+  },
+  {
+    question: "In welchen Währungen kann ich bei play at Zodiac Casino?",
+    answer: "Akzeptierte Währungen sind CAD, EUR, GBP und USD.",
+  },
+  {
+    question: "Ist Zodiac Casino lizenziert?",
+    answer:
+      "Ja, es arbeitet mit Lizenzen der Kahnawake Gaming Commission, der Malta Gaming Authority und der UK Gambling Commission.",
   },
 ];

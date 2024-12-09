@@ -1,6 +1,7 @@
 import Image from "next/image";
 import licenceImage from "../../../public/block-images/licence.webp";
 import licenceImage2 from "../../../public/block-images/licence2.webp";
+import licenceImage3 from "../../../public/block-images/licence3.webp";
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { content } from "@/content/content";
 import styles from "./LicensesSection.module.scss";
@@ -18,8 +19,8 @@ export default function LicensesSection() {
             <Image
               src={licenceImage}
               alt="Licenses"
-              width={240}
-              height={240}
+              width={190}
+              height={190}
               quality={100}
             />
             <Image
@@ -27,6 +28,13 @@ export default function LicensesSection() {
               alt="Licenses"
               width={315}
               height={87}
+              quality={100}
+            />
+            <Image
+              src={licenceImage3}
+              alt="Licenses"
+              width={300}
+              height={85}
               quality={100}
             />
           </div>

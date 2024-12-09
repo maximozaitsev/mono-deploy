@@ -9,13 +9,12 @@
   font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
-  
 
   &.primary {
-    outline: 4px solid;
-    outline-offset: -4px;
+    // outline: 4px solid;
+    // outline-offset: -4px;
     padding: 4px 48px;
-    outline-color: #fff;
+    // outline-color: #f9f8f83b;
     background: $color-button-large;
     color: $text-color-primary;
     font-size: 28px;
@@ -23,7 +22,6 @@
     border-radius: 16px;
     min-width: 280px;
     height: 87px;
-    letter-spacing: 0.6px;
 
     @media (max-width: 768px) {
       font-size: 24px;
@@ -54,12 +52,11 @@
     padding: 2px 18px;
     // outline-color: #2e2e2e3b;
     background: $color-button-small;
-    color: #000730;
+    color: #fff;
     font-size: 20px;
     border: none;
     border-radius: 8px;
     height: 52px;
-    letter-spacing: 1px;
 
     @media (max-width: 768px) {
       font-size: 18px;

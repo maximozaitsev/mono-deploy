@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "quatrocasino-online.com";
+const url = "zodiac-casino-online.com";
 const ogTitle =
-  "Quatro Casino Österreich: Genießen Sie Premium Spiele und Boni";
-const ogSiteName = "Quatro Casino";
+  "Zodiac Casino Österreich - Ihre erste Adresse für Online-Vergnügen";
+const ogSiteName = "Zodiac Casino";
 const metaDescription =
-  "Quatro Casino Österreich bietet ein umfangreiches Angebot an erstklassigen Spielen, sicheren Transaktionen und hervorragenden Spielerprämien. Melden Sie sich noch heute an und fordern Sie Ihre exklusiven Boni an, um Ihr Spielerlebnis zu verbessern!";
+  "Zodiac Casino Österreich bietet ein unvergleichliches Spielerlebnis mit Top-Slots, Tischspielen und riesigen Boni. Melden Sie sich noch heute an, um exklusive Angebote zu erhalten und groß zu gewinnen!";
 
 const locale = "de-AT";
 const language = "German";
