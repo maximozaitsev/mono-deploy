@@ -63,6 +63,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
+  letter-spacing: 2px;
 
   &.white {
     color: $text-color-primary;
@@ -89,6 +90,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
+  letter-spacing: 1.5px;
 
   @media (max-width: 768px) {
     font-size: 24px;

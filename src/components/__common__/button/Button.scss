@@ -9,19 +9,21 @@
   font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
+  
 
   &.primary {
-    // outline: 4px solid;
-    // outline-offset: -4px;
+    outline: 4px solid;
+    outline-offset: -4px;
     padding: 4px 48px;
-    // outline-color: #f9f8f83b;
+    outline-color: #fff;
     background: $color-button-large;
-    color: #0c2f00;
+    color: $text-color-primary;
     font-size: 28px;
     border: none;
     border-radius: 16px;
     min-width: 280px;
     height: 87px;
+    letter-spacing: 0.6px;
 
     @media (max-width: 768px) {
       font-size: 24px;
@@ -47,16 +49,17 @@
   }
 
   &.secondary {
-    outline: 3px solid;
-    outline-offset: -3px;
+    // outline: 3px solid;
+    // outline-offset: -3px;
     padding: 2px 18px;
-    outline-color: rgba(255, 255, 255, 0.2);
+    // outline-color: #2e2e2e3b;
     background: $color-button-small;
-    color: #0c2f00;
+    color: #000730;
     font-size: 20px;
     border: none;
     border-radius: 8px;
     height: 52px;
+    letter-spacing: 1px;
 
     @media (max-width: 768px) {
       font-size: 18px;

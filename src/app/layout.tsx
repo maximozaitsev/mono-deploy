@@ -1,13 +1,14 @@
 import { Metadata } from "next";
 
-const url = "botemania-online.com";
-const ogTitle = "Botemania Casino España: Reseña detallada e información útil";
-const ogSiteName = "Botemania Casino";
+const url = "quatrocasino-online.com";
+const ogTitle =
+  "Quatro Casino Österreich: Genießen Sie Premium Spiele und Boni";
+const ogSiteName = "Quatro Casino";
 const metaDescription =
-  "Botemania Casino España: todo lo que necesitas saber para principiantes y jugadores experimentados. Una visión detallada de los juegos, promociones, métodos de pago y otras características de la plataforma de juego.";
+  "Quatro Casino Österreich bietet ein umfangreiches Angebot an erstklassigen Spielen, sicheren Transaktionen und hervorragenden Spielerprämien. Melden Sie sich noch heute an und fordern Sie Ihre exklusiven Boni an, um Ihr Spielerlebnis zu verbessern!";
 
-const locale = "es-ES";
-const language = "Spanish";
+const locale = "de-AT";
+const language = "German";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
