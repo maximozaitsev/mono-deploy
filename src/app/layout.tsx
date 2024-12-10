@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "zodiac-casino-online.com";
+const url = "treasury-casino-online.com";
 const ogTitle =
-  "Zodiac Casino Österreich - Ihre erste Adresse für Online-Vergnügen";
-const ogSiteName = "Zodiac Casino";
+  "Treasury Casino Australia: Incredible Experience at the Best Casino";
+const ogSiteName = "Treasury Casino";
 const metaDescription =
-  "Zodiac Casino Österreich bietet ein unvergleichliches Spielerlebnis mit Top-Slots, Tischspielen und riesigen Boni. Melden Sie sich noch heute an, um exklusive Angebote zu erhalten und groß zu gewinnen!";
+  "Treasury Casino Australia: Enjoy great service and the best gaming opportunities. Up-to-date review of the popular casino, entertainment selection and bonus offers";
 
-const locale = "de-AT";
-const language = "German";
+const locale = "en-AU";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

@@ -18,7 +18,7 @@
     .row {
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 16px 18px;
       margin-bottom: 24px;
 
       &:first-child {
@@ -32,7 +32,7 @@
           margin-bottom: 0;
 
           img {
-            margin-top: 16px;
+            margin-top: 8px;
             margin-left: 0px;
             position: absolute;
             left: 160px;
@@ -59,10 +59,10 @@
       }
 
       &:nth-child(2) {
-        gap: 7px;
+        gap: 11px;
 
         @media (max-width: 768px) {
-          gap: 4px !important;
+          gap: 8px !important;
         }
       }
 
