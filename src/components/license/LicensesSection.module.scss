@@ -24,6 +24,7 @@
       flex: 1;
       display: flex;
       justify-content: flex-end;
+      gap: 48px;
 
       img {
         width: auto;
@@ -52,9 +53,17 @@
         margin-bottom: 40px;
 
         img {
-          max-width: 404px;
-          width: 100%;
-          height: auto;
+          &:first-child {
+            max-width: 160px;
+            width: 100%;
+            height: auto;
+          }
+
+          &:last-child {
+            max-width: 113px;
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }

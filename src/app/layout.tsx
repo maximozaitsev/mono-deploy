@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "treasury-casino-online.com";
+const url = " interwetten-casino-online.com";
 const ogTitle =
-  "Treasury Casino Australia: Incredible Experience at the Best Casino";
-const ogSiteName = "Treasury Casino";
+  "Interwetten Casino Österreich: Ihre ultimative Online-Spielplattform";
+const ogSiteName = "Interwetten Casino";
 const metaDescription =
-  "Treasury Casino Australia: Enjoy great service and the best gaming opportunities. Up-to-date review of the popular casino, entertainment selection and bonus offers";
+  "Interwetten Casino Österreich bietet ein außergewöhnliches Spielerlebnis mit hunderten Spielautomaten, spannenden Tischspielen und fesselnden Live-Dealer-Optionen. Melden Sie sich noch heute an, um endlose Unterhaltung zu erleben und Ihren exklusiven Willkommensbonus zu erhalten!";
 
-const locale = "en-AU";
-const language = "English";
+const locale = "de-AT";
+const language = "German";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
