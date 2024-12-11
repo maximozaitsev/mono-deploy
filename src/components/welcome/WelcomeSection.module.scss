@@ -2,41 +2,59 @@
 @import "../../styles/typography.scss";
 
 .welcomeSection {
+  background: #d7efff;
+  margin-bottom: 140px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    margin-bottom: 62px;
+  }
+}
+
+.welcomeBg {
   display: flex;
   justify-content: center;
-  background: $color-background;
+  width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 160px top 0px;
-  width: 100%;
-  height: 540px;
+  /* background-size: 34% auto; */
+  background-position: right 90px center;
   max-width: 90rem;
-  margin: 0 auto 140px auto;
+  margin: 0 auto;
+  height: 540px;
 
   & :global(.container) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
   }
+
   @media (max-width: 1180px) {
+    background-position: right 0px center;
+  }
+
+  @media (max-width: 1100px) {
+    background-position: right 10px center;
     background-size: 50% auto;
-    background-position: right 20px center;
   }
 
   @media (max-width: 768px) {
-    padding-top: 21.35rem;
-    height: auto;
+    padding-top: 24rem;
+    height: 600px;
     justify-content: flex-end;
-    background-size: auto 65%;
-    background-position: top center;
-    margin: 0 auto 84px auto;
+    background-size: auto 62%;
+    background-position: top 16px center;
+    // margin: 0 auto 19px auto;
   }
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 63%;
   }
 
-  @media (max-width: 470px) {
-    margin: 0 auto 72px auto;
+  @media (max-width: 450px) {
+    height: auto;
+    margin: 0 auto 19px auto;
     background-size: auto 50%;
     padding-top: 14.35rem;
   }
@@ -50,10 +68,18 @@
   z-index: 1;
   max-width: 72.5rem;
 
+  button {
+    max-width: 297px;
+    width: 100%;
+  }
+
   @media (max-width: 768px) {
     button {
       align-self: center;
       max-height: 77px;
+      max-width: 269px !important;
+      width: 100%;
+      padding: 0 !important;
     }
   }
 }
@@ -67,7 +93,7 @@
   max-width: 50%;
   // margin-left: -20px;
 
-  .bonusText {
+  .welcomeMobile {
     display: none;
   }
 
@@ -76,19 +102,18 @@
   }
 
   @media (max-width: 768px) {
+    .welcomeDesktop {
+      display: none;
+    }
+    .welcomeMobile {
+      display: block;
+    }
+
     width: 100%;
     max-width: 100%;
     gap: 24px;
     align-items: center;
     text-align: center;
-
-    .bonusText {
-      display: block;
-    }
-
-    .offerText {
-      display: none;
-    }
   }
 
   @media (max-width: 380px) {
@@ -100,13 +125,13 @@
   font-family: $font-secondary;
   font-size: 64px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: normal;
+  line-height: 74px;
   text-transform: uppercase;
-  color: $text-color-welcome;
+  color: $text-color-secondary;
 
-  // background: linear-gradient($text-color-welcome);
+  // background: linear-gradient($text-color-secondary-gradient);
   // background-clip: text;
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
@@ -125,9 +150,10 @@
   line-height: normal;
 
   @media (max-width: 768px) {
-    font-size: 24px;
     font-family: $font-secondary;
-    font-weight: 900;
+    color: $text-color-secondary;
+    font-size: 24px;
+    font-weight: 800;
     text-transform: uppercase;
   }
 

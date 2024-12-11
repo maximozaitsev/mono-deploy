@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = " interwetten-casino-online.com";
+const url = "casino-seefeld-online.com";
 const ogTitle =
-  "Interwetten Casino Österreich: Ihre ultimative Online-Spielplattform";
-const ogSiteName = "Interwetten Casino";
+  "Casino Seefeld Österreich: Unvergessliches Spiel im besten Casino";
+const ogSiteName = "Casino Seefeld";
 const metaDescription =
-  "Interwetten Casino Österreich bietet ein außergewöhnliches Spielerlebnis mit hunderten Spielautomaten, spannenden Tischspielen und fesselnden Live-Dealer-Optionen. Melden Sie sich noch heute an, um endlose Unterhaltung zu erleben und Ihren exklusiven Willkommensbonus zu erhalten!";
+  "Seefeld Casino Österreich: Tolle Angebote, Turniere, Vielfalt an Glücksspielen und vieles mehr. Was Kunden vor dem Besuch des besten österreichischen Casinos wissen müssen";
 
 const locale = "de-AT";
 const language = "German";

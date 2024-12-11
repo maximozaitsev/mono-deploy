@@ -24,19 +24,9 @@
       flex: 1;
       display: flex;
       justify-content: flex-end;
-      gap: 48px;
 
       img {
         width: auto;
-      }
-
-      @media (max-width: 400px) {
-        gap: 20px;
-      }
-
-      @media (max-width: 350px) {
-        flex-direction: column;
-        align-items: center;
       }
     }
   }
@@ -62,17 +52,9 @@
         margin-bottom: 40px;
 
         img {
-          &:first-child {
-            max-width: 160px;
-            width: 100%;
-            height: auto;
-          }
-
-          &:last-child {
-            max-width: 113px;
-            width: 100%;
-            height: auto;
-          }
+          max-width: 160px;
+          width: 100%;
+          height: auto;
         }
       }
     }

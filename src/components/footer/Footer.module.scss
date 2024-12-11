@@ -18,7 +18,7 @@
     .row {
       display: flex;
       justify-content: center;
-      gap: 16px 18px;
+      gap: 16px;
       margin-bottom: 24px;
 
       &:first-child {
@@ -32,7 +32,7 @@
           margin-bottom: 0;
 
           img {
-            margin-top: 8px;
+            margin-top: 16px;
             margin-left: 0px;
             position: absolute;
             left: 160px;
@@ -59,10 +59,10 @@
       }
 
       &:nth-child(2) {
-        gap: 11px;
+        gap: 7px;
 
         @media (max-width: 768px) {
-          gap: 8px !important;
+          gap: 4px !important;
         }
       }
 
@@ -91,7 +91,7 @@
   }
 
   .copyright {
-    color: #00041a;
+    color: rgba(255, 255, 255, 0.34);
     font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
