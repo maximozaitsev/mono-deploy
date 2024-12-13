@@ -53,12 +53,12 @@ body {
 }
 
 .h2-heading {
-  color: $text-color-secondary;
+  color: #a00;
   font-family: $font-secondary;
   font-size: 56px;
   font-style: normal;
-  font-weight: 800;
-  line-height: normal;
+  font-weight: 700;
+  line-height: 120%;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -83,8 +83,8 @@ body {
   font-family: $font-secondary;
   font-size: 40px;
   font-style: normal;
-  font-weight: 800;
-  line-height: normal;
+  font-weight: 700;
+  line-height: 120%;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -101,12 +101,13 @@ body {
 }
 
 .h4-heading {
-  color: $text-color-secondary;
+  color: #a00;
   font-family: $font-secondary;
   font-size: 24px;
   font-style: normal;
-  font-weight: 800;
-  line-height: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.72px;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;

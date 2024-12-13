@@ -1,26 +1,18 @@
 export const faqs = [
   {
-    question: "Mit welcher Lizenz arbeitet das Casino?",
+    question: "Wie sind Casino Salzburg Restaurant Öffnungszeiten?",
     answer:
-      "Es handelt sich um eine Lizenz der Österreichischen Glücksspielkommission.",
+      "Die Casino Salzburg Öffnungszeiten sind von Sonntag bis Donnerstag von 11:00 Uhr bis 3:00 Uhr und Freitag bis Samstag von 11:00 Uhr bis 4:00 Uhr. Der Casino Classic Bereich ist von Sonntag bis Donnerstag von 16:00 Uhr bis 3:00 Uhr und Freitag bis Samstag von 16:00 Uhr bis 4.00 Uhr geöffnet.",
   },
   {
-    question: "Ab welchem Alter kann man dieses Casino besuchen?",
-    answer: "Der Zutritt zum Casino ist ab 18 Jahren erlaubt.",
+    question: "Gibt es einen Casino Salzburg Dresscode?",
+    answer:
+      "Ja, ein angemessener Casino Salzburg Dresscode ist erforderlich. Formelle Kleidung ist zwar nicht vorgeschrieben, von allzu legerer Kleidung wie Sportbekleidung wird jedoch abgeraten. Männer müssen eventuell Jacken tragen, die vor Ort ausgeliehen werden können.",
   },
   {
     question:
-      "Wie viel kostet der Eintritt in den Saal mit den Spielautomaten?",
-    answer: "Der Eintritt in den Saal mit den Spielautomaten ist kostenlos.",
-  },
-  {
-    question: "Was bringt Ihnen die Teilnahme an dem Treueprogramm?",
+      "Welcher Ausweis ist für den Eintritt in das Silvester Casino Salzburg erforderlich?",
     answer:
-      "Sie erhalten exklusive Geschenke, Boni, Preise, kostenloses Parken, Rabatte in Restaurants und Bars, Gutscheine und vieles mehr.",
-  },
-  {
-    question: "Gibt es im Casino eine Kleiderordnung?",
-    answer:
-      "Ja. Hier müssen Sie die Regeln der Kleiderordnung befolgen, unabhängig von Ihrem Status im Treueprogramm.",
+      "Gäste müssen mindestens 18 Jahre alt sein und einen gültigen Lichtbildausweis, wie z.B. einen Reisepass, Führerschein oder Personalausweis, vorlegen. Digitale Ausweise werden nicht akzeptiert.",
   },
 ];

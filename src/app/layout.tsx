@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "casino-seefeld-online.com";
+const url = "casino-salzburg-online.com";
 const ogTitle =
-  "Casino Seefeld Österreich: Unvergessliches Spiel im besten Casino";
-const ogSiteName = "Casino Seefeld";
+  "Casino Salzburg, Österreich - Ultimatives Spiel- und Luxus Erlebnis";
+const ogSiteName = "Casino Salzburg";
 const metaDescription =
-  "Seefeld Casino Österreich: Tolle Angebote, Turniere, Vielfalt an Glücksspielen und vieles mehr. Was Kunden vor dem Besuch des besten österreichischen Casinos wissen müssen";
+  "Das Casino Salzburg, eingebettet in Österreichs historischem Schloss Klessheim, kombiniert elegante Architektur mit erstklassigem Glücksspiel und Gourmetküche. Besuchen Sie diesen außergewöhnlichen Ort und genießen Sie eine perfekte Mischung aus Geschichte, Luxus und Unterhaltung!";
 
 const locale = "de-AT";
 const language = "German";
