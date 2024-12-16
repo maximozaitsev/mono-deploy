@@ -84,6 +84,12 @@ export default function RootLayout({
           type="image/png"
           sizes="192x192"
         />
+        <link rel="preload" href="/block-images/welcome.webp" as="image" />
+        <link
+          rel="preload"
+          href="/block-images/welcome-mobile.webp"
+          as="image"
+        />
       </head>
       <body>{children}</body>
     </html>
