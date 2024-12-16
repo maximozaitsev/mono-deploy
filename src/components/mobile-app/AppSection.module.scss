@@ -3,6 +3,25 @@
 .appSection {
   background: $color-background-secondary;
   padding: 64px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(50deg, #141414 0%, #fff 50%, #141414 100%);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
 
   @media (max-width: 768px) {
     padding: 64px 0;
@@ -43,8 +62,8 @@
 
     .image {
       position: absolute;
-      top: 29px;
-      right: -89px;
+      top: 23px;
+      right: -13px;
       overflow: hidden;
       height: auto;
     }
@@ -67,12 +86,10 @@
 
       .imageMobile {
         display: block;
-        max-width: 476px;
+        max-width: 453px;
         width: 100%;
         height: auto;
         align-self: center;
-        margin-top: 10px;
-        margin-bottom: 22px;
       }
 
       h3 {

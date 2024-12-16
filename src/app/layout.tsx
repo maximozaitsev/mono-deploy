@@ -1,14 +1,13 @@
 import { Metadata } from "next";
 
-const url = "casino-velden-online.com";
-const ogTitle =
-  "Casino Velden in Österreich - Ihre erste Adresse für Unterhaltung";
-const ogSiteName = "Casino Velden";
+const url = "luckymate-online.com";
+const ogTitle = "Luckymate Casino: Wide Range of Games for Australian Players";
+const ogSiteName = "Luckymate Casino";
 const metaDescription =
-  "Das Casino Velden, eingebettet in Österreich am Wörthersee, vereint aufregende Spiele, luxuriöses Essen und eine atemberaubende Landschaft. Erleben Sie noch heute Spiele, Veranstaltungen und Gastfreundschaft von Weltklasse - eine unvergessliche Nacht wartet auf Sie!";
+  "Profitable games at Luckymate Casino in Australia, including pokies, tournaments, live games, and table games. Register now and get a 100% welcome bonus on your first four deposits.";
 
-const locale = "de-AT";
-const language = "German";
+const locale = "en-AU";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

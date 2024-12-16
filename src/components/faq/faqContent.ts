@@ -1,48 +1,23 @@
 export const faqs = [
   {
-    question: "Wie sind die Betriebszeiten des Casino Garage Velden?",
-    answer: "Das Casino ist täglich von 10:00 Uhr bis 3:00 Uhr geöffnet.",
+    question: "What are the minimum deposits?",
+    answer: "The minimum deposit amount is AU$20.",
   },
   {
-    question: "Was ist der Dresscode Casino Velden?",
+    question: "Are demo games available?",
+    answer: "Yes, most games can be tested in demo mode.",
+  },
+  {
+    question: "What are the withdrawal limits?",
     answer:
-      "Ja, eine elegante, legere Casino Velden-Kleiderordnung ist erforderlich.",
+      "Withdrawals are limited to AU$10,000 per week and AU$40,000 per month.",
   },
   {
-    question: "Was ist das Mindestalter und die Casino Velden Eintrittspreise?",
-    answer: "Gäste müssen mindestens 18 Jahre alt sein, um Zutritt zu haben.",
+    question: "Can I play from a mobile device?",
+    answer: "Yes, the site is fully optimized for mobile devices.",
   },
   {
-    question: "Ist das Rauchen im Casino Velden erlaubt?",
-    answer: "Das Rauchen ist nur in ausgewiesenen Bereichen erlaubt.",
-  },
-  {
-    question: "Ist eine Casino Parkgarage Velden vorhanden?",
-    answer: "Ja, es steht eine Parkgarage für Gäste zur Verfügung.",
-  },
-  {
-    question: "Gibt es im Casino Velden Ball ein Restaurant?",
-    answer: "Ja, das Casino Velden restaurant bietet Gourmetküche.",
-  },
-  {
-    question:
-      "Finden im Casino Hotel Velden Parken Veranstaltungen oder Turniere statt?",
-    answer:
-      "Ja, im Casino Velden Parken werden regelmäßig Veranstaltungen und Pokerturniere abgehalten.",
-  },
-  {
-    question: "Ist der Eintritt ins Velden Casino Parken kostenpflichtig?",
-    answer: "Nein, der Eintritt in das Casino Velden heute ist kostenlos.",
-  },
-  {
-    question:
-      "Gibt es Übernachtungsmöglichkeiten in der Nähe des Casino Velden Parkplatz?",
-    answer:
-      "Ja, das Casino Hotel Velden befindet sich direkt gegenüber dem Casino.",
-  },
-  {
-    question: "Bietet das Garage Casino Velden ein Treueprogramm an?",
-    answer:
-      "Ja, das Glücks Card Programm bietet verschiedene Vorteile für Mitglieder.",
+    question: "How to contact support?",
+    answer: "Via live chat or email support@luckymate.com.",
   },
 ];

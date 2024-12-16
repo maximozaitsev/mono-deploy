@@ -10,7 +10,7 @@
   align-items: center;
   gap: 16px;
 
-  outline: 2px solid #a00;
+  outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
   background: $color-background-third;
 
@@ -19,7 +19,7 @@
   }
 
   h3 {
-    color: $text-color-secondary;
+    color: #090909;
     text-align: center;
     font-family: $font-secondary;
     font-size: 20px;
@@ -34,12 +34,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    // color: $text-color-fourth;
+    color: $text-color-primary;
 
-    background: linear-gradient(180deg, #00ebff 0%, #4782ff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: linear-gradient($text-color-fourth);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   p {
@@ -58,7 +58,7 @@
 
   button {
     margin-top: auto;
-    width: 217px;
+    width: 200px;
     // margin-left: 5px;
   }
 

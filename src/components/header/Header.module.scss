@@ -13,6 +13,10 @@
     margin-top: 4px;
     margin-left: 0px;
     scale: 1;
+
+    @media (max-width: 768px) {
+      margin-top: -7px;
+    }
   }
 
   @media (max-width: 1080px) {

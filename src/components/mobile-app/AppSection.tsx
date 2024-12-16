@@ -5,6 +5,7 @@ import AppImage from "../../../public/block-images/app.webp";
 import AppImageMobile from "../../../public/block-images/app-mobile.webp";
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
+import List from "../__common__/list/List";
 import { content } from "@/content/content";
 
 import styles from "./AppSection.module.scss";
@@ -25,6 +26,8 @@ export default function AppSection() {
               quality={100}
             />
             <p className="paragraph-text">{content.app.text[0]}</p>
+            <List items={content.app.list1} />
+            <p className="paragraph-text">{content.app.text[1]}</p>
             <div className={styles.buttons}>
               <button
                 className="google-play"
