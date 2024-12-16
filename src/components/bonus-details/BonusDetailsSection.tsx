@@ -77,6 +77,8 @@ const BonusDetailsSection: React.FC = () => {
                 onClick={() => toggleAccordion(offer.id)}
                 className="icon-button"
                 aria-label="Toggle information for offer"
+                для
+                InfoIcon
               >
                 <InfoIcon />
               </button>

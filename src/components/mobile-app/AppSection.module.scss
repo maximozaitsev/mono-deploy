@@ -3,8 +3,6 @@
 .appSection {
   background: $color-background-secondary;
   padding: 64px;
-  border-top: 2px solid #616161;
-  border-bottom: 2px solid #616161;
 
   @media (max-width: 768px) {
     padding: 64px 0;
@@ -45,8 +43,8 @@
 
     .image {
       position: absolute;
-      top: -45px;
-      right: -71px;
+      top: 29px;
+      right: -89px;
       overflow: hidden;
       height: auto;
     }
@@ -69,10 +67,12 @@
 
       .imageMobile {
         display: block;
-        max-width: 439px;
+        max-width: 476px;
         width: 100%;
         height: auto;
         align-self: center;
+        margin-top: 10px;
+        margin-bottom: 22px;
       }
 
       h3 {

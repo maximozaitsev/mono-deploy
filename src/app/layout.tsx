@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "casino-salzburg-online.com";
+const url = "casino-velden-online.com";
 const ogTitle =
-  "Casino Salzburg, Österreich - Ultimatives Spiel- und Luxus Erlebnis";
-const ogSiteName = "Casino Salzburg";
+  "Casino Velden in Österreich - Ihre erste Adresse für Unterhaltung";
+const ogSiteName = "Casino Velden";
 const metaDescription =
-  "Das Casino Salzburg, eingebettet in Österreichs historischem Schloss Klessheim, kombiniert elegante Architektur mit erstklassigem Glücksspiel und Gourmetküche. Besuchen Sie diesen außergewöhnlichen Ort und genießen Sie eine perfekte Mischung aus Geschichte, Luxus und Unterhaltung!";
+  "Das Casino Velden, eingebettet in Österreich am Wörthersee, vereint aufregende Spiele, luxuriöses Essen und eine atemberaubende Landschaft. Erleben Sie noch heute Spiele, Veranstaltungen und Gastfreundschaft von Weltklasse - eine unvergessliche Nacht wartet auf Sie!";
 
 const locale = "de-AT";
 const language = "German";
@@ -83,12 +83,6 @@ export default function RootLayout({
           href="/icons/xxxhdpi.png"
           type="image/png"
           sizes="192x192"
-        />
-        <link rel="preload" href="/block-images/welcome.webp" as="image" />
-        <link
-          rel="preload"
-          href="/block-images/welcome-mobile.webp"
-          as="image"
         />
       </head>
       <body>{children}</body>

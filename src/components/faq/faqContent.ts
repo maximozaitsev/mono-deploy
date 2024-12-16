@@ -1,18 +1,48 @@
 export const faqs = [
   {
-    question: "Wie sind Casino Salzburg Restaurant Öffnungszeiten?",
-    answer:
-      "Die Casino Salzburg Öffnungszeiten sind von Sonntag bis Donnerstag von 11:00 Uhr bis 3:00 Uhr und Freitag bis Samstag von 11:00 Uhr bis 4:00 Uhr. Der Casino Classic Bereich ist von Sonntag bis Donnerstag von 16:00 Uhr bis 3:00 Uhr und Freitag bis Samstag von 16:00 Uhr bis 4.00 Uhr geöffnet.",
+    question: "Wie sind die Betriebszeiten des Casino Garage Velden?",
+    answer: "Das Casino ist täglich von 10:00 Uhr bis 3:00 Uhr geöffnet.",
   },
   {
-    question: "Gibt es einen Casino Salzburg Dresscode?",
+    question: "Was ist der Dresscode Casino Velden?",
     answer:
-      "Ja, ein angemessener Casino Salzburg Dresscode ist erforderlich. Formelle Kleidung ist zwar nicht vorgeschrieben, von allzu legerer Kleidung wie Sportbekleidung wird jedoch abgeraten. Männer müssen eventuell Jacken tragen, die vor Ort ausgeliehen werden können.",
+      "Ja, eine elegante, legere Casino Velden-Kleiderordnung ist erforderlich.",
+  },
+  {
+    question: "Was ist das Mindestalter und die Casino Velden Eintrittspreise?",
+    answer: "Gäste müssen mindestens 18 Jahre alt sein, um Zutritt zu haben.",
+  },
+  {
+    question: "Ist das Rauchen im Casino Velden erlaubt?",
+    answer: "Das Rauchen ist nur in ausgewiesenen Bereichen erlaubt.",
+  },
+  {
+    question: "Ist eine Casino Parkgarage Velden vorhanden?",
+    answer: "Ja, es steht eine Parkgarage für Gäste zur Verfügung.",
+  },
+  {
+    question: "Gibt es im Casino Velden Ball ein Restaurant?",
+    answer: "Ja, das Casino Velden restaurant bietet Gourmetküche.",
   },
   {
     question:
-      "Welcher Ausweis ist für den Eintritt in das Silvester Casino Salzburg erforderlich?",
+      "Finden im Casino Hotel Velden Parken Veranstaltungen oder Turniere statt?",
     answer:
-      "Gäste müssen mindestens 18 Jahre alt sein und einen gültigen Lichtbildausweis, wie z.B. einen Reisepass, Führerschein oder Personalausweis, vorlegen. Digitale Ausweise werden nicht akzeptiert.",
+      "Ja, im Casino Velden Parken werden regelmäßig Veranstaltungen und Pokerturniere abgehalten.",
+  },
+  {
+    question: "Ist der Eintritt ins Velden Casino Parken kostenpflichtig?",
+    answer: "Nein, der Eintritt in das Casino Velden heute ist kostenlos.",
+  },
+  {
+    question:
+      "Gibt es Übernachtungsmöglichkeiten in der Nähe des Casino Velden Parkplatz?",
+    answer:
+      "Ja, das Casino Hotel Velden befindet sich direkt gegenüber dem Casino.",
+  },
+  {
+    question: "Bietet das Garage Casino Velden ein Treueprogramm an?",
+    answer:
+      "Ja, das Glücks Card Programm bietet verschiedene Vorteile für Mitglieder.",
   },
 ];

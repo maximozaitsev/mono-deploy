@@ -10,7 +10,7 @@
   align-items: center;
   gap: 16px;
 
-  outline: $border-width solid $color-border-primary;
+  outline: 2px solid #a00;
   border-radius: $border-radius;
   background: $color-background-third;
 
@@ -34,12 +34,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: $text-color-fourth;
+    // color: $text-color-fourth;
 
-    // background: linear-gradient($text-color-fourth);
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, #00ebff 0%, #4782ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   p {
@@ -58,7 +58,7 @@
 
   button {
     margin-top: auto;
-    width: 192px;
+    width: 217px;
     // margin-left: 5px;
   }
 

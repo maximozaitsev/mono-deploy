@@ -6,8 +6,6 @@
 
   padding: 64px 0;
   margin-bottom: 140px;
-  border-top: 2px solid #616161;
-  border-bottom: 2px solid #616161;
 
   .mobile-content {
     display: flex;
@@ -84,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -95px;
-      top: 48px;
+      left: -117px;
+      top: -1px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -105,7 +103,7 @@
 
       .app-image {
         height: 405px;
-        width: 448px;
+        width: 496px;
         object-fit: contain;
       }
     }
@@ -139,9 +137,13 @@
         padding: 24px;
 
         .app-image {
-          /* margin-left: -35px; */
+          margin-left: -50px;
           margin-bottom: 4px;
           padding-bottom: 20px;
+
+          @media (max-width: 500px) {
+            margin-left: 0px;
+          }
         }
 
         h3 {

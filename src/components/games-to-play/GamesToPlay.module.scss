@@ -3,8 +3,6 @@
 .gamesToPlay {
   padding: 64px 0;
   background: $color-background-secondary;
-  border-top: 2px solid #616161;
-  border-bottom: 2px solid #616161;
 
   :global(.container) {
     display: flex;
