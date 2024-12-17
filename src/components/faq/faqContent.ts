@@ -1,23 +1,17 @@
 export const faqs = [
   {
-    question: "What are the minimum deposits?",
-    answer: "The minimum deposit amount is AU$20.",
-  },
-  {
-    question: "Are demo games available?",
-    answer: "Yes, most games can be tested in demo mode.",
-  },
-  {
-    question: "What are the withdrawal limits?",
+    question: "How can I get N1 casino 25 free spins?",
     answer:
-      "Withdrawals are limited to AU$10,000 per week and AU$40,000 per month.",
+      "You should participate in the casino promotions such as welcome offers, Monday Reloads, tournaments, and others to get mind-blowing rewards, including FS and bonus cash.",
   },
   {
-    question: "Can I play from a mobile device?",
-    answer: "Yes, the site is fully optimized for mobile devices.",
+    question: "Where can I use promo or bonus code here?",
+    answer:
+      "Monday and Friday reload bonuses require n1 casino code for activation.",
   },
   {
-    question: "How to contact support?",
-    answer: "Via live chat or email support@luckymate.com.",
+    question: "Can I play games at N1 Casino for free?",
+    answer:
+      "Yes, the casino offers fun modes to let players investigate the game before making the fist deposit. ",
   },
 ];

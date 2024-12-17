@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "luckymate-online.com";
-const ogTitle = "Luckymate Casino: Wide Range of Games for Australian Players";
-const ogSiteName = "Luckymate Casino";
+const url = "n1-casino-at.com";
+const ogTitle = "N1 Casino Austria Review: From Games to Bonuses and Security";
+const ogSiteName = "N1 Casino Austria";
 const metaDescription =
-  "Profitable games at Luckymate Casino in Australia, including pokies, tournaments, live games, and table games. Register now and get a 100% welcome bonus on your first four deposits.";
+  "N1 Casino Austria welcomes you with the generous welcome package and regular promotions to promise the best gaming experience. Learn more about this licensed casino to experience fair gaming and lucrative wins!";
 
-const locale = "en-AU";
-const language = "English";
+const locale = "de-AT";
+const language = "German";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

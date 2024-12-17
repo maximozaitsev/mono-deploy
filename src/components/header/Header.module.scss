@@ -4,9 +4,8 @@
 .header {
   background: $color-background-header;
   padding: 20px 160px;
-  position: fixed; // Вместо sticky
+  position: sticky;
   top: 0;
-  width: 100%;
   z-index: 1000;
   height: 96px;
 
@@ -15,8 +14,10 @@
     margin-left: 0px;
     scale: 1;
 
-    @media (max-width: 768px) {
-      margin-top: -7px;
+    @media (max-width: 746px) {
+      margin-top: -5px;
+      margin-left: -3px;
+      scale: 0.95;
     }
   }
 

@@ -7,47 +7,11 @@
   background: $color-background;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 128px top 0px;
+  background-position: right 123px top 60px;
   width: 100%;
   height: 540px;
   max-width: 90rem;
   margin: 0 auto 140px auto;
-  position: relative;
-
-  .gradient {
-    position: absolute;
-    width: 726px;
-    height: 1096.5px;
-    flex-shrink: 0;
-    border-radius: 1096.5px;
-    opacity: 0.2;
-    background: #0f3;
-    filter: blur(300px);
-    left: -25%;
-    top: 36%;
-
-    @media (max-width: 768px) {
-      width: 100%;
-      left: -50%;
-    }
-  }
-
-  .gradientRed {
-    position: absolute;
-    width: 726px;
-    height: 1096.5px;
-    flex-shrink: 0;
-    border-radius: 1096.5px;
-    opacity: 0.2;
-    background: #f40;
-    filter: blur(300px);
-    right: -25%;
-    top: 200%;
-
-    @media (max-width: 768px) {
-      top: 300%;
-    }
-  }
 
   & :global(.container) {
     width: 100%;
@@ -58,17 +22,21 @@
   }
 
   @media (max-width: 768px) {
-    padding-top: 21.35rem;
+    padding-top: 21rem;
     height: auto;
     justify-content: flex-end;
     background-size: auto 65%;
-    background-position: top 18px center;
+    background-position: top center;
     margin: 0 auto 84px auto;
   }
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 60%;
+    background-size: auto 63%;
+  }
+
+  @media (max-width: 560px) {
+    background-size: auto 50%;
   }
 
   @media (max-width: 420px) {
@@ -136,12 +104,11 @@
   font-family: $font-secondary;
   font-size: 64px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: 120%;
+  line-height: normal;
   text-transform: uppercase;
   color: $text-color-welcome;
-  letter-spacing: 1.92px;
 
   // background: linear-gradient($text-color-welcome);
   // background-clip: text;
@@ -164,7 +131,7 @@
   @media (max-width: 768px) {
     font-size: 24px;
     font-family: $font-secondary;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;
   }
 

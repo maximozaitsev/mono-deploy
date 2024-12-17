@@ -17,15 +17,6 @@ body {
   font-family: $font-primary;
 }
 
-main {
-  padding-top: 96px;
-  overflow: hidden;
-
-  @media (max-width: 380px) {
-    padding-top: 59px;
-  }
-}
-
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -66,13 +57,12 @@ main {
   font-family: $font-secondary;
   font-size: 56px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 120%;
+  font-weight: 900;
+  line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
-  z-index: 2;
 
   &.white {
     color: $text-color-primary;
@@ -80,7 +70,7 @@ main {
 
   @media (max-width: 768px) {
     font-size: 32px;
-    // font-weight: 900;
+    font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -93,7 +83,7 @@ main {
   font-family: $font-secondary;
   font-size: 40px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -102,7 +92,7 @@ main {
 
   @media (max-width: 768px) {
     font-size: 24px;
-    // font-weight: 900;
+    font-weight: 900;
   }
 
   @media (max-width: 570px) {
@@ -115,7 +105,7 @@ main {
   font-family: $font-secondary;
   font-size: 24px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
   word-wrap: break-word;

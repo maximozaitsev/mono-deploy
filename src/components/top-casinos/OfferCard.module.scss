@@ -9,7 +9,6 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  z-index: 2;
 
   outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
@@ -20,7 +19,7 @@
   }
 
   h3 {
-    color: #090909;
+    color: $text-color-secondary;
     text-align: center;
     font-family: $font-secondary;
     font-size: 20px;
@@ -35,7 +34,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: $text-color-primary;
+    color: $text-color-fourth;
 
     // background: linear-gradient($text-color-fourth);
     // background-clip: text;
@@ -59,7 +58,7 @@
 
   button {
     margin-top: auto;
-    width: 200px;
+    width: 209px;
     // margin-left: 5px;
   }
 

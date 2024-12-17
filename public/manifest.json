@@ -1,7 +1,7 @@
 {
   "id": "1",
-  "name": "Luckymate Online",
-  "short_name": "Luckymate",
+  "name": "name",
+  "short_name": "shortName",
   "icons": [
     {
       "src": "/icons/Icon.png",

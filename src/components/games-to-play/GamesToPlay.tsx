@@ -7,10 +7,7 @@ export default function GamesToPlay() {
     <section className={`${styles.gamesToPlay} section `}>
       <div className="container">
         <h2 className="h2-heading white">{content.gamesToPlay.title}</h2>
-        <div className={styles.wrapper}>
-          <p className="paragraph-text">{content.gamesToPlay.text[0]}</p>
-          <p className="paragraph-text">{content.gamesToPlay.text[1]}</p>
-        </div>
+        <p className="paragraph-text">{content.gamesToPlay.text[0]}</p>
         <TwoColumns
           leftColumnContent={[
             {
@@ -19,14 +16,6 @@ export default function GamesToPlay() {
                 {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[0].text[0],
-                },
-                {
-                  type: "list",
-                  content: content.gamesToPlay.leftColumnContent[0].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[0].text[1],
                 },
               ],
             },
@@ -47,6 +36,8 @@ export default function GamesToPlay() {
                 },
               ],
             },
+          ]}
+          rightColumnContent={[
             {
               heading: content.gamesToPlay.leftColumnContent[2].heading,
               items: [
@@ -54,18 +45,8 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[2].text[0],
                 },
-                {
-                  type: "list",
-                  content: content.gamesToPlay.leftColumnContent[2].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[2].text[1],
-                },
               ],
             },
-          ]}
-          rightColumnContent={[
             {
               heading: content.gamesToPlay.gamesRightColumn[0].heading,
               items: [
@@ -73,14 +54,6 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.gamesRightColumn[0].text[0],
                 },
-                {
-                  type: "list",
-                  content: content.gamesToPlay.gamesRightColumn[0].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[0].text[1],
-                },
               ],
             },
             {
@@ -90,30 +63,14 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.gamesRightColumn[1].text[0],
                 },
-                {
-                  type: "list",
-                  content: content.gamesToPlay.gamesRightColumn[1].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[1].text[1],
-                },
               ],
             },
             {
-              heading: content.gamesToPlay.gamesRightColumn[1].heading,
+              heading: content.gamesToPlay.gamesRightColumn[2].heading,
               items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[1].text[0],
-                },
-                {
-                  type: "list",
-                  content: content.gamesToPlay.gamesRightColumn[1].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[1].text[1],
+                  content: content.gamesToPlay.gamesRightColumn[2].text[0],
                 },
               ],
             },
