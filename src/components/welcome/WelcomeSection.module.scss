@@ -12,6 +12,42 @@
   height: 540px;
   max-width: 90rem;
   margin: 0 auto 140px auto;
+  position: relative;
+
+  .gradient {
+    position: absolute;
+    width: 726px;
+    height: 1096.5px;
+    flex-shrink: 0;
+    border-radius: 1096.5px;
+    opacity: 0.2;
+    background: #0f3;
+    filter: blur(300px);
+    left: -25%;
+    top: 36%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      left: -50%;
+    }
+  }
+
+  .gradientRed {
+    position: absolute;
+    width: 726px;
+    height: 1096.5px;
+    flex-shrink: 0;
+    border-radius: 1096.5px;
+    opacity: 0.2;
+    background: #f40;
+    filter: blur(300px);
+    right: -25%;
+    top: 200%;
+
+    @media (max-width: 768px) {
+      top: 300%;
+    }
+  }
 
   & :global(.container) {
     width: 100%;

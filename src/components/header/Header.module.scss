@@ -4,8 +4,9 @@
 .header {
   background: $color-background-header;
   padding: 20px 160px;
-  position: sticky;
+  position: fixed; // Вместо sticky
   top: 0;
+  width: 100%;
   z-index: 1000;
   height: 96px;
 

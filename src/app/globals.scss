@@ -17,6 +17,11 @@ body {
   font-family: $font-primary;
 }
 
+main {
+  padding-top: 96px;
+  overflow: hidden;
+}
+
 .container {
   max-width: 1120px;
   margin: 0 auto;
@@ -63,6 +68,7 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
+  z-index: 2;
 
   &.white {
     color: $text-color-primary;

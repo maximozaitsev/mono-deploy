@@ -27,6 +27,7 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
+      <div className={styles.gradient}></div>
       <div className="container">
         <div className={styles.welcomeContent}>
           <div className={styles.welcomeText}>
@@ -41,6 +42,7 @@ export default function WelcomeSection() {
           </div>
         </div>
       </div>
+      <div className={styles.gradientRed}></div>
     </section>
   );
 }
