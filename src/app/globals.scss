@@ -20,6 +20,10 @@ body {
 main {
   padding-top: 96px;
   overflow: hidden;
+
+  @media (max-width: 380px) {
+    padding-top: 59px;
+  }
 }
 
 .container {
