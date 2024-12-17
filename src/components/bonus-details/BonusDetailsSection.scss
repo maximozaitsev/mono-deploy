@@ -3,7 +3,7 @@
 @import "../../styles/variables.scss";
 
 :root {
-  --color-ico: #{$text-color-secondary};
+  --color-ico: #090909;
 }
 
 .bonus-details-section {
@@ -56,7 +56,7 @@
 }
 
 .cell {
-  color: $text-color-secondary;
+  color: #090909;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
