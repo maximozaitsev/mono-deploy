@@ -43,16 +43,41 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[2].text[0],
                 },
+                {
+                  type: "list",
+                  content: content.promotions.leftColumnContent[2].list || [],
+                },
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[2].text[1],
+                },
               ],
             },
-          ]}
-          rightColumnContent={[
             {
               heading: content.promotions.leftColumnContent[3].heading,
               items: [
                 {
                   type: "text",
                   content: content.promotions.leftColumnContent[3].text[0],
+                },
+                {
+                  type: "list",
+                  content: content.promotions.leftColumnContent[3].list || [],
+                },
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[3].text[1],
+                },
+              ],
+            },
+          ]}
+          rightColumnContent={[
+            {
+              heading: content.promotions.leftColumnContent[4].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[4].text[0],
                 },
               ],
             },
@@ -89,6 +114,15 @@ export default function PromotionsSection() {
                 {
                   type: "text",
                   content: content.promotions.rightColumnContent[3].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[4].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[4].text[0],
                 },
               ],
             },

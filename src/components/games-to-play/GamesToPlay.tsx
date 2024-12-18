@@ -26,27 +26,20 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[1].text[0],
                 },
-                {
-                  type: "list",
-                  content: content.gamesToPlay.leftColumnContent[1].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[1].text[1],
-                },
+                // {
+                //   type: "list",
+                //   content:
+                //     content.gamesToPlay.leftColumnContent[1].list || [],
+                // },
+                // {
+                //   type: "text",
+                //   content:
+                //     content.gamesToPlay.leftColumnContent[1].text[1]
+                // },
               ],
             },
           ]}
           rightColumnContent={[
-            {
-              heading: content.gamesToPlay.leftColumnContent[2].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[2].text[0],
-                },
-              ],
-            },
             {
               heading: content.gamesToPlay.gamesRightColumn[0].heading,
               items: [
@@ -54,23 +47,15 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.gamesRightColumn[0].text[0],
                 },
-              ],
-            },
-            {
-              heading: content.gamesToPlay.gamesRightColumn[1].heading,
-              items: [
                 {
-                  type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[1].text[0],
+                  type: "list",
+                  content:
+                    content.gamesToPlay.gamesRightColumn[0].list || [],
                 },
-              ],
-            },
-            {
-              heading: content.gamesToPlay.gamesRightColumn[2].heading,
-              items: [
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[2].text[0],
+                  content:
+                    content.gamesToPlay.gamesRightColumn[0].text[1]
                 },
               ],
             },

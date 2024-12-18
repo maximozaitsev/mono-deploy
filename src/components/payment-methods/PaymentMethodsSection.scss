@@ -11,7 +11,7 @@
     border-spacing: 0 16px;
     text-align: center;
     table-layout: auto;
-    margin-top: -15px;
+    // margin-top: -15px;
     margin-bottom: -25px;
 
     thead th,
@@ -176,7 +176,7 @@
           }
 
           strong {
-            background: #20dccd;
+            background: $text-color-fourth;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

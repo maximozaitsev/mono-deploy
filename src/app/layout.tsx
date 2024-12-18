@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "n1-casino-at.com";
-const ogTitle = "N1 Casino Austria Review: From Games to Bonuses and Security";
-const ogSiteName = "N1 Casino Austria";
+const url = "justCasino-at.com";
+const ogTitle =
+  "Just Casino Österreich: Überprüfung von Boni, Spielen und Legalität";
+const ogSiteName = "Just Casino Österreich";
 const metaDescription =
-  "N1 Casino Austria welcomes you with the generous welcome package and regular promotions to promise the best gaming experience. Learn more about this licensed casino to experience fair gaming and lucrative wins!";
+  "Just Casino bietet Online-Glücksspiele in Österreich an. Sehen Sie sich die Spielauswahl, Boni und die Legalität der Casinos in Österreich an. Entdecken Sie die Qualität des Kundensupports und die Sicherheit.";
 
 const locale = "de-AT";
 const language = "German";
