@@ -2,6 +2,7 @@ import Image from "next/image";
 // import licenceImage from "../../../public/block-images/licence.webp";
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { content } from "@/content/content";
+import List from "../__common__/list/List";
 import styles from "./LicensesSection.module.scss";
 
 export default function LicensesSection() {
@@ -12,6 +13,8 @@ export default function LicensesSection() {
         <div className={styles.licensesContent}>
           <div className={styles.leftContent}>
             <p className="paragraph-text">{content.licenses.text[0]}</p>
+            <List items={content.licenses.list} />
+            <p className="paragraph-text">{content.licenses.text[1]}</p>
           </div>
           {/* <div className={styles.rightImage}>
             <Image
@@ -23,7 +26,19 @@ export default function LicensesSection() {
             />
           </div> */}
         </div>
-        <TwoColumns
+        <div>
+          <h3 className="h3-heading" style={{ marginBottom: "24px" }}>
+            {content.licenses.security}
+          </h3>
+          <p className="paragraph-text" style={{ marginBottom: "24px" }}>
+            {content.licenses.securityText[0]}
+          </p>
+          <List items={content.licenses.list2} ordered />
+          <p className="paragraph-text" style={{ marginTop: "24px" }}>
+            {content.licenses.securityText[1]}
+          </p>
+        </div>
+        {/* <TwoColumns
           leftColumnContent={[
             {
               heading: content.licenses.security,
@@ -31,10 +46,6 @@ export default function LicensesSection() {
                 {
                   type: "text",
                   content: content.licenses.securityText[0],
-                },
-                {
-                  type: "text",
-                  content: content.licenses.securityText[1],
                 },
               ],
             },
@@ -59,7 +70,7 @@ export default function LicensesSection() {
             },
           ]}
           columnGap="48px"
-        />
+        /> */}
       </div>
     </section>
   );

@@ -10,7 +10,7 @@
   align-items: center;
   gap: 16px;
 
-  outline: 2px solid var(--Purple-Stroke-frame, #ffb208);
+  outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
   background: $color-background-third;
 
@@ -58,7 +58,7 @@
 
   button {
     margin-top: auto;
-    width: 217px;
+    width: 177px;
     // margin-left: 5px;
   }
 

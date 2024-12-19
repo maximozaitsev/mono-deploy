@@ -86,7 +86,7 @@
     right: 0;
     height: 40px;
     width: 1px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   &.last-cell::after {
@@ -171,11 +171,12 @@
 .accordion-value {
   display: flex;
   align-items: center;
-  background: $color-background;
+  background: #053048;
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
 
   &::after {
     content: "";
@@ -184,7 +185,7 @@
     top: 15%;
     height: 70%;
     width: 1px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &:last-child::after {
@@ -212,7 +213,7 @@
       }
 
       button {
-        width: 221px;
+        width: 200px;
       }
     }
   }

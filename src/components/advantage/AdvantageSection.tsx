@@ -9,16 +9,11 @@ export default function AdvantageSection() {
     <section className={`${styles.advantageSection} section`}>
       <div className="container">
         <h2 className="h2-heading">{subTitle}</h2>
-        <div>
-          <p className="paragraph-text black" style={{ marginBottom: "24px" }}>
-            {content.advantages.text[0]}
-          </p>
-          <p className="paragraph-text black">{content.advantages.text[1]}</p>
-        </div>
+        <p className="paragraph-text ">{content.advantages.text}</p>
         <div className={styles.columns}>
           <div className={styles.column}>
             <h4 className="h4-heading">{content.advantages.advantagesTitle}</h4>
-            <ul className="paragraph-text black">
+            <ul className="paragraph-text ">
               {advantages.map((advantage, index) => (
                 <li key={index}>{advantage}</li>
               ))}
@@ -28,7 +23,7 @@ export default function AdvantageSection() {
             <h4 className="h4-heading">
               {content.advantages.disadvantagesTitle}
             </h4>
-            <ul className="paragraph-text black">
+            <ul className="paragraph-text ">
               {disadvantages.map((disadvantage, index) => (
                 <li key={index}>{disadvantage}</li>
               ))}

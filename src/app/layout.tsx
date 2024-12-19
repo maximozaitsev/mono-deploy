@@ -1,14 +1,13 @@
 import { Metadata } from "next";
 
-const url = "justCasino-at.com";
-const ogTitle =
-  "Just Casino Österreich: Überprüfung von Boni, Spielen und Legalität";
-const ogSiteName = "Just Casino Österreich";
+const url = "todoslots-online.com";
+const ogTitle = "Todoslots Revisión: Tragaperras Con Bonos Y Grandes Ganancias";
+const ogSiteName = "Todoslots Revisión";
 const metaDescription =
-  "Just Casino bietet Online-Glücksspiele in Österreich an. Sehen Sie sich die Spielauswahl, Boni und die Legalität der Casinos in Österreich an. Entdecken Sie die Qualität des Kundensupports und die Sicherheit.";
+  "Gráficos vivos, ronda de bonos y jackpot fijo están disponibles en Todoslots. Elige un casino de confianza, regístrate y empieza a apostar por dinero real en Todoslots.";
 
-const locale = "de-AT";
-const language = "German";
+const locale = "es-ES";
+const language = "Spanish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

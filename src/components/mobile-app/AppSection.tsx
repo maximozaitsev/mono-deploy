@@ -3,7 +3,8 @@
 import Image from "next/image";
 import AppImage from "../../../public/block-images/app.webp";
 import AppImageMobile from "../../../public/block-images/app-mobile.webp";
-import TwoColumns from "../__common__/two-columns/TwoColumns";
+// import TwoColumns from "../__common__/two-columns/TwoColumns";
+import List from "../__common__/list/List";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
 import { content } from "@/content/content";
 
@@ -25,6 +26,10 @@ export default function AppSection() {
               quality={100}
             />
             <p className="paragraph-text">{content.app.text[0]}</p>
+            <List items={content.app.list1} />
+            <p className="paragraph-text">{content.app.text[1]}</p>
+            <List items={content.app.list2} ordered />
+            <p className="paragraph-text">{content.app.text[2]}</p>
             <div className={styles.buttons}>
               <button
                 className="google-play"
@@ -56,7 +61,7 @@ export default function AppSection() {
             <Image src={AppImage} alt="App preview" className={styles.image} />
           </div>
         </div>
-        <TwoColumns
+        {/* <TwoColumns
           leftColumnContent={[
             {
               heading: content.app.languages,
@@ -80,7 +85,7 @@ export default function AppSection() {
             },
           ]}
           columnGap="48px"
-        />
+        /> */}
       </div>
     </section>
   );
