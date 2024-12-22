@@ -1,273 +1,252 @@
 export const content = {
-  projectName: "Todoslots Casino",
+  projectName: "Olg Casino",
   advantages: {
     // title: "",
-    subTitle: "Todoslots Analysis Pros y Contras ",
+    subTitle: "Advantages and Disadvantages of OLG Casino",
     text: [
-      `El juego tiene una estrecha popularidad en el mercado español. Es necesario familiarizarse con los puntos fuertes y débiles antes de empezar a apostar.`,
+      `When choosing this offline Canadian casino, you should keep in mind its possible pros and cons to know that you have chosen the right place to test your Lady Fortune. So, what to expect from OLG casino login?`,
     ],
-    advantagesTitle: "Pros:",
-    disadvantagesTitle: "Contras:",
+    advantagesTitle: "Advantages ",
+    disadvantagesTitle: "Disadvantages",
     advantages: [
-      "Alto RTP (96,2%)",
-      "Características de bonificación únicas",
-      "Compatibilidad total con dispositivos móviles",
-      "Programa de fidelidad",
+      "High level of security ",
+      "Safe gaming environment",
+      "A vast choice of games",
+      "No withdrawal limits",
+      "Exclusive services",
+      "Amiable staff",
+      "Mobile version of the casino",
+      "Regular OLG stage at fallsview casino events",
     ],
     disadvantages: [
-      "El juego no es muy popular",
-      "La volatilidad puede no ser adecuada para principiantes",
+      "Only English support and communication is available ",
+      "Only CAD is accepted",
+      "Limited options for deposits and cashouts",
+      "Limited game provider choice",
+      "No welcome casino bonus OLG for non-Canadian players",
     ],
   },
   about: {
-    title: "Todoslots  Casino",
-    // intro: ["li1", "li2", "li3"],
+    title: "OLG Online Casino Reviews",
+    intro: [
+      "Progressive jackpots ",
+      "50 years in the market",
+      "Vast variety of lotteries",
+    ],
     description: [
-      `Todoslots es una video tragamonedas colorida y emocionante que es popular debido a su accesibilidad, excelencia gráfica y emocionantes funciones de bonificación. El secreto del éxito de Todoslots reside en su mecánica intuitiva, su rica jugabilidad y su alto RTP (96,2%).`,
-      `En esta reseña, conocerás en detalle los principales aspectos de Todoslots bares, incluyendo su funcionalidad, características de los bonos, estrategias útiles y consejos para un juego responsable. `,
+      `OLG casino is a gambling hall with a rich history that proves its legality and reliability in the gambling market. Situated in Ontario, Canada, the OLG has more than a half-to-one share of the gaming market here. It offers all kinds of gambling experiences at both online platforms and various physical casinos. The casino has operated under Canadian legislation since 1975! First, it was famous only as a mere-lottery casino. Yet, 50 years of gambling service-provider let it enrich and expand its offers. `,
+      `Today, one can take a look at the OLG stage at fallsview casino seating chart to enjoy the fascinating game and the cool game diversity. Yet, you should know the rules of the casino to test your luck safely. Read this review to be aware of all Casino OLG peculiarities. `,
       // `p3`,
     ],
     register: {
-      title: "Todoslot Caltic Información",
+      title: "Registration Process to Play OLG Casino",
       text: [
-        `Todoslots es una moderna tragamonedas de vídeo que combina la mecánica de juego clásica con funciones avanzadas. Presenta unos gráficos ricos, una jugabilidad dinámica y unos controles sencillos, lo que la hace accesible a todas las categorías de jugadores. Antes de pasar a los aspectos del juego, es importante entender que la calidad de una tragaperras viene determinada por su estructura, tema y características únicas. Todoslots goldenpark combina a la perfección estos elementos, creando una combinación ideal para los entusiastas del juego. Características principales de Todoslots:`,
-        `Así, Todoslots bares gratis ofrece a los jugadores el equilibrio perfecto entre accesibilidad y funcionalidad, lo que la convierte en una opción ideal para jugar. `,
+        `As a rule, OLG Casino online requires simple registration on the website or app. Yet, it differs from what you need to do at the onland casino. So, how to become a member of the offline OLG casino?`,
+        `The casino has a lot of locations in different regions of Canada, including OLG stage at Fallsview Casino near the Niagara Falls and other spots in Toronto, Northern, Eastern, and Southwest of the country. Just find the nearest location on its official website and make sure you are a Canadian resident of a legal age.`,
         // `p3`,
       ],
       list: [
-        "Estructura del juego: La tragaperras tiene 5 rodillos y hasta 50 líneas de pago, que pueden personalizarse en función de las preferencias del jugador. Cuantas más líneas activas, más posibilidades de ganar.",
-        "Tipos de símbolos: Wild: Este símbolo sustituye a otros símbolos para formar combinaciones ganadoras. Scatter: Cuando aparecen tres o más símbolos Scatter, se activan las tiradas gratuitas. Símbolos de bonificación: Lanzan minijuegos o funciones adicionales que aumentan las posibilidades de ganar.",
-        "Tema: Todoslots Casino está inspirado en las aventuras y los rompecabezas. Los coloridos efectos visuales y una banda sonora de calidad ayudan a crear una atmósfera de inmersión total en el juego.",
-        "RTP y volatilidad: RTP (96,2%) indica una alta rentabilidad del juego. La volatilidad media significa que los jugadores pueden contar tanto con pequeñas ganancias frecuentes como con pagos raros pero grandes.",
-        "Mecánica del juego: Las tiradas clásicas se complementan con rodillos en cascada, multiplicadores progresivos y rondas de bonificación.",
+        "Visit its casino.",
+        "Show your documents proving that you are 19+ years old.",
+        "Give some personal information required for the casino member card.",
+        "After filling out the form, wait a bit for the registration confirmation.",
+        "Get your member card and enjoy the air of this marvelous place.",
       ],
     },
-    // signIn: {
-    //   title: "SignInTitle",
-    //   text: [`p1`, `p2`, `p3`],
-    //   list: ["li1", "li2", "li3"],
-    // },
+    signIn: {
+      title: "OLG Login Casino",
+      text: [
+        `As soon as you become a member of the OLG casino, you will need to follow some basic rules. `,
+        `OLG Online Casino has most games with their descriptions. Due to that, you can learn the rules and select the game that meets your interest and budget. If you have any unanswered questions, you should turn to the polite casino staff. They will provide the required information to make your gambling more comfortable. `,
+        // `p3`,
+      ],
+      list: [
+        "First, you will need to make a deposit for OLG casino login.",
+        "Second, you should avoid beach-style or vulgar clothing.",
+        "Third, you should live in Canada or be its resident to play legally without any restriction.",
+        "Fourth, you should behave politely with the staff and respect other players.",
+        "Fifth, you should have CAD to make a deposit.",
+        "Finally, you should know the rules of the games to avoid misunderstanding.",
+      ],
+    },
     // verification: {
     //   title: "VerificationTitle",
     //   text: [`p1`, `p2`, `p3`],
     // },
-    // depositMethods: {
-    //   title: "DepositMethodsTitle",
-    //   text: [
-    //     `p1`,
-    //     // `p2`,
-    //   ],
-    //   list: ["li1", "li2", "li3"],
-    // },
-    // withdrawalMethods: {
-    //   title: "WithdrawalMethodsTitle",
-    //   text: [
-    //     `p1`,
-    //     // `p2`,
-    //   ],
-    //   list: ["li1", "li2", "li3"],
-    // },
+    depositMethods: {
+      title: "OLG Casino Niagara Deposit Methods",
+      text: [
+        `One cannot test a single onland casino game without deposits. However, the casino offers only safe deposit methods, including:`,
+        `All of them are instant and accepted on the spot.`,
+      ],
+      list: [
+        "Visa",
+        "Interac",
+        "Mastercard",
+        "Bank Transfer",
+        "American Express",
+        "Apple Pay",
+      ],
+    },
+    withdrawalMethods: {
+      title: "Withdrawal Methods",
+      text: [
+        `The casino does not boast a big variety of cashout methods, which is typical for onland casinos. One can ask for personal wins using cash, bank transfers or via a bank card. The required time differs, depending on the chosen cashout option.`,
+        // `p2`,
+      ],
+      // list: ["li1", "li2", "li3"],
+    },
   },
   licenses: {
-    title: "Consejos y trucos para Todoslots Estafa",
+    title: "Licenses",
     text: [
-      `Las estrategias probadas le ayudarán a jugar con eficacia y a disfrutar del proceso. Es importante no sólo entender la mecánica del juego, sino también ser consciente de los riesgos asociados a las apuestas. Consejos útiles para el juego:`,
-      `Con estos consejos, podrá controlar mejor el proceso y disfrutar del juego sin pérdidas innecesarias. Después de dominar estas estrategias, podrá no sólo aumentar sus posibilidades de ganar, sino también mejorar la experiencia general del juego.`,
-    ],
-    list: [
-      "Aprenda el modo demo: Antes de empezar a jugar con dinero real, pruebe la tragaperras en la versión demo. Esto le ayudará a aprender las características del juego y a desarrollar una estrategia.",
-      "Utilice todas las líneas de pago: Cuantas más líneas activas, mayor será la probabilidad de ganar.",
-      "Apueste cantidades razonables: No juegue con apuestas demasiado altas si su presupuesto es limitado.",
-      "Tenga en cuenta las bonificaciones: Utilizar las promociones del casino le ayudará a aumentar su saldo y minimizar los riesgos.",
-      "Vigile el tiempo: Fíjese un tiempo límite de juego para no dejarse llevar y no gastar más de lo previsto.",
-    ],
-    security: "Estrategias populares para jugar a Todoslots",
-    securityText: [
-      `Para conseguir los mejores resultados en Todoslots, es importante no sólo confiar en la suerte, sino también utilizar estrategias inteligentes. Éstas ayudan a gestionar las apuestas, prolongar la sesión de juego y utilizar las bonificaciones de la forma más eficaz posible. A continuación se presentan algunos enfoques populares que son adecuados para jugadores con diferentes presupuestos y niveles de experiencia:`,
-      `Aplicar estrategias en el juego Todoslots no sólo le ayuda a gestionar mejor sus apuestas, sino que también hace que el proceso tenga más sentido. Recuerde que el objetivo principal es divertirse, no sólo ganar.`,
-    ],
-    list2: [
-      "Active el número máximo de líneas de pago. Jugar en todas las líneas disponibles aumenta sus posibilidades de formar combinaciones ganadoras. Aunque la apuesta por línea sea mínima, la probabilidad de obtener bonificaciones y ganancias aumenta considerablemente.",
-      "Utilice apuestas progresivas. Esta estrategia consiste en aumentar la apuesta después de cada ganancia. Permite sacar el máximo partido de las tiradas acertadas, pero requiere un control del bankroll para evitar costes innecesarios en caso de pérdidas.",
-      "Apuestas fijas. Una apuesta estable durante toda la sesión de juego es adecuada para los jugadores que desean minimizar los riesgos. Es una buena forma de alargar el juego, especialmente si se dispone de un presupuesto limitado.",
-    ],
-    // software: "SoftwareTitle",
-    // softwareText: [
-    //   `p1`,
-    //   // `p2`,
-    // ],
-    // // list: ["li1", "li2", "li3"],
-  },
-  app: {
-    title: "Versión móvil Todoslots App",
-    text: [
-      `Todoslots ES está disponible para jugar en dispositivos móviles, lo que te permite disfrutar de la tragaperras en cualquier lugar. La versión móvil no tiene nada que envidiar a la versión de escritorio y ofrece la misma funcionalidad. Ventajas de la versión móvil:`,
-      `La versión móvil parece atractiva y querrás empezar a probarla ahora mismo. Mira las instrucciones sobre cómo jugar en dispositivos móviles:`,
-      `La versión móvil de Todoslots APK hace que el juego esté disponible en cualquier lugar y en cualquier momento, dando a los jugadores total libertad de acción.`,
-    ],
-    list1: [
-      "Adaptación completa para iOS y Android.",
-      "Interfaz optimizada para pantallas táctiles.",
-      "Carga rápida y juego fluido.",
-      "Acceso a bonos y promociones del casino.",
-    ],
-    list2: [
-      "Vaya al sitio web del casino a través de un navegador o una aplicación.",
-      "Acceda a su cuenta o regístrese.",
-      "Seleccione Todoslots e inicie el juego.",
-    ],
-    // languages: "LanguagesTitle",
-    // languagesText: [
-    //   `p1`,
-    //   // `p2`,
-    // ],
-    // currencies: "CurrencyTitle",
-    // currenciesText: [
-    //   `p1`,
-    //   // `p2`,
-    // ],
-  },
-  gamesToPlay: {
-    title: "Cómo jugar a la App Todoslots Facebook",
-    text: [
-      `Jugar a Todoslots bono sin depósito es sencillo y divertido. Incluso si nunca has jugado a las tragaperras online, la interfaz intuitiva y el proceso paso a paso te ayudarán a cogerle el truco rápidamente. Pasos básicos para jugar:`,
-      `La combinación de sencillez y versatilidad hace que Todoslots resulte atractivo para jugadores de todos los niveles. No olvide utilizar las funciones y bonificaciones integradas en el juego para hacer que el proceso de juego sea más emocionante.`,
-      // `p3`,
-    ],
-    list: [
-      "Fije su apuesta: Fije el importe de la apuesta y elija el número de líneas de pago activas. Cuantas más líneas, más posibilidades de ganar.",
-      "Pon en marcha los rodillos: Haga clic en el botón «Girar» para empezar a girar.",
-      "Cuidado con los símbolos: Si aciertas los símbolos de las líneas activas, ganarás.",
-      "Utilice las funciones de bonificación: Los símbolos Scatter o de bonificación activan funciones adicionales como tiradas gratis o minijuegos.",
-      "Ajuste su estrategia: Dependiendo de sus ganancias y presupuesto, cambie el tamaño de la apuesta o el número de líneas activas.",
-    ],
-    title2: "Elegir una plataforma fiable: Guía adicional del juego",
-    text2: [
-      `Para empezar a jugar a Todoslots opiniones, es importante elegir un casino online fiable y de confianza. Esto garantizará la seguridad de sus datos, la imparcialidad del juego y el acceso a las bonificaciones. Elegir el casino adecuado es el primer paso para jugar con éxito y comodidad.`,
-      `Antes de registrarse, estudie la reputación del casino: asegúrese de que tiene licencia y comentarios positivos de los jugadores. Los casinos fiables ofrecen reglas transparentes, formas cómodas de reponer fondos en su cuenta y retirar ganancias, así como un servicio de atención al cliente de calidad. A continuación encontrará un proceso paso a paso para registrarse en el casino seleccionado, de modo que pueda empezar a jugar al bar de Todoslots sin problemas:`,
-      `Una vez que se haya registrado en un casino de confianza y haya configurado su juego, estará listo para sumergirse en el mundo de Todoslots online. Asegúrese de consultar regularmente las promociones y bonificaciones para obtener beneficios adicionales. Recuerda que el éxito en el juego no sólo depende de la suerte, sino también de tu actitud responsable. Jugar Todoslots bono sin deposito es fácil y divertido, especialmente si te preparas cuidadosamente y eliges el lugar adecuado para jugar. ¡Empiece hoy mismo y disfrute de la emoción y la posibilidad de ganar a lo grande!`,
-    ],
-    list2: [
-      "Elija un casino con Todoslots. Busque una plataforma que ofrezca el juego Todoslots. Comprueba su licencia y la disponibilidad de promociones para nuevos jugadores.",
-      "Vaya a la página web del casino. Vaya a la página oficial del casino seleccionado. Asegúrese de estar en el recurso correcto para evitar sitios fraudulentos.",
-      "Haga clic en «Registro». En la página principal, busque el botón «Registrarse» o «Unirse». Suele estar situado en la esquina superior derecha.",
-      "Rellena el formulario de registro. Proporcione sus datos, como nombre completo, país y datos de contacto.",
-      "Cree una contraseña y elija la divisa de la cuenta. Cree una contraseña segura y elija la divisa en la que realizará los depósitos y recibirá las ganancias.",
-      "Confirme el registro. Compruebe su correo electrónico o teléfono para confirmar su cuenta. Normalmente se envía una carta de confirmación o un SMS al contacto especificado.",
-      "Acceda a su cuenta y recargue su saldo. Después de activar su cuenta, inicie sesión, elija un método conveniente para recargar su cuenta y realice un depósito mínimo.",
-      "Encuentra Todoslots en el catálogo de juegos. Utilice la barra de búsqueda del casino o la categoría de tragaperras para encontrar el juego Todoslots.",
-      "Active los bonos (si están disponibles). No olvides activar el bono de bienvenida o las tiradas gratis, si se ofrecen para este juego.",
-      "Comience a jugar. Inicie Todoslots, haga sus apuestas y ¡disfrute del juego!",
-    ],
-    // leftColumnContent: [
-    //   {
-    //     heading: "game1Heading",
-    //     text: [
-    //       `p1`,
-    //       // `p2`,
-    //       // `p3`,
-    //     ],
-    //     // list: ["li1", "li2", "li3"],
-    //   },
-    //   {
-    //     heading: "game2Heading",
-    //     text: [
-    //       `p1`,
-    //       // `p2`,
-    //       // `p3`,
-    //     ],
-    //     // list: ["li1", "li2", "li3"],
-    //   },
-    // ],
-    // gamesRightColumn: [
-    //   {
-    //     heading: "game3Heading",
-    //     text: [
-    //       `p1`,
-    //       // `p2`,
-    //       // `p3`,
-    //     ],
-    //     //  list: ["li1", "li2", "li3"],
-    //   },
-    //   {
-    //     heading: "game4Heading",
-    //     text: [
-    //       `p1`,
-    //       // `p2`,
-    //       // `p3`,
-    //     ],
-    //     //  list: ["li1", "li2", "li3"],
-    //   },
-    // ],
-  },
-  support: {
-    title: "SupportTitile",
-    text: [
-      `p1`,
+      `The casino runs following the laws of iGaming Ontario. The casino was opened in 1975, so its reputation has been proved. One can find a lot of positive reviews and information about the casino on the web page of the official license provider.  `,
       // `p2`,
     ],
-    list: ["li1", "li2", "li3"],
-  },
-  promotions: {
-    title: "Bono sin Depósito Todoslots y Promociones ",
-    text: [
-      `Los bonos en Todoslots 5 euros gratis son uno de los aspectos clave que atraen a los jugadores. Incluyen tanto características de juego incorporadas como promociones de casino que añaden variedad al juego. Las funciones de bonificación no son sólo oportunidades adicionales de ganar, sino también una forma de hacer el juego más interesante. Funciones de bonificación dentro de Todoslots gratis:`,
-      `Después de cada ronda de bonificación, los jugadores tienen la oportunidad de aumentar significativamente sus ganancias. `,
+    security: "Security",
+    securityText: [
+      `The use of top-notch monitoring video systems guarantee smooth operation, clearer security policies, and a more positive customer experience by design. The casino deals exclusively with safe payments and protects the personal information of each visitor. The casino also has guards who can interfere in case some players violate casino rules.`,
+      // `p2`,
     ],
-    list: [
-      "Tiradas Gratis: Tres o más símbolos Scatter activan la ronda de tiradas gratuitas. Durante esta ronda, los multiplicadores de ganancia aumentan significativamente, haciéndola especialmente rentable.",
-      "Minijuego: Esta función se activa cuando aparecen símbolos de bonificación. Se ofrece al jugador la posibilidad de elegir entre varios elementos para conseguir premios adicionales, incluyendo dinero en efectivo o tiradas gratis.",
-      "Multiplicadores progresivos: Durante las ganancias en cascada, el multiplicador aumenta, añadiendo una cantidad adicional a cada ganancia subsiguiente.",
-      "Jackpot fijo: El juego tiene un jackpot fijo que se puede ganar reuniendo determinados símbolos en los rodillos.",
+    software: "Software Technologies",
+    softwareText: [
+      `OLG casino meets the needs of the XIX century and offers advanced software technology. It deals with top best game providers that guarantee slot machines, roulettes, and spin wheels of high quality with the integrated RNG for fair and transparent gaming.  Moreover, to monitor features such as player tracking, awards programs, and security monitoring, leading-technology casino management software is utilized. Besides, it provides fast deposits and withdrawals due to touchless payment systems.`,
+      // `p2`,
+    ],
+    // list: ["li1", "li2", "li3"],
+  },
+  app: {
+    title: "App",
+    text: [
+      `Unlike all traditional offline casinos, there is a well-developed OLG Casino app. If you do not have a chance to visit an offline casino, you can download its mobile version on its official site. The app is available for both Android and iOS players. `,
+      // `p2`,
+    ],
+    languages: "Languages",
+    languagesText: [
+      `As a rule, all casino staff and players speak Canadian English. However,there might be French speaking personnel. So, if you need someone who speaks French, you should contact a casino and ask if it currently has the required assistant.`,
+      // `p2`,
+    ],
+    currencies: "Currencies",
+    currenciesText: [
+      `Unfortunately, the casino was merely developed for Canadian visitors, so it accepts only Canadian dollars (CAD). If you need to use another currency, you should exchange the currency before making deposits or request your bank for instant conversions. `,
+      // `p2`,
+    ],
+  },
+  gamesToPlay: {
+    title: "Best OLG Casino Game: What to Expect?",
+    text: [
+      `OLG stage at Fallsview Casino tickets offer the best-level entertainment to its visitors. The OLG onland casinos with their diverse clientele provide a wide range of gaming options and facilities to add to the consumer experience. Among the features to note are:`,
+      // `p2`,
+      // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Bonos del Casino Todoslots Java",
+        heading: "OLG Casino Slots",
         text: [
-          `Además de las funciones incorporadas, muchos casinos ofrecen sus propias promociones dirigidas a los jugadores de Todoslots entrar:`,
-          `Estas promociones hacen que Todoslots goldenpark gratis sea una opción aún más atractiva para los jugadores. El uso de bonos de casino permite maximizar el potencial del juego. Para aprovechar todas las ventajas, asegúrese de leer los términos y condiciones de los bonos y esté atento a las promociones actuales.`,
+          `OLG casinos feature many slot machines which run the gamut from classic to modern. The games come with different themes and also jackpots at varying levels. You can find here not only classic slots but also the ones with progressive jackpots. Themes are different to meet the taste of all clients. All of them are fair and based on random generation of combinations. Here, you can deal with such game providers as NetEnt, Red Tiger, IGT, and others. Everything you need is to press the button and wait for your lucky combo or even a jackpot. `,
+          `If you do not know which game to choose and your budget is limited, you can test the games using their for fun modes at its online version. `,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Table Games",
+        text: [
+          `Some of the games offered at OLG casino include popular table games such as blackjack, roulette, craps, baccarat, and poker. All hosted by professional dealers which makes an excellent experience for everyone in attendance. Yet, you should not participate in these games without knowing their rules. There is a big difference between the available 5 Hand Blackjack and 4 Card Poker. Just like with slots, you can try these games online. Just visit the site, find the game, and play its demo version to learn the rules. `,
+          // `p2`,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Lottery",
+        text: [
+          `OLG casino became popular due to its lotteries. In 1975, it operated as an exclusively onland lottery casino, where it got its name Ontario Lottery Casino, or OLG for short. The variety is impressive, but the top lottery remains Lotto 6/49. Except for it, you can find other games like Lotto Max, Lottario, Ontario 49, Pick 2, and others. As you can see, most of the games are unique and original, derived in Ontario, the heart of Canada for its local players. `,
+          // `p2`,
+          // `p3`,
+        ],
+        //  list: ["li1", "li2", "li3"],
+      },
+    ],
+    gamesRightColumn: [
+      {
+        heading: "Instant Games",
+        text: [
+          `Another type of OLG fun is connected with its instant games. It means that players need to make only one decision to win. The most popular games are:`,
+          `If you have just arrived in Canada or have never been to a casino before, you can find official retailers on the casino site. Visit this site and enter your location. The website will find the nearest retailer for you to enjoy this mind-blowing scratch games with instant wins. `,
           // `p3`,
         ],
         list: [
-          "Bono de bienvenida: Los nuevos usuarios pueden contar con el doble de su primer depósito y tiradas gratis adicionales.",
-          "Cashback: Devolución semanal de una parte de los fondos perdidos. Normalmente el importe de devolución es de hasta el 10% de las pérdidas.",
-          "Programa de fidelidad: Por cada apuesta se conceden puntos que pueden canjearse por dinero de bonificación o tiradas adicionales.",
-          "Torneos: Los casinos suelen celebrar torneos en los que los jugadores compiten por premios en metálico y bonos adicionales.",
-          "Promociones semanales: Por ejemplo, tiradas gratis los fines de semana o bonos adicionales por depósitos.",
+          "Plinko (players scratch a card, if the hidden field has the word Chip, one will need to throw a chip on a board and watch it land on the related cash prize)",
+          "Millionaire Multiplier (one scratches a card to find winning combos)",
+          "Bigger Spin (another scratch game with the possibility to get a SPIN bonus to initiate a lucky-win round)",
         ],
       },
-      // {
-      //   heading: "bonus2Heading",
-      //   text: [
-      //     `p1`,
-      //     // `p2`,
-      //     // `p3`,
-      //   ],
-      //   // list: ["li1", "li2", "li3"],
-      // },
+      {
+        heading: "Sports Offers",
+        text: [
+          `Sports offers are presented by the three categories:`,
+          `Most sports game bets are given on their online websites. Yet, one can find several locations where bettors accept bets and let players watch the game on TV to find out the results of the game. By that time, one can enjoy tasty snacks, drinks, and take delight in music and just pleasant talks with other players. This is the best part of OLG live Casino that one can hardly find at online gambling halls. `,
+          // `p3`,
+        ],
+        list: ["Proline", "Proline +", "Pool"],
+      },
     ],
-    // rightColumnContent: [
-    //   {
-    //     heading: "bonus3Heading",
-    //     text: [
-    //       `p1`,
-    //       // `p2`,
-    //       // `p3`,
-    //     ],
-    //     // list: ["li1", "li2", "li3"],
-    //   },
-    //   {
-    //     heading: "bonus4Heading",
-    //     text: [
-    //       `p1`,
-    //       // `p2`,
-    //       // `p3`,
-    //     ],
-    //     // list: ["li1", "li2", "li3"],
-    //   },
-    // ],
+  },
+  support: {
+    title: "Support",
+    text: [
+      `The casino supports its players by providing professional assistants and croupiers who welcome guests amiably. One can find a lot of information about the casino on the official website in the FAQ section. If a player faces problems with gaming addiction, one should request online assistance by contacting Ontario support 1-866-531-2600. One may also find the required support at the Canadian websites. `,
+      // `p2`,
+    ],
+    // list: ["li1", "li2", "li3"],
+  },
+  promotions: {
+    title: "Bonuses and Promotions: OLG Casino Promo Code",
+    text: [
+      `The OLG onland casino offers several types of promotions and bonuses designed to boost your player experience. Although these promotions can differ from one casino to another, some common things provided at onland casino include:`,
+      // `p2`,
+    ],
+    leftColumnContent: [
+      {
+        heading: "Welcome Bonus",
+        text: [
+          `OLG Casino bonus for new players may be given when you visit for the first time. New guests may receive complimentary play credits, free spins (often on table game machines) or promo vouchers so that you can make your entry experience as enjoyable and comfortable as possible. For example, the latest bonus is CAD 200 for the first deposit with the minimum bet of CAD 20 or 100% deposit match up to 100 Canadian dollars.`,
+          // `p3`,
+        ],
+      },
+      {
+        heading: "Loyalty Programs",
+        text: [
+          `Many casinos that are affiliated with OLG have loyalty programs, such as reward cards, to give players points for their play. These points can be exchanged for such rewards as dining discounts, free play, or exclusive event invitations.`,
+          // `p2`,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+    ],
+    rightColumnContent: [
+      {
+        heading: "Alarming Prizes",
+        text: [
+          `There is often a prize draw or substantial cash prize for participating players during the normal promotions. They are usually sponsored by some game providers, so the casino staff can offer specific games to let you enjoy the best perks of the day, week, or month. `,
+          // `p2`,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Festival Promotions",
+        text: [
+          `During holidays or special promotional events, OLG casinos often have limited-time bonuses available like festival giveaways or free gaming chips. These bonuses and promotional offers add value for clients and patrons of the premises. So, you can visit the casino during such big festivals as New Year, Easter, Christmas, or Halloween to participate in special bonus offers.`,
+          // `p2`,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+    ],
   },
   faq: {
-    title: "PREGUNTAS FRECUENTES",
+    title: "FAQ",
   },
 };

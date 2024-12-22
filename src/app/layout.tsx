@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "todoslots-online.com";
-const ogTitle = "Todoslots Revisión: Tragaperras Con Bonos Y Grandes Ganancias";
-const ogSiteName = "Todoslots Revisión";
+const url = "olg-casino-canada.com";
+const ogTitle = "OLG Casino Canada: Review of Games, Winning Offers and Safety";
+const ogSiteName = "OLG Casino Canada";
 const metaDescription =
-  "Gráficos vivos, ronda de bonos y jackpot fijo están disponibles en Todoslots. Elige un casino de confianza, regístrate y empieza a apostar por dinero real en Todoslots.";
+  "OLG Casino covers both offline and online gaming offers in Canada for Canadian players. Read about its bonus offers, game variety, security, and other vital tips to make sure it is worth visiting.";
 
-const locale = "es-ES";
-const language = "Spanish";
+const locale = "en-CA";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

@@ -37,7 +37,7 @@
     width: 218px;
     height: 56px;
     box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
-    color: $text-color-primary;
+    color: $text-color-secondary;
     margin-top: -3px;
     margin-left: 6px;
   }
@@ -171,12 +171,11 @@
 .accordion-value {
   display: flex;
   align-items: center;
-  background: #053048;
+  background: $color-background;
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   &::after {
     content: "";
@@ -185,7 +184,7 @@
     top: 15%;
     height: 70%;
     width: 1px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   &:last-child::after {

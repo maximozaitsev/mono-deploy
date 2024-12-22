@@ -1,27 +1,27 @@
 export const faqs = [
   {
-    question: "¿Qué es Todoslots Casino Online?",
+    question: "Where Can I Find OLG Casino Locations?",
     answer:
-      "Es una video tragaperras de temática aventurera con funciones de bonificación incorporadas.",
+      "You can find the related information on the official website of the casino and search the nearest casino location by mentioning your current address. The system will show the casino’s coordinates.",
   },
   {
-    question: "¿Qué bonos Todoslots están disponibles?",
-    answer: "Tiradas gratis, minijuegos, multiplicadores progresivos.",
+    question: "At What Age Can I Visit OLG Casino?",
+    answer:
+      "As a rule, you must be 19 to play games at this casino. Yet, sometimes 18-year-old players can try their luck at lotteries. You must have your ID to prove your residency and legal age. ",
   },
   {
-    question: "¿Funciona Todoslots Android en dispositivos móviles?",
+    question: "How to Get to OLG Stage from Fallsview Casino?",
     answer:
-      "Sí, la tragaperras es totalmente compatible con plataformas móviles.",
+      "OLP Stage can be found on the E level of the Hilton Niagara Falls. Is easy to access from all hotel towers. ",
   },
   {
-    question:
-      "¿Cuáles son las apuestas mínimas y máximas disponibles en las apps Facebook Todoslots?",
+    question: "Does the Casino Have Any Dress Code?",
     answer:
-      "La apuesta mínima en el juego es de 0,10 €, la apuesta máxima puede alcanzar los 100 € por tirada, lo que es adecuado para los grandes apostadores que buscan grandes pagos.",
+      "Officially, there are no strict requirements. Yet, one must not be topless, wear shorts, beach clothes, slippers, and something that can be seen-through. One should look modest and classic or casual (jeans + shirts).",
   },
   {
-    question: "¿Tiene Todoslots un bote progresivo?",
+    question: "What Types of Games are Available?",
     answer:
-      "No, el bono Todoslots no ofrece un bote progresivo. En su lugar, el juego tiene un bote fijo que se puede ganar reuniendo determinadas combinaciones de símbolos.",
+      "There are slots, table games, scratch games, lotteries with cool promos and tournaments.",
   },
 ];

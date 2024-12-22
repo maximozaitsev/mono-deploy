@@ -17,8 +17,8 @@
   .textBlock {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    width: 50%;
+    gap: 48px;
+    width: 548px;
 
     .imageMobile {
       display: none;
@@ -43,8 +43,8 @@
 
     .image {
       position: absolute;
-      top: -1px;
-      right: -28px;
+      top: -40px;
+      right: -13px;
       overflow: hidden;
       height: auto;
     }

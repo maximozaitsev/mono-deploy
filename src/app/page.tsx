@@ -11,7 +11,7 @@ import ProvidersSection from "@/components/providers/ProvidersSection";
 import AppSection from "@/components/mobile-app/AppSection";
 import FAQSection from "@/components/faq/FAQSection";
 import GamesToPlay from "@/components/games-to-play/GamesToPlay";
-// import SupportSection from "@/components/support/SupportSection";
+import SupportSection from "@/components/support/SupportSection";
 import PromotionsSection from "@/components/promotion/PromotionsSection";
 import AdvantageSection from "@/components/advantage/AdvantageSection";
 import Footer from "@/components/footer/Footer";
@@ -41,7 +41,7 @@ export default async function HomePage() {
       <AppSection />
       <FAQSection faqs={faqs} />
       <GamesToPlay />
-      {/* <SupportSection /> */}
+      <SupportSection />
       <PromotionsSection />
       <AdvantageSection />
       <Footer />
