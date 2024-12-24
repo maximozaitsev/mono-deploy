@@ -1,27 +1,33 @@
 export const faqs = [
   {
-    question: "Where Can I Find OLG Casino Locations?",
+    question: "Who can play at Lukki Casino Sister Sites?",
     answer:
-      "You can find the related information on the official website of the casino and search the nearest casino location by mentioning your current address. The system will show the casino’s coordinates.",
+      "Everyone who is of legal age (18+) and has ID documents can play here.",
   },
   {
-    question: "At What Age Can I Visit OLG Casino?",
+    question: "Why Do I Need Lukki Casino no Deposit Promo Code?",
     answer:
-      "As a rule, you must be 19 to play games at this casino. Yet, sometimes 18-year-old players can try their luck at lotteries. You must have your ID to prove your residency and legal age. ",
+      "Actually, you need promo codes to participate in different casino promotions. For example, the second, third, and fourth casino deposits require promo codes for those who want to claim bonuses of the welcome package. ",
   },
   {
-    question: "How to Get to OLG Stage from Fallsview Casino?",
+    question: "What is Lukki Casino Withdrawal Time?",
     answer:
-      "OLP Stage can be found on the E level of the Hilton Niagara Falls. Is easy to access from all hotel towers. ",
+      "All withdrawals at Lukki Casino are instant due to fast and secure payment options like cryptocurrency, e-wallets, debit and credit cards, and bank transfers.",
   },
   {
-    question: "Does the Casino Have Any Dress Code?",
+    question: "Is Lukki Casino Legal?",
     answer:
-      "Officially, there are no strict requirements. Yet, one must not be topless, wear shorts, beach clothes, slippers, and something that can be seen-through. One should look modest and classic or casual (jeans + shirts).",
+      "Is Lukki Casino legit? Yes. It operates under the license provider of Curaçao eGaming with company registration number 152125. This document proves that the casino has past tests and operates fairly in the gambling market.",
   },
   {
-    question: "What Types of Games are Available?",
+    question: "Does Lukki Casino have a mobile app?",
     answer:
-      "There are slots, table games, scratch games, lotteries with cool promos and tournaments.",
+      "Currently, the casino has not launched its mobile app neither for Android nor for iOS players. However, its mobile version needs the requirements of all game providers. So, one can play casinos on the go with the only requirement for a stable Internet connection.",
+  },
+  {
+    question:
+      "Can I Create Multiple Accounts on Lukki Online Casino Real Money?",
+    answer:
+      "No, you can have only one account per person. That is how all online casinos promise fair gaming conditions. ",
   },
 ];

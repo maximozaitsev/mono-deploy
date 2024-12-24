@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "olg-casino-canada.com";
-const ogTitle = "OLG Casino Canada: Review of Games, Winning Offers and Safety";
-const ogSiteName = "OLG Casino Canada";
+const url = "lukki-casino-online.com";
+const ogTitle =
+  "Lukki Casino Canada: Mind-blowing Promos and Online Entertainment";
+const ogSiteName = "Lukki Casino Canada";
 const metaDescription =
-  "OLG Casino covers both offline and online gaming offers in Canada for Canadian players. Read about its bonus offers, game variety, security, and other vital tips to make sure it is worth visiting.";
+  "Lukki Casino in Canada offers impressive welcome bonuses and games to its clients. Learn about them and other promotions, including VIP tournaments and festive offers provided at this legal online casino.";
 
 const locale = "en-CA";
 const language = "English";
