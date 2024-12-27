@@ -1,33 +1,17 @@
 export const faqs = [
   {
-    question: "Who can play at Lukki Casino Sister Sites?",
+    question: "Can I have a multiplayer account?",
     answer:
-      "Everyone who is of legal age (18+) and has ID documents can play here.",
+      "One ID verification is valid only for one account. Others will be blocked.",
   },
   {
-    question: "Why Do I Need Lukki Casino no Deposit Promo Code?",
+    question: "Where Can I use the Zet Casino code?",
     answer:
-      "Actually, you need promo codes to participate in different casino promotions. For example, the second, third, and fourth casino deposits require promo codes for those who want to claim bonuses of the welcome package. ",
+      "Mention it in the registration form to get more bonuses as a part of the welcome offer.",
   },
   {
-    question: "What is Lukki Casino Withdrawal Time?",
+    question: "Is there a loyalty program for regular clients?",
     answer:
-      "All withdrawals at Lukki Casino are instant due to fast and secure payment options like cryptocurrency, e-wallets, debit and credit cards, and bank transfers.",
-  },
-  {
-    question: "Is Lukki Casino Legal?",
-    answer:
-      "Is Lukki Casino legit? Yes. It operates under the license provider of Curaçao eGaming with company registration number 152125. This document proves that the casino has past tests and operates fairly in the gambling market.",
-  },
-  {
-    question: "Does Lukki Casino have a mobile app?",
-    answer:
-      "Currently, the casino has not launched its mobile app neither for Android nor for iOS players. However, its mobile version needs the requirements of all game providers. So, one can play casinos on the go with the only requirement for a stable Internet connection.",
-  },
-  {
-    question:
-      "Can I Create Multiple Accounts on Lukki Online Casino Real Money?",
-    answer:
-      "No, you can have only one account per person. That is how all online casinos promise fair gaming conditions. ",
+      "Yes. There are 6 VIP club levels with a variety of perks, including high withdrawal limits and personal account managers and helpers.",
   },
 ];

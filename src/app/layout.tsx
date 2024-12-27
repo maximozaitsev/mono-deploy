@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "lukki-casino-online.com";
+const url = "zet-casino-canada.com";
 const ogTitle =
-  "Lukki Casino Canada: Mind-blowing Promos and Online Entertainment";
-const ogSiteName = "Lukki Casino Canada";
+  "Zet Casino Canada: Review of Mesmerizing Bonuses and Game Variety";
+const ogSiteName = "Zet Casino";
 const metaDescription =
-  "Lukki Casino in Canada offers impressive welcome bonuses and games to its clients. Learn about them and other promotions, including VIP tournaments and festive offers provided at this legal online casino.";
+  "Zet Casino Canada offers a truly good variety of casino and sports games to Canadian players and not only. Read this review to learn everything about its security, bonuses, promos, game sections, and other vital details to win safely.";
 
 const locale = "en-CA";
 const language = "English";

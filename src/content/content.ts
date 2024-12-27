@@ -1,60 +1,68 @@
+import { list } from "postcss";
+
 export const content = {
-  projectName: "Lukki Casino",
+  projectName: "Zet Casino",
   advantages: {
     // title: "",
-    subTitle: "Lukki Online Casino Review of Advantages and Disadvantages",
+    subTitle: "Advantages and Disadvantages",
     text: [
-      `Lukki Casino is a well-developed online gambling hall with its pros and cons to be considered. Here are some of them.`,
+      `According to the existing Zet Casino reviews from players, the casino has the following pros and cons.`,
     ],
-    advantagesTitle: "Advantages",
-    disadvantagesTitle: "Disadvantages",
+    advantagesTitle: "Pros",
+    disadvantagesTitle: "Cons",
     advantages: [
-      "Has a variety of deposit and withdrawal options",
-      "A vast collection of games",
-      "Top-level security",
-      "4.4 stars rating according to Trustpilot Lukki Casino review",
-      "Friendly and competent personnel",
-      "Safe payments",
-      "Stunning bonuses and promotions",
-      "VIP club",
+      "A good combination of casino and sports gaming",
+      "Available and updated license ",
+      "Generous bonuses and promotions",
+      "Fast and friendly online support",
+      "VIP club for loyal players",
+      "A big choice of deposit and withdrawal offers",
+      "Partnership with a variety of game providers",
+      "Cryptocurrency support",
+      "A multi-language website navigation",
+      "Bonus buy option to buy crabs, in-game money, free spins, or sports bets",
     ],
     disadvantages: [
-      "Limited withdrawals",
-      "Limited language support ",
-      "No sport betting ",
+      "Not available in many countries",
+      "Some bonuses are not available to the players from restricted countries",
+      "Limited withdrawals for non-VIP clients",
+      "No mobile app available",
+      "No Zet Casino no deposit bonus",
     ],
   },
   about: {
-    title: "Lukki Casino Canada Review",
-    intro: ["4.4 starts on Trustpilot", "14K+ games", "Progressive jackpots"],
+    title: "Zet Casino Online Canada",
+    intro: [
+      "6 levels of VIP offers",
+      "100% deposit match + 200 FS + 1 crab",
+      "Many casino and sports games",
+    ],
     description: [
-      `Lukki online casino is a new casino, though it has a lot of Canadian fans due to its reliability, welcome bonus offers, and good selection of online entertainment. It has already gained a positive reputation among casino players with the high rating on Trustpilot. The casino website has a welcoming design with easy-peasy navigation. The symbol of the casino is a three-leaf clover that is believed to bring luck to players. `,
+      `Zet Casino is a unique gambling platform with the license from a reputable regulatory body that offers both casino and sports entertainment. The casino offers high betting odds to leave a pleasant aftertaste in all players. The gambling hall has a useful Sitemap that allows one to see the existing games per one click. This Zet casino review provides all the required details about all perks, game and sports betting variety, disadvantages, and other things you need to know to play safely.`,
       // `p2`,
       // `p3`,
     ],
     register: {
-      title: "Registration Process: Lukki Casino Reviews Reddit",
+      title: "Zet Casino Logo and Registration",
       text: [
-        `Before you decide to complete the Lukki Casino login process, you need to register first. This step is simple and fast. Yet, it promises the required protection of the client’s information as it collects contact and ID data for 2FA. Generally, you need to follow these steps to register at Lukki Casino:`,
-        `Later, you will need to upload your ID documents and give payment details to promise quick and safe deposits and cashouts. You need to introduce your ID to ensure the casino holders that you are of legal age and can participate in gambling. Canadian players are not accepted if they are under 18 years old. `,
+        `To become a member of Zet Casino club, one needs to  follow a simple registration procedure.`,
+        `Besides, a player must be at least 18 years old to gamble legally and be able to withdraw wins.`,
         // `p3`,
       ],
       list: [
-        "Visit the official website.",
-        "Click the Sing Up button in the top left corner.",
-        "Mention your real email.",
-        "Create a reliable pass for your future login procedures.",
-        "Mention the country.",
-        "Choose the currency.",
-        "Give your birthday details.",
-        "Mention your phone number.",
-        "Agree with the provided Terms and Conditions.",
+        "Visit the site and click Register Now on the top left corner.",
+        "Choose the bonus (welcome offer, Zet casino bonus code or refuse it)",
+        "Create login and password.",
+        "Provide personal ID details.",
+        "Give contact data.",
+        "Confirm registration via a confirmation SMS or email. ",
+        "Agree with the Terms and Conditions of the site.",
       ],
     },
     signIn: {
-      title: "Lukki Casino Logo and Login",
+      title: "Zet Casino Test Login",
       text: [
-        `Lukki Casino log in is possible only after the registration process is completed. As soon as you have your secure login (email) and pass (that you have created), you will be able to Sing In. After that, you will have a chance to choose a game, make your first deposit, and even claim a lucrative welcome bonus. `,
+        `After you create a Login and pass, you will be able to enter a personal account. There, you will find information about personal bonuses, wins and losses, and the history of transactions. You need to  provide true information to secure your account and funds. `,
         // `p2`,
         // `p3`,
       ],
@@ -65,211 +73,277 @@ export const content = {
     //   text: [`p1`, `p2`, `p3`],
     // },
     depositMethods: {
-      title: "Deposit Methods: Lukki Casino Free Chip",
+      title: "Deposit Methods at Zet Casino com",
       text: [
-        `The casino offers a variety of payment options. All of them are secure and protect personal information of all clients and the casino. These are some of the Lukki platform payment options:`,
-        `All deposits are instant and require from CAD 20 to start the game. The maximum deposit sum is 1000 CAD.`,
+        `The deposit methods provide maximum comfort and security. The most popular ones are:`,
+        `As one can see, the variety includes e-wallets, credit cards, debit cards, and bank transfers. The minimal deposit makes CA$30. `,
       ],
       list: [
-        "Visa + Visa Voucher",
-        "Mastercard",
-        "Bank Transfer",
-        "Jeton",
-        "ecoPayz",
-        "MiFinity",
-        "MuchBettter",
-        "Cryptocurrency (BTC, ETH, TRON, etc.)",
+        "Visa",
         "Paysafecard",
+        "Mastercard",
+        "Neteller",
+        "Bank Transfer",
+        "ecoPayz",
         "AstroPay",
-        "iDebit",
-        "Interac, etc.",
+        "MiFinity",
+        "GiroPay",
+        "Cryptocurrency (Bitcoin, Ethereum, Litecoin)",
       ],
     },
     withdrawalMethods: {
-      title: "Lukki Casino Withdrawal Methods",
+      title: "Zet Casino Bonus Withdraw Methods",
       text: [
-        `The withdrawals at Lukki Casino do not differ much from its deposit alternatives. You can withdraw cash via debit and credit cars, e-wallets, and cryptocurrencies. Yet, Paysafecard is available only for deposits. The minimal withdrawal sum is 200 CAD and the maximal one makes 4000 CAD.`,
+        `p1`,
         // `p2`,
       ],
-      // list: ["li1", "li2", "li3"],
+      list: ["li1", "li2", "li3"],
     },
   },
   licenses: {
-    title: "Licenses",
+    title: "Zet Casino Complaints Address and Licenses",
     text: [
-      `Lukki Casino operates under the control of the reputable license provider CGCB or Curaçao Gaming Control Board. Its E-gaming license number is OGL/2023/174/0082 that one can check to ensure it has the legal right to deal with bets and process financial operations in the gambling market. Is Lukki online casino legit? CGBC is a reputable organisation, so one may not doubt its legality.`,
+      `Is Zet Casino legit? Yes. NovaForge LTD operates and owns Casino Zet according to the laws and regulations of the Autonomous Island of Anjouan with the registration number 15684 and the official address at Hamchako, Mutsamudu in the same Union of Comoros territorial district. The license number is ALSI-152406028-FI2 that one can easily check by visiting the official website of the Gaming Board of Anjouan at Mutsamudu. Payments are controlled by MIRATA SERVICES LTD.`,
       // `p2`,
     ],
-    security: "Security at Lukki Casino Online",
+    security: "Security of Zet Casino Sister Sites",
     securityText: [
-      `The Lukki Casino legit background lets it provide the highest level of security. Dama N.V. guarantees the security of Paysafe transactions. All slot machines, table games, and roulettes use random number and combination generators to guarantee fair playing. Besides, the casino uses only safe payments to protect player’s confidential information when they pay using their credit or debit cards, e-wallets, or cryptocurrency. `,
-      // `p2`,
+      `Zet Casino offers the following in order to protect players:`,
+      `Zet Casino provides other related information about the safety and randomness.`,
     ],
-    software: "Software Technologies for Lukki Casino Play",
+    list: [
+      "SSL Encryption: Safeguarding sensitive information when it's changing hands as well as during storage times",
+      "Account Verification: Ensuring that only real players are using its platform services.",
+      "Fair Play: Independent audit firms monitor games regularly for their fairness. Any results undergo testing in a second round to confirm the findings.",
+    ],
+    software: "Software Technology of Zet-Casino",
     softwareText: [
-      `Lukki Casino uses exclusive new slot machines and regularly tastes them to guarantee safe and fair gaming. The casino deals with 115 reliable game providers to guarantee flawless gaming experience even when players test their Lukki Casino promo code no deposit bonus. Among them one can find Amatic, Pragmatic Play, LUCKY, iGaming, Live88, and others. What is  more, the casino applies advanced payment methods, SSL-encryption, and anti-virus programs to secure gaming.`,
+      `The platform is brought to life by the latest software provided by noted 80+ game developers, which ensures both flawless operation, beautiful graphics and mobile optimization. With HTML5 technology, security is as good as can be. Game runs smoothly across multiple platforms and not just one device.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Lukki Casino App",
+    title: "Zet Casino App",
     text: [
-      `Even though the casino operates online, there is no mobile app for Android and iOS users. Yet, its official website allows Lukki online casino login without the need for registration. One can visit the website, register there, and enjoy 14K+ games! The casino interface perfectly meets the requirements of all smartphone models, promising excellent user experience. `,
+      `Unfortunately, the gambling platform does not run a mobile application neither for iOS nor for Android devices. However, its website runs perfectly on both OS and on Windows too. So, you can enjoy Zet Casino games on the go without the need to sacrifice your device memory. Yet, you should remember your Zet Casino login and password and have a stable internet connection to promise smooth gaming experience.`,
       // `p2`,
     ],
-    languages: "Languages",
+    languages: "Zet Casino Customer Service Languages",
     languagesText: [
-      `Staff at Lukki Casino Canada speak Canadian, American, and British English. Yet, one can find other in-game languages for a more convenient use. You can get German, French, and Norwegian variants of the site with the assistants who can answer your questions in these languages. `,
+      `The casino offers 23 languages in its chat option. It is a really indisputable benefit of the platform as a lot of casinos offer up to 5 languages. Due to that, people from different countries can get the best user experience and assistance from chat helpers or email support. This variety offers a barrier-free website navigation that helps to avoid a lot of disputes and mistakes.`,
       // `p2`,
     ],
     currencies: "Currencies",
     currenciesText: [
-      `The main currency at Casino Lukki is Canadian dollar or CAD for short. Other available currencies are Euro, AUstralian dollar, New Zealand dollar, American dollar, Norwegian krone, South African rand, and some cryptocurrencies like Bitcoin, Ethereum, USDT, and others. So, one will not have a problem with making online deposits.`,
+      `p1`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Lukki Online Casino Reviews of Games",
+    title: "Games for Promo Code Zet Casino",
     text: [
-      `If you decide to find information about Lukki Casino, you will be definitely impressed with the variety of games it provides to its players. To begin with, Lukki Casino has over 14000 games! So, you will definitely find something to your taste. Below, you will find the main categories of Lukki Casino games.`,
+      `Zet Casino Canada has plenty of games to offer as it has both sports and casino betting offers. Here are some of them:`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Slots",
+        heading: "Casino Games",
         text: [
-          `Slots have always been favorites among the casino players. They offer a variety of themes and immediate winning opportunities. A person chooses the bet, clicks the trigger, and stops the rotation. If the combo is winning, you can get your reward immediately. Lukki Casino works with many reputable game providers, including BGaming, Pragmatic Play, Nolimit, Play’n Go, Amigo Gaming, 1Spin4Win, and others. The top slots games are:`,
-          `It also offers progressive slots that do not have the limit. In this case, all players test their fortune and the luckiest one gets the highest win. Nobody knows what the final sum will be which adds the thrill to the game. You need to pay attention to the assigned volatility and RTP of the slot to decide if it meets your risk-taking preferences.`,
+          `This section includes the following offers:`,
+          `The top providers are e!a Games, Play'n Go, Pragmatic Play, Red Tiger, and others.`,
           // `p3`,
         ],
         list: [
-          "Piggy Coins",
-          "Joker Queen",
-          "Diamond Club Bonanza",
-          "Wolf Gold",
-          "Great Rhino Megaways, etc.",
+          "Slots (classic, progressive, and others)",
+          "Exclusive games (slots with special promo offers)",
+          "Table games (blackjack, roulette, dice, poker, solitaire, bingo, baccarat)",
+          "Instant games (Plinko, Mines, Maverick, etc.)",
+          "Holiday offers (Christmas, Easter, Helloween, etc.)",
         ],
       },
       {
-        heading: "Table Games",
+        heading: "Live Casino",
         text: [
-          `The variety of table games also impresses. Serious players who like to test their card game knowledge and playing skill can find here a desired variety, including:`,
-          `Speaking about table games of luck, here one can test different types of roulette (American, French, European, etc.), and live shows such as Monopoly, Mega Wheel, Cash or Crash, Craps, and others. As a part of promotion, Lukki Casino no deposit bonus codes 2024 may be offered to loyal players.`,
+          `Here, one can find traditional live dealer games like poker, blackjack, dice, baccarat, game shows, and roulette. Besides, one can participate in Gold Saloon live croupier entertainment that usually has many Zet Casino promo code promos.`,
+          // `p2`,
           // `p3`,
         ],
-        list: ["Blackjack", "Baccarat", "Poker"],
+        // list: ["li1", "li2", "li3"],
       },
     ],
     gamesRightColumn: [
       {
-        heading: "Live Casino",
+        heading: "Sports",
         text: [
-          `If you miss real-casino air, you choose one of the Live casino games with real dealers. One can enjoy live roulette, baccarat, blackjack, keno, and crash. You can talk to the dealer as if it were a brick-and-mortar casino. Other players can join online chats for a better involvement. `,
+          `This section is represented in four parts:`,
+          `So, one can choose their favorite sports genre and even bet on the event live in real and even virtual sports. `,
+          // `p3`,
+        ],
+        list: ["Sportsbook", "Live betting", "Horse racing ", "Virtuals"],
+      },
+      {
+        heading: "game4Heading",
+        text: [
+          `p1`,
           // `p2`,
           // `p3`,
         ],
         //  list: ["li1", "li2", "li3"],
       },
-      // {
-      //   heading: "game4Heading",
-      //   text: [
-      //     `p1`,
-      //     // `p2`,
-      //     // `p3`,
-      //   ],
-      //   //  list: ["li1", "li2", "li3"],
-      // },
     ],
   },
   support: {
-    title: "Support",
+    title: "Zet Casino Customer Support",
     text: [
-      `The analysis of the available Lukki Casino reviews and the casino itself demonstrate a good level of clients’ support. All visitors appreciate its amiable and competent assistants who know how to solve any dispute. Except for the available detailed FAQ section, one can write an email or use online chat to ask about the things that worry them. It works 24/7! Yet, phone calls are not available.`,
-      // `p2`,
+      `Zet Bet Casino supports customers who need to get answers to their questions. Online helpers do that via:`,
+      `Moreover, its General Terms and Conditions sections describe a lot of casino issues to provide maximum clarity to its clients. Moreover, if you have any complaints, the platform has an email especially for such cases that lets them analyze and guarantee fast Zet casino review complaints.`,
     ],
-    // list: ["li1", "li2", "li3"],
+    list: [
+      "Live Chat that is available 24/7 for quick assistance without the need to care for the time zone and working hours. ",
+      "Email that responds within 24 hours and gives detailed answers to the provided inquiries. ",
+      "FAQ Section that has comprehensive answers to common questions most new and even experienced players might have.",
+    ],
   },
   promotions: {
-    title:
-      "Bonuses and Promotions: Lukki Casino no Deposit Bonus Codes 2024 Free Spins",
+    title: "Zet Casino Bonus Offers and Promotions",
     text: [
-      `Most players want to play more and win more, though not all of them can afford that. Playing involves deposits, wins, and losses. As a result, players can lose interest in games because of the monotonous flaw. That is why all casinos, and Lukki Casino is not an exception, deal with various bonuses and promotions. These are some best offers from Lukki Casino. `,
+      `The gambling platform offers bonus and promos for casino and sports sections. So, it is necessary to describe them following these two subcategories.`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Welcome Lukki Casino Bonus",
+        heading: "Zet Casino Bonus Funds",
         text: [
-          `This offer works only for new online players and it is very generous. One can get as much as 4000 CAD and 300 free spins for certain slots. Yet, one does not get it at once. It requires four deposits with their wagering requirements. Here are the steps:`,
-          // `p2`,
-          // `p3`,
-        ],
-        list: [
-          "1st deposit gives 100% match up to 500 CAD and 100 FS without a Lukki Casino bonus code",
-          "2nd deposit with 100% match up to 500 CAD and 50 FS + bonus code required",
-          "3rd deposit with 50% match up to 1K CAD, 50 FS with a bonus code required",
-          "4th deposit with 25% match up to 2K CAD and 100FS with the bonus code required",
+          `Speaking about Zet Casino no deposit bonus codes, one should highlight the following bonuses.`,
         ],
       },
       {
-        heading: "Loyalty Programs",
+        heading: "Welcome Bonus",
         text: [
-          `Regular clients can become members of VIP clubs and  join its Yacht club which includes 7 levels that promise exclusive cashback offers and promising tournaments from Jet Ski to Super Yacht. Loyal clients can also get presents on their birthdays. These can be Lukki Casino no deposit bonus codes, free spins, and even cash for playing more and winning more. Generally, VIP clients enjoy the following perks:`,
-          // `p2`,
-          // `p3`,
-        ],
-        list: [
-          "Faster cashouts",
-          "High-roller options",
-          "Personal manager",
-          "Participation in events that are developed for VIP clients only",
-          "Personalized gifts",
-          "Elite member tournaments",
-        ],
-      },
-      {
-        heading: "Daily Promos",
-        text: [
-          `The promo is located in the section Available today. One needs to deposit a certain sum (from 30 to 100 CAD) to get a deposit match from 30 to 100%.For that, one needs to mention the code with the name of the day and the deposit sum. For example, Wednesday50. `,
+          `Zet Casino welcome offer works for new players. For that, players should deposit CA$30 and proceed to the promotion section to activate the welcome offer. After that, a new player can choose any casino game to test luck and cashout Zet Casino bonus. The expected reward is 100% deposit match, 200 FS, and 1 bonus crab. The maximum cash reward is CAD750.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Gold Saloon Bonus",
+        text: [
+          `This bonus is for Gold Saloon Games exclusively. A player provides a minimum bet in the selected casino game (Blackjack or Roulette), meets winning number requirements, and gets a financial voucher equaling 30 to 45 CAD during 21 days.`,
+        ],
+      },
+      {
+        heading: "BJ Holiday Tournament",
+        text: [
+          `The casino has various qualifying Blackjack tables where eligible players must bet the minimum sum of 75 CAD to win different cash equivalents. `,
+        ],
+      },
+      {
+        heading: "Holiday Zet Casino Promotions",
+        text: [
+          `Before and during different holidays, the casino organizes different promotions. They usually concern tournaments where players participate in a certain game and climb up the leaderboard after wins. In the end, the system decides the winners and distributes certain cash rewards. For example, in winter there was a Santa’s Slope (which is coming to an end) and it promised up to 15000 CAD for the 34-day promo. `,
+        ],
+      },
+      {
+        heading: "Mega Roulette Madness",
+        text: [
+          `This is the offer from one of the casino’s game providers Pragmatic Play. The Drops and Wins with over 2000 CAD prize tables for its participants. `,
+        ],
+      },
+      {
+        heading: "Tournaments",
+        text: [
+          `The casino also has tournaments that require 3 deposits of a specified amount to become eligible for the event. `,
+        ],
+      },
+      {
+        heading: "Weekly Cashback",
+        text: [
+          `Here, one can get up to 15% cashback for the provided deposits in certain games. Players must be eligible and activate the requested bonus in the My Bonus section on their personal account. To become eligible,  a person must participate in the VIP program and have one of the three top statuses (Gamma, Delta, or Zet). 10 CAD is the minimal cashback a person can claim. `,
+        ],
+      },
+      {
+        heading: "Sunday Zet Casino 10 Free Spins",
+        text: [
+          `The casino has specific ELA slots where a person needs to  provide a minimum amount to get the desired Zet Casino 20 free spins. After that, one can increase the bet to get another 30 FS. Finally, a person can provide the highest required deposit to get another portion of 50 free spins, that will make 100FS in total! Here, Zet Casino wagering requirements concern the total sum that a person needs to spend. It makes 1200 CAD.`,
+        ],
+      },
+      {
+        heading: "Live Cashback: Zet Casino 30 Freespins",
+        text: [
+          `Players deposit on their favorite live casino games and can get up to 25% of cashback on the lost bets on Mondays. If players are active daily and play their live roulette with a new bet, they can get extra free spins:`,
+          `Maximum cashback amount can be 300 CAD.`,
+        ],
+        list: [
+          "1 active day - 5 FS",
+          "2 active days - 10 FS",
+          "3 active days - 15 FS",
+          "4 active days - 25 FS",
+          "5 active days - 50 FS",
+          "6 active days - 100 FS",
+        ],
       },
     ],
     rightColumnContent: [
       {
-        heading: "Festival Promotions",
+        heading: "Zet Casino Askgamblers Sport Bonuses",
         text: [
-          `One can expect Lukki Casino bonus codes during different festivals and events. Loyal customers can enjoy a welcoming atmosphere of the casino with a variety of opportunities to win. New customers can get Lukki Casino promo code, while loyal players can expect free bets for table games or spins for slots that will increase their winning chances and improve their holiday spirit. So, you can visit a casino on Easter, Christmas, New Year, Canada Day, Thanksgiving, and other holidays. `,
-          // `p2`,
-          // `p3`,
+          `Another bonus section of the gambling platform is introduced by the sports section, where one can expect the following perks.`,
         ],
-        // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Slot Provider Bonuses",
+        heading: "First deposit bonus",
         text: [
-          `Many slot providers want to promote their slots and offer lucrative rewards. To find the available options, one needs to visit the site, find Promotions, and the Slot category. This page introduces all currently available slot promos. `,
-          // `p2`,
-          // `p3`,
+          `Instead of a traditional welcome bonus, one can claim a 100% deposit match in the sports section. The first deposit must be at least 150 AUD. `,
         ],
-        // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Drops and Wins",
+        heading: "Bore Draw",
         text: [
-          `This giveaway also works when roulette or slot developers deal with the cross promotions. You can find the available offers in the Promotion section and Prize Drops subsection. Other promos can be found  in its Live section. Today, the top promo providers are Pragmatic Play, VoltEnt, and Yggdrasil.`,
-          // `p2`,
-          // `p3`,
+          `Thi bonus is available to all eligible clients and those who predict the correct bore draw in the qualifying market that includes Ligue 1, La Liga, Serie A, Premier League, and Bundesliga . A person can get a 100% deposit match.`,
         ],
-        // list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "2 Goals Ahead",
+        text: [
+          `This bonus is also called an early payout. One should predict two goal supremacy to get it. You should read the rules of eligibility for different sports to learn when and how much you can get. `,
+        ],
+      },
+      {
+        heading: "Cashback Bonus",
+        text: [
+          `One can get from 30 to 750 CAD with the maximum 10% cashback for all the losses during the specified time one faces when betting on sports. `,
+        ],
+      },
+      {
+        heading: "Accumulator Boost",
+        text: [
+          `This bonus is for the real sports fans who bets on 3 and more events and the predicted results come true. The bonus gives from 3% to 100% that equals the total deposit, depending on the chosen number of selections.`,
+        ],
+      },
+      {
+        heading: "Weekly Reload",
+        text: [
+          `One can get a 50% deposit match for the deposit made within a week after meeting the wagering requirements. The maximal reward can reach 750 CAD.`,
+        ],
+      },
+      {
+        heading: "Boosted Odds",
+        text: [
+          `One needs to log in and choose the event with the highest odds. If it works, the players get the expected reward.`,
+        ],
+      },
+      {
+        heading: "Tournaments",
+        text: [
+          `This section has a leaderboard with a specified list of sports that allow players to participate in tournaments and get their lucrative rewards. `,
+        ],
       },
     ],
   },
   faq: {
-    title: "Lukki Casino Reddit FAQ",
+    title: "Zet Casino Trustpilot FAQ",
   },
 };

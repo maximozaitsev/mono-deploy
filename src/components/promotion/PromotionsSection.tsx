@@ -17,14 +17,6 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[0].text[0],
                 },
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[0].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[0].text[1],
-                },
               ],
             },
             {
@@ -34,22 +26,77 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[1].text[0],
                 },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[2].heading,
+              items: [
                 {
                   type: "text",
-                  content: content.promotions.leftColumnContent[1].list || [],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[1].text[1],
+                  content: content.promotions.leftColumnContent[2].text[0],
                 },
               ],
             },
             {
-              heading: content.promotions.rightColumnContent[2].heading,
+              heading: content.promotions.leftColumnContent[3].heading,
               items: [
                 {
                   type: "text",
-                  content: content.promotions.rightColumnContent[2].text[0],
+                  content: content.promotions.leftColumnContent[3].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[4].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[4].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[5].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[5].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[6].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[6].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[7].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[7].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[8].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[8].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[9].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[9].text[0],
                 },
               ],
             },
@@ -79,6 +126,60 @@ export default function PromotionsSection() {
                 {
                   type: "text",
                   content: content.promotions.rightColumnContent[2].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[3].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[3].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[4].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[4].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[5].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[5].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[6].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[6].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[7].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[7].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[8].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[8].text[0],
                 },
               ],
             },

@@ -3,6 +3,9 @@
 import { useEffect, useState } from "react";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
+import bg from "../../../public/bg1.png";
+import bg2 from "../../../public/bg2.png";
+import bg2mobile from "../../../public/bg2-mobile.png";
 import { fetchOffers } from "@/utils/fetchOffers";
 
 export default function WelcomeSection() {
@@ -27,6 +30,13 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
+      <img src={bg.src} alt="Background" className={styles.backgroundImage} />
+      <img src={bg2.src} alt="Background" className={styles.backgroundImage2} />
+      <img
+        src={bg2mobile.src}
+        alt="Background"
+        className={styles.backgroundImage2Mobile}
+      />
       <div className="container">
         <div className={styles.welcomeContent}>
           <div className={styles.welcomeText}>
