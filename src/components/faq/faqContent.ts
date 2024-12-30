@@ -1,17 +1,20 @@
 export const faqs = [
   {
-    question: "Can I have a multiplayer account?",
+    question: "¿El casino en línea opera oficialmente en España?",
     answer:
-      "One ID verification is valid only for one account. Others will be blocked.",
+      "Sí. El casino opera con una licencia de la Comisión General del Juego.",
   },
   {
-    question: "Where Can I use the Zet Casino code?",
-    answer:
-      "Mention it in the registration form to get more bonuses as a part of the welcome offer.",
+    question: "¿A partir de qué edad se puede registrar una cuenta?",
+    answer: "Puede crear una cuenta si tiene 18 años y 1 día.",
   },
   {
-    question: "Is there a loyalty program for regular clients?",
+    question: "¿Cuál es el importe mínimo de depósito?",
     answer:
-      "Yes. There are 6 VIP club levels with a variety of perks, including high withdrawal limits and personal account managers and helpers.",
+      "Dependiendo del sistema de pago, el depósito mínimo es de 5-20 euros.",
   },
+  // {
+  //   question: "question4",
+  //   answer: "answer4",
+  // },
 ];

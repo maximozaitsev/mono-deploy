@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "zet-casino-canada.com";
+const url = "olybet-online.com";
 const ogTitle =
-  "Zet Casino Canada: Review of Mesmerizing Bonuses and Game Variety";
-const ogSiteName = "Zet Casino";
+  "OlyBet Casino España: Impresionante servicio de juego para cada jugador";
+const ogSiteName = "OlyBet Casino España";
 const metaDescription =
-  "Zet Casino Canada offers a truly good variety of casino and sports games to Canadian players and not only. Read this review to learn everything about its security, bonuses, promos, game sections, and other vital details to win safely.";
+  "OlyBet Casino España: bonos de bienvenida, promociones periódicas, juegos de casino y apuestas deportivas. Cómo registrarse y hacer un depósito. Reseña detallada para nuevos clientes y jugadores experimentados.";
 
-const locale = "en-CA";
-const language = "English";
+const locale = "es_ES";
+const language = "Spanish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

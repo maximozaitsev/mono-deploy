@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  z-index: 1;
+
   outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
   background: $color-background-third;
@@ -59,7 +59,7 @@
   button {
     margin-top: auto;
     width: 217px;
-    margin-left: 5px;
+    // margin-left: 5px;
   }
 
   @media (max-width: 768px) {
