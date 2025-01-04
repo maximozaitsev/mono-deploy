@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "olybet-online.com";
+const url = "versuscasino-online.com";
 const ogTitle =
-  "OlyBet Casino España: Impresionante servicio de juego para cada jugador";
-const ogSiteName = "OlyBet Casino España";
+  "Versus Casino España: Mundo de Sorprendente Entretenimiento de Juego";
+const ogSiteName = "Versus Casino España";
 const metaDescription =
-  "OlyBet Casino España: bonos de bienvenida, promociones periódicas, juegos de casino y apuestas deportivas. Cómo registrarse y hacer un depósito. Reseña detallada para nuevos clientes y jugadores experimentados.";
+  "Versus Casino España: una reseña detallada, proceso de registro paso a paso, promociones y bonos especiales. Todo lo que necesitas saber sobre la popular plataforma de juegos de azar";
 
-const locale = "es_ES";
+const locale = "es-ES";
 const language = "Spanish";
 const ogImage = `https://${url}/og-image.webp`;
 

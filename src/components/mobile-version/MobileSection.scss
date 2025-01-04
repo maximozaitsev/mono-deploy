@@ -82,8 +82,8 @@
 
     img {
       position: absolute;
-      left: 40px;
-      top: 23px;
+      left: -16px;
+      top: 28px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -103,7 +103,7 @@
 
       .app-image {
         height: 405px;
-        width: 242px;
+        width: 281px;
         object-fit: contain;
       }
     }
@@ -137,7 +137,7 @@
         padding: 24px;
 
         .app-image {
-          margin-left: 27px;
+          margin-left: 45px;
           margin-bottom: 4px;
           padding-bottom: 20px;
 
