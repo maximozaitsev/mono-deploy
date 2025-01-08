@@ -1,21 +1,53 @@
 export const faqs = [
   {
-    question: "¿Con qué licencia opera el casino en línea?",
-    answer: "Es la licencia de la Comisión General del Juego de España.",
+    question: "Is there a minimum deposit amount at Drip Casino?",
+    answer: "Yes, the minimum deposit amount is CAD10.",
   },
   {
-    question: "¿Cuál es el depósito mínimo?",
-    answer:
-      "Para los sistemas disponibles en el casino, el depósito mínimo es de 10 euros.",
+    question:
+      "What is the maximum withdrawal limit per day when using Drip casino Bonus Codes?",
+    answer: "The maximum withdrawal limit is CAD 4,000 per day.",
   },
   {
-    question: "¿Qué es Oh My Cash?",
+    question:
+      "Does the venue offer a loyalty program and Drip Casino No Deposit Code?",
     answer:
-      "Es un sistema de pago terrestre en el que puedes hacer depósitos y retirar ganancias en efectivo a través de terminales.",
+      "Yes, there are Drip Casino no deposit bonus code and VIP club with four levels: Origin, Smart, Prime, and Meta.",
   },
   {
-    question: "¿Qué bonos de bienvenida puedo conseguir?",
+    question: "Are there any fees for deposits or withdrawals?",
     answer:
-      "Hay bonos de bienvenida disponibles para juegos de casino y apuestas deportivas: el 100% del primer depósito hasta 200 euros.",
+      "Drip Casino does not charge fees for deposits or withdrawals; however, some payment providers may apply their own fees.",
+  },
+  {
+    question: "How long does it take to process a withdrawal request?",
+    answer:
+      "Withdrawal requests are processed within 24 hours; the total time depends on the chosen payment method.",
+  },
+  {
+    question: "Can I set limits to control my gambling activity?",
+    answer:
+      "Yes, Drip Casino offers responsible gaming tools, including deposit limits, wagering limits, and session time limits.",
+  },
+  {
+    question: "Is there a mobile app available for Drip Casino?",
+    answer:
+      "Yes, Drip Casino offers a dedicated Android app for mobile gaming.",
+  },
+  {
+    question:
+      "What is the wagering requirement for the Drip Casino Promo bonus?",
+    answer:
+      "The wagering requirement for the welcome bonus is 40x the bonus amount.",
+  },
+  {
+    question: "Does Drip Casino offer live dealer games?",
+    answer:
+      "Yes, Drip Casino provides a variety of live dealer games, including blackjack, roulette, and baccarat",
+  },
+  {
+    question: "Is customer support available 24/7?",
+    answer:
+      "Yes, Drip Casino offers 24/7 customer support through live chat and email.",
   },
 ];

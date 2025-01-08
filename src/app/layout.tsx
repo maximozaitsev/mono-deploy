@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "versuscasino-online.com";
+const url = "drip-casino-online.com";
 const ogTitle =
-  "Versus Casino España: Mundo de Sorprendente Entretenimiento de Juego";
-const ogSiteName = "Versus Casino España";
+  "Drip Casino Canada: One of the Top Online Gaming Platform for Players";
+const ogSiteName = "Drip Casino";
 const metaDescription =
-  "Versus Casino España: una reseña detallada, proceso de registro paso a paso, promociones y bonos especiales. Todo lo que necesitas saber sobre la popular plataforma de juegos de azar";
+  "Drip Casino Canada online offers a wide variety of games, secure payments, and exciting bonuses. Join today to enjoy immersive gaming experiences and exclusive rewards!";
 
-const locale = "es-ES";
-const language = "Spanish";
+const locale = "en-CA";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

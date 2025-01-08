@@ -38,15 +38,14 @@
             left: 160px;
             cursor: pointer;
 
-            @media (max-width: 1340px) {
+            @media (max-width: 1320px) {
               left: 50px;
             }
 
             @media (max-width: 768px) {
-              margin-top: 1px;
-              margin-bottom: -12px;
+              margin-top: 8px;
               margin-left: 0;
-              scale: 0.7;
+              scale: 0.85;
             }
           }
         }
@@ -75,7 +74,7 @@
           mix-blend-mode: normal;
         }
 
-        @media (max-width: 1130px) {
+        @media (max-width: 1080px) {
           height: 22px !important;
           width: auto;
         }
@@ -128,7 +127,7 @@
     }
   }
 
-  @media (max-width: 1130px) {
+  @media (max-width: 1080px) {
     .row {
       &:first-child {
         .logoWrapper {
