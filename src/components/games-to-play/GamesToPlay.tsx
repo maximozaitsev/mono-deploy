@@ -47,6 +47,15 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.gamesRightColumn[0].text[0],
                 },
+                // {
+                //   type: "list",
+                //   content:
+                //     content.gamesToPlay.gamesRightColumn[0].list || [],
+                // },
+                {
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[0].text[1],
+                },
               ],
             },
             {

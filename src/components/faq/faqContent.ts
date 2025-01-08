@@ -1,53 +1,15 @@
 export const faqs = [
   {
-    question: "Is there a minimum deposit amount at Drip Casino?",
-    answer: "Yes, the minimum deposit amount is CAD10.",
+    question: "What license does the casino operate under?",
+    answer: "This is a Curacao license.",
   },
   {
-    question:
-      "What is the maximum withdrawal limit per day when using Drip casino Bonus Codes?",
-    answer: "The maximum withdrawal limit is CAD 4,000 per day.",
-  },
-  {
-    question:
-      "Does the venue offer a loyalty program and Drip Casino No Deposit Code?",
+    question: "How do I get a welcome bonus?",
     answer:
-      "Yes, there are Drip Casino no deposit bonus code and VIP club with four levels: Origin, Smart, Prime, and Meta.",
+      "You need to register and make a deposit of at least 10 Canadian dollars.",
   },
   {
-    question: "Are there any fees for deposits or withdrawals?",
-    answer:
-      "Drip Casino does not charge fees for deposits or withdrawals; however, some payment providers may apply their own fees.",
-  },
-  {
-    question: "How long does it take to process a withdrawal request?",
-    answer:
-      "Withdrawal requests are processed within 24 hours; the total time depends on the chosen payment method.",
-  },
-  {
-    question: "Can I set limits to control my gambling activity?",
-    answer:
-      "Yes, Drip Casino offers responsible gaming tools, including deposit limits, wagering limits, and session time limits.",
-  },
-  {
-    question: "Is there a mobile app available for Drip Casino?",
-    answer:
-      "Yes, Drip Casino offers a dedicated Android app for mobile gaming.",
-  },
-  {
-    question:
-      "What is the wagering requirement for the Drip Casino Promo bonus?",
-    answer:
-      "The wagering requirement for the welcome bonus is 40x the bonus amount.",
-  },
-  {
-    question: "Does Drip Casino offer live dealer games?",
-    answer:
-      "Yes, Drip Casino provides a variety of live dealer games, including blackjack, roulette, and baccarat",
-  },
-  {
-    question: "Is customer support available 24/7?",
-    answer:
-      "Yes, Drip Casino offers 24/7 customer support through live chat and email.",
+    question: "Can I play on a mobile device?",
+    answer: "Yes. Currently, a mobile version of the site is available.",
   },
 ];

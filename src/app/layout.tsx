@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "drip-casino-online.com";
+const url = "lemon-casino-canada.com";
 const ogTitle =
-  "Drip Casino Canada: One of the Top Online Gaming Platform for Players";
-const ogSiteName = "Drip Casino";
+  "Lemon Casino Canada: Amazing Gambling and Unforgettable Experience";
+const ogSiteName = "Lemon Casino Canada";
 const metaDescription =
-  "Drip Casino Canada online offers a wide variety of games, secure payments, and exciting bonuses. Join today to enjoy immersive gaming experiences and exclusive rewards!";
+  "Lemon Casino Canada: a detailed review of the popular online platform. How to register, make a deposit and get generous bonuses. Current games and incredible opportunities for live casino fans";
 
 const locale = "en-CA";
 const language = "English";

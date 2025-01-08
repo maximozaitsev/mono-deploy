@@ -1,124 +1,152 @@
 export const content = {
-  projectName: "Drip Casino",
+  projectName: "Lemon Casino",
   advantages: {
     // title: "",
-    subTitle: "Drip Сasino Advantages",
+    subTitle: "Advantages and Disadvantages",
     text: [
-      `Drip Casino logo offers a variety of features and benefits, along with a few potential drawbacks that participants should consider.`,
+      `Some Canadian gamblers believe that the ability to use Lemon Casino promo codes is already a serious advantage. However, in reality, this gambling platform is characterized by many more strengths. For an objective assessment of the service, it is also worth considering some of the disadvantages.`,
     ],
-    advantagesTitle: "Advantages:",
-    disadvantagesTitle: "Disadvantages:",
+    advantagesTitle: "Advantages",
+    disadvantagesTitle: "Disadvantages",
     advantages: [
-      "Wide selection of casino games.",
-      "User-friendly interface.",
-      "Secure payment methods.",
-      "Responsive customer support.",
-      "Mobile-friendly venue.",
-      "Attractive promotions and bonuses.",
-      "Live dealer options for immersive gameplay.",
-      "Strong focus on security and privacy.",
+      "a variety of slots;",
+      "live casino;",
+      "welcome bonuses;",
+      "cashback program;",
+      "reload bonuses;",
+      "online chat technical support;",
+      "convenient site navigation;",
+      "mobile friendly.",
     ],
-    disadvantages: [
-      "Restricted access in certain countries.",
-      "Limited payment options in some regions.",
-      "Wagering requirements for bonuses.",
-      "No dedicated desktop app.",
-    ],
+    disadvantages: ["geographical restrictions;", "no app."],
   },
   about: {
-    title: "Drip Casino",
-    intro: ["150% bonus up to 30,000C$ ", "100 free spins", "4% cashback"],
+    title: "Lemon Casino",
+    intro: ["welcome bonus", "more than 5400 games", "live casino"],
     description: [
-      `Drip Casino is a modern online gaming venue offering a diverse scope of casino games, including slots, table games, and live dealer experiences. Designed to provide a user-friendly interface, high-quality graphics, and engaging gameplay, Drip Casino caters to both novice participants and seasoned enthusiasts. With secure payment options, responsive customer support, and enticing promotions, it aims to deliver an immersive and reliable playing venture. The venue emphasizes responsible gaming and utilizes advanced encryption technology to ensure a safe environment for its users. Participants can also enjoy seamless mobile gaming with a dedicated app, ensuring uninterrupted access to their favorite games. Additionally, Drip Casino review offers a robust loyalty program that rewards frequent users with exclusive perks and benefits.`,
-      // `p2`,
-      // `p3`,
+      `Lemon Casino has been successfully operating in Canada and other regions since its foundation in 2021. In a relatively short period of existence, the online platform has managed to gain incredible popularity and attract an audience of many thousands. Here you can enjoy your favorite gambling entertainment, play with live dealers, use reliable and secure payment systems, and also realize the potential of generous bonuses.`,
+      `The Lemon Casino Canada service is designed in a discreet and minimalistic style. At the same time, the site developers managed to think through every detail of the site and work out each page. Therefore, you will get access to the most convenient and fast navigation.`,
+      `If you want to get Lemon Casino no deposit bonus or activate a welcome reward, you will be able to quickly understand all the nuances and stages of registration. Please note that there is no demo mode. Therefore, you can only play for real money. And for this, you will need an account.`,
     ],
     register: {
-      title: "Drip Online Casino Registration Process",
+      title: "Registration Process: Lemon Casino Free Spins Promo Code",
       text: [
-        `Signing up at Drip Casino is quick and straightforward, allowing you to start enjoying your favorite games in just a few minutes. Follow these simple steps to create your account:`,
-        // `p2`,
+        `For beginners, it will be logical to start the Lemon Casino review with how to register correctly and what you need to do for this. Use the step-by-step instructions to join the army of fans of this "sour", but such a charming online casino.`,
+        `Now that you already have a Lemon Casino login, you can move on to the next stages of getting to know this great gambling service.`,
         // `p3`,
       ],
       list: [
-        "Visit the Drip Casino website.",
-        "Click on the Sign Up' or 'Register' button.",
-        "Enter your personal details (e.g., name, email, and contact information).",
-        "Create a secure username and password.",
-        "Verify your email address via the confirmation link.",
-        "Complete identity verification (if required).",
-        "Log in and make your first deposit.",
+        "Go to the official website and click on the registration button on the main page;",
+        "Enter a valid email address and come up with a safe, secure password;",
+        "Click on the button to proceed to the next stage of registration;",
+        "Fill out the online form, indicating your country of residence, phone number, date of birth, etc.;",
+        "Confirm the new account by clicking on the link from the email from the casino.",
       ],
     },
     signIn: {
-      title: "About Drip Casino Login",
+      title: "Login: Lemon-Casino",
       text: [
-        `Drip Casino login is a straightforward process designed for convenience and security. To access your account, visit the Drip Casino homepage and click on the "Login" button, typically located in the top-right corner. Enter your registered email address or username along with your password, then click "Submit" to proceed. If you’ve enabled two-factor authentication (2FA) for added security, you’ll need to provide the verification code sent to your device. Once logged in, you can explore the full scope of games, manage your account settings, and access any ongoing promotions.`,
-        // `p2`,
+        `Registered users have access to excellent opportunities of this platform, which has a simple and memorable name Lemon Casino Online:`,
+        `Considering the amazing opportunities and advantages of this casino, you have every reason to register and make your first deposit.`,
         // `p3`,
       ],
-      // list: ["li1", "li2", "li3"],
-    },
-    // verification: {
-    //   title: "VerificationTitle",
-    //   text: [`p1`, `p2`, `p3`],
-    // },
-    depositMethods: {
-      title: "Deposit Methods",
-      text: [
-        `Participants can fund their accounts using several options, including Visa and MasterCard for credit and debit card transactions. E-wallets such as Jeton, EcoPayz, and MuchBetter are also supported, providing quick and secure deposits. Additionally, the casino accepts payment vouchers like Paysafecard, CashtoCode, Neosurf, and Flexepin, offering alternative methods for adding funds. For those who prefer digital currencies, Drip Casino supports cryptocurrencies, including Bitcoin, Ethereum, Litecoin, Ripple, and Tron, facilitating seamless and private transactions.`,
-        // `p2`,
+      list: [
+        "activation of welcome bonuses for deposits;",
+        "participation in tournaments;",
+        "a variety of slots;",
+        "incredible games with live dealers;",
+        "professional support service and much more.",
       ],
-      // list: ["li1", "li2", "li3"],
+    },
+    verification: {
+      title: "Verification",
+      text: [
+        `New players should know that Casino Lemon adheres to strict KYC rules and requirements. This means that after completing the registration procedure, you will need to verify your account. This is a standard requirement for all casinos that operate officially and care about the safety of their customers.`,
+        `For verification, you will need to provide some personal data, which you can enter through an electronic form in your personal account. Here, be sure to upload a photo or scanned copy of documents that prove your identity. The documents must contain a photo, your full name, and date of birth.`,
+        `This information is sent to the security service for verification. After successful verification, you will receive a corresponding notification. Now you can easily submit applications for withdrawal of winnings, as well as receive many additional benefits as a verified user.`,
+      ],
+    },
+    depositMethods: {
+      title: "Deposit Methods: Lemon Casino Paysafecard",
+      text: [
+        `To start playing and placing bets, new users will need to make their first deposit to their game balance after creating an account. Canadian players are offered an impressive selection of payment systems:`,
+        `The minimum deposit is from 10 Canadian dollars. Each system has certain limits on maximum deposits per transaction.`,
+      ],
+      list: [
+        "Giropay;",
+        " MiFinity;",
+        "Euteller;",
+        "Multibanco;",
+        "Jeton;",
+        "Skrill;",
+        "Astropay;",
+        "Neteller;",
+        "Zimpler;",
+        "Neosurf;",
+        "Paysafecard;",
+        "Visa;",
+        "Mastercard;",
+        "Crypto, etc.",
+      ],
     },
     withdrawalMethods: {
-      title: "Withdrawal Methods",
+      title: "Withdrawal Methods: Lemon Casino Chat",
       text: [
-        `When it comes to withdrawing winnings, Drip Casino ensures a straightforward process. Participants can request withdrawals through bank wire transfers, with processing times ranging from 3 to 5 business days. E-wallet options like Jeton, EcoPayz, and MuchBetter are available, often providing faster access to funds, typically within 24 hours. Cryptocurrency withdrawals are also supported, offering prompt and secure transactions for digital currency users. The minimum withdrawal amount is generally CAD 10, accommodating participants with varying budgets. Drip Casino processes withdrawal requests within 24 hours; however, the total time for funds to appear in accounts depends on the chosen method.`,
-        // `p2`,
+        `If you have registered, confirmed your account through the verification procedure, and also wagered the reward after activating the Lemon Casino bonus code or welcome gift, then submit a request to withdraw your winnings. To do this, Canadian gamblers can use several systems:`,
+        `The minimum withdrawal amount is from 20 Canadian dollars. If you use cryptocurrency wallets, then from 40 Canadian dollars. The maximum application amount is 3500 Canadian dollars.`,
+        `As for Lemon Casino withdrawal time, it varies from 12 hours to 2-5 business days. The longest wait is for a bank transfer.`,
       ],
-      // list: ["li1", "li2", "li3"],
+      list: [
+        "Astropay;",
+        "MiFinity;",
+        "Jeton;",
+        "Neteller;",
+        "Skrill;",
+        "Rapid Transfer;",
+        "Bank transfer;",
+        "Crypto.",
+      ],
     },
   },
   licenses: {
     title: "Licenses",
     text: [
-      `Is Drip Casino legit? Drip Casino operates under a license issued by the Government of Curaçao, ensuring that it adheres to international standards of fairness and security. The casino is owned and operated by Galaktika N.V., a reputable company in the gaming industry.`,
+      `Is Lemon Casino legit? The most important indicator of the reliability and safety of any online casino is the presence of a license. This gambling platform operates on the basis of a valid Curacao license. All the necessary information, including the license number and date of issue, can be found at the bottom of the main page of the site.`,
       // `p2`,
     ],
-    security: "Security",
+    security: "Security: Lemon Casino Promo",
     securityText: [
-      `Security is a top priority at Drip Casino. The venue employs 128-bit SSL encryption and firewalls to protect all sensitive data and transactions, ensuring that participants' personal and financial information remains secure.`,
+      `The casino offers high security and digital protection for customers. To do this, they use a strict privacy policy, a multi-level data encryption system, SSL protocols, verification and other effective solutions.`,
       // `p2`,
     ],
-    software: "Software Technologies",
+    software: "Software Technologies: Lemon Casino Free Spins Code",
     softwareText: [
-      `Drip Casino utilizes advanced software technologies to deliver a seamless and engaging playing venture. The venue features a vast library of over 7,000 games from more than 50 leading software providers, including Play’n GO, BGaming, Pragmatic Play, and Yggdrasil.`,
+      `This popular gambling service cooperates with leading suppliers of specialized software, which provides an amazing range of entertainment. Therefore, on the site you can easily find projects from such providers as Playson, BGaming. Spinomenal, Microgaming. Hacksaw, Betsoft, Habanero, Spribe and many others. For convenience, there is a search function by provider.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Casino App",
+    title: "App: No Deposit Bonus Lemon Casino",
     text: [
-      `For mobile users, there is a Drip Casino app compatible with both iOS and Android devices. These apps provide a user-friendly interface and access to the full scope of casino games, allowing participants to enjoy their favorite titles on the go.`,
+      `The situation with the Lemon Casino app looks quite ambiguous. The problem is that on the site you can find a section where you are offered to download a mobile application. However, in fact, you cannot install the program at the moment. Instead, a mobile version of the site and the creation of an icon for quick access to the home screen are offered. This can be done by users of iOS and Android devices.`,
       // `p2`,
     ],
     languages: "Languages",
     languagesText: [
-      `The venue supports multiple languages, including English, Russian, German, Spanish, Brazilian Portuguese, and French, catering to a diverse international player base.`,
+      `Since the site is presented in several regions, including Canada, each of them has a corresponding interface language. Therefore, you can switch between English, Polish, German, Norwegian and other languages.`,
       // `p2`,
     ],
-    currencies: "Drip Casino Reviews of Currencies",
+    currencies: "Currencies",
     currenciesText: [
-      `Drip Casino accepts a variety of currencies to accommodate participants from different regions. Initially, deposits can be made in RUB, KZT, and UAH, with plans to expand currency options to include EUR, USD, CAD, AUD, NZD, BRL, MXN, and CLP over time.`,
+      `If you play in Canada, then the only game currency option for you will be Canadian dollars. Gamblers from other regions will be able to use the corresponding currency of their country.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play at Drip Casino",
+    title: "Games Available to Play: Free Spin Lemon Casino",
     text: [
-      `Drip Casino offers a diverse selection of games to cater to various player preferences, ensuring an engaging and entertaining experience for all users. Here are some of the gaming options available:`,
+      `New and regular players have a great opportunity to activate Lemon Casino promo code 2025 and use the received reward in their favorite games. At the same time, the range of gambling entertainment here is truly impressive. Today, there are more than 5,000 games for every taste. Therefore, new customers from Canada will be interested to know what exactly they can play here.`,
       // `p2`,
       // `p3`,
     ],
@@ -126,7 +154,7 @@ export const content = {
       {
         heading: "Slots",
         text: [
-          `Drip Casino provides a vast array of licensed slot games designed to cater to a wide scope of player preferences. The venue boasts an impressive collection, including popular titles like Iron Bank and Sugar Rush 1000, which are celebrated for their engaging gameplay and stunning visuals. Each slot game offers unique themes, captivating storylines, and diverse features, such as bonus rounds, Drip Casino free spins, and multipliers, to keep the experience fresh and exciting. Whether you're a fan of high-volatility slots with big potential payouts or prefer more relaxed, low-risk gameplay, Drip Casino’s slot section ensures there’s something for everyone.`,
+          `Most often, activating Lemon Casino no deposit bonus codes allows you to receive free spins and use them in slot machines. Rest assured that the choice of slots here is fantastic. For maximum convenience of customers, all games are divided into many thematic categories. This is a great opportunity to play slots on a winter theme, about nature, about ancient treasures, and so on. Separately, you can choose by category depending on additional functions: bonus purchase, Megaways, progressive jackpots and much more.`,
           // `p2`,
           // `p3`,
         ],
@@ -135,7 +163,7 @@ export const content = {
       {
         heading: "Table Games",
         text: [
-          `For enthusiasts of traditional casino games, Drip Casino offers a comprehensive selection of table games that cater to both casual participants and seasoned gamblers. Classic favorites such as blackjack, roulette, poker, and craps are available, each presented in multiple variations to add variety and challenge. Participants can choose from different rule sets, table limits, and strategies to suit their playing style. Whether you prefer the fast-paced action of European Roulette, the strategic depth of Texas Hold’em Poker, or the simplicity of classic blackjack, the table games at Drip Casino provide an authentic and enjoyable playing venture.`,
+          `If you do not want to spend money on regular slots, then try your hand and show your skills in table games. There are more than 50 types of gambling entertainment to choose from, including classic blackjack and game variations, roulette, video poker, Dragon Tiger, baccarat, Sic Bo and much more. The games are distinguished by exciting gameplay and specific rules.`,
           // `p2`,
           // `p3`,
         ],
@@ -146,16 +174,16 @@ export const content = {
       {
         heading: "Live Casino",
         text: [
-          `For those seeking a truly immersive playing venture, the live casino section at Drip Casino brings the excitement of a real casino directly to your screen. Featuring live dealer games hosted by professional croupiers, participants can interact with dealers and fellow participants in real-time. The live casino offers a wide scope of games, including blackjack, roulette, baccarat, and innovative game shows that combine traditional gameplay with interactive entertainment. High-definition streaming and advanced technology ensure a seamless experience, replicating the ambiance and thrill of a brick-and-mortar casino from the comfort of your home.`,
-          // `p2`,
+          `Games with live dealers deserve special attention. This is a modern and exciting format of gambling entertainment. Your task is to choose one of the many games at virtual tables and enjoy the work of the dealer online. You will watch their actions through webcams.`,
+          `For Canadian gamblers, the service offers such live gambling entertainment as TV Show, Baccarat, Roulette, Lightning and more. You just need to make a choice and start an unforgettable online adventure.`,
           // `p3`,
         ],
         //  list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Instant Games",
+        heading: "Tournaments",
         text: [
-          `Casino Drip also caters to participants who enjoy fast-paced, straightforward gameplay with its collection of instant games. These games, such as Aviator, JetX, and Plinko, offer unique mechanics and a chance for instant winnings. Designed for quick engagement, they are perfect for participants who want an exciting break from traditional casino games. Each title combines simple controls with vibrant graphics and dynamic gameplay, providing a fresh and exhilarating experience. Whether you’re testing your luck or exploring new styles of gaming, the instant games at Drip Casino promise quick thrills and endless entertainment.`,
+          `Many Canadian players are attracted by the opportunity to compete with other users and try to rise to the top of the tournament table. Therefore, be sure to visit the Tournaments category, where lists of current competitions are available. You will be able to compete for numerous cash prizes. The higher you are on the leaderboard at the end of the tournament, the bigger your share of the main reward will be.`,
           // `p2`,
           // `p3`,
         ],
@@ -164,33 +192,42 @@ export const content = {
     ],
   },
   support: {
-    title: "Support",
+    title: "Support: Lemon Casino Support",
     text: [
-      `Customer support at Drip Casino is available 24/7 through multiple channels, including live chat, email, and a Telegram bot. The support team is dedicated to assisting participants with any inquiries or issues promptly and professionally. `,
-      // `p2`,
+      `For players from Canada and other regions, there are several channels for contacting support representatives:`,
+      `The chat is open 24/7 so that you can get help at any time.`,
     ],
-    list: ["li1", "li2", "li3"],
+    list: ["Lemon Casino live chat;", "email;", "FAQ section."],
   },
   promotions: {
-    title: "Drip Casino Bonus Offers and Promotions",
+    title: "Bonuses and Promotions: Lemon Casino No Deposit Promo Code",
     text: [
-      `Drip Casino offers a variety of bonuses and promotions designed to enhance the playing venture and provide additional value to its participants. Here are some of the current promotions available:`,
-      // `p2`,
+      `Don't forget to visit the Lemon Casino bonus section, as there are many interesting and profitable offers from the popular Canadian online platform. There are promotions for new customers, as well as for those who remain loyal to one of the most "sour" online casinos.`,
+      `In addition to the main bonus programs, you can use the Lemon Casino promo code when making deposits. This is a great way to get additional prizes and gifts.`,
     ],
     leftColumnContent: [
       {
         heading: "Welcome Bonus",
         text: [
-          `New participants at Drip Casino are greeted with an attractive welcome package designed to enhance their gaming journey right from the start. The welcome bonus is spread across the first three deposits, providing substantial value to newcomers. On the first deposit, participants receive a 150% bonus up to 30,000C$, giving them more funds to explore the casino's offerings. This bonus comes with a wagering requirement of 40x. The second deposit rewards participants with up to 325 free spins, depending on the deposit amount, enabling them to try out some of the most popular slot games on the venue. The free spins are subject to a 35x wagering requirement. For the third deposit, participants can enjoy a 75% bonus up to 15,000C$, which also has a 40x wagering requirement. This multi-deposit welcome package ensures that new users can maximize their initial playing venture with Drip Casino.`,
+          `If you are a new customer and managed to enter the Lemon Casino no deposit bonus code during registration, then additionally collect your welcome prize. It is 100% of the first deposit up to 300 Canadian dollars. In addition to this amount of money, you will also receive a package of free spins. The larger the deposit, the more money and spins you get. However, to activate the offer, it is enough to deposit only 10 Canadian dollars to the balance.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Reload Bonuses and Drip Casino Promo Codes",
+        heading: "Megaways Welcome Bonus",
         text: [
-          `Drip Casino keeps the excitement going for regular participants with a variety of reload bonuses. These weekly promotions are designed to give participants an extra boost on their deposits. The standard Reload Bonus offers up to a 50% bonus, depending on the deposit amount, with a maximum bonus of 20,000C$. This bonus allows participants to continue enjoying their favorite games with additional funds and comes with a wagering requirement of 40x. Additionally, the Reload Free Spins bonus provides up to 100 free spins and promo code Drip Casino, also based on the deposit amount and with a 40x wagering requirement. For those who want to kickstart their weekends, the Friday Reload bonus is particularly appealing, offering a 50% bonus up to 25,000C$ and Drip Casino promo code. These bonuses provide participants with regular opportunities to extend their gameplay and enhance their chances of winning.`,
+          `If you like games with the Megaways feature and prefer to play only such slots, then the right decision would be to activate a special welcome bonus. In this case, the reward will be 400% of the deposit up to 500 Canadian dollars. You will have exactly 7 days to wager the bonus.`,
+          // `p2`,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Second Deposit Bonus",
+        text: [
+          `You don’t have to stop at the first deposit, as the casino offers an additional bonus for the second deposit. Simple conditions apply here. You deposit from 10 Canadian dollars and receive up to 300 Canadian dollars and 100 free spins to your bonus account.`,
           // `p2`,
           // `p3`,
         ],
@@ -199,9 +236,27 @@ export const content = {
     ],
     rightColumnContent: [
       {
-        heading: "Cashback Bonus and Drip Casino Promo Code 2025",
+        heading: "Cashback",
         text: [
-          `Drip Casino rewards its loyal participants with a generous weekly cashback bonus, ensuring that every bet contributes to a potential return. The cashback percentage ranges from 4% to 10%, depending on the total amount of bets placed over the past week. For instance, participants who bet at least 50 € are eligible for a 4% cashback, while those whose bets exceed 5,001 € can enjoy the maximum cashback rate of 10%. This Drip Casino no deposit bonus provides a safety net, allowing participants to recoup a portion of their losses and keep playing. The wagering requirement for the cashback varies based on the player's loyalty status, ranging from 10x for standard participants to just 3x for VIP members. This Drip Casino no deposit system ensures that all participants, regardless of their betting habits, have an opportunity to benefit from this rewarding feature.`,
+          `Every Sunday, active players who place bets during the week will receive a cashback of up to 7%. The amount of return directly depends on how many bets you managed to make and how much you lost during the game week.`,
+          // `p2`,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Mystery Boxes",
+        text: [
+          `These are extra bonuses that you can use at the most unexpected moment. This is a no deposit bonus available to all registered players. Keep an eye on the information in your account. Sooner or later, you will get another mystery box. What will be inside is always unpredictable. It can be Lemon Casino free spins or play money.`,
+          // `p2`,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Live Casino Bonus",
+        text: [
+          `If you prefer to play with live dealers, then take advantage of the special offer. You do not need to enter the Lemon Casino code. Your task is to play 50 rounds in a live casino, after which you will receive 15% cashback on the amount lost.`,
           // `p2`,
           // `p3`,
         ],
@@ -210,6 +265,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "Drip Casino Trustpilot FAQs",
+    title: "FAQ",
   },
 };
