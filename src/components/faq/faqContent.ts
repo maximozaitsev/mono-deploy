@@ -1,15 +1,14 @@
 export const faqs = [
   {
-    question: "What license does the casino operate under?",
-    answer: "This is a Curacao license.",
+    question: "What is the minimum deposit on the site?",
+    answer: "The minimum deposit is 30 Canadian dollars.",
   },
   {
-    question: "How do I get a welcome bonus?",
-    answer:
-      "You need to register and make a deposit of at least 10 Canadian dollars.",
+    question: "From what age can you play in this casino?",
+    answer: "According to Canadian law, the minimum age for gambling is 21.",
   },
   {
-    question: "Can I play on a mobile device?",
-    answer: "Yes. Currently, a mobile version of the site is available.",
+    question: "How can I withdraw money?",
+    answer: "You can use crypto wallets and bank transfers for this.",
   },
 ];

@@ -16,7 +16,7 @@
     padding: 4px 48px;
     // outline-color: #f9f8f83b;
     background: $color-button-large;
-    color: #1b2827;
+    color: $text-color-primary;
     font-size: 28px;
     border: none;
     border-radius: 50px;
@@ -46,10 +46,10 @@
   }
 
   &.secondary {
-    outline: 3px solid;
-    outline-offset: -3px;
+    // outline: 3px solid;
+    // outline-offset: -3px;
     padding: 2px 18px;
-    outline-color: #2e2e2e3b;
+    // outline-color: #2e2e2e3b;
     background: $color-button-small;
     color: #fff;
     font-size: 20px;

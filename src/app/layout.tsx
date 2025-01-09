@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "lemon-casino-canada.com";
+const url = "silveroak-casino-online.com";
 const ogTitle =
-  "Lemon Casino Canada: Amazing Gambling and Unforgettable Experience";
-const ogSiteName = "Lemon Casino Canada";
+  "Silver Oak Casino Canada: Unforgettable Best Gambling Experience";
+const ogSiteName = "Silver Oak Casino";
 const metaDescription =
-  "Lemon Casino Canada: a detailed review of the popular online platform. How to register, make a deposit and get generous bonuses. Current games and incredible opportunities for live casino fans";
+  "Silver Oak Casino Canada: what you need to know about the popular online platform. Gaming opportunities, bonuses, VIP program and other interesting and useful details";
 
 const locale = "en-CA";
 const language = "English";
@@ -45,6 +45,7 @@ export default function RootLayout({
       <head>
         <meta name="language" content={language} />
         <link rel="icon" href="/icons/xxxhdpi.png" />
+        <link rel="canonical" href={`https://${url}`} />
         <link rel="apple-touch-icon" href="/icons/Icon.png" sizes="57x57" />
         <link
           rel="apple-touch-icon"
