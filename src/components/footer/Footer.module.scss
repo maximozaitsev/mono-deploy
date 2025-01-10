@@ -5,15 +5,16 @@
   position: relative;
   background: $color-background-footer;
   display: flex;
-  padding: 24px 0;
-  text-align: center;
-
-  :global(.container) {
-    width: 100%;
-  }
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 24px 0;
 
   .partners {
     margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 12px;
+    }
 
     .row {
       display: flex;
@@ -22,51 +23,57 @@
       margin-bottom: 24px;
       flex-wrap: wrap;
 
-      &:first-child {
-        .logoWrapper {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin-bottom: -2px;
-
-          @media (max-width: 768px) {
-            margin-top: -17px;
-            margin-bottom: -10px;
-          }
-
-          img {
-            margin-top: 4px;
-            // scale: 2.02;
-            position: absolute;
-            left: 220px;
-            cursor: pointer;
-
-            @media (max-width: 768px) {
-              // scale: 1.43;
-            }
-          }
-        }
-      }
-
-      &:nth-child(2) {
-        gap: 7px;
-      }
-
-      &:nth-child(2),
-      &:nth-child(3) {
-        flex-wrap: wrap;
-      }
-
       &:last-child {
         margin-bottom: 0;
       }
+    }
 
-      .partnerLogo {
-        mix-blend-mode: luminosity;
+    .logoWrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 34px;
 
-        &:hover {
-          mix-blend-mode: normal;
+      @media (max-width: 768px) {
+        margin-bottom: 22px;
+      }
+
+      .logoBg {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 280px;
+        height: 81px;
+        background: #9e76ff;
+        border-radius: 0 0 32px 32px;
+        z-index: 0;
+
+        @media (max-width: 768px) {
+          height: 69px;
         }
+      }
+
+      img {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        top: 20px;
+
+        @media (max-width: 768px) {
+          top: 8px;
+        }
+      }
+    }
+
+    .partnerLogo {
+      mix-blend-mode: luminosity;
+      transition: mix-blend-mode 0.3s;
+
+      &:hover {
+        mix-blend-mode: normal;
       }
     }
   }
@@ -76,92 +83,34 @@
     font-family: $font-primary;
     font-size: 20px;
     line-height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 
     span:first-child {
       font-size: 32px;
       margin-right: 16px;
-
-      @media (max-width: 768px) {
-        font-size: 18px;
-      }
-    }
-  }
-
-  // Media queries
-  @media (max-width: 1520px) {
-    .row {
-      &:first-child {
-        .logoWrapper {
-          margin-bottom: 16px;
-
-          img {
-            position: static !important;
-            margin-top: 1px !important;
-            margin-bottom: 5px;
-          }
-        }
-
-        .partnerLogo {
-          &:nth-child(1) {
-            position: absolute !important;
-            left: 50px !important;
-          }
-        }
-      }
     }
   }
 
   @media (max-width: 768px) {
-    padding: 24px 0 12px 0;
+    padding: 0 0 16px 0;
 
-    .partners {
-      margin-bottom: -16px;
+    .partners .row {
+      gap: 10px;
+      margin-bottom: 16px;
     }
 
-    .row {
-      gap: 10px !important;
-      margin-bottom: 16px !important;
-
-      .partnerLogo {
-        width: auto;
-        height: 22px !important;
-      }
-
-      img {
-        margin-top: 0;
-      }
+    .partnerLogo {
+      height: 22px !important;
     }
 
     .copyright {
       font-size: 18px;
       line-height: 24px;
-      margin-top: 34px;
 
       span:first-child {
+        font-size: 18px;
         margin-right: 8px;
       }
-    }
-  }
-
-  @media (max-width: 500px) {
-    .copyright {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .row .partnerLogo {
-      height: 18px;
-    }
-  }
-
-  @media (max-width: 300px) {
-    .hiddenSpan {
-      display: none !important;
     }
   }
 }

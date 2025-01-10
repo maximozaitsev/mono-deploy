@@ -68,11 +68,20 @@ const Footer = () => {
 
   const [hoveredLogoIndex, setHoveredLogoIndex] = useState<number | null>(null);
 
-  const scrollToWelcomeSection = () => {
-    document
-      .getElementById("welcome-section")
-      ?.scrollIntoView({ behavior: "smooth" });
-  };
+  const renderLogos = (logos: typeof partnerLogos, startIndex: number) =>
+    logos.map((logo, index) => (
+      <Image
+        key={index + startIndex}
+        src={hoveredLogoIndex === index + startIndex ? logo.color : logo.mono}
+        alt={`Partner ${index + startIndex + 1}`}
+        width={100}
+        height={32}
+        className={styles.partnerLogo}
+        onMouseEnter={() => setHoveredLogoIndex(index + startIndex)}
+        onMouseLeave={() => setHoveredLogoIndex(null)}
+        style={{ width: "auto", height: "32px" }}
+      />
+    ));
 
   return (
     <footer className={styles.footer}>
@@ -80,52 +89,22 @@ const Footer = () => {
         <div className={styles.partners}>
           <div className={styles.row}>
             <div className={styles.logoWrapper}>
-              <Logo onClick={scrollToWelcomeSection} />
+              <div className={styles.logoBg}></div>
+              <Logo
+                onClick={() =>
+                  document
+                    .getElementById("welcome-section")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              />
             </div>
-
-            {partnerLogos.slice(0, 7).map((logo, index) => (
-              <Image
-                key={index}
-                src={hoveredLogoIndex === index ? logo.color : logo.mono}
-                alt={`Partner ${index + 1}`}
-                width={100}
-                height={32}
-                className={styles.partnerLogo}
-                onMouseEnter={() => setHoveredLogoIndex(index)}
-                onMouseLeave={() => setHoveredLogoIndex(null)}
-                style={{ width: "auto", height: "32px" }}
-              />
-            ))}
+            {renderLogos(partnerLogos.slice(0, 7), 0)}
           </div>
           <div className={styles.row}>
-            {partnerLogos.slice(7, 12).map((logo, index) => (
-              <Image
-                key={index + 7}
-                src={hoveredLogoIndex === index + 7 ? logo.color : logo.mono}
-                alt={`Partner ${index + 8}`}
-                width={100}
-                height={32}
-                className={styles.partnerLogo}
-                onMouseEnter={() => setHoveredLogoIndex(index + 7)}
-                onMouseLeave={() => setHoveredLogoIndex(null)}
-                style={{ width: "auto", height: "32px" }}
-              />
-            ))}
+            {renderLogos(partnerLogos.slice(7, 12), 7)}
           </div>
           <div className={styles.row}>
-            {partnerLogos.slice(12, 15).map((logo, index) => (
-              <Image
-                key={index + 12}
-                src={hoveredLogoIndex === index + 12 ? logo.color : logo.mono}
-                alt={`Partner ${index + 13}`}
-                width={100}
-                height={32}
-                className={styles.partnerLogo}
-                onMouseEnter={() => setHoveredLogoIndex(index + 12)}
-                onMouseLeave={() => setHoveredLogoIndex(null)}
-                style={{ width: "auto", height: "32px" }}
-              />
-            ))}
+            {renderLogos(partnerLogos.slice(12, 15), 12)}
           </div>
         </div>
         <p className={styles.copyright}>
