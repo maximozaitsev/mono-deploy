@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "silveroak-casino-online.com";
+const url = "royal-panda-online.com";
 const ogTitle =
-  "Silver Oak Casino Canada: Unforgettable Best Gambling Experience";
-const ogSiteName = "Silver Oak Casino";
+  "Royal Panda Casino Canada: The Most Interesting Details About Platform";
+const ogSiteName = "Royal Panda Casino";
 const metaDescription =
-  "Silver Oak Casino Canada: what you need to know about the popular online platform. Gaming opportunities, bonuses, VIP program and other interesting and useful details";
+  "Royal Panda Casino Canada: bonus offers, game selection, payment methods and registration for new customers. All the details and features of the popular online casino";
 
 const locale = "en-CA";
 const language = "English";
