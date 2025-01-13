@@ -1,25 +1,32 @@
 export const faqs = [
   {
-    question: "Is this casino officially operating in Canada?",
+    question: "Is Bodog Casino Legit?",
     answer:
-      "Yes. This is confirmed by the Malta license and the permission of the Ontario General Gambling Commission.",
+      "Yes, Bodog uses SSL encryption to protect transactions and user data. It is licensed by the Curacao Gaming Control Board, ensuring that it meets regulatory standards.",
   },
   {
-    question: "At what age can you register on the site?",
+    question: "What are the minimum deposit and withdrawal amounts?",
     answer:
-      "According to the casino rules, registration is possible from the age of 18.",
+      "The minimum deposit is C$20, and the minimum withdrawal is also C$20 for most methods.",
   },
   {
-    question: "What is the minimum deposit and withdrawal amount?",
-    answer: "These figures are CAD 10 and CAD 20 respectively.",
-  },
-  {
-    question: "Can I use crypto wallets here?",
+    question: "How long does it take to withdraw funds?",
     answer:
-      "No. But there are many other secure payment systems to choose from.",
+      "Withdrawal times vary depending on the method: Cryptocurrency: 1-24 hours; Bank Transfer: 3-5 business days.",
   },
   {
-    question: "How do I get a welcome bonus?",
-    answer: "You need to register and deposit CAD 20 or more.",
+    question: "Does Bodog Casino offer a mobile app?",
+    answer:
+      "No, but the site is fully optimized for mobile use, ensuring smooth gaming on smartphones and tablets.",
+  },
+  {
+    question: "Are there any wagering requirements for bonuses?",
+    answer:
+      "Yes, most bonuses have a 25x wagering requirement that must be met before winnings associated with the bonus can be withdrawn.",
+  },
+  {
+    question: "What happens if I forget my password?",
+    answer:
+      "You can reset your password using the 'Forgot your password?' link on the login page. The reset link will be sent to your registered email address.",
   },
 ];

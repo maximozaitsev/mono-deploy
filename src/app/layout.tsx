@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "royal-panda-online.com";
+const url = "bodog-casino-online.com";
 const ogTitle =
-  "Royal Panda Casino Canada: The Most Interesting Details About Platform";
-const ogSiteName = "Royal Panda Casino";
+  "Bodog Casino 2025: An In-Depth Review of Games, Bonuses, and Features";
+const ogSiteName = "Bodog Casino";
 const metaDescription =
-  "Royal Panda Casino Canada: bonus offers, game selection, payment methods and registration for new customers. All the details and features of the popular online casino";
+  "Explore Bodog Casino's features: extensive games library, exciting bonuses, payment methods, security measures, and more. Comprehensive guide for Canadian players.";
 
 const locale = "en-CA";
 const language = "English";
