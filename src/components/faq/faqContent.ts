@@ -1,32 +1,27 @@
 export const faqs = [
   {
-    question: "Is Bodog Casino Legit?",
+    question: "Where can I find Katsubet no deposit promo code 2025 Canada?",
     answer:
-      "Yes, Bodog uses SSL encryption to protect transactions and user data. It is licensed by the Curacao Gaming Control Board, ensuring that it meets regulatory standards.",
+      "Standard promotions are activated with promo codes and deposits. You may find extra promos on review websites that partner with Katsubet. ",
   },
   {
-    question: "What are the minimum deposit and withdrawal amounts?",
+    question: "Is there a Katsubet no deposit bonus code for existing players?",
     answer:
-      "The minimum deposit is C$20, and the minimum withdrawal is also C$20 for most methods.",
+      "Most promo codes are created for new players and expand the welcome promotion. Yet, you can also find exclusive offers for loyal customers. ",
   },
   {
-    question: "How long does it take to withdraw funds?",
+    question: "Where can I find Katsubet reviews?",
     answer:
-      "Withdrawal times vary depending on the method: Cryptocurrency: 1-24 hours; Bank Transfer: 3-5 business days.",
+      "Use online casino aggregators to see what real people and experts think about the platform.",
   },
   {
-    question: "Does Bodog Casino offer a mobile app?",
+    question: "Are there no deposit bonus codes for Katsubet casino?",
     answer:
-      "No, but the site is fully optimized for mobile use, ensuring smooth gaming on smartphones and tablets.",
+      "All bonuses require the first deposit in the casino, and there are no Katsubet casino no deposit bonus codes. This is a protective measure of Katsubet.",
   },
   {
-    question: "Are there any wagering requirements for bonuses?",
+    question: "Can I make Katsubet casino $1 deposit?",
     answer:
-      "Yes, most bonuses have a 25x wagering requirement that must be met before winnings associated with the bonus can be withdrawn.",
-  },
-  {
-    question: "What happens if I forget my password?",
-    answer:
-      "You can reset your password using the 'Forgot your password?' link on the login page. The reset link will be sent to your registered email address.",
+      "No, as the minimum deposit for most payment methods is 10 USD. Alternatively, use Tether to deposit only 5 USD.",
   },
 ];

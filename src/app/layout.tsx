@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "bodog-casino-online.com";
-const ogTitle =
-  "Bodog Casino 2025: An In-Depth Review of Games, Bonuses, and Features";
-const ogSiteName = "Bodog Casino";
+const url = "katsubet.net";
+const ogTitle = "Katsubet Casino Canada: 2025 Review of the Gambling Platform";
+const ogSiteName = "Katsubet Casino";
 const metaDescription =
-  "Explore Bodog Casino's features: extensive games library, exciting bonuses, payment methods, security measures, and more. Comprehensive guide for Canadian players.";
+  "Katsubet Casino in Canada offers a 100% bonus and 100 free spins for new users. Explore Katsubet’s promotions, rules, games, and withdrawal speed for Canadian players.";
 
 const locale = "en-CA";
 const language = "English";

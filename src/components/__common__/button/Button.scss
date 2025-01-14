@@ -16,10 +16,10 @@
     padding: 4px 48px;
     // outline-color: #f9f8f83b;
     background: $color-button-large;
-    color: $text-color-primary;
+    color: #1c1e26;
     font-size: 28px;
     border: none;
-    // border-radius: 20px;
+    border-radius: 50px;
     min-width: 280px;
     height: 87px;
 
@@ -51,10 +51,10 @@
     padding: 2px 18px;
     // outline-color: #2e2e2e3b;
     background: $color-button-small;
-    color: #1f1f1f;
+    color: #1c1e26;
     font-size: 20px;
     border: none;
-    // border-radius: 15px;
+    border-radius: 50px;
     height: 52px;
 
     @media (max-width: 768px) {
