@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "katsubet.net";
-const ogTitle = "Katsubet Casino Canada: 2025 Review of the Gambling Platform";
-const ogSiteName = "Katsubet Casino";
+const url = "casino-moncton-online.com";
+const ogTitle =
+  "Moncton Casino: Detailed and Comprehensive Review of Pros & Cons";
+const ogSiteName = "Moncton Casino";
 const metaDescription =
-  "Katsubet Casino in Canada offers a 100% bonus and 100 free spins for new users. Explore Katsubet’s promotions, rules, games, and withdrawal speed for Canadian players.";
+  "Discover Moncton Casino Hotel in Canada: a luxurious destination offering a top class hotel, exciting casino games, and exclusive loyalty programs. Online reservations available.";
 
 const locale = "en-CA";
 const language = "English";

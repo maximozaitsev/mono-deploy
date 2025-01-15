@@ -9,11 +9,7 @@ export default function AdvantageSection() {
     <section className={`${styles.advantageSection} section`}>
       <div className="container">
         <h2 className="h2-heading">{subTitle}</h2>
-        <div>
-          <p className="paragraph-text black">{content.advantages.text[0]}</p>
-          <p className="paragraph-text black">{content.advantages.text[1]}</p>
-          <p className="paragraph-text black">{content.advantages.text[2]}</p>
-        </div>
+        <p className="paragraph-text black">{content.advantages.text}</p>
         <div className={styles.columns}>
           <div className={styles.column}>
             <h4 className="h4-heading">{content.advantages.advantagesTitle}</h4>
