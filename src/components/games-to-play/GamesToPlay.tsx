@@ -17,6 +17,14 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[0].text[0],
                 },
+                {
+                  type: "list",
+                  content: content.gamesToPlay.leftColumnContent[0].list || [],
+                },
+                {
+                  type: "text",
+                  content: content.gamesToPlay.leftColumnContent[0].text[1],
+                },
               ],
             },
             {
@@ -26,16 +34,14 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[1].text[0],
                 },
-                // {
-                //   type: "list",
-                //   content:
-                //     content.gamesToPlay.leftColumnContent[1].list || [],
-                // },
-                // {
-                //   type: "text",
-                //   content:
-                //     content.gamesToPlay.leftColumnContent[1].text[1]
-                // },
+                {
+                  type: "list",
+                  content: content.gamesToPlay.leftColumnContent[1].list || [],
+                },
+                {
+                  type: "text",
+                  content: content.gamesToPlay.leftColumnContent[1].text[1],
+                },
               ],
             },
           ]}
@@ -47,6 +53,14 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.gamesRightColumn[0].text[0],
                 },
+                {
+                  type: "list",
+                  content: content.gamesToPlay.gamesRightColumn[0].list || [],
+                },
+                {
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[0].text[1],
+                },
               ],
             },
             {
@@ -55,6 +69,14 @@ export default function GamesToPlay() {
                 {
                   type: "text",
                   content: content.gamesToPlay.gamesRightColumn[1].text[0],
+                },
+                {
+                  type: "list",
+                  content: content.gamesToPlay.gamesRightColumn[1].list || [],
+                },
+                {
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[1].text[1],
                 },
               ],
             },

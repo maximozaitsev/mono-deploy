@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "argyllcasino-ca.com";
+const url = "casino-moncton-online.com";
 const ogTitle =
-  "Argyll Casino Canada: Your Premier Destination for Entertainment";
-const ogSiteName = "Argyll Casino";
+  "Moncton Casino: Detailed and Comprehensive Review of Pros & Cons";
+const ogSiteName = "Moncton Casino";
 const metaDescription =
-  "Argyll Casino Canada delivers a world-class gaming experience with a vast selection of games and premium services. Explore exciting opportunities and claim exclusive bonuses today!";
+  "Discover Moncton Casino Hotel in Canada: a luxurious destination offering a top class hotel, exciting casino games, and exclusive loyalty programs. Online reservations available.";
 
-const locale = "en-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

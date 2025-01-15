@@ -3,10 +3,10 @@
 
 .button {
   cursor: pointer;
-  font-family: $font-primary;
+  font-family: $font-secondary;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
 
@@ -19,7 +19,7 @@
     color: $text-color-primary;
     font-size: 28px;
     border: none;
-    // border-radius: 20px;
+    border-radius: 50px;
     min-width: 280px;
     height: 87px;
 
@@ -54,7 +54,7 @@
     color: #fff;
     font-size: 20px;
     border: none;
-    // border-radius: 15px;
+    border-radius: 50px;
     height: 52px;
 
     @media (max-width: 768px) {
