@@ -17,6 +17,10 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[0].text[0],
                 },
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[0].text[1],
+                },
               ],
             },
             {
@@ -26,8 +30,14 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[1].text[0],
                 },
+                {
+                  type: "text",
+                  content: content.promotions.leftColumnContent[1].text[1],
+                },
               ],
             },
+          ]}
+          rightColumnContent={[
             {
               heading: content.promotions.leftColumnContent[2].heading,
               items: [
@@ -37,14 +47,16 @@ export default function PromotionsSection() {
                 },
               ],
             },
-          ]}
-          rightColumnContent={[
             {
               heading: content.promotions.rightColumnContent[0].heading,
               items: [
                 {
                   type: "text",
                   content: content.promotions.rightColumnContent[0].text[0],
+                },
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[0].text[1],
                 },
               ],
             },

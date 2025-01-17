@@ -1,132 +1,146 @@
 export const content = {
-  projectName: "Argyll Casino",
+  projectName: "Draft Kings Casino",
   advantages: {
     // title: "",
-    subTitle: "Argyll Casino Edmonton Alberta Advantages",
+    subTitle: "Advantages and Disadvantages: DraftKings Sportsbook And Casino",
     text: [
-      `Each casino has qualities that attract players and weaknesses that might be improved. Argyll Casino, now Pure Casino Edmonton, follows suit. Despite its limits, its rich history, big gaming floor, and modern facilities make it an attractive place to play. More details about its merits and cons:`,
+      `Another point that is worthwhile and interesting in DraftKings Casino review is to highlight the relative merits and demerits of the service so the reader can clearly formulate an idea about the gaming platform with fewer biases. `,
     ],
-    advantagesTitle: "Pros",
-    disadvantagesTitle: "Cons",
+    advantagesTitle: "Advantages",
+    disadvantagesTitle: "Disadvantages",
     advantages: [
-      "Large variety of slot machines.",
-      "Spacious and renovated gaming floor.",
-      "Professional and friendly customer service.",
-      "24-hour poker room for enthusiasts.",
-      "Well-maintained and clean environment.",
-      "Multiple dining options with diverse menus.",
-      "Regular promotions and member perks.",
-      "Convenient location in Edmonton.",
+      "a large selection of gambling games;",
+      "mobile applications;",
+      "professional technical support;",
+      "live casino;",
+      "sports betting;",
+      "multi-profile site.",
     ],
     disadvantages: [
-      "Limited non-gaming entertainment options.",
-      "High noise levels during peak times.",
-      "Some services require in-person visits.",
+      "complex site navigation;",
+      "hidden bonus program;",
+      "geographical restrictions.",
     ],
   },
   about: {
-    title: "Argyll Casino",
-    intro: [
-      "10% dining discounts",
-      "winning wheels C$65,000",
-      "exclusive event invitations",
-    ],
+    title: "DraftKings Casino",
+    intro: ["VIP program", "more than 700 games", "sports betting"],
     description: [
-      `Argyll Casino, now Pure Casino Edmonton, is a top gambling and entertainment venue in Edmonton, Alberta, at 7055 Argyll Road NW. The casino has provided Edmonton residents with excellent gambling since 1986. It has undergone major renovations and extensions to improve its facilities and services. The facility was refurbished in 2020, creating a modern and stylish atmosphere for guests.`,
-      // `p2`,
-      // `p3`,
+      `It is safe to say that DraftKings Casino is not quite a standard and ordinary gaming service. The main emphasis is placed on sports betting. However, at the same time, this will not prevent you from enjoying great and popular gambling games, including slots, table games and even games with live dealers.`,
+      `On the official website of DraftKings Casino Ontario, you will immediately notice how everything here is focused on sports. Even many casino games are still closely related to sports competitions. Therefore, do not be surprised if you see such entertainment as Hockey Baccarat or Football Roulette.`,
+      `The service has high user ratings and is characterized by reliability, security and multifunctionality. Although some customers note it is not the most convenient navigation and too gloomy interface. However, it is unlikely to prevent you from enjoying your favorite games and getting pleasure from winnings. To get additional benefits, activate the DraftKings Casino promo code or take part in special promotions. For active and regular customers, there is a profitable VIP program with the opportunity to win real prizes and money.`,
     ],
     register: {
-      title: "Argyll Casino Registration Process",
+      title: "Registration Process: DraftKings Casino Bonus Code",
       text: [
-        `Is Argyll Casino open today? Visitors at Argyll Casino, now Pure Casino Edmonton, must be 18 or older to gamble. General entrance to the casino floor does not need registration, however Pure Rewards, the casino's loyalty club, offers unique deals and incentives.`,
-        // `p2`,
+        `If you have made the final decision to test your strength on this gaming platform, then first you will need a DraftKings Casino login. Creating an account is quite easy:`,
+        `The last step of the account setup process is verifying your account by email. A confirming email will be sent to you through DraftKings Casino Canada to the email you provided during registration. After verifying your account through this email, you now can log in and continue your business on the website or application. `,
         // `p3`,
       ],
       list: [
-        "Visit the Casino: Come to Pure Casino Edmonton at 7055 Argyll Road NW, Edmonton, Alberta.",
-        "Provide Identification: Show a government-issued photo ID to prove your age and identity.",
-        "Complete Registration: Give your personal information on the Pure Rewards signup form at Guest Services.",
-        "Receive Your Pure Rewards Card: Receive a Pure Rewards card after registration to earn points and access member-exclusive discounts.",
+        "Go to the official website or install the mobile application;",
+        "On the main page, click on the Register button;",
+        "In the online form that opens, enter your email address and come up with a password;",
+        "Click Next and fill out the page with personal data;",
+        "Carefully check the correctness of the information in order to avoid mistakes;",
+        "Agree to the terms and conditions of the casino, and complete the registration.",
       ],
     },
     signIn: {
-      title: "Argyll Casino Login",
+      title: "Login: DraftKings Casino Promo Code New User",
       text: [
-        `Casino Argyll road, now Pure Casino Edmonton, does not provide serious internet gambling, but its website provides a plethora of information. The site lists upcoming events, promotions, food options, and more to help travelers plan their trips. Patrons can call or visit the Casino for tailored services like scheduling event spaces, enquiring about specials, or joining Pure Rewards.`,
-        // `p2`,
+        `Since you have just registered, you will now need to log in to your DraftKings Ontario Casino account. To do this, open the site or app again and click on the Login link on the main page. You will need your password and email address to log in.`,
+        `Once you have logged in, you will have access to your personal account. Remember that strict KYC rules apply here. This means that all new customers are also required to undergo verification.`,
         // `p3`,
       ],
-      // list: ["li1", "li2", "li3"],
+      list: ["li1", "li2", "li3"],
     },
-    // verification: {
-    //   title: "VerificationTitle",
-    //   text: [`p1`, `p2`, `p3`],
-    // },
-    depositMethods: {
-      title: "Argyll Casino Edmonton AB Deposit Methods",
+    verification: {
+      title: "Verification: DraftKings Canada Casino",
       text: [
-        `To guarantee players can easily access gaming cash, Pure Casino Edmonton offers many secure and easy deposit methods. Cash is accepted at slot machines and table games on the gaming floor. Cash transfers are simple, allowing gameplay without additional processes. Also, the casino accepts Visa and Mastercard for electronic payments. Customers may buy chips or credits at cashier stations quickly and conveniently. `,
-        // `p2`,
+        `Verification requirements on the DraftKings Online Casino service are due to the company's desire to ensure complete security and data protection for its users. This procedure will be as easy as possible.`,
+        `Log into your account with your user ID and your password. Open the personal data section where you must fill the empty blanks, including your full name, sex, residence address, and so on. Then upload a scanned copy or take a picture of your documents; upload the files via the special menu so the data can be sent for verification by the internal security service.`,
+        `Verification is used for prevention of frauds on the Internet and to prevent minors from registering. Verification is also a prerequisite for those who want to collect winnings from an online casino.`,
       ],
-      // list: ["li1", "li2", "li3"],
+    },
+    depositMethods: {
+      title: "Deposit Methods: DraftKings Casino - Real Money",
+      text: [
+        `To start a gaming session, you will need to register and make at least a minimum deposit for subsequent bets. For this, the service provides the ability to use several payment systems:`,
+        `The minimum deposit amount is from 5 to 10 Canadian dollars. The application processing time will not require you to wait additionally. Also, you will not have to pay a commission for deposits made.`,
+      ],
+      list: [
+        "Visa;",
+        "Mastercard;",
+        "PayPal;",
+        "Interac;",
+        "Online banking;",
+        "Venmo.",
+      ],
     },
     withdrawalMethods: {
-      title: "Casino Argyll Edmonton Withdrawal Methods",
+      title: "Withdrawal Methods: DraftKings Casino New Customer Promo Code",
       text: [
-        `Casino on Argyll road offers secure and quick withdrawal solutions suited to each transaction. At the cashier's cage, smaller winners can get cash immediately. To guarantee safety and financial compliance, the casino follows a more systematic approach for major jackpots and high-stakes table game winnings. Cheques can be given for large gains, adding security. This strategy lets customers handle their assets safely without carrying significant quantities of cash.`,
-        // `p2`,
+        `Withdrawal of funds is possible for those customers who have passed verification. In this case, you can use various payment instruments:`,
+        `The minimum withdrawal amount is 20 Canadian dollars. The maximum limits depend on the selected payment system, as well as your personal restrictions. The waiting time for processing the application is from 24 hours to 7 business days.`,
       ],
-      // list: ["li1", "li2", "li3"],
+      list: [
+        "Online banking;",
+        "Credit and debit cards;",
+        "PayPal;",
+        "Venmo;",
+        "Check;",
+        "Bank wire.",
+      ],
     },
   },
   licenses: {
-    title: "Edmonton Argyll Casino Licenses",
+    title: "Licenses: DraftKings Online Casino Promo Codes",
     text: [
-      `AGLC is in charge of Pure Casino Edmonton. This license makes sure that the casino follows strict rules about being fair, honest, and legal. The AGLC makes sure that games and processes meet provincial standards through regular audits and reviews. Customers of casinos believe that the establishment is honest because of the strict rules and regulations in place.`,
+      `Regular customers are unlikely to have such a question: is DraftKings Casino legit? This is an unconditionally licensed and official casino. The service operates on the basis of a valid license issued by the General Gambling Commission of Ontario.`,
       // `p2`,
     ],
-    security: "Argyll Casino Open Hours and Security",
+    security: "Security: DraftKings Online Casino No Deposit Bonus",
     securityText: [
-      `Pure Casino Edmonton prioritizes customer safety and security with a multi-layered strategy. An advanced monitoring system with high-definition cameras monitors the site 24/7. Cameras are carefully placed throughout the gaming floor, entrances, and communal spaces for complete coverage. The casino has highly qualified security staff that can handle normal surveillance and emergency reactions. We limit access to restricted areas to protect guests and staff.`,
+      `In addition to that, one of the leading rating reasons for Canadian players for the best online casinos is its impeccable level of security. For this purpose, it publishes and via apps incorporates a strict privacy policy and state-of-the-art encryption technology. Along with it, according to the prescribed KYC rules, the identification procedure for players is obligatory before the site admits them in order to ensure further security.`,
       // `p2`,
     ],
-    software: "Software Technologies",
+    software: "Software Technologies: Best Game To Play On DraftKings Casino",
     softwareText: [
-      `Pure Casino Edmonton leverages cutting-edge gaming software and technologies to provide its patrons with an immersive and reliable gaming experience. The slot machines feature advanced software from industry-leading manufacturers, ensuring high-quality graphics, dynamic gameplay, and robust system performance. These technologies enable smooth operation across hundreds of gaming machines, reducing downtime and ensuring seamless transitions between games. `,
+      `Thanks to its close collaboration with leading gaming software developers, the service presents itself with a vast range of gaming possibilities. Therefore, here you can easily find games from such popular providers as Microgaming, Red Tiger, NetEnt, BGaming, and many others. If you wish, you may always choose to make use of the search function by providers.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Argyll Casino App",
+    title: "DraftKings Casino App",
     text: [
-      `Although Pure Casino Edmonton does not have a mobile app, their website is mobile-friendly. This mobile-friendly design helps customers access promos, event calendars, and loyalty program information on their smartphones and tablets. Users may easily explore the website across devices because of its straightforward UI. The casino prioritizes mobile optimization to keep visitors engaged and informed without downloading software.`,
-      // `p2`,
+      `There is great news for fans of mobile gambling. You can download the DraftKings Casino app Ontario and install the program for the most popular Android and iOS platforms. For this, the site has links to the Apple and Google stores. Or you can simply go to online markets and find official applications by the name of the casino.`,
+      `An alternative option is to play on the mobile version of the site, which is developed in HTML5 format and supports work with various operating systems and browsers.`,
     ],
-    languages: "Argyll Casino Opening and Languages",
+    languages: "Languages: Casino Credits DraftKings",
     languagesText: [
-      `Because it is in Edmonton, Alberta, where English is the main language, Pure Casino Edmonton mostly serves people who speak English. On the other hand, the casino tries to be welcoming by helping tourists who don't speak English when they need it. Staff members who speak more than one language are ready to answer questions and make sure that all customers, no matter what language they speak, feel welcome and supported during their stay.`,
+      `Since the gaming service is aimed at a Canadian audience, it is not surprising that two main interface languages ​​​​are used here - English and French.`,
       // `p2`,
     ],
-    currencies: "Currencies",
+    currencies: "Currencies: DraftKings Online Casino Bonus Code",
     currenciesText: [
-      `The casino accepts Canadian dollars (CAD) as the primary currency for all transactions. Visitors wishing to use other currencies must exchange them at local banks or currency exchange facilities before arriving at the casino. This focus on CAD ensures smooth and efficient transactions for all patrons, particularly those who reside in or are familiar with the Canadian financial system.`,
+      `You can use Canadian dollars as a game currency on this platform. Unfortunately, there is no way to make deposits or withdraw winnings using cryptocurrency.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Argyll Casino Edmonton Entertainment and Games",
+    title: "Games Available to Play: DraftKings Casino Reviews",
     text: [
-      `From beginners to experts, there is a broad scope of Argyll Casino entertainment options. Its 72,000-square-foot gaming floor delivers an immersive and engaging experience for those seeking dynamic entertainment. The diversity of games assures that everyone may enjoy table games, electronic machines, or high-stakes Argyll Casino poker.`,
+      `There would be no need to be strenuous in the search for the best DraftKings Casino games, as they have a truly grand collection. Everything else seems to take a backseat to sports betting, but there is always something for gaming components that fit any taste. `,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Slot Machines",
+        heading: "Slots",
         text: [
-          `Edmonton Casino Argyll has over 800 slot machines for a diverse gaming experience. Traditional three-reel slots and sophisticated video slots with deep themes and compelling images are available. Popular progressive jackpot slots offer life-changing jackpots that increase with each spin. Mythology, adventure, pop culture, and seasonal festivals provide something for everyone. Penny slots for casual gamers and high-stakes slots for big winners are available. Visitors get a new experience every time the casino adds new games.`,
+          `This is the largest section featuring slots of various functions and themes and with various special features. Therefore, jackpot chances, Megaways, or simply slots on your favorite themes such as Ancient Egypt, treasure-hunting, fishing, and more are easily found.`,
           // `p2`,
           // `p3`,
         ],
@@ -135,7 +149,7 @@ export const content = {
       {
         heading: "Table Games",
         text: [
-          `Live-action table games at Pure Casino Edmonton excite beginners and pros. Classic games like blackjack are popular due to their simple rules and strategic complexity. Roulette is exciting because participants guess where the ball will fall on the spinning wheel. The elegant Baccarat attracts individuals who value simplicity and sophistication. Playing craps together and cheering for the dice adds excitement. The casino offers current poker versions as Ultimate Texas Hold'em and Four Card Poker.`,
+          `No less popular among Canadian players is the category with table games. This is a great opportunity to demonstrate your skills and demonstrate the ability to analyze, develop strategies, and apply various tactics. Here you can play video poker, baccarat, blackjack, roulette, and more.`,
           // `p2`,
           // `p3`,
         ],
@@ -144,18 +158,18 @@ export const content = {
     ],
     gamesRightColumn: [
       {
-        heading: "Poker and Argyll Casino Live Entertainment",
+        heading: "Live Casino",
         text: [
-          `Pure Casino Edmonton is popular with poker players due to its 24-hour poker room. The lounge offers Texas Hold'em and Omaha on 12 tables for all skill levels and styles. Players can choose between limit and no-limit games to suit their comfort level. Regular Argyll Casino Poker Tournaments draw casual and professional players, providing an exciting competitive scene. Staff are attentive and informed, facilitating smooth gameplay and answering queries. Argyll Casino poker room places are designed for strategy, socializing, and high-stakes activity.`,
+          `Thanks to the multidisciplinary service DraftKings Casino states, you have an amazing opportunity to play with live dealers. This is a modern type of gambling entertainment, where all the action takes place in real time. You will have 24/7 access to gaming tables where you can play poker, roulette, Sic Bo, baccarat, blackjack, TV shows and much more.`,
           // `p2`,
           // `p3`,
         ],
         //  list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Electronic Games",
+        heading: "Sports Betting",
         text: [
-          `Casino on Argyll features sophisticated, fast-paced electronic games. Video Lottery Terminals (VLTs) combine slots and instant win games for fast, fun gaming. Electronic table games like blackjack and roulette are novel casino games. These machines include cutting-edge technology for smooth gaming, colorful visuals, and interactive features. Electronic games let players determine their own speed, making them excellent for beginners learning the basics or experienced players relaxing. This mix of history and technology offers a complete gaming experience for all tastes.`,
+          `The main decoration of the site and mobile applications is the sports betting section. Hundreds of lines on a wide variety of sports are constantly open here. You can easily bet on football, basketball, tennis, as well as more exclusive and even exotic sports. At the same time, the odds are always fair and high, which gives excellent chances for big wins.`,
           // `p2`,
           // `p3`,
         ],
@@ -164,42 +178,42 @@ export const content = {
     ],
   },
   support: {
-    title: "Support: Argyll Casino Poker Room Phone Number",
+    title: "Support: DraftKings Casino New Customer Sign Up Promotions",
     text: [
-      `Pure Casino Edmonton prioritizes customer service to enhance the client experience. Professional personnel are accessible around the facility to answer questions about gaming, promotions, and food. During business hours, the casino offers a dedicated phone line for remote support from skilled staff. For non-urgent issues, email support ensures prompt and detailed replies. This focus on customer service shows the casino's commitment to making customers feel welcome.`,
-      // `p2`,
+      `While there is no phone support, you can easily contact the team through other channels:`,
+      `Please note that the chat is not currently available 24/7.`,
     ],
-    // list: ["li1", "li2", "li3"],
+    list: ["Live chat;", "Email;", "FAQ section."],
   },
   promotions: {
-    title: "Casino Argyll Road Edmonton Bonuses",
+    title: "Bonuses and Promotions: DraftKings Casino $25 No Deposit Bonus",
     text: [
-      `Pure Casino Edmonton, formerly Argyll Casino edmonton, offers a wide choice of bonuses and awards to enhance the gaming experience. These perks make new and returning customers feel valued and engaged. From welcome bonuses to loyalty benefits, the casino offers a comprehensive incentive structure to make each visit lucrative.`,
+      `In the DraftKings Casino bonus section, you will find current offers for new and regular players. It is important to note that the new Ontario legislation does not allow sites to openly advertise promotions on the official website. Therefore, you will be able to take part in drawings and receive personal notifications about bonus accrual. However, you still managed to find some information about the promotions of this service.`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Welcome Bonuses",
+        heading: "Welcome Bonus: DraftKings Casino Free Play",
         text: [
-          `Casino Argyll enthusiastically welcomes new guests and offers PURE Rewards membership with instant benefits. Welcome incentives may include free gaming vouchers, cheap eating, or admission into special drawings, depending on ongoing promotions. The PURE Rewards program makes newbies feel welcome from the start, encouraging them to explore the casino. These early incentives improve gameplay and introduce members to their benefits.`,
-          // `p2`,
+          `You are offered a not quite standard DraftKings Casino sign up bonus. Usually, players are asked to register, make their first deposit and receive a certain reward for this. Here, the situation is a little different.`,
+          `First, new customers should register and start playing. As soon as you earn 1000 casino credits thanks to your activity and successful bets, you will automatically be credited with CAD 1000 in bonuses to your deposit account. You can use them for bets with minimum wagering requirements.`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Giveaway Offer—Win a Lexus",
+        heading: "Personal Promotions: DraftKings Casino Online Bonus Code",
         text: [
-          `Pure Casino Edmonton on Argyll Road is holding a "Winning Wheels: Lexus Edition" giveaway for a C$65,000 2024 Lexus RX 350 F-Sport. Use your Winner's Edge card at Pure Casino Edmonton or Pure Casino Yellowhead to enter the offer from December 1, 2024, until February 28, 2025. Visitors receive one free admission on their initial card-in at any slot machine or electronic table game each day, plus one entry for every C$50 played through card play. The winner must be present at Pure Casino Yellowhead on March 7, 2025, at 9 PM for the grand prize draw. `,
-          // `p2`,
+          `Many customers have already managed to receive DraftKings Casino free $50 on registration. At the same time, you can expect many more personal offers due to the new Ontario policy regarding advertising promotions on online casino sites.`,
+          `Depending on the terms of the promotions, this may be a DraftKings Casino free $50 on registration no deposit bonus or another reward option, for the activation of which you will need a DraftKings promo code Casino. You will be notified of all promotions and personal offers via messages. They will be sent to your personal account or to the email address specified during registration.`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Loyalty Rewards",
+        heading: "Promo Codes",
         text: [
-          `The PURE Rewards program is a highlight for casino regulars. This loyalty program lets gamers earn points for every dollar spent on qualified gaming activities, which they may redeem for incentives. Members receive free play credits, preferred meal seats, and invites to special events. larger cashback rates, larger earning possibilities, and special gaming rooms for VIP members are further benefits. The loyalty program rewards repeat customers, fostering a sense of community and exclusivity.`,
+          `To activate special gifts, use the promo code for DraftKings Casino. This service regularly sends its customers bonus codes and offers to take part in exciting promotions. You can find these codes on the website, in your personal account, through an email newsletter, as well as on partner websites. Each bonus is an unusual and unexpected gift with different wagering conditions. Most often, the casino offers free bets and spins, and can also give you game money.`,
           // `p2`,
           // `p3`,
         ],
@@ -208,18 +222,18 @@ export const content = {
     ],
     rightColumnContent: [
       {
-        heading: "Event Promotions",
+        heading: "Referral Program",
         text: [
-          `Casino on Argyll Edmonton hosts amazing events and promotions to make gambling fun. These events may feature themed nights, gaming competitions, or seasonal promotions with cash, luxury items, or vacation packages as rewards. Promotions connected to games or events encourage players to explore new casino sections. PURE Rewards members typically get special access to these incentives, increasing their chances of winning and adding excitement to their visits.`,
-          // `p2`,
+          `If you want to get a DraftKings Casino no deposit bonus and pleasant cash rewards, then use the referral program. It is as simple as possible and at the same time very profitable.`,
+          `All you need to do is DraftKings Casino refer a friend and get bonuses for it. You send a link with an offer to join the gambling platform. If the user follows your link, registers and makes a deposit, you get a certain reward for this. The more friends you can invite, the greater your benefit will be.`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Dining Discounts",
+        heading: "Loyalty Program",
         text: [
-          `The Pure Casino Argyll offers great meal deals and gaming perks. Casino PURE Rewards members save big on Argyll Casino food specials and drinks at the on-site eateries. These reductions let customers enjoy anything from snacks to gourmet dinners at a lower cost. Dining discounts enhance the PURE Rewards program beyond the casino floor, giving customers a comprehensive entertainment experience.`,
+          `In addition to the main section of the DraftKings Casino promo, you should not forget about the current VIP program. Or a loyalty program, as you prefer. The main thing is the goals and benefits of this offer. You will be rewarded for your activity. By placing bets and spins, you gradually earn points and increase your level. In total, there are 5 levels available for the most loyal players. Thanks to your activity, you will receive personal gifts, cash prizes and even real goods.`,
           // `p2`,
           // `p3`,
         ],
@@ -228,6 +242,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "Pure Casino Argyll Edmonton FAQ",
+    title: "FAQ",
   },
 };

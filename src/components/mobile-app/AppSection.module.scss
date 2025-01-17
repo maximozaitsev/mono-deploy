@@ -43,8 +43,8 @@
 
     .image {
       position: absolute;
-      top: -5px;
-      right: -24px;
+      top: -28px;
+      right: -43px;
       overflow: hidden;
       height: auto;
     }
@@ -67,10 +67,12 @@
 
       .imageMobile {
         display: block;
-        max-width: 496px;
+        max-width: 363px;
         width: 100%;
         height: auto;
         align-self: center;
+        margin-top: 14px;
+        margin-bottom: 20px;
       }
 
       h3 {

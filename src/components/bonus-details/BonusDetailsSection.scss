@@ -3,7 +3,7 @@
 @import "../../styles/variables.scss";
 
 :root {
-  --color-ico: #{$text-color-secondary};
+  --color-ico: #19171a;
 }
 
 .bonus-details-section {
@@ -56,7 +56,7 @@
 }
 
 .cell {
-  color: $text-color-secondary;
+  color: #19171a;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
@@ -175,7 +175,7 @@
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 
   &::after {
     content: "";
@@ -184,7 +184,7 @@
     top: 15%;
     height: 70%;
     width: 1px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.4);
   }
 
   &:last-child::after {
@@ -212,7 +212,7 @@
       }
 
       button {
-        width: 200px;
+        width: 202px;
       }
     }
   }

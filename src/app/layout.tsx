@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 
-const url = "argyllcasino-ca.com";
-const ogTitle =
-  "Argyll Casino Canada: Your Premier Destination for Entertainment";
-const ogSiteName = "Argyll Casino";
+const url = "draftkings-casino-online.com";
+const ogTitle = "DraftKings Casino Canada: Online Gambling and Sports Betting";
+const ogSiteName = "DraftKings Casino";
 const metaDescription =
-  "Argyll Casino Canada delivers a world-class gaming experience with a vast selection of games and premium services. Explore exciting opportunities and claim exclusive bonuses today!";
+  "DraftKings Casino Canada: key features of the gaming service and profitable offers for customers. Gambling entertainment, sports betting, VIP program and other details of the popular platform";
 
-const locale = "en-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

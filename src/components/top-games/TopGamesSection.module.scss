@@ -49,7 +49,7 @@
 .gameItem {
   position: relative;
   overflow: hidden;
-  // border-radius: $border-radius;
+  border-radius: $border-radius;
   border: $border-width solid $border-color;
   transition: transform 0.5s ease;
   max-width: 264px;

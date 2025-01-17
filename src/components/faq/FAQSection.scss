@@ -16,7 +16,9 @@
       font-family: $font-secondary;
       background: $color-background-third;
       font-size: 24px;
-      font-weight: 700;
+      font-weight: 400;
+      line-height: 120%; /* 28.8px */
+      letter-spacing: 0.72px;
       text-transform: uppercase;
       padding: 8px 32px;
       border-radius: $border-radius;
