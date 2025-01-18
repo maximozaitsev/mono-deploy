@@ -19,12 +19,12 @@
   }
 
   h3 {
-    color: #19171a;
+    color: $text-color-secondary;
     text-align: center;
     font-family: $font-secondary;
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
   }
 
@@ -34,16 +34,16 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    // color: $text-color-fourth;
+    color: $text-color-fourth;
 
-    background: linear-gradient(180deg, #ff8400 0%, #eb5a00 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: linear-gradient($text-color-fourth);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   p {
-    color: #19171a;
+    color: $text-color-secondary;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
@@ -58,7 +58,7 @@
 
   button {
     margin-top: auto;
-    width: 201px;
+    width: 188px;
     // margin-left: 5px;
   }
 

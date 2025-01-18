@@ -6,20 +6,20 @@
   font-family: $font-secondary;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
 
   &.primary {
-    outline: 4px solid;
-    outline-offset: -4px;
+    // outline: 4px solid;
+    // outline-offset: -4px;
     padding: 4px 48px;
     outline-color: #f9f8f83b;
     background: $color-button-large;
-    color: $text-color-primary;
+    color: #1e2c37;
     font-size: 28px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     min-width: 280px;
     height: 87px;
 
@@ -54,12 +54,11 @@
     color: #fff;
     font-size: 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     height: 52px;
 
     @media (max-width: 768px) {
       font-size: 18px;
-      border-radius: 10px;
     }
 
     @media (max-width: 300px) {

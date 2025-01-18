@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "draftkings-casino-online.com";
-const ogTitle = "DraftKings Casino Canada: Online Gambling and Sports Betting";
-const ogSiteName = "DraftKings Casino";
+const url = "snatch-casino-ca.com";
+const ogTitle =
+  "Snatch Casino Canada: Exciting Games, Big Bonuses, and Weekly Rewards";
+const ogSiteName = "Snatch Casino";
 const metaDescription =
-  "DraftKings Casino Canada: key features of the gaming service and profitable offers for customers. Gambling entertainment, sports betting, VIP program and other details of the popular platform";
+  "Snatch Casino Canada delivers top games, huge bonuses like highroller and cashback offers, and exciting weekly promotions. Sign up now for an unforgettable gaming experience and claim your generous welcome package today!";
 
 const locale = "en-CA";
 const language = "English";

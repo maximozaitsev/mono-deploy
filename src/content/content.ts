@@ -1,146 +1,131 @@
 export const content = {
-  projectName: "Draft Kings Casino",
+  projectName: "Snatch Casino",
   advantages: {
     // title: "",
-    subTitle: "Advantages and Disadvantages: DraftKings Sportsbook And Casino",
+    subTitle: "Snatch Сasino Advantages",
     text: [
-      `Another point that is worthwhile and interesting in DraftKings Casino review is to highlight the relative merits and demerits of the service so the reader can clearly formulate an idea about the gaming platform with fewer biases. `,
+      `Launched in 2021, Snatch Casino assures an amazing internet gambling experience with Grand Theft Auto motif. Its C$6,000 welcome bonus and 325 free spins draw in fresh gamers. `,
     ],
-    advantagesTitle: "Advantages",
-    disadvantagesTitle: "Disadvantages",
+    advantagesTitle: "Advantages:",
+    disadvantagesTitle: "Disadvantages:",
     advantages: [
-      "a large selection of gambling games;",
-      "mobile applications;",
-      "professional technical support;",
-      "live casino;",
-      "sports betting;",
-      "multi-profile site.",
+      "Extensive game library",
+      "Generous welcome bonuses",
+      "Engaging website theme",
+      "User-friendly mobile site",
+      "A variety of payment options",
     ],
     disadvantages: [
-      "complex site navigation;",
-      "hidden bonus program;",
-      "geographical restrictions.",
+      "No dedicated mobile app",
+      "Potential regional restrictions",
+      "Customer support details not prominently displayed",
     ],
   },
   about: {
-    title: "DraftKings Casino",
-    intro: ["VIP program", "more than 700 games", "sports betting"],
+    title: "Snatch Casino Online",
+    intro: [
+      "200% bonus up to C$500",
+      "100 Free Spins",
+      "50% Loss Recovery bonus",
+    ],
     description: [
-      `It is safe to say that DraftKings Casino is not quite a standard and ordinary gaming service. The main emphasis is placed on sports betting. However, at the same time, this will not prevent you from enjoying great and popular gambling games, including slots, table games and even games with live dealers.`,
-      `On the official website of DraftKings Casino Ontario, you will immediately notice how everything here is focused on sports. Even many casino games are still closely related to sports competitions. Therefore, do not be surprised if you see such entertainment as Hockey Baccarat or Football Roulette.`,
-      `The service has high user ratings and is characterized by reliability, security and multifunctionality. Although some customers note it is not the most convenient navigation and too gloomy interface. However, it is unlikely to prevent you from enjoying your favorite games and getting pleasure from winnings. To get additional benefits, activate the DraftKings Casino promo code or take part in special promotions. For active and regular customers, there is a profitable VIP program with the opportunity to win real prizes and money.`,
+      `Modern online casino Snatch Casino offers games for all skill levels. Snatch Casino review offers an immersive gambling experience with its many slots, table games, and live dealers. Strong security, simple design, and large promotions help the site to make playing enjoyable and easy. Licenced and controlled, Snatch Casino guarantees fairness and openness for internet users looking for enjoyment and credibility.`,
+      // `p2`,
+      // `p3`,
     ],
     register: {
-      title: "Registration Process: DraftKings Casino Bonus Code",
+      title: "Snatch Casino Registration Process",
       text: [
-        `If you have made the final decision to test your strength on this gaming platform, then first you will need a DraftKings Casino login. Creating an account is quite easy:`,
-        `The last step of the account setup process is verifying your account by email. A confirming email will be sent to you through DraftKings Casino Canada to the email you provided during registration. After verifying your account through this email, you now can log in and continue your business on the website or application. `,
+        `Snatch Casino makes it easy for new players to register and start playing:`,
+        // `p2`,
         // `p3`,
       ],
       list: [
-        "Go to the official website or install the mobile application;",
-        "On the main page, click on the Register button;",
-        "In the online form that opens, enter your email address and come up with a password;",
-        "Click Next and fill out the page with personal data;",
-        "Carefully check the correctness of the information in order to avoid mistakes;",
-        "Agree to the terms and conditions of the casino, and complete the registration.",
+        "Visit the official Snatch Casino website.",
+        "Pick 'Sign Up' or 'Register'",
+        "Enter your personal information (e.g., name, email, date of birth).",
+        "Create a username and password.",
+        "Agree to the terms and conditions.",
+        "Complete the registration by clicking the 'Submit' or 'Create Account' button.",
       ],
     },
     signIn: {
-      title: "Login: DraftKings Casino Promo Code New User",
+      title: "About Casino Snatch Login",
       text: [
-        `Since you have just registered, you will now need to log in to your DraftKings Ontario Casino account. To do this, open the site or app again and click on the Login link on the main page. You will need your password and email address to log in.`,
-        `Once you have logged in, you will have access to your personal account. Remember that strict KYC rules apply here. This means that all new customers are also required to undergo verification.`,
+        `Snatch Casino's "Log In" button is usually in the upper-right area of the homepage. Clicking this requires your email and password. Enter your credentials and complete Snatch Casino login for access to your account. If you forget your password or have account access troubles, Snatch Casino offers LiveChat support.`,
+        // `p2`,
         // `p3`,
       ],
-      list: ["li1", "li2", "li3"],
+      // list: ["li1", "li2", "li3"],
     },
-    verification: {
-      title: "Verification: DraftKings Canada Casino",
-      text: [
-        `Verification requirements on the DraftKings Online Casino service are due to the company's desire to ensure complete security and data protection for its users. This procedure will be as easy as possible.`,
-        `Log into your account with your user ID and your password. Open the personal data section where you must fill the empty blanks, including your full name, sex, residence address, and so on. Then upload a scanned copy or take a picture of your documents; upload the files via the special menu so the data can be sent for verification by the internal security service.`,
-        `Verification is used for prevention of frauds on the Internet and to prevent minors from registering. Verification is also a prerequisite for those who want to collect winnings from an online casino.`,
-      ],
-    },
+    // verification: {
+    //   title: "VerificationTitle",
+    //   text: [`p1`, `p2`, `p3`],
+    // },
     depositMethods: {
-      title: "Deposit Methods: DraftKings Casino - Real Money",
+      title: "Deposit Methods",
       text: [
-        `To start a gaming session, you will need to register and make at least a minimum deposit for subsequent bets. For this, the service provides the ability to use several payment systems:`,
-        `The minimum deposit amount is from 5 to 10 Canadian dollars. The application processing time will not require you to wait additionally. Also, you will not have to pay a commission for deposits made.`,
+        `Snatch Casino accepts several secure payment methods for deposits. Visa and Mastercard for credit and debit card transactions and bank transfers for conventional financial institutions are examples. The platform supports Sofort, PaySafeCard, and Bitcoin, giving consumers freedom. The player's locality and banking restrictions may determine deposit methods. Players may start playing right away since deposits are processed quickly.`,
+        // `p2`,
       ],
-      list: [
-        "Visa;",
-        "Mastercard;",
-        "PayPal;",
-        "Interac;",
-        "Online banking;",
-        "Venmo.",
-      ],
+      // list: ["li1", "li2", "li3"],
     },
     withdrawalMethods: {
-      title: "Withdrawal Methods: DraftKings Casino New Customer Promo Code",
+      title: "Withdrawal Methods",
       text: [
-        `Withdrawal of funds is possible for those customers who have passed verification. In this case, you can use various payment instruments:`,
-        `The minimum withdrawal amount is 20 Canadian dollars. The maximum limits depend on the selected payment system, as well as your personal restrictions. The waiting time for processing the application is from 24 hours to 7 business days.`,
+        `Users may easily withdraw their wins using Visa, Mastercard, and bank transfers at Snatch Casino. The casino requires identification verification for withdrawals to maintain security. Withdrawals must use the same method as deposits wherever feasible to prevent fraud. The minimum withdrawal amount is C$20. Processing timeframes depend on the method and account verification. Responsible money management requires C$500 per transaction, C$1,500 within 24 hours, and C$25,000 per month withdrawal limits.`,
+        // `p2`,
       ],
-      list: [
-        "Online banking;",
-        "Credit and debit cards;",
-        "PayPal;",
-        "Venmo;",
-        "Check;",
-        "Bank wire.",
-      ],
+      // list: ["li1", "li2", "li3"],
     },
   },
   licenses: {
-    title: "Licenses: DraftKings Online Casino Promo Codes",
+    title: "Snatch Casino Bewertung of Licenses",
     text: [
-      `Regular customers are unlikely to have such a question: is DraftKings Casino legit? This is an unconditionally licensed and official casino. The service operates on the basis of a valid license issued by the General Gambling Commission of Ontario.`,
+      `Snatch Casino follows international gambling regulations under a Curaçao gambling Control Board license (OGL/2023/109/0075).`,
       // `p2`,
     ],
-    security: "Security: DraftKings Online Casino No Deposit Bonus",
+    security: "Snatch Casino Sister Sites and Security",
     securityText: [
-      `In addition to that, one of the leading rating reasons for Canadian players for the best online casinos is its impeccable level of security. For this purpose, it publishes and via apps incorporates a strict privacy policy and state-of-the-art encryption technology. Along with it, according to the prescribed KYC rules, the identification procedure for players is obligatory before the site admits them in order to ensure further security.`,
+      `First concern at Snatch-Casino is player safety. Strong techniques for encryption on the platform protect sensitive financial and personal data, therefore maintaining a safe gaming space. Furthermore in place are strict Anti-Money Laundering (AML) and Know Your Customer (KYC) rules to prevent dishonest activity.`,
       // `p2`,
     ],
-    software: "Software Technologies: Best Game To Play On DraftKings Casino",
+    software: "Software Technologies",
     softwareText: [
-      `Thanks to its close collaboration with leading gaming software developers, the service presents itself with a vast range of gaming possibilities. Therefore, here you can easily find games from such popular providers as Microgaming, Red Tiger, NetEnt, BGaming, and many others. If you wish, you may always choose to make use of the search function by providers.`,
+      `Amid the most widely recognized businesses in the business, Snatch Casino works with many of the casino game developers—NetEnt, Play'n GO, Pragmatic Play, and Evolution Gaming. This promises the distribution of an extensive choice of games with gorgeous graphics and transparent gameplay.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "DraftKings Casino App",
+    title: "Snatch Casino App",
     text: [
-      `There is great news for fans of mobile gambling. You can download the DraftKings Casino app Ontario and install the program for the most popular Android and iOS platforms. For this, the site has links to the Apple and Google stores. Or you can simply go to online markets and find official applications by the name of the casino.`,
-      `An alternative option is to play on the mobile version of the site, which is developed in HTML5 format and supports work with various operating systems and browsers.`,
-    ],
-    languages: "Languages: Casino Credits DraftKings",
-    languagesText: [
-      `Since the gaming service is aimed at a Canadian audience, it is not surprising that two main interface languages ​​​​are used here - English and French.`,
+      `Snatch Casino's website is totally mobile device friendly even if it does not have a specific mobile app. Through their mobile browsers, players may access a vast array of games and features straightforwardly, therefore guaranteeing a flawless playing session on tablets and smartphones.`,
       // `p2`,
     ],
-    currencies: "Currencies: DraftKings Online Casino Bonus Code",
+    languages: "Languages: Snatch Casino Erfahrungen",
+    languagesText: [
+      `Due to the fact that it supports many languages, including English, French, and German, the platform caters to a diverse player base from all over the world.`,
+      // `p2`,
+    ],
+    currencies: "Snatch Casino Guru Currencies",
     currenciesText: [
-      `You can use Canadian dollars as a game currency on this platform. Unfortunately, there is no way to make deposits or withdraw winnings using cryptocurrency.`,
+      `Snatch Casino test implies a few fiat currencies like EUR, CAD, AUD, and NZD as well as cryptocurrencies like Bitcoin (BTC), Bitcoin Cash (BCH), Litecoin (LTC), Ethereum (ETH), and Dogecoin (DOGE) that offer customers all around flexibility.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play: DraftKings Casino Reviews",
+    title: "Games Available to Play at Snatch Casino",
     text: [
-      `There would be no need to be strenuous in the search for the best DraftKings Casino games, as they have a truly grand collection. Everything else seems to take a backseat to sports betting, but there is always something for gaming components that fit any taste. `,
+      `The games at Snatch Casino are varied to suit player tastes. Their large game catalog includes popular slots, classic poker tables, and live dealer alternatives for a dynamic gaming experience. The user-friendly layout and Grand Theft Auto-inspired atmosphere make playing more fun. `,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Slots",
+        heading: "Slot Games",
         text: [
-          `This is the largest section featuring slots of various functions and themes and with various special features. Therefore, jackpot chances, Megaways, or simply slots on your favorite themes such as Ancient Egypt, treasure-hunting, fishing, and more are easily found.`,
+          `Slot games at Snatch Casino include old favorites and new releases. Players can access ancient civilizations, legendary exploits, popular culture, and fantasy. Big winnings on the site are available from classic three-reel slots, five-reel video slot machines, and progressive jackpot slots. Snatch Casino's slot selection offers different and enjoyable games for beginners and experts with high-quality visuals, engaging music tracks, and interactive extra features.`,
           // `p2`,
           // `p3`,
         ],
@@ -149,7 +134,7 @@ export const content = {
       {
         heading: "Table Games",
         text: [
-          `No less popular among Canadian players is the category with table games. This is a great opportunity to demonstrate your skills and demonstrate the ability to analyze, develop strategies, and apply various tactics. Here you can play video poker, baccarat, blackjack, roulette, and more.`,
+          `Casino Snatch offers many table games for typical casino players. Classic Blackjack and European Blackjack have different rules and methods. Players may pick from American, European, and French roulette wheels and betting types. Baccarat fans may also play rapid and standard. With realistic graphics and seamless gameplay, these table games recreate the casino atmosphere and provide multiple betting limits to fit player tastes and strategies.`,
           // `p2`,
           // `p3`,
         ],
@@ -158,18 +143,18 @@ export const content = {
     ],
     gamesRightColumn: [
       {
-        heading: "Live Casino",
+        heading: "Live Options",
         text: [
-          `Thanks to the multidisciplinary service DraftKings Casino states, you have an amazing opportunity to play with live dealers. This is a modern type of gambling entertainment, where all the action takes place in real time. You will have 24/7 access to gaming tables where you can play poker, roulette, Sic Bo, baccarat, blackjack, TV shows and much more.`,
+          `For fully-immersive gaming Snatch Casino streams skilled dealers' games from their live dealer section. Amongst the many different kinds of gambling given are live blackjack, roulette, and baccarat; the bets at each table span modest to high roller. Great replacements for sitting at a real casino include Dream Catcher and Monopoly Live; they are enjoyable and fun. Live chat, multi-angle devices, and high-definition streaming let players reach the thrills and social aspects of a classic casino from their cellphones so they may quickly connect with dealers and other patrons.`,
           // `p2`,
           // `p3`,
         ],
         //  list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Sports Betting",
+        heading: "Sports Section at Snatch Casino",
         text: [
-          `The main decoration of the site and mobile applications is the sports betting section. Hundreds of lines on a wide variety of sports are constantly open here. You can easily bet on football, basketball, tennis, as well as more exclusive and even exotic sports. At the same time, the odds are always fair and high, which gives excellent chances for big wins.`,
+          `Snatch Casino's sportsbook covers football, basketball, tennis, and eSports. Pre-match and live betting opportunities guarantee fun for all sports fans. The sports department attracts novice and experienced gamblers with attractive odds, diversified markets, and real-time updates. Live broadcasting and cash-out options improve betting and wager control on the site.`,
           // `p2`,
           // `p3`,
         ],
@@ -178,42 +163,56 @@ export const content = {
     ],
   },
   support: {
-    title: "Support: DraftKings Casino New Customer Sign Up Promotions",
+    title: "Support",
     text: [
-      `While there is no phone support, you can easily contact the team through other channels:`,
-      `Please note that the chat is not currently available 24/7.`,
+      `According to Snatch Casino Trustpilot, Live chat and email provide customer help around-the-clock to guarantee gamers get fast answers for any info Snatch Casino questions or problems. The good user experience results from the support team's professionalism and response.`,
+      // `p2`,
     ],
-    list: ["Live chat;", "Email;", "FAQ section."],
+    // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Bonuses and Promotions: DraftKings Casino $25 No Deposit Bonus",
+    title: "Snatch Casino Promo Offers",
     text: [
-      `In the DraftKings Casino bonus section, you will find current offers for new and regular players. It is important to note that the new Ontario legislation does not allow sites to openly advertise promotions on the official website. Therefore, you will be able to take part in drawings and receive personal notifications about bonus accrual. However, you still managed to find some information about the promotions of this service.`,
+      `Snatch Casino provides many perks to improve players' games. A complete summary of each Snatch Casino bonus with accuracy terms and conditions follows:`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Welcome Bonus: DraftKings Casino Free Play",
+        heading: "Welcome Bonus Pack",
         text: [
-          `You are offered a not quite standard DraftKings Casino sign up bonus. Usually, players are asked to register, make their first deposit and receive a certain reward for this. Here, the situation is a little different.`,
-          `First, new customers should register and start playing. As soon as you earn 1000 casino credits thanks to your activity and successful bets, you will automatically be credited with CAD 1000 in bonuses to your deposit account. You can use them for bets with minimum wagering requirements.`,
+          `New players can take advantage of a generous Welcome Bonus Pack totaling up to C$3,000 and 325 Free Spins across their first four deposits:`,
+          // `p2`,
+          // `p3`,
+        ],
+        list: [
+          "First Deposit. 200% bonus up to C$500 plus 100 Free Spins on the 'Dog House'.",
+          "Second Deposit. 100% bonus up to C$500 plus 75 Free Spins on the 'Release the Kraken'.",
+          "Third Deposit. 50% perk up to C$500 plus 50 FS on the 'Buffalo King Megaways'.",
+          "Fourth Deposit. 100% prize up to C$1,000 plus 100 Free Spins on the 'Big Bass Bonanza'.",
+        ],
+      },
+      {
+        heading: "Highroller Welcome Bonus and Snatch Casino Free Spins",
+        text: [
+          `The special Highroller Welcome Bonus benefits gamblers making the initial deposits of C$500 or more. The offering comprises a 200% bonus up to C$1,000 and 100 Free Spins on Pragmatic Play's "Sweet Bonanza" game. To withdraw bonus cash, players must wager 35 times their initial investment and bonus. Free Spin earnings are a 40x wager. This incentive gives high-stakes players a chance to boost their starting bankroll and gaming experience.`,
+          // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Personal Promotions: DraftKings Casino Online Bonus Code",
+        heading: "Weekly Cashback",
         text: [
-          `Many customers have already managed to receive DraftKings Casino free $50 on registration. At the same time, you can expect many more personal offers due to the new Ontario policy regarding advertising promotions on online casino sites.`,
-          `Depending on the terms of the promotions, this may be a DraftKings Casino free $50 on registration no deposit bonus or another reward option, for the activation of which you will need a DraftKings promo code Casino. You will be notified of all promotions and personal offers via messages. They will be sent to your personal account or to the email address specified during registration.`,
+          `Snatch Casino has a Weekly Cashback program for dedicated players that pays up to 20% of net losses accrued Monday through Sunday. The player's VIP level determines the precise cashback rate; it ranges from 10% to 20%. Players can get minimum payback of C$10 every Monday; there is no maximum restriction. Players must either email the support service or Live Chat to activate the cashback. There is a 20x wager for the payback amount; the highest allowed stake during wagering is C$5. This campaign guarantees that regular gamers have extra safety net for their games and offers constant value.`,
+          // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Promo Codes",
+        heading: "Weekend Reload Bonus",
         text: [
-          `To activate special gifts, use the promo code for DraftKings Casino. This service regularly sends its customers bonus codes and offers to take part in exciting promotions. You can find these codes on the website, in your personal account, through an email newsletter, as well as on partner websites. Each bonus is an unusual and unexpected gift with different wagering conditions. Most often, the casino offers free bets and spins, and can also give you game money.`,
+          `Using the Weekend Reload Bonus is a wonderful method to boost contributions made Friday through Sunday. Players of Pragmatic Play's "Fruit Party" may develop a 50% match bonus worth C$500 in alongside the 25 free spins Those interested in the current campaign have to submit minimum C$25 deposit.  Other promotions cannot be mixed with this incentive, which relates to the initial investment made during the weekend. Before withdrawal, both the deposit and bonus amounts must be bet 35 times; Free Spins' earnings are liable to a 40x wagering requirement. This incentive gives gamers additional chances to win, therefore adding thrill to weekend gaming sessions.`,
           // `p2`,
           // `p3`,
         ],
@@ -222,18 +221,27 @@ export const content = {
     ],
     rightColumnContent: [
       {
-        heading: "Referral Program",
+        heading: "Wednesday Bonus and Snatch casino 50 free Spins",
         text: [
-          `If you want to get a DraftKings Casino no deposit bonus and pleasant cash rewards, then use the referral program. It is as simple as possible and at the same time very profitable.`,
-          `All you need to do is DraftKings Casino refer a friend and get bonuses for it. You send a link with an offer to join the gambling platform. If the user follows your link, registers and makes a deposit, you get a certain reward for this. The more friends you can invite, the greater your benefit will be.`,
+          `The Wednesday Bonus from Pragmatic Play offers a 50% match bonus up to C$1,000 and 50 Free Spins on the "Gates of Olympus" slot, therefore boosting midweek gambling. To be eligible for this Wednesday only promo, players must deposit minimum of C$20. While Free Spins pay for a 40x playthrough, the deposit and bonus money must be bet 35 times. This incentive offers players more possibilities to win and great value, therefore improving gameplay over the week.`,
+          // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Loyalty Program",
+        heading: "Snatch casino 50% Loss Recovery",
         text: [
-          `In addition to the main section of the DraftKings Casino promo, you should not forget about the current VIP program. Or a loyalty program, as you prefer. The main thing is the goals and benefits of this offer. You will be rewarded for your activity. By placing bets and spins, you gradually earn points and increase your level. In total, there are 5 levels available for the most loyal players. Thanks to your activity, you will receive personal gifts, cash prizes and even real goods.`,
+          `The 50% Loss Recovery bonus from Snatch Casino is meant to help you offset weekend losses. Players who find their balance declining on Saturdays will get a refund of 50% of their net losses (not including bonuses and payouts) on Sunday. There is no upper restriction; the minimum bonus sum is C$10. Before they may take the returned money, they have to gamble it twenty times. This encouragement guarantees that players may recuperate and keep on playing with fresh chances for winnings even following a demanding gaming session.`,
+          // `p2`,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "VIP Program",
+        text: [
+          `The VIP tiers of Snatch Casino include the Bully, Crook, Homie, Gangster, and Godfather, each of which comes with a unique set of bonuses. The players get access to one-of-a-kind tournaments, are able to process their withdrawals more quickly, and receive additional cashback (up to 12% at the Homie level). Gangster players are eligible for a Personal VIP Manager who is available around the clock, individualized offers, and enhanced withdrawal limits. Each new level brings with it a new set of benefits and privileges, which enhances gaming and rewards commitment.`,
           // `p2`,
           // `p3`,
         ],
@@ -242,6 +250,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "FAQ",
+    title: "Snatch Casino Reviews FAQ",
   },
 };
