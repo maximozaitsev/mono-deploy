@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "snatch-casino-ca.com";
+const url = "spinz-casino-ca.com";
 const ogTitle =
-  "Snatch Casino Canada: Exciting Games, Big Bonuses, and Weekly Rewards";
-const ogSiteName = "Snatch Casino";
+  "Spinz Casino Canada: An Unforgettable Gambling Experience for Everyone";
+const ogSiteName = "Spinz Casino";
 const metaDescription =
-  "Snatch Casino Canada delivers top games, huge bonuses like highroller and cashback offers, and exciting weekly promotions. Sign up now for an unforgettable gaming experience and claim your generous welcome package today!";
+  "Spinz Casino Canada: a multifunctional service with generous bonus offers. Welcome reward, range of games, payment methods and customer support. Detailed overview for new clients";
 
 const locale = "en-CA";
 const language = "English";

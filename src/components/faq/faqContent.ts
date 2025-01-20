@@ -1,52 +1,20 @@
 export const faqs = [
   {
-    question: "Are there Snatch Casino no deposit bonus codes?",
-    answer:
-      "Yes, Snatch Casino occasionally offers no deposit promo codes. Snatch Casino promo code can be found on the promotions page or through email notifications to registered users.",
+    question: "What license does the casino operate under?",
+    answer: "This is a license from the Malta Gaming Commission.",
   },
   {
-    question: "How do I redeem a Snatch Casino promo code 2025?",
-    answer:
-      "To redeem a Snatch Casino bonus code, log in to your account, navigate to the 'Bonuses' section, enter the code in the designated field, and activate it.",
+    question: "What is the minimum age to register on the site?",
+    answer: "Casino clients must be 18 years of age or older.",
   },
   {
-    question: "Does Snatch Casino No Deposit Bonus Code require wager?",
+    question: "What is the minimum deposit and withdrawal amount?",
     answer:
-      "In truth, the usual wager of Snatch Casino no deposit bonus is that before cashing any bonuses, players have to satisfy these requirements.",
+      "The minimum deposit is CAD 10, and the minimum withdrawal is CAD 20.",
   },
   {
-    question: "What are the minimum deposit and withdrawal amounts?",
+    question: "How to get a welcome bonus?",
     answer:
-      "For most methods, the minimum withdrawal is C$20; the minimum deposit is C$20 as well. Bank transfers call for a minimum C$1,000 withdrawal.",
-  },
-  {
-    question: "How long does it take to process withdrawals?",
-    answer:
-      "Processing withdrawals occurs 24 hours following identity confirmation. The payment type could affect the overall time.",
-  },
-  {
-    question: "Does Snatch Casino offer sports betting?",
-    answer:
-      "Indeed, Snatch Casino has a section just for sportsbooks giving a broad spectrum of live betting choices for users.",
-  },
-  {
-    question: "Can I set deposit limits on my account?",
-    answer:
-      "To encourage rational gaming, users can specify daily, weekly, or monthly deposit limitations in the account settings.",
-  },
-  {
-    question: "Is cryptocurrency accepted for deposits and withdrawals?",
-    answer:
-      "For both payments and withdrawals, Snatch Casino indeed welcomes cryptocurrencies including Bitcoin, Litecoin, Ethereum, and Dogecoin.",
-  },
-  {
-    question: "Does Snatch Casino offer VIP tournaments?",
-    answer:
-      "Indeed, VIP players are free to enter special events and races with special awards accessible at higher VIP levels.",
-  },
-  {
-    question: "Are demo versions of games available?",
-    answer:
-      "Indeed, most games available at Snatch Casino provide free demos so that users may test them before making any bets.",
+      "You need to register and deposit at least CAD 10 into your game balance.",
   },
 ];

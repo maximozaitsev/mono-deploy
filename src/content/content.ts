@@ -1,140 +1,150 @@
 export const content = {
-  projectName: "Snatch Casino",
+  projectName: "Spinz Casino",
   advantages: {
     // title: "",
-    subTitle: "Snatch Casino Advantages",
+    subTitle: "Advantages and Disadvantages",
     text: [
-      `Launched in 2021, Snatch Casino assures an amazing internet gambling experience with Grand Theft Auto motif. Its C$6,000 welcome bonus and 325 free spins draw in fresh gamers. `,
+      `There are no ideal online casinos. And in order to form the most objective idea of ​​​​the gaming platform, it is worth carefully considering the main advantages and disadvantages. This way you can fully evaluate the casino and decide whether to play here or not.`,
     ],
-    advantagesTitle: "Advantages:",
-    disadvantagesTitle: "Disadvantages:",
+    advantagesTitle: "Advantages",
+    disadvantagesTitle: "Disadvantages",
     advantages: [
-      "Extensive game library",
-      "Generous welcome bonuses",
-      "Engaging website theme",
-      "User-friendly mobile site",
-      "A variety of payment options",
+      "a large selection of games;",
+      "live casino;",
+      "fast registration;",
+      "mobile friendly;",
+      "generous welcome bonus;",
+      "demo mode;",
+      "online streams and chat for clients;",
+      "intuitive website interface.",
     ],
-    disadvantages: [
-      "No dedicated mobile app",
-      "Potential regional restrictions",
-      "Customer support details not prominently displayed",
-    ],
+    disadvantages: ["no mobile apps;", "geographical restrictions."],
   },
   about: {
-    title: "Snatch Casino Online",
-    intro: [
-      "200% bonus up to C$500",
-      "100 Free Spins",
-      "50% Loss Recovery bonus",
-    ],
+    title: "Spinz Casino",
+    intro: ["live casino", "CAD 2000 and 100 free spins", "mobile friendly"],
     description: [
-      `Modern online casino Snatch Casino offers games for all skill levels. Snatch Casino review offers an immersive gambling experience with its many slots, table games, and live dealers. Strong security, simple design, and large promotions help the site to make playing enjoyable and easy. Licenced and controlled, Snatch Casino guarantees fairness and openness for internet users looking for enjoyment and credibility.`,
-      // `p2`,
-      // `p3`,
+      `Spinz Casino is deservedly and extremely popular among Canadian gamblers. It is a universal platform with an impressive collection of games and interesting bonus offers.`,
+      `The official website is designed in a laconic and minimalistic style. This allows you to easily navigate the menu, quickly navigate the site and find all the necessary information.`,
+      `One of the features of the Spinz Casino Canada service is regular live streams. Here, specialists show game processes, introduce new games, and raffle off various gifts and prizes. Each client registered is given the opportunity to partake in the live game, compete for prizes, or just chat to other authorized players on the live chat.`,
+      `Even though for fun in the demo mode, there are other options available on the site if you do not want to process or register. Just select a game of your choice to get started. You will then be redirected to demo mode and can simply start playing using virtual coins.`,
+      `However, if the demo mode is merely a way for you to familiarize yourself with new games or practice, then the first thing to do in order to play for real money is to register on the official website.`,
     ],
     register: {
-      title: "Snatch Casino Registration Process",
+      title: "Registration Process: Spinz Casino Bonus Code",
       text: [
-        `Snatch Casino makes it easy for new players to register and start playing:`,
-        // `p2`,
+        `It would be logical to start the Spinz Casino review with the fact that you learn how to create an account. The site uses a simple and intuitive registration form. Therefore, you will only need to complete the following steps:`,
+        `Finally, newly registered clients at Spinz Casino Ontario must activate a created account by clicking on the link within the welcome email. This completes the registration process, and one may log onto their account.`,
         // `p3`,
       ],
       list: [
-        "Visit the official Snatch Casino website.",
-        "Pick 'Sign Up' or 'Register'",
-        "Enter your personal information (e.g., name, email, date of birth).",
-        "Create a username and password.",
-        "Agree to the terms and conditions.",
-        "Complete the registration by clicking the 'Submit' or 'Create Account' button.",
+        "Go to the official website and click on the Register link;",
+        "Fill in the first page of the online form, indicating your email address, phone number and password;",
+        "Click the Continue button to go to the second registration page;",
+        "Enter all the necessary personal data by filling in the appropriate fields;",
+        "Check the accuracy of the information before confirming the registration;",
+        "Agree to the terms and conditions of the online casino.",
       ],
     },
     signIn: {
-      title: "About Casino Snatch Login",
+      title: "Login: Spinz Online Casino",
       text: [
-        `Snatch Casino's "Log In" button is usually in the upper-right area of the homepage. Clicking this requires your email and password. Enter your credentials and complete Snatch Casino login for access to your account. If you forget your password or have account access troubles, Snatch Casino offers LiveChat support.`,
-        // `p2`,
+        `If you have successfully completed the registration and confirmed the account via email, then the next step will be to Royal Spinz casino login to your account and replenish the deposit.`,
+        `Coping with authorization on the site is as simple as possible. To do this, go to the main page of the service and click the Login button. Here you will only need to enter your email and password. If you suddenly forgot the access code, then use the appropriate link below to restore the password. Or contact technical support in a way convenient for you.`,
         // `p3`,
       ],
       // list: ["li1", "li2", "li3"],
     },
-    // verification: {
-    //   title: "VerificationTitle",
-    //   text: [`p1`, `p2`, `p3`],
-    // },
-    depositMethods: {
-      title: "Deposit Methods",
+    verification: {
+      title: "Verification",
       text: [
-        `Snatch Casino accepts several secure payment methods for deposits. Visa and Mastercard for credit and debit card transactions and bank transfers for conventional financial institutions are examples. The platform supports Sofort, PaySafeCard, and Bitcoin, giving consumers freedom. The player's locality and banking restrictions may determine deposit methods. Players may start playing right away since deposits are processed quickly.`,
-        // `p2`,
+        `It is important to add that Casino Spinz takes security, customer protection and the fight against online fraud very seriously. Therefore, the site adheres to the key rules and principles of KYC, which means "know your customer".`,
+        `All newly registered clients need to validate their accounts to be able to continue gambling and collecting winnings in real money. The verification refers to the confirmation of your identity, age, and that your sources of income are not illegal. Online casinos are commonly used for laundering money. Moreover, underage persons and people barred from entering the casino readily use other people's data for registration and betting purposes. To avert such situations, licensed casinos impose awkwardly burdensome requirements to verify account ownership.`,
+        `To do this, you need to use Spinz Casino login, log in to your account and fill in all the empty fields on the page with personal data. Next, upload a scanned copy of your identity documents. Send the data for verification to the security service to successfully complete the verification.`,
       ],
-      // list: ["li1", "li2", "li3"],
+    },
+    depositMethods: {
+      title: "Deposit Methods: Spinz Casino Bonus",
+      text: [
+        `The main Internet gambling site has a demo mode, being favored by most Canadians with real money gaming. Thus, after registration, you will need to deposit a minimum amount using one of the presented payment methods:`,
+        `10 Canadian Dollars is the minimum amount of deposit, which is processed immediately with no deposit on your gaming account.`,
+      ],
+      list: [
+        "Visa;",
+        "Mastercard;",
+        "Apple Pay;",
+        "Instadebit;",
+        "e-Transfer;",
+        "MuchBetter;",
+        "Payz;",
+        "Mifinity.",
+      ],
     },
     withdrawalMethods: {
-      title: "Withdrawal Methods",
+      title: "Withdrawal Methods: Spinz Casino Withdrawal Time",
       text: [
-        `Users may easily withdraw their wins using Visa, Mastercard, and bank transfers at Snatch Casino. The casino requires identification verification for withdrawals to maintain security. Withdrawals must use the same method as deposits wherever feasible to prevent fraud. The minimum withdrawal amount is C$20. Processing timeframes depend on the method and account verification. Responsible money management requires C$500 per transaction, C$1,500 within 24 hours, and C$25,000 per month withdrawal limits.`,
-        // `p2`,
+        `There are two key conditions for withdrawing winnings - to pass account verification, as well as to wager the bonuses that you activated on the site. In this case, you can use similar payment methods. The only exception is the eCashout system. You can use this tool from Interac only for withdrawing funds.`,
+        `As for the minimum deposit amount, it is from CAD 20. The transaction processing time depends on the selected payment instrument and is 1-3 days.`,
       ],
       // list: ["li1", "li2", "li3"],
     },
   },
   licenses: {
-    title: "Snatch Casino Bewertung of Licenses",
+    title: "Licenses: Is Spinz Casino Legit",
     text: [
-      `Snatch Casino follows international gambling regulations under a Curaçao gambling Control Board license (OGL/2023/109/0075).`,
+      `Many players who visit this site for the first time are interested in the question of legality. It is safe to say that this is a legal gambling service, since it operates on the basis of a valid license from Malta.`,
       // `p2`,
     ],
-    security: "Snatch Casino Sister Sites and Security",
+    security: "Security: Spinz Casino Sister Sites",
     securityText: [
-      `First concern at Snatch-Casino is player safety. Strong techniques for encryption on the platform protect sensitive financial and personal data, therefore maintaining a safe gaming space. Furthermore in place are strict Anti-Money Laundering (AML) and Know Your Customer (KYC) rules to prevent dishonest activity.`,
+      `To ensure absolute security for users, the gambling platform uses a set of special solutions. Among them, it is worth highlighting SSL encryption, KYC principles, a strict privacy policy and much more.`,
       // `p2`,
     ],
-    software: "Software Technologies",
+    software: "Software Technologies: Bonus Codes For Spinz Casino",
     softwareText: [
-      `Amid the most widely recognized businesses in the business, Snatch Casino works with many of the casino game developers—NetEnt, Play'n GO, Pragmatic Play, and Evolution Gaming. This promises the distribution of an extensive choice of games with gorgeous graphics and transparent gameplay.`,
+      `Canadian casinos have partnered with virtually every big name provider in order to cater to the needs of players. Games from such names as NetEnt, Microgaming, BGaming, BetSoft, Big Time Gaming, Red Tiger, and many more can be easily found on the site.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Snatch Casino App",
+    title: "App: Spinz Casino Cashback",
     text: [
-      `Snatch Casino's website is totally mobile device friendly even if it does not have a specific mobile app. Through their mobile browsers, players may access a vast array of games and features straightforwardly, therefore guaranteeing a flawless playing session on tablets and smartphones.`,
+      `At present, it is impossible to install a mobile application. According to some information, the mobile program is under development. Until then, you will be able to fully enjoy mobile gambling thanks to the HTML5 format of the site. This makes the web service fully adapted to any OS and browsers on tablets and smartphones.`,
       // `p2`,
     ],
-    languages: "Languages: Snatch Casino Erfahrungen",
+    languages: "Languages: Spinz Casino",
     languagesText: [
-      `Due to the fact that it supports many languages, including English, French, and German, the platform caters to a diverse player base from all over the world.`,
+      `The service is officially represented in several countries, including Canada. Therefore, several interface languages ​​are available to choose from - English, French, Norwegian and Finnish.`,
       // `p2`,
     ],
-    currencies: "Snatch Casino Guru Currencies",
+    currencies: "Currencies: Spinz Com Casino Bonuses",
     currenciesText: [
-      `Snatch Casino test implies a few fiat currencies like EUR, CAD, AUD, and NZD as well as cryptocurrencies like Bitcoin (BTC), Bitcoin Cash (BCH), Litecoin (LTC), Ethereum (ETH), and Dogecoin (DOGE) that offer customers all around flexibility.`,
+      `For players from Canada, the only game currency is Canadian dollars. However, for other regions in which the site officially operates, you can use the currency of the corresponding country.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play at Snatch Casino",
+    title: "Games Available to Play: Spinz Casino - Real Money Casino & Slots",
     text: [
-      `The games at Snatch Casino are varied to suit player tastes. Their large game catalog includes popular slots, classic poker tables, and live dealer alternatives for a dynamic gaming experience. The user-friendly layout and Grand Theft Auto-inspired atmosphere make playing more fun. `,
+      `To explore the full range of gaming offers on this service, just open the Spinz Casino games section on the official website. Here you will see that all catalogs are divided into several thematic categories. These are slots, jackpots, Table Games, and Live Casino. Additionally, you can open the list of Popular games, or immediately expand the page with all the games available on the platform.`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Slot Games",
+        heading: "Spinz Casino - Real Money Casino & Slots",
         text: [
-          `Slot games at Snatch Casino include old favorites and new releases. Players can access ancient civilizations, legendary exploits, popular culture, and fantasy. Big winnings on the site are available from classic three-reel slots, five-reel video slot machines, and progressive jackpot slots. Snatch Casino's slot selection offers different and enjoyable games for beginners and experts with high-quality visuals, engaging music tracks, and interactive extra features.`,
+          `This is the most numerous category, where an amazing collection of your favorite slots is collected. Depending on your preferences, you can choose slots from several subcategories. Such games include those with high volatility, the Megaways feature, two-way payout, classic slots, and many more. These can be played free in demo mode, which is an excellent way to get acquainted with a new game or try out various strategies without taking any real risks.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Table Games",
+        heading: "Jackpot Games",
         text: [
-          `Casino Snatch offers many table games for typical casino players. Classic Blackjack and European Blackjack have different rules and methods. Players may pick from American, European, and French roulette wheels and betting types. Baccarat fans may also play rapid and standard. With realistic graphics and seamless gameplay, these table games recreate the casino atmosphere and provide multiple betting limits to fit player tastes and strategies.`,
+          `If regular Royal Spinz Online Casino winnings are not enough for you, then go to the Jackpot Games category. Here are fascinating collections, the main feature of which is the opportunity to give you really generous winnings. At the same time, slots with jackpots are not much different from traditional games. Bonus and special features are also available here.`,
           // `p2`,
           // `p3`,
         ],
@@ -143,18 +153,18 @@ export const content = {
     ],
     gamesRightColumn: [
       {
-        heading: "Live Options",
+        heading: "Table Games",
         text: [
-          `For fully-immersive gaming Snatch Casino streams skilled dealers' games from their live dealer section. Amongst the many different kinds of gambling given are live blackjack, roulette, and baccarat; the bets at each table span modest to high roller. Great replacements for sitting at a real casino include Dream Catcher and Monopoly Live; they are enjoyable and fun. Live chat, multi-angle devices, and high-definition streaming let players reach the thrills and social aspects of a classic casino from their cellphones so they may quickly connect with dealers and other patrons.`,
+          `For fans of land-based casinos, an alternative option is offered in the form of table games. Here, all games are divided into several categories. Therefore, you can easily choose between Roulette, Baccarat, Blackjack and Video Poker.`,
           // `p2`,
           // `p3`,
         ],
         //  list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Sports Section at Snatch Casino",
+        heading: "Live Casino",
         text: [
-          `Snatch Casino's sportsbook covers football, basketball, tennis, and eSports. Pre-match and live betting opportunities guarantee fun for all sports fans. The sports department attracts novice and experienced gamblers with attractive odds, diversified markets, and real-time updates. Live broadcasting and cash-out options improve betting and wager control on the site.`,
+          `Gaming sites that allow users to play with live dealers have become highly sought-after in Canada. This modern form of gambling entertainment comes as close to the atmosphere of a land-based casino as possible. Real hosts work on-screen in front of you to make the entire gameplay as thrilling and unforgettable as possible. Also, all terms of play are always fair and transparent.`,
           // `p2`,
           // `p3`,
         ],
@@ -165,55 +175,41 @@ export const content = {
   support: {
     title: "Support",
     text: [
-      `According to Snatch Casino Trustpilot, Live chat and email provide customer help around-the-clock to guarantee gamers get fast answers for any info Snatch Casino questions or problems. The good user experience results from the support team's professionalism and response.`,
-      // `p2`,
+      `To resolve any questions and problems on the site, the support service is available 24/7. There are several channels for communication:`,
+      `The support service tries to respond to all customer requests as quickly as possible.`,
     ],
-    // list: ["li1", "li2", "li3"],
+    list: ["Online chat;", "E-mail;", "FAQ."],
   },
   promotions: {
-    title: "Snatch Casino Promo Offers",
+    title: "Bonuses and Promotions: Spinz Casino Promo Code",
     text: [
-      `Snatch Casino provides many perks to improve players' games. A complete summary of each Snatch Casino bonus with accuracy terms and conditions follows:`,
+      `Regular customers can safely count on Spinz Casino no deposit bonus, as well as many other interesting and profitable offers. However, new users are not forgotten here either, offering interesting welcome rewards. In the corresponding section, you will quickly receive information about current bonuses. However, remember that personal offers will regularly appear in your personal account. Among them are Spinz Casino no deposit bonus codes.`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Welcome Bonus Pack",
+        heading: "Welcome Bonus",
         text: [
-          `New players can take advantage of a generous Welcome Bonus Pack totaling up to C$3,000 and 325 Free Spins across their first four deposits:`,
-          // `p2`,
-          // `p3`,
-        ],
-        list: [
-          "First Deposit. 200% bonus up to C$500 plus 100 Free Spins on the 'Dog House'.",
-          "Second Deposit. 100% bonus up to C$500 plus 75 Free Spins on the 'Release the Kraken'.",
-          "Third Deposit. 50% perk up to C$500 plus 50 FS on the 'Buffalo King Megaways'.",
-          "Fourth Deposit. 100% prize up to C$1,000 plus 100 Free Spins on the 'Big Bass Bonanza'.",
-        ],
-      },
-      {
-        heading: "Highroller Welcome Bonus and Snatch Casino Free Spins",
-        text: [
-          `The special Highroller Welcome Bonus benefits gamblers making the initial deposits of C$500 or more. The offering comprises a 200% bonus up to C$1,000 and 100 Free Spins on Pragmatic Play's "Sweet Bonanza" game. To withdraw bonus cash, players must wager 35 times their initial investment and bonus. Free Spin earnings are a 40x wager. This incentive gives high-stakes players a chance to boost their starting bankroll and gaming experience.`,
+          `If you have successfully registered an account, then deposit quickly to claim the welcome reward. The promotion says that users receive a 100% bonus up to a limit of CAD 1000. Therefore, total rewards will be worth up to CAD 2000. There are 100 free spins as well: 10 spins every day. The minimum deposit to activate this bonus should be set at CAD 10.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Weekly Cashback",
+        heading: "Bonus for the Second Deposit",
         text: [
-          `Snatch Casino has a Weekly Cashback program for dedicated players that pays up to 20% of net losses accrued Monday through Sunday. The player's VIP level determines the precise cashback rate; it ranges from 10% to 20%. Players can get minimum payback of C$10 every Monday; there is no maximum restriction. Players must either email the support service or Live Chat to activate the cashback. There is a 20x wager for the payback amount; the highest allowed stake during wagering is C$5. This campaign guarantees that regular gamers have extra safety net for their games and offers constant value.`,
+          `Finally, with the help of the Balance Booster, you may receive another 100% bonus up to 1000 CAD. This requires the same procedures and a minimum deposit to a gaming account.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Weekend Reload Bonus",
+        heading: "Double and Triple Speed",
         text: [
-          `Using the Weekend Reload Bonus is a wonderful method to boost contributions made Friday through Sunday. Players of Pragmatic Play's "Fruit Party" may develop a 50% match bonus worth C$500 in alongside the 25 free spins Those interested in the current campaign have to submit minimum C$25 deposit.  Other promotions cannot be mixed with this incentive, which relates to the initial investment made during the weekend. Before withdrawal, both the deposit and bonus amounts must be bet 35 times; Free Spins' earnings are liable to a 40x wagering requirement. This incentive gives gamers additional chances to win, therefore adding thrill to weekend gaming sessions.`,
-          // `p2`,
+          `You don't have to use Spinz Casino bonus codes to get numerous free spins. However, you can use the Double or even Triple Speed ​​feature to speed up your progress bar. Once you reach 100%, your bar will be updated. However, for this, you will receive a generous package of free spins.`,
+          `The Double and Triple Speed ​​feature is an opportunity to speed up the process by 2 or 3 times.`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
@@ -221,27 +217,27 @@ export const content = {
     ],
     rightColumnContent: [
       {
-        heading: "Wednesday Bonus and Snatch casino 50 free Spins",
+        heading: "Bonus Codes",
         text: [
-          `The Wednesday Bonus from Pragmatic Play offers a 50% match bonus up to C$1,000 and 50 Free Spins on the "Gates of Olympus" slot, therefore boosting midweek gambling. To be eligible for this Wednesday only promo, players must deposit minimum of C$20. While Free Spins pay for a 40x playthrough, the deposit and bonus money must be bet 35 times. This incentive offers players more possibilities to win and great value, therefore improving gameplay over the week.`,
+          `Be sure to use Spinz Casino no deposit bonus codes 2025 to activate profitable offers. They will be sent to your email address, and sometimes even to your phone number. Also, keep an eye on the Promotions section to pick up the most generous and profitable bonus codes. With their help, you will receive game money, free spins and other offers.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Snatch casino 50% Loss Recovery",
+        heading: "Reload Bonus",
         text: [
-          `The 50% Loss Recovery bonus from Snatch Casino is meant to help you offset weekend losses. Players who find their balance declining on Saturdays will get a refund of 50% of their net losses (not including bonuses and payouts) on Sunday. There is no upper restriction; the minimum bonus sum is C$10. Before they may take the returned money, they have to gamble it twenty times. This encouragement guarantees that players may recuperate and keep on playing with fresh chances for winnings even following a demanding gaming session.`,
+          `Another interesting offer is the reload bonuses. In fact, for each deposit you will receive an additional reward of 50% of the deposit. The maximum reward will be CAD 100. This means that when you make a deposit of CAD 100, you will receive an additional CAD 50 on your bonus balance.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "VIP Program",
+        heading: "Cashback at Royal Spinz Casino",
         text: [
-          `The VIP tiers of Snatch Casino include the Bully, Crook, Homie, Gangster, and Godfather, each of which comes with a unique set of bonuses. The players get access to one-of-a-kind tournaments, are able to process their withdrawals more quickly, and receive additional cashback (up to 12% at the Homie level). Gangster players are eligible for a Personal VIP Manager who is available around the clock, individualized offers, and enhanced withdrawal limits. Each new level brings with it a new set of benefits and privileges, which enhances gaming and rewards commitment.`,
+          `To lessen the reduction in winnings from games, cashback bonuses can always come to your rescue. Based on how much you wager in a game week, the casino will return to you 10% to 20% in the form of cashback. To check if you have any accrued cashback, just log in. Click on 'My rewards' to check it.`,
           // `p2`,
           // `p3`,
         ],
@@ -250,6 +246,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "Snatch Casino Reviews FAQ",
+    title: "FAQ",
   },
 };

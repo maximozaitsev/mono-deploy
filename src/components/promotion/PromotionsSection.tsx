@@ -17,10 +17,6 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[0].text[0],
                 },
-                {
-                  type: "list",
-                  content: content.promotions.leftColumnContent[0].list || [],
-                },
               ],
             },
             {
@@ -39,14 +35,9 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[2].text[0],
                 },
-              ],
-            },
-            {
-              heading: content.promotions.leftColumnContent[3].heading,
-              items: [
                 {
                   type: "text",
-                  content: content.promotions.leftColumnContent[3].text[0],
+                  content: content.promotions.leftColumnContent[2].text[1],
                 },
               ],
             },

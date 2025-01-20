@@ -11,15 +11,15 @@
   text-transform: uppercase;
 
   &.primary {
-    // outline: 4px solid;
-    // outline-offset: -4px;
+    outline: 4px solid;
+    outline-offset: -4px;
     padding: 4px 48px;
     outline-color: #f9f8f83b;
     background: $color-button-large;
-    color: #1e2c37;
+    color: #431884;
     font-size: 28px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     min-width: 280px;
     height: 87px;
 
@@ -48,13 +48,13 @@
   &.secondary {
     outline: 3px solid;
     outline-offset: -3px;
-    padding: 2px 18px;
+    padding: 2px 6px;
     outline-color: #2e2e2e3b;
     background: $color-button-small;
     color: #fff;
     font-size: 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     height: 52px;
 
     @media (max-width: 768px) {
@@ -62,7 +62,7 @@
     }
 
     @media (max-width: 300px) {
-      padding: 2px 16px;
+      padding: 2px 6px;
       width: auto;
       height: auto;
     }
