@@ -137,11 +137,11 @@
         padding: 24px;
 
         .app-image {
-          margin-left: -37px;
+          margin-left: 37px;
           margin-bottom: 4px;
           padding-bottom: 20px;
 
-          @media (max-width: 768px) {
+          @media (max-width: 500px) {
             margin-left: 0;
           }
         }

@@ -2,7 +2,7 @@ export const content = {
   projectName: "Snatch Casino",
   advantages: {
     // title: "",
-    subTitle: "Snatch Сasino Advantages",
+    subTitle: "Snatch Casino Advantages",
     text: [
       `Launched in 2021, Snatch Casino assures an amazing internet gambling experience with Grand Theft Auto motif. Its C$6,000 welcome bonus and 325 free spins draw in fresh gamers. `,
     ],
