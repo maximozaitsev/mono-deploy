@@ -62,11 +62,10 @@ export default function GamesToPlay() {
                 //   content:
                 //     content.gamesToPlay.gamesRightColumn[0].list || [],
                 // },
-                // {
-                //   type: "text",
-                //   content:
-                //     content.gamesToPlay.gamesRightColumn[0].text[1]
-                // },
+                {
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[0].text[1],
+                },
               ],
             },
             {

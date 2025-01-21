@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "spinz-casino-ca.com";
+const url = "luckydreams-ca.com";
 const ogTitle =
-  "Spinz Casino Canada: An Unforgettable Gambling Experience for Everyone";
-const ogSiteName = "Spinz Casino";
+  "Lucky Dreams Casino Canada: Detailed Review and Current Bonuses";
+const ogSiteName = "Lucky Dreams Casino";
 const metaDescription =
-  "Spinz Casino Canada: a multifunctional service with generous bonus offers. Welcome reward, range of games, payment methods and customer support. Detailed overview for new clients";
+  "Lucky Dreams Casino Canada: what you need to know about the popular gambling platform. Games, promotions, payment methods. Useful information for beginners and experienced gamblers";
 
 const locale = "en-CA";
 const language = "English";
