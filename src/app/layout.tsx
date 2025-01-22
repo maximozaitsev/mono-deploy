@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "casinofriday-online.com";
+const url = "stardust-casino-ca.com";
 const ogTitle =
-  "Casino Friday Canada —Top Casino for Slots, Live Games, and Bonuses";
-const ogSiteName = "Casino Friday Canada";
+  "Stardust Casino Canada – Premier Online Gaming with Exciting Bonuses";
+const ogSiteName = "Stardust Casin";
 const metaDescription =
-  "Casino Friday Canada is the ultimate destination for slots, table games, and live casino action. Enjoy exclusive bonuses, quick withdrawals, and a premium gaming experience designed for Canadians. Sign up now and take your gameplay to the next level!";
+  "Discover endless entertainment at Stardust Casino Canada with slots, table games, and live dealer options. Join now for amazing bonuses and a seamless, secure gaming experience!";
 
 const locale = "en-CA";
 const language = "English";

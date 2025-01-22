@@ -36,23 +36,14 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.leftColumnContent[1].text[0],
                 },
-              ],
-            },
-            {
-              heading: content.gamesToPlay.leftColumnContent[2].heading,
-              items: [
+                // {
+                //   type: "list",
+                //   content:
+                //     content.gamesToPlay.leftColumnContent[1].list || [],
+                // },
                 {
                   type: "text",
-                  content: content.gamesToPlay.leftColumnContent[2].text[0],
-                },
-              ],
-            },
-            {
-              heading: content.gamesToPlay.leftColumnContent[3].heading,
-              items: [
-                {
-                  type: "text",
-                  content: content.gamesToPlay.leftColumnContent[3].text[0],
+                  content: content.gamesToPlay.leftColumnContent[1].text[1],
                 },
               ],
             },
@@ -70,11 +61,10 @@ export default function GamesToPlay() {
                 //   content:
                 //     content.gamesToPlay.gamesRightColumn[0].list || [],
                 // },
-                // {
-                //   type: "text",
-                //   content:
-                //     content.gamesToPlay.gamesRightColumn[0].text[1]
-                // },
+                {
+                  type: "text",
+                  content: content.gamesToPlay.gamesRightColumn[0].text[1],
+                },
               ],
             },
             {
@@ -84,14 +74,14 @@ export default function GamesToPlay() {
                   type: "text",
                   content: content.gamesToPlay.gamesRightColumn[1].text[0],
                 },
-              ],
-            },
-            {
-              heading: content.gamesToPlay.gamesRightColumn[2].heading,
-              items: [
+                // {
+                //   type: "list",
+                //   content:
+                //     content.gamesToPlay.gamesRightColumn[1].list || [],
+                // },
                 {
                   type: "text",
-                  content: content.gamesToPlay.gamesRightColumn[2].text[0],
+                  content: content.gamesToPlay.gamesRightColumn[1].text[1],
                 },
               ],
             },

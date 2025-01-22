@@ -64,6 +64,10 @@ export default function AboutSection() {
                   type: "text",
                   content: content.about.depositMethods.text[1],
                 },
+                {
+                  type: "text",
+                  content: content.about.depositMethods.text[2],
+                },
               ],
             },
           ]}
@@ -82,6 +86,10 @@ export default function AboutSection() {
                 {
                   type: "text",
                   content: content.about.withdrawalMethods.text[1],
+                },
+                {
+                  type: "text",
+                  content: content.about.withdrawalMethods.text[2],
                 },
               ],
             },

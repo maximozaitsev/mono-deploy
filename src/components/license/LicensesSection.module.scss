@@ -25,6 +25,20 @@
       display: flex;
       justify-content: flex-end;
 
+      .licenceImage {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .licenceImageMobile {
+        display: none;
+
+        @media (max-width: 768px) {
+          display: block;
+        }
+      }
+
       img {
         width: auto;
       }
@@ -52,7 +66,7 @@
         margin-bottom: 40px;
 
         img {
-          max-width: 160px;
+          max-width: 395px;
           width: 100%;
           height: auto;
         }

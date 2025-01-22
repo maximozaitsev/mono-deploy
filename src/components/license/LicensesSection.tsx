@@ -1,5 +1,6 @@
 import Image from "next/image";
-// import licenceImage from "../../../public/block-images/licence.webp";
+import licenceImage from "../../../public/block-images/licence.webp";
+import licenceImageMobile from "../../../public/block-images/licence-mobile.webp";
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { content } from "@/content/content";
 import styles from "./LicensesSection.module.scss";
@@ -13,15 +14,24 @@ export default function LicensesSection() {
           <div className={styles.leftContent}>
             <p className="paragraph-text">{content.licenses.text[0]}</p>
           </div>
-          {/* <div className={styles.rightImage}>
+          <div className={styles.rightImage}>
             <Image
               src={licenceImage}
+              className={styles.licenceImage}
               alt="Licenses"
-              width={240}
-              height={240}
+              width={395}
+              height={136}
               quality={100}
             />
-          </div> */}
+            <Image
+              src={licenceImageMobile}
+              className={styles.licenceImageMobile}
+              alt="Licenses"
+              width={395}
+              height={78}
+              quality={100}
+            />
+          </div>
         </div>
         <TwoColumns
           leftColumnContent={[

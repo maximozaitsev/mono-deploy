@@ -1,59 +1,63 @@
 export const content = {
-  projectName: "Casino Friday",
+  projectName: "Stardust Casino",
   advantages: {
     // title: "",
-    subTitle: "Friday Casino Reviews Advantages",
+    subTitle: "Original Stardust Casino Advantages",
     text: [
-      `Friday Casino is an attractive online gambling site with pros and cons. A brief overview:`,
+      `Reputable online gambling site Stardust Casino delivers players a few advantages and pitfalls to weigh.`,
     ],
-    advantagesTitle: "Advantages",
-    disadvantagesTitle: "Disadvantages",
+    advantagesTitle: "Advantages:",
+    disadvantagesTitle: "Disadvantages:",
     advantages: [
-      "Extensive game library with diverse options.",
-      "Partnerships with top-tier software providers.",
-      "Mobile-friendly design for gaming on the go.",
-      "Attractive bonuses and promotions.",
+      "Generous welcome bonuses",
+      "User-friendly mobile app for iOS and Android",
+      "Extensive game library with over 1,000 titles",
+      "Excellent customer support",
+      "Integration with Boyd Rewards loyalty program",
+      "Secure and trusted payment methods",
+      "Regular promotions and daily bonuses",
     ],
     disadvantages: [
-      "Restricted access in certain countries.",
-      "Limited options for payment in some regions.",
-      "Wagering requirements for bonuses.",
-      "No dedicated mobile app.",
+      "High wagering requirements for bonuses",
+      "Limited availability in certain regions",
+      "Some technical glitches in the mobile app",
+      "Limited live dealer game options",
+      "Inconsistent game filters and outdated FAQs",
     ],
   },
   about: {
-    title: "Casino Friday",
+    title: "Stardust Casino",
     intro: [
-      "100% match bonus of up to C$500",
-      "30x wagering requirement",
-      "20% weekly cashback",
+      "24/7 customer service",
+      "25 free spins on Starburst slot",
+      "C$1,000 prize pool",
     ],
     description: [
-      `Friday Casino offers a varied selection of games and user-friendly features for a new and colorful casino experience online. Launched for modern gamers, it offers slots, table games, live dealer experiences, and more from top software suppliers. The platform offers safe payment options, smartphone compatibility, and easy navigation. Casino Friday review offers significant bonuses, promotions, and a rewards program to engage customers and improve gameplay. Online gamers like its fair play and strong customer service.`,
+      `Boyd Gaming runs the online Stardust Casino, which delivers a broad spectrum of real-money casino games including slots, blackjack, and roulette to gamblers in Ontario, New Jersey, and Pennsylvania. Stardust Casino Ontario merges a safe and smooth gambling session with the respectable backing of Boyd gambling using an easy-to-use interface available on PC and mobile devices. Stardust Social Casino offers over 200 free-to-play games, covering slots, video poker, and table games, for those looking for a social gaming alternative, along letting users earn Boyd Points and Tier Credit. See the official website for further information about games, specials, and regional availability.`,
       // `p2`,
       // `p3`,
     ],
     register: {
-      title: "Casino Friday Night Registration Process",
+      title: "Stardust Casino Registration Process",
       text: [
-        `Casino Friday is easy to start. Create an account using these steps:`,
+        `Launching with Stardust Casino login is easy and fast. Use these instructions to open an account and initiate your online gaming adventure:`,
         // `p2`,
         // `p3`,
       ],
       list: [
-        "Visit the Casino Friday website.",
+        "Visit the official Stardust Casino website.",
         "Click on the 'Sign Up' or 'Register' button.",
-        "Enter your email address and create a secure password.",
-        "Provide your personal information (e.g., name, date of birth, address).",
-        "Select your preferred currency and country.",
+        "Enter your personal details (name, email, etc.).",
+        "Create a username and password.",
+        "Verify your identity and age.",
         "Accept the terms and conditions.",
-        "Complete the registration and verify your account if required.",
+        "Complete the registration process.",
       ],
     },
     signIn: {
-      title: "About Casino Friday Login",
+      title: "About Who Owned the Stardust Casino and Login",
       text: [
-        `Casino Friday login is easy and safe for users. Log in to the official web page by clicking "Login" at the top right. To avoid login troubles, enter your current email address and passcode accurately. Friday Casino login may provide two-factor authentication in account settings for further protection. Password recovery is available on the platform to assist you get back in. Use the official website to log in for optimal security.`,
+        `Stardust Casino location is New Jersey, Pennsylvania, or Ontario. Under the "Log In" tab at top-right of the page, insert a password and an email address. MFA is the security tool used by every player at Stardust Casino. After entering your login credentials, your registered mobile phone number will obtain an SMS verifying code. To log in fast, kindly type this code. This gadget is confirmed for 13 days upon entering your verification code; you won't be prompted to enter it once again. Your next login after 13 days will generate a fresh verification code. Should you forget your password during login, click "Forgot Password?" to reset it. See the assistance supported by Stardust Casino.`,
         // `p2`,
         // `p3`,
       ],
@@ -66,59 +70,61 @@ export const content = {
     depositMethods: {
       title: "Deposit Methods",
       text: [
-        `Casino Friday 2025 offers a variety of safe deposit choices so players may immediately load their accounts. Approved strategies call for cards (Visa and Mastercard) with a minimum deposit of C$10 and a maximum of C$2,000. With rapid processing, other e-wallet choices including Jeton, MiFinity, and Luxonpay provide deposits ranging from C$10 to C$4,000. Perfect for individuals who would like vouchers, paysafe cards allow rapid payments ranging from C$10 to C$500. `,
-        `With a minimum deposit of C$20 and a maximum of C$4,000, aficionados for cryptocurrencies can deposit Bitcoin, Ethereum, Litecoin, or any supported currency. These choices guarantee for all players ease and versatility.`,
+        `The Stardust Casino provides a range of dependable and safe deposit options to guarantee gamers may easily fill their accounts. Fast and safe, PayPal lets you keep your financial data private and make deposits from verified accounts. For gamers looking for simplicity and security, PayPal is perfect with a minimum deposit requirement of C$10 and a maximum of C$10,000.`,
+        `Also accepted are Visa, MasterCard, and AMEX; individual banks constraints affect their success percentages. Though your card issuer may charge extra fees, these cards accept deposits between C$10 and C$10,000.`,
+        `Popular in Canada, Interac eTransfer lets credit unions and cooperating banks direct payments with daily limitations of C$10 to C$9,999. With limitations of C$10 to C$10,000 daily, Online Banking (Trustly) offers another easy substitute allowing deposits using your online banking credentials. Finally, reliable e-wallet Instadebit lets users fill their accounts straight from their bank, therefore supporting daily deposits between C$10 and C$10,000.`,
       ],
       // list: ["li1", "li2", "li3"],
     },
     withdrawalMethods: {
-      title: "Casino Friday Withdrawal Methods",
+      title: "Withdrawal Methods",
       text: [
-        `For most choices, Casino Friday online provides many withdrawal alternatives together with instantaneous processing. For sums between C$20 and C$4,000, players can withdraw using bank transfer. Starting at C$20, e-wallets such Jeton, MiFinity, and Luxonpay let you withdraw C$4,000 maximum each transaction.`,
-        `Starting at C$30 with a maximum of C$4,000, cryptocurrency withdrawals supporting popular choices like Bitcoin and Ethereum start from Every approach is meant to guarantee fast and hassle-free access to earnings, so fulfilling the wants of gamers all around.`,
+        `Taking money out of Stardust Casino is simple and backed by several safe channels. Still a popular choice in Canada, Interac eTransfer enables direct withdrawals into bank accounts run by credit unions and partner banks. Funds are sent in one to two business days while withdrawals are processed within twelve hours. `,
+        `Another quick way is PayPal, which requires players to have initially made deposits there. Usually within 12 hours, the withdrawal is processed and the money shows right away in your PayPal account. Online banking (Trustly) provides a flexible means of moving money to your bank account. Stardust Casino withdrawal time takes up to 24 hours; usually, money are accessible 1 to 4 working days. `,
+        `Finally, dependable e-wallet provider Instadebit guarantees quick access to money after 24-hour approval. Every withdrawal technique is meant to provide security and efficiency first priority, so players will find it easy to obtain their earnings.`,
       ],
       // list: ["li1", "li2", "li3"],
     },
   },
   licenses: {
-    title: "Licenses",
+    title: "Stardust Casino Legal States and Licenses",
     text: [
-      `Is Casino Friday legit? CasinoFriday is operated by 1Up Services (CY) Ltd., registered in Cyprus under company number HE409378, with its address at Avlonos, 1 Maria House, 1075 Nicosia, Cyprus. The operator holds online gambling licenses issued by the Estonian Tax and Customs Board, specifically license numbers HKL000359 and HKT000059.`,
+      `Is Stardust Casino legit? Stardust Casino runs under licence from Ontario's Alcohol and Gaming Commission (AGCO). For Ontario residents, this legislative licensing guarantees the casino follows rigorous operating criteria like fairness, transparency, and player safety, therefore providing a trustworthy and reputable platform.`,
       // `p2`,
     ],
-    security: "Lucky Friday Casino Security",
+    security: "Security",
     securityText: [
-      `The platform stresses player security by utilizing modern encryption technology to preserve confidential and bank data. On top of that, CasinoFriday operates under licenses from respectable organizations, assuring adherence to high regulatory requirements and fair gaming procedures.`,
+      `Modern gambling software from top-notch companies drives Stardust Casino Ontario, guaranteeing top-notional game performance and diversity. On desktop and mobile platforms, these technologies provide high-quality images, fluid animations, and a flawless user experience. Frequent software upgrades maintain the platform current and provide gamers with constantly available new features and gaming possibilities.`,
       // `p2`,
     ],
-    software: "Casino Friday Affiliates and Software Technologies",
+    software: "Software Technologies",
     softwareText: [
-      `To provide a great gaming experience, Friday Casino  works with a wide spectrum of respected software companies. Among notable partners include Microgaming, NetEnt, Play'n GO, Pragmatic Play, Evolution Gaming, and Yggdrasil. This cooperation guarantees a great range of premium games covering live dealer choices, table games, and slots.`,
+      `Modern gambling software from top-notch companies drives Stardust Casino Ontario, guaranteeing top-notional game performance and diversity. On desktop and mobile platforms, these technologies provide high-quality images, fluid animations, and a flawless user experience. Frequent software upgrades maintain the platform current and provide gamers with constantly available new features and gaming possibilities.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Casino Friday App",
+    title: "Stardust Casino App",
     text: [
-      `Although Casino Friday does not have a specific mobile app, its website is totally mobile browser friendly. Without further downloads, this design lets users easily access and enjoy the whole spectrum of casino games on many devices, including tablets and smartphones.`,
+      `Available for iOS and Android, the Stardust Casino mobile app offers gamers on-the-go a handy and feature-rich experience. It provides customer service, safe payment options, and complete game library access. Designed for mobile usage, the software guarantees seamless operation and a simple design catered for smaller displays.`,
       // `p2`,
     ],
     languages: "Languages",
     languagesText: [
-      `Its Friday Casino presents its platform in several languages, including English, Finnish, Norwegian, and Japanese, serving a worldwide audience. For players from many areas, this multilingual support improves accessibility and offers a user-friendly interface.`,
+      `English is the main language promoted by Stardust Casino Vegas as it guarantees accessibility and clarity for most Ontario gamers. English is used in all games, customer service, and correspondence to help to provide a simple user experience.`,
       // `p2`,
     ],
-    currencies: "Casino Friday Reviews of Currencies",
+    currencies: "Currencies",
     currenciesText: [
-      `To serve its varied player base, Casino Friday supports a range of currencies. Accepted currencies include Euros (EUR), Canadian dollars (CAD), Norwegian krone (NOK), and New Zealand dollars (NZD). This adaptability lets players handle their accounts and transactions in the currency of choice.`,
+      `Conducting transactions at Stardust Casino in Canadian Dollars (CAD), gamers get hassle-free financial experience. For Canadian users, CAD streamlines deposits and withdrawals and removes currency conversion costs.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Casino Friday Games to Play",
+    title: "Stardust Casino Games Available to Play",
     text: [
-      `Casino Friday has an extensive catalog of games for gamblers. An outline of game possibilities follows:`,
+      `Stardust Casino has a wide range of casino games available online, therefore giving players an interesting and fun moment while playing.`,
       // `p2`,
       // `p3`,
     ],
@@ -126,7 +132,7 @@ export const content = {
       {
         heading: "Slots",
         text: [
-          `Platform slot games fit all sorts of enthusiasts. The range from 3x3 to 5x3 has something for everyone. The creative Megaways slots at Casino Friday feature dynamic reels and hundreds of ways to win. Bonus buys, cluster payouts, and cascade symbols increase thrill and earnings. Among the notables are "Sweet Bonanza," "Gates of Olympus," and "Book of Dead." From simple gameplay to intricate themes, the slot collection provides countless entertainment value.`,
+          `For both classic and contemporary gamers, Stardust Casino Online Ontario has an extensive selection of slot games. Though conventional three-reel slots replicate land-based machines, modern video slots offer stunning pictures, distinctive themes, and interesting features such cascading reels, bonus rounds, and free spins. Popular titles continuously give something fresh by including fantasy adventures, ancient civilization games, and blockbusters. Progressive jackpots on several slots let players spin once and win amounts that might change their lives.`,
           // `p2`,
           // `p3`,
         ],
@@ -135,17 +141,19 @@ export const content = {
       {
         heading: "Table Games",
         text: [
-          `For those who enjoy classic table games, Casino Friday features numerous. Blackjack, Roulette, and Baccarat may be played in many variants with varying skill levels and strategies. These games provide unique rules and betting options together with personalized gameplay. Among the various games available to keep enthusiasts occupied are Blackjack, roulette, and baccarat.`,
-          // `p2`,
+          `Strategic and skill-based gamers will find Stardust Casino Ontario to be the ideal location as it offers an outstanding range of table games. Each of Classic Blackjack, Atlantic City Blackjack, and Multihand Blackjack has different rule modifications and gaming dynamics, thus appealing to Blackjack aficionados. These variants appeal to novices seeking simple guidelines as well as experienced players wanting more difficult tactics.`,
+          `From inside bets to even-money wagers, American, European, and French Roulette lovers may investigate each with unique layouts, house edges, and betting choices. Realistic animations and easy-to-use interfaces of the platform provide an immersive experience, therefore enabling players to concentrate on the game free from interruptions. Stardust Casino Ontario guarantees every player has access to top-notch and interesting choices regardless of experience level with table games or seasoned professionals.`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
+    ],
+    gamesRightColumn: [
       {
-        heading: "Live Casino",
+        heading: "Live Dealer Games",
         text: [
-          `Live Casino Friday brings the casino floor right before players' screens. This function runs Blackjack, Roulette, Baccarat, and poker in real time under friendly dealers. On the platform, interactive game shows provide an entertaining twist for casino entertainment. Like land-based casinos, gamers may engage with dealers and other players, therefore generating a social and immersive experience.`,
-          // `p2`,
+          `With its outstanding array of live dealer games, Stardust Casino Ontario transports the excitement of a genuine casino right into players' homes. Designed to mimic the environment of a physical casino, games such Live Blackjack, Live Roulette, and Live Baccarat are hosted by professional, extremely skilled dealers in high-definition studios. Integrated chat tools let players connect with the dealers and other players in real time, therefore promoting community and social contact. `,
+          `Many camera angles offer changing viewpoints, therefore improving the realism and involvement of every session. Adjustable betting limits guarantee accessibility for both big rollers and casual players, thereby rendering these games flexible and accessible. Those looking for a real casino experience without leaving the comfort of their house will find the live dealer choices ideal.`,
           // `p3`,
         ],
         //  list: ["li1", "li2", "li3"],
@@ -153,37 +161,8 @@ export const content = {
       {
         heading: "Video Poker",
         text: [
-          `For those who like a mix of chance and technique, Casino Friday offers a great assortment of video poker games. Popular choices like "Jacks or Better" and "Deuces Wild," let players participate in games combining the fast-paced action of slot machines with classic poker gaming. Both casual players and poker aficionados will find these games to be a fulfilling challenge as they let one create strategy and make decisions that affect the result.`,
-          // `p2`,
-          // `p3`,
-        ],
-        //  list: ["li1", "li2", "li3"],
-      },
-    ],
-    gamesRightColumn: [
-      {
-        heading: "Jackpot Games",
-        text: [
-          `The jackpot part of Casino Friday is a great place for gamers looking for huge payouts. With a range of jackpot games featuring progressive choices, this category gives the possibility to win rewards that may change your life. With every play, progressive jackpots expand to provide constantly rising reward pools until a lucky player strikes the winning combo. Among those looking for large payouts, these games are exciting and high-stakes favorites.`,
-          // `p2`,
-          // `p3`,
-        ],
-        //  list: ["li1", "li2", "li3"],
-      },
-      {
-        heading: "First Person Games",
-        text: [
-          `Casino Friday presents first person games, a contemporary variation on traditional table games. Players of popular games including Blackjack, Roulette, and Baccarat in a single-player format may get great immersion experience from these 3D reproductions. Perfect for those who want a more subdued, more concentrated gaming experience, these games offer a genuine casino setting with amazing visuals and fluid animations.`,
-          // `p2`,
-          // `p3`,
-        ],
-        //  list: ["li1", "li2", "li3"],
-      },
-      {
-        heading: "Scratch Cards and Pull Tabs",
-        text: [
-          `Casino Friday Canada presents pull tab games and scratch cards for fast and simple entertainment. Players who desire a simple gaming experience free of complicated rules will find these quick-win choices perfect. While still giving chances for rewards, scratch cards and pull tabs offer a welcome change from conventional casino games and produce quick results.`,
-          // `p2`,
+          `Stardust Casino Ontario's strong array of video poker games will appeal to many poker aficionados. Appealing to both novice and experienced gamers, titles like Jacks or Better, Deuces Wild, and Joker poker mix the ideal combination of strategy and chance. < These games let users create successful plans and make wise judgments by including well defined rules and extensive pay tables. `,
+          `Different budgets are catered for by adjustable betting choices, thereby guaranteeing everyone a suitable beginning point. Those looking for higher chances often choose several video poker games as many of them have high return-to-player (RTP) percentages. Stardust Casino Ontario's video poker selection offers a satisfying and interesting experience regardless of your level of poker ability or just enjoyment of the fast-paced action.`,
           // `p3`,
         ],
         //  list: ["li1", "li2", "li3"],
@@ -191,61 +170,61 @@ export const content = {
     ],
   },
   support: {
-    title: "Casino Friday Casino Support",
+    title: "Fanduel Stardust Casino Customer Service",
     text: [
-      `The casino offers strong customer Casino Friday support via several outlets. Players may access the support team by email at support@casinofriday.com or by live chat for instant help. The support services are made to quickly answer player questions and problems, therefore guaranteeing a flawless and fun gaming environment.`,
+      `In order to quickly answer player questions and concerns, Stardust Online Casino provides 24/7 customer service Live chat for real-time assistance, email for thorough searches, and a complete help site containing self-service Stardust Casino reviews provide support from several angles. The support staff is committed to make sure athletes have a flawless and fun experience.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Friday Casino Bonuses and Promotions",
+    title: "Stardust Casino Bonuses and Promotions",
     text: [
-      `To improve how to play for both new and current players,there are some Friday Casino promotions and specials. The present offerings are summed here:`,
+      `​​For the benefit of how you play, Stardust Casino Ontario runs a few incentives and specials. The present offerings are listed here:`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Casino Friday Welcome Bonus",
+        heading: "Stardust Casino Sign Up Bonus",
         text: [
-          `Casino Friday kindly welcomes fresh players with a tempting offer to start their gaming adventure. On their initial deposit, players get a 100% match bonus of up to C$500, therefore doubling the money available to explore the large gaming library of the platform. New players also get 200 free spins, which are split up as 20 spins daily over ten days. `,
-          `This guarantees players have several chances to enjoy highly chosen games and maybe win large. One must minimum deposit C$20 to be eligible for the incentive. For those ready to explore Casino Friday's offers, the fair 30x wagering requirement associated with Winnings from the free spins makes this attractive promotion.`,
-          // `p3`,
-        ],
-        // list: ["li1", "li2", "li3"],
-      },
-      {
-        heading: "Live Casino Welcome Bonus",
-        text: [
-          `CasinoFriday has created a unique incentive just to improve the Live Casino experience for players of live dealer games. On their initial deposit, players may earn a 100% match Casino Friday bonus of up to C$500, therefore enabling them to participate in real-time games such Blackjack, Roulette, and Baccarat with more cash. `,
-          `With experienced dealers and interesting game presentations, this bonus offers a great chance to enjoy the active and immersive Live Casino part. Since only one Welcome Bonus can be used, players should be aware they have to pick between the Live Casino Welcome Bonus and the conventional one. This exclusive deal guarantees live gambling aficionados may maximize their initial investment and play their preferred games.`,
-          // `p3`,
-        ],
-        // list: ["li1", "li2", "li3"],
-      },
-    ],
-    rightColumnContent: [
-      {
-        heading: "SpinBooster and Casino Friday Freespins",
-        text: [
-          `Just by playing their preferred slot games, the SpinBoosterTM rewards system at Casino Friday provides players with an interesting approach to get more free spins. A progress meter starts to fill in as players turn the reels. Players level up and are given free spins according to their tastes when the bar is full.`,
-          `This dynamic aspect offers a different sense of development and accomplishment and keeps gameplay interesting and gratifying. The Casino Friday free spins from SpinBoosterTM must be utilized within 24 hours after credit and have a fair 30x wagering demand. This creative approach guarantees that gamers' loyalty and platform engagement are always rewarded regularly.`,
-          // `p3`,
-        ],
-        // list: ["li1", "li2", "li3"],
-      },
-      {
-        heading: "Loyalty Program and Casino Bonus Black Friday",
-        text: [
-          `For dedicated players, Casino Friday's Loyalty Program presents great benefits. Members ensure more value from their games by enjoying up to 20% weekly cashback credited without wagering criteria. Along with access to special tournaments, cash drop promotions, and Casino Friday no deposit bonus, enhanced bonuses and free spins with less limitations are also offered. Customized service provided by seasoned team members guarantees specific help for every loyalty member. Participation in the program is by invitation; participants should choose to be considered by opting in to get correspondence.`,
+          `New visitors to Stardust Casino online get a tempting welcome gift meant to improve their first experience. Registration gets you 25 free spins on the well-known Starburst slot game, with its vibrant graphics and engaging action. These spins enable playing without depositing. Your first deposit locks a 100% match bonus, doubling your deposit, and 200 Starburst free spins. Every spin costs C$0.20; any earnings are bonus money. Before removing these profits, the 35x playing game needs to guarantee fair and balanced games. New players may find the site and immediately start playing one of its most well-known games thanks to this offer.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
+      // {
+      //   heading: "bonus2Heading",
+      //   text: [
+      //     `p1`,
+      //     // `p2`,
+      //     // `p3`,
+      //   ],
+      //   // list: ["li1", "li2", "li3"],
+      // },
+    ],
+    rightColumnContent: [
+      {
+        heading: "Crazy Time Leaderboard and Stardust Casino Free Bets",
+        text: [
+          `The Crazy Time leaderboard campaign at Stardust Casino spans January 15–19. The explosive bonus rounds and brilliant design of the live casino game are well known. Leaderboard points are earned every Crazy Time bonus round during this limited-time event. Top players will split a C$1,000 prize pool, therefore presenting an excellent opportunity for fun and winning. Your score and reward chances increase with increasing rounds you play. Those that enjoy competitive gaming and seek additional excitement should try this deal. The Crazy Time Leaderboard event is a terrific way to boost your gaming experience while competing for prizes with this dynamic gameplay and heavy rewards.`,
+          // `p2`,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+      // {
+      //   heading: "bonus4Heading",
+      //   text: [
+      //     `p1`,
+      //     // `p2`,
+      //     // `p3`,
+      //   ],
+      //   // list: ["li1", "li2", "li3"],
+      // },
     ],
   },
   faq: {
-    title: "FAQ: Casino Friday Askgamblers",
+    title: "CASINO FAQ",
   },
 };

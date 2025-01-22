@@ -1,52 +1,52 @@
 export const faqs = [
   {
-    question: "What is the minimum age to play at CasinoFriday?",
+    question: "Is Stardust Casino legal in Ontario?",
     answer:
-      "Players must be at least 18 years old or the legal gambling age in their jurisdiction to register and play.",
+      "Yes, Stardust Casino is legal and operates under an agreement with iGaming Ontario, part of the Alcohol and Gaming Commission of Ontario (AGCO).",
   },
   {
-    question: "Can I set limits on my account?",
+    question:
+      "What types of games are available at Stardust Casino New Jersey?",
     answer:
-      "Indeed, Casino Friday provides options to control deposit, loss, session, and wager limitations for responsible gambling.",
+      "Stardust Casino offers a variety of games, including slots, table games, live dealer games, and video poker.",
   },
   {
-    question: "Are there fees for deposits or withdrawals?",
+    question: "Is there a Stardust Casino phone number?",
     answer:
-      "CasinoFriday does not charge fees for deposits or withdrawals, but your payment provider might.",
+      "You can reach customer support via email at support@on.stardustcasino.com or through the live chat feature on the website.",
   },
   {
-    question: "Can I play for free at Casino Open on Good Friday?",
-    answer:
-      "Yes, many games at CasinoFriday offer a demo mode, allowing you to play for free without wagering real money.",
+    question: "What is the minimum deposit amount?",
+    answer: "The minimum deposit amount at Stardust Casino is C$10.",
   },
   {
-    question: "Is live chat support available 24/7?",
+    question: "Are there any mobile apps available?",
     answer:
-      "Live chat is available during specified hours. Check the website for exact support availability in your region.",
+      "Yes, Stardust Casino Las Vegas offers mobile apps for both iOS and Android devices, providing access to a wide range of games.",
   },
   {
-    question: "How can I verify my account?",
+    question: "How long does it take to process withdrawals?",
     answer:
-      "To verify, upload proof of identity, address, and payment method through the secure verification section on your profile.",
+      "Withdrawal processing times vary depending on the method used, typically ranging from 1 to 4 business days.",
   },
   {
-    question: "Does CasinoFriday offer tournaments?",
+    question: "What Stardust Casino chips or currencies are accepted?",
     answer:
-      "Indeed, participants may take part in events with prize money and leaderboards for extra benefits.",
+      "Stardust Resort and Casino accepts Canadian Dollars (CAD) for all transactions.",
   },
   {
-    question: "Are progressive jackpots available?",
+    question: "Is there a loyalty program or Stardust Casino bonus code?",
     answer:
-      "CasinoFriday features a selection of progressive jackpot games like Mega Moolah, where prize pools grow with each play.",
+      "The venue does not publicly advertise a Stardust Casino promo code or loyalty program on their official website.",
   },
   {
-    question: "Can I save my favorite games?",
+    question: "How can I set deposit limits?",
     answer:
-      "Yes, you can mark games as favorites for quick access through your profile or the game menu.",
+      "You can manage your level of play by setting deposit limits through the self-help tools available in your account settings.",
   },
   {
-    question: "How quickly are account verifications processed?",
+    question: "What should I do if I encounter technical issues?",
     answer:
-      "Verifications are typically completed within 24-72 hours, depending on the volume of requests.",
+      "For technical support, visit the support portal or contact customer service via email or live chat for assistance.",
   },
 ];
