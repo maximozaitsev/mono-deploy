@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "luckydreams-ca.com";
+const url = "casinofriday-online.com";
 const ogTitle =
-  "Lucky Dreams Casino Canada: Detailed Review and Current Bonuses";
-const ogSiteName = "Lucky Dreams Casino";
+  "Casino Friday Canada —Top Casino for Slots, Live Games, and Bonuses";
+const ogSiteName = "Casino Friday Canada";
 const metaDescription =
-  "Lucky Dreams Casino Canada: what you need to know about the popular gambling platform. Games, promotions, payment methods. Useful information for beginners and experienced gamblers";
+  "Casino Friday Canada is the ultimate destination for slots, table games, and live casino action. Enjoy exclusive bonuses, quick withdrawals, and a premium gaming experience designed for Canadians. Sign up now and take your gameplay to the next level!";
 
 const locale = "en-CA";
 const language = "English";

@@ -97,11 +97,11 @@
   .gameName {
     text-align: center;
     font-family: $font-primary;
-    // color: $text-color-fourth;
-    background: $text-color-fourth;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: $text-color-fourth;
+    // background: $text-color-fourth;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
@@ -126,10 +126,10 @@
     font-weight: 500;
     line-height: normal;
     color: $text-color-fourth;
-    background: $text-color-fourth;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: $text-color-fourth;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 
     @media (max-width: 1000px) {
       font-size: 20px;
@@ -140,7 +140,7 @@
     }
 
     .playIcon {
-      --icon-color: {$text-color-fourth};
+      --icon-color: #{$text-color-fourth}; 
       display: flex;
 
       svg {

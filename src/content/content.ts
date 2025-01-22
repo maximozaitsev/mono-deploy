@@ -1,147 +1,132 @@
 export const content = {
-  projectName: "Lucky Dreams Casino",
+  projectName: "Casino Friday",
   advantages: {
     // title: "",
-    subTitle: "Advantages and Disadvantages: Online Casino Lucky Dreams",
+    subTitle: "Friday Casino Reviews Advantages",
     text: [
-      `Each player has their own system for assessing the quality and level of an online casino. Therefore, for some, Lucky Dreams Casino $150 no deposit bonus codes 2025 will be an excellent advantage. Others do not consider this a serious achievement, and look for other important aspects when choosing a casino.`,
-      `The presented service has some disadvantages. However, at the same time, the number of advantages is objectively greater.`,
+      `Friday Casino is an attractive online gambling site with pros and cons. A brief overview:`,
     ],
     advantagesTitle: "Advantages",
     disadvantagesTitle: "Disadvantages",
     advantages: [
-      "variety of games;",
-      "live casino;",
-      "loyalty program;",
-      "tournaments;",
-      "mobile friendly;",
-      "fast payments;",
-      "VIP program;",
-      "welcome bonus;",
-      "crypto friendly.",
+      "Extensive game library with diverse options.",
+      "Partnerships with top-tier software providers.",
+      "Mobile-friendly design for gaming on the go.",
+      "Attractive bonuses and promotions.",
     ],
-    disadvantages: ["no mobile apps;", "geographic restrictions."],
+    disadvantages: [
+      "Restricted access in certain countries.",
+      "Limited options for payment in some regions.",
+      "Wagering requirements for bonuses.",
+      "No dedicated mobile app.",
+    ],
   },
   about: {
-    title: "Lucky Dreams Casino",
-    intro: ["VIP program", "295% welcome bonus", "crypto friendly"],
+    title: "Casino Friday",
+    intro: [
+      "100% match bonus of up to C$500",
+      "30x wagering requirement",
+      "20% weekly cashback",
+    ],
     description: [
-      `All Canadian players enjoy a wonderful experience at the Lucky Dreams Casino due to immense choice of games, a variety of bonuses, and a lot of welcome offers. Yes, Lucky Dreams Casino has an active VIP and loyalty program for their loyal and constant players.`,
-      `Lucky Dreams Casino Canada  began its successful operation in 2021. It is run by Dama N.V., which also owns several other online casinos with a notable reputation for being trusted operators.`,
-      `This Lucky Dreams Casino review offers players a comprehensive overview of what games the casino has available, what bonuses they can take advantage of, and other related information. There are additional details on the loyalty program, payment methods, limits, and many other aspects of interest.`,
+      `Friday Casino offers a varied selection of games and user-friendly features for a new and colorful casino experience online. Launched for modern gamers, it offers slots, table games, live dealer experiences, and more from top software suppliers. The platform offers safe payment options, smartphone compatibility, and easy navigation. Casino Friday review offers significant bonuses, promotions, and a rewards program to engage customers and improve gameplay. Online gamers like its fair play and strong customer service.`,
+      // `p2`,
+      // `p3`,
     ],
     register: {
-      title: "Registration Process: Lucky Dreams Casino Sign Up Bonus",
+      title: "Casino Friday Night Registration Process",
       text: [
-        `To join the huge army of fans of Casino Lucky Dreams, you need to register. This process is standard and takes only a few minutes:`,
-        `After you click the Register button, a letter with a special link will be sent to your email address. Follow this link to complete the process of creating a new unique account.`,
-        `You are not required to activate Lucky Dreams Casino bonus codes upon registration. This can also be done when making subsequent deposits. When filling out the application for replenishment of the balance, you will be asked to enter a special promo code.`,
+        `Casino Friday is easy to start. Create an account using these steps:`,
+        // `p2`,
+        // `p3`,
       ],
       list: [
-        "Go to the main page of the official website via a computer or mobile device;",
-        "Click the Join Now link to open the registration form;",
-        "Enter a valid email address that only you use;",
-        "Create a strong and secure password to protect your account from unauthorized access;",
-        "Go to the next registration page and fill out the form with your personal data;",
-        "In the special field, enter Lucky Dreams Casino no deposit bonus codes to activate additional rewards;",
-        "Check the correctness of the entered information to avoid mistakes;",
-        "Confirm your agreement with the terms and conditions of the online casino.",
+        "Visit the Casino Friday website.",
+        "Click on the 'Sign Up' or 'Register' button.",
+        "Enter your email address and create a secure password.",
+        "Provide your personal information (e.g., name, date of birth, address).",
+        "Select your preferred currency and country.",
+        "Accept the terms and conditions.",
+        "Complete the registration and verify your account if required.",
       ],
     },
     signIn: {
-      title: "Login: Lucky Dreams Online Casino Review",
+      title: "About Casino Friday Login",
       text: [
-        `As you can see, the procedure for creating a Lucky Dreams Casino login is very simple and does not require much time from players. After confirmation by email, you will be redirected to the main page again.`,
-        `Now press the Login button. Enter the valid email address and password used at the time of registration. This gives full access to your account to make the first deposit, activate bonuses, and start playing for real money.`,
+        `Casino Friday login is easy and safe for users. Log in to the official web page by clicking "Login" at the top right. To avoid login troubles, enter your current email address and passcode accurately. Friday Casino login may provide two-factor authentication in account settings for further protection. Password recovery is available on the platform to assist you get back in. Use the official website to log in for optimal security.`,
+        // `p2`,
         // `p3`,
       ],
       // list: ["li1", "li2", "li3"],
     },
-    verification: {
-      title: "Verification: Lucky Dreams Casino Logo",
-      text: [
-        `After you wager the welcome reward or Lucky Dreams Casino no deposit bonus, and also receive the desired winnings, you will probably want to withdraw the money. To do this, all casino clients are required to go through the verification procedure.`,
-        `Verification is a standard and mandatory process for all online gambling services today, and Lucky Dreams Online Casino is no exception. Therefore, immediately after completing registration, you can confirm your account. To do this, open your account, go to the page with your personal data and fill in the empty fields. Additionally, you will need to send a scanned copy or photo of your identity documents. Use the appropriate prompts on the verification page or contact support if you have any problems.`,
-        // `p3`,
-      ],
-    },
+    // verification: {
+    //   title: "VerificationTitle",
+    //   text: [`p1`, `p2`, `p3`],
+    // },
     depositMethods: {
-      title: "Deposit Methods: Lucky Dreams Casino Askgamblers",
+      title: "Deposit Methods",
       text: [
-        `A significant advantage of this popular gaming platform in Canada is the ability to make deposits using a variety of payment instruments:`,
-        `At the same time, the variety of available cryptocurrency systems will pleasantly surprise any player. The minimum deposit size is from CAD 20 and directly depends on the selected payment instrument. No transaction fees are required.`,
+        `Casino Friday 2025 offers a variety of safe deposit choices so players may immediately load their accounts. Approved strategies call for cards (Visa and Mastercard) with a minimum deposit of C$10 and a maximum of C$2,000. With rapid processing, other e-wallet choices including Jeton, MiFinity, and Luxonpay provide deposits ranging from C$10 to C$4,000. Perfect for individuals who would like vouchers, paysafe cards allow rapid payments ranging from C$10 to C$500. `,
+        `With a minimum deposit of C$20 and a maximum of C$4,000, aficionados for cryptocurrencies can deposit Bitcoin, Ethereum, Litecoin, or any supported currency. These choices guarantee for all players ease and versatility.`,
       ],
-      list: [
-        "Interac;",
-        "Visa;",
-        "Mastercard;",
-        "Mifinity;",
-        " Neosurf;",
-        "Much Better;",
-        "CashtoCode;",
-        "Astropay;",
-        "Jeton;",
-        "Flexepin;",
-        "Crypto.",
-      ],
+      // list: ["li1", "li2", "li3"],
     },
     withdrawalMethods: {
-      title:
-        "Withdrawal Methods: Lucky Dreams Casino 50 Free No Deposit Bonus Codes",
+      title: "Casino Friday Withdrawal Methods",
       text: [
-        `It is recommended to withdraw winnings using the same systems through which you make a deposit. There are many options to choose from:`,
-        `There are more than 10 cryptocurrency systems to choose from, through which you can collect your winnings. The minimum transaction amount is CAD 30. As for Lucky Dreams Casino withdrawal time, it varies from several hours to several banking days.`,
+        `For most choices, Casino Friday online provides many withdrawal alternatives together with instantaneous processing. For sums between C$20 and C$4,000, players can withdraw using bank transfer. Starting at C$20, e-wallets such Jeton, MiFinity, and Luxonpay let you withdraw C$4,000 maximum each transaction.`,
+        `Starting at C$30 with a maximum of C$4,000, cryptocurrency withdrawals supporting popular choices like Bitcoin and Ethereum start from Every approach is meant to guarantee fast and hassle-free access to earnings, so fulfilling the wants of gamers all around.`,
       ],
-      list: ["Interac;", "Inpay;", "Mifinity", "Crypto."],
+      // list: ["li1", "li2", "li3"],
     },
   },
   licenses: {
-    title: "Licenses: Lucky Dreams Casino Promo Code Free Spins",
+    title: "Licenses",
     text: [
-      `Many novice gamblers ask a fair and logical question: is Lucky Dreams Casino legit? Yes. This is a legal casino that operates on the basis of a valid and reputable Curacao license.`,
+      `Is Casino Friday legit? CasinoFriday is operated by 1Up Services (CY) Ltd., registered in Cyprus under company number HE409378, with its address at Avlonos, 1 Maria House, 1075 Nicosia, Cyprus. The operator holds online gambling licenses issued by the Estonian Tax and Customs Board, specifically license numbers HKL000359 and HKT000059.`,
       // `p2`,
     ],
-    security: "Security: Lucky Dreams Sister Casino",
+    security: "Lucky Friday Casino Security",
     securityText: [
-      `The site has an all-encompassing security system, which includes SSL encryption, stringent privacy policy, KYC rules and principles, protection of payment transactions, and many others. So, personal information is safe, and you'd enjoy your favorite gambling games with all your heart`,
+      `The platform stresses player security by utilizing modern encryption technology to preserve confidential and bank data. On top of that, CasinoFriday operates under licenses from respectable organizations, assuring adherence to high regulatory requirements and fair gaming procedures.`,
       // `p2`,
     ],
-    software: "Software Technologies: No Deposit Codes For Lucky Dreams Casino",
+    software: "Casino Friday Affiliates and Software Technologies",
     softwareText: [
-      `The Canadian casino cooperates with many leading providers. When choosing games, you can use the search function by the software provider. Here are the projects of such brands as BetSoft, Atmosfera, Belatra Games, BGaming, Evolution Gaming. Ezugi and many others.`,
+      `To provide a great gaming experience, Friday Casino  works with a wide spectrum of respected software companies. Among notable partners include Microgaming, NetEnt, Play'n GO, Pragmatic Play, Evolution Gaming, and Yggdrasil. This cooperation guarantees a great range of premium games covering live dealer choices, table games, and slots.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "App: Lucky Dreams Mobile Casino",
+    title: "Casino Friday App",
     text: [
-      `Currently, it is not possible to install the Lucky Dreams Casino app. However, because of this, you should not get upset and give up the idea of ​​​​playing in a casino on a mobile device. After all, the web platform is developed in HTML5 format. This makes the site fully adapted for playing on any devices and operating systems.`,
+      `Although Casino Friday does not have a specific mobile app, its website is totally mobile browser friendly. Without further downloads, this design lets users easily access and enjoy the whole spectrum of casino games on many devices, including tablets and smartphones.`,
       // `p2`,
     ],
-    languages: "Languages: Lucky Dreams Casino Free Spins",
+    languages: "Languages",
     languagesText: [
-      `In addition to Canada, this service is presented in several other countries and regions. At the bottom of the main menu, you can find a region switcher, which also changes the interface language: English, French, Norwegian, German, Finnish, Arabic, etc.`,
+      `Its Friday Casino presents its platform in several languages, including English, Finnish, Norwegian, and Japanese, serving a worldwide audience. For players from many areas, this multilingual support improves accessibility and offers a user-friendly interface.`,
       // `p2`,
     ],
-    currencies: "Currencies",
+    currencies: "Casino Friday Reviews of Currencies",
     currenciesText: [
-      `The main game currency is Canadian dollars. All transactions on the site are carried out in this currency. However, Canadian players can also use crypto wallets, which makes the gambling experience even more convenient and safe.`,
+      `To serve its varied player base, Casino Friday supports a range of currencies. Accepted currencies include Euros (EUR), Canadian dollars (CAD), Norwegian krone (NOK), and New Zealand dollars (NZD). This adaptability lets players handle their accounts and transactions in the currency of choice.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play: Lucky Dreams Casino Codes",
+    title: "Casino Friday Games to Play",
     text: [
-      `To get bright emotions and unforgettable impressions, players choose their favorite gambling entertainment. This site offers an amazing and diverse choice thanks to cooperation with leading providers of gaming software. Before you start spending your own money, activate Lucky Dreams Casino promo code and get generous rewards. With the help of play money and free spins, you will be able to place bets with real chances of winning.`,
+      `Casino Friday has an extensive catalog of games for gamblers. An outline of game possibilities follows:`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Slot Machines",
+        heading: "Slots",
         text: [
-          `After receiving Lucky Dreams Casino 50 free spins, you can use them in your favorite slot games. The site presents an amazing collection of entertainment, where you will choose from several thematic categories. The service has a convenient search function by provider. Therefore, if you are interested in games from a certain developer, you can find them in just a few clicks.`,
+          `Platform slot games fit all sorts of enthusiasts. The range from 3x3 to 5x3 has something for everyone. The creative Megaways slots at Casino Friday feature dynamic reels and hundreds of ways to win. Bonus buys, cluster payouts, and cascade symbols increase thrill and earnings. Among the notables are "Sweet Bonanza," "Gates of Olympus," and "Book of Dead." From simple gameplay to intricate themes, the slot collection provides countless entertainment value.`,
           // `p2`,
           // `p3`,
         ],
@@ -150,27 +135,54 @@ export const content = {
       {
         heading: "Table Games",
         text: [
-          `If you prefer games that allow you to use Lucky Dreams Casino $100 no deposit bonus to win real money through a careful strategy, choose the Table Games category. There you will find fantastic entertainment options in which a thought-through strategy is needed at each turn, as well as sheer luck.`,
+          `For those who enjoy classic table games, Casino Friday features numerous. Blackjack, Roulette, and Baccarat may be played in many variants with varying skill levels and strategies. These games provide unique rules and betting options together with personalized gameplay. Among the various games available to keep enthusiasts occupied are Blackjack, roulette, and baccarat.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
-    ],
-    gamesRightColumn: [
       {
         heading: "Live Casino",
         text: [
-          `The live casino section deserves special attention. These are special games with real dealers that take place online. You will watch the dealer work directly through the screen of your device.`,
-          `The selection of games with live dealers here is incredible. Canadian players can play Sic Bo, Baccarat, roulette, blackjack, poker, Game Shows and much more. Get an incredible experience and enjoy the modern format of gambling.`,
+          `Live Casino Friday brings the casino floor right before players' screens. This function runs Blackjack, Roulette, Baccarat, and poker in real time under friendly dealers. On the platform, interactive game shows provide an entertaining twist for casino entertainment. Like land-based casinos, gamers may engage with dealers and other players, therefore generating a social and immersive experience.`,
+          // `p2`,
           // `p3`,
         ],
         //  list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Tournaments",
+        heading: "Video Poker",
         text: [
-          `You can get a special Lucky Dreams Casino bonus or compete for the main prize by taking part in regular tournaments. On the site you will find a special section where all the detailed information about current and upcoming tournaments for players is displayed. So you can choose your favorite competition, take a place among the participants and win solid prizes.`,
+          `For those who like a mix of chance and technique, Casino Friday offers a great assortment of video poker games. Popular choices like "Jacks or Better" and "Deuces Wild," let players participate in games combining the fast-paced action of slot machines with classic poker gaming. Both casual players and poker aficionados will find these games to be a fulfilling challenge as they let one create strategy and make decisions that affect the result.`,
+          // `p2`,
+          // `p3`,
+        ],
+        //  list: ["li1", "li2", "li3"],
+      },
+    ],
+    gamesRightColumn: [
+      {
+        heading: "Jackpot Games",
+        text: [
+          `The jackpot part of Casino Friday is a great place for gamers looking for huge payouts. With a range of jackpot games featuring progressive choices, this category gives the possibility to win rewards that may change your life. With every play, progressive jackpots expand to provide constantly rising reward pools until a lucky player strikes the winning combo. Among those looking for large payouts, these games are exciting and high-stakes favorites.`,
+          // `p2`,
+          // `p3`,
+        ],
+        //  list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "First Person Games",
+        text: [
+          `Casino Friday presents first person games, a contemporary variation on traditional table games. Players of popular games including Blackjack, Roulette, and Baccarat in a single-player format may get great immersion experience from these 3D reproductions. Perfect for those who want a more subdued, more concentrated gaming experience, these games offer a genuine casino setting with amazing visuals and fluid animations.`,
+          // `p2`,
+          // `p3`,
+        ],
+        //  list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Scratch Cards and Pull Tabs",
+        text: [
+          `Casino Friday Canada presents pull tab games and scratch cards for fast and simple entertainment. Players who desire a simple gaming experience free of complicated rules will find these quick-win choices perfect. While still giving chances for rewards, scratch cards and pull tabs offer a welcome change from conventional casino games and produce quick results.`,
           // `p2`,
           // `p3`,
         ],
@@ -179,49 +191,34 @@ export const content = {
     ],
   },
   support: {
-    title: "Support",
+    title: "Casino Friday Casino Support",
     text: [
-      `To resolve any issues that arise, you can contact the support service through several communication channels:`,
-      `Specialists always try to respond as quickly as possible.`,
+      `The casino offers strong customer Casino Friday support via several outlets. Players may access the support team by email at support@casinofriday.com or by live chat for instant help. The support services are made to quickly answer player questions and problems, therefore guaranteeing a flawless and fun gaming environment.`,
+      // `p2`,
     ],
-    list: ["e-mail;", "24-hour online chat;", "FAQ section."],
+    // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Bonuses and Promotions: Lucky Dreams Casino No Deposit Bonus Code",
+    title: "Friday Casino Bonuses and Promotions",
     text: [
-      `Apart from the sweet gaming offers, you may also trigger various Lucky Dreams Casino bonuses. There are promotions such as new and regular customer bonuses to choose from. Kick off with a welcome bonus package, and then tire yourself with the repetitive retrieval of your next gambit at the site!`,
+      `To improve how to play for both new and current players,there are some Friday Casino promotions and specials. The present offerings are summed here:`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Welcome Bonus: Lucky Dreams Casino Erfahrungen",
+        heading: "Casino Friday Welcome Bonus",
         text: [
-          `You will not be able to receive a Lucky Dreams Casino no deposit bonus for registration. However, do not be upset. Instead, the service offers an amazing package of welcome rewards for a minimum deposit:`,
-          `You don't need to enter any promo codes when you activate your first bonus. All subsequent bonuses have corresponding activation codes.`,
-          `The minimum deposit is only CAD 20. This is enough to qualify for a generous reward.`,
-        ],
-        list: [
-          "100% up to CAD 500 and 100 free spins for the first deposit;",
-          "100% up to CAD 500 and 50 free spins for the second deposit;",
-          "50% up to CAD 1000 and 50 free spins for the third deposit;",
-          "25% up to CAD 2000 and 100 free spins for the fourth deposit;",
-          "20% up to CAD 6,000 and 200 free spins on your fifth deposit.",
-        ],
-      },
-      {
-        heading: "High Roller Welcome Package",
-        text: [
-          `For the high rollers and big bakers, the casino offers you the chance to claim a different type of welcome bonus. In this case, you will be required to make five deposits to claim a total of CAD 800, plus an additional cashback of 10% with no wagering requirements. Just keep in mind that your lowest deposit has to be at least CAD 500.`,
-          // `p2`,
+          `Casino Friday kindly welcomes fresh players with a tempting offer to start their gaming adventure. On their initial deposit, players get a 100% match bonus of up to C$500, therefore doubling the money available to explore the large gaming library of the platform. New players also get 200 free spins, which are split up as 20 spins daily over ten days. `,
+          `This guarantees players have several chances to enjoy highly chosen games and maybe win large. One must minimum deposit C$20 to be eligible for the incentive. For those ready to explore Casino Friday's offers, the fair 30x wagering requirement associated with Winnings from the free spins makes this attractive promotion.`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Monday Boost",
+        heading: "Live Casino Welcome Bonus",
         text: [
-          `In addition to welcome rewards, you can also take advantage of other great offers. Every Monday, the Canadian casino offers a Boost. To do this, it is enough to deposit CAD 30 or more, and get 77 free spins.`,
-          // `p2`,
+          `CasinoFriday has created a unique incentive just to improve the Live Casino experience for players of live dealer games. On their initial deposit, players may earn a 100% match Casino Friday bonus of up to C$500, therefore enabling them to participate in real-time games such Blackjack, Roulette, and Baccarat with more cash. `,
+          `With experienced dealers and interesting game presentations, this bonus offers a great chance to enjoy the active and immersive Live Casino part. Since only one Welcome Bonus can be used, players should be aware they have to pick between the Live Casino Welcome Bonus and the conventional one. This exclusive deal guarantees live gambling aficionados may maximize their initial investment and play their preferred games.`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
@@ -229,36 +226,18 @@ export const content = {
     ],
     rightColumnContent: [
       {
-        heading: "Wild Wednesday",
+        heading: "SpinBooster and Casino Friday Freespins",
         text: [
-          `On Wednesdays, an unexpected surprise awaits you. To do this, you only need to make a minimum deposit. The prizes are as unpredictable as possible each time. Therefore, replenish your game balance and collect your gift. The promotion is valid constantly, so every Wednesday you can collect rewards again and again.`,
-          // `p2`,
+          `Just by playing their preferred slot games, the SpinBoosterTM rewards system at Casino Friday provides players with an interesting approach to get more free spins. A progress meter starts to fill in as players turn the reels. Players level up and are given free spins according to their tastes when the bar is full.`,
+          `This dynamic aspect offers a different sense of development and accomplishment and keeps gameplay interesting and gratifying. The Casino Friday free spins from SpinBoosterTM must be utilized within 24 hours after credit and have a fair 30x wagering demand. This creative approach guarantees that gamers' loyalty and platform engagement are always rewarded regularly.`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Super Weekend",
+        heading: "Loyalty Program and Casino Bonus Black Friday",
         text: [
-          `On weekends, there is a special promotion for those who want to get a reload bonus. The conditions for participation are as simple as possible. You need to make a deposit of CAD 30, which will allow you to receive a 66% bonus on the deposit amount.`,
-          // `p2`,
-          // `p3`,
-        ],
-        // list: ["li1", "li2", "li3"],
-      },
-      {
-        heading: "Loyalty Program",
-        text: [
-          `New members automatically receive the first level of the loyalty program - Atlantic City. Then you play, make deposits and earn loyalty points. You can then exchange these points for game money, receive special rewards and personal prizes.`,
-          `The highest level is Las Vegas. To get it, you need to collect at least 100,000 loyalty points.`,
-          // `p3`,
-        ],
-        // list: ["li1", "li2", "li3"],
-      },
-      {
-        heading: "VIP Program",
-        text: [
-          `New and regular gamblers should definitely know about the special VIP program that is available at this online casino. You can become a VIP member by special invitation. The corresponding status will provide you with higher limits and fast withdrawals, a personal VIP manager, invitations to exclusive events, special gifts, VIP tournaments and much more.`,
+          `For dedicated players, Casino Friday's Loyalty Program presents great benefits. Members ensure more value from their games by enjoying up to 20% weekly cashback credited without wagering criteria. Along with access to special tournaments, cash drop promotions, and Casino Friday no deposit bonus, enhanced bonuses and free spins with less limitations are also offered. Customized service provided by seasoned team members guarantees specific help for every loyalty member. Participation in the program is by invitation; participants should choose to be considered by opting in to get correspondence.`,
           // `p2`,
           // `p3`,
         ],
@@ -267,6 +246,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "FAQ",
+    title: "FAQ: Casino Friday Askgamblers",
   },
 };

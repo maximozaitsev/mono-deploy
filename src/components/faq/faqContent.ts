@@ -1,19 +1,52 @@
 export const faqs = [
   {
-    question: "What license does the online casino operate under?",
-    answer: "This is a valid Curacao license.",
-  },
-  {
-    question: "At what age do you acquire eligibility to enroll on the site?",
-    answer: "You must be 18 years and at least a day of age.",
-  },
-  {
-    question: "What is the minimum deposit?",
-    answer: "The minimum deposit at the site is CAD 20.",
-  },
-  {
-    question: "What welcome bonus does the casino offer?",
+    question: "What is the minimum age to play at CasinoFriday?",
     answer:
-      "It's a package of 5 deposit bonuses for regular players and high rollers.",
+      "Players must be at least 18 years old or the legal gambling age in their jurisdiction to register and play.",
+  },
+  {
+    question: "Can I set limits on my account?",
+    answer:
+      "Indeed, Casino Friday provides options to control deposit, loss, session, and wager limitations for responsible gambling.",
+  },
+  {
+    question: "Are there fees for deposits or withdrawals?",
+    answer:
+      "CasinoFriday does not charge fees for deposits or withdrawals, but your payment provider might.",
+  },
+  {
+    question: "Can I play for free at Casino Open on Good Friday?",
+    answer:
+      "Yes, many games at CasinoFriday offer a demo mode, allowing you to play for free without wagering real money.",
+  },
+  {
+    question: "Is live chat support available 24/7?",
+    answer:
+      "Live chat is available during specified hours. Check the website for exact support availability in your region.",
+  },
+  {
+    question: "How can I verify my account?",
+    answer:
+      "To verify, upload proof of identity, address, and payment method through the secure verification section on your profile.",
+  },
+  {
+    question: "Does CasinoFriday offer tournaments?",
+    answer:
+      "Indeed, participants may take part in events with prize money and leaderboards for extra benefits.",
+  },
+  {
+    question: "Are progressive jackpots available?",
+    answer:
+      "CasinoFriday features a selection of progressive jackpot games like Mega Moolah, where prize pools grow with each play.",
+  },
+  {
+    question: "Can I save my favorite games?",
+    answer:
+      "Yes, you can mark games as favorites for quick access through your profile or the game menu.",
+  },
+  {
+    question: "How quickly are account verifications processed?",
+    answer:
+      "Verifications are typically completed within 24-72 hours, depending on the volume of requests.",
   },
 ];
