@@ -21,6 +21,11 @@
     background-position: right 20px center;
   }
 
+  @media (max-width: 900px) {
+    background-size: 48% auto;
+    background-position: right 5px center;
+  }
+
   @media (max-width: 768px) {
     padding-top: 20.6rem;
     height: auto;

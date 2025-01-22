@@ -8,7 +8,7 @@ const PlayIcon: React.FC = () => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <defs>
-      <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <linearGradient x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="0%" stopColor="#b79c67" />
         <stop offset="100%" stopColor="#fbe3a6" />
       </linearGradient>
