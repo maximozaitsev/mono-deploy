@@ -1,52 +1,20 @@
 export const faqs = [
   {
-    question: "Is Stardust Casino legal in Ontario?",
+    question: "How do I activate the welcome bonus? ",
     answer:
-      "Yes, Stardust Casino is legal and operates under an agreement with iGaming Ontario, part of the Alcohol and Gaming Commission of Ontario (AGCO).",
+      "Register, make a deposit and the bonus will be added to your account instantly.",
   },
   {
-    question:
-      "What types of games are available at Stardust Casino New Jersey?",
-    answer:
-      "Stardust Casino offers a variety of games, including slots, table games, live dealer games, and video poker.",
+    question: "How much can I deposit to actively trade?",
+    answer: "The minimum deposit is CA$10.",
   },
   {
-    question: "Is there a Stardust Casino phone number?",
-    answer:
-      "You can reach customer support via email at support@on.stardustcasino.com or through the live chat feature on the website.",
+    question: "How many days does it take to withdraw funds? ",
+    answer: "Depending on the method, it will take from 1 to 3 business days.",
   },
   {
-    question: "What is the minimum deposit amount?",
-    answer: "The minimum deposit amount at Stardust Casino is C$10.",
-  },
-  {
-    question: "Are there any mobile apps available?",
+    question: "Is there such a thing as “crypto support”? ",
     answer:
-      "Yes, Stardust Casino Las Vegas offers mobile apps for both iOS and Android devices, providing access to a wide range of games.",
-  },
-  {
-    question: "How long does it take to process withdrawals?",
-    answer:
-      "Withdrawal processing times vary depending on the method used, typically ranging from 1 to 4 business days.",
-  },
-  {
-    question: "What Stardust Casino chips or currencies are accepted?",
-    answer:
-      "Stardust Resort and Casino accepts Canadian Dollars (CAD) for all transactions.",
-  },
-  {
-    question: "Is there a loyalty program or Stardust Casino bonus code?",
-    answer:
-      "The venue does not publicly advertise a Stardust Casino promo code or loyalty program on their official website.",
-  },
-  {
-    question: "How can I set deposit limits?",
-    answer:
-      "You can manage your level of play by setting deposit limits through the self-help tools available in your account settings.",
-  },
-  {
-    question: "What should I do if I encounter technical issues?",
-    answer:
-      "For technical support, visit the support portal or contact customer service via email or live chat for assistance.",
+      "Not yet, but they found out about some of the most common e-wallets.",
   },
 ];

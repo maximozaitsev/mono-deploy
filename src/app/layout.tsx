@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "stardust-casino-ca.com";
-const ogTitle =
-  "Stardust Casino Canada – Premier Online Gaming with Exciting Bonuses";
-const ogSiteName = "Stardust Casin";
+const url = "colosseum-casino.com";
+const ogTitle = "Colosseum Casino – Bonuses, Games and Privileges for Players";
+const ogSiteName = "Colosseum Casino";
 const metaDescription =
-  "Discover endless entertainment at Stardust Casino Canada with slots, table games, and live dealer options. Join now for amazing bonuses and a seamless, secure gaming experience!";
+  "Join Colosseum Casino and get up to CA$750 in welcome bonus! Over 1000 games, VIP program, 24/7 support, convenient deposits and withdrawals. Play safe and enjoy the privileges of Casino Rewards!";
 
 const locale = "en-CA";
 const language = "English";
