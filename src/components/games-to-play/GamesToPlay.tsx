@@ -30,6 +30,23 @@ export default function GamesToPlay() {
           ]}
           rightColumnContent={[
             {
+              heading: content.gamesToPlay.leftColumnContent[1].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.gamesToPlay.leftColumnContent[1].text[0],
+                },
+                {
+                  type: "list",
+                  content: content.gamesToPlay.leftColumnContent[1].list || [],
+                },
+                {
+                  type: "text",
+                  content: content.gamesToPlay.leftColumnContent[1].text[1],
+                },
+              ],
+            },
+            {
               heading: content.gamesToPlay.gamesRightColumn[0].heading,
               items: [
                 {

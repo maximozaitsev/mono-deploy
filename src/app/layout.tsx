@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "colosseum-casino.com";
-const ogTitle = "Colosseum Casino – Bonuses, Games and Privileges for Players";
-const ogSiteName = "Colosseum Casino";
+const url = "bigboostcasino-online.com";
+const ogTitle =
+  "Big Boost Casino Canada: Fair 2025 Review about Bonuses and Payouts";
+const ogSiteName = "Big Boost Casino";
 const metaDescription =
-  "Join Colosseum Casino and get up to CA$750 in welcome bonus! Over 1000 games, VIP program, 24/7 support, convenient deposits and withdrawals. Play safe and enjoy the privileges of Casino Rewards!";
+  "Big Boost Casino in Canada offers a 100% gift of up to С$1000. Explore its game choice, payout speed, wagering requirements, and games available for Canadian players in 2025.";
 
 const locale = "en-CA";
 const language = "English";

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import licenceImage from "../../../public/block-images/licence.webp";
+import licenceImage2 from "../../../public/block-images/licence2.webp";
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { content } from "@/content/content";
 import styles from "./LicensesSection.module.scss";
@@ -8,17 +9,38 @@ export default function LicensesSection() {
   return (
     <section className={`${styles.licensesSection} section`}>
       <div className="container">
-        <h2 className="h3-heading">{content.licenses.title}</h2>
+        <h2 className={`h3-heading ${styles.headingMobile}`}>
+          {content.licenses.title}
+        </h2>
         <div className={styles.licensesContent}>
           <div className={styles.leftContent}>
+            <h2 className={`h3-heading ${styles.headingDesktop}`}>
+              {content.licenses.title}
+            </h2>
             <p className="paragraph-text">{content.licenses.text[0]}</p>
           </div>
-          <div className={styles.rightImage}>
+          <div
+            className={styles.rightImage}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "41px",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <Image
               src={licenceImage}
               alt="Licenses"
-              width={424}
-              height={117}
+              width={213}
+              height={213}
+              quality={100}
+            />
+            <Image
+              src={licenceImage2}
+              alt="Licenses"
+              width={376}
+              height={104}
               quality={100}
             />
           </div>
@@ -31,10 +53,6 @@ export default function LicensesSection() {
                 {
                   type: "text",
                   content: content.licenses.securityText[0],
-                },
-                {
-                  type: "text",
-                  content: content.licenses.securityText[1],
                 },
               ],
             },
