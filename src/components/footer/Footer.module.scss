@@ -42,7 +42,7 @@
             cursor: pointer;
 
             @media (max-width: 768px) {
-              scale: 0.89;
+              scale: 0.85;
             }
           }
         }
@@ -99,7 +99,8 @@
 
           img {
             position: static !important;
-            margin-top: -6px !important;
+            margin-top: -1px !important;
+            margin-bottom: 6px !important;
           }
         }
 

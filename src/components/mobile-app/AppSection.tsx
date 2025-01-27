@@ -8,6 +8,7 @@ import { useNavigateWithPreloader } from "@/utils/navigationUtils";
 import { content } from "@/content/content";
 
 import styles from "./AppSection.module.scss";
+import List from "../__common__/list/List";
 
 export default function AppSection() {
   const { handleNavigation } = useNavigateWithPreloader();
@@ -24,7 +25,13 @@ export default function AppSection() {
               className={styles.imageMobile}
               quality={100}
             />
-            <p className="paragraph-text">{content.app.text[0]}</p>
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "24px" }}
+            >
+              <p className="paragraph-text">{content.app.text[0]}</p>
+              <List items={content.app.list} />
+              <p className="paragraph-text">{content.app.text[1]}</p>
+            </div>
             <div className={styles.buttons}>
               <button
                 className="google-play"

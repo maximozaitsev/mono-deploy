@@ -1,42 +1,47 @@
 export const faqs = [
   {
-    question: "Are There no-deposit bonuses in Big Boost Casino?",
+    question: "Is there access to online casino games?",
     answer:
-      "No, all promotions are based on deposits. Big Boost Casino no deposit bonus may lead to unfair use of accounts, so the casino doesn’t use this option. ",
+      "The directions to black bear casino does not offer electronic games for customers.",
   },
   {
-    question: "What is the minimum deposit in Big Boost Casino?",
+    question: "What benefits do customers get from registering?",
     answer:
-      "The minimum deposit in Canada is capped at С$20 for all the payment methods. This sum is also enough to activate most bonuses. ",
+      "By registering, you get access to room reservations, as well as ordering food and reserving tables.",
   },
   {
-    question: "Can I self-exclude from Big Boost?",
+    question: "How do I claim my winnings?",
     answer:
-      "Yes, you can freeze your account, exclude for good, or set deposit limitations. The casino promotes responsible gaming.",
+      "After presenting an ID at the casino cashier, players can claim their winnings in cash.",
   },
   {
-    question: "What if I lose access to my account?",
+    question: "Do new players receive bonus offers?",
     answer:
-      "Contact support via email to restore your profile. You can have only one account in this casino, so creating a new one is not an option. ",
+      "All registered guests are eligible for membership in the Épique Rewards program.",
   },
   {
-    question: "What bonuses are available for registered users?",
+    question: "Can I book a room at Black Bear Casino Resort online?",
     answer:
-      "All new players can receive the casino welcome bonus. After that, benefit from monthly events, cashback, free spins, and seasonal events/tournaments. ",
+      "Yes, you can book a room at the resort directly through the resort’s official website. The site allows you to choose your dates, room type, and any extra amenities you may need.",
   },
   {
-    question: "Are there reload bonuses to try at Big Boost?",
+    question: "Does Black Bear Casino Resort offer live entertainment?",
     answer:
-      "In 2025, Canadian players have to reload bonuses. You can only claim regular cashback and welcome bonus, and take part in tournaments/prize draws. ",
+      "Yes, the resort regularly hosts live concerts, comedy shows, and other performances at its Otter Creek Event Center. Check their website for the latest schedule of events.",
   },
   {
-    question: "How do I know if I completed the wagering requirement?",
+    question: "Does the resort have any family-friendly activities?",
     answer:
-      "Keep your eye on the withdrawal section. You won’t be able to apply for a payout until you wager all bonuses. ",
+      "While the casino is geared toward adults, the resort offers family-friendly options like a golf course, restaurants, and seasonal events. Children are not allowed in the gaming areas, but are welcome in the public areas and seating areas.",
   },
   {
-    question: "Can I play progressive jackpots at Big Boost?",
+    question: "Does the resort have free parking?",
     answer:
-      "Yes, jackpot games are available and include the most popular titles. For example, you can try Mega Moolah and its variations.",
+      "Yes, Black Bear Casino Resort offers free parking, including spaces for larger vehicles like RVs. Accessible parking is also available for guests with disabilities.",
+  },
+  {
+    question: "Aside from the casino, are there any restaurants at the resort?",
+    answer:
+      "Yes, the resort has a variety of dining options including Seven Fires Steakhouse, a buffet, Sage Deli and a golf course bar. Each location offers a unique menu to suit every taste.",
   },
 ];

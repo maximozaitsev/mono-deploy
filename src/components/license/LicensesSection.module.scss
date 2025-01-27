@@ -13,7 +13,6 @@
 
     @media (max-width: 768px) {
       display: block;
-      // margin-bottom: 24px;
     }
   }
 
@@ -33,13 +32,10 @@
       flex: 1;
       display: flex;
       justify-content: flex-end;
+      align-items: center;
 
       img {
-        margin-right: -100px;
-
-        @media (max-width: 1300px) {
-          margin-right: 0;
-        }
+        width: auto;
       }
     }
   }
@@ -72,12 +68,6 @@
           max-width: 160px;
           width: 100%;
           height: auto;
-
-          &:last-child {
-            max-width: 310px;
-            width: 100%;
-            height: auto;
-          }
         }
       }
     }

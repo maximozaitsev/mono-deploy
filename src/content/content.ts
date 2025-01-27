@@ -1,253 +1,252 @@
+import { list } from "postcss";
+
 export const content = {
-  projectName: "Big Boost Casino",
+  projectName: "Black Bear Casino",
   advantages: {
     // title: "",
-    subTitle: "Advantages and Disadvantages of Big Boost Canada",
+    subTitle: "Black Bear Lodge and Casino Advantages",
     text: [
-      `6,000 games and fair bonus rules are great reasons to try Big Boost Casino Canada. A convenient dark theme and user-friendly design positively influence the experience. And if you play from a mobile device, the platform adapts to the device’s size. Yet, some players may dislike strict withdrawal terms and a lack of sports betting options.`,
+      `Black Bear Casino Resort is the best place in Minnesota for relaxation and also for finding a peaceful experience. Combining warm hospitality with first-class entertainment features makes Black Bear one of the leading vacation destinations for a complete tourist experience. Below is a detailed description of its advantages and disadvantages:`,
     ],
     advantagesTitle: "Advantages:",
     disadvantagesTitle: "Disadvantages:",
     advantages: [
-      "6,000+ titles;",
-      "live casino games;",
-      "responsible gambling measures;",
-      "24/7 support;",
-      "multiple payment methods for Canadians;",
-      "acceptance of cryptocurrencies;",
-      "news and updates on social media.",
+      "More than 1800 slot machines with Texas Hold'em and several specialty blackjack variants",
+      "On-site hotel, restaurants, golf and conference room",
+      "Guests receive points for gaming sessions as part of the Épique Rewards program to exchange for bonuses",
+      "The casino provides a guarantee of safety",
     ],
     disadvantages: [
-      "С$20 minimum withdrawal;",
-      "no withdrawals with Visa or Mastercard;",
-      "sports betting is not available. ",
+      "No online games",
+      "The establishment accepts payments only in cash or cards, which must be used on site",
+      // "li3",
     ],
   },
   about: {
-    title: "Big Boost Online Casino Canada",
-    intro: [
-      "up to С$1,000 welcome bonus;",
-      "VIP Club;",
-      "250 FS for new users.",
-    ],
+    title: "Black Bear Hotel and Casino",
+    intro: ["1800+ Slots", "High-level security", "Loyalty program"],
     description: [
-      `Big Boost Casino offers online casino games and live dealers in Canada. Over the years, this casino has proven its reliability and security to web users. Let’s see how Big Boost works in 2025. This Big Boost Casino review covers key findings about its game selection, welcome bonuses, promotions, and payout conditions.`,
-      // `p2`,
+      `Black Bear Casino Resort operates as a massive entertainment center. It combines a selection of casino games with convenient accommodations and a wide variety of entertainment options. The casino is located in Carlton, Minnesota.`,
+      `Inside the complex, visitors have access to over 1,800 slot machines, as well as blackjack and Ultimate Texas Hold'em table games and bingo entertainment. Hotel guests and visitors to the Seven Fires Steakhouse restaurant can enjoy world-class performances at the Otter Creek Event Center. All types of visitors can enjoy exciting opportunities as the resort operates 24 hours a day.`,
       // `p3`,
     ],
     register: {
-      title: "Big Boost Casino Registration",
+      title: "Black Bear Casino Arcade Registration ",
       text: [
-        `To test the casino on your own, create a personal profile. This way, you will access deposits and withdrawals, bonuses, and real-money games. Follow these steps on the official website of Big Boost:`,
-        `Finally, process your first deposit to start playing and receive the welcome bonus.`,
+        `All visitors to Black Bear Casino Hotel can easily go through a simple registration process. Follow these steps to successfully register:`,
+        `Once the black bear casino concerts registration process is complete, you can proceed to book your accommodation, as well as reserve dining services or tables.`,
         // `p3`,
       ],
       list: [
-        "Click the Signup button. You will find it in the upper corner. ",
-        "Enter the details. The casino asks for your real name, address, and email. Choose your country and set a reliable password. ",
-        "Specify the address details. Enter your address, city, ZIP code, and other required information. The casino also needs your phone number and date of birth. ",
+        "Go to the official website. Visit the Black Bear Casino Resort website and select the booking or registration section.",
+        "Fill out the registration form. You need to provide your name and email address, as well as your phone number and any other required details.",
+        "Confirm your registration. To complete the registration process, confirm your email address if they require additional verification.",
       ],
     },
     signIn: {
-      title: "Log Into Your Profile",
+      title: "Black Bear Casino Hotels Login",
       text: [
-        `You will need an email/phone number and a password for a Big Boost casino login. Note that each person can open only one account at Big Boost. If you forgot your login details, don’t create a new profile, and contact support. `,
-        // `p2`,
+        `After registration, you can log in to your account on the site. Login allows you to use additional features, such as managing reservations and viewing promotions. The black bear casino resort upcoming events login steps:`,
+        `After logging in, you can book rooms and services. Users can also reserve tables in restaurants or gaming areas. Instructions are available in your personal account to help you quickly start using all the features of Black Bear Casino Resort reviews.`,
         // `p3`,
       ],
-      // list: ["li1", "li2", "li3"],
+      list: [
+        "Open the site. Go to the official casino website.",
+        "Enter your account details. In the 'Login' section, enter your registered email and password.",
+        "Confirm your login. Click the appropriate button at the bottom of the form.",
+      ],
     },
     // verification: {
     //   title: "VerificationTitle",
     //   text: [`p1`, `p2`, `p3`],
     // },
     depositMethods: {
-      title: "Deposit Methods",
+      title: "Hotels Near Black Bear Casino Deposit Methods",
       text: [
-        `Canadian players can deposit with crypto, bank cards, and digital payment systems:`,
-        `All deposits are instant and come without fees. To send money, click on the wallet icon in your account and choose the “Add Money” section.`,
+        `Black Bear Casino Resort only allows its customers to make deposits through its physical cashiers. Since online gaming is not available, all financial transactions must be done face to face:`,
+        `Black Bear Casino Resort processes all deposits on-site, since online transactions are restricted. Therefore, guests must have cash on hand or access to ATMs. This approach to payment ensures security, but causes some inconvenience for people who usually use digital payment methods.`,
       ],
       list: [
-        "Interac: from С$20 to С$3,000;",
-        "Visa and Mastercard: from С$20 to С$3,500;",
-        "Interac e-transfer: from С$20 to С$25,000;",
-        "cryptocurrencies: from С$20 to С$50,000.",
+        "Cash: Users must use cash as their primary payment method to receive chips or deposit money into slot machines.",
+        "Credit/Debit Cards: Guests can use their cards at ATMs and to pay bills at restaurants and hotels. However, they cannot use them to fund gambling.",
+        // "li3",
       ],
     },
     withdrawalMethods: {
-      title: "Withdrawal Methods",
+      title: "Black Bear Resort and Casino Withdrawal Methods",
       text: [
-        `Withdrawals in Canada are available with Interac, MuchBetter, Wire Transfer, and cryptocurrencies. The minimum withdrawal is С$20, but you need to complete all the wagering requirements and verify your profile to request the payout. The maximum withdrawal depends on the chosen payment method. `,
-        `Casino needs around 24 hours to process your withdrawal request, but the process may take longer because of your baking system. `,
+        `Black Bear Casino room rates offers its guests simple withdrawal methods, guaranteeing a hassle-free process:`,
+        `Such a clear approach indicates the legality and safety of the gambling platform.`,
       ],
-      // list: ["li1", "li2", "li3"],
+      list: [
+        "Casino cashier: at any time, the player can cash out his chips at the cashier. You must have documents that identify you with you.",
+        "High winnings: in case the credit limit exceeds $ 1,200, the casino fills out IRS forms to comply with the law.",
+        // "li3",
+      ],
     },
   },
   licenses: {
-    title: "Is Big Boost Casino Legit?",
+    title: "Black Bear Casino Winners Licenses",
     text: [
-      `Big Boost Casino is owned by White Star B.V., a company from Curacao. The casino itself is regulated by the Curacao Gambling Commission and Kahnawake Gaming Commission. These jurisdictions have soft rules, but obligate casinos to protect your personal and financial details. Plus, you may be sure that all games have fair RTPs and bonus rules are realistic.`,
+      `Black Bear Casino Resort is owned and operated by the Fond du Lac Band of Lake Superior Chippewa. The casino is fully regulated by the laws and standards set by this independent nation. All casino operations are governed by the Tribal Government Gaming Treaty, which provides extensive guarantees of transparency of operations, as well as ensures fair practices and safety standards. The agreement with the Minnesota state government gives the casino official compliance in its operations and reliability. The principles guarantee safe gaming and guest confidence, which are the hallmarks of the resort's operations.`,
       // `p2`,
     ],
-    security: "Security",
+    security: "Black Bear Casino MN Hotel Rates Security",
     securityText: [
-      `The website uses SSL encryption and other standard measures to safeguard your data from leaks. Additionally, the casino promotes responsible gambling measures to protect you from overspending and gambling addiction. For instance, you can self-exclude and set deposit limitations. `,
-      // `p2`,
+      `Black Bear Casino hotel reservations place special emphasis on ensuring the safety and comfort of its guests. The casino takes a multifaceted approach to security:`,
+      `In this way, they guarantee the safety and comfort of customers, making the resort more reliable.`,
     ],
-    software: "Software Providers",
+    list1: [
+      "24-hour surveillance: The casino has special security cameras that monitor the entire resort 24 hours a day.",
+      "Trained staff: Security guards are responsible for emergencies, as well as for serving guests in need.",
+      "Data protection: The systems used for bookings, as well as rewards programs, are protected to ensure the anonymity of customer information.",
+    ],
+    software: "Black Bear Casino Hotel Promo and Software Technologies",
     softwareText: [
-      `Here, you will find games by the most popular software providers in Canada: Blueprint, Playson, Evolution, Pragmatic Play, Ezugi, Gamomat, Relax Gaming, NetEnt, No Limit, and so on. According to Big Boost casino reviews, all of them provide real-money games with RNG certificates and fair rules. `,
-      // `p2`,
+      `Black Bear Casino Resort aims to provide the best gaming experience with the help of modern technological tools. Although the casino does not offer online gaming, its on-site games are equipped with advanced systems:`,
+      `Thanks to this technological focus, many guests receive fair, exciting and high-quality gaming.`,
     ],
-    // list: ["li1", "li2", "li3"],
+    list: [
+      "RNG (Random Number Generator) technology: makes the payouts of slot machines completely randomized or at least fairly distributed.",
+      "Modern slot machines: some games have touch screens, good graphics and progressive jackpots.",
+      "Loyalty integration: all machines and table games are linked to Épique Rewards to make it easier to monitor player performance.",
+    ],
   },
   app: {
-    title: "Big Boost Casino App Download",
+    title: "Black Bear Casino Carlton Apps",
     text: [
-      `Currently, you can download the Big Boost APK on your Android smartphone. For this, visit the official website of the casino from your mobile device and visit the page “Casino app”. iOS users can access the casino from their mobile browser, as the app is not yet developed. `,
-      // `p2`,
+      `Black Bear Casino Resort has not developed a special application for portable devices. However, the main website of this casino is adapted for mobile devices of any size. Guests can use the site to:`,
+      `The site is multifunctional and informative, so customers will not experience discomfort while using it from a mobile device.`,
     ],
-    languages: "Languages",
+    list: [
+      "Book hotel rooms.",
+      "View the schedule of events and promotions.",
+      "To find detailed information about the services at the resort.",
+    ],
+    languages: "Events at Black Bear Casino Languages",
     languagesText: [
-      `The website supports the English and Canadian French language. Support also uses English to answer your messages. `,
+      `All casino staff speak English. However, there are translators on site, so you can get advice on an individual basis.`,
       // `p2`,
     ],
-    currencies: "Currency",
+    currencies: "Currencies",
     currenciesText: [
-      `According to the terms and conditions, account currencies can be EUR, USD, CAD, NZD, PEN, BRL, NOK, ZAR, INR, MXN, TWD, THB, and JPY. Yet, you can process transactions in crypto and other fiat currency. They will be automatically converted into one of the listed options. `,
+      `The casino accepts only US Dollars (USD) for all payments and transactions.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games, Presented in Big Boost Casino",
+    title: "Games Available to Play at Black Bear Casino Reviews",
     text: [
-      `The game library consists of slots, instant wins, table games, and a live casino section. See which titles to try first according to their popularity.`,
+      `Black Bear Casino Entertainment offers a wide range of games to suit the preferences of all guests. Black Bear Casino Events offers an extensive gaming experience that includes slots, table games and social events such as bingo. Below is a detailed description of the games on offer.`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Slot games",
+        heading: "Slots",
         text: [
-          `You will find over 4,000 slot machines of different genres. Classic slot choices include Classic Coin, Book of Gold, Hot Burning Wins, etc. Meanwhile, there are more unusual sections:`,
-          `You can also search for the most popular slot games, collected in the “Recommended” section. Here, Big Boost presents the most popular titles among players: Big Bad Wolf, Sugar Heaven, Million 777 Bells, Razor Ways, etc.`,
+          `Black Bear Casino has a collection of 1,800 slot machines. Options range from traditional slot machines to modern video slots. The selection of slots suits different budgets from penny games to high-stakes games. The casino offers both progressive jackpots and huge potential prize opportunities for its players.`,
+          `Black Bear Casino Resort review offers separate, brightly decorated slot rooms for your convenience and experience.`,
           // `p3`,
         ],
-        list: [
-          "Magaways. Play in high-volatility slots with 20+ paylines. Winning here is complicated, but the jackpot is higher than ever. Popular megaways are Winter Champions by Relax, 5 Lions Megaways by Pragmatic Play, 3 Lucky Hippos by Pear Fiction, etc. ",
-          "Bonus buy. Buy free spins for real money and get the highest possible chances to win. Among bonus buys, Big Boost offers Money Train 3 by Relax, Sakura Fortune by Quickspin, Razor Returns by Push, Fire Joker by Play’n Go, etc. ",
-          "Epic wins. This section contains all slots, where the maximum jackpot is over 10,000x. If you’re ready for high-volatility risks, try Immortal 5 by Relax, Mustang Gold by Pragmatic, Sweet Bonanza by Pragmatic, Twice as Nice by Octoplay, etc.",
-        ],
+        // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Instant Wins (Crash and Mines)",
+        heading: "Table Games",
         text: [
-          `The “Crash and Mines” section includes instant games with quick wins and easy games. Among them, you will find industry giants and niche games:`,
-          `Instant games are popular due to their unique mechanisms and relaxing gameplay. `,
+          `For those who enjoy a strategic and interactive gaming experience, the casino offers:`,
+          `The combination of friendly staff and action-packed gameplay attracts regulars and newcomers to the table games area.`,
           // `p3`,
         ],
         list: [
-          "Crash games: Money Train 3 and Atlantic Crush by Relax.",
-          "Mines: Mines by Spribe, Mines of Gold by Spinomenal, Turbo Mines by Turbo Games, etc.",
-          "Plinko: Plinko by Gaming Corps, Plinko Dare2Win by Hacksaw, Plinko Rush by Betsoft, etc. ",
-          "Scratch: Scratch a Million by Hacksaw, Scratchy Bit by Spinomenal, and so on.",
+          "Blackjack: Blackjack remains the top choice at the casino, while Free Bet Blackjack and Blazing 7s provide additional entertainment options.",
+          "Ultimate Texas Hold’em: In this game format, players challenge the dealer using standard poker rules.",
+          "Mississippi Stud: A poker-based game with the option to place high stakes bets.",
         ],
       },
     ],
     gamesRightColumn: [
       {
-        heading: "Live Casino",
+        heading: "Bingo",
         text: [
-          `Table games and live shows are available in the live casino section. Here, professional dealers and live-streaming bots conduct games for multiple players in real-time:`,
-          `You can also try baccarat, blackjack, dice games, and other titles with unique gameplay options. Finally, sort live games by provider to find your favorite titles and developers.`,
+          `The spacious bingo halls regularly host prize events, making it one of the favorite spots in the gaming rooms. Bingo offers players both a relaxed atmosphere and an exciting gaming experience. This entertainment is well suited for both solitary and social participants. With its clear instructions, bingo sessions welcome newcomers to gaming events.`,
+          // `p2`,
           // `p3`,
         ],
-        list: [
-          "Shows: Majestic Wheelshow, Crazy Time, Extra Chili Epic Spins;",
-          "Roulette: Mega Roulette, Lightning Roulette, American Roulette;",
-          "Poker: Poker Lobby by Evolution, Poker Teen Patti by EvoPlay, Higher Hand Holden Poker by OneTouch, etc.",
+        //  list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Special Events",
+        text: [
+          `Throughout the year, the casino hosts gaming tournaments and special promotional events that both reward players with prizes and enhance their gaming experience. Black Bear Casino hotel room pictures caters to a variety of preferences with a wide range of gaming options.`,
+          // `p2`,
+          // `p3`,
         ],
+        //  list: ["li1", "li2", "li3"],
       },
     ],
   },
   support: {
-    title: "Support",
+    title: "Black Bear Casino RV Parking Support",
     text: [
-      `The website doesn’t offer a live chat, although most casinos have this feature. Instead, you are offered to use the email address, support@bigboost.com, to write your questions. Alternatively, you will find the “Help” section in the menu. Here, you can read answers to the most popular questions about deposits, withdrawals, accounts, etc. `,
-      // `p2`,
+      `For the convenience of guests, there is a 24-hour support service. You can contact them by phone, via email or by filling out a form on the website. Here are the main contacts for communication:`,
+      `Specialists will help with room reservations, technical issues or provide information about events.`,
     ],
-    // list: ["li1", "li2", "li3"],
+    list: [
+      "Casino phone: +1 (218) 878-2327",
+      "Toll-free number (for the USA and Canada): 1-888-771-0777",
+      "Fax: +1 (218) 878-2414",
+      "Email: blackbearevents@fdlband.org",
+    ],
   },
   promotions: {
-    title: "Bonuses and Promotions: Big Dollar Casino Quickie Boost",
+    title: "Black Bear Casino Bar Bonuses and Promotions",
     text: [
-      `The first bonus you receive in the casino is a welcome promotion. Then, you can take part in regular events, receive cashback bonuses, and take part in the VIP Club with unique perks. `,
+      `Black Bear Casino Online reservations rewards guests with promotional incentives and bonuses that boost both first-time and regular visitor experiences. The resort's promotional efforts serve as its key attractor since they give loyal guests the feeling of appreciation through rewards.`,
       // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Welcome Promotion at Big Boost",
+        heading: "Épique Rewards Program",
         text: [
-          `Make the initial deposit of С$20, and your deposit will be multiplied by 100%. The maximum bonus sum with this promotion is С$1,000. Additionally, you get 250 free spins to play the Gates of Olympus online slot. Note that these free spins will be credited in portions of 50 every day for 5 next days. You have 7 days to spend all free spins. `,
-          `Don’t forget to wager your bonus 35 times before withdrawing your winnings. `,
-          // `p3`,
-        ],
-        // list: ["li1", "li2", "li3"],
-      },
-      {
-        heading: "10% Cashback",
-        text: [
-          `The cashback bonus is available for all registered players. Play casino games on Wednesday from 18 pm to 21 pm, and the 10% cashback will be calculated out of the sum you have wagered. The bonus comes with certain conditions:`,
-          `Other terms and conditions, listed on the site, apply as well. Read them before claiming any promotion. `,
-          // `p3`,
-        ],
-        list: [
-          "the minimum sum to receive is С$5. If you gain less, you won’t receive cashback this time.",
-          "you need to claim the bonus on Thursday, the next day after gaming;",
-          "RNG table games don’t take part in this bonus;",
-          "yo need to wager the cashback 10 times;",
-          "manage to claim your bonus within 24 hours.",
-        ],
-      },
-      {
-        heading: "С$100,000 Monthly Prizes",
-        text: [
-          `Every month, Big Boost conducts an event with real money prizes for the best players. To take part, you need to gamble in eligible games from the Playson software developed during the month. The minimum stake in these games to take part in the promotion is 20 cents. `,
-          `Each dollar you win gives you 10 points on the leaderboard. At the end of the month, the best players receive real money prizes: С$1,000, С$750, С$500, С$200, and so on. Overall, 200 players share the prize pool of С$100,000. Start at the beginning of the month to get the most chances to win. `,
-          // `p3`,
-        ],
-        // list: ["li1", "li2", "li3"],
-      },
-    ],
-    rightColumnContent: [
-      {
-        heading: "VIP Club",
-        text: [
-          `All players of the Big Boost Casino automatically take part in the VIP program. You only need to play games and wager money to collect points and receive the next level. Depending on your level, you will receive unique advantages:`,
-          `The casino doesn’t explain a particular number of points to collect to reach a new level. You only need to wager money and pay for games, and support will notify you once you reach a new VIP level. `,
-          // `p3`,
-        ],
-        list: [
-          "personal manager, available 24/7;",
-          "higher withdrawal limits;",
-          "faster payouts;",
-          "unique bonuses, not available to other players;",
-          "exclusive events.",
-        ],
-      },
-      {
-        heading: "Affiliate Program",
-        text: [
-          `All casino members can earn money with Big Boost. An affiliate program allows you to advertise the casino on your social media, website, blog, and other portals. By inviting new people, you receive either one-time rewards or CPA rewards. Withdrawals are available directly on your casino balance – earn and play games straight away. `,
+          `Black Bear Casino MN Resort offers players bonuses that enhance the experience of both new and returning players. The casino’s promotional offers serve as its key attraction factor. This gives regular guests a sense of appreciation through rewards.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Take Part in Other Tournaments",
+        heading: "Épique Rewards Program",
         text: [
-          `Big Boost announces new tournaments and prize drops every few months. For example, at the beginning of 2025, available events are Cash Showers and the Spinoleague tournament. By taking part and playing eligible games you have a chance to win real money or casino bonuses. Visit the Promotions page regularly to see which events and games are active right now. `,
+          `Black Bear Casino members earn points through its loyalty program, which is given in the form of a cash bonus. These points can be redeemed for:`,
+          `Loyalty program members have access to special invitations to tournaments and promotional events.`,
+          // `p3`,
+        ],
+        list: [
+          "Free play on slots.",
+          "Discounts at restaurants within the resort.",
+          "Merchandise from the resort gift shop.",
+        ],
+      },
+    ],
+    rightColumnContent: [
+      {
+        heading: "Daily and Seasonal Promotions",
+        text: [
+          `The black bear casino resort prices offers a rotating schedule of promotions such as:`,
+          `To show their gratitude, the casino gives guests special birthday treatment in the form of free gaming credits coupled with discounts on meals at their restaurants. Casino bonus and promotional programs create positive feelings of appreciation, which leads to increased guest loyalty.`,
+          // `p3`,
+        ],
+        list: [
+          "Cash and Prize Draws: Luxury merchandise along with substantial prize money are part of these special events.",
+          "Free Play Days: Players are given extra play credits on certain days throughout the week.",
+          "Holiday Events: During the holidays, guests can enjoy special rewards along with holiday-themed promotional events.",
+        ],
+      },
+      {
+        heading: "bonus4Heading",
+        text: [
+          `p1`,
           // `p2`,
           // `p3`,
         ],
@@ -256,6 +255,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "FAQ",
+    title: "CASINO FAQ",
   },
 };

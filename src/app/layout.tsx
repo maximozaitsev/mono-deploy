@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "bigboostcasino-online.com";
+const url = "blackbear-casino.com";
 const ogTitle =
-  "Big Boost Casino Canada: Fair 2025 Review about Bonuses and Payouts";
-const ogSiteName = "Big Boost Casino";
+  "Explore Black Bear Casino Resort: Games, Dining, and Entertainment";
+const ogSiteName = "Black Bear Casino";
 const metaDescription =
-  "Big Boost Casino in Canada offers a 100% gift of up to С$1000. Explore its game choice, payout speed, wagering requirements, and games available for Canadian players in 2025.";
+  "Discover the exciting offerings of Black Bear Casino Resort, including over 1,800 games, luxurious accommodations, and fine dining options. Plan your visit today and experience the ultimate in entertainment and relaxation.";
 
 const locale = "en-CA";
 const language = "English";
