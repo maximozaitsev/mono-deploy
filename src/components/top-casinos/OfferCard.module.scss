@@ -1,5 +1,5 @@
 @import "../../styles/colors.scss";
-@import "../../styles/typography.scss";
+@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .offerCard {
@@ -58,7 +58,7 @@
 
   button {
     margin-top: auto;
-    width: 200px;
+    width: 217px;
     // margin-left: 5px;
   }
 

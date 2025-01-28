@@ -13,11 +13,11 @@ export default function AboutSection() {
         <h1 className="h2-heading white">{content.about.title}</h1>
         <div className="about-content">
           <div className="about-text paragraph-text">
-            <ul>
+            {/* <ul>
               {content.about.intro.map((item: string, index: number) => (
                 <li key={index}>{item}</li>
               ))}
-            </ul>
+            </ul> */}
             {content.about.description.map(
               (paragraph: string, index: number) => (
                 <p key={index} className="paragraph-text">

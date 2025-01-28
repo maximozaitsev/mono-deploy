@@ -1,5 +1,5 @@
 @import "../../styles/colors.scss";
-@import "../../styles/typography.scss";
+@import "../../../public/fonts/fonts.scss";
 
 .header {
   background: $color-background-header;
@@ -15,9 +15,9 @@
     scale: 1;
 
     @media (max-width: 768px) {
-      margin-top: -9px;
-      margin-left: -13px;
-      scale: 0.85;
+      margin-top: -6px;
+      margin-left: -19px;
+      scale: 0.8;
     }
   }
 

@@ -1,5 +1,5 @@
 @import "../../styles/colors.scss";
-@import "../../styles/typography.scss";
+@import "../../../public/fonts/fonts.scss";
 
 .mobile-section {
   background: $color-background-secondary;
@@ -82,8 +82,8 @@
 
     img {
       position: absolute;
-      left: -27px;
-      top: 27px;
+      left: -50px;
+      top: -16px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -103,7 +103,7 @@
 
       .app-image {
         height: 405px;
-        width: 310px;
+        width: 285px;
         object-fit: contain;
       }
     }
@@ -137,7 +137,7 @@
         padding: 24px;
 
         .app-image {
-          margin-left: -115px;
+          margin-left: -42px;
           margin-bottom: 4px;
           padding-bottom: 20px;
 

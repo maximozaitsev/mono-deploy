@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "blackbear-casino.com";
+const url = "legzocasino-online.com";
 const ogTitle =
-  "Explore Black Bear Casino Resort: Games, Dining, and Entertainment";
-const ogSiteName = "Black Bear Casino";
+  "Legzo Casino in Canada: Review of Games, Bonuses, and Features";
+const ogSiteName = "Legzo Casino";
 const metaDescription =
-  "Discover the exciting offerings of Black Bear Casino Resort, including over 1,800 games, luxurious accommodations, and fine dining options. Plan your visit today and experience the ultimate in entertainment and relaxation.";
+  "Discover Legzo Casino's exciting game selection, user-friendly interface, and rewarding bonuses in Canada. Learn about registration, payment methods, security, and customer support to start playing today!";
 
 const locale = "en-CA";
 const language = "English";

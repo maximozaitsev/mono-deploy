@@ -1,5 +1,5 @@
 @import "../../styles/colors.scss";
-@import "../../styles/typography.scss";
+@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 :root {
@@ -37,7 +37,7 @@
     width: 218px;
     height: 56px;
     box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
-    color: $text-color-primary;
+    // color: #252c4b;
     margin-top: -3px;
     margin-left: 6px;
   }
@@ -175,8 +175,8 @@
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   &::after {
     content: "";
@@ -185,8 +185,8 @@
     top: 15%;
     height: 70%;
     width: 1px;
-    background-color: rgba(0, 0, 0, 0.2);
-    // background-color: rgba(255, 255, 255, 0.2);
+    // background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &:last-child::after {

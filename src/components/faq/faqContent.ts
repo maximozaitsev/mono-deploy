@@ -1,47 +1,27 @@
 export const faqs = [
   {
-    question: "Is there access to online casino games?",
+    question: "Is Legzo Casino legit?",
     answer:
-      "The directions to black bear casino does not offer electronic games for customers.",
+      "The casino is legally licensed by the Curacao regulatory authority 8048/JAZ2016-050, which oversees gambling regulations.",
   },
   {
-    question: "What benefits do customers get from registering?",
+    question: "Can I access mobile gaming on my device?",
     answer:
-      "By registering, you get access to room reservations, as well as ordering food and reserving tables.",
+      "Players can access gaming experiences through the mobile-friendly Legzo Casino website on both smartphones and tablets.",
   },
   {
-    question: "How do I claim my winnings?",
+    question: "What payment methods are available?",
     answer:
-      "After presenting an ID at the casino cashier, players can claim their winnings in cash.",
+      "Players at Legzo Casino can use credit cards, as well as e-wallets, bank transfers, and cryptocurrencies to make deposits and withdrawals.",
   },
   {
-    question: "Do new players receive bonus offers?",
+    question: "Are there any withdrawal limits?",
     answer:
-      "All registered guests are eligible for membership in the Épique Rewards program.",
+      "Legzo Casino applies withdrawal limits in its payment policies, and additional identity verification is required to claim larger prizes.",
   },
   {
-    question: "Can I book a room at Black Bear Casino Resort online?",
+    question: "What options do I have to contact customer support?",
     answer:
-      "Yes, you can book a room at the resort directly through the resort’s official website. The site allows you to choose your dates, room type, and any extra amenities you may need.",
-  },
-  {
-    question: "Does Black Bear Casino Resort offer live entertainment?",
-    answer:
-      "Yes, the resort regularly hosts live concerts, comedy shows, and other performances at its Otter Creek Event Center. Check their website for the latest schedule of events.",
-  },
-  {
-    question: "Does the resort have any family-friendly activities?",
-    answer:
-      "While the casino is geared toward adults, the resort offers family-friendly options like a golf course, restaurants, and seasonal events. Children are not allowed in the gaming areas, but are welcome in the public areas and seating areas.",
-  },
-  {
-    question: "Does the resort have free parking?",
-    answer:
-      "Yes, Black Bear Casino Resort offers free parking, including spaces for larger vehicles like RVs. Accessible parking is also available for guests with disabilities.",
-  },
-  {
-    question: "Aside from the casino, are there any restaurants at the resort?",
-    answer:
-      "Yes, the resort has a variety of dining options including Seven Fires Steakhouse, a buffet, Sage Deli and a golf course bar. Each location offers a unique menu to suit every taste.",
+      "You have access to 24/7 live chat and email to help you resolve any issues you may have.",
   },
 ];
