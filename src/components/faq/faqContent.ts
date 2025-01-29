@@ -1,15 +1,27 @@
 export const faqs = [
   {
-    question: "What license does the online casino have?",
-    answer: "This is a Costa Rican license.",
-  },
-  {
-    question: "How do I get a welcome bonus?",
+    question: "How do I register at Platinum Casino?",
     answer:
-      "You need to register, make a deposit of CAD 50 and enter the promo code.",
+      "To register, visit the website, click on 'Register', complete the form with your details, and confirm your account via email.",
   },
   {
-    question: "Can I play at the mobile casino?",
-    answer: "Yes. Use the mobile version of the site.",
+    question: "What types of games does Platinum offer?",
+    answer:
+      "Platinum offers a range of games, including slots, table games, live dealer games, and progressive jackpots.",
+  },
+  {
+    question: "Is there a mobile app for Platinum Casino?",
+    answer:
+      "Yes, Platinum Casino offers a mobile app for both Android and iOS devices.",
+  },
+  {
+    question: "How can I receive the welcome bonus?",
+    answer:
+      "The welcome bonus is credited across your first four deposits after registration.",
+  },
+  {
+    question: "What deposit methods are available?",
+    answer:
+      "Platinum supports credit cards, e-wallets, bank transfers, and prepaid cards.",
   },
 ];

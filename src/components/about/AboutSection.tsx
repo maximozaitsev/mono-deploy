@@ -33,22 +33,21 @@ export default function AboutSection() {
         <div className="about-text">
           <h3 className="h3-heading">{content.about.register.title}</h3>
           <P>{content.about.register.text[0]}</P>
-          <List items={content.about.register.list} />
+          <List items={content.about.register.list} ordered />
           <P>{content.about.register.text[1]}</P>
-          <P>{content.about.register.text[2]}</P>
         </div>
         <div className="about-text">
           <h3 id="sign-in" className="h3-heading">
             {content.about.signIn.title}
           </h3>
           <P>{content.about.signIn.text[0]}</P>
-
+          <List items={content.about.signIn.list} ordered />
           <P>{content.about.signIn.text[1]}</P>
-          <h4 className="h4-heading white">
+          {/* <h4 className="h4-heading white">
             {content.about.verification.title}
           </h4>
           <P>{content.about.verification.text[0]}</P>
-          <P>{content.about.verification.text[1]}</P>
+          <P>{content.about.verification.text[1]}</P> */}
         </div>
         <TwoColumns
           leftColumnContent={[

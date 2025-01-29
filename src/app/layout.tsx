@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "coolcat-casino-online.com";
+const url = "platinum-play-casino-online.com";
 const ogTitle =
-  "CoolCat Casino Canada: Review of Gaming Capabilities and Bonus Features";
-const ogSiteName = "CoolCat Casino";
+  "Platinum Play Casino Canada Review 2025: Games, Bonuses, and Features";
+const ogSiteName = "Platinum Play Casino";
 const metaDescription =
-  "CoolCat Casino Canada: what you need to know about the popular service. Welcome bonuses, VIP promotions, range of games, payment methods and other useful information for beginners and experienced gamblers";
+  "Explore Platinum Play Casino, one of Canada's top gaming platforms. Enjoy a welcome bonus up to C$800, 700+ Microgaming games, and secure banking options. Play today!";
 
 const locale = "en-CA";
 const language = "English";

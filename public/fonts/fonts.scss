@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Fish Grill", sans-serif;
+$font-secondary: "Oswald", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -9,9 +9,9 @@ $font-secondary: "Fish Grill", sans-serif;
 }
 
 @font-face {
-  font-family: "Fish Grill";
-  src: url("./fish-grill/FishGrillFont.otf") format("truetype");
-  font-weight: 400;
+  font-family: "Oswald";
+  src: url("Heading/static/Oswald-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 

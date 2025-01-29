@@ -175,8 +175,8 @@
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
-  // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   &::after {
     content: "";
@@ -185,8 +185,8 @@
     top: 15%;
     height: 70%;
     width: 1px;
-    // background-color: rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    // background-color: rgba(255, 255, 255, 0.2);
   }
 
   &:last-child::after {
@@ -256,7 +256,7 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: $text-color-primary;
+  color: #fff;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;

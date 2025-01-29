@@ -65,6 +65,14 @@ export default function AppSection() {
                   type: "text",
                   content: content.app.languagesText[0],
                 },
+                {
+                  type: "list",
+                  content: content.app.list1,
+                },
+                {
+                  type: "text",
+                  content: content.app.languagesText[1],
+                },
               ],
             },
           ]}
@@ -75,6 +83,14 @@ export default function AppSection() {
                 {
                   type: "text",
                   content: content.app.currenciesText[0],
+                },
+                {
+                  type: "list",
+                  content: content.app.list2,
+                },
+                {
+                  type: "text",
+                  content: content.app.currenciesText[1],
                 },
               ],
             },
