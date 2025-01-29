@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "legzocasino-online.com";
+const url = "coolcat-casino-online.com";
 const ogTitle =
-  "Legzo Casino in Canada: Review of Games, Bonuses, and Features";
-const ogSiteName = "Legzo Casino";
+  "CoolCat Casino Canada: Review of Gaming Capabilities and Bonus Features";
+const ogSiteName = "CoolCat Casino";
 const metaDescription =
-  "Discover Legzo Casino's exciting game selection, user-friendly interface, and rewarding bonuses in Canada. Learn about registration, payment methods, security, and customer support to start playing today!";
+  "CoolCat Casino Canada: what you need to know about the popular service. Welcome bonuses, VIP promotions, range of games, payment methods and other useful information for beginners and experienced gamblers";
 
 const locale = "en-CA";
 const language = "English";

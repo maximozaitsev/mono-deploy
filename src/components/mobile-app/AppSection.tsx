@@ -25,7 +25,6 @@ export default function AppSection() {
               quality={100}
             />
             <p className="paragraph-text">{content.app.text[0]}</p>
-            <p className="paragraph-text">{content.app.text[1]}</p>
             <div className={styles.buttons}>
               <button
                 className="google-play"
@@ -66,14 +65,6 @@ export default function AppSection() {
                   type: "text",
                   content: content.app.languagesText[0],
                 },
-                {
-                  type: "list",
-                  content: content.app.list,
-                },
-                {
-                  type: "text",
-                  content: content.app.languagesText[1],
-                },
               ],
             },
           ]}
@@ -84,14 +75,6 @@ export default function AppSection() {
                 {
                   type: "text",
                   content: content.app.currenciesText[0],
-                },
-                {
-                  type: "list",
-                  content: content.app.list1,
-                },
-                {
-                  type: "text",
-                  content: content.app.currenciesText[1],
                 },
               ],
             },
