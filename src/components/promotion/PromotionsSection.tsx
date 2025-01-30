@@ -17,13 +17,18 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[0].text[0],
                 },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[1].heading,
+              items: [
                 {
-                  type: "list",
-                  content: content.promotions.leftColumnContent[0].list || [],
+                  type: "text",
+                  content: content.promotions.leftColumnContent[1].text[0],
                 },
                 {
                   type: "text",
-                  content: content.promotions.leftColumnContent[0].text[0],
+                  content: content.promotions.leftColumnContent[1].text[1],
                 },
               ],
             },
@@ -35,6 +40,15 @@ export default function PromotionsSection() {
                 {
                   type: "text",
                   content: content.promotions.rightColumnContent[0].text[0],
+                },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[1].heading,
+              items: [
+                {
+                  type: "text",
+                  content: content.promotions.rightColumnContent[1].text[0],
                 },
               ],
             },

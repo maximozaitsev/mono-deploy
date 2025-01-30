@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "platinum-play-casino-online.com";
+const url = "betriverscasino-online.com";
 const ogTitle =
-  "Platinum Play Casino Canada Review 2025: Games, Bonuses, and Features";
-const ogSiteName = "Platinum Play Casino";
+  "Betrivers Casino Canada: A Detailed Review of the Gambling Platform";
+const ogSiteName = "Betrivers Casino";
 const metaDescription =
-  "Explore Platinum Play Casino, one of Canada's top gaming platforms. Enjoy a welcome bonus up to C$800, 700+ Microgaming games, and secure banking options. Play today!";
+  "Betrivers Casino Canada: How to Register and Create an Account. Review of a Popular Online Casino and Sports Betting Service. Promotions, Games, Payment Methods, and Other Useful Information";
 
 const locale = "en-CA";
 const language = "English";

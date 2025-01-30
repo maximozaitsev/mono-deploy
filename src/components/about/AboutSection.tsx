@@ -41,13 +41,12 @@ export default function AboutSection() {
             {content.about.signIn.title}
           </h3>
           <P>{content.about.signIn.text[0]}</P>
-          <List items={content.about.signIn.list} ordered />
           <P>{content.about.signIn.text[1]}</P>
-          {/* <h4 className="h4-heading white">
+          <h4 className="h4-heading white">
             {content.about.verification.title}
           </h4>
           <P>{content.about.verification.text[0]}</P>
-          <P>{content.about.verification.text[1]}</P> */}
+          <P>{content.about.verification.text[1]}</P>
         </div>
         <TwoColumns
           leftColumnContent={[
@@ -77,10 +76,10 @@ export default function AboutSection() {
                   type: "text",
                   content: content.about.withdrawalMethods.text[0],
                 },
-                {
-                  type: "list",
-                  content: content.about.withdrawalMethods.list || [],
-                },
+                // {
+                //   type: "list",
+                //   content: content.about.withdrawalMethods.list || [],
+                // },
                 {
                   type: "text",
                   content: content.about.withdrawalMethods.text[1],

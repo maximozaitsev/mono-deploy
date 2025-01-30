@@ -7,7 +7,7 @@
   background: $color-background;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 160px top 33px;
+  background-position: right 140px top 49px;
   width: 100%;
   height: 540px;
   max-width: 90rem;
@@ -22,7 +22,7 @@
   }
 
   @media (max-width: 768px) {
-    padding-top: 20.35rem;
+    padding-top: 20.6rem;
     height: auto;
     justify-content: flex-end;
     background-size: auto 65%;
@@ -32,7 +32,7 @@
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 59%;
+    background-size: auto 61%;
   }
 
   @media (max-width: 420px) {
@@ -63,7 +63,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
-  width: 420px;
+  width: 500px;
   max-width: 50%;
   // margin-left: -20px;
 

@@ -1,27 +1,14 @@
 export const faqs = [
   {
-    question: "How do I register at Platinum Casino?",
-    answer:
-      "To register, visit the website, click on 'Register', complete the form with your details, and confirm your account via email.",
+    question: "From what age can you register on the site?",
+    answer: "From 19 years and 1 day.",
   },
   {
-    question: "What types of games does Platinum offer?",
-    answer:
-      "Platinum offers a range of games, including slots, table games, live dealer games, and progressive jackpots.",
+    question: "What deposit methods are available at the casino?",
+    answer: "Bank cards and transfers, e-wallets.",
   },
   {
-    question: "Is there a mobile app for Platinum Casino?",
-    answer:
-      "Yes, Platinum Casino offers a mobile app for both Android and iOS devices.",
-  },
-  {
-    question: "How can I receive the welcome bonus?",
-    answer:
-      "The welcome bonus is credited across your first four deposits after registration.",
-  },
-  {
-    question: "What deposit methods are available?",
-    answer:
-      "Platinum supports credit cards, e-wallets, bank transfers, and prepaid cards.",
+    question: "What welcome bonuses are there on the site?",
+    answer: "This is a Casino and Sports Betting welcome bonus of your choice.",
   },
 ];
