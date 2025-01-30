@@ -18,6 +18,10 @@
   ul {
     margin-left: 1.5rem;
     padding: 24px 0;
+
+    @media (max-width: 350px) {
+      margin-left: 0.2rem;
+    }
   }
 
   @media (max-width: 1050px) {
