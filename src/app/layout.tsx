@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "betriverscasino-online.com";
+const url = "mummysgold-online.com";
 const ogTitle =
-  "Betrivers Casino Canada: A Detailed Review of the Gambling Platform";
-const ogSiteName = "Betrivers Casino";
+  "Mummy’s Gold Casino Canada – Top Online Casino for Canadian Players";
+const ogSiteName = "Mummy’s Gold Casino";
 const metaDescription =
-  "Betrivers Casino Canada: How to Register and Create an Account. Review of a Popular Online Casino and Sports Betting Service. Promotions, Games, Payment Methods, and Other Useful Information";
+  "Mummy’s Gold Casino Canada delivers thrilling games, secure transactions, and generous bonuses for Canadian players. Sign up now to claim your welcome bonus and enjoy top-notch online entertainment today!";
 
 const locale = "en-CA";
 const language = "English";

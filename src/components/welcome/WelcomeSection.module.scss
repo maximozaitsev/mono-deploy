@@ -7,7 +7,7 @@
   background: $color-background;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 140px top 49px;
+  background-position: right 115px top 54px;
   width: 100%;
   height: 540px;
   max-width: 90rem;
@@ -21,21 +21,21 @@
     background-position: right 20px center;
   }
 
-  @media (max-width: 820px) {
-    padding-top: 20.6rem;
+  @media (max-width: 768px) {
+    padding-top: 20.35rem;
     height: auto;
     justify-content: flex-end;
     background-size: auto 65%;
-    background-position: top 9px center;
+    background-position: top 14px center;
     margin: 0 auto 84px auto;
   }
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 61%;
+    background-size: auto 59%;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 420px) {
     margin: 0 auto 72px auto;
     background-size: auto 50%;
     padding-top: 14.35rem;
@@ -75,7 +75,7 @@
     margin-left: 0;
   }
 
-  @media (max-width: 820px) {
+  @media (max-width: 768px) {
     width: 100%;
     max-width: 100%;
     gap: 24px;
@@ -91,7 +91,7 @@
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 380px) {
     gap: 20px;
   }
 }
@@ -100,7 +100,7 @@
   font-family: $font-secondary;
   font-size: 64px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   line-height: normal;
   text-transform: uppercase;
@@ -111,7 +111,7 @@
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
 
-  @media (max-width: 820px) {
+  @media (max-width: 768px) {
     display: none;
   }
 }
@@ -124,10 +124,10 @@
   font-weight: 500;
   line-height: normal;
 
-  @media (max-width: 820px) {
+  @media (max-width: 768px) {
     font-size: 24px;
     font-family: $font-secondary;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     // color: $text-color-welcome;
 

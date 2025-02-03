@@ -8,7 +8,7 @@ export default function LicensesSection() {
   return (
     <section className={`${styles.licensesSection} section`}>
       <div className="container">
-        <h2 className={`h3-heading ${styles.headingMobile}`}>
+        {/* <h2 className={`h3-heading ${styles.headingMobile}`}>
           {content.licenses.title}
         </h2>
         <div className={styles.licensesContent}>
@@ -22,12 +22,12 @@ export default function LicensesSection() {
             <Image
               src={licenceImage}
               alt="Licenses"
-              width={357}
-              height={70}
+              width={240}
+              height={240}
               quality={100}
             />
           </div>
-        </div>
+        </div> */}
         <TwoColumns
           leftColumnContent={[
             {

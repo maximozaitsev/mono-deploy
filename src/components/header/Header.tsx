@@ -9,9 +9,9 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { handleNavigation } = useNavigateWithPreloader();
 
-  const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
-  };
+  // const toggleMenu = () => {
+  //   setMenuOpen((prev) => !prev);
+  // };
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -49,15 +49,30 @@ const Header = () => {
       <nav className={`${styles.navbar}`}>
         <Logo onClick={scrollToWelcomeSection} />
 
-        <button
+        <div className={styles.headerButtons}>
+          <button
+            className={`${styles.headerButton} ${styles.logIn}`}
+            onClick={handleSignInClick}
+          >
+            Log In
+          </button>
+          <button
+            className={`${styles.headerButton} ${styles.signUp}`}
+            onClick={handleSignInClick}
+          >
+            Sign Up
+          </button>
+        </div>
+
+        {/* <button
           className={`${styles["burger-menu"]} ${menuOpen ? styles.open : ""}`}
           onClick={toggleMenu}
           aria-label="Toggle navigation"
         >
           <span className={styles["burger-lines"]}></span>
-        </button>
+        </button> */}
 
-        <ul className={`${styles["nav-links"]} ${menuOpen ? styles.open : ""}`}>
+        {/* <ul className={`${styles["nav-links"]} ${menuOpen ? styles.open : ""}`}>
           <NavItem
             href="/"
             label="Main"
@@ -83,38 +98,38 @@ const Header = () => {
               Sign In
             </a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </header>
   );
 };
 
-const NavItem = ({
-  href,
-  label,
-  closeMenu,
-  isScrollToTop = false,
-}: {
-  href: string;
-  label: string;
-  closeMenu: () => void;
-  isScrollToTop?: boolean;
-}) => (
-  <li>
-    <a
-      href={href}
-      onClick={(e) => {
-        if (isScrollToTop) {
-          e.preventDefault();
-          window.scrollTo({ top: 0, behavior: "smooth" });
-          window.history.replaceState(null, "", window.location.pathname);
-        }
-        closeMenu();
-      }}
-    >
-      {label}
-    </a>
-  </li>
-);
+// const NavItem = ({
+//   href,
+//   label,
+//   closeMenu,
+//   isScrollToTop = false,
+// }: {
+//   href: string;
+//   label: string;
+//   closeMenu: () => void;
+//   isScrollToTop?: boolean;
+// }) => (
+//   <li>
+//     <a
+//       href={href}
+//       onClick={(e) => {
+//         if (isScrollToTop) {
+//           e.preventDefault();
+//           window.scrollTo({ top: 0, behavior: "smooth" });
+//           window.history.replaceState(null, "", window.location.pathname);
+//         }
+//         closeMenu();
+//       }}
+//     >
+//       {label}
+//     </a>
+//   </li>
+// );
 
 export default Header;

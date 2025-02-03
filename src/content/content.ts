@@ -1,152 +1,131 @@
 export const content = {
-  projectName: "Betrivers Casino ",
+  projectName: "Mummy's Gold Casino",
   advantages: {
     // title: "",
-    subTitle: "Advantages and Disadvantages: Betrivers Bonus Code Casino",
-    text: [
-      `Before you study the main part of the Betrivers Casino review, it is worth studying the current advantages and disadvantages of this service. This way you can decide how much the casino meets your requirements and preferences.`,
-    ],
+    subTitle: "Mummys Gold Casino Play Online Advantages",
+    text: [`Mummy's Gold Casino has pros and negatives. A brief overview:`],
     advantagesTitle: "Advantages",
     disadvantagesTitle: "Disadvantages",
     advantages: [
-      "variety of games;",
-      "live casino;",
-      "sports betting;",
-      "sites for different regions;",
-      "registration bonus;",
-      "many promotions;",
-      "professional technical support;",
-      "mobile apps.",
+      "Wide selection of games from leading providers.",
+      "Generous welcome bonus and promotions.",
+      "Secure and licensed platform.",
+      "Multiple payment methods available.",
+      "24/7 customer support.",
     ],
     disadvantages: [
-      "geographical restrictions;",
-      "small selection of payment systems;",
-      "complicated site navigation.",
+      "Limited availability in some countries.",
+      "High wagering requirements for bonuses.",
+      // "li3",
     ],
   },
   about: {
-    title: "Betrivers Casino",
-    intro: ["live casino", "100% welcome bonus", "sports betting"],
+    title: "Mummys Gold Casino",
+    intro: [
+      "100% match offer on players first deposit",
+      "10 free spins everyday",
+      "Loyalty Program available",
+    ],
     description: [
-      `With a versatile platform with extensive features, generous bonuses, and interesting promotions, Betrivers Casino is a great choice for Canadian gamblers. The site serves double duties, providing a platform for traditional casino games but more so as a site for encouraging live dealer casino play where sports betting could also gain interest in watching the sporting events.`,
-      `Betrivers Casino Ontario has been running successfully now for some years in Canada as part of an association of more than 10 online gambling sites across Canada and the United States. Therefore, you can easily go to the site and select the appropriate region, depending on your location. Canadians choose Betrivers Ontario Casino and get unforgettable emotions thanks to fair winnings and generous bonuses.`,
+      `Online gaming Mummy's Gold has been offering slot machines, table games, and live player games since 2002. It uses top software like Microgaming for great images and smooth games. Legitimate authorities authorize and control the platform, assuring safe gambling. Mummys Gold Casino review offers online gamers a fun and dependable experience with huge bonuses, a lucrative loyalty program, and 24/7 customer service.`,
+      // `p2`,
       // `p3`,
     ],
     register: {
-      title: "Registration Process: Betrivers Casino Canada",
+      title: "Mummy’s Gold Casino Registration Process",
       text: [
-        `Choosing Betrivers ⭐ Ontario Online Casino & Sports betting opens up amazing opportunities. Therefore, Canadians do not waste time and register. You can also do this in a few minutes.`,
-        `Finally, you will need to confirm the account creation via email. Follow the link included in the letter from the online casino.`,
+        `Starting at Mummys Gold Casino Canada is easy. Create an account with these simple steps:`,
+        // `p2`,
         // `p3`,
       ],
       list: [
-        "Go to the official website or use the mobile application;",
-        "Click on the 'Join now' link on the main page;",
-        "Fill in all the required fields in the online form;",
-        "Use Betrivers Ontario Casino affiliate code if you want;",
-        "Confirm that you want to register an account;",
-        "Go to the next page and go through all the remaining steps.",
+        "Visit the Mummy’s Gold Casino website.",
+        "Click on the 'Sign Up' or 'Register' button.",
+        "Fill in your personal details, including name, email, and date of birth.",
+        "Create a username and password for your account.",
+        "Select your preferred currency.",
+        "Agree to the terms and conditions.",
+        "Verify your account via email or SMS.",
+        "Log in and make your first deposit to start playing.",
       ],
     },
     signIn: {
-      title: "Login: Betrivers Casino No Deposit Bonus",
+      title: "About Mummys Gold Casino Login",
       text: [
-        `Since you now have a Betrivers Casino login, you can log in through the site or application, make your first deposit, and start playing in real money mode. In addition, authorization and making a deposit is a great way to collect a generous Betrivers Casino sign up bonus.`,
-        `To log in, open the main page and click on the Login button. Here you will need to select a casino in your region, specify an email address or username, and a password. Check the appropriate boxes in the form and click "Join".`,
+        `Gamers may instantly enter their accounts and start playing their preferred games with Mummys Gold Casino login. Usually found at Mummy's Gold Casino's homepage in the top-right corner, the "Login" button Check your email address and password are accurate. After submission, your account dashboard enables you handle your profile, deposit, and withdraw profits. If you forget your login credentials, the casino offers a simple password recovery method and 24/7 customer service.`,
+        // `p2`,
         // `p3`,
       ],
       // list: ["li1", "li2", "li3"],
     },
-    verification: {
-      title: "Verification: Betrivers Online Casino",
-      text: [
-        `As Betrivers Casino reviews show, this service adheres to strict rules and principles of ensuring security for customers. Therefore, each new user is required to go through the verification procedure.`,
-        `This is a standard requirement for all modern licensed gambling platforms. To verify, you need to log in to your account, fill in the missing personal information and send a scanned copy of your documents. After checking the security service, you will receive a notification about successful data verification.`,
-        // `p3`,
-      ],
-    },
+    // verification: {
+    //   title: "VerificationTitle",
+    //   text: [`p1`, `p2`, `p3`],
+    // },
     depositMethods: {
-      title: "Deposit Methods: Bonus Codes For Betrivers Casino",
+      title: "Mummys Gold Casino CA Deposit Methods",
       text: [
-        `Canadian gamblers have access to several reliable and secure payment systems that can be used on this service:`,
-        `The minimum deposit amount varies depending on the selected payment instrument and ranges from CAD 10.`,
+        `For secure withdrawals, Mummys Gold flash Casino offers Visa, Visa Debit, Visa Electron, Maestro, Solo, Entropay, and direct bank transfers. Due to banking laws, bank transactions can take 5 business days, however processing takes 24–72 hours following approval. For security, players must provide government-issued ID, address verification, and payment method documents to the casino. This authentication secures withdrawals and avoids fraud. Players should verify early to avoid cashout delays. The casino caps weekly gains above five times lifetime investments at C$4,000. Payment providers may charge withdrawal fees, but casinos do not. These methods demonstrate Mummy's Gold Casino's commitment to safe, fast, and transparent withdrawals.`,
+        // `p2`,
       ],
-      list: [
-        "Visa;",
-        "Mastercard;",
-        "RushPay;",
-        "PayPal;",
-        "Skrill;",
-        "Muchbetter;",
-        "Neteller;",
-        "Bank transfer.",
-      ],
+      // list: ["li1", "li2", "li3"],
     },
     withdrawalMethods: {
-      title: "Withdrawal Methods: Betrivers Ontario Online Casino",
+      title: "Withdrawal Methods",
       text: [
-        `You can withdraw your winnings after you have passed the verification procedure and also fulfilled the wagering requirements for activated bonuses.`,
-        `You can use the same payment systems as when replenishing your account. If a reverse transaction is not possible, then you will be offered to use bank transfers. The casino supports work with most banks in Canada.`,
+        `Mummy's Gold Casino provides safe ways to easily withdraw your winnings. Visa, Visa Debit, Visa Electron, Maestro, Solo, Entropay, and direct bank transfers are all secure payment options. After approval, it takes 24 to 72 hours to finish each choice, giving you safe access to your money. `,
+        `Additional banking processes may slow bank transactions. Mummy's Gold Casino verifies transactions thoroughly to ensure security. Players generally need to provide a government-issued ID, proof of address, and payment method copies before withdrawing. This prevents fraud and safeguards user payments. Account verification should be done beforehand to minimize cashout delays. For wins more than five times the player's lifetime deposits, the casino limits withdrawals to C$4,000 each week to maintain fairness. These extensive steps show Mummy's Gold Casino's dedication to safe, dependable, and easy withdrawals.`,
       ],
       // list: ["li1", "li2", "li3"],
     },
   },
   licenses: {
-    title: "Licenses: Betrivers Casino Android App",
+    title: "Licenses",
     text: [
-      `Primary question: is Betrivers Casino legit? A license is the main indicator of the reliability, honesty and safety of any casino. In Canada, there are strict rules and laws for gambling platforms. But this service has no problems with the law. The platform operates under a license from the Ontario Gaming Commission.`,
+      `Prominent regulator with high standards, the Malta Gaming Authority (MGA), licenses and controls Mummy's Gold Casino under. The MGA license ensures fair and safe gaming by means of guarantees of casino adherence for international standards and laws. This license also requires the casino to practice responsible gambling, be transparent, and safeguard players. The website clearly displays license information, confirming the platform's authenticity and credibility.`,
       // `p2`,
     ],
-    security: "Security: Betrivers Casino Online",
+    security: "Security",
     securityText: [
-      `Security and data protection are a priority in the work of the gambling platform. It uses solutions such as SSL encryption, KYC rules, two-factor authentication, strict privacy policy, etc.`,
+      `Based on Mummys Gold Casino reviews, they prioritize security at Mummy's Gold Casino. Like banks, the website safeguards players' money and personal information using 128-bit SSL encryption. Additionally known by eCOGRA, an independent testing agency guaranteeing fairness, safety, and pay, is the casino This accreditation guarantees players of erratic outcomes and non-managable games. Players may enjoy their games without worry thanks to these improved security features.`,
       // `p2`,
     ],
-    software: "Software Technologies: Betrivers Casino Back Promo",
+    software: "Software Technologies",
     softwareText: [
-      `The Canadian casino cooperates only with those gaming software providers that have all the necessary permits, certificates and confirmation of the honesty of the random number generators used. For customers, this is a great opportunity to play the best games from such providers as Microgaming, BGaming, Big Time Gaming, NetEnt, Evolution Gaming and many others.`,
+      `Casino Mummys Gold makes use of Microgaming, one of the leading online gambling providers. Microgaming stands itself for its inventive technology, immaculate performance, and forward-looking features. This program drives the excellent live dealer games, table games, and slots of the casino. Microgaming presents realistic sound effects, flawless cross-platform gameplay, and great graphics. To provide players the greatest possible gaming experience, the application is updated often to add new features.`,
       // `p2`,
     ],
     // list: ["li1", "li2", "li3"],
   },
   app: {
-    title: "Betrivers Ontario Casino App",
+    title: "Mummys Gold Casino App",
     text: [
-      `Great news for those who prefer to play on smartphones and tablets. You can install the Betrivers Casino app Ontario through the official stores for Android and Apple. The necessary links are on the official website. Or go to the app store and find the Betrivers Casino app through the search. You do not need to create a new account through the app if you are already registered through the site.`,
+      `The mobile-optimized website of Mummy's Gold Casino offers an excellent mobile gaming experience free from a smartphone. Mummys Gold Casino mobile app. The site supports iOS and Android so customers may enjoy their preferred games on tablets and smartphones. The mobile platform provides the whole game library, account administration, deposits and withdrawals, as well as customer support. The fast loading speed and adaptability to various screen sizes of the mobile site let players play flawless on the go.`,
       // `p2`,
     ],
-    languages: "Languages: Betrivers Casino Sportsbook",
+    languages: "Languages",
     languagesText: [
-      `The website and the application do not provide the ability to select the interface language. Therefore, all pages are designed only in English.`,
+      `For its worldwide player base, Mummys Gold Casino Aussie provides several languages. Among other languages, the website runs in English, French, German, Spanish, Italian, Portuguese, and Japanese. Gamers from all over browse the website, understand the terms and conditions, and receive native tongue customer service when they use multilingual help.  Its broad language options make the casino more accessible and convenient for gamers globally.`,
       // `p2`,
     ],
-    currencies: "Currencies: Betrivers Online Casino Promo Codes",
+    currencies: "Currencies",
     currenciesText: [
-      `Customers can use Canadian dollars as a game currency on the website and in the mobile program. Since the service is also officially represented in the United States, American dollars are used for deposits and withdrawals there.`,
+      `Mummy's Gold Casino provides many currencies for overseas players. Players may deposit and withdraw money in USD, EUR, GBP, CAD, NZD, and AUD, among other currencies, without currency conversion. This flexibility speeds transactions and helps players avoid currency conversion expenses. By accepting several currencies, the casino makes it more user-friendly and inclusive.`,
       // `p2`,
     ],
   },
   gamesToPlay: {
-    title: "Games Available to Play: Betrivers Casino & Sportsbook",
+    title: "Mummys Gold Casino Games",
     text: [
-      `After registering at Betrivers Casino and Sportsbook, all Canadian players have access to an incredible selection of gambling entertainment. Cooperation with leading providers of gaming software and the creation of a modern betting system allow us to offer a wide range of options`,
+      `Mummys Gold Casino has games for all tastes, making it fun and interesting. An overview of game options:`,
       // `p2`,
       // `p3`,
     ],
     leftColumnContent: [
       {
-        heading: "Slots: Betrivers Casino Mobile",
+        heading: "Slots",
         text: [
-          `Many Canadians prefer classic online gambling games. Therefore, slots become the priority choice for most players. At the same time, Betrivers Casino - Ontario offers a wide selection of machines that are divided into several thematic categories. This greatly simplifies the search and allows you to quickly launch the slot that you like most or has special functions.`,
-          // `p2`,
-          // `p3`,
-        ],
-        // list: ["li1", "li2", "li3"],
-      },
-      {
-        heading: "Instant Games: Betrivers Canada Casino",
-        text: [
-          `No less popular now are the so-called quick or instant games. They are based on a random number generator, but at the same time differ in rules, gameplay and graphic elements. Playing them is exciting and the process is addictive due to the constant dynamics.`,
+          `Mummy's Gold Casino has several slot games for different player tastes. Cash Crazy and Triple Magic, classic 3-reel slots, offer a nostalgic experience with simple gameplay. Gopher Gold and Hot Shot are popular 5-reel slots with extra intricacy and fun. These games have captivating plots, stunning visuals, and unusual features. The casino also has themed video slots with exciting bonus rounds. Tomb Raider and Bush Telegraph offer dynamic gameplay, interactive aspects, and rewarding bonuses, making slot games fun.`,
           // `p2`,
           // `p3`,
         ],
@@ -155,7 +134,16 @@ export const content = {
       {
         heading: "Table Games",
         text: [
-          `Today, this is already a classic type of gambling. As with slots, Canadian players have the opportunity to choose from several categories. Here, tables for playing blackjack, keno, video poker, slingo, roulette and much more are constantly available.`,
+          `Mummy's Gold Casino's many table games please traditional casino players. Players may play Roulette, Blackjack, Poker, Baccarat, and Craps variations. These games are great for testing your talents, regardless of your ability level. European and American Roulette, traditional and sophisticated Blackjack, and other table games provide something for everyone. Mummy's Gold table games simulate a casino with smooth gameplay, realistic graphics, and captivating sounds.`,
+          // `p2`,
+          // `p3`,
+        ],
+        // list: ["li1", "li2", "li3"],
+      },
+      {
+        heading: "Video Poker",
+        text: [
+          `Mummy's Gold Casino has many strategic video poker games. Each single-hand and multi-hand version of this popular game has a distinctive twist. Aces and Faces, 4 Hand Jacks or Better, and 50 Hand Bonus Poker are popular games for all poker levels. The blend of poker strategy and slot machine gaming is compelling. Video poker at Mummy's Gold is great for poker and slot fans because to its stunning graphics, fluid animations, and user-friendly interfaces.`,
           // `p2`,
           // `p3`,
         ],
@@ -164,18 +152,18 @@ export const content = {
     ],
     gamesRightColumn: [
       {
-        heading: "Live Casino",
+        heading: "Progressive Jackpots",
         text: [
-          `A stunning format of gambling entertainment in which you interact with real live dealers online. It is top-notch technology that will enable the most exciting gaming experience. The Betrivers Online Casino Ontario website and app offer blackjack, roulette, craps, baccarat, poker and game shows, all of which are open 24 hours a day.`,
+          `Enjoy thrilling progressive jackpot games where the ultimate prize rises until one lucky player brings home at Mummys Gold Online Casino. Few examples of these games are slots, poker, blackjack, roulette, and video poker. Among the most often downloaded games are Progressive Cyberstud poker, Triple 7s, Roulette Royale, and Cash Splash. The sums of money blackjack players might earn that change their lives are beyond incredible. The experience gains even more thrills from seeing the jackpot rise with every game. Jackpot enthusiasts love these games regardless of whether they are spinning the reels or playing a hand of cards because of their huge possible prizes.`,
           // `p2`,
           // `p3`,
         ],
         //  list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Sports Betting",
+        heading: "Live Casino",
         text: [
-          `A separate section of the site and apps is dedicated to sports betting. Here you have access to numerous lines, a variety of sports events, from football and basketball to golf, MMA, darts and winter sports. And most importantly, these are fair odds and access to the most popular types of bets.`,
+          `Mummy's Gold offers a substantial live dealer component for those who like land-based casinos. High resolution professional dealers let players engage in live Roulette, Blackjack, baccarat, and poker. Live chat creates an interesting and welcoming gaming experience by means of player interactions with dealers and other players. Whether your wagering on Roulette or Blackjack, live casinos offer the thrill of the casino floor right into your screen. With its real surroundings and intriguing gameplay, Mummy's Gold Casino distinguishes this section.`,
           // `p2`,
           // `p3`,
         ],
@@ -184,40 +172,34 @@ export const content = {
     ],
   },
   support: {
-    title: "Support: Betrivers Online Casino Reviews",
+    title: "Support",
     text: [
-      `There is a professional support service here, which you can contact in several ways:`,
-      `The telephone line is intended for those who have encountered problems with gambling addiction and want to get advice from specialists.`,
+      `Mummy's Gold Casino guarantees a nice experience by means of exceptional customer service. Email and live chat enable the Mummys Gold Casino customer service agents to be approachable around-the-clock. The staff is competent, informed, fast in answering technical, bonus, and account management issues. A detailed FAQ section on the casino's website answers frequent queries and provides information. With such strong support features, players may always click for help.`,
+      // `p2`,
     ],
-    list: [
-      "online chat;",
-      "email;",
-      "social media;",
-      "telephone number;",
-      "FAQ.",
-    ],
+    // list: ["li1", "li2", "li3"],
   },
   promotions: {
-    title: "Bonuses and Promotions: Betrivers Ontario Casino Promo Code",
+    title: "Mummy’s Gold Casino Promos",
     text: [
-      `It will be useful for beginners to get acquainted with the Betrivers Casino bonus section. Quite interesting and profitable offers are presented here.`,
-      `You can activate the Betrivers Casino promo code even at the registration stage. But your benefit does not end there. Therefore, it is worth studying the current promotions in more detail.`,
+      `Mummy's Gold Casino provides bonuses and deals to enhance the betting experience for both new and current players. Current promotions are listed below:`,
+      // `p2`,
     ],
     leftColumnContent: [
       {
-        heading: "Casino Welcome Bonus",
+        heading: "Mummys Gold Casino Welcome Offer",
         text: [
-          `A lucrative welcome bonus awaits new players making their first deposit. The terms of the promotion state that casino players can benefit from a 100% bonus match, up to CAD 500. This cash will get credited within 24 hours of the topping-off of the game balance.`,
+          `Mummy's Gold Casino welcomes new players with a C$500 100% match offer on their first deposit. This means the casino will double your money, providing you a big push to start playing. This offer just a C$10 investment, making it affordable for most budgets. This promotion is a great opportunity for novices to try out slots, table games, and live dealer games. You may test numerous games with bonus dollars without spending any money. Before withdrawing bonus earnings, ordinary wagering requirements and restrictions apply. A great reason for new players to join Mummy's Gold Casino is the welcome bonus.`,
           // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
       },
       {
-        heading: "Sports Betting Welcome Bonus",
+        heading: "Mummys Gold Casino Play Free Spins Promotion",
         text: [
-          `With the Betrivers Casino bonus code and the first deposit, you can take advantage of an alternative welcome reward option. This bonus is intended for those players who prefer to place sports bets.`,
-          `According to the terms of the promotion, if the casino wins your first deposit on sports bets, then you will receive back up to CAD 250.`,
+          `New players at Mummys Gold Casino en ligne receive a generous welcome bonus and a Daily Free Spins Promotion. New clients get 10 Mummys Gold Casino free spins everyday, making their casino debuts exciting. These plays offer big payouts, including million-dollar jackpots. Players may try Mummy's Gold's high-quality entertainment with daily Mummys Gold Casino free spins on chosen slot games. This offer prolong gameplay and boosts huge wins without deposits. This daily incentive is a great opportunity to try the casino's slots and build momentum. Terms and restrictions apply.`,
+          // `p2`,
           // `p3`,
         ],
         // list: ["li1", "li2", "li3"],
@@ -225,18 +207,9 @@ export const content = {
     ],
     rightColumnContent: [
       {
-        heading: "Tournaments",
-        text: [
-          `The service regularly holds special tournaments. Here you will find daily competitions, as well as tournaments organized on weekends. Participants can make spins or sports bets, increasing their positions in the tournament table. At the end of each draw, the main prize fund will be distributed among the winners.`,
-          // `p2`,
-          // `p3`,
-        ],
-        // list: ["li1", "li2", "li3"],
-      },
-      {
         heading: "Loyalty Program",
         text: [
-          `All new participants can join the loyalty program. Your task is to play, place bets and be active. For this, you will constantly receive reward points and increase your level. The transition to each new level is numerous gifts, prizes and personal offers.`,
+          `Through its extensive Loyalty Program, Mummys Gold Casino online Casino rewards regulars. Membership is automatic, and you may earn loyalty points with every real money wager on the site. These points may be traded for casino credits to play games. Blue, Silver, Gold, Platinum, Diamond, and Privé loyalty tiers are available to casino customers that keep playing. Special incentives, quicker withdrawals, and specialist assistance are available at each tier. This tiered structure rewards loyal gamers and gives them bonuses that improve their gaming experience. The Loyalty Program makes users feel appreciated and rewards them for their platform participation.`,
           // `p2`,
           // `p3`,
         ],
@@ -245,6 +218,6 @@ export const content = {
     ],
   },
   faq: {
-    title: "FAQ",
+    title: "CASINO FAQ",
   },
 };

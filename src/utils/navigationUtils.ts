@@ -1,5 +1,5 @@
 import { useRouter } from "next/navigation";
-import { fetchOffers } from "@/utils/fetchOffers"; // Assuming you already have this function
+import { fetchOffers } from "@/utils/fetchOffers";
 
 export const useNavigateWithPreloader = () => {
   const router = useRouter();

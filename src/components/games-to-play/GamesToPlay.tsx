@@ -38,8 +38,6 @@ export default function GamesToPlay() {
                 },
               ],
             },
-          ]}
-          rightColumnContent={[
             {
               heading: content.gamesToPlay.leftColumnContent[2].heading,
               items: [
@@ -49,6 +47,8 @@ export default function GamesToPlay() {
                 },
               ],
             },
+          ]}
+          rightColumnContent={[
             {
               heading: content.gamesToPlay.gamesRightColumn[0].heading,
               items: [

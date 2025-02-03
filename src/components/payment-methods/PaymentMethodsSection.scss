@@ -11,7 +11,7 @@
     border-spacing: 0 16px;
     text-align: center;
     table-layout: auto;
-    margin-top: -15px;
+    // margin-top: -15px;
     margin-bottom: -25px;
 
     thead th,
@@ -169,8 +169,8 @@
           line-height: normal;
           font-weight: 500;
           padding: 8px;
-          // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
           &:last-child {
             border-bottom: none;
