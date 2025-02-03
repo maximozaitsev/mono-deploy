@@ -57,6 +57,7 @@
     font-size: 14px;
     color: #291d2f;
     border-radius: 10px;
+    border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
@@ -87,6 +88,14 @@
       }
       &.signUp {
         width: 100px;
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+    .headerButton {
+      &.logIn {
+        display: none;
       }
     }
   }
