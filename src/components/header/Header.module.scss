@@ -19,6 +19,10 @@
       margin-left: -15px;
       scale: 0.8;
     }
+
+    @media (max-width: 380px) {
+      margin-top: 4px;
+    }
   }
 
   @media (max-width: 1080px) {
@@ -102,6 +106,14 @@
     .headerButton {
       &.logIn {
         display: none;
+      }
+    }
+  }
+
+  @media (max-width: 380px) {
+    .headerButton {
+      &.signUp {
+        margin-top: 0;
       }
     }
   }
