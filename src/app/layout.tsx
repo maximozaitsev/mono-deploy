@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "mummysgold-online.com";
+const url = "roobetcasino-online.com";
 const ogTitle =
-  "Mummy’s Gold Casino Canada – Top Online Casino for Canadian Players";
-const ogSiteName = "Mummy’s Gold Casino";
+  "Roobet Casino Canada: Unique Online Casino and Sport Bookmaker";
+const ogSiteName = "Roobet Casino";
 const metaDescription =
-  "Mummy’s Gold Casino Canada delivers thrilling games, secure transactions, and generous bonuses for Canadian players. Sign up now to claim your welcome bonus and enjoy top-notch online entertainment today!";
+  "Roobet Casino Canada: one of the most unusual casinos on the Internet. Key features, gaming options, promotions and payment methods. Useful information for beginners and experienced gamblers";
 
 const locale = "en-CA";
 const language = "English";

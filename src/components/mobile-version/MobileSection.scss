@@ -82,8 +82,8 @@
 
     img {
       position: absolute;
-      left: 3px;
-      top: 24px;
+      left: -55px;
+      top: 1px;
 
       @media (max-width: 1370px) {
         position: static;
@@ -103,7 +103,7 @@
 
       .app-image {
         height: 405px;
-        width: 308px;
+        width: 312px;
         object-fit: contain;
       }
     }
@@ -137,13 +137,14 @@
         padding: 24px;
 
         .app-image {
-          margin-left: 44px;
+          margin-left: 24px;
           margin-bottom: 4px;
-          padding-bottom: 20px;
+          padding-bottom: 26px;
+          margin-top: 7px;
 
-          @media (max-width: 500px) {
-            margin-left: 0;
-          }
+          // @media (max-width: 500px) {
+          //   margin-left: 0;
+          // }
         }
 
         h3 {

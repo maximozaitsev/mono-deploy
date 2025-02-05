@@ -1,5 +1,5 @@
 import Image from "next/image";
-import licenceImage from "../../../public/block-images/licence.webp";
+// import licenceImage from "../../../public/block-images/licence.webp";
 import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { content } from "@/content/content";
 import styles from "./LicensesSection.module.scss";

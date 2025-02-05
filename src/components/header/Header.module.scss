@@ -15,9 +15,9 @@
     scale: 1;
 
     @media (max-width: 576px) {
-      margin-top: 6px;
-      // margin-left: -18px;
-      scale: 0.77;
+      margin-top: -8px;
+      margin-left: -15px;
+      scale: 0.8;
     }
   }
 
@@ -27,6 +27,10 @@
 
   @media (max-width: 768px) {
     height: 96px;
+  }
+
+  @media (max-width: 576px) {
+    height: 80px;
   }
 
   @media (max-width: 380px) {
@@ -50,44 +54,46 @@
   gap: 24px;
 
   .headerButton {
-    height: 41px;
+    height: 50px;
     font-family: $font-secondary;
-    // padding: 12px 32px;
     font-weight: 700;
-    font-size: 14px;
-    color: #291d2f;
-    border-radius: 10px;
+    font-size: 16px;
+    color: $text-color-button-header;
+    border-radius: 16px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
-    &:hover {
-      transform: scale(1.07);
-    }
-
     &.logIn {
-      background: $color-button-small;
-      width: 101px;
+      background: #2c2852;
+      width: 122px;
     }
 
     &.signUp {
-      background: $color-button-large;
-      width: 200px;
+      background: $color-button-small;
+      width: 160px;
+      border-bottom: 4px solid #c56a18;
+      -webkit-text-stroke: 1px #c56a18;
+    }
+
+    &:hover {
+      transform: scale(1.05);
     }
   }
   @media (max-width: 576px) {
     gap: 8px;
 
     .headerButton {
-      height: 28px;
-      border-radius: 8px;
-      font-size: 10px;
+      height: 32px;
+      font-size: 14px;
+      border-radius: 10px;
+      margin-top: -12px;
 
       &.logIn {
-        width: 59px;
+        width: 83px;
       }
       &.signUp {
-        width: 100px;
+        width: 95px;
       }
     }
   }
@@ -100,123 +106,3 @@
     }
   }
 }
-
-// .nav-links {
-//   list-style: none;
-//   display: flex;
-//   gap: 24px;
-//   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-//   opacity: 1;
-
-//   li a {
-//     color: $text-color-primary;
-//     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     font-size: 20px;
-//     font-style: normal;
-//     font-weight: 500;
-//     line-height: 28px;
-//     text-decoration: none;
-//     transition: background-image 0.3s ease;
-//     background-image: none;
-//     cursor: pointer;
-
-//     &:hover {
-//       color: $text-color-header-hover;
-
-//       // background-image: $text-color-header-hover;
-//       // -webkit-background-clip: text;
-//       // background-clip: text;
-//       // color: transparent;
-//     }
-//   }
-
-//   @media (max-width: 768px) {
-//     flex-direction: column;
-//     position: fixed;
-//     top: 96px;
-//     right: -100%;
-//     width: 100%;
-//     height: 100%;
-//     background: $color-background-header;
-//     padding-top: 2.5rem;
-//     gap: 16px;
-//     transition: right 0.4s ease;
-//     text-align: center;
-
-//     &.open {
-//       right: 0;
-//     }
-
-//     li {
-//       padding: 1rem 0;
-//     }
-
-//     li a {
-//       font-size: 32px;
-//     }
-//   }
-
-//   @media (max-width: 380px) {
-//     top: 64px;
-//   }
-// }
-
-// .burger-menu {
-//   position: relative;
-//   width: 30px;
-//   height: 24px;
-//   cursor: pointer;
-//   display: none;
-//   background: none;
-//   border: none;
-//   margin-right: 30px;
-//   margin-bottom: 35px;
-//   .burger-lines {
-//     position: absolute;
-//     top: 22px;
-//     left: 22px;
-//     width: 100%;
-//     height: 4px;
-//     background-color: $text-color-primary;
-//     transition: all 0.3s ease;
-
-//     &:before,
-//     &:after {
-//       content: "";
-//       position: absolute;
-//       left: 0;
-//       width: 100%;
-//       height: 4px;
-//       background-color: $text-color-primary;
-//       transition: all 0.3s ease;
-//     }
-
-//     &:before {
-//       top: -10px;
-//     }
-
-//     &:after {
-//       top: 10px;
-//     }
-//   }
-
-//   &.open .burger-lines {
-//     background-color: transparent;
-
-//     &:before {
-//       transform: rotate(45deg);
-//       top: 0;
-//     }
-
-//     &:after {
-//       transform: rotate(-45deg);
-//       top: 0;
-//     }
-//   }
-// }
-
-// @media (max-width: 768px) {
-//   .burger-menu {
-//     display: block;
-//   }
-// }

@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Cabin", sans-serif;
+$font-secondary: "Ubuntu", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -9,15 +9,15 @@ $font-secondary: "Cabin", sans-serif;
 }
 
 @font-face {
-  font-family: "Cabin";
-  src: url("Heading/static/Cabin-Bold.ttf") format("truetype");
+  font-family: "Ubuntu";
+  src: url("Heading/Ubuntu-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 // @font-face {
 //   font-family: "Montserrat";
-//   src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
+//   src: url("./Heading/static/Ubuntu-Black.ttf") format("truetype");
 //   font-weight: 900;
 //   font-style: normal;
 // }
