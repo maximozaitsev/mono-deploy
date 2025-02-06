@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "roobetcasino-online.com";
+const url = "playgroundcasino-online.com";
 const ogTitle =
-  "Roobet Casino Canada: Unique Online Casino and Sport Bookmaker";
-const ogSiteName = "Roobet Casino";
+  "Playground Casino Canada: The Best Live Casino Experience For You";
+const ogSiteName = "Playground Casino";
 const metaDescription =
-  "Roobet Casino Canada: one of the most unusual casinos on the Internet. Key features, gaming options, promotions and payment methods. Useful information for beginners and experienced gamblers";
+  "Playground Casino Canada: a sophisticated gambling establishment with amazing opportunities. Range of games, bonuses, loyalty program. Everything new customers need to know";
 
 const locale = "en-CA";
 const language = "English";

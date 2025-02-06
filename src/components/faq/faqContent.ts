@@ -1,16 +1,14 @@
 export const faqs = [
   {
-    question: "Is the casino legally operating in Canada?",
-    answer: "Yes. The service operates on the basis of a valid license.",
+    question: "What license does the casino operate under?",
+    answer: "This is a license from the Kahnawake Gaming Commission.",
   },
   {
-    question: "Is there a welcome bonus for a deposit?",
-    answer:
-      "No. But the casino offers many other interesting promotions and bonuses.",
+    question: "At what age can you visit this casino?",
+    answer: "You must be 19 years and 1 day old.",
   },
   {
-    question: "From what age can you register?",
-    answer:
-      "According to the casino rules, customers must be at least 18 years old.",
+    question: "How do I get a membership card?",
+    answer: "You can register online or when visiting the casino.",
   },
 ];

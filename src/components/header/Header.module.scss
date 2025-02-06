@@ -15,13 +15,9 @@
     scale: 1;
 
     @media (max-width: 576px) {
-      margin-top: -8px;
-      margin-left: -15px;
-      scale: 0.8;
-    }
-
-    @media (max-width: 380px) {
-      margin-top: 4px;
+      margin-top: 0px;
+      margin-left: -28px;
+      scale: 0.77;
     }
   }
 
@@ -31,10 +27,6 @@
 
   @media (max-width: 768px) {
     height: 96px;
-  }
-
-  @media (max-width: 576px) {
-    height: 80px;
   }
 
   @media (max-width: 380px) {
@@ -58,46 +50,59 @@
   gap: 24px;
 
   .headerButton {
-    height: 50px;
+    height: 45px;
     font-family: $font-secondary;
-    font-weight: 700;
-    font-size: 16px;
-    color: $text-color-button-header;
-    border-radius: 16px;
+    font-weight: 900;
+    font-size: 14px;
+    // color: $text-color-button-header;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
-      background: #2c2852;
-      width: 122px;
+      background: $color-button-small;
+      width: 107px;
+      color: #171717;
     }
 
     &.signUp {
-      background: $color-button-small;
-      width: 160px;
-      border-bottom: 4px solid #c56a18;
-      -webkit-text-stroke: 1px #c56a18;
+      background: $color-button-large;
+      width: 200px;
+      color: #fff;
     }
 
     &:hover {
       transform: scale(1.05);
     }
   }
+
+  @media (max-width: 768px) {
+    .headerButton {
+      &.logIn {
+        width: 88px;
+      }
+
+      &.signUp {
+        width: 150px;
+      }
+    }
+  }
+
   @media (max-width: 576px) {
     gap: 8px;
 
     .headerButton {
-      height: 32px;
-      font-size: 14px;
-      border-radius: 10px;
-      margin-top: -12px;
+      height: 31px;
+      border-radius: 4px;
+      font-size: 10px;
+      margin-top: -4px;
 
       &.logIn {
-        width: 83px;
+        width: 63px;
       }
       &.signUp {
-        width: 95px;
+        width: 100px;
       }
     }
   }
@@ -106,14 +111,6 @@
     .headerButton {
       &.logIn {
         display: none;
-      }
-    }
-  }
-
-  @media (max-width: 380px) {
-    .headerButton {
-      &.signUp {
-        margin-top: 0;
       }
     }
   }

@@ -11,7 +11,7 @@
     border-spacing: 0 16px;
     text-align: center;
     table-layout: auto;
-    // margin-top: -15px;
+    margin-top: -15px;
     margin-bottom: -25px;
 
     thead th,
@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: $text-color-primary;
+        color: #171717;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;

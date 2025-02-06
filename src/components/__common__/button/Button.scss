@@ -8,6 +8,7 @@
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+  text-transform: uppercase;
 
   &.primary {
     // outline: 4px solid;
@@ -18,21 +19,17 @@
     background: $color-button-large;
     color: $text-color-button-large;
     font-size: 28px;
-    border-bottom: 6px solid rgba(0, 0, 0, 0.2);
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    border-radius: 24px;
+    border: none;
+    border-radius: 16px;
     min-width: 280px;
     height: 87px;
-    text-transform: uppercase;
 
     @media (max-width: 768px) {
       font-size: 24px;
       padding: 4px 48px;
       min-width: 240px;
       height: 77px;
-      border-radius: 20px;
+      border-radius: 12px;
     }
 
     @media (max-width: 420px) {
@@ -60,15 +57,12 @@
     color: $text-color-button-small;
     font-size: 20px;
     border: none;
-    border-bottom: 4px solid #c56a18;
     border-radius: 16px;
-    height: 56px;
-    -webkit-text-stroke: 1px #c56a18;
-    // -webkit-text-fill-color: #c56a18;
+    height: 52px;
 
     @media (max-width: 768px) {
       font-size: 18px;
-      height: 54px;
+      border-radius: 8px;
     }
 
     @media (max-width: 300px) {
