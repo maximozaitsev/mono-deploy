@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "playgroundcasino-online.com";
+const url = "katscasino-online.com";
 const ogTitle =
-  "Playground Casino Canada: The Best Live Casino Experience For You";
-const ogSiteName = "Playground Casino";
+  "Kats Casino Canada: A Detailed Review of a Popular Crypto Service";
+const ogSiteName = "Kats Casino";
 const metaDescription =
-  "Playground Casino Canada: a sophisticated gambling establishment with amazing opportunities. Range of games, bonuses, loyalty program. Everything new customers need to know";
+  "Kats Casino Canada: crypto gambling platform. A detailed review of gaming options, bonus offers and available payment methods. Everything new customers need to know";
 
 const locale = "en-CA";
 const language = "English";

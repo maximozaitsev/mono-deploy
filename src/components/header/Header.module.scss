@@ -16,13 +16,8 @@
 
     @media (max-width: 576px) {
       margin-top: 0px;
-      margin-left: -28px;
-      scale: 0.77;
-    }
-
-    @media (max-width: 380px) {
-      scale: 0.65;
-      margin-left: -30px;
+      // margin-left: -18px;
+      // scale: 0.85;
     }
   }
 
@@ -37,6 +32,10 @@
   @media (max-width: 380px) {
     padding: 5px 10px;
     height: 64px;
+
+    img {
+      margin-left: 0;
+    }
   }
 }
 
@@ -51,56 +50,49 @@
   gap: 24px;
 
   .headerButton {
-    height: 45px;
+    height: 41px;
     font-family: $font-secondary;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 14px;
-    // color: $text-color-button-header;
-    border-radius: 8px;
+    color: $text-color-button-header;
+    border-radius: 50px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
       background: $color-button-small;
-      width: 107px;
-      color: #171717;
+      width: 109px;
+
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: rgba(0, 0, 0, 0.2);
     }
 
     &.signUp {
       background: $color-button-large;
       width: 200px;
       color: #fff;
+
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: rgba(255, 255, 255, 0.2);
     }
 
     &:hover {
       transform: scale(1.05);
     }
   }
-
-  @media (max-width: 768px) {
-    .headerButton {
-      &.logIn {
-        width: 88px;
-      }
-
-      &.signUp {
-        width: 150px;
-      }
-    }
-  }
-
   @media (max-width: 576px) {
     gap: 8px;
 
     .headerButton {
-      height: 31px;
-      border-radius: 4px;
+      height: 28px;
       font-size: 10px;
       margin-top: -4px;
 
       &.logIn {
-        width: 63px;
+        width: 64px;
       }
       &.signUp {
         width: 100px;

@@ -1,14 +1,14 @@
 export const faqs = [
   {
-    question: "What license does the casino operate under?",
-    answer: "This is a license from the Kahnawake Gaming Commission.",
+    question: "Does the casino have welcome bonuses?",
+    answer: "Yes. The casino offers several types of welcome bonuses.",
   },
   {
-    question: "At what age can you visit this casino?",
-    answer: "You must be 19 years and 1 day old.",
+    question: "Can I use fiat currency?",
+    answer: "Yes. You can make deposits here using Visa and Mastercard.",
   },
   {
-    question: "How do I get a membership card?",
-    answer: "You can register online or when visiting the casino.",
+    question: "How do I get free chips?",
+    answer: "All you need to do is register on the website.",
   },
 ];
