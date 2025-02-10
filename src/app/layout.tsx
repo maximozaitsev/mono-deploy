@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "katscasino-online.com";
+const url = "golden-crown-casino-online.com";
 const ogTitle =
-  "Kats Casino Canada: A Detailed Review of a Popular Crypto Service";
-const ogSiteName = "Kats Casino";
+  "Golden Crown Casino Australia: Everything New Players Need to Know";
+const ogSiteName = "Golden Crown";
 const metaDescription =
-  "Kats Casino Canada: crypto gambling platform. A detailed review of gaming options, bonus offers and available payment methods. Everything new customers need to know";
+  "Golden Crown Casino Australia: a detailed review of the popular gambling platform. Games, bonuses, payment systems, registration and other interesting facts for gamblers";
 
-const locale = "en-CA";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

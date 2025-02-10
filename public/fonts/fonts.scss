@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Rubik", sans-serif;
+$font-secondary: "Inter", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -16,8 +16,8 @@ $font-secondary: "Rubik", sans-serif;
 // }
 
 @font-face {
-  font-family: "Rubik";
-  src: url("./Heading/static/Rubik-Black.ttf") format("truetype");
+  font-family: "Inter";
+  src: url("./Heading/static/Inter_28pt-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
