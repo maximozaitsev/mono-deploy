@@ -71,7 +71,8 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                   <strong>Processing time:</strong> {method.processing_time}
                 </p>
                 <p>
-                  <strong>Minimum deposit:</strong> {method.min_dep}
+                  <strong>Minimum deposit:</strong>
+                  <span className="min-dep">{method.min_dep}</span>
                 </p>
               </div>
             </div>
