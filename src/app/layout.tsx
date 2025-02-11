@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "golden-crown-casino-online.com";
-const ogTitle =
-  "Golden Crown Casino Australia: Everything New Players Need to Know";
-const ogSiteName = "Golden Crown";
+const url = "playamo-casino-australia.com";
+const ogTitle = "PlayAmo Casino Australia: Top Online Games and Fast Payouts";
+const ogSiteName = "PlayAmo Casino";
 const metaDescription =
-  "Golden Crown Casino Australia: a detailed review of the popular gambling platform. Games, bonuses, payment systems, registration and other interesting facts for gamblers";
+  "Enjoy over 3,500 games, fast payouts and generous bonuses at PlayAmo Casino Australia. Get a welcome bonus of up to AUD 1,500 and 150 free spins!";
 
 const locale = "en-AU";
 const language = "English";

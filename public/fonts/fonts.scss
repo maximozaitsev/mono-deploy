@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Inter", sans-serif;
+$font-secondary: "Open Sans ExtraBold", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -15,9 +15,17 @@ $font-secondary: "Inter", sans-serif;
 //   font-style: normal;
 // }
 
+// @font-face {
+//   font-family: "Montserrat";
+//   src: url("./Heading/static/OpenSans-ExtraBold.ttf") format("truetype");
+//   font-weight: 900;
+//   font-style: normal;
+// }
+
 @font-face {
-  font-family: "Inter";
-  src: url("./Heading/static/Inter_28pt-Black.ttf") format("truetype");
-  font-weight: 900;
+  font-family: "Open Sans ExtraBold";
   font-style: normal;
+  font-weight: normal;
+  src: local("Open Sans ExtraBold"),
+    url("./open-sans-webfont/OpenSans-ExtraBold.woff") format("woff");
 }

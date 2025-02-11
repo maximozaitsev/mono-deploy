@@ -43,8 +43,10 @@
             }
 
             @media (max-width: 768px) {
-              margin-top: 8px;
+              margin-top: 4px;
+              margin-bottom: -6px;
               margin-left: 0;
+              scale: 0.82;
             }
           }
         }
