@@ -32,7 +32,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 880);
+      setIsMobileView(window.innerWidth <= 850);
     };
 
     handleResize();

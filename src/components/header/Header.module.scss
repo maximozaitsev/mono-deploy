@@ -19,8 +19,8 @@
     }
 
     @media (max-width: 576px) {
-      margin-left: -16px;
-      scale: 0.82;
+      margin-left: -20px;
+      scale: 0.8;
     }
   }
 
@@ -53,19 +53,19 @@
   gap: 24px;
 
   .headerButton {
-    height: 43px;
+    height: 41px;
     font-family: $font-secondary;
     font-weight: 700;
     font-size: 14px;
     color: $text-color-button-header;
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
       background: $color-button-small;
-      width: 108px;
+      width: 112px;
     }
 
     &.signUp {
@@ -81,12 +81,11 @@
     gap: 8px;
 
     .headerButton {
-      height: 30px;
+      height: 28px;
       font-size: 10px;
-      border-radius: 4px;
 
       &.logIn {
-        width: 64px;
+        width: 66px;
       }
       &.signUp {
         width: 100px;

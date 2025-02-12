@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "playamo-casino-australia.com";
-const ogTitle = "PlayAmo Casino Australia: Top Online Games and Fast Payouts";
-const ogSiteName = "PlayAmo Casino";
+const url = "bassbet-australia.com";
+const ogTitle =
+  "BassBet Casino Australia—Play Slots, Live Games & Sports Betting";
+const ogSiteName = "BassBet Casino";
 const metaDescription =
-  "Enjoy over 3,500 games, fast payouts and generous bonuses at PlayAmo Casino Australia. Get a welcome bonus of up to AUD 1,500 and 150 free spins!";
+  "BassBet Casino Australia offers thousands of slots, live dealer games, and an extensive sportsbook with top odds. Enjoy fast payments, generous bonuses, and a seamless gaming experience. Sign up today and claim your welcome bonus to start playing!";
 
 const locale = "en-AU";
 const language = "English";
