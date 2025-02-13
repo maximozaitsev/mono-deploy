@@ -1,6 +1,6 @@
-@import "../../styles/colors";
+@import "../../../styles/colors.scss";
 
-.gamesToPlay {
+.sectionContainer {
   padding: 64px 0;
   background: $color-background-secondary;
 
@@ -20,5 +20,10 @@
     :global(.container) {
       gap: 40px;
     }
+  }
+  .paragraphGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }

@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "bassbet-australia.com";
+const url = "paradise8casino-online.com";
 const ogTitle =
-  "BassBet Casino Australia—Play Slots, Live Games & Sports Betting";
-const ogSiteName = "BassBet Casino";
+  "Paradise 8 Casino Australia: Popular Online Gambling Platform Review";
+const ogSiteName = "Paradise 8 Casino";
 const metaDescription =
-  "BassBet Casino Australia offers thousands of slots, live dealer games, and an extensive sportsbook with top odds. Enjoy fast payments, generous bonuses, and a seamless gaming experience. Sign up today and claim your welcome bonus to start playing!";
+  "Paradise 8 Casino Australia: what you need to know about this service. Range of entertainment, welcome bonuses, weekly promotions, payment methods and other useful and interesting information";
 
 const locale = "en-AU";
 const language = "English";
