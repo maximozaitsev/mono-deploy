@@ -80,9 +80,9 @@ export default function SectionWithTwoColumns({
   }
 
   return (
-    <section className={`${styles.sectionContainer} section `}>
+    <section className={`${styles.sectionContainer} section`}>
       <div className="container">
-        {sectionTitle && <h2 className="h2-heading white">{sectionTitle}</h2>}
+        <h2 className="h2-heading white">{sectionTitle || "Section"}</h2>
 
         {introContent.length > 0 &&
           introContent.map((group, index) => (

@@ -80,7 +80,7 @@ export default function AdvantageSection() {
   return (
     <section className={`${styles.advantageSection} section`}>
       <div className="container">
-        {sectionTitle && <h2 className="h2-heading">{sectionTitle}</h2>}
+        <h2 className="h2-heading">{sectionTitle || "Advantages"}</h2>
 
         {introParagraphs.length > 0 &&
           introParagraphs.map((group, index) => (
