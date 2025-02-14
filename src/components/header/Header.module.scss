@@ -14,8 +14,11 @@
     margin-left: 0px;
     scale: 1;
 
-    @media (max-width: 576px) {
+    @media (max-width: 1080px) {
       margin-top: 0px;
+    }
+
+    @media (max-width: 576px) {
       // margin-left: -18px;
       // scale: 0.85;
     }
