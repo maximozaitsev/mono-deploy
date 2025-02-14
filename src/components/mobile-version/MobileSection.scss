@@ -85,6 +85,10 @@
       left: 47px;
       top: 0px;
 
+      @media (max-width: 1439px) {
+        left: 0px;
+      }
+
       @media (max-width: 1370px) {
         position: static;
         width: 450px;
