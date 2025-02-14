@@ -70,8 +70,15 @@ export default function FAQSection() {
   }, [activeIndices]);
 
   return (
-    <section className="faq-section section container">
-      {faqTitle && <h2 className="h2-heading">{faqTitle}</h2>}
+    <section
+      className="faq-section section container"
+      aria-labelledby="faq-title"
+    >
+      {faqTitle && (
+        <h2 id="faq-title" className="h2-heading">
+          {faqTitle}
+        </h2>
+      )}
       {faqs.map((faq, index) => (
         <div key={index} className="faq-item">
           <div className="faq-question" onClick={() => toggleAccordion(index)}>
