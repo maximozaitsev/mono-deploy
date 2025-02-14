@@ -29,8 +29,8 @@ export default function FAQSection() {
         const faqEntries = Object.entries(faqData) as [string, any][];
         if (faqEntries.length === 0) return;
 
-        const [faqTitle, faqContent] = faqEntries[0];
-        setFaqTitle(faqTitle);
+        const [title, faqContent] = faqEntries[0];
+        setFaqTitle(title);
 
         const faqItems: FAQItem[] = [];
         for (let i = 0; i < faqContent.length; i++) {
@@ -70,15 +70,8 @@ export default function FAQSection() {
   }, [activeIndices]);
 
   return (
-    <section
-      className="faq-section section container"
-      aria-labelledby="faq-title"
-    >
-      {faqTitle && (
-        <h2 id="faq-title" className="h2-heading">
-          {faqTitle}
-        </h2>
-      )}
+    <section className="faq-section section container">
+      <h2 className="h2-heading">{faqTitle || "FAQ"}</h2>
       {faqs.map((faq, index) => (
         <div key={index} className="faq-item">
           <div className="faq-question" onClick={() => toggleAccordion(index)}>
