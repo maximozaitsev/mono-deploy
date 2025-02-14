@@ -34,17 +34,17 @@ export default function LicensesSection() {
                 <BlockRenderer key={index} block={block} />
               ))}
             </div>
-            {licenses.showImage && (
-              <div className={styles.rightImage}>
-                <Image
-                  src={licenceImage}
-                  alt="Licenses"
-                  width={240}
-                  height={240}
-                  quality={100}
-                />
-              </div>
-            )}
+            {/* {licenses.showImage && (
+              // <div className={styles.rightImage}>
+              //   <Image
+              //     src={licenceImage}
+              //     alt="Licenses"
+              //     width={240}
+              //     height={240}
+              //     quality={100}
+              //   />
+              // </div>
+            )} */}
           </div>
         )}
 
