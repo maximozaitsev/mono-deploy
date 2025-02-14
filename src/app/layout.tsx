@@ -1,11 +1,9 @@
 import { Metadata } from "next";
 
-const url = "paradise8casino-online.com";
-const ogTitle =
-  "Paradise 8 Casino Australia: Popular Online Gambling Platform Review";
-const ogSiteName = "Paradise 8 Casino";
-const metaDescription =
-  "Paradise 8 Casino Australia: what you need to know about this service. Range of entertainment, welcome bonuses, weekly promotions, payment methods and other useful and interesting information";
+const url = "kangaroo88casino.com";
+const ogTitle = "Kangaroo 88 Casino Australia: Incredible Gambling Surrounded by Animals";
+const ogSiteName = "Kangaroo 88 Casino";
+const metaDescription = "Kangaroo 88 Casino Australia: a unique gambling platform for everyone. Detailed review of the online casino, gaming opportunities, bonus offers and other useful information";
 
 const locale = "en-AU";
 const language = "English";
