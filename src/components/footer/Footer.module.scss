@@ -42,7 +42,7 @@
             cursor: pointer;
 
             @media (max-width: 768px) {
-              scale: 0.71;
+              scale: 0.65;
             }
           }
         }
@@ -101,6 +101,11 @@
             position: static !important;
             margin-top: -1px !important;
             margin-bottom: 6px !important;
+
+            @media (max-width: 768px) {
+              margin-top: -5px !important;
+              margin-bottom: 0px !important;
+            }
           }
         }
 

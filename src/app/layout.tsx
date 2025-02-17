@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "winmatch-online.com";
+const url = "becric-online.com";
 const ogTitle =
-  "WinMatch Casino India: Review of Games, Bonuses, Payments & Security";
-const ogSiteName = "Winmatch";
+  "Becric Casino India – Games, Bonuses, Payments, and Mobile App";
+const ogSiteName = "Becric";
 const metaDescription =
-  "Discover everything about WinMatch Casinoin India, including its game selection, bonuses, payment methods, security measures, and mobile app. Read a detailed Winmatch review now!";
+  "Discover Becric Casino India: licensed gaming, diverse casino games, sports betting, generous bonuses, secure deposits, and withdrawals. Register now and play with a 100% welcome bonus.";
 
 const locale = "en-IN";
 const language = "English";
