@@ -28,7 +28,7 @@
     align-items: center;
 
     .about-text {
-      width: 50%;
+      width: 45%;
 
       @media (max-width: 1380px) {
         width: 100%;
@@ -40,6 +40,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      img {
+        scale: 0.95;
+      }
 
       @media (max-width: 1380px) {
         max-width: 650px;
