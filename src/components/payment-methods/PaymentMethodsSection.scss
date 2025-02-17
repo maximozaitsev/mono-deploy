@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: #fff;
+        color: $text-color-primary;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
@@ -169,15 +169,15 @@
           line-height: normal;
           font-weight: 500;
           padding: 8px;
-          // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
           &:last-child {
             border-bottom: none;
           }
 
           strong {
-            background: $text-color-primary;
+            background: $text-color-fourth;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

@@ -1,11 +1,13 @@
 import { Metadata } from "next";
 
-const url = "kangaroo88casino.com";
-const ogTitle = "Kangaroo 88 Casino Australia: Incredible Gambling Surrounded by Animals";
-const ogSiteName = "Kangaroo 88 Casino";
-const metaDescription = "Kangaroo 88 Casino Australia: a unique gambling platform for everyone. Detailed review of the online casino, gaming opportunities, bonus offers and other useful information";
+const url = "winmatch-online.com";
+const ogTitle =
+  "WinMatch Casino India: Review of Games, Bonuses, Payments & Security";
+const ogSiteName = "Winmatch";
+const metaDescription =
+  "Discover everything about WinMatch Casinoin India, including its game selection, bonuses, payment methods, security measures, and mobile app. Read a detailed Winmatch review now!";
 
-const locale = "en-AU";
+const locale = "en-IN";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

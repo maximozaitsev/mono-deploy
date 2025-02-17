@@ -38,11 +38,11 @@
             margin-top: 4px;
             // scale: 2.02;
             position: absolute;
-            left: 150px;
+            left: 220px;
             cursor: pointer;
 
             @media (max-width: 768px) {
-              scale: 0.72;
+              scale: 0.71;
             }
           }
         }
@@ -99,13 +99,8 @@
 
           img {
             position: static !important;
-            margin-top: -9px !important;
-            margin-bottom: -4px !important;
-
-            @media (max-width: 768px) {
-              margin-top: 5px !important;
-              margin-bottom: -2px !important;
-            }
+            margin-top: -1px !important;
+            margin-bottom: 6px !important;
           }
         }
 
