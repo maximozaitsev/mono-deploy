@@ -37,7 +37,6 @@ export default function AboutSection() {
           <P>{content.about.register.text[1]}</P>
           <P>{content.about.register.text[2]}</P>
         </div>
-        <h2></h2>
       </div>
     </section>
   );
