@@ -162,7 +162,7 @@ export const content = {
       },
     ],
   },
-  support: {},
+  // support: {},
   promotions: {
     title: "Bonuses and Promotions: Royal Spins Vlt",
     text: [
