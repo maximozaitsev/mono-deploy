@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../header/Logo";
+import { content } from "@/content/content";
 import styles from "./Footer.module.scss";
 
-const projectName = "Becric Casino";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",
@@ -65,6 +65,7 @@ const partnerLogos = [
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
   const [hoveredLogoIndex, setHoveredLogoIndex] = useState<number | null>(null);
 
   const scrollToWelcomeSection = () => {
@@ -132,7 +133,7 @@ const Footer = () => {
           <span className={styles.hiddenSpan}>
             Copyright &copy; {currentYear}
           </span>{" "}
-          <span>&nbsp;{projectName}</span>
+          <span>&nbsp;{content.projectName} Slots</span>
         </p>
       </div>
     </footer>

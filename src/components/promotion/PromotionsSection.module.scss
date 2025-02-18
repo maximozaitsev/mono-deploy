@@ -1,0 +1,22 @@
+@import "../../styles/colors";
+
+.promotionsSection {
+  background: $color-background-secondary;
+  padding: 64px 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  :global(.container) {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+
+    :global(.container) {
+      gap: 40px !important;
+    }
+  }
+}

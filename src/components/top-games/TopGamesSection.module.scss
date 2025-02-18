@@ -49,7 +49,7 @@
 .gameItem {
   position: relative;
   overflow: hidden;
-  border-radius: $border-radius;
+  border-radius: 8px;
   border: $border-width solid $border-color;
   transition: transform 0.5s ease;
   max-width: 264px;
@@ -140,7 +140,7 @@
     }
 
     .playIcon {
-      --icon-color: #{$text-color-fourth}; 
+      --icon-color: #{$text-color-fourth};
       display: flex;
 
       svg {

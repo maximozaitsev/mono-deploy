@@ -7,8 +7,8 @@ import Header from "../../../components/header/Header";
 import Footer from "@/components/footer/Footer";
 import "../../../components/header/Header.module.scss";
 import Image from "next/image";
+import SpinnerGif from "../../../../public/assets/loader.gif";
 import styles from "./PreloaderPage.module.scss";
-import SpinnerGif from "../../../../public/assets/loader-light.gif";
 
 const PreloaderPage = () => {
   const { id } = useParams();

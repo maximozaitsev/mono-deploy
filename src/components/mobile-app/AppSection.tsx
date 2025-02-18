@@ -3,40 +3,28 @@
 import Image from "next/image";
 import AppImage from "../../../public/block-images/app.webp";
 import AppImageMobile from "../../../public/block-images/app-mobile.webp";
+import TwoColumns from "../__common__/two-columns/TwoColumns";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
+import { content } from "@/content/content";
+
 import styles from "./AppSection.module.scss";
-import useContentData from "../../utils/useContentData";
-import BlockRenderer from "../__common__/renderers/BlockRenderer";
-import { useParsedSections } from "../../utils/parseSections";
 
 export default function AppSection() {
   const { handleNavigation } = useNavigateWithPreloader();
-  const { data: content, loading, error } = useContentData();
-  const { app } = useParsedSections(content?.sections || {});
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error loading content.</p>;
-  if (!app) return <p>App section data is not available.</p>;
 
   return (
     <section id="mobile" className={`${styles.appSection} section`}>
       <div className="container">
         <div className={styles.topRow}>
           <div className={styles.textBlock}>
-            {app.appTitle && <h3 className="h3-heading">{app.appTitle}</h3>}
+            <h3 className="h3-heading">{content.app.title}</h3>
             <Image
               src={AppImageMobile}
               alt="App preview"
               className={styles.imageMobile}
               quality={100}
             />
-            {app.appContent.map((group, index) => (
-              <div key={index} className={styles.paragraphGroup}>
-                {group.map((block: any, i: number) => (
-                  <BlockRenderer key={i} block={block} />
-                ))}
-              </div>
-            ))}
+            <p className="paragraph-text">{content.app.text[0]}</p>
             <div className={styles.buttons}>
               <button
                 className="google-play"
@@ -68,25 +56,31 @@ export default function AppSection() {
             <Image src={AppImage} alt="App preview" className={styles.image} />
           </div>
         </div>
-
-        <div className={styles.columns}>
-          <div className={styles.column}>
-            {app.languagesTitle && (
-              <h3 className="h3-heading">{app.languagesTitle}</h3>
-            )}
-            {app.languagesContent.map((block, index) => (
-              <BlockRenderer key={index} block={block} />
-            ))}
-          </div>
-          <div className={styles.column}>
-            {app.currenciesTitle && (
-              <h3 className="h3-heading">{app.currenciesTitle}</h3>
-            )}
-            {app.currenciesContent.map((block, index) => (
-              <BlockRenderer key={index} block={block} />
-            ))}
-          </div>
-        </div>
+        <TwoColumns
+          leftColumnContent={[
+            {
+              heading: content.app.languages,
+              items: [
+                {
+                  type: "text",
+                  content: content.app.languagesText[0],
+                },
+              ],
+            },
+          ]}
+          rightColumnContent={[
+            {
+              heading: content.app.currencies,
+              items: [
+                {
+                  type: "text",
+                  content: content.app.currenciesText[0],
+                },
+              ],
+            },
+          ]}
+          columnGap="48px"
+        />
       </div>
     </section>
   );

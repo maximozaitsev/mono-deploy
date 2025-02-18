@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "becric-online.com";
+const url = "royalspins-online.com";
 const ogTitle =
-  "Becric Casino India – Games, Bonuses, Payments, and Mobile App";
-const ogSiteName = "Becric";
+  "Royal Spins: Key Features and Bonus Functions of the Popular slot";
+const ogSiteName = "Royal Spins";
 const metaDescription =
-  "Discover Becric Casino India: licensed gaming, diverse casino games, sports betting, generous bonuses, secure deposits, and withdrawals. Register now and play with a 100% welcome bonus.";
+  "Royal Spins: retro graphics, bonus functions, progressive jackpot and other key features. What you need to know about the popular gambling entertainment and how to start making your first spins";
 
-const locale = "en-IN";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
