@@ -19,20 +19,20 @@
     }
 
     @media (max-width: 768px) {
-      margin-left: -29px;
-      scale: 0.79;
+      margin-left: -15px;
+      scale: 0.81;
     }
 
     @media (max-width: 420px) {
-      margin-left: -65px;
-      scale: 0.7;
+      // margin-left: -65px;
+      // scale: 0.7;
     }
 
     @media (max-width: 380px) {
       margin-left: 0px;
       margin-top: 4px;
       width: 150px;
-      scale: 1;
+      // scale: 1;
     }
   }
 
@@ -69,8 +69,8 @@
     font-family: $font-secondary;
     font-weight: 700;
     font-size: 14px;
-    color: $text-color-button-header;
-    border-radius: 50px;
+
+    border-radius: 8px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -78,11 +78,13 @@
     &.logIn {
       background: $color-button-small;
       width: 115px;
+      color: $text-color-button-header;
     }
 
     &.signUp {
       background: $color-button-large;
       width: 200px;
+      color: $text-color-button-large;
     }
 
     &:hover {
@@ -98,7 +100,7 @@
       margin-top: -3px;
 
       &.logIn {
-        width: 69px;
+        width: 68px;
       }
       &.signUp {
         width: 100px;

@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Ubuntu", sans-serif;
+$font-secondary: "Gilroy", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -9,9 +9,9 @@ $font-secondary: "Ubuntu", sans-serif;
 }
 
 @font-face {
-  font-family: "Ubuntu";
-  src: url("Heading/Ubuntu-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-family: "Gilroy";
+  src: url("Heading/Gilroy-Bold.woff") format("truetype");
+  font-weight: 800;
   font-style: normal;
 }
 

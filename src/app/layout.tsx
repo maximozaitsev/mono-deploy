@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 
-const url = "royalspins-online.com";
-const ogTitle =
-  "Royal Spins: Key Features and Bonus Functions of the Popular slot";
-const ogSiteName = "Royal Spins";
+const url = "cashman-casino-australia.com";
+const ogTitle = "Cashman Slot Australia: Play Exciting Casino Slot Game Online";
+const ogSiteName = "Cashman";
 const metaDescription =
-  "Royal Spins: retro graphics, bonus functions, progressive jackpot and other key features. What you need to know about the popular gambling entertainment and how to start making your first spins";
+  "Cashman Slot Australia offers thrilling casino slot gameplay with engaging bonuses and free spins. Spin the reels now and experience the excitement with big win opportunities!";
 
-const locale = "en-CA";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

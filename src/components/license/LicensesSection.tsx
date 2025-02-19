@@ -4,23 +4,28 @@ import Image from "next/image";
 import { content } from "@/content/content";
 
 import styles from "./LicensesSection.module.scss";
-import List from "../__common__/list/List";
 
 export default function LicensesSection() {
   return (
     <section className={`${styles.licensesSection} section`}>
       <div className="container">
         <h2 className={`h3-heading ${styles.headingMobile}`}>
-          {content.licenses.title}
+          {content.licenses.title[0]}
         </h2>
         <div className={styles.licensesContent}>
           <div className={styles.leftContent}>
             <h2 className={`h3-heading ${styles.headingDesktop}`}>
-              {content.licenses.title}
+              {content.licenses.title[0]}
             </h2>
             <p className="paragraph-text">{content.licenses.text[0]}</p>
-            <List items={content.licenses.list} />
+            <h3 className="h3-heading">{content.licenses.title[1]}</h3>
             <p className="paragraph-text">{content.licenses.text[1]}</p>
+            <h3 className="h3-heading">{content.licenses.title[2]}</h3>
+            <p className="paragraph-text">{content.licenses.text[2]}</p>
+            <h3 className="h3-heading">{content.licenses.title[3]}</h3>
+            <p className="paragraph-text">{content.licenses.text[3]}</p>
+            <h3 className="h3-heading">{content.licenses.title[4]}</h3>
+            <p className="paragraph-text">{content.licenses.text[4]}</p>
           </div>
           {/* <div className={styles.rightImage}>
             <Image

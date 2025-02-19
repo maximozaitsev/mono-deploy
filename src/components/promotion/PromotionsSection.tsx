@@ -22,13 +22,14 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.leftColumnContent[0].text[0],
                 },
+              ],
+            },
+            {
+              heading: content.promotions.leftColumnContent[1].heading,
+              items: [
                 {
                   type: "text",
-                  content: content.promotions.leftColumnContent[0].text[1],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.leftColumnContent[0].text[2],
+                  content: content.promotions.leftColumnContent[1].text[0],
                 },
               ],
             },
@@ -41,13 +42,14 @@ export default function PromotionsSection() {
                   type: "text",
                   content: content.promotions.rightColumnContent[0].text[0],
                 },
+              ],
+            },
+            {
+              heading: content.promotions.rightColumnContent[1].heading,
+              items: [
                 {
                   type: "text",
-                  content: content.promotions.rightColumnContent[0].text[1],
-                },
-                {
-                  type: "text",
-                  content: content.promotions.rightColumnContent[0].text[2],
+                  content: content.promotions.rightColumnContent[1].text[0],
                 },
               ],
             },
@@ -56,13 +58,29 @@ export default function PromotionsSection() {
         <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
           <h3 className="h3-heading white">
             {" "}
-            {content.about.depositMethods.title}{" "}
+            {content.about.depositMethods.title[0]}{" "}
           </h3>
           <P>{content.about.depositMethods.text[0]}</P>
+          <h3 className="h3-heading white">
+            {" "}
+            {content.about.depositMethods.title[1]}{" "}
+          </h3>
           <P>{content.about.depositMethods.text[1]}</P>
-          <List items={content.about.depositMethods.list} />
+          <h3 className="h3-heading white">
+            {" "}
+            {content.about.depositMethods.title[2]}{" "}
+          </h3>
           <P>{content.about.depositMethods.text[2]}</P>
+          <h3 className="h3-heading white">
+            {" "}
+            {content.about.depositMethods.title[3]}{" "}
+          </h3>
           <P>{content.about.depositMethods.text[3]}</P>
+          <h3 className="h3-heading white">
+            {" "}
+            {content.about.depositMethods.title[4]}{" "}
+          </h3>
+          <P>{content.about.depositMethods.text[4]}</P>
         </div>
         {/* <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
           <h3 className="h3-heading white">

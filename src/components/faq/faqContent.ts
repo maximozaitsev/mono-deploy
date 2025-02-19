@@ -1,14 +1,17 @@
 export const faqs = [
   {
-    question: "What is the RTP of this slot?",
-    answer: "RTP varies from 93 to 96.03%.",
+    question: "What is the RTP of Cashman Slot?",
+    answer:
+      "The Cashman Slot typically has an RTP of around 92.3%, which is slightly below the industry average.",
   },
   {
-    question: "What bonus features does the game have?",
-    answer: "Scatter in the form of a crown and a progressive jackpot.",
+    question: "Are there free spins in the game?",
+    answer:
+      "Yes, free spins are awarded through scatter symbols or the Random Cashman Bonus feature.",
   },
   {
-    question: "What is the maximum win?",
-    answer: "The maximum win is x1000 of the bet amount.",
+    question: "How does the Hold & Spin feature work?",
+    answer:
+      "Landing specific symbols activates Hold & Spin, granting respins with locked symbols for bigger rewards.",
   },
 ];

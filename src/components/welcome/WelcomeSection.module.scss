@@ -2,43 +2,68 @@
 @import "../../../public/fonts/fonts.scss";
 
 .welcomeSection {
+  background: $color-background-secondary;
+  margin-bottom: 140px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    margin-bottom: 62px;
+  }
+}
+
+.welcomeBg {
   display: flex;
   justify-content: center;
-  background: $color-background;
+  width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 140px top 60px;
-  width: 100%;
-  height: 540px;
+  // background-size: 55% auto;
+  background-position: right 148px top 41px;
   max-width: 90rem;
-  margin: 0 auto 140px auto;
+  margin: 0 auto;
+  height: 540px;
 
   & :global(.container) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
   }
-  @media (max-width: 1240px) {
+
+  @media (max-width: 1180px) {
     background-size: 50% auto;
-    background-position: right 10px center;
+    background-position: right 20px top 0;
+  }
+
+  @media (max-width: 1020px) {
+    background-position: right 0px center;
+  }
+
+  @media (max-width: 990px) {
+    background-size: 45% auto;
   }
 
   @media (max-width: 768px) {
-    padding-top: 21.35rem;
+    padding-top: 20.4rem;
     height: auto;
     justify-content: flex-end;
-    background-size: auto 65%;
-    background-position: top 10px center;
-    margin: 0 auto 84px auto;
+    background-size: auto 60%;
+    background-position: top 11px center;
+    margin: 0 auto 24px auto;
   }
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 62%;
   }
 
-  @media (max-width: 420px) {
-    margin: 0 auto 72px auto;
+  @media (max-width: 530px) {
     background-size: auto 50%;
     padding-top: 14.35rem;
+  }
+
+  @media (max-width: 380px) {
+    background-size: auto 60%;
+    padding-top: 12.35rem;
   }
 }
 
@@ -63,9 +88,17 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
-  width: 500px;
+  width: 410px;
   max-width: 50%;
   // margin-left: -20px;
+
+  button {
+    // min-width: 311px !important;
+
+    @media (max-width: 768px) {
+      min-width: 248px !important;
+    }
+  }
 
   .bonusText {
     display: none;
@@ -85,7 +118,6 @@
     .bonusText {
       display: block;
     }
-
     .offerText {
       display: none;
     }
@@ -100,14 +132,13 @@
   font-family: $font-secondary;
   font-size: 64px;
   font-style: normal;
-  font-weight: 900;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   line-height: normal;
   text-transform: uppercase;
   color: $text-color-welcome;
-  line-height: 125%;
 
-  // background: $text-color-welcome;
+  // background: $text-color-secondary;
   // background-clip: text;
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
@@ -119,7 +150,7 @@
 
 .welcomeText p {
   font-family: $font-primary;
-  color: $text-color-secondary;
+  color: #fff;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -128,14 +159,9 @@
   @media (max-width: 768px) {
     font-size: 24px;
     font-family: $font-secondary;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
-    // color: $text-color-welcome;
-
-    // background: $text-color-welcome;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
+    color: $text-color-welcome;
   }
 
   @media (max-width: 380px) {
