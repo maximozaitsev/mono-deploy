@@ -8,17 +8,16 @@ import AboutSection from "@/components/about/AboutSection";
 import PaymentMethodsSection from "@/components/payment-methods/PaymentMethodSection";
 import LicensesSection from "@/components/license/LicensesSection";
 import ProvidersSection from "@/components/providers/ProvidersSection";
-// import AppSection from "@/components/mobile-app/AppSection";
+import AppSection from "@/components/mobile-app/AppSection";
 import FAQSection from "@/components/faq/FAQSection";
-// import GamesToPlay from "@/components/games-to-play/GamesToPlay";
-// import SupportSection from "@/components/support/SupportSection";
+import GamesToPlay from "@/components/games-to-play/GamesToPlay";
+import SupportSection from "@/components/support/SupportSection";
 import PromotionsSection from "@/components/promotion/PromotionsSection";
 import AdvantageSection from "@/components/advantage/AdvantageSection";
 import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
 import { fetchProviders } from "@/utils/fetchProviders";
 import { Provider } from "@/types/provider";
-import { faqs } from "@/components/faq/faqContent";
 
 import "./globals.scss";
 
@@ -36,16 +35,14 @@ export default async function HomePage() {
       <TopGamesSection games={games} />
       <AboutSection />
       <PaymentMethodsSection initialPaymentMethods={[]} />
-
-      <ProvidersSection initialProviders={providers} />
-      <PromotionsSection />
-      <FAQSection faqs={faqs} />
       <LicensesSection />
+      <ProvidersSection initialProviders={providers} />
+      <AppSection />
+      <FAQSection />
+      <GamesToPlay />
+      <SupportSection />
+      <PromotionsSection />
       <AdvantageSection />
-      {/* <AppSection /> */}
-      {/* <GamesToPlay /> */}
-      {/* <SupportSection /> */}
-
       <Footer />
     </main>
   );

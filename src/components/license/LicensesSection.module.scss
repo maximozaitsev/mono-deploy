@@ -1,4 +1,5 @@
-@import "../../styles/colors.scss";
+@use "../../styles/colors.scss" as *;
+@use "../../styles/lists" as lists;
 
 .licensesSection {
   background: $color-background-secondary;
@@ -26,6 +27,8 @@
       gap: 24px;
       flex: 2.5;
       margin-right: 20px;
+
+      @include lists.common-list-styles(1rem);
     }
 
     .rightImage {
@@ -70,6 +73,29 @@
           height: auto;
         }
       }
+    }
+  }
+}
+
+.licensesColumns {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: space-between;
+
+  .column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include lists.common-list-styles(1rem);
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .column {
+      width: 100%;
     }
   }
 }

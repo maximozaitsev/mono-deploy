@@ -19,20 +19,8 @@
     }
 
     @media (max-width: 768px) {
-      margin-left: -15px;
-      scale: 0.81;
-    }
-
-    @media (max-width: 420px) {
-      // margin-left: -65px;
-      // scale: 0.7;
-    }
-
-    @media (max-width: 380px) {
-      margin-left: 0px;
-      margin-top: 4px;
-      width: 150px;
-      // scale: 1;
+      margin-left: -24px;
+      scale: 0.78;
     }
   }
 
@@ -47,10 +35,6 @@
   @media (max-width: 380px) {
     padding: 5px 10px;
     height: 64px;
-
-    // img {
-    //   margin-left: 0;
-    // }
   }
 }
 
@@ -65,26 +49,25 @@
   gap: 24px;
 
   .headerButton {
-    height: 40px;
+    height: 41px;
     font-family: $font-secondary;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 14px;
-
-    border-radius: 8px;
+    color: $text-color-button-header;
+    padding: 8px 16px;
+    border-radius: 50px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
       background: $color-button-small;
-      width: 115px;
-      color: $text-color-button-header;
+      width: 98px;
     }
 
     &.signUp {
       background: $color-button-large;
       width: 200px;
-      color: $text-color-button-large;
     }
 
     &:hover {
@@ -95,12 +78,12 @@
     gap: 8px;
 
     .headerButton {
-      height: 27px;
+      height: 28px;
+      // border-radius: 4px;
       font-size: 10px;
-      margin-top: -3px;
 
       &.logIn {
-        width: 68px;
+        width: 56px;
       }
       &.signUp {
         width: 100px;
@@ -112,6 +95,15 @@
     .headerButton {
       &.logIn {
         display: none;
+      }
+    }
+  }
+
+  @media (max-width: 380px) {
+    .headerButton {
+      &.signUp {
+        width: auto;
+        height: auto;
       }
     }
   }

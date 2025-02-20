@@ -1,12 +1,11 @@
 import { Metadata } from "next";
 
-const url = "cashman-casino-australia.com";
-const ogTitle = "Cashman Slot Australia: Play Exciting Casino Slot Game Online";
-const ogSiteName = "Cashman";
-const metaDescription =
-  "Cashman Slot Australia offers thrilling casino slot gameplay with engaging bonuses and free spins. Spin the reels now and experience the excitement with big win opportunities!";
+const url = "bob-casino-canada.com";
+const ogTitle = "Bob Casino Canada – Endless Gaming & Premium Rewards";
+const ogSiteName = "Bob";
+const metaDescription = "Bob Casino Review, Bonuses and Promotions in Canada. Check out the Full review by Experts in Canada. Grab your free welcome bonus Today by registering on Bob Casino.";
 
-const locale = "en-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
