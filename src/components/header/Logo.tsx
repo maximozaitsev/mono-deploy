@@ -5,7 +5,7 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ onClick }) => {
-  const uniqueId = useId(); // генерирует уникальный идентификатор
+  const uniqueId = useId();
   return (
     <div onClick={onClick} style={{ cursor: "pointer" }}>
       <svg
@@ -15,7 +15,6 @@ const Logo: React.FC<LogoProps> = ({ onClick }) => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Используем динамический id для градиента */}
         <path
           d="M27.6615 48L55.3229 8.39233e-05H0L27.6615 48Z"
           fill={`url(#paint0_linear_3912_21439_${uniqueId})`}
