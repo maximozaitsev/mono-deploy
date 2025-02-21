@@ -30,7 +30,7 @@
     .about-text {
       width: 45%;
 
-      @media (max-width: 1220px) {
+      @media (max-width: 1380px) {
         width: 100%;
       }
     }
@@ -41,13 +41,9 @@
       justify-content: center;
       align-items: center;
 
-      @media (max-width: 1420px) {
-        max-width: 600px;
+      @media (max-width: 1380px) {
+        max-width: 650px;
         width: 100%;
-
-        img {
-          scale: 0.9;
-        }
       }
 
       @media (max-width: 1220px) {

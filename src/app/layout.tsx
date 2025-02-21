@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
-const url = "bob-casino-canada.com";
-const ogTitle = "Bob Casino Canada – Endless Gaming & Premium Rewards";
-const ogSiteName = "Bob";
-const metaDescription = "Bob Casino Review, Bonuses and Promotions in Canada. Check out the Full review by Experts in Canada. Grab your free welcome bonus Today by registering on Bob Casino.";
+const url = "guts-casino-online.com";
+const ogTitle = "Guts Casino Canada – Play Top Slots, Table Games & Get Fast Payouts";
+const ogSiteName = "Guts";
+const metaDescription = "Guts Casino Canada provides a vast selection of slots, table games, live dealer options, and sports betting with fast and secure payouts. Sign up today to claim generous bonuses, explore exciting tournaments, and experience premium online gaming\!";
 
 const locale = "en-CA";
 const language = "English";

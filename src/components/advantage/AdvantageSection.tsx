@@ -104,7 +104,7 @@ export default function AdvantageSection() {
               ))}
             </ul>
           </div>
-          {/* <div className={styles.column}>
+          <div className={styles.column}>
             {disadvantagesTitle && (
               <h4 className="h4-heading">{disadvantagesTitle}</h4>
             )}
@@ -113,7 +113,7 @@ export default function AdvantageSection() {
                 <li key={index}>{disadvantage}</li>
               ))}
             </ul>
-          </div> */}
+          </div>
         </div>
 
         {closingParagraphs.length > 0 &&

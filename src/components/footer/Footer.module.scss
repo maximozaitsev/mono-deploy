@@ -13,8 +13,6 @@
   }
 
   .partners {
-    margin-bottom: 24px;
-
     .row {
       display: flex;
       justify-content: center;
@@ -26,36 +24,23 @@
         flex-wrap: wrap;
 
         .logoWrapper {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin-bottom: 0;
+          position: absolute;
+          left: 160px;
 
-          img {
-            margin-top: 8px;
-            margin-left: 0px;
-            position: absolute;
-            left: 160px;
-            cursor: pointer;
-
-            @media (max-width: 1400px) {
-              left: 50px;
-            }
+          svg {
+            margin-top: -8px;
 
             @media (max-width: 768px) {
-              margin-top: 8px;
-              margin-bottom: -4px;
-              margin-left: 0;
-              scale: 0.78;
+              margin-top: -5px;
+              scale: 0.88;
             }
           }
-        }
 
-        &:first-child {
-          margin-top: -16px;
-
-          @media (max-width: 768px) {
-            margin-top: -26px;
+          @media (max-width: 1420px) {
+            position: static;
+            display: flex;
+            width: 100%;
+            justify-content: center;
           }
         }
       }
@@ -75,19 +60,14 @@
           mix-blend-mode: normal;
         }
 
-        @media (max-width: 1180px) {
+        @media (max-width: 768px) {
           height: 22px !important;
-          width: auto;
         }
       }
 
       &:nth-child(2),
       &:nth-child(3) {
         flex-wrap: wrap;
-      }
-
-      &:last-child {
-        margin-bottom: 0;
       }
     }
   }
@@ -128,26 +108,8 @@
     }
   }
 
-  @media (max-width: 1180px) {
-    .row {
-      &:first-child {
-        .logoWrapper {
-          margin-bottom: 16px;
-
-          img {
-            position: static !important;
-          }
-        }
-
-        .partnerLogo {
-          height: 22px;
-        }
-      }
-    }
-  }
-
   @media (max-width: 768px) {
-    padding: 24px 0 12px 0;
+    padding: 12px 0;
 
     .partners {
       margin-bottom: -16px;
@@ -157,22 +119,6 @@
       flex-wrap: wrap;
       margin-bottom: 16px !important;
       gap: 10px !important;
-
-      .partnerLogo {
-        width: auto;
-      }
-
-      img {
-        margin-top: 0;
-      }
-    }
-  }
-
-  @media (max-width: 480px) {
-    .row {
-      .partnerLogo {
-        height: 18px;
-      }
     }
   }
 

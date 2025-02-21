@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <nav className={`${styles.navbar}`}>
+      <nav className={styles.navbar}>
         <Logo onClick={scrollToWelcomeSection} />
 
         <div className={styles.headerButtons}>
@@ -27,13 +27,13 @@ const Header = () => {
             className={`${styles.headerButton} ${styles.logIn}`}
             onClick={handleSignInClick}
           >
-            Log In
+            Sign Up
           </button>
           <button
             className={`${styles.headerButton} ${styles.signUp}`}
             onClick={handleSignInClick}
           >
-            Sign Up
+            Play Now
           </button>
         </div>
       </nav>
