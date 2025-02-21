@@ -11,9 +11,9 @@ export interface GradientResult {
 }
 
 /**
- * @param gradientString 
- * @param gradientId 
- * @returns 
+ * @param gradientString
+ * @param gradientId
+ * @returns
  */
 export function computeGradient(
   gradientString: string,
@@ -46,7 +46,6 @@ export function computeGradient(
   const gradientElement = (
     <defs>
       <linearGradient
-        id={gradientId}
         x1={`${x1 * 100}%`}
         y1={`${y1 * 100}%`}
         x2={`${x2 * 100}%`}
