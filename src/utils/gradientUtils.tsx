@@ -42,8 +42,10 @@ export function computeGradient(
   const x1 = 1 - x2;
   const y1 = 1 - y2;
 
-  // Разбиваем строку остановок по запятой
-  const stopsArray = stopsString.split(/,\s*/);
+  // Разбиваем строку остановок по запятой и отфильтровываем пустые элементы
+  const stopsArray = stopsString
+    .split(/,\s*/)
+    .filter((stop) => stop.trim() !== "");
   const stops = stopsArray.map((stop: string) => {
     const parts = stop.trim().split(" ");
     const color = parts[0];
