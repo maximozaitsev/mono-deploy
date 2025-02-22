@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 interface LogoProps {
-  svgPath: string; 
+  svgPath: string;
   gradientIdPrefix: string;
   onClick: () => void;
 }
@@ -10,11 +10,9 @@ const Logo = ({ svgPath, gradientIdPrefix, onClick }: LogoProps) => {
   const [svgContent, setSvgContent] = useState<string | null>(null);
 
   useEffect(() => {
-    // Загружаем SVG-файл динамически
     fetch(svgPath)
       .then((response) => response.text())
       .then((svgText) => {
-        // Парсим SVG как DOM-элемент
         const parser = new DOMParser();
         const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
         const svgElement = svgDoc.querySelector("svg");
@@ -24,18 +22,15 @@ const Logo = ({ svgPath, gradientIdPrefix, onClick }: LogoProps) => {
           return;
         }
 
-        // Обрабатываем градиенты: добавляем уникальные ID и исправляем <stop>
         const gradients = svgElement.querySelectorAll(
           "linearGradient, radialGradient"
         );
         gradients.forEach((gradient) => {
           const originalId = gradient.getAttribute("id");
           if (originalId) {
-            // Добавляем уникальный префикс к ID градиента
             const newId = `${gradientIdPrefix}_${originalId}`;
             gradient.setAttribute("id", newId);
 
-            // Обновляем ссылки на этот градиент в атрибутах fill и stroke
             svgElement
               .querySelectorAll(`[fill="url(#${originalId})"]`)
               .forEach((el) => {
@@ -48,12 +43,9 @@ const Logo = ({ svgPath, gradientIdPrefix, onClick }: LogoProps) => {
               });
           }
 
-          // Исправляем <stop> элементы, добавляя offset, если его нет
           const stops = gradient.querySelectorAll("stop");
           stops.forEach((stop, index) => {
             if (!stop.hasAttribute("offset")) {
-              // Если offset отсутствует, добавляем значение по умолчанию
-              // Например, равномерно распределяем между 0 и 1
               const offsetValue =
                 stops.length > 1 ? index / (stops.length - 1) : 0;
               stop.setAttribute("offset", offsetValue.toString());
@@ -61,7 +53,6 @@ const Logo = ({ svgPath, gradientIdPrefix, onClick }: LogoProps) => {
           });
         });
 
-        // Сериализуем обработанный SVG обратно в строку
         const serializer = new XMLSerializer();
         const updatedSvgText = serializer.serializeToString(svgElement);
         setSvgContent(updatedSvgText);
@@ -70,7 +61,7 @@ const Logo = ({ svgPath, gradientIdPrefix, onClick }: LogoProps) => {
   }, [svgPath, gradientIdPrefix]);
 
   if (!svgContent) {
-    return <div>Loading logo...</div>; // Заглушка на время загрузки
+    return <div>Logo</div>;
   }
 
   return (
