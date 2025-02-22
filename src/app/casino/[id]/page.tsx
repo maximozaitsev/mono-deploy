@@ -8,6 +8,7 @@ import Footer from "@/components/footer/Footer";
 import "../../../components/header/Header.module.scss";
 import Image from "next/image";
 import styles from "./PreloaderPage.module.scss";
+import SpinnerGif from "../../../../public/assets/loader-black.gif";
 
 const PreloaderPage = () => {
   const { id } = useParams();
