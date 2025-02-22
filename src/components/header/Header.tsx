@@ -20,7 +20,11 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <Logo onClick={scrollToWelcomeSection} />
+        <Logo
+          svgPath="/logo.svg"
+          gradientIdPrefix="header"
+          onClick={scrollToWelcomeSection}
+        />
 
         <div className={styles.headerButtons}>
           <button
