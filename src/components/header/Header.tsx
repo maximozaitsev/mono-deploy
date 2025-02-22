@@ -20,24 +20,20 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <Logo
-          svgPath="/logo.svg"
-          gradientIdPrefix="header"
-          onClick={scrollToWelcomeSection}
-        />
+        <Logo onClick={scrollToWelcomeSection} />
 
         <div className={styles.headerButtons}>
           <button
             className={`${styles.headerButton} ${styles.logIn}`}
             onClick={handleSignInClick}
           >
-            Log In
+            Sign Up
           </button>
           <button
             className={`${styles.headerButton} ${styles.signUp}`}
             onClick={handleSignInClick}
           >
-            Sign Up
+            Play Now
           </button>
         </div>
       </nav>

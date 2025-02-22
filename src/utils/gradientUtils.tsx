@@ -1,3 +1,4 @@
+// src/utils/gradientUtils.tsx
 import React from "react";
 
 interface GradientStop {
@@ -11,9 +12,9 @@ export interface GradientResult {
 }
 
 /**
- * @param gradientString 
- * @param gradientId 
- * @returns 
+ * @param gradientString
+ * @param gradientId
+ * @returns
  */
 export function computeGradient(
   gradientString: string,
@@ -35,11 +36,14 @@ export function computeGradient(
   const x1 = 1 - x2;
   const y1 = 1 - y2;
 
-  const stopsArray = stopsString.split(/,\s*/);
+  const stopsArray = stopsString
+    .split(/,\s*/)
+    .filter((stop) => stop.trim() !== "");
   const stops = stopsArray.map((stop: string) => {
     const parts = stop.trim().split(" ");
     const color = parts[0];
-    const offset = parts[1] || "0%";
+
+    const offset = parts[1] && parts[1].trim() !== "" ? parts[1].trim() : "0%";
     return { color, offset };
   });
 

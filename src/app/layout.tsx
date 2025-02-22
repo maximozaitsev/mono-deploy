@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "url";
-const ogTitle = "Title";
-const ogSiteName = "SiteName";
-const metaDescription = "Description";
+const url = "guts-casino-online.com";
+const ogTitle = "Guts Casino Canada – Play Top Slots, Table Games & Get Fast Payouts";
+const ogSiteName = "Guts";
+const metaDescription = "Guts Casino Canada provides a vast selection of slots, table games, live dealer options, and sports betting with fast and secure payouts. Sign up today to claim generous bonuses, explore exciting tournaments, and experience premium online gaming\!";
 
-const locale = "en-US";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
