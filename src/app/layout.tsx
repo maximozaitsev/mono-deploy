@@ -5,8 +5,8 @@ const ogTitle = "Title";
 const ogSiteName = "SiteName";
 const metaDescription = "Description";
 
-const locale = "locale";
-const language = "language";
+const locale = "en-US";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
