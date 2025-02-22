@@ -1,7 +1,7 @@
 {
   "id": "1",
-  "name": "Guts",
-  "short_name": "Guts",
+  "name": "name",
+  "short_name": "shortName",
   "icons": [
     {
       "src": "/icons/Icon.png",

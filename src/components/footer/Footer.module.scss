@@ -27,15 +27,6 @@
           position: absolute;
           left: 160px;
 
-          svg {
-            margin-top: -8px;
-
-            @media (max-width: 768px) {
-              margin-top: -5px;
-              scale: 0.88;
-            }
-          }
-
           @media (max-width: 1420px) {
             position: static;
             display: flex;
