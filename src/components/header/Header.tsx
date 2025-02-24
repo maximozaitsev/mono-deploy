@@ -31,13 +31,13 @@ const Header = () => {
             className={`${styles.headerButton} ${styles.logIn}`}
             onClick={handleSignInClick}
           >
-            Sign up
+            Sign Up
           </button>
           <button
             className={`${styles.headerButton} ${styles.signUp}`}
             onClick={handleSignInClick}
           >
-            Play now
+            Play Now
           </button>
         </div>
       </nav>

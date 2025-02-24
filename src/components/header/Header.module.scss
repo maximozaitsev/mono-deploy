@@ -21,9 +21,9 @@
     }
 
     @media (max-width: 768px) {
-      scale: 0.81;
-      margin-left: -18px;
-      margin-top: 4px;
+      scale: 0.83;
+      margin-left: -15px;
+      margin-top: 5px;
     }
   }
 
@@ -53,20 +53,21 @@
   gap: 24px;
 
   .headerButton {
-    height: 42px;
+    height: 43px;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 14px;
+    font-size: 16px;
     color: $text-color-button-header;
     padding: 8px 16px;
-    // border-radius: 8px;
+    border-radius: 50px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
       background: $color-button-small;
-      width: 119px;
+      width: 114px;
+      color: $text-color-button-small;
     }
 
     &.signUp {
@@ -82,15 +83,15 @@
     gap: 8px;
 
     .headerButton {
-      height: 37px;
+      height: 31px;
       // border-radius: 4px;
-      font-size: 10px;
+      font-size: 13px;
 
       &.logIn {
-        width: 103px;
+        width: 73px;
       }
       &.signUp {
-        width: 100px;
+        width: 120px;
       }
     }
   }

@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
-const url = "northern-lights-casino.com";
-const ogTitle = "Northern Lights Casino Canada: Experiences and Gambling Adventures";
-const ogSiteName = "Northern Lights";
-const metaDescription = "Northern Lights Casino Canada: A stunning casino in Western Canada. An overview of gaming options, bonus offers and other features. What new and experienced gamblers need to know before visiting";
+const url = "casino-moose-jaw.com";
+const ogTitle = "Casino Moose Jaw Canada: Amazing Gaming Experience and Leisure";
+const ogSiteName = "Moose Jaw";
+const metaDescription = "Casino Moose Jaw Canada: what does the land-based casino offer its customers. A wide selection of games, promotions and bonuses, membership program";
 
 const locale = "en-CA";
 const language = "English";

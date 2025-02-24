@@ -118,12 +118,6 @@
   }
 
   .mobile-image {
-    @media (min-width: 1281px) {
-      .app-image {
-        margin-top: 10%;
-      }
-    }
-
     @media (min-width: 1281px) and (max-width: 1340px) {
       width: 100%;
 

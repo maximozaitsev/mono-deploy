@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: $text-color-secondary;
+        color: $text-color-primary;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
@@ -162,7 +162,7 @@
         border-radius: $border-radius;
 
         p {
-          color: $text-color-primary;
+          color: $text-color-secondary;
           display: flex;
           justify-content: space-between;
           font-size: 18px;
@@ -195,10 +195,6 @@
   }
 }
 
-.payment-methods-section
-  .mobile-payment-methods
-  .payment-method-card
-  .payment-method-details
-  p {
+.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
