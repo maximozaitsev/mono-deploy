@@ -5,7 +5,7 @@ import Image from "next/image";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Moose Jaw";
+const projectName = "Classic";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",

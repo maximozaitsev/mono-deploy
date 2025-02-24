@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
-const url = "casino-moose-jaw.com";
-const ogTitle = "Casino Moose Jaw Canada: Amazing Gaming Experience and Leisure";
-const ogSiteName = "Moose Jaw";
-const metaDescription = "Casino Moose Jaw Canada: what does the land-based casino offer its customers. A wide selection of games, promotions and bonuses, membership program";
+const url = "casino-classic-online.com";
+const ogTitle = "Casino Classic Canada: Download the Software and Enjoy the Games";
+const ogSiteName = "Classic";
+const metaDescription = "Casino Classic Canada: Key features of a downloadable online casino. Learn how to register and get a chance to become a millionaire. Range of games and bonus offers";
 
 const locale = "en-CA";
 const language = "English";
