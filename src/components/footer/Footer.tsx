@@ -134,7 +134,7 @@ const Footer = () => {
         <p className={styles.copyright}>
           <span>18+</span>{" "}
           <span className={styles.hiddenSpan}>Copyright © {currentYear}</span>
-          &nbsp;<span>{projectName} Casino</span>
+          &nbsp;<span>Casino {projectName}</span>
         </p>
       </div>
     </footer>
