@@ -51,12 +51,12 @@
 }
 
 .cell {
-  color: $text-color-secondary;
+  color: $text-color-primary;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $font-weight-regular;
   line-height: 40px;
   padding: 9.25px 16px;
   display: flex;
@@ -127,7 +127,7 @@
   font-family: $font-primary;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $font-weight-regular;
   line-height: 40px;
   // padding-top: 16px;
 
@@ -247,7 +247,7 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: $text-color-primary;
+  color: $text-color-secondary;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;
@@ -324,8 +324,6 @@
     }
   }
 }
-
-
 
 /* Theme Styles Start */
 .accordion-title,

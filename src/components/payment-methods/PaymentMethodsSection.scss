@@ -43,14 +43,14 @@
       tr {
         display: table-row;
         height: 60px;
-        color: $text-color-primary;
+        color: $text-color-secondary;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
         line-height: normal;
 
         th {
-          font-weight: 500;
+          font-weight: $font-weight-regular;
 
           &:first-child {
             border-top-left-radius: $border-radius;
@@ -162,12 +162,12 @@
         border-radius: $border-radius;
 
         p {
-          color: $text-color-secondary;
+          color: $text-color-primary;
           display: flex;
           justify-content: space-between;
           font-size: 18px;
           line-height: normal;
-          font-weight: 500;
+          font-weight: $font-weight-regular;
           padding: 8px;
 
           &:last-child {
@@ -175,11 +175,11 @@
           }
 
           strong {
-            background: $text-color-secondary;
+            background: $text-color-fourth;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-weight: 500;
+            font-weight: $font-weight-regular;
           }
         }
       }

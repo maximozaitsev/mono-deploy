@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import licenceImage from "../../../public/block-images/licence.webp";
+import licenceImage from "../../../public/block-images/license.webp";
 import styles from "./LicensesSection.module.scss";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";

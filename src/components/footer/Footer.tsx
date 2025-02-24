@@ -5,7 +5,7 @@ import Image from "next/image";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Guts";
+const projectName = "Northern Lights";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",
@@ -79,7 +79,11 @@ const Footer = () => {
         <div className={styles.partners}>
           <div className={styles.row}>
             <div className={styles.logoWrapper}>
-              <Logo onClick={scrollToWelcomeSection} />
+              <Logo
+                svgPath="/logo.svg"
+                gradientIdPrefix="footer"
+                onClick={scrollToWelcomeSection}
+              />
             </div>
 
             {partnerLogos.slice(0, 7).map((logo, index) => (
@@ -129,10 +133,8 @@ const Footer = () => {
         </div>
         <p className={styles.copyright}>
           <span>18+</span>{" "}
-          <span className={styles.hiddenSpan}>
-            Copyright &copy; {currentYear}
-          </span>{" "}
-          <span>&nbsp;{projectName} Casino</span>
+          <span className={styles.hiddenSpan}>Copyright © {currentYear}</span>
+          &nbsp;<span>{projectName} Casino</span>
         </p>
       </div>
     </footer>

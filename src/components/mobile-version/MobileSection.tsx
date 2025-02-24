@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import mobileAppImage from "../../../public/block-images/mobile.webp";
+import mobileAppImage from "../../../public/block-images/phone.webp";
+import mobileAppImageMobile from "../../../public/block-images/phone-mobile.webp";
 import StarIcon from "../__common__/StarIcon";
 import Button from "../__common__/button/Button";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
@@ -12,13 +13,12 @@ import "./MobileSection.scss";
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "Guts";
+  const projectName = "Northern Lights";
 
   useEffect(() => {
     import("../../content/content.json")
       .then((data) => {
         const advantagesSections = Object.values(data.advantages) as any[];
-
         if (advantagesSections.length > 0) {
           // Находим первый блок типа "list"
           for (const section of advantagesSections) {
@@ -55,10 +55,13 @@ export default function MobileSection() {
           <h3 className="h3-heading">{projectName} App</h3>
           <div className="mobile-image show-1080">
             <Image
-              src={mobileAppImage}
+              src={mobileAppImageMobile}
               alt="Mobile App"
+              width={mobileAppImageMobile.width}
+              height={mobileAppImageMobile.height}
               className="app-image"
               priority
+              quality={100}
             />
           </div>
           <div className="app-buttons">

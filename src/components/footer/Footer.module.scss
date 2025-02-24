@@ -28,11 +28,11 @@
           left: 160px;
 
           svg {
-            margin-top: -8px;
+            margin-top: -12px;
 
             @media (max-width: 768px) {
-              margin-top: -5px;
-              scale: 0.88;
+              scale: 0.81;
+              margin-top: -8px;
             }
           }
 

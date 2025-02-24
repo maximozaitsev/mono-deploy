@@ -1,5 +1,6 @@
 @import "../../styles/colors.scss";
 @import "../../../public/fonts/fonts.scss";
+@import "../../styles/variables.scss";
 
 .welcomeSection {
   display: flex;
@@ -7,7 +8,7 @@
   // background: $color-background;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 160px top 26px;
+  background-position: right 61px top 21px;
   width: 100%;
   height: 540px;
   max-width: 90rem;
@@ -17,22 +18,22 @@
     width: 100%;
   }
   @media (max-width: 1240px) {
-    background-size: 45% auto;
+    background-size: 50% auto;
     background-position: right 20px center;
   }
 
   @media (max-width: 768px) {
-    padding-top: 20.9rem;
+    padding-top: 20.4rem;
     height: auto;
     justify-content: flex-end;
     background-size: auto 65%;
-    background-position: top 7px center;
+    background-position: top 9px center;
     margin: 0 auto 84px auto;
   }
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 62%;
+    background-size: auto 60%;
   }
 
   @media (max-width: 420px) {
@@ -100,7 +101,7 @@
   font-family: $font-secondary;
   font-size: 64px;
   font-style: normal;
-  font-weight: 900;
+  font-weight: $font-weight-black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   line-height: normal;
   text-transform: uppercase;
@@ -121,13 +122,13 @@
   color: $text-color-secondary;
   font-size: 32px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $font-weight-regular;
   line-height: normal;
 
   @media (max-width: 768px) {
     font-size: 24px;
     font-family: $font-secondary;
-    font-weight: 900;
+    font-weight: $font-weight-black;
     text-transform: uppercase;
     // color: $text-color-welcome;
 
