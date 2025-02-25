@@ -13,7 +13,7 @@ import "./MobileSection.scss";
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "Classic";
+  const projectName = "BettySpin";
 
   useEffect(() => {
     import("../../content/content.json")
@@ -52,7 +52,7 @@ export default function MobileSection() {
         </div>
 
         <div className="app-info-block">
-          <h3 className="h3-heading">Casino {projectName} App</h3>
+          <h3 className="h3-heading">{projectName} App</h3>
           <div className="mobile-image show-1080">
             <Image
               src={mobileAppImageMobile}

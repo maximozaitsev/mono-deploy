@@ -1,9 +1,11 @@
 import { Metadata } from "next";
 
-const url = "casino-classic-online.com";
-const ogTitle = "Casino Classic Canada: Download the Software and Enjoy the Games";
-const ogSiteName = "Classic";
-const metaDescription = "Casino Classic Canada: Key features of a downloadable online casino. Learn how to register and get a chance to become a millionaire. Range of games and bonus offers";
+const url = "bettyspin-online.com";
+const ogTitle =
+  "BettySpin Casino – Top Games, Bonuses, Fast Payouts & Secure Platform";
+const ogSiteName = "BettySpin";
+const metaDescription =
+  "BettySpin Casino offers top-tier games, generous bonuses, and fast payouts for players worldwide. Join now to enjoy a secure gaming experience with exciting promotions and diverse payment options!";
 
 const locale = "en-CA";
 const language = "English";
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/icons/xxxhdpi.png",
+    icon: "/icons/ico-192.png",
   },
 };
 
@@ -42,7 +44,7 @@ export default function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="language" content={language} />
-        <link rel="icon" href="/icons/xxxhdpi.png" />
+        <link rel="icon" href="/icons/ico-192.png" />
         <link rel="canonical" href={`https://${url}`} />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
         <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />

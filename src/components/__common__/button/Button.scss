@@ -21,7 +21,7 @@
     color: $text-color-button-large;
     font-size: 28px;
     border: none;
-    border-radius: 12px;
+    border-radius: 50px;
     min-width: 280px;
     height: 87px;
 
@@ -57,7 +57,7 @@
     color: $text-color-button-small;
     font-size: 20px;
     border: none;
-    border-radius: 12px;
+    border-radius: 50px;
     height: 52px;
 
     @media (max-width: 768px) {

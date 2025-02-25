@@ -5,7 +5,7 @@ import Image from "next/image";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Classic";
+const projectName = "BettySpin";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",
@@ -134,7 +134,7 @@ const Footer = () => {
         <p className={styles.copyright}>
           <span>18+</span>{" "}
           <span className={styles.hiddenSpan}>Copyright © {currentYear}</span>
-          &nbsp;<span>Casino {projectName}</span>
+          &nbsp;<span>{projectName} Casino</span>
         </p>
       </div>
     </footer>

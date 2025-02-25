@@ -11,10 +11,8 @@
   gap: 16px;
 
   outline: $border-width solid $color-border-primary;
-  border-radius: 12px;
+  border-radius: $border-radius;
   background: $color-background-third;
-
-  outline: 2px solid #008001;
 
   img {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
@@ -60,7 +58,7 @@
 
   button {
     margin-top: auto;
-    width: 197px;
+    width: 217px;
     // margin-left: 5px;
   }
 
