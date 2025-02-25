@@ -38,11 +38,7 @@ const PreloaderPage = () => {
           await new Promise((resolve) => setTimeout(resolve, 1500));
 
           if (targetOfferLink) {
-            window.history.replaceState(null, "", "/");
-            const anchor = document.createElement("a");
-            anchor.href = targetOfferLink;
-            anchor.rel = "noopener noreferrer";
-            anchor.click();
+            window.location.replace(targetOfferLink);
           }
         } else {
           console.error("No offers available");

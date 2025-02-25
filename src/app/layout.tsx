@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "bettyspin-online.com";
+const url = "bettyspin-casino-online.com";
 const ogTitle =
-  "BettySpin Casino – Top Games, Bonuses, Fast Payouts & Secure Platform";
+  "BettySpin Casino - I migliori giochi, bonus e piattaforma sicura";
 const ogSiteName = "BettySpin";
 const metaDescription =
-  "BettySpin Casino offers top-tier games, generous bonuses, and fast payouts for players worldwide. Join now to enjoy a secure gaming experience with exciting promotions and diverse payment options!";
+  "BettySpin Casino offre giochi di alto livello, bonus generosi e pagamenti veloci per i giocatori di tutto il mondo. Iscrivetevi ora per godere di un'esperienza di gioco sicura con promozioni entusiasmanti e diverse opzioni di pagamento!";
 
-const locale = "en-CA";
-const language = "English";
+const locale = "it-IT";
+const language = "Italian";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
