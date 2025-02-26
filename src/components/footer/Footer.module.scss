@@ -28,15 +28,15 @@
           left: 160px;
 
           svg {
-            // margin-top: 12px;
+            margin-top: -11px;
 
             @media (max-width: 768px) {
-              scale: 0.71;
+              scale: 0.9;
               margin-top: -4px;
             }
           }
 
-          @media (max-width: 1440px) {
+          @media (max-width: 1420px) {
             position: static;
             display: flex;
             width: 100%;
@@ -117,7 +117,7 @@
 
     .row {
       flex-wrap: wrap;
-      margin-bottom: 16px !important;
+      margin-bottom: 14px !important;
       gap: 10px !important;
     }
   }

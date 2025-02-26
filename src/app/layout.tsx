@@ -1,14 +1,13 @@
 import { Metadata } from "next";
 
-const url = "bettyspin-casino-online.com";
+const url = "ballybet-online.com";
 const ogTitle =
-  "BettySpin Casino - I migliori giochi, bonus e piattaforma sicura";
-const ogSiteName = "BettySpin";
+  "Bally Bet Casino Canada – Play Top Slots, Table Games & Live Dealers";
+const ogSiteName = "Bally Bet";
 const metaDescription =
-  "BettySpin Casino offre giochi di alto livello, bonus generosi e pagamenti veloci per i giocatori di tutto il mondo. Iscrivetevi ora per godere di un'esperienza di gioco sicura con promozioni entusiasmanti e diverse opzioni di pagamento!";
-
-const locale = "it-IT";
-const language = "Italian";
+  "Bally Bet Casino Canada offers an extensive selection of slots, table games, and live dealer experiences with secure payments and generous bonuses. Join today to enjoy top-tier gaming, exciting promotions, and seamless play across all devices!";
+const locale = "en-CA";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
