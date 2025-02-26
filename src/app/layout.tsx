@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 
-const url = "ballybet-online.com";
+const url = "casinotropez-online.com";
 const ogTitle =
-  "Bally Bet Casino Canada – Play Top Slots, Table Games & Live Dealers";
-const ogSiteName = "Bally Bet";
+  "Casino Tropez Canada—Top Online Gaming Experience for Canadian Players";
+const ogSiteName = "Tropez";
 const metaDescription =
-  "Bally Bet Casino Canada offers an extensive selection of slots, table games, and live dealer experiences with secure payments and generous bonuses. Join today to enjoy top-tier gaming, exciting promotions, and seamless play across all devices!";
+  "Casino Tropez Canada delivers top-tier gaming with a vast selection of slots, table games, and live dealer options tailored for Canadian players. Enjoy secure payments, generous bonuses, and 24/7 support. Join now and start winning today!";
+
 const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
