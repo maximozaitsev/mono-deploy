@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "hpibet-online.com ";
+const url = "fatfruit-online.com";
 const ogTitle =
-  "HPIbet Review - Leading Horse Racing Betting Platform in Canada";
-const ogSiteName = "Hpibet";
+  "FatFruit Casino Australia—Best Online Games, Bonuses, and Payments";
+const ogSiteName = "FatFruit";
 const metaDescription =
-  "Learn about the benefits of HPIbet, the sign-up process, available bonuses, deposit and withdrawal methods, as well as the languages ​​and currencies supported. Join now to get CAD$2 and start your betting journey.";
+  "FatFruit Casino Australia delivers premium pokies, live dealer games, and massive bonuses. Enjoy secure deposits, fast withdrawals, and an exclusive VIP program. Sign up today and claim your welcome package!";
 
-const locale = "en-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

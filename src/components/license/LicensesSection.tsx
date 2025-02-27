@@ -27,7 +27,7 @@ export default function LicensesSection() {
         {licenses.mainContent && licenses.mainContent.length > 0 && (
           <div className={styles.licensesContent}>
             <div className={styles.leftContent}>
-              <h2 className={`h3-heading black ${styles.headingDesktop}`}>
+              <h2 className={`h3-heading ${styles.headingDesktop}`}>
                 {licenses.mainTitle}
               </h2>
               {licenses.mainContent.map((block, index) => (

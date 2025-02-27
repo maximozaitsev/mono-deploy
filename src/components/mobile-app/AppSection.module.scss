@@ -51,18 +51,11 @@
 
     .image {
       position: absolute;
-      top: -62px;
-      right: -128px;
+      top: -90px;
+      right: -13px;
+      scale: 0.8;
       overflow: hidden;
       height: auto;
-    }
-  }
-
-  @media (max-width: 1380px) {
-    .imageBlock {
-      .image {
-        scale: 0.9;
-      }
     }
   }
 
