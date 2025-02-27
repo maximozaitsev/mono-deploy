@@ -80,7 +80,7 @@ const Footer = () => {
           <div className={styles.row}>
             <div className={styles.logoWrapper}>
               <Logo
-                svgPath="/logo.svg"
+                svgPath="/logo-footer.svg"
                 gradientIdPrefix="footer"
                 onClick={scrollToWelcomeSection}
               />
