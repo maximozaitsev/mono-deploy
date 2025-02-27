@@ -58,6 +58,14 @@
     }
   }
 
+  @media (max-width: 1380px) {
+    .imageBlock {
+      .image {
+        scale: 0.9;
+      }
+    }
+  }
+
   @media (max-width: 1320px) {
     .imageBlock {
       .image {
