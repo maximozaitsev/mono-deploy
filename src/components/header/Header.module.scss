@@ -20,8 +20,8 @@
 
     @media (max-width: 768px) {
       margin-top: 4px;
-      margin-left: -30px;
-      scale: 0.66;
+      margin-left: -28px;
+      scale: 0.67;
     }
   }
 
@@ -30,7 +30,7 @@
   }
 
   @media (max-width: 768px) {
-    height: 96px;
+    height: 80px;
   }
 
   @media (max-width: 380px) {
@@ -51,20 +51,24 @@
   gap: 24px;
 
   .headerButton {
-    height: 43px;
+    height: 41px;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
     font-size: 14px;
     color: $text-color-button-header;
     padding: 8px 16px;
-    border-radius: 50px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
       background: $color-button-small;
-      width: 107px;
+      width: 112px;
+      background: #ffffff33;
+      outline: 3px solid;
+      outline-offset: -3px;
+      outline-color: #4a72cb;
     }
 
     &.signUp {
@@ -80,12 +84,12 @@
     gap: 8px;
 
     .headerButton {
-      height: 30px;
-      // border-radius: 4px;
+      height: 28px;
+      border-radius: 4px;
       font-size: 10px;
 
       &.logIn {
-        width: 63px;
+        width: 66px;
       }
       &.signUp {
         width: 100px;

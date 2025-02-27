@@ -13,7 +13,7 @@ import "./MobileSection.scss";
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "FatFruit";
+  const projectName = "Hpibet";
 
   useEffect(() => {
     import("../../content/content.json")

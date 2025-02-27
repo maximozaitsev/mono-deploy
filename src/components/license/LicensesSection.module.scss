@@ -2,8 +2,16 @@
 @use "../../styles/lists" as lists;
 
 .licensesSection {
-  background: $color-background-secondary;
+  background: url("/bg.png"), $color-background;
   padding: 64px 0;
+
+  :global(.h3-heading) {
+    color: $text-color-secondary;
+  }
+
+  :global(.paragraph-text) {
+    color: $text-color-secondary;
+  }
 
   h2 {
     margin-bottom: 24px;

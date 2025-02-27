@@ -5,7 +5,7 @@ import Image from "next/image";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "FatFruit";
+const projectName = "Hpibet";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",
@@ -80,7 +80,7 @@ const Footer = () => {
           <div className={styles.row}>
             <div className={styles.logoWrapper}>
               <Logo
-                svgPath="/logo-footer.svg"
+                svgPath="/logo.svg"
                 gradientIdPrefix="footer"
                 onClick={scrollToWelcomeSection}
               />
@@ -134,7 +134,7 @@ const Footer = () => {
         <p className={styles.copyright}>
           <span>18+</span>{" "}
           <span className={styles.hiddenSpan}>Copyright © {currentYear}</span>
-          &nbsp;<span>{projectName} Casino</span>
+          &nbsp;<span>{projectName}</span>
         </p>
       </div>
     </footer>

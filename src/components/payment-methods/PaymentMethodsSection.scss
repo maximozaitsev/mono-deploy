@@ -122,7 +122,7 @@
 
     .payment-method-card {
       .payment-method-header {
-        background: $color-background-fourth;
+        background: #162b5e;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -144,6 +144,11 @@
         button {
           max-width: 200px;
           width: 100%;
+          background: #ffffff33;
+          outline: 3px solid;
+          outline-offset: -3px;
+          outline-color: #4a72cb;
+          color: #fff;
         }
 
         @media (max-width: 320px) {
@@ -195,6 +200,10 @@
   }
 }
 
-.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
+.payment-methods-section
+  .mobile-payment-methods
+  .payment-method-card
+  .payment-method-details
+  p {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
