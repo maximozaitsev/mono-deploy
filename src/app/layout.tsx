@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "casinotropez-online.com";
+const url = "fatfruit-casino-online.com";
 const ogTitle =
-  "Casino Tropez Canada—Top Online Gaming Experience for Canadian Players";
-const ogSiteName = "Tropez";
+  "FatFruit Casino Canada—Top Bonuses, Huge Game Selection & Fast Payouts";
+const ogSiteName = "FatFruit";
 const metaDescription =
-  "Casino Tropez Canada delivers top-tier gaming with a vast selection of slots, table games, and live dealer options tailored for Canadian players. Enjoy secure payments, generous bonuses, and 24/7 support. Join now and start winning today!";
+  "FatFruit Casino Canada delivers top-tier bonuses, a vast selection of slots and live games, and secure payment options, including crypto. Sign up now to claim your welcome bonus and enjoy a premium gaming experience!";
 
 const locale = "en-CA";
 const language = "English";
