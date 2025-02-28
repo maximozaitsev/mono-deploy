@@ -51,7 +51,7 @@
 }
 
 .cell {
-  color: $text-color-secondary;
+  color: #26125e;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
@@ -327,17 +327,17 @@
 /* Theme Styles Start */
 .accordion-title,
 .accordion-value {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 .accordion-title::after {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .cell {
   &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 /* Theme Styles End */

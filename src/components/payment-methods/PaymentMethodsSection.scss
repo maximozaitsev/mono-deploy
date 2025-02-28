@@ -69,6 +69,7 @@
       tr {
         height: 88px;
         background: none;
+        color: #26125e;
 
         td {
           background: $color-background-third;
@@ -162,7 +163,7 @@
         border-radius: $border-radius;
 
         p {
-          color: $text-color-secondary;
+          color: #26125e;
           display: flex;
           justify-content: space-between;
           font-size: 18px;
@@ -175,7 +176,7 @@
           }
 
           strong {
-            background: $text-color-fourth;
+            background: #fff;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -195,6 +196,10 @@
   }
 }
 
-.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+.payment-methods-section
+  .mobile-payment-methods
+  .payment-method-card
+  .payment-method-details
+  p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }

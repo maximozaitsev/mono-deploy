@@ -120,8 +120,8 @@
   .mobile-image {
     @media (min-width: 1281px) {
       .app-image {
-        margin-top: 10px;
-        margin-left: -40px;
+        margin-top: 85px;
+        margin-left: -156px;
       }
     }
 
@@ -148,17 +148,6 @@
       display: flex;
       justify-content: center;
       overflow: hidden;
-    }
-
-    @media (min-width: 768px) and (max-width: 1280px) {
-      overflow: visible;
-    }
-
-    @media (min-width: 768px) and (max-width: 850px) {
-      img {
-        width: 100%;
-        height: auto;
-      }
     }
   }
 

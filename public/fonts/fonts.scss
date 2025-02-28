@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Nunito", sans-serif;
+$font-secondary: "Poppins", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -16,8 +16,8 @@ $font-secondary: "Nunito", sans-serif;
 // }
 
 @font-face {
-  font-family: "Nunito";
-  src: url("./Heading/static/Nunito-Black.ttf") format("truetype");
+  font-family: "Poppins";
+  src: url("./Heading/Poppins-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }

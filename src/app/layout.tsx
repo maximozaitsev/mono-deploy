@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "fatfruit-online.com";
+const url = "bitdreams-online.com";
 const ogTitle =
-  "FatFruit Casino Australia—Best Online Games, Bonuses, and Payments";
-const ogSiteName = "FatFruit";
+  "Bitdreams Casino Australia–Play Top Online Games & Claim Big Bonuses";
+const ogSiteName = "Bitdreams";
 const metaDescription =
-  "FatFruit Casino Australia delivers premium pokies, live dealer games, and massive bonuses. Enjoy secure deposits, fast withdrawals, and an exclusive VIP program. Sign up today and claim your welcome package!";
+  "Bitdreams Casino Australia offers 7,000+ games, fast crypto and fiat payments, and exciting bonuses. Enjoy slots, live dealers, and exclusive promotions. Secure, mobile-friendly, and packed with rewards. Sign up now and start winning today!";
 
-const locale = "en-CA";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
