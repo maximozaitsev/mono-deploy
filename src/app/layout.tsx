@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 
-const url = "bitdreams-online.com";
-const ogTitle =
-  "Bitdreams Casino Australia–Play Top Online Games & Claim Big Bonuses";
+const url = "bitdreams-casino-online.com";
+const ogTitle = "Bitdreams Online Casino Canada – Bonuses, Games and Payments";
 const ogSiteName = "Bitdreams";
 const metaDescription =
-  "Bitdreams Casino Australia offers 7,000+ games, fast crypto and fiat payments, and exciting bonuses. Enjoy slots, live dealers, and exclusive promotions. Secure, mobile-friendly, and packed with rewards. Sign up now and start winning today!";
+  "Discover Bitdreams Casino Canada: a licensed online casino with top bonuses, fast payments, and 24/7 support. Play top games and claim up to €2000 in bonuses!";
 
-const locale = "en-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
