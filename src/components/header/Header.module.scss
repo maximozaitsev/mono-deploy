@@ -63,12 +63,12 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
-      background: $color-button-large;
+      background: $color-button-small;
       width: 119px;
     }
 
     &.signUp {
-      background: $color-button-small;
+      background: $color-button-large;
       width: 200px;
     }
 
