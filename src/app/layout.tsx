@@ -1,12 +1,13 @@
 import { Metadata } from "next";
 
-const url = "bitdreams-casino-online.com";
-const ogTitle = "Bitdreams Online Casino Canada – Bonuses, Games and Payments";
-const ogSiteName = "Bitdreams";
+const url = "coolzino-online.com";
+const ogTitle =
+  "Coolzino Casino Australia—Play Smart with Top Bonuses & Features";
+const ogSiteName = "Coolzino";
 const metaDescription =
-  "Discover Bitdreams Casino Canada: a licensed online casino with top bonuses, fast payments, and 24/7 support. Play top games and claim up to €2000 in bonuses!";
+  "Coolzino Casino Australia brings premium gaming with tailored rewards, secure payments, and fast cashouts. Explore top slots, live tables, and exclusive promotions—sign up now and elevate your experience!";
 
-const locale = "en-CA";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

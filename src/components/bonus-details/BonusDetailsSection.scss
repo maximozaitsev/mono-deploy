@@ -51,7 +51,7 @@
 }
 
 .cell {
-  color: #26125e;
+  color: $text-color-secondary;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
@@ -337,7 +337,7 @@
 }
 .cell {
   &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 /* Theme Styles End */

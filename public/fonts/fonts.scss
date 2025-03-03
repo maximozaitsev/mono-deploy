@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Poppins", sans-serif;
+$font-secondary: "Kanit", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -8,16 +8,23 @@ $font-secondary: "Poppins", sans-serif;
   font-style: normal;
 }
 
-// @font-face {
-//   font-family: "Montserrat";
-//   src: url("Heading/static/Montserrat-Bold.ttf") format("truetype");
-//   font-weight: 700;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: "Montserrat";
+  src: url("Heading/static/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: "Poppins";
-  src: url("./Heading/Poppins-Black.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Kanit";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Heading/static/Kanit-900.woff2") format("woff2");
 }
