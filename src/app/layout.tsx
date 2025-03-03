@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "coolzino-online.com";
+const url = "coolzino-casino-online.com";
 const ogTitle =
-  "Coolzino Casino Australia—Play Smart with Top Bonuses & Features";
+  "Coolzino Casino Canada— Play Best Games, Use Bonuses & Fast Payouts";
 const ogSiteName = "Coolzino";
 const metaDescription =
-  "Coolzino Casino Australia brings premium gaming with tailored rewards, secure payments, and fast cashouts. Explore top slots, live tables, and exclusive promotions—sign up now and elevate your experience!";
+  "Coolzino Casino Canada delivers 3,000+ slots, live dealer games, and exclusive bonuses. Enjoy secure payments, crypto support, and 24/7 customer service. Sign up now and start playing with top rewards!";
 
-const locale = "en-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
