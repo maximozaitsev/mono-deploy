@@ -12,16 +12,16 @@
   text-transform: uppercase;
 
   &.primary {
-    outline: 4px solid;
-    outline-offset: -4px;
-    outline-color: #f9f8f83b;
+    // outline: 4px solid;
+    // outline-offset: -4px;
+    // outline-color: #f9f8f83b;
 
     padding: 4px 48px;
     background: $color-button-large;
     color: $text-color-button-large;
     font-size: 28px;
     border: none;
-    border-radius: 50px;
+    border-radius: 16px;
     min-width: 280px;
     height: 87px;
 
@@ -30,6 +30,7 @@
       padding: 4px 48px;
       min-width: 240px;
       height: 77px;
+      border-radius: 12px;
     }
 
     @media (max-width: 420px) {
@@ -48,20 +49,21 @@
   }
 
   &.secondary {
-    outline: 3px solid;
-    outline-offset: -3px;
-    outline-color: #2e2e2e3b;
+    // outline: 3px solid;
+    // outline-offset: -3px;
+    // outline-color: #2e2e2e3b;
 
-    padding: 2px 4px;
+    padding: 2px 18px;
     background: $color-button-small;
     color: $text-color-button-small;
     font-size: 20px;
     border: none;
-    border-radius: 50px;
+    border-radius: 16px;
     height: 52px;
 
     @media (max-width: 768px) {
       font-size: 18px;
+      border-radius: 8px;
     }
 
     @media (max-width: 300px) {

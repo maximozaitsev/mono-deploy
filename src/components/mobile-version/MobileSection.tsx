@@ -13,7 +13,7 @@ import "./MobileSection.scss";
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "Golden Reels";
+  const projectName = "Ricky";
 
   useEffect(() => {
     import("../../content/content.json")

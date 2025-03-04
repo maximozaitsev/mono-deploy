@@ -1,10 +1,12 @@
 import { Metadata } from "next";
 
-const url = "golden-reels-casino-online.com";
-const ogTitle = "Golden Reels Casino Australia Review – Games, Bonuses & More";
-const ogSiteName = "Golden Reels";
+const url = "ricky-casino.net";
+const ogTitle =
+  "Ricky Casino Australia Review – Bonuses, Games & Payment Methods";
+const ogSiteName = "Ricky";
 const metaDescription =
-  "Discover Golden Reels Casino Australia, a top gaming site offering pokies, table games, live dealers, and jackpot games. Enjoy welcome bonuses, no deposit-free spins, and reload offers. Learn about deposit methods, security, mobile app, and bonus codes.";
+  "Discover Ricky Casino in Australia! Get the latest bonuses with a lot of free spins and cash to play, explore game selection, and check out secure payment methods. Read our full Ricky Casino review now.";
+
 const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
