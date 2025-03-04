@@ -31,8 +31,8 @@
             // margin-top: 12px;
 
             @media (max-width: 768px) {
-              // scale: 0.8;
-              margin-top: 2px;
+              scale: 0.85;
+              margin-top: -4px;
             }
           }
 
@@ -75,7 +75,7 @@
   .copyright {
     color: rgba(255, 255, 255, 0.34);
     font-family: $font-primary;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     line-height: 40px;
 
@@ -84,7 +84,7 @@
     justify-content: center;
 
     span:first-child {
-      font-size: 32px;
+      font-size: 24px;
       margin-right: 16px;
     }
 

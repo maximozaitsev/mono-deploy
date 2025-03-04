@@ -53,10 +53,6 @@
   .app-info-block {
     align-items: flex-start;
     color: $text-color-primary;
-
-    .primary {
-      height: 82px;
-    }
   }
 
   .advantages-list {
@@ -121,7 +117,7 @@
     @media (min-width: 1281px) {
       .app-image {
         margin-top: 10px;
-        margin-left: -20px;
+        margin-left: -70px;
       }
     }
 
@@ -189,8 +185,8 @@
         button {
           align-self: center;
           margin-top: 40px;
-          max-width: 267px;
-          height: 77px;
+          // max-width: 267px;
+          // height: 77px;
         }
       }
     }

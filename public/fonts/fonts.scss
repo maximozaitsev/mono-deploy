@@ -1,10 +1,17 @@
-$font-primary: "Roboto", sans-serif;
-$font-secondary: "Montserrat", sans-serif;
+$font-primary: "Abel", sans-serif;
+$font-secondary: "Rubik", sans-serif;
 
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Abel";
+  src: url("./Abel/Abel-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -20,4 +27,18 @@ $font-secondary: "Montserrat", sans-serif;
   src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./Heading/static/Rubik-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Heading/static/Rubik-900.woff2") format("woff2");
 }

@@ -5,11 +5,6 @@
 .bonus-details-section {
   button {
     align-self: center;
-    width: 280px;
-
-    @media (max-width: 850px) {
-      width: 240px;
-    }
 
     @media (max-width: 480px) {
       width: auto;

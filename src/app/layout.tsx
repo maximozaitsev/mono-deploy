@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "memocasino-casino.com";
+const url = "neonvegas-casino.com";
 const ogTitle =
-  "Memo Casino Review UK – Games, Bonuses & Secure Payment Options";
-const ogSiteName = "Memo";
+  "NeonVegas Casino Review 2025: Top Online Gaming Experience for NZ";
+const ogSiteName = "NeonVegas";
 const metaDescription =
-  "Read our detailed Memo Casino review for UK players. Discover available games, bonuses, payment methods, security measures, and more. Find out if Memo Casino is worth your time!";
+  "Explore the NeonVegas Casino's extensive game selection, generous bonuses, secure payment methods, and dedicated support tailored for New Zealand players in 2025.";
 
-const locale = "en-GB";
+const locale = "en-NZ";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
