@@ -1,13 +1,11 @@
 import { Metadata } from "next";
 
-const url = "neonvegas-casino.com";
-const ogTitle =
-  "NeonVegas Casino Review 2025: Top Online Gaming Experience for NZ";
-const ogSiteName = "NeonVegas";
+const url = "golden-reels-casino-online.com";
+const ogTitle = "Golden Reels Casino Australia Review – Games, Bonuses & More";
+const ogSiteName = "Golden Reels";
 const metaDescription =
-  "Explore the NeonVegas Casino's extensive game selection, generous bonuses, secure payment methods, and dedicated support tailored for New Zealand players in 2025.";
-
-const locale = "en-NZ";
+  "Discover Golden Reels Casino Australia, a top gaming site offering pokies, table games, live dealers, and jackpot games. Enjoy welcome bonuses, no deposit-free spins, and reload offers. Learn about deposit methods, security, mobile app, and bonus codes.";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
