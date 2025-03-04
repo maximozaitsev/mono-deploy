@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "coolzino-casino-online.com";
+const url = "memocasino-casino.com";
 const ogTitle =
-  "Coolzino Casino Canada— Play Best Games, Use Bonuses & Fast Payouts";
-const ogSiteName = "Coolzino";
+  "Memo Casino Review UK – Games, Bonuses & Secure Payment Options";
+const ogSiteName = "Memo";
 const metaDescription =
-  "Coolzino Casino Canada delivers 3,000+ slots, live dealer games, and exclusive bonuses. Enjoy secure payments, crypto support, and 24/7 customer service. Sign up now and start playing with top rewards!";
+  "Read our detailed Memo Casino review for UK players. Discover available games, bonuses, payment methods, security measures, and more. Find out if Memo Casino is worth your time!";
 
-const locale = "en-CA";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

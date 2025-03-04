@@ -19,9 +19,8 @@
     }
 
     @media (max-width: 768px) {
-      margin-top: 4px;
-      margin-left: -28px;
-      scale: 0.75;
+      // margin-left: -18px;
+      // scale: 0.85;
     }
   }
 
@@ -51,10 +50,10 @@
   gap: 24px;
 
   .headerButton {
-    height: 45px;
+    height: 44px;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 14px;
+    font-size: 16px;
     color: $text-color-button-header;
     padding: 8px 16px;
     border-radius: 50px;
@@ -63,12 +62,13 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
-      background: $color-button-large;
-      width: 115px;
+      background: $color-button-small;
+      width: 130px;
+      color: $text-color-button-small;
     }
 
     &.signUp {
-      background: $color-button-small;
+      background: $color-button-large;
       width: 200px;
     }
 
@@ -80,15 +80,15 @@
     gap: 8px;
 
     .headerButton {
-      height: 31px;
+      height: 32px;
       // border-radius: 4px;
-      font-size: 10px;
+      font-size: 13px;
 
       &.logIn {
-        width: 69px;
+        width: 86px;
       }
       &.signUp {
-        width: 100px;
+        width: 120px;
       }
     }
   }
