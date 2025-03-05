@@ -27,17 +27,19 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
-      <div className="container">
-        <div className={styles.welcomeContent}>
-          <div className={styles.welcomeText}>
-            <h2>Welcome Bonus</h2>
-            <p className={styles.offerText}>
-              Exclusive welcome offer of {welcomeBonus}
-            </p>
-            <p className={styles.bonusText}>
-              Exclusive welcome bonus of {welcomeBonus}
-            </p>
-            <Button text="claim bonus" variant="primary" />
+      <div className={styles.welcomeBg}>
+        <div className="container">
+          <div className={styles.welcomeContent}>
+            <div className={styles.welcomeText}>
+              <h2>Welcome Bonus</h2>
+              <p className={styles.offerText}>
+                Exclusive welcome offer of {welcomeBonus}
+              </p>
+              <p className={styles.bonusText}>
+                Exclusive welcome bonus of {welcomeBonus}
+              </p>
+              <Button text="claim bonus" variant="primary" />
+            </div>
           </div>
         </div>
       </div>

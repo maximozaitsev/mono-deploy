@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "r2pbet-casino-online.com";
+const url = "tonybet-casino-online.com";
 const ogTitle =
-  "R2PBET Casino UK Review – Games, Bonuses, Payments & App Guide";
-const ogSiteName = "R2pbet";
+  "TonyBet Ontario Casino Review 2024 – Bonuses, Games & Features";
+const ogSiteName = "TonyBet";
 const metaDescription =
-  "R2PBET Casino Review UK  – Discover over 6,000 games, exciting bonuses, secure payment options, and a user-friendly mobile app. Learn about the welcome offer, cashback deals, withdrawal limits, and Cypriot licensing. Find out if R2PBET is the right casino for you!";
+  "Discover everything about TonyBet Ontario Casino, including its generous bonuses, game selection, payment options, and security features. Find out how to register, claim promotions, and enjoy a top-tier gaming experience in Canada.";
 
-const locale = "en-GB";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

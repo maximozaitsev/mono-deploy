@@ -20,8 +20,8 @@
 
     @media (max-width: 768px) {
       margin-top: 4px;
-      margin-left: -18px;
-      scale: 0.85;
+      margin-left: -14px;
+      scale: 0.8;
     }
   }
 
@@ -64,7 +64,7 @@
 
     &.logIn {
       background: $color-button-small;
-      width: 112px;
+      width: 104px;
     }
 
     &.signUp {
@@ -85,7 +85,7 @@
       font-size: 10px;
 
       &.logIn {
-        width: 66px;
+        width: 61px;
       }
       &.signUp {
         width: 100px;
