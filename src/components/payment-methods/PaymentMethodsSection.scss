@@ -169,14 +169,12 @@
           line-height: normal;
           font-weight: $font-weight-regular;
           padding: 8px;
-          text-align: end;
 
           &:last-child {
             border-bottom: none;
           }
 
           strong {
-            text-align: start;
             background: $text-color-fourth;
             background-clip: text;
             -webkit-background-clip: text;
@@ -197,10 +195,6 @@
   }
 }
 
-.payment-methods-section
-  .mobile-payment-methods
-  .payment-method-card
-  .payment-method-details
-  p {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }

@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "ricky-casino.net";
+const url = "r2pbet-casino-online.com";
 const ogTitle =
-  "Ricky Casino Australia Review – Bonuses, Games & Payment Methods";
-const ogSiteName = "Ricky";
+  "R2PBET Casino UK Review – Games, Bonuses, Payments & App Guide";
+const ogSiteName = "R2pbet";
 const metaDescription =
-  "Discover Ricky Casino in Australia! Get the latest bonuses with a lot of free spins and cash to play, explore game selection, and check out secure payment methods. Read our full Ricky Casino review now.";
+  "R2PBET Casino Review UK  – Discover over 6,000 games, exciting bonuses, secure payment options, and a user-friendly mobile app. Learn about the welcome offer, cashback deals, withdrawal limits, and Cypriot licensing. Find out if R2PBET is the right casino for you!";
 
-const locale = "en-AU";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

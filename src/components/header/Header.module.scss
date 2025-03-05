@@ -20,8 +20,8 @@
 
     @media (max-width: 768px) {
       margin-top: 4px;
-      margin-left: -29px;
-      scale: 0.75;
+      margin-left: -18px;
+      scale: 0.85;
     }
   }
 
@@ -57,14 +57,14 @@
     font-size: 14px;
     color: $text-color-button-header;
     padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: 50px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
       background: $color-button-small;
-      width: 105px;
+      width: 112px;
     }
 
     &.signUp {

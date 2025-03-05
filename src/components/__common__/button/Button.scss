@@ -21,7 +21,7 @@
     color: $text-color-button-large;
     font-size: 28px;
     border: none;
-    border-radius: 16px;
+    border-radius: 50px;
     min-width: 280px;
     height: 87px;
 
@@ -30,7 +30,6 @@
       padding: 4px 48px;
       min-width: 240px;
       height: 77px;
-      border-radius: 12px;
     }
 
     @media (max-width: 420px) {
@@ -58,12 +57,11 @@
     color: $text-color-button-small;
     font-size: 20px;
     border: none;
-    border-radius: 16px;
+    border-radius: 50px;
     height: 52px;
 
     @media (max-width: 768px) {
       font-size: 18px;
-      border-radius: 8px;
     }
 
     @media (max-width: 300px) {
