@@ -1,11 +1,9 @@
 import { Metadata } from "next";
 
-const url = "tonybet-casino-online.com";
-const ogTitle =
-  "TonyBet Ontario Casino Review 2024 – Bonuses, Games & Features";
-const ogSiteName = "TonyBet";
-const metaDescription =
-  "Discover everything about TonyBet Ontario Casino, including its generous bonuses, game selection, payment options, and security features. Find out how to register, claim promotions, and enjoy a top-tier gaming experience in Canada.";
+const url = "luckywins-canada.com";
+const ogTitle = "LuckyWins Casino Canada – Secure Gambling, Unique Games & Cool Bonuses";
+const ogSiteName = "LuckyWins";
+const metaDescription = "Discover LuckyWins Casino in Canada\! Get a 100% welcome bonus up toCA$1,000 \+ 100 free spins, explore exclusive slot games, and enjoy fast withdrawals. Read our full review\!";
 
 const locale = "en-CA";
 const language = "English";
