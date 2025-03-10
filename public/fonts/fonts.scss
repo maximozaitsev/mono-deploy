@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Nunito Sans", sans-serif;
+$font-secondary: "Roboto Slab", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -23,8 +23,8 @@ $font-secondary: "Nunito Sans", sans-serif;
 }
 
 @font-face {
-  font-family: "Nunito Sans";
+  font-family: "Roboto Slab";
   font-weight: 900;
   font-style: normal;
-  src: url("./Heading/static/Nunito Sans-900.woff2") format("woff2");
+  src: url("./Heading/static/Roboto Slab-900.woff2") format("woff2");
 }

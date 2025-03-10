@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
-const url = "luckywins-canada.com";
-const ogTitle = "LuckyWins Casino Canada – Secure Gambling, Unique Games & Cool Bonuses";
-const ogSiteName = "LuckyWins";
-const metaDescription = "Discover LuckyWins Casino in Canada\! Get a 100% welcome bonus up toCA$1,000 \+ 100 free spins, explore exclusive slot games, and enjoy fast withdrawals. Read our full review\!";
+const url = "europalace-casino-canada.com";
+const ogTitle = "Euro Palace Casino Canada: The World of Incredible Online Gambling";
+const ogSiteName = "Euro Palace";
+const metaDescription = "Euro Palace Casino Canada: a detailed review of the popular service. Welcome bonuses, VIP program, gaming options, payment methods and other useful information for new customers";
 
 const locale = "en-CA";
 const language = "English";
