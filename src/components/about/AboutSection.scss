@@ -1,5 +1,4 @@
 @use "../../styles/colors.scss" as *;
-@use "../../styles/lists" as lists;
 
 .about-section {
   background: $color-background-secondary;
@@ -25,13 +24,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
 
     .about-text {
-      width: 45%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 50%;
 
-      @media (max-width: 1395px) {
+      @media (max-width: 1220px) {
         width: 100%;
+      }
+
+      ul {
+        margin-left: 1.5rem;
       }
     }
 
@@ -41,7 +46,11 @@
       justify-content: center;
       align-items: center;
 
-      @media (max-width: 1395px) {
+      // img {
+      //   margin-right: -35px;
+      // }
+
+      @media (max-width: 1380px) {
         max-width: 650px;
         width: 100%;
       }
@@ -55,38 +64,6 @@
   .about-text {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    @include lists.common-list-styles(1.5rem);
-
-    .h4-heading {
-      color: $text-color-primary;
-    }
-  }
-
-  .deposit-withdrawal {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    justify-content: space-between;
-
-    .deposit-section,
-    .withdrawal-section {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-
-      @include lists.common-list-styles(1rem);
-    }
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-      gap: 2.5rem;
-
-      .deposit-section,
-      .withdrawal-section {
-        width: 100%;
-      }
-    }
+    gap: 24px;
   }
 }

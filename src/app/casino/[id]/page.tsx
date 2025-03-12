@@ -7,8 +7,8 @@ import Header from "../../../components/header/Header";
 import Footer from "@/components/footer/Footer";
 import "../../../components/header/Header.module.scss";
 import Image from "next/image";
-import styles from "./PreloaderPage.module.scss";
 import SpinnerGif from "../../../../public/assets/loader-black.gif";
+import styles from "./PreloaderPage.module.scss";
 
 const PreloaderPage = () => {
   const { id } = useParams();
@@ -38,7 +38,11 @@ const PreloaderPage = () => {
           await new Promise((resolve) => setTimeout(resolve, 1500));
 
           if (targetOfferLink) {
-            window.location.replace(targetOfferLink);
+            window.history.replaceState(null, "", "/");
+            const anchor = document.createElement("a");
+            anchor.href = targetOfferLink;
+            anchor.rel = "noopener noreferrer";
+            anchor.click();
           }
         } else {
           console.error("No offers available");

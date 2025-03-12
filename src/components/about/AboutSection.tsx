@@ -1,96 +1,99 @@
-// /components/sections/AboutSection.tsx
-"use client";
-
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import aboutImage from "../../../public/block-images/laptop.webp";
+import P from "../__common__/Paragraph";
+import List from "../__common__/list/List";
+import TwoColumns from "../__common__/two-columns/TwoColumns";
+import { content } from "@/content/content";
 import "./AboutSection.scss";
-import useContentData from "../../utils/useContentData";
-import BlockRenderer from "../__common__/renderers/BlockRenderer";
 
 export default function AboutSection() {
-  const { data: content, loading, error } = useContentData();
-  const [aboutSections, setAboutSections] = useState<any>({});
-  const [depositSection, setDepositSection] = useState<any>(null);
-  const [withdrawalSection, setWithdrawalSection] = useState<any>(null);
-
-  useEffect(() => {
-    if (content) {
-      const aboutEntries = Object.entries(content.about) as [string, any][];
-      if (aboutEntries.length > 2) {
-        const depositTitle = aboutEntries[aboutEntries.length - 2][0];
-        const withdrawalTitle = aboutEntries[aboutEntries.length - 1][0];
-
-        setDepositSection({
-          title: depositTitle,
-          content: aboutEntries[aboutEntries.length - 2][1],
-        });
-        setWithdrawalSection({
-          title: withdrawalTitle,
-          content: aboutEntries[aboutEntries.length - 1][1],
-        });
-
-        // Оставляем только секции до Deposits и Withdrawals
-        const filteredAbout = aboutEntries.slice(0, aboutEntries.length - 2);
-        setAboutSections(Object.fromEntries(filteredAbout));
-      } else {
-        setAboutSections(content.about);
-      }
-    }
-  }, [content]);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error loading content.</p>;
-  if (!content) return <p>No content available.</p>;
-
   return (
     <section className="about-section section">
       <div className="container">
-        <h1 className="h2-heading white">{content.title}</h1>
-
+        <h1 className="h2-heading white">{content.about.title}</h1>
         <div className="about-content">
           <div className="about-text paragraph-text">
-            {content.intro?.map((block: any, index: number) => (
-              <BlockRenderer key={index} block={block} />
-            ))}
+            {/* <ul>
+              {content.about.intro.map((item: string, index: number) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul> */}
+            {content.about.description.map(
+              (paragraph: string, index: number) => (
+                <p key={index} className="paragraph-text">
+                  {paragraph}
+                </p>
+              )
+            )}
           </div>
-
           <div className="about-image">
             <Image src={aboutImage} alt="About Image" quality={100} />
           </div>
         </div>
-
-        {Object.entries(aboutSections).map(
-          ([sectionTitle, sectionContent]: [string, any], index) => (
-            <div key={index} className="about-text">
-              <h3 className="h3-heading">{sectionTitle}</h3>
-              {sectionContent.map((block: any, idx: number) => (
-                <BlockRenderer key={idx} block={block} />
-              ))}
-            </div>
-          )
-        )}
-
-        {(depositSection || withdrawalSection) && (
-          <div className="deposit-withdrawal">
-            {depositSection && (
-              <div className="deposit-section">
-                <h3 className="h3-heading">{depositSection.title}</h3>
-                {depositSection.content.map((block: any, idx: number) => (
-                  <BlockRenderer key={idx} block={block} />
-                ))}
-              </div>
-            )}
-            {withdrawalSection && (
-              <div className="withdrawal-section">
-                <h3 className="h3-heading">{withdrawalSection.title}</h3>
-                {withdrawalSection.content.map((block: any, idx: number) => (
-                  <BlockRenderer key={idx} block={block} />
-                ))}
-              </div>
-            )}
-          </div>
-        )}
+        <div className="about-text">
+          <h3 className="h3-heading">{content.about.register.title}</h3>
+          <P>{content.about.register.text[0]}</P>
+          <P>{content.about.register.text[1]}</P>
+          <List items={content.about.register.list} />
+          <P>{content.about.register.text[2]}</P>
+          <P>{content.about.register.text[3]}</P>
+          <P>{content.about.register.text[4]}</P>
+        </div>
+        <div className="about-text">
+          {/* <h3 id="sign-in" className="h3-heading">
+            {content.about.signIn.title}
+          </h3>
+          <P>{content.about.signIn.text[0]}</P>
+          <List items={content.about.signIn.list} ordered />
+          <P>{content.about.signIn.text[1]}</P> */}
+          <h4 className="h4-heading white">
+            {content.about.verification.title}
+          </h4>
+          <P>{content.about.verification.text[0]}</P>
+          <P>{content.about.verification.text[1]}</P>
+          <List items={content.about.verification.list} ordered />
+          <P>{content.about.verification.text[2]}</P>
+        </div>
+        {/* <TwoColumns
+          leftColumnContent={[
+            {
+              heading: content.about.depositMethods.title,
+              items: [
+                {
+                  type: "text",
+                  content: content.about.depositMethods.text[0],
+                },
+                // {
+                //   type: "list",
+                //   content: content.about.depositMethods.list || [],
+                // },
+                // {
+                //   type: "text",
+                //   content: content.about.depositMethods.text[1],
+                // },
+              ],
+            },
+          ]}
+          rightColumnContent={[
+            {
+              heading: content.about.withdrawalMethods.title,
+              items: [
+                {
+                  type: "text",
+                  content: content.about.withdrawalMethods.text[0],
+                },
+                // {
+                //   type: "list",
+                //   content: content.about.withdrawalMethods.list || [],
+                // },
+                // {
+                //   type: "text",
+                //   content: content.about.withdrawalMethods.text[1],
+                // },
+              ],
+            },
+          ]}
+        /> */}
       </div>
     </section>
   );

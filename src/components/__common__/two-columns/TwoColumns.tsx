@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./TwoColumns.module.scss";
+import List from "../list/List";
 
 type ColumnItem = {
   type: "text" | "list";
   content: string | string[];
-  style?: "unordered" | "ordered";
 };
 
 type ColumnContent = {
@@ -25,29 +25,18 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
 }) => {
   const renderContent = (items: ColumnItem[]) => {
     return items.map((item, index) => {
-      if (item.type === "text") {
-        return (
-          <p
-            key={index}
-            className="paragraph-text"
-            dangerouslySetInnerHTML={{ __html: item.content as string }}
-          />
-        );
-      } else if (item.type === "list") {
-        const ListTag = item.style === "ordered" ? "ol" : "ul";
-        return (
-          <ListTag key={index} className={styles["styled-list"]}>
-            {(item.content as string[]).map((listItem, i) => (
-              <li
-                key={i}
-                className="paragraph-text"
-                dangerouslySetInnerHTML={{ __html: listItem }}
-              />
-            ))}
-          </ListTag>
-        );
+      switch (item.type) {
+        case "text":
+          return (
+            <p key={index} className="paragraph-text">
+              {item.content as string}
+            </p>
+          );
+        case "list":
+          return <List key={index} items={item.content as string[]} />;
+        default:
+          return null;
       }
-      return null;
     });
   };
 

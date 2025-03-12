@@ -1,9 +1,7 @@
 @import "../../styles/colors.scss";
 @import "../../../public/fonts/fonts.scss";
-@import "../../styles/variables.scss";
 
 .header {
-  display: flex;
   background: $color-background-header;
   padding: 20px 160px;
   position: sticky;
@@ -11,17 +9,25 @@
   z-index: 1000;
   height: 96px;
 
-  svg {
+  img {
     margin-top: 4px;
+    margin-left: 0px;
+    scale: 1;
 
     @media (max-width: 1080px) {
       margin-top: 0px;
     }
 
     @media (max-width: 768px) {
-      margin-top: 4px;
-      margin-left: -21px;
-      scale: 0.82;
+      margin-top: 0px;
+      margin-left: -43px;
+      scale: 0.69;
+    }
+
+    @media (max-width: 500px) {
+      scale: 1;
+      width: 160px;
+      margin-left: 0;
     }
   }
 
@@ -36,6 +42,10 @@
   @media (max-width: 380px) {
     padding: 5px 10px;
     height: 64px;
+
+    img {
+      margin-left: 0;
+    }
   }
 }
 
@@ -43,7 +53,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
 .headerButtons {
@@ -51,21 +60,19 @@
   gap: 24px;
 
   .headerButton {
-    height: 42px;
+    height: 41px;
     font-family: $font-secondary;
-    font-weight: $font-weight-black;
+    font-weight: 700;
     font-size: 14px;
     color: $text-color-button-header;
-    padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: 3px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
       background: $color-button-small;
-      width: 106px;
-      color: $text-color-button-small;
+      width: 123px;
     }
 
     &.signUp {
@@ -81,12 +88,11 @@
     gap: 8px;
 
     .headerButton {
-      height: 29px;
-      border-radius: 4px;
+      height: 28px;
       font-size: 10px;
 
       &.logIn {
-        width: 62px;
+        width: 74px;
       }
       &.signUp {
         width: 100px;
@@ -94,19 +100,10 @@
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 420px) {
     .headerButton {
       &.logIn {
         display: none;
-      }
-    }
-  }
-
-  @media (max-width: 380px) {
-    .headerButton {
-      &.signUp {
-        width: auto;
-        height: auto;
       }
     }
   }

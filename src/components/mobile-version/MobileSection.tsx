@@ -1,39 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
-import mobileAppImage from "../../../public/block-images/phone.webp";
-import mobileAppImageMobile from "../../../public/block-images/phone-mobile.webp";
-import StarIcon from "../__common__/StarIcon";
+import mobileAppImage from "../../../public/block-images/mobile.webp";
+import StarIcon from "../../../public/assets/Vector.png";
 import Button from "../__common__/button/Button";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
+import { content } from "@/content/content";
 
 import "./MobileSection.scss";
 
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
-  const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "Euro Palace";
-
-  useEffect(() => {
-    import("../../content/content.json")
-      .then((data) => {
-        const advantagesSections = Object.values(data.advantages) as any[];
-        if (advantagesSections.length > 0) {
-          // Находим первый блок типа "list"
-          for (const section of advantagesSections) {
-            const listBlock = section.find(
-              (block: any) => block.type === "list"
-            );
-            if (listBlock) {
-              setAdvantagesList(listBlock.items);
-              break;
-            }
-          }
-        }
-      })
-      .catch((error) => console.error("Ошибка загрузки JSON:", error));
-  }, []);
 
   return (
     <section className="mobile-section">
@@ -41,9 +18,15 @@ export default function MobileSection() {
         <div className="advantages-block">
           <h3 className="h3-heading">Advantages</h3>
           <ul className="advantages-list">
-            {advantagesList.map((advantage, index) => (
+            {content.advantages.advantages.map((advantage, index) => (
               <li key={index}>
-                <StarIcon />
+                <Image
+                  src={StarIcon}
+                  alt="Star"
+                  width={30}
+                  height={30}
+                  quality={100}
+                />
                 {advantage}
               </li>
             ))}
@@ -52,16 +35,13 @@ export default function MobileSection() {
         </div>
 
         <div className="app-info-block">
-          <h3 className="h3-heading">{projectName} App</h3>
+          <h3 className="h3-heading">{content.projectName} App</h3>
           <div className="mobile-image show-1080">
             <Image
-              src={mobileAppImageMobile}
+              src={mobileAppImage}
               alt="Mobile App"
-              width={mobileAppImageMobile.width}
-              height={mobileAppImageMobile.height}
               className="app-image"
               priority
-              quality={100}
             />
           </div>
           <div className="app-buttons">

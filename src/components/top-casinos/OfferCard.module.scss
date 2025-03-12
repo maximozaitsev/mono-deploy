@@ -24,7 +24,7 @@
     font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
-    font-weight: $font-weight-regular;
+    font-weight: 700;
     line-height: normal;
   }
 
@@ -32,7 +32,7 @@
     font-family: $font-primary;
     font-size: 24px;
     font-style: normal;
-    font-weight: $font-weight-regular;
+    font-weight: 500;
     line-height: normal;
     color: $text-color-fourth;
 
@@ -48,7 +48,7 @@
     font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
-    font-weight: $font-weight-regular;
+    font-weight: 500;
     line-height: normal;
 
     @media (max-width: 768px) {
@@ -58,7 +58,7 @@
 
   button {
     margin-top: auto;
-    width: 208px;
+    width: 217px;
     // margin-left: 5px;
   }
 

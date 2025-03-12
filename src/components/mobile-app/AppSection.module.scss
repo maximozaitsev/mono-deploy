@@ -1,5 +1,4 @@
-@use "../../styles/colors" as *;
-@use "../../styles/lists" as lists;
+@import "../../styles/colors";
 
 .appSection {
   background: $color-background-secondary;
@@ -20,13 +19,6 @@
     flex-direction: column;
     gap: 48px;
     width: 548px;
-
-    .paragraphGroup {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      @include lists.common-list-styles(1rem);
-    }
 
     .imageMobile {
       display: none;
@@ -51,7 +43,7 @@
 
     .image {
       position: absolute;
-      top: -38px;
+      top: -90px;
       right: -13px;
       overflow: hidden;
       height: auto;
@@ -129,29 +121,6 @@
       @media (max-width: 500px) {
         display: none;
       }
-    }
-  }
-}
-
-.columns {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  justify-content: space-between;
-
-  .column {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    @include lists.common-list-styles(1rem);
-  }
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 2.5rem;
-
-    .column {
-      width: 100%;
     }
   }
 }

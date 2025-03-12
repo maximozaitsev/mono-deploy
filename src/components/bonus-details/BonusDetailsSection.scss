@@ -2,6 +2,10 @@
 @import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
+:root {
+  --color-ico: #{$text-color-secondary};
+}
+
 .bonus-details-section {
   button {
     align-self: center;
@@ -56,7 +60,7 @@
   background: $color-background-third;
   font-size: 20px;
   font-style: normal;
-  font-weight: $font-weight-regular;
+  font-weight: 500;
   line-height: 40px;
   padding: 9.25px 16px;
   display: flex;
@@ -81,6 +85,7 @@
     right: 0;
     height: 40px;
     width: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &.last-cell::after {
@@ -119,14 +124,14 @@
 .accordion {
   width: 100%;
   grid-column: span 6;
-  // background: $color-background;
+  background: $color-background;
   display: grid;
   grid-template-columns: 18% 82%;
   color: $text-color-secondary;
   font-family: $font-primary;
   font-size: 20px;
   font-style: normal;
-  font-weight: $font-weight-regular;
+  font-weight: 500;
   line-height: 40px;
   // padding-top: 16px;
 
@@ -165,10 +170,12 @@
 .accordion-value {
   display: flex;
   align-items: center;
-  // background: $color-background;
+  background: $color-background;
   text-align: left;
   padding: 8px 10px 8px 16px;
   position: relative;
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   &::after {
     content: "";
@@ -177,6 +184,8 @@
     top: 15%;
     height: 70%;
     width: 1px;
+    // background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &:last-child::after {
@@ -323,21 +332,3 @@
     }
   }
 }
-
-/* Theme Styles Start */
-.accordion-title,
-.accordion-value {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  &::after {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-.accordion-title::after {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.cell {
-  &::after {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-/* Theme Styles End */

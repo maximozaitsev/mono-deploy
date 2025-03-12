@@ -6,36 +6,28 @@
 .column {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 48px;
   flex: 1;
 
   .innerDiv {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 24px;
   }
+}
 
-  .styled-list {
-    margin-left: 1.5rem;
-    padding: 0;
-  }
-
-  .ordered {
-    list-style-type: decimal;
-  }
-
-  .unordered {
-    list-style-type: disc;
-  }
+.categoriesList {
+  margin-left: 1.5rem;
+  padding: 24px 0;
 }
 
 @media (max-width: 820px) {
   .two-columns-container {
     flex-direction: column;
-    gap: 2.5rem !important;
+    gap: 40px !important;
 
     .column {
-      gap: 2.5rem !important;
+      gap: 40px !important;
     }
   }
 }

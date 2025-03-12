@@ -1,41 +1,29 @@
-"use client";
-
-import { useMemo } from "react";
 import Image from "next/image";
-import supportImage from "../../../public/block-images/support.webp";
+import { content } from "@/content/content";
+import support from "../../../public/block-images/support.webp";
 import styles from "./SupportSection.module.scss";
-import useContentData from "../../utils/useContentData";
-import BlockRenderer from "../__common__/renderers/BlockRenderer";
 
 export default function SupportSection() {
-  const { data, loading, error } = useContentData();
-
-  const supportData = useMemo(() => {
-    if (!data?.support) return null;
-    const supportEntries = Object.entries(data.support) as [string, any][];
-    if (supportEntries.length === 0) return null;
-    const [sectionTitle, blocks] = supportEntries[0];
-    return { sectionTitle, blocks };
-  }, [data]);
-
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error loading content.</p>;
-  if (!supportData) return <p>Support section data is not available.</p>;
-
   return (
     <section className={`${styles.supportSection} section`}>
       <div className="container">
         <div className={styles.supportContent}>
           <div className={styles.leftContent}>
-            {supportData.sectionTitle && (
-              <h2 className="h2-heading">{supportData.sectionTitle}</h2>
+            <h2 className="h2-heading">{content.support.title}</h2>
+            <p className="paragraph-text black">{content.support.text[0]}</p>
+            {content.support.list && content.support.list.length > 0 && (
+              <ul className={`${styles.list} paragraph-text black`}>
+                {content.support.list.map((item, index) => (
+                  <li key={index} className="paragraph-text black">
+                    {item}
+                  </li>
+                ))}
+              </ul>
             )}
-            {supportData.blocks.map((block: any, index: number) => (
-              <BlockRenderer key={index} block={block} />
-            ))}
+            <p className="paragraph-text black">{content.support.text[1]}</p>
           </div>
           <div className={styles.rightImage}>
-            <Image src={supportImage} alt="Support" quality={100} />
+            <Image src={support} alt="Support" quality={100} />
           </div>
         </div>
       </div>
