@@ -13,7 +13,7 @@ import "./MobileSection.scss";
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "Vinci Spin";
+  const projectName = "Candy Spinz Casino";
 
   useEffect(() => {
     import("../../content/content.json")
@@ -56,7 +56,7 @@ export default function MobileSection() {
           <div className="mobile-image show-1080">
             <Image
               src={mobileAppImageMobile}
-              alt="Mobile App"
+              alt={projectName + " Mobile"}
               width={mobileAppImageMobile.width}
               height={mobileAppImageMobile.height}
               className="app-image"
@@ -95,7 +95,7 @@ export default function MobileSection() {
         <div className="mobile-image hide-1080">
           <Image
             src={mobileAppImage}
-            alt="Mobile App"
+            alt={projectName + " Mobile"}
             className="app-image"
             priority
             quality={100}

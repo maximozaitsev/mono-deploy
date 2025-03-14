@@ -13,6 +13,7 @@ export default function AppSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const { data: content, loading, error } = useContentData();
   const { app } = useParsedSections(content?.sections || {});
+  const projectName = "Candy Spinz Casino";
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading content.</p>;
@@ -26,7 +27,7 @@ export default function AppSection() {
             {app.appTitle && <h3 className="h3-heading">{app.appTitle}</h3>}
             <Image
               src={AppImageMobile}
-              alt="App preview"
+              alt={projectName + " App"}
               className={styles.imageMobile}
               quality={100}
             />
@@ -65,7 +66,11 @@ export default function AppSection() {
             </div>
           </div>
           <div className={styles.imageBlock}>
-            <Image src={AppImage} alt="App preview" className={styles.image} />
+            <Image
+              src={AppImage}
+              alt={projectName + " App"}
+              className={styles.image}
+            />
           </div>
         </div>
 

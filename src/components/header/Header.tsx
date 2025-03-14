@@ -6,6 +6,7 @@ import styles from "./Header.module.scss";
 import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 
 const Header = () => {
+  const projectName = "Candy Spinz Casino";
   const { handleNavigation } = useNavigateWithPreloader();
 
   const scrollToWelcomeSection = () => {
@@ -24,6 +25,7 @@ const Header = () => {
           svgPath="/logo.svg"
           gradientIdPrefix="header"
           onClick={scrollToWelcomeSection}
+          alt={`${projectName} Logo`}
         />
 
         <div className={styles.headerButtons}>
@@ -31,13 +33,13 @@ const Header = () => {
             className={`${styles.headerButton} ${styles.logIn}`}
             onClick={handleSignInClick}
           >
-            Sign Up
+            Log In
           </button>
           <button
             className={`${styles.headerButton} ${styles.signUp}`}
             onClick={handleSignInClick}
           >
-            Play Now
+            Sign Up
           </button>
         </div>
       </nav>

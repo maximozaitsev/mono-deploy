@@ -13,6 +13,7 @@ export default function AboutSection() {
   const [aboutSections, setAboutSections] = useState<any>({});
   const [depositSection, setDepositSection] = useState<any>(null);
   const [withdrawalSection, setWithdrawalSection] = useState<any>(null);
+  const projectName = "Candy Spinz Casino";
 
   useEffect(() => {
     if (content) {
@@ -56,7 +57,11 @@ export default function AboutSection() {
           </div>
 
           <div className="about-image">
-            <Image src={aboutImage} alt="About Image" quality={100} />
+            <Image
+              src={aboutImage}
+              alt={projectName + " Desktop"}
+              quality={100}
+            />
           </div>
         </div>
 

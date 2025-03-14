@@ -9,6 +9,7 @@ import BlockRenderer from "../__common__/renderers/BlockRenderer";
 
 export default function SupportSection() {
   const { data, loading, error } = useContentData();
+  const projectName = "Candy Spinz Casino";
 
   const supportData = useMemo(() => {
     if (!data?.support) return null;
@@ -35,7 +36,11 @@ export default function SupportSection() {
             ))}
           </div>
           <div className={styles.rightImage}>
-            <Image src={supportImage} alt="Support" quality={100} />
+            <Image
+              src={supportImage}
+              alt={projectName + " Support"}
+              quality={100}
+            />
           </div>
         </div>
       </div>

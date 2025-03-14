@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "vinci-spin-online.com";
-const ogTitle = "Vinci Spin Casino: Enjoy a Secure & Exciting Gaming Encounter";
-const ogSiteName = "Vinci Spin";
+const url = "candy-spinz-online.com";
+const ogTitle =
+  "Candy Spinz Casino – Play Slots, Live Games & Claim Big Bonuses";
+const ogSiteName = "Candy Spinz Casino";
 const metaDescription =
-  "Vinci Spin Casino provides a secure gaming environment with a wide selection of slots, table games, and live dealer options. Enjoy generous bonuses, fast payments, and excellent support – sign up today and start winning!";
+  "Candy Spinz Casino features top slots, table games, and live dealer action. Enjoy fast withdrawals, secure payments, and exciting promotions. Join now to claim generous bonuses and start winning today!";
 
 const locale = "en";
 const language = "English";

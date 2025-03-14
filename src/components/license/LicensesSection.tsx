@@ -10,6 +10,7 @@ import { useParsedSections } from "../../utils/parseSections";
 export default function LicensesSection() {
   const { data: content, loading, error } = useContentData();
   const { licenses } = useParsedSections(content?.sections || {});
+  const projctName = "Project Name";
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading content.</p>;
@@ -38,7 +39,7 @@ export default function LicensesSection() {
               <div className={styles.rightImage}>
                 <Image
                   src={licenceImage}
-                  alt="Licenses"
+                  alt={`${projctName} License`}
                   width={240}
                   height={240}
                   quality={100}

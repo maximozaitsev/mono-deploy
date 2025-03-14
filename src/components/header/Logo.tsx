@@ -4,9 +4,15 @@ interface LogoProps {
   svgPath: string;
   gradientIdPrefix: string;
   onClick: () => void;
+  alt?: string;
 }
 
-const Logo = ({ svgPath, gradientIdPrefix, onClick }: LogoProps) => {
+const Logo = ({
+  svgPath,
+  gradientIdPrefix,
+  onClick,
+  alt = "Logo",
+}: LogoProps) => {
   const [svgContent, setSvgContent] = useState<string | null>(null);
 
   useEffect(() => {
@@ -68,6 +74,8 @@ const Logo = ({ svgPath, gradientIdPrefix, onClick }: LogoProps) => {
     <div
       onClick={onClick}
       style={{ cursor: "pointer" }}
+      role="img"
+      aria-label={alt}
       dangerouslySetInnerHTML={{ __html: svgContent }}
     />
   );
