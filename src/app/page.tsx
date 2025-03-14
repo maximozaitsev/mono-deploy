@@ -18,7 +18,6 @@ import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
 import { fetchProviders } from "@/utils/fetchProviders";
 import { Provider } from "@/types/provider";
-import { faqs } from "@/components/faq/faqContent";
 
 import "./globals.scss";
 
@@ -36,13 +35,13 @@ export default async function HomePage() {
       <TopGamesSection games={games} />
       <AboutSection />
       <PaymentMethodsSection initialPaymentMethods={[]} />
-      <ProvidersSection initialProviders={providers} />
-      <PromotionsSection />
-      <FAQSection faqs={faqs} />
-      {/* <AppSection /> */}
       <LicensesSection />
-      {/* <GamesToPlay /> */}
-      {/* <SupportSection /> */}
+      <ProvidersSection initialProviders={providers} />
+      <AppSection />
+      <FAQSection />
+      <GamesToPlay />
+      <SupportSection />
+      <PromotionsSection />
       <AdvantageSection />
       <Footer />
     </main>

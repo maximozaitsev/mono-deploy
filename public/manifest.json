@@ -1,64 +1,64 @@
 {
   "id": "1",
-  "name": "Simple Mines",
-  "short_name": "Simple Mines",
+  "name": "Vinci Spin",
+  "short_name": "Vinci Spin",
   "icons": [
     {
-      "src": "/icons/Icon.png",
+      "src": "/icons/ico-57.png",
       "sizes": "57x57",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/Icon-Notification@3x.png",
+      "src": "/icons/ico-60.png",
       "sizes": "60x60",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/Icon-72.png",
+      "src": "/icons/ico-72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/Icon-76.png",
+      "src": "/icons/ico-76.png",
       "sizes": "76x76",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/Icon@2x.png",
+      "src": "/icons/ico-114.png",
       "sizes": "114x114",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/Icon-60@2x.png",
+      "src": "/icons/ico-120.png",
       "sizes": "120x120",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/Icon-72@2x.png",
+      "src": "/icons/ico-144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/Icon-76@2x.png",
+      "src": "/icons/ico-152.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/Icon-60@3x.png",
+      "src": "/icons/ico-180.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/xxxhdpi.png",
+      "src": "/icons/ico-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"

@@ -17,7 +17,7 @@
       display: flex;
       justify-content: center;
       gap: 16px 18px;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
 
       &:first-child {
         display: flex;
@@ -27,17 +27,17 @@
           position: absolute;
           left: 160px;
 
-          img {
-            margin-top: -12px;
+          svg {
+            // margin-top: 12px;
 
             @media (max-width: 768px) {
-              scale: 0.69;
-              margin-top: -14px;
-              margin-bottom: -14px;
+              scale: 0.63;
+              margin-top: -4px;
+              margin-top: 11px;
             }
           }
 
-          @media (max-width: 1520px) {
+          @media (max-width: 1420px) {
             position: static;
             display: flex;
             width: 100%;

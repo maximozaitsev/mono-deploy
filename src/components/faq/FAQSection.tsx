@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { content } from "@/content/content";
 import PlusIcon from "../__common__/PlusIcon";
 import MinusIcon from "../__common__/MinusIcon";
 import "./FAQSection.scss";
@@ -11,9 +10,44 @@ interface FAQItem {
   answer: string;
 }
 
-const FAQSection = ({ faqs }: { faqs: FAQItem[] }) => {
+export default function FAQSection() {
+  const [faqTitle, setFaqTitle] = useState<string>("");
+  const [faqs, setFaqs] = useState<FAQItem[]>([]);
   const [activeIndices, setActiveIndices] = useState<number[]>([]);
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    import("../../content/content.json")
+      .then((data) => {
+        const faqData = data.default.faq;
+
+        if (!faqData) {
+          console.error("Ошибка: FAQ не найден в JSON");
+          return;
+        }
+
+        const faqEntries = Object.entries(faqData) as [string, any][];
+        if (faqEntries.length === 0) return;
+
+        const [title, faqContent] = faqEntries[0];
+        setFaqTitle(title);
+
+        const faqItems: FAQItem[] = [];
+        for (let i = 0; i < faqContent.length; i++) {
+          if (faqContent[i].type === "heading" && faqContent[i].level === 3) {
+            const question = faqContent[i].text;
+            const answer =
+              faqContent[i + 1]?.type === "paragraph"
+                ? faqContent[i + 1].text
+                : "";
+            faqItems.push({ question, answer });
+          }
+        }
+
+        setFaqs(faqItems);
+      })
+      .catch((error) => console.error("Ошибка загрузки JSON:", error));
+  }, []);
 
   const toggleAccordion = (index: number) => {
     setActiveIndices((prevIndices) =>
@@ -37,7 +71,7 @@ const FAQSection = ({ faqs }: { faqs: FAQItem[] }) => {
 
   return (
     <section className="faq-section section container">
-      <h2 className="h2-heading">{content.faq.title}</h2>
+      <h2 className="h2-heading">{faqTitle || "FAQ"}</h2>
       {faqs.map((faq, index) => (
         <div key={index} className="faq-item">
           <div className="faq-question" onClick={() => toggleAccordion(index)}>
@@ -58,12 +92,10 @@ const FAQSection = ({ faqs }: { faqs: FAQItem[] }) => {
               activeIndices.includes(index) ? "active" : ""
             }`}
           >
-            <p>{faq.answer}</p>
+            <p dangerouslySetInnerHTML={{ __html: faq.answer }} />
           </div>
         </div>
       ))}
     </section>
   );
-};
-
-export default FAQSection;
+}

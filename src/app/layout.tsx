@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "simple-mines.com";
-const ogTitle =
-  "Simple Mines: A Detailed Review of the Popular Game by InOut Games";
-const ogSiteName = "Simple Mines";
+const url = "vinci-spin-online.com";
+const ogTitle = "Vinci Spin Casino: Enjoy a Secure & Exciting Gaming Encounter";
+const ogSiteName = "Vinci Spin";
 const metaDescription =
-  "Simple Mines: what you need to know about this game. Symbols, rules, betting range, step-by-step gameplay and much more. Useful information for beginners and experienced gamblers";
+  "Vinci Spin Casino provides a secure gaming environment with a wide selection of slots, table games, and live dealer options. Enjoy generous bonuses, fast payments, and excellent support – sign up today and start winning!";
 
 const locale = "en";
 const language = "English";
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/icons/xxxhdpi.png",
+    icon: "/icons/ico-192.png",
   },
 };
 
@@ -44,44 +43,40 @@ export default function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="language" content={language} />
-        <link rel="icon" href="/icons/xxxhdpi.png" />
+        <link rel="icon" href="/icons/ico-192.png" />
         <link rel="canonical" href={`https://${url}`} />
-        <link rel="apple-touch-icon" href="/icons/Icon.png" sizes="57x57" />
+        <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
+        <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
+        <link rel="apple-touch-icon" href="/icons/ico-72.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="/icons/ico-76.png" sizes="76x76" />
         <link
           rel="apple-touch-icon"
-          href="/icons/Icon-Notification@3x.png"
-          sizes="60x60"
-        />
-        <link rel="apple-touch-icon" href="/icons/Icon-72.png" sizes="72x72" />
-        <link rel="apple-touch-icon" href="/icons/Icon-76.png" sizes="76x76" />
-        <link
-          rel="apple-touch-icon"
-          href="/icons/Icon@2x.png"
+          href="/icons/ico-114.png"
           sizes="114x114"
         />
         <link
           rel="apple-touch-icon"
-          href="/icons/Icon-60@2x.png"
+          href="/icons/ico-120.png"
           sizes="120x120"
         />
         <link
           rel="apple-touch-icon"
-          href="/icons/Icon-72@2x.png"
+          href="/icons/ico-144.png"
           sizes="144x144"
         />
         <link
           rel="apple-touch-icon"
-          href="/icons/Icon-76@2x.png"
+          href="/icons/ico-152.png"
           sizes="152x152"
         />
         <link
           rel="apple-touch-icon"
-          href="/icons/Icon-60@3x.png"
+          href="/icons/ico-180.png"
           sizes="180x180"
         />
         <link
           rel="icon"
-          href="/icons/xxxhdpi.png"
+          href="/icons/ico-192.png"
           type="image/png"
           sizes="192x192"
         />

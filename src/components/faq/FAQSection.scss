@@ -16,7 +16,7 @@
       font-family: $font-secondary;
       background: $color-background-third;
       font-size: 24px;
-      font-weight: 700;
+      font-weight: $font-weight-bold;
       text-transform: uppercase;
       padding: 8px 32px;
       border-radius: $border-radius;
@@ -43,7 +43,7 @@
       color: $text-color-secondary;
       font-family: $font-primary;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: $font-weight-regular;
       line-height: 30px;
       max-height: 0;
       overflow: hidden;

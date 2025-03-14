@@ -50,7 +50,7 @@
         line-height: normal;
 
         th {
-          font-weight: 500;
+          font-weight: $font-weight-regular;
 
           &:first-child {
             border-top-left-radius: $border-radius;
@@ -167,10 +167,8 @@
           justify-content: space-between;
           font-size: 18px;
           line-height: normal;
-          font-weight: 500;
+          font-weight: $font-weight-regular;
           padding: 8px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-          // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
           &:last-child {
             border-bottom: none;
@@ -181,12 +179,7 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-weight: 500;
-          }
-
-          .min-dep {
-            margin-left: auto;
-            text-align: right;
+            font-weight: $font-weight-regular;
           }
         }
       }
@@ -200,4 +193,8 @@
       display: none;
     }
   }
+}
+
+.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
