@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
-const url = "gogo-casino-online.com";
-const ogTitle = "GoGo Casino Sverige: En premium online spelupplevelse väntar";
-const ogSiteName = "Gogo Casino";
+const url = "snabbarecasino-online.com";
+const ogTitle = "Snabbare Casino Sverige - Direktspel, snabba uttag & toppspel";
+const ogSiteName = "Snabbare Casino";
 const metaDescription =
-  "GoGo Casino i Sverige erbjuder en sofistikerad, sömlös upplevelse med ett omfattande utbud av spel från kända utvecklare. Med fokus på säkerhet, snabba utbetalningar och ett intuitivt gränssnitt står GoGo Casino som ett pålitligt val.";
+  "Snabbare Casino Sverige levererar omedelbara insättningar, snabba uttag och ett stort urval av slots, bordsspel och live dealer-alternativ. Njut av en sömlös spelupplevelse med säkra betalningar och underhållning i toppklass. Registrera dig nu och börja spela direkt!";
 
 const locale = "sv";
 const language = "Swedish";
