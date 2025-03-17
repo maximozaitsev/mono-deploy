@@ -16,16 +16,17 @@
     // outline-offset: -4px;
     // outline-color: #f9f8f83b;
 
+    border-radius: $button-large-border-radius;
     padding: 4px 48px;
     background: $color-button-large;
     color: $text-color-button-large;
     font-size: 28px;
     border: none;
-    border-radius: 50px;
     min-width: 280px;
-    height: 87px;
+    height: 82px;
 
     @media (max-width: 768px) {
+      border-radius: $button-large-border-radius-mobile;
       font-size: 24px;
       padding: 4px 48px;
       min-width: 240px;
@@ -52,15 +53,16 @@
     // outline-offset: -3px;
     // outline-color: #2e2e2e3b;
 
+    border-radius: $button-small-border-radius;
     padding: 2px 18px;
     background: $color-button-small;
     color: $text-color-button-small;
     font-size: 20px;
     border: none;
-    border-radius: 50px;
-    height: 52px;
+    height: 56px;
 
     @media (max-width: 768px) {
+      border-radius: $button-small-border-radius-mobile;
       font-size: 18px;
     }
 

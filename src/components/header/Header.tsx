@@ -6,7 +6,7 @@ import styles from "./Header.module.scss";
 import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 
 const Header = () => {
-  const projectName = "Candy Spinz Casino";
+  const projectName = "Lyllo Casino";
   const { handleNavigation } = useNavigateWithPreloader();
 
   const scrollToWelcomeSection = () => {
@@ -33,13 +33,13 @@ const Header = () => {
             className={`${styles.headerButton} ${styles.logIn}`}
             onClick={handleSignInClick}
           >
-            Log In
+            Sign Up
           </button>
           <button
             className={`${styles.headerButton} ${styles.signUp}`}
             onClick={handleSignInClick}
           >
-            Sign Up
+            Play Now
           </button>
         </div>
       </nav>

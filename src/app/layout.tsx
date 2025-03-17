@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "candy-spinz-online.com";
+const url = "lyllo-casino-online.com";
 const ogTitle =
-  "Candy Spinz Casino – Play Slots, Live Games & Claim Big Bonuses";
-const ogSiteName = "Candy Spinz Casino";
+  "Lyllo Casino Sverige - Pålitligt onlinespel och snabba utbetalningar";
+const ogSiteName = "Lyllo Casino";
 const metaDescription =
-  "Candy Spinz Casino features top slots, table games, and live dealer action. Enjoy fast withdrawals, secure payments, and exciting promotions. Join now to claim generous bonuses and start winning today!";
+  "Lyllo Casino Sverige erbjuder en säker och spännande spelupplevelse med toppslots, live dealer-spel och omedelbara utbetalningar via Trustly. Spela i SEK, njut av generösa bonusar och upplev sömlöst mobilspel. Registrera dig nu och börja vinna!";
 
-const locale = "en";
-const language = "English";
+const locale = "sv";
+const language = "Swedish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

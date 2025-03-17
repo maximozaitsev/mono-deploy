@@ -19,9 +19,9 @@
     }
 
     @media (max-width: 768px) {
-      margin-top: 5px;
-      margin-left: -31px;
-      scale: 0.75;
+      margin-top: 3px;
+      margin-left: -8px;
+      scale: 0.93;
     }
   }
 
@@ -51,25 +51,26 @@
   gap: 24px;
 
   .headerButton {
-    height: 39px;
+    height: $header-button-height;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 14px;
-    color: $text-color-button-header;
+    font-size: 16px;
     padding: 8px 16px;
-    border-radius: 50px;
+    border-radius: $header-button-border-radius;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.logIn {
       background: $color-button-small;
-      width: 110px;
+      width: $header-button-small-width;
+      color: $text-color-button-large;
     }
 
     &.signUp {
       background: $color-button-large;
-      width: 200px;
+      width: $header-button-large-width;
+      color: $text-color-button-small;
     }
 
     &:hover {
@@ -80,15 +81,15 @@
     gap: 8px;
 
     .headerButton {
-      height: 27px;
-      // border-radius: 4px;
-      font-size: 10px;
+      height: $header-button-height-mobile;
+      border-radius: $header-button-border-radius-mobile;
+      font-size: 12px;
 
       &.logIn {
-        width: 65px;
+        width: $header-button-small-width-mobile;
       }
       &.signUp {
-        width: 100px;
+        width: $header-button-large-width-mobile;
       }
     }
   }
