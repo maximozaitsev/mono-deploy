@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "lyllo-casino-online.com";
-const ogTitle =
-  "Lyllo Casino Sverige - Pålitligt onlinespel och snabba utbetalningar";
-const ogSiteName = "Lyllo Casino";
+const url = "gogo-casino-online.com";
+const ogTitle = "GoGo Casino Sverige: En premium online spelupplevelse väntar";
+const ogSiteName = "Gogo Casino";
 const metaDescription =
-  "Lyllo Casino Sverige erbjuder en säker och spännande spelupplevelse med toppslots, live dealer-spel och omedelbara utbetalningar via Trustly. Spela i SEK, njut av generösa bonusar och upplev sömlöst mobilspel. Registrera dig nu och börja vinna!";
+  "GoGo Casino i Sverige erbjuder en sofistikerad, sömlös upplevelse med ett omfattande utbud av spel från kända utvecklare. Med fokus på säkerhet, snabba utbetalningar och ett intuitivt gränssnitt står GoGo Casino som ett pålitligt val.";
 
 const locale = "sv";
 const language = "Swedish";

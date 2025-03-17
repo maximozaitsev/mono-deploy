@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Arial Rounded MT Bold", sans-serif;
+$font-secondary: "Poppins", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -16,8 +16,15 @@ $font-secondary: "Arial Rounded MT Bold", sans-serif;
 }
 
 @font-face {
-  font-family: "Arial Rounded MT Bold";
-  src: url("./Arial/arialroundedmtbold.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Montserrat";
+  src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Heading/static/Poppins-900.woff2") format("woff2");
 }
