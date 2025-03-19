@@ -1,14 +1,13 @@
 import { Metadata } from "next";
 
-const url = "momangcasino-online.com";
-const ogTitle =
-  "Momang Casino Sverige-Spel online slots, bordsspel och live dealers";
-const ogSiteName = "Momang Casino";
+const url = "caxino-casino-online.com";
+const ogTitle = "Caxino Casino Canada – Play and Claim Your C$200 Bonus Today!";
+const ogSiteName = "Caxino Casino";
 const metaDescription =
-  "Momang Casino Sverige levererar en premium spelupplevelse med slots, bordsspel och live dealer-alternativ. Njut av säkra betalningar, omedelbara insättningar via Swish och skattefria vinster. Registrera dig enkelt med BankID och börja spela idag!";
+  "Discover Caxino Casino Canada – a top-rated online casino with C$200 welcome bonus + 100 free spins! Enjoy fast payouts, top-tier games & 24/7 support. Sign up now!";
 
-const locale = "sv";
-const language = "Swedish";
+const locale = "en-CA";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

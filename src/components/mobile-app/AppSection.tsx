@@ -13,7 +13,7 @@ export default function AppSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const { data: content, loading, error } = useContentData();
   const { app } = useParsedSections(content?.sections || {});
-  const projectName = "Momang Casino";
+  const projectName = "Caxino Casino";
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading content.</p>;
