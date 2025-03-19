@@ -5,7 +5,7 @@ import Image from "next/image";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Snabbare Casino";
+const projectName = "Unlimit Casino";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",

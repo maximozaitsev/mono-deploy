@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
-const url = "snabbarecasino-online.com";
-const ogTitle = "Snabbare Casino Sverige - Direktspel, snabba uttag & toppspel";
-const ogSiteName = "Snabbare Casino";
+const url = "unlimitcasino-online.com";
+const ogTitle = "Unlimit Casino Sverige - Omdefiniering av onlinecasino mötet";
+const ogSiteName = "Unlimit Casino";
 const metaDescription =
-  "Snabbare Casino Sverige levererar omedelbara insättningar, snabba uttag och ett stort urval av slots, bordsspel och live dealer-alternativ. Njut av en sömlös spelupplevelse med säkra betalningar och underhållning i toppklass. Registrera dig nu och börja spela direkt!";
+  "Unlimit Casino i Sverige sticker ut med sin mångsidiga spelportfölj, från innovativa slots till uppslukande live kasinospel. Med säker bankverksamhet, snabba uttag och exklusiva kampanjer vänder sig kasinot till alla typer av spelare. Upplev en ny nivå av spänning - gå med nu!";
 
 const locale = "sv";
 const language = "Swedish";
