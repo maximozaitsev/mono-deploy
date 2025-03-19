@@ -37,7 +37,7 @@
   }
 
   @media (max-width: 1020px) {
-    background-position: right 0px center;
+    background-position: right 20px center;
   }
 
   @media (max-width: 990px) {
@@ -162,7 +162,7 @@
     font-family: $font-secondary;
     font-weight: $font-weight-black;
     text-transform: uppercase;
-    color: $text-color-welcome;
+    color: #fff;
   }
 
   @media (max-width: 380px) {
