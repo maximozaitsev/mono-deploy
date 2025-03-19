@@ -28,15 +28,15 @@
           left: 160px;
 
           svg {
-            // margin-top: 12px;
+            margin-top: 14px;
 
             @media (max-width: 768px) {
-              scale: 0.7;
+              scale: 0.71;
               margin-top: -4px;
             }
           }
 
-          @media (max-width: 1430px) {
+          @media (max-width: 1420px) {
             position: static;
             display: flex;
             width: 100%;

@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "unlimitcasino-online.com";
-const ogTitle = "Unlimit Casino Sverige - Omdefiniering av onlinecasino mötet";
-const ogSiteName = "Unlimit Casino";
+const url = "momangcasino-online.com";
+const ogTitle =
+  "Momang Casino Sverige-Spel online slots, bordsspel och live dealers";
+const ogSiteName = "Momang Casino";
 const metaDescription =
-  "Unlimit Casino i Sverige sticker ut med sin mångsidiga spelportfölj, från innovativa slots till uppslukande live kasinospel. Med säker bankverksamhet, snabba uttag och exklusiva kampanjer vänder sig kasinot till alla typer av spelare. Upplev en ny nivå av spänning - gå med nu!";
+  "Momang Casino Sverige levererar en premium spelupplevelse med slots, bordsspel och live dealer-alternativ. Njut av säkra betalningar, omedelbara insättningar via Swish och skattefria vinster. Registrera dig enkelt med BankID och börja spela idag!";
 
 const locale = "sv";
 const language = "Swedish";
