@@ -20,8 +20,8 @@
 
     @media (max-width: 768px) {
       margin-top: 4px;
-      margin-left: -16px;
-      scale: 0.79;
+      margin-left: -36px;
+      scale: 0.7;
     }
   }
 
@@ -60,7 +60,6 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    text-transform: uppercase;
 
     &.logIn {
       background: $color-button-small;

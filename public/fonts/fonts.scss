@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Marsmelloe", sans-serif;
+$font-secondary: "Barlow", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -23,9 +23,8 @@ $font-secondary: "Marsmelloe", sans-serif;
 }
 
 @font-face {
-  font-family: "Marsmelloe";
+  font-family: "Barlow";
+  font-weight: 900;
   font-style: normal;
-  font-weight: normal;
-  src: local("Marsmelloe Regular"),
-    url("./Marshmaloe/Marsmelloe.woff") format("woff");
+  src: url("./Heading/static/Barlow-900.woff2") format("woff2");
 }

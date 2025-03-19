@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "caxino-casino-online.com";
-const ogTitle = "Caxino Casino Canada – Play and Claim Your C$200 Bonus Today!";
-const ogSiteName = "Caxino Casino";
+const url = "unlimitcasino-online.com";
+const ogTitle = "Unlimit Casino Sverige - Omdefiniering av onlinecasino mötet";
+const ogSiteName = "Unlimit Casino";
 const metaDescription =
-  "Discover Caxino Casino Canada – a top-rated online casino with C$200 welcome bonus + 100 free spins! Enjoy fast payouts, top-tier games & 24/7 support. Sign up now!";
+  "Unlimit Casino i Sverige sticker ut med sin mångsidiga spelportfölj, från innovativa slots till uppslukande live kasinospel. Med säker bankverksamhet, snabba uttag och exklusiva kampanjer vänder sig kasinot till alla typer av spelare. Upplev en ny nivå av spänning - gå med nu!";
 
-const locale = "en-CA";
-const language = "English";
+const locale = "sv";
+const language = "Swedish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
