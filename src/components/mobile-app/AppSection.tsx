@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import AppImage from "../../../public/block-images/app.webp";
 import AppImageMobile from "../../../public/block-images/app-mobile.webp";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
@@ -25,11 +24,11 @@ export default function AppSection() {
         <div className={styles.topRow}>
           <div className={styles.textBlock}>
             {app.appTitle && <h3 className="h3-heading">{app.appTitle}</h3>}
-            <Image
-              src={AppImageMobile}
+            <img
+              src={AppImageMobile.src}
               alt={projectName + " App"}
               className={styles.imageMobile}
-              quality={100}
+              loading="lazy"
             />
             {app.appContent.map((group, index) => (
               <div key={index} className={styles.paragraphGroup}>
@@ -43,33 +42,34 @@ export default function AppSection() {
                 className="google-play"
                 onClick={() => handleNavigation("/casino", undefined, true)}
               >
-                <Image
+                <img
                   src="/assets/google-play.svg"
                   alt="Download on the Google Play"
                   width={175}
                   height={53}
-                  quality={100}
+                  loading="lazy"
                 />
               </button>
               <button
                 className="app-store"
                 onClick={() => handleNavigation("/casino", undefined, true)}
               >
-                <Image
+                <img
                   src="/assets/app-store.svg"
                   alt="Download on the App Store"
                   width={175}
                   height={53}
-                  quality={100}
+                  loading="lazy"
                 />
               </button>
             </div>
           </div>
           <div className={styles.imageBlock}>
-            <Image
-              src={AppImage}
+            <img
+              src={AppImage.src}
               alt={projectName + " App"}
               className={styles.image}
+              loading="lazy"
             />
           </div>
         </div>

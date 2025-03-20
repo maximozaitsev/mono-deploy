@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo } from "react";
-import Image from "next/image";
 import supportImage from "../../../public/block-images/support.webp";
 import styles from "./SupportSection.module.scss";
 import useContentData from "../../utils/useContentData";
@@ -36,10 +35,10 @@ export default function SupportSection() {
             ))}
           </div>
           <div className={styles.rightImage}>
-            <Image
-              src={supportImage}
+            <img
+              src={supportImage.src}
               alt={projectName + " Support"}
-              quality={100}
+              loading="lazy"
             />
           </div>
         </div>

@@ -2,7 +2,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import aboutImage from "../../../public/block-images/laptop.webp";
 import "./AboutSection.scss";
 import useContentData from "../../utils/useContentData";
@@ -57,10 +56,10 @@ export default function AboutSection() {
           </div>
 
           <div className="about-image">
-            <Image
-              src={aboutImage}
+            <img
+              src={aboutImage.src}
               alt={projectName + " Desktop"}
-              quality={100}
+              loading="lazy"
             />
           </div>
         </div>

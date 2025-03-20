@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import licenceImage from "../../../public/block-images/license.webp";
 import styles from "./LicensesSection.module.scss";
 import useContentData from "../../utils/useContentData";
@@ -37,12 +36,12 @@ export default function LicensesSection() {
             </div>
             {/* {licenses.showImage && (
               <div className={styles.rightImage}>
-                <Image
+                <img
                   src={licenceImage}
                   alt={`${projctName} License`}
                   width={240}
                   height={240}
-                  quality={100}
+                  loading="lazy"
                 />
               </div>
             )} */}

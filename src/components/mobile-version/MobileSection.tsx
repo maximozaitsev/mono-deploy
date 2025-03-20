@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import mobileAppImage from "../../../public/block-images/phone.webp";
 import mobileAppImageMobile from "../../../public/block-images/phone-mobile.webp";
 import StarIcon from "../__common__/StarIcon";
@@ -54,14 +53,13 @@ export default function MobileSection() {
         <div className="app-info-block">
           <h3 className="h3-heading">{projectName} App</h3>
           <div className="mobile-image show-1080">
-            <Image
-              src={mobileAppImageMobile}
+            <img
+              src={mobileAppImageMobile.src}
               alt={projectName + " Mobile"}
               width={mobileAppImageMobile.width}
               height={mobileAppImageMobile.height}
               className="app-image"
-              priority
-              quality={100}
+              loading="lazy"
             />
           </div>
           <div className="app-buttons">
@@ -69,36 +67,33 @@ export default function MobileSection() {
               className="app-store"
               onClick={() => handleNavigation("/casino", undefined, true)}
             >
-              <Image
+              <img
                 src="/assets/app-store.svg"
                 alt="Download on the App Store"
                 width={181}
                 height={53}
-                quality={100}
               />
             </button>
             <button
               className="google-play"
               onClick={() => handleNavigation("/casino", undefined, true)}
             >
-              <Image
+              <img
                 src="/assets/google-play.svg"
                 alt="Download on the Google Play"
                 width={181}
                 height={53}
-                quality={100}
               />
             </button>
           </div>
         </div>
 
         <div className="mobile-image hide-1080">
-          <Image
-            src={mobileAppImage}
+          <img
+            src={mobileAppImage.src}
             alt={projectName + " Mobile"}
             className="app-image"
-            priority
-            quality={100}
+            loading="lazy"
           />
         </div>
       </div>
