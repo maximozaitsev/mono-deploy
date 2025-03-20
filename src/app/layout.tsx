@@ -1,13 +1,14 @@
 import { Metadata } from "next";
 
-const url = "unlimitcasino-online.com";
-const ogTitle = "Unlimit Casino Sverige - Omdefiniering av onlinecasino mötet";
-const ogSiteName = "Unlimit Casino";
+const url = "rocketspin-australia.com";
+const ogTitle =
+  "RocketSpin Casino Australia—Play Pokies, Live Games & Get Bonuses";
+const ogSiteName = "Rocketspin Casino";
 const metaDescription =
-  "Unlimit Casino i Sverige sticker ut med sin mångsidiga spelportfölj, från innovativa slots till uppslukande live kasinospel. Med säker bankverksamhet, snabba uttag och exklusiva kampanjer vänder sig kasinot till alla typer av spelare. Upplev en ny nivå av spänning - gå med nu!";
+  "RocketSpin Casino Australia delivers top-tier pokies, live dealer games, and secure transactions. Enjoy fast payouts, exciting promotions, and 24/7 customer support. Sign up now and experience premium online gaming!";
 
-const locale = "sv";
-const language = "Swedish";
+const locale = "en-AU";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

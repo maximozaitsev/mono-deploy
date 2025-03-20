@@ -5,7 +5,7 @@ import Image from "next/image";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Unlimit Casino";
+const projectName = "Rocketspin Casino";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",
@@ -80,7 +80,7 @@ const Footer = () => {
           <div className={styles.row}>
             <div className={styles.logoWrapper}>
               <Logo
-                svgPath="/logo.svg"
+                svgPath="/logo-footer.svg"
                 gradientIdPrefix="footer"
                 onClick={scrollToWelcomeSection}
                 alt={`${projectName} Logo`}

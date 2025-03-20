@@ -31,12 +31,12 @@
             // margin-top: 12px;
 
             @media (max-width: 768px) {
-              scale: 0.7;
-              margin-top: -4px;
+              scale: 0.65;
+              margin-top: 4px;
             }
           }
 
-          @media (max-width: 1430px) {
+          @media (max-width: 1420px) {
             position: static;
             display: flex;
             width: 100%;
@@ -73,7 +73,7 @@
   }
 
   .copyright {
-    color: rgba(255, 255, 255, 0.34);
+    color: #fff;
     font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
