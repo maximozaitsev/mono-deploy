@@ -145,7 +145,7 @@
 
 .welcomeText button {
   @media (max-width: 768px) {
-    max-width: 266px;
+    min-width: 266px !important;
     padding: 4px 30px !important;
   }
 }
