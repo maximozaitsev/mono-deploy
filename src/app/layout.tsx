@@ -1,13 +1,11 @@
 import { Metadata } from "next";
 
-const url = "rocketspin-australia.com";
-const ogTitle =
-  "RocketSpin Casino Australia—Play Pokies, Live Games & Get Bonuses";
-const ogSiteName = "Rocketspin Casino";
-const metaDescription =
-  "RocketSpin Casino Australia delivers top-tier pokies, live dealer games, and secure transactions. Enjoy fast payouts, exciting promotions, and 24/7 customer support. Sign up now and experience premium online gaming!";
+const url = "url";
+const ogTitle = "Title";
+const ogSiteName = "SiteName";
+const metaDescription = "Description";
 
-const locale = "en-AU";
+const locale = "en-US";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
