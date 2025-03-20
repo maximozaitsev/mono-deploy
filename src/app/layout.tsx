@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "url";
-const ogTitle = "Title";
-const ogSiteName = "SiteName";
-const metaDescription = "Description";
+const url = "mrbet-casino-canada.com";
+const ogTitle = "Mr Bet Casino Canada: Play Slots, Table Games & Win Big Online";
+const ogSiteName = "Mr Bet Casino";
+const metaDescription = "Mr Bet Casino in Canada offers exciting slots, table games, crash projects and secure payment options. Join now for exclusive bonuses and enjoy top-notch gaming\! Enjoy an unforgettable gambling experience";
 
-const locale = "en-US";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

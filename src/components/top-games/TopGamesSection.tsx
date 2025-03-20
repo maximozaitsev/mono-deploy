@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Game } from "@/types/game";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
-// import Image from "next/image";
 import Button from "../__common__/button/Button";
 import PlayIcon from "../__common__/PlayIcon";
 

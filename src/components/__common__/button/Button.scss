@@ -24,6 +24,7 @@
     border: none;
     min-width: 280px;
     height: 87px;
+    box-shadow: 0 4px 0 0 #d72000;
 
     @media (max-width: 768px) {
       border-radius: $button-large-border-radius-mobile;
@@ -60,6 +61,7 @@
     font-size: 20px;
     border: none;
     height: 52px;
+    box-shadow: 0 4px 0 0 #058a31;
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;

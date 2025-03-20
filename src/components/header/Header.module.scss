@@ -19,8 +19,9 @@
     }
 
     @media (max-width: 768px) {
-      // margin-left: -18px;
-      // scale: 0.85;
+      margin-top: 4px;
+      margin-left: -30px;
+      scale: 0.66;
     }
   }
 
@@ -64,12 +65,14 @@
       background: $color-button-small;
       width: $header-button-small-width;
       color: $text-color-button-small;
+      box-shadow: 0 4px 0 0 #058a31;
     }
 
     &.signUp {
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
+      box-shadow: 0 4px 0 0 #d72000;
     }
 
     &:hover {
