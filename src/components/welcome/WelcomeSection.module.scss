@@ -142,3 +142,10 @@
     font-size: 20px;
   }
 }
+
+.welcomeText button {
+  @media (max-width: 768px) {
+    max-width: 266px;
+    padding: 4px 30px !important;
+  }
+}
