@@ -36,10 +36,6 @@
     background-position: right 20px center;
   }
 
-  @media (max-width: 1020px) {
-    background-position: right 0px center;
-  }
-
   @media (max-width: 990px) {
     background-size: 45% auto;
   }
@@ -63,7 +59,7 @@
   }
 
   @media (max-width: 380px) {
-    background-size: auto 60%;
+    background-size: auto 50%;
     padding-top: 12.35rem;
   }
 }
