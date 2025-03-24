@@ -1,11 +1,13 @@
 import { Metadata } from "next";
 
-const url = "mrbet-casino-canada.com";
-const ogTitle = "Mr Bet Casino Canada: Play Slots, Table Games & Win Big Online";
-const ogSiteName = "Mr Bet Casino";
-const metaDescription = "Mr Bet Casino in Canada offers exciting slots, table games, crash projects and secure payment options. Join now for exclusive bonuses and enjoy top-notch gaming\! Enjoy an unforgettable gambling experience";
+const url = "the-crown-casino.com";
+const ogTitle =
+  "Crown Casino Sydney: Luxury Gaming & Entertainment in Australia";
+const ogSiteName = "The Crown Casino";
+const metaDescription =
+  "Explore Crown Casino Sydney, Australia’s premier land-based casino offering world-class gaming, fine dining, luxury accommodations, and exclusive VIP experiences.";
 
-const locale = "en-CA";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

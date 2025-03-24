@@ -6,6 +6,7 @@ import { fetchOffers } from "../../../utils/fetchOffers";
 import Header from "../../../components/header/Header";
 import Footer from "@/components/footer/Footer";
 import "../../../components/header/Header.module.scss";
+import Image from "next/image";
 import styles from "./PreloaderPage.module.scss";
 import SpinnerGif from "../../../../public/assets/loader-black.gif";
 
@@ -54,7 +55,7 @@ const PreloaderPage = () => {
     <div className={styles.preloaderPage}>
       <Header />
       <div className={styles.spinnerContainer}>
-        <img src={SpinnerGif.src} alt="Loading ..." width={100} height={100} />
+        <Image src={SpinnerGif} alt="Loading ..." width={100} height={100} />
       </div>
       <Footer />
     </div>

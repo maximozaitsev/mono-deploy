@@ -12,9 +12,9 @@
   text-transform: uppercase;
 
   &.primary {
-    // outline: 4px solid;
-    // outline-offset: -4px;
-    // outline-color: #f9f8f83b;
+    outline: 4px solid;
+    outline-offset: -4px;
+    outline-color: #f9f8f83b;
 
     border-radius: $button-large-border-radius;
     padding: 4px 48px;
@@ -24,7 +24,6 @@
     border: none;
     min-width: 280px;
     height: 87px;
-    box-shadow: 0 4px 0 0 #d72000;
 
     @media (max-width: 768px) {
       border-radius: $button-large-border-radius-mobile;
@@ -50,9 +49,9 @@
   }
 
   &.secondary {
-    // outline: 3px solid;
-    // outline-offset: -3px;
-    // outline-color: #2e2e2e3b;
+    outline: 3px solid;
+    outline-offset: -3px;
+    outline-color: #2e2e2e3b;
 
     border-radius: $button-small-border-radius;
     padding: 2px 18px;
@@ -61,7 +60,6 @@
     font-size: 20px;
     border: none;
     height: 52px;
-    box-shadow: 0 4px 0 0 #058a31;
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;

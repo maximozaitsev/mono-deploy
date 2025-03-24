@@ -19,9 +19,9 @@
     }
 
     @media (max-width: 768px) {
-      margin-top: 4px;
-      margin-left: -30px;
-      scale: 0.66;
+      margin-top: 0px;
+      margin-left: -28px;
+      scale: 0.77;
     }
   }
 
@@ -65,14 +65,20 @@
       background: $color-button-small;
       width: $header-button-small-width;
       color: $text-color-button-small;
-      box-shadow: 0 4px 0 0 #058a31;
+
+      outline: 3px solid;
+      outline-offset: -3px;
+      outline-color: #2e2e2e3b;
     }
 
     &.signUp {
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
-      box-shadow: 0 4px 0 0 #d72000;
+
+      outline: 3px solid;
+      outline-offset: -3px;
+      outline-color: #f9f8f83b;
     }
 
     &:hover {
