@@ -12,18 +12,41 @@
   text-transform: uppercase;
 
   &.primary {
-    outline: 4px solid;
-    outline-offset: -4px;
-    outline-color: #f9f8f83b;
-
+    position: relative;
+    display: inline-block;
     border-radius: $button-large-border-radius;
     padding: 4px 48px;
     background: $color-button-large;
     color: $text-color-button-large;
     font-size: 28px;
-    border: none;
     min-width: 280px;
     height: 87px;
+    border: none;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: linear-gradient(180deg, #f8be74 0%, #dc9301 100%);
+      border-radius: 15px;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      right: 4px;
+      bottom: 4px;
+      background: $color-button-large;
+      border-radius: 12px;
+      z-index: -1;
+    }
 
     @media (max-width: 768px) {
       border-radius: $button-large-border-radius-mobile;
@@ -49,10 +72,11 @@
   }
 
   &.secondary {
-    outline: 3px solid;
-    outline-offset: -3px;
-    outline-color: #2e2e2e3b;
-
+    // outline: 3px solid;
+    // outline-offset: -3px;
+    // outline-color: #2e2e2e3b;
+    position: relative;
+    display: inline-block;
     border-radius: $button-small-border-radius;
     padding: 2px 18px;
     background: $color-button-small;
@@ -60,10 +84,47 @@
     font-size: 20px;
     border: none;
     height: 52px;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: linear-gradient(180deg, #ff7979 0%, #e83333 100%);
+      border-radius: 15px;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      right: 4px;
+      bottom: 4px;
+      background: $color-button-small;
+      border-radius: 12px;
+      z-index: -1;
+    }
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;
       font-size: 18px;
+
+      outline: 3px solid;
+      outline-offset: -3px;
+      outline-color: #2e2e2e3b;
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: none;
+      }
     }
 
     @media (max-width: 300px) {

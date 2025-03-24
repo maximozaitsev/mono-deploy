@@ -60,15 +60,38 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
 
     &.logIn {
       background: $color-button-small;
       width: $header-button-small-width;
       color: $text-color-button-small;
 
-      outline: 3px solid;
-      outline-offset: -3px;
-      outline-color: #2e2e2e3b;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: linear-gradient(180deg, #ff7979 0%, #e83333 100%);
+        border-radius: 10px;
+        z-index: -1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        background: $color-button-small;
+        border-radius: 9px;
+        z-index: -1;
+      }
     }
 
     &.signUp {
@@ -76,9 +99,29 @@
       width: $header-button-large-width;
       color: $text-color-button-large;
 
-      outline: 3px solid;
-      outline-offset: -3px;
-      outline-color: #f9f8f83b;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: linear-gradient(180deg, #f8be74 0%, #dc9301 100%);
+        border-radius: 10px;
+        z-index: -1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        background: $color-button-large;
+        border-radius: 9px;
+        z-index: -1;
+      }
     }
 
     &:hover {
