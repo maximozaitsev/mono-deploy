@@ -138,9 +138,29 @@
 
       &.logIn {
         width: $header-button-small-width-mobile;
+
+        &::before {
+          content: "";
+          border-radius: 6px;
+        }
+
+        &::after {
+          content: "";
+          border-radius: 5px;
+        }
       }
       &.signUp {
         width: $header-button-large-width-mobile;
+
+        &::before {
+          content: "";
+          border-radius: 6px;
+        }
+
+        &::after {
+          content: "";
+          border-radius: 5px;
+        }
       }
     }
   }
