@@ -12,7 +12,7 @@ import "./MobileSection.scss";
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "Wazamba Casino";
+  const projectName = "Slotmonster Casino";
 
   useEffect(() => {
     import("../../content/content.json")
@@ -38,7 +38,7 @@ export default function MobileSection() {
     <section className="mobile-section">
       <div className="container mobile-content">
         <div className="advantages-block">
-          <h3 className="h3-heading">المزايا</h3>
+          <h3 className="h3-heading">Advantages</h3>
           <ul className="advantages-list">
             {advantagesList.map((advantage, index) => (
               <li key={index}>

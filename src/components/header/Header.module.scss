@@ -20,8 +20,8 @@
 
     @media (max-width: 768px) {
       margin-top: 4px;
-      margin-right: -9px;
-      scale: 0.9;
+      margin-left: -53px;
+      scale: 0.59;
     }
   }
 
@@ -54,7 +54,7 @@
     height: $header-button-height;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 10px;
     border-radius: $header-button-border-radius;
     border: none;
@@ -65,20 +65,12 @@
       background: $color-button-small;
       width: $header-button-small-width;
       color: $text-color-button-small;
-
-      outline: 4px solid;
-      outline-offset: -4px;
-      outline-color: #96ff74;
     }
 
     &.signUp {
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
-
-      outline: 4px solid;
-      outline-offset: -4px;
-      outline-color: #ffcc00;
     }
 
     &:hover {
@@ -91,7 +83,7 @@
     .headerButton {
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
-      font-size: 12px;
+      font-size: 10px;
 
       &.logIn {
         width: $header-button-small-width-mobile;

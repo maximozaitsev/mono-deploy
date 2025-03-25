@@ -2,7 +2,6 @@
 @import "../../../public/fonts/fonts.scss";
 
 .footer {
-  direction: ltr;
   position: relative;
   background: $color-background-footer;
   display: flex;
@@ -26,18 +25,19 @@
 
         .logoWrapper {
           position: absolute;
-          right: 160px;
+          left: 160px;
 
           svg {
-            margin-top: -18px;
+            // margin-top: 12px;
 
             @media (max-width: 768px) {
-              scale: 0.9;
-              margin-top: -4px;
+              scale: 0.59;
+              margin-top: 3px;
+              margin-bottom: -7px;
             }
           }
 
-          @media (max-width: 1420px) {
+          @media (max-width: 1520px) {
             position: static;
             display: flex;
             width: 100%;

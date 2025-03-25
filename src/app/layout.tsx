@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "wazamba-ar.com";
+const url = "slotmonstercasino-online.com";
 const ogTitle =
-  "العنوان: كازينو Wazamba Casino عربي - العب ماكينات سلوتس على الإنترنت وألعاب مباشرة واحصل على مكافآت";
-const ogSiteName = "Wazamba Casino";
+  "Slot Monster Casino Review UK – Cool Games, Bonuses, and Payments";
+const ogSiteName = "Slotmonster Casino";
 const metaDescription =
-  "يقدم كازينو Wazamba Casino بالعربي أفضل ماكينات السلوتس وألعاب الموزع المباشر والمكافآت السخية. استمتع بإيداعات آمنة، وعمليات سحب سريعة، وبرنامج VIP مثير. العب بأموال حقيقية أو جرب الألعاب التجريبية. انضم اليوم واستمتع بتجربة ألعاب متميزة عبر الإنترنت مع مكافآت من الدرجة الأولى! ";
+  "Discover Slot Monster Casino UK! Explore exciting slots, live dealer games, generous bonuses, and secure payment methods. Read our full review now to know what cool offers are at your disposal!";
 
-const locale = "ar";
-const language = "Arabic";
+const locale = "en-GB";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={locale} dir="rtl">
+    <html lang={locale}>
       <head>
         <meta name="language" content={language} />
         <link rel="icon" href="/icons/ico-192.png" />
