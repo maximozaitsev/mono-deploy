@@ -16,6 +16,9 @@ const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
         const cssFill = getComputedStyle(document.documentElement)
           .getPropertyValue(varName)
           .trim();
+
+        console.log("Resolved CSS fill:", cssFill); // Выведет итоговый цвет/градиент
+
         setComputedFill(cssFill || fill);
       } else {
         setComputedFill(fill);
@@ -24,6 +27,9 @@ const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
       const cssFill = getComputedStyle(document.documentElement)
         .getPropertyValue("--color-star-icon")
         .trim();
+
+      console.log("Default CSS fill:", cssFill); // Должен вывести градиент
+
       setComputedFill(cssFill || "#F6C946");
     }
   }, [fill]);
