@@ -19,9 +19,9 @@
     }
 
     @media (max-width: 768px) {
-      margin-top: 0px;
-      margin-left: -28px;
-      scale: 0.77;
+      margin-top: 4px;
+      margin-right: -9px;
+      scale: 0.9;
     }
   }
 
@@ -54,44 +54,21 @@
     height: $header-button-height;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 14px;
+    font-size: 16px;
     padding: 8px 10px;
     border-radius: $header-button-border-radius;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    position: relative;
-    display: inline-block;
-    z-index: 1;
 
     &.logIn {
       background: $color-button-small;
       width: $header-button-small-width;
       color: $text-color-button-small;
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        background: linear-gradient(180deg, #ff7979 0%, #e83333 100%);
-        border-radius: 10px;
-        z-index: -1;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        right: 2px;
-        bottom: 2px;
-        background: $color-button-small;
-        border-radius: 9px;
-        z-index: -1;
-      }
+      outline: 4px solid;
+      outline-offset: -4px;
+      outline-color: #96ff74;
     }
 
     &.signUp {
@@ -99,29 +76,9 @@
       width: $header-button-large-width;
       color: $text-color-button-large;
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        background: linear-gradient(180deg, #f8be74 0%, #dc9301 100%);
-        border-radius: 10px;
-        z-index: -1;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        right: 2px;
-        bottom: 2px;
-        background: $color-button-large;
-        border-radius: 9px;
-        z-index: -1;
-      }
+      outline: 4px solid;
+      outline-offset: -4px;
+      outline-color: #ffcc00;
     }
 
     &:hover {
@@ -134,33 +91,13 @@
     .headerButton {
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
-      font-size: 10px;
+      font-size: 12px;
 
       &.logIn {
         width: $header-button-small-width-mobile;
-
-        &::before {
-          content: "";
-          border-radius: 6px;
-        }
-
-        &::after {
-          content: "";
-          border-radius: 5px;
-        }
       }
       &.signUp {
         width: $header-button-large-width-mobile;
-
-        &::before {
-          content: "";
-          border-radius: 6px;
-        }
-
-        &::after {
-          content: "";
-          border-radius: 5px;
-        }
       }
     }
   }

@@ -15,8 +15,8 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-right: 32px;
-    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    padding-left: 32px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
 
     @media (max-width: 768px) {
       padding: 24px 24px 0 24px;
@@ -24,7 +24,7 @@
   }
 
   .app-info-block {
-    padding-left: 32px;
+    padding-right: 32px;
     max-width: 342px;
     min-width: 341px;
 
@@ -39,7 +39,7 @@
     }
 
     @media (max-width: 768px) {
-      padding-left: 0;
+      padding-right: 0;
       max-width: 100%;
     }
 
@@ -121,7 +121,7 @@
     @media (min-width: 1281px) {
       .app-image {
         margin-top: 10px;
-        margin-left: -20px;
+        margin-right: -20px;
       }
     }
 
@@ -168,12 +168,12 @@
         }
 
         h3 {
-          padding: 0 0 0 24px;
+          padding: 0 24px 0 0;
         }
       }
 
       .advantages-block {
-        padding-left: 24px;
+        padding-right: 24px;
         border: none;
         gap: 24px;
 
@@ -212,7 +212,7 @@
         padding: 0;
 
         h3 {
-          padding-left: 24px;
+          padding-right: 24px;
         }
       }
 

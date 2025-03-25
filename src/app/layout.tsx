@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "the-crown-casino.com";
+const url = "wazamba-ar.com";
 const ogTitle =
-  "Crown Casino Sydney: Luxury Gaming & Entertainment in Australia";
-const ogSiteName = "The Crown Casino";
+  "العنوان: كازينو Wazamba Casino عربي - العب ماكينات سلوتس على الإنترنت وألعاب مباشرة واحصل على مكافآت";
+const ogSiteName = "Wazamba Casino";
 const metaDescription =
-  "Explore Crown Casino Sydney, Australia’s premier land-based casino offering world-class gaming, fine dining, luxury accommodations, and exclusive VIP experiences.";
+  "يقدم كازينو Wazamba Casino بالعربي أفضل ماكينات السلوتس وألعاب الموزع المباشر والمكافآت السخية. استمتع بإيداعات آمنة، وعمليات سحب سريعة، وبرنامج VIP مثير. العب بأموال حقيقية أو جرب الألعاب التجريبية. انضم اليوم واستمتع بتجربة ألعاب متميزة عبر الإنترنت مع مكافآت من الدرجة الأولى! ";
 
-const locale = "en-AU";
-const language = "English";
+const locale = "ar";
+const language = "Arabic";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={locale}>
+    <html lang={locale} dir="rtl">
       <head>
         <meta name="language" content={language} />
         <link rel="icon" href="/icons/ico-192.png" />

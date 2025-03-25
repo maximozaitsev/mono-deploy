@@ -6,6 +6,7 @@
   gap: 32px;
 
   .payment-methods-table {
+    direction: ltr;
     width: 100%;
     border-collapse: separate;
     border-spacing: 0 16px;
@@ -115,6 +116,7 @@
 
   // Mobile-specific styles
   .mobile-payment-methods {
+    direction: ltr;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -122,7 +124,7 @@
 
     .payment-method-card {
       .payment-method-header {
-        background: $color-background-fourth;
+        background: #123b71;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -154,7 +156,7 @@
       }
 
       .payment-method-details {
-        background: $color-background-third;
+        // background: $color-background-third;
         display: flex;
         flex-direction: column;
         padding: 8px 16px;
@@ -162,7 +164,7 @@
         border-radius: $border-radius;
 
         p {
-          color: $text-color-secondary;
+          color: #fff;
           display: flex;
           justify-content: space-between;
           font-size: 18px;
@@ -175,7 +177,7 @@
           }
 
           strong {
-            background: $text-color-fourth;
+            background: #fff;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -195,6 +197,10 @@
   }
 }
 
-.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+.payment-methods-section
+  .mobile-payment-methods
+  .payment-method-card
+  .payment-method-details
+  p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }

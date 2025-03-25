@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "The Crown Casino";
+const projectName = "Wazamba Casino";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",
@@ -79,7 +79,7 @@ const Footer = () => {
           <div className={styles.row}>
             <div className={styles.logoWrapper}>
               <Logo
-                svgPath="/logo-footer.svg"
+                svgPath="/logo.svg"
                 gradientIdPrefix="footer"
                 onClick={scrollToWelcomeSection}
                 alt={`${projectName} Logo`}
