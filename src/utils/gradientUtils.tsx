@@ -1,39 +1,23 @@
-import React from "react";
-
-interface GradientStop {
-  color: string;
-  offset: string;
-}
-
-export interface GradientResult {
-  fill: string;
-  gradientElement: React.ReactNode;
-}
-
-/**
- * @param gradientString 
- * @param gradientId 
- * @returns 
- */
 export function computeGradient(
   gradientString: string,
   gradientId: string
 ): GradientResult | null {
+  console.log("Raw gradient input:", gradientString);
+
   const cleanedGradient = gradientString.replace(/;$/, "");
+  console.log("Cleaned gradient:", cleanedGradient);
 
   const gradientRegex = /linear-gradient\(([^,]+),\s*(.+)\)/i;
   const match = cleanedGradient.match(gradientRegex);
-  if (!match) return null;
+  if (!match) {
+    console.warn("Gradient regex failed to match:", cleanedGradient);
+    return null;
+  }
 
   const angleString = match[1].trim();
   const stopsString = match[2].trim();
-  const angleDeg = parseFloat(angleString);
-
-  const rad = (angleDeg - 90) * (Math.PI / 180);
-  const x2 = 0.5 + 0.5 * Math.cos(rad);
-  const y2 = 0.5 + 0.5 * Math.sin(rad);
-  const x1 = 1 - x2;
-  const y1 = 1 - y2;
+  console.log("Parsed angle:", angleString);
+  console.log("Parsed stops:", stopsString);
 
   const stopsArray = stopsString.split(/,\s*/);
   const stops = stopsArray.map((stop: string) => {
@@ -43,21 +27,19 @@ export function computeGradient(
     return { color, offset };
   });
 
+  console.log("Final stops:", stops);
+
   const gradientElement = (
     <defs>
-      <linearGradient
-        id={gradientId}
-        x1={`${x1 * 100}%`}
-        y1={`${y1 * 100}%`}
-        x2={`${x2 * 100}%`}
-        y2={`${y2 * 100}%`}
-      >
+      <linearGradient id={gradientId} x1="0%" y1="0%" x2="0%" y2="100%">
         {stops.map((s, index) => (
           <stop key={index} offset={s.offset} stopColor={s.color} />
         ))}
       </linearGradient>
     </defs>
   );
+
+  console.log("Generated gradient element:", gradientElement);
 
   return {
     fill: `url(#${gradientId})`,
