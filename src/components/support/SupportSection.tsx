@@ -8,7 +8,7 @@ import BlockRenderer from "../__common__/renderers/BlockRenderer";
 
 export default function SupportSection() {
   const { data, loading, error } = useContentData();
-  const projectName = "Slotmonster Casino";
+  const projectName = "Wild Dice Casino";
 
   const supportData = useMemo(() => {
     if (!data?.support) return null;

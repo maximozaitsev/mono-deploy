@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "slotmonstercasino-online.com";
+const url = "wilddice-casino.com";
 const ogTitle =
-  "Slot Monster Casino Review UK – Cool Games, Bonuses, and Payments";
-const ogSiteName = "Slotmonster Casino";
+  "Wild Dice Casino UK—Fast Crypto Games with Provably Fair System";
+const ogSiteName = "Wild Dice Casino";
 const metaDescription =
-  "Discover Slot Monster Casino UK! Explore exciting slots, live dealer games, generous bonuses, and secure payment methods. Read our full review now to know what cool offers are at your disposal!";
+  "Wild Dice Casino UK delivers instant-play crypto games like Dice, Crash, and Mines with a provably fair system and no KYC. Enjoy fast deposits, secure withdrawals, and exclusive VIP rewards. Sign up today and experience quick, transparent gameplay built for UK players.";
 
 const locale = "en-GB";
 const language = "English";

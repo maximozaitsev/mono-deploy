@@ -9,10 +9,6 @@
   margin-bottom: 140px;
   scroll-margin-top: 99px;
 
-  h2 {
-    margin-left: -12px;
-  }
-
   button {
     align-self: center;
   }
@@ -97,11 +93,11 @@
   .gameName {
     text-align: center;
     font-family: $font-primary;
-    // color: $text-color-fourth;
-    background: $text-color-fourth;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: $text-color-fourth;
+    // background: $text-color-fourth;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
     font-size: 32px;
     font-style: normal;
     font-weight: $font-weight-regular;
@@ -125,11 +121,11 @@
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    // color: $text-color-fourth;
-    background: $text-color-fourth;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: $text-color-fourth;
+    // background: $text-color-fourth;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 
     @media (max-width: 1000px) {
       font-size: 20px;

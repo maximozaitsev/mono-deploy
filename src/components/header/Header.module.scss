@@ -20,8 +20,8 @@
 
     @media (max-width: 768px) {
       margin-top: 4px;
-      margin-left: -53px;
-      scale: 0.59;
+      margin-left: -46px;
+      scale: 0.62;
     }
   }
 
@@ -54,7 +54,7 @@
     height: $header-button-height;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 14px;
+    font-size: 16px;
     padding: 8px 10px;
     border-radius: $header-button-border-radius;
     border: none;
@@ -83,7 +83,7 @@
     .headerButton {
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
-      font-size: 10px;
+      font-size: 12px;
 
       &.logIn {
         width: $header-button-small-width-mobile;
