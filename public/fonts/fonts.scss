@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Pluvix", sans-serif;
+$font-secondary: "Montserrat", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -9,16 +9,16 @@ $font-secondary: "Pluvix", sans-serif;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("./Roboto/Roboto-Black.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("./Heading/static//Montserrat-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Pluvix";
-  src: url("Pluvix/Pluvix.woff") format("truetype");
-  font-weight: 400;
+  font-family: "Montserrat";
+  src: url("Heading/static/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 
