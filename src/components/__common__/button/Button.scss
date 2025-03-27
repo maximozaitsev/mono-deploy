@@ -1,0 +1,79 @@
+@import "../../../styles/colors.scss";
+@import "../../../../public/fonts/fonts.scss";
+@import "../../../styles/variables.scss";
+
+.button {
+  cursor: pointer;
+  font-family: $font-primary;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+
+  &.primary {
+    // outline: 4px solid;
+    // outline-offset: -4px;
+    // outline-color: #f9f8f83b;
+
+    border-radius: $button-large-border-radius;
+    padding: 4px 48px;
+    background: $color-button-large;
+    color: $text-color-button-large;
+    font-size: 28px;
+    border: none;
+    min-width: 280px;
+    height: 87px;
+
+    @media (max-width: 768px) {
+      border-radius: $button-large-border-radius-mobile;
+      font-size: 24px;
+      padding: 4px 48px;
+      min-width: 240px;
+      height: 77px;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 18px;
+      padding: 10px 14px;
+    }
+
+    @media (max-width: 380px) {
+      height: 60px;
+    }
+
+    @media (max-width: 300px) {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &.secondary {
+    // outline: 3px solid;
+    // outline-offset: -3px;
+    // outline-color: #2e2e2e3b;
+
+    border-radius: $button-small-border-radius;
+    padding: 2px 18px;
+    background: $color-button-small;
+    color: $text-color-button-small;
+    font-size: 20px;
+    border: none;
+    height: 52px;
+
+    @media (max-width: 768px) {
+      border-radius: $button-small-border-radius-mobile;
+      font-size: 18px;
+    }
+
+    @media (max-width: 300px) {
+      padding: 2px 16px;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}

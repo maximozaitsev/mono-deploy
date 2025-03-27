@@ -1,0 +1,10 @@
+@mixin common-list-styles($margin: 1rem) {
+  ul {
+    margin-left: $margin;
+    list-style-type: disc;
+  }
+  ol {
+    margin-left: $margin;
+    list-style-type: decimal;
+  }
+}

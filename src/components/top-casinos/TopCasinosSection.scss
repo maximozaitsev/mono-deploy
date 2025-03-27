@@ -1,0 +1,31 @@
+@import "../../../public/fonts/fonts.scss";
+
+.top-casinos-section {
+  .offers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 26px;
+  }
+
+  button {
+    align-self: center;
+  }
+
+  @media (max-width: 768px) {
+    padding: 24px 40px;
+
+    .offers-grid {
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    padding: 24px 20px;
+  }
+
+  @media (max-width: 1180px) {
+    .offers-grid {
+      justify-content: center;
+    }
+  }
+}
