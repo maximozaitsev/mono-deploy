@@ -12,13 +12,7 @@ interface OfferCardProps {
 const OfferCard: React.FC<OfferCardProps> = ({ offer }) => {
   return (
     <div className={styles.offerCard}>
-      <img
-        src={offer.logo}
-        alt={offer.name}
-        width={190}
-        height={76}
-        loading="lazy"
-      />
+      <img src={offer.logo} alt={offer.name} width={190} loading="lazy" />
       <h3>{offer.name}</h3>
       <h4>Welcome bonus</h4>
       <p>{offer.bonuses.welcome_bonus}</p>
