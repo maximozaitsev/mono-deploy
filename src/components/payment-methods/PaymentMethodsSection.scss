@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: $text-color-primary;
+        color: #fff;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
@@ -122,7 +122,7 @@
 
     .payment-method-card {
       .payment-method-header {
-        background: $color-background-fourth;
+        background: #ffffff;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -175,7 +175,7 @@
           }
 
           strong {
-            background: #fff;
+            background: $text-color-primary;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -200,5 +200,5 @@
   .payment-method-card
   .payment-method-details
   p {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }

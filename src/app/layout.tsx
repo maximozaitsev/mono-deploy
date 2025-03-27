@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "wilddice-casino.com";
+const url = "spinrise-australia.com";
 const ogTitle =
-  "Wild Dice Casino UK—Fast Crypto Games with Provably Fair System";
-const ogSiteName = "Wild Dice Casino";
+  "SpinRise Casino Australia: 2025 Review of the Gambling Platform";
+const ogSiteName = "Spinrise Casino";
 const metaDescription =
-  "Wild Dice Casino UK delivers instant-play crypto games like Dice, Crash, and Mines with a provably fair system and no KYC. Enjoy fast deposits, secure withdrawals, and exclusive VIP rewards. Sign up today and experience quick, transparent gameplay built for UK players.";
+  "Explore the pros and cons of the Australian casino SpinRise. Compare bonus offers and game variety, try the A$5,555 welcome pack, and make sure the casino offers fair game conditions.";
 
-const locale = "en-GB";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
