@@ -120,12 +120,12 @@
   .mobile-image {
     @media (min-width: 1281px) {
       .app-image {
-        margin-top: 50px;
-        margin-left: -60px;
+        margin-top: 10px;
+        margin-left: -20px;
       }
     }
 
-    @media (min-width: 1281px) and (max-width: 1390px) {
+    @media (min-width: 1281px) and (max-width: 1340px) {
       width: 100%;
 
       .app-image {
@@ -191,6 +191,7 @@
           margin-top: 40px;
           max-width: 267px;
           height: 77px;
+          padding: 2px 45px !important;
         }
       }
     }

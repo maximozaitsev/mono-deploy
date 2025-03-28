@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "crown-casino-online.net";
+const url = "spinrise-australia.com";
 const ogTitle =
-  "Crown Casino – Explore Australia’s Leading Casino Resort Today";
-const ogSiteName = "Crown Online Casino";
+  "SpinRise Casino Australia: 2025 Review of the Gambling Platform";
+const ogSiteName = "Spinrise Casino";
 const metaDescription =
-  "Crown Casino Australia delivers premium gaming, 5-star hotels, award-winning restaurants, and live entertainment on Melbourne’s vibrant Southbank. Join today to enjoy unmatched experiences and exclusive Crown Rewards benefits.";
+  "Explore the pros and cons of the Australian casino SpinRise. Compare bonus offers and game variety, try the A$5,555 welcome pack, and make sure the casino offers fair game conditions.";
 
 const locale = "en-AU";
 const language = "English";
