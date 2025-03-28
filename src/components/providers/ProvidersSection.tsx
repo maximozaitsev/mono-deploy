@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { Provider } from "@/types/provider";
 import { fetchProviders } from "@/utils/fetchProviders";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
@@ -37,11 +38,13 @@ export default function ProvidersSection({
             className="provider-block"
             onClick={() => handleNavigation("/casino", undefined, true)}
           >
-            <img
+            <Image
               src={provider.image}
               alt={provider.name}
+              width={140}
+              height={100}
+              style={{ maxWidth: "100%", height: "auto" }}
               className="provider-image"
-              loading="lazy"
             />
           </div>
         ))}

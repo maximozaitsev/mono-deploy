@@ -40,15 +40,6 @@
         background: none;
         border: none;
         cursor: pointer;
-
-        img {
-          height: 52px;
-
-          @media (max-width: 768px) {
-            height: 53px;
-            width: 181px;
-          }
-        }
       }
     }
   }
@@ -60,7 +51,7 @@
 
     .image {
       position: absolute;
-      top: -90px;
+      top: -107px;
       right: -13px;
       scale: 0.8;
       overflow: hidden;

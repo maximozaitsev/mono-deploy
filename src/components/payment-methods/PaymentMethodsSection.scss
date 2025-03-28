@@ -122,7 +122,7 @@
 
     .payment-method-card {
       .payment-method-header {
-        background: #ffffff;
+        background: $color-background-fourth;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -154,7 +154,7 @@
       }
 
       .payment-method-details {
-        // background: $color-background-third;
+        background: $color-background-third;
         display: flex;
         flex-direction: column;
         padding: 8px 16px;
@@ -175,7 +175,7 @@
           }
 
           strong {
-            background: $text-color-primary;
+            background: #4ab8e9;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

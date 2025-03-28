@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "spinrise-australia.com";
+const url = "rocketspin-canada.com";
 const ogTitle =
-  "SpinRise Casino Australia: 2025 Review of the Gambling Platform";
-const ogSiteName = "Spinrise Casino";
+  "RocketSpin Casino Canada Review – Games, Bonuses, & Payment Options";
+const ogSiteName = "Rocketspin Casino";
 const metaDescription =
-  "Explore the pros and cons of the Australian casino SpinRise. Compare bonus offers and game variety, try the A$5,555 welcome pack, and make sure the casino offers fair game conditions.";
+  "Discover RocketSpin Casino in Canada. Explore its extensive game selection, generous bonuses, payment methods, security measures, and customer support in our comprehensive review.";
 
-const locale = "en-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

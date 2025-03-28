@@ -34,7 +34,7 @@
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: #5b4dff;
+    color: #4ab8e9;
 
     // background: $text-color-fourth;
     // background-clip: text;
@@ -58,10 +58,11 @@
 
   button {
     margin-top: auto;
-    padding: 4px 30px !important;
+    padding: 4px 32px !important;
     margin-left: -20px;
     margin-right: -20px;
     // width: 206px;
+    box-shadow: 0px 4px 8px 0px #00040d33;
   }
 
   @media (max-width: 768px) {
@@ -81,9 +82,9 @@
       margin-bottom: -8px;
     }
 
-    button {
-      width: 202px;
-    }
+    // button {
+    //   width: 202px;
+    // }
   }
 
   @media (max-width: 575px) {

@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Spinrise Casino";
+const projectName = "Rocketspin Casino";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",
@@ -79,7 +80,7 @@ const Footer = () => {
           <div className={styles.row}>
             <div className={styles.logoWrapper}>
               <Logo
-                svgPath="/logo.svg"
+                svgPath="/logo-footer.svg"
                 gradientIdPrefix="footer"
                 onClick={scrollToWelcomeSection}
                 alt={`${projectName} Logo`}
@@ -87,40 +88,46 @@ const Footer = () => {
             </div>
 
             {partnerLogos.slice(0, 7).map((logo, index) => (
-              <img
+              <Image
                 key={index}
                 src={hoveredLogoIndex === index ? logo.color : logo.mono}
                 alt={`Partner ${index + 1}`}
+                width={100}
+                height={32}
                 className={styles.partnerLogo}
                 onMouseEnter={() => setHoveredLogoIndex(index)}
                 onMouseLeave={() => setHoveredLogoIndex(null)}
-                loading="lazy"
+                style={{ width: "auto", height: "32px" }}
               />
             ))}
           </div>
           <div className={styles.row}>
             {partnerLogos.slice(7, 12).map((logo, index) => (
-              <img
+              <Image
                 key={index + 7}
                 src={hoveredLogoIndex === index + 7 ? logo.color : logo.mono}
                 alt={`Partner ${index + 8}`}
+                width={100}
+                height={32}
                 className={styles.partnerLogo}
                 onMouseEnter={() => setHoveredLogoIndex(index + 7)}
                 onMouseLeave={() => setHoveredLogoIndex(null)}
-                loading="lazy"
+                style={{ width: "auto", height: "32px" }}
               />
             ))}
           </div>
           <div className={styles.row}>
             {partnerLogos.slice(12, 15).map((logo, index) => (
-              <img
+              <Image
                 key={index + 12}
                 src={hoveredLogoIndex === index + 12 ? logo.color : logo.mono}
                 alt={`Partner ${index + 13}`}
+                width={100}
+                height={32}
                 className={styles.partnerLogo}
                 onMouseEnter={() => setHoveredLogoIndex(index + 12)}
                 onMouseLeave={() => setHoveredLogoIndex(null)}
-                loading="lazy"
+                style={{ width: "auto", height: "32px" }}
               />
             ))}
           </div>

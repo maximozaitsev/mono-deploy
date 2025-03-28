@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Game } from "@/types/game";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
+import Image from "next/image";
 import Button from "../__common__/button/Button";
 import PlayIcon from "../__common__/PlayIcon";
 
@@ -27,7 +28,7 @@ export default function TopGamesSection({ games }: TopGamesProps) {
             onMouseEnter={() => setHoveredGame(game.id)}
             onMouseLeave={() => setHoveredGame(null)}
           >
-            <img
+            <Image
               src={game.image}
               alt={game.name}
               className={styles.gameImage}
