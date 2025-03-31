@@ -12,7 +12,7 @@ import "./MobileSection.scss";
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "Rocketspin Casino";
+  const projectName = "Crown Casino";
 
   useEffect(() => {
     import("../../content/content.json")
@@ -72,6 +72,7 @@ export default function MobileSection() {
                 alt="Download on the App Store"
                 width={181}
                 height={53}
+                loading="lazy"
               />
             </button>
             <button
@@ -83,6 +84,7 @@ export default function MobileSection() {
                 alt="Download on the Google Play"
                 width={181}
                 height={53}
+                loading="lazy"
               />
             </button>
           </div>

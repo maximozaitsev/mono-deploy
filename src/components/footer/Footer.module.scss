@@ -31,8 +31,9 @@
             // margin-top: 12px;
 
             @media (max-width: 768px) {
-              scale: 0.65;
-              margin-top: 4px;
+              scale: 0.72;
+              margin-top: -8px;
+              margin-bottom: -5px;
             }
           }
 
@@ -55,6 +56,7 @@
 
       .partnerLogo {
         mix-blend-mode: luminosity;
+        max-height: 32px;
 
         &:hover {
           mix-blend-mode: normal;
@@ -73,7 +75,7 @@
   }
 
   .copyright {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.34);
     font-family: $font-primary;
     font-size: 20px;
     font-style: normal;

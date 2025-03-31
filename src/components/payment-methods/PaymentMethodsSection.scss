@@ -130,6 +130,10 @@
         padding: 8px;
         border-radius: $border-radius;
 
+        @media (max-width: 768px) {
+          border-radius: 16px;
+        }
+
         img {
           width: 110px;
           margin-left: 16px;
@@ -175,7 +179,7 @@
           }
 
           strong {
-            background: #4ab8e9;
+            background: $text-color-fourth;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

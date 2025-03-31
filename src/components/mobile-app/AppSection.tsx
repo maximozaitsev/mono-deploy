@@ -12,9 +12,9 @@ export default function AppSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const { data: content, loading, error } = useContentData();
   const { app } = useParsedSections(content?.sections || {});
-  const projectName = "Rocketspin Casino";
+  const projectName = "Crown Casino Online";
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p></p>;
   if (error) return <p>Error loading content.</p>;
   if (!app) return <p>App section data is not available.</p>;
 
@@ -39,26 +39,22 @@ export default function AppSection() {
             ))}
             <div className={styles.buttons}>
               <button
-                className="google-play"
                 onClick={() => handleNavigation("/casino", undefined, true)}
               >
                 <img
+                  className={styles.googlePlay}
                   src="/assets/google-play.svg"
                   alt="Download on the Google Play"
-                  width={175}
-                  height={53}
                   loading="lazy"
                 />
               </button>
               <button
-                className="app-store"
                 onClick={() => handleNavigation("/casino", undefined, true)}
               >
                 <img
+                  className={styles.appStore}
                   src="/assets/app-store.svg"
                   alt="Download on the App Store"
-                  width={175}
-                  height={53}
                   loading="lazy"
                 />
               </button>

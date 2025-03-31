@@ -30,17 +30,19 @@
     align-items: center;
     height: auto;
     padding: 1rem;
-    border-radius: 4px;
+    border-radius: 24px;
     background-color: $color-background-providers-blocks;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     height: 88px;
+    border: 2px solid #00000033;
 
     @media (max-width: 760px) {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 72px !important;
+      border-radius: 16px;
     }
 
     @media (max-width: 576px) {

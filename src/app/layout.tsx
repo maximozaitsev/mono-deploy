@@ -1,13 +1,11 @@
 import { Metadata } from "next";
 
-const url = "rocketspin-canada.com";
-const ogTitle =
-  "RocketSpin Casino Canada Review – Games, Bonuses, & Payment Options";
-const ogSiteName = "Rocketspin Casino";
-const metaDescription =
-  "Discover RocketSpin Casino in Canada. Explore its extensive game selection, generous bonuses, payment methods, security measures, and customer support in our comprehensive review.";
+const url = "the-crown-casino.com";
+const ogTitle = "Crown Casino Australia: Ultimate Guide to Gaming & Entertainment";
+const ogSiteName = "Crown Casino Online";
+const metaDescription = "Crown Casino Australia offers world-class gaming, luxury hotels, fine dining, and live entertainment. Explore its top attractions, VIP services, and exciting casino games";
 
-const locale = "en-CA";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

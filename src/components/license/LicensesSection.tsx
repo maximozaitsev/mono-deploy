@@ -11,7 +11,7 @@ export default function LicensesSection() {
   const { licenses } = useParsedSections(content?.sections || {});
   const projctName = "Project Name";
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p></p>;
   if (error) return <p>Error loading content.</p>;
   if (!licenses) return <p>Licenses section data is not available.</p>;
 
@@ -37,7 +37,7 @@ export default function LicensesSection() {
             {/* {licenses.showImage && (
               <div className={styles.rightImage}>
                 <img
-                  src={licenceImage}
+                  src={licenceImage.src}
                   alt={`${projctName} License`}
                   width={240}
                   height={240}

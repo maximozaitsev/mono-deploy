@@ -9,10 +9,6 @@
   margin-bottom: 140px;
   scroll-margin-top: 99px;
 
-  h2 {
-    margin-left: -12px;
-  }
-
   button {
     align-self: center;
   }
@@ -54,6 +50,10 @@
   transition: transform 0.5s ease;
   max-width: 264px;
   max-height: 142px;
+
+  @media (max-width: 768px) {
+    border-radius: 16px;
+  }
 
   &:hover {
     transform: scale(1.05);
