@@ -1,23 +1,30 @@
-$font-primary: "Helvetica", sans-serif;
-$font-secondary: "Copperplate", sans-serif;
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Nunito", sans-serif;
 
 @font-face {
-  font-family: "Helvetica";
-  src: url("./Helvetica/Helvetica.woff") format("truetype");
+  font-family: "Roboto";
+  src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Copperplate";
-  src: url("CopperPlate/copperplate.otf") format("truetype");
+  font-family: "Montserrat";
+  src: url("Heading/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
-// @font-face {
-//   font-family: "Montserrat";
-//   src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
-//   font-weight: 900;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Heading/static/Nunito-900.woff2") format("woff2");
+}

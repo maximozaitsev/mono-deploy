@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 
-const url = "the-crown-casino.com";
-const ogTitle = "Crown Casino Australia: Ultimate Guide to Gaming & Entertainment";
-const ogSiteName = "Crown Casino Online";
-const metaDescription = "Crown Casino Australia offers world-class gaming, luxury hotels, fine dining, and live entertainment. Explore its top attractions, VIP services, and exciting casino games";
+const url = "gwcasino-online.com";
+const ogTitle = "GW Casino Australia—Real Money Games, Bonuses & Fast Payouts";
+const ogSiteName = "GW Casino";
+const metaDescription =
+  "GW Casino Australia brings players thrilling real money slots, classic table games, and live casino action with fast payouts and secure banking. Join today to unlock a generous welcome bonus and start winning real cash!";
 
 const locale = "en-AU";
 const language = "English";

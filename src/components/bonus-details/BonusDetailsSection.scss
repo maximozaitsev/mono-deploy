@@ -246,14 +246,17 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: #fff;
+  color: $text-color-primary;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   position: relative;
-  box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
+  border: none;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  box-shadow: 0 0 0 1px #b57e0f, 0 0 0 2px #f8de7a;
 
   @media (max-width: 850px) {
     font-size: 18px;
@@ -327,17 +330,17 @@
 /* Theme Styles Start */
 .accordion-title,
 .accordion-value {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 .accordion-title::after {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .cell {
   &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 /* Theme Styles End */

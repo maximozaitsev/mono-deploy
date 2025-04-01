@@ -19,9 +19,9 @@
     }
 
     @media (max-width: 768px) {
-      margin-top: 3px;
-      margin-left: -21px;
-      scale: 0.72;
+      margin-top: 4px;
+      margin-left: -48px;
+      scale: 0.56;
     }
   }
 
@@ -54,16 +54,12 @@
     height: $header-button-height;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 20px;
+    font-size: 14px;
     padding: 8px 10px;
     border-radius: $header-button-border-radius;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-
-    outline: 2px solid;
-    outline-offset: -2px;
-    outline-color: #00000033;
 
     &.logIn {
       background: $color-button-small;
@@ -87,7 +83,7 @@
     .headerButton {
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
-      font-size: 14px;
+      font-size: 10px;
 
       &.logIn {
         width: $header-button-small-width-mobile;
