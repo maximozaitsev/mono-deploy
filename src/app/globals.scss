@@ -5,7 +5,13 @@
 :root {
   --color-ico: #{$text-color-secondary};
   --text-color-fourth: #{$text-color-fourth};
-  --color-star-icon: #{$color-star-icon};
+  --color-star-icon: linear-gradient(
+    90deg,
+    #830012 0.5%,
+    #ff405b 46%,
+    #830012 100%
+  );
+
   --color-faq-icon: #{$color-faq-icon};
 }
 
