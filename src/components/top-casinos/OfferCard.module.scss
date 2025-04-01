@@ -20,6 +20,9 @@
 
   img {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
+    height: 76px;
+    object-fit: cover;
+    overflow: hidden;
   }
 
   h3 {
@@ -75,6 +78,7 @@
 
     img {
       width: 160px;
+      height: 64px;
     }
 
     h3 {
