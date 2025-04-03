@@ -1,9 +1,9 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Barlow", sans-serif;
+$font-secondary: "Helvetica", sans-serif;
 
 @font-face {
-  font-family: "Roboto";
-  src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
+  font-family: "Helvetica";
+  src: url("./Helvetica/Helvetica.woff") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
