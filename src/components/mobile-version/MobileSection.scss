@@ -121,11 +121,11 @@
     @media (min-width: 1281px) {
       .app-image {
         margin-top: 10px;
-        margin-left: -20px;
+        margin-left: -110px;
       }
     }
 
-    @media (min-width: 1281px) and (max-width: 1340px) {
+    @media (min-width: 1281px) and (max-width: 1400px) {
       width: 100%;
 
       .app-image {
@@ -189,7 +189,7 @@
         button {
           align-self: center;
           margin-top: 40px;
-
+          max-width: 267px;
           height: 77px;
         }
       }

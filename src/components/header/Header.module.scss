@@ -12,16 +12,20 @@
   height: 96px;
 
   svg {
-    margin-top: 4px;
+    margin-top: 16px;
 
     @media (max-width: 1080px) {
-      margin-top: 0px;
+      margin-top: 16px;
     }
 
     @media (max-width: 768px) {
-      margin-top: 4px;
-      margin-left: -48px;
-      scale: 0.56;
+      // margin-left: -18px;
+      // scale: 0.85;
+    }
+
+    @media (max-width: 380px) {
+      scale: 0.7;
+      margin-left: -18px;
     }
   }
 
@@ -60,17 +64,26 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
 
     &.logIn {
       background: $color-button-small;
       width: $header-button-small-width;
       color: $text-color-button-small;
+
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: #ffffff33;
     }
 
     &.signUp {
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
+
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: #00000033;
     }
 
     &:hover {

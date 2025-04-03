@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "gwcasino-online.com";
-const ogTitle = "GW Casino Australia—Real Money Games, Bonuses & Fast Payouts";
-const ogSiteName = "GW Casino";
+const url = "cobracasino-online.com";
+const ogTitle =
+  "Cobra Casino Australia: Exclusive Bonuses & Exciting Games Await!";
+const ogSiteName = "Cobra Casino";
 const metaDescription =
-  "GW Casino Australia brings players thrilling real money slots, classic table games, and live casino action with fast payouts and secure banking. Join today to unlock a generous welcome bonus and start winning real cash!";
+  "Join Cobra Casino Australia for an unparalleled gaming experience! Enjoy amazing bonuses, a wide range of games, and a user-friendly platform. Start your adventure today!";
 
 const locale = "en-AU";
 const language = "English";

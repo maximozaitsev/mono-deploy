@@ -12,9 +12,9 @@
   text-transform: uppercase;
 
   &.primary {
-    // outline: 4px solid;
-    // outline-offset: -4px;
-    // outline-color: #f9f8f83b;
+    outline: 2px solid;
+    outline-offset: -2px;
+    outline-color: #00000033;
 
     border-radius: $button-large-border-radius;
     padding: 4px 48px;
@@ -51,10 +51,9 @@
   }
 
   &.secondary {
-    // outline: 3px solid;
-    // outline-offset: -3px;
-    // outline-color: #2e2e2e3b;
-
+    outline: 2px solid;
+    outline-offset: -2px;
+    outline-color: #ffffff33;
     border-radius: $button-small-border-radius;
     padding: 2px 18px;
     background: $color-button-small;

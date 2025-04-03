@@ -53,10 +53,7 @@
 
   &:hover {
     transform: scale(1.05);
-    border: none;
-    outline: 2px solid transparent;
-    outline-offset: -2px;
-    box-shadow: 0 0 0 1px #b57e0f, 0 0 0 2px #f8de7a;
+    outline: 2px solid #cc2929;
   }
 
   .gameImage {
@@ -96,11 +93,11 @@
   .gameName {
     text-align: center;
     font-family: $font-primary;
-    // color: $text-color-fourth;
-    background: $text-color-fourth;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: $text-color-fourth;
+    // background: $text-color-fourth;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
     font-size: 32px;
     font-style: normal;
     font-weight: $font-weight-regular;
@@ -124,11 +121,11 @@
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    // color: $text-color-fourth;
-    background: $text-color-fourth;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: $text-color-fourth;
+    // background: $text-color-fourth;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 
     @media (max-width: 1000px) {
       font-size: 20px;
