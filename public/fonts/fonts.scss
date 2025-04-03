@@ -1,9 +1,16 @@
-$font-primary: "Roboto", sans-serif;
+$font-primary: "Helvetica", sans-serif;
 $font-secondary: "Readex Pro", sans-serif;
 
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./Helvetica/Helvetica.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
