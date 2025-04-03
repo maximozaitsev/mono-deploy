@@ -12,20 +12,16 @@
   height: 96px;
 
   svg {
-    margin-top: 16px;
+    margin-top: 4px;
 
     @media (max-width: 1080px) {
-      margin-top: 16px;
+      margin-top: 0px;
     }
 
     @media (max-width: 768px) {
-      // margin-left: -18px;
-      // scale: 0.85;
-    }
-
-    @media (max-width: 380px) {
-      scale: 0.7;
-      margin-left: -18px;
+      margin-top: 4px;
+      margin-left: -25px;
+      scale: 0.76;
     }
   }
 
@@ -56,9 +52,9 @@
 
   .headerButton {
     height: $header-button-height;
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 14px;
+    font-size: 16px;
     padding: 8px 10px;
     border-radius: $header-button-border-radius;
     border: none;
@@ -70,20 +66,12 @@
       background: $color-button-small;
       width: $header-button-small-width;
       color: $text-color-button-small;
-
-      outline: 2px solid;
-      outline-offset: -2px;
-      outline-color: #ffffff33;
     }
 
     &.signUp {
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
-
-      outline: 2px solid;
-      outline-offset: -2px;
-      outline-color: #00000033;
     }
 
     &:hover {
@@ -96,7 +84,7 @@
     .headerButton {
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
-      font-size: 10px;
+      font-size: 14px;
 
       &.logIn {
         width: $header-button-small-width-mobile;

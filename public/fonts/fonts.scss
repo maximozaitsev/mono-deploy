@@ -1,9 +1,9 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Helvetica", sans-serif;
+$font-secondary: "Readex Pro", sans-serif;
 
 @font-face {
-  font-family: "Helvetica";
-  src: url("./Helvetica/Helvetica.woff") format("truetype");
+  font-family: "Roboto";
+  src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -23,8 +23,8 @@ $font-secondary: "Helvetica", sans-serif;
 }
 
 @font-face {
-  font-family: "Barlow";
+  font-family: "Readex Pro";
   font-weight: 700;
   font-style: normal;
-  src: url("./Heading/static/Barlow-700.woff2") format("woff2");
+  src: url("./Heading/static/Readex Pro-700.woff2") format("woff2");
 }

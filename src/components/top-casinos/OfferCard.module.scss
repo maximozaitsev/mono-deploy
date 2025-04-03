@@ -10,9 +10,10 @@
   align-items: center;
   gap: 16px;
 
-  outline: 2px solid #cc2929;
+  outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
   background: $color-background-third;
+  box-shadow: 4px 4px 8px 0px #00111a26;
 
   img {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
@@ -68,6 +69,7 @@
     width: 240px;
     height: 264px;
     padding: 16px;
+    border-radius: 16px;
 
     img {
       width: 160px;
@@ -82,7 +84,7 @@
     }
 
     button {
-      width: 202px;
+      width: 214px;
     }
   }
 

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Cobra Casino";
+const projectName = "Orozino Casino";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",

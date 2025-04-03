@@ -4,7 +4,7 @@
 
 .button {
   cursor: pointer;
-  font-family: $font-primary;
+  font-family: $font-secondary;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
   font-weight: $font-weight-black;
@@ -12,32 +12,34 @@
   text-transform: uppercase;
 
   &.primary {
-    outline: 2px solid;
-    outline-offset: -2px;
-    outline-color: #00000033;
+    // outline: 4px solid;
+    // outline-offset: -4px;
+    // outline-color: #f9f8f83b;
 
     border-radius: $button-large-border-radius;
-    padding: 4px 48px;
+    padding: 24px 48px;
     background: $color-button-large;
     color: $text-color-button-large;
-    font-size: 28px;
+    font-size: 32px;
     border: none;
     min-width: 280px;
     height: 82px;
     width: 340px;
+    box-shadow: 4px 4px 8px 0px #00111a26;
 
     @media (max-width: 768px) {
       border-radius: $button-large-border-radius-mobile;
-      font-size: 24px;
-      padding: 4px 48px;
+      font-size: 32px;
+      padding: 0;
       min-width: 240px;
       height: 77px;
-      width: 280px;
+      width: 300px;
     }
 
     @media (max-width: 420px) {
-      font-size: 18px;
+      font-size: 24px;
       padding: 10px 14px;
+      width: 260px;
     }
 
     @media (max-width: 380px) {
@@ -51,9 +53,10 @@
   }
 
   &.secondary {
-    outline: 2px solid;
-    outline-offset: -2px;
-    outline-color: #ffffff33;
+    // outline: 3px solid;
+    // outline-offset: -3px;
+    // outline-color: #2e2e2e3b;
+
     border-radius: $button-small-border-radius;
     padding: 2px 18px;
     background: $color-button-small;
@@ -64,7 +67,7 @@
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     @media (max-width: 300px) {

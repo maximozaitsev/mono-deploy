@@ -1,13 +1,11 @@
 import { Metadata } from "next";
 
-const url = "cobracasino-online.com";
-const ogTitle =
-  "Cobra Casino Australia: Exclusive Bonuses & Exciting Games Await!";
-const ogSiteName = "Cobra Casino";
-const metaDescription =
-  "Join Cobra Casino Australia for an unparalleled gaming experience! Enjoy amazing bonuses, a wide range of games, and a user-friendly platform. Start your adventure today!";
+const url = "orozino-casino.com";
+const ogTitle = "Orozino Casino Canada: Best Bonuses & Thrilling Casino Games";
+const ogSiteName = "Orozino Casino";
+const metaDescription = "Orozino Casino Canada offers top-tier slots, live dealer action, and exclusive promotions. Fast and convenient registration. Sign up today for exciting gameplay and big rewards.";
 
-const locale = "en-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

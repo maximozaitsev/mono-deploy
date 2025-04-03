@@ -5,7 +5,14 @@
 .mobile-section {
   background: $color-background-secondary;
   padding: 64px 0;
-  margin-bottom: 140px;
+  width: auto;
+  margin: 0 44px 140px 44px;
+  border-radius: 24px;
+  box-shadow: 4px 4px 8px 0px #00111a26;
+
+  @media (max-width: 768px) {
+    margin: 0 16px 62px 16px;
+  }
 
   .mobile-content {
     display: flex;
@@ -34,11 +41,11 @@
       }
     }
 
-    @media (max-width: 940px) {
-      max-width: 400px;
-    }
+    // @media (max-width: 940px) {
+    //   max-width: 400px;
+    // }
 
-    @media (max-width: 768px) {
+    @media (max-width: 980px) {
       padding-left: 0;
       max-width: 100%;
     }
@@ -104,7 +111,7 @@
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 980px) {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
@@ -121,7 +128,7 @@
     @media (min-width: 1281px) {
       .app-image {
         margin-top: 10px;
-        margin-left: -110px;
+        margin-left: -20px;
       }
     }
 
@@ -151,7 +158,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 980px) {
     padding: 64px 0 40px 0;
     margin-bottom: 64px;
 
@@ -189,7 +196,7 @@
         button {
           align-self: center;
           margin-top: 40px;
-          max-width: 267px;
+
           height: 77px;
         }
       }

@@ -6,7 +6,7 @@ import styles from "./Header.module.scss";
 import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 
 const Header = () => {
-  const projectName = "Cobra Casino";
+  const projectName = "Orozino Casino";
   const { handleNavigation } = useNavigateWithPreloader();
 
   const scrollToWelcomeSection = () => {
