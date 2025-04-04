@@ -1,13 +1,24 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
 import styles from "./Header.module.scss";
 import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 
 const Header = () => {
-  const projectName = "Orozino Casino";
+  const projectName = "WinningKings Casino";
   const { handleNavigation } = useNavigateWithPreloader();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); 
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const scrollToWelcomeSection = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -18,11 +29,13 @@ const Header = () => {
     handleNavigation("/casino", undefined, true);
   };
 
+  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
+
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <Logo
-          svgPath="/logo.svg"
+          svgPath={logoPath}
           gradientIdPrefix="header"
           onClick={scrollToWelcomeSection}
           alt={`${projectName} Logo`}

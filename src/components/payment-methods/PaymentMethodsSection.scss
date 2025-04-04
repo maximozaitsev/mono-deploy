@@ -48,6 +48,12 @@
         font-size: 18px;
         font-style: normal;
         line-height: normal;
+        border-radius: 16px;
+
+        border: none;
+        outline: 2px solid transparent;
+        outline-offset: -2px;
+        box-shadow: 0 0 0 1px #ffa700, 0 0 0 2px #ffa700;
 
         th {
           font-weight: $font-weight-regular;
@@ -130,6 +136,11 @@
         padding: 8px;
         border-radius: $border-radius;
 
+        border: none;
+        outline: 2px solid transparent;
+        outline-offset: -2px;
+        box-shadow: 0 0 0 1px #ffa700, 0 0 0 2px #ffa700;
+
         img {
           width: 110px;
           margin-left: 16px;
@@ -195,6 +206,10 @@
   }
 }
 
-.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+.payment-methods-section
+  .mobile-payment-methods
+  .payment-method-card
+  .payment-method-details
+  p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }

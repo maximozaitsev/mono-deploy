@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Orozino Casino";
+const projectName = "WinningKings Casino";
 const partnerLogos = [
   {
     mono: "/footer-assets/masterCard.svg",
@@ -65,12 +65,25 @@ const partnerLogos = [
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [hoveredLogoIndex, setHoveredLogoIndex] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const scrollToWelcomeSection = () => {
     document
       .getElementById("welcome-section")
       ?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
 
   return (
     <footer className={styles.footer}>
@@ -79,7 +92,7 @@ const Footer = () => {
           <div className={styles.row}>
             <div className={styles.logoWrapper}>
               <Logo
-                svgPath="/logo.svg"
+                svgPath={logoPath}
                 gradientIdPrefix="footer"
                 onClick={scrollToWelcomeSection}
                 alt={`${projectName} Logo`}

@@ -10,10 +10,9 @@
   align-items: center;
   gap: 16px;
 
-  outline: $border-width solid $color-border-primary;
+  outline: 2px solid #ffa700;
   border-radius: $border-radius;
   background: $color-background-third;
-  box-shadow: 4px 4px 8px 0px #00111a26;
 
   img {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
@@ -59,7 +58,7 @@
 
   button {
     margin-top: auto;
-    padding: 4px 32px !important;
+    // padding: 4px 32px !important;
     margin-left: -20px;
     margin-right: -20px;
     // width: 206px;
@@ -69,7 +68,6 @@
     width: 240px;
     height: 264px;
     padding: 16px;
-    border-radius: 16px;
 
     img {
       width: 160px;
@@ -84,7 +82,7 @@
     }
 
     button {
-      width: 214px;
+      width: 202px;
     }
   }
 

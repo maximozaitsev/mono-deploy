@@ -1,11 +1,13 @@
 import { Metadata } from "next";
 
-const url = "orozino-casino.com";
-const ogTitle = "Orozino Casino Canada: Best Bonuses & Thrilling Casino Games";
-const ogSiteName = "Orozino Casino";
-const metaDescription = "Orozino Casino Canada offers top-tier slots, live dealer action, and exclusive promotions. Fast and convenient registration. Sign up today for exciting gameplay and big rewards.";
+const url = "winningkings-online.com";
+const ogTitle =
+  "Winning Kings Casino Reliable Online Casino for Australian Players";
+const ogSiteName = "WinningKings Casino";
+const metaDescription =
+  "Review of the reliable Winning Kings Casino platform: advantages and disadvantages. Register now and get a welcome bonus of 25 free spins on exclusive live games.";
 
-const locale = "en-CA";
+const locale = "en-IN";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
