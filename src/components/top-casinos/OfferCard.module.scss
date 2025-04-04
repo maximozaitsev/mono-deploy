@@ -10,7 +10,7 @@
   align-items: center;
   gap: 16px;
 
-  outline: 2px solid #ffa700;
+  outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
   background: $color-background-third;
 

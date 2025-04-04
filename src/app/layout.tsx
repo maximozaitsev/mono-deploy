@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "winningkings-online.com";
+const url = "slotlaircasino-online.com";
 const ogTitle =
-  "Winning Kings Casino Reliable Online Casino for Australian Players";
-const ogSiteName = "WinningKings Casino";
+  "Slot Lair Casino UK: Comprehensive Analysis of All Pros and Cons";
+const ogSiteName = "Slot Lair Casino";
 const metaDescription =
-  "Review of the reliable Winning Kings Casino platform: advantages and disadvantages. Register now and get a welcome bonus of 25 free spins on exclusive live games.";
+  "Slot Lair Casino offers UK players a vast selection of over 5,000 games, including slots and live dealer options. Learn review delves into the casino's offerings, security measures, and overall player experience.";
 
-const locale = "en-IN";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
