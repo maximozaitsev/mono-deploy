@@ -56,6 +56,10 @@
 
     .primary {
       height: 82px;
+
+      @media (max-width: 768px) {
+        width: 252px;
+      }
     }
   }
 
