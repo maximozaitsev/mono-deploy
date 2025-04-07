@@ -23,11 +23,11 @@
   }
 
   @media (max-width: 768px) {
-    padding-top: 21.1rem;
+    padding-top: 21.2rem;
     height: auto;
     justify-content: flex-end;
     background-size: auto 65%;
-    background-position: top 2px center;
+    background-position: top center;
     margin: 0 auto 84px auto;
   }
 
@@ -144,7 +144,9 @@
 }
 
 .welcomeText button {
+  width: 290px !important;
+
   @media (max-width: 768px) {
-    width: 255px !important;
+    width: 263px !important;
   }
 }

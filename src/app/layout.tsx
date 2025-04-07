@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 
-const url = "slotlaircasino-online.com";
-const ogTitle =
-  "Slot Lair Casino UK: Comprehensive Analysis of All Pros and Cons";
-const ogSiteName = "Slot Lair Casino";
+const url = "spinzcasino-online.com";
+const ogTitle = "Spinz Casino New Zealand—Top Games, Bonuses and Fast Payouts";
+const ogSiteName = "Spinz Casino";
 const metaDescription =
-  "Slot Lair Casino offers UK players a vast selection of over 5,000 games, including slots and live dealer options. Learn review delves into the casino's offerings, security measures, and overall player experience.";
+  "Spinz Casino New Zealand offers 4,400+ games, fast withdrawals, and local payment methods. Join now to claim your welcome bonus and enjoy smooth gaming on any device.";
 
-const locale = "en-GB";
+const locale = "en-NZ";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
