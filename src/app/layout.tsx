@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "felixspin-online.com";
+const url = "gj-casino-online.com";
 const ogTitle =
-  "Felixspin Casino Deutschland: Alles über Spiele, Zahlungen, und mehr";
-const ogSiteName = "FelixSpin Casino";
+  "GJ Casino Review for Canada: Helpful Review and Tips for Games";
+const ogSiteName = "GJ Casino";
 const metaDescription =
-  "Felixspin Casino Deutschland bietet Ihnen über 6.000 Spiele, darunter Spielautomaten, Jackpots und Live-Dealer, die alle von führenden Softwareanbietern bereitgestellt werden. Melden Sie sich jetzt an, um Ihren Willkommensbonus zu erhalten und einen 24/7-Support zu genießen.";
+  "GJ Casino offers over 2,800 gaming options for Canadian players, including slots, table games and live dealer games. Sign up now and get a bonus on your first four deposits.";
 
-const locale = "de-DE";
-const language = "German";
+const locale = "en-CA";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

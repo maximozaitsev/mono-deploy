@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Montserrat", sans-serif;
+$font-secondary: "Barlow", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -20,4 +20,11 @@ $font-secondary: "Montserrat", sans-serif;
   src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./Heading/static/Barlow-700.woff2") format("woff2");
 }

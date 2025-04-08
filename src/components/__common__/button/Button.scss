@@ -22,21 +22,17 @@
     font-size: 28px;
     border: none;
     height: 82px;
-    padding: 24px 48px;
-    min-width: 280px;
-    // width: 340px;
+    width: 340px;
 
     @media (max-width: 768px) {
       border-radius: $button-large-border-radius-mobile;
       font-size: 24px;
       height: 77px;
-      min-width: 240px;
-      // width: 280px;
+      width: 280px;
     }
 
     @media (max-width: 420px) {
       width: 260px;
-      padding: auto;
     }
 
     @media (max-width: 380px) {
