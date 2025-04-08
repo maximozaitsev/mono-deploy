@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Outfit", sans-serif;
+$font-secondary: "Montserrat", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -20,11 +20,4 @@ $font-secondary: "Outfit", sans-serif;
   src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Outfit";
-  font-weight: 900;
-  font-style: normal;
-  src: url("./Heading/static/Outfit-900.woff2") format("woff2");
 }

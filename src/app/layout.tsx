@@ -1,13 +1,14 @@
 import { Metadata } from "next";
 
-const url = "spinzcasino-online.com";
-const ogTitle = "Spinz Casino New Zealand—Top Games, Bonuses and Fast Payouts";
-const ogSiteName = "Spinz Casino";
+const url = "felixspin-online.com";
+const ogTitle =
+  "Felixspin Casino Deutschland: Alles über Spiele, Zahlungen, und mehr";
+const ogSiteName = "FelixSpin Casino";
 const metaDescription =
-  "Spinz Casino New Zealand offers 4,400+ games, fast withdrawals, and local payment methods. Join now to claim your welcome bonus and enjoy smooth gaming on any device.";
+  "Felixspin Casino Deutschland bietet Ihnen über 6.000 Spiele, darunter Spielautomaten, Jackpots und Live-Dealer, die alle von führenden Softwareanbietern bereitgestellt werden. Melden Sie sich jetzt an, um Ihren Willkommensbonus zu erhalten und einen 24/7-Support zu genießen.";
 
-const locale = "en-NZ";
-const language = "English";
+const locale = "de-DE";
+const language = "German";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

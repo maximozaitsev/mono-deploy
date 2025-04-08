@@ -12,7 +12,7 @@ export default function AboutSection() {
   const [aboutSections, setAboutSections] = useState<any>({});
   const [depositSection, setDepositSection] = useState<any>(null);
   const [withdrawalSection, setWithdrawalSection] = useState<any>(null);
-  const projectName = "Spinz Casino";
+  const projectName = "FelixSpin Casino";
 
   useEffect(() => {
     if (content) {

@@ -27,7 +27,7 @@
     height: auto;
     justify-content: flex-end;
     background-size: auto 65%;
-    background-position: top center;
+    background-position: top 2px center;
     margin: 0 auto 84px auto;
   }
 
@@ -140,13 +140,5 @@
 
   @media (max-width: 380px) {
     font-size: 20px;
-  }
-}
-
-.welcomeText button {
-  width: 290px !important;
-
-  @media (max-width: 768px) {
-    width: 263px !important;
   }
 }

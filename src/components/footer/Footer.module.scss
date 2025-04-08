@@ -27,13 +27,13 @@
           position: absolute;
           left: 160px;
 
-          // svg {
-          // margin-top: -8px;
+          svg {
+            margin-top: -13px;
 
-          // @media (max-width: 768px) {
-          //   margin-top: 0px;
-          // }
-          // }
+            @media (max-width: 768px) {
+              margin-top: 0px;
+            }
+          }
 
           @media (max-width: 1420px) {
             position: static;
@@ -73,7 +73,7 @@
   }
 
   .copyright {
-    color: #00000057;
+    color: rgba(255, 255, 255, 0.34);
     font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
