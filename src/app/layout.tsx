@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "gj-casino-online.com";
+const url = "onecasino-online.com";
 const ogTitle =
-  "GJ Casino Review for Canada: Helpful Review and Tips for Games";
-const ogSiteName = "GJ Casino";
+  "One Casino España: juego en línea seguro con bonificaciones únicas";
+const ogSiteName = "One Casino";
 const metaDescription =
-  "GJ Casino offers over 2,800 gaming options for Canadian players, including slots, table games and live dealer games. Sign up now and get a bonus on your first four deposits.";
+  "One Casino España ofrece una bonificación sin depósito de 10 € y juegos exclusivos para jugadores españoles. Únase hoy mismo para explorar más de 200 títulos, disfrutar de pagos rápidos y reclamar recompensas semanales en efectivo.";
 
-const locale = "en-CA";
-const language = "English";
+const locale = "es-ES";
+const language = "Spanish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

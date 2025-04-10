@@ -1,10 +1,10 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Barlow", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
 
 @font-face {
   font-family: "Roboto";
-  src: url("./Roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400;
+  src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -23,8 +23,8 @@ $font-secondary: "Barlow", sans-serif;
 }
 
 @font-face {
-  font-family: "Barlow";
+  font-family: "Open Sans";
   font-weight: 700;
   font-style: normal;
-  src: url("./Heading/static/Barlow-700.woff2") format("woff2");
+  src: url("./Heading/static/Open Sans-700.woff2") format("woff2");
 }

@@ -4,23 +4,23 @@ import React, { useState, useEffect } from "react";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "GJ Casino";
+const projectName = "One Casino";
 const partnerLogos = [
-  { color: "/footer-assets/masterCard--color.svg" },
-  { color: "/footer-assets/visa--color.svg" },
-  { color: "/footer-assets/neteller--color.svg" },
-  { color: "/footer-assets/skrill--color.svg" },
-  { color: "/footer-assets/bitcoin--color.svg" },
-  { color: "/footer-assets/litecoin--color.svg" },
-  { color: "/footer-assets/ethereum--color.svg" },
-  { color: "/footer-assets/gpwa--color.svg" },
-  { color: "/footer-assets/gambleaware--color.svg" },
-  { color: "/footer-assets/gamcare--color.svg" },
-  { color: "/footer-assets/gambling-therapy--color.svg" },
-  { color: "/footer-assets/gamban--color.svg" },
-  { color: "/footer-assets/betblocker--color.svg" },
-  { color: "/footer-assets/itech_labs--color.svg" },
-  { color: "/footer-assets/ecogra--color.svg" },
+  { color: "/footer-assets/master-card.svg" },
+  { color: "/footer-assets/visa.svg" },
+  { color: "/footer-assets/neteller.svg" },
+  { color: "/footer-assets/skrill.svg" },
+  { color: "/footer-assets/btc.svg" },
+  { color: "/footer-assets/ltc.svg" },
+  { color: "/footer-assets/eth.svg" },
+  { color: "/footer-assets/gpwa.svg" },
+  { color: "/footer-assets/gambleaware.svg" },
+  { color: "/footer-assets/gamcare.svg" },
+  { color: "/footer-assets/gambling-therapy.svg" },
+  { color: "/footer-assets/gamban.svg" },
+  { color: "/footer-assets/betblocker.svg" },
+  { color: "/footer-assets/itech-labs.svg" },
+  { color: "/footer-assets/ecogra.svg" },
 ];
 
 const Footer = () => {
