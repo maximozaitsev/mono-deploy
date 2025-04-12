@@ -1,10 +1,28 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Open Sans", sans-serif;
+$font-secondary: "Fira Sans", sans-serif;
 
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -27,4 +45,11 @@ $font-secondary: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
   src: url("./Heading/static/Open Sans-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 900;
+  font-style: italic;
+  src: url("./Heading/static/FiraSans-BlackItalic.ttf") format("woff2");
 }

@@ -10,6 +10,7 @@
   top: 0;
   z-index: 1000;
   height: 96px;
+  border-bottom: 4px solid #ffd400;
 
   svg {
     margin-top: 4px;
@@ -58,17 +59,20 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
 
     &.logIn {
       background: $color-button-small;
       width: $header-button-small-width;
       color: $text-color-button-small;
+      box-shadow: 0px -4px 0px 0px #0000004d inset;
     }
 
     &.signUp {
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
+      box-shadow: 0px -4px 0px 0px #0000004d inset;
     }
 
     &:hover {

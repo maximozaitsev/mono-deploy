@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "onecasino-online.com";
+const url = "allyspin-online.com";
 const ogTitle =
-  "One Casino España: juego en línea seguro con bonificaciones únicas";
-const ogSiteName = "One Casino";
+  "AllySpin Casino Bewertung für Deutschen Spielern: Umfassende Analyse";
+const ogSiteName = "Allyspin Casino";
 const metaDescription =
-  "One Casino España ofrece una bonificación sin depósito de 10 € y juegos exclusivos para jugadores españoles. Únase hoy mismo para explorar más de 200 títulos, disfrutar de pagos rápidos y reclamar recompensas semanales en efectivo.";
+  "Das AllySpin Casino bietet deutschen Spielern eine große Auswahl an Spielen, darunter Spielautomaten und Live-Dealer-Optionen. In dieser Bewertung werden die Angebote des Casinos, die Sicherheitsmaßnahmen und das allgemeine Spielerlebnis untersucht.";
 
-const locale = "es-ES";
-const language = "Spanish";
+const locale = "de-CH";
+const language = "German";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

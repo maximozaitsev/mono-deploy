@@ -7,6 +7,7 @@
   display: flex;
   padding: 24px 0;
   text-align: center;
+  border-top: 4px solid #ffd400;
 
   :global(.container) {
     width: 100%;
@@ -28,11 +29,11 @@
           left: 160px;
 
           // svg {
-            // margin-top: -8px;
+          // margin-top: -8px;
 
-            // @media (max-width: 768px) {
-            //   margin-top: 0px;
-            // }
+          // @media (max-width: 768px) {
+          //   margin-top: 0px;
+          // }
           // }
 
           @media (max-width: 1420px) {

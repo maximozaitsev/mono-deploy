@@ -31,11 +31,12 @@
     align-items: center;
     height: auto;
     padding: 1rem;
-    border-radius: $border-radius;
+    border-radius: 8px;
     background-color: $color-background-providers-blocks;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     height: 88px;
+    border: 2px solid #ffd400;
 
     @media (max-width: 760px) {
       display: flex;
