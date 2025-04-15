@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Fira Sans", sans-serif;
+$font-secondary: "Futura PT", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -41,15 +41,8 @@ $font-secondary: "Fira Sans", sans-serif;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  font-weight: 700;
+  font-family: "Futura PT";
+  font-weight: 800;
   font-style: normal;
-  src: url("./Heading/static/Open Sans-700.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Fira Sans";
-  font-weight: 900;
-  font-style: italic;
-  src: url("./Heading/static/FiraSans-BlackItalic.ttf") format("woff2");
+  src: url("./Heading/static/Futura PT-800.woff2") format("woff2");
 }

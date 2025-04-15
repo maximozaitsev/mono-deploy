@@ -6,8 +6,6 @@
   background: $color-background-secondary;
   padding: 64px 0;
   margin-bottom: 140px;
-  border-top: 4px solid #ffd400;
-  border-bottom: 4px solid #ffd400;
 
   .mobile-content {
     display: flex;
@@ -123,7 +121,7 @@
     @media (min-width: 1281px) {
       .app-image {
         margin-top: 10px;
-        margin-left: -110px;
+        margin-left: -20px;
       }
     }
 

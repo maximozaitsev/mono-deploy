@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "allyspin-online.com";
+const url = "elements-casino.ca";
 const ogTitle =
-  "AllySpin Casino Bewertung für Deutschen Spielern: Umfassende Analyse";
-const ogSiteName = "Allyspin Casino";
+  "Elements Casino Canada – Gaming, Dining & Rewards Across Ontario";
+const ogSiteName = "Elements Casino";
 const metaDescription =
-  "Das AllySpin Casino bietet deutschen Spielern eine große Auswahl an Spielen, darunter Spielautomaten und Live-Dealer-Optionen. In dieser Bewertung werden die Angebote des Casinos, die Sicherheitsmaßnahmen und das allgemeine Spielerlebnis untersucht.";
+  "Elements Casino in Canada delivers an all-in-one gaming experience with a wide selection of slots, live table games, and exclusive promotions. Located across Ontario, each venue offers dining, entertainment, and the Great Canadian Rewards program. Visit today and enjoy real excitement!";
 
-const locale = "de-CH";
-const language = "German";
+const locale = "en-CA";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

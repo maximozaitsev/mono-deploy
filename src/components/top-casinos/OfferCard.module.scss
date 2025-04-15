@@ -10,7 +10,7 @@
   align-items: center;
   gap: 16px;
 
-  outline: 2px solid #ffd400;
+  outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
   background: $color-background-third;
 
@@ -19,7 +19,7 @@
   }
 
   h3 {
-    color: $text-color-secondary;
+    color: $text-color-primary;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
@@ -43,7 +43,7 @@
   }
 
   p {
-    color: $text-color-secondary;
+    color: $text-color-primary;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
