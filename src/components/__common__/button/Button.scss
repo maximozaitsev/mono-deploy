@@ -17,33 +17,38 @@
     // outline-color: #f9f8f83b;
 
     border-radius: $button-large-border-radius;
+    // padding: 24px 48px;
     background: $color-button-large;
     color: $text-color-button-large;
-    font-size: 28px;
+    font-size: 32px;
     border: none;
+    min-width: 280px;
     height: 82px;
     width: 340px;
+    box-shadow: 4px 4px 8px 0px #00111a26;
 
     @media (max-width: 768px) {
       border-radius: $button-large-border-radius-mobile;
-      font-size: 24px;
+      font-size: 32px;
+      padding: 0;
+      min-width: 240px;
       height: 77px;
-      width: 280px;
+      width: 300px;
     }
 
     @media (max-width: 420px) {
+      font-size: 24px;
+      padding: 10px 14px;
       width: 260px;
     }
 
     @media (max-width: 380px) {
       height: 60px;
-      font-size: 18px;
     }
 
     @media (max-width: 300px) {
       width: auto;
       height: auto;
-      padding: 12px 24px;
     }
   }
 
@@ -53,7 +58,7 @@
     // outline-color: #2e2e2e3b;
 
     border-radius: $button-small-border-radius;
-    padding: 0 32px;
+    padding: 2px 18px;
     background: $color-button-small;
     color: $text-color-button-small;
     font-size: 20px;
@@ -62,13 +67,13 @@
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     @media (max-width: 300px) {
+      padding: 2px 16px;
       width: auto;
       height: auto;
-      padding: 12px 24px;
     }
   }
 

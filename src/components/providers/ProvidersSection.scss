@@ -1,5 +1,4 @@
 @import "../../styles/colors.scss";
-@import "../../styles/variables.scss";
 
 .providers-section {
   .providers-grid {
@@ -31,17 +30,19 @@
     align-items: center;
     height: auto;
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 28px;
     background-color: $color-background-providers-blocks;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     height: 88px;
+    box-shadow: 4px 4px 8px 0px #00111a26;
 
     @media (max-width: 760px) {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 72px !important;
+      border-radius: 24px;
     }
 
     @media (max-width: 576px) {

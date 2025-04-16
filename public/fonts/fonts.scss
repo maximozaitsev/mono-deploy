@@ -1,28 +1,17 @@
-$font-primary: "Roboto", sans-serif;
-$font-secondary: "Futura PT", sans-serif;
+$font-primary: "Helvetica", sans-serif;
+$font-secondary: "Readex Pro", sans-serif;
 
-@font-face {
-  font-family: "Roboto";
-  src: url("./Roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Roboto";
-  src: url("./Roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("./Roboto/Roboto-Black.ttf") format("truetype");
-  font-weight: 900;
+  font-family: "Helvetica";
+  src: url("./Helvetica/Helvetica.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -41,8 +30,8 @@ $font-secondary: "Futura PT", sans-serif;
 }
 
 @font-face {
-  font-family: "Futura PT";
-  font-weight: 800;
+  font-family: "Readex Pro";
+  font-weight: 700;
   font-style: normal;
-  src: url("./Heading/static/Futura PT-800.woff2") format("woff2");
+  src: url("./Heading/static/Readex Pro-700.woff2") format("woff2");
 }

@@ -35,7 +35,6 @@
     box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
     margin-top: -3px;
     margin-left: 6px;
-    padding: 0;
   }
 
   @media (max-width: 1080px) {
@@ -52,7 +51,7 @@
 }
 
 .cell {
-  color: $text-color-primary;
+  color: $text-color-secondary;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
@@ -206,9 +205,6 @@
 
       button {
         width: $bonus-details-button-mobile-width;
-        height: 54px;
-        padding: 0 32px;
-        min-width: 200px;
       }
     }
   }
@@ -327,6 +323,14 @@
     }
   }
 }
+
+
+
+
+
+
+
+
 
 /* Theme Styles Start */
 .accordion-title,

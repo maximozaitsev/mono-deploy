@@ -20,6 +20,8 @@
 
     @media (max-width: 768px) {
       margin-top: 4px;
+      margin-left: -25px;
+      scale: 0.76;
     }
   }
 
@@ -52,12 +54,13 @@
     height: $header-button-height;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 14px;
-    padding: 12px 32px;
+    font-size: 16px;
+    padding: 8px 10px;
     border-radius: $header-button-border-radius;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
 
     &.logIn {
       background: $color-button-small;
@@ -81,8 +84,7 @@
     .headerButton {
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
-      font-size: 10px;
-      padding: 8px 16px;
+      font-size: 14px;
 
       &.logIn {
         width: $header-button-small-width-mobile;

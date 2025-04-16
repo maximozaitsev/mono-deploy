@@ -3,7 +3,7 @@
 @import "../styles/variables";
 
 :root {
-  --color-ico: #{$text-color-primary};
+  --color-ico: #{$text-color-secondary};
   --text-color-fourth: #{$text-color-fourth};
   --color-star-icon: #{$color-star-icon};
   --color-faq-icon: #{$color-faq-icon};
@@ -26,7 +26,6 @@ body {
 
 .container {
   max-width: 1120px;
-  width: 100%;
   margin: 0 auto;
 
   @media (max-width: 1180px) {

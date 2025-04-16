@@ -13,13 +13,14 @@
   outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
   background: $color-background-third;
+  box-shadow: 4px 4px 8px 0px #00111a26;
 
   img {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
   }
 
   h3 {
-    color: $text-color-primary;
+    color: $text-color-secondary;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
@@ -43,7 +44,7 @@
   }
 
   p {
-    color: $text-color-primary;
+    color: $text-color-secondary;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
@@ -58,7 +59,7 @@
 
   button {
     margin-top: auto;
-    // padding: 4px 32px !important;
+    padding: 4px 32px !important;
     margin-left: -20px;
     margin-right: -20px;
     // width: 206px;
@@ -68,6 +69,7 @@
     width: 240px;
     height: 264px;
     padding: 16px;
+    border-radius: 16px;
 
     img {
       width: 160px;
@@ -82,7 +84,7 @@
     }
 
     button {
-      width: 202px;
+      width: 214px;
     }
   }
 

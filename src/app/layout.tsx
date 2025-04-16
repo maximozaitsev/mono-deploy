@@ -1,11 +1,9 @@
 import { Metadata } from "next";
 
-const url = "elements-casino.ca";
-const ogTitle =
-  "Elements Casino Canada – Gaming, Dining & Rewards Across Ontario";
-const ogSiteName = "Elements Casino";
-const metaDescription =
-  "Elements Casino in Canada delivers an all-in-one gaming experience with a wide selection of slots, live table games, and exclusive promotions. Located across Ontario, each venue offers dining, entertainment, and the Great Canadian Rewards program. Visit today and enjoy real excitement!";
+const url = "orozino-casino.com";
+const ogTitle = "Orozino Casino Canada: Best Bonuses & Thrilling Casino Games";
+const ogSiteName = "Orozino Casino";
+const metaDescription = "Orozino Casino Canada offers top-tier slots, live dealer action, and exclusive promotions. Fast and convenient registration. Sign up today for exciting gameplay and big rewards.";
 
 const locale = "en-CA";
 const language = "English";
