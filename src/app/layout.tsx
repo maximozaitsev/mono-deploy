@@ -1,11 +1,12 @@
 import { Metadata } from "next";
 
-const url = "orozino-casino.com";
-const ogTitle = "Orozino Casino Canada: Best Bonuses & Thrilling Casino Games";
+const url = "orozino-online.com";
+const ogTitle = "Orozino Casino in UK: Top Slots, Live Games and Great Bonuses";
 const ogSiteName = "Orozino Casino";
-const metaDescription = "Orozino Casino Canada offers top-tier slots, live dealer action, and exclusive promotions. Fast and convenient registration. Sign up today for exciting gameplay and big rewards.";
+const metaDescription =
+  "Join Orozino Casino UK and explore a wide range of top slot games, live casino tables, and exciting bonuses. Enjoy fast withdrawals, 24/7 support, and mobile compatibility.";
 
-const locale = "en-CA";
+const locale = "en-UK";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
