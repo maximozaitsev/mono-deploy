@@ -124,20 +124,14 @@
         "text": "Disadvantages"
       },
       {
-        "type": "paragraph",
-        "text": "no mobile app;"
-      },
-      {
-        "type": "paragraph",
-        "text": "online chat only for registered users;"
-      },
-      {
-        "type": "paragraph",
-        "text": "geographic restrictions;"
-      },
-      {
-        "type": "paragraph",
-        "text": "poor site navigation."
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "no mobile app;",
+          "online chat only for registered users;",
+          "geographic restrictions;",
+          "poor site navigation."
+        ]
       }
     ]
   },
