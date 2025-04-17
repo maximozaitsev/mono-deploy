@@ -1,76 +1,50 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Orozino Casino";
+const projectName = "Lucky Circus Casino";
 const partnerLogos = [
-  {
-    mono: "/footer-assets/masterCard.svg",
-    color: "/footer-assets/masterCard--color.svg",
-  },
-  { mono: "/footer-assets/visa.svg", color: "/footer-assets/visa--color.svg" },
-  {
-    mono: "/footer-assets/neteller.svg",
-    color: "/footer-assets/neteller--color.svg",
-  },
-  {
-    mono: "/footer-assets/skrill.svg",
-    color: "/footer-assets/skrill--color.svg",
-  },
-  {
-    mono: "/footer-assets/bitcoin.svg",
-    color: "/footer-assets/bitcoin--color.svg",
-  },
-  {
-    mono: "/footer-assets/litecoin.svg",
-    color: "/footer-assets/litecoin--color.svg",
-  },
-  {
-    mono: "/footer-assets/ethereum.svg",
-    color: "/footer-assets/ethereum--color.svg",
-  },
-  { mono: "/footer-assets/gpwa.svg", color: "/footer-assets/gpwa--color.svg" },
-  {
-    mono: "/footer-assets/gambleaware.svg",
-    color: "/footer-assets/gambleaware--color.svg",
-  },
-  {
-    mono: "/footer-assets/gamcare.svg",
-    color: "/footer-assets/gamcare--color.svg",
-  },
-  {
-    mono: "/footer-assets/gambling-therapy.svg",
-    color: "/footer-assets/gambling-therapy--color.svg",
-  },
-  {
-    mono: "/footer-assets/gamban.svg",
-    color: "/footer-assets/gamban--color.svg",
-  },
-  {
-    mono: "/footer-assets/betblocker.svg",
-    color: "/footer-assets/betblocker--color.svg",
-  },
-  {
-    mono: "/footer-assets/itech_labs.svg",
-    color: "/footer-assets/itech_labs--color.svg",
-  },
-  {
-    mono: "/footer-assets/ecogra.svg",
-    color: "/footer-assets/ecogra--color.svg",
-  },
+  { color: "/footer-assets/master-card.svg" },
+  { color: "/footer-assets/visa.svg" },
+  { color: "/footer-assets/neteller.svg" },
+  { color: "/footer-assets/skrill.svg" },
+  { color: "/footer-assets/btc.svg" },
+  { color: "/footer-assets/ltc.svg" },
+  { color: "/footer-assets/eth.svg" },
+  { color: "/footer-assets/gpwa.svg" },
+  { color: "/footer-assets/gambleaware.svg" },
+  { color: "/footer-assets/gamcare.svg" },
+  { color: "/footer-assets/gambling-therapy.svg" },
+  { color: "/footer-assets/gamban.svg" },
+  { color: "/footer-assets/betblocker.svg" },
+  { color: "/footer-assets/itech-labs.svg" },
+  { color: "/footer-assets/ecogra.svg" },
 ];
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [hoveredLogoIndex, setHoveredLogoIndex] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const scrollToWelcomeSection = () => {
     document
       .getElementById("welcome-section")
       ?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
 
   return (
     <footer className={styles.footer}>
@@ -79,19 +53,22 @@ const Footer = () => {
           <div className={styles.row}>
             <div className={styles.logoWrapper}>
               <Logo
-                svgPath="/logo.svg"
+                svgPath={logoPath}
                 gradientIdPrefix="footer"
                 onClick={scrollToWelcomeSection}
                 alt={`${projectName} Logo`}
               />
             </div>
-
             {partnerLogos.slice(0, 7).map((logo, index) => (
               <img
                 key={index}
-                src={hoveredLogoIndex === index ? logo.color : logo.mono}
+                src={logo.color}
                 alt={`Partner ${index + 1}`}
                 className={styles.partnerLogo}
+                style={{
+                  mixBlendMode:
+                    hoveredLogoIndex === index ? "normal" : "luminosity",
+                }}
                 onMouseEnter={() => setHoveredLogoIndex(index)}
                 onMouseLeave={() => setHoveredLogoIndex(null)}
                 loading="lazy"
@@ -99,30 +76,44 @@ const Footer = () => {
             ))}
           </div>
           <div className={styles.row}>
-            {partnerLogos.slice(7, 12).map((logo, index) => (
-              <img
-                key={index + 7}
-                src={hoveredLogoIndex === index + 7 ? logo.color : logo.mono}
-                alt={`Partner ${index + 8}`}
-                className={styles.partnerLogo}
-                onMouseEnter={() => setHoveredLogoIndex(index + 7)}
-                onMouseLeave={() => setHoveredLogoIndex(null)}
-                loading="lazy"
-              />
-            ))}
+            {partnerLogos.slice(7, 12).map((logo, index) => {
+              const logoIndex = index + 7;
+              return (
+                <img
+                  key={logoIndex}
+                  src={logo.color}
+                  alt={`Partner ${logoIndex + 1}`}
+                  className={styles.partnerLogo}
+                  style={{
+                    mixBlendMode:
+                      hoveredLogoIndex === logoIndex ? "normal" : "luminosity",
+                  }}
+                  onMouseEnter={() => setHoveredLogoIndex(logoIndex)}
+                  onMouseLeave={() => setHoveredLogoIndex(null)}
+                  loading="lazy"
+                />
+              );
+            })}
           </div>
           <div className={styles.row}>
-            {partnerLogos.slice(12, 15).map((logo, index) => (
-              <img
-                key={index + 12}
-                src={hoveredLogoIndex === index + 12 ? logo.color : logo.mono}
-                alt={`Partner ${index + 13}`}
-                className={styles.partnerLogo}
-                onMouseEnter={() => setHoveredLogoIndex(index + 12)}
-                onMouseLeave={() => setHoveredLogoIndex(null)}
-                loading="lazy"
-              />
-            ))}
+            {partnerLogos.slice(12, 15).map((logo, index) => {
+              const logoIndex = index + 12;
+              return (
+                <img
+                  key={logoIndex}
+                  src={logo.color}
+                  alt={`Partner ${logoIndex + 1}`}
+                  className={styles.partnerLogo}
+                  style={{
+                    mixBlendMode:
+                      hoveredLogoIndex === logoIndex ? "normal" : "luminosity",
+                  }}
+                  onMouseEnter={() => setHoveredLogoIndex(logoIndex)}
+                  onMouseLeave={() => setHoveredLogoIndex(null)}
+                  loading="lazy"
+                />
+              );
+            })}
           </div>
         </div>
         <p className={styles.copyright}>

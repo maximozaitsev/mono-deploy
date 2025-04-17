@@ -1,6 +1,6 @@
 "use client";
 
-import licenceImage from "../../../public/block-images/license.webp";
+// import licenceImage from "../../../public/block-images/license.webp";
 import styles from "./LicensesSection.module.scss";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
@@ -34,7 +34,7 @@ export default function LicensesSection() {
                 <BlockRenderer key={index} block={block} />
               ))}
             </div>
-            {/* {licenses.showImage && (
+            {/* {{licenses.showImage && (
               <div className={styles.rightImage}>
                 <img
                   src={licenceImage.src}
@@ -44,7 +44,7 @@ export default function LicensesSection() {
                   loading="lazy"
                 />
               </div>
-            )} */}
+            )}} */}
           </div>
         )}
 

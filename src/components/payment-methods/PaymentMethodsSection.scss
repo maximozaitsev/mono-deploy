@@ -53,13 +53,13 @@
           font-weight: $font-weight-regular;
 
           &:first-child {
-            border-top-left-radius: $border-radius;
-            border-bottom-left-radius: $border-radius;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
           }
 
           &:last-child {
-            border-top-right-radius: $border-radius;
-            border-bottom-right-radius: $border-radius;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
           }
         }
       }
@@ -128,7 +128,7 @@
         align-items: center;
         margin-bottom: 8px;
         padding: 8px;
-        border-radius: $border-radius;
+        border-radius: 8px;
 
         img {
           width: 110px;
@@ -175,7 +175,7 @@
           }
 
           strong {
-            background: $text-color-fourth;
+            background: #fff;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -195,6 +195,10 @@
   }
 }
 
-.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+.payment-methods-section
+  .mobile-payment-methods
+  .payment-method-card
+  .payment-method-details
+  p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }

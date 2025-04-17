@@ -1,12 +1,13 @@
 import { Metadata } from "next";
 
-const url = "orozino-online.com";
-const ogTitle = "Orozino Casino in UK: Top Slots, Live Games and Great Bonuses";
-const ogSiteName = "Orozino Casino";
+const url = "luckycircus-online.com";
+const ogTitle =
+  "Lucky Circus Casino Canada – Full Guide to Games, Bonuses & Payments";
+const ogSiteName = "Lucky Circus Casino";
 const metaDescription =
-  "Join Orozino Casino UK and explore a wide range of top slot games, live casino tables, and exciting bonuses. Enjoy fast withdrawals, 24/7 support, and mobile compatibility.";
+  "Lucky Circus Casino Canada brings players a huge welcome bonus of up to €10,000, 450 free spins, and access to over 10,000 games from top providers. Join now to explore secure payments, 24/7 support, and crypto-friendly features!";
 
-const locale = "en-UK";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
