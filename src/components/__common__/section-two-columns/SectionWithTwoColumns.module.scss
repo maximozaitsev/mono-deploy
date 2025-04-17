@@ -2,7 +2,6 @@
 
 .sectionContainer {
   padding: 64px 0;
-  background: $color-background-secondary;
 
   :global(.container) {
     display: flex;
@@ -21,9 +20,19 @@
       gap: 40px;
     }
   }
+
   .paragraphGroup {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
+}
+
+/* Варианты фона */
+.games {
+  background: #402080;
+}
+
+.promotions {
+  background: #240f4d;
 }

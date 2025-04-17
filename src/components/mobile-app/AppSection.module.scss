@@ -2,7 +2,7 @@
 @use "../../styles/lists" as lists;
 
 .appSection {
-  background: $color-background-secondary;
+  background: #402080;
   padding: 64px;
 
   @media (max-width: 768px) {
