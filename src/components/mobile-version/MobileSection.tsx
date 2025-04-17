@@ -12,7 +12,7 @@ import "./MobileSection.scss";
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "Lucky Circus Casino";
+  const projectName = "Bao Casino";
 
   useEffect(() => {
     import("../../content/content.json")

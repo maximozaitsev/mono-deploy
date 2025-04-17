@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "luckycircus-online.com";
+const url = "baocasino-online.com";
 const ogTitle =
-  "Lucky Circus Casino Canada – Full Guide to Games, Bonuses & Payments";
-const ogSiteName = "Lucky Circus Casino";
+  "Bao Casino Canada—Play Over 2,000 Games with Crypto and CAD Support";
+const ogSiteName = "Bao Casino";
 const metaDescription =
-  "Lucky Circus Casino Canada brings players a huge welcome bonus of up to €10,000, 450 free spins, and access to over 10,000 games from top providers. Join now to explore secure payments, 24/7 support, and crypto-friendly features!";
+  "Bao Casino Canada brings players a secure and diverse gaming platform with over 2,000 slots, table games, and live dealer options. Enjoy fast payouts, crypto support, and 24/7 multilingual assistance. Sign up today to unlock tiered welcome bonuses and VIP cashback perks.";
 
 const locale = "en-CA";
 const language = "English";

@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Platypi", sans-serif;
+$font-secondary: "Baloo Chettan", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -23,8 +23,8 @@ $font-secondary: "Platypi", sans-serif;
 }
 
 @font-face {
-  font-family: "Platypi";
-  font-weight: 700;
+  font-family: "Baloo Chettan";
+  font-weight: 400;
   font-style: normal;
-  src: url("./Heading/static/Platypi-700.woff2") format("woff2");
+  src: url("./Heading/static/Baloo Chettan-400.woff2") format("woff2");
 }

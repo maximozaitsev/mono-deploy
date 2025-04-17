@@ -10,6 +10,7 @@
   font-weight: $font-weight-black;
   line-height: normal;
   text-transform: uppercase;
+  box-shadow: 0px -6px 0px 0px #00040d4d inset;
 
   &.primary {
     // outline: 4px solid;
@@ -22,16 +23,13 @@
     font-size: 28px;
     border: none;
     height: 82px;
-    padding: 10px 48px;
-    min-width: 280px;
-    // width: 340px;
+    width: 340px;
 
     @media (max-width: 768px) {
       border-radius: $button-large-border-radius-mobile;
       font-size: 24px;
       height: 77px;
-      // width: 280px;
-      min-width: 240px;
+      width: 280px;
     }
 
     @media (max-width: 420px) {
@@ -61,7 +59,7 @@
     color: $text-color-button-small;
     font-size: 20px;
     border: none;
-    height: 56px;
+    height: 52px;
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;

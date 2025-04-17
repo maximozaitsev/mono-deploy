@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: $text-color-primary;
+        color: #130a26;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
@@ -53,13 +53,13 @@
           font-weight: $font-weight-regular;
 
           &:first-child {
-            border-top-left-radius: 8px;
-            border-bottom-left-radius: 8px;
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
           }
 
           &:last-child {
-            border-top-right-radius: 8px;
-            border-bottom-right-radius: 8px;
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
           }
         }
       }
@@ -128,7 +128,7 @@
         align-items: center;
         margin-bottom: 8px;
         padding: 8px;
-        border-radius: 8px;
+        border-radius: $border-radius;
 
         img {
           width: 110px;
@@ -175,7 +175,7 @@
           }
 
           strong {
-            background: #fff;
+            background: $text-color-fourth;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
