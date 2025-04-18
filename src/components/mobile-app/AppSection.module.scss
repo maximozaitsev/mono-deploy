@@ -2,7 +2,7 @@
 @use "../../styles/lists" as lists;
 
 .appSection {
-  background: #402080;
+  background: $color-background-secondary;
   padding: 64px;
 
   @media (max-width: 768px) {
@@ -60,9 +60,9 @@
 
     .image {
       position: absolute;
-      top: -90px;
+      top: -156px;
       right: -13px;
-      scale: 0.8;
+      scale: 0.6;
       overflow: hidden;
       height: auto;
     }

@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "baocasino-online.com";
+const url = "chances-casino.ca";
 const ogTitle =
-  "Bao Casino Canada—Play Over 2,000 Games with Crypto and CAD Support";
-const ogSiteName = "Bao Casino";
+  "Chances Casino Canada – Slot Machines, Poker & Live Games in Kelowna";
+const ogSiteName = "Chances Casino";
 const metaDescription =
-  "Bao Casino Canada brings players a secure and diverse gaming platform with over 2,000 slots, table games, and live dealer options. Enjoy fast payouts, crypto support, and 24/7 multilingual assistance. Sign up today to unlock tiered welcome bonuses and VIP cashback perks.";
+  "Chances Casino Canada in Kelowna delivers 400+ slots, poker, and table games in a secure, BCLC-regulated setting. Join now to enjoy in-person gaming, dining, and exclusive local promotions!";
 
 const locale = "en-CA";
 const language = "English";

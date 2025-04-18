@@ -6,12 +6,10 @@ import styles from "./SectionWithTwoColumns.module.scss";
 
 interface SectionWithTwoColumnsProps {
   jsonKey: string;
-  variant?: "games" | "promotions";
 }
 
 export default function SectionWithTwoColumns({
   jsonKey,
-  variant = "games",
 }: SectionWithTwoColumnsProps) {
   const [sectionTitle, setSectionTitle] = useState<string>("");
   const [introContent, setIntroContent] = useState<string[][]>([]);
@@ -21,7 +19,7 @@ export default function SectionWithTwoColumns({
   useEffect(() => {
     import("../../../content/content.json")
       .then((data) => {
-        const sectionData = (data as any)[jsonKey];
+        const sectionData = data[jsonKey];
         if (!sectionData) {
           console.error(`Ошибка: ключ "${jsonKey}" отсутствует в JSON`);
           return;
@@ -82,21 +80,22 @@ export default function SectionWithTwoColumns({
   }
 
   return (
-    <section className={`${styles.sectionContainer} ${styles[variant]}`}>
+    <section className={`${styles.sectionContainer} section`}>
       <div className="container">
         <h2 className="h2-heading white">{sectionTitle || "Section"}</h2>
 
-        {introContent.map((group, index) => (
-          <div key={index} className={styles.paragraphGroup}>
-            {group.map((text, i) => (
-              <p
-                key={i}
-                className="paragraph-text"
-                dangerouslySetInnerHTML={{ __html: text }}
-              />
-            ))}
-          </div>
-        ))}
+        {introContent.length > 0 &&
+          introContent.map((group, index) => (
+            <div key={index} className={styles.paragraphGroup}>
+              {group.map((text, i) => (
+                <p
+                  key={i}
+                  className="paragraph-text"
+                  dangerouslySetInnerHTML={{ __html: text }}
+                />
+              ))}
+            </div>
+          ))}
 
         <TwoColumns
           leftColumnContent={leftColumnContent.map((section) => ({

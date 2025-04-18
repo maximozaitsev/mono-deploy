@@ -2,7 +2,7 @@
 @use "../../styles/lists" as lists;
 
 .about-section {
-  background: #402080;
+  background: $color-background-secondary;
 
   .container {
     display: flex;
