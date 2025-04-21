@@ -154,7 +154,7 @@
       }
 
       .payment-method-details {
-        background: $color-background-third;
+        // background: $color-background-third;
         display: flex;
         flex-direction: column;
         padding: 8px 16px;
@@ -162,7 +162,7 @@
         border-radius: $border-radius;
 
         p {
-          color: $text-color-primary;
+          color: $text-color-button-small;
           display: flex;
           justify-content: space-between;
           font-size: 18px;
@@ -175,7 +175,7 @@
           }
 
           strong {
-            background: $text-color-fourth;
+            background: $text-color-button-small;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
