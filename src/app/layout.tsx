@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "spinaway-casino-online.com";
-const ogTitle = "Spin Away Casino in Canada: An Online Casino 2025 Review";
-const ogSiteName = "Spin Away Casino";
+const url = "slotbox-online.com";
+const ogTitle =
+  "SlotBox Casino Canada—Play Slots, Live Games & Claim Weekly Rewards";
+const ogSiteName = "Slotbox Casino";
 const metaDescription =
-  "Spin Away Casino offers a 1500 CAD welcome bonus for Canadian online gamblers. Explore Spin Away’s bonus program, games, tournaments, payout speed, and deposit methods in 2025.";
+  "SlotBox Casino Canada brings you 3,000+ real money slots, fast crypto withdrawals, and a 100% bonus up to 1600 CAD with 100 free spins. Join today to claim your welcome package and weekly cashback.";
 
 const locale = "en-CA";
 const language = "English";

@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Ubuntu", sans-serif;
+$font-secondary: "Roboto", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -23,8 +23,8 @@ $font-secondary: "Ubuntu", sans-serif;
 }
 
 @font-face {
-  font-family: "Ubuntu";
-  font-weight: 700;
+  font-family: "Roboto";
+  font-weight: 900;
   font-style: normal;
-  src: url("./Heading/static/Ubuntu-700.woff2") format("woff2");
+  src: url("./Heading/static/Roboto-900.woff2") format("woff2");
 }

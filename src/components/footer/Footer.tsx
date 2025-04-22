@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Spin Away Casino";
+const projectName = "Slotbox Casino";
 const partnerLogos = [
   { color: "/footer-assets/master-card.svg" },
   { color: "/footer-assets/visa.svg" },
