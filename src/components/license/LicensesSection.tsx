@@ -34,7 +34,7 @@ export default function LicensesSection() {
                 <BlockRenderer key={index} block={block} />
               ))}
             </div>
-            {licenses.showImage && (
+            {/* {licenses.showImage && (
               <div className={styles.rightImage}>
                 <img
                   src={licenceImage.src}
@@ -44,7 +44,7 @@ export default function LicensesSection() {
                   loading="lazy"
                 />
               </div>
-            )}
+            )} */}
           </div>
         )}
 

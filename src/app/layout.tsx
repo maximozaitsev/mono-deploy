@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "chances-casino.ca";
-const ogTitle =
-  "Chances Casino Canada – Slot Machines, Poker & Live Games in Kelowna";
-const ogSiteName = "Chances Casino";
+const url = "spinaway-casino-online.com";
+const ogTitle = "Spin Away Casino in Canada: An Online Casino 2025 Review";
+const ogSiteName = "Spin Away Casino";
 const metaDescription =
-  "Chances Casino Canada in Kelowna delivers 400+ slots, poker, and table games in a secure, BCLC-regulated setting. Join now to enjoy in-person gaming, dining, and exclusive local promotions!";
+  "Spin Away Casino offers a 1500 CAD welcome bonus for Canadian online gamblers. Explore Spin Away’s bonus program, games, tournaments, payout speed, and deposit methods in 2025.";
 
 const locale = "en-CA";
 const language = "English";

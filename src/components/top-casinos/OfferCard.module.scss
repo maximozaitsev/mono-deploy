@@ -19,7 +19,7 @@
   }
 
   h3 {
-    color: $text-color-primary;
+    color: $text-color-secondary;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
@@ -34,7 +34,7 @@
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: #ee5229;
+    color: $color-button-large;
 
     // background: $text-color-fourth;
     // background-clip: text;
@@ -43,7 +43,7 @@
   }
 
   p {
-    color: $text-color-primary;
+    color: $text-color-secondary;
     text-align: center;
     font-family: $font-primary;
     font-size: 20px;
