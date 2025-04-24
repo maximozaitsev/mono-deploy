@@ -6,7 +6,7 @@ const ogSiteName = "Mycasino Casino";
 const metaDescription =
   "Werden Sie Mitglied bei MyCasino Switzerland und genießen Sie ein erstklassiges Online-Gaming-Erlebnis. Spielen Sie mit Schweizer Franken, profitieren Sie von sicheren Transaktionen, erstklassigen, in der Schweiz zugelassenen Slots und Live-Casino-Spielen.";
 
-const locale = "ge-SW";
+const locale = "de-CH";
 const language = "German";
 const ogImage = `https://${url}/og-image.webp`;
 
