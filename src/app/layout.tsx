@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "trybet-casino.com";
-const ogTitle = "TryBet Casino Canada: Top Online Casino for Canadian Players";
-const ogSiteName = "Trybet Casino";
+const url = "mycasino-online.com";
+const ogTitle = "MyCasino in Switzerland: Lizenziertes Schweizer Online Casino";
+const ogSiteName = "Mycasino Casino";
 const metaDescription =
-  "Discover TryBet Casino Canada, a trusted online gaming platform offering top-tier slots, live casino games, and fast payouts. Play securely with generous bonuses tailored for Canadian players.";
+  "Werden Sie Mitglied bei MyCasino Switzerland und genießen Sie ein erstklassiges Online-Gaming-Erlebnis. Spielen Sie mit Schweizer Franken, profitieren Sie von sicheren Transaktionen, erstklassigen, in der Schweiz zugelassenen Slots und Live-Casino-Spielen.";
 
-const locale = "en-CA";
-const language = "English";
+const locale = "ge-SW";
+const language = "German";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
