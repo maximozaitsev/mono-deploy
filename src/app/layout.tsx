@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "slotbox-online.com";
-const ogTitle =
-  "SlotBox Casino Canada—Play Slots, Live Games & Claim Weekly Rewards";
-const ogSiteName = "Slotbox Casino";
+const url = "trybet-casino.com";
+const ogTitle = "TryBet Casino Canada: Top Online Casino for Canadian Players";
+const ogSiteName = "Trybet Casino";
 const metaDescription =
-  "SlotBox Casino Canada brings you 3,000+ real money slots, fast crypto withdrawals, and a 100% bonus up to 1600 CAD with 100 free spins. Join today to claim your welcome package and weekly cashback.";
+  "Discover TryBet Casino Canada, a trusted online gaming platform offering top-tier slots, live casino games, and fast payouts. Play securely with generous bonuses tailored for Canadian players.";
 
 const locale = "en-CA";
 const language = "English";

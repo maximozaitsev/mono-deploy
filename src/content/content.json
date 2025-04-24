@@ -1,66 +1,126 @@
 {
-  "title": "SlotBox Review",
+  "title": "TryBet Casino",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "100% deposit match bonus",
-        "10% of net losses",
-        "25 no deposit free spins"
+        "<strong>sports betting</strong>",
+        "<strong>1000 CAD welcome bonus</strong>",
+        "<strong>mobile friendly</strong>"
       ]
     },
     {
       "type": "paragraph",
-      "text": "Licensed online casino of SlotBox N.V., SlotBox Casino provides a thorough gaming experience emphasizing quality and client satisfaction. The site features table games, live casino games, and slots from top software providers including NetEnt, Evolution, and Pragmatic Play. SlotBox Casino offers desktop and mobile users a clean, user-friendly interface and safe transactions. Licensed by the Curaçao government, the casino guarantees safety. Players receive quick rewards, consistent incentives, and a loyalty program encouraging long-term involvement."
+      "text": "TryBet is a universal and multifunctional gambling platform where you can fully enjoy all modern entertainment online. The unique feature of the service is that it combines an online casino and a full-fledged bookmaker. This means that you can spin the reels of your favorite slots, play instant and crash games, sit down at virtual tables with card games. And if you are more into sports, then go to the sports betting section."
+    },
+    {
+      "type": "paragraph",
+      "text": "The site offers an intuitive menu, an easy-to-use interface, a quick registration procedure, secure payment methods and much more. You can play on computers or mobile devices."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before registering, Canadian players should know that customers from Ontario are not allowed to register on this site. If you are from another province, you can easily create an account."
     }
   ],
   "about": {
-    "SlotBox Casino Registration Process": [
+    "Registration Process": [
       {
         "type": "paragraph",
-        "text": "SlotBox Casino offers a simple registration process for speedy start-up. A brief SlotBox Casino review of the steps:​"
+        "text": "To become a full-fledged client of TryBet Casino, be able to make deposits, play for real money and collect winnings after successful bets, you will need an account. It will take you only a few minutes to create one."
       },
       {
         "type": "list",
-        "style": "ordered",
+        "style": "unordered",
         "items": [
-          "Visit the official SlotBox Casino website.",
-          "Click on the “Sign Up” button.",
-          "Enter your email address.",
-          "Set a secure PIN code.",
-          "Provide your personal details (full name, date of birth, address).",
-          "Agree to the terms and conditions and privacy policy.",
-          "Complete the registration process.",
-          "Verify your account via email or SMS.",
-          "Log in, make a deposit, and start playing."
+          "go to the main page of the official website;",
+          "click on the Registration button in the upper right corner;",
+          "in the new window, select the country (Canada) and currency (CAD);",
+          "enter a valid email address;",
+          "create a username for your account;",
+          "create a secure and complex password;",
+          "confirm that you are 18 years old and agree to the terms and conditions of the casino;",
+          "click on the Create Account button to complete the procedure."
         ]
-      }
-    ],
-    "About SlotBox Casino Login": [
+      },
       {
         "type": "paragraph",
-        "text": "SlotBox Casino login is easy. Go to the official site and press the \"Log In\" button to complete SlotBox login. Type in your registered email address and the secure PIN code you created at sign-up. Once verified, you will be able to access your account dashboard, where you may control your profile, deposit or withdraw funds, and browse the large game catalog. Should you forget your PIN, the system offers a password recovery tool to enable you to access your account once more."
+        "text": "After that, a letter with a link will be sent to the specified email address."
+      }
+    ],
+    "Login": [
+      {
+        "type": "paragraph",
+        "text": "Authorization on the site requires even less time and effort. To do this, you only need to go to the main page and fill in 2 fields - username and password. If necessary, click on the \"Forgot your password?\" button if you cannot log in to your account. You will be sent step-by-step instructions for restoring access."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Verification"
+      },
+      {
+        "type": "paragraph",
+        "text": "One of the mandatory requirements for new online casino clients is to go through the identity verification procedure. To successfully complete verification, you will need to register, log in to your account, fill out a page with personal data, and also send a scanned copy of your documents."
+      },
+      {
+        "type": "paragraph",
+        "text": "You will find the required list of documents and the rules for providing copies in the corresponding section in your personal account. These requirements are relevant for all clients who want to withdraw winnings. The casino strictly adheres to the KYC principles."
       }
     ],
     "Deposit Methods": [
       {
         "type": "paragraph",
-        "text": "To fit players' choices, SlotBox Casino Canada provides several deposit choices. Accepted ways are Visa, Mastercard, bank transfers, Paysafecard, ecoPayz, Bitcoin, Ethereum, Litecoin, Ripple, Interac, Brite, CashtoCode, and Sofort. With a CAD 32 minimum deposit need, all deposits are handled immediately. Your location will determine whether certain payment methods are available.Specific payment methods' availability might change depending on your location."
+        "text": "The casino offers loyal requirements for the minimum deposit, which is from 10 CAD. Canadian gamblers can use various payment systems:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Interac E-Transfer;",
+          "Interac;",
+          "eCahout;",
+          "PIX;",
+          "Neteller;",
+          "Skrill;",
+          "Visa;",
+          "Mastercard;",
+          "AstroPay Wallet;",
+          "AstroPay Card;",
+          "Bank transfer."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Transactions are carried out instantly. There is no need to pay a commission for replenishing the game balance."
       }
     ],
     "Withdrawal Methods": [
       {
         "type": "paragraph",
-        "text": "The SlotBox Casino offers a number of methods for withdrawals including Visa, Mastercard, bank transfers, ecoPayz, Bitcoin, Ethereum, Litecoin, Ripple, Interac, and Flexepin. While card and bank transfer withdrawals could take between 1 to 4 business days, SlotBox withdrawal time using cryptocurrency and ecoPayz are often handled within 24 hours. Withdrawals carry no costs; the minimum withdrawal is 32 CAD. Your area, nevertheless, will determine the availability of some withdrawal techniques."
+        "text": "After successful verification of the account, clients of this online casino get the right to withdraw winnings. To do this, you can use the following payment instruments:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Neteller;",
+          "Skrill;",
+          "PIX;",
+          "AstroPay Wallet;",
+          "Bank transfer."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The minimum withdrawal amount is 20 CAD for e-wallets and cards, or from 100 CAD for bank transfers. Application processing time from 3 hours to 1-3 banking days."
       }
     ]
   },
   "advantages": {
-    "SlotBox Сasino Advantages": [
+    "Advantages and Disadvantages": [
       {
         "type": "paragraph",
-        "text": "While SlotBox Canada offers a good online gambling experience, it also has several features that might not fit all players. Here is a brief list of its advantages and disadvantages."
+        "text": "To give an objective assessment of an online casino, every client from Canada must be sure to know all the main advantages and disadvantages of the service. This way you can make sure that the presented platform meets your requirements and ideas about the best online casinos."
       },
       {
         "type": "heading",
@@ -71,15 +131,14 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "Wide selection of 3,000+ games",
-          "Top providers like NetEnt and Evolution",
-          "Welcome bonus up to 1600 CAD + 100 free spins",
-          "Weekly cashback and prize pool promos",
-          "Seven-tier VIP program",
-          "Crypto and fiat payment options",
-          "Smooth mobile browser compatibility",
-          "Fast withdrawals with e-wallets and crypto",
-          "Licensed by Curaçao"
+          "a large selection of slots;",
+          "table and card games;",
+          "sports betting section;",
+          "live and virtual betting;",
+          "large welcome bonuses;",
+          "fast registration;",
+          "secure transactions;",
+          "24/7 technical support."
         ]
       },
       {
@@ -91,18 +150,22 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "No dedicated mobile apps",
-          "Live chat not available 24/7",
-          "Game filters could be improved"
+          "no mobile application;",
+          "no games with live dealers;",
+          "does not support cryptocurrency."
         ]
       }
     ]
   },
   "games-to-play": {
-    "Games Available to Play at SlotBox Online Casino": [
+    "Games Available to Play": [
       {
         "type": "paragraph",
-        "text": "SlotBox Casino has a wonderful spectrum of games with over 3,000 titles spread across all categories. Available on desktop and portable systems are instant-win games, live dealers, table games, and slots. Leading software companies like NetEnt, Pragmatic Play, Play'n GO, and Evolution Gaming provide appealing interaction and superb graphics."
+        "text": "Despite the lack of a live dealer games section, the TryBet service offers many interesting opportunities and game projects. Most of them are available in demo mode. To do this, simply click on the Try It button when selecting a game."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you prefer sports betting and like to follow various sporting events, making a forecast for them, this site will be an excellent choice due to access to numerous lines and high odds."
       },
       {
         "type": "heading",
@@ -111,78 +174,118 @@
       },
       {
         "type": "paragraph",
-        "text": "Slots are the main emphasis of SlotBox Casino since they supply an amazing variety that fits all sorts of players. Among the variety are modern video slots, classic three-reel slots, Megaways games, and jackpots that are progressive. Popular games like \"Book of Dead,\" \"Starburst,\" and \"Mega Moolah\" offer various themes and other features to enhance the gaming experience. Since famous corporations make the slots, fairness and outstanding visuals are assured."
+        "text": "Undoubtedly, the largest group of games is slots. You can easily choose thematic categories, enabling you to select classic slots, bonus buy games, Megaways, new games, the popular games on the site, etc. Additionally, you can search conveniently by provider, too."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Table Games"
+        "text": "Table and Card Games"
       },
       {
         "type": "paragraph",
-        "text": "SlotBox provides a variety of table games including several versions of blackjack, roulette, and baccarat for fans of classic casino favorites. These titles suit both novice and advanced players equally. With seamless play and simple interfaces, the table games are meant to offer a realistic casino experience."
+        "text": "Here's an outstanding assortment of thrilling games. It is a fantastic way to occupy your leisure time while displaying your talents in games like video poker, roulette, baccarat, Sic Bo, blackjack, and more."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Live Casino"
+        "text": "Instant and Crash Games"
       },
       {
         "type": "paragraph",
-        "text": "Powered by top-tier companies like Evolution Gaming, the live casino area at SlotBox provides an immersive experience with actual dealers. Among the more than 160 live dealer games available to players are 90 blackjack tables, different roulette alternatives, and well-known game shows as \"Dream Catcher\" and \"Crazy Time.\" From the convenience of your home, these games are televised in high quality, offering a genuine casino environment."
+        "text": "In the \"Other Games\" section, you can find a large selection of interesting and exciting projects. For example, you should definitely play Aviatrix, test your strength and luck in Keno, and enjoy other original online games. All of them, like slots, are available in demo mode. Therefore, the first few rounds or attempts can be played without risking your own bankroll."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Instant-Win Games"
+        "text": "Sports Betting"
       },
       {
         "type": "paragraph",
-        "text": "For players looking fast and simple play, SlotBox also offers a range of instant-win games. Perfect for casual gaming sessions, titles like \"Plinko\" and \"Big Bass Crash\" provide instant outcomes. Designed for quick-paced action, these games have basic rules and the possibility of immediate rewards."
+        "text": "It is important to understand that about 50% of all attention on the site is paid to sports betting. Therefore, Canadian players can enjoy several types of bets at once:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "pre-match betting;",
+          "live betting;",
+          "virtual sports;",
+          "esports competitions."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Choose the appropriate section to make your own forecast and compete for big prizes thanks to high and fair odds. In the eSports betting section, you can also follow online broadcasts of various competitions absolutely free of charge."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "SlotBox Casino Bonus Offers and Promotions": [
+    "Bonuses and Promotions": [
       {
         "type": "paragraph",
-        "text": "SlotBox Casino offers varied promos to enhance the gaming experience for new and existing players. Welcome incentives, cashback, and SlotBox no deposit bonus codes are included. Current promos are listed below:​"
+        "text": "Compared to some of its competitors, TryBet does not have the most diverse bonus program. However, here you are guaranteed to receive generous welcome bonuses and take part in some seasonal and special promotions. Keep an eye on the updates in the Promotions section so as not to miss anything interesting."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "SlotBox Casino Velkomstbonus"
+        "text": "Casino Welcome Bonuses"
       },
       {
         "type": "paragraph",
-        "text": "A three-part welcome package at SlotBox Casino gives new players great value straight away. The deal offers a 100% deposit match bonus up to 1600 CAD. Select slot titles provide 100 SlotBox free spins. Since the bonus applies to the first three deposits following registration, new customers have many chances to benefit. This SlotBox discount code is non-sticky, so real-money profits can be withdrawn before wagering bonus dollars. It's easy and generous to start with extra money and spins for popular games."
+        "text": "All newly registered players who prefer casino games can receive a triple welcome bonus:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "100% on the first deposit up to 500 CAD and 40 free spins;",
+          "100% bonus on the second deposit up to 300 CAD and an additional 20 free spins;",
+          "100% bonus on the third deposit up to 200 CAD and another 10 free spins."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "You can use all free spins in the Aviatrix game. To activate this triple offer, the amount of each deposit must be at least 10 CAD."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "No Deposit Free Spins and SlotBox Promo Code"
+        "text": "Welcome Sports Bonuses"
       },
       {
         "type": "paragraph",
-        "text": "New users receive 25 SlotBox Casino no deposit bonus free spins as an incentive. This bonus lets gamers explore the platform and play actual slot games without depositing. These spins usually go to one or two popular games, giving new players a taste of the casino. Free spins gains are subject to wagering limitations, but beginners appreciate the zero-risk start without any SlotBox bonus code."
+        "text": "If you prefer sports and like to bet on various sporting events, then choose the appropriate welcome bonus. Here you will also find a triple reward:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "100% bonus for the first deposit up to 500 CAD;",
+          "100% bonus for the second deposit up to 300 CAD;",
+          "100% bonus for the third deposit up to 200 CAD."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "You can use all the received cash rewards for free bets on your favorite sports. Activating the offer is quite simple. To do this, when making a deposit, select the sports bonus and deposit at least 10 CAD to your balance."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Weekly Cashback and Bonus Code SlotBox"
+        "text": "Boring Wins"
       },
       {
         "type": "paragraph",
-        "text": "SlotBox Casino offers weekly payback of 10% of net losses to returning players. Real money play losses from the previous week determine this cashback, which is credited every Monday. The SlotBox Casino no deposit bonus code is automatic, so users don't have to opt in. Players can immediately play or withdraw the restored cash, which generally has no wagering requirements. This SlotBox no deposit bonus code protects typical players who want a bit extra recuperation if the odds aren't in their favor."
+        "text": "If you play on this gambling platform, then a draw in a match does not mean boredom and losses. You can receive additional rewards. If your bet does not win, and the match ends 0:0, all lost bets that meet the criteria of the promotion will be returned to the player in the form of a free bet."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "€1 Million Monthly Prize Pools and SlotBox Casino promo code"
+        "text": "Express Bet Bonuses"
       },
       {
         "type": "paragraph",
-        "text": "Competitive players can win €1 million (1,6 mln CAD) in monthly prize pool events at SlotBox Casino. Prize pools are related to slot tournaments or promotional SlotBox no deposit code offers from associated providers. Players earn points by betting real money on selected games. Top positions earn cash or bonuses based on scoring systems like highest victories or longest win streaks. These campaigns and SlotBox no deposit bonus stimulate continued play and add a competitive, exciting element to gaming, offering real-money incentives to loyal players."
+        "text": "If you are ready to create a coupon for 3 or more predictions for various sporting events, you can get an impressive additional prize. The more games in one coupon, the higher the bonus percentage. For example, for 3 predictions in a coupon you will receive a 3% bonus. For 10 events - 30%, and for 21 events or more - 100% bonus from the net winnings."
       }
     ]
   },
@@ -190,83 +293,82 @@
     "Support": [
       {
         "type": "paragraph",
-        "text": "SlotBox Casino provides service to customers via email and live chat. The support staff is on hand to help with questions and problems concerning the platform. For quick help, players may use the live chat function straight on the website."
+        "text": "The site provides 2 main channels of communication with technical support representatives:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "online chat;",
+          "email."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Surprisingly, there is no FAQ section on the casino and bookmaker website. But you can use the useful self-exclusion function to combat gambling addiction."
       }
     ]
   },
   "faq": {
-    "CASINO FAQ": [
+    "FAQ": [
       {
         "type": "heading",
         "level": 3,
-        "text": "What is the minimum deposit at SlotBox Casino?"
+        "text": "From what age can I play in this online casino?"
       },
       {
         "type": "paragraph",
-        "text": "The minimum deposit amount is 16 CAD or equivalent in other currencies."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "What is the minimum withdrawal amount?"
-      },
-      {
-        "type": "paragraph",
-        "text": "The minimum withdrawal amount is 32 CAD or equivalent in other currencies."
+        "text": "According to the rules of the casino, the player must be at least 18 years old."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "What are the maximum withdrawal limits when using SlotBox promo codes?"
+        "text": "How to get a welcome casino bonus?"
       },
       {
         "type": "paragraph",
-        "text": "Players can withdraw up to €4,000 (6360 CAD) per day, €16,000 (25500 CAD) per week, and €50,000 (79500 CAD) per month when using SlotBox promo codes no deposit."
+        "text": "Register, deposit 10 CAD and select a casino bonus."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "How long are SlotBox no deposit bonuses valid?"
+        "text": "How to get a welcome sports bonus?"
       },
       {
         "type": "paragraph",
-        "text": "SlotBox bonus code no deposit must be wagered within seven days of being claimed."
-      },
-      {
-        "type": "paragraph",
-        "text": "##"
+        "text": "After registration and when depositing 10 CAD or more, select a sports bonus from the options presented."
       }
     ]
   },
   "sections": {
-    "SlotBox Mobil Software Technologies": [
+    "Software Technologies": [
       {
         "type": "paragraph",
-        "text": "SlotBox Casino partners with top software suppliers to give a diverse and high-quality gaming experience. NetEnt, Pragmatic Play, Play'n GO, Evolution Gaming, and Red Tiger are partners. These partnerships guarantee a wide range of games with high-quality visuals and cross-platform play.​"
+        "text": "The Canadian online casino cooperates with leading providers of gaming software. This allows you to play your favorite gaming projects from such studios as NetEnt, Microgaming, PlayNGo, Red Tiger, 7777 Gaming, BoldPlay and many others."
       }
     ],
-    "Is SlotBox Legit and Secure?": [
+    "Security": [
       {
         "type": "paragraph",
-        "text": "SlotBox Casino is licensed by Curaçao eGaming for regulatory compliance. SSL protects user data and financial transactions on the platform. It also supports responsible gaming by offering deposit limitations and self-exclusion.​"
+        "text": "The gambling platform and bookmaker uses a comprehensive system to ensure protection and security. It includes solutions such as SSL encryption, KYC, fraud protection, cybersecurity systems, strict privacy policy, self-exclusion functions, etc."
       }
     ],
-    "SlotBox App Download": [
+    "App": [
       {
         "type": "paragraph",
-        "text": "Mobile apps for iOS and Android are not available from SlotBox Casino. The website is entirely optimized for mobile browsers, making it responsive and user-friendly on smartphones and tablets. Mobile users get access to all desktop games and features.​"
+        "text": "Currently, the casino and bookmaker does not offer the ability to install a mobile application. But the official website is mobile friendly due to the adapted design and HTML5 format."
       }
     ],
     "Languages": [
       {
         "type": "paragraph",
-        "text": "SlotBox Casino supports many languages for foreign customers. Languages include English, German, Finnish, and Norwegian. Players from different regions may easily navigate and enjoy the platform with multilingual support.​"
+        "text": "The official website is available only with the English interface. There is no language switching function. But since the casino is focused on Canadian players, this cannot be considered a serious drawback."
       }
     ],
     "Currencies": [
       {
         "type": "paragraph",
-        "text": "To fit players all around, the casino takes several different currencies. Included in supported currencies are EUR, USD, CAD, NOK, and cryptocurrencies including Bitcoin, Ethereum, and Litecoin. This variety of choices offers deposit and withdrawal freedom."
+        "text": "Players from Canada can use Canadian dollars (CAD) as a game currency. For players from other countries where this site is officially represented, currencies such as New Zealand dollars, US dollars, euros, etc. are available."
       }
     ]
   }
