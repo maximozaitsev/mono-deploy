@@ -1,13 +1,14 @@
 import { Metadata } from "next";
 
-const url = "mycasino-online.com";
-const ogTitle = "MyCasino in Switzerland: Lizenziertes Schweizer Online Casino";
-const ogSiteName = "Mycasino Casino";
+const url = "hyper-casino-online.com";
+const ogTitle =
+  "Hyper Casino Sverige: Snabba utbetalningar och de bästa spelautomaterna";
+const ogSiteName = "Hyper Casino";
 const metaDescription =
-  "Werden Sie Mitglied bei MyCasino Switzerland und genießen Sie ein erstklassiges Online-Gaming-Erlebnis. Spielen Sie mit Schweizer Franken, profitieren Sie von sicheren Transaktionen, erstklassigen, in der Schweiz zugelassenen Slots und Live-Casino-Spielen.";
+  "Upptäck Hyper Casino Sverige, ett pålitligt online casino som erbjuder säkra betalningar, blixtsnabba uttag och ett stort urval av slots och live dealer-spel. Licensierat för svenska spelare med exklusiva bonusar och sömlöst spelande.";
 
-const locale = "de-CH";
-const language = "German";
+const locale = "se-SE";
+const language = "Swedish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

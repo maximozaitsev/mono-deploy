@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "InterFace Trial", sans-serif;
+$font-secondary: "Rubik", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -9,17 +9,22 @@ $font-secondary: "InterFace Trial", sans-serif;
 }
 
 @font-face {
-  font-family: "InterFace Trial";
-  src: url("interface-trial-webfont/InterFace_Trial_XBd.woff")
-    format("truetype");
-  font-weight: 800;
+  font-family: "Montserrat";
+  src: url("Heading/static/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "InterFace Trial";
-  src: url("./interface-trial-webfont/InterFace_Trial_Blk.woff")
-    format("truetype");
+  font-family: "Montserrat";
+  src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Heading/static/Rubik-900.woff2") format("woff2");
 }
