@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "fairspin-online.com";
+const url = "golden-mister-casino.com";
 const ogTitle =
-  "Fairspin Casino Canada—Crypto Gaming, Transparent Wins & Fast Payouts";
-const ogSiteName = "Fairspin Casino";
+  "Golden Mister Casino UK – 125% Bonus up to €1,000 + 50 Free Spins";
+const ogSiteName = "Golden Mister Casino";
 const metaDescription =
-  "Fairspin Casino Canada combines blockchain transparency with 6,000+ games and flexible payments in crypto and fiat. Start with a 450% bonus + 140 free spins and enjoy secure, real-time play across all devices. Sign up now for a next-gen casino experience.";
+  "Join Golden Mister Casino UK for over 2500 games, a welcome bonus up to €1,000, sports betting, crypto deposits, and a dedicated Android app. Explore all the features and benefits now.";
 
-const locale = "en-CA";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

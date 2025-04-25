@@ -250,7 +250,7 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: #131313;
+  color: $text-color-primary;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;
@@ -280,7 +280,7 @@
     right: 0;
     height: 72px;
     width: 1px;
-    background-color: #00000033;
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &:last-child::after {
@@ -327,6 +327,18 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Theme Styles Start */
 .accordion-title,
