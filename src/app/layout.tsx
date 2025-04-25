@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "hyper-casino-online.com";
+const url = "fairspin-online.com";
 const ogTitle =
-  "Hyper Casino Sverige: Snabba utbetalningar och de bästa spelautomaterna";
-const ogSiteName = "Hyper Casino";
+  "Fairspin Casino Canada—Crypto Gaming, Transparent Wins & Fast Payouts";
+const ogSiteName = "Fairspin Casino";
 const metaDescription =
-  "Upptäck Hyper Casino Sverige, ett pålitligt online casino som erbjuder säkra betalningar, blixtsnabba uttag och ett stort urval av slots och live dealer-spel. Licensierat för svenska spelare med exklusiva bonusar och sömlöst spelande.";
+  "Fairspin Casino Canada combines blockchain transparency with 6,000+ games and flexible payments in crypto and fiat. Start with a 450% bonus + 140 free spins and enjoy secure, real-time play across all devices. Sign up now for a next-gen casino experience.";
 
-const locale = "se-SE";
-const language = "Swedish";
+const locale = "en-CA";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

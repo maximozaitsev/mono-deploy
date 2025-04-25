@@ -1,27 +1,27 @@
 $border-color: none;
 $border-width: 0;
-$border-radius: 10px;
+$border-radius: 12px;
 
 // components
 $bonus-details-button-mobile-width: auto;
 
 // buttons
-$button-large-border-radius: 16px;
-$button-small-border-radius: 12px;
-$button-large-border-radius-mobile: 16px;
-$button-small-border-radius-mobile: 12px;
+$button-large-border-radius: 50px;
+$button-small-border-radius: 50px;
+$button-large-border-radius-mobile: 50px;
+$button-small-border-radius-mobile: 50px;
 
-$header-button-border-radius: 8px;
+$header-button-border-radius: 50px;
 $header-button-height: auto;
 $header-button-large-width: 200px;
-$header-button-small-width: auto;
+$header-button-small-width: 110px;
 
-$header-button-border-radius-mobile: 8px;
+$header-button-border-radius-mobile: 50px;
 $header-button-height-mobile: auto;
 $header-button-large-width-mobile: 100px;
-$header-button-small-width-mobile: auto;
+$header-button-small-width-mobile: 70px;
 
 // font weights
 $font-weight-regular: 500;
-$font-weight-bold: 900;
-$font-weight-black: 900;
+$font-weight-bold: 700;
+$font-weight-black: 700;
