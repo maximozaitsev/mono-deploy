@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 
-const url = "golden-mister-casino.com";
-const ogTitle =
-  "Golden Mister Casino UK – 125% Bonus up to €1,000 + 50 Free Spins";
-const ogSiteName = "Golden Mister Casino";
+const url = "slotier-online.com";
+const ogTitle = "Slotier Casino Canada: Discover Premium Online Gaming in 2025";
+const ogSiteName = "Slotier Casino";
 const metaDescription =
-  "Join Golden Mister Casino UK for over 2500 games, a welcome bonus up to €1,000, sports betting, crypto deposits, and a dedicated Android app. Explore all the features and benefits now.";
+  "Slotier Casino Canada delivers a premium online gaming experience with a vast selection of slots, table games, and live dealer options. Join now to take advantage of amazing bonuses and promotions, and start winning today!";
 
-const locale = "en-GB";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
