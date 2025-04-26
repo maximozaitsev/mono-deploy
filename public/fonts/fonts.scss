@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Outfit", sans-serif;
+$font-secondary: "Source Sans 3", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -23,8 +23,8 @@ $font-secondary: "Outfit", sans-serif;
 }
 
 @font-face {
-  font-family: "Outfit";
+  font-family: "Source Sans 3";
   font-weight: 900;
   font-style: normal;
-  src: url("./Heading/static/Outfit-900.woff2") format("woff2");
+  src: url("./Heading/static/Source Sans 3-900.woff2") format("woff2");
 }

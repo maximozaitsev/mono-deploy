@@ -1,13 +1,14 @@
 import { Metadata } from "next";
 
-const url = "slotier-online.com";
-const ogTitle = "Slotier Casino Canada: Discover Premium Online Gaming in 2025";
-const ogSiteName = "Slotier Casino";
+const url = "swiss4win-online.com";
+const ogTitle =
+  "Swiss4win Casino Schweiz: Bewertung von Schweizer Online-Casino 2025";
+const ogSiteName = "Swiss4win Casino";
 const metaDescription =
-  "Slotier Casino Canada delivers a premium online gaming experience with a vast selection of slots, table games, and live dealer options. Join now to take advantage of amazing bonuses and promotions, and start winning today!";
+  "Entdecken Sie Swiss4win Casino Schweiz, eine führende Online-Gaming-Plattform mit Lizenz in der Schweiz. Genießen Sie erstklassige Slots, Tischspiele und sichere Transaktionen. Entdecken Sie Boni und spielen Sie verantwortungsbewusst mit Schweizer Servicequalität im Jahr 2025.";
 
-const locale = "en-CA";
-const language = "English";
+const locale = "de-CH";
+const language = "German";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
