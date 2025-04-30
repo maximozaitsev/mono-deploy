@@ -58,11 +58,12 @@
     color: $text-color-button-small;
     font-size: 20px;
     border: none;
-    height: 52px;
+    height: 56px;
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;
       font-size: 18px;
+      height: 54px;
     }
 
     @media (max-width: 300px) {

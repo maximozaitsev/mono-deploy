@@ -7,7 +7,7 @@ const ogSiteName = "Yoyo Casino";
 const metaDescription =
   "YoYo Casino Sweden erbjuder förstklassiga slots, klassiska bordsspel och live casino från ledande leverantörer. Registrera dig nu för att låsa upp exklusiva bonusar och börja spela med ett givande välkomstpaket.";
 
-const locale = "se-SE";
+const locale = "sv-SE";
 const language = "Swedish";
 const ogImage = `https://${url}/og-image.webp`;
 

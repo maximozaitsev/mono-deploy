@@ -27,13 +27,13 @@
           position: absolute;
           left: 160px;
 
-          // svg {
+          svg {
             // margin-top: -8px;
 
-            // @media (max-width: 768px) {
-            //   margin-top: 0px;
-            // }
-          // }
+            @media (max-width: 768px) {
+              margin-top: -7px;
+            }
+          }
 
           @media (max-width: 1420px) {
             position: static;
