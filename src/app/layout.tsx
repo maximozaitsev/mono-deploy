@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "yoyocasino-online.com";
+const url = "overloadcasino-online.com";
 const ogTitle =
-  "YoYo Casino Sweden - Spela online slots, bordsspel och live casino";
-const ogSiteName = "Yoyo Casino";
+  "Overload Casino Sverige -  3,000, slots, jackpottar och live-spel";
+const ogSiteName = "Overload Casino";
 const metaDescription =
-  "YoYo Casino Sweden erbjuder förstklassiga slots, klassiska bordsspel och live casino från ledande leverantörer. Registrera dig nu för att låsa upp exklusiva bonusar och börja spela med ett givande välkomstpaket.";
+  "Overload Casino Sweden erbjuder ett spännande urval av över 3 000 slots, progressiva jackpottar och premium live dealer-spel från toppleverantörer. Njut av omedelbara insättningar, snabba uttag och omsättningsfria snurr på utvalda spel.";
 
 const locale = "sv-SE";
 const language = "Swedish";

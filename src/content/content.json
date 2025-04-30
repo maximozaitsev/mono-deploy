@@ -1,82 +1,85 @@
 {
-  "title": "YoYo Online Casino",
+  "title": "Overload Casino",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "500 kr på första insättningen",
-        "50% matchningsbonus upp till SEK700",
-        "15% avkastning på nettoförluster"
+        "200% matchningsbonus",
+        "1,500 gratissnurr",
+        "leaderboard-tävlingar tillgängliga"
       ]
     },
     {
       "type": "paragraph",
-      "text": "YoYo Casino Sverige erbjuder spännande onlinespel för dem som vill ha variation, färg och spänning. De bästa leverantörernas slots, bordsspel och livekasinon finns tillgängliga i ett grafiskt tilltalande gränssnitt. YoYo Casino är säkert licensierat och reglerat och främjar fair play och ansvarsfullt spelande. Snabba transaktioner och enkel navigering gör det till en favorit bland avslappnade och erfarna spelare."
+      "text": "Overload Casino erbjuder en modern, interaktiv online-spelupplevelse för spelare som vill ha ett brett utbud av högkvalitativa spel och effektiva tjänster. Licensierad och reglerad av pålitliga organisationer lovar webbplatsen säkerhet för nybörjare och proffs. Med en mängd olika slots, bordsspel, live-återförsäljare och snabba betalningar är Overload Casino enkelt och spännande. Dess fokus på etiskt spelande, fair play och enkel navigering skiljer det från varandra som ett konstant val för alla som vill njuta av kasinonöje med riktiga pengar online."
     }
   ],
   "about": {
-    "YoYo Casino registreringsprocess": [
+    "Registreringsprocess för Overload Casino": [
       {
         "type": "paragraph",
-        "text": "Att börja på YoYo Casino är enkelt. Registrera dig och utforska YoYo Casino review av det fullständiga urvalet av spel och funktioner med tre enkla steg:"
+        "text": "Att börja på Overload Casino är snabbt och enkelt. Nya spelare kan få omedelbar tillgång till hela urvalet av spel och bonusar genom att skapa ett konto i bara några enkla steg."
+      },
+      {
+        "type": "paragraph",
+        "text": "Registreringssteg:"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Klicka på ”Registrera” -knappen på hemsidan",
-          "Välj land och önskad valuta",
-          "Ange e-postadress och skapa ett lösenord",
-          "Fyll i personliga uppgifter (namn, födelsedatum etc.)",
-          "Acceptera villkor och bestämmelser",
-          "Bekräfta registreringen via e-post",
-          "Logga in och gör en insättning för att börja spela"
+          "Klicka på knappen ”Registrera” på hemsidan",
+          "Ange din e-postadress och skapa ett lösenord",
+          "Ange ditt fullständiga namn, födelsedatum och adress",
+          "Välj din önskade valuta",
+          "Godkänn villkoren och bestämmelserna",
+          "Slutför registreringen genom att klicka på ”Skapa konto”"
         ]
       }
     ],
-    "Om YoYo Casino Login": [
+    "Om inloggning för Overload Casino": [
       {
         "type": "paragraph",
-        "text": "Några enkla åtgärder får dig till YoYo Casino. För att slutföra YoYo Casino login, besök den officiella webbplatsen och klicka på ”Logga in” i övre högra hörnet. Genom att klicka på YoYo Casino logo öppnas en säker inloggningsruta där användarna anger sin e-postadress och lösenord. Hela kasinolobbyn, kampanjer, kontoinställningar och spelhistorik är tillgängliga efter inlämning. Kontoinställningar tillåter tvåfaktorsautentisering för ökad säkerhet. Glömt inloggningsuppgifterna? Använd länken ”Glömt lösenord” för att återställa via e-post."
+        "text": "Designad för att ge konsumenterna snabb tillgång till sina konton, Overload casino login är en enkel, säker process. Högst upp på hemsidan måste användarna först trycka på ”Logga in”. De måste sedan fylla i de relevanta fälten med sin registrerade e-postadress och lösenord. När uppgifterna matas in transporteras spelarna omedelbart till sin kontodashboard; där kan de hantera personlig information, göra anspråk på incitament, göra insättningar och börja spela sina valda spel. Overload Casino stöder också tvåfaktorsautentisering för mer säkerhet, vilket ger användarna extra säkerhet under hela inloggningsproceduren."
       }
     ],
     "Metoder för insättning": [
       {
         "type": "paragraph",
-        "text": "YoYo Casino har flera insättningsalternativ för att hjälpa utländska spelare. Vanligt accepterade alternativ inkluderar Visa, Mastercard, banköverföringar och utvalda e-plånböcker och förbetalda kort. Specifika betalningsalternativ kan variera beroende på spelarens bosättningsort. Omedelbar insättningsbehandling gör att spelare kan börja spela direkt. Minsta insättning är vanligtvis 20 SEK, men det varierar beroende på betalningstyp och region. För regionala detaljer, se kasinots betalningsavsnitt eller kundvård."
+        "text": "Overload Casino erbjuder flera säkra insättningsmetoder för att hjälpa spelare att finansiera sina konton snabbt. Kasinot accepterar Visa, Mastercard och Revolut, som behandlas snabbt utan kostnader. Jeton, MiFinity, AstroPay och Apple Pay är e-plånböcker som bearbetas direkt och möjliggör sömlöst spel. Förbetalda kuponger som Neosurf och Flexepin möjliggör anonyma insättningar utan bankinformation. Instant Banking, Rapid Transfer och Sofort stöder banköverföringar, som tar några minuter att bekräfta. Minsta insättning för de flesta metoder är SEK10, vilket gör dem tillgängliga för avslappnade spelare."
       }
     ],
-    "Metoder för Uttag YoYo Casino": [
+    "Metoder för uttag": [
       {
         "type": "paragraph",
-        "text": "För att göra vinstuttag enkelt erbjuder YoYo Casino flera alternativ. Många metoder inkluderar Visa, Mastercard, banköverföringar och e-plånböcker. Bank- och kortuttag kan ta 3-5 arbetsdagar, medan e-plånbok YoYo Casino uttag tid tar 24 timmar. Även om det maximala YoYo Casino uttag värdet beror på VIP-nivå eller betalningsmetod, är det minsta 20 euro. Spelare kan behöva följa en verifieringsprocess, inklusive ID-papper som behövs enligt kasinots säkerhetsbestämmelser, för att garantera en sömlös uttagsprocess. Uttagsval skiljer sig åt beroende på jurisdiktion, precis som insättningar gör, så konsultera kasinots betalningsavsnitt eller kontakta kundtjänst för detaljer."
+        "text": "Overload Casino erbjuder snabba och säkra uttag. De flesta uttag med Visa, Mastercard, Revolut, Apple Pay, Jeton, MiFinity, AstroPay och EcoPayz är tillåtna under öppettiderna. Kort- och plånboksuttag anländer vanligtvis inom en arbetsdag, medan uttagsoperationer för Instant Banking eller Rapid Transfer Overload Casino withdrawal kan ta upp till två arbetsdagar, beroende på bank. Overload Casino har inga uttagsavgifter och ett minsta uttag på 20 SEK för alla metoder. För banktransaktioner kan spelare betala finansinstitut."
       }
     ]
   },
   "advantages": {
-    "YoYo Casino Omdöme Fördelar": [
+    "Overload Сasino Flashback Fördelar": [
       {
         "type": "paragraph",
-        "text": "Casino YoYo levande användargränssnitt, spelmångfald och användarvänliga funktioner skiljer det från varandra online. Här är dess YoYo Casino recension med för- och nackdelar:"
+        "text": "Även om det finns några små nackdelar att ta hänsyn till, erbjuder Overload Casino en fantastisk spelupplevelse med flera funktioner. Här nedan är en enkel Overload Casino review av dess fördelar och nackdelar."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Fördelar"
+        "text": "Fördelar och nackdelar"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Brett utbud av spel",
-          "Live casino sektion",
-          "Mobilvänlig plattform",
-          "Flera betalningsalternativ",
-          "Snabb behandling av uttag",
-          "Licensierad och säker drift",
-          "Regelbundna kampanjer och turneringar",
-          "Lojalitetsprogram för aktiva spelare"
+          "Brett urval av slots, bordsspel och live casino-alternativ",
+          "Snabba och säkra betalningsmetoder",
+          "Mobiloptimerad plattform utan nedladdning av app krävs",
+          "Licensierad och reglerad för säkert spel",
+          "Regelbundna kampanjer och lojalitetsbelöningar",
+          "24/7 kundsupporttjänst",
+          "Snabb registrerings- och verifieringsprocess",
+          "Flera valutor som stöds"
         ]
       },
       {
@@ -88,18 +91,18 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "Landsbegränsningar gäller",
-          "Begränsade timmar för kundsupport",
-          "Omsättningskrav på bonusar"
+          "Vissa landsbegränsningar gäller",
+          "Begränsad tillgänglighet för vissa nischade spelleverantörer",
+          "Höga omsättningskrav på vissa bonusar"
         ]
       }
     ]
   },
   "games-to-play": {
-    "Spel tillgängliga för att spela på YoYo Casino Sweden": [
+    "Spel tillgängliga för att spela på Overload Casino": [
       {
         "type": "paragraph",
-        "text": "YoYo Casino har spel för alla, från nybörjare till proffs. Plattformen drivs av de världsberömda mjukvaruleverantörerna NetEnt, Evolution, Microgaming, Pragmatic Play och Yggdrasil. Detta avtal ger tillgång till högkvalitativa spel med smidigt spel, fantastisk grafik och unika funktioner. Välj mellan fartfyllda slots och strategiska bordsspel. Spelet är alltid spännande med nya titlar."
+        "text": "Med mer än 3 000 spel från över 70 välkända programvaruföretag, inklusive NetEnt, Evolution, Pragmatic Play, Play'n GO, Quickspin och Nolimit City, har Overload Casino en varierad och stor spelportfölj. Oavsett om de gillar vintageupplevelser eller banbrytande innovation garanterar detta breda spektrum att spelare med varierad smak och preferenser lätt kan hitta spel som passar deras stil."
       },
       {
         "type": "heading",
@@ -108,7 +111,7 @@
       },
       {
         "type": "paragraph",
-        "text": "YoYo Casino erbjuder allt från klassiska fruktmaskiner till högteknologiska videoslots med fascinerande historier och effekter. Toppleverantörer inklusive Play'n GO, NetEnt, Red Tiger och Yggdrasil tillhandahåller spel. Gonzo's Quest, Starburst, Book of Dead och Big Bass Bonanza bjuder på oförutsägbara spelupplevelser med bonusspel, kaskadhjul, expanderande wilds och multiplikatoreffekter. För dem som gillar regelbundna prestationer och stora belöningar erbjuder slotsplit låg- och högvolatilitetsspel. Användare kan enkelt hitta nya spel eller återbesöka gamla genom att sortera efter leverantör, funktionstyp, popularitet eller tema med hjälp av praktiska sök- och filterverktyg. Slotdivisionen erbjuder mångfald och högkvalitativ prestanda på alla plattformar, oavsett om du spelar avslappnat eller jagar jackpottar."
+        "text": "Overload Casinos samling av spelautomater är stor och anmärkningsvärd. Spelare kan välja mellan en rad olika former, inklusive konventionella trehjulsslots gjorda för individer som värdesätter enkelhet, progressiva jackpottslots där prispotten alltid stiger och Megaways-slots med dynamiska rullstrukturer som genererar många vinnande möjligheter. Förutom konventionella format har kasinot 3D-slots som är kända för sin överlägsna visuella kvalitet, videoslots med rika teman och extrafunktioner och traditionella format. Populära titlar garanterar att det alltid finns något intressant att hitta; de inkluderar Aloha! Cluster Pays, Gonzo's Quest Megaways, Starburst, Floating Dragon och Sugar Rush."
       },
       {
         "type": "heading",
@@ -117,207 +120,203 @@
       },
       {
         "type": "paragraph",
-        "text": "Bordsspelen på YoYo Casino är omfattande och realistiska för traditionella kasinospelare. Varje version av blackjack, roulette, baccarat och poker i samlingen har små modifieringar för att passa olika strategier och intressen. Europeisk, amerikansk, klassisk, multihand och dubbelexponerad blackjack finns tillgängliga. Casino Hold'em och Oasis Poker erbjuder snabbt spel och smart beslutsfattande för pokerfans. Varje bordsspel har ett rent användargränssnitt med skarp grafik, smidig mekanik och enkla kontroller för nybörjare. Mer erfarna spelare kan undersöka spelvarianter och avancerade inställningar för att finslipa sina förmågor. Med ett så brett utbud av valmöjligheter är den här sektionen perfekt för användare som letar efter strategibaserat spel och en autentisk bordsupplevelse som speglar landbaserade kasinon."
+        "text": "För älskare av casinoklassiker erbjuder bordsspelen på Casino Overload en konventionell men ändå flexibel upplevelse. Från konventionella till mer moderna varianter kan spelarna delta i flera blackjack-spel och njuta av rouletteval inklusive europeiska, amerikanska och franska typer. Det finns många olika typer av baccarat, som alla ger en snygg och elegant spelmiljö. Bland alternativen för pokerälskare finns Caribbean Stud, Three Card Poker och Casino Hold'em; videopokermaskiner ger ytterligare spänning genom att blanda slotspel med pokertaktik."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Live Casino"
+        "text": "Livekasino"
       },
       {
         "type": "paragraph",
-        "text": "YoYo live Casino streamar spel från professionella studior för en uppslukande upplevelse. Spelare kan spela live blackjack, roulette, baccarat, Crazy Time och Monopoly Live med karismatiska dealers och högupplöst video. Dealers och spelare kan kommunicera i realtid, vilket gör spelet mer socialt. Branschledande leverantörer som Evolution hanterar spelen och tillhandahåller högkvalitativa feeds, rättvisa resultat och smidig prestanda för datorer och mobiler."
+        "text": "För spelare som letar efter spänningen i realtid erbjuder Overload Casinos live casino-sektion en riktigt engagerande upplevelse. Professionella dealers som kör varje spel via högupplösta sändningar ger live blackjack, live roulette och live baccarat. Roliga spelprogram som Dream Catcher och Crazy Time erbjuder mer interaktion och incitament. Branschledarna Evolution och Ezugi driver live casino-plattformen, som erbjuder smidigt spel, professionella värdar och en riktig kasinoupplevelse hemma."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Spel med jackpottar"
+        "text": "Specialiserade spel"
       },
       {
         "type": "paragraph",
-        "text": "YoYo Casino com erbjuder progressiva och fasta jackpottspel för stora vinnare. Dessa spel har expanderande prispottar som kan utlösas slumpmässigt eller under bonusrundor. Denna samling inkluderar Divine Fortune, Mega Moolah och Jackpot Raiders, som erbjuder livsförändrande utbetalningar per snurr. Jackpottsektionen är enkel att navigera och hjälper spelare att välja spel med de största jackpottarna. Spänningen för stora vinnare fortsätter med nya jackpottspel."
+        "text": "Overload Casino erbjuder en rad specialspel för spelare som söker något unikt utanför de konventionella och live-spelområdena. Medan tärningsspel som Sic Bo och Dice Jackpot erbjuder intressanta variationer på klassiska bordsspel, erbjuder skraplotter enkla och snabba spel med omedelbara vinstchanser. Andra ovanliga kortspel som Rummy, Red Dog och Pirate 21 ökar spelportföljen ytterligare genom att låta spelarna möta andra format och taktiker utanför de vanliga casinoalternativen."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "YoYo Casino Bonusar och kampanjer": [
+    "Överbelasta kasinobonusar och kampanjer": [
       {
         "type": "paragraph",
-        "text": "YoYo Casino erbjuder många kampanjer för att förbättra spelet och belöna nya och återvändande spelare. Varje YoYo Casino bonus passar olika användare, oavsett om de gillar slots, helgomladdningar eller live-turneringar. Innan du engagerar dig bör spelare läsa villkoren och omsättningskraven för alla kampanjer."
+        "text": "Overload Casino är utformat för att förbättra spelupplevelsen för både nya och nuvarande spelare och erbjuder en mängd olika kampanjer. Följande är en sammanfattning av de nuvarande bonuserbjudandena:"
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "YoYo Casino Välkomstbonus"
+        "text": "Välkomstbonus: Upp till 1,500 gratissnurr"
       },
       {
         "type": "paragraph",
-        "text": "YoYo Casino välkomstpaket syftar till att ge nya spelare en bra början. Användare får en 100% matchbonus upp till 500 SEK vid första insättningen, vilket därför fördubblar deras startbalans. Förutom den monetära belöningen får spelarna 200 gratissnurr vanligtvis fördelade över flera dagar för att hålla lång engagemang. Bonusen innehåller också 1 Bonus Crab - en del av YoYo Casinos gamification-system - som ger oväntade fördelar som YoYo Casino free spins eller extra pengar beroende på spelaktivitet. En minsta kvalificerande investering gör detta erbjudande tillgängligt, vilket ger nya spelare ytterligare pengar och verktyg för att undersöka det flera spelbiblioteket från dag ett."
+        "text": "Overload Casino välkomstbonuspaket ger nya spelare upp till 1 500 gratissnurr på sina fem första insättningar. En betydande 200% matchbonus och upp till 500 gratissnurr på utvalda spelautomater tilldelas vid första insättningen. Fortsätt takten med de nästa fyra insättningarna, var och en erbjuder 250 gratissnurr. Dessa gratissnurr har inga satsningsbegränsningar, så vinsterna är kontanter. Spelare kan börja sitt äventyr med optimal intjäningspotential genom att använda gratissnurr inom en viss tidsram och på specifika spel som anges i kampanjvillkoren."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Weekend Reload Bonus och YoYo Casino no deposit codes"
+        "text": "Jackpottar med episka droppar"
       },
       {
         "type": "paragraph",
-        "text": "Varje helg kan spelare på YoYo Casino dra nytta av Weekend Reload Bonus, som ger 50 YoYo Casino no deposit free spins på en markerad slot och en 50% matchbonus upp till 700 SEK. Erbjudandet börjar varje fredag och löper över helgen, så spelare är motiverade att sätta in och play YoYo Casino under de bästa fritidstiderna. Free spins är vanligtvis kopplade till välkända spelautomater och låter spelare testa toppspel utan extra kostnad. Så länge den nödvändiga minsta insättningen är nöjd är detta pågående YoYo Casino bonus code erbjudande perfekt för vanliga spelare som vill förlänga sina helgsessioner med ytterligare kredit och snurr."
+        "text": "Overload Casino erbjuder Epic Drop Jackpots, ett progressivt jackpotsystem som kan uppstå slumpmässigt vid varje snurr. För att vinna krävs en insats på 0,10 SEK per snurr. Mini-, Super- och Epic-jackpottarna ger olika prisintervall, där Epic-jackpotten når stora belopp. Dessa jackpottar är kopplade till spelautomater, vilket ger spänning till vanligt spel. Varje snurr kan utlösa en jackpottvinst, oavsett insatsstorlek, så varje spelare har en rättvis chans att vinna stort när de spelar sina favoritslots."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Veckovis Cashback och YoYo Casino no deposit bonus"
+        "text": "Kampanjer och turneringar varje vecka"
       },
       {
         "type": "paragraph",
-        "text": "Upp till maximalt 3 000 SEK varje vecka ger YoYo Casinos Weekly Cashback-erbjudande spelare en 15% avkastning på nettoförluster från live kasinospel. Syftet är att kompensera för effekterna av en mindre lycklig spelvecka, denna YoYo Casino kod bonusowy krediteras varje måndag. Vanligtvis ges med inga eller låga satsningskriterier, återbetalningsprocenten beräknas på faktiska pengar satsningar minus vinster under föregående vecka. Högvolymspelare eller live casino-fans som letar efter viss stabilitet och konsistens i sin spelmetod kommer att hitta den här funktionen särskilt intressant."
+        "text": "Overload Casino genomför veckovisa kampanjer och turneringar för att hålla saker intressanta. Leaderboard-tävlingar kan delta genom att spela vissa slots eller delta i speciella spelevenemang. Toppspelare får kontanter, gratissnurr och exklusiva bonusar beroende på spelpoäng. Evenemangen har olika prispotter och inträdesbegränsningar för casual och high rollers. Alla turneringsregler, kvalificerade spel och prisutdelningsdetaljer tillhandahålls i förväg, vilket gör det lättare för spelare att organisera sitt deltagande och söka ytterligare priser."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "YoYo Casino no deposit Live Casino Tournament"
+        "text": "Cashback-erbjudanden och Overload Сasino no Deposit Bonus"
       },
       {
         "type": "paragraph",
-        "text": "YoYo Casinos Live Casino Tournaments, med en kombinerad prispott på 110,000 Lojalitetspoäng (L.P.), tillåter konkurrenskraftiga spelare att delta. I kasinots lojalitetsbutik kan dessa poäng bytas ut mot flera priser som gratissnurr eller bonuskontanter. Med topplistor som uppdateras i realtid för att visa spelarnas ranking tjänas poäng genom att placera satsningar med riktiga pengar i kvalificerande live dealer-spel. För spelare som gillar strategibaserat spel och vill bli belönade genom konstant live-spelaktivitet erbjuder turneringsformatet en viss grad av spänning och rivalitet, vilket därför ökar dess överklagande."
+        "text": "Overload Casino erbjuder cashback-belöningar på vissa spel och varaktigheter för insättningssäkerhet. Cashback beräknas som en andel av spelarens nettoförluster under hela kampanjen och krediteras som bonusfonder eller riktiga pengar, beroende på affären. Spelare kan delvis återhämta förluster, vilket minskar effekterna av dåliga sessioner och förbättrar bankrullehanteringen. Cashback-priser, tillåtna spel och minimiförlustgränser varierar per kampanj, så spelare bör läsa reglerna för att optimera fördelarna och spela riskfritt."
       }
     ]
   },
   "support": {
-    "YoYo Casino Live Chat Support": [
+    "Stöd och support": [
       {
         "type": "paragraph",
-        "text": "YoYo Casino levererar pålitlig kundvård genom två primära kommunikationskanaler: livechatt och e-post. Direkt på webbplatsen är livechattfunktionen perfekt för att få snabba svar på tekniska problem eller allmänna frågor. Spelare med mer specifika förfrågningar eller oro över dokumentation kan kontakta supportteamet på help@yoyocasino.se. Supportpersonalen är kunnig och svarar på både engelska och svenska, beroende på användarens önskemål."
-      },
-      {
-        "type": "paragraph",
-        "text": "Även om webbplatsen enligt YoYo Casino reviews inte anger exakta öppettider är reaktionstiden vanligtvis snabb, vilket gör det möjligt för kunder att få den hjälp de behöver för att lösa problem och fortsätta njuta av sitt spel utan långvarig väntan."
+        "text": "Overload Casino erbjuder 24/7 kundservice för eventuella frågor eller svårigheter. Livechatt och e-poststöd säkerställer snabb och effektiv service. Supportbesättningen är skicklig inom kontohantering, betalningshantering och teknisk felsökning. Personalen ger tydliga och hjälpsamma svar till alla spelare på engelska, det viktigaste språket för support."
       }
     ]
   },
   "faq": {
-    "Recension YoYo Casino FAQ": [
+    "Overload Сasino Trustpilot FAQ": [
       {
         "type": "heading",
         "level": 3,
-        "text": "Har YoYo Casino någon spellicens?"
+        "text": "Finns det en maximal vinstgräns på Overload Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Ja, YoYo Casino verkar under en licens utfärdad av regeringen i Curacao, vilket garanterar reglerat och säkert spel."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Vad är YoYo Casino Erfahrungen med minsta insättning?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Det lägsta insättningsbeloppet är 20 SEK, beroende på betalningsmetod och regionala inställningar."
+        "text": "Ja, den högsta enskilda utbetalningen per spelare är begränsad till 100 000 SEK om inte annat anges för progressiva jackpottar."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Finns det några bonusar utan insättning?"
+        "text": "Kan jag sätta gränser för ansvarsfullt spelande på mitt konto?"
       },
       {
         "type": "paragraph",
-        "text": "För närvarande erbjuder YoYo Casino inte en bonus utan insättning. Alla bonusar kräver en kvalificerande insättning."
+        "text": "Ja, du kan ställa in dagliga, veckovisa eller månatliga insättnings-, förlust-, satsnings- och sessionstidsgränser direkt i dina kontoinställningar."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Kan jag ställa in insättningsgränser?"
+        "text": "Accepteras kryptovalutabetalningar på Overload Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Ja, spelare kan ställa in personliga insättningsgränser via kontoinställningarna för att främja ansvarsfullt spelande."
+        "text": "Nej, för närvarande stöder Overload Casino inte insättningar eller uttag av kryptovaluta."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Hur snabbt behandlas uttag?"
+        "text": "Hur länge dröjer väntande uttag innan de godkänns?"
       },
       {
         "type": "paragraph",
-        "text": "Beroende på vald betalningsmetod hanteras uttag inom 1-3 arbetsdagar."
+        "text": "Väntande Overload Casino withdrawal time granskas och godkänns vanligtvis inom 24 timmar på arbetsdagar."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Finns det ett lojalitetsprogram?"
+        "text": "Erbjuder detta kasino exklusiva spel?"
       },
       {
         "type": "paragraph",
-        "text": "YoYo Casino har faktiskt ett lojalitetsprogram på flera nivåer som öppnar nya YoYo Casino no deposit bonus codes och cashback-procentsatser."
+        "text": "Nej, Overload Casino erbjuder för närvarande populära titlar från stora leverantörer men har inte exklusiva eller egna spel."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Är live dealer-spel mobilkompatibla?"
+        "text": "Finns det ett VIP- eller lojalitetsprogram tillgängligt?"
       },
       {
         "type": "paragraph",
-        "text": "Ja, alla live dealer-spel är optimerade för mobilspel på både Android- och iOS-enheter."
+        "text": "För närvarande kör Overload Casino inte ett formellt VIP- eller lojalitetsbelöningsprogram för spelare."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Kan jag spela spel gratis?"
+        "text": "Kan jag avbryta ett uttag efter att ha begärt det?"
       },
       {
         "type": "paragraph",
-        "text": "Faktum är att många spelautomater låter spelare testa dem i demoläge utan att satsa faktiska pengar."
+        "text": "Nej, när en uttagsbegäran har skickats in på Overload Casino kan den inte vändas eller avbrytas."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Hur kan jag verifiera mitt konto?"
+        "text": "Har Overload Casino satsningsfria kampanjer?"
       },
       {
         "type": "paragraph",
-        "text": "Inlämning av ID, adressbevis och betalningsmetodpapper via säker uppladdning utgör kontoverifiering."
+        "text": "Ja, de välkomna gratissnurr tilldelas utan omsättningskrav, vilket innebär att vinster betalas ut som riktiga kontanter."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Accepterar YoYo Casino 755 kryptovaluta?"
+        "text": "Kan jag ändra min registrerade e-postadress?"
       },
       {
         "type": "paragraph",
-        "text": "Nej, YoYo Casino stöder för närvarande inte kryptovalutatransaktioner för insättningar eller uttag."
+        "text": "Det är möjligt att ändra din e-postadress men kräver att du kontaktar kundsupport och slutför en identitetsverifieringskontroll."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Finns det avgifter för valutakonvertering under transaktioner?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Overload Casino tar inte ut några avgifter för valutakonvertering, men spelarnas banker eller betalningsleverantörer kan ta ut en avgift."
       }
     ]
   },
   "sections": {
-    "YoYo Casino é confiavel?": [
+    "Programvaruteknologier": [
       {
         "type": "paragraph",
-        "text": "YoYo Casino SE arbetar med ledande mjukvaruleverantörer inklusive NetEnt, Play'n GO, Microgaming, Red Tiger och Evolution Gaming för att leverera en distinkt och högkvalitativ spelkompetens. Webbplatsen erbjuder massor av live dealer-alternativ, bordsspel och slots avsedda för smidig enhetsdrift."
+        "text": "Overload Casino arbetar med över 50 toppspelutvecklare för att erbjuda en bred och högkvalitativ spelupplevelse. Plattformen erbjuder spel från NetEnt, Evolution, Play'n GO, Pragmatic Play, Quickspin, NoLimit City, Red Tiger, Spinomenal, Elk Studios, iSoftBet och 1X2 Gaming. Slots, bordsspel och live kasinospel är tillgängliga på grund av detta omfattande samarbete, catering till spelarnas smak. Inga programnedladdningar behövs för att spela spelen i webbläsare på stationära och mobila enheter. Plattformen optimerar prestanda mellan olika enheter för smidigt spelande."
       }
     ],
-    "YoYo Casino Complaints och säkerhet": [
+    "Säkerheten": [
       {
         "type": "paragraph",
-        "text": "För att skydda användardata och säkra transaktioner använder YoYo Casino SSL-kryptering av industristandard. Denna kryptering skyddar finansiella och personliga uppgifter under överföringen. Kasinot följer också strikta svenska spelmyndighetens regler för att uppmuntra till rättvist och etiskt spelande."
+        "text": "Overload Casino skyddar personliga och finansiella data med hjälp av starka skydd. Avancerad SSL-kryptering skyddar dataöverföringen på plattformen. Overload Casino följer också Malta Gaming Authoritys regler för datasekretess och rättvist spel. Kasinot använder åtgärder för bedrägeribekämpning och penningtvätt för att hålla spelen säkra. Plattformsintegriteten upprätthålls genom revisioner och övervakning."
       }
     ],
-    "YoYo Casino App": [
+    "Casino-appen": [
       {
         "type": "paragraph",
-        "text": "YoYo Casinos Android- och iOS-appar låter användarna spela sina favoritspel när de är på språng. YoYo Casino mobile appar har ett enkelt användargränssnitt, enkel navigering och säkra betalningsmetoder som Trustly för insättningar och uttag. För kompatibilitet och enkel installation kan spelare hämta apparna från Google Play och Apple App Store."
+        "text": "Overload Casinos responsiva webbplattform fungerar på iOS och Android. Mobila webbläsare gör det möjligt för spelare att få tillgång till kasinots kompletta urval av spel och funktioner utan att ladda ner en app. Mobilversionen erbjuder kontohantering, insättningar, uttag och kampanjer som skrivbordssidan. Detta gör spel på alla enheter enkelt och konsekvent."
       }
     ],
-    "YoYo Casino Kokemuksia med språk": [
+    "Språk": [
       {
         "type": "paragraph",
-        "text": "YoYo Casino stöder många språk för en varierad spelarbas och enkel åtkomst och kommunikation. Engelska och svenska används för webbplatsen och kundtjänst. Dubbelspråkigt stöd låter spelare registrera, sätta in, utforska spel och få hjälp på det språk de föredrar. Detta arrangemang förenklar spelandet för svensk- och engelsktalande användare."
+        "text": "Overload Casinos webbplats och support är mestadels på engelska. Webbplatsgränssnittet och kundtjänsten är endast tillgängliga på engelska, även om plattformen betjänar en internationell kundkrets. Fokuset säkerställer tydlig kommunikation och hjälp för engelsktalande spelare."
       }
     ],
     "Valutor": [
       {
         "type": "paragraph",
-        "text": "För utländska spelare stöder YoYo Casino transaktioner i flera valutor, vilket gör kontohanteringen enklare utan konverteringsavgifter. Webbplatsen nämner inte alla valutor som stöds, men spelare kan välja sin valda valuta under kontoregistreringen. Spelare kan använda EUR och SEK, beroende på deras land. Användare kan enkelt göra insättningar och uttag på regionala sätt genom att välja rätt valuta från början. Valutaflexibilitet förenklar plattformens finansiella processer."
+        "text": "Spelare från olika regioner kan använda många valutor på Overload Casino. Euro, US-dollar, kanadensiska dollar, australiska dollar, nyzeeländska dollar, norska kronor, svenska kronor och danska kronor accepteras. Den valuta som väljs vid registrering kommer att användas för alla transaktioner, inklusive insättningar och uttag. Kompatibilitet med flera valutor gör det enklare att spela internationellt."
       }
     ]
   }
