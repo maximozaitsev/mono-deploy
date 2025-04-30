@@ -23,7 +23,7 @@
   }
 
   @media (max-width: 768px) {
-    padding-top: 20.8rem;
+    padding-top: 20.6rem;
     height: auto;
     justify-content: flex-end;
     background-size: auto 65%;
@@ -33,7 +33,7 @@
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 64%;
+    background-size: auto 59%;
   }
 
   @media (max-width: 420px) {
@@ -131,7 +131,7 @@
   line-height: normal;
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 28px;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
     text-transform: uppercase;
