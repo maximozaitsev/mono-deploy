@@ -23,7 +23,7 @@
   }
 
   @media (max-width: 768px) {
-    padding-top: 20.5rem;
+    padding-top: 21.2rem;
     height: auto;
     justify-content: flex-end;
     background-size: auto 65%;
@@ -33,7 +33,7 @@
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 50.4%;
+    background-size: auto 63%;
   }
 
   @media (max-width: 420px) {
@@ -134,7 +134,7 @@
     font-family: $font-secondary;
     font-weight: $font-weight-black;
     text-transform: uppercase;
-    color: $text-color-welcome;
+    // color: $text-color-welcome;
 
     // background: $text-color-welcome;
     // background-clip: text;

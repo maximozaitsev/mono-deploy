@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "swiss4win-online.com";
+const url = "yoyocasino-online.com";
 const ogTitle =
-  "Swiss4win Casino Schweiz: Bewertung von Schweizer Online-Casino 2025";
-const ogSiteName = "Swiss4win Casino";
+  "YoYo Casino Sweden - Spela online slots, bordsspel och live casino";
+const ogSiteName = "Yoyo Casino";
 const metaDescription =
-  "Entdecken Sie Swiss4win Casino Schweiz, eine führende Online-Gaming-Plattform mit Lizenz in der Schweiz. Genießen Sie erstklassige Slots, Tischspiele und sichere Transaktionen. Entdecken Sie Boni und spielen Sie verantwortungsbewusst mit Schweizer Servicequalität im Jahr 2025.";
+  "YoYo Casino Sweden erbjuder förstklassiga slots, klassiska bordsspel och live casino från ledande leverantörer. Registrera dig nu för att låsa upp exklusiva bonusar och börja spela med ett givande välkomstpaket.";
 
-const locale = "de-CH";
-const language = "German";
+const locale = "se-SE";
+const language = "Swedish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

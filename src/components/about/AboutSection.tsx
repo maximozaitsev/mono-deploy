@@ -12,7 +12,7 @@ export default function AboutSection() {
   const [aboutSections, setAboutSections] = useState<any>({});
   const [depositSection, setDepositSection] = useState<any>(null);
   const [withdrawalSection, setWithdrawalSection] = useState<any>(null);
-  const projectName = "Swiss4win Casino";
+  const projectName = "Yoyo Casino";
 
   useEffect(() => {
     if (content) {
