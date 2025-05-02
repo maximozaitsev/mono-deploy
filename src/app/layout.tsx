@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "overloadcasino-online.com";
-const ogTitle =
-  "Overload Casino Sverige -  3,000, slots, jackpottar och live-spel";
-const ogSiteName = "Overload Casino";
+const url = "x3000casino-online.com";
+const ogTitle = "X3000 Casino Sverige - Säkert spel, snabba uttag och toppspel";
+const ogSiteName = "x3000 Casino";
 const metaDescription =
-  "Overload Casino Sweden erbjuder ett spännande urval av över 3 000 slots, progressiva jackpottar och premium live dealer-spel från toppleverantörer. Njut av omedelbara insättningar, snabba uttag och omsättningsfria snurr på utvalda spel.";
+  "X3000 Casino Sweden erbjuder över 4,000 spel, snabba utbetalningar och full mobilkompatibilitet. Utforska exklusiva slots, live casino action och fantastiska kampanjer - registrera dig idag och börja spela!";
 
 const locale = "sv-SE";
 const language = "Swedish";

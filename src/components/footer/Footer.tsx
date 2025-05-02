@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Overload Casino";
+const projectName = "x3000 Casino";
 const partnerLogos = [
   { color: "/footer-assets/master-card.svg" },
   { color: "/footer-assets/visa.svg" },

@@ -1,108 +1,116 @@
 {
-  "title": "Overload Casino",
+  "title": "X3000 kasino",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "200% matchningsbonus",
-        "1,500 gratissnurr",
-        "leaderboard-tävlingar tillgängliga"
+        "100% matchningsbonus upp till 1 500 SEK",
+        "200 SEK på utvalda spelautomater",
+        "videopokerturneringar tillgängliga"
       ]
     },
     {
       "type": "paragraph",
-      "text": "Overload Casino erbjuder en modern, interaktiv online-spelupplevelse för spelare som vill ha ett brett utbud av högkvalitativa spel och effektiva tjänster. Licensierad och reglerad av pålitliga organisationer lovar webbplatsen säkerhet för nybörjare och proffs. Med en mängd olika slots, bordsspel, live-återförsäljare och snabba betalningar är Overload Casino enkelt och spännande. Dess fokus på etiskt spelande, fair play och enkel navigering skiljer det från varandra som ett konstant val för alla som vill njuta av kasinonöje med riktiga pengar online."
+      "text": "Speedy Limited, som övervakas av Spelinspektionen, driver X3000 Casino, ett modernt onlinekasino. År 2021 lanserades X3000 med över 5 400 slots, live casino och sportspel. Webbplatsen vänder sig till svenska och estniska spelare med snabba transaktioner och enkel navigering. Casino Guru gav X3000 Casino ett 9.8 Safety Index-betyg, vilket tyder på en pålitlig och rättvis spelmiljö."
     }
   ],
   "about": {
-    "Registreringsprocess för Overload Casino": [
+    "X3000 Casino Registreringsprocess": [
       {
         "type": "paragraph",
-        "text": "Att börja på Overload Casino är snabbt och enkelt. Nya spelare kan få omedelbar tillgång till hela urvalet av spel och bonusar genom att skapa ett konto i bara några enkla steg."
+        "text": "Att registrera sig på X3000 Casino är enkelt och får dig att spela direkt. X3000 Casino stöder främst lettiska personliga ID och kan kräva att du är i Lettland för registrering. Vi förbjuder användning av VPN eller proxyservrar för att dölja din plats."
       },
       {
         "type": "paragraph",
-        "text": "Registreringssteg:"
+        "text": "X3000 Casino Registreringssteg:"
       },
       {
         "type": "list",
-        "style": "unordered",
+        "style": "ordered",
         "items": [
-          "Klicka på knappen ”Registrera” på hemsidan",
-          "Ange din e-postadress och skapa ett lösenord",
-          "Ange ditt fullständiga namn, födelsedatum och adress",
-          "Välj din önskade valuta",
-          "Godkänn villkoren och bestämmelserna",
-          "Slutför registreringen genom att klicka på ”Skapa konto”"
+          "Besök den officiella X3000 Casino-webbplatsen.",
+          "Klicka på knappen ”Registrera” eller ”Registrera dig”.",
+          "Ange ditt fullständiga namn.",
+          "Ange din e-postadress.",
+          "Ange ditt telefonnummer.",
+          "Skapa ett säkert lösenord.",
+          "Välj ditt bosättningsland.",
+          "Godkänn villkoren och bestämmelserna.",
+          "Bekräfta att du är minst 18 år gammal.",
+          "Genomför eventuella nödvändiga steg för identitetsverifiering (t.ex. ladda upp ID-handlingar).",
+          "Skicka in registreringsformuläret.",
+          "Kontrollera din e-post för en verifieringslänk och klicka på den för att aktivera ditt konto."
         ]
       }
     ],
-    "Om inloggning för Overload Casino": [
+    "Om X3000 Casino Login": [
       {
         "type": "paragraph",
-        "text": "Designad för att ge konsumenterna snabb tillgång till sina konton, Overload casino login är en enkel, säker process. Högst upp på hemsidan måste användarna först trycka på ”Logga in”. De måste sedan fylla i de relevanta fälten med sin registrerade e-postadress och lösenord. När uppgifterna matas in transporteras spelarna omedelbart till sin kontodashboard; där kan de hantera personlig information, göra anspråk på incitament, göra insättningar och börja spela sina valda spel. Overload Casino stöder också tvåfaktorsautentisering för mer säkerhet, vilket ger användarna extra säkerhet under hela inloggningsproceduren."
+        "text": "Spelare kan nå sina konton via den snabba och säkra X3000 Casino login. Börja med att gå till den officiella webbplatsen och välj ”Logga in” längst upp till höger. Den säkra inloggningssidan kräver deras e-postadress och lösenord. Speciellt för förbättrad säkerhet kan spelare behöva tillhandahålla en mobil enhetskod för tvåfaktorsautentisering. Spelare kan omedelbart komma åt sin instrumentpanel för att kontrollera sin profil, kontrollera sitt saldo, sätta in eller ta ut pengar och se hela spelvalet efter att ha bekräftat sina referenser. För en sömlös spelupplevelse betonar hela proceduren hastighet, enkelhet och kontosäkerhet."
       }
     ],
     "Metoder för insättning": [
       {
         "type": "paragraph",
-        "text": "Overload Casino erbjuder flera säkra insättningsmetoder för att hjälpa spelare att finansiera sina konton snabbt. Kasinot accepterar Visa, Mastercard och Revolut, som behandlas snabbt utan kostnader. Jeton, MiFinity, AstroPay och Apple Pay är e-plånböcker som bearbetas direkt och möjliggör sömlöst spel. Förbetalda kuponger som Neosurf och Flexepin möjliggör anonyma insättningar utan bankinformation. Instant Banking, Rapid Transfer och Sofort stöder banköverföringar, som tar några minuter att bekräfta. Minsta insättning för de flesta metoder är SEK10, vilket gör dem tillgängliga för avslappnade spelare."
+        "text": "Flera pålitliga betalningsmetoder låter användare finansiera sina X3000 Casino-konton. Accepterade insättningsmetoder är Trustly för direkta banköverföringar och Swish för mobilbetalningar. 200 SEK är den minsta insättningen. Dessa tekniker är avsedda att garantera snabba och säkra transaktioner så att användarna kan börja njuta av sin spelupplevelse utan att vänta."
       }
     ],
     "Metoder för uttag": [
       {
         "type": "paragraph",
-        "text": "Overload Casino erbjuder snabba och säkra uttag. De flesta uttag med Visa, Mastercard, Revolut, Apple Pay, Jeton, MiFinity, AstroPay och EcoPayz är tillåtna under öppettiderna. Kort- och plånboksuttag anländer vanligtvis inom en arbetsdag, medan uttagsoperationer för Instant Banking eller Rapid Transfer Overload Casino withdrawal kan ta upp till två arbetsdagar, beroende på bank. Overload Casino har inga uttagsavgifter och ett minsta uttag på 20 SEK för alla metoder. För banktransaktioner kan spelare betala finansinstitut."
+        "text": "Uttag på X3000 Casino hanteras med samma tekniker som insättningar, vilket garanterar en smidig upplevelse. Spelare kan be om Trustly- och Swish-belöningar. 200 SEK är det minsta belopp du kan ta ut. Beroende på den valda metoden och slutförandet av eventuella nödvändiga verifieringsprocesser försöker kasinot hantera uttagsbegäranden snabbt, vanligtvis inom 1 till 3 arbetsdagar."
       }
     ]
   },
   "advantages": {
-    "Overload Сasino Flashback Fördelar": [
+    "X3000 Сasino Fördelar": [
       {
         "type": "paragraph",
-        "text": "Även om det finns några små nackdelar att ta hänsyn till, erbjuder Overload Casino en fantastisk spelupplevelse med flera funktioner. Här nedan är en enkel Overload Casino review av dess fördelar och nackdelar."
+        "text": "X3000 Casino prioriterar hastighet, säkerhet och mångfald i sin spelupplevelse. Innan du registrerar dig, utvärdera dess styrkor och svagheter i denna X3000 Casino recension."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Fördelar och nackdelar"
+        "text": "Fördelar med X3000 Casino"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Brett urval av slots, bordsspel och live casino-alternativ",
-          "Snabba och säkra betalningsmetoder",
-          "Mobiloptimerad plattform utan nedladdning av app krävs",
-          "Licensierad och reglerad för säkert spel",
-          "Regelbundna kampanjer och lojalitetsbelöningar",
-          "24/7 kundsupporttjänst",
-          "Snabb registrerings- och verifieringsprocess",
-          "Flera valutor som stöds"
+          "Licensierat och reglerat av svenska Spelinspektionen",
+          "Över 5 400 slots, live casino och sportsbettingtitlar.",
+          "Snabb och enkel registreringsprocess",
+          "Snabba insättningar och uttag",
+          "Mobilvänlig design utan krav på app",
+          "Säkerhet och dataskydd på hög nivå",
+          "Exklusiva kampanjer och lojalitetsbelöningar",
+          "24/7 kundsupporttjänst"
         ]
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Nackdelar"
+        "text": "Nackdelar och nackdelar"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Vissa landsbegränsningar gäller",
-          "Begränsad tillgänglighet för vissa nischade spelleverantörer",
-          "Höga omsättningskrav på vissa bonusar"
+          "Begränsad tillgänglighet för spelare utanför Sverige och Estland",
+          "Ingen särskild mobilapplikation",
+          "Vissa länder är begränsade från registrering",
+          "Högre omsättningskrav för vissa bonusar",
+          "Begränsade språkalternativ på webbplatsen"
         ]
       }
     ]
   },
   "games-to-play": {
-    "Spel tillgängliga för att spela på Overload Casino": [
+    "Spel tillgängliga för att spela på X3000 Casino": [
       {
         "type": "paragraph",
-        "text": "Med mer än 3 000 spel från över 70 välkända programvaruföretag, inklusive NetEnt, Evolution, Pragmatic Play, Play'n GO, Quickspin och Nolimit City, har Overload Casino en varierad och stor spelportfölj. Oavsett om de gillar vintageupplevelser eller banbrytande innovation garanterar detta breda spektrum att spelare med varierad smak och preferenser lätt kan hitta spel som passar deras stil."
+        "text": "Spelare kan välja mellan flera spel på Casino X3000. Klassiska slots, engagerande live dealer-spel och betydande sportspel engagerar alla spelare på X3000."
       },
       {
         "type": "heading",
@@ -111,212 +119,212 @@
       },
       {
         "type": "paragraph",
-        "text": "Overload Casinos samling av spelautomater är stor och anmärkningsvärd. Spelare kan välja mellan en rad olika former, inklusive konventionella trehjulsslots gjorda för individer som värdesätter enkelhet, progressiva jackpottslots där prispotten alltid stiger och Megaways-slots med dynamiska rullstrukturer som genererar många vinnande möjligheter. Förutom konventionella format har kasinot 3D-slots som är kända för sin överlägsna visuella kvalitet, videoslots med rika teman och extrafunktioner och traditionella format. Populära titlar garanterar att det alltid finns något intressant att hitta; de inkluderar Aloha! Cluster Pays, Gonzo's Quest Megaways, Starburst, Floating Dragon och Sugar Rush."
+        "text": "Fans av snurrande hjul kommer att älska X3000 Casinos cirka 4 000 slotspel. Samlingen innehåller klassiker och nya utgåvor från framstående skapare. Populära spel som Gates of Olympus, Book of Dead och Pirots 3 har tydliga teman och bonusar. X3000 erbjuder exklusiva spel som Cash & Carry 3 och Candy Machine för specifika plattformar. Jackpot Giant och Age of the Gods: King of Olympus erbjuder progressiva jackpottar värda miljoner, vilket gör varje snurr spännande."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bordsspel"
+        "text": "Live Casino"
       },
       {
         "type": "paragraph",
-        "text": "För älskare av casinoklassiker erbjuder bordsspelen på Casino Overload en konventionell men ändå flexibel upplevelse. Från konventionella till mer moderna varianter kan spelarna delta i flera blackjack-spel och njuta av rouletteval inklusive europeiska, amerikanska och franska typer. Det finns många olika typer av baccarat, som alla ger en snygg och elegant spelmiljö. Bland alternativen för pokerälskare finns Caribbean Stud, Three Card Poker och Casino Hold'em; videopokermaskiner ger ytterligare spänning genom att blanda slotspel med pokertaktik."
+        "text": "X3000:s Live Casino ger en äkta och fascinerande spelupplevelse för riktiga casinofans. Medlemmarna kan njuta av spännande live dealer-spel som Magic Red Roulette, Desperado Blackjack och Mega Fire Blaze Roulette. Expertdealers är värdar för dessa spel och strömmar dem i HD för sömlöst spel och utmärkt kommunikation. Spelarna kan interagera med dealers och andra spelare, vilket skapar en dynamisk miljö som på ett landbaserat kasino. Varje spelstil kan tillfredsställas med många bordsgränser och speltyper."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Livekasino"
+        "text": "Vadslagning på sport"
       },
       {
         "type": "paragraph",
-        "text": "För spelare som letar efter spänningen i realtid erbjuder Overload Casinos live casino-sektion en riktigt engagerande upplevelse. Professionella dealers som kör varje spel via högupplösta sändningar ger live blackjack, live roulette och live baccarat. Roliga spelprogram som Dream Catcher och Crazy Time erbjuder mer interaktion och incitament. Branschledarna Evolution och Ezugi driver live casino-plattformen, som erbjuder smidigt spel, professionella värdar och en riktig kasinoupplevelse hemma."
+        "text": "Med en omfattande plattform för sportspel erbjuder X3000 Casino täckning av många idrottsevenemang. Spelare kan spela på fotboll, basket, tennis och mindre kända sporter. Konkurrenskraftiga odds ger spelarna bättre vinster på vanliga och specialspel på sportboken. X3000 tillåter också livebetting på matcher. Denna dynamiska inställning till sport X3000 Casino omsättningskrav gör det mer spännande att titta på spel och gör det möjligt för deltagarna att göra snabba, strategiska val beroende på händelseflödet."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Specialiserade spel"
+        "text": "Andra spel"
       },
       {
         "type": "paragraph",
-        "text": "Overload Casino erbjuder en rad specialspel för spelare som söker något unikt utanför de konventionella och live-spelområdena. Medan tärningsspel som Sic Bo och Dice Jackpot erbjuder intressanta variationer på klassiska bordsspel, erbjuder skraplotter enkla och snabba spel med omedelbara vinstchanser. Andra ovanliga kortspel som Rummy, Red Dog och Pirate 21 ökar spelportföljen ytterligare genom att låta spelarna möta andra format och taktiker utanför de vanliga casinoalternativen."
+        "text": "X3000 Casino Sverige erbjuder en mängd olika spel för att hålla spelarna underhållna utöver sina slots och live dealer-alternativ. Videobingofantaster kan prova spel med omedelbar vinst, medan videopokerspelare kan spela klassiska varianter som kombinerar strategi och tur. X3000 erbjuder Crash och Mines, spännande spel som avviker från kasinots standardformer. Dessa extra speltyper ger en väl avrundad portfölj som garanterar en rolig upplevelse för alla spelare."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Överbelasta kasinobonusar och kampanjer": [
+    "X3000 Casino bonusar och kampanjer": [
       {
         "type": "paragraph",
-        "text": "Overload Casino är utformat för att förbättra spelupplevelsen för både nya och nuvarande spelare och erbjuder en mängd olika kampanjer. Följande är en sammanfattning av de nuvarande bonuserbjudandena:"
+        "text": "X3000 Casino erbjuder bonusar och kampanjer för att förbättra spelupplevelsen för nya och befintliga spelare. Välkomst X3000 Casino bonus erbjudanden, gratisspel och insättningsbonusar förbättrar värdet över spelkategorier."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Välkomstbonus: Upp till 1,500 gratissnurr"
+        "text": "Välkomstbonus"
       },
       {
         "type": "paragraph",
-        "text": "Overload Casino välkomstbonuspaket ger nya spelare upp till 1 500 gratissnurr på sina fem första insättningar. En betydande 200% matchbonus och upp till 500 gratissnurr på utvalda spelautomater tilldelas vid första insättningen. Fortsätt takten med de nästa fyra insättningarna, var och en erbjuder 250 gratissnurr. Dessa gratissnurr har inga satsningsbegränsningar, så vinsterna är kontanter. Spelare kan börja sitt äventyr med optimal intjäningspotential genom att använda gratissnurr inom en viss tidsram och på specifika spel som anges i kampanjvillkoren."
+        "text": "Nya spelare på X3000 Casino får en 100% matchbonus upp till 1,500 SEK på sin första insättning. Nykomlingar får ett försprång med denna affär och fördubblar sin bankrulle. Att sätta in 1 000 SEK, till exempel, ger dig 2 000 SEK för att njuta av flera kasinospel. Spelare måste aktivt använda plattformen för att ta ut bonuspengar; deras användning måste följa kasinots policy. Denna välkomstbonus ökar speltiden och förbättrar upplevelsen genom att ge fler spel och vadslagningsmöjligheter från början."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Jackpottar med episka droppar"
+        "text": "Bonus för sportspel"
       },
       {
         "type": "paragraph",
-        "text": "Overload Casino erbjuder Epic Drop Jackpots, ett progressivt jackpotsystem som kan uppstå slumpmässigt vid varje snurr. För att vinna krävs en insats på 0,10 SEK per snurr. Mini-, Super- och Epic-jackpottarna ger olika prisintervall, där Epic-jackpotten når stora belopp. Dessa jackpottar är kopplade till spelautomater, vilket ger spänning till vanligt spel. Varje snurr kan utlösa en jackpottvinst, oavsett insatsstorlek, så varje spelare har en rättvis chans att vinna stort när de spelar sina favoritslots."
+        "text": "Sportspelare på X3000 Casino kan få en 100% matchning på sin första insättning upp till 1,000 SEK. Vår kampanj är för sportspelare, från fotboll och basket till tennis och mer. Spelare kan använda bonuspengar för att utforska bättre spelmarknader efter att ha gjort den nödvändiga insättningen. Som alla kampanjerbjudanden har sportbettingbonusen omsättningskrav innan vinster kan tas ut. Nya spelare som är intresserade av live- eller pre-match-betting drar nytta av det."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Kampanjer och turneringar varje vecka"
+        "text": "Veckovisa slot-kampanjer"
       },
       {
         "type": "paragraph",
-        "text": "Overload Casino genomför veckovisa kampanjer och turneringar för att hålla saker intressanta. Leaderboard-tävlingar kan delta genom att spela vissa slots eller delta i speciella spelevenemang. Toppspelare får kontanter, gratissnurr och exklusiva bonusar beroende på spelpoäng. Evenemangen har olika prispotter och inträdesbegränsningar för casual och high rollers. Alla turneringsregler, kvalificerade spel och prisutdelningsdetaljer tillhandahålls i förväg, vilket gör det lättare för spelare att organisera sitt deltagande och söka ytterligare priser."
+        "text": "Slotspelare på X3000 Casino njuter av veckovisa incitament som ökar belöningarna och spänningen. En populär kampanj ger spelare som satsar 200 SEK på utvalda spelautomater 20 bonus spins gratis. Kasinot erbjuder bonus spins och dagliga slot-turneringar med stora kontantpriser. Turneringar med prispotter på 500 EUR lockar spelare som är angelägna om att bygga sina bankrullar. Regelbundna kampanjer uppmuntrar spelare att prova nya spel och hålla kontakten med plattformen."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Cashback-erbjudanden och Overload Сasino no Deposit Bonus"
+        "text": "Turneringar i videopoker"
       },
       {
         "type": "paragraph",
-        "text": "Overload Casino erbjuder cashback-belöningar på vissa spel och varaktigheter för insättningssäkerhet. Cashback beräknas som en andel av spelarens nettoförluster under hela kampanjen och krediteras som bonusfonder eller riktiga pengar, beroende på affären. Spelare kan delvis återhämta förluster, vilket minskar effekterna av dåliga sessioner och förbättrar bankrullehanteringen. Cashback-priser, tillåtna spel och minimiförlustgränser varierar per kampanj, så spelare bör läsa reglerna för att optimera fördelarna och spela riskfritt."
+        "text": "För strategiska spelare erbjuder X3000 Casino dagliga videopokerturneringar med prispotter på upp till 1 000 SEK. Spelare kan klättra på ledartavlan genom att prestera bra i flera videopokervarianter. Samtidigt som de spelar sina favoritspel på ett konkurrenskraftigt sätt kan spelarna vinna stora kontantbelöningar. Turneringar belönar skicklighet och jämnhet och ger ett dynamiskt socialt inslag i spelandet genom att spelare ställs mot varandra i kampen om topplaceringar och kontanter. Regelbundet deltagande ger videopokerfans en anledning att återvända."
       }
     ]
   },
   "support": {
-    "Stöd och support": [
+    "Stöd": [
       {
         "type": "paragraph",
-        "text": "Overload Casino erbjuder 24/7 kundservice för eventuella frågor eller svårigheter. Livechatt och e-poststöd säkerställer snabb och effektiv service. Supportbesättningen är skicklig inom kontohantering, betalningshantering och teknisk felsökning. Personalen ger tydliga och hjälpsamma svar till alla spelare på engelska, det viktigaste språket för support."
+        "text": "Livechatt och e-post ger tillgång till X3000 Casinos kundtjänst. Supportteamet arbetar måndag till fredag från 09:00 till 00:00 och på helgerna från 10:00 till 18:00. För snabb hjälp kan spelare antingen kontakta support@x3000.ee via e-post eller använda livechatt eller X3000 Casino Trustpilot. Supportteamet är känt för sin snabbhet och hjälp och hanterar en mängd olika problem från tekniska problem till kontoadministration."
       }
     ]
   },
   "faq": {
-    "Overload Сasino Trustpilot FAQ": [
+    "VANLIGA FRÅGOR OM KASINOT": [
       {
         "type": "heading",
         "level": 3,
-        "text": "Finns det en maximal vinstgräns på Overload Casino?"
+        "text": "På X3000 Casino, vad är den minsta insättningen?"
       },
       {
         "type": "paragraph",
-        "text": "Ja, den högsta enskilda utbetalningen per spelare är begränsad till 100 000 SEK om inte annat anges för progressiva jackpottar."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Kan jag sätta gränser för ansvarsfullt spelande på mitt konto?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Ja, du kan ställa in dagliga, veckovisa eller månatliga insättnings-, förlust-, satsnings- och sessionstidsgränser direkt i dina kontoinställningar."
+        "text": "Den minsta insättningen är 5 SEK, varför spelare kan börja vinna med en liten investering."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Accepteras kryptovalutabetalningar på Overload Casino?"
+        "text": "Vad är det lägsta uttagsbeloppet på X3000 Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Nej, för närvarande stöder Overload Casino inte insättningar eller uttag av kryptovaluta."
+        "text": "Spelare kan ta ut minst 10 SEK från sina konton."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Hur länge dröjer väntande uttag innan de godkänns?"
+        "text": "Finns det några maximala uttagsgränser på X3000 Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Väntande Overload Casino withdrawal time granskas och godkänns vanligtvis inom 24 timmar på arbetsdagar."
+        "text": "Trustly-uttag är begränsade till 1 000 000 SEK och Swish-uttag är 20 000 SEK."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Erbjuder detta kasino exklusiva spel?"
+        "text": "Hur lång tid tar det att behandla uttag på X3000 Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Nej, Overload Casino erbjuder för närvarande populära titlar från stora leverantörer men har inte exklusiva eller egna spel."
+        "text": "Beroende på metod och verifiering tar uttag 1-3 arbetsdagar."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Finns det ett VIP- eller lojalitetsprogram tillgängligt?"
+        "text": "Vilka är ålderskraven för att registrera sig på X3000 Casino?"
       },
       {
         "type": "paragraph",
-        "text": "För närvarande kör Overload Casino inte ett formellt VIP- eller lojalitetsbelöningsprogram för spelare."
+        "text": "Med undantag för vadslagningsverksamhet, som kräver en lägsta ålder på 18 år, måste spelare vara minst 21 för att registrera sig."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Kan jag avbryta ett uttag efter att ha begärt det?"
+        "text": "Vilka spelleverantörer finns på X3000 Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Nej, när en uttagsbegäran har skickats in på Overload Casino kan den inte vändas eller avbrytas."
+        "text": "Inklusive NetEnt, Play'n GO, Evolution Gaming och Yggdrasil tillhandahåller X3000 Casino spel från mer än 90 leverantörer."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Har Overload Casino satsningsfria kampanjer?"
+        "text": "Finns det en mobilapp tillgänglig för X3000 Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Ja, de välkomna gratissnurr tilldelas utan omsättningskrav, vilket innebär att vinster betalas ut som riktiga kontanter."
+        "text": "Webbplatsen är helt strömlinjeformad för mobila webbläsare, så den presenterar ett oavbrutet besök på smartphones och surfplattor."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Kan jag ändra min registrerade e-postadress?"
+        "text": "Vilka valutor accepteras på X3000 Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Det är möjligt att ändra din e-postadress men kräver att du kontaktar kundsupport och slutför en identitetsverifieringskontroll."
+        "text": "Plattformen fungerar främst i svenska kronor (SEK) för alla transaktioner."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Finns det avgifter för valutakonvertering under transaktioner?"
+        "text": "Vilka språk stöds på X3000 Casino-plattformen?"
       },
       {
         "type": "paragraph",
-        "text": "Overload Casino tar inte ut några avgifter för valutakonvertering, men spelarnas banker eller betalningsleverantörer kan ta ut en avgift."
+        "text": "Webbplatsen och kundsupporten finns på engelska och svenska."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Hur kan jag kontakta X3000 Casino kundsupport?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Support är tillgänglig via livechatt och e-post på support@x3000.com, som fungerar dagligen från 08:00 till 00:00."
       }
     ]
   },
   "sections": {
-    "Programvaruteknologier": [
+    "Mjukvaruteknologi": [
       {
         "type": "paragraph",
-        "text": "Overload Casino arbetar med över 50 toppspelutvecklare för att erbjuda en bred och högkvalitativ spelupplevelse. Plattformen erbjuder spel från NetEnt, Evolution, Play'n GO, Pragmatic Play, Quickspin, NoLimit City, Red Tiger, Spinomenal, Elk Studios, iSoftBet och 1X2 Gaming. Slots, bordsspel och live kasinospel är tillgängliga på grund av detta omfattande samarbete, catering till spelarnas smak. Inga programnedladdningar behövs för att spela spelen i webbläsare på stationära och mobila enheter. Plattformen optimerar prestanda mellan olika enheter för smidigt spelande."
+        "text": "X3000 Casino arbetar med de bästa mjukvaruföretagen och erbjuder en varierad spelupplevelse. Plattformen erbjuder spel från välkända företag inklusive NetEnt, Play'n GO, Quickspin och Evolution Gaming. Denna allians garanterar exceptionella live dealer-, bords- och slotmöten. Webbplatsen är byggd med nuvarande webbteknik och garanterar kompatibilitet mellan många enheter och webbläsare."
       }
     ],
-    "Säkerheten": [
+    "Säkerhet": [
       {
         "type": "paragraph",
-        "text": "Overload Casino skyddar personliga och finansiella data med hjälp av starka skydd. Avancerad SSL-kryptering skyddar dataöverföringen på plattformen. Overload Casino följer också Malta Gaming Authoritys regler för datasekretess och rättvist spel. Kasinot använder åtgärder för bedrägeribekämpning och penningtvätt för att hålla spelen säkra. Plattformsintegriteten upprätthålls genom revisioner och övervakning."
+        "text": "Vårt första mål på X3000 Casino är säkerhet. SSL skyddar användardata och finansiella transaktioner på plattformen. Tvåfaktorsautentisering (2FA) förbättrar kontosäkerheten. Den svenska spelmyndigheten (Spelinspektionen) licensierar och reglerar kasinot, vilket säkerställer strikt efterlevnad. Casino Guru gav X3000 Casino ett säkerhetsindex på 9,8, vilket tyder på en pålitlig och pålitlig spelmiljö."
       }
     ],
     "Casino-appen": [
       {
         "type": "paragraph",
-        "text": "Overload Casinos responsiva webbplattform fungerar på iOS och Android. Mobila webbläsare gör det möjligt för spelare att få tillgång till kasinots kompletta urval av spel och funktioner utan att ladda ner en app. Mobilversionen erbjuder kontohantering, insättningar, uttag och kampanjer som skrivbordssidan. Detta gör spel på alla enheter enkelt och konsekvent."
+        "text": "Det finns inga specifika mobilappar för iOS eller Android på X3000 Casino. Webbplatsen är under tiden helt mobil webbläsaroptimerad för att erbjuda en smidig spelupplevelse på surfplattor och smartphones. Utan extra nedladdningar kan spelarna njuta av hela spektrumet av spel och funktioner direkt från sina mobila webbläsare."
       }
     ],
     "Språk": [
       {
         "type": "paragraph",
-        "text": "Overload Casinos webbplats och support är mestadels på engelska. Webbplatsgränssnittet och kundtjänsten är endast tillgängliga på engelska, även om plattformen betjänar en internationell kundkrets. Fokuset säkerställer tydlig kommunikation och hjälp för engelsktalande spelare."
+        "text": "X3000 Casino har ett system som stöder flera olika språk för att kunna erbjuda en bred användarbas. Webbplatsen och kundtjänsten finns på engelska och svenska, vilket gör dem tillgängliga för spelare från många olika områden. Denna tvåspråkiga hjälp förbättrar användarupplevelsen och möjliggör effektiv interaktion med supportteamet."
       }
     ],
-    "Valutor": [
+    "Valuta": [
       {
         "type": "paragraph",
-        "text": "Spelare från olika regioner kan använda många valutor på Overload Casino. Euro, US-dollar, kanadensiska dollar, australiska dollar, nyzeeländska dollar, norska kronor, svenska kronor och danska kronor accepteras. Den valuta som väljs vid registrering kommer att användas för alla transaktioner, inklusive insättningar och uttag. Kompatibilitet med flera valutor gör det enklare att spela internationellt."
+        "text": "X3000 Casino fungerar mestadels i svenska kronor (SEK), och alla spel, uttag och insättningar görs i SEK. Genom att fokusera på en valuta förenklas de finansiella förfarandena för konsumenter i de områden som stöds."
       }
     ]
   }

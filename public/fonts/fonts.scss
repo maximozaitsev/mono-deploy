@@ -1,17 +1,10 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Staatliches", sans-serif;
+$font-secondary: "Exo", sans-serif;
 
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("./Roboto/Roboto-Black.ttf") format("truetype");
-  font-weight: 900;
   font-style: normal;
 }
 
@@ -30,8 +23,8 @@ $font-secondary: "Staatliches", sans-serif;
 }
 
 @font-face {
-  font-family: "Staatliches";
-  font-weight: 400;
+  font-family: "Exo";
+  font-weight: 700;
   font-style: normal;
-  src: url("./Heading/static/Staatliches-400.woff2") format("woff2");
+  src: url("./Heading/static/Exo-700.woff2") format("woff2");
 }
