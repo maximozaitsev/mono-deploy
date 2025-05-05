@@ -1,309 +1,411 @@
 {
-  "title": "Epic Game Casino",
+  "title": "Vox Casino Poland",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "100% matchningsbonus, upp till 1.000 SEK",
-        "200 SEK min. uttagsbelopp",
-        "Pay N Play-system"
+        "<strong>500 FS dla nowych użytkowników;</strong>",
+        "<strong>płatności kryptowalutowe;</strong>",
+        "<strong>4-depozytowy bonus powitalny.</strong>"
       ]
     },
     {
       "type": "paragraph",
-      "text": "Epic Casino Sweden var ett svenskfokuserat onlinekasino som förvaltades av Kanon Gaming Limited. Den svenska spelmyndigheten (SGA) licensierade den för säkert och reglerat spel. Plattformen har många spel, inklusive slots som Sweet Bonanza och Gates of Olympus och bordsspel som blackjack och roulette. Casino Epic Sweden förenklade användarupplevelsen genom att använda Trustlys Pay N Play-teknik för snabba insättningar och uttag utan registrering."
+      "text": "Vox Casino online w Polsce znane jest z ogromnego bonusu powitalnego - promocja dla nowych graczy obejmuje 4 pierwsze depozyty i daje 500 dodatkowych darmowych spinów. Na uwagę zasługuje również ponad 5000 gier: w Vox można wypróbować automaty, gry z krupierem na żywo, gry stołowe i natychmiastowe wygrane. Każdy ważny szczegół dotyczący Vox Casino znajdziesz w tym artykule. Czytaj dalej Vox Casino opinie, aby dowiedzieć się, jak się zarejestrować, wypłacić pieniądze i otrzymywać promocje na gry kasynowe."
     }
   ],
   "about": {
-    "Registreringsprocess för Epic Casino": [
+    "Rejestracja w Vox Casino": [
       {
         "type": "paragraph",
-        "text": "Casino Epic Swedens integration med Trustlys Pay N Play-teknik gör registreringen snabb och säker. Spelare kan registrera sig och spela direkt med sitt svenska BankID, utan långt pappersarbete eller dokumentuppladdningar."
-      },
-      {
-        "type": "paragraph",
-        "text": "Casino Epic Sweden Registreringssteg finns här i Casino Epic omdöme:"
+        "text": "Polscy gracze mogą uzyskać dostęp do strony bez Vox Casino rejestracja po prostu odwiedzając oficjalną stronę. Wypróbuj gry demo, zapoznaj się z regulaminem i dowiedz się o dostępnych promocjach. Aby uzyskać dostęp do gier na pieniądze, wygranych i bonusów, wymagana jest rejestracja:"
       },
       {
         "type": "list",
         "style": "ordered",
         "items": [
-          "Besök Casino Epics webbplats",
-          "Klicka på ”Spela Nu” (Spela nu)",
-          "Välj din bank från Trustly-gränssnittet",
-          "Logga in säkert med ditt BankID",
-          "Bekräfta ditt insättningsbelopp",
-          "Börja spela omedelbart"
+          "Kliknij przycisk „Rejestracja”. Znajdziesz go na stronie głównej.",
+          "Wybierz preferowaną metodę rejestracji. Utwórz konto za pomocą numeru telefonu lub adresu e-mail albo połącz swój profil z Google, Telegramem lub Facebookiem.",
+          "Wypełnij formularze. Wprowadź wymagane informacje i utwórz hasło.",
+          "Wybierz walutę i potwierdź. Gracze z Polski mogą wybierać spośród EUR i PLN. Następnie zaakceptuj regulamin i sfinalizuj rejestrację."
         ]
       },
       {
         "type": "paragraph",
-        "text": "Detta förenklade tillvägagångssätt låter människor spela sina favoritspel omedelbart."
+        "text": "Teraz masz dostęp do wpłat i weryfikacji konta. Wykonaj oba kroki, a będziesz mógł otrzymywać wypłaty, ubiegać się o bonusy i grać w gry na prawdziwe pieniądze."
       }
     ],
-    "Om inloggning på Epic Casino": [
+    "Zaloguj się w kasynie Vox": [
       {
         "type": "paragraph",
-        "text": "Casino Epic använder Sveriges BankID-system genom Trustly för snabb, säker och enkel Epic Casino logga in. Spelare väljer Epic Casino login knapp, väljer sin bank och verifierar sin identifiering med BankID istället för att använda användarnamn och lösenord. Det eliminerar behovet av att komma ihåg inloggningsuppgifter och ger hög säkerhet. Spelare omdirigeras omedelbart till sitt konto för att återuppta spelet, hantera sitt saldo eller göra snabba insättningar och uttag efter autentisering. Casino Epic login strävar efter att ge svenska spelare en smidig och effektiv inloggningsprocess."
+        "text": "Kliknij „Wejdź”, aby uzyskać dostęp do swojego konta w casino Vox. Wprowadź swój adres e-mail/numer telefonu i hasło do Vox Casino logowanie. Należy pamiętać, że dozwolone jest tylko jedno konto na gospodarstwo domowe. Tak więc, jeśli zapomnisz danych Vox Casino login, przywróć swój profil za pośrednictwem pomocy technicznej i nie twórz nowych."
       }
     ],
-    "Metoder för insättning": [
+    "Metody wpłat": [
       {
         "type": "paragraph",
-        "text": "Casino Epic Sweden stöder endast en insättningsmetod: Trustly's Pay N Play. Enligt denna metod, som är helt kopplad till svenska banker, måste spelare använda BankID för att verifiera sin identitet före insättning. Pengar visas i spelarens Casino Epic konto inom några sekunder efter verifiering, vilket gör processen snabb. Det finns inget behov av att registrera sig eller ange kortinformation; spelarna väljer bara sin bank, loggar in med BankID, bekräftar transaktionen och börjar spela. Vanligtvis är 200 SEK den lägsta tillåtna insättningen. Andra insättningsmetoder som inte är tillgängliga är Visa, Mastercard, PayPal, Skrill eller Neteller. Trustly är det enda alternativet med tanke på Sveriges lagstadgade fokus på snabba, säkra och spårbara betalningslösningar. Kasinot har inga insättningsavgifter; alla transaktioner utförs under krypteringspolicyer som säkerställer användarsäkerhet och datasekretess."
+        "text": "Akceptowane metody wpłat w Polsce są następujące:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Blik;",
+          "Visa i Mastercard;",
+          "Skirll;",
+          "Neteller;",
+          "paySafeCard;",
+          "Binance Pay;",
+          "Tether ERC-20;",
+          "Bitcoin;",
+          "BNB;",
+          "Ethereum;",
+          "Litecoin;",
+          "Dogecoin;",
+          "Moneta USD;",
+          "TON;",
+          "Tron."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Minimalny depozyt waha się od 20 do 30 PLN, w zależności od wybranej metody. Wszystkie depozyty są bez opłat."
       }
     ],
-    "Epic Casino Win Uttagsmetoder": [
+    "Vox Casino wyplaty": [
       {
         "type": "paragraph",
-        "text": "Casino Epic blockerade uttag görs endast med samma BankID-säkrade Pay N Play-metod via Trustly. Inga andra betalningsalternativ accepteras, och därför kan uttag endast göras till samma bankkonto som användes för den första insättningen. Detta säkerställer efterlevnad av Sveriges regler mot penningtvätt och ger en säker miljö för varje finansiell transaktion. Vanligtvis är Casino Epic uttag slutförda på fem minuter, Casino Epic är bland de snabbaste på den svenska marknaden. Beroende på bank kan det ibland ta så lång tid som 15 minuter innan pengarna finns på spelarens konto. Epic Casino uttag är gratis; ingen manuell verifiering krävs förrän kasinots riskhanteringsregler höjer röda flaggor. Alla användare måste verifieras med BankID; inga tredjeparts uttag Casino Epic är tillåtna under några omständigheter."
+        "text": "Zweryfikuj swój profil (potwierdź adres e-mail i numer telefonu oraz dostarcz skany dokumentów tożsamości), aby zlecić wypłatę. W 2025 roku polscy gracze mogą wypłacić pieniądze za pomocą przelewu bankowego, Ethereum, Tether ERC-20, Tether TRC-20, Dogecoin, USD Coin, Litecoin, Tron i BNB. Minimalna kwota Vox Casino wypłata wynosi 40 zł."
+      },
+      {
+        "type": "paragraph",
+        "text": "Wypłaty poniżej 999 zł trwają zaledwie trzy dni, natomiast większych kwot od 5 dni do 21 dni roboczych w przypadku jackpotów powyżej 41 999 zł. Wypłaty są wolne od opłat."
       }
     ]
   },
   "advantages": {
-    "Epic Online Casino Fördelar": [
+    "Zalety kasyna online Vox": [
       {
         "type": "paragraph",
-        "text": "Casino Epic ger en snygg, modern spelupplevelse för svenska spelare. Dess enkelhet, säkerhet och kvalitet gör det till ett bra val för snabb åtkomst och pålitliga betalningslösningar. Här är Casino Epic recension med dess för- och nackdelar:"
+        "text": "Platforma zaspokaja liczne preferencje - wypróbuj automaty do gier, gry stołowe, natychmiastowe wygrane i tytuły na żywo. Bonusy są również dostosowane do wszystkich rodzajów graczy, oferując darmowe spiny na automatach i bonusy meczowe dla innych gatunków gier. Jako licencjonowane kasyno z Cypru, Vox chroni dane osobowe i informacje finansowe graczy za pomocą szyfrowania SSL i zapewnia odpowiedzialne narzędzia hazardowe. W ten sposób zapewnione jest bezpieczeństwo każdego gracza. Ogólnie rzecz biorąc, połączenie licznych bonusów i gier, bezpiecznego hazardu i intuicyjnego interfejsu sprawia, że Vox Casino pl jest przyzwoitą witryną hazardową dla polskich gości."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Fördelar"
+        "text": "Zalety:"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Svensk licens",
-          "Pålitligt Pay N Play-system",
-          "Ingen registrering krävs",
-          "Snabba insättningar och uttag",
-          "Mobilvänligt gränssnitt",
-          "Brett utbud av slots och livespel",
-          "Ren och användarvänlig design",
-          "Säker inloggning med BankID"
+          "10+ metod płatności;",
+          "oficjalna licencja na Cyprze;",
+          "płatności kryptowalutowe;",
+          "program cashback;",
+          "ograniczone czasowo wydarzenia z nagrodami pieniężnymi;",
+          "regularne aktualizacje gry;",
+          "Klub VIP;",
+          "wsparcie 24/7."
         ]
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Nackdelar med casinot"
+        "text": "Wady:"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Endast tillgängligt i Sverige",
-          "Begränsade betalningsmetoder",
-          "Inget VIP- eller lojalitetsprogram",
-          "Få kampanjer eller bonusar",
-          "Ingen telefonsupport"
+          "oficjalna Vox Casino aplikacja nie jest jeszcze rozwinięta;",
+          "wypłaty zajmują więcej niż jeden dzień."
         ]
       }
     ]
   },
   "games-to-play": {
-    "Epic Casino Games tillgängliga att spela": [
+    "Gry do wypróbowania w Vox": [
       {
         "type": "paragraph",
-        "text": "Casino Epic Sweden erbjuder ett brett utbud av spel för att passa olika spelares smak. Plattformen erbjuder dussintals spel från toppleverantörer med högkvalitativa bilder, spännande spel och prestanda över flera plattformar."
+        "text": "Gry w Vox są podzielone na kilka sekcji, więc każdy gracz znajdzie preferowany gatunek i mechanizmy. Zobaczmy każdy z nich."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Epic Casino Slots"
+        "text": "Automaty"
       },
       {
         "type": "paragraph",
-        "text": "Casino Epic Sweden har ett stort slotsval för nybörjare och proffs. Plattformen har klassiska slots, moderna slots och spel med hög volatilitet med bonusar och gratissnurr. Starburst, Book of Dead och Sweet Bonanza är populära för sina ljusa teman och roliga spel. Visuellt fantastiska spel som Le Bandit, Finn and the Swirly Spin, Sakura Fortune och Vikings Go Berzerk finns också tillgängliga. Spel som Gold Blitz, Pirots 3 och Cygnus 5 erbjuder snabb slot-action med nya koncept. Detta breda och intressanta bibliotek innehåller 777 Strike, Deco Diamonds Elite, Gates of Olympus 1000, Sugar Rush 1000, Legacy of Dead, Fire Joker och Wild North."
+        "text": "Ciesz się najpopularniejszym gatunkiem kasyna dzięki Vox Casino bonus za rejestrację - pamiętaj, że nagroda powitalna oferuje darmowe spiny na Sweet Bonanza, Big Bass Splash, Sugar Rush i Gates of Olympus. Warto również wypróbować automaty z innych gatunków:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Sloty Books: Book of Ra, Book of Allways, Book of Zeus;",
+          "Megaways: The Dog House Megaways, Buffalo King Megaways, Extra Huicy Megaways;",
+          "Bonus Buy: Fortune Skulls Bonus Buy, Budai Reels Bonus Buy;",
+          "Klasyczne automaty: Amigo Double, Amigo Hot, Burning Classics."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Kliknij sekcję „Popularne”, aby zobaczyć najczęściej grane automaty w swoim regionie."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Live kasino"
+        "text": "Kasyno na żywo"
       },
       {
         "type": "paragraph",
-        "text": "För interaktivt och äkta spelande är Casino Epics live casino dynamiskt och realistiskt. Realtidsdealers, professionella studior och felfri streaming återskapar ett landbaserat kasino på din skärm. Blackjack Gold Exclusive och Blackjack Silver Exclusive är populära för olika bordsgränser och spelartyper. Roulettefantaster kan välja mellan Immersive Roulette och XXXTreme Lightning Roulette, som har spännande snurr och HD-grafik. Game shows och innovativa spel som Crazy Coin Flip, War, Race Track och Go Craps förhöjer liveupplevelsen."
+        "text": "Ciesz się grami w czasie rzeczywistym z profesjonalnymi krupierami i innymi graczami z Polski. Wiodące obecnie tytuły to High Flyer, Crazy Coin Flip, Speed Roulette, Crazy Pachinko i Emerald Blackjack."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Spel med jackpottar"
+        "text": "Natychmiastowe wygrane"
       },
       {
         "type": "paragraph",
-        "text": "Epic games Casino har gott om jackpottspel för stora vinnare. Lokala och progressiva jackpottspel ger livsförändrande vinster på webbplatsen. Progressiva slots som Mega Moolah, Mega Fortune, Hall of Gods och Arabian Nights är kända för sina stora prispotter. Andra spel som Divine Fortune och Jackpot Raiders erbjuder roliga teman och funktioner med höga utbetalningar. Spel med svenska teman som SchlagerSlotten™ visar upp den lokala smaken, medan Fruit Bonanza, Temple of Wealth, Imperial Riches och Sherlock and Moriarty WOWPOT! erbjuder mångfald för jackpottjägare."
+        "text": "Wypróbuj szybkie tytuły zapewniające szybkie wygrane. Wiodące gry z natychmiastową wygraną w Vox Casino online to Avaitor od Spribe, Mines od Turbo Games, Scratch Match od Evoplay i Keno od Tada Gaming. Tytuły te znane są z łatwej rozgrywki i braku zasad do nauczenia się - po prostu sprawdź swoje szczęście."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bordsspel"
+        "text": "Drops and Wins"
       },
       {
         "type": "paragraph",
-        "text": "Spelare som gillar klassiska kasinospel kommer att njuta av Casino Epic flashback bordsspelsområde. Många varianter av roulette, blackjack och andra klassiska spel finns tillgängliga med tilltalande användargränssnitt och lyhörd handling. Roulette-Premium, Golden Chip Roulette och First Person Lightning Roulette erbjuder intressanta möjligheter. Blackjack-fans kommer att njuta av Desperado Blackjack, Classic Blackjack Poker Side Bets och Blackjack MH, som ger unika variationer. Andra anmärkningsvärda titlar inkluderar Epic Strike Roulette 9 Masks of Fire, Ultra Warp Roulette, Multifire Roulette Wildfire och 9 Pots of Gold Roulette. First Person Mega Ball, HiLo, BacBo och Roca Riches Roulette blandar arkadspänning med konventionell mekanik för en unik upplevelse."
+        "text": "Seria Drops and Wins od Pragmatic Play znajduje się w osobnej sekcji. Te gry są podobne do automatów z jackpotem - maksymalna wygrana rośnie przez cały czas, aż jeden z graczy wygra całą sumę. Wypróbuj Books of the Fallen, Big Bass Bonanza, Sweet Bonanza, Sugar Rush 1000, Gates of Olympus 1000, Wisdom of Athena 1000 itd. Każda gra ma podobny interfejs i zasady, ale jest dostępna w różnych wersjach i motywach."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Nowe gry"
+      },
+      {
+        "type": "paragraph",
+        "text": "Vox regularnie dodaje nowe wersje. Kliknij sekcję „Nowe”, aby wypróbować je jako pierwszy. W 2025 roku gracze mogą cieszyć się Only Coins, Samurai Cats, Billie Wild, Tiger Pot, Thunder and Love, Demi Gods V, Big Bass Bonanza 3 Reeler, Galaxe chase itp. Wszystkie tytuły zostały opracowane w latach 2024-2025. Ponadto wypróbuj automat Vox Joker, opracowany przez Spinomenal specjalnie dla Vox Casino!"
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Epic Casino bonus erbjudanden och kampanjer": [
+    "Vox Casino bonusy w Polsce": [
       {
         "type": "paragraph",
-        "text": "Casino Epic Sweden ger en enda välkomstbonus för nya spelare. Plattformens begränsningar begränsar spelare till en Casino Epic bonus eller välkomsterbjudande. Operatören kan erbjuda anpassade bonusar till spelare eller grupper, men inga extra kampanjer publiceras."
+        "text": "Bonusy są dostępne dla wszystkich graczy, którzy dokonali pierwszego depozytu. Zobacz, jak odebrać swoją pierwszą nagrodę i skorzystać z innych ofert."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Casino Epic Välkomstbonus"
+        "text": "Vox Casino bonus za rejestracje"
       },
       {
         "type": "paragraph",
-        "text": "Första gången insättare på Casino Epic Sverige får en 100% matchbonus, upp till 1,000 SEK. För att kvalificera sig krävs en insättning på minst 200 SEK. Bonusen krediteras automatiskt, så spelare kan omedelbart dra nytta av en större bankrulle. Detta fina erbjudande är tillgängligt bara en gång per svenskt personnummer, vilket garanterar rättvist spel och följer ansvarsfull spelpolicy."
+        "text": "Bonus powitalny obejmuje 4 pierwsze depozyty w Vox Casino 24:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          "100% i 50 FS na Sweet Bonanza dla depozytów od 60 zł do 99 zł lub 125% i 100 FS dla wyższych wpłat.",
+          "125% bonusu i 50 FS na Big Bass Splash dla depozytów od 60 zł do 99 zł lub 150% bonusu + 100 FS dla wyższych depozytów.",
+          "150% i 50 FS na Sugar Rush dla depozytów 80 zł - 119 zł lub 175% bonusu + 150 FS dla największych depozytów.",
+          "175% i 50 FS na Gates of Olympus dla depozytów 80 zł - 119 zł lub 200% bonusu + 150 FS dla wyższych depozytów."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Wymóg obrotu dla Vox Casino bonus za rejestrację wynosi 30x. Należy pamiętać, że maksymalna nagroda za pierwsze dwie wpłaty wynosi 2 000 PLN i 3 000 PLN za trzecią i czwartą wpłatę."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Koło fortuny bonus"
+      },
+      {
+        "type": "paragraph",
+        "text": "Zagraj w Wheel of Fortune, aby wygrać bonusy w grze - darmowe spiny, bonus meczowy, mnożniki itp. Obrót kosztuje 12, 24 lub 60 PLN, w zależności od wybranego mnożnika. Aby uzyskać dostęp do tej promocji, otwórz menu boczne i wybierz „Koło fortuny”. Należy pamiętać, że wygrane podlegają wymogom obrotu. Nie potrzebujesz kodu promocyjnego Vox Casino - po prostu otwórz koło i weź udział w dowolnym momencie."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "100% Magic Bonus"
+      },
+      {
+        "type": "paragraph",
+        "text": "Bonus jest dostępny raz w tygodniu. Złóż depozyt w wysokości co najmniej 20 zł, aby otrzymać bonus 100% w wysokości do 4 000 zł. Promocja obejmuje zakład 20x i jest dostępna tylko raz w okresie promocyjnym. Nie ma potrzeby, aby Vox Casino promo code, aby aktywować bonus."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Bonus wiedźmiński: Vox Casino darmowe spiny"
+      },
+      {
+        "type": "paragraph",
+        "text": "Wpłać co najmniej 60 PLN, aby otrzymać 75 darmowych spinów w grze slotowej Master Joker. Należy pamiętać, że wartość każdego obrotu wynosi 0,8 zł, a bonus jest objęty wymogiem obrotu 35x."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Bonus 30%"
+      },
+      {
+        "type": "paragraph",
+        "text": "Złóż depozyt w wysokości co najmniej 60 PLN, aby otrzymać 30% bonusu od salda bonusowego. Pospiesz się - bonus jest aktywny przez 2 godziny po aktywacji i musi zostać obrócony 35 razy."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Klub VIP"
+      },
+      {
+        "type": "paragraph",
+        "text": "Gdy całkowita suma depozytów w Vox osiągnie 3000 EUR (czyli 12849 PLN), wejdziesz do klubu VIP - wejdziesz do klubu automatycznie bez Vox Casino bonus code. Członkowie otrzymują szybsze serwery, wyższe limity wypłat, unikalne bonusy i osobistego menedżera wsparcia. Następnie należy osiągać kolejne poziomy zbierając depozyty:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Gold (łącznie 11 000 PLN depozytu): osobisty menedżer VIP, gry VIP, szybsze wypłaty, ekskluzywne turnieje;",
+          "Platynowy (łącznie 2 000 PLN depozytu): unikalny awatar i skórka, więcej unikalnych promocji i turniejów;",
+          "Diament (44 000 PLN depozytu): wydarzenia VIP, bonusy i turnieje."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "W 2025 roku gry VIP obejmują Scratch Match, Temple of Dead, French Roulette i inne gry z wysokimi wypłatami."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Turnieje"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ograniczone czasowo turnieje oferują bonusy i nagrody dla najlepszych graczy Vox. Wpłać pieniądze i zagraj w wybrane gry, aby wejść do rankingów i otrzymać nagrody na koniec sezonu."
+      },
+      {
+        "type": "paragraph",
+        "text": "W 2025 roku dostępne wydarzenia to Race to the Jackpot z pulą nagród 30 000 PLN i Joker's Race z nagrodą 7 000 PLN. Wkrótce można spodziewać się kolejnych wydarzeń."
       }
     ]
   },
   "support": {
-    "Casino Epic Telefonnummer Support": [
+    "Vox Casino kontakt z obsługą klienta": [
       {
         "type": "paragraph",
-        "text": "Casino Epic kontakt görs via e-post på support@casinoepic.se. Spelare kan kontakta supportpersonalen med frågor eller problem; de är dedikerade till att erbjuda snabba och användbara svar. För närvarande finns det ingen telefonsupport eller livechatt. Casino Epic kundtjänst tjänster erbjuds på svenska och engelska, vilket gör att man når ut till ett bredare spektrum av spelare och garanterar en tydlig kommunikation."
+        "text": "Wsparcie 24/7 jest dostępne na czacie na żywo. Kliknij menu boczne, wybierz przycisk „Wsparcie”, a uzyskasz dostęp do czatu na żywo. Średnio odpowiedzi trwają do 10 minut. Jeśli nie masz czasu czekać, wyślij wiadomość na adres e-mail help@voxcasino.com."
       }
     ]
   },
   "faq": {
-    "Casino Epic Trustpilot FAQ": [
+    "FAQ": [
       {
         "type": "heading",
         "level": 3,
-        "text": "Krävs det registrering på Casino Epic?"
+        "text": "Czy mogę otrzymać Casino no deposit bonus?"
       },
       {
         "type": "paragraph",
-        "text": "Nej, Casino Epic använder Trustly Pay N Play, så spelare behöver inte registrera sig - logga bara in med BankID och spela direkt."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Vad är det lägsta uttagsbeloppet?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Det lägsta uttagsbeloppet på Casino Epic är 200 SEK."
+        "text": "W 2025 roku wszystkie bonusy wymagają pierwszej wpłaty. Jest to jednak tylko 20-30 PLN. Po pierwszej wpłacie użytkownicy mają dostęp do licznych promocji, w tym turniejów i cashbacku, bez wymagań dotyczących depozytu."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Kan jag självutesluta mig från Norwegian Epic Casino Games?"
+        "text": "Jak skorzystać z Vox Casino kod bez depozytu?"
       },
       {
         "type": "paragraph",
-        "text": "Ja, du kan självutesluta dig via Spelpaus.se, som Casino Epic är integrerat med, enligt svensk lag."
+        "text": "Jeśli znalazłeś Vox Casino kod promocyjny, upewnij się, że jest prawdziwy i nie wygasł - otwórz stronę promocji i wprowadź go w pasku."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Erbjuder detta kasino sportspel?"
+        "text": "Gdzie mogę znaleźć Vox Casino kod promocyjny 2025?"
       },
       {
         "type": "paragraph",
-        "text": "Nej, Casino Epic fokuserar enbart på kasinospel och erbjuder inte några sportspelalternativ."
+        "text": "Ogólne bonusy w Vox nie wymagają kodów. Możesz jednak znaleźć unikalny Vox Casino kod promocyjny bez depozytu na stronach z recenzjami, recenzjach Vox Casino i platformach partnerów."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Betalar jag skatt på mina vinster hos Northern Quest Casino Epic?"
+        "text": "Czy mogę znaleźć Vox Casino opinie forum?"
       },
       {
         "type": "paragraph",
-        "text": "Nej, alla vinster är skattefria för svenska invånare eftersom Casino Epic är licensierat i Sverige."
+        "text": "Przeczytaj opinie o Vox na Ask Gamblers i Trustpilot. Alternatywnie, przeczytaj tę recenzję eksperta, aby dowiedzieć się wszystkiego o Vox."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Finns det ett lojalitets- eller VIP-program?"
+        "text": "Jak wyplacic pieniadze z Vox Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Nej, Casino Epic erbjuder för närvarande inte ett VIP- eller lojalitetsprogram till spelare."
+        "text": "Najpierw uzupełnij informacje o swoim profilu, potwierdź swój adres e-mail i numer telefonu oraz przejdź weryfikację za pomocą dokumentu tożsamości. Następnie otwórz swoje konto, wybierz „Saldo” i kliknij ikonę „+”. Wybierz sekcję wpłat."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Kan jag ställa in insättningsgränser på Casino Epic?"
+        "text": "Vox Casino jak wyplacic?"
       },
       {
         "type": "paragraph",
-        "text": "Ja, spelare måste ställa in dagliga, veckovisa och månatliga insättningsgränser innan de spelar, vilket krävs enligt svensk reglering."
+        "text": "Potwierdź numer telefonu i adres e-mail swojego profilu, aby uzyskać dostęp do wypłat. Otwórz swój profil osobisty, znajdź sekcję „Saldo” i kliknij „+”. Będziesz mógł wpłacać i wypłacać środki."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Hur gammal måste jag vara för att spela på Casino Epic?"
+        "text": "Jaka jest minimalna Vox Casino wyplata?"
       },
       {
         "type": "paragraph",
-        "text": "Du måste vara minst 18 år gammal för att spela på Casino Epic."
+        "text": "Obecnie minimalna wpłata wynosi 60 PLN."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Är kundsupport tillgänglig 24/7?"
+        "text": "Vox Casino ile trwa wypłata?"
       },
       {
         "type": "paragraph",
-        "text": "Nej, supporten är tillgänglig dagligen, men inte 24/7. Svarstiderna varierar beroende på tidpunkten för kontakten."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Finns det demoversioner av spel?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Ja, de flesta spel på Casino Epic erbjuder demolägen så att användare kan prova dem utan att satsa riktiga pengar."
-      },
-      {
-        "type": "paragraph",
-        "text": "##"
+        "text": "Wypłaty kwot mniejszych niż 999 PLN trwają tylko dni robocze. Pozostałe kwoty to od 5 do 21 dni roboczych."
       }
     ]
   },
   "sections": {
-    "Teknik för programvara": [
+    "Deweloperzy oprogramowania": [
       {
         "type": "paragraph",
-        "text": "Ledande mjukvaruleverantörer hjälper Casino Epic Sverige att erbjuda en mångsidig och högkvalitativ spelupplevelse. Pragmatic Play, en ledande iGaming innehållsproducent, har spel på plattformen. Casino Epic har lagt till spännande spel från flera vertikaler på grund av detta förhållande."
-      },
-      {
-        "type": "paragraph",
-        "text": "Casino Epic arbetar också med Fast Track, en leverantör av CRM-plattformar och engagemang i realtid. Denna allians syftar till att öka spelarnas engagemang med hjälp av automatiserade kampanjer och personliga upplevelser som levererar relevant material i rätt tid."
+        "text": "Gry w Vox Casino 66 to połączenie wielu gatunków, mechanizmów i maksymalnych jackpotów. Tytuły są opracowywane przez renomowanych dostawców z licencjami i certyfikatami RNG. Wiodący deweloperzy to Pragmatic Play, Smartsoft, Endorphina, Spinomenal, Novomatic, Gamzix, Belatra, Only Play, BGaming, Evoplay, Apparat, Gamebeat, Mascot, Ezugi, Betsoft i tak dalej - w sumie ponad 60 twórców gier."
       }
     ],
-    "Säkerhet": [
+    "Vox Casino recenzja bezpieczeństwa": [
       {
         "type": "paragraph",
-        "text": "Säkerheten kommer först för Casino online Epic. Spelinspektionen licensierar plattformen för att den ska uppfylla högt ställda krav. Transaktioner och personlig information skyddas från olaglig åtkomst genom avancerad kryptering, vilket också garanterar dataintegritet.Casino Epic verifierar användare med BankID. Ett svenskt elektroniskt identifieringssystem som används i stor utsträckning ökar säkerheten genom att verifiera användarnas identitet vid köp och kontoåtkomst."
+        "text": "Kasyno korzysta z szyfrowania SSL i ścisłej polityki prywatności - nikt nie może uzyskać dostępu do danych osobowych i danych finansowych graczy Vox. Witryna zapewnia również środki odpowiedzialnego hazardu, w tym limity depozytów i samowykluczenie. Ogólnie rzecz biorąc, hazard w Vox jest tak bezpieczny, jak to tylko możliwe. Nie ma powodów do obaw o wycieki."
       }
     ],
-    "Casino on Norwegian Epic App": [
+    "Czy istnieje Vox Casino app": [
       {
         "type": "paragraph",
-        "text": "Casino Epic Swedens mobiloptimerade webbplats låter spelare enkelt komma åt spel med hjälp av sina mobila webbläsare på både Android- och iOS-smartphones. Plattformens design säkerställer snabb laddning av spel och upprätthållande av högkvalitativ grafik och funktioner över flera skärmstorlekar. Även om det inte finns någon särskild mobilapp tillgänglig för nedladdning, säkerställer webbplatsens flexibla layout att spelare kan få en fullständig spelupplevelse på språng utan ytterligare programvaruinstallationer."
+        "text": "Jeśli chodzi o rok 2025, oficjalna aplikacja nie istnieje. Jeśli wolisz hazard mobilny, otwórz Vox w dowolnej przeglądarce mobilnej. Interfejs jest dostosowany do ekranów mobilnych, podobnie jak gry."
       }
     ],
-    "Språket": [
+    "Języki": [
       {
         "type": "paragraph",
-        "text": "Casino Epic Sweden är mestadels på svenska och vänder sig till sin målmarknad inom landet. Allt på svenska, webbplatsens utseende, spelbeskrivningar och kundservice säkerställer tillgänglighet och enkelhet för modersmål. Webbplatsen stöder också engelska, så att man tillgodoser icke-svensktalande spelare och ökar sin räckvidd bredare på den europeiska marknaden."
+        "text": "Strona obsługuje język polski, niemiecki i angielski."
       }
     ],
-    "Epic Win Casino valutor": [
+    "Waluty": [
       {
         "type": "paragraph",
-        "text": "Casino Epic Sweden accepterar mestadels svenska kronor (SEK) som sin huvudvaluta. Svenska spelare får en enkel och bekant finansiell upplevelse eftersom alla transaktioner - insättningar, uttag och spel - görs i SEK. Plattformen stöder inte andra valutor, så den fokuserar på den svenska marknaden och garanterar överensstämmelse med lokala finansiella regler."
+        "text": "Polscy gracze mają do wyboru PLN i EUR podczas rejestracji. Wpłaty i wypłaty w kryptowalutach są dostępne, ale kryptowaluty nie mogą być ustawione jako główna waluta konta."
       }
     ]
   }

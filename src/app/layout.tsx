@@ -1,14 +1,13 @@
 import { Metadata } from "next";
 
-const url = "epic-casino-online.com";
-const ogTitle =
-  "Casino Epic Sweden - Spela direkt med BankID och pålitliga betalningar";
-const ogSiteName = "Epic Casino";
+const url = "vox-casino-online.com";
+const ogTitle = "Vox Casino Polska: Gry, bonusy i kody promocyjne w 2025 roku";
+const ogSiteName = "Vox Casino";
 const metaDescription =
-  "Casino Epic Sweden levererar säkert spel utan registrering med BankID och Trustly. Gå med nu för att njuta av omedelbara insättningar, snabba uttag och de bästa kasinospelen i en fullt licensierad svensk miljö.";
+  "Kasyno online Vox w Polsce oferuje ponad 5000 gier hazardowych i 10 000 zł bonusu powitalnego dla nowych graczy. Odkryj wszystko, co musisz wiedzieć o polskim kasynie online Vox.";
 
-const locale = "sv-SE";
-const language = "Swedish";
+const locale = "pl-PL";
+const language = "Polish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

@@ -6,7 +6,7 @@ import styles from "./Header.module.scss";
 import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 
 const Header = () => {
-  const projectName = "Epic Casino";
+  const projectName = "Vox Casino";
   const { handleNavigation } = useNavigateWithPreloader();
   const [isMobile, setIsMobile] = useState(false);
 
