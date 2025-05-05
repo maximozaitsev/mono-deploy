@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 
-const url = "vox-casino-online.com";
-const ogTitle = "Vox Casino Polska: Gry, bonusy i kody promocyjne w 2025 roku";
-const ogSiteName = "Vox Casino";
-const metaDescription =
-  "Kasyno online Vox w Polsce oferuje ponad 5000 gier hazardowych i 10 000 zł bonusu powitalnego dla nowych graczy. Odkryj wszystko, co musisz wiedzieć o polskim kasynie online Vox.";
+const url = "pmbet-online.com";
+const ogTitle = "PmBet Casino Tanzania: Play online games and win real money today";
+const ogSiteName = "Pmbet Casino";
+const metaDescription = "PmBet Casino Tanzania offers a wide range of online games: slots, roulette, live casino and much more. Secure payments, bonuses and 24/7 support provide a comfortable game. Join and try your luck right now\!";
 
-const locale = "pl-PL";
-const language = "Polish";
+const locale = "en-TZ";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

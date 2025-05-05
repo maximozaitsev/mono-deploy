@@ -12,7 +12,7 @@ export default function AppSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const { data: content, loading, error } = useContentData();
   const { app } = useParsedSections(content?.sections || {});
-  const projectName = "Vox Casino";
+  const projectName = "Pmbet Casino";
 
   if (loading) return <p></p>;
   if (error) return <p>Error loading content.</p>;
