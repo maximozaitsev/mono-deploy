@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "x3000casino-online.com";
-const ogTitle = "X3000 Casino Sverige - Säkert spel, snabba uttag och toppspel";
-const ogSiteName = "x3000 Casino";
+const url = "epic-casino-online.com";
+const ogTitle =
+  "Casino Epic Sweden - Spela direkt med BankID och pålitliga betalningar";
+const ogSiteName = "Epic Casino";
 const metaDescription =
-  "X3000 Casino Sweden erbjuder över 4,000 spel, snabba utbetalningar och full mobilkompatibilitet. Utforska exklusiva slots, live casino action och fantastiska kampanjer - registrera dig idag och börja spela!";
+  "Casino Epic Sweden levererar säkert spel utan registrering med BankID och Trustly. Gå med nu för att njuta av omedelbara insättningar, snabba uttag och de bästa kasinospelen i en fullt licensierad svensk miljö.";
 
 const locale = "sv-SE";
 const language = "Swedish";

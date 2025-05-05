@@ -8,7 +8,7 @@
   // background: $color-background;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 160px center;
+  background-position: right 100px center;
   width: 100%;
   height: 540px;
   max-width: 90rem;
@@ -23,22 +23,23 @@
   }
 
   @media (max-width: 768px) {
-    padding-top: 21.2rem;
+    padding-top: 17.2rem;
     height: auto;
     justify-content: flex-end;
     background-size: auto 65%;
-    background-position: top 1px center;
+    background-position: top center;
     margin: 0 auto 84px auto;
   }
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 63%;
+    background-size: auto 56%;
   }
 
-  @media (max-width: 440px) {
+  @media (max-width: 420px) {
     margin: 0 auto 72px auto;
-    background-size: auto 50%;
+    background-position: top 20px center;
+    background-size: auto 46%;
     padding-top: 14.35rem;
   }
 }

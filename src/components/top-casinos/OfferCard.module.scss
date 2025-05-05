@@ -12,7 +12,7 @@
 
   outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
-  background: $color-background-fourth;
+  background: $color-background-third;
 
   img {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
@@ -34,7 +34,7 @@
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: $text-color-fourth;
+    color: $color-faq-icon;
 
     // background: $text-color-fourth;
     // background-clip: text;

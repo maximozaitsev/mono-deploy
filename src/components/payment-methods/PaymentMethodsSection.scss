@@ -154,7 +154,7 @@
       }
 
       .payment-method-details {
-        // background: $color-background-third;
+        background: $color-background-third;
         display: flex;
         flex-direction: column;
         padding: 8px 16px;
@@ -175,7 +175,7 @@
           }
 
           strong {
-            background: #fff;
+            background: $color-faq-icon;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
