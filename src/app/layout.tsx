@@ -1,12 +1,14 @@
 import { Metadata } from "next";
 
-const url = "pmbet-online.com";
-const ogTitle = "PmBet Casino Tanzania: Play online games and win real money today";
-const ogSiteName = "Pmbet Casino";
-const metaDescription = "PmBet Casino Tanzania offers a wide range of online games: slots, roulette, live casino and much more. Secure payments, bonuses and 24/7 support provide a comfortable game. Join and try your luck right now\!";
+const url = "vox-casino-online-de.com";
+const ogTitle =
+  "Vox Casino Deutschland: Spiele, Boni und Promo Codes im Jahr 2025";
+const ogSiteName = "Vox Casino";
+const metaDescription =
+  "Vox Online-Casino in Deutschland bietet 5.000+ Glücksspiele und einen 10.000 € Willkommensbonus für neue Spieler. Entdecken Sie alles, was Sie über das deutsche Online-Casino Vox wissen müssen.";
 
-const locale = "en-TZ";
-const language = "English";
+const locale = "de-DE";
+const language = "German";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
