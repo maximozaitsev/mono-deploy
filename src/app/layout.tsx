@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "vox-casino-online-de.com";
+const url = "winnita-casino-online.com";
 const ogTitle =
-  "Vox Casino Deutschland: Spiele, Boni und Promo Codes im Jahr 2025";
-const ogSiteName = "Vox Casino";
+  "Winnita Casino Italia: Slot, Giochi dal vivo e Depositi da 1 euro";
+const ogSiteName = "Winnita Casino";
 const metaDescription =
-  "Vox Online-Casino in Deutschland bietet 5.000+ Glücksspiele und einen 10.000 € Willkommensbonus für neue Spieler. Entdecken Sie alles, was Sie über das deutsche Online-Casino Vox wissen müssen.";
+  "Winnita Casino Italia offre oltre 3.000 giochi, transazioni veloci in criptovalute e un bonus di benvenuto fino a 1.500 euro. Gioca con depositi da 1 euro, sblocca i premi fedeltà e goditi l'assistenza 24 ore su 24, 7 giorni su 7.";
 
-const locale = "de-DE";
-const language = "German";
+const locale = "it-IT";
+const language = "Italian";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
