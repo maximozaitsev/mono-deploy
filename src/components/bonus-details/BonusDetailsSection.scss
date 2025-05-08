@@ -287,7 +287,7 @@
     right: 0;
     height: 72px;
     width: 1px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #00000033;
   }
 
   &:last-child::after {
@@ -338,17 +338,17 @@
 /* Theme Styles Start */
 .accordion-title,
 .accordion-value {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #ffffff33;
   &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #00000033;
   }
 }
 .accordion-title::after {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #ffffff33;
 }
 .cell {
   &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #ffffff33;
   }
 }
 /* Theme Styles End */

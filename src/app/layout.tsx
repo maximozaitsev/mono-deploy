@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "winnita-casino-online.com";
+const url = "gratogana-online.com";
 const ogTitle =
-  "Winnita Casino Italia: Slot, Giochi dal vivo e Depositi da 1 euro";
-const ogSiteName = "Winnita Casino";
+  "Gratogana Casino España: Reseña detallada de un popular casino online";
+const ogSiteName = "Gratogana Casino";
 const metaDescription =
-  "Winnita Casino Italia offre oltre 3.000 giochi, transazioni veloci in criptovalute e un bonus di benvenuto fino a 1.500 euro. Gioca con depositi da 1 euro, sblocca i premi fedeltà e goditi l'assistenza 24 ore su 24, 7 giorni su 7.";
+  "Una revisión detallada de Gratogana Casino España: registro, verificación, bonos, juegos, métodos de pago y retirada, seguridad, app móvil y soporte. Descubre todas las características de este casino online español.";
 
-const locale = "it-IT";
-const language = "Italian";
+const locale = "es-ES";
+const language = "Spanish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

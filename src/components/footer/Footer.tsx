@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Winnita Casino";
+const projectName = "Gratogana Casino";
 const partnerLogos = [
   { color: "/footer-assets/master-card.svg" },
   { color: "/footer-assets/visa.svg" },
@@ -44,7 +44,7 @@ const Footer = () => {
       ?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const logoPath = isMobile ? "/logo-footer-mobile.svg" : "/logo-footer.svg";
+  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
 
   return (
     <footer className={styles.footer}>
