@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { Provider } from "@/types/provider";
 import { fetchProviders } from "@/utils/fetchProviders";
-import { useNavigateWithPreloader } from "@/utils/navigationUtils";
 import "@/components/providers/ProvidersSection.scss";
 
 interface ProvidersSectionProps {
@@ -14,7 +13,6 @@ export default function ProvidersSection({
   initialProviders,
 }: ProvidersSectionProps) {
   const [providers, setProviders] = useState<Provider[]>(initialProviders);
-  const { handleNavigation } = useNavigateWithPreloader();
 
   useEffect(() => {
     async function updateProviders() {
@@ -32,14 +30,11 @@ export default function ProvidersSection({
       <h2 className="h2-heading">Software Providers</h2>
       <div className="providers-grid">
         {providers.map((provider) => (
-          <div
-            key={provider.id}
-            className="provider-block"
-            onClick={() => handleNavigation("/casino", undefined, true)}
-          >
+          <div key={provider.id} className="provider-block">
             <img
               src={provider.image}
               alt={provider.name}
+              title={provider.name}
               className="provider-image"
               loading="lazy"
             />

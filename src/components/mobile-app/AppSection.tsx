@@ -27,6 +27,7 @@ export default function AppSection() {
             <img
               src={AppImageMobile.src}
               alt={projectName + " App"}
+              title={"App in " + projectName}
               className={styles.imageMobile}
               loading="lazy"
             />
@@ -64,6 +65,7 @@ export default function AppSection() {
             <img
               src={AppImage.src}
               alt={projectName + " App"}
+              title={"App in " + projectName}
               className={styles.image}
               loading="lazy"
             />

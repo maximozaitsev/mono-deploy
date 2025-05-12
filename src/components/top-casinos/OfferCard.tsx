@@ -5,6 +5,8 @@ import Button from "../__common__/button/Button";
 import { Offer } from "../../types/offer";
 import styles from "./OfferCard.module.scss";
 
+const projectName = "Gratogana Casino";
+
 interface OfferCardProps {
   offer: Offer;
 }
@@ -12,7 +14,13 @@ interface OfferCardProps {
 const OfferCard: React.FC<OfferCardProps> = ({ offer }) => {
   return (
     <div className={styles.offerCard}>
-      <img src={offer.logo} alt={offer.name} width={190} loading="lazy" />
+      <img
+        src={offer.logo}
+        alt={offer.name}
+        title={offer.name + " in " + projectName}
+        width={190}
+        loading="lazy"
+      />
       <h3>{offer.name}</h3>
       <h4>Welcome bonus</h4>
       <p>{offer.bonuses.welcome_bonus}</p>
