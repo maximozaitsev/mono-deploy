@@ -27,7 +27,7 @@ export default function AppSection() {
             <img
               src={AppImageMobile.src}
               alt={projectName + " App"}
-              title={"App in " + projectName}
+              title={projectName}
               className={styles.imageMobile}
               loading="lazy"
             />
@@ -46,6 +46,7 @@ export default function AppSection() {
                   className={styles.googlePlay}
                   src="/assets/google-play.svg"
                   alt="Download on the Google Play"
+                  title={projectName + " in Google Play"}
                   loading="lazy"
                 />
               </button>
@@ -56,6 +57,7 @@ export default function AppSection() {
                   className={styles.appStore}
                   src="/assets/app-store.svg"
                   alt="Download on the App Store"
+                  title={projectName + " in App Store"}
                   loading="lazy"
                 />
               </button>
@@ -65,7 +67,7 @@ export default function AppSection() {
             <img
               src={AppImage.src}
               alt={projectName + " App"}
-              title={"App in " + projectName}
+              title={projectName}
               className={styles.image}
               loading="lazy"
             />

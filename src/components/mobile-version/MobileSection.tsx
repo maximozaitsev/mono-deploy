@@ -56,7 +56,7 @@ export default function MobileSection() {
             <img
               src={mobileAppImageMobile.src}
               alt={projectName + " Mobile"}
-              title={"Mobile in " + projectName}
+              title={projectName}
               width={mobileAppImageMobile.width}
               height={mobileAppImageMobile.height}
               className="app-image"
@@ -71,6 +71,7 @@ export default function MobileSection() {
               <img
                 src="/assets/app-store.svg"
                 alt="Download on the App Store"
+                title={projectName + " in App Store"}
                 width={181}
                 height={53}
                 loading="lazy"
@@ -83,6 +84,7 @@ export default function MobileSection() {
               <img
                 src="/assets/google-play.svg"
                 alt="Download on the Google Play"
+                title={projectName + " in Google Play"}
                 width={181}
                 height={53}
                 loading="lazy"
@@ -95,6 +97,7 @@ export default function MobileSection() {
           <img
             src={mobileAppImage.src}
             alt={projectName + " Mobile"}
+            title={projectName}
             className="app-image"
             loading="lazy"
           />

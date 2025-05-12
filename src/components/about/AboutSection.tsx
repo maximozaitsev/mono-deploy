@@ -59,6 +59,7 @@ export default function AboutSection() {
             <img
               src={aboutImage.src}
               alt={projectName + " Desktop"}
+              title={projectName}
               loading="lazy"
             />
           </div>

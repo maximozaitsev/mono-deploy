@@ -38,6 +38,7 @@ export default function SupportSection() {
             <img
               src={supportImage.src}
               alt={projectName + " Support"}
+              title={projectName}
               loading="lazy"
             />
           </div>

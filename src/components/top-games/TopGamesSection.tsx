@@ -8,6 +8,8 @@ import PlayIcon from "../__common__/PlayIcon";
 
 import styles from "./TopGamesSection.module.scss";
 
+const projectName = "Gratogana Casino";
+
 interface TopGamesProps {
   games: Game[];
 }
@@ -30,6 +32,7 @@ export default function TopGamesSection({ games }: TopGamesProps) {
             <img
               src={game.image}
               alt={game.name}
+              title={game.name + " in " + projectName}
               className={styles.gameImage}
               width={300}
               height={200}
