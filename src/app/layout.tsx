@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
-const url = "gratogana-online.com";
+const url = "bet9ja-nigeria.com";
 const ogTitle =
-  "Gratogana Casino España: Reseña detallada de un popular casino online";
-const ogSiteName = "Gratogana Casino";
+  "Bet9ja Nigeria: Security Betting with Numerous Attractive Rewards";
+const ogSiteName = "Bet9ja Casino";
 const metaDescription =
-  "Una revisión detallada de Gratogana Casino España: registro, verificación, bonos, juegos, métodos de pago y retirada, seguridad, app móvil y soporte. Descubre todas las características de este casino online español.";
+  "Bet9ja sportsbook in Nigeria offers exclusive promotions for sports fans. The most loyal fans get their VIP status that opens the door to multiple rewards and cashback offers. Read this article to learn more about Bet9ja sportsbook world and promos.";
 
-const locale = "es-ES";
-const language = "Spanish";
+const locale = "en-NG";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

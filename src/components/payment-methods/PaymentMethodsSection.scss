@@ -175,7 +175,7 @@
           }
 
           strong {
-            background: $color-button-large;
+            background: $text-color-fourth;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -195,10 +195,6 @@
   }
 }
 
-.payment-methods-section
-  .mobile-payment-methods
-  .payment-method-card
-  .payment-method-details
-  p {
-  border-bottom: 1px solid #ffffff33;
+.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
