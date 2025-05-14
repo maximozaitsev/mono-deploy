@@ -5,6 +5,8 @@ import { Provider } from "@/types/provider";
 import { fetchProviders } from "@/utils/fetchProviders";
 import "@/components/providers/ProvidersSection.scss";
 
+const projectName = "Yesplay Casino";
+
 interface ProvidersSectionProps {
   initialProviders: Provider[];
 }
@@ -34,7 +36,7 @@ export default function ProvidersSection({
             <img
               src={provider.image}
               alt={provider.name}
-              title={provider.name}
+              title={provider.name + " in " + projectName}
               className="provider-image"
               loading="lazy"
             />

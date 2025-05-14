@@ -56,7 +56,7 @@ export default function MobileSection() {
             <img
               src={mobileAppImageMobile.src}
               alt={projectName + " Mobile"}
-              title={projectName}
+              title={projectName + " Mobile"}
               width={mobileAppImageMobile.width}
               height={mobileAppImageMobile.height}
               className="app-image"
@@ -97,7 +97,7 @@ export default function MobileSection() {
           <img
             src={mobileAppImage.src}
             alt={projectName + " Mobile"}
-            title={projectName}
+            title={projectName + " Mobile"}
             className="app-image"
             loading="lazy"
           />

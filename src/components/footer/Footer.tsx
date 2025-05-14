@@ -6,33 +6,30 @@ import styles from "./Footer.module.scss";
 
 const projectName = "Yesplay Casino";
 const partnerLogos = [
-  { color: "/footer-assets/master-card.svg" },
-  { color: "/footer-assets/visa.svg" },
-  { color: "/footer-assets/neteller.svg" },
-  { color: "/footer-assets/skrill.svg" },
-  { color: "/footer-assets/btc.svg" },
-  { color: "/footer-assets/ltc.svg" },
-  { color: "/footer-assets/eth.svg" },
-  { color: "/footer-assets/gpwa.svg" },
-  { color: "/footer-assets/gambleaware.svg" },
-  { color: "/footer-assets/gamcare.svg" },
-  { color: "/footer-assets/gambling-therapy.svg" },
-  { color: "/footer-assets/gamban.svg" },
-  { color: "/footer-assets/betblocker.svg" },
-  { color: "/footer-assets/itech-labs.svg" },
-  { color: "/footer-assets/ecogra.svg" },
+  { name: "MasterCard", src: "/footer-assets/master-card.svg" },
+  { name: "Visa", src: "/footer-assets/visa.svg" },
+  { name: "Neteller", src: "/footer-assets/neteller.svg" },
+  { name: "Skrill", src: "/footer-assets/skrill.svg" },
+  { name: "Bitcoin", src: "/footer-assets/btc.svg" },
+  { name: "Litecoin", src: "/footer-assets/ltc.svg" },
+  { name: "Ethereum", src: "/footer-assets/eth.svg" },
+  { name: "GPWA", src: "/footer-assets/gpwa.svg" },
+  { name: "GambleAware", src: "/footer-assets/gambleaware.svg" },
+  { name: "GamCare", src: "/footer-assets/gamcare.svg" },
+  { name: "Gambling-Therapy", src: "/footer-assets/gambling-therapy.svg" },
+  { name: "Gamban", src: "/footer-assets/gamban.svg" },
+  { name: "BetBlocker", src: "/footer-assets/betblocker.svg" },
+  { name: "iTech-Labs", src: "/footer-assets/itech-labs.svg" },
+  { name: "eCOGRA", src: "/footer-assets/ecogra.svg" },
 ];
 
-const Footer = () => {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
   const [hoveredLogoIndex, setHoveredLogoIndex] = useState<number | null>(null);
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -50,71 +47,41 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.partners}>
-          <div className={styles.row}>
-            <div className={styles.logoWrapper}>
-              <Logo
-                svgPath={logoPath}
-                gradientIdPrefix="footer"
-                onClick={scrollToWelcomeSection}
-                alt={`${projectName} Logo`}
-              />
+          {[0, 7, 12].map((start) => (
+            <div key={start} className={styles.row}>
+              {start === 0 && (
+                <div className={styles.logoWrapper}>
+                  <Logo
+                    svgPath={logoPath}
+                    gradientIdPrefix="footer"
+                    onClick={scrollToWelcomeSection}
+                    alt={`${projectName} Logo`}
+                  />
+                </div>
+              )}
+              {partnerLogos
+                .slice(start, start + (start === 0 ? 7 : 5))
+                .map((logo, idx) => {
+                  const index = start + idx;
+                  return (
+                    <img
+                      key={index}
+                      src={logo.src}
+                      alt={logo.name}
+                      title={`${logo.name} in ${projectName}`}
+                      className={styles.partnerLogo}
+                      style={{
+                        mixBlendMode:
+                          hoveredLogoIndex === index ? "normal" : "luminosity",
+                      }}
+                      onMouseEnter={() => setHoveredLogoIndex(index)}
+                      onMouseLeave={() => setHoveredLogoIndex(null)}
+                      loading="lazy"
+                    />
+                  );
+                })}
             </div>
-            {partnerLogos.slice(0, 7).map((logo, index) => (
-              <img
-                key={index}
-                src={logo.color}
-                alt={`Partner ${index + 1}`}
-                className={styles.partnerLogo}
-                style={{
-                  mixBlendMode:
-                    hoveredLogoIndex === index ? "normal" : "luminosity",
-                }}
-                onMouseEnter={() => setHoveredLogoIndex(index)}
-                onMouseLeave={() => setHoveredLogoIndex(null)}
-                loading="lazy"
-              />
-            ))}
-          </div>
-          <div className={styles.row}>
-            {partnerLogos.slice(7, 12).map((logo, index) => {
-              const logoIndex = index + 7;
-              return (
-                <img
-                  key={logoIndex}
-                  src={logo.color}
-                  alt={`Partner ${logoIndex + 1}`}
-                  className={styles.partnerLogo}
-                  style={{
-                    mixBlendMode:
-                      hoveredLogoIndex === logoIndex ? "normal" : "luminosity",
-                  }}
-                  onMouseEnter={() => setHoveredLogoIndex(logoIndex)}
-                  onMouseLeave={() => setHoveredLogoIndex(null)}
-                  loading="lazy"
-                />
-              );
-            })}
-          </div>
-          <div className={styles.row}>
-            {partnerLogos.slice(12, 15).map((logo, index) => {
-              const logoIndex = index + 12;
-              return (
-                <img
-                  key={logoIndex}
-                  src={logo.color}
-                  alt={`Partner ${logoIndex + 1}`}
-                  className={styles.partnerLogo}
-                  style={{
-                    mixBlendMode:
-                      hoveredLogoIndex === logoIndex ? "normal" : "luminosity",
-                  }}
-                  onMouseEnter={() => setHoveredLogoIndex(logoIndex)}
-                  onMouseLeave={() => setHoveredLogoIndex(null)}
-                  loading="lazy"
-                />
-              );
-            })}
-          </div>
+          ))}
         </div>
         <p className={styles.copyright}>
           <span>18+</span>{" "}
@@ -125,6 +92,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

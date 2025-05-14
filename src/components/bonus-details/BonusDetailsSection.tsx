@@ -8,6 +8,8 @@ import Button from "../__common__/button/Button";
 import InfoIcon from "../__common__/InfoIcon";
 import "./BonusDetailsSection.scss";
 
+const projectName = "Yesplay Casino";
+
 const BonusDetailsSection: React.FC = () => {
   const [offers, setOffers] = useState<Offer[]>([]);
   const [openOffers, setOpenOffers] = useState<number[]>([]);
@@ -60,6 +62,7 @@ const BonusDetailsSection: React.FC = () => {
                 src={offer.logo}
                 className="offerImage"
                 alt={offer.name}
+                title={offer.name + " in " + projectName}
                 width={140}
                 height={56}
                 style={{ maxWidth: "100%", height: "auto" }}
