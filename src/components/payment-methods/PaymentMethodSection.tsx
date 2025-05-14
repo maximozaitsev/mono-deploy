@@ -7,6 +7,8 @@ import { fetchPayments } from "@/utils/fetchPayments";
 import "./PaymentMethodsSection.scss";
 import Button from "../__common__/button/Button";
 
+const projectName = "Yesplay Casino";
+
 interface PaymentMethodsSectionProps {
   initialPaymentMethods: PaymentMethod[];
 }
@@ -52,6 +54,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                 <Image
                   src={method.image}
                   alt={method.name}
+                  title={method.name + " in " + projectName}
                   width={84}
                   height={64}
                 />
@@ -97,6 +100,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                   <Image
                     src={method.image}
                     alt={method.name}
+                    title={method.name + " in " + projectName}
                     width={120}
                     height={70}
                   />
