@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "bet9ja-nigeria.com";
+const url = "yesplay-online.com";
 const ogTitle =
-  "Bet9ja Nigeria: Security Betting with Numerous Attractive Rewards";
-const ogSiteName = "Bet9ja Casino";
+  "Casino YesPlay in South Africa: 2025 Review on Bonuses and Payouts";
+const ogSiteName = "Yesplay Casino";
 const metaDescription =
-  "Bet9ja sportsbook in Nigeria offers exclusive promotions for sports fans. The most loyal fans get their VIP status that opens the door to multiple rewards and cashback offers. Read this article to learn more about Bet9ja sportsbook world and promos.";
+  "See a detailed review about the casino YesPlay for South African players. The article explores the welcome bonus, casino game library, payout speed, and YesPlay's safety.";
 
-const locale = "en-NG";
+const locale = "en-SA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
