@@ -7,7 +7,7 @@ import { fetchPayments } from "@/utils/fetchPayments";
 import "./PaymentMethodsSection.scss";
 import Button from "../__common__/button/Button";
 
-const projectName = "Gala Bingo";
+const projectName = "Baba Ijebu";
 
 interface PaymentMethodsSectionProps {
   initialPaymentMethods: PaymentMethod[];
@@ -95,7 +95,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
           </thead>
           <tbody>
             {paymentMethods.map((method) => (
-              <tr className="paragraph-text" key={method.payment_id}>
+              <tr className="paragraph-text black" key={method.payment_id}>
                 <td>
                   <Image
                     src={method.image}

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Gala Bingo";
+const projectName = "Baba Ijebu";
 const partnerLogos = [
   { name: "MasterCard", src: "/footer-assets/master-card.svg" },
   { name: "Visa", src: "/footer-assets/visa.svg" },

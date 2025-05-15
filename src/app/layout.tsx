@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "galabingo-online.com";
+const url = "baba-ijebu-online.com";
 const ogTitle =
-  "Gala Bingo UK: Play Bingo & Casino Games Online with Big Rewards";
-const ogSiteName = "Gala Bingo";
+  "Baba Ijebu Nigeria – Play Online Lottery, Virtual & Sports Games";
+const ogSiteName = "Baba Ijebu";
 const metaDescription =
-  "Join Gala Bingo UK to enjoy top online bingo rooms, thrilling slot games, and exciting casino action. Explore daily promotions, jackpots, and a vibrant community experience.";
+  "Baba Ijebu Nigeria is a licensed betting platform offering daily lottery draws, sports wagering, and virtual games tailored for Nigerian players. Register today to claim bonuses, bet securely, and access fast payouts.";
 
-const locale = "en-GB";
+const locale = "en-NG";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
