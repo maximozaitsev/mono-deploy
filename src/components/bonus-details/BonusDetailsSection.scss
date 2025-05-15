@@ -52,7 +52,7 @@
 }
 
 .cell {
-  color: $text-color-secondary;
+  color: $text-color-primary;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
@@ -287,7 +287,7 @@
     right: 0;
     height: 72px;
     width: 1px;
-    background-color: #00000033;
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &:last-child::after {

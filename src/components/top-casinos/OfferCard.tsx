@@ -5,7 +5,7 @@ import Button from "../__common__/button/Button";
 import { Offer } from "../../types/offer";
 import styles from "./OfferCard.module.scss";
 
-const projectName = "Yesplay Casino";
+const projectName = "Gala Bingo";
 
 interface OfferCardProps {
   offer: Offer;

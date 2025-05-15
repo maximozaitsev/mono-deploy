@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Logo from "../header/Logo";
 import styles from "./Footer.module.scss";
 
-const projectName = "Yesplay Casino";
+const projectName = "Gala Bingo";
 const partnerLogos = [
   { name: "MasterCard", src: "/footer-assets/master-card.svg" },
   { name: "Visa", src: "/footer-assets/visa.svg" },
@@ -86,8 +86,8 @@ export default function Footer() {
         <p className={styles.copyright}>
           <span>18+</span>{" "}
           <span className={styles.hiddenSpan}>Copyright © {currentYear}</span>
-          &nbsp;<span>{projectName}</span>
-          {/* &nbsp;<span>{projectName} Casino</span> */}
+          {/* &nbsp;<span>{projectName}</span> */}
+          &nbsp;<span>{projectName} Casino</span>
         </p>
       </div>
     </footer>

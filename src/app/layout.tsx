@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "yesplay-online.com";
+const url = "galabingo-online.com";
 const ogTitle =
-  "Casino YesPlay in South Africa: 2025 Review on Bonuses and Payouts";
-const ogSiteName = "Yesplay Casino";
+  "Gala Bingo UK: Play Bingo & Casino Games Online with Big Rewards";
+const ogSiteName = "Gala Bingo";
 const metaDescription =
-  "See a detailed review about the casino YesPlay for South African players. The article explores the welcome bonus, casino game library, payout speed, and YesPlay's safety.";
+  "Join Gala Bingo UK to enjoy top online bingo rooms, thrilling slot games, and exciting casino action. Explore daily promotions, jackpots, and a vibrant community experience.";
 
-const locale = "en-SA";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

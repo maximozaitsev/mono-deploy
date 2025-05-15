@@ -8,7 +8,7 @@ import PlayIcon from "../__common__/PlayIcon";
 
 import styles from "./TopGamesSection.module.scss";
 
-const projectName = "Yesplay Casino";
+const projectName = "Gala Bingo";
 
 interface TopGamesProps {
   games: Game[];
