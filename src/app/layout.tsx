@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "baba-ijebu-online.com";
+const url = "kwiff-online.com";
 const ogTitle =
-  "Baba Ijebu Nigeria – Play Online Lottery, Virtual & Sports Games";
-const ogSiteName = "Baba Ijebu";
+  "Kwiff UK: the Fair Licensed Online Platform with Sports & Casino Bets";
+const ogSiteName = "Kwiff";
 const metaDescription =
-  "Baba Ijebu Nigeria is a licensed betting platform offering daily lottery draws, sports wagering, and virtual games tailored for Nigerian players. Register today to claim bonuses, bet securely, and access fast payouts.";
+  "Kwiff offers its fair and secure sportsbook offers and casino games to the players from the UK. Read this unbiased review to learn more about the platform, including its pros and cons.";
 
-const locale = "en-NG";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

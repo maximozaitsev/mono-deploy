@@ -8,7 +8,7 @@ import PlayIcon from "../__common__/PlayIcon";
 
 import styles from "./TopGamesSection.module.scss";
 
-const projectName = "Baba Ijebu";
+const projectName = "Kwiff United Kingdom";
 
 interface TopGamesProps {
   games: Game[];

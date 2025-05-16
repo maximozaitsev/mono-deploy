@@ -12,7 +12,7 @@ export default function AboutSection() {
   const [aboutSections, setAboutSections] = useState<any>({});
   const [depositSection, setDepositSection] = useState<any>(null);
   const [withdrawalSection, setWithdrawalSection] = useState<any>(null);
-  const projectName = "Baba Ijebu Nigeria";
+  const projectName = "Kwiff United Kingdom";
 
   useEffect(() => {
     if (content) {

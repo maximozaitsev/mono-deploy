@@ -8,7 +8,7 @@ import Button from "../__common__/button/Button";
 import InfoIcon from "../__common__/InfoIcon";
 import "./BonusDetailsSection.scss";
 
-const projectName = "Baba Ijebu Nigeria";
+const projectName = "Kwiff United Kingdom";
 
 const BonusDetailsSection: React.FC = () => {
   const [offers, setOffers] = useState<Offer[]>([]);
