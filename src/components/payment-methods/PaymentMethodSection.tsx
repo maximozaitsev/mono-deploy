@@ -4,10 +4,9 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { PaymentMethod } from "@/types/payment";
 import { fetchPayments } from "@/utils/fetchPayments";
-import "./PaymentMethodsSection.scss";
 import Button from "../__common__/button/Button";
-
-const projectName = "Kwiff United Kingdom";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import "./PaymentMethodsSection.scss";
 
 interface PaymentMethodsSectionProps {
   initialPaymentMethods: PaymentMethod[];
@@ -54,7 +53,9 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                 <Image
                   src={method.image}
                   alt={method.name}
-                  title={method.name + " in " + projectName}
+                  title={
+                    method.name + " in " + PROJECT_NAME + " " + PROJECT_GEO
+                  }
                   width={84}
                   height={64}
                 />
@@ -95,12 +96,14 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
           </thead>
           <tbody>
             {paymentMethods.map((method) => (
-              <tr className="paragraph-text black" key={method.payment_id}>
+              <tr className="paragraph-text" key={method.payment_id}>
                 <td>
                   <Image
                     src={method.image}
                     alt={method.name}
-                    title={method.name + " in " + projectName}
+                    title={
+                      method.name + " in " + PROJECT_NAME + " " + PROJECT_GEO
+                    }
                     width={120}
                     height={70}
                   />

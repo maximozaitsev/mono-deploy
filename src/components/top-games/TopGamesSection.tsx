@@ -5,10 +5,8 @@ import { Game } from "@/types/game";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
 import Button from "../__common__/button/Button";
 import PlayIcon from "../__common__/PlayIcon";
-
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./TopGamesSection.module.scss";
-
-const projectName = "Kwiff United Kingdom";
 
 interface TopGamesProps {
   games: Game[];
@@ -32,7 +30,7 @@ export default function TopGamesSection({ games }: TopGamesProps) {
             <img
               src={game.image}
               alt={game.name}
-              title={game.name + " in " + projectName}
+              title={game.name + " in " + PROJECT_NAME + " " + PROJECT_GEO}
               className={styles.gameImage}
               width={300}
               height={200}

@@ -1,18 +1,17 @@
-// /components/sections/AboutSection.tsx
 "use client";
 
 import { useState, useEffect } from "react";
 import aboutImage from "../../../public/block-images/laptop.webp";
-import "./AboutSection.scss";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import "./AboutSection.scss";
 
 export default function AboutSection() {
   const { data: content, loading, error } = useContentData();
   const [aboutSections, setAboutSections] = useState<any>({});
   const [depositSection, setDepositSection] = useState<any>(null);
   const [withdrawalSection, setWithdrawalSection] = useState<any>(null);
-  const projectName = "Kwiff United Kingdom";
 
   useEffect(() => {
     if (content) {
@@ -58,8 +57,8 @@ export default function AboutSection() {
           <div className="about-image">
             <img
               src={aboutImage.src}
-              alt={projectName + " Desktop"}
-              title={projectName + " Desktop"}
+              alt={PROJECT_NAME + " " + PROJECT_GEO + " Desktop"}
+              title={PROJECT_NAME + " " + PROJECT_GEO + " Desktop"}
               loading="lazy"
             />
           </div>

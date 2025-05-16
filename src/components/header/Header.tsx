@@ -2,11 +2,11 @@
 
 import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
-import styles from "./Header.module.scss";
 import { useNavigateWithPreloader } from "../../utils/navigationUtils";
+import { PROJECT_NAME } from "@/config/projectConfig";
+import styles from "./Header.module.scss";
 
 const Header = () => {
-  const projectName = "Kwiff";
   const { handleNavigation } = useNavigateWithPreloader();
   const [isMobile, setIsMobile] = useState(false);
 
@@ -38,7 +38,7 @@ const Header = () => {
           svgPath={logoPath}
           gradientIdPrefix="header"
           onClick={scrollToWelcomeSection}
-          alt={`${projectName} Logo`}
+          alt={`${PROJECT_NAME} Logo`}
         />
 
         <div className={styles.headerButtons}>

@@ -2,9 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Logo from "../header/Logo";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./Footer.module.scss";
 
-const projectName = "Kwiff United Kingdom";
 const partnerLogos = [
   { name: "MasterCard", src: "/footer-assets/master-card.svg" },
   { name: "Visa", src: "/footer-assets/visa.svg" },
@@ -55,7 +55,7 @@ export default function Footer() {
                     svgPath={logoPath}
                     gradientIdPrefix="footer"
                     onClick={scrollToWelcomeSection}
-                    alt={`${projectName} Logo`}
+                    alt={`${PROJECT_NAME} Logo`}
                   />
                 </div>
               )}
@@ -68,7 +68,7 @@ export default function Footer() {
                       key={index}
                       src={logo.src}
                       alt={logo.name}
-                      title={`${logo.name} in ${projectName}`}
+                      title={`${logo.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
                       className={styles.partnerLogo}
                       style={{
                         mixBlendMode:
@@ -86,8 +86,8 @@ export default function Footer() {
         <p className={styles.copyright}>
           <span>18+</span>{" "}
           <span className={styles.hiddenSpan}>Copyright © {currentYear}</span>
-          {/* &nbsp;<span>{projectName}</span> */}
-          &nbsp;<span>{projectName} Casino</span>
+          &nbsp;<span>{PROJECT_NAME}</span>
+          {/* &nbsp;<span>{PROJECT_NAME} Casino</span> */}
         </p>
       </div>
     </footer>

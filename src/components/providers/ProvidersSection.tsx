@@ -3,9 +3,8 @@
 import { useEffect, useState } from "react";
 import { Provider } from "@/types/provider";
 import { fetchProviders } from "@/utils/fetchProviders";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import "@/components/providers/ProvidersSection.scss";
-
-const projectName = "Kwiff United Kingdom";
 
 interface ProvidersSectionProps {
   initialProviders: Provider[];
@@ -36,7 +35,7 @@ export default function ProvidersSection({
             <img
               src={provider.image}
               alt={provider.name}
-              title={provider.name + " in " + projectName}
+              title={provider.name + " in " + PROJECT_NAME + " " + PROJECT_GEO}
               className="provider-image"
               loading="lazy"
             />

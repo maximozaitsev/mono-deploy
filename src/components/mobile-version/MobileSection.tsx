@@ -6,13 +6,12 @@ import mobileAppImageMobile from "../../../public/block-images/phone-mobile.webp
 import StarIcon from "../__common__/StarIcon";
 import Button from "../__common__/button/Button";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
-
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import "./MobileSection.scss";
 
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "Kwiff United Kingdom";
 
   useEffect(() => {
     import("../../content/content.json")
@@ -51,12 +50,12 @@ export default function MobileSection() {
         </div>
 
         <div className="app-info-block">
-          <h3 className="h3-heading">{projectName} App</h3>
+          <h3 className="h3-heading">{PROJECT_NAME} App</h3>
           <div className="mobile-image show-1080">
             <img
               src={mobileAppImageMobile.src}
-              alt={projectName + " Mobile"}
-              title={projectName + " Mobile"}
+              alt={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
+              title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
               width={mobileAppImageMobile.width}
               height={mobileAppImageMobile.height}
               className="app-image"
@@ -71,7 +70,7 @@ export default function MobileSection() {
               <img
                 src="/assets/app-store.svg"
                 alt="Download on the App Store"
-                title={projectName + " in App Store"}
+                title={PROJECT_NAME + " " + PROJECT_GEO + " in App Store"}
                 width={181}
                 height={53}
                 loading="lazy"
@@ -84,7 +83,7 @@ export default function MobileSection() {
               <img
                 src="/assets/google-play.svg"
                 alt="Download on the Google Play"
-                title={projectName + " in Google Play"}
+                title={PROJECT_NAME + " " + PROJECT_GEO + " in Google Play"}
                 width={181}
                 height={53}
                 loading="lazy"
@@ -96,8 +95,8 @@ export default function MobileSection() {
         <div className="mobile-image hide-1080">
           <img
             src={mobileAppImage.src}
-            alt={projectName + " Mobile"}
-            title={projectName + " Mobile"}
+            alt={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
+            title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
             className="app-image"
             loading="lazy"
           />

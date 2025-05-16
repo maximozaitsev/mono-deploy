@@ -6,9 +6,8 @@ import { Offer } from "../../types/offer";
 import { fetchOffers } from "@/utils/fetchOffers";
 import Button from "../__common__/button/Button";
 import InfoIcon from "../__common__/InfoIcon";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import "./BonusDetailsSection.scss";
-
-const projectName = "Kwiff United Kingdom";
 
 const BonusDetailsSection: React.FC = () => {
   const [offers, setOffers] = useState<Offer[]>([]);
@@ -62,7 +61,7 @@ const BonusDetailsSection: React.FC = () => {
                 src={offer.logo}
                 className="offerImage"
                 alt={offer.name}
-                title={offer.name + " in " + projectName}
+                title={offer.name + " in " + PROJECT_NAME + " " + PROJECT_GEO}
                 width={140}
                 height={56}
                 style={{ maxWidth: "100%", height: "auto" }}

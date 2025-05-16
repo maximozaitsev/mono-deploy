@@ -3,9 +3,8 @@
 import React from "react";
 import Button from "../__common__/button/Button";
 import { Offer } from "../../types/offer";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./OfferCard.module.scss";
-
-const projectName = "Kwiff United Kingdom";
 
 interface OfferCardProps {
   offer: Offer;
@@ -17,7 +16,7 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer }) => {
       <img
         src={offer.logo}
         alt={offer.name}
-        title={offer.name + " in " + projectName}
+        title={offer.name + " in " + PROJECT_NAME + " " + PROJECT_GEO}
         width={190}
         loading="lazy"
       />

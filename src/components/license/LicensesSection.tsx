@@ -1,15 +1,15 @@
 "use client";
 
 import licenceImage from "../../../public/block-images/license.webp";
-import styles from "./LicensesSection.module.scss";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { useParsedSections } from "../../utils/parseSections";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import styles from "./LicensesSection.module.scss";
 
 export default function LicensesSection() {
   const { data: content, loading, error } = useContentData();
   const { licenses } = useParsedSections(content?.sections || {});
-  const projctName = "Project Name";
 
   if (loading) return <p></p>;
   if (error) return <p>Error loading content.</p>;
@@ -38,7 +38,8 @@ export default function LicensesSection() {
               <div className={styles.rightImage}>
                 <img
                   src={licenceImage.src}
-                  alt={`${projctName} License`}
+                  alt={`${PROJECT_NAME} License`}
+                  title={`${PROJECT_NAME} ${PROJECT_GEO} License`}
                   width={240}
                   height={240}
                   loading="lazy"

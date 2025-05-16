@@ -3,16 +3,16 @@
 import AppImage from "../../../public/block-images/app.webp";
 import AppImageMobile from "../../../public/block-images/app-mobile.webp";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
-import styles from "./AppSection.module.scss";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { useParsedSections } from "../../utils/parseSections";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import styles from "./AppSection.module.scss";
 
 export default function AppSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const { data: content, loading, error } = useContentData();
   const { app } = useParsedSections(content?.sections || {});
-  const projectName = "Kwiff United Kingdom";
 
   if (loading) return <p></p>;
   if (error) return <p>Error loading content.</p>;
@@ -26,8 +26,8 @@ export default function AppSection() {
             {app.appTitle && <h3 className="h3-heading">{app.appTitle}</h3>}
             <img
               src={AppImageMobile.src}
-              alt={projectName + " App"}
-              title={projectName}
+              alt={PROJECT_NAME + " App"}
+              title={PROJECT_NAME + " " + PROJECT_GEO}
               className={styles.imageMobile}
               loading="lazy"
             />
@@ -46,7 +46,7 @@ export default function AppSection() {
                   className={styles.googlePlay}
                   src="/assets/google-play.svg"
                   alt="Download on the Google Play"
-                  title={projectName + " in Google Play"}
+                  title={PROJECT_NAME + " " + PROJECT_GEO + " in Google Play"}
                   loading="lazy"
                 />
               </button>
@@ -57,7 +57,7 @@ export default function AppSection() {
                   className={styles.appStore}
                   src="/assets/app-store.svg"
                   alt="Download on the App Store"
-                  title={projectName + " in App Store"}
+                  title={PROJECT_NAME + " " + PROJECT_GEO + " in App Store"}
                   loading="lazy"
                 />
               </button>
@@ -66,8 +66,8 @@ export default function AppSection() {
           <div className={styles.imageBlock}>
             <img
               src={AppImage.src}
-              alt={projectName + " App"}
-              title={projectName + " Mobile"}
+              alt={PROJECT_NAME + " " + PROJECT_GEO + " App"}
+              title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
               className={styles.image}
               loading="lazy"
             />

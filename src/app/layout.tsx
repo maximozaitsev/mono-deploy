@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 
-const url = "kwiff-online.com";
+const url = "gbets-online.com";
 const ogTitle =
-  "Kwiff UK: the Fair Licensed Online Platform with Sports & Casino Bets";
-const ogSiteName = "Kwiff";
+  "Gbets South Africa – Trusted Sports Betting & Casino Site Online";
+const ogSiteName = "Gbets";
 const metaDescription =
-  "Kwiff offers its fair and secure sportsbook offers and casino games to the players from the UK. Read this unbiased review to learn more about the platform, including its pros and cons.";
+  "Gbets South Africa delivers licensed sports betting, casino games, and instant win options tailored for local players. Enjoy live betting, virtual sports, and free bet offers. Join now and start winning.";
 
-const locale = "en-GB";
+const locale = "en-SA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
