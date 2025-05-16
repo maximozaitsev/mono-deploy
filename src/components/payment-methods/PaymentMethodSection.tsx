@@ -7,7 +7,7 @@ import { fetchPayments } from "@/utils/fetchPayments";
 import "./PaymentMethodsSection.scss";
 import Button from "../__common__/button/Button";
 
-const projectName = "Baba Ijebu";
+const projectName = "Baba Ijebu Nigeria";
 
 interface PaymentMethodsSectionProps {
   initialPaymentMethods: PaymentMethod[];

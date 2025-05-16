@@ -5,7 +5,7 @@ import { Provider } from "@/types/provider";
 import { fetchProviders } from "@/utils/fetchProviders";
 import "@/components/providers/ProvidersSection.scss";
 
-const projectName = "Baba Ijebu";
+const projectName = "Baba Ijebu Nigeria";
 
 interface ProvidersSectionProps {
   initialProviders: Provider[];

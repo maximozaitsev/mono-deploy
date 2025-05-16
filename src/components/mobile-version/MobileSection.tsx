@@ -12,7 +12,7 @@ import "./MobileSection.scss";
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const projectName = "Baba Ijebu";
+  const projectName = "Baba Ijebu Nigeria";
 
   useEffect(() => {
     import("../../content/content.json")
