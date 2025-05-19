@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "gbets-online.com";
+const url = "sunbet-online.com";
 const ogTitle =
-  "Gbets South Africa – Trusted Sports Betting & Casino Site Online";
-const ogSiteName = "Gbets";
+  "Sunbet Casino & Sports Betting South Africa – 100% Bonus up to R1000";
+const ogSiteName = "Sunbet";
 const metaDescription =
-  "Gbets South Africa delivers licensed sports betting, casino games, and instant win options tailored for local players. Enjoy live betting, virtual sports, and free bet offers. Join now and start winning.";
+  "Join Sunbet, South Africa’s trusted betting platform with 36 sports, 1000+ slots, and daily bonuses. Get a 100% welcome bonus up to R1000. Fast payouts, live betting, and secure gaming await!";
 
 const locale = "en-SA";
 const language = "English";
