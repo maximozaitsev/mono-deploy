@@ -1,13 +1,12 @@
 import { Metadata } from "next";
 
-const url = "supabetsonline.com";
-const ogTitle =
-  "Supabets South Africa – Online Sports Betting, Casino, and Bonuses";
-const ogSiteName = "Supabets";
+const url = "foxybingo-online.com";
+const ogTitle = "Foxy Bingo UK: Play Online Bingo, Slots & Slingo Games";
+const ogSiteName = "Foxy Bingo";
 const metaDescription =
-  "Supabets South Africa provides licensed sports betting, slots, crash games, and live casino with fast payouts and local payment methods. Sign up now to get your R50 free bet and 100 free spins.";
+  "Join Foxy Bingo UK for exciting online bingo, slots, and Slingo games. Enjoy daily promotions, a friendly community, and a secure, mobile-friendly experience.";
 
-const locale = "en-SA";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

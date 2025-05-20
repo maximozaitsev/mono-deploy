@@ -8,7 +8,7 @@
   // background: $color-background;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 108px top 68px;
+  background-position: right 160px center;
   width: 100%;
   height: 540px;
   max-width: 90rem;
@@ -18,7 +18,7 @@
     width: 100%;
   }
   @media (max-width: 1240px) {
-    background-size: 50% auto;
+    background-size: 48% auto;
     background-position: right 20px center;
   }
 
@@ -33,7 +33,7 @@
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 63%;
+    background-size: auto 61%;
   }
 
   @media (max-width: 420px) {
