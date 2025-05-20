@@ -1,191 +1,186 @@
 {
-  "title": "Sunbet",
+  "title": "Supabets",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "Welcome bonus 100% up to 1000R",
-        "36 sport disciplines",
-        "90th Minute Loss bonus"
+        "100% up to R2,000",
+        "10%, up to R5,000",
+        "100 free spins upon registration"
       ]
     },
     {
       "type": "paragraph",
-      "text": "A platform that surpasses its competitors, not only with the honesty and quality of the site, but also with a huge number of betting services. Sunbet is a betting platform created back in 2013 by Sun International. The site features around 36 sports disciplines, including such rare individuals as: Pesapallo, Lacrosse and the possibility to bet on politics or TV. If you are a fan of fast gambling, namely slots, there is something for you too, because the site has more than 1000 slots from the leading providers."
+      "text": "An experienced online casino and sportsbook, Supabets offers a wide choice of African-specific games. Along with sports betting, the site includes hundreds of online slots, table games, live dealer games, and virtual sports. Supabets is licensed and regulated and offers secure gaming, smartphone compatibility, and several payment options. The casino offers frequent promotions, bilingual support, and tailored services to satisfy both casual and experienced bettors."
     }
   ],
   "about": {
-    "Sunbet Registration": [
+    "Supabets Registration Process": [
       {
         "type": "paragraph",
-        "text": "Every user knows that registration is mandatory on any gaming platform, so Sunbet is no exception. To proceed to Sunbet Sign Up, click on the main page “Sign Up” button, and then in the opened window fill in your personal data:"
+        "text": "New users can easily complete Supabets login register online and start exploring its sportsbook and casino products. The platform is safe and user-friendly for PC and mobile users."
+      },
+      {
+        "type": "paragraph",
+        "text": "Supabets register Steps:"
       },
       {
         "type": "list",
-        "style": "unordered",
+        "style": "ordered",
         "items": [
-          "Passport number",
-          "Date of birth",
-          "Name/surname",
-          "Phone number",
-          "Email",
-          "Make up a username",
-          "Password"
+          "Visit the official Supabets website.",
+          "Click on the \"Register\" button located at the top right corner of the homepage.",
+          "Fill in the registration form with the following details.",
+          "Agree to the terms and conditions by checking the appropriate box.",
+          "Click the \"Submit\" button to complete the registration.",
+          "Enter the One-Time Password (OTP) sent via SMS to your registered mobile number to verify your account."
         ]
-      },
-      {
-        "type": "paragraph",
-        "text": "After passing the registration, you get on the platform and in theory you can already make a deposit and play, but the withdrawal will be closed to you. To open it it is worth passing the verification of identity, namely to confirm the address of residence, passport and your selfies."
       }
     ],
-    "Sunbet Login Account": [
+    "About Mobile Supabets Login": [
       {
         "type": "paragraph",
-        "text": "You can Login Sunbet to your personal game account, which must be already created, by simply clicking on the “Log In” button and entering your password and username. However, if you don't remember the Sunbet Casino Login data or you are not sure of the correctness, use one of the buttons: “”Forgot Username?“, ”Forgot Password?“, ”Reset Password\", in order to restore the data and calmly start playing the game."
+        "text": "The \"Login\" button on the Supabets website is usually in the top right corner. To avoid Supabets log in issues, enter the registered username and password accurately. After entering your credentials, click \"Login\" to access the account dashboard and complete Supabets login. A One-Time Pin (OTP) will be provided by SMS to the registered mobile number for two-factor authentication users during the login Supabets process. The \"Forgot Password\" link on the Supabets mobile login page sends email or SMS instructions to reset forgotten passwords. Optimised for desktop and mobile browsers, Supabets allows smooth login across devices."
       }
     ],
-    "Deposit Methods": [
+    "New Supabets Deposit Methods": [
       {
         "type": "paragraph",
-        "text": "Sunbet offers its players a not very extensive list of deposit methods, but the most important ones are there. So you can deposit to your account using your Visa/Mastercard or one of the following methods: bank transfer, OTT Vouchers, 1VOUCHER, Ozow, Blu Voucher, Instant EFT, EFT (Electronic Fund Transfer), Kazang, E-Vouchers. The minimum deposit amount is 50R and the crediting speed is 5 minutes."
+        "text": "Supabets offers multiple deposit ways to suit players. Major South African banks like Standard Bank, ABSA, Nedbank, and First National Bank accept direct bank deposits. Instant EFT with Ozow allows fast, secure electronic transfers. Supabets Prepaid, 1Voucher, OTT, Blu, and Kazang vouchers can be purchased at participating stores and redeemed online. The site accepts SupaPay Payment Gateway payments, making transactions faster and easier. To ensure correct fund allocation, users should provide their Supabets username while depositing. User accounts may take three days to reflect deposits made outside of banking hours."
       }
     ],
     "Withdrawal Methods": [
       {
         "type": "paragraph",
-        "text": "Withdrawal methods do not differ from deposit methods. However, if one talks about withdrawal time, then as a rule everything comes instantly, but if you want to withdraw by bank transfer, you will have to wait for 2-5 days. You can withdraw no more than 3000R per day, and the minimum withdrawal amount is only 50R."
+        "text": "Supabets offers several withdrawal alternatives to help gamers get their earnings. Ozow EFT, which transfers payments directly into the user's bank account within an hour during banking hours, is one of the fastest options. Supabets enables cardless cash withdrawals through FNB eWallet Pro and Standard Bank Instant Money, with daily limits of R2,500 and R5,000 and monthly limits of R25,000. Users can withdraw vouchers for 1ForYou voucher codes to use at numerous stores. Users can request bank transfers using their registered email and provide evidence such as a certified ID copy, proof of residence, and a stamped bank statement. Users must keep their FICA documentation current because withdrawals above R25,000 require further verification. Withdrawals can take up to three business days, depending on the method and amount."
       }
     ]
   },
   "advantages": {
-    "Sunbet Casino Advantages": [
+    "Supabets Advantages": [
       {
         "type": "paragraph",
-        "text": "As with any other gaming platform, Sunbet has a number of pros and a number of cons, but the latter are minor, so most players won't even notice them. Also, remember to always check the site yourself to find the benefits of playing on it, rather than blindly trusting it."
+        "text": "Supabets is a leading South African online betting platform for sports and casino fans. It attracts a diverse audience seeking safe and fun gambling with its user-friendly design and several betting alternatives."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Advantages"
+        "text": "Advantages:"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "12 years of success",
-          "Niche markets",
-          "More than 1000 slots",
-          "Betting on 36 sports disciplines",
-          "Great welcome bonus"
+          "Wide range of sports and casino games",
+          "Competitive odds and regular promotions",
+          "R50 free bet + up to R5,000 bonus",
+          "Mobile-friendly website",
+          "Multiple local payment options"
         ]
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Disadvantages"
+        "text": "Disadvantages:"
       },
       {
         "type": "list",
         "style": "unordered",
-        "items": ["Website translated into English only"]
+        "items": [
+          "No mobile app",
+          "No VIP or loyalty program",
+          "Limited live streaming",
+          "FICA process required"
+        ]
       }
     ]
   },
   "games-to-play": {
-    "Games Available to Play": [
+    "New Supabets Betting and Gaming Options": [
       {
         "type": "paragraph",
-        "text": "Every user comes to the platform for excitement and winnings, and therefore the variety of games is a key factor in choosing a platform. After all, no one will want to play the same game every day, when the competitors have more games. Sunbet have done a good job in this regard, and added a good variety of games where everyone can find something new and wonderful for themselves. In addition, one should not forget about the main weapon, namely betting, where there is not only a huge selection of different sports disciplines, but an even bigger selection of betting markets."
+        "text": "Supabets offers a large range of sports markets, casino games, and innovative betting options to South African gamers. With over 1,300 sports betting markets and many casino games, Supabets appeals to both classic and modern gamers."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Sunbet Slots"
+        "text": "Sports Betting"
       },
       {
         "type": "paragraph",
-        "text": "In the arsenal of Sunbet is a huge number of slots on a variety of topics from well-known providers. All slot machines are located in a special section “Slots”, where each provider has its own separate tape of their offspring. In addition, the site presents more than 1000 slots, which means that even the most picky person can find something new. There you will find all your favorite old slots with three reels, and new slot machines, where you can not only pick up a progressive jackpot, but also see unique bonus rounds and features."
+        "text": "Supabets offers a rich sports betting experience for anyone. Soccer, basketball, tennis, cricket, rugby, darts, MMA, and snooker are all covered on the site. Supabets book a bet before or during the game with pre-match and live in-play betting. Live betting offers real-time odds and dynamic winning chances dependent on the game progress. From the English Premier League to African contests, soccer enthusiasts can bet on over 140 leagues and tournaments in 50+ nations. The UI simplifies nation, league, and match filtering for easy navigation. Bettors may make informed judgments with match stats, head-to-head data, and live commentary. Supabets offers combo bets, bet increases, and cash-outs to increase betting versatility."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Sport Bet"
+        "text": "Casino Games"
       },
       {
         "type": "paragraph",
-        "text": "First of all, this gaming platform is a betting platform, and therefore the emphasis is on betting and sports disciplines, of which there are as many as 36. However, not only the number of sports disciplines can boast Sunbet, but also a decent betting market on each sport. In addition, the platform offers competitive odds, because as it was noted, the platform often has slightly higher odds than its competitors."
+        "text": "Supabets' casino has games from every popular category. Fans can choose from hundreds of slots, including Gates of Olympus, Sweet Bonanza, Big Bass Bonanza, and Book of Ra Deluxe 10 95. These games have great graphics, bonus rounds, and volatility for all players. Table games include European, American, and French roulette, blackjack (classic and multi-hand), baccarat, and video poker. Live casinos offer a more immersive experience. Evolution Gaming's Live Blackjack, Baccarat, and Roulette section has professional dealers, real-time action, and HD broadcasting. Crazy Time, Deal or No Deal, and Dream Catcher combine classic gameplay with interactive aspects to make them fun."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Sunbet Register Bet in Real Time"
+        "text": "Instant and Crash Games"
       },
       {
         "type": "paragraph",
-        "text": "For some reason you forgot about the match, or just didn't have time to place a bet because you were busy? No problem, because Sunbet Sports Betting has thought of these guys and introduced Live Right Now mode, where you can easily place bets even if the match has already started. However, you won't be able to follow the match itself, as there is no live streaming on the platform, but you will be able to check the latest score updates."
+        "text": "Supabets has a growing selection of immediate win and crash games for fast-paced players. This section's top games are Aviator and JetX. Players wager on a rising multiplier and must pay out before the game collapses to win. Strategy and timing combine for short rounds and high risk-reward ratios. The multiplier keeps experienced players interested, while the simplicity makes these games accessible to newcomers. Auto cashout, statistics tracking, and round history aid decision-making in these games. For instant pleasure with real money potential, the format is great for mobile gaming and fast betting cycles."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Table Games"
+        "text": "Additional Betting Options"
       },
       {
         "type": "paragraph",
-        "text": "Table games are quite a popular choice among gambling users, because who does not like the feeling of a real casino with dealers. In total, Sunbet has about 100 table games, from the leading providers, where there are not only classic, but also with live dealers.So you can play blackjack, baccarat, roulette, game shows, poker and other games."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Virtuals"
-      },
-      {
-        "type": "paragraph",
-        "text": "A very rare section of games, because on most gambling platforms it is simply not there. However, on Sunbet it is, and you can enter it by clicking on the button “Virtuals” on the main page of the site. After clicking you will be thrown to the page where the actual games are located, which there are only 8, but what kind: Aviator, Crash, Horse Racing, Lucky Numbers and others."
+        "text": "Besides sports and casino, old Supabets offers several new betting alternatives. A lottery-inspired betting structure called SupaNumbers lets players pick numbers for fixed-odds payments. Games refresh regularly, giving players chances to win. Live broadcasting and betting in real-time draws and card games make BetGames another notable category. Lucky 7, Dice Duel, and War of Bets include speedy results and live hosts for an interesting experience. Virtual Sports also simulates football, basketball, horse racing, and more with scheduled events and realistic animations. Games available 24/7 are useful for filling gaps between live events. All of these features make Supabets one of the most comprehensive betting platforms in the region, offering variety, accessibility, and non-stop action."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Sunbet Online Casino Bonuses and Promotions": [
+    "Supabets Bonuses and Promotions": [
       {
         "type": "paragraph",
-        "text": "Bonuses are an important strategic weapon to not only retain players, but also to attract new ones. Proper use of the bonus application will not only help you to play longer, but also to withdraw your winnings after wagering. In addition, Sunbet International has one of the biggest welcome bonuses in South Africa, and the wager is not biting at all."
+        "text": "Supabets offers bonuses and promotions to improve existing and new players' gaming experience. Current bonuses are given below:"
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Welcome Bonus"
+        "text": "Supabets sign up bonus (No Deposit Required)"
       },
       {
         "type": "paragraph",
-        "text": "New users can be relaxed, because the welcome bonus that the platform offers breaks all boundaries. As soon as you register, you will be offered a bonus that allows you to get up to 1000R literally for one deposit. The terms of this promotion are to deposit any amount and get 100% on top, and you can use these funds only on bets starting from 1.5x. The wager is only 5x, which is very small compared to competitors, and therefore it will be easy to win it back."
+        "text": "New players get Supabets R50 sign upt following registration and FICA verification. Users can bet real money without depositing with this bonus, which is automatically provided by 7 a.m. the next day. To withdraw, the bonus must be wagered three times on single bets with minimum odds of 2/1 (3.0). Only these wagers count toward the wagering requirement. Players can pay out wins up to R999 after completion. The free bet lets newbies try the betting site without risking money while delivering real winning possibilities."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "90th Minute Loss"
+        "text": "Supabets Welcome Bonus and 100 Free Spins (No Deposit Required)"
       },
       {
         "type": "paragraph",
-        "text": "A unique offer that can be used every day, but only once. The conditions of this bonus is to lose a bet at 90 minutes of the match (the other team scored a goal and therefore won), and then write to tech support within 5 days, so that they will give you a free bet up to 500R. In addition, do not forget that the bet must be 50R or more at odds of 1.7x, if all the conditions are met and you have written to support, then you only need to wait up to 24 hours to get your free bet."
+        "text": "No-deposit bonuses include Supabets 100 free spins upon registration. The 10 cent spins can be played on slots like “Lucky Lucky” and “Knockout Football Rush.” All spin winnings go to the Habanero bonus wallet and require 5x wagering. Habanero Instant Games must be used to withdraw wins. Bonus expires automatically after 48 hours if not utilized or transferred. The maximum free spin winning withdrawal is R999. This deal lets you try the casino's slots for free."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Loyalty Program"
+        "text": "Up to R5,000 Deposit Bonus"
       },
       {
         "type": "paragraph",
-        "text": "Sunbet have tried their best here, making a loyalty program that even allows you to interact with the management of the bookmaker. This is done through the fact that every 1000R played rewards you with a special point for a month. You can spend these points in Sun International facilities on food, drinks, parking or even on accommodation in the hotels and resorts of the organization."
+        "text": "New Supabets users receive a three-tiered welcome bonus on their first three deposits up to R5,000. The first deposit is matched 100% up to R2,000, the second 50% up to R1,000, and the third 100% up to R2,000. Each bonus is locked until the money is wagered. After unlocking, the bonus must be wagered five times on single bets with odds of at least 14/10 (1.4) before withdrawal. Bonus withdrawals are limited to R3,000. This structured promotion encourages sustained gaming and bankroll growth after initial sessions."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Sunbet Rugby bonus"
+        "text": "VIP 10% Deposit Bonus and Supabets Free Spins"
       },
       {
         "type": "paragraph",
-        "text": "If you are a rugby fan, but this time you were unlucky with your bet, no problem, because Sunbet has something to surprise you. If you made a betting accumulator with 5 or more selections and each selection had odds of 1.5x +, then congratulations because you will be the owner of a free bet of up to 5000R. In addition, do not forget that the amount of your bet must be 50R or more."
+        "text": "Supabets' VIP 10% deposit bonus is sometimes offered directly to users. One deposit made between 10:00 and 22:00 on the same day receives an extra 10%, up to R5,000, with this limited-time promotion. The bonus is credited to the player's primary wallet rather than a bonus account, making it easier to utilize in any game or bet. Bonus must be wagered three times to withdraw. Only users who receive bespoke SMS or email invitations can claim this exclusive offer. It gives loyal or high-value players an extra incentive beyond regular promotions."
       }
     ]
   },
@@ -193,56 +188,105 @@
     "Support": [
       {
         "type": "paragraph",
-        "text": "If you encounter any problems, you can first turn to the special FAQ section, where the most common problems will be described. However, if you still haven't found a solution, you can contact 24/7 support by writing to them by e-mail or directly on the site in live chat."
+        "text": "To help users, Supabets offers several customer service options. Users can email support@supabets.co.za or phone +27 11 215 7000. WhatsApp support at 071 239 1133 can help with account, technical, and general questions."
       }
     ]
   },
   "faq": {
-    "FAQ": [
+    "CASINO FAQ": [
       {
         "type": "heading",
         "level": 3,
-        "text": "Where to Sunbet App Download?"
+        "text": "Is Supabets legal in South Africa?"
       },
       {
         "type": "paragraph",
-        "text": "You can download the Sunbet app directly from Play Market on Android, but on IOS there is no mobile app."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "When did the Sunbet betting company appear?"
-      },
-      {
-        "type": "paragraph",
-        "text": "This platform was officially launched in December 2013."
+        "text": "Yes, Supabets is fully licensed by the Mpumalanga Economic Regulator and operates legally within South Africa."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Is there a birthday bonus on Sunbet?"
+        "text": "What is the minimum deposit at Supabets?"
       },
       {
         "type": "paragraph",
-        "text": "No Sunbet Birthday Bonus is not provided."
+        "text": "The minimum deposit amount is R10 when using voucher options like 1Voucher or OTT."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Are all slot machine results accurately random?"
+        "text": "Does Supabets offer BetBuilder?"
       },
       {
         "type": "paragraph",
-        "text": "Yes, the site uses random number generation that no one can influence."
+        "text": "Yes, BetBuilder is available for selected soccer matches, allowing users to combine multiple outcomes into a single bet."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Is the work of Sunbet betting company legal?"
+        "text": "Can I set betting limits at Supabets?"
       },
       {
         "type": "paragraph",
-        "text": "Yes, as the platform is licensed by bodies such as; Mpumalanga, North West."
+        "text": "Yes, users can request responsible gambling tools such as deposit limits by contacting customer support."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Is cash out available at Supabets app Download?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Yes, partial and full cash out is available on selected markets and events, especially in soccer and tennis."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Are BetGames results available live?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Yes, BetGames results are updated live on the platform with video streaming of each draw."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "How often are Supabets odds updated?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Odds are updated in real-time, especially for in-play markets, reflecting ongoing match developments."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Can I play without FICA documents?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Yes, but account withdrawals and bonuses remain restricted until FICA verification is completed."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Is Supabets compatible with feature phones?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Yes, Supabets offers a lightweight mobile version accessible via basic browsers on feature phones."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "How long do Supabets vouchers remain valid?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Unused Supabets voucher codes remain valid for up to 3 years from the date of issue."
+      },
+      {
+        "type": "paragraph",
+        "text": "##"
       }
     ]
   },
@@ -250,31 +294,31 @@
     "Software Technologies": [
       {
         "type": "paragraph",
-        "text": "The platform features around 100 gaming providers, including all-time favorites Pragmatic Play, NetEnt, Evolution Gaming, Nolimit City and a number of others. Sunbet boasts the ability to bet on 36 gaming disciplines, utilizing a huge betting market for each of them. In addition, the software is designed so that all games run very quickly and without glitches."
+        "text": "Supabets partners with top software companies to offer a variety of games. The platform has Habanero, Pragmatic Play, 3 Oaks, Hacksaw Gaming, Evolution, and Endorphina games. These agreements provide a variety of high-quality slots, table games, and live dealer games for different player tastes."
       }
     ],
     "Security": [
       {
         "type": "paragraph",
-        "text": "Protection is a very important factor when choosing a casino, because no one wants 3rd parties prying into their lives. That's why Sunbet approached it with all seriousness and using SSL encryption, as well as maintaining all FICA standards. If one talks about legality, then everything is fine here too, because the platform has two licenses at once, namely: Mpumalanga, North West."
+        "text": "Supabets protects user data with SSL encryption. The Mpumalanga Gambling Board licenses the platform under 9-2-1-00055, ensuring industry standards and fair gambling."
       }
     ],
-    "Sunbet App": [
+    "Download Supabets App Download APK": [
       {
         "type": "paragraph",
-        "text": "You can play on Sunbet just by going to the website, because it is fully made with HTML5 technology, and therefore the gameplay does not differ from the computer, and there are no lags. However, you can also Download Sunbet App on Android, which is even better than the web version, but the same application on IOS is not available."
+        "text": "Android mobile Supabets app may be downloaded from their website. Supabets app lets users gamble without using mobile data. The Supabets mobile-optimized website lets iOS users access all functions, including sports betting and casino games, without an app."
       }
     ],
     "Languages": [
       {
         "type": "paragraph",
-        "text": "The entire website is translated into only 1 language, namely English. In addition, the tech support also speaks only in English, which may cause difficulties for some users."
+        "text": "English is Supabets' main language for South African users. Users may easily explore, get support, and interact with material in a commonly spoken language."
       }
     ],
     "Currencies": [
       {
         "type": "paragraph",
-        "text": "Deposits, plays and withdrawals can only be made in one currency - the South African Rand (ZAR). Sunbet only targets South Africa, so players from other countries will not be able to play for nothing."
+        "text": "All Supabets transactions are in South African Rand (ZAR), reflecting its domestic concentration. Users can deposit, wager, and withdraw funds without currency conversion, simplifying their gaming finances."
       }
     ]
   }

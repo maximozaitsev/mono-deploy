@@ -52,7 +52,7 @@
     height: $header-button-height;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 16px;
+    font-size: 14px;
     padding: 12px 32px;
     border-radius: $header-button-border-radius;
     border: none;
@@ -81,7 +81,7 @@
     .headerButton {
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
-      font-size: 12px;
+      font-size: 10px;
       padding: 8px 16px;
 
       &.logIn {

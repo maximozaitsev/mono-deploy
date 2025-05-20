@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "sunbet-online.com";
+const url = "supabetsonline.com";
 const ogTitle =
-  "Sunbet Casino & Sports Betting South Africa – 100% Bonus up to R1000";
-const ogSiteName = "Sunbet";
+  "Supabets South Africa – Online Sports Betting, Casino, and Bonuses";
+const ogSiteName = "Supabets";
 const metaDescription =
-  "Join Sunbet, South Africa’s trusted betting platform with 36 sports, 1000+ slots, and daily bonuses. Get a 100% welcome bonus up to R1000. Fast payouts, live betting, and secure gaming await!";
+  "Supabets South Africa provides licensed sports betting, slots, crash games, and live casino with fast payouts and local payment methods. Sign up now to get your R50 free bet and 100 free spins.";
 
 const locale = "en-SA";
 const language = "English";
