@@ -1,12 +1,13 @@
 import { Metadata } from "next";
 
-const url = "foxybingo-online.com";
-const ogTitle = "Foxy Bingo UK: Play Online Bingo, Slots & Slingo Games";
-const ogSiteName = "Foxy Bingo";
+const url = "betking-online.com";
+const ogTitle =
+  "BetKing Nigeria – Play Sports, Virtuals, and Casino Games Online";
+const ogSiteName = "Betking";
 const metaDescription =
-  "Join Foxy Bingo UK for exciting online bingo, slots, and Slingo games. Enjoy daily promotions, a friendly community, and a secure, mobile-friendly experience.";
+  "BetKing Nigeria delivers top-tier sports betting, virtual games, and online casino options with fast payouts and local payment methods. Join today to claim bonuses, place real bets, and access 24/7 support on any device.";
 
-const locale = "en-GB";
+const locale = "en-NG";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
