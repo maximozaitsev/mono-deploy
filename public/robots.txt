@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://betking-online.com/
-Sitemap: https://betking-online.com/sitemap.xml
+Host: https://nairabet-online.com/
+Sitemap: https://nairabet-online.com/sitemap.xml

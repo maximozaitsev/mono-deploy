@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "betking-online.com";
-const ogTitle =
-  "BetKing Nigeria – Play Sports, Virtuals, and Casino Games Online";
-const ogSiteName = "Betking";
+const url = "nairabet-online.com";
+const ogTitle = "NairaBET Nigeria Review 2025: Bonuses, Games, App & Payments";
+const ogSiteName = "Nairabet";
 const metaDescription =
-  "BetKing Nigeria delivers top-tier sports betting, virtual games, and online casino options with fast payouts and local payment methods. Join today to claim bonuses, place real bets, and access 24/7 support on any device.";
+  "Explore NairaBET Nigeria in 2025: discover its bonuses, game selection, mobile app features, deposit and withdrawal methods, and more. A trusted platform for Nigerian bettors.";
 
 const locale = "en-NG";
 const language = "English";
