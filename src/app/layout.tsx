@@ -1,12 +1,13 @@
 import { Metadata } from "next";
 
-const url = "nairabet-online.com";
-const ogTitle = "NairaBET Nigeria Review 2025: Bonuses, Games, App & Payments";
-const ogSiteName = "Nairabet";
+const url = "copybet-online.com";
+const ogTitle =
+  "Copybet UK Review  – Free Bets, 30+ Sports & Unique Tipster Platform";
+const ogSiteName = "Copybet";
 const metaDescription =
-  "Explore NairaBET Nigeria in 2025: discover its bonuses, game selection, mobile app features, deposit and withdrawal methods, and more. A trusted platform for Nigerian bettors.";
+  "Explore Copybet – a licensed UK bookmaker with over 30 sports, a £60 welcome free bet, and unique tipster subscription features. Fast registration, profit boosts, and secure withdrawals await.";
 
-const locale = "en-NG";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

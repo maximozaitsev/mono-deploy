@@ -1,2 +1,2 @@
-export const PROJECT_NAME = "Nairabet";
-export const PROJECT_GEO = "Nigeria";
+export const PROJECT_NAME = "Copybet";
+export const PROJECT_GEO = "United Kingdom";
