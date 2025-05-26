@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "copybet-online.com";
-const ogTitle =
-  "Copybet UK Review  – Free Bets, 30+ Sports & Unique Tipster Platform";
-const ogSiteName = "Copybet";
+const url = "matchbook-online.com";
+const ogTitle = "Matchbook Casino UK Review 2025: Games, Bonuses and Features";
+const ogSiteName = "Matchbook";
 const metaDescription =
-  "Explore Copybet – a licensed UK bookmaker with over 30 sports, a £60 welcome free bet, and unique tipster subscription features. Fast registration, profit boosts, and secure withdrawals await.";
+  "Explore our in-depth 2025 helpful review of Matchbook Casino UK. Discover game selections, sports betting, bonus offers, payment methods, mobile compatibility, and more.";
 
 const locale = "en-GB";
 const language = "English";
