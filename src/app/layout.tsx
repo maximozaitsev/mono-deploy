@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
-const url = "copybet-online.com";
+const url = "dreamvegas-online.com";
 const ogTitle =
-  "Copybet UK Review  – Free Bets, 30+ Sports & Unique Tipster Platform";
-const ogSiteName = "Copybet";
+  "Dream Vegas Casino UK Review 2025: Up to £300 Bonus + 150 Spins";
+const ogSiteName = "Dream Vegas";
 const metaDescription =
-  "Explore Copybet – a licensed UK bookmaker with over 30 sports, a £60 welcome free bet, and unique tipster subscription features. Fast registration, profit boosts, and secure withdrawals await.";
+  "Explore Dream Vegas Casino's offerings for UK players in 2025. Discover a vast game selection, generous welcome bonus, secure payment methods, and top-tier software providers.";
 
 const locale = "en-GB";
 const language = "English";

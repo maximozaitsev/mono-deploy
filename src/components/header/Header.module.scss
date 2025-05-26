@@ -63,12 +63,20 @@
       background: $color-button-small;
       width: $header-button-small-width;
       color: $text-color-button-small;
+
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: #2e2e2e3b;
     }
 
     &.signUp {
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
+
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: #f9f8f83b;
     }
 
     &:hover {
