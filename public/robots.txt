@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://matchbook-online.com/
-Sitemap: https://matchbook-online.com/sitemap.xml
+Host: https://casino-ways-online.com/
+Sitemap: https://casino-ways-online.com/sitemap.xml

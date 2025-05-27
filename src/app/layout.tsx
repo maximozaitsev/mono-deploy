@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "matchbook-online.com";
-const ogTitle = "Matchbook Casino UK Review 2025: Games, Bonuses and Features";
-const ogSiteName = "Matchbook";
+const url = "casino-ways-online.com";
+const ogTitle =
+  "Casinoways Casino UK – Full Review of Games, Bonuses & Payments";
+const ogSiteName = "Casino Ways";
 const metaDescription =
-  "Explore our in-depth 2025 helpful review of Matchbook Casino UK. Discover game selections, sports betting, bonus offers, payment methods, mobile compatibility, and more.";
+  "Casinoways Casino UK brings 2,000+ games, generous bonuses, and fast crypto-friendly payments. Start playing today with secure deposits, 24/7 live chat, and a full loyalty program.";
 
 const locale = "en-GB";
 const language = "English";
