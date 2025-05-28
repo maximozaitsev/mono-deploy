@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Inter", sans-serif;
+$font-secondary: "Karla", sans-serif;
 $font-third: "Source Sans 3", sans-serif;
 
 @font-face {
@@ -11,7 +11,7 @@ $font-third: "Source Sans 3", sans-serif;
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url(./SourceSans3-Black.ttf) format("truetype");
+  src: url("./SourceSans3-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -31,8 +31,8 @@ $font-third: "Source Sans 3", sans-serif;
 }
 
 @font-face {
-  font-family: "Inter";
-  font-weight: 900;
+  font-family: "Karla";
+  font-weight: 800;
   font-style: normal;
-  src: url("./Heading/static/Inter-900.woff2") format("woff2");
+  src: url("./Heading/static/Karla-800.woff2") format("woff2");
 }

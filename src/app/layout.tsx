@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "casino-ways-online.com";
-const ogTitle =
-  "Casinoways Casino UK – Full Review of Games, Bonuses & Payments";
-const ogSiteName = "Casino Ways";
+const url = "betti-casino-online.com";
+const ogTitle = "Betti Casino UK Review 2025 – Bonuses, Games & Login Guide";
+const ogSiteName = "Betti Casino";
 const metaDescription =
-  "Casinoways Casino UK brings 2,000+ games, generous bonuses, and fast crypto-friendly payments. Start playing today with secure deposits, 24/7 live chat, and a full loyalty program.";
+  "Betti Casino UK offers a generous welcome bonus, exciting slots, and secure payments. Find out how to register and claim free spins today!";
 
 const locale = "en-GB";
 const language = "English";
