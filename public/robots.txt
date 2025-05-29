@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://betti-casino-online.com/
-Sitemap: https://betti-casino-online.com/sitemap.xml
+Host: https://double-bubble-bingo.com/
+Sitemap: https://double-bubble-bingo.com/sitemap.xml

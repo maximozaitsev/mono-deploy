@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
-const url = "betti-casino-online.com";
-const ogTitle = "Betti Casino UK Review 2025 – Bonuses, Games & Login Guide";
-const ogSiteName = "Betti Casino";
+const url = "double-bubble-bingo.com";
+const ogTitle = "Double Bubble Bingo UK: Play Exclusive Bingo and Slots Online";
+const ogSiteName = "Double Bubble Bingo";
 const metaDescription =
-  "Betti Casino UK offers a generous welcome bonus, exciting slots, and secure payments. Find out how to register and claim free spins today!";
+  "Join Double Bubble Bingo in the UK for thrilling bingo and immersive slot games! Enjoy 50 free bingo tickets or 50 free spins with your first £10 deposit. Sign up today!";
 
 const locale = "en-GB";
 const language = "English";

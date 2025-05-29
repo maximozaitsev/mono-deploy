@@ -1,18 +1,10 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Karla", sans-serif;
-$font-third: "Source Sans 3", sans-serif;
+$font-secondary: "Kumbh Sans", sans-serif;
 
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Source Sans 3";
-  src: url("./SourceSans3-Black.ttf") format("truetype");
-  font-weight: 900;
   font-style: normal;
 }
 
@@ -31,8 +23,8 @@ $font-third: "Source Sans 3", sans-serif;
 }
 
 @font-face {
-  font-family: "Karla";
-  font-weight: 800;
+  font-family: "Kumbh Sans";
+  font-weight: 900;
   font-style: normal;
-  src: url("./Heading/static/Karla-800.woff2") format("woff2");
+  src: url("./Heading/static/Kumbh Sans-900.woff2") format("woff2");
 }
