@@ -1,10 +1,11 @@
 import { Metadata } from "next";
 
-const url = "double-bubble-bingo.com";
-const ogTitle = "Double Bubble Bingo UK: Play Exclusive Bingo and Slots Online";
-const ogSiteName = "Double Bubble Bingo";
+const url = "casimba-online.com";
+const ogTitle =
+  "Casimba Casino UK – Explore Slots, Live Games & Real Rewards Today";
+const ogSiteName = "Casimba";
 const metaDescription =
-  "Join Double Bubble Bingo in the UK for thrilling bingo and immersive slot games! Enjoy 50 free bingo tickets or 50 free spins with your first £10 deposit. Sign up today!";
+  "Casimba Casino UK delivers premium slots, live dealer tables, and secure payment methods right from the start. Sign up now to unlock massive welcome bonuses, fast withdrawals, and 24/7 support on any device.";
 
 const locale = "en-GB";
 const language = "English";
