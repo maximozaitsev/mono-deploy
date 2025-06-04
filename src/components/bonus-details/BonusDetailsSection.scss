@@ -32,7 +32,7 @@
   .secondary {
     width: 218px;
     height: 56px;
-    box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
+    // box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
     margin-top: -3px;
     margin-left: 6px;
     padding: 0;
@@ -257,14 +257,14 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: $text-color-primary;
+  color: #ffffff;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   position: relative;
-  box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
+  // box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
 
   @media (max-width: 850px) {
     font-size: 18px;
@@ -334,8 +334,6 @@
     }
   }
 }
-
-
 
 /* Theme Styles Start */
 .accordion-title,
