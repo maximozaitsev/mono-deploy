@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://casimba-online.com/
-Sitemap: https://casimba-online.com/sitemap.xml
+Host: https://betzone-casino.com/
+Sitemap: https://betzone-casino.com/sitemap.xml

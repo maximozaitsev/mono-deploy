@@ -1,11 +1,10 @@
 import { Metadata } from "next";
 
-const url = "casimba-online.com";
-const ogTitle =
-  "Casimba Casino UK – Explore Slots, Live Games & Real Rewards Today";
-const ogSiteName = "Casimba";
+const url = "betzone-casino.com";
+const ogTitle = "Betzone UK Review 2025 - Bonuses, Games & App Guide";
+const ogSiteName = "Betzone";
 const metaDescription =
-  "Casimba Casino UK delivers premium slots, live dealer tables, and secure payment methods right from the start. Sign up now to unlock massive welcome bonuses, fast withdrawals, and 24/7 support on any device.";
+  "Betzone UK offers vast bonuses, live chat support, fast withdrawals, and a full real money casino experience. Find out everything about Betzone in this review!";
 
 const locale = "en-GB";
 const language = "English";
