@@ -1,92 +1,188 @@
 {
-  "title": "Betzone Casino UK Review – Bonuses, Games & App for British Players",
+  "title": "Midnite Casino UK – The Ultimate Online Gaming Destination for British Players",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
-      "items": [
-        "Generous Betzone welcome offer for new players.",
-        "A wide variety of games and sports betting markets are available at Betzone.",
-        "Dedicated Betzone app for iOS and Android.",
-        "Fast and reliable customer support and fast withdrawal times.",
-        "Regular promotions and Betzone free bets for loyal customers."
-      ]
+      "items": ["100 FS Welcome Offer", "1800+ Slots", "24/7 Support"]
     },
     {
       "type": "paragraph",
-      "text": "Betzone UK is a leading site for sports betting and casino games. The platform appeals to different types of players with its attractive welcome offer, a wide variety of slots, table games and live dealer games. The Betzone app provides a mobile experience for the users while regular promotions, free bets, and a rewarding VIP programme keep things exciting. British players will like the focus on local payment methods, fast withdrawal times, and live chat support, making Betzone a good choice for safe and fun online gaming in the UK."
+      "text": "Midnite Casino is a modern online gambling platform that was launched in 2023 by Dribble Media Limited. Licensed by the UK Gambling Commission (UKGC), it offers a wide range of games, including over 1,800 slots from leading developers such as NetEnt, Microgaming, Play'n GO and Pragmatic Play. In addition, table games, live casino and sports betting, including eSports, are available. Among the advantages of Midnite are an intuitive interface, fast payouts and regular bonuses for new and regular players. Current promotion for new users: a bet of £20 gives 100 free spins on the Big Bass Splash slot. Join to receive more bonus offers"
     }
   ],
   "about": {
-    "Deposit Options for British Players": [
+    "About Midnite Casino": [
       {
         "type": "paragraph",
-        "text": "British players at Betzone Casino UK can deposit funds through various simple payment methods. British players can instantly deposit money to their account through Visa Mastercard and Maestro debit cards. The bank transfer service at Betzone Casino allows users to deposit funds which need 1–3 business days for processing. All deposits at Betzone require a minimum of £10 with no hidden fees which maintains both convenience and transparency for players."
+        "text": "What do you get when you combine sleek design, serious licensing, and a diverse mix of gaming options? You get Midnite Casino — a rising star in the UK online gambling world. Operated by Dribble Media Ltd and overseen by the UK Gambling Commission, this casino blends the classic and the contemporary, offering players not only slots and table games but also an esports betting experience that feels custom-built for a modern audience."
       },
       {
         "type": "paragraph",
-        "text": "The platform does not support PayPal or Skrill e-wallets and does not accept cryptocurrency deposits. All deposit transactions are protected by advanced security protocols, including 3-D Secure verification for card payments, giving you peace of mind while managing your funds."
+        "text": "Midnite started as a sportsbook with a heavy esports focus but has since evolved into a multi-dimensional platform. This transition reflects the changing tastes of UK players, who are now looking for a single space that accommodates everything from casual spins to strategic wagers on CS:GO tournaments."
       },
       {
         "type": "paragraph",
-        "text": "Depositing at Betzone Casino is simple and fast: log in, visit the cashier, choose your payment option, set the amount, and confirm the transaction. Your debit card payments will result in an immediate balance update so you can begin playing right away."
+        "text": "If you're in the UK and looking for an all-in-one gaming space that's both visually polished and easy to navigate, Midnite has carved out that niche beautifully. The attention to detail, from onboarding to withdrawal, suggests a platform built for long-term use."
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Limited Betting Options",
+          "Delayed Withdrawals",
+          "No Progressive Jackpot Slots",
+          "Moderate Safety Rating",
+          "Limited Loyalty Program"
+        ]
       }
     ],
-    "Betzone Casino UK: Withdrawal Options, Times & Security": [
+    "Midnite Casino Registration Process": [
       {
         "type": "paragraph",
-        "text": "Betzone Casino UK provides a basic method to withdraw your winnings. The casino supports withdrawals through debit cards (Visa, Mastercard, Maestro) and bank transfers with a minimum withdrawal requirement of £10. The payment system of Betzone Casino provides a simple and secure experience without any extra costs but its limited payment options compare to UK casinos. The withdrawal process takes 2-5 business days to complete although some users have received their money within 12 hours when using Visa. To withdraw money from your account successfully you need to fulfill the verification requirements set by UK gaming laws."
+        "text": "Creating an account at Midnite Casino is fast and straightforward, designed to get you into the action with minimal hassle. Just follow these easy steps to complete your registration:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Click the “Sign Up” button on the homepage",
+          "Enter your email address and create a strong password",
+          "Provide your personal details, including full name and date of birth",
+          "Select your country and preferred currency",
+          "Enter your contact information",
+          "Agree to the terms and conditions",
+          "Verify your account via email or SMS"
+        ]
+      }
+    ],
+    "Logging in to Midnite Casino": [
+      {
+        "type": "paragraph",
+        "text": "Accessing your Midnite Casino account is simple and secure. Just click the “Login” button at the top of the homepage and enter your registered email and password. You can choose to save your login credentials for faster access on future visits. All logins are encrypted to protect your data. If you ever forget your password, simply click “Forgot Password” and follow the steps to reset it via email. The login process is fully optimized for both desktop and mobile devices, ensuring smooth access anytime, anywhere."
+      }
+    ],
+    "Deposit Methods": [
+      {
+        "type": "paragraph",
+        "text": "Banking is refreshingly simple. Every deposit method is fast, secure, and easy to use, it supports:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Visa/ Mastercard",
+          "Skrill",
+          "Apple Pay",
+          "Trustly",
+          "Google play",
+          "PayPal",
+          "Paysafecard"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Midnite displays all options clearly within your account wallet, and deposits appear within seconds."
+      }
+    ],
+    "Withdrawal Methods": [
+      {
+        "type": "paragraph",
+        "text": "Getting your money out is just as smooth:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "<strong>PayPal</strong> / <strong>Skrill</strong>: £5 min, 0–2 days",
+          "<strong>Trustly</strong>: £5 min, 1–3 business days",
+          "<strong>Visa/Mastercard</strong>: £5 min, 2–5 business days"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Once verified, most withdrawals are processed faster than advertised. You’ll also receive email confirmation at every step."
       }
     ]
   },
   "advantages": {
-    "Advantages and Disadvantages of Betzone Casino UK": [
+    "Casino Advantages and Disadvantages": [
+      {
+        "type": "paragraph",
+        "text": "From convenience to trustworthiness, Midnite checks all the right boxes. You also get access to a loyalty program and early-bird notifications for limited-time tournaments and promotional events."
+      },
       {
         "type": "heading",
         "level": 3,
-        "text": "Betzone UK: Key Advantages for British Players"
+        "text": "Casino Advantages"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Generous Welcome Bonus & Promotions",
-          "Comprehensive Sportsbook & Casino",
-          "User-Friendly Betzone App",
-          "Fast Withdrawals & Local Payment Options",
-          "Dedicated UK Customer Support"
+          "Licensed and regulated in the UK — giving you peace of mind and access to legal protections.",
+          "A fusion of esports and traditional casino games.",
+          "Just a £5 minimum deposit, opening the doors to all budgets.",
+          "Fast payouts, often wrapped up within two days.",
+          "Slick, intuitive mobile apps.",
+          "Top-tier security protocols, including SSL encryption and 2FA.",
+          "24/7 customer support from real humans, not bots.",
+          "Streamlined interface with low latency, even on older devices."
         ]
       },
+
       {
         "type": "heading",
         "level": 3,
-        "text": "Betzone Casino Review: Main Drawbacks for British Players"
+        "text": "Midnite Casino UK - Disadvantages"
       },
+
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Limited Payment Methods",
-          "No Live Chat Support",
-          "Modest Game Selection"
+          "Limited Betting Options",
+          "Delayed Withdrawals",
+          "No Progressive Jackpot Slots",
+          "Moderate Safety Rating",
+          "Limited Loyalty Program"
         ]
       }
     ]
   },
   "games-to-play": {
-    "Betzone Casino UK: Game Library Overview": [
+    "Games Available to Play at Midnite Casino": [
       {
         "type": "paragraph",
-        "text": "Betzone Casino UK presents more than 300 games within its collection which prioritizes game quality and diversity. The casino provides its users with a combination of traditional slots together with table games and live casino options and distinctive instant win games from well-established providers. The game selection at Betzone Casino UK features logical categories which guide users to discover both familiar games and unexplored options."
+        "text": "With over 1,800 games to pick from, boredom isn't on the menu. Whether you're spinning reels or calculating odds, the lineup here has something for every type of gambler. New games are added monthly, ensuring the catalogue stays fresh."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Slots"
+        "text": "Slot Games"
       },
       {
         "type": "paragraph",
-        "text": "The slot selection at Betzone Casino comprises popular games including Chilli Heat, Big Bass Bonanza and Buffalo King. The slots selection at Betzone Casino draws from Pragmatic Play, NetEnt and Big Time Gaming providers to provide classic fruit machines together with modern video slots and jackpot games that keep the reels active."
+        "text": "The slots catalogue reads like a greatest hits compilation:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Big Bass Bonanza",
+          "Starburst",
+          "Book of Dead",
+          "Sweet Bonanza",
+          "Gonzo’s Quest",
+          "Reactoonz",
+          "The Dog House",
+          "Legacy of Dead",
+          "Jammin' Jars"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Classic, video, megaways — they’re all here. Plus, RTPs are competitive and features are engaging. Expect wilds, scatters, bonus rounds, free spins, and cascading reels across many titles."
       },
       {
         "type": "heading",
@@ -95,7 +191,19 @@
       },
       {
         "type": "paragraph",
-        "text": "Betzone presents various traditional table games through its platform which includes different Roulette and Blackjack and Baccarat variations. The UK market offers Betzone Casino with a moderate selection of table games which includes basic card and wheel options alongside various betting levels."
+        "text": "Prefer strategy over luck? The table games section won’t disappoint:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Blackjack, including multi-hand versions and VIP stakes",
+          "Roulette (European, American, French)",
+          "Baccarat, with and without commission",
+          "Poker in several forms, from Three Card to Casino Hold’em",
+          "Craps and other niche games for traditionalists",
+          "The interface on table games is clean and responsive, offering bet customization and fast animations."
+        ]
       },
       {
         "type": "heading",
@@ -104,218 +212,282 @@
       },
       {
         "type": "paragraph",
-        "text": "The live casino section of Betzone provides about 25 games through blackjack tables at different betting levels to customers who want a deeper gaming experience. The live casino operates with professional dealers through leading studios to provide real-time gameplay but its game selection remains restricted compared to other major websites."
+        "text": "This is where the magic happens. Streamed in HD with real dealers, the Live Casino is powered by Evolution Gaming and includes:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Live Blackjack",
+          "Live Roulette",
+          "Live Baccarat",
+          "Game-show-style hits like Crazy Time, Deal or No Deal Live, Lightning Dice, and Dream Catcher",
+          "All live tables come with different stake levels, making them accessible to everyone from casual players to high rollers."
+        ]
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Instant Win & Scratch Cards"
+        "text": "Esports Betting"
       },
       {
         "type": "paragraph",
-        "text": "Players at Betzone UK have access to instant win games and scratch cards which provide fast casual entertainment options. The games provide instant feedback along with basic gameplay mechanics which expands the casino game options."
+        "text": "And now for the twist: Midnite isn’t just a casino — it’s a hub for esports betting. From pre-match to live play, you can stake your claim on:"
       },
       {
-        "type": "heading",
-        "level": 3,
-        "text": "Bingo & Other Games"
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "League of Legends",
+          "CS:GO",
+          "Dota 2",
+          "Call of Duty",
+          "FIFA",
+          "Valorant"
+        ]
       },
       {
         "type": "paragraph",
-        "text": "Betzone completes its game selection with bingo and a few game show-style titles which provide something for every player type to maintain non-stop entertainment."
+        "text": "Match previews, odds calculators, and statistics overlays make betting informed and easy. There’s also the ability to track multiple events in real time."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Betzone Casino UK: Latest Bonuses, Free Bets & Promotions (May 2025)": [
+    "Bonuses and Promotions at Midnite Casino": [
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Welcome Bonus"
+      },
       {
         "type": "paragraph",
-        "text": "Betzone Casino UK creates engaging promotions for its players through various offers which welcome both new and returning members. The welcome offer at Betzone together with free bets and regular promotions help users increase their account value and create more engaging gameplay."
+        "text": "New players can claim a 100% Deposit Match up to £500 + 100 Free Spins. It's simple, generous, and a great way to start spinning or betting. Free spins are usually distributed across popular games and are credited automatically."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Welcome Bonuses"
+        "text": "Ongoing Promotions"
       },
       {
         "type": "paragraph",
-        "text": "New users can receive the Betzone welcome promotion that grants free sports bets together with free casino spins. New players can get 20 free spins by betting £20 and also receive a £100 cashback as a free bet during their first three days. Users must apply the Betzone promo code at registration to receive these promotional offers."
+        "text": "What keeps people coming back? These:"
       },
       {
-        "type": "heading",
-        "level": 3,
-        "text": "VIP Rewards & Loyalty Programme"
-      },
-      {
-        "type": "paragraph",
-        "text": "The Reward Zone program at Betzone serves as a reward system for players who consistently play at the site. You can earn up to 100 free spins per week by playing selected slots or sports while receiving exclusive bonuses and personalized offers. Players who spend more time playing will receive greater rewards through the loyalty program."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Daily & Weekly Promotions"
-      },
-      {
-        "type": "paragraph",
-        "text": "The Betzone website provides continuous promotions including enhanced football accumulator odds on weekends and increased market odds for specific selection. Members of 'theZONE' receive a £10 free sports wager together with 10 free casino spins every week which maintains both exciting rewards and ongoing promotions."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Free Bets & Casino Spins"
-      },
-      {
-        "type": "paragraph",
-        "text": "The Betzone sign up bonus exists alongside frequent promotions that include free bets as well as free spins for new slot releases and special event rewards. Check the promotions page often because the site updates its offers on a regular basis."
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Reload bonuses for top-ups, usually ranging from 20% to 50% depending on the day",
+          "Weekly free spins based on your activity and loyalty tier",
+          "Cashback offers for selected games and timeframes",
+          "Leaderboard challenges with real prizes and trophies",
+          "Exclusive deals tied to esports betting and live tournaments",
+          "Prize drops and surprise reels that can trigger bonuses at random",
+          "Promotions often rotate with seasonal themes like Halloween spins or New Year jackpots."
+        ]
       }
     ]
   },
   "support": {
-    "Real Money Play & Supported Currencies": [
+    "Support": [
       {
         "type": "paragraph",
-        "text": "The website of Betzone Casino UK functions as a real money gaming platform with British pounds sterling (GBP) as its main currency. GBP serves as the base currency for all transactions at the casino which prevents British players from paying conversion fees while maintaining a smooth gaming experience. The platform operates primarily with GBP but payment methods sometimes support euros (EUR) while cryptocurrency deposits remain unavailable. The platform demonstrates its dedication to providing a dependable real-money casino service for UK gamblers through its support for local currency and secure banking operations."
+        "text": "Need a hand? The customer support team is genuinely helpful:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Live chat, 24/7, with short wait times",
+          "Email support for longer queries",
+          "A robust Help Centre with guides, FAQs, and step-by-step instructions",
+          "Social media presence for community updates and promotions",
+          "They speak your language (literally and figuratively), and responses are refreshingly human."
+        ]
       }
     ]
   },
   "faq": {
-    "Betzone Casino UK: Frequently Asked Questions": [
+    "Casino FAQ": [
       {
-        "type": "paragraph",
-        "text": "What is the minimum age to play at Betzone Casino UK?"
+        "type": "heading",
+        "level": 3,
+        "text": "Is Midnite legal in the UK?"
       },
       {
         "type": "paragraph",
-        "text": "All users must reach 18 years of age to create a Betzone Casino UK account according to UK gambling laws."
+        "text": "Yes, fully licensed by the UK Gambling Commission."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "How do I register for a Betzone account?"
+        "text": "What is the minimum deposit?"
       },
       {
         "type": "paragraph",
-        "text": "The registration process begins with the “Sign Up” button which requires users to enter their information and complete verification steps as indicated. The registration process requires only a few minutes to complete."
+        "text": "Just £5, regardless of payment method."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "What welcome offer can I claim as a new customer?"
+        "text": "Does Midnite support PayPal?"
       },
       {
         "type": "paragraph",
-        "text": "The Betzone welcome package offers new customers a combination of deposit bonus match and free spin rewards that they can access. Players should check the promotions page to obtain the most current information."
+        "text": "Yes — for both deposits and withdrawals."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "What deposit methods are available at Betzone?"
+        "text": "Are there live casino games?"
       },
       {
         "type": "paragraph",
-        "text": "Players can fund their accounts through Visa and Mastercard and Maestro debit cards and bank transfers. The minimum deposit is £10."
+        "text": "Absolutely. You can play live blackjack, live roulette, and more."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "How long do withdrawals take at Betzone Casino UK?"
+        "text": "Can I bet on esports?"
       },
       {
         "type": "paragraph",
-        "text": "The processing time for withdrawals at Betzone Casino UK extends from 2 to 5 working days according to your bank type and verification standing."
+        "text": "You sure can. Esports betting is one of Midnite’s key features."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Is Betzone Casino UK licensed and safe?"
+        "text": "Is there an app?"
       },
       {
         "type": "paragraph",
-        "text": "The UK Gambling Commission licenses Betzone Casino UK and the platform protects user data through SSL encryption to guarantee fair and secure gameplay."
+        "text": "Yes. Dedicated apps for both iOS and Android."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Can I play Betzone games on my mobile?"
+        "text": "How fast are withdrawals?"
       },
       {
         "type": "paragraph",
-        "text": "Absolutely! The mobile app of Betzone is available for iOS and Android devices while the website operates as a mobile-friendly platform for portable gaming."
+        "text": "Between 0 and 5 business days, depending on the method."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "How do I contact Betzone support?"
+        "text": "Does Midnite offer responsible gambling tools?"
       },
       {
         "type": "paragraph",
-        "text": "The support service operates continuously through live chat and email channels. The FAQ section contains answers to frequently asked questions."
+        "text": "Yes — including deposit limits, self-exclusion, cooling-off periods, and reality checks."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Are there wagering requirements on bonuses?"
+        "text": "Is there a loyalty program?"
       },
       {
         "type": "paragraph",
-        "text": "Most bonuses require players to fulfill specific wagering requirements before they can access the bonus amount. Each promotion includes unique requirements that become available through examining the terms and conditions."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "What responsible gambling tools the Betzone platform includes for users?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Players can set deposit and session limits and self-exclude from their accounts through Betzone while also accessing BeGambleAware and similar organizations for extra assistance."
+        "text": "Yes. Players can earn points, unlock badges, and get exclusive rewards."
       }
     ]
   },
   "sections": {
-    "Advanced Software & iGaming Platform": [
+    "Software Technologies": [
       {
         "type": "paragraph",
-        "text": "The GiG CoreX iGaming platform operates Betzone Casino UK since 2025 to provide a modern gaming experience to British players. The X-Suite technology by GiG delivers fast loading times through its LogicX rules engine and DataX real-time analytics which also provide dynamic odds and advanced bet-builder features for the UK market. The platform features a scalable and secure design which supports different types of games and sports betting functions. The platform supports users through big data risk scoring systems and responsible gaming tools to create a secure future-proof user environment at Betzone."
-      }
-    ],
-    "Betzone Casino UK: Security Protocols & Fair Play": [
+        "text": "A casino is only as good as the engines powering its games. Midnite partners with elite software providers to ensure performance, variety, and fairness:"
+      },
       {
-        "type": "paragraph",
-        "text": "Security stands as the main focus at Betzone Casino UK. The platform uses SSL encryption to protect personal and financial data from cyber threats while maintaining player information confidentiality. The games benefit from fair play and transparency because of independent audits and certified RNGs (Random Number Generators). Betzone Casino UK follows UKGC rules by performing strict KYC verification processes and implementing anti-money laundering standards together with responsible gaming features including deposit limits and self-exclusion tools. Every British player can enjoy a protected and fair gaming environment because of these measures."
-      }
-    ],
-    "Betzone Casino App Features, Download & Gameplay": [
-      {
-        "type": "paragraph",
-        "text": "British players who want mobile access to casino games and sports betting will find Betzone as their top choice. The Betzone app exists for both iOS and Android systems allowing users to obtain it from the App Store or Google Play with complete security and smooth functionality. You can use your mobile device to complete your Betzone login and get the new welcome offer and promo code while accessing all slots and table games and instant wins."
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "NetEnt",
+          "Pragmatic Play",
+          "Play’n GO",
+          "Evolution Gaming",
+          "Red Tiger",
+          "Push Gaming",
+          "NoLimit City",
+          "Quickspin",
+          "Relax Gaming"
+        ]
       },
       {
         "type": "paragraph",
-        "text": "The application features an easy-to-use design with straightforward menus and dark mode and responsive buttons to help users make bets or spin games anywhere. The app includes two main security features such as Face ID and fingerprint login and live streaming of UK and Irish horse and greyhound races as well as full deposit and withdrawal capabilities. The mobile version of the live casino section is smaller than the desktop version yet it offers both classic slots and table games and daily price boosts and Betzone free bets for mobile users."
-      },
-      {
-        "type": "paragraph",
-        "text": "The Betzone mobile application allows users to access Premier League betting and play their preferred slot games anywhere across the UK. All gaming takes place under the same high-security measures as the desktop version so users can play without worries throughout the United Kingdom."
+        "text": "All games are tested by independent auditors and provide detailed rules and RTP disclosures."
       }
     ],
-    "Betzone: Language Options & Localisation": [
+    "Security": [
       {
         "type": "paragraph",
-        "text": "The website of Betzone Casino UK operates in professional British English for British players. The platform's localisation work relies on native speakers and industry experts who guarantee that every piece of content meets UK user standards for accuracy and clarity. The focus on quality results in simple navigation and clear communication that works for beginners and experienced players alike."
+        "text": "Playing should be thrilling, not stressful. Midnite safeguards your data with:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "256-bit SSL encryption",
+          "Two-Factor Authentication (2FA)",
+          "Strict data handling policies",
+          "Responsible gaming features",
+          "Session timeout warnings",
+          "Account history and activity logs",
+          "Security is built into the experience, not tacked on. UK players can also set custom deposit and time limits."
+        ]
       }
     ],
-    "Betzone 24/7 Customer Support, Live Chat & Contact Options": [
+    "Midnite Casino Apps": [
       {
         "type": "paragraph",
-        "text": "The support system of Betzone Casino UK provides continuous assistance to British players through their support team. The support team is available through live chat and email services which operate 24/7 to provide fast help to players. The live chat interface provides quick access to support agents who respond within a short time frame during any part of the day. The email support system responds quickly by answering most queries within several hours."
+        "text": "Why stay tethered to a desktop? Midnite’s got you covered with:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "A mobile-optimised site that mirrors the desktop experience",
+          "A native iOS app (available on the App Store)",
+          "A sleek Android app (download via the site)",
+          "Push notifications for new offers and promotions",
+          "The apps support biometric login and allow for seamless banking and customer service access."
+        ]
+      }
+    ],
+    "Languages": [
+      {
+        "type": "paragraph",
+        "text": "Midnite might speak with a British accent, but it doesn’t stop at English:"
       },
       {
         "type": "paragraph",
-        "text": "The Betzone FAQ provides answers to fundamental topics including deposit procedures withdrawal processes bonus rules and account administration functions so players can solve basic problems on their own. The support staff possesses extensive knowledge about the platform's features so they can assist with both technical issues and responsible gambling tools."
+        "text": "It also has English, Spanish, and Portuguese."
       },
       {
         "type": "paragraph",
-        "text": "Betzone Casino UK offers assistance through its customer support team to handle all matters including account verification and payment delays and bonus inquiries. The platform demonstrates its dedication to user safety through responsible gambling outreach and security checks which create a protective space for all users."
+        "text": "(More languages are being added as the platform expands)"
+      },
+      {
+        "type": "paragraph",
+        "text": "Useful for bilingual players or those gaming from abroad."
+      }
+    ],
+    "Currencies": [
+      {
+        "type": "paragraph",
+        "text": "Keeping things simple for UK players, GBP (£) is the main currency. But you’ll also find:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "EUR (€)",
+          "BRL (R$)",
+          "USD ($) for selected international wallets"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "That means you can play without worrying about exchange rates or sneaky fees."
       }
     ]
   }

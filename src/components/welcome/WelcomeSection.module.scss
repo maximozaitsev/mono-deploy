@@ -8,7 +8,7 @@
   // background: $color-background;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 76px top 103px;
+  background-position: right 110px top 81px;
   width: 100%;
   height: 540px;
   max-width: 90rem;
@@ -22,23 +22,23 @@
     background-position: right 20px center;
   }
 
-  @media (max-width: 900px) {
-    padding-top: 19.3rem;
+  @media (max-width: 768px) {
+    padding-top: 20.5rem;
     height: auto;
     justify-content: flex-end;
-    background-size: auto 60%;
-    background-position: top 29px center;
+    background-size: auto 65%;
+    background-position: top 8px center;
     margin: 0 auto 84px auto;
   }
 
   @media (max-width: 576px) {
     background-image: url("/block-images/welcome-mobile.webp");
-    background-size: auto 54%;
+    background-size: auto 61%;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 420px) {
     margin: 0 auto 72px auto;
-    background-size: auto 39%;
+    background-size: auto 50%;
     padding-top: 14.35rem;
   }
 }
@@ -51,7 +51,7 @@
   z-index: 1;
   max-width: 72.5rem;
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     button {
       align-self: center;
       max-height: 77px;
@@ -80,7 +80,7 @@
     margin-left: 0;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     width: 100%;
     max-width: 100%;
     gap: 24px;
@@ -116,7 +116,7 @@
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     display: none;
   }
 }
@@ -129,7 +129,7 @@
   font-weight: $font-weight-regular;
   line-height: normal;
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     font-size: 24px;
     font-family: $font-secondary;
     font-weight: $font-weight-black;

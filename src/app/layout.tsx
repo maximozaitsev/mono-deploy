@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
-const url = "betzone-casino.com";
-const ogTitle = "Betzone UK Review 2025 - Bonuses, Games & App Guide";
-const ogSiteName = "Betzone";
+const url = "midnitecasino-online.com";
+const ogTitle = "Midnite Casino UK – Play Slots, Table Games & Esports Safely";
+const ogSiteName = "Midnite Casino";
 const metaDescription =
-  "Betzone UK offers vast bonuses, live chat support, fast withdrawals, and a full real money casino experience. Find out everything about Betzone in this review!";
+  "Explore 1800+ games, bonuses & secure payments at Midnite Casino UK. Play slots, table games, & esports on mobile or desktop.";
 
 const locale = "en-GB";
 const language = "English";

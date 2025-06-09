@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://betzone-casino.com/
-Sitemap: https://betzone-casino.com/sitemap.xml
+Host: https://midnitecasino-online.com/
+Sitemap: https://midnitecasino-online.com/sitemap.xml
