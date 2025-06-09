@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 
 const url = "megacasino-online.com";
-const ogTitle = "Title";
+const ogTitle = "Midnite Casino UK – Play Slots, Table Games & Esports Safely";
 const ogSiteName = "Mega Casino";
-const metaDescription = "Description";
+const metaDescription =
+  "Explore 1800+ games, bonuses & secure payments at Midnite Casino UK. Play slots, table games, & esports on mobile or desktop.";
 
 const locale = "en-GB";
 const language = "English";
