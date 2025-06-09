@@ -52,7 +52,7 @@
 }
 
 .cell {
-  color: $text-color-secondary;
+  color: #171717;
   font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
@@ -257,7 +257,7 @@
 .head-row {
   height: 88px;
   background: $color-background-fourth;
-  color: $text-color-primary;
+  color: #171717;
   font-family: $font-primary;
   font-size: 24px;
   font-style: normal;
@@ -334,8 +334,6 @@
     }
   }
 }
-
-
 
 /* Theme Styles Start */
 .accordion-title,

@@ -96,7 +96,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
           </thead>
           <tbody>
             {paymentMethods.map((method) => (
-              <tr className="paragraph-text black" key={method.payment_id}>
+              <tr className="paragraph-text" key={method.payment_id}>
                 <td>
                   <Image
                     src={method.image}

@@ -43,7 +43,7 @@
       tr {
         display: table-row;
         height: 60px;
-        color: $text-color-primary;
+        color: #171717;
         font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
@@ -76,6 +76,7 @@
           border-top: $border-width solid $border-color;
           border-bottom: $border-width solid $border-color;
           line-height: normal !important;
+          color: #171717;
 
           &:first-child {
             display: flex;
@@ -175,7 +176,7 @@
           }
 
           strong {
-            background: #33fff5;
+            background: $text-color-fourth;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
