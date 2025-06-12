@@ -6,6 +6,7 @@ import Logo from "./Logo";
 import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import styles from "./Header.module.scss";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { label: "Games", path: "/games" },
@@ -18,6 +19,7 @@ const Header = () => {
   const { handleNavigation } = useNavigateWithPreloader();
   const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -65,7 +67,7 @@ const Header = () => {
           <ul className={styles.navList}>
             {navItems.map((item) => (
               <li key={item.path} className={styles.navItem}>
-                <Link href={item.path} className={styles.navLink}>
+                <Link href={item.path} className={`${styles.navLink} ${pathname === item.path ? styles.activeNavLink : ""}`}>
                   {item.label}
                 </Link>
               </li>
@@ -87,7 +89,7 @@ const Header = () => {
             <ul className={styles.navListMobile}>
               {navItems.map((item) => (
                 <li key={item.path} className={styles.navItem}>
-                  <Link href={item.path} className={styles.navLink}>
+                  <Link href={item.path} className={`${styles.navLink} ${pathname === item.path ? styles.activeNavLink : ""}`}>
                     {item.label}
                   </Link>
                 </li>

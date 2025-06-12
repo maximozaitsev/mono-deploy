@@ -85,9 +85,13 @@
     display: none;
   }
   .navLink {
-    font-size: 12px;
+    font-size: 24px;
     padding: 4px 8px;
   }
+}
+
+.activeNavLink {
+  color: $text-color-fourth;
 }
 
 .headerButtons {
