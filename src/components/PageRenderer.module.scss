@@ -1,0 +1,30 @@
+@import "../styles/colors";
+
+.renderer {
+  background: $color-background-secondary;
+  padding: 64px 0 16px 0;
+  margin-bottom: 140px;
+
+  :global(.section) {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  :global(.styled-list) {
+    margin-left: 1.5rem;
+    padding: 0;
+  }
+  :global(.ordered) {
+    list-style-type: decimal;
+  }
+  :global(.unordered) {
+    list-style-type: disc;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 16px 0;
+    margin-bottom: 64px;
+  }
+}

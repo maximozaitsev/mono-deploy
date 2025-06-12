@@ -1,10 +1,13 @@
 import { Metadata } from "next";
+import "./globals.scss";
+import "../styles/colors.scss";
+import "../styles/variables.scss";
 
-const url = "megacasino-online.com";
-const ogTitle = "Midnite Casino UK – Play Slots, Table Games & Esports Safely";
-const ogSiteName = "Mega Casino";
+const url = "totalcasino-online.com";
+const ogTitle = "Total Casino Review UK: Games, License, Security and Bonuses";
+const ogSiteName = "Total Casino";
 const metaDescription =
-  "Explore 1800+ games, bonuses & secure payments at Midnite Casino UK. Play slots, table games, & esports on mobile or desktop.";
+  "Discover everything about Total Casino in this comprehensive review for UK players. Learn about its history, games, bonuses, registration, login, security, and FAQs.";
 
 const locale = "en-GB";
 const language = "English";

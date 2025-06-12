@@ -6,7 +6,7 @@ interface ListRendererProps {
   className?: string;
 }
 
-const ListRenderer: React.FC<ListRendererProps> = ({
+export const ListRenderer: React.FC<ListRendererProps> = ({
   items,
   styleType,
   className = "",

@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://megacasino-online.com/
-Sitemap: https://megacasino-online.com/sitemap.xml
+Host: https://totalcasino-online.com/
+Sitemap: https://totalcasino-online.com/sitemap.xml

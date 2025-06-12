@@ -1,456 +1,350 @@
 {
-  "title": "Mega Casino UK – Real Review, Bonuses, Games & What to Expect",
+  "title": "Total Casino UK Review",
   "intro": [
     {
-      "type": "paragraph",
-      "text": "Mega Casino isn’t just another gambling site in the crowded UK market. It’s built to feel local, familiar, and reliable — like the online equivalent of your favourite spot on the high street. From the first click, it’s clear you’re not going to get bombarded with annoying pop-ups or drowned in confusing layouts. Everything is neatly placed, logically structured, and made for real people, not just flashy promo banners."
+      "type": "list",
+      "style": "unordered",
+      "items": [
+        "<strong>100% First Deposit Bonus</strong>",
+        "<strong>24/7 Support</strong>",
+        "<strong>High-Level Security</strong>"
+      ]
     },
     {
       "type": "paragraph",
-      "text": "If you’ve been reading through Mega Casino reviews, there’s a recurring theme: consistency. From your first Mega Casino login to your tenth withdrawal, the platform feels stable and trustworthy. It runs smoothly, loads fast, and keeps things simple."
+      "text": "Totalizator Sportowy launched Total Casino in December 2018 as Poland’s national lottery’s first dedicated online casino. Built in collaboration with Playtech, this platform quickly became a heavy hitter in the Eastern European market, appealing to lottery and casino audiences alike. The platform supports over 320,000 registered accounts and facilitated more than 1.3 billion slot spins in its inaugural year ."
     },
     {
       "type": "paragraph",
-      "text": "And yet, simplicity doesn’t mean lack of substance. Mega Casino offers depth — in games, features, and bonuses — without overcomplicating the process. This balance is what keeps people coming back."
+      "text": "Despite its strong backing and a solid, licensed presence in Poland, Total Casino is not licensed by the UK Gambling Commission (UKGC). This means UK players cannot legally register or play on the site, and the platform doesn't have to comply with UK standards . As a result, games and services offered there fall outside the UK regulatory framework. Here’s a thorough breakdown of how Total Casino operates, its strengths and limitations, and how it measures up from a UK perspective."
     }
   ],
   "about": {
-    "Mega Casino Sign-Up": [
+    "Registration": [
       {
         "type": "paragraph",
-        "text": "Getting started at Mega Casino is quick and easy. Just hit the “Sign Up” button, enter your email, set a password, and fill in a few personal details like your name, birthdate, and contact info. Choose your country and currency, accept the terms, and verify your account via email or SMS — you're ready to play in minutes."
-      }
-    ],
-    "Mega Casino Login": [
+        "text": "Although registration is blocked for UK residents, here’s how it works for eligible regions:"
+      },
       {
-        "type": "paragraph",
-        "text": "Logging in is simple. Click “Login” at the top of the page, enter your email and password, and you’re in. You can save your details for faster access next time. Forgot your password? Use the “Forgot Password” link to reset it securely. Mega Casino works seamlessly on both desktop and mobile."
-      }
-    ],
-    "Deposit – Fast, Clear, Reliable": [
-      {
-        "type": "paragraph",
-        "text": "One of the biggest reasons people choose Mega Casino over its competitors is the payout process. No delays, no excuses. Here’s what to expect:"
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          "Visit the homepage and click Register.",
+          "Enter email, password, date of birth, and country (Poland, etc.).",
+          "Complete ID verification (photo of ID), aligned with Polish regulations.",
+          "Confirm email and deposit."
+        ]
       },
       {
         "type": "paragraph",
-        "text": "Midnite Casino offers a variety of convenient payment methods for both deposits and withdrawals."
+        "text": "UK players would be blocked at step 2 due to geo‑restriction and license enforcement."
+      }
+    ],
+    "Login": [
+      {
+        "type": "paragraph",
+        "text": "Again, from a Polish standpoint:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          "Go to Total Casino Login page.",
+          "Enter credentials.",
+          "(Optional) Use two‑factor authentication via SMS or email."
+        ]
       },
       {
         "type": "paragraph",
-        "text": "Deposits are processed instantly for most methods, with a minimum deposit of £10 for Visa, Mastercard, Skrill, Neteller, PayPal, and Apple Pay. Bank transfers are also accepted but take 1 to 3 days to process and require a minimum deposit of £20."
+        "text": "UK players can’t pass IP‑based geo‑block, and no UK‑specific login options are provided."
+      }
+    ],
+    "Deposit Methods": [
+      {
+        "type": "paragraph",
+        "text": "Supported typical banking options (for Poland):"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Debit/Credit Cards: Visa, Mastercard.",
+          "E-wallets: Skrill, local Blik, Alior Pay.",
+          "Bank Transfers: Santander, mBank, ING, PKO, etc.",
+          "Lotteries-integrated options: Przelewy24, payment kiosks in lottery outlets."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "No GBP payment methods like PayPal or UK bank transfers."
       }
     ],
     "Withdrawal Methods": [
       {
         "type": "paragraph",
-        "text": "For withdrawals, Skrill, Neteller, and PayPal offer the fastest processing times, typically completing within 0 to 24 hours, with a minimum withdrawal amount of £10. Withdrawals via Visa or Mastercard take 1 to 3 days, while bank transfers are the slowest, requiring 2 to 5 days and a minimum withdrawal of £20."
-      },
-      {
-        "type": "paragraph",
-        "text": "If you’re making a large withdrawal, expect a Mega Casino withdrawal alert requesting verification documents — standard procedure under UKGC rules."
-      }
-    ]
-  },
-  "advantages": {
-    "Advantages and Disadvantages of Mega Casino": [
-      {
-        "type": "paragraph",
-        "text": "It’s not just the name or the branding. Mega Casino actually sets itself apart in several practical ways that matter to players."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Advantages of Mega Casino"
+        "text": "Withdrawals mirror deposits, most via:"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "UK-first design:",
-          "No-nonsense layout",
-          "Withdrawal speed",
-          "Mega Casino app",
-          "Trusted provider"
+          "Bank transfers (2–3 days).",
+          "E‑wallets (instant to 24h).",
+          "Card withdrawals (2–5 days)."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "No withdrawal limits, although casinos may impose game-specific max constraints."
+      }
+    ]
+  },
+  "advantages": {
+    "Advantages": [
+      {
+        "type": "paragraph",
+        "text": "Before diving into the detailed pros and cons of Total Gold Casino, it’s important to note that this review primarily focuses on the European market. For players in the UK, certain features may be limited due to licensing restrictions and the absence of a UK Gambling Commission license. Nevertheless, we will explore the strengths and weaknesses of this casino operator based on player experience and technical performance."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Advantages:"
+      },
+      {
+        "type": "list",
+        "style": "ordered",
+        "items": [
+          "Over 600 slot titles from Playtech, plus table games and live dealer content",
+          "Launch partner with industry giant Playtech ensures continuous content updates and technical reliability .",
+          "Certified RNG, independent audits via eCOGRA and TST, secure SSL encryption",
+          "Regulated in Poland",
+          "Offering responsible gambling tools and payment transparency",
+          "Seamless lotto integration"
         ]
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Disadvantages of Mega Casino Online"
+        "text": "Disadvantages:"
       },
       {
         "type": "list",
-        "style": "unordered",
+        "style": "ordered",
         "items": [
-          "Withdrawal Delays",
-          "High Wagering Requirements",
-          "Limited Customer Support Options",
-          "Account Inactivity Fees",
-          "Complex Bonus Terms"
+          "No UKGC licence",
+          "Available only in Polish, with no English interface"
         ]
       }
     ]
   },
   "games-to-play": {
-    "Mega Casino Games – A Broad and Balanced Library": [
+    "Games Available to Play": [
       {
         "type": "paragraph",
-        "text": "Let’s talk games. Because honestly, that’s what we’re all here for."
+        "text": "Total Casino offers a diverse and engaging selection of games designed to satisfy a wide range of player preferences. Whether you enjoy spinning the reels, testing your skills at classic table games, or immersing yourself in the thrill of live dealer experiences, Total Casino provides a well-rounded portfolio powered by leading software providers. Let’s take a closer look at the main categories available on the platform."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Mega slots casino"
+        "text": "Slots"
       },
       {
         "type": "paragraph",
-        "text": "Hundreds of slot titles from iconic providers. Whether you’re into Egyptian themes, futuristic adventures, or simple fruit machines — it’s here."
+        "text": "The slots library at Total Casino Online is extensive, featuring hundreds of titles from top-tier providers like NetEnt, Microgaming, and Play’n GO. Players can enjoy a variety of themes ranging from classic fruit machines to modern video slots with advanced graphics and immersive storylines. Popular games include timeless favorites as well as the latest releases, ensuring there is always something fresh to try. Many slots offer high RTP rates and exciting bonus features, making them a popular choice among casual and seasoned players alike."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Table games"
+        "text": "Total Casino Demo Joker Table Games"
       },
       {
         "type": "paragraph",
-        "text": "Blackjack, roulette, baccarat — all available in multiple versions, including low-stake and high-limit tables."
+        "text": "For fans of traditional casino games, Total Casino offers a solid selection of table games such as blackjack, roulette, baccarat, and poker variants. The platform includes multiple versions of these classics to cater to different betting styles and preferences. Whether you prefer low stakes or high rollers’ tables, you can find a game to suit your taste. The games are powered by reputable providers ensuring smooth gameplay and fair outcomes."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Live casino"
+        "text": "Live Casino"
       },
       {
         "type": "paragraph",
-        "text": "Powered by Evolution, the Mega Casino casino and slots section features live dealers, including Mega Ball Casino, Lightning Roulette, and more."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Instant games"
-      },
-      {
-        "type": "paragraph",
-        "text": "For something quick and casual, scratchcards and instant win games break up the session nicely."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Mega Vegas Casino themes"
-      },
-      {
-        "type": "paragraph",
-        "text": "Expect big lights, big wins, and immersive design from these flashy game sections. The site also includes search filters and categories, so whether you want volatility, themes, or bonus rounds — you’ll find it in seconds."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "VIP Programme – High-Level Play, High-Level Perks"
-      },
-      {
-        "type": "paragraph",
-        "text": "There’s a lot of talk about loyalty in online casinos. But at Mega Casino, it’s not just talk. Players who remain active and loyal eventually receive VIP invitations. And those come with some major benefits."
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "Faster Mega Casino withdrawal time",
-          "Higher deposit limits",
-          "Dedicated account manager",
-          "Exclusive Mega Casino bonus codes",
-          "Tailored promotions and cashback"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "VIP status isn’t applied manually — it’s based on your play history, frequency, and amounts wagered. And once you're in, you’ll notice the difference almost immediately."
+        "text": "Total Casino’s live casino section brings the authentic casino atmosphere directly to your screen. Powered by industry leaders like Evolution Gaming and Pragmatic Play Live, players can enjoy real-time interaction with professional dealers through HD streaming. The live games include various roulette, blackjack, baccarat, and poker tables, as well as unique game shows. This immersive experience is perfect for those who seek the social aspect of casino gaming from the comfort of their own home."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Mega Casino Promotions – What’s On Offer?": [
+    "Total Bet Casino Bonuses and Promotions": [
       {
         "type": "paragraph",
-        "text": "Mega Casino doesn’t overpromise, but what it offers, it delivers. Bonuses are updated often, but you can usually count on these essentials:"
+        "text": "Total Casino offers a variety of Total Casino Bonus and promotions aimed at both new and existing players. These incentives are designed to enhance the gaming experience, provide additional value and encourage regular play. It is important to carefully read the terms and conditions associated with each offer to fully understand the wagering requirements and eligibility criteria."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Welcome bonus"
+        "text": "Welcome Bonus"
       },
       {
         "type": "paragraph",
-        "text": "100% match up to £100 on your first deposit. Plus, a batch of free spins on a selected slot."
+        "text": "New players registering at Casino Total can usually take advantage of a welcome bonus, which is available even without a deposit. The bonus amount is stated in Polish zloty and is equal to 50 PLN. This bonus is available for 7 days from the date of registration."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Mega Casino no deposit bonus"
+        "text": "Deposit Bonus"
       },
       {
         "type": "paragraph",
-        "text": "Occasionally available through special events or targeted email offers."
+        "text": "The next step for players is a bonus on the first three deposits:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "First deposit: 100% bonus up to 1500 PLN;",
+          "Second deposit: 150% up to 1000 PLN;",
+          "Third deposit: bonus up to 150 free spins."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Carefully read the wagering requirements, which will be available in your personal account."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus codes"
+        "text": "Other Promotions"
       },
       {
         "type": "paragraph",
-        "text": "Keep an eye on the promotions tab — Mega Casino bonus codes appear regularly during weekends, new slot launches, or holidays."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Free spins"
-      },
-      {
-        "type": "paragraph",
-        "text": "Weekly reload offers and app-exclusive deals include free spins, with or without wagering requirements."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Cashback"
-      },
-      {
-        "type": "paragraph",
-        "text": "Available to loyal players, often combined with reloads or loss rebates. There’s even a Mega Casino coupon code system — often seen in affiliate deals — that provides access to bonus packages not found on the main site."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Tournaments and Leaderboards"
-      },
-      {
-        "type": "paragraph",
-        "text": "Casino tournaments are one of the most fun ways to play — and Mega Casino offers them daily and weekly. These contests reward the most active players or the highest multipliers on a selected slot. It’s a great way to compete, even if you’re not playing with massive stakes."
-      },
-      {
-        "type": "paragraph",
-        "text": "There’s also transparency: the leaderboard updates in real time, and prizes are usually credited the same day. Prizes range from cash to spins to exclusive Mega Casino app bonuses."
+        "text": "While Total Casino does not have an extensive VIP program typical of larger operators, it does offer a basic loyalty scheme in which players earn points based on wagers. These points can be exchanged for bonuses or other benefits. Sometimes the casino runs tournaments or special events that give players the chance to win additional prizes. Cashback offers may be available as part of limited-time promotions, helping to mitigate losses and reward loyal players."
       }
     ]
   },
   "support": {
-    "Customer Support and Help": [
+    "Support": [
       {
         "type": "paragraph",
-        "text": "Support is one of the most underrated features in online casinos, and Mega Casino gets it right. You’ve got:"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "Live chat: 24/7, responsive, and polite",
-          "Email: For more complex queries, usually responded to within a few hours",
-          "FAQ section: Surprisingly detailed — includes Mega Casino login help, verification guides, bonus terms, and more"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "While there’s currently no dedicated Mega Casino contact number, most issues are resolved via chat."
+        "text": "Support is offered via live chat, email, and a FAQ section—available in Polish only. No UK-specific support phone line or English-language channels."
       }
     ]
   },
   "faq": {
-    "FAQ – Mega Casino UK": [
+    "FAQ": [
       {
         "type": "heading",
         "level": 3,
-        "text": "1. Is Mega Casino legit?"
+        "text": "Is Total Casino legal for UK players?"
       },
       {
         "type": "paragraph",
-        "text": "Yes. Fully licensed and trusted. Just search: _is Mega Casino legit_ — and see thousands of real players confirming it."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "2. How fast is Mega Casino withdrawal time?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Very fast. Most e-wallet withdrawals take 0–24h. Cards may take 1–3 days."
+        "text": "No. Total Casino only holds a Polish licence and is blocked in multiple jurisdictions including the UK. It is not regulated by UKGC and thus not legally accessible in Britain ."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "3. How do I access Mega Casino login?"
+        "text": "Who owns Total Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Click “Login” on the top-right of the Mega Casino UK homepage. Fast and easy."
+        "text": "It’s owned and operated by Totalizator Sportowy, the Polish state lottery company. The site uses Playtech as its games provider via a March 2018 contract."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "4. Does Mega Casino offer a no deposit bonus?"
+        "text": "What games does it offer?"
       },
       {
         "type": "paragraph",
-        "text": "Yes, sometimes. Check email or promo tab for a _Mega Casino no deposit bonus_."
+        "text": "A full Playtech portfolio, 600+ slots, table games (Roulette, Blackjack, Baccarat, etc.), and live-dealer games including game shows."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "5. Where can I find Mega Casino bonus codes?"
+        "text": "Can I play on mobile?"
       },
       {
         "type": "paragraph",
-        "text": "Usually in the app or email. Look for weekend or seasonal offers that need _bonus codes_."
+        "text": "Yes, via a polished responsive website and native apps for Android/iOS in Poland."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "6. What games are on Mega Casino casino and slots?"
+        "text": "Are the games fair?"
       },
       {
         "type": "paragraph",
-        "text": "Hundreds of slots, live games, and more. Popular titles include _Mega Ball Casino_ and _Mega Vegas Casino_."
+        "text": "Yes, Playtech delivers RNG-certified games audited by GLI/TST/eCOGRA. Live dealer games are broadcast in HD."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "7. Is there a Mega Casino app?"
+        "text": "What currencies are used?"
       },
       {
         "type": "paragraph",
-        "text": "Yes, on iOS and Android. Great for claiming _Mega Casino free spins_ and fast access."
+        "text": "Deposits and withdrawals are accepted in PLN and EUR; neither GBP nor USD are supported ."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "8. What is Mega Casino UK?"
+        "text": "What are the bonus terms?"
       },
       {
         "type": "paragraph",
-        "text": "It’s a UK-focused site for slots, table games, and live casino. Simple, legit, and secure."
+        "text": "Welcome and reload bonuses typically carry a 30× wagering requirement on the bonus amounts; free spins and cashback bonuses are also time-limited."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "9. What is Mega Casino world?"
+        "text": "Are there withdrawal limits?"
       },
       {
         "type": "paragraph",
-        "text": "It refers to the full game ecosystem and provider network within _casino mega_ platforms."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "10. Are there Mega Casino reviews I can trust?"
+        "text": "There are no general withdrawal limits; however, some bonuses impose maximum cashout caps based on terms."
       },
       {
         "type": "paragraph",
-        "text": "Yes. Just Google _Mega Casino reviews_ or _Mega Casino review_. Most are positive."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "11. Can I play Mega Casino online?"
+        "text": "<strong>![][image2]</strong>"
       },
       {
         "type": "paragraph",
-        "text": "Of course. It works perfectly in browsers and apps — fully responsive and smooth."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "12. Are there games like Mega Rich Casino?"
+        "text": "<strong>Title</strong>: Total Casino Games UK: Explore Slots, Table & Live Games Online"
       },
       {
         "type": "paragraph",
-        "text": "Yes. Try _Mega Vegas Casino_, _Mega Ball Casino_, and many progressive jackpots."
+        "text": "<strong>Description</strong>: Discover top-rated games at Total Casino for UK players. From Playtech slots and roulette to immersive live dealer experiences, all mobile-friendly and available in demo mode."
       }
     ]
   },
   "sections": {
-    "Mega Casino Software – A-List Providers Only": [
+    "Software Technologies": [
       {
         "type": "paragraph",
-        "text": "Top-tier games require top-tier tech, and Mega Casino is stacked with the best of them:"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "NetEnt",
-          "Microgaming",
-          "Play’n GO",
-          "Big Time Gaming",
-          "Pragmatic Play",
-          "Red Tiger",
-          "Evolution"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "That means fast loading, smooth visuals, fair algorithms, and compatibility across devices. It also means access to exclusive titles and global jackpot networks."
+        "text": "Total Casino operates exclusively on the Playtech platform, which supports both RNG-based games and live dealer titles. The casino’s game library includes over 700 titles, all regularly audited by reputable testing agencies such as Gaming Laboratories International (GLI), Technical Systems Testing (TST), and eCOGRA. Playtech ensures smooth gameplay through its Mobile Hub technology, which guarantees full HTML5 compatibility across iOS and Android devices. Additionally, native apps are available that comply with Apple Store policies. The return-to-player (RTP) rates for games generally range between 94% and 97%, and these figures are transparently disclosed to players."
       }
     ],
-    "Security and Responsible Gambling": [
+    "Security": [
       {
         "type": "paragraph",
-        "text": "You can’t call yourself a legit UK casino without tight security — and Mega Casino takes this seriously. The site uses full SSL encryption, layered firewalls, and fraud monitoring tools that run 24/7."
-      },
-      {
-        "type": "paragraph",
-        "text": "Players also have access to responsible gambling tools, including:"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "Deposit and loss limits",
-          "Session reminders",
-          "Self-exclusion",
-          "Time-outs and cool-off periods"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "The Mega Casino online platform supports GamStop and is compliant with all UKGC regulations."
+        "text": "Player security is a key focus at Total Casino Demo. The platform uses advanced SSL encryption to protect both personal data and payment transactions, ensuring that user information remains confidential. The Random Number Generator (RNG) is independently tested and certified, confirming the fairness of game outcomes. The casino also embraces responsible gambling by offering tools such as deposit limits, self-exclusion options, and reality checks, all centrally managed by Totalizator Sportowy. Although Total Casino is not regulated by the UK Gambling Commission, it strictly follows Polish gambling regulations and complies with the standards set by European Lotteries."
       }
     ],
-    "The Mega Casino App – Your Pocket Companion": [
+    "App": [
       {
         "type": "paragraph",
-        "text": "Mobile gaming isn’t an afterthought here — the Mega Casino app is fully featured, polished, and genuinely useful."
-      },
-      {
-        "type": "paragraph",
-        "text": "Highlights:"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "Easy access to all Mega Casino casino and slots titles",
-          "Push alerts for Mega Casino bonus codes and free spins",
-          "Fast login with biometric options",
-          "Integrated live chat and support",
-          "App-only exclusive promos and tournaments"
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Reviews regularly mention how smooth the experience is, with minimal load times and no lags, even on older devices."
+        "text": "Total Casino provides a fully responsive HTML5 mobile site that works seamlessly on all major devices and operating systems. This means players can enjoy the full casino experience on smartphones and tablets without needing to download any software. For those who prefer apps, native versions are available for Android and iOS users, downloadable from the Polish versions of Google Play and Apple App Store. However, there is no dedicated UK-based app, as these apps are intended for regional use only."
       }
     ],
-    "Languages:": [
+    "Languages": [
       {
         "type": "paragraph",
-        "text": "Mega Casino UK is available in English only — which fits its local-first model."
+        "text": "Offered exclusively in Polish, covering UI, games, terms, and support."
       }
     ],
-    "Currency:": [
+    "Currencies": [
       {
         "type": "paragraph",
-        "text": "All transactions are processed in GBP, and there are no hidden currency conversions, no crypto, and no international fees. It’s straightforward, just how most British players like it."
+        "text": "Operates in Polish zloty (PLN) and Euro (EUR). No GBP support."
       }
     ]
   }

@@ -1,32 +1,37 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import Logo from "./Logo";
 import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import styles from "./Header.module.scss";
 
+const navItems = [
+  { label: "Games", path: "/games" },
+  { label: "Bonus", path: "/bonus" },
+  { label: "App", path: "/app" },
+  { label: "Log In", path: "/login" },
+];
+
 const Header = () => {
   const { handleNavigation } = useNavigateWithPreloader();
   const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const scrollToWelcomeSection = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    window.history.replaceState(null, "", window.location.pathname);
-  };
-
   const handleSignInClick = async () => {
     handleNavigation("/casino", undefined, true);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
   };
 
   const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
@@ -34,27 +39,62 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <Logo
-          svgPath={logoPath}
-          gradientIdPrefix="header"
-          onClick={scrollToWelcomeSection}
-          alt={`${PROJECT_NAME} Logo`}
-        />
+        {isMobile && (
+          <button
+            className={styles.burger}
+            onClick={toggleMenu}
+            aria-label="Toggle navigation menu"
+          >
+            <span className={styles.burgerLine} />
+            <span className={styles.burgerLine} />
+            <span className={styles.burgerLine} />
+          </button>
+        )}
+
+        <Link href="/">
+          <Logo
+            svgPath={logoPath}
+            gradientIdPrefix="header"
+            alt={`${PROJECT_NAME} Logo`}
+            onClick={() => {}}
+          />
+        </Link>
+        <div className={styles.spacer} />
+
+        {!isMobile && (
+          <ul className={styles.navList}>
+            {navItems.map((item) => (
+              <li key={item.path} className={styles.navItem}>
+                <Link href={item.path} className={styles.navLink}>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
 
         <div className={styles.headerButtons}>
           <button
-            className={`${styles.headerButton} ${styles.logIn}`}
+            className={`${styles.headerButton} ${styles.playNow}`}
             onClick={handleSignInClick}
           >
-            Log In
-          </button>
-          <button
-            className={`${styles.headerButton} ${styles.signUp}`}
-            onClick={handleSignInClick}
-          >
-            Sign Up
+            Play Now
           </button>
         </div>
+
+        {isMobile && isMenuOpen && (
+          <div className={styles.menuItems}>
+            <ul className={styles.navListMobile}>
+              {navItems.map((item) => (
+                <li key={item.path} className={styles.navItem}>
+                  <Link href={item.path} className={styles.navLink}>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </nav>
     </header>
   );
