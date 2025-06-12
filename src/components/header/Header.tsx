@@ -43,7 +43,7 @@ const Header = () => {
       <nav className={styles.navbar}>
         {isMobile && (
           <button
-            className={styles.burger}
+            className={`${styles.burger} ${isMenuOpen ? styles.open : ""}`}
             onClick={toggleMenu}
             aria-label="Toggle navigation menu"
           >
@@ -67,7 +67,12 @@ const Header = () => {
           <ul className={styles.navList}>
             {navItems.map((item) => (
               <li key={item.path} className={styles.navItem}>
-                <Link href={item.path} className={`${styles.navLink} ${pathname === item.path ? styles.activeNavLink : ""}`}>
+                <Link
+                  href={item.path}
+                  className={`${styles.navLink} ${
+                    pathname === item.path ? styles.activeNavLink : ""
+                  }`}
+                >
                   {item.label}
                 </Link>
               </li>
@@ -84,12 +89,19 @@ const Header = () => {
           </button>
         </div>
 
-        {isMobile && isMenuOpen && (
-          <div className={styles.menuItems}>
+        {isMobile && (
+          <div
+            className={`${styles.menuItems} ${isMenuOpen ? styles.open : ""}`}
+          >
             <ul className={styles.navListMobile}>
               {navItems.map((item) => (
                 <li key={item.path} className={styles.navItem}>
-                  <Link href={item.path} className={`${styles.navLink} ${pathname === item.path ? styles.activeNavLink : ""}`}>
+                  <Link
+                    href={item.path}
+                    className={`${styles.navLink} ${
+                      pathname === item.path ? styles.activeNavLink : ""
+                    }`}
+                  >
                     {item.label}
                   </Link>
                 </li>

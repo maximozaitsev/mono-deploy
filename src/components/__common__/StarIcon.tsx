@@ -5,7 +5,9 @@ interface StarIconProps {
   fill?: string;
 }
 
-const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
+const StarIcon: React.FC<StarIconProps> = ({
+  fill = "linear-gradient(90deg, #ff5e00 0%, #6000c4 100%)",
+}) => {
   const [computedFill, setComputedFill] = useState<string>("");
   const gradientId = useId();
 
@@ -21,10 +23,8 @@ const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
         setComputedFill(fill);
       }
     } else {
-      const cssFill = getComputedStyle(document.documentElement)
-        .getPropertyValue("--color-star-icon")
-        .trim();
-      setComputedFill(cssFill || "#F6C946");
+      // No longer use CSS var fallback
+      setComputedFill(fill);
     }
   }, [fill]);
 
