@@ -18,16 +18,22 @@
   svg {
     margin-top: 4px;
 
-    @media (max-width: 1080px) {
+    @media (max-width: 1200px) {
       margin-top: 0px;
+      max-width: 200px;
     }
 
     @media (max-width: 768px) {
       margin-top: 4px;
+      max-width: auto;
+    }
+
+    @media (max-width: 420px) {
+      max-width: 150px;
     }
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 1200px) {
     padding: 24px 40px;
   }
 
@@ -88,7 +94,7 @@
 }
 
 .activeNavLink {
-  color: $color-button-large;
+  color: #ffd400;
 }
 
 @media (max-width: 768px) {

@@ -3,11 +3,10 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "totalcasino-online.com";
-const ogTitle = "Total Casino Review UK: Games, License, Security and Bonuses";
-const ogSiteName = "Total Casino";
-const metaDescription =
-  "Discover everything about Total Casino in this comprehensive review for UK players. Learn about its history, games, bonuses, registration, login, security, and FAQs.";
+const url = "tradacasino-online.com";
+const ogTitle = "Trada Casino in the UK: Trusted Gambling Platform with Free Spins";
+const ogSiteName = "Trada Casino";
+const metaDescription = "Learn Trada Casino gaming process, games, bonuses and a profitable loyalty program. Register now to get a bonus and 150 free spins and test the best games available.";
 
 const locale = "en-GB";
 const language = "English";

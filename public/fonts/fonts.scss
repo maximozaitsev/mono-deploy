@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "IBM Plex Sans", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -9,8 +9,8 @@ $font-secondary: "IBM Plex Sans", sans-serif;
 }
 
 @font-face {
-  font-family: "IBM Plex Sans";
-  src: url("IBM_Plex_Sans/static/IBMPlexSans-Bold.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("Heading/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -20,4 +20,11 @@ $font-secondary: "IBM Plex Sans", sans-serif;
   src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-style: normal;
+  src: url("./Heading/static/Open Sans-800.woff2") format("woff2");
 }
