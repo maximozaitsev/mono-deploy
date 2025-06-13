@@ -49,15 +49,20 @@ export default function LicensesSection() {
           </div>
         )}
 
-        <div className={styles.softwareFullWidth}>
-          {licenses.softwareTitle && (
-            <h3 className="h3-heading" style={{ marginBottom: "1.5rem" }}>
-              {licenses.softwareTitle}
-            </h3>
-          )}
-          {licenses.softwareContent.map((block, index) => (
-            <BlockRenderer key={index} block={block} />
-          ))}
+        <div className={styles.licensesColumns}>
+          <div className={styles.column}>
+            <h3 className="h3-heading">{licenses.securityTitle}</h3>
+            {licenses.securityContent.map((block, index) => (
+              <BlockRenderer key={index} block={block} />
+            ))}
+          </div>
+
+          <div className={styles.column}>
+            <h3 className="h3-heading">{licenses.softwareTitle}</h3>
+            {licenses.softwareContent.map((block, index) => (
+              <BlockRenderer key={index} block={block} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ import WelcomeSection from "@/components/welcome/WelcomeSection";
 import TopCasinosSection from "@/components/top-casinos/TopCasinosSection";
 import Footer from "@/components/footer/Footer";
 import siteData from "@/content/siteData.json";
-import { PageRenderer } from "@/components/PageRenderer";
+import { PageRenderer } from "@/components/__common__/renderers/PageRenderer";
 
 export const metadata = {
   title: siteData.bonus.title,

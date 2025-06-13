@@ -3,10 +3,12 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "tradacasino-online.com";
-const ogTitle = "Trada Casino in the UK: Trusted Gambling Platform with Free Spins";
-const ogSiteName = "Trada Casino";
-const metaDescription = "Learn Trada Casino gaming process, games, bonuses and a profitable loyalty program. Register now to get a bonus and 150 free spins and test the best games available.";
+const url = "neptuneplay-online.com";
+const ogTitle =
+  "Neptune Play Casino UK – Real Money Slots, Live Games, Fast Withdrawals";
+const ogSiteName = "Neptune Play";
+const metaDescription =
+  "Neptune Play Casino UK features over 1,000 real money games, including live tables, jackpots, and top slots from trusted providers. Sign up now for fast payouts, fair limits, and daily promotions built for UK players.";
 
 const locale = "en-GB";
 const language = "English";

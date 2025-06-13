@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./TwoColumns.module.scss";
 
-type ColumnItem = {
+export type ColumnItem = {
   type: "text" | "list";
   content: string | string[];
   style?: "unordered" | "ordered";
 };
 
-type ColumnContent = {
+export type ColumnContent = {
   heading: string;
   items: ColumnItem[];
 };
