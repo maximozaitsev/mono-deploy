@@ -2,12 +2,19 @@ import React from "react";
 import ListRenderer from "@/components/__common__/renderers/ListRenderer";
 import styles from "./PageRenderer.module.scss";
 
+export interface Block {
+  type: string;
+  level?: number;
+  text?: string;
+  style?: string;
+  items?: string[];
+}
+
 interface Props {
   blocks: Block[];
 }
 
 export const PageRenderer: React.FC<Props> = ({ blocks }) => {
-  // Group blocks by H2 headings into sections
   const sections: Block[][] = [];
   let currentSection: Block[] = [];
   blocks.forEach((b) => {
@@ -74,8 +81,10 @@ export const PageRenderer: React.FC<Props> = ({ blocks }) => {
                   <ListRenderer
                     key={idx}
                     items={b.items || []}
-                    styleType={b.style!}
-                    className={`paragraph-text styled-list ${b.style === 'ordered' ? 'ordered' : 'unordered'}`}
+                    styleType={b.style === "ordered" ? "ordered" : "unordered"}
+                    className={`paragraph-text styled-list ${
+                      b.style === "ordered" ? "ordered" : "unordered"
+                    }`}
                   />
                 );
               }
