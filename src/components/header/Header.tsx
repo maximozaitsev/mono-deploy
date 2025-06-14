@@ -69,6 +69,8 @@ const Header = () => {
               <li key={item.path} className={styles.navItem}>
                 <Link
                   href={item.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`${styles.navLink} ${
                     pathname === item.path ? styles.activeNavLink : ""
                   }`}
@@ -98,6 +100,8 @@ const Header = () => {
                 <li key={item.path} className={styles.navItem}>
                   <Link
                     href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`${styles.navLink} ${
                       pathname === item.path ? styles.activeNavLink : ""
                     }`}
