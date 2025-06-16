@@ -1,34 +1,39 @@
-// template-multi/src/app/login/page.tsx
 import React from "react";
+import { Metadata } from "next";
 import Header from "@/components/header/Header";
 import WelcomeSection from "@/components/welcome/WelcomeSection";
 import TopCasinosSection from "@/components/top-casinos/TopCasinosSection";
 import Footer from "@/components/footer/Footer";
 import siteData from "@/content/siteData.json";
 import { PageRenderer } from "@/components/__common__/renderers/PageRenderer";
+import { PROJECT_URL, PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL(`https://${PROJECT_URL}`),
   title: siteData.bonus.title,
   description: siteData.bonus.description,
   alternates: {
-    canonical: `https://${process.env.NEXT_PUBLIC_SITE_URL}/bonus`,
+    canonical: `https://${PROJECT_URL}/bonus`,
   },
+
   openGraph: {
     title: siteData.bonus.title,
     description: siteData.bonus.description,
+    url: `https://${PROJECT_URL}/bonus`,
+    siteName: PROJECT_NAME,
     images: [
       {
-        url: `https://${process.env.NEXT_PUBLIC_SITE_URL}/og-image.webp`,
+        url: `https://${PROJECT_URL}/og-image.webp`,
         width: 1200,
         height: 630,
-        alt: siteData.bonus.title,
+        alt: `${PROJECT_NAME} ${PROJECT_GEO}`,
       },
     ],
   },
   twitter: {
     title: siteData.bonus.title,
     description: siteData.bonus.description,
-    images: [`https://${process.env.NEXT_PUBLIC_SITE_URL}/og-image.webp`],
+    images: [`https://${PROJECT_URL}/og-image.webp`],
   },
 };
 
