@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   title: ogTitle,
   description: metaDescription,
+  alternates: {
+    canonical: `https://${url}`,
+  },
   openGraph: {
     locale: locale,
     type: "website",
@@ -47,7 +50,6 @@ export default function RootLayout({
       <head>
         <meta name="language" content={language} />
         <link rel="icon" href="/icons/ico-192.png" />
-        <link rel="canonical" href={`https://${url}`} />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
         <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
         <link rel="apple-touch-icon" href="/icons/ico-72.png" sizes="72x72" />
