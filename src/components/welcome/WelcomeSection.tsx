@@ -41,7 +41,12 @@ export default function WelcomeSection() {
               Exclusive welcome bonus of {welcomeBonus}
             </p>
             {offerLink && (
-              <Button text="claim bonus" variant="primary" url={offerLink} />
+              <Button
+                text="claim bonus"
+                variant="primary"
+                url={offerLink}
+                openInNewTab
+              />
             )}
           </div>
         </div>
