@@ -7,7 +7,6 @@ import { fetchOffers } from "@/utils/fetchOffers";
 
 export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
-  const [offerLink, setOfferLink] = useState("");
 
   useEffect(() => {
     const fetchWelcomeBonus = async () => {
@@ -15,8 +14,6 @@ export default function WelcomeSection() {
         const offersData = await fetchOffers();
         const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
         setWelcomeBonus(bonus);
-        const link = offersData.offers[0]?.link || "";
-        setOfferLink(link);
       } catch (error) {
         console.error("Failed to fetch welcome bonus:", error);
       }
@@ -40,14 +37,7 @@ export default function WelcomeSection() {
             <p className={styles.bonusText}>
               Exclusive welcome bonus of {welcomeBonus}
             </p>
-            {offerLink && (
-              <Button
-                text="claim bonus"
-                variant="primary"
-                url={offerLink}
-                openInNewTab
-              />
-            )}
+            <Button text="claim bonus" variant="primary" openInNewTab />
           </div>
         </div>
       </div>

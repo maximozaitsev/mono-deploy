@@ -3,14 +3,12 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "neptuneplay-online.com";
-const ogTitle =
-  "Neptune Play Casino UK – Real Money Slots, Live Games, Fast Withdrawals";
-const ogSiteName = "Neptune Play";
-const metaDescription =
-  "Neptune Play Casino UK features over 1,000 real money games, including live tables, jackpots, and top slots from trusted providers. Sign up now for fast payouts, fair limits, and daily promotions built for UK players.";
+const url = "cleobetra-online.com";
+const ogTitle = "Cleobetra Casino UK – Play Slots, Live Games & Win Real Money Today";
+const ogSiteName = "Cleobetra";
+const metaDescription = "Cleobetra Casino UK brings players a vast game selection with themed slots, live casino tables, and crypto-friendly payments. Register now to claim up to £8,000 in bonuses and enjoy 24/7 gaming access.";
 
-const locale = "en-GB";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

@@ -1,2 +1,2 @@
-export const PROJECT_NAME = "Neptune Play";
-export const PROJECT_GEO = "United Kingdom";
+export const PROJECT_NAME = "Cleobetra";
+export const PROJECT_GEO = "Canada";
