@@ -1,18 +1,10 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Sora", sans-serif;
-$font-third: "Rowdies", sans-serif;
+$font-secondary: "Geologica", sans-serif;
 
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Rowdies";
-  src: url("./Rowdies/Rowdies-Regular.ttf") format("truetype");
-  font-weight: 700;
   font-style: normal;
 }
 
@@ -31,8 +23,8 @@ $font-third: "Rowdies", sans-serif;
 }
 
 @font-face {
-  font-family: "Sora";
-  font-weight: 800;
+  font-family: "Geologica";
+  font-weight: 900;
   font-style: normal;
-  src: url("./Heading/static/Sora-800.woff2") format("woff2");
+  src: url("./Heading/static/Geologica-900.woff2") format("woff2");
 }

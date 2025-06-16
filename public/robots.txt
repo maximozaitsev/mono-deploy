@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://cleobetra-online.com/
-Sitemap: https://cleobetra-online.com/sitemap.xml
+Host: https://lucki-casino-online.com/
+Sitemap: https://lucki-casino-online.com/sitemap.xml

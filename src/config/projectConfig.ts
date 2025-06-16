@@ -1,3 +1,2 @@
-export const PROJECT_NAME = "Cleobetra";
-export const PROJECT_GEO = "Canada";
-export const PROJECT_URL = "cleobetra-online.com";
+export const PROJECT_NAME = "Lucki Casino";
+export const PROJECT_GEO = "United Kingdom";

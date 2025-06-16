@@ -3,12 +3,13 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "cleobetra-online.com";
-const ogTitle = "Cleobetra Casino UK – Play Slots, Live Games & Win Real Money Today";
-const ogSiteName = "Cleobetra";
-const metaDescription = "Cleobetra Casino UK brings players a vast game selection with themed slots, live casino tables, and crypto-friendly payments. Register now to claim up to £8,000 in bonuses and enjoy 24/7 gaming access.";
+const url = "lucki-casino-online.com";
+const ogTitle = "Lucki Casino Review 2025 – Complete Guide to Games & Bonuses";
+const ogSiteName = "Lucki Casino";
+const metaDescription =
+  "Complete Lucki Casino review 2025: Explore games from 15 providers, claim welcome bonus with 25x wagering, and enjoy professional customer support.";
 
-const locale = "en-CA";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

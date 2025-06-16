@@ -75,20 +75,20 @@
   color: $text-color-primary;
   background: none;
   border: none;
-  font-family: $font-third;
+  font-family: $font-secondary;
   font-weight: $font-weight-black;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   transition: color 0.3s ease;
   text-decoration: none;
 
   &:hover {
-    color: #fdc69b;
+    color: $color-button-large;
   }
 }
 
 .activeNavLink {
-  color: #fdc69b;
+  color: $color-button-large;
 }
 
 @media (max-width: 768px) {
@@ -107,9 +107,9 @@
 
   .headerButton {
     height: $header-button-height;
-    font-family: $font-third;
+    font-family: $font-secondary;
     font-weight: $font-weight-black;
-    font-size: 10px;
+    font-size: 14px;
     padding: 12px 32px;
     border-radius: $header-button-border-radius;
     border: none;
@@ -179,7 +179,7 @@
 .burgerLine {
   width: 100%;
   height: 3px;
-  background-color: #fdc69b;
+  background-color: $text-color-primary;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
