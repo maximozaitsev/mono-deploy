@@ -10,13 +10,25 @@ import { PageRenderer } from "@/components/__common__/renderers/PageRenderer";
 export const metadata = {
   title: siteData.bonus.title,
   description: siteData.bonus.description,
+  alternates: {
+    canonical: `https://${process.env.NEXT_PUBLIC_SITE_URL}/bonus`,
+  },
   openGraph: {
     title: siteData.bonus.title,
     description: siteData.bonus.description,
+    images: [
+      {
+        url: `https://${process.env.NEXT_PUBLIC_SITE_URL}/og-image.webp`,
+        width: 1200,
+        height: 630,
+        alt: siteData.bonus.title,
+      },
+    ],
   },
   twitter: {
     title: siteData.bonus.title,
     description: siteData.bonus.description,
+    images: [`https://${process.env.NEXT_PUBLIC_SITE_URL}/og-image.webp`],
   },
 };
 

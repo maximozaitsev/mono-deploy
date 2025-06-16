@@ -13,10 +13,15 @@ export const metadata = {
   openGraph: {
     title: siteData.app.title,
     description: siteData.app.description,
+    images: [`https://${process.env.NEXT_PUBLIC_SITE_URL}/og-image.webp`],
   },
   twitter: {
     title: siteData.app.title,
     description: siteData.app.description,
+    images: [`https://${process.env.NEXT_PUBLIC_SITE_URL}/og-image.webp`],
+  },
+  alternates: {
+    canonical: `https://${process.env.NEXT_PUBLIC_SITE_URL}/app`,
   },
 };
 
