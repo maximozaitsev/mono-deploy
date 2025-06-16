@@ -59,7 +59,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                   width={84}
                   height={64}
                 />
-                <Button text="Deposit" variant="secondary" />
+                <Button text="Deposit" variant="secondary" openInNewTab />
               </div>
               <div className="payment-method-details">
                 <p>
@@ -114,7 +114,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                 <td>{method.processing_time}</td>
                 <td>{method.min_dep}</td>
                 <td>
-                  <Button text="Deposit" variant="secondary" />
+                  <Button text="Deposit" variant="secondary" openInNewTab />
                 </td>
               </tr>
             ))}

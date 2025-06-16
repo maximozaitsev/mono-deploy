@@ -1,8 +1,9 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import AppImage from "../../../public/block-images/app.webp";
 import AppImageMobile from "../../../public/block-images/app-mobile.webp";
-import { useNavigateWithPreloader } from "@/utils/navigationUtils";
+import { fetchOffers } from "@/utils/fetchOffers";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { useParsedSections } from "../../utils/parseSections";
@@ -10,7 +11,18 @@ import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./AppSection.module.scss";
 
 export default function AppSection() {
-  const { handleNavigation } = useNavigateWithPreloader();
+  const [firstOfferId, setFirstOfferId] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetchOffers()
+      .then(({ offers }) => {
+        if (offers.length > 0) {
+          setFirstOfferId(offers[0].id);
+        }
+      })
+      .catch((error) => console.error("Error fetching first offer ID:", error));
+  }, []);
+
   const { data: content, loading, error } = useContentData();
   const { app } = useParsedSections(content?.sections || {});
 
@@ -40,7 +52,15 @@ export default function AppSection() {
             ))}
             <div className={styles.buttons}>
               <button
-                onClick={() => handleNavigation("/casino", undefined, true)}
+                onClick={() => {
+                  if (firstOfferId) {
+                    window.open(
+                      `/casino/${firstOfferId}`,
+                      "_blank",
+                      "noopener,noreferrer"
+                    );
+                  }
+                }}
               >
                 <img
                   className={styles.googlePlay}
@@ -51,7 +71,15 @@ export default function AppSection() {
                 />
               </button>
               <button
-                onClick={() => handleNavigation("/casino", undefined, true)}
+                onClick={() => {
+                  if (firstOfferId) {
+                    window.open(
+                      `/casino/${firstOfferId}`,
+                      "_blank",
+                      "noopener,noreferrer"
+                    );
+                  }
+                }}
               >
                 <img
                   className={styles.appStore}

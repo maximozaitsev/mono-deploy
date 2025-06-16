@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { fetchOffers } from "@/utils/fetchOffers";
 import mobileAppImage from "../../../public/block-images/phone.webp";
 import mobileAppImageMobile from "../../../public/block-images/phone-mobile.webp";
 import StarIcon from "../__common__/StarIcon";
@@ -12,6 +13,7 @@ import "./MobileSection.scss";
 export default function MobileSection() {
   const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
+  const [firstOfferId, setFirstOfferId] = useState<number | null>(null);
 
   useEffect(() => {
     import("../../content/content.json")
@@ -33,6 +35,16 @@ export default function MobileSection() {
       .catch((error) => console.error("Ошибка загрузки JSON:", error));
   }, []);
 
+  useEffect(() => {
+    fetchOffers()
+      .then(({ offers }) => {
+        if (offers.length > 0) {
+          setFirstOfferId(offers[0].id);
+        }
+      })
+      .catch((error) => console.error("Error fetching first offer ID:", error));
+  }, []);
+
   return (
     <section className="mobile-section">
       <div className="container mobile-content">
@@ -46,7 +58,14 @@ export default function MobileSection() {
               </li>
             ))}
           </ul>
-          <Button text="Know more" variant="primary" />
+          {firstOfferId && (
+            <Button
+              text="Know more"
+              variant="primary"
+              url={`/casino/${firstOfferId}`}
+              openInNewTab
+            />
+          )}
         </div>
 
         <div className="app-info-block">
@@ -65,7 +84,15 @@ export default function MobileSection() {
           <div className="app-buttons">
             <button
               className="app-store"
-              onClick={() => handleNavigation("/casino", undefined, true)}
+              onClick={() => {
+                if (firstOfferId) {
+                  window.open(
+                    `/casino/${firstOfferId}`,
+                    "_blank",
+                    "noopener,noreferrer"
+                  );
+                }
+              }}
             >
               <img
                 src="/assets/app-store.svg"
@@ -78,7 +105,15 @@ export default function MobileSection() {
             </button>
             <button
               className="google-play"
-              onClick={() => handleNavigation("/casino", undefined, true)}
+              onClick={() => {
+                if (firstOfferId) {
+                  window.open(
+                    `/casino/${firstOfferId}`,
+                    "_blank",
+                    "noopener,noreferrer"
+                  );
+                }
+              }}
             >
               <img
                 src="/assets/google-play.svg"

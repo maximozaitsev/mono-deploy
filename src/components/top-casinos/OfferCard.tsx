@@ -28,6 +28,7 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer }) => {
         variant="secondary"
         useNavigation={true}
         url={`/casino/${offer.id}`}
+        openInNewTab
       />
     </div>
   );

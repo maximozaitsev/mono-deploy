@@ -7,6 +7,7 @@ import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import styles from "./Header.module.scss";
 import { usePathname } from "next/navigation";
+import { fetchOffers } from "../../utils/fetchOffers";
 
 const navItems = [
   { label: "Games", path: "/games" },
@@ -29,7 +30,12 @@ const Header = () => {
   }, []);
 
   const handleSignInClick = async () => {
-    handleNavigation("/casino", undefined, true);
+    try {
+      const { offers } = await fetchOffers();
+      window.open(`/casino/${offers[0].id}`, "_blank", "noopener,noreferrer");
+    } catch (error) {
+      console.error("Error opening preloader:", error);
+    }
   };
 
   const toggleMenu = () => {
@@ -69,8 +75,6 @@ const Header = () => {
               <li key={item.path} className={styles.navItem}>
                 <Link
                   href={item.path}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className={`${styles.navLink} ${
                     pathname === item.path ? styles.activeNavLink : ""
                   }`}
@@ -100,8 +104,6 @@ const Header = () => {
                 <li key={item.path} className={styles.navItem}>
                   <Link
                     href={item.path}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className={`${styles.navLink} ${
                       pathname === item.path ? styles.activeNavLink : ""
                     }`}

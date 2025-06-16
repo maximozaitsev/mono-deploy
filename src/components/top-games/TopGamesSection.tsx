@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Game } from "@/types/game";
-import { useNavigateWithPreloader } from "@/utils/navigationUtils";
 import Button from "../__common__/button/Button";
 import PlayIcon from "../__common__/PlayIcon";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
@@ -14,7 +13,6 @@ interface TopGamesProps {
 
 export default function TopGamesSection({ games }: TopGamesProps) {
   const [hoveredGame, setHoveredGame] = useState<number | null>(null);
-  const { handleNavigation } = useNavigateWithPreloader();
 
   return (
     <section id="games" className={`${styles.topGames} container`}>
@@ -39,7 +37,13 @@ export default function TopGamesSection({ games }: TopGamesProps) {
               className={`${styles.overlay} ${
                 hoveredGame === game.id ? styles.visible : ""
               }`}
-              onClick={() => handleNavigation("/casino", undefined, true)}
+              onClick={() => {
+                window.open(
+                  `/casino/${game.id}`,
+                  "_blank",
+                  "noopener,noreferrer"
+                );
+              }}
             >
               <h3 className={styles.gameName}>{game.name}</h3>
               <p className={styles.playButton}>
@@ -52,7 +56,7 @@ export default function TopGamesSection({ games }: TopGamesProps) {
           </div>
         ))}
       </div>
-      <Button text="All Games" variant="primary" />
+      <Button text="All Games" variant="primary" openInNewTab />
     </section>
   );
 }
