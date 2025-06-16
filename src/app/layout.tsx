@@ -3,11 +3,10 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "lucki-casino-online.com";
-const ogTitle = "Lucki Casino Review 2025 – Complete Guide to Games & Bonuses";
-const ogSiteName = "Lucki Casino";
-const metaDescription =
-  "Complete Lucki Casino review 2025: Explore games from 15 providers, claim welcome bonus with 25x wagering, and enjoy professional customer support.";
+const url = "bubblesbet-online.com";
+const ogTitle = "Title";
+const ogSiteName = "BubblesBet";
+const metaDescription = "Description";
 
 const locale = "en-GB";
 const language = "English";

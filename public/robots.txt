@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://lucki-casino-online.com/
-Sitemap: https://lucki-casino-online.com/sitemap.xml
+Host: https://bubblesbet-online.com/
+Sitemap: https://bubblesbet-online.com/sitemap.xml
