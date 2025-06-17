@@ -4,9 +4,11 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 
 const url = "bubblesbet-online.com";
-const ogTitle = "Title";
+const ogTitle =
+  "BubblesBet Casino UK 2025 – Expert Review, Bonuses & Mobile App";
 const ogSiteName = "BubblesBet";
-const metaDescription = "Description";
+const metaDescription =
+  "Complete BubblesBet Casino review 2025: Explore 2000+ games, claim welcome bonuses up to £6,000, and enjoy 24-hour withdrawals. Mobile app available for iOS & Android";
 
 const locale = "en-GB";
 const language = "English";
