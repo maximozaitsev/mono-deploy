@@ -3,12 +3,12 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "bubblesbet-online.com";
+const url = "lootcasino-online.com";
 const ogTitle =
-  "BubblesBet Casino UK 2025 – Expert Review, Bonuses & Mobile App";
-const ogSiteName = "BubblesBet";
+  "Loot Casino UK – Play Slots, Jackpots & Claim Daily Free Spins Today";
+const ogSiteName = "Loot Casino";
 const metaDescription =
-  "Complete BubblesBet Casino review 2025: Explore 2000+ games, claim welcome bonuses up to £6,000, and enjoy 24-hour withdrawals. Mobile app available for iOS & Android";
+  "Loot Casino UK brings players over 3,500 games, including top slots and live tables, with secure deposits and fast payouts. Start playing today to unlock up to £6,000 in bonuses and daily free spins.";
 
 const locale = "en-GB";
 const language = "English";

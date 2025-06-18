@@ -28,3 +28,10 @@ $font-secondary: "Poppins", sans-serif;
   font-style: normal;
   src: url("./Heading/static/Poppins-900.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: normal;
+  src: url("./Heading/static/Poppins-600.woff2") format("woff2");
+}
