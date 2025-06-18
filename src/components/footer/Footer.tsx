@@ -86,8 +86,8 @@ export default function Footer() {
         <p className={styles.copyright}>
           <span>18+</span>{" "}
           <span className={styles.hiddenSpan}>Copyright © {currentYear}</span>
-          {/* &nbsp;<span>{PROJECT_NAME}</span> */}
-          &nbsp;<span>{PROJECT_NAME} Casino</span>
+          &nbsp;<span>{PROJECT_NAME}</span>
+          {/* &nbsp;<span>{PROJECT_NAME} Casino</span> */}
         </p>
       </div>
     </footer>
