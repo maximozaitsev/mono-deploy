@@ -41,7 +41,7 @@ export default function Footer() {
       ?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const logoPath = isMobile ? "/logo-light-mobile.svg" : "/logo-light.svg";
+  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
 
   return (
     <footer className={styles.footer}>

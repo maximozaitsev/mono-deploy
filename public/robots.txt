@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://lootcasino-online.com/
-Sitemap: https://lootcasino-online.com/sitemap.xml
+Host: https://yakocasino-online.com/
+Sitemap: https://yakocasino-online.com/sitemap.xml

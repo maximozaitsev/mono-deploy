@@ -16,7 +16,7 @@
     flex-direction: column;
     gap: 40px;
     padding-right: 32px;
-    border-right: 2px solid #00000033;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
 
     @media (max-width: 768px) {
       padding: 24px 24px 0 24px;
@@ -198,7 +198,7 @@
   @media (max-width: 500px) {
     .mobile-image {
       .app-image {
-        // width: 100%;
+        width: 100%;
         height: auto;
       }
     }

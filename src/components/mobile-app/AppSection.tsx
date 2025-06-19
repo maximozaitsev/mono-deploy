@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-// import AppImage from "../../../public/block-images/app.webp";
-// import AppImageMobile from "../../../public/block-images/app-mobile.webp";
+import AppImage from "../../../public/block-images/app.webp";
+import AppImageMobile from "../../../public/block-images/app-mobile.webp";
 import { fetchOffers } from "@/utils/fetchOffers";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
@@ -36,13 +36,13 @@ export default function AppSection() {
         <div className={styles.topRow}>
           <div className={styles.textBlock}>
             {app.appTitle && <h3 className="h3-heading">{app.appTitle}</h3>}
-            {/* <img
+            <img
               src={AppImageMobile.src}
               alt={PROJECT_NAME + " App"}
               title={PROJECT_NAME + " " + PROJECT_GEO}
               className={styles.imageMobile}
               loading="lazy"
-            /> */}
+            />
             {app.appContent.map((group, index) => (
               <div key={index} className={styles.paragraphGroup}>
                 {group.map((block: any, i: number) => (
@@ -91,7 +91,7 @@ export default function AppSection() {
               </button>
             </div>
           </div>
-          {/* <div className={styles.imageBlock}>
+          <div className={styles.imageBlock}>
             <img
               src={AppImage.src}
               alt={PROJECT_NAME + " " + PROJECT_GEO + " App"}
@@ -99,7 +99,7 @@ export default function AppSection() {
               className={styles.image}
               loading="lazy"
             />
-          </div> */}
+          </div>
         </div>
 
         <div className={styles.columns}>

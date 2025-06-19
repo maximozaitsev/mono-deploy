@@ -3,12 +3,10 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "lootcasino-online.com";
-const ogTitle =
-  "Loot Casino UK – Play Slots, Jackpots & Claim Daily Free Spins Today";
-const ogSiteName = "Loot Casino";
-const metaDescription =
-  "Loot Casino UK brings players over 3,500 games, including top slots and live tables, with secure deposits and fast payouts. Start playing today to unlock up to £6,000 in bonuses and daily free spins.";
+const url = "yakocasino-online.com";
+const ogTitle = "Yako Casino Review 2025: UK Players’ Guide to Games, Bonuses & Banking";
+const ogSiteName = "Yako Casino";
+const metaDescription = "Explore Yako Casino’s UK‑friendly platform, licensed by UKGC & MGA, with top providers, mobile play, flexible banking, and secure. Register now and play with 99 free spins.";
 
 const locale = "en-GB";
 const language = "English";

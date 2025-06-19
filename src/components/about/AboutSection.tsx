@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-// import aboutImage from "../../../public/block-images/laptop.webp";
+import aboutImage from "../../../public/block-images/laptop.webp";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
-// import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import "./AboutSection.scss";
 
 export default function AboutSection() {
@@ -54,14 +54,14 @@ export default function AboutSection() {
             ))}
           </div>
 
-          {/* <div className="about-image">
+          <div className="about-image">
             <img
               src={aboutImage.src}
               alt={PROJECT_NAME + " " + PROJECT_GEO + " Desktop"}
               title={PROJECT_NAME + " " + PROJECT_GEO + " Desktop"}
               loading="lazy"
             />
-          </div> */}
+          </div>
         </div>
 
         {Object.entries(aboutSections).map(
