@@ -4,9 +4,11 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 
 const url = "bb-casino.com";
-const ogTitle = "Title";
+const ogTitle =
+  "BB Casino UK – Full Guide to Games, Bonuses, and Secure Features";
 const ogSiteName = "BB Casino";
-const metaDescription = "Description";
+const metaDescription =
+  "BB Casino UK provides players with licensed access to 1,500+ games, trusted payment methods, and regular promotions. Discover available bonuses, explore secure gameplay, and create your account today.";
 
 const locale = "en-GB";
 const language = "English";
