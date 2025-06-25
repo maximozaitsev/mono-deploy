@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://yakocasino-online.com/
-Sitemap: https://yakocasino-online.com/sitemap.xml
+Host: https://bb-casino.com/
+Sitemap: https://bb-casino.com/sitemap.xml

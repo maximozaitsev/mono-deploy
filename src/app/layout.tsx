@@ -3,10 +3,10 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "yakocasino-online.com";
-const ogTitle = "Yako Casino Review 2025: UK Players’ Guide to Games, Bonuses & Banking";
-const ogSiteName = "Yako Casino";
-const metaDescription = "Explore Yako Casino’s UK‑friendly platform, licensed by UKGC & MGA, with top providers, mobile play, flexible banking, and secure. Register now and play with 99 free spins.";
+const url = "bb-casino.com";
+const ogTitle = "Title";
+const ogSiteName = "BB Casino";
+const metaDescription = "Description";
 
 const locale = "en-GB";
 const language = "English";
