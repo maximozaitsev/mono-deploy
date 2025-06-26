@@ -323,7 +323,7 @@
   },
   "games": {
     "title": "BB Casino UK Games – Explore Slots, Table, Live & Mobile Options",
-    "description": "BB Casino UK provides players with licensed access to 1,500+ games, trusted payment methods, and regular promotions. Discover available bonuses, explore secure gameplay, and create your account today.",
+    "description": "BB Casino UK offers hundreds of games from top providers across slots, live casino, and jackpots. Enjoy smooth mobile access and trusted UKGC-licensed gameplay. Try your luck today.",
     "blocks": [
       {
         "type": "heading",
@@ -425,11 +425,7 @@
       {
         "type": "list",
         "style": "unordered",
-        "items": [
-          "Animals",
-          "Fantasy",
-          "Luck-based mechanics"
-        ]
+        "items": ["Animals", "Fantasy", "Luck-based mechanics"]
       },
       {
         "type": "paragraph",
@@ -533,7 +529,7 @@
   },
   "app": {
     "title": "BB Casino UK App – Mobile Casino Platform for Games and Bonuses",
-    "description": "BB Casino UK offers hundreds of games from top providers across slots, live casino, and jackpots. Enjoy smooth mobile access and trusted UKGC-licensed gameplay. Try your luck today.",
+    "description": "The BB Casino UK App gives players access to slots, live dealer games, and secure mobile payments right from their browser. With a strong welcome bonus, weekly offers, and loyalty rewards, it’s designed for UK users who want full casino access on the go. Start playing today.",
     "blocks": [
       {
         "type": "heading",
@@ -596,11 +592,7 @@
       {
         "type": "list",
         "style": "unordered",
-        "items": [
-          "Welcome Bonus",
-          "Reload Offers",
-          "Cashback Promotions"
-        ]
+        "items": ["Welcome Bonus", "Reload Offers", "Cashback Promotions"]
       },
       {
         "type": "paragraph",
@@ -667,7 +659,7 @@
   },
   "bonus": {
     "title": "BB Casino UK Bonuses – Full Guide to Cashback, Spins & Welcome Offers",
-    "description": "The BB Casino UK App gives players access to slots, live dealer games, and secure mobile payments right from their browser. With a strong welcome bonus, weekly offers, and loyalty rewards, it’s designed for UK users who want full casino access on the go. Start playing today.",
+    "description": "Explore BB Casino UK bonuses, including welcome offers, free spins, and cashback promotions. Understand the terms and claim your rewards with confidence – start playing today.",
     "blocks": [
       {
         "type": "heading",
@@ -851,7 +843,7 @@
   },
   "login": {
     "title": "BB Casino UK Login Guide: Secure Account Access and Setup Help",
-    "description": "Explore BB Casino UK bonuses, including welcome offers, free spins, and cashback promotions. Understand the terms and claim your rewards with confidence – start playing today.",
+    "description": "BB Casino UK offers a fast and secure login process for players in the United Kingdom. Learn how to access your account safely and troubleshoot any issues with our clear guide.",
     "blocks": [
       {
         "type": "heading",
