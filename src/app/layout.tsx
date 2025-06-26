@@ -3,14 +3,14 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "bb-casino.com";
+const url = "casinobet-online.com";
 const ogTitle =
-  "BB Casino UK – Full Guide to Games, Bonuses, and Secure Features";
-const ogSiteName = "BB Casino";
+  "Casinobet Canada Review 2025: Best Crypto Casino with 150% BTC Bonus";
+const ogSiteName = "Casinobet";
 const metaDescription =
-  "BB Casino UK provides players with licensed access to 1,500+ games, trusted payment methods, and regular promotions. Discover available bonuses, explore secure gameplay, and create your account today.";
+  "Discover the full Casinobet Canada review for 2025: licensing, game selection, crypto bonuses, fast withdrawals, and mobile optimization. Register and play with a 150% bonus.";
 
-const locale = "en-GB";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

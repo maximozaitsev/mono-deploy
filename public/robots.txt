@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://bb-casino.com/
-Sitemap: https://bb-casino.com/sitemap.xml
+Host: https://casinobet-online.com/
+Sitemap: https://casinobet-online.com/sitemap.xml

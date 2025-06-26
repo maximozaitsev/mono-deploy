@@ -1,3 +1,3 @@
-export const PROJECT_NAME = "BB Casino";
-export const PROJECT_GEO = "United Kingdom";
-export const PROJECT_URL = "bb-casino.com";
+export const PROJECT_NAME = "Casinobet";
+export const PROJECT_GEO = "Canada";
+export const PROJECT_URL = "casinobet-online.com";
