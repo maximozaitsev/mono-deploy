@@ -10,9 +10,15 @@
   align-items: center;
   gap: 16px;
 
-  outline: $border-width solid $color-border-primary;
+  border: 2px solid transparent;
   border-radius: $border-radius;
-  background: $color-background-third;
+  background-image: linear-gradient(
+      $color-background-third,
+      $color-background-third
+    ),
+    linear-gradient(180deg, #216281 0%, #3fbef9 50%, #216281 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 
   img {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
