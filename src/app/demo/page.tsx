@@ -10,15 +10,15 @@ import { PROJECT_URL, PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${PROJECT_URL}`),
-  title: siteData.games.title,
-  description: siteData.games.description,
+  title: siteData.demo.title,
+  description: siteData.demo.description,
   alternates: {
     canonical: `https://${PROJECT_URL}/games`,
   },
 
   openGraph: {
-    title: siteData.games.title,
-    description: siteData.games.description,
+    title: siteData.demo.title,
+    description: siteData.demo.description,
     url: `https://${PROJECT_URL}/games`,
     siteName: PROJECT_NAME,
     images: [
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: siteData.games.title,
-    description: siteData.games.description,
+    title: siteData.demo.title,
+    description: siteData.demo.description,
     images: [`https://${PROJECT_URL}/og-image.webp`],
   },
 };
 
 export default function LoginPage() {
-  const { blocks } = siteData.games;
+  const { blocks } = siteData.demo;
   return (
     <>
       <Header />

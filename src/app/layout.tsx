@@ -3,14 +3,13 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "casinobet-online.com";
-const ogTitle =
-  "Casinobet Canada Review 2025: Best Crypto Casino with 150% BTC Bonus";
-const ogSiteName = "Casinobet";
+const url = "bigbassbonanza-online.com";
+const ogTitle = "Big Bass Bonanza Slot Review – Free Spins, Multipliers & More";
+const ogSiteName = "Big Bass Bonanza";
 const metaDescription =
-  "Discover the full Casinobet Canada review for 2025: licensing, game selection, crypto bonuses, fast withdrawals, and mobile optimization. Register and play with a 150% bonus.";
+  "Dive into the exciting fishing-themed adventure of Big Bass Bonanza by Pragmatic Play. Discover bonus features like free spins, money symbol collection, multipliers up to 1000x, and dynamic gameplay elements. Learn how to reel in big wins in this popular online slot!";
 
-const locale = "en-CA";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

@@ -35,7 +35,9 @@ export default function AppSection() {
       <div className="container">
         <div className={styles.topRow}>
           <div className={styles.textBlock}>
-            {app.appTitle && <h3 className="h3-heading">{app.appTitle}</h3>}
+            {app.appTitle && (
+              <h2 className="h2-heading white">{app.appTitle}</h2>
+            )}
             <img
               src={AppImageMobile.src}
               alt={PROJECT_NAME + " App"}
@@ -49,74 +51,6 @@ export default function AppSection() {
                   <BlockRenderer key={i} block={block} />
                 ))}
               </div>
-            ))}
-            <div className={styles.buttons}>
-              <button
-                onClick={() => {
-                  if (firstOfferId) {
-                    window.open(
-                      `/casino/${firstOfferId}`,
-                      "_blank",
-                      "noopener,noreferrer"
-                    );
-                  }
-                }}
-              >
-                <img
-                  className={styles.googlePlay}
-                  src="/assets/google-play.svg"
-                  alt="Download on the Google Play"
-                  title={PROJECT_NAME + " " + PROJECT_GEO + " in Google Play"}
-                  loading="lazy"
-                />
-              </button>
-              <button
-                onClick={() => {
-                  if (firstOfferId) {
-                    window.open(
-                      `/casino/${firstOfferId}`,
-                      "_blank",
-                      "noopener,noreferrer"
-                    );
-                  }
-                }}
-              >
-                <img
-                  className={styles.appStore}
-                  src="/assets/app-store.svg"
-                  alt="Download on the App Store"
-                  title={PROJECT_NAME + " " + PROJECT_GEO + " in App Store"}
-                  loading="lazy"
-                />
-              </button>
-            </div>
-          </div>
-          <div className={styles.imageBlock}>
-            <img
-              src={AppImage.src}
-              alt={PROJECT_NAME + " " + PROJECT_GEO + " App"}
-              title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
-              className={styles.image}
-              loading="lazy"
-            />
-          </div>
-        </div>
-
-        <div className={styles.columns}>
-          <div className={styles.column}>
-            {app.languagesTitle && (
-              <h3 className="h3-heading">{app.languagesTitle}</h3>
-            )}
-            {app.languagesContent.map((block, index) => (
-              <BlockRenderer key={index} block={block} />
-            ))}
-          </div>
-          <div className={styles.column}>
-            {app.currenciesTitle && (
-              <h3 className="h3-heading">{app.currenciesTitle}</h3>
-            )}
-            {app.currenciesContent.map((block, index) => (
-              <BlockRenderer key={index} block={block} />
             ))}
           </div>
         </div>

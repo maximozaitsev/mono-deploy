@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
-    width: 548px;
 
     .paragraphGroup {
       display: flex;
@@ -60,7 +59,7 @@
 
     .image {
       position: absolute;
-      top: 0px;
+      top: -90px;
       right: -13px;
       overflow: hidden;
       height: auto;
