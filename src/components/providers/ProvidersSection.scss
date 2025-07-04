@@ -32,14 +32,7 @@
     height: auto;
     padding: 1rem;
     border-radius: $border-radius;
-    border: 2px solid transparent;
-    background-image: linear-gradient(
-        $color-background-providers-blocks,
-        $color-background-providers-blocks
-      ),
-      linear-gradient(180deg, #216281 0%, #3fbef9 50%, #216281 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+    background: $color-background-providers-blocks;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 88px;
 

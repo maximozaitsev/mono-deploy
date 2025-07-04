@@ -21,18 +21,18 @@
     color: $text-color-button-large;
     font-size: 28px;
     border: none;
-    height: 87px;
-    width: 280px;
+    height: 82px;
+    width: 340px;
 
     @media (max-width: 768px) {
       border-radius: $button-large-border-radius-mobile;
       font-size: 24px;
       height: 77px;
-      width: 246px;
+      width: 280px;
     }
 
     @media (max-width: 420px) {
-      width: 246px;
+      width: 260px;
     }
 
     @media (max-width: 380px) {
@@ -58,12 +58,11 @@
     color: $text-color-button-small;
     font-size: 20px;
     border: none;
-    height: 56px;
+    height: 52px;
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;
       font-size: 18px;
-      height: 54px;
     }
 
     @media (max-width: 300px) {

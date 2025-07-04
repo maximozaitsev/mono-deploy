@@ -22,7 +22,7 @@ export const PageRenderer: React.FC<Props> = ({ blocks }) => {
   const sections: Block[][] = [];
   let currentSection: Block[] = [];
   blocks.forEach((b) => {
-    if (b.type === "heading" && b.level === 2) {
+    if (b.type === "heading" && (b.level === 1 || b.level === 2)) {
       if (currentSection.length) sections.push(currentSection);
       currentSection = [b];
     } else {
@@ -84,7 +84,11 @@ export const PageRenderer: React.FC<Props> = ({ blocks }) => {
 
             return (
               <div key={i} className="section">
-                <h2 className="h2-heading white">{titleBlock.text}</h2>
+                {titleBlock.level === 1 ? (
+                  <h1 className="h2-heading white">{titleBlock.text}</h1>
+                ) : (
+                  <h2 className="h2-heading white">{titleBlock.text}</h2>
+                )}
                 {introItems.map((b, idx) => {
                   if (b.type === "paragraph") {
                     return (
@@ -117,7 +121,11 @@ export const PageRenderer: React.FC<Props> = ({ blocks }) => {
           } else {
             return (
               <div key={i} className="section">
-                <h2 className="h2-heading white">{titleBlock.text}</h2>
+                {titleBlock.level === 1 ? (
+                  <h1 className="h2-heading white">{titleBlock.text}</h1>
+                ) : (
+                  <h2 className="h2-heading white">{titleBlock.text}</h2>
+                )}
                 {introItems.map((b, idx) => {
                   if (b.type === "paragraph") {
                     return (

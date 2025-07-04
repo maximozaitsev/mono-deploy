@@ -3,14 +3,15 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "bigbassbonanza-online.com";
-const ogTitle = "Big Bass Bonanza Slot Review – Free Spins, Multipliers & More";
-const ogSiteName = "Big Bass Bonanza";
+const url = "romibetonline.com";
+const ogTitle =
+  "Romibet Casino France – Jeux en ligne, meilleures offres et bonus 2025";
+const ogSiteName = "Romibet";
 const metaDescription =
-  "Dive into the exciting fishing-themed adventure of Big Bass Bonanza by Pragmatic Play. Discover bonus features like free spins, money symbol collection, multipliers up to 1000x, and dynamic gameplay elements. Learn how to reel in big wins in this popular online slot!";
+  "Découvrez Romibet Casino France, où les joueurs profitent de centaines de jeux de casino, de croupiers en direct passionnants, de paiements rapides et de bonus généreux. Jouez en toute sécurité et en toute légalité en France grâce à des méthodes de paiement fiables et à un accès mobile.";
 
-const locale = "en-GB";
-const language = "English";
+const locale = "fr-FR";
+const language = "French";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

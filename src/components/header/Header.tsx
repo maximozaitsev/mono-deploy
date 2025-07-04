@@ -10,9 +10,10 @@ import { usePathname } from "next/navigation";
 import { fetchOffers } from "../../utils/fetchOffers";
 
 const navItems = [
-  { label: "Demo", path: "/demo" },
-  { label: "App", path: "/app" },
+  { label: "Games", path: "/games" },
   { label: "Bonus", path: "/bonus" },
+  { label: "App", path: "/app" },
+  { label: "Log In", path: "/login" },
 ];
 
 const Header = () => {
