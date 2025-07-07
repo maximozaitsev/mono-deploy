@@ -1,145 +1,69 @@
 {
-  "title": "Romibet Casino",
+  "title": "Malina Casino",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "<strong>casino en direct</strong>",
-        "<strong>bonus de bienvenue de 350%</strong>",
-        "<strong>paris sportifs</strong>"
+        "100 % jusqu'à 500",
+        "Bonus de 200 % jusqu'à 3 000 USDT",
+        "10% cashback"
       ]
     },
     {
       "type": "paragraph",
-      "text": "Romibet est une plateforme universelle de jeux d'argent et de paris, conçue dans le style des dieux de l'Olympe. Ici, sur chaque page, vous serez accompagné d'un thème correspondant, d'animations lumineuses et colorées et d'un menu de navigation pratique. Même la police du site a été choisie pour créer une sensation d'immersion totale dans le monde des dieux antiques."
-    },
-    {
-      "type": "paragraph",
-      "text": "Les clients français du service peuvent profiter pleinement d'une vaste gamme de jeux d'argent, parier sur le sport, recevoir des bonus généreux, participer à des tournois et relever plusieurs défis."
-    },
-    {
-      "type": "paragraph",
-      "text": "L'un des avantages du Romibet Casino est la possibilité de jouer sans inscription et sans dépôt. Pour ce faire, dans la catégorie Casino, il suffit de sélectionner le jeu qui vous plaît et de cliquer sur le mode Démo. Mais si vous souhaitez recevoir des gains, participer à des tournois, activer des bonus, vous devrez créer un compte."
-    },
-    {
-      "type": "paragraph",
-      "text": "Vous n'avez pas besoin de vous inscrire deux fois si vous souhaitez jouer au casino et parier sur le sport. Vous pouvez utiliser un seul compte pour tous les types de jeux d'argent."
+      "text": "Le gouvernement d'Anjouan a accordé une licence à Malina Casino, une plateforme internationale de jeux d'argent. Depuis 2016, elle propose des machines à sous en ligne, des jeux de table, des salles avec croupiers en direct et des paris sportifs. Les cartes de crédit, les portefeuilles électroniques et les cryptomonnaies sont acceptés, et les paiements sont traités rapidement, tandis que les retraits prennent entre quelques heures et cinq jours ouvrables. Malina Casino dispose d'un programme VIP avec de nombreux niveaux de fidélité et un mécanisme d'échange de bonus. La version mobile est adaptée aux smartphones et aux tablettes, de sorte que tous les jeux et services fonctionnent parfaitement."
     }
   ],
   "about": {
-    "Processus d'inscription": [
+    "Processus d'inscription au Malina Casino": [
       {
         "type": "paragraph",
-        "text": "Pour commencer à jouer, recevoir des gains et participer à des promotions, les nouveaux clients doivent d'abord passer par la procédure d'inscription. Il s'agit d'un processus assez simple qui ne prend que quelques minutes."
+        "text": "Créer un compte sur Malina Casino est simple et rapide. Pour commencer à jouer et bénéficier des bonus offerts, il vous suffit de suivre quelques étapes simples."
+      },
+      {
+        "type": "paragraph",
+        "text": "Étapes d'inscription :"
       },
       {
         "type": "list",
-        "style": "unordered",
+        "style": "ordered",
         "items": [
-          "Rendez-vous sur la page d'accueil du site officiel et cliquez sur le bouton « Inscription » ;",
-          "À la première étape, sélectionnez l'une des options de bonus de bienvenue ou un code promotionnel ;",
-          "Faites votre choix et passez à la page suivante du formulaire d'inscription ;",
-          "Indiquez une adresse e-mail valide et créez un mot de passe fort ;",
-          "Confirmez que vous avez plus de 18 ans et que vous acceptez les conditions générales ;",
-          "Cliquez sur le bouton « Étape suivante » et remplissez la dernière page du formulaire d'inscription ;",
-          "Vous devrez ici indiquer vos informations personnelles, vos coordonnées, votre adresse postale, votre pays et votre devise."
+          "Cliquez sur « S'inscrire » sur la page d'accueil",
+          "Sélectionnez un bonus de bienvenue ou passez cette étape",
+          "Entrez votre adresse e-mail et créez un mot de passe",
+          "Remplissez vos informations personnelles",
+          "Confirmez les conditions générales et validez",
+          "Vérifiez votre compte par e-mail ou SMS",
+          "Téléchargez les documents KYC si nécessaire",
+          "Effectuez votre premier dépôt"
         ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Assurez-vous d'avoir correctement rempli tous les champs et cliquez sur Créer un compte. Vous recevrez automatiquement un e-mail. Suivez le lien pour terminer la procédure d'inscription sur le site web du casino Romibet."
       }
     ],
-    "Connexion": [
+    "À propos de la connexion à Malina Casino": [
       {
         "type": "paragraph",
-        "text": "La procédure d'autorisation sur le site est extrêmement simple. Pour ce faire, vous devez retourner à la page d'accueil du site du casino et cliquer sur le bouton Connexion. Vous verrez un formulaire d'autorisation, dans lequel vous devrez uniquement indiquer votre adresse e-mail et votre mot de passe."
-      },
-      {
-        "type": "paragraph",
-        "text": "Dans cette section, la fonction « Mot de passe oublié ? » est disponible. Cliquez sur ce lien et suivez les instructions étape par étape pour restaurer l'accès à votre compte. Si vous n'avez pas pu restaurer votre mot de passe, contactez directement le support technique. Les spécialistes de Romibet Casino travaillent 24 heures sur 24."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Vérification"
-      },
-      {
-        "type": "paragraph",
-        "text": "N'oubliez pas que la vérification est une procédure obligatoire pour tous les utilisateurs du casino qui souhaitent retirer leurs gains de leur solde de jeu."
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "Inscrivez-vous et connectez-vous au site ;",
-          "Ouvrez votre compte personnel et complétez les informations manquantes vous concernant ;",
-          "Indiquez votre nom complet et votre adresse postale tels qu'ils figurent sur vos documents ;",
-          "Assurez-vous de ne pas avoir fait de fautes, ni omis de chiffres ou de symboles ;",
-          "Téléchargez une copie numérisée de la liste des documents présentés ;",
-          "Vous aurez besoin de votre pièce d'identité, de vos factures de services publics, de votre relevé bancaire, etc. ;",
-          "Ces documents sont nécessaires pour confirmer votre identité, votre adresse postale et vos sources de revenus ;",
-          "Envoyez le formulaire en ligne et les documents pour vérification au service de sécurité ;",
-          "Attendez la confirmation de la vérification."
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "En général, les représentants du casino Romibet vérifient les comptes dans les 24 heures. Vous recevrez une notification de vérification réussie par e-mail et dans votre compte personnel. Vous pouvez désormais retirer vos gains sans aucun problème et profiter de tous les avantages d'un compte vérifié."
+        "text": "Les utilisateurs commencent leur expérience sur Malina Casino en cliquant sur le gros bouton « Connexion » sur le site ou sur l'application mobile. Pour accéder à leur compte, ils doivent d'abord saisir leur adresse e-mail et leur mot de passe. L'option « Mot de passe oublié ? » vous permet de modifier votre mot de passe. Malina Casino utilise le cryptage SSL pour garantir la sécurité et la légalité du site. Il peut également demander aux utilisateurs de procéder à des vérifications d'identité supplémentaires lorsqu'ils se connectent afin de garantir la sécurité du site."
       }
     ],
     "Méthodes de dépôt": [
       {
         "type": "paragraph",
-        "text": "Pour les joueurs français, Romibet propose plusieurs méthodes fiables et sécurisées pour effectuer des dépôts :"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "Visa ;",
-          "Mastercard ;",
-          "Skrill ;",
-          "Neteller ;",
-          "MiFinity ;",
-          "Crypto."
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Pour la plupart des systèmes de paiement, le dépôt minimum est de seulement 10 EUR. Mais n'oubliez pas que pour activer les bonus, il faut généralement 20 EUR ou plus comme premier dépôt."
+        "text": "Malina Casino accepte de nombreux moyens de paiement. Les cartes Visa, Mastercard, les virements bancaires, Paysafecard et Neosurf sont acceptés. Les options de paiement en ligne comprennent MiFinity, Jeton et Rapid Transfer. Les dépôts peuvent être effectués en Bitcoin, Tether (USDT – TRC20 et ERC20), Ethereum, Litecoin, Bitcoin Cash, Dogecoin, USD Coin, Cardano, Ripple et autres. Le dépôt minimum est de 10 €, et les montants maximums varient selon la méthode, de 2 000 € à 5 000 €."
       }
     ],
     "Méthodes de retrait": [
       {
         "type": "paragraph",
-        "text": "Les utilisateurs français qui ont passé la procédure de vérification peuvent retirer leurs gains. Vous pouvez soumettre une demande de retrait de fonds via plusieurs systèmes de paiement :"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "Visa ;",
-          "Mastercard ;",
-          "Virement Sepa ;",
-          "Revolut ;",
-          "Skrill ;",
-          "MiFinity ;",
-          "Crypto."
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Le montant minimum de retrait est de 10 à 30 EUR selon le système de paiement sélectionné."
+        "text": "Les retraits peuvent être effectués par Visa, MasterCard, virement bancaire et bons prépayés. Le casino traite les retraits quasi instantanés depuis MiFinity, Jeton, Rapid Transfer et toutes les cryptomonnaies acceptées (par exemple, Bitcoin, USDT, Ethereum, Litecoin, Dogecoin, USD Coin, Cardano, Ripple, etc.). Les limites minimales et maximales de retrait sont de 10 € à 2 000 € (cartes) ou 5 000 € (portefeuilles électroniques, cryptomonnaies), les joueurs VIP bénéficiant d'un plafond mensuel de 20 000 €. Les retraits en cryptomonnaies sont rapides, tandis que les retraits par carte et par virement bancaire prennent 1 à 5 jours."
       }
     ]
   },
   "advantages": {
-    "Avantages et inconvénients": [
+    "Avantages de Malina Casino": [
       {
         "type": "paragraph",
-        "text": "Lorsqu'ils choisissent un casino en ligne et un bookmaker, les joueurs français étudient attentivement les principaux avantages et inconvénients des services proposés. Pour évaluer objectivement cette plateforme, vous devez examiner ce que le casino est prêt à offrir et quels sont ses inconvénients. Cela vous permettra de décider dans quelle mesure le service répond à vos exigences et à vos préférences."
+        "text": "Malina Casino est un site formidable pour jouer, car il propose de nombreux jeux et des promotions à des prix incroyables. Mais les joueurs doivent savoir que certains aspects peuvent poser problème."
       },
       {
         "type": "heading",
@@ -150,17 +74,11 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "variété de jeux ;",
-          "paris sportifs ;",
-          "croupiers en direct ;",
-          "tournois et défis ;",
-          "bonus de bienvenue ;",
-          "promotions ;",
-          "cashback ;",
-          "assistance technique 24h/24 et 7j/7 ;",
-          "compatible avec les cryptomonnaies et les appareils mobiles ;",
-          "navigation pratique ;",
-          "belle conception du site web."
+          "Grande variété de jeux",
+          "Section paris sportifs",
+          "Paiements en cryptomonnaies et en monnaie fiduciaire",
+          "Programme de fidélité et tournois",
+          "Assistance par chat en direct 24h/24 et 7j/7"
         ]
       },
       {
@@ -172,41 +90,27 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "pas d'application mobile ;",
-          "restrictions géographiques."
+          "Limites de retrait faibles",
+          "Pas d'assistance par téléphone",
+          "Filtres de jeux limités"
         ]
       }
     ]
   },
   "games-to-play": {
-    "Jeux disponibles": [
+    "Jeux disponibles sur Malina Casino": [
       {
         "type": "paragraph",
-        "text": "Romibet Casino propose une grande variété d'options de jeu. Le service collabore avec les principaux fournisseurs de logiciels de jeux. Sur le site, vous pouvez utiliser des catégories et des sections thématiques pour trouver des divertissements à votre goût."
+        "text": "Malina Casino dispose d'un espace de jeu immense et immersif avec une large gamme de jeux de casino et une section séparée pour les paris sportifs. Le site mise sur la variété et la profondeur, les joueurs peuvent donc parier sur tout, des machines à sous traditionnelles aux sports en direct."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Machines à sous"
+        "text": "Machines à sous et jackpots"
       },
       {
         "type": "paragraph",
-        "text": "Les machines à sous constituent la catégorie de jeux la plus importante sur le site web de la plateforme de jeux d'argent. Vous y trouverez une collection de plusieurs milliers de machines à sous. Pour plus de commodité, elles sont divisées en plusieurs catégories :"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "Top ;",
-          "Nouveautés ;",
-          "Populaires ;",
-          "Bonus Buy ;",
-          "Megaways."
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Si vous passez votre souris sur l'une des milliers de machines à sous, vous pouvez choisir de jouer en mode habituel avec de l'argent réel ou d'essayer d'abord la version démo. En termes de fonctionnalités, elles seront absolument identiques. La seule différence est qu'en mode démo, vous placerez des paris et recevrez des gains sous forme de pièces virtuelles."
+        "text": "Malina Casino propose plus de 9 000 machines à sous pour tous les joueurs. Le portefeuille comprend des machines à sous classiques à trois rouleaux et des machines à fruits, ainsi que des machines à sous contemporaines avec des rouleaux en cascade, des gains groupés et des Megaways. De nombreux jeux proposent des tours bonus, des wilds expansifs, des multiplicateurs et des tours gratuits. Les jeux populaires de Pragmatic Play, NetEnt, Microgaming, Quickspin et Yggdrasil sont disponibles, et de nouveaux titres sont ajoutés en permanence. Les machines à sous à jackpot disposent d'une zone distincte avec des jackpots fixes et progressifs pouvant atteindre des millions."
       },
       {
         "type": "heading",
@@ -215,138 +119,96 @@
       },
       {
         "type": "paragraph",
-        "text": "Les joueurs français choisissent souvent une variété de jeux de table et de cartes. Sur ce site, dans la section Casino, vous pouvez cliquer sur Jeux de table et lancer l'un des nombreux projets."
-      },
-      {
-        "type": "paragraph",
-        "text": "Tous les jeux présentés dans cette catégorie sont également disponibles en mode démo et sont basés sur un générateur de nombres aléatoires. La gamme est constamment mise à jour et élargie. Cela vous donne une excellente occasion d'essayer quelque chose de nouveau littéralement chaque jour."
+        "text": "Malina Casino propose tous les jeux de table virtuels populaires pour les joueurs stratégiques. Le blackjack, la roulette, le baccarat et le poker sont disponibles selon les règles européennes et américaines. La collection comprend également le Sic Bo, le Craps et le Dragon Tiger. Ces jeux ressemblent à s'y méprendre à de véritables tables de casino, avec d'excellents graphismes et effets sonores. Les joueurs à petites et grosses mises peuvent profiter du jeu grâce à différentes restrictions de mise."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Jeux instantanés"
+        "text": "Casino avec croupiers en direct"
       },
       {
         "type": "paragraph",
-        "text": "Au cours des dernières années, la popularité des jeux instantanés ou crash a considérablement augmenté parmi les joueurs français. Il s'agit d'un nouveau format de divertissement basé sur un générateur de nombres aléatoires. Mais ne confondez pas les jeux instantanés et crash avec les machines à sous traditionnelles."
-      },
-      {
-        "type": "paragraph",
-        "text": "Les jeux instantanés utilisent des mécanismes de jeu uniques et des principes de contrôle différents. Ces jeux offrent de grandes chances de gagner, et les résultats dépendent en grande partie de la stratégie et de la réaction du joueur."
+        "text": "Malina Casino dispose de plus de 400 tables avec des croupiers en direct expérimentés. Ces jeux en HD, développés par des développeurs internationaux, offrent une action en temps réel et une grande interactivité. Vous pouvez modifier les limites de mise pour chaque type de blackjack, roulette, baccarat et poker de casino. Crazy Time, Mega Wheel, Funky Time et Deal or No Deal font partie des programmes de jeux en direct les plus populaires. Ces présentations mélangent jeux de casino et divertissement, en ajoutant des multiplicateurs et des tours bonus passionnants."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Casino en direct"
+        "text": "Vidéo poker et jeux virtuels"
       },
       {
         "type": "paragraph",
-        "text": "Les joueurs français apprécient depuis longtemps les avantages et les possibilités offerts par les jeux avec croupiers en direct. Ce site dispose d'une section distincte entièrement consacrée au casino en direct. Pour plus de commodité, tous les jeux sont divisés en plusieurs catégories :"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "Roulette ;",
-          "Blackjack ;",
-          "Poker ;",
-          "Jeux télévisés ;",
-          "Tables internationales ;",
-          "Baccarat et dés."
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Dans ces jeux, les paris ne sont acceptés qu'avec de l'argent réel. Par conséquent, pour jouer avec des croupiers en direct, vous devez vous inscrire, vous connecter à votre compte et effectuer un dépôt minimum."
+        "text": "Malina Casino propose du vidéo poker et des jeux virtuels pour jouer rapidement. Des jeux de vidéo poker tels que Jacks or Better, Deuces Wild et Joker Poker sont disponibles en mode solo ou multi-mains. Des paris sportifs virtuels, des cartes à gratter, des jeux de type crash et d'autres possibilités de gains instantanés sont également disponibles. Ces jeux basés sur un générateur de nombres aléatoires (RNG) offrent un répit rapide après de longues sessions de casino, avec des résultats rapides et des règles simples."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Tournois et jackpots"
+        "text": "Paris sportifs"
       },
       {
         "type": "paragraph",
-        "text": "Le site web du casino Romibet propose également des jeux qui vous permettent de gagner beaucoup plus grâce à des jackpots progressifs. Pour cela, vous devez vous rendre dans la catégorie Jackpots correspondante et lancer l'un des jeux qui vous plaît."
-      },
-      {
-        "type": "paragraph",
-        "text": "Dans la section Tournois, vous pouvez participer à des compétitions spéciales. Dans la plupart des tournois, la participation est gratuite. Votre tâche consiste à jouer, à gagner et à progresser dans le classement du tournoi. En fonction des résultats des jeux, des prix seront distribués. Il peut s'agir d'argent réel, d'argent fictif, de tours gratuits, de points de fidélité, etc."
+        "text": "Malina propose un bookmaker avec plus de 20 sports en plus des jeux de casino. Le football, le basket-ball, le tennis, le hockey sur glace, le football américain, le cricket et les sports électroniques font partie des sports disponibles pour les paris avant le match et en direct. L'interface utilisateur est simple et comprend des filtres par ligue, marché et calendrier. Les cotes en temps réel, les marchés dynamiques et les retraits anticipés sont disponibles pour les paris en direct. Les paris sans risque et les cotes augmentées sont des bonus courants dans les paris sportifs. Malina est un guichet unique pour les amateurs de casino et de sport grâce à son bookmaker."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Bonus et promotions": [
+    "Bonus et promotions du casino Malina": [
       {
         "type": "paragraph",
-        "text": "Tous les clients du casino Romibet peuvent choisir un bonus de bienvenue lors de leur inscription, puis participer à diverses promotions, recevoir des cadeaux et des récompenses généreuses."
-      },
-      {
-        "type": "paragraph",
-        "text": "Le programme de bonus Romibet est conçu pour satisfaire pleinement les nouveaux clients et fidéliser les joueurs réguliers."
+        "text": "Le casino Malina propose plusieurs promotions pour les paris sportifs et les jeux de casino. Des restrictions en matière de mise, de dépôt et de prix s'appliquent à chaque bonus. Les principales offres du site sont répertoriées ci-dessous."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus de bienvenue"
+        "text": "Bonus de bienvenue au casino"
       },
       {
         "type": "paragraph",
-        "text": "Tout d'abord, vous serez intéressé par les bonus de bienvenue. Comme le site propose des paris sportifs et des jeux de casino, les nouveaux clients peuvent choisir l'une des deux options de bonus de bienvenue."
-      },
-      {
-        "type": "paragraph",
-        "text": "Bonus casino. Les nouveaux joueurs peuvent obtenir un bonus de 350 % sur leurs 3 premiers dépôts. La récompense maximale est de 1 000 EUR, plus 300 tours gratuits. Un dépôt de 20 EUR est nécessaire pour l'activer."
-      },
-      {
-        "type": "paragraph",
-        "text": "Bonus sport. Pour le premier dépôt, vous pouvez obtenir un bonus de 100 % jusqu'à 100 EUR. Le dépôt minimum pour participer est également de 20 EUR."
-      },
-      {
-        "type": "paragraph",
-        "text": "Les nouveaux clients peuvent également choisir d'activer un code promotionnel et recevoir une récompense correspondante."
+        "text": "Les nouveaux joueurs bénéficient d'une offre de bienvenue exceptionnelle de 100 % jusqu'à 500 € sur leur premier dépôt, ainsi que 200 tours gratuits et 1 offre sur le jeu Crab. Vous devez déposer au moins 20 € pour profiter de cette offre. Vous devez miser 35 fois le montant du bonus et 40 fois le montant gagné grâce aux tours gratuits. Vous ne recevez pas tous les tours gratuits en une seule fois. Vous recevez plutôt 20 tours par jour pendant 10 jours consécutifs, à compter du jour où vous effectuez votre dépôt. Vous ne pouvez bénéficier de ce pack de bienvenue qu'une seule fois par compte, et vous devez le réclamer avant de pouvoir utiliser l'argent que vous avez investi pour faire des paris."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus de recharge"
+        "text": "Bonus de bienvenue en cryptomonnaie"
       },
       {
         "type": "paragraph",
-        "text": "Les joueurs de casino peuvent recevoir un bonus de recharge quotidien de 50 tours gratuits pour leur premier dépôt de la journée. Si vous jouez le week-end, le bonus de recharge pour un dépôt peut atteindre 700 EUR plus 50 tours gratuits."
-      },
-      {
-        "type": "paragraph",
-        "text": "Pour les amateurs de paris sportifs, un bonus de recharge de 50 % est disponible en semaine, avec une récompense maximale de 500 EUR."
+        "text": "Les joueurs qui souhaitent utiliser des cryptomonnaies peuvent bénéficier d'un bonus spécial de 200 % jusqu'à 3 000 USDT. Cette offre est réservée aux dépôts en cryptomonnaie et vise à offrir un solde de départ solide à tous ceux qui utilisent des monnaies numériques telles que Bitcoin, Tether ou Ethereum. Les conditions promotionnelles normales du casino s'appliquent aux conditions de mise précises, mais les joueurs doivent s'assurer que leur portefeuille cryptographique et la devise choisie sont pris en charge. Vous devez réclamer le bonus avant de pouvoir commencer à parier, et vous ne pouvez pas l'utiliser avec l'offre de bienvenue habituelle ou d'autres promotions."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus cashback"
+        "text": "Bonus de bienvenue pour les paris sportifs"
       },
       {
         "type": "paragraph",
-        "text": "Si vous préférez jouer aux machines à sous traditionnelles, aux jeux crash et aux jeux de table, vous pouvez recevoir un cashback hebdomadaire de 15 % jusqu'à 3 000 EUR. Plus le casino gagne grâce à vous pendant cette période, plus vous en récupérez."
-      },
-      {
-        "type": "paragraph",
-        "text": "Une autre option est le cashback pour les amateurs de casino en direct. Dans ce cas, le programme offre un cashback de 25 % jusqu'à 200 EUR chaque semaine."
-      },
-      {
-        "type": "paragraph",
-        "text": "Pour les amateurs de paris sportifs, un cashback hebdomadaire pouvant atteindre 10 % est disponible. Cela vous permet de récupérer jusqu'à 500 EUR à la fin de chaque semaine de jeu."
+        "text": "Les personnes qui souhaitent parier sur le sport peuvent obtenir un bonus de bienvenue de 100 % sur leur premier dépôt dans la section paris sportifs, jusqu'à 200 €. Pour être éligible, vous devez effectuer un investissement minimum de 20 €. Les joueurs doivent miser au moins une fois le montant de leur dépôt à une cote de 1,50 ou plus afin de pouvoir retirer le bonus ou les gains qui en découlent. Ils doivent également respecter une condition de mise de 5 fois le montant combiné du dépôt et du bonus, avec des limites de cotes. Le bonus est valable pendant 30 jours et, tant qu'il est actif, vous ne pouvez miser que 50 € à la fois. Seuls les nouveaux utilisateurs qui choisissent le bonus sportif lors de leur inscription peuvent bénéficier de cette offre."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Programme VIP"
+        "text": "Bonus de recharge hebdomadaire"
       },
       {
         "type": "paragraph",
-        "text": "Les clients actifs et réguliers du casino Romibet peuvent devenir membres du programme VIP. Pour cela, il vous suffit de jouer, d'effectuer des dépôts, de placer des paris et d'être actif. Il existe 5 niveaux VIP au total."
+        "text": "Les joueurs existants peuvent obtenir 50 tours gratuits et un bonus de recharge de 50 % jusqu'à 700 € tous les vendredis et dimanches. Pour les tours, un dépôt de 20 € est requis, tandis que le bonus complet peut nécessiter un dépôt de 50 €, selon la disponibilité régionale. Avant de pouvoir être retirés, les gains issus du bonus et des tours gratuits doivent être misés respectivement 35 fois et 40 fois. Les tours gratuits sont automatiquement ajoutés après le dépôt éligible et doivent être utilisés dans un certain délai. Les comptes peuvent bénéficier de cette offre une fois par semaine."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Cashback hebdomadaire"
       },
       {
         "type": "paragraph",
-        "text": "En fonction de votre progression, vous recevrez des cadeaux personnels, des limites et des cashbacks plus élevés, et vous pourrez bénéficier des services d'un gestionnaire VIP personnel."
+        "text": "Afin de réduire les pertes, Malina Casino offre régulièrement des cashbacks. Les joueurs du casino en direct bénéficient d'un cashback de 25 % jusqu'à 200 € sur leurs pertes nettes hebdomadaires. Le cashback est transféré immédiatement ou via le service d'assistance et doit être misé 1 fois avant de pouvoir être retiré. Les parieurs peuvent recevoir un cashback de 10 % jusqu'à 500 € sur leurs pertes sportives hebdomadaires, soumis à une condition de mise de 3 fois avant de pouvoir être retiré. Les bonus cashback sont appliqués tous les lundis et peuvent être réclamés une fois par semaine. Ces offres protègent et encouragent le jeu après une mauvaise passe."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Bonus mystère football"
+      },
+      {
+        "type": "paragraph",
+        "text": "Malina Casino offre des bonus surprise tout au long des saisons de football et lors d'événements importants. Du 16 juin au 16 juillet 2025, il y aura une offre par jour de 16h00 à 01h59 UTC. Les joueurs qui placent des paris éligibles pendant ces heures reçoivent une récompense aléatoire, telle que des tours gratuits, des dollars supplémentaires, un cashback ou d'autres avantages uniques. Les joueurs doivent vérifier fréquemment les nouvelles offres de bonus surprise. Le service client crédite automatiquement ou manuellement ces bonus après un dépôt ou un pari éligible."
       }
     ]
   },
@@ -354,68 +216,64 @@
     "Assistance": [
       {
         "type": "paragraph",
-        "text": "Il existe plusieurs canaux pour communiquer avec les représentants du support technique :"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "chat en ligne ;",
-          "e-mail ;",
-          "FAQ."
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Si vous n'avez pas trouvé de réponse à vos questions dans la section FAQ, utilisez le chat disponible 24h/24 ou décrivez votre problème en détail par e-mail."
+        "text": "Le service client peut vous aider. Le chat en direct et l'assistance par e-mail sont disponibles 24 heures sur 24, 7 jours sur 7. Le chat en direct vous permet d'obtenir des réponses immédiates, tandis que l'assistance par e-mail traite les problèmes moins urgents. Les membres VIP bénéficient d'un gestionnaire de compte personnel qui leur est exclusivement dédié. La section FAQ/Aide traite de sujets importants tels que les problèmes de compte, les opérations bancaires et les bonus."
       }
     ]
   },
   "faq": {
-    "FAQ": [
+    "FAQ CASINO": [
       {
         "type": "heading",
         "level": 3,
-        "text": "Quelle méthode d'inscription est utilisée sur Romibet ?"
+        "text": "L'inscription est-elle disponible pour les joueurs français ?"
       },
       {
         "type": "paragraph",
-        "text": "Il s'agit de la méthode standard avec inscription par e-mail et numéro de téléphone."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Puis-je placer des paris sportifs sur le site web Romibet ?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Oui. Le service propose une section de paris sportifs et des bonus correspondants."
+        "text": "Oui, les joueurs résidant en France peuvent s'inscrire et jouer sur Malina Casino, à condition que les jeux d'argent en ligne soient autorisés dans leur région."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Quel bonus de bienvenue puis-je obtenir ?"
+        "text": "Puis-je fixer des limites de dépôt sur mon compte ?"
       },
       {
         "type": "paragraph",
-        "text": "La plateforme propose un bonus de bienvenue pour le casino et les paris sportifs, ainsi qu'un code promotionnel pour les nouveaux clients."
+        "text": "Oui, Malina Casino permet aux joueurs de définir leurs propres restrictions en matière de dépôts, de pertes et de sessions directement dans les paramètres de jeu responsable."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Puis-je jouer en déplacement sur un appareil mobile ?"
+        "text": "Existe-t-il des bonus sans conditions de mise ?"
       },
       {
         "type": "paragraph",
-        "text": "Oui. Le site du casino est entièrement adapté aux systèmes d'exploitation mobiles."
+        "text": "Malina Casino propose parfois des promotions sans conditions de mise lors d'événements à durée limitée, mais la plupart des bonus sont soumis à des conditions de mise standard."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Le casino dispose-t-il d'une boutique VIP ?"
       },
       {
         "type": "paragraph",
-        "text": "<strong>Titre</strong> : Romibet Casino France Jeux – Slots, tables et croupiers en direct"
+        "text": "Oui, la boutique « Bonus Crab » vous permet d'échanger vos points de fidélité contre des bonus, des tours gratuits et d'autres avantages à mesure que vous progressez dans le programme VIP."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "L'assistance par chat en direct est-elle disponible dans toutes les langues prises en charge ?"
       },
       {
         "type": "paragraph",
-        "text": "<strong>Description</strong> : Découvrez toute la gamme de jeux Romibet Casino France, notamment les machines à sous populaires, la roulette, le blackjack et les tables avec croupiers en direct. Ces jeux offrent des graphismes immersifs, un gameplay fluide et un potentiel de gains importants pour les joueurs français."
+        "text": "Le chat en direct est principalement disponible en anglais, mais certains agents prennent en charge d'autres langues telles que l'allemand, le russe ou le polonais pendant les heures d'ouverture régionales."
+      },
+      {
+        "type": "paragraph",
+        "text": "Titre : Malina Casino France – Milliers de machines à sous et de jeux en direct"
+      },
+      {
+        "type": "paragraph",
+        "text": "Description : Malina Casino France propose une vaste collection de machines à sous, de jeux de table et de titres avec croupiers en direct provenant des meilleurs fournisseurs. Tentez votre chance dès aujourd'hui et profitez d'un jeu sécurisé avec des bonus exclusifs."
       }
     ]
   },
@@ -423,81 +281,31 @@
     "Technologies logicielles": [
       {
         "type": "paragraph",
-        "text": "Le casino collabore avec plus de 50 fournisseurs de logiciels de jeux. Sur le site, vous pouvez utiliser la fonction de recherche pratique par fournisseur. Parmi les développeurs les plus populaires, on trouve :"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "Spribe ;",
-          "Microgaming ;",
-          "BetSoft ;",
-          "Pragmatic Play ;",
-          "PlayNGo ;",
-          "Hacksaw ;",
-          "Playson ;",
-          "NetEnt ;",
-          "PlayTech, etc."
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Une telle gamme offre une excellente occasion de choisir des jeux en fonction de vos préférences personnelles."
+        "text": "Il n'est pas nécessaire de télécharger une application sur votre ordinateur ou votre téléphone pour jouer sur Malina Casino. HTML5 est utilisé par tout ce qui fonctionne dans votre navigateur. Le lobby et la plateforme de jeux sont alimentés par de grands noms de l'industrie, notamment NetEnt, Microgaming, Betsoft, Evolution Gaming, Pragmatic Play, Yggdrasil, Quickspin, iSoftBet, Amatic, Rival, et bien d'autres encore. Cela garantit des images de qualité, un gameplay fluide et une mise à jour régulière du contenu."
       }
     ],
     "Sécurité": [
       {
         "type": "paragraph",
-        "text": "Le casino utilise une approche globale pour assurer la protection et la sécurité de ses clients :"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "cryptage SSL de bout en bout ;",
-          "exigences KYC ;",
-          "protection contre le piratage et les cyberattaques ;",
-          "politique de confidentialité ;",
-          "fonctions d'auto-exclusion et d'auto-restriction."
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Cela garantit la sécurité et la protection des données personnelles."
+        "text": "La plateforme utilise un cryptage SSL/TLS puissant pour protéger les informations et les transactions des utilisateurs. Elle dispose d'une licence valide délivrée par Curaçao (via Stellar Ltd/Araxio Development N.V.), ce qui signifie qu'elle respecte les règles et est responsable de ses actes."
       }
     ],
     "Application": [
       {
         "type": "paragraph",
-        "text": "Actuellement, le casino et le bookmaker n'offrent pas la possibilité d'installer une application mobile. Mais cela ne peut pas être considéré comme un inconvénient majeur. Le site est entièrement développé au format HTML5. Par conséquent, pour jouer en déplacement, il suffit d'accéder à la version mobile du site via n'importe quel navigateur sur votre smartphone ou votre tablette."
+        "text": "Il n'existe aucune application fonctionnant sur mobile ou ordinateur. La version mobile, en revanche, est entièrement optimisée pour le web et fonctionne de la même manière sur iOS, Android, Windows Phone et Blackberry via Internet. Vous pouvez discuter en direct, jouer à des jeux, payer vos factures et gérer votre compte."
       }
     ],
     "Langues": [
       {
         "type": "paragraph",
-        "text": "Le casino et le bookmaker Romibet sont officiellement représentés en France et dans certains autres pays. Par conséquent, le menu du site dispose d'une fonction permettant de sélectionner la langue de l'interface :"
-      },
-      {
-        "type": "list",
-        "style": "unordered",
-        "items": [
-          "anglais ;",
-          "français ;",
-          "allemand ;",
-          "finnois ;",
-          "espagnol ;",
-          "italien, etc."
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Le changement de langue de l'interface modifie également le contenu de certaines pages."
+        "text": "Le site peut être consulté dans au moins sept langues : anglais, allemand, polonais, portugais, suédois, hongrois et russe. Selon l'emplacement ou la version, vous pouvez également obtenir l'italien, l'espagnol, le finnois et le grec."
       }
     ],
     "Devises": [
       {
         "type": "paragraph",
-        "text": "Les joueurs français sélectionnent la devise pour les dépôts et les retraits lors de leur inscription. Ils peuvent utiliser l'euro (EUR) et effectuer des transactions à l'aide de portefeuilles de cryptomonnaies. Il n'existe pas d'autres types de monnaies fiduciaires."
+        "text": "Les joueurs peuvent utiliser différentes devises pour effectuer leurs transactions, telles que l'euro, le dollar américain, la livre sterling, la couronne norvégienne, le zloty polonais, le franc suisse et le dollar australien. Les cryptomonnaies proposées comprennent le Bitcoin (BTC), l'Ethereum (ETH), le Tether (USDT) (ERC20/TRC20), le Litecoin (LTC), le Dogecoin (DOGE), le Cardano (ADA), le Ripple (XRP) et l'USD Coin (USDC)."
       }
     ]
   }

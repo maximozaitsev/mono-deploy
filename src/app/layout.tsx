@@ -3,12 +3,12 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "romibetonline.com";
+const url = "malinacasino-online.com";
 const ogTitle =
-  "Romibet Casino France – Jeux en ligne, meilleures offres et bonus 2025";
-const ogSiteName = "Romibet";
+  "Malina Casino France – Jeux, bonus, accès sécurisé et fonctionnalités";
+const ogSiteName = "Malina Casino";
 const metaDescription =
-  "Découvrez Romibet Casino France, où les joueurs profitent de centaines de jeux de casino, de croupiers en direct passionnants, de paiements rapides et de bonus généreux. Jouez en toute sécurité et en toute légalité en France grâce à des méthodes de paiement fiables et à un accès mobile.";
+  "Malina Casino France propose des machines à sous haut de gamme, des croupiers en direct et des paiements cryptés. Inscrivez-vous dès aujourd'hui pour profiter de bonus exclusifs et commencer à jouer en toute compatibilité mobile.";
 
 const locale = "fr-FR";
 const language = "French";

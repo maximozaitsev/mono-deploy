@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Germania One", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -23,8 +23,8 @@ $font-secondary: "Germania One", sans-serif;
 }
 
 @font-face {
-  font-family: "Germania One";
-  font-weight: 400;
+  font-family: "Open Sans";
+  font-weight: 800;
   font-style: normal;
-  src: url("./Heading/static/Germania One-400.woff2") format("woff2");
+  src: url("./Heading/static/Open Sans-800.woff2") format("woff2");
 }
