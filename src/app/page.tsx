@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import Header from "../components/header/Header";
 import WelcomeSection from "../components/welcome/WelcomeSection";
 import TopCasinosSection from "../components/top-casinos/TopCasinosSection";
