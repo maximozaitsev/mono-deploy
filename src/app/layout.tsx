@@ -3,12 +3,12 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "billionairespin-online.com";
-const ogTitle = "Billionaire Spin 2025: 6,000+ Pokies, Generous Bonuses & Promo Codes";
-const ogSiteName = "Billionairespin";
-const metaDescription = "Our brutally honest Billionaire Spin Casino review for Aussie players – learn about registration, bonuses, games, security, and everything you need to know before you play.";
+const url = "osh-casino.com";
+const ogTitle = "Osh Casino Review Canada – Bonuses, Games & Application Guide 2025";
+const ogSiteName = "OSH Casino";
+const metaDescription = "Discover in-depth Osh Casino insights for Canadian players: bonuses, games, secure payments, promo codes, apps, and why this review matters before you start to play.";
 
-const locale = "en-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
