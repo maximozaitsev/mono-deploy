@@ -3,15 +3,13 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "malinacasino-online.com";
-const ogTitle =
-  "Malina Casino France – Jeux, bonus, accès sécurisé et fonctionnalités";
-const ogSiteName = "Malina Casino";
-const metaDescription =
-  "Malina Casino France propose des machines à sous haut de gamme, des croupiers en direct et des paiements cryptés. Inscrivez-vous dès aujourd'hui pour profiter de bonus exclusifs et commencer à jouer en toute compatibilité mobile.";
+const url = "billionairespin-online.com";
+const ogTitle = "Billionaire Spin 2025: 6,000+ Pokies, Generous Bonuses & Promo Codes";
+const ogSiteName = "Billionairespin";
+const metaDescription = "Our brutally honest Billionaire Spin Casino review for Aussie players – learn about registration, bonuses, games, security, and everything you need to know before you play.";
 
-const locale = "fr-FR";
-const language = "French";
+const locale = "en-AU";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

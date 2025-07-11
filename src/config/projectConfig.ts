@@ -1,3 +1,3 @@
-export const PROJECT_NAME = "Malina Casino";
-export const PROJECT_GEO = "France";
-export const PROJECT_URL = "malinacasino-online.com";
+export const PROJECT_NAME = "Billionairespin";
+export const PROJECT_GEO = "Australia";
+export const PROJECT_URL = "billionairespin-online.com";

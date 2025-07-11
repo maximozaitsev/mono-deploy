@@ -1,311 +1,350 @@
 {
-  "title": "Malina Casino",
+  "title": "Billionaire Spin Casino Review",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "100 % jusqu'à 500",
-        "Bonus de 200 % jusqu'à 3 000 USDT",
-        "10% cashback"
+        "6,000+ pokies",
+        "275% welcome bonus",
+        "150 free spins"
       ]
     },
     {
       "type": "paragraph",
-      "text": "Le gouvernement d'Anjouan a accordé une licence à Malina Casino, une plateforme internationale de jeux d'argent. Depuis 2016, elle propose des machines à sous en ligne, des jeux de table, des salles avec croupiers en direct et des paris sportifs. Les cartes de crédit, les portefeuilles électroniques et les cryptomonnaies sont acceptés, et les paiements sont traités rapidement, tandis que les retraits prennent entre quelques heures et cinq jours ouvrables. Malina Casino dispose d'un programme VIP avec de nombreux niveaux de fidélité et un mécanisme d'échange de bonus. La version mobile est adaptée aux smartphones et aux tablettes, de sorte que tous les jeux et services fonctionnent parfaitement."
+      "text": "Online casinos come and go, but every so often a new name splashes enough colour across the industry to make seasoned punters sit up straight. BillionaireSpin is one such upstart. Running on a Costa Rica licence and boasting north of six-thousand titles, it aggressively courts Australian traffic with AUD deposits, crypto withdrawals and no-deposit promos delivered straight to your inbox. But is it worth staking your hard-earned dollars – or Satoshis – on a newcomer? Grab a coffee and settle in; this deep-dive Billionaire Spin review gives you the full picture, warts and all."
     }
   ],
   "about": {
-    "Processus d'inscription au Malina Casino": [
+    "Registration": [
       {
         "type": "paragraph",
-        "text": "Créer un compte sur Malina Casino est simple et rapide. Pour commencer à jouer et bénéficier des bonus offerts, il vous suffit de suivre quelques étapes simples."
-      },
-      {
-        "type": "paragraph",
-        "text": "Étapes d'inscription :"
+        "text": "Before you can spin, you need an account. The sign-up flow is streamlined and takes about three minutes if you have your details handy."
       },
       {
         "type": "list",
         "style": "ordered",
         "items": [
-          "Cliquez sur « S'inscrire » sur la page d'accueil",
-          "Sélectionnez un bonus de bienvenue ou passez cette étape",
-          "Entrez votre adresse e-mail et créez un mot de passe",
-          "Remplissez vos informations personnelles",
-          "Confirmez les conditions générales et validez",
-          "Vérifiez votre compte par e-mail ou SMS",
-          "Téléchargez les documents KYC si nécessaire",
-          "Effectuez votre premier dépôt"
+          "<strong>Open the registration form.</strong> Hit “Sign Up” in the top-right corner of any page.",
+          "<strong>Enter basics.</strong> Supply an email address you actually read and pick a sturdy password.",
+          "<strong>Drop your promo code.</strong> If you already have a Billionaire Spin promo code, paste it here; otherwise you can leave the box blank and still claim it after verifying.",
+          "<strong>Personal info.</strong> Fill in full legal name, date of birth and mobile number.",
+          "<strong>Address details.</strong> Pop in your street address exactly as it appears on a utility bill – this prevents headaches when verification time rolls around.",
+          "<strong>Agree & submit.</strong> Tick that you’re 18+ and accept the T&Cs, then click “Create Account.” An activation link lands in your inbox almost instantly."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "After clicking that link, you’re good to explore in demo mode, but real-money action demands Know Your Customer paperwork: a driver’s licence or passport, plus a recent utility bill. Uploading these files right away saves drama at withdrawal time, and many Aussie players report approvals in under twelve hours when they front-load the docs."
+      }
+    ],
+    "Login": [
+      {
+        "type": "paragraph",
+        "text": "Logging back in at Billionaire Spin Casino is predictably painless yet offers a few security flourishes:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "<strong>Email & password.</strong> Standard credentials unlock the lobby on desktop, tablet or mobile.",
+          "<strong>Two-factor authentication.</strong> Flip the switch in your profile to force a six-digit Google Authenticator code at every sign-in.",
+          "<strong>Password reset.</strong> One click sends a reset link to your inbox; the new password must be 12+ characters with a symbol and a number."
         ]
       }
     ],
-    "À propos de la connexion à Malina Casino": [
+    "Deposit Methods": [
       {
         "type": "paragraph",
-        "text": "Les utilisateurs commencent leur expérience sur Malina Casino en cliquant sur le gros bouton « Connexion » sur le site ou sur l'application mobile. Pour accéder à leur compte, ils doivent d'abord saisir leur adresse e-mail et leur mot de passe. L'option « Mot de passe oublié ? » vous permet de modifier votre mot de passe. Malina Casino utilise le cryptage SSL pour garantir la sécurité et la légalité du site. Il peut également demander aux utilisateurs de procéder à des vérifications d'identité supplémentaires lorsqu'ils se connectent afin de garantir la sécurité du site."
+        "text": "Funding your account sets the tone for everything that follows, so the casino keeps the cashier bilingual: plastic for the traditionalists, crypto for the tech-savvy, e-wallets for everyone in between."
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "<strong>Visa & Mastercard.</strong> Instant AUD loads, no processing fees, but your bank may tag a 2–3 % international fee.",
+          "<strong>Neosurf/CashtoCode.</strong> Also instant, and perfect if you want to separate casino spend from your primary bank statements.",
+          "<strong>Cryptocurrency.</strong> Bitcoin, Ethereum, Litecoin, USDT and fifteen alt-coins confirm in a single block; the casino absorbs inbound network fees."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Between plastic, digital wallets and blockchain rails, most players find something painless. Crypto fans enjoy the best combo of speed and anonymity, while casual punters can still slap a debit card down and be spinning in minutes."
       }
     ],
-    "Méthodes de dépôt": [
+    "Withdrawal Methods": [
       {
         "type": "paragraph",
-        "text": "Malina Casino accepte de nombreux moyens de paiement. Les cartes Visa, Mastercard, les virements bancaires, Paysafecard et Neosurf sont acceptés. Les options de paiement en ligne comprennent MiFinity, Jeton et Rapid Transfer. Les dépôts peuvent être effectués en Bitcoin, Tether (USDT – TRC20 et ERC20), Ethereum, Litecoin, Bitcoin Cash, Dogecoin, USD Coin, Cardano, Ripple et autres. Le dépôt minimum est de 10 €, et les montants maximums varient selon la méthode, de 2 000 € à 5 000 €."
-      }
-    ],
-    "Méthodes de retrait": [
+        "text": "Cashing out is where many offshore casinos stumble. Billionaire Spin mostly gets it right, provided you respect the rules."
+      },
       {
         "type": "paragraph",
-        "text": "Les retraits peuvent être effectués par Visa, MasterCard, virement bancaire et bons prépayés. Le casino traite les retraits quasi instantanés depuis MiFinity, Jeton, Rapid Transfer et toutes les cryptomonnaies acceptées (par exemple, Bitcoin, USDT, Ethereum, Litecoin, Dogecoin, USD Coin, Cardano, Ripple, etc.). Les limites minimales et maximales de retrait sont de 10 € à 2 000 € (cartes) ou 5 000 € (portefeuilles électroniques, cryptomonnaies), les joueurs VIP bénéficiant d'un plafond mensuel de 20 000 €. Les retraits en cryptomonnaies sont rapides, tandis que les retraits par carte et par virement bancaire prennent 1 à 5 jours."
+        "text": "<strong>Your Paths to Payout</strong>"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "<strong>Crypto wallets.</strong> Fastest lane – under 24 h once KYC is green, minimum €50, no internal fees.",
+          "<strong>Bank wire.</strong> Safety net for big wins, but the slowest (3–7 business days) and priciest – your bank decides the fee."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Crypto wallets are clear winners for Aussies. All methods share an AU$15,000 monthly ceiling unless you’re VIP Silver or higher, so progressive-jackpot hunters may find the drip-feed painful."
       }
     ]
   },
   "advantages": {
-    "Avantages de Malina Casino": [
+    "Billionaire Spin Casino Advantages": [
       {
         "type": "paragraph",
-        "text": "Malina Casino est un site formidable pour jouer, car il propose de nombreux jeux et des promotions à des prix incroyables. Mais les joueurs doivent savoir que certains aspects peuvent poser problème."
+        "text": "Every casino parades a list of selling points, yet not all of them hold water under scrutiny. Before bulleting the perks, let’s set the scene: Billionaire Spin is engineered to woo bonus hunters and crypto fiends while delivering a “one-wallet” experience across casino, live tables and sportsbook. With that context in mind, here’s where the complete Billionaire Spin Casino review of the benefits."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Avantages"
+        "text": "Advantages"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Grande variété de jeux",
-          "Section paris sportifs",
-          "Paiements en cryptomonnaies et en monnaie fiduciaire",
-          "Programme de fidélité et tournois",
-          "Assistance par chat en direct 24h/24 et 7j/7"
+          "Huge gaming library with more than 6,000 titles.",
+          "Various banking options.",
+          "Available withdrawals via crypto wallets.",
+          "Generous welcome offer of AU$4,000 plus 150 spins.",
+          "Adaptive website design for easy mobile access.",
+          "24/7 customer support."
         ]
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Inconvénients"
+        "text": "Disadvantages"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Limites de retrait faibles",
-          "Pas d'assistance par téléphone",
-          "Filtres de jeux limités"
+          "Lack of a native mobile application.",
+          "Billionaire Spin no deposit bonus offers are unavailable."
         ]
       }
     ]
   },
   "games-to-play": {
-    "Jeux disponibles sur Malina Casino": [
+    "Games Available to Play at Billionaire Spin Casino": [
       {
         "type": "paragraph",
-        "text": "Malina Casino dispose d'un espace de jeu immense et immersif avec une large gamme de jeux de casino et une section séparée pour les paris sportifs. Le site mise sur la variété et la profondeur, les joueurs peuvent donc parier sur tout, des machines à sous traditionnelles aux sports en direct."
+        "text": "Billionaire Spin’s lobby is nothing short of a theme park, and like any park it helps to know the best rides. Below you’ll find each major attraction broken into bite-sized zones."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Machines à sous et jackpots"
+        "text": "Pokies (Online Slots)"
       },
       {
         "type": "paragraph",
-        "text": "Malina Casino propose plus de 9 000 machines à sous pour tous les joueurs. Le portefeuille comprend des machines à sous classiques à trois rouleaux et des machines à fruits, ainsi que des machines à sous contemporaines avec des rouleaux en cascade, des gains groupés et des Megaways. De nombreux jeux proposent des tours bonus, des wilds expansifs, des multiplicateurs et des tours gratuits. Les jeux populaires de Pragmatic Play, NetEnt, Microgaming, Quickspin et Yggdrasil sont disponibles, et de nouveaux titres sont ajoutés en permanence. Les machines à sous à jackpot disposent d'une zone distincte avec des jackpots fixes et progressifs pouvant atteindre des millions."
+        "text": "Pokies are the beating heart of Australian gambling culture, and Billionaire Spin feeds the appetite with roughly 6,000 titles. Veteran spinners will recognise heavy hitters like Bonanza, Big Bass Bonanza, Sweet Bonanza (yes, Pragmatic really loves bonanzas) and Zeus of Olympus. Newer releases drop weekly – look for fresh Megaways grids, cluster-pay grids and feature buys that let you leapfrog straight to the bonus round for a fee."
+      },
+      {
+        "type": "paragraph",
+        "text": "Most slots start at five cents a spin, handy for bonus wagering or casual play, yet progressive jackpots such as Pirate Jackpots ask for a slightly higher stake. The casino groups slots into multiple categories, like “Books”, “Bonus Buy”, “Original Games” and “Jackpots”, so the fire-hose of choice never becomes overwhelming."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Jeux de table"
+        "text": "Live Casino"
       },
       {
         "type": "paragraph",
-        "text": "Malina Casino propose tous les jeux de table virtuels populaires pour les joueurs stratégiques. Le blackjack, la roulette, le baccarat et le poker sont disponibles selon les règles européennes et américaines. La collection comprend également le Sic Bo, le Craps et le Dragon Tiger. Ces jeux ressemblent à s'y méprendre à de véritables tables de casino, avec d'excellents graphismes et effets sonores. Les joueurs à petites et grosses mises peuvent profiter du jeu grâce à différentes restrictions de mise."
+        "text": "Nothing beats the pulse of a real dealer calling cards or spinning a wheel, and Evolution runs the bulk of Billionaire Spin’s live arena. Standard tables – blackjack, roulette, baccarat – sit alongside headline game shows like Wheel of Fortune and the new fan favourite War of Bets. Betting limits scale from A$0.50 right up to five-figure stakes on VIP blackjack, catering to every wallet size."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Casino avec croupiers en direct"
+        "text": "Crash & Instant-Win Games"
       },
       {
         "type": "paragraph",
-        "text": "Malina Casino dispose de plus de 400 tables avec des croupiers en direct expérimentés. Ces jeux en HD, développés par des développeurs internationaux, offrent une action en temps réel et une grande interactivité. Vous pouvez modifier les limites de mise pour chaque type de blackjack, roulette, baccarat et poker de casino. Crazy Time, Mega Wheel, Funky Time et Deal or No Deal font partie des programmes de jeux en direct les plus populaires. Ces présentations mélangent jeux de casino et divertissement, en ajoutant des multiplicateurs et des tours bonus passionnants."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Vidéo poker et jeux virtuels"
+        "text": "Crypto-style “bust” titles are the new frontier, and Billionaire Spin offers a decent spread: Aero, Turbo Plinko, and a house-branded Diver that lets punters bail out before a scuba gauge hits empty. Instant-win scratchies, keno, Plinko and roving mini-games pad out the casual corridor for when you fancy low-intensity action between bigger spins."
       },
       {
         "type": "paragraph",
-        "text": "Malina Casino propose du vidéo poker et des jeux virtuels pour jouer rapidement. Des jeux de vidéo poker tels que Jacks or Better, Deuces Wild et Joker Poker sont disponibles en mode solo ou multi-mains. Des paris sportifs virtuels, des cartes à gratter, des jeux de type crash et d'autres possibilités de gains instantanés sont également disponibles. Ces jeux basés sur un générateur de nombres aléatoires (RNG) offrent un répit rapide après de longues sessions de casino, avec des résultats rapides et des règles simples."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Paris sportifs"
-      },
-      {
-        "type": "paragraph",
-        "text": "Malina propose un bookmaker avec plus de 20 sports en plus des jeux de casino. Le football, le basket-ball, le tennis, le hockey sur glace, le football américain, le cricket et les sports électroniques font partie des sports disponibles pour les paris avant le match et en direct. L'interface utilisateur est simple et comprend des filtres par ligue, marché et calendrier. Les cotes en temps réel, les marchés dynamiques et les retraits anticipés sont disponibles pour les paris en direct. Les paris sans risque et les cotes augmentées sont des bonus courants dans les paris sportifs. Malina est un guichet unique pour les amateurs de casino et de sport grâce à son bookmaker."
+        "text": "By slicing the lobby into clearly labelled zones and adding search filters by provider, theme and volatility, Billionaire Spin keeps the smorgasbord manageable. Whether you’re chasing a 10,000x Megaways smash or a 99 % RTP video-poker grind, you’ll find something that fits – just budget wisely, because choice overload is a real thing here."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Bonus et promotions du casino Malina": [
+    "Bonuses and Promotions": [
       {
         "type": "paragraph",
-        "text": "Le casino Malina propose plusieurs promotions pour les paris sportifs et les jeux de casino. Des restrictions en matière de mise, de dépôt et de prix s'appliquent à chaque bonus. Les principales offres du site sont répertoriées ci-dessous."
+        "text": "The bonus desk at Billionaire Spin never sleeps, and new players are greeted with freebies the moment they verify. Before we bullet the headline deals, remember that every offer carries fine print: minimum deposits, max bets, restricted games and wagering multipliers. Read them – or be prepared to watch hard-earned winnings evaporate on a technicality."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus de bienvenue au casino"
+        "text": "Four-tier welcome bundle"
       },
       {
         "type": "paragraph",
-        "text": "Les nouveaux joueurs bénéficient d'une offre de bienvenue exceptionnelle de 100 % jusqu'à 500 € sur leur premier dépôt, ainsi que 200 tours gratuits et 1 offre sur le jeu Crab. Vous devez déposer au moins 20 € pour profiter de cette offre. Vous devez miser 35 fois le montant du bonus et 40 fois le montant gagné grâce aux tours gratuits. Vous ne recevez pas tous les tours gratuits en une seule fois. Vous recevez plutôt 20 tours par jour pendant 10 jours consécutifs, à compter du jour où vous effectuez votre dépôt. Vous ne pouvez bénéficier de ce pack de bienvenue qu'une seule fois par compte, et vous devez le réclamer avant de pouvoir utiliser l'argent que vous avez investi pour faire des paris."
+        "text": "First deposit offers a 100% of your cash up to AU$500 and slaps on 100 spins; second deposit adds 50% up to AU$1,000; third deposit offers 75% up to AU$1,000 and extra 50 FS; finally, the fourth one offers 50% match up to AU$1,500. Each tier needs a minimum load and expires seven days after activation."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus de bienvenue en cryptomonnaie"
+        "text": "Weekly reload"
       },
       {
         "type": "paragraph",
-        "text": "Les joueurs qui souhaitent utiliser des cryptomonnaies peuvent bénéficier d'un bonus spécial de 200 % jusqu'à 3 000 USDT. Cette offre est réservée aux dépôts en cryptomonnaie et vise à offrir un solde de départ solide à tous ceux qui utilisent des monnaies numériques telles que Bitcoin, Tether ou Ethereum. Les conditions promotionnelles normales du casino s'appliquent aux conditions de mise précises, mais les joueurs doivent s'assurer que leur portefeuille cryptographique et la devise choisie sont pris en charge. Vous devez réclamer le bonus avant de pouvoir commencer à parier, et vous ne pouvez pas l'utiliser avec l'offre de bienvenue habituelle ou d'autres promotions."
+        "text": "Every week, from Monday to Thursday, you can count on a generous 50 free spins offer. To claim the reward, simply make a minimum deposit of AU$30, and enjoy the game!"
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus de bienvenue pour les paris sportifs"
+        "text": "High-roller bonus"
       },
       {
         "type": "paragraph",
-        "text": "Les personnes qui souhaitent parier sur le sport peuvent obtenir un bonus de bienvenue de 100 % sur leur premier dépôt dans la section paris sportifs, jusqu'à 200 €. Pour être éligible, vous devez effectuer un investissement minimum de 20 €. Les joueurs doivent miser au moins une fois le montant de leur dépôt à une cote de 1,50 ou plus afin de pouvoir retirer le bonus ou les gains qui en découlent. Ils doivent également respecter une condition de mise de 5 fois le montant combiné du dépôt et du bonus, avec des limites de cotes. Le bonus est valable pendant 30 jours et, tant qu'il est actif, vous ne pouvez miser que 50 € à la fois. Seuls les nouveaux utilisateurs qui choisissent le bonus sportif lors de leur inscription peuvent bénéficier de cette offre."
+        "text": "Drop AU$500+ in a single hit and snag a 50 % top-up to AU$1,500. Simply enter the code HIGHT, and the bonus will be credited to your account."
+      },
+      {
+        "type": "paragraph",
+        "text": "Unfortunately, there aren’t any Billionaire Spin Casino no deposit bonus offers available right now. But no worries! You can still benefit from other rewards. Also, make sure to check the promotions page regularly – the casino updates it quite often, so maybe you’ll find a unique no-deposit offer in the near future."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus de recharge hebdomadaire"
+        "text": "Tournaments"
       },
       {
         "type": "paragraph",
-        "text": "Les joueurs existants peuvent obtenir 50 tours gratuits et un bonus de recharge de 50 % jusqu'à 700 € tous les vendredis et dimanches. Pour les tours, un dépôt de 20 € est requis, tandis que le bonus complet peut nécessiter un dépôt de 50 €, selon la disponibilité régionale. Avant de pouvoir être retirés, les gains issus du bonus et des tours gratuits doivent être misés respectivement 35 fois et 40 fois. Les tours gratuits sont automatiquement ajoutés après le dépôt éligible et doivent être utilisés dans un certain délai. Les comptes peuvent bénéficier de cette offre une fois par semaine."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Cashback hebdomadaire"
-      },
-      {
-        "type": "paragraph",
-        "text": "Afin de réduire les pertes, Malina Casino offre régulièrement des cashbacks. Les joueurs du casino en direct bénéficient d'un cashback de 25 % jusqu'à 200 € sur leurs pertes nettes hebdomadaires. Le cashback est transféré immédiatement ou via le service d'assistance et doit être misé 1 fois avant de pouvoir être retiré. Les parieurs peuvent recevoir un cashback de 10 % jusqu'à 500 € sur leurs pertes sportives hebdomadaires, soumis à une condition de mise de 3 fois avant de pouvoir être retiré. Les bonus cashback sont appliqués tous les lundis et peuvent être réclamés une fois par semaine. Ces offres protègent et encouragent le jeu après une mauvaise passe."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Bonus mystère football"
-      },
-      {
-        "type": "paragraph",
-        "text": "Malina Casino offre des bonus surprise tout au long des saisons de football et lors d'événements importants. Du 16 juin au 16 juillet 2025, il y aura une offre par jour de 16h00 à 01h59 UTC. Les joueurs qui placent des paris éligibles pendant ces heures reçoivent une récompense aléatoire, telle que des tours gratuits, des dollars supplémentaires, un cashback ou d'autres avantages uniques. Les joueurs doivent vérifier fréquemment les nouvelles offres de bonus surprise. Le service client crédite automatiquement ou manuellement ces bonus après un dépôt ou un pari éligible."
+        "text": "Want to try your luck and win big? Enjoy weekly and monthly tournaments, play your favorite games, and compete for incredible prizes! You can win thousands of dollars on your account, hundreds of free spins, and much more. For example, the Tropic Treasures Tournament has a prize pool of over AU$100,000! New events appear almost every month, so make sure to check the tournaments page at Billionaire Spin casino to avoid missing such incredible opportunities."
       }
     ]
   },
   "support": {
-    "Assistance": [
+    "Support": [
       {
         "type": "paragraph",
-        "text": "Le service client peut vous aider. Le chat en direct et l'assistance par e-mail sont disponibles 24 heures sur 24, 7 jours sur 7. Le chat en direct vous permet d'obtenir des réponses immédiates, tandis que l'assistance par e-mail traite les problèmes moins urgents. Les membres VIP bénéficient d'un gestionnaire de compte personnel qui leur est exclusivement dédié. La section FAQ/Aide traite de sujets importants tels que les problèmes de compte, les opérations bancaires et les bonus."
+        "text": "Good help can salvage a bad day at the tables, and Billionaire Spin’s support stack is solid."
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "<strong>Live chat.</strong> Available 24/7; first reply averaged two minutes in testing.",
+          "<strong>Email.</strong> support_cr@billionairespin.com; replies inside six hours for standard queries.",
+          "<strong>Self-help.</strong> A minimal FAQ covers deposit limits, bonus basics, and account verification; anything deeper funnels back to chat."
+        ]
       }
     ]
   },
   "faq": {
-    "FAQ CASINO": [
+    "CASINO FAQ": [
       {
         "type": "heading",
         "level": 3,
-        "text": "L'inscription est-elle disponible pour les joueurs français ?"
+        "text": "What’s the minimum withdrawal?"
       },
       {
         "type": "paragraph",
-        "text": "Oui, les joueurs résidant en France peuvent s'inscrire et jouer sur Malina Casino, à condition que les jeux d'argent en ligne soient autorisés dans leur région."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Puis-je fixer des limites de dépôt sur mon compte ?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Oui, Malina Casino permet aux joueurs de définir leurs propres restrictions en matière de dépôts, de pertes et de sessions directement dans les paramètres de jeu responsable."
+        "text": "AU$150 for both for crypto payments and bank transfers."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Existe-t-il des bonus sans conditions de mise ?"
+        "text": "How fast are crypto pay-outs?"
       },
       {
         "type": "paragraph",
-        "text": "Malina Casino propose parfois des promotions sans conditions de mise lors d'événements à durée limitée, mais la plupart des bonus sont soumis à des conditions de mise standard."
+        "text": "Typically within twenty-four hours after KYC approval."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Le casino dispose-t-il d'une boutique VIP ?"
+        "text": "Is Billionaire Spin legal in Australia?"
       },
       {
         "type": "paragraph",
-        "text": "Oui, la boutique « Bonus Crab » vous permet d'échanger vos points de fidélité contre des bonus, des tours gratuits et d'autres avantages à mesure que vous progressez dans le programme VIP."
+        "text": "Yes, it’s legal for you to play, but keep in mind that the site is offshore-licensed, so Australian consumer law doesn’t apply."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "L'assistance par chat en direct est-elle disponible dans toutes les langues prises en charge ?"
+        "text": "Can I self-exclude?"
       },
       {
         "type": "paragraph",
-        "text": "Le chat en direct est principalement disponible en anglais, mais certains agents prennent en charge d'autres langues telles que l'allemand, le russe ou le polonais pendant les heures d'ouverture régionales."
+        "text": "Absolutely. Head to “Responsible Gaming” in your profile to set limits or nuke access entirely."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Why was my jackpot split into chunks?"
       },
       {
         "type": "paragraph",
-        "text": "Titre : Malina Casino France – Milliers de machines à sous et de jeux en direct"
+        "text": "Standard withdrawal ceilings top out at AU$15,000 per month unless you reach VIP Silver or higher."
       },
       {
         "type": "paragraph",
-        "text": "Description : Malina Casino France propose une vaste collection de machines à sous, de jeux de table et de titres avec croupiers en direct provenant des meilleurs fournisseurs. Tentez votre chance dès aujourd'hui et profitez d'un jeu sécurisé avec des bonus exclusifs."
+        "text": "<strong>![][image1]</strong>"
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>Title:</strong> Billionaire Spin Casino Games AU – Enjoy Over 6,000 Titles Now"
+      },
+      {
+        "type": "paragraph",
+        "text": "<strong>Description:</strong> Step into a massive digital playground at Billionaire Spin Casino, where Australian players can enjoy 6,000+ real-money pokies, live tables, and crash games built for thrill, choice, and pure spin satisfaction."
       }
     ]
   },
   "sections": {
-    "Technologies logicielles": [
+    "Software Technologies": [
       {
         "type": "paragraph",
-        "text": "Il n'est pas nécessaire de télécharger une application sur votre ordinateur ou votre téléphone pour jouer sur Malina Casino. HTML5 est utilisé par tout ce qui fonctionne dans votre navigateur. Le lobby et la plateforme de jeux sont alimentés par de grands noms de l'industrie, notamment NetEnt, Microgaming, Betsoft, Evolution Gaming, Pragmatic Play, Yggdrasil, Quickspin, iSoftBet, Amatic, Rival, et bien d'autres encore. Cela garantit des images de qualité, un gameplay fluide et une mise à jour régulière du contenu."
+        "text": "Under the hood, Billionaire Spin uses SoftGamings middleware to aggregate more than seventy provider APIs into a single wallet. The lobby and games are 100% HTML5, meaning no Flash dependencies and no desktop download clients. Cloudflare’s global CDN absorbs traffic spikes, reducing lag for Australians during European peak hours."
+      },
+      {
+        "type": "paragraph",
+        "text": "RNG fairness certificates come directly from each studio – Evolution, Pragmatic Play, etc. – though the casino itself hasn’t published an overarching audit. Loading tests on 4G averaged sub-four-second launch times for slots and six seconds for live streams."
       }
     ],
-    "Sécurité": [
+    "Security": [
       {
         "type": "paragraph",
-        "text": "La plateforme utilise un cryptage SSL/TLS puissant pour protéger les informations et les transactions des utilisateurs. Elle dispose d'une licence valide délivrée par Curaçao (via Stellar Ltd/Araxio Development N.V.), ce qui signifie qu'elle respecte les règles et est responsable de ses actes."
+        "text": "All traffic tunnels through 128-bit SSL, the same cipher level Australian banks wear. Optional two-factor authentication blocks account hijacks, while payment processing routes through Cyprus-based gateways to dodge stricter EU gambling firewalls."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Costa Rica licence provides a legal umbrella for international play but falls short of the dispute-resolution muscle held by MGA or UKGC watchdogs. So, make sure to treat the casino as entertainment, not an investment."
       }
     ],
-    "Application": [
+    "App": [
       {
         "type": "paragraph",
-        "text": "Il n'existe aucune application fonctionnant sur mobile ou ordinateur. La version mobile, en revanche, est entièrement optimisée pour le web et fonctionne de la même manière sur iOS, Android, Windows Phone et Blackberry via Internet. Vous pouvez discuter en direct, jouer à des jeux, payer vos factures et gérer votre compte."
+        "text": "There is no native iOS or Android app, and that turns out to be a blessing. You can easily access the casino from your phone or tablet, simply by visiting the official website using your favorite mobile browser. All the features remain the same, and the site’s interface easily adapts to the screen size, providing the best experience."
       }
     ],
-    "Langues": [
+    "Licences": [
       {
         "type": "paragraph",
-        "text": "Le site peut être consulté dans au moins sept langues : anglais, allemand, polonais, portugais, suédois, hongrois et russe. Selon l'emplacement ou la version, vous pouvez également obtenir l'italien, l'espagnol, le finnois et le grec."
+        "text": "Billionaire Spin is owned by ROSSOBASH S.R.L., and operates under a provisional Costa Rica licence. The licence is legal and traceable, so you can be sure about the trustworthiness of the platform."
       }
     ],
-    "Devises": [
+    "Languages": [
       {
         "type": "paragraph",
-        "text": "Les joueurs peuvent utiliser différentes devises pour effectuer leurs transactions, telles que l'euro, le dollar américain, la livre sterling, la couronne norvégienne, le zloty polonais, le franc suisse et le dollar australien. Les cryptomonnaies proposées comprennent le Bitcoin (BTC), l'Ethereum (ETH), le Tether (USDT) (ERC20/TRC20), le Litecoin (LTC), le Dogecoin (DOGE), le Cardano (ADA), le Ripple (XRP) et l'USD Coin (USDC)."
+        "text": "English leads the UI, but you can toggle French, German, Spanish, Portuguese, Italian and other languages. Live-chat agents answer in English by default, switching to basic machine-translated replies for other tongues."
+      }
+    ],
+    "Currencies": [
+      {
+        "type": "paragraph",
+        "text": "Behind the curtain, Billionaire Spin’s ledger is euro-denominated, but the cashier translates deposits and withdrawals into AUD, NZD, CAD, BRL, NOK, ZAR, CZK, plus crypto. Card processors may tack on that pesky 2–3 % foreign fee, so e-wallets or straight-up crypto remain the cheapest lanes for Aussies."
       }
     ]
   }

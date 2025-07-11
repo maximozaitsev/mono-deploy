@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://malinacasino-online.com/
-Sitemap: https://malinacasino-online.com/sitemap.xml
+Host: https://billionairespin-online.com/
+Sitemap: https://billionairespin-online.com/sitemap.xml
