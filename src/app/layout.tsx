@@ -3,12 +3,12 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "osh-casino.com";
-const ogTitle = "Osh Casino Review Canada – Bonuses, Games & Application Guide 2025";
-const ogSiteName = "OSH Casino";
-const metaDescription = "Discover in-depth Osh Casino insights for Canadian players: bonuses, games, secure payments, promo codes, apps, and why this review matters before you start to play.";
+const url = "lira-spin-online.com";
+const ogTitle = "LiraSpin Casino Australia – Play Pokies, Live Games and Sports";
+const ogSiteName = "Lira Spin";
+const metaDescription = "LiraSpin Casino Australia offers real-money pokies, live dealers, and sports betting on one secure platform. Sign up to explore top games and exclusive promotions.";
 
-const locale = "en-CA";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
