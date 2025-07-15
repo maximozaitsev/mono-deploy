@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://juegaen-linea.com/
-Sitemap: https://juegaen-linea.com/sitemap.xml
+Host: https://triunfobet-online.com/
+Sitemap: https://triunfobet-online.com/sitemap.xml

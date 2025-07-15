@@ -1,3 +1,3 @@
-export const PROJECT_NAME = "Juega en Linea";
+export const PROJECT_NAME = "Triunfobet";
 export const PROJECT_GEO = "Venezuela";
-export const PROJECT_URL = "juegaen-linea.com";
+export const PROJECT_URL = "triunfobet-online.com";

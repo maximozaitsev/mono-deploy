@@ -3,12 +3,11 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "juegaen-linea.com";
-const ogTitle =
-  "Juega en Línea Venezuela - Juega a Tragaperras, Casino y Apuesta en Vivo";
-const ogSiteName = "Juega en Linea";
+const url = "triunfobet-online.com";
+const ogTitle = "Reseña de Triunfobet 2025: bonos, aplicación, registro y más";
+const ogSiteName = "Triunfobet";
 const metaDescription =
-  "Juega en Línea Venezuela ofrece a los jugadores acceso a tragaperras online, mesas de casino en vivo y apuestas deportivas en tiempo real con pagos criptográficos seguros. Crea tu cuenta hoy y empieza a reclamar recompensas semanales exclusivas.";
+  "Descubre todo sobre Triunfobet, incluyendo cómo registrarte, descargar la aplicación, reclamar bonos y jugar a tus juegos favoritos. Lee nuestra reseña detallada.";
 
 const locale = "es-VE";
 const language = "Spanish";
