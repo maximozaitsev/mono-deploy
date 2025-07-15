@@ -22,8 +22,12 @@
       margin-top: 0px;
     }
 
-    @media (max-width: 768px) {
-      margin-top: 4px;
+    // @media (max-width: 768px) {
+    //   margin-top: 4px;
+    // }
+
+    @media (max-width: 420px) {
+      max-width: 150px;
     }
   }
 
