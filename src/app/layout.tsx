@@ -3,13 +3,15 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "lira-spin-online.com";
-const ogTitle = "LiraSpin Casino Australia – Play Pokies, Live Games and Sports";
-const ogSiteName = "Lira Spin";
-const metaDescription = "LiraSpin Casino Australia offers real-money pokies, live dealers, and sports betting on one secure platform. Sign up to explore top games and exclusive promotions.";
+const url = "juegaen-linea.com";
+const ogTitle =
+  "Juega en Línea Venezuela - Juega a Tragaperras, Casino y Apuesta en Vivo";
+const ogSiteName = "Juega en Linea";
+const metaDescription =
+  "Juega en Línea Venezuela ofrece a los jugadores acceso a tragaperras online, mesas de casino en vivo y apuestas deportivas en tiempo real con pagos criptográficos seguros. Crea tu cuenta hoy y empieza a reclamar recompensas semanales exclusivas.";
 
-const locale = "en-AU";
-const language = "English";
+const locale = "es-VE";
+const language = "Spanish";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
