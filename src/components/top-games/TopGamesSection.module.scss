@@ -76,6 +76,7 @@
     background: $color-background-third;
     opacity: 0;
     transition: opacity 0.5s ease;
+    padding: 10px;
 
     &.visible {
       opacity: 1;
@@ -98,7 +99,7 @@
     // background-clip: text;
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
-    font-size: 32px;
+    font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
