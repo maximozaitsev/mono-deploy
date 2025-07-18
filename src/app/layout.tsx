@@ -3,14 +3,13 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "triunfobet-online.com";
-const ogTitle = "Reseña de Triunfobet 2025: bonos, aplicación, registro y más";
-const ogSiteName = "Triunfobet";
-const metaDescription =
-  "Descubre todo sobre Triunfobet, incluyendo cómo registrarte, descargar la aplicación, reclamar bonos y jugar a tus juegos favoritos. Lee nuestra reseña detallada.";
+const url = "sevenplay-online.com";
+const ogTitle = "Seven Play Casino Review 2025 – A Comprehensive Guide for Australians";
+const ogSiteName = "SevenPlay";
+const metaDescription = "Discover everything Australian gamers need to know about Seven Play Casino online – from game variety and progressive jackpots to payment speed, mobile apps, and security.";
 
-const locale = "es-VE";
-const language = "Spanish";
+const locale = "es-AU";
+const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
