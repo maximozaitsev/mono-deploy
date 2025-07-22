@@ -21,17 +21,15 @@ const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
         setComputedFill(fill);
       }
     } else {
-      const cssFill = getComputedStyle(document.documentElement)
-        .getPropertyValue("--color-star-icon")
-        .trim();
-      setComputedFill(cssFill || "#F6C946");
+      setComputedFill("linear-gradient(180deg, #35D938 0%, #0B5811 100%)");
+      return;
     }
   }, [fill]);
 
   let gradientElement = null;
   let fillValue = computedFill;
 
-  if (computedFill.startsWith("linear-gradient")) {
+  if (computedFill.startsWith("linear-gradient") || computedFill === "") {
     const result = computeGradient(computedFill, gradientId);
     if (result) {
       fillValue = result.fill;

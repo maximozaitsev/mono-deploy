@@ -75,9 +75,9 @@
   color: $text-color-primary;
   background: none;
   border: none;
-  font-family: $font-secondary;
+  font-family: $font-tertiary;
   font-weight: $font-weight-black;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
   transition: color 0.3s ease;
   text-decoration: none;
@@ -107,9 +107,9 @@
 
   .headerButton {
     height: $header-button-height;
-    font-family: $font-secondary;
+    font-family: $font-tertiary;
     font-weight: $font-weight-black;
-    font-size: 18px;
+    font-size: 14px;
     padding: 12px 32px;
     border-radius: $header-button-border-radius;
     border: none;

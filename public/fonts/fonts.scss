@@ -30,9 +30,9 @@ $font-tertiary: "Cinzel", sans-serif;
   src: url("./Heading/static/Playfair-900.woff2") format("woff2");
 }
 
-// @font-face {
-//   font-family: "Cinzel";
-//   font-weight: 900;
-//   font-style: normal;
-//   src: url("./Cinzel/static/Cinzel-Black.ttf") format("ttf");
-// }
+@font-face {
+  font-family: "Cinzel";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Cinzel/static/Cinzel-Black.ttf") format("truetype");
+}
