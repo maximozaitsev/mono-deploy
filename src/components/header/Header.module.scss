@@ -83,12 +83,12 @@
   text-decoration: none;
 
   &:hover {
-    color: $color-button-large;
+    color: #fedb3b;
   }
 }
 
 .activeNavLink {
-  color: $color-button-large;
+  color: #fedb3b;
 }
 
 @media (max-width: 768px) {
