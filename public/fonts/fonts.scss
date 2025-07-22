@@ -1,5 +1,6 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Fira Sans Condensed", sans-serif;
+$font-secondary: "Playfair", sans-serif;
+$font-tertiary: "Cinzel", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -23,8 +24,15 @@ $font-secondary: "Fira Sans Condensed", sans-serif;
 }
 
 @font-face {
-  font-family: "Fira Sans Condensed";
+  font-family: "Playfair";
   font-weight: 900;
   font-style: normal;
-  src: url("./Heading/static/Fira Sans Condensed-900.woff2") format("woff2");
+  src: url("./Heading/static/Playfair-900.woff2") format("woff2");
 }
+
+// @font-face {
+//   font-family: "Cinzel";
+//   font-weight: 900;
+//   font-style: normal;
+//   src: url("./Cinzel/static/Cinzel-Black.ttf") format("ttf");
+// }

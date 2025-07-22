@@ -3,10 +3,10 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "dragonia-canada.com";
-const ogTitle = "Dragonia Casino Canada – Secure Gaming, Bonuses & Fast Payouts";
-const ogSiteName = "Dragonia";
-const metaDescription = "Dragonia Casino Canada offers licensed online gaming, top slots, and safe crypto payments. Join now to explore big bonuses, weekly cashback, and real dealer tables.";
+const url = "kyngs-casino-online.com";
+const ogTitle = "Kyngs Casino Canada Review 2025: Games, Bonuses, Payments & Security";
+const ogSiteName = "Kyngs Casino";
+const metaDescription = "An in‑depth review of Kyngs Casino in Canada: discover its game library, registration & login process, banking options, and promotions. Register and play with a welcome bonus.";
 
 const locale = "en-CA";
 const language = "English";
