@@ -1,69 +1,66 @@
 {
-  "title": "PowBet Canada",
+  "title": "Dragonia Casino",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "100% match bonus on first deposit",
+        "100% match bonus",
         "200 free spins",
-        "10% weekly cashback"
+        "25% of live game net losses up to C$200"
       ]
     },
     {
       "type": "paragraph",
-      "text": "PowBet Canada is an online casino and sportsbook that gives Canadian gamers a lot of different games to choose from. The site is licensed and controlled by international gaming authorities. It has thousands of casino games, such as slots, table games, and live dealer games. PowBet also has a large sports betting area that includes both important international and local events. The platform is made for Canadian customers who want to play casino games and bet on sports. It has a user-friendly layout, payment options that are exclusive to Canada, and support for CAD currency."
+      "text": "Dragonia Casino is a legal online casino that Canadians may play at. You can play a number of different games on it, such video slots, live dealer tables, and classic card games. You can play them on your computer or phone. The site is easy to navigate, has material that is relevant to Canadian users, and lets them pay in CAD. Players may check out current deals, collect welcome bonuses, and play games from well-known software companies. Dragonia Casino offers a full digital gambling experience with safe payment options and an emphasis on responsible gaming."
     }
   ],
   "about": {
-    "PowBet Registration Process": [
+    "Dragonia Casino Registration Process": [
       {
         "type": "paragraph",
-        "text": "It is easy to sign up with PowBet Canada. It simply takes a few minutes to sign up, and users may use CAD money and local payment methods to play casino games and bet on sports."
+        "text": "The signup procedure at Dragonia online Casino is quick and easy to utilize. After signing up, new players may easily set up an account and start looking at games, bonuses, and playing on their computer or phone."
       },
       {
         "type": "paragraph",
-        "text": "<strong>Registration Steps:</strong>"
+        "text": "Registration Steps:"
       },
       {
         "type": "list",
         "style": "ordered",
         "items": [
-          "Visit the PowBet Canada homepage",
-          "Click on the “Sign Up” or “Register” button",
-          "Enter personal info (email, password, birthdate, etc.).",
-          "Select CAD as your currency and confirm your country (Canada)",
-          "Agree to terms and confirm you’re of legal gambling age",
-          "Complete any required identity verification",
-          "Make your first deposit (optional during registration)",
-          "Start playing or placing bets"
+          "Click the Register button on the homepage",
+          "Complete the pop-up registration form",
+          "Provide personal information matching your official ID",
+          "Submit the form to create your account",
+          "Log in using your newly created credentials"
         ]
       }
     ],
-    "About PowBet Login": [
+    "About Dragonia Casino Login": [
       {
         "type": "paragraph",
-        "text": "To go to PowBet Casino, go to the Canada-specific PowBet site and click the big \"Login\" icon at the top of the screen. It's easy and safe. You will be asked to enter your registered email and password. You can do that with two-factor authentication for extra security. Enter your credentials and the system checks them and takes you to your dashboard. You can play casino games, bet, pay, and view specials from there. To reset your password, click \"Forgot Password\" and follow the email instructions. You can return immediately."
+        "text": "Dragonia Casino login is easy for everyone, whether they are on a computer or a phone. After creating and verifying an account, tap or click the site's huge Log in symbol to log in. Enter your email and password to access your dashboard. Since the site enables automated form filling and manual credential entry, users may sign in reliably across browsers and devices. Players who forget their password or get locked out can reset it via the \"Forgot Password?\" link or contact customer support."
       }
     ],
     "Deposit Methods": [
       {
         "type": "paragraph",
-        "text": "Canadian gamers may deposit using several choices at PowBet, with rapid processing and no fees. You can pay using Interac e-Transfer (C$10 to C$3,000), Visa/Mastercard (C$20 to C$4,000), Paysafecard (C$15+), ecoPayz, MuchBetter, Neosurf, JetonBank, MiFinity (C$20+), or cryptocurrencies like Bitcoin, Ethereum, Litecoin, and Ripple. Deposits in crypto and e-wallets may be as high as C$10,000, which draws in both casual and serious gamers."
+        "text": "Dragonia Casino offers several dependable funding alternatives for fiat and digital currency gamers. Visa and MasterCard are accepted for deposits. Traditional methods like bank transfers are also acceptable. Dragonia accepts MiFinity and Paysafecard e-wallets. Bitcoin, Ethereum, Litecoin, Bitcoin Cash, Ripple, Tether, USD Coin, Dogecoin, Cardano, and more top tokens are accessible. Most fiat deposits start at C$10, but crypto deposits may be greater depending on the currency."
       }
     ],
     "Withdrawal Methods": [
       {
         "type": "paragraph",
-        "text": "All PowBet withdrawals are free and diverse. Interac e-Transfer (C$10-C$3,000), ecoPayz, MiFinity, JetonBank (C$20+), and Bitcoin, Ethereum, Litecoin, and Ripple (C$20-C$10,000). E-wallets and crypto process fastest, whereas Interac takes 1–3 days. Bank transfers from C$80 to C$10,000 take 3–5 working days."
+        "text": "Dragonia accepts Visa and MasterCard withdrawals, bank transfers, MiFinity e-wallets, and a variety of cryptocurrencies. Withdrawals take up to three business days and have a C$10 minimum and daily maximum of C$500 to C$1,500 for elite VIPs. Monthly withdrawal limits increase similarly. All wagering criteria must be satisfied for free withdrawals; else, processing fees may apply."
       }
     ]
   },
   "advantages": {
-    "PowBet Advantages": [
+    "Dragonia Сasino Advantages": [
       {
         "type": "paragraph",
-        "text": "PowBet is a strong platform for both casino games and sports betting. It has a clean layout and features that are exclusive to Canadian gamers."
+        "text": "Dragonia Casino is a Canadian-focused online casino that puts the player first. It has a lot of different games and current features to make the experience more fun."
       },
       {
         "type": "heading",
@@ -74,13 +71,13 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "Wide selection of casino games and live dealers",
-          "Comprehensive sports betting options",
-          "Supports CAD currency and local payment methods",
-          "Fast, user-friendly registration and login",
-          "Secure platform with optional 2FA",
-          "Regular incentives, promotions, and VIP programs",
-          "24/7 customer support via chat and email"
+          "Licensed and regulated operation",
+          "Games optimized for both desktop and mobile",
+          "Supports Canadian dollars (CAD)",
+          "Wide selection of video slots and live dealer tables",
+          "Multiple secure payment methods",
+          "Dedicated customer support",
+          "Promotions and welcome bonuses"
         ]
       },
       {
@@ -92,136 +89,116 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "Restricted availability in certain Canadian provinces",
-          "Identity verification may take time",
-          "Bonus terms and wagering requirements can be complex",
-          "Responsible gambling features may be limited",
-          "Withdrawal processing times vary depending on method"
+          "Country restrictions may apply to some players",
+          "Wagering requirements on bonuses",
+          "Limited availability of certain niche games"
         ]
       }
     ]
   },
   "games-to-play": {
-    "PowBet Betting Options": [
+    "Games Available to Play at Dragonia Casino": [
       {
         "type": "paragraph",
-        "text": "PowBet offers a full betting experience, including standard sportsbook markets, live, virtual, and esports betting, and a full online casino with slots, table games, and live dealers."
+        "text": "Dragonia Casino has a large, diversified game library for players. Thousands of titles in slots, live casino, table games, crash games, jackpots, and sports betting provide Canadian players plenty of alternatives for casual and serious gaming."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Sportsbook"
+        "text": "Slots"
       },
       {
         "type": "paragraph",
-        "text": "PowBet offers Canadian gamers a well-developed sportsbook with over 35 sports to bet on in popular and specialty markets. Basketball, hockey, soccer, tennis, and baseball have several betting options. The portal offers worldwide gambling on rare events including Gaelic hurling and pesapallo. Pre-match bets include moneyline, point spread, over/under, futures, and props. Same-game parlays allow bettors combine event choices. The sportsbook interface is fast and presents odds well, with several layout choices for different bettors."
+        "text": "Dragonia Casino is one of Canada's largest slot collections with over 10,000 games. New releases and fan favorites including Gates of Olympus, Book of Dead, and Big Bass Bonanza are included. The slots range from fruit classics to fantasy, mythology, horror, and sponsored games. Some games include complex mechanisms like Megaways™, Bonus Buys, cascading reels, expanding wilds, and jackpot triggers. Low- and high-volatility machines, configurable paylines, and a large betting range for various budgets are available. From casual plays to high-stakes payouts, slots provide diversity and excitement."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Live (In-Play) Betting"
+        "text": "Live Casino"
       },
       {
         "type": "paragraph",
-        "text": "PowBet's live betting feature is a highlight, giving real-time gambling on football, basketball, tennis, cricket, and hockey. Players can make smart moves mid-match since the odds change constantly. Scoreboards, heat maps, and match statistics are integrated with the UI for educated betting. The cash-out tool, which lets participants settle their bets before a match, is a highlight. This technology helps secure early gains or reduce losses during fast-paced or uncertain situations. In-play betting works well on desktop and mobile devices during live sports."
+        "text": "Industry leaders Evolution, Pragmatic Play, Bombay Live, Ezugi, and Lucky Streak power Dragonia's live casino. This area has over 2,000 24/7 tables with actual dealers and HD feeds. Live games include blackjack, roulette, baccarat, poker, dice, Teen Patti, and Andar Bahar. Game programs include Crazy Time, Dream Catcher, Monopoly Live, and Mega Wheel. The live interface is basic, has many camera angles, and supports dealer-player chat. With varied betting limits across tables, the live portion suits VIPs and casual gamers."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Virtual Sports"
+        "text": "Table Games & Video Poker"
       },
       {
         "type": "paragraph",
-        "text": "For fast-paced, continuous betting, PowBet provides a comprehensive array of virtual sports. Virtual sports replicate football, horse and dog racing, basketball, and motorsports utilizing improved random number generation. These games' realistic commentary and high-quality visuals make betting engaging. Users who want immediate results without waiting for real-world schedules would love events, which are brief and available 24/7. The odds and betting options are familiar from traditional sports, making it easy for beginners and seasoned gamers."
+        "text": "Table games at Dragonia Casino feature several blackjack and roulette variations, baccarat, craps, and sic bo. The site offers keno, bingo, digital scratch cards, and video poker games including Jacks or Better, Deuces Wild, and All Aces. Several top companies make these games, providing high-quality graphics, fluid gameplay, and fair RNG. The user interface makes switching between classic and modern layouts straightforward, and most games provide versatile betting choices for beginners and pros. Players may enjoy familiar forms or specialized alternatives on the same platform with this variety."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Esports"
+        "text": "Crash Games & Instant Wins"
       },
       {
         "type": "paragraph",
-        "text": "Esports betting on League of Legends, Counter-Strike: Global Offensive, Dota 2, Valorant, Overwatch, Rainbow Six, and eSoccer is another great product on PowBet. The site offers pre-match and live betting for most of these games, frequently with live streaming in the interface. Games with complicated dynamics benefit from watching gameplay to grasp momentum and results. Players can gamble on match wins, map totals, handicaps, and special events in esports. PowBet keeps its esports section fresh for all bettors as digital competition grows."
+        "text": "Dragonia has several crash games and quick wins for fast-paced, adrenaline-pumping play. Aviator by Spribe, Mines, Hi-Lo, Dice, Goals, and Plinko are popular. Short rounds, few rules, and high-risk multipliers make these games excellent for thrill-seekers and rapid gaming sessions. Aviator, a crash game, lets players stake real money and pay out before the game \"crashes,\" combining skill and luck. Most of these games load quickly and have modest minimum bets, making them accessible to anyone. Mobile users and crypto gamblers utilize them because of their easy design and high profits."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Online Casino"
+        "text": "Jackpot Games"
       },
       {
         "type": "paragraph",
-        "text": "Top software firms provide over 2,000 slots at PowBet's casino. These include 3- and 5-reel slots and progressive jackpots with huge prize pools. New themes, features, and volatility levels are added occasionally. Blackjack, roulette, baccarat, and video poker are among 300 table games available in casinos. Each game works smoothly and has betting restrictions for beginners and pros. Live dealer games are hosted by experienced dealers on over 200 high-definition tables. Blackjack, baccarat, roulette, and game show-style forms create a casino feel on the screen."
+        "text": "Dragonia's jackpot category has slot-based games with progressive and fixed jackpots. These games let players pursue big jackpots with one spin, frequently through random or bonus round occurrences. Dragonia games provide worldwide progressive pools and tailored prizes for diverse winnings. Famous studios recognized for big-payout systems have made games in adventure, mythology, luxury, and fantasy genres. Life-changing winnings are available on slots with grand, major, and minor tiered jackpots. New content is added often to the well-organized area."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "PowBet Canada Bonuses and Promotions": [
+    "Dragonia Casino Bonuses and Promotions": [
       {
         "type": "paragraph",
-        "text": "PowBet Canada offers casino and sports betting bonuses and promotions. Each offer has explicit qualifications, wagering terms, and regional availability. PowBet rewards new and returning players with attractive welcome gifts, weekly reloads, cashback, and loyalty bonuses. This article details Canadian users' bonus options."
+        "text": "Dragonia Casino offers a big welcome package, frequent reloads, cashback incentives, and VIP privileges to improve the gaming experience with clear wagering restrictions."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Welcome Bonus (Sportsbook)"
+        "text": "Welcome Bonus"
       },
       {
         "type": "paragraph",
-        "text": "New Canadian sportsbook clients may receive a 100% match bonus on their first deposit up to C$150. Qualification requires a C$30 payment. Once awarded, the bonus and deposit must be risked six times on qualifying wagers with 1.50 odds per selection. This incentive is for pre-match or live sports bettors and lasts 30 days. It is a good starting offer for gamers wishing to boost their bankrolls while exploring the sportsbook."
+        "text": "Dragonia Casino starts new players off strong with a welcome bonus. Users earn a 100% match bonus up to C$500 after depositing C$20. In addition to the cash bonus, the package contains 200 free spins and one Bonus Crab round with prizes. Free spins are supplied in batches of 20 each day for 10 days on chosen slot games. Winnings from spins demand 40× wagering, while bonus money require 35× wagering before withdrawal. First-time depositors must manually activate this bonus before playing."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Welcome Bonus (Casino)"
+        "text": "Weekly Reload – Casino"
       },
       {
         "type": "paragraph",
-        "text": "Casino customers receive a special welcome bonus from PowBet. Users receive 200 free spins and a 100% deposit match up to C$750 on their initial deposit of C$30. Free spins are offered in groups of 20 every day for 10 days. The bonus money and free spin winnings must be wagered 40x. This casino welcome offer allows new customers a large quantity of bonus dollars and free spins to try out slots and games without risk."
+        "text": "Dragonia Casino offers a reload bonus Monday through Thursday to keep games interesting. Players that deposit C$20 or more receive 50 free spins on operator-selected slots. After the qualifying deposit, the spins are automatically credited. Spins must be spent within 7-10 days and any earnings are subject to a 40× wagering requirement. This midweek bonus encourages returning players to play new slots with affordable playtime terms."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "10% Cashback (Sportsbook)"
+        "text": "Weekend Reload – Casino"
       },
       {
         "type": "paragraph",
-        "text": "Active sportsbook users may receive 10% weekly cashback on net losses from PowBet. Cashback is limited to C$150. User net losses over the week determine this cashback, which must be requested manually through customer assistance. Cashback is credited to the player's account as actual money or bonus funds, depending on the circumstances, after approval. This offer is ideal for habitual bettors trying to recover from a bad week."
+        "text": "Special cashback and free spins bonuses are available on weekends. From Friday to Sunday, gamers who deposit C$20 or more receive 50% bonus cashback up to C$700. Players that deposit C$50 or more get 50 free spins. Wagering requirements for cashback bonuses are 35×, while free spins are 40×. This promotion rewards greater deposits and longer weekend gaming sessions with cashback and free spins."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Weekly Reload Bonus (Sportsbook)"
+        "text": "Live Casino Cashback"
       },
       {
         "type": "paragraph",
-        "text": "PowBet members may get a 50% reload bonus on their initial sportsbook deposit each week. The minimum deposit is C$30, and the bonus may exceed C$750. Depositors may need to contact live support to activate this incentive. Bets with minimum odds of 1.50 must be placed within 30 days to meet the 8x wagering requirement for bonus cash. Returning gamers who gambled all week should take advantage of this incentive."
+        "text": "Dragonia Casino offers weekly rewards to live casino players. This offer refunds 25% of live game net losses up to C$200. A key benefit of this deal is the minimal wagering requirement of only 1×, making it simple for players to get their cashback. Live blackjack, roulette, and baccarat players can use this bonus as a backup to balance their game. Weekly cashback can be used in live games."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Accumulator Boost"
+        "text": "VIP Weekly Cashback"
       },
       {
         "type": "paragraph",
-        "text": "Multi-leg bettors get an accumulator boost from PowBet. A bettor can receive a higher payment for a combination bet with three or more picks and minimum odds of 1.80. The site adds a percentage to profits based on accumulator picks. This bump can improve potential profit and reward those prepared to take on greater risk for larger payments."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Early Payout Feature"
-      },
-      {
-        "type": "paragraph",
-        "text": "PowBet pays players early when their team establishes a big lead in certain soccer matches. If you bet on a team that is up by two goals at any point in the game, you win, no matter what happens. This feature gives players a tactical advantage and cuts down on last-minute changes, making sure they win before the game is over."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Jackpot Bets"
-      },
-      {
-        "type": "paragraph",
-        "text": "PowBet occasionally offers sportsbook accumulator jackpot betting promos. These entail picking the right answers to pre-selected events. Depending on the stake, the bettor can win between C$15,000 and C$22,500 or more if all of their guesses are right. These jackpots excite seasoned gamblers who desire to take more risks for bigger rewards. The award is usually shared among winners who make the same predictions."
+        "text": "Dragonia Casino offers VIP cashback incentives that improve with tier level for committed players. Top VIPs get better percentages and cashback limitations. Advanced members can get 15% weekly cashback and C$3,000 payments. Only VIP players who play often and risk a lot can get this promotion. As with the ordinary cashback offer, the VIP version has a modest wagering requirement of 1×, making it an appealing loyalty incentive for long-term customers."
       }
     ]
   },
@@ -229,7 +206,7 @@
     "Support": [
       {
         "type": "paragraph",
-        "text": "Live chat and email assistance are accessible 24/7 at support@powbet.com. A comprehensive on-site FAQ and real-time multilingual operators answer typical questions. Live chat response times are short, whereas email questions are normally resolved within hours."
+        "text": "You may get help from Dragonia 24 hours a day, 7 days a week by live chat or email at support@dragonia.com. There is no phone support, but the multilingual staff answers questions rapidly in all languages."
       }
     ]
   },
@@ -238,55 +215,55 @@
       {
         "type": "heading",
         "level": 3,
-        "text": "Is PowBet available to players in all Canadian provinces?"
+        "text": "Is Dragonia Casino licensed and legal in Canada?"
       },
       {
         "type": "paragraph",
-        "text": "No, PowBet may restrict access in provinces with exclusive iGaming regulations, such as Ontario."
+        "text": "Yes, the Anjouan Gaming Commission gives Dragonia Casino a license, and Canadian players may play all of the games and take advantage of all of the promos."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "What is the minimum age to register at PowBet?"
+        "text": "What is the minimum deposit at Dragonia Casino?"
       },
       {
         "type": "paragraph",
-        "text": "You must be at least 18 years old to register and play at PowBet, in accordance with Canadian gambling laws."
+        "text": "The minimum deposit is C$10 or equivalent in supported fiat or cryptocurrencies, depending on the selected payment method."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Can I set deposit or loss limits on my PowBet account?"
+        "text": "Can I set deposit or loss limits at Dragonia Casino?"
       },
       {
         "type": "paragraph",
-        "text": "You may establish daily, weekly, or monthly restrictions in your profile's Responsible Gambling section."
+        "text": "Yes, tools for responsible gambling enable you establish restrictions on how much you may deposit, lose, and play each day, week, or month."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "How long does account verification take at PowBet?"
+        "text": "Are tournaments available at Dragonia Casino?"
       },
       {
         "type": "paragraph",
-        "text": "Submission of ID and proof of address normally results in 24–48-hour verification."
+        "text": "Yes, Dragonia has weekly tournaments and missions with prizes and leaderboard incentives for people that are active."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Does PowBet offer live streaming for sports events?"
+        "text": "Does Dragonia Casino offer cashback on losses?"
       },
       {
         "type": "paragraph",
-        "text": "Yes, PowBet streams certain sports and esports events live through the betting interface."
+        "text": "Yes, live casino and sports betting sections offer weekly cashback ranging from 10% to 25%, with low wagering requirements."
       },
       {
         "type": "paragraph",
-        "text": "Title: PowBet Canada – All Sports, Esports & Bonus Betting Options Explained"
+        "text": "<strong>Title:</strong> Dragonia Casino Canada – Top Online Slot Games & Live Dealer Tables"
       },
       {
         "type": "paragraph",
-        "text": "Description: PowBet Canada offers sports, esports, and virtual betting with local C$ bonuses. Explore markets, use reloads and cashback, and enjoy crypto-friendly payouts. Sign up now and start betting with weekly rewards."
+        "text": "<strong>Description:</strong> Dragonia Casino Canada offers thousands of real-money games, including video slots, jackpots, and live dealer experiences. Explore top providers and trending titles today for a flexible, secure, and immersive gaming experience across all devices."
       }
     ]
   },
@@ -294,31 +271,31 @@
     "Software Technologies": [
       {
         "type": "paragraph",
-        "text": "Over 50 of the best software providers, including as Evolution Gaming, NetEnt, Play'n GO, Pragmatic Play, Quickspin, Yggdrasil, Red Tiger, Microgaming, BGaming, BetGames.TV, and Ezugi, power PowBet's casino. In HD, you may play over 2,800 slots, 100 table games, and more than 100 live dealer tables."
+        "text": "Dragonia Casino works with over 100 game developers, including NetEnt, Microgaming, Play'n GO, Playtech, Evolution Gaming, Pragmatic Play, Yggdrasil, and Ezugi, as well as specialty operators Kiron and CandleBets. The casino employs HTML5 to provide seamless, responsive gameplay on all devices without downloads."
       }
     ],
     "Security": [
       {
         "type": "paragraph",
-        "text": "PowBet employs SSL encryption to keep players' personal and financial information safe. Antillephone N.V. issued the site a license (8048/JAZ2020-001) to operate in Curacao. To keep players safe, it contains limits on deposits, reminders for sessions, and the ability for participants to leave the game. It also checks its random number generators (RNGs) all the time to make sure they are fair."
+        "text": "The Anjouan Gaming Commission has given Dragonia a license, and it employs SSL encryption that is typical in the banking industry to protect data and transactions. Regular audits by outside parties make sure that everything is fair and open, and independent auditor-certified RNGs protect the integrity of the game."
       }
     ],
-    "App": [
+    "Casino App": [
       {
         "type": "paragraph",
-        "text": "PowBet uses a completely designed mobile website that mimics desktop capabilities instead of mobile applications. Its adaptable layout for iOS and Android browsers makes gaming, betting, account administration, and support easy from mobile devices."
+        "text": "No native app exists. Dragonia offers a responsive web platform. Mobile users may start games, manage accounts, and access promotions by visiting the casino's URL. For easy access, users can build a home screen shortcut."
       }
     ],
     "Languages": [
       {
         "type": "paragraph",
-        "text": "PowBet is available in English, French, Czech, Russian, German, Spanish, Portuguese, Polish, Finnish, Hungarian, Norwegian, Turkish, and Chinese, making it accessible worldwide."
+        "text": "The platform supports 15 languages: English, German, French, Finnish, Hungarian, Italian, Portuguese, Czech, Slovak, Slovenian, Greek, Polish, Norwegian, Spanish, and maybe others."
       }
     ],
     "Currencies": [
       {
         "type": "paragraph",
-        "text": "Canadian users can use CAD, although PowBet also accepts EUR, a number of other fiat currencies, Bitcoin, Ethereum, Litecoin, Ripple, and sometimes AstroPay and CashToCode."
+        "text": "Dragonia accepts several dollars and cryptocurrencies. AUD, CAD, CHF, CZK, EUR, HUF, NOK, NZD, PLN, USD are fiat currencies. Bitcoin, Ethereum, Litecoin, Bitcoin Cash, Ripple, Tether, USD Coin, Dogecoin, Cardano, Binance Coin, and Tron are accepted."
       }
     ]
   }

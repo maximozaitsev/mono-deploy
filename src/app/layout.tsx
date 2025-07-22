@@ -3,10 +3,10 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "powbet-casino.net";
-const ogTitle = "PowBet Canada – Online Casino & Sports Betting for Canadian Players";
-const ogSiteName = "PowBet";
-const metaDescription = "PowBet Canada offers a complete gaming experience with slots, live casino, and sports betting in CAD. Join now to claim bonuses and enjoy fast, secure play tailored for Canadians.";
+const url = "dragonia-canada.com";
+const ogTitle = "Dragonia Casino Canada – Secure Gaming, Bonuses & Fast Payouts";
+const ogSiteName = "Dragonia";
+const metaDescription = "Dragonia Casino Canada offers licensed online gaming, top slots, and safe crypto payments. Join now to explore big bonuses, weekly cashback, and real dealer tables.";
 
 const locale = "en-CA";
 const language = "English";

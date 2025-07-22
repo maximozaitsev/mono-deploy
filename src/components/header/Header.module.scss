@@ -52,7 +52,7 @@
   display: flex;
   gap: 24px;
   margin-left: auto;
-  margin-right: 32px;
+  margin-right: 84px;
   list-style: none;
   padding: 0;
 
@@ -77,18 +77,18 @@
   border: none;
   font-family: $font-secondary;
   font-weight: $font-weight-black;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   transition: color 0.3s ease;
   text-decoration: none;
 
   &:hover {
-    color: #fedb3b;
+    color: $color-button-large;
   }
 }
 
 .activeNavLink {
-  color: #fedb3b;
+  color: $color-button-large;
 }
 
 @media (max-width: 768px) {
@@ -115,10 +115,6 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-
-    outline: 3px solid;
-    outline-offset: -3px;
-    outline-color: #ffffff33;
 
     &.playNow {
       background: $color-button-large;

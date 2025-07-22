@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://powbet-casino.net/
-Sitemap: https://powbet-casino.net/sitemap.xml
+Host: https://dragonia-canada.com/
+Sitemap: https://dragonia-canada.com/sitemap.xml
