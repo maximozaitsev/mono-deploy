@@ -3,12 +3,12 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "sevenplay-online.com";
-const ogTitle = "Seven Play Casino Review 2025 – A Comprehensive Guide for Australians";
-const ogSiteName = "SevenPlay";
-const metaDescription = "Discover everything Australian gamers need to know about Seven Play Casino online – from game variety and progressive jackpots to payment speed, mobile apps, and security.";
+const url = "powbet-casino.net";
+const ogTitle = "PowBet Canada – Online Casino & Sports Betting for Canadian Players";
+const ogSiteName = "PowBet";
+const metaDescription = "PowBet Canada offers a complete gaming experience with slots, live casino, and sports betting in CAD. Join now to claim bonuses and enjoy fast, secure play tailored for Canadians.";
 
-const locale = "es-AU";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

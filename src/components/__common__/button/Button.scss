@@ -4,17 +4,17 @@
 
 .button {
   cursor: pointer;
-  font-family: $font-tertiary;
+  font-family: $font-secondary;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $font-weight-black;
   line-height: normal;
   text-transform: uppercase;
 
   &.primary {
-    // outline: 4px solid;
-    // outline-offset: -4px;
-    // outline-color: #f9f8f83b;
+    outline: 4px solid;
+    outline-offset: -4px;
+    outline-color: #f9f8f83b;
 
     border-radius: $button-large-border-radius;
     background: $color-button-large;
@@ -48,37 +48,17 @@
   }
 
   &.secondary {
-    outline: none;
-    /* outline: 3px solid;
+    outline: 3px solid;
     outline-offset: -3px;
-    outline-color: linear-gradient(180deg, #fae8d6 0%, #f3ba7b 100%); */
+    outline-color: #ffffff33;
 
     border-radius: $button-small-border-radius;
     padding: 0 32px;
     background: $color-button-small;
-    position: relative;
-    z-index: 1;
     color: $text-color-button-small;
     font-size: 20px;
+    border: none;
     height: 52px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      padding: 3px;
-      border-radius: inherit;
-      background: linear-gradient(180deg, #fae8d6 0%, #f3ba7b 100%);
-      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask: linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-      -webkit-mask: linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-      -webkit-mask-composite: destination-out;
-      mask-composite: exclude;
-      pointer-events: none;
-      z-index: -1;
-    }
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;

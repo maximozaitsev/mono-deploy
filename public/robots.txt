@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://sevenplay-online.com/
-Sitemap: https://sevenplay-online.com/sitemap.xml
+Host: https://powbet-casino.net/
+Sitemap: https://powbet-casino.net/sitemap.xml

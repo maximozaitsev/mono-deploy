@@ -34,12 +34,12 @@
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    // color: $color-button-large;
+    color: #fedb3b;
 
-    background: linear-gradient(180deg, #f9e5cf 0%, #f3bc7f 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: $color-button-large;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   p {
