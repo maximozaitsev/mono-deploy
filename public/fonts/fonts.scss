@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Jost", sans-serif;
+$font-secondary: "Inter", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -23,15 +23,15 @@ $font-secondary: "Jost", sans-serif;
 }
 
 @font-face {
-  font-family: "Jost";
+  font-family: "Inter";
   font-weight: 900;
   font-style: normal;
-  src: url("./Heading/static/Jost-900.woff2") format("woff2");
+  src: url("./Heading/static/Inter-900.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Jost";
+  font-family: "Inter";
   font-weight: 700;
   font-style: normal;
-  src: url("./Heading/static/Jost-Bold.ttf") format("truetype");
+  src: url("./Heading/static/Inter-Bold.woff") format("woff");
 }

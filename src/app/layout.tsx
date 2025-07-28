@@ -3,10 +3,10 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "cashedcasino-online.com";
-const ogTitle = "Cashed Casino Canada – Secure Gaming, Bonuses & Fast Payouts";
-const ogSiteName = "Cashed Casino";
-const metaDescription = "Cashed Casino Canada offers thousands of games, CAD-friendly payments, and top-tier bonuses. Sign up today to explore exclusive promotions and start playing instantly.";
+const url = "supabetonline.com";
+const ogTitle = "Supabet Casino and Bookmaker Canada: A Full Guide to Study and Play";
+const ogSiteName = "SupaBet";
+const metaDescription = "Supabet is an all-inclusive gambling hall for both casino and sports fans. Read this comprehensive review to learn more about its games, bonuses, and available currencies and payments to gamble safely in 2025\\.";
 
 const locale = "en-CA";
 const language = "English";
