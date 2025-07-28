@@ -3,10 +3,10 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "kyngs-casino-online.com";
-const ogTitle = "Kyngs Casino Canada Review 2025: Games, Bonuses, Payments & Security";
-const ogSiteName = "Kyngs Casino";
-const metaDescription = "An in‑depth review of Kyngs Casino in Canada: discover its game library, registration & login process, banking options, and promotions. Register and play with a welcome bonus.";
+const url = "cashedcasino-online.com";
+const ogTitle = "Cashed Casino Canada – Secure Gaming, Bonuses & Fast Payouts";
+const ogSiteName = "Cashed Casino";
+const metaDescription = "Cashed Casino Canada offers thousands of games, CAD-friendly payments, and top-tier bonuses. Sign up today to explore exclusive promotions and start playing instantly.";
 
 const locale = "en-CA";
 const language = "English";

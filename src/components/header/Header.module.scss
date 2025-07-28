@@ -52,7 +52,7 @@
   display: flex;
   gap: 24px;
   margin-left: auto;
-  margin-right: 32px;
+  margin-right: 48px;
   list-style: none;
   padding: 0;
 
@@ -75,7 +75,7 @@
   color: $text-color-primary;
   background: none;
   border: none;
-  font-family: $font-tertiary;
+  font-family: $font-secondary;
   font-weight: $font-weight-black;
   font-size: 16px;
   cursor: pointer;
@@ -83,12 +83,12 @@
   text-decoration: none;
 
   &:hover {
-    color: #c64420;
+    color: #cca465;
   }
 }
 
 .activeNavLink {
-  color: #c64420;
+  color: #cca465;
 }
 
 @media (max-width: 768px) {
@@ -107,7 +107,7 @@
 
   .headerButton {
     height: $header-button-height;
-    font-family: $font-tertiary;
+    font-family: $font-secondary;
     font-weight: $font-weight-black;
     font-size: 14px;
     padding: 12px 32px;
@@ -132,7 +132,7 @@
     .headerButton {
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
-      font-size: 14px;
+      font-size: 10px;
       padding: 8px 16px;
 
       &.playNow {
