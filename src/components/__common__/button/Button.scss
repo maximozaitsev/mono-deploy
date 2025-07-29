@@ -4,9 +4,9 @@
 
 .button {
   cursor: pointer;
-  font-family: $font-secondary;
+  font-family: $font-tertiary;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-style: normal;
+  font-style: italic;
   font-weight: $font-weight-black;
   line-height: normal;
   text-transform: uppercase;

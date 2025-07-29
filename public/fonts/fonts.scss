@@ -1,5 +1,6 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Inter", sans-serif;
+$font-secondary: "Barlow Condensed", sans-serif;
+$font-tertiary: "Roboto Condensed", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -23,15 +24,23 @@ $font-secondary: "Inter", sans-serif;
 }
 
 @font-face {
-  font-family: "Inter";
-  font-weight: 900;
+  font-family: "Barlow Condensed";
+  font-weight: 700;
   font-style: normal;
-  src: url("./Heading/static/Inter-900.woff2") format("woff2");
+  src: url("./Heading/static/Barlow Condensed-700.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Inter";
-  font-weight: 700;
+  font-family: "Barlow Condensed";
+  font-weight: 900;
   font-style: normal;
-  src: url("./Heading/static/Inter-Bold.woff") format("woff");
+  src: url("./Heading/static/Barlow Condensed-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Roboto_Condensed/static/RobotoCondensed-Black.ttf")
+    format("truetype");
 }

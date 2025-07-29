@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://supabetonline.com/
-Sitemap: https://supabetonline.com/sitemap.xml
+Host: https://vegasinoonline.com/
+Sitemap: https://vegasinoonline.com/sitemap.xml

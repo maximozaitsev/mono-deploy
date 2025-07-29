@@ -3,10 +3,10 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "supabetonline.com";
-const ogTitle = "Supabet Casino and Bookmaker Canada: A Full Guide to Study and Play";
-const ogSiteName = "SupaBet";
-const metaDescription = "Supabet is an all-inclusive gambling hall for both casino and sports fans. Read this comprehensive review to learn more about its games, bonuses, and available currencies and payments to gamble safely in 2025\\.";
+const url = "vegasinoonline.com";
+const ogTitle = "Vegasino Casino Canada – Bonuses, Games, Payments & Login Guide";
+const ogSiteName = "Vegasino";
+const metaDescription = "Vegasino Casino Canada offers 13,000+ games, crypto payments, and big welcome bonuses. Explore secure deposits, VIP rewards, and live casino action. Sign up now and start playing today.";
 
 const locale = "en-CA";
 const language = "English";
