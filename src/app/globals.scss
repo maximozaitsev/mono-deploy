@@ -78,7 +78,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 32px;
-    font-weight: $font-weight-black;
+    font-weight: $font-weight-bold;
   }
 
   @media (max-width: 570px) {
@@ -99,8 +99,8 @@ body {
   word-break: break-word;
 
   @media (max-width: 768px) {
-    font-size: 24px;
-    font-weight: $font-weight-black;
+    font-size: 35px;
+    font-weight: $font-weight-bold;
   }
 
   @media (max-width: 570px) {
@@ -125,7 +125,7 @@ body {
   }
 
   @media (max-width: 768px) {
-    font-weight: $font-weight-black;
+    font-weight: $font-weight-bold;
     font-size: 18px;
   }
 }
