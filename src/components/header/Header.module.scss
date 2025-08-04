@@ -52,7 +52,7 @@
   display: flex;
   gap: 24px;
   margin-left: auto;
-  margin-right: 48px;
+  margin-right: 64px;
   list-style: none;
   padding: 0;
 
@@ -72,24 +72,23 @@
 }
 
 .navLink {
-  color: #fff;
+  color: $text-color-primary;
   background: none;
   border: none;
-  font-family: $font-tertiary;
+  font-family: $font-primary;
   font-weight: $font-weight-black;
-  font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   transition: color 0.3s ease;
   text-decoration: none;
 
   &:hover {
-    color: #ff8400;
+    color: #7dc5f2;
   }
 }
 
 .activeNavLink {
-  color: #ff8400;
+  color: #7dc5f2;
 }
 
 @media (max-width: 768px) {
@@ -108,10 +107,9 @@
 
   .headerButton {
     height: $header-button-height;
-    font-family: $font-tertiary;
-    font-weight: $font-weight-black;
+    font-family: $font-primary;
+    font-weight: $font-weight-bold;
     font-size: 14px;
-    font-style: italic;
     padding: 12px 32px;
     border-radius: $header-button-border-radius;
     border: none;
@@ -181,7 +179,7 @@
 .burgerLine {
   width: 100%;
   height: 3px;
-  background-color: #fff;
+  background-color: $text-color-primary;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 

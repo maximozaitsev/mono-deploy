@@ -1,11 +1,17 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Barlow Condensed", sans-serif;
-$font-tertiary: "Roboto Condensed", sans-serif;
+$font-secondary: "Source Sans 3", sans-serif;
 
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -24,23 +30,8 @@ $font-tertiary: "Roboto Condensed", sans-serif;
 }
 
 @font-face {
-  font-family: "Barlow Condensed";
-  font-weight: 700;
-  font-style: normal;
-  src: url("./Heading/static/Barlow Condensed-700.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
+  font-family: "Source Sans 3";
   font-weight: 900;
   font-style: normal;
-  src: url("./Heading/static/Barlow Condensed-900.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Roboto Condensed";
-  font-weight: 900;
-  font-style: normal;
-  src: url("./Roboto_Condensed/static/RobotoCondensed-Black.ttf")
-    format("truetype");
+  src: url("./Heading/static/Source Sans 3-900.woff2") format("woff2");
 }

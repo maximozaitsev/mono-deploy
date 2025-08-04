@@ -1,106 +1,199 @@
 {
-  "title": "Vegasino",
+  "title": "666 Gambit Casino",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "C$150 on first deposit",
-        "100% match bonus up to C$750",
-        "50 free spins"
+        "<strong>live casino</strong>",
+        "<strong>300% welcome bonus</strong>",
+        "<strong>crypto-friendly</strong>"
       ]
     },
     {
       "type": "paragraph",
-      "text": "Vegasino offers real-money slots, table games, live dealer games, and more. Vegasino is licensed and regulated for safe play and has a contemporary UI, secure transactions, and popular software vendors. Promotions, loyalty awards, and rapid withdrawals boost desktop and mobile gaming."
+      "text": "666 Gambit Casino is a modern gambling platform with wide gaming opportunities and profitable bonus offers. On the official website, every British player can go through a simple and quick registration procedure and join other active users of this service."
+    },
+    {
+      "type": "paragraph",
+      "text": "The casino website is designed in a laconic style with a minimalist menu. On the main page, you can use convenient navigation and go to the sections you are interested in in one click. The platform offers a large selection of games, interesting bonuses and a VIP program."
+    },
+    {
+      "type": "paragraph",
+      "text": "For players from the UK, there is an opportunity to play in demo mode. To do this, you do not need to go through the registration procedure and make even a minimum deposit. But registered customers can expect a generous welcome bonus, random rewards thanks to the Wheel of Fortune, as well as the opportunity to join a unique VIP program."
+    },
+    {
+      "type": "paragraph",
+      "text": "The casino operates on the basis of a valid reputable license, which fully complies with the requirements of British legislation in the field of gambling. There is 24/7 technical support, a large selection of payment systems for fast and secure transactions."
     }
   ],
   "about": {
-    "Vegasino Casino Registration Process": [
+    "Registration Process": [
       {
         "type": "paragraph",
-        "text": "Vegasino casino registration is easy. A few easy actions let players enjoy games and promotions:"
+        "text": "New British players who want to place bets for money, receive winnings and activate bonuses, first need to create a 666 Gambit Casino login. This is a standard process that takes literally a few minutes."
+      },
+      {
+        "type": "paragraph",
+        "text": "For successful registration, use the step-by-step instructions:"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Visit the official Vegasino Casino website",
-          "Click on the “Sign Up” or “Register” button",
-          "Enter a valid email address and create a password",
-          "Fill in personal details such as name and date of birth",
-          "Select country and preferred currency",
-          "Accept the terms and conditions",
-          "Confirm registration via email (if required)",
-          "Log in and start playing"
+          "Go to the main page of the site and click the Registration button;",
+          "In the window that opens, fill out a special online form for new customers;",
+          "Enter your full name and surname, as indicated in your documents;",
+          "From the drop-down list, select the country (United Kingdom);",
+          "Next, enter your phone number and email address;",
+          "Create a safe and secure password, and re-enter it;",
+          "Confirm that you are over 18 years old, you agree to the terms and conditions."
         ]
-      }
-    ],
-    "About Vegasino Casino Login": [
+      },
       {
         "type": "paragraph",
-        "text": "Users need to go to the Vegasino Casino website and click the \"Login\" button in the upper right corner. Players must complete Vegasino casino login using their registration email and password. Vegasino login credentials are encrypted for a secure session on the platform. A password recovery link is emailed to users who forget their. Players may manage their profiles, deposit and withdraw money, and access all games and promotions once signed in."
-      }
-    ],
-    "Vegasino Crypto Deposit Methods": [
+        "text": "Additionally, you can subscribe to the newsletter and special offers via email, SMS or messengers. But this item is not mandatory. You can uncheck the corresponding boxes to stop receiving notifications."
+      },
       {
         "type": "paragraph",
-        "text": "Canadians may fund Vegasino accounts via Visa and Mastercard credit/debit cards, Interac bank transfers, and Bitcoin, Ethereum, Litecoin, Tether, and Dogecoin. The casino excludes Skrill and Neteller from the welcome bonus and often limits their use for promotions."
+        "text": "After filling in all the fields in the registration form, click the Register button. The system will automatically generate a link that will be sent to your email address. Follow the link to complete the registration."
       }
     ],
-    "Vegasino Withdrawal Time and Methods": [
+    "Login": [
       {
         "type": "paragraph",
-        "text": "Our cashout options include Visa and Mastercard (refund to card), Interac e-Transfer to bank account, and the same cryptocurrencies (Bitcoin, Ethereum, Litecoin, Tether, Dogecoin) used for deposits. Crypto and Interac transactions are the fastest, whereas card withdrawals may take up to two days. Minimum account-level withdrawal restrictions are C$750 per day and three active withdrawal requests. VIP players may have higher limitations."
+        "text": "The next step for a new client is authorization on the official website of the online casino after successfully completing the registration procedure."
+      },
+      {
+        "type": "paragraph",
+        "text": "Authorization takes no more than 1 minute. To do this, you need to click the Log In button. In the window that appears, enter the email address and password that you used during registration."
+      },
+      {
+        "type": "paragraph",
+        "text": "There is also a function for restoring access to your account. To do this, click \"Forgot your password?\" and follow the step-by-step instructions that will be displayed on your screen."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Verification"
+      },
+      {
+        "type": "paragraph",
+        "text": "666 Gambit Casino strictly adheres to the rules of responsible and safe gambling, and also cares about the protection of its customers. To avoid registration of underage players or users under other people's data, the site adheres to the principles and rules of KYC. This means that all new customers are required to undergo verification."
+      },
+      {
+        "type": "paragraph",
+        "text": "To successfully verify your account, you need to log in to your account and fill out the page with your personal and contact information. Your full name, gender, residential address, etc. are required. Next, to confirm this information, you need to send a scanned copy of the documents:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "passport or ID card;",
+          "driver's license;",
+          "bank statement;",
+          "receipt for payment of utility bills."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "All these files must be uploaded through a special menu in your personal account and the data sent for verification. Within 48 hours, the security service will confirm the fact of successful verification."
+      }
+    ],
+    "Deposit Methods": [
+      {
+        "type": "paragraph",
+        "text": "666 Gambit Casino players from the UK can use the following payment systems to make deposits:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Visa;",
+          "Mastercard;",
+          "Maestro;",
+          "Google Play;",
+          "Skrill;",
+          "Paysafecard;",
+          "Neosurf;",
+          "Crypto."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The minimum deposit amount is from 15 £."
+      }
+    ],
+    "Withdrawal Methods": [
+      {
+        "type": "paragraph",
+        "text": "The choice of payment systems for withdrawal of funds is more limited:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Wire transfer;",
+          "Crypto."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "You can withdraw money only after verification. The minimum transaction amount is 100 £."
       }
     ]
   },
   "advantages": {
-    "Vegasino Casino Advantages": [
+    "Advantages and Disadvantages": [
       {
         "type": "paragraph",
-        "text": "Vegasino Casino is a balanced casino with strengths and weaknesses. Its pros and cons are listed below in Vegasino review:"
+        "text": "When choosing an online casino, British players always pay special attention to the key features, advantages and disadvantages of the platforms. This makes it possible to understand how much the service meets their personal preferences and requirements. To give an objective assessment of 666 Gambit Casino online, it is worth looking at its main advantages and disadvantages."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Advantages:"
+        "text": "Advantages"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Wide selection of casino games",
-          "Licensed and regulated platform",
-          "Mobile-friendly design",
-          "Fast and secure payment methods",
-          "Regular bonuses and promotions",
-          "Live dealer games available",
-          "Loyalty and VIP rewards",
-          "Demo mode for many games"
+          "different types of games;",
+          "live casino;",
+          "quick registration;",
+          "convenient navigation on the site;",
+          "secure transactions;",
+          "mobile and crypto friendly;",
+          "large welcome bonus;",
+          "profitable promotions;",
+          "VIP program."
         ]
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Disadvantages:"
+        "text": "Disadvantages"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Some country restrictions",
-          "Limited customer support hours",
-          "Wagering requirements on bonuses"
+          "no mobile app;",
+          "geographical restrictions;",
+          "only 400 games."
         ]
       }
     ]
   },
   "games-to-play": {
-    "Games Available to Play at Vegasino Casino": [
+    "Games Available to Play": [
       {
         "type": "paragraph",
-        "text": "Vegasino Canada offers a vast and sophisticated gaming library backed by top industry providers for desktop and mobile devices. Here is Vegasino casino review:"
+        "text": "In this part of the 666 Gambit Casino review, you will learn what gaming options this service offers and why so many customers from the UK play on the site. In fact, the number of games available on this platform is not impressive compared to some competitors. In total, there is a collection of about 400 games."
+      },
+      {
+        "type": "paragraph",
+        "text": "It is important to add that the casino carefully selects games and offers its customers only the best projects from leading providers."
       },
       {
         "type": "heading",
@@ -109,7 +202,38 @@
       },
       {
         "type": "paragraph",
-        "text": "Vegasino has over 10,000 slot games, including classic 3-reel machines, current video slots, and Megaways games. Immersive themes, bonus buys, high volatility, and branded slots await players. The casino has slots from NetEnt, Microgaming, Pragmatic Play, Red Tiger, Yggdrasil, NoLimit City, Quickspin, Thunderkick, Relax Gaming, and Play'n GO. Bet sizes vary, making it simple for casual spinners and high-stakes players."
+        "text": "It is logical that the most numerous section with games is slots. On the website of the British online casino, you can play traditional slot machines, as well as modern video slots with special functions and bonus rounds."
+      },
+      {
+        "type": "paragraph",
+        "text": "For convenience, all slots are divided into special thematic categories:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Top Games;",
+          "Latest Games;",
+          "Adventures;",
+          "Mythology;",
+          "Animals;",
+          "Gold and Treasures;",
+          "Horror;",
+          "Hold and Win;",
+          "Hot Games;",
+          "Underwater;",
+          "Sweets;",
+          "Beauty;",
+          "Asia;",
+          "Books;",
+          "Circus;",
+          "Megaways;",
+          "Irish etc."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "If you are interested in games of a certain theme or category, just select the appropriate section on the main page. You will see a full list of available slots on the selected theme."
       },
       {
         "type": "heading",
@@ -118,132 +242,119 @@
       },
       {
         "type": "paragraph",
-        "text": "Vegasino has many RNG-powered virtual table games for conventional casino fans. Multiple blackjack, roulette, baccarat, and casino poker variations have varying table limitations and rules. These games feature seamless gameplay and strategic betting, making them a good alternative to live tables while presenting a genuine casino experience."
+        "text": "Table and card games are very popular among British gamblers. This site presents a small collection of gambling entertainment of this type. But it is important to add that the range is gradually updated and expanded. This gives an excellent opportunity to play baccarat, roulette, blackjack and other popular games."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Live Dealer Games"
+        "text": "Arcades"
       },
       {
         "type": "paragraph",
-        "text": "Vegasino's live casino has 180 to 450 tables, depending on the player's area. Evolution Gaming, Ezugi, and Pragmatic Live are among of the big studios that run this segment. They are known for their HD broadcasts and professional dealers. Live games include roulette, blackjack, baccarat, poker, and game-show-style games like Crazy Time, Monopoly Live, and Deal or No Deal. During live sessions, players may talk to dealers and other players in real time, which adds to the thrill and realism."
+        "text": "Arcade games are currently gaining more and more popularity in the UK. In this category, the official website of the online casino presents an interesting collection of projects. This is an opportunity to go beyond traditional slots. In arcade games, you get access to more exciting and interactive stories. The most important thing is that the player becomes a direct participant in the process, and does not just press a button and wait for the reels to stop spinning."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Video Poker"
+        "text": "Live Casino"
       },
       {
         "type": "paragraph",
-        "text": "Vegasino casino online has several classic and sophisticated video poker games. Jacks or Better, Deuces Wild, All American, and multi-hand variations are popular for diverse strategy and speedier sessions. Betsoft, Play'n GO, NetEnt, Microgaming, Playtech, and others produce these games. Players that like a combination of skill and luck should play video poker, which has high payoff rates."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Jackpot Games"
+        "text": "About half of all the entertainment presented on the official website of the online casino are games with live dealers. The service places special emphasis on fans of live casinos. The platform has an amazing collection of games of different types and formats."
       },
       {
         "type": "paragraph",
-        "text": "The casino has various jackpot games with progressive prize pools that rise with player wagers globally. These games include standalone and network-linked jackpots that can change your life. These games are mostly slots, although there are also table and arcade jackpots. High-risk, high-reward gamers will find lots to like here."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Sportsbook Integration"
+        "text": "Here you can play classic roulette, blackjack, poker and baccarat. Or enjoy the benefits of Andar Bahar, Sic Bo, Arabic roulette and other exclusive and even exotic games with live dealers."
       },
       {
         "type": "paragraph",
-        "text": "Vegasino offers a full sportsbook and casino. Users may wager on football, basketball, tennis, eSports, and more. The sportsbook is incorporated with the user account, so gamers may switch between casino and sports betting without leaving the platform. Live betting choices and reasonable odds make it a good alternative for real-time bettors."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Betting Mechanics"
-      },
-      {
-        "type": "paragraph",
-        "text": "Vegasino's game categories fit various betting tastes. Slot games usually have customizable wager amounts and coin denominations, and some allow players to buy extra rounds. Table games and live dealer games are accessible to beginners and high rollers with modest and high stakes. Video poker machines have standard paytables and RTPs that may surpass 99% for optimal tactics. Jackpot games gather modest amounts of each eligible wager to generate large prize pools. Players may modify bet kinds and use live data to make intelligent betting selections across several markets in the sportsbook."
+        "text": "It is important to note that in this category you cannot use the demo mode. If you want to play in a live casino, then first register, log in to your account and make a deposit."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Vegasino Bonus Offers and Promotions": [
+    "Bonuses and Promotions": [
       {
         "type": "paragraph",
-        "text": "Vegasino no deposit bonus offers a substantial welcome package and several casino and sportsbook promos."
+        "text": "New and regular players of this service can expect various bonus offers, promotions and a VIP program after registration and making a deposit. The online casino bonus program is aimed at attracting new customers, as well as maintaining the loyalty of already registered players."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Welcome Casino Bonus"
+        "text": "Welcome Bonus"
       },
       {
         "type": "paragraph",
-        "text": "New players receive a generous welcome offer, including a 100% match bonus up to C$750, 200 free spins, and 1 Bonus Crab token. Players must deposit C$30 to receive the full promotion. Bonus Crab tokens are given to players that deposit at least C$15, but not match bonuses or free spins. The match bonus has a 35× wagering requirement, while free spin wins have a 40× requirement. The spins are delivered 20 each day for ten days. Players must complete wagering requirements within 10 days of bonus activation or the bonus and earnings may expire. No Vegasino promo code needed."
+        "text": "New customers can fully enjoy a generous welcome bonus. According to the terms of the promotion, new players can expect a package of rewards for the first 2 deposits."
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Bonus for the first deposit. You receive a 300% bonus on the deposit amount. The maximum reward is 2250 £. Additionally, you will be credited with 100 free spins;",
+          "Bonus for the second deposit. In this case, you will also receive a 300% bonus up to 750 £."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "To activate the bonuses, it is enough to deposit 15 £ or more."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Welcome Sportsbook Bonus"
+        "text": "Free Spins for the First Deposit"
       },
       {
         "type": "paragraph",
-        "text": "Sports bettors get a special welcome bonus at Vegasino online. If new users deposit at least C$30, they can obtain a 100% match bonus on their first deposit, up to C$150. You have to bet six times the amount of your deposit and bonus, and only bets that have odds that fulfill the rules count toward the wagering. Customers must activate this promotion before making qualifying bets and follow the normal rules for promotions in order to keep their bonuses."
+        "text": "Each new player has the right to receive a package of 100 free spins. The conditions for participation in the promotion are as simple as possible. You need to register, pass verification and deposit from £15. In this case, you will receive 10 free spins for 10 days."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Weekly Reload Bonus"
+        "text": "Weekly Spins of the Bonus Wheel"
       },
       {
         "type": "paragraph",
-        "text": "Weekly reload offers are offered Monday through Thursday. The minimum deposit during this period is C$30, which grants 50 free spins. These spins may use a different slot game and have wagering limitations, which should be confirmed in the promotion's conditions. This package is suitable for frequent players who wish to play more throughout the workweek with little commitment."
+        "text": "Once a week, each active player has the opportunity to spin the Wheel of Fortune. After the wheel stops, you will find out what deposit bonus awaits you."
+      },
+      {
+        "type": "paragraph",
+        "text": "According to the terms of the promotion, the percentage of the deposit bonus is activated with the next deposit made."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Weekend Reload Bonus"
+        "text": "Cashback"
       },
       {
         "type": "paragraph",
-        "text": "Vegasino's weekend reload offering offers extra value throughout busy gaming days from Friday to Sunday. Depositing C$75 or more earns customers a 50% match bonus up to C$1,050 and 50 free spins. This offer promotes weekend gaming and is ideal for long sessions. Players must meet match bonus and free spins wagering requirements during the offer timeframe to keep their earnings."
+        "text": "Every week, active players can receive part of the money lost under the cashback program. To do this, you need to continue to regularly play, make deposits and place bets."
+      },
+      {
+        "type": "paragraph",
+        "text": "The cashback amount depends on your VIP status, history of wins and losses, as well as previously used and received bonuses."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Live Casino Cashback"
+        "text": "Bonus for Every Deposit"
       },
       {
         "type": "paragraph",
-        "text": "For live dealer game enthusiasts, Vegasino provides a 25% cashback reward for net losses in live casino games. Cashback is limited at C$300 per eligible period and depending on qualified gaming. Cashback bonuses normally have lower wagering requirements than deposit bonuses. This offer reduces the danger of high-stakes live play and enhances immersion."
+        "text": "VIP program participants can receive random bonuses for each deposit made. To do this, you need to open the game window and deposit any amount in the \"Quick Deposit\" field without leaving the game. For each deposit made through this field, you will receive bonuses."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Weekly Cashback"
+        "text": "VIP Program"
       },
       {
         "type": "paragraph",
-        "text": "Players in the top three VIP tiers at Vegasino receive a 15% weekly cashback incentive. This promotion covers weekly net losses on approved casino games and caps at a generous C$4,500. Cashback is usually bonus monies with lower or no wagering requirements, depending on VIP status. Long-term players are protected by this bonus system, which rewards loyal high-volume players."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Bonus Crab Token and Vegasino No Deposit Bonus"
+        "text": "The casino offers a VIP program with 8 unique levels. Each status provides a set of benefits and increases the bonus percentage for each deposit - from 5% to 100%."
       },
       {
         "type": "paragraph",
-        "text": "Daily Bonus Crab is one of Vegasino's most unusual promos. Daily deposits of at least C$15 earn tokens for the Bonus Crab game, an interactive claw machine that awards rewards. Bonus dollars, free spins, and Vegasino store loyalty tokens are possible prizes. One bonus crab per player every day adds a gamified edge to daily contributions, delivering random goodies in addition to bonuses."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Tournaments & Challenges"
-      },
-      {
-        "type": "paragraph",
-        "text": "Vegasino runs many tournaments and challenges to encourage competition. Prize pools may exceed C$12,000 in themed tournaments like the “Roulette Run,” slot leaderboards, and live dealer challenges. Players gain points by playing games and may watch their ranks live. Weekly challenges also award loyalty tokens that may be used for store bonuses. These continuing events keep players engaged and give extra incentives."
+        "text": "Holders of the highest statuses receive a VIP manager, accelerated withdrawals and increased limits on deposits and withdrawals. In addition, you can receive 666 Gambit Casino no deposit bonus on your birthday and open access to special VIP promotions."
       }
     ]
   },
@@ -251,64 +362,60 @@
     "Support": [
       {
         "type": "paragraph",
-        "text": "Vegasino offers 24/7 live chat and email service. Live chat responds quickly, whereas email assistance may take several hours. The site has a comprehensive Help Centre for account administration, payments, bonuses, and typical concerns."
+        "text": "The service offers several channels of communication with technical support:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "online chat;",
+          "email;",
+          "phone number;",
+          "FAQ."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Chat is available for registered and authorized clients."
       }
     ]
   },
   "faq": {
-    "Vegasino Reddit FAQ": [
+    "FAQ": [
       {
         "type": "heading",
         "level": 3,
-        "text": "Is Vegasino Casino licensed?"
+        "text": "What do you need to register on the site?"
       },
       {
         "type": "paragraph",
-        "text": "Yes, Vegasino operates under a valid gaming license issued by the Government of Anjouan (Curacao jurisdiction)."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "What is the minimum deposit at Vegasino?"
-      },
-      {
-        "type": "paragraph",
-        "text": "The minimum deposit is C$15, which qualifies for basic bonuses like Bonus Crab tokens."
+        "text": "Your email address, phone number and password are required."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Are there any Vegasino online casino bonus fees?"
+        "text": "Can I play without registration and deposit?"
       },
       {
         "type": "paragraph",
-        "text": "No, all deposit methods at Vegasino Casino are free of charge."
+        "text": "Yes. The site offers demo games. Registration and deposit are not required."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "How many games are available at Vegasino?"
+        "text": "How to get a welcome bonus?"
       },
       {
         "type": "paragraph",
-        "text": "Vegasino offers more than 13,000 casino games across all categories and providers."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Can I set gaming limits at Vegasino?"
+        "text": "Make a deposit of 15 £ or more after registration and get a 300% bonus."
       },
       {
         "type": "paragraph",
-        "text": "Yes, responsible gaming tools let you set deposit, wager, loss, or session limits directly in your account."
+        "text": "<strong>Title</strong>: Top Games at 666 Gambit Casino UK: Slots, Table Games & More"
       },
       {
         "type": "paragraph",
-        "text": "Title: Vegasino Casino Canada – Full Game Selection: Slots, Tables & More"
-      },
-      {
-        "type": "paragraph",
-        "text": "Description: Explore the full Vegasino Casino Canada game library, including slots, live dealers, and jackpots. Try all categories today and discover what makes this platform stand out."
+        "text": "<strong>Description</strong>: Explore the exciting game collection at 666 Gambit Casino UK. From top slot titles and classic table games to live dealer experiences, find out which games keep UK players coming back for more action and big wins."
       }
     ]
   },
@@ -316,31 +423,46 @@
     "Software Technologies": [
       {
         "type": "paragraph",
-        "text": "Vegasino's crypto-friendly platform features over 10,000 games from Evolution, Pragmatic Play, NetEnt, Red Tiger, Wazdan, Yggdrasil, BetSoft, and Tom Horn. A centralised back office for games and accounts, customer relationship management tools, affiliate tracking systems, real-time statistics, and a customized casino lobby with numerous languages and currencies are available."
+        "text": "The British casino cooperates with leading providers of gaming software: NetEnt, PlayNGo, PG Soft, Spribe, Hacksaw, Pragmatic Play, Spinomenal, Playtech, Merkur, etc. The site has a function to search for games by providers."
       }
     ],
     "Security": [
       {
         "type": "paragraph",
-        "text": "Is Vegasino legit? Vegasino has a Curacao (Anjouan) gaming license and follows KYC rules, which may demand players to provide identity and proof of address before withdrawing. Encryption and fraud protection safeguard all transactions. The site has responsible gaming features and rigorous privacy and data protection regulations."
+        "text": "The casino cares about the safety of its players and therefore uses a comprehensive security system. It consists of SSL encryption, a strict privacy policy, KYC requirements, an anti-hacking system, etc. Players can also use the self-limitation and self-exclusion functions in the personal account settings."
       }
     ],
-    "Vegasino Casino App": [
+    "App": [
       {
         "type": "paragraph",
-        "text": "The platform lacks a Vegasino app. Instead, the casino offers a fully adapted mobile web app for iOS and Android users. Full gaming catalog, live dealer games, sports betting, Bonus Crab, and loyalty tools are available on mobile. VPN compatibility is also available."
+        "text": "Currently, 666 Gambit Casino does not offer the ability to install an application. But you can use a fully adapted mobile version of the site. To do this, just go to the site through any browser on your Android or iOS device."
       }
     ],
     "Languages": [
       {
         "type": "paragraph",
-        "text": "Vegasino provides several languages for global accessibility. French, German, Italian, Hungarian, Polish, Greek, Spanish, Portuguese, Norwegian, Finnish, Czech, and Russian are available. Platform language settings can be adjusted easily."
+        "text": "The casino is officially represented in the UK and some other EU countries. Therefore, the site has the ability to select the interface language:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "English;",
+          "Italian;",
+          "Spanish;",
+          "German;",
+          "French."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The switch is located at the top of the main menu."
       }
     ],
     "Currencies": [
       {
         "type": "paragraph",
-        "text": "The casino takes CAD, EUR, USD, AUD, and NZD. Bitcoin, Ethereum, Litecoin, Tether, and Dogecoin may be used for deposits and withdrawals."
+        "text": "Customers from the UK can use British pounds - GBP (£) as the main game currency. The site also offers the ability to use cryptocurrency."
       }
     ]
   }

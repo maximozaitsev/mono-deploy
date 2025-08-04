@@ -1,3 +1,3 @@
-export const PROJECT_NAME = "Vegasino";
-export const PROJECT_GEO = "Canada";
-export const PROJECT_URL = "vegasinoonline.com";
+export const PROJECT_NAME = "666 Gambit Casino";
+export const PROJECT_GEO = "United Kingdom";
+export const PROJECT_URL = "666gambit-casino.com";
