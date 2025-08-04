@@ -4,10 +4,10 @@
 
 .button {
   cursor: pointer;
-  font-family: $font-primary;
+  font-family: $font-secondary;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-black;
   line-height: normal;
   text-transform: uppercase;
 
@@ -48,12 +48,12 @@
   }
 
   &.secondary {
-    // outline: 3px solid;
-    // outline-offset: -3px;
-    // outline-color: #2e2e2e3b;
+    outline: 3px solid;
+    outline-offset: -3px;
+    outline-color: #ffdc26;
 
     border-radius: $button-small-border-radius;
-    padding: 0 32px;
+    padding: 0 25px;
     background: $color-button-small;
     color: $text-color-button-small;
     font-size: 20px;

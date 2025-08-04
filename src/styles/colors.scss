@@ -1,13 +1,13 @@
 // colors
-$color-background: #18191b;
-$color-background-secondary: linear-gradient(180deg, #3e3f42 0%, #25262a 100%);
-$color-background-third: #313235;
-$color-background-fourth: linear-gradient(180deg, #3e3f42 0%, #25262a 100%);
-$color-background-header: linear-gradient(180deg, #3e3f42 0%, #25262a 100%);
-$color-background-footer: linear-gradient(180deg, #3e3f42 0%, #25262a 100%);
-$color-background-providers-blocks: #313235;
-$color-button-large: linear-gradient(180deg, #fe0750 0%, #720c44 100%);
-$color-button-small: linear-gradient(180deg, #ff4d00 0%, #742304 100%);
+$color-background: #1a1a21;
+$color-background-secondary: #2d2d32;
+$color-background-third: #22222a;
+$color-background-fourth: #2d2d32;
+$color-background-header: #2d2d32;
+$color-background-footer: #2d2d32;
+$color-background-providers-blocks: #22222a;
+$color-button-large: linear-gradient(180deg, #ffc630 0%, #c30300 100%);
+$color-button-small: transparent;
 $color-border-primary: #484646;
 
 // text color
@@ -15,9 +15,9 @@ $text-color-primary: #fff;
 $text-color-secondary: #fff;
 $text-color-button-large: #fff;
 $text-color-button-small: #fff;
-$text-color-welcome: #7dc5f2;
-$text-color-fourth: #7dc5f2;
+$text-color-welcome: #ffdc26;
+$text-color-fourth: #ff6400;
 
 // svg colors
-$color-faq-icon: #7dc5f2;
-$color-star-icon: linear-gradient(180deg, #ff4d00 0%, #742304 100%);
+$color-faq-icon: #ffd600;
+$color-star-icon: #ffd600;

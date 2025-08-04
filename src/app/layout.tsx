@@ -3,12 +3,12 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 
-const url = "666gambit-casino.com";
-const ogTitle = "666 Gambit Casino UK – Play Slots, Live Games and Win Big Today";
-const ogSiteName = "666 Gambit Casino";
-const metaDescription = "Join 666 Gambit Casino UK and experience a world-class online gaming platform with hundreds of slots, thrilling live dealer tables, secure payments, mobile access, and generous welcome bonuses. Everything you need for top-tier entertainment in one place.";
+const url = "fezbet-casino-online.com";
+const ogTitle = "Fezbet Casino Canada – Secure Online Gaming and Real Bonuses";
+const ogSiteName = "Fezbet";
+const metaDescription = "Fezbet Casino Canada offers top-tier slots, sports betting, and fast payments to your choice. Join now to claim your welcome bonus and enjoy 24/7 gaming on any device.";
 
-const locale = "en-GB";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
