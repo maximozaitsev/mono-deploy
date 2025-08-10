@@ -20,9 +20,13 @@ function getBaseUrl(): string | undefined {
   return host ? `${proto}://${host}` : undefined;
 }
 
-async function readJSON<T>(filePath: string): Promise<T> {
-  const raw = await fs.readFile(filePath, "utf-8");
-  return JSON.parse(raw) as T;
+async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
+  try {
+    const raw = await fs.readFile(filePath, "utf-8");
+    return JSON.parse(raw) as T;
+  } catch {
+    return fallback;
+  }
 }
 
 async function readManifest(): Promise<{
@@ -30,7 +34,15 @@ async function readManifest(): Promise<{
   defaultLang: string;
 }> {
   const p = path.join(process.cwd(), "public", "content", "languages.json");
-  return readJSON<{ languages: string[]; defaultLang: string }>(p);
+  const json = await readJSON<{ languages?: string[]; defaultLang?: string }>(
+    p,
+    {}
+  );
+  const languages = Array.isArray(json.languages) ? json.languages : [];
+  const defaultLang =
+    (typeof json.defaultLang === "string" && json.defaultLang) ||
+    (languages[0] ?? "au");
+  return { languages, defaultLang: defaultLang.toLowerCase() };
 }
 
 async function readContentMeta(
@@ -42,7 +54,7 @@ async function readContentMeta(
     "content",
     `content.${lang}.json`
   );
-  const json = await readJSON<Record<string, any>>(p);
+  const json = await readJSON<Record<string, any>>(p, {});
   const title = json["meta-title"] || json.title || "Title";
   const description =
     json["meta-description"] || json.description || "Description";
