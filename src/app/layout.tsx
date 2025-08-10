@@ -6,6 +6,11 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { getLocaleMeta } from "../utils/localeMap";
 
+// Генерировать метаданные на каждый запрос (не на билде)
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+// Явно используем Node.js runtime, чтобы работал fs
+export const runtime = "nodejs";
 
 async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
   try {
@@ -18,24 +23,70 @@ async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
 
 async function readDefaultLang(): Promise<string> {
   const p = path.join(process.cwd(), "public", "content", "languages.json");
-  const json = await readJSON<{ defaultLang?: string }>(p, {} as any);
-  return (json.defaultLang || "au").toLowerCase();
+  // 1) пробуем через fs
+  const fsJson = await readJSON<{ defaultLang?: string }>(p, {} as any);
+  if (fsJson.defaultLang) return fsJson.defaultLang.toLowerCase();
+
+  // 2) fallback: пробуем через fetch (на проде всегда доступно как публичный ассет)
+  try {
+    const base = process.env.SITE_URL ? `https://${process.env.SITE_URL}` : "";
+    if (base) {
+      const res = await fetch(`${base}/content/languages.json`, {
+        cache: "no-store",
+      } as any);
+      if (res.ok) {
+        const j = (await res.json()) as { defaultLang?: string };
+        return (j.defaultLang || "au").toLowerCase();
+      }
+    }
+  } catch {
+    // ignore
+  }
+  return "au";
 }
 
 async function readContentMeta(
   lang: string
 ): Promise<{ title: string; description: string }> {
-  const p = path.join(
+  const fsPath = path.join(
     process.cwd(),
     "public",
     "content",
     `content.${lang}.json`
   );
-  const json = await readJSON<Record<string, any>>(p, {});
-  const title = json["meta-title"] || json.title || "Title";
-  const description =
-    json["meta-description"] || json.description || "Description";
-  return { title, description };
+
+  // 1) пробуем через fs
+  const fsJson = await readJSON<Record<string, any>>(fsPath, {});
+  let title = fsJson["meta-title"] || fsJson.title || "";
+  let description = fsJson["meta-description"] || fsJson.description || "";
+  if (title || description) {
+    return {
+      title: title || "Title",
+      description: description || "Description",
+    };
+  }
+
+  // 2) fallback: пробуем через fetch
+  try {
+    const base = process.env.SITE_URL ? `https://${process.env.SITE_URL}` : "";
+    if (base) {
+      const res = await fetch(`${base}/content/content.${lang}.json`, {
+        cache: "no-store",
+      } as any);
+      if (res.ok) {
+        const json = (await res.json()) as Record<string, any>;
+        title = json["meta-title"] || json.title || "Title";
+        description =
+          json["meta-description"] || json.description || "Description";
+        return { title, description };
+      }
+    }
+  } catch {
+    // ignore
+  }
+
+  // 3) совсем fallback
+  return { title: "Title", description: "Description" };
 }
 
 export const viewport: Viewport = {
@@ -52,17 +103,38 @@ export async function generateMetadata(): Promise<Metadata> {
   const siteName = process.env.SITE_NAME || "SiteName";
   const ogImage = `https://${siteUrl}/og-image.webp`;
 
+  // languages.json для alternates (hreflang)
+  let languages: string[] = [];
+  try {
+    const p = path.join(process.cwd(), "public", "content", "languages.json");
+    const j = await readJSON<{ languages?: string[] }>(p, {});
+    languages = Array.isArray(j.languages) ? j.languages : [];
+  } catch {
+    languages = [];
+  }
+
+  // alternates.languages
+  const alternatesLanguages: Record<string, string> = {};
+  const base = `https://${siteUrl}`;
+  for (const geo of languages) {
+    const { htmlLang: hreflang } = getLocaleMeta(geo);
+    alternatesLanguages[hreflang] =
+      geo === defaultLang ? `${base}/` : `${base}/${geo}`;
+  }
+  alternatesLanguages["x-default"] = `${base}/`;
+
   return {
     manifest: "/manifest.json",
     title,
     description,
     alternates: {
-      canonical: `https://${siteUrl}`,
+      canonical: `${base}`,
+      languages: alternatesLanguages,
     },
     openGraph: {
       locale: ogLocale,
       type: "website",
-      url: `https://${siteUrl}`,
+      url: `${base}`,
       title,
       siteName,
       description,
