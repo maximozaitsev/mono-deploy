@@ -24,7 +24,43 @@ async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
 async function readDefaultLang(): Promise<string> {
   const p = path.join(process.cwd(), "public", "content", "languages.json");
   const fsJson = await readJSON<{ defaultLang?: string }>(p, {} as any);
-  return (fsJson.defaultLang || "au").toLowerCase();
+  if (fsJson.defaultLang) return fsJson.defaultLang.toLowerCase();
+  try {
+    const res = await fetch("/content/languages.json", { cache: "no-store" });
+    if (res.ok) {
+      const j = (await res.json()) as { defaultLang?: string };
+      return (j.defaultLang || "au").toLowerCase();
+    }
+  } catch {}
+  return "au";
+}
+
+function extractMeta(obj: Record<string, any>): {
+  title: string;
+  description: string;
+} {
+  const titleKeys = ["meta-title", "metaTitle", "ogTitle", "title"];
+  const descKeys = [
+    "meta-description",
+    "metaDescription",
+    "description",
+    "metaDesc",
+  ];
+  let title = "";
+  let description = "";
+  for (const k of titleKeys) {
+    if (typeof obj[k] === "string" && obj[k].trim()) {
+      title = obj[k].trim();
+      break;
+    }
+  }
+  for (const k of descKeys) {
+    if (typeof obj[k] === "string" && obj[k].trim()) {
+      description = obj[k].trim();
+      break;
+    }
+  }
+  return { title: title || "Title", description: description || "Description" };
 }
 
 async function readContentMeta(
@@ -37,10 +73,20 @@ async function readContentMeta(
     `content.${lang}.json`
   );
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
-  const title = fsJson["meta-title"] || fsJson.title || "Title";
-  const description =
-    fsJson["meta-description"] || fsJson.description || "Description";
-  return { title, description };
+  const fromFs = extractMeta(fsJson);
+  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
+    return fromFs;
+  }
+  try {
+    const res = await fetch(`/content/content.${lang}.json`, {
+      cache: "no-store",
+    });
+    if (res.ok) {
+      const json = (await res.json()) as Record<string, any>;
+      return extractMeta(json);
+    }
+  } catch {}
+  return { title: "Title", description: "Description" };
 }
 
 export const viewport: Viewport = {
