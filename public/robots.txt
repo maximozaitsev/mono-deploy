@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://fezbet-casino-online.com/
-Sitemap: https://fezbet-casino-online.com/sitemap.xml
+Host: https://betistaonline.com/
+Sitemap: https://betistaonline.com/sitemap.xml

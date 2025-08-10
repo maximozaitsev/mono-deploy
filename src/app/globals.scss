@@ -78,7 +78,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 32px;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-black;
   }
 
   @media (max-width: 570px) {
@@ -100,7 +100,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 24px;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-black;
   }
 
   @media (max-width: 570px) {
@@ -125,7 +125,7 @@ body {
   }
 
   @media (max-width: 768px) {
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-black;
     font-size: 18px;
   }
 }

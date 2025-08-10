@@ -1,25 +1,11 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Arial", sans-serif;
+$font-secondary: "Nunito Sans", sans-serif;
 
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 700;
-  src: url("./Arial/ARIALBD.woff") format("truetype");
-}
-
-@font-face {
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 900;
-  src: url("./Arial/ARIBLK.woff") format("truetype");
 }
 
 @font-face {
@@ -34,4 +20,18 @@ $font-secondary: "Arial", sans-serif;
   src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./Heading/static/Nunito Sans-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Heading/static/Nunito Sans-900.woff2") format("woff2");
 }

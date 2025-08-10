@@ -1,0 +1,19 @@
+@import "../../../styles/colors.scss";
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-background;
+  backdrop-filter: blur(2px);
+}
+
+.headerWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

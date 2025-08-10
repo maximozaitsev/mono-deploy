@@ -4,10 +4,23 @@ import { useEffect, useState } from "react";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
+import { usePathname } from "next/navigation";
+import languages from "../../../public/content/languages.json";
+import staticContent from "../../../public/content/static.json";
+
+type LangManifest = { languages: string[]; defaultLang: string };
+const manifest = languages as LangManifest;
+const translations = staticContent as Record<string, Record<string, string>>;
 
 export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
-  const [offerLink, setOfferLink] = useState("");
+  const pathname = usePathname();
+  const firstSeg = pathname?.split("/").filter(Boolean)[0] || "";
+  const currentLang = manifest.languages.includes(firstSeg)
+    ? firstSeg
+    : manifest.defaultLang;
+  const t =
+    translations[currentLang] || translations[manifest.defaultLang] || {};
 
   useEffect(() => {
     const fetchWelcomeBonus = async () => {
@@ -15,8 +28,6 @@ export default function WelcomeSection() {
         const offersData = await fetchOffers();
         const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
         setWelcomeBonus(bonus);
-        const link = offersData.offers[0]?.link || "";
-        setOfferLink(link);
       } catch (error) {
         console.error("Failed to fetch welcome bonus:", error);
       }
@@ -30,24 +41,18 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
-      <div className="container">
-        <div className={styles.welcomeContent}>
-          <div className={styles.welcomeText}>
-            <h2>Welcome Bonus</h2>
-            <p className={styles.offerText}>
-              Exclusive welcome offer of {welcomeBonus}
-            </p>
-            <p className={styles.bonusText}>
-              Exclusive welcome bonus of {welcomeBonus}
-            </p>
-            {offerLink && (
-              <Button
-                text="claim bonus"
-                variant="primary"
-                url={offerLink}
-                openInNewTab
-              />
-            )}
+      <div className={styles.welcomeBg}>
+        <div className="container">
+          <div className={styles.welcomeContent}>
+            <div className={styles.welcomeText}>
+              <p className={styles.offerText}>
+                {t.exclusiveWelcomeOfferOf} {welcomeBonus}
+              </p>
+              <p className={styles.bonusText}>
+                {t.exclusiveWelcomeOfferOf} {welcomeBonus}
+              </p>
+              <Button text="claimBonus" variant="primary" />
+            </div>
           </div>
         </div>
       </div>

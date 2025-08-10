@@ -3,6 +3,7 @@ export const revalidate = 0;
 
 import Header from "../components/header/Header";
 import WelcomeSection from "../components/welcome/WelcomeSection";
+import H1Section from "../components/h1-block/H1Block";
 import TopCasinosSection from "../components/top-casinos/TopCasinosSection";
 import MobileSection from "@/components/mobile-version/MobileSection";
 import TopGamesSection from "@/components/top-games/TopGamesSection";
@@ -22,16 +23,49 @@ import { fetchGames } from "@/utils/fetchGames";
 import { fetchProviders } from "@/utils/fetchProviders";
 import { Provider } from "@/types/provider";
 
+import fs from "node:fs/promises";
+import path from "node:path";
+
 import "./globals.scss";
 
 export default async function HomePage() {
+  type LangManifest = { languages: string[]; defaultLang: string };
+  let manifest: LangManifest = { languages: [], defaultLang: "en" };
+  try {
+    const manifestPath = path.join(
+      process.cwd(),
+      "public",
+      "content",
+      "languages.json"
+    );
+    const raw = await fs.readFile(manifestPath, "utf-8");
+    const parsed = JSON.parse(raw) as Partial<LangManifest>;
+    if (
+      Array.isArray(parsed.languages) &&
+      typeof parsed.defaultLang === "string"
+    ) {
+      manifest = {
+        languages: parsed.languages,
+        defaultLang: parsed.defaultLang,
+      };
+    }
+  } catch (_) {
+    manifest = { languages: ["en"], defaultLang: "en" };
+  }
+
+  const currentLang = manifest.defaultLang;
   const games = await fetchGames("gambling");
   const providers: Provider[] = await fetchProviders();
 
   return (
     <main>
-      <Header />
+      <Header
+        languages={manifest.languages}
+        defaultLang={manifest.defaultLang}
+        currentLang={currentLang}
+      />
       <WelcomeSection />
+      <H1Section />
       <TopCasinosSection />
       <BonusDetailsSection />
       <MobileSection />
