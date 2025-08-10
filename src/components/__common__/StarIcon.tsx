@@ -10,21 +10,48 @@ const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
   const gradientId = useId();
 
   useEffect(() => {
+    let cssFill = "";
+    let resolved = false;
     if (fill) {
       if (fill.startsWith("var(")) {
         const varName = fill.slice(4, -1).trim();
-        const cssFill = getComputedStyle(document.documentElement)
+        cssFill = getComputedStyle(document.documentElement)
           .getPropertyValue(varName)
           .trim();
-        setComputedFill(cssFill || fill);
+        resolved = true;
+        // If resolved value is a gradient, use it as is.
+        if (cssFill.startsWith("linear-gradient")) {
+          setComputedFill(cssFill);
+        } else if (!cssFill) {
+          if (process.env.NODE_ENV === "development") {
+            console.warn(
+              `[StarIcon] CSS variable ${varName} not found or empty.`
+            );
+          }
+          setComputedFill(fill);
+        } else {
+          setComputedFill(cssFill);
+        }
       } else {
         setComputedFill(fill);
       }
     } else {
-      const cssFill = getComputedStyle(document.documentElement)
+      cssFill = getComputedStyle(document.documentElement)
         .getPropertyValue("--color-star-icon")
         .trim();
-      setComputedFill(cssFill || "#F6C946");
+      resolved = true;
+      if (cssFill.startsWith("linear-gradient")) {
+        setComputedFill(cssFill);
+      } else if (!cssFill) {
+        if (process.env.NODE_ENV === "development") {
+          console.warn(
+            "[StarIcon] CSS variable --color-star-icon not found or empty."
+          );
+        }
+        setComputedFill("#F6C946");
+      } else {
+        setComputedFill(cssFill);
+      }
     }
   }, [fill]);
 
