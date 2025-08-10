@@ -2,12 +2,12 @@
 import type { Metadata, Viewport } from "next";
 import path from "node:path";
 import fs from "node:fs/promises";
+import { headers } from "next/headers";
 import { getLocaleMeta } from "@/utils/localeMap";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import "../globals.scss";
 import "../../styles/colors.scss";
 import "../../styles/variables.scss";
-import { headers } from "next/headers";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -23,19 +23,46 @@ function getBaseUrl(): string | undefined {
 
 type LangManifest = { languages: string[]; defaultLang: string };
 
-async function readJSON<T>(filePath: string, fallback?: T): Promise<T> {
+async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
   try {
     const raw = await fs.readFile(filePath, "utf-8");
     return JSON.parse(raw) as T;
   } catch {
-    if (fallback !== undefined) return fallback;
-    throw new Error(`Cannot read JSON: ${filePath}`);
+    return fallback;
   }
 }
 
 async function readManifest(): Promise<LangManifest> {
   const p = path.join(process.cwd(), "public", "content", "languages.json");
   return readJSON<LangManifest>(p, { languages: [], defaultLang: "au" });
+}
+
+function extractMeta(obj: Record<string, any>): {
+  title: string;
+  description: string;
+} {
+  const titleKeys = ["meta-title", "metaTitle", "ogTitle", "title"];
+  const descKeys = [
+    "meta-description",
+    "metaDescription",
+    "description",
+    "metaDesc",
+  ];
+  let title = "";
+  let description = "";
+  for (const k of titleKeys) {
+    if (typeof obj[k] === "string" && obj[k].trim()) {
+      title = obj[k].trim();
+      break;
+    }
+  }
+  for (const k of descKeys) {
+    if (typeof obj[k] === "string" && obj[k].trim()) {
+      description = obj[k].trim();
+      break;
+    }
+  }
+  return { title: title || "Title", description: description || "Description" };
 }
 
 async function readContentMeta(
@@ -48,10 +75,7 @@ async function readContentMeta(
     `content.${lang}.json`
   );
   const json = await readJSON<Record<string, any>>(p, {});
-  const title = json["meta-title"] || json.title || PROJECT_NAME || "Website";
-  const description =
-    json["meta-description"] || json.description || "Description";
-  return { title, description };
+  return extractMeta(json);
 }
 
 export const viewport: Viewport = {
@@ -91,7 +115,7 @@ export async function generateMetadata({
       ? "/"
       : `/${geo}`;
   }
-  alternatesLanguages["x-default"] = "/";
+  alternatesLanguages["x-default"] = baseUrl ? `${baseUrl}/` : "/";
 
   const ogImage = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
 
@@ -111,6 +135,12 @@ export async function generateMetadata({
       siteName: PROJECT_NAME,
       description,
       images: [{ url: ogImage, width: 1200, height: 630, alt: PROJECT_NAME }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
     },
     icons: {
       icon: [
@@ -146,6 +176,8 @@ export async function generateMetadata({
 
 export default function LangLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: {
+  children: React.ReactNode;
+}) {
   return <>{children}</>;
 }
