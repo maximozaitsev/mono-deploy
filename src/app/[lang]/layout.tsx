@@ -2,6 +2,7 @@
 import type { Metadata, Viewport } from "next";
 import path from "node:path";
 import fs from "node:fs/promises";
+import { headers } from "next/headers";
 import { getLocaleMeta } from "@/utils/localeMap";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import "../globals.scss";
@@ -13,6 +14,14 @@ export const revalidate = 0;
 export const runtime = "nodejs";
 
 type LangManifest = { languages: string[]; defaultLang: string };
+
+function getBaseUrl(): string | undefined {
+  if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
+  const h = headers();
+  const proto = h.get("x-forwarded-proto") ?? "https";
+  const host = h.get("x-forwarded-host") ?? h.get("host") ?? undefined;
+  return host ? `${proto}://${host}` : undefined;
+}
 
 async function readJSON<T>(filePath: string, fallback?: T): Promise<T> {
   try {
@@ -56,19 +65,17 @@ export async function generateMetadata({
   params: { lang: string };
 }): Promise<Metadata> {
   const currentGeo = (params.lang || "").toLowerCase();
+  const baseUrl = getBaseUrl();
 
   const { languages, defaultLang } = await readManifest();
   const { ogLocale, languageName } = getLocaleMeta(currentGeo);
   const { title, description } = await readContentMeta(currentGeo);
 
   const isDefault = currentGeo === defaultLang;
-  const siteBase = process.env.SITE_URL
-    ? `https://${process.env.SITE_URL}`
-    : undefined;
-  const canonical = siteBase
+  const canonical = baseUrl
     ? isDefault
-      ? `${siteBase}/`
-      : `${siteBase}/${currentGeo}`
+      ? `${baseUrl}/`
+      : `${baseUrl}/${currentGeo}`
     : isDefault
     ? "/"
     : `/${currentGeo}`;
@@ -76,17 +83,17 @@ export async function generateMetadata({
   const alternatesLanguages: Record<string, string> = {};
   for (const geo of languages) {
     const { htmlLang: hreflang } = getLocaleMeta(geo);
-    alternatesLanguages[hreflang] = siteBase
+    alternatesLanguages[hreflang] = baseUrl
       ? geo === defaultLang
-        ? `${siteBase}/`
-        : `${siteBase}/${geo}`
+        ? `${baseUrl}/`
+        : `${baseUrl}/${geo}`
       : geo === defaultLang
       ? "/"
       : `/${geo}`;
   }
-  alternatesLanguages["x-default"] = siteBase ? `${siteBase}/` : "/";
+  alternatesLanguages["x-default"] = baseUrl ? `${baseUrl}/` : "/";
 
-  const ogImage = siteBase ? `${siteBase}/og-image.webp` : "/og-image.webp";
+  const ogImage = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
 
   return {
     manifest: "/manifest.json",
