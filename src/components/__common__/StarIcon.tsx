@@ -27,7 +27,6 @@ export function computeGradient(
 
   const rawStops = stopsString.split(/,\s*/);
 
-  // Parse stops: [color [offset]] and normalize offsets if missing
   type Stop = { color: string; offset?: string };
   const parsed: Stop[] = rawStops.map((stop) => {
     const parts = stop.trim().split(/\s+/);
@@ -36,8 +35,6 @@ export function computeGradient(
     return { color, offset };
   });
 
-  // If some offsets are missing, distribute them evenly from 0%..100%
-  // respecting any explicitly provided offsets.
   const n = parsed.length;
   for (let i = 0; i < n; i++) {
     if (!parsed[i].offset) {
@@ -69,7 +66,7 @@ export function computeGradient(
 }
 
 interface StarIconProps {
-  fill?: string; // can be a color (e.g., #fff) or a CSS var or linear-gradient(...)
+  fill?: string;
   width?: number;
   height?: number;
 }
