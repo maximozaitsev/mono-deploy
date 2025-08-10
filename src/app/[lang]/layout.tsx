@@ -2,18 +2,34 @@
 import type { Metadata, Viewport } from "next";
 import path from "node:path";
 import fs from "node:fs/promises";
+import { headers } from "next/headers";
 import { getLocaleMeta } from "@/utils/localeMap";
-import { PROJECT_URL, PROJECT_NAME } from "@/config/projectConfig";
+import { PROJECT_NAME } from "@/config/projectConfig";
 import "../globals.scss";
+import "../../styles/colors.scss";
+import "../../styles/variables.scss";
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const runtime = "nodejs";
 
 type LangManifest = { languages: string[]; defaultLang: string };
 
-async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
+function getBaseUrl(): string | undefined {
+  if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
+  const h = headers();
+  const proto = h.get("x-forwarded-proto") ?? "https";
+  const host = h.get("x-forwarded-host") ?? h.get("host") ?? undefined;
+  return host ? `${proto}://${host}` : undefined;
+}
+
+async function readJSON<T>(filePath: string, fallback?: T): Promise<T> {
   try {
     const raw = await fs.readFile(filePath, "utf-8");
     return JSON.parse(raw) as T;
   } catch {
-    return fallback;
+    if (fallback !== undefined) return fallback;
+    throw new Error(`Cannot read JSON: ${filePath}`);
   }
 }
 
@@ -48,22 +64,36 @@ export async function generateMetadata({
 }: {
   params: { lang: string };
 }): Promise<Metadata> {
-  const currentGeo = params.lang.toLowerCase();
+  const currentGeo = (params.lang || "").toLowerCase();
+  const baseUrl = getBaseUrl();
+
   const { languages, defaultLang } = await readManifest();
-  const { ogLocale, htmlLang, languageName } = getLocaleMeta(currentGeo);
+  const { ogLocale, languageName } = getLocaleMeta(currentGeo);
   const { title, description } = await readContentMeta(currentGeo);
 
-  const base = `https://${PROJECT_URL}`;
   const isDefault = currentGeo === defaultLang;
-  const canonical = isDefault ? `${base}/` : `${base}/${currentGeo}`;
+  const canonical = baseUrl
+    ? isDefault
+      ? `${baseUrl}/`
+      : `${baseUrl}/${currentGeo}`
+    : isDefault
+    ? "/"
+    : `/${currentGeo}`;
 
   const alternatesLanguages: Record<string, string> = {};
   for (const geo of languages) {
     const { htmlLang: hreflang } = getLocaleMeta(geo);
-    alternatesLanguages[hreflang] =
-      geo === defaultLang ? `${base}/` : `${base}/${geo}`;
+    alternatesLanguages[hreflang] = baseUrl
+      ? geo === defaultLang
+        ? `${baseUrl}/`
+        : `${baseUrl}/${geo}`
+      : geo === defaultLang
+      ? "/"
+      : `/${geo}`;
   }
-  alternatesLanguages["x-default"] = `${base}/`;
+  alternatesLanguages["x-default"] = baseUrl ? `${baseUrl}/` : "/";
+
+  const ogImage = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
 
   return {
     manifest: "/manifest.json",
@@ -80,14 +110,7 @@ export async function generateMetadata({
       title,
       siteName: PROJECT_NAME,
       description,
-      images: [
-        {
-          url: `${base}/og-image.webp`,
-          width: 1200,
-          height: 630,
-          alt: PROJECT_NAME,
-        },
-      ],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: PROJECT_NAME }],
     },
     icons: {
       icon: [
@@ -123,9 +146,6 @@ export async function generateMetadata({
 
 export default function LangLayout({
   children,
-}: {
-  children: React.ReactNode;
-  params: { lang: string };
-}) {
+}: Readonly<{ children: React.ReactNode }>) {
   return <>{children}</>;
 }
