@@ -90,11 +90,7 @@ export default function FAQSection() {
         <div key={index} className="faq-item">
           <div className="faq-question" onClick={() => toggleAccordion(index)}>
             <span className="icon">
-              {activeIndices.includes(index) ? (
-                <MinusIcon size={32} />
-              ) : (
-                <PlusIcon size={32} />
-              )}
+              {activeIndices.includes(index) ? <MinusIcon /> : <PlusIcon />}
             </span>
             {faq.question}
           </div>
