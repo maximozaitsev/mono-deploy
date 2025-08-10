@@ -7,6 +7,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { headers } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
+import { PROJECT_NAME } from "../config/projectConfig";
 
 // Генерировать метаданные на каждый запрос
 export const dynamic = "force-dynamic";
@@ -143,7 +144,7 @@ export async function generateMetadata(): Promise<Metadata> {
   }
   alternatesLanguages["x-default"] = `${baseUrl}/`;
 
-  const siteName = process.env.SITE_NAME || "SiteName";
+  const siteName = PROJECT_NAME;
   const ogImage = `${baseUrl}/og-image.webp`;
 
   return {
