@@ -21,6 +21,4 @@ $text-color-fourth: #f50d37;
 // svg colors
 $color-faq-icon: #cf0032;
 $color-star-icon: linear-gradient(180deg, #ffd900 0%, #ae5100 100%);
-$color-star-icon-gradient: unquote(
-  "linear-gradient(180deg, #ffd900 0%, #ae5100 100%)"
-);
+$color-star-icon-gradient: unquote("linear-gradient(180deg, #ffd900 0%, #ae5100 100%)");

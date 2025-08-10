@@ -1,4 +1,4 @@
-import React, { useId, useEffect, useState } from "react";
+import React, { useId, useEffect, useState, useMemo } from "react";
 import { computeGradient } from "../../utils/gradientUtils";
 
 interface StarIconProps {
@@ -8,6 +8,10 @@ interface StarIconProps {
 const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
   const [computedFill, setComputedFill] = useState<string>("");
   const gradientId = useId();
+  const safeGradientId = useMemo(
+    () => `grad_${String(gradientId).replace(/[^a-zA-Z0-9_-]/g, "_")}`,
+    [gradientId]
+  );
 
   useEffect(() => {
     let cssFill = "";
@@ -23,12 +27,24 @@ const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
         if (cssFill.startsWith("linear-gradient")) {
           setComputedFill(cssFill);
         } else if (!cssFill) {
-          if (process.env.NODE_ENV === "development") {
-            console.warn(
-              `[StarIcon] CSS variable ${varName} not found or empty.`
-            );
+          const s1 = getComputedStyle(document.documentElement)
+            .getPropertyValue("--star-icon-stop-1")
+            .trim();
+          const s2 = getComputedStyle(document.documentElement)
+            .getPropertyValue("--star-icon-stop-2")
+            .trim();
+          const ang = getComputedStyle(document.documentElement)
+            .getPropertyValue("--star-icon-angle")
+            .trim();
+          if (s1 && s2) {
+            const angle = ang || "180";
+            setComputedFill(`linear-gradient(${angle}deg, ${s1} 0%, ${s2} 100%)`);
+          } else {
+            if (process.env.NODE_ENV === "development") {
+              console.warn(`[StarIcon] CSS variable ${varName} not found or empty.`);
+            }
+            setComputedFill(fill);
           }
-          setComputedFill(fill);
         } else {
           setComputedFill(cssFill);
         }
@@ -43,12 +59,26 @@ const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
       if (cssFill.startsWith("linear-gradient")) {
         setComputedFill(cssFill);
       } else if (!cssFill) {
-        if (process.env.NODE_ENV === "development") {
-          console.warn(
-            "[StarIcon] CSS variable --color-star-icon not found or empty."
-          );
+        const s1 = getComputedStyle(document.documentElement)
+          .getPropertyValue("--star-icon-stop-1")
+          .trim();
+        const s2 = getComputedStyle(document.documentElement)
+          .getPropertyValue("--star-icon-stop-2")
+          .trim();
+        const ang = getComputedStyle(document.documentElement)
+          .getPropertyValue("--star-icon-angle")
+          .trim();
+        if (s1 && s2) {
+          const angle = ang || "180";
+          setComputedFill(`linear-gradient(${angle}deg, ${s1} 0%, ${s2} 100%)`);
+        } else {
+          if (process.env.NODE_ENV === "development") {
+            console.warn(
+              "[StarIcon] CSS variable --color-star-icon not found or empty."
+            );
+          }
+          setComputedFill("#F6C946");
         }
-        setComputedFill("#F6C946");
       } else {
         setComputedFill(cssFill);
       }
@@ -59,7 +89,7 @@ const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
   let fillValue = computedFill;
 
   if (computedFill.startsWith("linear-gradient")) {
-    const result = computeGradient(computedFill, gradientId);
+    const result = computeGradient(computedFill, safeGradientId);
     if (result) {
       fillValue = result.fill;
       gradientElement = result.gradientElement;
