@@ -7,10 +7,19 @@ import { PROJECT_NAME } from "@/config/projectConfig";
 import "../globals.scss";
 import "../../styles/colors.scss";
 import "../../styles/variables.scss";
+import { headers } from "next/headers";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 export const runtime = "nodejs";
+
+function getBaseUrl(): string | undefined {
+  if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
+  const h = headers();
+  const proto = h.get("x-forwarded-proto") ?? "https";
+  const host = h.get("x-forwarded-host") ?? h.get("host") ?? undefined;
+  return host ? `${proto}://${host}` : undefined;
+}
 
 type LangManifest = { languages: string[]; defaultLang: string };
 
@@ -55,6 +64,7 @@ export async function generateMetadata({
 }: {
   params: { lang: string };
 }): Promise<Metadata> {
+  const baseUrl = getBaseUrl();
   const currentGeo = (params.lang || "").toLowerCase();
 
   const { languages, defaultLang } = await readManifest();
@@ -62,16 +72,28 @@ export async function generateMetadata({
   const { title, description } = await readContentMeta(currentGeo);
 
   const isDefault = currentGeo === defaultLang;
-  const canonical = currentGeo === defaultLang ? "/" : `/${currentGeo}`;
+  const canonical = baseUrl
+    ? isDefault
+      ? `${baseUrl}/`
+      : `${baseUrl}/${currentGeo}`
+    : isDefault
+    ? "/"
+    : `/${currentGeo}`;
 
   const alternatesLanguages: Record<string, string> = {};
   for (const geo of languages) {
     const { htmlLang: hreflang } = getLocaleMeta(geo);
-    alternatesLanguages[hreflang] = geo === defaultLang ? "/" : `/${geo}`;
+    alternatesLanguages[hreflang] = baseUrl
+      ? geo === defaultLang
+        ? `${baseUrl}/`
+        : `${baseUrl}/${geo}`
+      : geo === defaultLang
+      ? "/"
+      : `/${geo}`;
   }
   alternatesLanguages["x-default"] = "/";
 
-  const ogImage = "/og-image.webp";
+  const ogImage = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
 
   return {
     manifest: "/manifest.json",
