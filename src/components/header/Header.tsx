@@ -97,7 +97,6 @@ const Header: React.FC<HeaderProps> = ({
             <GlobeIcon size={24} color="var(--text-color-fourth)" />
             <select
               ref={selectRef}
-              id="lang-select"
               className={styles.languageSelector}
               value={selectedLang}
               onChange={(e) => handleLanguageChange(e.target.value)}

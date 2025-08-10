@@ -45,12 +45,12 @@ export default function WelcomeSection() {
         <div className="container">
           <div className={styles.welcomeContent}>
             <div className={styles.welcomeText}>
-              <p className={styles.offerText}>
+              <h2 className={styles.offerText}>
                 {t.exclusiveWelcomeOfferOf} {welcomeBonus}
-              </p>
-              <p className={styles.bonusText}>
+              </h2>
+              <h2 className={styles.bonusText}>
                 {t.exclusiveWelcomeOfferOf} {welcomeBonus}
-              </p>
+              </h2>
               <Button text="claimBonus" variant="primary" />
             </div>
           </div>
