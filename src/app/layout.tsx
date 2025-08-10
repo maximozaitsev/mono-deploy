@@ -178,7 +178,6 @@ export async function generateMetadata(): Promise<Metadata> {
       icon: [
         { url: "/icons/ico-192.png", type: "image/png", sizes: "192x192" },
         { url: "/icons/ico-512.png", type: "image/png", sizes: "512x512" },
-        { url: "/icons/ico-100.png", type: "image/png", sizes: "100x100" },
         { url: "/icons/ico-114.png", type: "image/png", sizes: "114x114" },
         { url: "/icons/ico-120.png", type: "image/png", sizes: "120x120" },
         { url: "/icons/ico-144.png", type: "image/png", sizes: "144x144" },
