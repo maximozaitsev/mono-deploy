@@ -66,16 +66,36 @@ function extractMeta(obj: Record<string, any>): {
 }
 
 async function readContentMeta(
-  lang: string
+  lang: string,
+  baseUrl?: string
 ): Promise<{ title: string; description: string }> {
-  const p = path.join(
+  const fsPath = path.join(
     process.cwd(),
     "public",
     "content",
     `content.${lang}.json`
   );
-  const json = await readJSON<Record<string, any>>(p, {});
-  return extractMeta(json);
+
+  const fsJson = await readJSON<Record<string, any>>(fsPath, {});
+
+  const fromFs = extractMeta(fsJson);
+  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
+    return fromFs;
+  }
+
+  if (baseUrl) {
+    try {
+      const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
+        cache: "no-store",
+      });
+      if (res.ok) {
+        const json = (await res.json()) as Record<string, any>;
+        return extractMeta(json);
+      }
+    } catch {}
+  }
+
+  return { title: "Title", description: "Description" };
 }
 
 export const viewport: Viewport = {
@@ -93,7 +113,7 @@ export async function generateMetadata({
 
   const { languages, defaultLang } = await readManifest();
   const { ogLocale, languageName } = getLocaleMeta(currentGeo);
-  const { title, description } = await readContentMeta(currentGeo);
+  const { title, description } = await readContentMeta(currentGeo, baseUrl);
 
   const isDefault = currentGeo === defaultLang;
   const canonical = baseUrl
