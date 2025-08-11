@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
-import Link from "next/link";
 import Logo from "./Logo";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import styles from "./Header.module.scss";
@@ -75,6 +74,13 @@ const Header: React.FC<HeaderProps> = ({
     } catch {}
   };
 
+  const scrollToWelcomeSection = () => {
+    const el = document.getElementById("welcome-section");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
 
   const translations = ST[selectedLang] || ST["en"];
@@ -82,14 +88,20 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <Link href="/">
+        <button
+          type="button"
+          onClick={scrollToWelcomeSection}
+          className={styles.logoButton}
+          aria-label={`${PROJECT_NAME} Logo - Scroll to welcome section`}
+          style={{ background: "none", border: "none" }}
+        >
           <Logo
             svgPath={logoPath}
             gradientIdPrefix="header"
             alt={`${PROJECT_NAME} Logo`}
             onClick={() => {}}
           />
-        </Link>
+        </button>
         <div className={styles.spacer} />
 
         <div className={styles.headerButtons}>

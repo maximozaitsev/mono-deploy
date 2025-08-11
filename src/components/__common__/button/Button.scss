@@ -59,6 +59,7 @@
     background: linear-gradient(#e5e5e5, #e5e5e5) padding-box,
       linear-gradient(180deg, #f4003b 0%, #78011c 100%) border-box;
     overflow: hidden;
+    line-height: 0.93;
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;

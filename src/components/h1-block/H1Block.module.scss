@@ -25,9 +25,18 @@
     width: 100%;
     text-align: center;
 
+    @media (max-width: 1180px) {
+      max-width: 828px;
+    }
+
+    @media (max-width: 912px) {
+      max-width: 544px;
+    }
+
     @media (max-width: 768px) {
       font-size: 20px;
       margin: -24px 40px 0;
+      max-width: 496px;
     }
 
     @media (max-width: 420px) {

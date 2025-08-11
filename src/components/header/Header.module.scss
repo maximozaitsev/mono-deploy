@@ -93,7 +93,7 @@
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
       font-size: 10px;
-      padding: 6px 16px;
+      padding: 6px 2px;
 
       &.login {
         width: $header-button-large-small-mobile;
@@ -168,4 +168,56 @@
   @media (max-width: 768px) {
     scale: 0.8;
   }
+}
+
+.langControl select {
+  color-scheme: light;
+}
+
+.langControl select option {
+  background-color: var(--dropdown-bg, #ffffff);
+  color: var(--dropdown-fg, #111111);
+}
+
+.langControl select option:checked,
+.langControl select option:focus,
+.langControl select option:hover {
+  background-color: var(--dropdown-hover, #f0f0f0);
+  color: var(--dropdown-fg, #111111);
+}
+
+@media (prefers-color-scheme: dark) {
+  .langControl select {
+    color-scheme: light;
+  }
+  .langControl select option {
+    background-color: var(--dropdown-bg-dark, #1e1e1e);
+    color: var(--dropdown-fg-dark, #ffffff);
+  }
+  .langControl select option:checked,
+  .langControl select option:focus,
+  .langControl select option:hover {
+    background-color: var(--dropdown-hover-dark, #2a2a2a);
+    color: var(--dropdown-fg-dark, #ffffff);
+  }
+}
+
+@media (forced-colors: active) {
+  .langControl select,
+  .langControl select option {
+    forced-color-adjust: none;
+    background-color: Canvas !important;
+    color: CanvasText !important;
+    border-color: CanvasText !important;
+  }
+}
+
+.langControl select {
+  background-color: transparent;
+  color: $text-color-primary;
+  -webkit-text-fill-color: currentColor;
+}
+
+.langControl select::-ms-expand {
+  display: none;
 }
