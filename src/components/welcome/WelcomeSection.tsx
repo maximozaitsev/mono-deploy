@@ -14,6 +14,7 @@ const translations = staticContent as Record<string, Record<string, string>>;
 
 export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
+  const [firstOfferId, setFirstOfferId] = useState<string>("");
   const pathname = usePathname();
   const firstSeg = pathname?.split("/").filter(Boolean)[0] || "";
   const currentLang = manifest.languages.includes(firstSeg)
@@ -28,6 +29,7 @@ export default function WelcomeSection() {
         const offersData = await fetchOffers();
         const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
         setWelcomeBonus(bonus);
+        setFirstOfferId(String(offersData.offers[0]?.id ?? ""));
       } catch (error) {
         console.error("Failed to fetch welcome bonus:", error);
       }
@@ -51,7 +53,13 @@ export default function WelcomeSection() {
               <h2 className={styles.bonusText}>
                 {t.exclusiveWelcomeOfferOf} {welcomeBonus}
               </h2>
-              <Button text="claimBonus" variant="primary" />
+              <Button
+                text={t.claimBonus}
+                variant="primary"
+                useNavigation={true}
+                url={`/casino/${firstOfferId}`}
+                openInNewTab
+              />
             </div>
           </div>
         </div>

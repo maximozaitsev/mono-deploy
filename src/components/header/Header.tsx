@@ -88,12 +88,19 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <button
-          type="button"
-          onClick={scrollToWelcomeSection}
+        <a
+          href="#welcome-section"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToWelcomeSection();
+          }}
           className={styles.logoButton}
           aria-label={`${PROJECT_NAME} Logo - Scroll to welcome section`}
-          style={{ background: "none", border: "none" }}
+          style={{
+            background: "none",
+            border: "none",
+            display: "inline-block",
+          }}
         >
           <Logo
             svgPath={logoPath}
@@ -101,7 +108,7 @@ const Header: React.FC<HeaderProps> = ({
             alt={`${PROJECT_NAME} Logo`}
             onClick={() => {}}
           />
-        </button>
+        </a>
         <div className={styles.spacer} />
 
         <div className={styles.headerButtons}>
