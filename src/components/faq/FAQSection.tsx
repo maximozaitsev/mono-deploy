@@ -17,34 +17,22 @@ export default function FAQSection() {
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    const load = async () => {
-      try {
-        const manifestRes = await fetch("/content/languages.json", {
-          cache: "no-cache",
-        });
-        const manifest = await manifestRes.json();
-        const parts = window.location.pathname.split("/").filter(Boolean);
-        const first = parts[0];
-        const lang =
-          first &&
-          manifest.languages.includes(first) &&
-          first !== manifest.defaultLang
-            ? first
-            : manifest.defaultLang;
-        const res = await fetch(`/content/content.${lang}.json`, {
-          cache: "no-cache",
-        });
-        const data = await res.json();
+    import("../../content/content.json")
+      .then((data) => {
+        const faqData = data.default.faq;
 
-        const faqData = data.faq;
-        if (!faqData) return;
+        if (!faqData) {
+          console.error("Ошибка: FAQ не найден в JSON");
+          return;
+        }
+
         const faqEntries = Object.entries(faqData) as [string, any][];
         if (faqEntries.length === 0) return;
 
         const [title, faqContent] = faqEntries[0];
         setFaqTitle(title);
 
-        const items: FAQItem[] = [];
+        const faqItems: FAQItem[] = [];
         for (let i = 0; i < faqContent.length; i++) {
           if (faqContent[i].type === "heading" && faqContent[i].level === 3) {
             const question = faqContent[i].text;
@@ -52,15 +40,13 @@ export default function FAQSection() {
               faqContent[i + 1]?.type === "paragraph"
                 ? faqContent[i + 1].text
                 : "";
-            items.push({ question, answer });
+            faqItems.push({ question, answer });
           }
         }
-        setFaqs(items);
-      } catch (err) {
-        console.error("Ошибка загрузки JSON:", err);
-      }
-    };
-    load();
+
+        setFaqs(faqItems);
+      })
+      .catch((error) => console.error("Ошибка загрузки JSON:", error));
   }, []);
 
   const toggleAccordion = (index: number) => {
@@ -90,7 +76,11 @@ export default function FAQSection() {
         <div key={index} className="faq-item">
           <div className="faq-question" onClick={() => toggleAccordion(index)}>
             <span className="icon">
-              {activeIndices.includes(index) ? <MinusIcon /> : <PlusIcon />}
+              {activeIndices.includes(index) ? (
+                <MinusIcon size={32} />
+              ) : (
+                <PlusIcon size={32} />
+              )}
             </span>
             {faq.question}
           </div>

@@ -10,7 +10,7 @@
   align-items: center;
   gap: 16px;
 
-  outline: $border-width solid $color-border-primary;
+  outline: 2px solid #581422;
   border-radius: $border-radius;
   background: $color-background-third;
 
@@ -30,12 +30,11 @@
 
   h4 {
     font-family: $font-primary;
-    text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: #f50d37;
+    color: #f7b23f;
 
     // background: $color-button-large;
     // background-clip: text;
@@ -63,11 +62,11 @@
     margin-left: -20px;
     margin-right: -20px;
     // width: 206px;
-    max-width: 217px;
   }
 
   @media (max-width: 768px) {
     width: 240px;
+    height: 264px;
     padding: 16px;
 
     img {

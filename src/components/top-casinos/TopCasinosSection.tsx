@@ -6,18 +6,8 @@ import OfferCard from "./OfferCard";
 import Button from "../__common__/button/Button";
 import { fetchOffers } from "@/utils/fetchOffers";
 import "./TopCasinosSection.scss";
-import staticTranslations from "../../../public/content/static.json";
-type StaticTranslationsMap = Record<string, Record<string, string>>;
-const ST = staticTranslations as StaticTranslationsMap;
 
 const TopCasinosSection: React.FC = () => {
-  const [currentLang, setCurrentLang] = useState<string>("en");
-  const t = ST[currentLang] || ST["en"];
-  useEffect(() => {
-    const pathLang = window.location.pathname.split("/")[1];
-    if (ST[pathLang]) setCurrentLang(pathLang);
-  }, []);
-
   const [country, setCountry] = useState<string>("");
   const [offers, setOffers] = useState<Offer[]>([]);
   // const [loading, setLoading] = useState<boolean>(true);
@@ -45,9 +35,7 @@ const TopCasinosSection: React.FC = () => {
       id="top-casinos-section"
       className="top-casinos-section section container"
     >
-      <h2 className="h2-heading">
-        {t.topCasinos} {country}
-      </h2>
+      <h2 className="h2-heading">Top Casinos {country}</h2>
       <div className="offers-grid">
         {visibleOffers.map((offer) => (
           <OfferCard key={offer.id} offer={offer} />
@@ -55,7 +43,7 @@ const TopCasinosSection: React.FC = () => {
       </div>
       {!showAll && (
         <Button
-          text={t.allCasino}
+          text="All Casino"
           variant="primary"
           onClick={() => setShowAll(true)}
           useNavigation={false}
