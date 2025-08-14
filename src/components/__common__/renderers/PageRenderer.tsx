@@ -1,4 +1,5 @@
 import React from "react";
+import { PROJECT_NAME } from "@/config/projectConfig";
 import ListRenderer from "@/components/__common__/renderers/ListRenderer";
 import TwoColumns, {
   ColumnItem,
@@ -16,9 +17,10 @@ export interface Block {
 
 interface Props {
   blocks: Block[];
+  pageKey?: string;
 }
 
-export const PageRenderer: React.FC<Props> = ({ blocks }) => {
+export const PageRenderer: React.FC<Props> = ({ blocks, pageKey }) => {
   const sections: Block[][] = [];
   let currentSection: Block[] = [];
   blocks.forEach((b) => {
@@ -85,7 +87,9 @@ export const PageRenderer: React.FC<Props> = ({ blocks }) => {
             return (
               <div key={i} className="section">
                 {titleBlock.level === 1 ? (
-                  <h1 className="h2-heading white">{titleBlock.text}</h1>
+                  <h1 className="h2-heading white">
+                    {`${PROJECT_NAME} ${pageKey ?? ""}`.trim()}
+                  </h1>
                 ) : (
                   <h2 className="h2-heading white">{titleBlock.text}</h2>
                 )}
@@ -122,7 +126,9 @@ export const PageRenderer: React.FC<Props> = ({ blocks }) => {
             return (
               <div key={i} className="section">
                 {titleBlock.level === 1 ? (
-                  <h1 className="h2-heading white">{titleBlock.text}</h1>
+                  <h1 className="h2-heading white">
+                    {`${PROJECT_NAME} ${pageKey ?? ""}`.trim()}
+                  </h1>
                 ) : (
                   <h2 className="h2-heading white">{titleBlock.text}</h2>
                 )}

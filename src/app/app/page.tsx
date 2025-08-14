@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import Header from "@/components/header/Header";
 import WelcomeSection from "@/components/welcome/WelcomeSection";
+import H1Section from "@/components/h1-block/H1Block";
 import TopCasinosSection from "@/components/top-casinos/TopCasinosSection";
 import Footer from "@/components/footer/Footer";
 import siteData from "@/content/siteData.json";
@@ -42,8 +43,9 @@ export default function LoginPage() {
     <>
       <Header />
       <WelcomeSection />
+      <H1Section blocks={blocks} />
       <TopCasinosSection />
-      <PageRenderer blocks={blocks} />
+      <PageRenderer blocks={blocks} pageKey="app" />
       <Footer />
     </>
   );

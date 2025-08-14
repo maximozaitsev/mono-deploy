@@ -33,7 +33,7 @@ export default async function HomePage() {
     <main>
       <Header />
       <WelcomeSection />
-      <H1Section />
+      <H1Section pageKey="home" />
       <TopCasinosSection />
       <BonusDetailsSection />
       <MobileSection />
