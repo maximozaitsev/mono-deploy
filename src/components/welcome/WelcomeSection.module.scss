@@ -14,7 +14,6 @@
   background-repeat: no-repeat;
   background-position: right 148px top 7px;
   background-image: url("/block-images/welcome.webp");
-  background-size: auto 95%;
 
   & :global(.container) {
     width: 100%;
@@ -27,27 +26,33 @@
 
   @media (max-width: 768px) {
     background-image: none;
-    padding-top: 21.2rem;
     height: auto;
     justify-content: flex-end;
     margin: 0 auto 84px auto;
+    gap: 20px;
   }
 
   @media (max-width: 420px) {
     margin: 0 auto 72px auto;
-    padding-top: 14.35rem;
   }
 }
 
-.bgMobile {
+.mobileFigure {
   display: none;
+  margin: 0;
 
   @media (max-width: 768px) {
     display: block;
-    position: absolute;
-    inset: 0;
-    z-index: 0;
+    width: 100%;
+    text-align: center;
   }
+}
+
+.mobileImage {
+  display: inline-block;
+  width: 100vw;
+  max-width: 576px;
+  height: auto;
 }
 
 .welcomeContent {
@@ -55,7 +60,7 @@
   flex-direction: column;
   gap: 3rem;
   position: relative;
-  z-index: 1; // над фоном
+  z-index: 1;
   max-width: 72.5rem;
 
   @media (max-width: 768px) {

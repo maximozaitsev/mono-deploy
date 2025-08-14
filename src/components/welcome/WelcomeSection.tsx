@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
@@ -15,7 +14,7 @@ export default function WelcomeSection() {
     const fetchWelcomeBonus = async () => {
       try {
         const offersData = await fetchOffers();
-        const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
+        const bonus = offersData.offers[0]?.bonuses?.welcome_bonus || "";
         setWelcomeBonus(bonus);
         const link = offersData.offers[0]?.link || "";
         setOfferLink(link);
@@ -34,23 +33,15 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
-      <div className={styles.bgMobile} aria-hidden>
-        <Image
+      <figure className={styles.mobileFigure} aria-hidden>
+        <img
+          className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
           alt=""
-          fill
-          priority
           loading="eager"
           decoding="async"
-          fetchPriority="high"
-          sizes="100vw"
-          style={{
-            objectFit: "contain",
-            objectPosition: "top center",
-            pointerEvents: "none",
-          }}
         />
-      </div>
+      </figure>
 
       <div className="container">
         <div className={styles.welcomeContent}>
