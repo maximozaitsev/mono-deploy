@@ -10,7 +10,6 @@ import "./TopCasinosSection.scss";
 const TopCasinosSection: React.FC = () => {
   const [country, setCountry] = useState<string>("");
   const [offers, setOffers] = useState<Offer[]>([]);
-  // const [loading, setLoading] = useState<boolean>(true);
   const [showAll, setShowAll] = useState<boolean>(false);
 
   useEffect(() => {
@@ -18,17 +17,12 @@ const TopCasinosSection: React.FC = () => {
       const { country, offers } = await fetchOffers();
       setCountry(country);
       setOffers(offers);
-      // setLoading(false);
     };
 
     loadOffers();
   }, []);
 
   const visibleOffers = showAll ? offers : offers.slice(0, 8);
-
-  // if (loading) {
-  //   return <div>Loading...</div>;
-  // }
 
   return (
     <section
@@ -37,8 +31,13 @@ const TopCasinosSection: React.FC = () => {
     >
       <h2 className="h2-heading">Top Casinos {country}</h2>
       <div className="offers-grid">
-        {visibleOffers.map((offer) => (
-          <OfferCard key={offer.id} offer={offer} />
+        {visibleOffers.map((offer, idx) => (
+          <OfferCard
+            key={offer.id}
+            offer={offer}
+            // первые 2 лого — в приоритете (улучшает LCP)
+            priority={idx < 2}
+          />
         ))}
       </div>
       {!showAll && (
