@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
-import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import styles from "./Header.module.scss";
 import { usePathname } from "next/navigation";
@@ -17,24 +16,36 @@ const navItems = [
 ];
 
 const Header = () => {
-  const { handleNavigation } = useNavigateWithPreloader();
   const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [offerId, setOfferId] = useState("");
+  const [offerLink, setOfferLink] = useState("");
   const pathname = usePathname();
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
     window.addEventListener("resize", handleResize);
+
+    (async () => {
+      try {
+        const { offers } = await fetchOffers();
+        const first = offers?.[0];
+        setOfferId(first && first.id != null ? String(first.id) : "");
+        setOfferLink(first?.link || "");
+      } catch (e) {
+        console.error("Failed to prefetch offers in header:", e);
+      }
+    })();
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleSignInClick = async () => {
+  const handleSignInClick = () => {
     try {
-      const { offers } = await fetchOffers();
-      window.open(`/casino/${offers[0].id}`, "_blank", "noopener,noreferrer");
+      window.open(`/casino/${offerId}`, "_blank", "noopener,noreferrer");
     } catch (error) {
-      console.error("Error opening preloader:", error);
+      console.error("Error opening Play Now:", error);
     }
   };
 
