@@ -4,9 +4,11 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 
 const url = "magius-casino-online.com";
-const ogTitle = "Magius Casino Australia – Games, Bonuses, and Secure Play Online";
+const ogTitle =
+  "Magius Casino Australia – Games, Bonuses, and Secure Play Online";
 const ogSiteName = "Magius";
-const metaDescription = "Magius Casino Australia offers thousands of games, generous bonuses, and secure payments for local players. Join today to enjoy premium pokies, live dealer action, and fast payouts.";
+const metaDescription =
+  "Magius Casino Australia offers thousands of games, generous bonuses, and secure payments for local players. Join today to enjoy premium pokies, live dealer action, and fast payouts.";
 
 const locale = "en-AU";
 const language = "English";
@@ -48,6 +50,25 @@ export default function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="language" content={language} />
+        <link
+          rel="preconnect"
+          href="https://api.adkey-seo.com"
+          crossOrigin=""
+        />
+        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome.webp"
+          media="(min-width: 769px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome-mobile.webp"
+          media="(max-width: 768px)"
+        />
+
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
         <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
