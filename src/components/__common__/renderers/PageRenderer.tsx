@@ -87,9 +87,9 @@ export const PageRenderer: React.FC<Props> = ({ blocks, pageKey }) => {
             return (
               <div key={i} className="section">
                 {titleBlock.level === 1 ? (
-                  <h1 className="h2-heading white">
+                  <h2 className="h2-heading white">
                     {`${PROJECT_NAME} ${pageKey ?? ""}`.trim()}
-                  </h1>
+                  </h2>
                 ) : (
                   <h2 className="h2-heading white">{titleBlock.text}</h2>
                 )}
@@ -126,9 +126,9 @@ export const PageRenderer: React.FC<Props> = ({ blocks, pageKey }) => {
             return (
               <div key={i} className="section">
                 {titleBlock.level === 1 ? (
-                  <h1 className="h2-heading white">
+                  <h2 className="h2-heading white">
                     {`${PROJECT_NAME} ${pageKey ?? ""}`.trim()}
-                  </h1>
+                  </h2>
                 ) : (
                   <h2 className="h2-heading white">{titleBlock.text}</h2>
                 )}
