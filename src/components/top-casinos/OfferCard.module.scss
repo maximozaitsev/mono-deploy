@@ -14,8 +14,11 @@
   border-radius: $border-radius;
   background: $color-background-third;
 
-  img {
+  .logo {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
+    width: 160px;
+    height: auto;
+    display: block;
   }
 
   h3 {
@@ -59,18 +62,16 @@
 
   button {
     margin-top: auto;
-    // padding: 4px 32px !important;
     margin-left: -20px;
     margin-right: -20px;
-    // width: 206px;
-    max-width: 217px;
   }
 
   @media (max-width: 768px) {
     width: 240px;
+    height: 264px;
     padding: 16px;
 
-    img {
+    .logo {
       width: 160px;
     }
 

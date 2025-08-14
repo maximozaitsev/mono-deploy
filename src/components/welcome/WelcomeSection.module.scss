@@ -9,6 +9,7 @@
 
   @media (max-width: 768px) {
     margin-bottom: 62px;
+    gap: 20px;
   }
 }
 
@@ -40,27 +41,40 @@
   }
 
   @media (max-width: 768px) {
-    padding-top: 20.95rem;
     height: auto;
     justify-content: flex-end;
-    background-size: auto 60.5%;
-    background-position: top 5.5px center;
+    background-image: none;
+    background-size: auto;
+    background-position: initial;
     margin: 0 auto 24px auto;
-  }
-
-  @media (max-width: 576px) {
-    background-image: url("/block-images/welcome-mobile.webp");
   }
 
   @media (max-width: 530px) {
     background-size: auto 50%;
-    padding-top: 14.35rem;
   }
 
   @media (max-width: 380px) {
     // background-size: auto 60%;
     // padding-top: 12.35rem;
   }
+}
+
+.mobileFigure {
+  display: none;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.mobileImage {
+  display: inline-block;
+  width: 100vw;
+  max-width: 576px;
+  height: auto;
 }
 
 .welcomeContent {
@@ -129,12 +143,6 @@
     font-size: 24px;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    // color: $text-color-welcome;
-
-    // background: $text-color-welcome;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
   }
 
   @media (max-width: 380px) {

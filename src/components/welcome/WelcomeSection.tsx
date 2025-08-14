@@ -45,6 +45,16 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
+      <figure className={styles.mobileFigure} aria-hidden>
+        <img
+          className={styles.mobileImage}
+          src="/block-images/welcome-mobile.webp"
+          alt=""
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
+
       <div className={styles.welcomeBg}>
         <div className="container">
           <div className={styles.welcomeContent}>
