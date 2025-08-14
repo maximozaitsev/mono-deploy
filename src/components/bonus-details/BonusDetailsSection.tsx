@@ -30,7 +30,6 @@ const BonusDetailsSection: React.FC = () => {
       setOffers(offers);
       setDisplayedOffers(offers.slice(0, 6));
     };
-
     loadOffers();
   }, []);
 
@@ -71,87 +70,97 @@ const BonusDetailsSection: React.FC = () => {
           <div className="headerCell hide-768">{t.get}</div>
         </div>
 
-        {displayedOffers.map((offer) => (
-          <div key={offer.id} className="row">
-            <div className="cell">
-              <Image
-                src={offer.logo}
-                className="offerImage"
-                alt={offer.name}
-                title={
-                  offer.name +
-                  " in " +
-                  PROJECT_NAME +
-                  " " +
-                  getProjectGeoForLang(currentLang)
-                }
-                width={140}
-                height={56}
-                style={{ maxWidth: "100%", height: "auto" }}
-                quality={100}
-              />
-            </div>
-            <div className="cell hide-1020">{t.welcomeBonus}</div>
-            <div className="cell">{renderValueOrDash(offer.bonuses.rate)}</div>
-            <div className="cell">
-              {offer.bonuses.free_spins > 0 && `${offer.bonuses.free_spins} FS`}
-            </div>
+        {displayedOffers.map((offer, idx) => {
+          const logoSrc = (offer as any).optimizedLogo || offer.logo;
+          const geo = getProjectGeoForLang(currentLang);
 
-            <div className="cell info-cell">
-              <button
-                onClick={() => toggleAccordion(offer.id)}
-                className="icon-button"
-                aria-label="Toggle information for offer"
-              >
-                <InfoIcon />
-              </button>
-            </div>
-            <div className="cell hide-768 last-cell">
-              <Button
-                text={t.getTheBonus}
-                variant="secondary"
-                useNavigation={true}
-                url={`/casino/${offer.id}`}
-                openInNewTab
-              />
-            </div>
-            {openOffers.includes(offer.id) && (
-              <div className="accordion">
-                <div className="accordion-item">
-                  <div className="accordion-title">{t.maximumAmount}:</div>
-                  <div className="accordion-value">
-                    {renderValueOrDash(offer.bonuses.amount)}
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <div className="accordion-title">{t.wager}:</div>
-                  <div className="accordion-value">
-                    {renderValueOrDash(offer.wager)}
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <div className="accordion-title">{t.bonusCode}:</div>
-                  <div className="accordion-value">
-                    {renderValueOrDash(offer.bonus_code)}
-                  </div>
-                </div>
-
-                <div className="accordion-item last-cell show-768">
-                  <div className="accordion-title last-cell"></div>
-                  <div className="accordion-value last-cell">
-                    <Button
-                      text={t.getTheBonus}
-                      variant="secondary"
-                      useNavigation={true}
-                      url={`/casino/${offer.id}`}
-                    />
-                  </div>
-                </div>
+          return (
+            <div key={offer.id} className="row">
+              <div className="cell">
+                <Image
+                  src={logoSrc}
+                  className="offerImage"
+                  alt={offer.name}
+                  title={`${offer.name} in ${PROJECT_NAME} ${geo}`}
+                  width={140}
+                  height={56}
+                  sizes="(max-width: 768px) 40vw, 140px"
+                  priority={idx < 2}
+                  loading={idx < 2 ? "eager" : "lazy"}
+                  decoding="async"
+                  fetchPriority={idx < 2 ? "high" : "auto"}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
               </div>
-            )}
-          </div>
-        ))}
+
+              <div className="cell hide-1020">{t.welcomeBonus}</div>
+              <div className="cell">
+                {renderValueOrDash(offer.bonuses.rate)}
+              </div>
+              <div className="cell">
+                {offer.bonuses.free_spins > 0 &&
+                  `${offer.bonuses.free_spins} FS`}
+              </div>
+
+              <div className="cell info-cell">
+                <button
+                  onClick={() => toggleAccordion(offer.id)}
+                  className="icon-button"
+                  aria-label="Toggle information for offer"
+                >
+                  <InfoIcon />
+                </button>
+              </div>
+
+              <div className="cell hide-768 last-cell">
+                <Button
+                  text={t.getTheBonus}
+                  variant="secondary"
+                  useNavigation={true}
+                  url={`/casino/${offer.id}`}
+                  openInNewTab
+                />
+              </div>
+
+              {openOffers.includes(offer.id) && (
+                <div className="accordion">
+                  <div className="accordion-item">
+                    <div className="accordion-title">{t.maximumAmount}:</div>
+                    <div className="accordion-value">
+                      {renderValueOrDash(offer.bonuses.amount)}
+                    </div>
+                  </div>
+                  <div className="accordion-item">
+                    <div className="accordion-title">{t.wager}:</div>
+                    <div className="accordion-value">
+                      {renderValueOrDash(offer.wager)}
+                    </div>
+                  </div>
+                  <div className="accordion-item">
+                    <div className="accordion-title">{t.bonusCode}:</div>
+                    <div className="accordion-value">
+                      {renderValueOrDash(offer.bonus_code)}
+                    </div>
+                  </div>
+
+                  <div className="accordion-item last-cell show-768">
+                    <div className="accordion-title last-cell"></div>
+                    <div className="accordion-value last-cell">
+                      <Button
+                        text={t.getTheBonus}
+                        variant="secondary"
+                        useNavigation={true}
+                        url={`/casino/${offer.id}`}
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
+
       <Button
         text={t.refresh}
         variant="primary"

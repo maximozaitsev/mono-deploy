@@ -21,10 +21,13 @@
   width: 100%;
   display: grid;
   row-gap: 24px;
+  contain: content;
 }
 
 .row {
   display: grid;
+  content-visibility: auto;
+  contain-intrinsic-size: 88px auto; 
   grid-template-columns: 18% 22% 12% 13% 12% 23%;
   align-items: center;
   border-radius: $border-radius;
@@ -96,6 +99,10 @@
 
   .offerImage {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
+    width: 140px; 
+    height: auto; 
+    max-width: 100%;
+    display: block;
   }
 
   @media (max-width: 850px) {
@@ -360,3 +367,11 @@
   }
 }
 /* Theme Styles End */
+@media (hover: none) {
+  .row,
+  .cell,
+  .accordion-title,
+  .accordion-value {
+    transition: none;
+  }
+}
