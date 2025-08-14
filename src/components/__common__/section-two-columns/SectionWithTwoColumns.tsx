@@ -17,31 +17,15 @@ export default function SectionWithTwoColumns({
   const [rightColumnContent, setRightColumnContent] = useState<any[]>([]);
 
   useEffect(() => {
-    const load = async () => {
-      try {
-        const manifestRes = await fetch("/content/languages.json", {
-          cache: "no-cache",
-        });
-        const manifest = await manifestRes.json();
-        const parts = window.location.pathname.split("/").filter(Boolean);
-        const first = parts[0];
-        const lang =
-          first &&
-          manifest.languages.includes(first) &&
-          first !== manifest.defaultLang
-            ? first
-            : manifest.defaultLang;
-        const res = await fetch(`/content/content.${lang}.json`, {
-          cache: "no-cache",
-        });
-        const data = await res.json();
-
+    import("../../../content/content.json")
+      .then((data) => {
         const sectionData = data[jsonKey];
         if (!sectionData) {
           console.error(`Ошибка: ключ "${jsonKey}" отсутствует в JSON`);
           return;
         }
         const sectionEntries = Object.entries(sectionData) as [string, any][];
+
         if (sectionEntries.length > 0) {
           const [firstKey, section] = sectionEntries[0];
           setSectionTitle(firstKey);
@@ -49,6 +33,7 @@ export default function SectionWithTwoColumns({
           const firstH3Index = section.findIndex(
             (block: any) => block.type === "heading" && block.level === 3
           );
+
           const introBlocks =
             firstH3Index !== -1 ? section.slice(0, firstH3Index) : section;
           setIntroContent(groupParagraphs(introBlocks));
@@ -68,12 +53,8 @@ export default function SectionWithTwoColumns({
           setLeftColumnContent(h3Sections.slice(0, midIndex));
           setRightColumnContent(h3Sections.slice(midIndex));
         }
-      } catch (error) {
-        console.error("Ошибка загрузки JSON:", error);
-      }
-    };
-
-    load();
+      })
+      .catch((error) => console.error("Ошибка загрузки JSON:", error));
   }, [jsonKey]);
 
   function groupParagraphs(blocks: any[]): string[][] {
