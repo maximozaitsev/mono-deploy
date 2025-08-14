@@ -10,15 +10,12 @@
   align-items: center;
   gap: 16px;
 
-  outline: 2px solid #581422;
+  outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
   background: $color-background-third;
 
-  .logo {
+  img {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
-    width: 160px; // синхронизировано с next/image width
-    height: auto; // чтобы не растягивалось
-    display: block;
   }
 
   h3 {
@@ -33,11 +30,17 @@
 
   h4 {
     font-family: $font-primary;
+    text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: #f7b23f;
+    color: #f50d37;
+
+    // background: $color-button-large;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   p {
@@ -56,17 +59,19 @@
 
   button {
     margin-top: auto;
+    // padding: 4px 32px !important;
     margin-left: -20px;
     margin-right: -20px;
+    // width: 206px;
+    max-width: 217px;
   }
 
   @media (max-width: 768px) {
     width: 240px;
-    height: 264px;
     padding: 16px;
 
-    .logo {
-      width: 160px; // остаётся тем же, чтобы не перекачивать разные размеры
+    img {
+      width: 160px;
     }
 
     h3 {

@@ -7,25 +7,15 @@ export async function fetchOffers(): Promise<HomePageProps> {
     if (!siteId) throw new Error("Missing SITE_ID in environment variables");
 
     const response = await axios.get(
-      `https://api.adkey-seo.com/api/website/get-website/${siteId}`,
-      {
-        headers: {
-          "Cache-Control": "no-cache",
-        },
-        timeout: 5000,
-      }
+      `https://api.adkey-seo.com/api/website/get-website/${siteId}`
     );
 
     const { website, offers } = response.data;
 
-    const updatedOffers = offers.map((offer: Offer) => {
-      const logoUrl = `https://api.adkey-seo.com/storage/images/offers/${offer.logo}`;
-      return {
-        ...offer,
-        logo: logoUrl,
-        optimizedLogo: `${logoUrl}?format=webp&width=160&height=64`,
-      };
-    });
+    const updatedOffers = offers.map((offer: Offer) => ({
+      ...offer,
+      logo: `https://api.adkey-seo.com/storage/images/offers/${offer.logo}`,
+    }));
 
     return {
       country: website.country_name,

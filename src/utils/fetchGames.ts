@@ -1,8 +1,8 @@
 import axios from "axios";
 import { Game } from "../types/game";
 
-const MAX_RETRIES = 4;
-const RETRY_DELAY = 800;
+const MAX_RETRIES = 3;
+const RETRY_DELAY = 1000;
 
 export async function fetchGames(type: string): Promise<Game[]> {
   let retries = 0;
@@ -10,25 +10,14 @@ export async function fetchGames(type: string): Promise<Game[]> {
   while (retries < MAX_RETRIES) {
     try {
       const response = await axios.get(
-        `https://api.adkey-seo.com/api/website/get-games/${type}`,
-        {
-          headers: {
-            "Accept-Encoding": "gzip, deflate, br",
-            "Cache-Control": "no-cache",
-          },
-          timeout: 5000,
-        }
+        `https://api.adkey-seo.com/api/website/get-games/${type}`
       );
       const games = response.data;
 
-      const updatedGames = games.map((game: Game) => {
-        const imageUrl = `https://api.adkey-seo.com/storage/images/games/${game.image}`;
-        return {
-          ...game,
-          image: imageUrl,
-          optimizedImage: imageUrl + "?format=webp&width=332&height=179",
-        };
-      });
+      const updatedGames = games.map((game: Game) => ({
+        ...game,
+        image: `https://api.adkey-seo.com/storage/images/games/${game.image}`,
+      }));
 
       return updatedGames;
     } catch (error: any) {

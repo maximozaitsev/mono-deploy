@@ -1,41 +1,44 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Button from "../__common__/button/Button";
 import { Offer } from "../../types/offer";
-import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { PROJECT_NAME } from "@/config/projectConfig";
+import { getProjectGeoForLang } from "@/utils/localeMap";
 import styles from "./OfferCard.module.scss";
+import staticTranslations from "../../../public/content/static.json";
+type StaticTranslationsMap = Record<string, Record<string, string>>;
+const ST = staticTranslations as StaticTranslationsMap;
+import { useState, useEffect } from "react";
 
 interface OfferCardProps {
   offer: Offer;
-  priority?: boolean;
 }
 
-const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
-  const logoSrc = (offer as any).optimizedLogo || offer.logo;
+const OfferCard: React.FC<OfferCardProps> = ({ offer }) => {
+  const [currentLang, setCurrentLang] = useState<string>("en");
+  const [projectGeo, setProjectGeo] = useState<string>("");
+  const t = ST[currentLang] || ST["en"];
+  useEffect(() => {
+    const pathLang = window.location.pathname.split("/")[1];
+    if (ST[pathLang]) setCurrentLang(pathLang);
+    setProjectGeo(getProjectGeoForLang(pathLang));
+  }, []);
 
   return (
     <div className={styles.offerCard}>
-      <Image
-        className={styles.logo}
-        src={logoSrc}
+      <img
+        src={offer.logo}
         alt={offer.name}
-        title={`${offer.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
-        // точный контейнер 160x64 (исключаем перекачку 250x100)
-        width={160}
-        height={64}
-        sizes="160px"
-        priority={priority}
-        loading={priority ? "eager" : "lazy"}
-        decoding="async"
-        fetchPriority={priority ? "high" : "auto"}
+        title={offer.name + " in " + PROJECT_NAME + " " + projectGeo}
+        width={190}
+        loading="lazy"
       />
       <h3>{offer.name}</h3>
-      <h4>Welcome bonus</h4>
+      <h4>{t.welcomeBonus}</h4>
       <p>{offer.bonuses.welcome_bonus}</p>
       <Button
-        text="Claim Bonus"
+        text={t.claimBonus}
         variant="secondary"
         useNavigation={true}
         url={`/casino/${offer.id}`}

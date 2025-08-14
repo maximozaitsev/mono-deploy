@@ -48,16 +48,11 @@
   border-radius: $border-radius;
   border: $border-width solid $border-color;
   transition: transform 0.5s ease;
-  contain: content;
-  content-visibility: auto;
-  contain-intrinsic-size: 264px 142px;
-  backface-visibility: hidden;
   max-width: 264px;
   max-height: 142px;
 
   &:hover {
-    will-change: transform;
-    transform: scale(1.03);
+    transform: scale(1.05);
     outline: 2px solid rgba(0, 0, 0, 0.4);
   }
 
@@ -85,7 +80,6 @@
 
     &.visible {
       opacity: 1;
-      will-change: opacity;
     }
 
     &:hover {
@@ -177,12 +171,5 @@
   @media (max-width: 1200px) {
     max-width: none;
     max-height: none;
-  }
-}
-
-/* Avoid hover work on touch devices */
-@media (hover: none) {
-  .gameItem {
-    transition: none;
   }
 }

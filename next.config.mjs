@@ -2,7 +2,7 @@
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
-const url = "magius-casino-online.com";
+const url = "betistaonline.com";
 
 const withPWA = nextPWA({
   dest: "public",
@@ -15,45 +15,18 @@ const withPWA = nextPWA({
     disableDevLogs: true,
     runtimeCaching: [
       {
-        urlPattern: ({ url }) => url.pathname.startsWith("/_next/static/"),
+        urlPattern: new RegExp(`^${url}/_next/static/.*`),
         handler: "CacheFirst",
         options: {
           cacheName: "static-resources",
           expiration: {
             maxEntries: 50,
-            maxAgeSeconds: 60 * 60 * 24 * 30,
           },
         },
       },
       {
-        urlPattern: ({ url }) =>
-          url.pathname.startsWith("/_next/static/") &&
-          url.pathname.endsWith("/buildManifest.js"),
+        urlPattern: new RegExp(`^${url}/_next/static/.*?/buildManifest\\.js$`),
         handler: "NetworkOnly",
-      },
-      {
-        urlPattern: ({ url }) => url.pathname.startsWith("/_next/image"),
-        handler: "StaleWhileRevalidate",
-        options: {
-          cacheName: "next-image",
-          expiration: {
-            maxEntries: 200,
-            maxAgeSeconds: 60 * 60 * 24 * 7,
-          },
-        },
-      },
-      {
-        urlPattern: ({ url }) =>
-          url.origin === "https://api.adkey-seo.com" &&
-          url.pathname.startsWith("/storage/images/"),
-        handler: "StaleWhileRevalidate",
-        options: {
-          cacheName: "game-images",
-          expiration: {
-            maxEntries: 500,
-            maxAgeSeconds: 60 * 60 * 24 * 14,
-          },
-        },
       },
     ],
   },
@@ -80,16 +53,6 @@ const nextConfig = {
           {
             key: "Referrer-Policy",
             value: "no-referrer",
-          },
-        ],
-      },
-      {
-        source: "/_next/image(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value:
-              "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800",
           },
         ],
       },
