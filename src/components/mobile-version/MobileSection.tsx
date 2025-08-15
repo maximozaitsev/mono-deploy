@@ -6,21 +6,51 @@ import mobileAppImage from "../../../public/block-images/phone.webp";
 import mobileAppImageMobile from "../../../public/block-images/phone-mobile.webp";
 import StarIcon from "../__common__/StarIcon";
 import Button from "../__common__/button/Button";
-import { useNavigateWithPreloader } from "@/utils/navigationUtils";
-import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { PROJECT_NAME } from "@/config/projectConfig";
+import { getProjectGeoForLang } from "@/utils/localeMap";
 import "./MobileSection.scss";
+import staticTranslations from "../../../public/content/static.json";
+import manifestData from "../../../public/content/languages.json";
+
+type LangManifest = { languages: string[]; defaultLang: string };
+const manifest = manifestData as LangManifest;
+type StaticTranslationsMap = Record<string, Record<string, string>>;
+const ST = staticTranslations as StaticTranslationsMap;
 
 export default function MobileSection() {
-  const { handleNavigation } = useNavigateWithPreloader();
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
   const [firstOfferId, setFirstOfferId] = useState<number | null>(null);
+  const [currentLang, setCurrentLang] = useState<string>(
+    manifest.defaultLang || "en"
+  );
+  const t = ST[currentLang] ||
+    ST[manifest.defaultLang] ||
+    ST["en"] || { advantages: "Advantages", knowMore: "Know more", app: "App" };
+
+  const projectGeo = getProjectGeoForLang(currentLang);
 
   useEffect(() => {
-    import("../../content/content.json")
-      .then((data) => {
+    const load = async () => {
+      try {
+        const manifestRes = await fetch("/content/languages.json", {
+          cache: "no-cache",
+        });
+        const manifest = await manifestRes.json();
+        const parts = window.location.pathname.split("/").filter(Boolean);
+        const first = parts[0];
+        const lang =
+          first &&
+          manifest.languages.includes(first) &&
+          first !== manifest.defaultLang
+            ? first
+            : manifest.defaultLang;
+        setCurrentLang(lang);
+        const res = await fetch(`/content/content.${lang}.json`, {
+          cache: "no-cache",
+        });
+        const data = await res.json();
         const advantagesSections = Object.values(data.advantages) as any[];
         if (advantagesSections.length > 0) {
-          // Находим первый блок типа "list"
           for (const section of advantagesSections) {
             const listBlock = section.find(
               (block: any) => block.type === "list"
@@ -31,8 +61,11 @@ export default function MobileSection() {
             }
           }
         }
-      })
-      .catch((error) => console.error("Ошибка загрузки JSON:", error));
+      } catch (error) {
+        console.error("Ошибка загрузки JSON:", error);
+      }
+    };
+    load();
   }, []);
 
   useEffect(() => {
@@ -49,7 +82,7 @@ export default function MobileSection() {
     <section className="mobile-section">
       <div className="container mobile-content">
         <div className="advantages-block">
-          <h3 className="h3-heading">Advantages</h3>
+          <h3 className="h3-heading">{t.advantages}</h3>
           <ul className="advantages-list">
             {advantagesList.map((advantage, index) => (
               <li key={index}>
@@ -60,7 +93,7 @@ export default function MobileSection() {
           </ul>
           {firstOfferId && (
             <Button
-              text="Know more"
+              text={t.knowMore}
               variant="primary"
               url={`/casino/${firstOfferId}`}
               openInNewTab
@@ -69,12 +102,14 @@ export default function MobileSection() {
         </div>
 
         <div className="app-info-block">
-          <h3 className="h3-heading">{PROJECT_NAME} App</h3>
+          <h3 className="h3-heading">
+            {PROJECT_NAME} {t.app}
+          </h3>
           <div className="mobile-image show-1080">
             <img
               src={mobileAppImageMobile.src}
-              alt={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
-              title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
+              alt={PROJECT_NAME + " " + projectGeo + " Mobile"}
+              title={PROJECT_NAME + " " + projectGeo + " Mobile"}
               width={mobileAppImageMobile.width}
               height={mobileAppImageMobile.height}
               className="app-image"
@@ -97,7 +132,7 @@ export default function MobileSection() {
               <img
                 src="/assets/app-store.svg"
                 alt="Download on the App Store"
-                title={PROJECT_NAME + " " + PROJECT_GEO + " in App Store"}
+                title={PROJECT_NAME + " " + projectGeo + " in App Store"}
                 width={181}
                 height={53}
                 loading="lazy"
@@ -118,7 +153,7 @@ export default function MobileSection() {
               <img
                 src="/assets/google-play.svg"
                 alt="Download on the Google Play"
-                title={PROJECT_NAME + " " + PROJECT_GEO + " in Google Play"}
+                title={PROJECT_NAME + " " + projectGeo + " in Google Play"}
                 width={181}
                 height={53}
                 loading="lazy"
@@ -130,8 +165,8 @@ export default function MobileSection() {
         <div className="mobile-image hide-1080">
           <img
             src={mobileAppImage.src}
-            alt={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
-            title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
+            alt={PROJECT_NAME + " " + projectGeo + " Mobile"}
+            title={PROJECT_NAME + " " + projectGeo + " Mobile"}
             className="app-image"
             loading="lazy"
           />

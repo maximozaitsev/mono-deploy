@@ -3,37 +3,59 @@
 @import "../../styles/variables.scss";
 
 .welcomeSection {
-  position: relative;
+  background: $color-background;
+  margin-bottom: 140px;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    margin-bottom: 62px;
+    gap: 20px;
+  }
+}
+
+.welcomeBg {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 540px;
-  max-width: 90rem;
-  margin: 0 auto 140px auto;
-
+  background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
   background-position: right 160px center;
-  background-image: url("/block-images/welcome.webp");
+  max-width: 90rem;
+  margin: 0 auto;
+  height: 540px;
 
   & :global(.container) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
   }
 
-  @media (max-width: 1240px) {
-    background-size: 45% auto;
+  @media (max-width: 1280px) {
+    background-size: 40% auto;
     background-position: right 20px center;
   }
 
-  @media (max-width: 768px) {
-    background-image: none;
-    height: auto;
-    justify-content: flex-end;
-    margin: 0 auto 84px auto;
-    gap: 20px;
+  @media (max-width: 990px) {
+    background-size: 45% auto;
   }
 
-  @media (max-width: 420px) {
-    margin: 0 auto 72px auto;
+  @media (max-width: 768px) {
+    height: auto;
+    justify-content: flex-end;
+    background-image: none;
+    background-size: auto;
+    background-position: initial;
+    margin: 0 auto 24px auto;
+  }
+
+  @media (max-width: 530px) {
+    background-size: auto 50%;
+  }
+
+  @media (max-width: 380px) {
+    background-size: auto 60%;
+    padding-top: 12.35rem;
   }
 }
 
@@ -51,9 +73,8 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 556px;
+  max-width: 308px;
   height: auto;
-  margin-top: 4px;
 }
 
 .welcomeContent {
@@ -77,15 +98,12 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
-  width: 420px;
+  width: 410px;
   max-width: 50%;
+  // margin-left: -20px;
 
   .bonusText {
     display: none;
-  }
-
-  @media (max-width: 1420px) {
-    width: 400px;
   }
 
   @media (max-width: 1280px) {
@@ -102,7 +120,6 @@
     .bonusText {
       display: block;
     }
-
     .offerText {
       display: none;
     }
@@ -114,8 +131,8 @@
 }
 
 .welcomeText h2 {
-  font-family: $font-primary;
-  color: $text-color-secondary;
+  font-family: $font-secondary;
+  color: $text-color-primary;
   font-size: 32px;
   font-style: normal;
   font-weight: $font-weight-black;
@@ -126,7 +143,12 @@
     font-size: 24px;
     font-family: $font-secondary;
     font-weight: $font-weight-black;
-    text-transform: uppercase;
+    // color: $text-color-welcome;
+
+    // background: $text-color-welcome;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   @media (max-width: 380px) {

@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://fortunicacasino-online.com/
-Sitemap: https://fortunicacasino-online.com/sitemap.xml
+Host: https://roulettino-online.com/
+Sitemap: https://roulettino-online.com/sitemap.xml
