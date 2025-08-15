@@ -13,13 +13,29 @@ export default function AdvantageSection() {
   const [closingParagraphs, setClosingParagraphs] = useState<string[][]>([]);
 
   useEffect(() => {
-    import("../../content/content.json")
-      .then((data) => {
+    const load = async () => {
+      try {
+        const manifestRes = await fetch("/content/languages.json", {
+          cache: "no-cache",
+        });
+        const manifest = await manifestRes.json();
+        const parts = window.location.pathname.split("/").filter(Boolean);
+        const first = parts[0];
+        const lang =
+          first &&
+          manifest.languages.includes(first) &&
+          first !== manifest.defaultLang
+            ? first
+            : manifest.defaultLang;
+        const res = await fetch(`/content/content.${lang}.json`, {
+          cache: "no-cache",
+        });
+        const data = await res.json();
+
         const advantagesEntries = Object.entries(data.advantages) as [
           string,
           any
         ][];
-
         if (advantagesEntries.length > 0) {
           const [firstKey, section] = advantagesEntries[0];
           setSectionTitle(firstKey);
@@ -49,8 +65,12 @@ export default function AdvantageSection() {
             )
           );
         }
-      })
-      .catch((error) => console.error("Ошибка загрузки JSON:", error));
+      } catch (error) {
+        console.error("Ошибка загрузки JSON:", error);
+      }
+    };
+
+    load();
   }, []);
 
   function groupParagraphs(blocks: any[], stopAtType: string) {

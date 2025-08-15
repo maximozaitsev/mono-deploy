@@ -1,0 +1,100 @@
+@import "../../../styles/colors.scss";
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-background;
+  backdrop-filter: blur(2px);
+}
+
+.box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 96px;
+  min-height: 96px;
+}
+
+.arc {
+  --size: 64px;
+  --thickness: 8px;
+  color: $text-color-welcome;
+  --color: currentColor;
+
+  width: var(--size);
+  height: var(--size);
+  display: inline-block;
+  border-radius: 50%;
+
+  background: conic-gradient(var(--color) 0 180deg, transparent 180deg 360deg);
+
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--thickness)),
+    #000 0
+  );
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - var(--thickness)),
+    #000 0
+  );
+
+  animation: spin 0.7s linear infinite;
+  will-change: transform;
+}
+
+.visuallyHidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arc {
+    animation: none;
+  }
+}
+
+@supports not (
+  (background: conic-gradient(#000, #000)) and
+    (
+      (-webkit-mask: radial-gradient(#000, #000)) or
+        (mask: radial-gradient(#000, #000))
+    )
+) {
+  .arc {
+    border: var(--thickness) solid transparent;
+    border-top-color: var(--color);
+    border-left-color: var(--color);
+    border-radius: 50%;
+    background: none;
+  }
+}
+
+.inline {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: none;
+  z-index: auto;
+  min-width: 0;
+  min-height: 0;
+}

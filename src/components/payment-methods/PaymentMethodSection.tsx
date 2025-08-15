@@ -5,8 +5,12 @@ import Image from "next/image";
 import { PaymentMethod } from "@/types/payment";
 import { fetchPayments } from "@/utils/fetchPayments";
 import Button from "../__common__/button/Button";
-import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { PROJECT_NAME } from "@/config/projectConfig";
+import { getProjectGeoForLang } from "@/utils/localeMap";
 import "./PaymentMethodsSection.scss";
+import translations from "../../../public/content/static.json";
+import manifest from "../../../public/content/languages.json";
+import { usePathname } from "next/navigation";
 
 interface PaymentMethodsSectionProps {
   initialPaymentMethods: PaymentMethod[];
@@ -15,6 +19,10 @@ interface PaymentMethodsSectionProps {
 const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
   initialPaymentMethods,
 }) => {
+  const pathname = usePathname();
+  const currentLang = pathname?.split("/")[1] || manifest.defaultLang;
+  const t = translations[currentLang as keyof typeof translations];
+
   const [paymentMethods, setPaymentMethods] = useState<PaymentMethod[]>(
     initialPaymentMethods
   );
@@ -44,7 +52,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
 
   return (
     <section className="payment-methods-section section container">
-      <h2 className="h2-heading">Payment methods</h2>
+      <h2 className="h2-heading">{t.paymentMethods}</h2>
       {isMobileView ? (
         <div className="mobile-payment-methods">
           {paymentMethods.map((method) => (
@@ -54,28 +62,32 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                   src={method.image}
                   alt={method.name}
                   title={
-                    method.name + " in " + PROJECT_NAME + " " + PROJECT_GEO
+                    method.name +
+                    " in " +
+                    PROJECT_NAME +
+                    " " +
+                    getProjectGeoForLang(currentLang)
                   }
                   width={84}
                   height={64}
                 />
-                <Button text="Deposit" variant="secondary" openInNewTab />
+                <Button text={t.deposit} variant="secondary" openInNewTab />
               </div>
               <div className="payment-method-details">
                 <p>
-                  <strong>Type:</strong> {method.type}
+                  <strong>{t.type}:</strong> {method.type}
                 </p>
                 <p>
-                  <strong>Country:</strong> {method.country}
+                  <strong>{t.country}:</strong> {method.country}
                 </p>
                 <p>
-                  <strong>Commission:</strong> {method.commission}
+                  <strong>{t.commission}:</strong> {method.commission}
                 </p>
                 <p>
-                  <strong>Processing time:</strong> {method.processing_time}
+                  <strong>{t.processingTime}:</strong> {method.processing_time}
                 </p>
                 <p>
-                  <strong>Minimum deposit:</strong> {method.min_dep}
+                  <strong>{t.minimumDeposit}:</strong> {method.min_dep}
                 </p>
               </div>
             </div>
@@ -85,13 +97,13 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
         <table className="payment-methods-table">
           <thead className="payment-methods-table-header">
             <tr>
-              <th>Method</th>
-              <th>Type</th>
-              <th>Country</th>
-              <th>Commission</th>
-              <th>Processing time</th>
-              <th>Minimum deposit</th>
-              <th>Deposit</th>
+              <th>{t.paymentMethods}</th>
+              <th>{t.type}</th>
+              <th>{t.country}</th>
+              <th>{t.commission}</th>
+              <th>{t.processingTime}</th>
+              <th>{t.minimumDeposit}</th>
+              <th>{t.deposit}</th>
             </tr>
           </thead>
           <tbody>
@@ -102,7 +114,11 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                     src={method.image}
                     alt={method.name}
                     title={
-                      method.name + " in " + PROJECT_NAME + " " + PROJECT_GEO
+                      method.name +
+                      " in " +
+                      PROJECT_NAME +
+                      " " +
+                      getProjectGeoForLang(currentLang)
                     }
                     width={120}
                     height={70}
@@ -114,7 +130,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                 <td>{method.processing_time}</td>
                 <td>{method.min_dep}</td>
                 <td>
-                  <Button text="Deposit" variant="secondary" openInNewTab />
+                  <Button text={t.deposit} variant="secondary" openInNewTab />
                 </td>
               </tr>
             ))}

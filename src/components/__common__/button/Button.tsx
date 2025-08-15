@@ -1,9 +1,19 @@
 "use client";
 
 import React from "react";
+import { usePathname } from "next/navigation";
+import staticTranslations from "@/../public/content/static.json";
+import languages from "@/../public/content/languages.json";
 import { useNavigateWithPreloader } from "../../../utils/navigationUtils";
 import "./Button.scss";
 import { fetchOffers } from "../../../utils/fetchOffers";
+
+type LanguagesManifest = { languages: string[]; defaultLang: string };
+const manifest = languages as LanguagesManifest;
+const translations = staticTranslations as Record<
+  string,
+  Record<string, string>
+>;
 
 type ButtonProps = {
   text: string;
@@ -29,6 +39,17 @@ const Button: React.FC<ButtonProps> = ({
   url,
 }) => {
   const { handleNavigation } = useNavigateWithPreloader();
+
+  const pathname = usePathname();
+  let currentLang: string = manifest.defaultLang || "en";
+  if (pathname) {
+    const parts = pathname.split("/").filter(Boolean);
+    const maybeLang = parts[0];
+    if (manifest.languages.includes(maybeLang)) {
+      currentLang = maybeLang;
+    }
+  }
+  const displayText = translations[currentLang]?.[text] ?? text;
 
   const handleClick = async () => {
     if (openInNewTab) {
@@ -93,7 +114,7 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       disabled={disabled}
     >
-      {text}
+      {displayText}
     </button>
   );
 };
