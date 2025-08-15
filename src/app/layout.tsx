@@ -9,8 +9,8 @@ import { headers } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
+export const dynamic = "force-static";
+export const revalidate = 3600;
 export const runtime = "nodejs";
 
 function getBaseUrl(): string | undefined {
@@ -215,10 +215,24 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang}>
       <head>
-        <link rel="preconnect" href="https://api.adkey-seo.com" crossOrigin="" />
+        <link
+          rel="preconnect"
+          href="https://api.adkey-seo.com"
+          crossOrigin=""
+        />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
-        <link rel="preload" as="image" href="/block-images/welcome.webp" media="(min-width: 769px)" />
-        <link rel="preload" as="image" href="/block-images/welcome-mobile.webp" media="(max-width: 768px)" />
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome.webp"
+          media="(min-width: 769px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome-mobile.webp"
+          media="(max-width: 768px)"
+        />
       </head>
       <body>{children}</body>
     </html>
