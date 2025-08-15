@@ -1,5 +1,5 @@
-export const dynamic = "force-static";
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 import Header from "../components/header/Header";
 import WelcomeSection from "../components/welcome/WelcomeSection";
@@ -23,49 +23,17 @@ import { fetchGames } from "@/utils/fetchGames";
 import { fetchProviders } from "@/utils/fetchProviders";
 import { Provider } from "@/types/provider";
 
-import fs from "node:fs/promises";
-import path from "node:path";
-
 import "./globals.scss";
 
 export default async function HomePage() {
-  type LangManifest = { languages: string[]; defaultLang: string };
-  let manifest: LangManifest = { languages: [], defaultLang: "en" };
-  try {
-    const manifestPath = path.join(
-      process.cwd(),
-      "public",
-      "content",
-      "languages.json"
-    );
-    const raw = await fs.readFile(manifestPath, "utf-8");
-    const parsed = JSON.parse(raw) as Partial<LangManifest>;
-    if (
-      Array.isArray(parsed.languages) &&
-      typeof parsed.defaultLang === "string"
-    ) {
-      manifest = {
-        languages: parsed.languages,
-        defaultLang: parsed.defaultLang,
-      };
-    }
-  } catch (_) {
-    manifest = { languages: ["en"], defaultLang: "en" };
-  }
-
-  const currentLang = manifest.defaultLang;
   const games = await fetchGames("gambling");
   const providers: Provider[] = await fetchProviders();
 
   return (
     <main>
-      <Header
-        languages={manifest.languages}
-        defaultLang={manifest.defaultLang}
-        currentLang={currentLang}
-      />
+      <Header />
       <WelcomeSection />
-      <H1Section />
+      <H1Section pageKey="home" />
       <TopCasinosSection />
       <BonusDetailsSection />
       <MobileSection />

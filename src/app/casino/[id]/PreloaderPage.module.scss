@@ -2,13 +2,15 @@
   height: calc(100vh + 268px);
   display: flex;
   flex-direction: column;
-  background: transparent;
+  justify-content: space-between;
 }
 
 .spinnerContainer {
-  flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 24px 16px;
+  align-items: center;
+
+  img {
+    background-color: transparent;
+  }
 }

@@ -10,7 +10,6 @@
   align-items: center;
   gap: 16px;
 
-  outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
   background: $color-background-third;
 
@@ -33,17 +32,11 @@
 
   h4 {
     font-family: $font-primary;
-    text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: #f50d37;
-
-    // background: $color-button-large;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
+    color: #f7b23f;
   }
 
   p {

@@ -1,10 +1,17 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Nunito Sans", sans-serif;
+$font-secondary: "Inter", sans-serif;
 
 @font-face {
   font-family: "Roboto";
   src: url("./Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -23,15 +30,15 @@ $font-secondary: "Nunito Sans", sans-serif;
 }
 
 @font-face {
-  font-family: "Nunito Sans";
+  font-family: "Inter";
   font-weight: 700;
   font-style: normal;
-  src: url("./Heading/static/Nunito Sans-700.woff2") format("woff2");
+  src: url("./Heading/static/Inter-700.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Nunito Sans";
+  font-family: "Inter";
   font-weight: 900;
   font-style: normal;
-  src: url("./Heading/static/Nunito Sans-900.woff2") format("woff2");
+  src: url("./Heading/static/Inter-900.woff2") format("woff2");
 }
