@@ -30,6 +30,12 @@
   width: 100%;
 }
 
+.arrowButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .headerButtons {
   display: flex;
   gap: 24px;

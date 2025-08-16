@@ -12,7 +12,6 @@ import "./BonusDetailsSection.scss";
 
 import { useStaticT } from "@/utils/i18n";
 
-
 const BonusDetailsSection: React.FC = () => {
   const [offers, setOffers] = useState<Offer[]>([]);
   const [openOffers, setOpenOffers] = useState<number[]>([]);
@@ -44,7 +43,6 @@ const BonusDetailsSection: React.FC = () => {
     const shuffled = [...offers].sort(() => Math.random() - 0.5);
     setDisplayedOffers(shuffled.slice(0, 6));
   };
-
 
   return (
     <section id="bonuses" className="bonus-details-section section container">
@@ -94,10 +92,17 @@ const BonusDetailsSection: React.FC = () => {
 
               <div className="cell info-cell">
                 <button
+                  type="button"
                   onClick={() => toggleAccordion(offer.id)}
                   className="icon-button"
+                  aria-label={`${t.moreInfo}: ${offer.name}`}
+                  aria-expanded={openOffers.includes(offer.id)}
+                  aria-controls={`acc-${offer.id}`}
+                  title={t.moreInfo}
                 >
-                  <InfoIcon />
+                  <span aria-hidden="true">
+                    <InfoIcon />
+                  </span>
                 </button>
               </div>
 
@@ -112,7 +117,12 @@ const BonusDetailsSection: React.FC = () => {
               </div>
 
               {openOffers.includes(offer.id) && (
-                <div className="accordion">
+                <div
+                  className="accordion"
+                  id={`acc-${offer.id}`}
+                  role="region"
+                  aria-label={`${offer.name} ${t.bonusDetails}`}
+                >
                   <div className="accordion-item">
                     <div className="accordion-title">{t.maximumAmount}:</div>
                     <div className="accordion-value">

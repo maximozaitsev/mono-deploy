@@ -97,26 +97,7 @@ const Header: React.FC<HeaderProps> = ({
         <div className={styles.headerButtons}>
           <div className={styles.langControl}>
             <GlobeIcon size={24} color="var(--text-color-fourth)" />
-            <div
-              className={styles.langPicker}
-              role="button"
-              tabIndex={0}
-              aria-label="Change language"
-              onMouseDown={(e) => {
-                e.preventDefault();
-                openSelect();
-              }}
-              onClick={(e) => {
-                e.preventDefault();
-                openSelect();
-              }}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  openSelect();
-                }
-              }}
-            >
+            <div className={styles.langPicker}>
               <select
                 ref={selectRef}
                 className={styles.languageSelector}
@@ -136,8 +117,27 @@ const Header: React.FC<HeaderProps> = ({
                   </option>
                 )}
               </select>
-
-              <ArrowDownIcon size={24} color="var(--text-color-fourth)" />
+              <button
+                type="button"
+                className={styles.arrowButton}
+                aria-label="Open language menu"
+                onMouseDown={(e) => {
+                  e.preventDefault();
+                  openSelect();
+                }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  openSelect();
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    openSelect();
+                  }
+                }}
+              >
+                <ArrowDownIcon size={24} color="var(--text-color-fourth)" />
+              </button>
             </div>
           </div>
           <button
