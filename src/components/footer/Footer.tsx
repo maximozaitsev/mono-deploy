@@ -32,14 +32,6 @@ const partnerLogos = [
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const [hoveredLogoIndex, setHoveredLogoIndex] = useState<number | null>(null);
-  const [isMobile, setIsMobile] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const pathname = usePathname();
   const firstSeg = pathname?.split("/").filter(Boolean)[0] || "";
@@ -55,8 +47,6 @@ export default function Footer() {
       ?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
-
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -66,10 +56,10 @@ export default function Footer() {
               {start === 0 && (
                 <div className={styles.logoWrapper}>
                   <Logo
-                    svgPath={logoPath}
-                    gradientIdPrefix="footer"
-                    onClick={scrollToWelcomeSection}
+                    desktopSrc="/logo.svg"
+                    mobileSrc="/logo-mobile.svg"
                     alt={`${PROJECT_NAME} Logo`}
+                    onClick={scrollToWelcomeSection}
                   />
                 </div>
               )}

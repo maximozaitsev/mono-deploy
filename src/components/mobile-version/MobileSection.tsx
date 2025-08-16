@@ -8,24 +8,13 @@ import StarIcon from "../__common__/StarIcon";
 import Button from "../__common__/button/Button";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import { getProjectGeoForLang } from "@/utils/localeMap";
+import { useStaticT } from "@/utils/i18n";
 import "./MobileSection.scss";
-import staticTranslations from "../../../public/content/static.json";
-import manifestData from "../../../public/content/languages.json";
-
-type LangManifest = { languages: string[]; defaultLang: string };
-const manifest = manifestData as LangManifest;
-type StaticTranslationsMap = Record<string, Record<string, string>>;
-const ST = staticTranslations as StaticTranslationsMap;
 
 export default function MobileSection() {
   const [advantagesList, setAdvantagesList] = useState<string[]>([]);
   const [firstOfferId, setFirstOfferId] = useState<number | null>(null);
-  const [currentLang, setCurrentLang] = useState<string>(
-    manifest.defaultLang || "en"
-  );
-  const t = ST[currentLang] ||
-    ST[manifest.defaultLang] ||
-    ST["en"] || { advantages: "Advantages", knowMore: "Know more", app: "App" };
+  const { t, currentLang } = useStaticT();
 
   const projectGeo = getProjectGeoForLang(currentLang);
 
@@ -44,7 +33,6 @@ export default function MobileSection() {
           first !== manifest.defaultLang
             ? first
             : manifest.defaultLang;
-        setCurrentLang(lang);
         const res = await fetch(`/content/content.${lang}.json`, {
           cache: "no-cache",
         });

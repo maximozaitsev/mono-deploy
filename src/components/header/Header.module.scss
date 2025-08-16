@@ -2,10 +2,6 @@
 @import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
-.spacer {
-  flex: 1;
-}
-
 .header {
   display: flex;
   background: $color-background-header;
@@ -15,27 +11,12 @@
   z-index: 1000;
   height: 96px;
 
-  svg {
-    margin-top: 4px;
-
-    @media (max-width: 1080px) {
-      margin-top: 0px;
-    }
-
-    @media (max-width: 768px) {
-      margin-top: 4px;
-      // max-width: 118px;
-    }
-  }
-
   @media (max-width: 1080px) {
     padding: 24px 40px;
   }
-
   @media (max-width: 768px) {
     height: 96px;
   }
-
   @media (max-width: 380px) {
     padding: 5px 10px;
     height: 64px;
@@ -58,7 +39,7 @@
     font-family: $font-secondary;
     font-weight: $font-weight-black;
     font-size: 14px;
-    padding: 10px 4px;
+    padding: 12px 4px;
     border-radius: $header-button-border-radius;
     border: none;
     cursor: pointer;
@@ -67,8 +48,7 @@
     &.login {
       background: $color-button-small;
       width: $header-button-large-small;
-      color: $text-color-button-large;
-      border: 2px solid transparent;
+      color: $text-color-button-small;
     }
 
     &.signup {
@@ -81,6 +61,7 @@
       transform: scale(1.05);
     }
   }
+
   @media (max-width: 768px) {
     gap: 8px;
 
@@ -88,12 +69,11 @@
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
       font-size: 10px;
-      padding: 6px 2px;
+      padding: 8px 2px;
 
       &.login {
         width: $header-button-large-small-mobile;
       }
-
       &.signup {
         width: $header-button-large-width-mobile;
       }
@@ -129,13 +109,20 @@
 .langControl {
   display: flex;
   align-items: center;
+  gap: 8px;
   background: transparent;
-  border: none;
-  cursor: pointer;
   margin-right: 8px;
 
-  @media (max-width: 768px) {
-    margin-right: -7px;
+  .langPicker {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    svg {
+      pointer-events: none;
+    }
   }
 
   select {
@@ -145,23 +132,25 @@
     font-weight: $font-weight-regular;
     font-size: 20px;
     color: $text-color-primary;
-    padding: 0 8px;
+    padding: 0 5px 0 0;
     outline: none;
     appearance: none;
     cursor: pointer;
-  }
-
-  svg {
-    flex-shrink: 0;
-    margin: auto;
-
-    &:last-child {
-      margin-bottom: -4px;
-    }
+    -webkit-text-fill-color: currentColor;
   }
 
   @media (max-width: 768px) {
-    scale: 0.8;
+    margin-right: 2px;
+    gap: 2px;
+
+    svg {
+      scale: 0.8;
+    }
+
+    select {
+      font-size: 16px;
+      padding: 0;
+    }
   }
 }
 
@@ -205,12 +194,6 @@
     color: CanvasText !important;
     border-color: CanvasText !important;
   }
-}
-
-.langControl select {
-  background-color: transparent;
-  color: $text-color-primary;
-  -webkit-text-fill-color: currentColor;
 }
 
 .langControl select::-ms-expand {

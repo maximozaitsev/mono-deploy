@@ -8,6 +8,11 @@
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 1rem;
     contain: content;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(154px, 1fr));
+      gap: 1rem;
+    }
   }
 
   .provider-block {
@@ -23,8 +28,9 @@
     contain-intrinsic-size: 88px 160px;
     contain: content;
 
-    @media (max-width: 760px) {
-      min-height: 72px;
+    @media (max-width: 768px) {
+      min-height: auto;
+      max-height: 72px;
     }
 
     &:hover {

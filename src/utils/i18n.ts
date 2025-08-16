@@ -1,5 +1,10 @@
 // src/utils/i18n.ts
 import { getLocaleMeta } from "./localeMap";
+import { useMemo } from "react";
+import { usePathname } from "next/navigation";
+import staticTranslations from "../../public/content/static.json";
+import languagesJson from "../../public/content/languages.json";
+import { STATIC_KEYS, StaticDict } from "@/types/static";
 
 export type LangManifest = {
   languages: string[];
@@ -11,6 +16,10 @@ function normalizeManifest(m: LangManifest): LangManifest {
   const defaultLang = (m.defaultLang || "en").toLowerCase();
   return { languages, defaultLang };
 }
+
+type RawStaticMap = Record<string, Record<string, string>>;
+const __manifest = normalizeManifest(languagesJson as unknown as LangManifest);
+const __ST = staticTranslations as unknown as RawStaticMap;
 
 export const LANG_STORAGE_KEY = "mm:lang";
 
@@ -86,6 +95,13 @@ export function buildUrlForLang(lang: string, manifest: LangManifest): string {
   return l === defaultLang ? "/" : `/${l}/`;
 }
 
+export function resolveCurrentLangFromPath(
+  pathname: string,
+  manifest: LangManifest = __manifest
+): string {
+  return getLangFromPath(pathname, manifest);
+}
+
 export async function fetchLangManifest(): Promise<LangManifest> {
   if (typeof window === "undefined") {
     const fs = await import("node:fs/promises");
@@ -150,7 +166,48 @@ export async function fetchContent(lang: string) {
   return res.json();
 }
 
-/** Применяет корректные html lang и og:locale для выбранного geo/lang (au→en-AU, de→de-DE, …) */
+// Нормализуем сырые переводы к строгому словарю StaticDict:
+// - если каких-то ключей нет — подставляем пустую строку (или можно дефолт из defaultLang)
+function coerceToStaticDict(raw: Record<string, string> | undefined, fallback: Record<string, string>): StaticDict {
+  const dict: Partial<StaticDict> = {};
+  for (const key of STATIC_KEYS) {
+    dict[key] = (raw && raw[key]) ?? fallback[key] ?? "";
+  }
+  return dict as StaticDict;
+}
+
+export function getStaticTranslations(
+  langOrPath?: string,
+  manifest: LangManifest = __manifest
+): { t: StaticDict; currentLang: string; manifest: LangManifest } {
+  const { languages, defaultLang } = normalizeManifest(manifest);
+  let currentLang = defaultLang;
+
+  if (langOrPath) {
+    if (langOrPath.includes("/")) {
+      currentLang = getLangFromPath(langOrPath, manifest);
+    } else {
+      const candidate = langOrPath.toLowerCase();
+      currentLang = languages.includes(candidate) ? candidate : defaultLang;
+    }
+  } else if (typeof window !== "undefined") {
+    currentLang = getLangFromPath(window.location.pathname, manifest);
+  }
+
+  const rawDefault = __ST[defaultLang] || {};
+  const rawCurrent = __ST[currentLang] || {};
+  const t = coerceToStaticDict(rawCurrent, rawDefault);
+  return { t, currentLang, manifest: { languages, defaultLang } };
+}
+
+export function useStaticT() {
+  const pathname = usePathname();
+  const value = useMemo(() => {
+    return getStaticTranslations(pathname);
+  }, [pathname]);
+  return value;
+}
+
 export function applyLocaleToDOM(langOrGeo: string) {
   if (typeof document === "undefined") return;
   const { htmlLang, ogLocale, languageName } = getLocaleMeta(

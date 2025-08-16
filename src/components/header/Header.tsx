@@ -1,17 +1,14 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
-import Logo from "./Logo";
 import { PROJECT_NAME } from "@/config/projectConfig";
-import styles from "./Header.module.scss";
 import { fetchOffers } from "../../utils/fetchOffers";
+import { useStaticT, applyLocaleToDOM } from "@/utils/i18n";
+import Logo from "./Logo";
 import GlobeIcon from "@/components/__common__/Globe";
-import ArrowDown from "@/components/__common__/Arrow-down";
-import staticTranslations from "../../../public/content/static.json";
-import { applyLocaleToDOM } from "@/utils/i18n";
+import ArrowDownIcon from "@/components/__common__/ArrowDown";
 
-type StaticTranslationsMap = Record<string, Record<string, string>>;
-const ST = staticTranslations as StaticTranslationsMap;
+import styles from "./Header.module.scss";
 
 interface HeaderProps {
   languages: string[];
@@ -24,9 +21,10 @@ const Header: React.FC<HeaderProps> = ({
   defaultLang = "en",
   currentLang = "en",
 }) => {
-  const [isMobile] = useState(false);
   const [selectedLang, setSelectedLang] = useState(currentLang || "en");
   const selectRef = useRef<HTMLSelectElement>(null);
+
+  const { t } = useStaticT();
 
   useEffect(() => {
     applyLocaleToDOM(selectedLang);
@@ -42,15 +40,6 @@ const Header: React.FC<HeaderProps> = ({
       window.location.href = "/";
     } else {
       window.location.href = `/${lang}/`;
-    }
-  };
-
-  const handleSignInClick = async () => {
-    try {
-      const { offers } = await fetchOffers();
-      window.open(`/casino/${offers[0].id}`, "_blank", "noopener,noreferrer");
-    } catch (error) {
-      console.error("Error opening preloader:", error);
     }
   };
 
@@ -74,16 +63,19 @@ const Header: React.FC<HeaderProps> = ({
     } catch {}
   };
 
-  const scrollToWelcomeSection = () => {
-    const el = document.getElementById("welcome-section");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+  const handleSignInClick = async () => {
+    try {
+      const { offers } = await fetchOffers();
+      window.open(`/casino/${offers[0].id}`, "_blank", "noopener,noreferrer");
+    } catch (error) {
+      console.error("Error opening preloader:", error);
     }
   };
 
-  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
-
-  const translations = ST[selectedLang] || ST["en"];
+  const scrollToWelcomeSection = () => {
+    const el = document.getElementById("welcome-section");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <header className={styles.header}>
@@ -96,36 +88,20 @@ const Header: React.FC<HeaderProps> = ({
           style={{ background: "none", border: "none" }}
         >
           <Logo
-            svgPath={logoPath}
-            gradientIdPrefix="header"
+            desktopSrc="/logo.svg"
+            mobileSrc="/logo-mobile.svg"
             alt={`${PROJECT_NAME} Logo`}
-            onClick={() => {}}
           />
         </button>
-        <div className={styles.spacer} />
 
         <div className={styles.headerButtons}>
           <div className={styles.langControl}>
             <GlobeIcon size={24} color="var(--text-color-fourth)" />
-            <select
-              ref={selectRef}
-              className={styles.languageSelector}
-              value={selectedLang}
-              onChange={(e) => handleLanguageChange(e.target.value)}
-            >
-              {languages.length > 0 ? (
-                languages.map((lang) => (
-                  <option key={lang} value={lang}>
-                    {lang.toUpperCase()}
-                  </option>
-                ))
-              ) : (
-                <option value={selectedLang}>
-                  {selectedLang.toUpperCase()}
-                </option>
-              )}
-            </select>
             <div
+              className={styles.langPicker}
+              role="button"
+              tabIndex={0}
+              aria-label="Change language"
               onMouseDown={(e) => {
                 e.preventDefault();
                 openSelect();
@@ -134,23 +110,47 @@ const Header: React.FC<HeaderProps> = ({
                 e.preventDefault();
                 openSelect();
               }}
-              className={styles.arrowWrap}
-              aria-hidden
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  openSelect();
+                }
+              }}
             >
-              <ArrowDown size={24} />
+              <select
+                ref={selectRef}
+                className={styles.languageSelector}
+                value={selectedLang}
+                onChange={(e) => handleLanguageChange(e.target.value)}
+                aria-label="Language"
+              >
+                {languages.length > 0 ? (
+                  languages.map((lang) => (
+                    <option key={lang} value={lang}>
+                      {lang.toUpperCase()}
+                    </option>
+                  ))
+                ) : (
+                  <option value={selectedLang}>
+                    {selectedLang.toUpperCase()}
+                  </option>
+                )}
+              </select>
+
+              <ArrowDownIcon size={24} color="var(--text-color-fourth)" />
             </div>
           </div>
           <button
             className={`${styles.headerButton} ${styles.login}`}
             onClick={handleSignInClick}
           >
-            {translations.logIn}
+            {t.logIn}
           </button>
           <button
             className={`${styles.headerButton} ${styles.signup}`}
             onClick={handleSignInClick}
           >
-            {translations.signUp}
+            {t.signUp}
           </button>
         </div>
       </nav>

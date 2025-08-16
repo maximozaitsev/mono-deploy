@@ -8,9 +8,7 @@ import Button from "../__common__/button/Button";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import { getProjectGeoForLang } from "@/utils/localeMap";
 import "./PaymentMethodsSection.scss";
-import translations from "../../../public/content/static.json";
-import manifest from "../../../public/content/languages.json";
-import { usePathname } from "next/navigation";
+import { useStaticT } from "@/utils/i18n";
 
 interface PaymentMethodsSectionProps {
   initialPaymentMethods: PaymentMethod[];
@@ -19,9 +17,7 @@ interface PaymentMethodsSectionProps {
 const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
   initialPaymentMethods,
 }) => {
-  const pathname = usePathname();
-  const currentLang = pathname?.split("/")[1] || manifest.defaultLang;
-  const t = translations[currentLang as keyof typeof translations];
+  const { t, currentLang } = useStaticT();
 
   const [paymentMethods, setPaymentMethods] = useState<PaymentMethod[]>(
     initialPaymentMethods

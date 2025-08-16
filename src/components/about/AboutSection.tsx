@@ -7,10 +7,7 @@ import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import { usePathname } from "next/navigation";
 import { getProjectGeoForLang } from "@/utils/localeMap";
-import staticTranslations from "../../../public/content/static.json";
-import manifestData from "../../../public/content/languages.json";
-type StaticTranslationsMap = Record<string, Record<string, string>>;
-const ST = staticTranslations as StaticTranslationsMap;
+import { useStaticT } from "@/utils/i18n";
 import "./AboutSection.scss";
 
 export default function AboutSection() {
@@ -20,6 +17,8 @@ export default function AboutSection() {
   const [withdrawalSection, setWithdrawalSection] = useState<any>(null);
   const pathname = usePathname();
   const [projectGeo, setProjectGeo] = useState<string>("");
+
+  const { t } = useStaticT();
 
   useEffect(() => {
     async function resolveGeo() {
@@ -67,23 +66,6 @@ export default function AboutSection() {
   if (error) return null;
   if (!content) return null;
 
-  const seg = (pathname || "").split("/").filter(Boolean)[0];
-  const currentLang =
-    seg &&
-    (
-      manifestData as { languages: string[]; defaultLang: string }
-    ).languages.includes(seg)
-      ? seg
-      : (manifestData as { languages: string[]; defaultLang: string })
-          .defaultLang;
-
-  const t =
-    ST[currentLang] ||
-    ST[
-      (manifestData as { languages: string[]; defaultLang: string }).defaultLang
-    ] ||
-    ST["en"] ||
-    {};
 
   return (
     <section className="about-section section">

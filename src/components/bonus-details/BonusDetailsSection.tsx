@@ -10,19 +10,15 @@ import { PROJECT_NAME } from "@/config/projectConfig";
 import { getProjectGeoForLang } from "@/utils/localeMap";
 import "./BonusDetailsSection.scss";
 
-import staticTranslations from "../../../public/content/static.json";
-import manifestData from "../../../public/content/languages.json";
-import { usePathname } from "next/navigation";
+import { useStaticT } from "@/utils/i18n";
 
-type LangManifest = { languages: string[]; defaultLang: string };
-const manifest = manifestData as LangManifest;
-type StaticTranslationsMap = Record<string, Record<string, string>>;
-const ST = staticTranslations as StaticTranslationsMap;
 
 const BonusDetailsSection: React.FC = () => {
   const [offers, setOffers] = useState<Offer[]>([]);
   const [openOffers, setOpenOffers] = useState<number[]>([]);
   const [displayedOffers, setDisplayedOffers] = useState<Offer[]>([]);
+
+  const { t, currentLang } = useStaticT();
 
   useEffect(() => {
     const loadOffers = async () => {
@@ -49,12 +45,6 @@ const BonusDetailsSection: React.FC = () => {
     setDisplayedOffers(shuffled.slice(0, 6));
   };
 
-  const pathname = usePathname();
-  const firstSeg = pathname?.split("/").filter(Boolean)[0] || "";
-  const currentLang = manifest.languages.includes(firstSeg)
-    ? firstSeg
-    : manifest.defaultLang;
-  const t = ST[currentLang] || ST[manifest.defaultLang] || ST["en"] || {};
 
   return (
     <section id="bonuses" className="bonus-details-section section container">
@@ -106,7 +96,6 @@ const BonusDetailsSection: React.FC = () => {
                 <button
                   onClick={() => toggleAccordion(offer.id)}
                   className="icon-button"
-                  aria-label="Toggle information for offer"
                 >
                   <InfoIcon />
                 </button>

@@ -6,6 +6,7 @@ import Button from "../__common__/button/Button";
 import { Offer } from "../../types/offer";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./OfferCard.module.scss";
+import { useStaticT } from "@/utils/i18n";
 
 interface OfferCardProps {
   offer: Offer;
@@ -13,6 +14,8 @@ interface OfferCardProps {
 }
 
 const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
+  const { t } = useStaticT();
+
   const logoSrc = (offer as any).optimizedLogo || offer.logo;
 
   return (
@@ -31,10 +34,10 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
         fetchPriority={priority ? "high" : "auto"}
       />
       <h3>{offer.name}</h3>
-      <h4>Welcome bonus</h4>
+      <h4>{t.welcomeBonus}</h4>
       <p>{offer.bonuses.welcome_bonus}</p>
       <Button
-        text="Claim Bonus"
+        text={t.claimBonus}
         variant="secondary"
         useNavigation={true}
         url={`/casino/${offer.id}`}
