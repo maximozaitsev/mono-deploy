@@ -115,9 +115,7 @@ export default function AdvantageSection() {
 
         <div className={styles.columns}>
           <div className={styles.column}>
-            {advantagesTitle && (
-              <h4 className="h4-heading">{advantagesTitle}</h4>
-            )}
+            {advantagesTitle && <p className="h4-heading">{advantagesTitle}</p>}
             <ul className="paragraph-text black">
               {advantagesList.map((advantage, index) => (
                 <li key={index}>{advantage}</li>
@@ -126,7 +124,7 @@ export default function AdvantageSection() {
           </div>
           <div className={styles.column}>
             {disadvantagesTitle && (
-              <h4 className="h4-heading">{disadvantagesTitle}</h4>
+              <p className="h4-heading">{disadvantagesTitle}</p>
             )}
             <ul className="paragraph-text black">
               {disadvantagesList.map((disadvantage, index) => (
