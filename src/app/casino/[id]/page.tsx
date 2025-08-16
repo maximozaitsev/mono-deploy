@@ -9,7 +9,6 @@ import styles from "./PreloaderPage.module.scss";
 import manifestData from "../../../../public/content/languages.json";
 import { usePathname } from "next/navigation";
 import Spinner from "@/components/__common__/loader/Spinner";
-import SpinnerGif from "../../../../public/assets/loader-light.gif";
 
 type LangManifest = { languages: string[]; defaultLang: string };
 const manifest = manifestData as LangManifest;
