@@ -147,7 +147,7 @@
 
   @media (max-width: 768px) {
     margin-right: 2px;
-    gap: 2px;
+    gap: 0px;
 
     svg {
       scale: 0.8;
@@ -155,7 +155,7 @@
 
     select {
       font-size: 16px;
-      padding: 0;
+      padding: 2px 4px;
     }
   }
 }
