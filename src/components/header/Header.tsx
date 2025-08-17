@@ -91,6 +91,7 @@ const Header: React.FC<HeaderProps> = ({
             desktopSrc="/logo.svg"
             mobileSrc="/logo-mobile.svg"
             alt={`${PROJECT_NAME} Logo`}
+            onClick={() => {}}
           />
         </button>
 
