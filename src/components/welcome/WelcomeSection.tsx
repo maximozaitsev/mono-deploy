@@ -40,7 +40,6 @@ export default function WelcomeSection() {
           alt="Welcome Mobile"
           loading="eager"
           decoding="async"
-          fetchPriority="high"
         />
       </figure>
 
