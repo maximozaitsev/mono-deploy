@@ -48,12 +48,10 @@ export default function WelcomeSection() {
           <div className={styles.welcomeContent}>
             <div className={styles.welcomeText}>
               <h2 className={styles.offerText}>
-                {t.exclusiveWelcomeOfferOf}{" "}
-                {welcomeBonus}
+                {t.exclusiveWelcomeOfferOf} {welcomeBonus}
               </h2>
               <h2 className={styles.bonusText}>
-                {t.exclusiveWelcomeOfferOf}{" "}
-                {welcomeBonus}
+                {t.exclusiveWelcomeOfferOf} {welcomeBonus}
               </h2>
               {(firstOfferId || offerLink) && (
                 <Button

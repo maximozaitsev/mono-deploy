@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "./Spinner.module.scss";
-import SpinnerGif from "../../../../public/assets/loader-light.gif";
 
 type SpinnerProps = {
   variant?: "fullscreen" | "inline";

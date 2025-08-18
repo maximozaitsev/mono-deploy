@@ -1,16 +1,4 @@
 {
-  "languages": [
-    "au",
-    "de",
-    "ch",
-    "es",
-    "be",
-    "it",
-    "fr",
-    "pt",
-    "pl",
-    "gr",
-    "ca"
-  ],
-  "defaultLang": "au"
+  "languages": ["uk", "de", "fr", "nl", "se"],
+  "defaultLang": "uk"
 }

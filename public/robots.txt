@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://roulettino-online.com/
-Sitemap: https://roulettino-online.com/sitemap.xml
+Host: https://foxygold-online.com /
+Sitemap: https://foxygold-online.com /sitemap.xml

@@ -34,7 +34,7 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
         fetchPriority={priority ? "high" : "auto"}
       />
       <h3>{offer.name}</h3>
-      <p className={styles.h4heading}>{t.welcomeBonus}</p>
+      <h4>{t.welcomeBonus}</h4>
       <p>{offer.bonuses.welcome_bonus}</p>
       <Button
         text={t.claimBonus}

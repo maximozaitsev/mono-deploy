@@ -66,7 +66,6 @@ export default function AboutSection() {
   if (error) return null;
   if (!content) return null;
 
-
   return (
     <section className="about-section section">
       <div className="container">

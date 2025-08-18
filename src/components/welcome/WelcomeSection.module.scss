@@ -3,7 +3,7 @@
 @import "../../styles/variables.scss";
 
 .welcomeSection {
-  background: $color-background;
+  background: #2d281b;
   margin-bottom: 140px;
   width: 100%;
 
@@ -19,7 +19,7 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 160px center;
+  background-position: right 113px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -32,7 +32,7 @@
   }
 
   @media (max-width: 1280px) {
-    background-size: 40% auto;
+    background-size: 50% auto;
     background-position: right 20px center;
   }
 
@@ -64,12 +64,9 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 308px;
+  max-width: 554px;
   height: auto;
-
-  @media (max-width: 420px) {
-    max-width: 200px;
-  }
+  margin-top: 6px;
 }
 
 .welcomeContent {

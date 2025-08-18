@@ -5,7 +5,10 @@ interface ArrowDownProps {
   color?: string;
 }
 
-const ArrowDown: React.FC<ArrowDownProps> = ({ size = 24, color = "currentColor" }) => {
+const ArrowDown: React.FC<ArrowDownProps> = ({
+  size = 24,
+  color = "currentColor",
+}) => {
   return (
     <svg
       width={size}

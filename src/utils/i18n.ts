@@ -168,7 +168,10 @@ export async function fetchContent(lang: string) {
 
 // Нормализуем сырые переводы к строгому словарю StaticDict:
 // - если каких-то ключей нет — подставляем пустую строку (или можно дефолт из defaultLang)
-function coerceToStaticDict(raw: Record<string, string> | undefined, fallback: Record<string, string>): StaticDict {
+function coerceToStaticDict(
+  raw: Record<string, string> | undefined,
+  fallback: Record<string, string>
+): StaticDict {
   const dict: Partial<StaticDict> = {};
   for (const key of STATIC_KEYS) {
     dict[key] = (raw && raw[key]) ?? fallback[key] ?? "";

@@ -9,7 +9,6 @@ import { getProjectGeoForLang } from "@/utils/localeMap";
 import "@/components/providers/ProvidersSection.scss";
 import { useStaticT } from "@/utils/i18n";
 
-
 interface ProvidersSectionProps {
   initialProviders: Provider[];
 }
