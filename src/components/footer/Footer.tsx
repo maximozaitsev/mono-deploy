@@ -2,14 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import Logo from "../header/Logo";
-import { PROJECT_NAME } from "@/config/projectConfig";
-import { getProjectGeoForLang } from "@/utils/localeMap";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./Footer.module.scss";
-import { usePathname } from "next/navigation";
-import manifestData from "../../../public/content/languages.json";
-
-type LangManifest = { languages: string[]; defaultLang: string };
-const manifest = manifestData as LangManifest;
 
 const partnerLogos = [
   { name: "MasterCard", src: "/footer-assets/master-card.svg" },
@@ -32,20 +26,22 @@ const partnerLogos = [
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const [hoveredLogoIndex, setHoveredLogoIndex] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  const pathname = usePathname();
-  const firstSeg = pathname?.split("/").filter(Boolean)[0] || "";
-  const currentLang = manifest.languages.includes(firstSeg)
-    ? firstSeg
-    : manifest.defaultLang;
-
-  const dynamicGeo = getProjectGeoForLang(currentLang);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const scrollToWelcomeSection = () => {
     document
       .getElementById("welcome-section")
       ?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
 
   return (
     <footer className={styles.footer}>
@@ -56,10 +52,10 @@ export default function Footer() {
               {start === 0 && (
                 <div className={styles.logoWrapper}>
                   <Logo
-                    desktopSrc="/logo.svg"
-                    mobileSrc="/logo-mobile.svg"
-                    alt={`${PROJECT_NAME} Logo`}
+                    svgPath={logoPath}
+                    gradientIdPrefix="footer"
                     onClick={scrollToWelcomeSection}
+                    alt={`${PROJECT_NAME} Logo`}
                   />
                 </div>
               )}
@@ -72,7 +68,7 @@ export default function Footer() {
                       key={index}
                       src={logo.src}
                       alt={logo.name}
-                      title={`${logo.name} in ${PROJECT_NAME} ${dynamicGeo}`}
+                      title={`${logo.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
                       className={styles.partnerLogo}
                       style={{
                         mixBlendMode:

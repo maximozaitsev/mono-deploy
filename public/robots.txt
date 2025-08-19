@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://foxygold-online.com /
-Sitemap: https://foxygold-online.com /sitemap.xml
+Host: https://uptown-pokies-fun.com/
+Sitemap: https://uptown-pokies-fun.com/sitemap.xml

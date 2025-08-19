@@ -21,13 +21,10 @@
   width: 100%;
   display: grid;
   row-gap: 24px;
-  contain: content;
 }
 
 .row {
   display: grid;
-  content-visibility: auto;
-  contain-intrinsic-size: 88px auto;
   grid-template-columns: 18% 22% 12% 13% 12% 23%;
   align-items: center;
   border-radius: $border-radius;
@@ -35,14 +32,13 @@
   .secondary {
     width: 218px;
     height: 56px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
     margin-top: -3px;
     margin-left: 6px;
-    padding: 5px;
+    padding: 0;
   }
 
   @media (max-width: 1080px) {
-    word-break: break-word;
-    hyphens: auto;
     grid-template-columns: 25% 15% 15% 15% 30%;
   }
 
@@ -52,11 +48,6 @@
     button {
       width: auto;
     }
-  }
-
-  @media (max-width: 500px) {
-    grid-template-columns: 33% 22% 22% 23%;
-    font-size: 1rem !important;
   }
 }
 
@@ -99,10 +90,6 @@
 
   .offerImage {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
-    width: 140px;
-    height: auto;
-    max-width: 100%;
-    display: block;
   }
 
   @media (max-width: 850px) {
@@ -238,8 +225,7 @@
     font-size: 16px;
 
     button {
-      width: auto;
-      padding: 0 4px !important;
+      width: auto !important;
     }
   }
 
@@ -278,12 +264,7 @@
   font-weight: 400;
   line-height: normal;
   position: relative;
-  word-break: break-word;
-  hyphens: auto;
-
-  @media (max-width: 1220px) {
-    font-size: 20px;
-  }
+  box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
 
   @media (max-width: 850px) {
     font-size: 18px;

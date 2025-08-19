@@ -5,7 +5,7 @@
 .h1Section {
   display: flex;
   justify-content: center;
-  margin: -64px auto 64px auto;
+  margin: -76px auto 136px auto;
 
   @media (max-width: 768px) {
     margin: 64px auto;
@@ -21,7 +21,6 @@
     background-color: $color-background-third;
     border-radius: $border-radius;
     padding: 23px;
-    margin: -12px 40px 0;
     max-width: 1120px;
     width: 100%;
     text-align: center;
@@ -30,7 +29,7 @@
       max-width: 828px;
     }
 
-    @media (max-width: 912px) {
+    @media (max-width: 913px) {
       max-width: 544px;
     }
 

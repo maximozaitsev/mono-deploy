@@ -1,5 +1,6 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Albert Sans", sans-serif;
+$font-secondary: "Otomanopee One", sans-serif;
+$font-third: "Montserrat", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -30,15 +31,8 @@ $font-secondary: "Albert Sans", sans-serif;
 }
 
 @font-face {
-  font-family: "Albert Sans";
-  font-weight: 700;
+  font-family: "Otomanopee One";
+  font-weight: 400;
   font-style: normal;
-  src: url("./Heading/static/Albert Sans-700.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Albert Sans";
-  font-weight: 900;
-  font-style: normal;
-  src: url("./Heading/static/Albert Sans-900.woff2") format("woff2");
+  src: url("./Heading/static/Otomanopee One-400.woff2") format("woff2");
 }
