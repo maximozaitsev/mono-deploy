@@ -1,36 +1,16 @@
 "use client";
 
-import React from "react";
+import useContentData from "../../utils/useContentData";
 import styles from "./H1Block.module.scss";
-import siteData from "@/content/siteData.json";
 
-export interface Block {
-  type: string;
-  level?: number;
-  text?: string;
-}
+export default function H1Section() {
+  const { data: content, loading, error } = useContentData();
 
-interface Props {
-  blocks?: Block[];
-  pageKey?: keyof typeof siteData;
-  className?: string;
-}
-
-export default function H1Section({ blocks, pageKey, className }: Props) {
-  const contentBlocks =
-    blocks ?? (pageKey ? siteData[pageKey].blocks : undefined);
-  const h1Text =
-    contentBlocks?.find((b) => b.type === "heading" && b.level === 1)?.text ||
-    "";
-
-  if (!h1Text) return null;
+  if (loading || error || !content) return null;
 
   return (
-    <section
-      id="h1-section"
-      className={`${styles.h1Section} ${className ?? ""}`.trim()}
-    >
-      <h1>{h1Text}</h1>
+    <section id="h1-section" className={styles.h1Section}>
+      <h1>{content.title}</h1>
     </section>
   );
 }

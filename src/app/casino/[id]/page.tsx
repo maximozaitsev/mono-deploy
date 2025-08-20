@@ -5,12 +5,21 @@ import { useParams } from "next/navigation";
 import { fetchOffers } from "../../../utils/fetchOffers";
 import Header from "../../../components/header/Header";
 import Footer from "@/components/footer/Footer";
-import "../../../components/header/Header.module.scss";
 import styles from "./PreloaderPage.module.scss";
+import manifestData from "../../../../public/content/languages.json";
+import { usePathname } from "next/navigation";
 import Spinner from "@/components/__common__/loader/Spinner";
+
+type LangManifest = { languages: string[]; defaultLang: string };
+const manifest = manifestData as LangManifest;
 
 const PreloaderPage = () => {
   const { id } = useParams();
+  const pathname = usePathname();
+  const firstSeg = pathname?.split("/").filter(Boolean)[0] || "";
+  const currentLang = manifest.languages.includes(firstSeg)
+    ? firstSeg
+    : manifest.defaultLang;
 
   useEffect(() => {
     async function redirectToOffer() {
@@ -52,7 +61,11 @@ const PreloaderPage = () => {
 
   return (
     <div className={styles.preloaderPage}>
-      <Header />
+      <Header
+        languages={(manifestData as any).languages || []}
+        defaultLang={(manifestData as any).defaultLang || "en"}
+        currentLang={currentLang}
+      />
       <div className={styles.spinnerContainer}>
         <Spinner variant="inline" size={96} />
       </div>

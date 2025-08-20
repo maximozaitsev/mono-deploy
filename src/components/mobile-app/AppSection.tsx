@@ -7,11 +7,17 @@ import { fetchOffers } from "@/utils/fetchOffers";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { useParsedSections } from "../../utils/parseSections";
-import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { PROJECT_NAME } from "@/config/projectConfig";
+import { getProjectGeoForLang } from "@/utils/localeMap";
+import { usePathname } from "next/navigation";
 import styles from "./AppSection.module.scss";
 
 export default function AppSection() {
   const [firstOfferId, setFirstOfferId] = useState<number | null>(null);
+
+  const pathname = usePathname();
+  const langFromUrl = (pathname?.split("/")?.[1] || "").toLowerCase();
+  const PROJECT_GEO_DYNAMIC = getProjectGeoForLang(langFromUrl);
 
   useEffect(() => {
     fetchOffers()
@@ -26,9 +32,9 @@ export default function AppSection() {
   const { data: content, loading, error } = useContentData();
   const { app } = useParsedSections(content?.sections || {});
 
-  if (loading) return <p></p>;
-  if (error) return <p>Error loading content.</p>;
-  if (!app) return <p>App section data is not available.</p>;
+  if (loading) return null;
+  if (error) return null;
+  if (!app) return null;
 
   return (
     <section id="mobile" className={`${styles.appSection} section`}>
@@ -39,7 +45,7 @@ export default function AppSection() {
             <img
               src={AppImageMobile.src}
               alt={PROJECT_NAME + " App"}
-              title={PROJECT_NAME + " " + PROJECT_GEO}
+              title={PROJECT_NAME + " " + PROJECT_GEO_DYNAMIC}
               className={styles.imageMobile}
               loading="lazy"
             />
@@ -66,7 +72,9 @@ export default function AppSection() {
                   className={styles.googlePlay}
                   src="/assets/google-play.svg"
                   alt="Download on the Google Play"
-                  title={PROJECT_NAME + " " + PROJECT_GEO + " in Google Play"}
+                  title={
+                    PROJECT_NAME + " " + PROJECT_GEO_DYNAMIC + " in Google Play"
+                  }
                   loading="lazy"
                 />
               </button>
@@ -85,7 +93,9 @@ export default function AppSection() {
                   className={styles.appStore}
                   src="/assets/app-store.svg"
                   alt="Download on the App Store"
-                  title={PROJECT_NAME + " " + PROJECT_GEO + " in App Store"}
+                  title={
+                    PROJECT_NAME + " " + PROJECT_GEO_DYNAMIC + " in App Store"
+                  }
                   loading="lazy"
                 />
               </button>
@@ -94,8 +104,8 @@ export default function AppSection() {
           <div className={styles.imageBlock}>
             <img
               src={AppImage.src}
-              alt={PROJECT_NAME + " " + PROJECT_GEO + " App"}
-              title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
+              alt={PROJECT_NAME + " " + PROJECT_GEO_DYNAMIC + " App"}
+              title={PROJECT_NAME + " " + PROJECT_GEO_DYNAMIC + " Mobile"}
               className={styles.image}
               loading="lazy"
             />

@@ -10,7 +10,7 @@
   align-items: center;
   gap: 16px;
 
-  outline: $border-width solid $border-color;
+  outline: $border-width solid $color-border-primary;
   border-radius: $border-radius;
   background: $color-background-third;
 
@@ -31,13 +31,19 @@
     line-height: normal;
   }
 
-  h4 {
+  .h4Heading {
     font-family: $font-primary;
+    text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
     color: $color-button-large;
+
+    // background: $color-button-large;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   p {
@@ -58,6 +64,7 @@
     margin-top: auto;
     margin-left: -20px;
     margin-right: -20px;
+    max-width: 218px;
   }
 
   @media (max-width: 768px) {
@@ -73,7 +80,7 @@
       display: none;
     }
 
-    h4 {
+    .h4Heading {
       margin-bottom: -8px;
     }
 
