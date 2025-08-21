@@ -1,50 +1,30 @@
-import axios from "axios";
-import { Game } from "../types/game";
+import { Game } from "@/types/game";
+import { getJsonWithRetry } from "@/utils/http";
+import { getOrFetch, getStale } from "@/utils/apiCache";
 
-const MAX_RETRIES = 4;
-const RETRY_DELAY = 800;
+const TTL_MS = 30_000;
+const STALE_MS = 60_000;
 
 export async function fetchGames(type: string): Promise<Game[]> {
-  let retries = 0;
-
-  while (retries < MAX_RETRIES) {
-    try {
-      const response = await axios.get(
-        `https://api.adkey-seo.com/api/website/get-games/${type}`,
-        {
-          headers: {
-            "Accept-Encoding": "gzip, deflate, br",
-            "Cache-Control": "no-cache",
-          },
-          timeout: 5000,
-        }
+  const key = `games:${type}`;
+  try {
+    const data = await getOrFetch<Game[]>(key, TTL_MS, async () => {
+      const games = await getJsonWithRetry<Game[]>(
+        `https://api.adkey-seo.com/api/website/get-games/${type}`
       );
-      const games = response.data;
-
-      const updatedGames = games.map((game: Game) => {
+      return games.map((game) => {
         const imageUrl = `https://api.adkey-seo.com/storage/images/games/${game.image}`;
         return {
           ...game,
           image: imageUrl,
-          optimizedImage: imageUrl + "?format=webp&width=332&height=179",
+          optimizedImage: `${imageUrl}?format=webp&width=332&height=179`,
         };
       });
-
-      return updatedGames;
-    } catch (error: any) {
-      if (error.response?.status === 429 && retries < MAX_RETRIES) {
-        retries++;
-        console.warn(
-          `Rate limit hit, retrying in ${RETRY_DELAY * retries}ms...`
-        );
-        await new Promise((resolve) =>
-          setTimeout(resolve, RETRY_DELAY * retries)
-        );
-      } else {
-        throw error;
-      }
-    }
+    });
+    return data;
+  } catch {
+    const stale = getStale<Game[]>(key, STALE_MS);
+    if (stale) return stale;
+    return [];
   }
-
-  throw new Error("Max retries exceeded");
 }
