@@ -17,9 +17,13 @@
   @media (max-width: 768px) {
     height: 96px;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 440px) {
     padding: 5px 10px;
     height: 64px;
+
+    img {
+      max-width: 120px;
+    }
   }
 }
 
