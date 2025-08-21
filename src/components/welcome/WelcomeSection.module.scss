@@ -3,7 +3,7 @@
 @import "../../styles/variables.scss";
 
 .welcomeSection {
-  background: #3c1174;
+  background: $color-background-secondary;
   margin-bottom: 140px;
   width: 100%;
 
@@ -19,7 +19,7 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 117px center;
+  background-position: right 115px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -64,8 +64,9 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 576px;
+  max-width: 544px;
   height: auto;
+  margin-top: 8px;
 }
 
 .welcomeContent {

@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://gambloria-online.com/
-Sitemap: https://gambloria-online.com/sitemap.xml
+Host: https://bet-blast-online.com/
+Sitemap: https://bet-blast-online.com/sitemap.xml

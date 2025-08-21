@@ -1,209 +1,334 @@
 {
-  "meta-title": "Gambloria Casino FR – Jeux sous licence, gros bonus, paiements rapides",
-  "meta-description": "Gambloria Casino France propose des jeux sous licence, des milliers de machines à sous, des tables avec croupiers en direct et des paiements cryptés avec traitement instantané. Inscrivez-vous dès maintenant pour débloquer de généreux bonus et jouer en toute sécurité !",
-  "title": "Gambloria Casino France – Jouez plus intelligemment avec des paiements sécurisés et des récompenses",
+  "meta-title": "BetBlast FR : une combinaison parfaite entre sports et casino",
+  "meta-description": "BetBlast France est un casino et un site de paris sportifs sur une seule et même plateforme. Il est agréé et propose une grande variété de jeux sympas, des bonus impressionnants et des récompenses VIP. Poursuivez votre lecture pour en savoir plus sur ses avantages et ses inconvénients.",
+  "title": "BetBlast Casino France : un divertissement illimité avec de nombreux jeux et bonus",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "100 tours gratuits et un bonus de 55 % jusqu'à 500 €",
-        "100 % jusqu'à 500 €",
-        "17 % de cashback"
+        "Club VIP multicouche",
+        "Offre de bienvenue de 200 %",
+        "200 FS pour le jeu de la semaine"
       ]
     },
     {
       "type": "paragraph",
-      "text": "Gambloria Casino est un casino en ligne sophistiqué offrant plusieurs possibilités de divertissement. Un logiciel sous licence alimente les machines à sous, les jeux de table, les jeux avec croupiers en direct et les promotions exclusives du site. Gambloria Casino offre une expérience de jeu numérique sûre et facile grâce à des processus de paiement sécurisés, des règles transparentes et une conception conviviale."
+      "text": "BetBlast Casino est une plateforme agréée qui propose à la fois des jeux de casino et des paris sportifs. Sous la supervision du gouvernement de l'île autonome d'Anjouan, elle garantit un environnement de jeu sécurisé à ses joueurs. Elle attire les joueurs grâce à un vaste choix de jeux, des bonus et un programme VIP unique avec de nombreux sous-niveaux. Poursuivez votre lecture pour en savoir plus sur la connexion, la sécurité, les divertissements et les options d'assistance de BetBlast Casino."
     }
   ],
   "about": {
-    "Processus d'inscription sur Gambloria Casino": [
+    "Processus d'inscription à BetBlast": [
       {
         "type": "paragraph",
-        "text": "Il est facile de commencer à jouer sur Gambloria Casino. Les joueurs français peuvent s'inscrire et accéder au site en quelques étapes simples."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Étapes d'inscription :"
+        "text": "Si vous souhaitez profiter des jeux pour gagner de vrais gains, vous devez vous inscrire sur le site. L'inscription à BetBlast est très simple et ne nécessite que cinq étapes :"
       },
       {
         "type": "list",
-        "style": "unordered",
+        "style": "ordered",
         "items": [
-          "Rendez-vous sur le site officiel de Gambloria Casino",
-          "Cliquez sur le bouton « S'inscrire »",
-          "Saisissez vos informations personnelles dans le formulaire d'inscription",
-          "Créez un nom d'utilisateur et un mot de passe",
-          "Sélectionnez la devise de votre choix",
-          "Acceptez les conditions générales",
-          "Confirmez votre inscription par e-mail"
+          "La première page d'inscription vous demande d'indiquer votre adresse e-mail réelle et de créer un mot de passe dont vous aurez besoin pour vous connecter au site ;",
+          "La deuxième page vous demandera de fournir votre numéro de téléphone (vous devez d'abord sélectionner le pays dans la liste, puis saisir le reste des chiffres) ;",
+          "La troisième page vous demandera d'indiquer le prénom, le nom et la date de naissance figurant sur votre passeport, car la plateforme n'accepte que les joueurs ayant l'âge légal ;",
+          "Pour terminer l'inscription, vous devez fournir votre adresse postale, votre ville, votre code postal et votre pays sur la quatrième page de l'inscription ;",
+          "Enfin, vous devrez lire les règles du site et cliquer sur « S'inscrire et jouer »."
         ]
-      }
-    ],
-    "À propos de la connexion à Gambloria Casino": [
+      },
       {
         "type": "paragraph",
-        "text": "La connexion au casino Gambloria est simple et sécurisée. Commencez par vous rendre sur le site officiel et cliquez sur « Connexion » sur la page d'accueil. Vous devrez ensuite saisir votre adresse e-mail et votre mot de passe avant de valider vos informations. Les joueurs peuvent utiliser l'option « Se souvenir de moi » pour un accès plus rapide sur les appareils de confiance et sécuriser leurs comptes grâce à une technologie de cryptage."
+        "text": "Si vous souhaitez accélérer le processus, vous pouvez vous connecter par SMS, via votre compte Google, Discord ou Telegram."
+      }
+    ],
+    "Connexion à BetBlast": [
+      {
+        "type": "paragraph",
+        "text": "Une fois le processus d'inscription terminé, vous pourrez plonger dans l'univers des paris sportifs et des jeux de casino. Pour cela, il vous suffit de vous connecter à l'aide de l'adresse e-mail et du mot de passe que vous avez indiqués lors de votre inscription. En outre, vous pouvez également vous connecter à BetBlast via le SMS que vous recevrez sur le numéro de téléphone que vous avez indiqué lors de votre inscription. D'autres méthodes de connexion sont disponibles via Discord, Telegram ou votre compte Google."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pour les dépôts et les retraits, vous devrez passer une simple vérification. Pour cela, prenez des photos distinctes du recto et du verso de votre carte d'identité ou de votre permis de conduire et prenez un selfie avec le document à côté de votre visage. Grâce à cela, le casino sécurise l'environnement de jeu contre les escrocs et les robots."
       }
     ],
     "Méthodes de dépôt": [
       {
         "type": "paragraph",
-        "text": "Gambloria Casino accepte les cartes Visa et Mastercard comme principales options de dépôt. Le casino accepte les dépôts en Bitcoin, Ethereum, XRP, Litecoin et Bitcoin Cash. Ces options prennent en charge les transactions par carte et les cryptomonnaies. La limite de dépôt la plus élevée varie selon la méthode et peut atteindre 2 500 €, tandis que le dépôt minimum est d'environ 20 €, selon la région du joueur."
-      }
-    ],
-    "Méthodes de retrait": [
-      {
-        "type": "paragraph",
-        "text": "Gambloria Casino exige des joueurs français qu'ils effectuent leurs retraits en utilisant le même mode de paiement que celui utilisé pour le dépôt. Si vous avez effectué un dépôt avec Visa, Mastercard ou Bitcoin, vous devez effectuer votre retrait via le même mode de paiement. Les limites de retrait quotidiennes, hebdomadaires et mensuelles sont respectivement de 1 000 €, 3 000 € et 10 000 €. Pour les gains importants, le casino peut fractionner les gains en versements mensuels. Les retraits minimums sont généralement d'environ 50 €, soit plus que les seuils de dépôt."
-      }
-    ]
-  },
-  "advantages": {
-    "Avantages du casino Gambloria": [
-      {
-        "type": "paragraph",
-        "text": "Les joueurs ont des avantages et des inconvénients au casino Gambloria. Les deux sont résumés ici."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Avantages"
+        "text": "Pour commencer à jouer, vous devez investir au moins 20 EUR via :"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Large sélection de jeux de casino",
-          "Plateforme agréée et réglementée",
-          "Modes de paiement sécurisés",
-          "Interface conviviale",
-          "Compatibilité mobile",
-          "Bonus et promotions attractifs",
-          "Assistance clientèle 24h/24"
+          "Mastercard",
+          "Visa",
+          "Virement bancaire",
+          "Interac",
+          "Cryptomonnaie"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "D'autres méthodes ne sont pas encore disponibles."
+      }
+    ],
+    "Retraits BetBlast": [
+      {
+        "type": "paragraph",
+        "text": "Pour retirer vos gains, vous pouvez utiliser Visa, Mastercard ou une cryptomonnaie. Le retrait maximum par jour est de 4000 EUR et le montant minimum est de 25 EUR."
+      }
+    ]
+  },
+  "advantages": {
+    "Avantages de BetBlast Casino FR": [
+      {
+        "type": "paragraph",
+        "text": "Pourquoi les joueurs choisissent-ils Betblast Casino ? Quels sont ses avantages et ses inconvénients ? Voici quelques avantages et inconvénients à prendre en compte."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Avantages :"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Bonus et promotions intéressants",
+          "Programme VIP unique",
+          "Assistance 24h/24 et 7j/7",
+          "Plusieurs langues disponibles",
+          "Combinaison de paris sportifs et de jeux de casino",
+          "Compatible avec les cryptomonnaies",
+          "Navigation facile sur le site web"
         ]
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Inconvénients"
+        "text": "Inconvénients :"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Restrictions dans certains pays",
-          "Modes de retrait limités",
-          "Conditions de mise sur les bonus"
+          "Modes de paiement limités",
+          "Devises disponibles limitées",
+          "Options d'assistance limitées"
         ]
       }
     ]
   },
   "games-to-play": {
-    "Jeux disponibles sur Gambloria Casino": [
+    "Jeux BetBlast sur lesquels parier aujourd'hui": [
       {
         "type": "paragraph",
-        "text": "Gambloria Casino propose tout ce dont vous pouvez rêver, des machines à sous classiques aux jeux innovants avec croupiers en direct."
+        "text": "La plateforme présente sa gamme de jeux en les répartissant dans les catégories suivantes."
       },
       {
         "type": "heading",
         "level": 3,
+        "text": "Jeux de casino"
+      },
+      {
+        "type": "paragraph",
+        "text": "Le monde du casino offre une grande diversité de jeux RNG 100 % aléatoires."
+      },
+      {
+        "type": "paragraph",
         "text": "Machines à sous"
       },
       {
         "type": "paragraph",
-        "text": "La section machines à sous du casino Gambloria est la plus grande et la plus active. Les joueurs peuvent choisir parmi une vaste sélection de machines à sous, des machines classiques simples aux machines vidéo complexes avec des fonctionnalités supplémentaires. La mythologie, l'aventure, la fantaisie et la culture pop sont des thèmes populaires, et Gates of Olympus, Gold Rush with Johnny Cash et Zeus Unchained offrent des graphismes époustouflants et un gameplay dynamique. De nombreuses machines à sous proposent des tours gratuits, des multiplicateurs et des fonctions « hold-and-win » pour rendre chaque tour passionnant. Les mises sont variables, ce qui permet aux joueurs de commencer modestement et d'augmenter leurs mises pour gagner plus."
+        "text": "Cette section est la plus importante. Elle comprend les sous-catégories suivantes :"
       },
       {
-        "type": "heading",
-        "level": 3,
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Fonctionnalités (bonus et thèmes spécifiques)",
+          "Fournisseur du mois (le casino présente ici un fournisseur de logiciels et tous ses titres)",
+          "Jeux à jackpot (machines à sous avec jackpots fixes et progressifs)",
+          "Achat de bonus (en gagnant des points de casino, vous pouvez acheter des bonus pour les machines à sous, tels que des tours gratuits et des paris gratuits)",
+          "Megaways (machines à sous qui offrent de nombreuses façons de gagner, contrairement aux machines traditionnelles à 1 ligne de paiement fixe)"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Toutes ces machines à sous sont équitables et fournies par des développeurs de logiciels réputés tels que Endorphina, Blueprint Gaming, 1x2 Gaming et d'autres."
+      },
+      {
+        "type": "paragraph",
         "text": "Casino en direct"
       },
       {
         "type": "paragraph",
-        "text": "Les casinos en direct sont totalement immersifs et imitent les casinos terrestres. La roulette, le baccarat, le blackjack et le poker sont diffusés en direct en vidéo HD par des croupiers professionnels. Les joueurs peuvent profiter à la fois des jeux de table et des jeux télévisés avec la roulette VIP européenne et la Roue de la fortune. La fonction interactive permet aux joueurs de discuter avec les croupiers et les autres joueurs, rendant le jeu plus convivial. Les tables ont des limites de mise différentes pour les joueurs occasionnels et les gros joueurs."
+        "text": "Si vous ne souhaitez pas jouer exclusivement sur un ordinateur, vous pouvez interagir avec de vrais croupiers ici. Profitez des spectacles en direct, de la roulette, du poker, du blackjack, du baccarat, du plinko, de la guerre des paris et d'autres offres avec croupiers en direct."
+      },
+      {
+        "type": "paragraph",
+        "text": "BetBlast Originals"
+      },
+      {
+        "type": "paragraph",
+        "text": "Il s'agit de jeux exclusifs du casino BetBlast que vous ne trouverez pas sur d'autres plateformes. Parmi eux, vous trouverez Plinko, Mines, Dice, Video Poker, Blackjack, Keno, Wheel, Hi-Lo, Crash et bien d'autres encore."
+      },
+      {
+        "type": "paragraph",
+        "text": "Mini-jeux"
+      },
+      {
+        "type": "paragraph",
+        "text": "Il s'agit généralement de jeux à gains instantanés comme Plinko, Aviator, Limbo, Blocks, Mines et autres."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Nouveaux jeux"
+        "text": "Paris sportifs"
       },
       {
         "type": "paragraph",
-        "text": "Gambloria Casino propose régulièrement de nouveaux jeux afin de renouveler son contenu. Des éléments créatifs, des graphismes améliorés et de nouveaux mécanismes de jeu apportent de la variété. Ces jeux sont produits par des fournisseurs de logiciels renommés pour leur performance et leur fiabilité. Le casino renouvelle régulièrement son offre et encourage les joueurs à essayer de nouvelles choses en mettant à jour son répertoire. L'ajout de rouleaux en cascade et de possibilités d'achat supplémentaires rend ces nouveaux jeux attrayants pour les joueurs plus interactifs."
+        "text": "Pour les vrais fans de sport, BetBlast propose une gamme de jeux permettant de faire des pronostics et de gagner s'ils sont corrects. La plateforme propose des paris avant et pendant les événements sur les jeux suivants :"
       },
       {
-        "type": "heading",
-        "level": 3,
-        "text": "Jeux de table et options spéciales"
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Succès et football",
+          "Cricket",
+          "Basket",
+          "Tennis",
+          "Hockey",
+          "Boxe",
+          "Fléchettes",
+          "MMA"
+        ]
       },
       {
         "type": "paragraph",
-        "text": "Gambloria Casino propose plusieurs catégories au-delà des machines à sous et des jeux avec croupiers en direct, ce qui élargit sa flexibilité. Les joueurs peuvent jouer au blackjack, au baccarat, à la roulette et au vidéo poker. Pour des résultats immédiats, les jeux à gains instantanés, les titres crash et les cartes à gratter sont passionnants. Les jackpots progressifs permettent aux joueurs de concourir pour remporter des récompenses importantes au fil du temps. Le casino propose des sports virtuels, des salles de bingo, des tirages de keno et des paris sur les sports électroniques en plus des jeux de casino classiques."
+        "text": "En outre, elle propose des paris sur des eSports tels que Counter Strike, Dota 2, King of Glory, Arena of Valor, League of Legends, Call of Duty, Crossfire, FC25, Cricket24 et bien d'autres encore. Vous pouvez définir les cotes dans le format de votre choix, notamment malaisien, hongkongais, européen, américain, fractionnel et indonésien."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Bonus et promotions du casino Gambloria": [
+    "Bonus BetBlast Offres et promotions": [
       {
         "type": "paragraph",
-        "text": "Le programme promotionnel du casino Gambloria attire les nouveaux joueurs et les joueurs fidèles grâce à des bonus de bienvenue substantiels et des avantages continus."
+        "text": "La plupart des plateformes divisent tous les bonus et promotions en deux catégories : les promotions sportives et les offres de casino. Cependant, BetBlast ne fonctionne pas ainsi. Pourquoi ? Certains bonus sont tout compris, comme le bonus de bienvenue qui offre des récompenses à la fois pour les paris sportifs et les paris sur le casino. Grâce à cela, vous n'avez pas à choisir entre les machines à sous et les paris sur le football. Une seule offre de bienvenue satisfait les exigences des fans de sport et des amateurs de chance."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus de premier dépôt"
+        "text": "Pack de bienvenue"
       },
       {
         "type": "paragraph",
-        "text": "La prime de premier dépôt du casino Gambloria aide les nouveaux joueurs à bien démarrer. Le casino offre 100 % du montant du premier dépôt jusqu'à 500 €, doublant ainsi les fonds du compte. De plus, les joueurs gagnent 150 tours gratuits pour les machines à sous de leur choix, ce qui ajoute au plaisir. En déposant 500 €, vous obtenez 1 000 € et 150 tours, ce qui en fait l'une des meilleures offres de bienvenue."
+        "text": "Devenez un nouveau joueur sur BetBlast et vous pourrez obtenir un bonus de 200 % jusqu'à 7 500 EUR et 50 tours gratuits, ainsi qu'un pari gratuit de 5 EUR pour les paris sportifs. Le dépôt minimum requis pour bénéficier de l'offre de bienvenue est de 20 EUR."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus sur le deuxième dépôt"
+        "text": "Jeu de la semaine"
       },
       {
         "type": "paragraph",
-        "text": "Les nouveaux joueurs reçoivent 100 tours gratuits et un bonus de 55 % jusqu'à 500 € lors de leur deuxième dépôt. Ce système équilibre les bonus en argent et les tours gratuits, permettant aux joueurs de jouer plus longtemps et d'augmenter leur bankroll. Par exemple, un investissement de 500 € donnerait droit à 275 € de bonus en argent et 100 tours supplémentaires, prolongeant ainsi le frisson du premier dépôt."
+        "text": "Lorsque de nouveaux jeux apparaissent sur la plateforme, vous pouvez obtenir jusqu'à 200 tours gratuits pour les tester ainsi que d'autres nouveautés. Comme il s'agit d'une offre hebdomadaire, le casino s'engage à proposer de nouveaux jeux chaque semaine ! Pour cela, il vous suffit de déposer 20 EUR, d'opter pour la promotion et d'obtenir immédiatement vos tours gratuits. Plus vous déposez, plus vous obtenez de tours gratuits. Par exemple, 56 EUR vous donneront droit à 56 tours gratuits."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus sur le troisième dépôt"
+        "text": "Cashback du dimanche au casino en direct"
       },
       {
         "type": "paragraph",
-        "text": "Le bonus sur le troisième dépôt correspond à 100 % jusqu'à 500 €, une autre offre très intéressante. Cette promotion double les dépôts, ce qui permet aux joueurs d'augmenter plus facilement leur solde. Un dépôt de 500 € donne droit à 1 000 € sur le compte. Cette troisième partie du pack de bienvenue garantit aux nouveaux membres une assistance continue lors de leurs trois premiers dépôts, leur permettant ainsi de financer et de profiter pleinement de leur temps de jeu."
+        "text": "Vous aimez parier sur les jeux de table et les émissions avec des croupiers en direct ? Alors, obtenez 10 % de cashback tous les lundis pour avoir joué au casino en direct le dimanche."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Bonus Highroller"
+        "text": "Vendredi roulette russe"
       },
       {
         "type": "paragraph",
-        "text": "Gambloria Casino propose un bonus Highroller. Le code 50HIGH offre aux membres un bonus de 50 % jusqu'à 500 €. Cela signifie qu'un investissement de 500 € ajoutera 250 € en bonus, augmentant ainsi la cagnotte pour des paris de plus grande valeur. Cette offre est destinée aux joueurs qui souhaitent effectuer un dépôt important et optimiser leurs gains en une seule fois."
+        "text": "Pour obtenir votre récompense, vous devez déposer au moins 50 EUR et demander le bonus. Ensuite, vous devrez appuyer sur la gâchette pour que le système vous donne des résultats aléatoires. Vous avez six tentatives pour remporter les meilleurs prix, tels que 50 EUR de bonus et 250 tours gratuits."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Cashback hebdomadaire"
+        "text": "Recharge hebdomadaire"
       },
       {
         "type": "paragraph",
-        "text": "Gambloria Casino offre un cashback hebdomadaire de 25 %. Cette campagne protège les participants en leur restituant un pourcentage de leurs pertes nettes hebdomadaires. Le cashback est reversé sur le compte du joueur, ce qui lui donne plus de chances de jouer après une mauvaise passe. Les joueurs réguliers apprécient cette incitation, car elle leur garantit un retour sur leur investissement en temps de jeu."
+        "text": "Ici, vous pouvez obtenir un bonus de 40 % pour un dépôt de seulement 20 EUR. Votre bonus vous sera accordé immédiatement. Vous ne pouvez en faire la demande qu'une fois par semaine."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Rakeback"
+        "text": "Assurance tennis"
       },
       {
         "type": "paragraph",
-        "text": "Un autre avantage est le programme de rakeback, qui rembourse jusqu'à 17 % de certains paris sur des jeux. Ce bonus garantit une partie de l'argent misé, ce qui le rend idéal pour les sessions plus longues. Le rakeback s'accumule au fil du temps, ce qui augmente la valeur du jeu et rend les sessions de paris plus efficaces."
+        "text": "Si vous êtes passionné de tennis, c'est l'occasion d'obtenir un remboursement de 100 EUR si votre favori perd un set à 0. Les tournois éligibles sont le Grand Chelem et le WTA/ATP 1000. Vous devez déposer 10 EUR avant le match sur le vainqueur de n'importe quel événement éligible."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Comboboost"
+      },
+      {
+        "type": "paragraph",
+        "text": "Si vous aimez parier sur plusieurs événements sportifs en même temps, vous pouvez obtenir des multiplicateurs supplémentaires allant jusqu'à 50 %. Si vous parvenez à deviner 3 résultats ou plus, vous recevrez votre récompense."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Tournois"
+      },
+      {
+        "type": "paragraph",
+        "text": "Le casino propose des tournois organisés par les meilleurs fournisseurs de logiciels, avec des cagnottes intéressantes à partager, tels que :"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Spinoleague de Spinomenal avec une cagnotte de 12 millions d'euros ;",
+          "Gold Hunt avec une cagnotte de 25 000 euros de Formula Spin ;",
+          "VoltEnt Lucky's Seven avec une cagnotte de 7 000 000 euros ;",
+          "Big Adventures Tournament avec une cagnotte de 1 660 000 à partager, proposé par Evoplay."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "De nouveaux tournois apparaissent régulièrement. Vous jouez aux jeux éligibles et rejoignez le classement. Les 10 premiers se partagent la cagnotte."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Club VIP"
+      },
+      {
+        "type": "paragraph",
+        "text": "Si vous restez fidèle au casino ou pariez régulièrement sur le sport, vous rejoindrez les programmes de fidélité BetBlast avec les niveaux et récompenses suivants :"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "Wooden (ce n'est qu'un début)",
+          "Iron (bonus hebdomadaire + 5 EUR + 1 % de cashback mensuel)",
+          "Bronze 1 (bonus hebdomadaire plus élevé + 10 EUR + 1,5 % de cashback mensuel)",
+          "Bronze 2 (bonus hebdomadaire plus élevé + 25 EUR + 2 % de cashback mensuel)",
+          "Silver 1 (bonus hebdomadaire plus élevé + 50 EUR + 2,5 % de cashback mensuel)",
+          "Argent 2 (bonus hebdomadaire plus élevé + 150 EUR + 3 % de cashback mensuel)",
+          "Or 1 (bonus hebdomadaire plus élevé + 300 EUR + 4 % de cashback mensuel)",
+          "Or 2 (bonus hebdomadaire plus élevé + 600 EUR + 5 % de cashback mensuel)",
+          "Platine 1 (bonus hebdomadaire plus élevé + 1 500 EUR + 6 % de cashback mensuel)",
+          "Platine 2 (bonus hebdomadaire plus élevé + 3000 EUR + 7 % de cashback mensuel)",
+          "Diamant (bonus hebdomadaire plus élevé + 5000 EUR + 8 % de cashback mensuel)"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Chaque fois que vous misez 1 EUR, le casino vous récompense avec 10 XP. Tous ces XP sont additionnés et déterminent votre niveau dans ce club VIP. L'adhésion commence avec 0 XP pour les joueurs Wooden et se termine avec 100000001 XP pour ceux qui souhaitent devenir des joueurs Diamond et bénéficier des bonus associés."
       }
     ]
   },
@@ -211,88 +336,70 @@
     "Assistance": [
       {
         "type": "paragraph",
-        "text": "Deux canaux principaux permettent d'accéder à l'assistance clientèle 24h/24 et 7j/7. Un chatbot alimenté par l'IA transfère les problèmes complexes à des agents humains dans le chat en direct, garantissant ainsi des solutions rapides et efficaces. Contactez support@gambloria.com pour plus d'informations, qui sont généralement fournies dans les 24 heures."
+        "text": "Vous pouvez contacter l'assistance en ligne du casino via son e-mail officiel ou son chat en direct. En outre, vous trouverez les réponses aux questions les plus courantes sur la page FAQ."
       }
     ]
   },
   "faq": {
-    "FAQ CASINO": [
+    "FAQ": [
       {
         "type": "heading",
         "level": 3,
-        "text": "Gambloria Casino facture-t-il des frais de transaction ?"
+        "text": "Pourquoi certains bonus ne sont-ils pas disponibles pour moi ?"
       },
       {
         "type": "paragraph",
-        "text": "Non, les dépôts et les retraits sont traités sans frais supplémentaires de la part du casino."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Quelle est la rapidité de traitement des retraits ?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Les retraits en cryptomonnaie sont généralement quasi instantanés, tandis que les transactions par carte peuvent prendre 1 à 3 jours ouvrables."
+        "text": "La plateforme adapte ses offres à la localisation du joueur. Par exemple, les joueurs allemands ne trouveront pas le bonus Premier League sur leur page, car il est réservé aux joueurs anglais (Royaume-Uni)."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Quels sont les fournisseurs de jeux de casino en direct ?"
+        "text": "Puis-je jouer gratuitement sur BetBlast ?"
       },
       {
         "type": "paragraph",
-        "text": "Les jeux avec croupiers en direct sont principalement fournis par Evolution Gaming et Pragmatic Play Live."
+        "text": "Oui. Sa section casino propose des modes démo gratuits qui vous permettent de tester le jeu et ses règles sans dépôt. Cependant, les paris sportifs sont réservés aux joueurs inscrits qui parient de l'argent réel sur leurs équipes et leurs joueurs."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Y a-t-il des jeux avec jackpot ?"
+        "text": "Ma carte de crédit n'a pas été acceptée. Pourquoi ?"
       },
       {
         "type": "paragraph",
-        "text": "Oui, Gambloria propose des jackpots progressifs tels que Divine Fortune et Mega Moolah."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Le casino Gambloria encourage-t-il le jeu responsable ?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Oui, il propose des outils tels que des limites de dépôt, l'auto-exclusion et des rappels de session."
+        "text": "Il peut y avoir différentes raisons pour lesquelles une carte est refusée. Il peut s'agir d'un manque de fonds, de données erronées ou simplement d'une carte expirée. Vérifiez donc que vous avez saisi les bonnes informations et la date d'expiration de votre carte."
       }
     ]
   },
   "sections": {
-    "Technologies logicielles": [
+    "Technologie": [
       {
         "type": "paragraph",
-        "text": "Gambloria Casino utilise les jeux de plusieurs grandes sociétés de jeux d'argent en ligne. La plateforme propose des jeux de haute qualité et fiables provenant d'Amatic, BetSoft, Endorphina, Microgaming et BGaming. Ces sociétés réputées proposent des machines à sous traditionnelles et modernes, des jeux de table et des jeux avec croupiers en direct. Afin de garantir la transparence des résultats, le casino privilégie une technologie « prouvée équitable »."
+        "text": "La plateforme travaille avec de nombreux fournisseurs de logiciels réputés qui garantissent un jeu équitable et transparent. Parmi eux, vous trouverez des fournisseurs célèbres tels que Spinomenal, Evoplay, VoltEnt, Rubyplay et bien d'autres. En outre, la plateforme propose ses propres jeux, dont l'équité est également prouvée."
       }
     ],
     "Sécurité": [
       {
         "type": "paragraph",
-        "text": "Le site détient une licence légitime délivrée par le gouvernement d'Anjouan (licence n° ALSI-202411061-FI2), qui garantit le contrôle financier, l'audit des jeux, le traitement sécurisé des données et le respect des règles de jeu responsable. L'authentification à deux facteurs (2FA), la connexion biométrique, les délais d'expiration des sessions, la surveillance des adresses IP et le cryptage des données sécurisent les comptes des joueurs et les données sensibles."
+        "text": "Le casino BetBlast est une plateforme sécurisée avec un cryptage 128 bits et une vérification obligatoire des comptes. La plateforme est contrôlée par le gouvernement de l'île autonome d'Anjouan et dispose d'une politique stricte en matière de lutte contre le blanchiment d'argent."
       }
     ],
-    "Application": [
+    "Application BetBlast Casino": [
       {
         "type": "paragraph",
-        "text": "Gambloria Casino ne propose pas d'application mobile native. À la place, il offre une version web mobile hautement optimisée pour les appareils Android et iOS. Les appareils mobiles bénéficient d'un temps de chargement rapide, d'une navigation simple, d'un gameplay fluide et d'un accès complet aux dépôts, aux retraits et au catalogue de jeux."
+        "text": "Actuellement, l'APK BetBlast n'est pas disponible. Cependant, le site web est 100 % compatible avec tous les appareils mobiles, ce qui rend le jeu accessible à ceux qui sont toujours en déplacement. Tous les fournisseurs de jeux ont adapté leurs jeux à la taille des écrans des gadgets afin que vous puissiez parier sur votre équipe ou votre jeu de casino préféré à tout moment et en tout lieu."
       }
     ],
     "Langues": [
       {
         "type": "paragraph",
-        "text": "Le logiciel est disponible dans de nombreuses langues pour les utilisateurs du monde entier. L'anglais, l'allemand, le français, l'espagnol, le suisse allemand et le suisse français sont disponibles. Une expérience multilingue agréable est possible grâce à un changement de langue rapide et facile."
+        "text": "Le casino BetBlast est disponible dans de nombreuses langues, notamment en portugais, anglais, allemand, espagnol, italien, polonais, russe et français."
       }
     ],
     "Devises": [
       {
         "type": "paragraph",
-        "text": "Gambloria Casino utilise l'euro comme devise en France. Cette prise en charge simple des devises simplifie les transactions sans conversion."
+        "text": "La plateforme propose généralement ses bonus et promotions en euros (EUR). Cependant, cela peut changer en fonction de la situation géographique du joueur. La meilleure équivalence de l'euro est la cryptomonnaie."
       }
     ]
   }
