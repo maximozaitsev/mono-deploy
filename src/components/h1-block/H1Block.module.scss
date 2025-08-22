@@ -1,5 +1,4 @@
 @import "../../styles/colors.scss";
-@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .h1Section {
@@ -12,11 +11,7 @@
   }
 
   h1 {
-    font-family: $font-secondary;
-    font-weight: $font-weight-black;
-    color: $text-color-primary;
     font-size: 28px;
-    text-transform: uppercase;
 
     background-color: $color-background-third;
     border-radius: $border-radius;

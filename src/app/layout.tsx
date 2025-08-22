@@ -9,6 +9,7 @@ import path from "node:path";
 import { headers, cookies } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
+import * as fonts from "./fonts";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -171,7 +172,6 @@ export async function generateMetadata(): Promise<Metadata> {
         { url: "/icons/ico-120.png", sizes: "120x120" },
         { url: "/icons/ico-144.png", sizes: "144x144" },
         { url: "/icons/ico-152.png", sizes: "152x152" },
-        { url: "/icons/ico-180.png", sizes: "180x180" },
       ],
     },
   };
@@ -184,6 +184,9 @@ export default async function RootLayout({
   const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
   const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
+  const fontVars = Object.values(fonts)
+    .map((f) => f.variable)
+    .join(" ");
 
   return (
     <html lang={htmlLang} suppressHydrationWarning>
@@ -207,7 +210,7 @@ export default async function RootLayout({
           media="(max-width: 768px)"
         />
       </head>
-      <body>{children}</body>
+      <body className={fontVars}>{children}</body>
     </html>
   );
 }

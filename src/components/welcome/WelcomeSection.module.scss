@@ -1,9 +1,9 @@
 @import "../../styles/colors.scss";
-@import "../../../public/fonts/fonts.scss";
+@import "@/styles/_fonts-bridge.scss";
 @import "../../styles/variables.scss";
 
 .welcomeSection {
-  background: #203041;
+  background: $color-background-secondary;
   margin-bottom: 140px;
   width: 100%;
 
