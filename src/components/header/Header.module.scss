@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .header {
@@ -41,7 +42,7 @@
 
   .headerButton {
     height: $header-button-height;
-    font-family: var(--font-secondary);
+    font-family: $font-primary;
     font-weight: $font-weight-black;
     font-size: 14px;
     padding: 12px 4px;
@@ -54,6 +55,10 @@
       background: $color-button-small;
       width: $header-button-large-small;
       color: $text-color-button-small;
+
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: #5dfff3;
     }
 
     &.signup {
@@ -133,7 +138,7 @@
   select {
     background: transparent;
     border: none;
-    font-family: var(--font-primary);
+    font-family: $font-primary;
     font-weight: $font-weight-regular;
     font-size: 20px;
     color: $text-color-primary;

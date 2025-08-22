@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .payment-methods-section {
@@ -43,6 +44,7 @@
         display: table-row;
         height: 60px;
         color: $text-color-primary;
+        font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
         line-height: normal;
@@ -195,7 +197,7 @@
           }
 
           strong {
-            background: $color-button-large;
+            background: $text-color-fourth;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -215,6 +217,10 @@
   }
 }
 
-.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
+.payment-methods-section
+  .mobile-payment-methods
+  .payment-method-card
+  .payment-method-details
+  p {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
