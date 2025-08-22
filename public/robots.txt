@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://bet-blast-online.com/
-Sitemap: https://bet-blast-online.com/sitemap.xml
+Host: https://oshi-casino.net/
+Sitemap: https://oshi-casino.net/sitemap.xml

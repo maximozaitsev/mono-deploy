@@ -1,4 +1,4 @@
 {
-  "languages": ["en", "de", "es", "fr", "it"],
-  "defaultLang": "en"
+  "languages": ["au", "ca", "de", "us"],
+  "defaultLang": "au"
 }

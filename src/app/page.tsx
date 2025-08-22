@@ -1,6 +1,3 @@
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
-
 import Header from "../components/header/Header";
 import WelcomeSection from "../components/welcome/WelcomeSection";
 import H1Section from "../components/h1-block/H1Block";

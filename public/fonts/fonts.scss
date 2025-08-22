@@ -1,5 +1,5 @@
 $font-primary: "Roboto", sans-serif;
-$font-secondary: "Inter", sans-serif;
+$font-secondary: "Charger", sans-serif;
 
 @font-face {
   font-family: "Roboto";
@@ -16,29 +16,8 @@ $font-secondary: "Inter", sans-serif;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("Heading/static/Montserrat-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("./Heading/static/Montserrat-Black.ttf") format("truetype");
+  font-family: "Charger";
+  src: url("./Heading/Charger-Regular.woff") format("woff");
   font-weight: 900;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 700;
-  font-style: normal;
-  src: url("./Heading/static/Inter-700.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 900;
-  font-style: normal;
-  src: url("./Heading/static/Inter-900.woff2") format("woff2");
 }
