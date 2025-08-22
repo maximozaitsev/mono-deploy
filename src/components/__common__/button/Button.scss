@@ -1,10 +1,10 @@
 @import "../../../styles/colors.scss";
-@import "@/styles/_fonts-bridge.scss";
+@import "../../../../public/fonts/fonts.scss";
 @import "../../../styles/variables.scss";
 
 .button {
   cursor: pointer;
-  font-family: $font-secondary;
+  font-family: $font-primary;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
   font-weight: $font-weight-black;
@@ -48,9 +48,9 @@
   }
 
   &.secondary {
-    // outline: 3px solid;
-    // outline-offset: -3px;
-    // outline-color: #2e2e2e3b;
+    outline: 3px solid;
+    outline-offset: -3px;
+    outline-color: #5dfff3;
 
     border-radius: $button-small-border-radius;
     padding: 0 32px;
