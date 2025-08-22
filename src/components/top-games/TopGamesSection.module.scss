@@ -1,5 +1,4 @@
 @import "../../styles/colors.scss";
-@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .topGames {
@@ -99,7 +98,6 @@
 
   .gameName {
     text-align: center;
-    font-family: $font-primary;
     color: $text-color-fourth;
     // background: $text-color-fourth;
     // background-clip: text;
@@ -123,7 +121,6 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    font-family: $font-primary;
     font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
