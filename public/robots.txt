@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://oshi-casino.net/
-Sitemap: https://oshi-casino.net/sitemap.xml
+Host: https://xyescasino-online.com/
+Sitemap: https://xyescasino-online.com/sitemap.xml

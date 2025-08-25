@@ -1,19 +1,23 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { useParams } from "next/navigation";
-import { fetchOffers } from "../../../utils/fetchOffers";
-import Header from "../../../components/header/Header";
-import Footer from "@/components/footer/Footer";
-import styles from "./PreloaderPage.module.scss";
-import manifestData from "../../../../public/content/languages.json";
-import { usePathname } from "next/navigation";
+import dynamic from "next/dynamic";
+import { useParams, usePathname } from "next/navigation";
+import { fetchOffers } from "@/utils/fetchOffers";
 import Spinner from "@/components/__common__/loader/Spinner";
+import manifestData from "../../../../public/content/languages.json";
+
+const Header = dynamic(() => import("@/components/header/Header"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("@/components/footer/Footer"), {
+  ssr: false,
+});
 
 type LangManifest = { languages: string[]; defaultLang: string };
 const manifest = manifestData as LangManifest;
 
-const PreloaderPage = () => {
+export default function PreloaderPage() {
   const { id } = useParams();
   const pathname = usePathname();
   const firstSeg = pathname?.split("/").filter(Boolean)[0] || "";
@@ -22,56 +26,62 @@ const PreloaderPage = () => {
     : manifest.defaultLang;
 
   useEffect(() => {
+    let cancelled = false;
+
     async function redirectToOffer() {
       try {
         const { offers } = await fetchOffers();
+        if (!offers?.length) return;
 
-        if (offers.length > 0) {
-          let targetOfferLink;
+        let targetOfferLink = offers[0].link;
+        if (id) {
+          const found = offers.find((o) => o.id === Number(id));
+          if (found?.link) targetOfferLink = found.link;
+        }
+        await new Promise((r) => setTimeout(r, 600));
 
-          if (id) {
-            const offer = offers.find((o) => o.id === Number(id));
-            if (offer) {
-              targetOfferLink = offer.link;
-            } else {
-              console.error(
-                "Offer with this ID not found, redirecting to the first offer"
-              );
-              targetOfferLink = offers[0].link;
-            }
-          } else {
-            targetOfferLink = offers[0].link;
-          }
-
-          await new Promise((resolve) => setTimeout(resolve, 1500));
-
-          if (targetOfferLink) {
-            window.location.replace(targetOfferLink);
-          }
-        } else {
-          console.error("No offers available");
+        if (!cancelled && targetOfferLink) {
+          window.location.replace(targetOfferLink);
         }
       } catch (error) {
-        console.error("Error fetching offers:", error);
+        console.error("Preloader redirect error:", error);
       }
     }
 
     redirectToOffer();
+    return () => {
+      cancelled = true;
+    };
   }, [id]);
 
   return (
-    <div className={styles.preloaderPage}>
+    <div
+      style={{
+        height: "calc(100vh + 268px)",
+        display: "flex",
+        flexDirection: "column",
+        background: "transparent",
+      }}
+    >
       <Header
-        languages={(manifestData as any).languages || []}
-        defaultLang={(manifestData as any).defaultLang || "en"}
+        languages={manifest.languages || []}
+        defaultLang={manifest.defaultLang || "en"}
         currentLang={currentLang}
       />
-      <div className={styles.spinnerContainer}>
+      <div
+        style={{
+          flex: 1,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "24px 16px",
+        }}
+        aria-live="polite"
+        aria-busy="true"
+      >
         <Spinner variant="inline" size={96} />
       </div>
       <Footer />
     </div>
   );
-};
-
-export default PreloaderPage;
+}

@@ -10,7 +10,7 @@ export default function H1Section() {
 
   return (
     <section id="h1-section" className={styles.h1Section}>
-      <h1>{content.title}</h1>
+      <h1 className="h2-heading">{content.title}</h1>
     </section>
   );
 }

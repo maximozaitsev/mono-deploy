@@ -1,5 +1,4 @@
 @import "../../styles/colors.scss";
-@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .mobile-section {
@@ -71,7 +70,6 @@
       align-items: center;
       gap: 16px;
       width: 400px;
-      font-family: $font-primary;
       font-size: 24px;
       font-style: normal;
       font-weight: $font-weight-regular;
@@ -121,7 +119,6 @@
     @media (min-width: 1281px) {
       .app-image {
         margin-top: 10px;
-        margin-left: -20px;
       }
     }
 

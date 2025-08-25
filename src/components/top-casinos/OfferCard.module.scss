@@ -1,5 +1,4 @@
 @import "../../styles/colors.scss";
-@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .offerCard {
@@ -24,7 +23,6 @@
   h3 {
     color: $text-color-secondary;
     text-align: center;
-    font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
     font-weight: $font-weight-regular;
@@ -32,13 +30,12 @@
   }
 
   .h4Heading {
-    font-family: $font-primary;
     text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: $text-color-fourth;
+    color: $color-button-large;
 
     // background: $color-button-large;
     // background-clip: text;
@@ -49,7 +46,6 @@
   p {
     color: $text-color-secondary;
     text-align: center;
-    font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
     font-weight: $font-weight-regular;
