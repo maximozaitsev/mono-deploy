@@ -98,11 +98,6 @@ async function readManifest(): Promise<{
   });
 }
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
-
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
   const { languages, defaultLang } = await readManifest();
@@ -192,6 +187,7 @@ export default async function RootLayout({
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
         <meta name="next-size-adjust" content="100%" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
