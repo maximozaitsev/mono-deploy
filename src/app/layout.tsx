@@ -126,6 +126,9 @@ export async function generateMetadata(): Promise<Metadata> {
     manifest: "/manifest.json",
     title,
     description,
+    other: {
+      "next-size-adjust": "100%",
+    },
     alternates: {
       canonical,
       languages: alternatesLanguages,
@@ -186,7 +189,6 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
-        <meta name="next-size-adjust" content="100%" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="preconnect"
