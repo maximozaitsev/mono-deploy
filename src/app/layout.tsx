@@ -191,6 +191,7 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
+        <meta name="next-size-adjust" content="100%" />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
