@@ -17,6 +17,7 @@ export const roboto = localFont({
   variable: "--font-primary",
   display: "swap",
   preload: true,
+  adjustFontFallback: false,
 });
 
 export const cinzel = localFont({
@@ -30,6 +31,7 @@ export const cinzel = localFont({
   variable: "--font-secondary",
   display: "swap",
   preload: true,
+  adjustFontFallback: false,
 });
 
 export const beVietnamPro = localFont({
@@ -43,4 +45,5 @@ export const beVietnamPro = localFont({
   variable: "--font-third",
   display: "swap",
   preload: true,
+  adjustFontFallback: false,
 });

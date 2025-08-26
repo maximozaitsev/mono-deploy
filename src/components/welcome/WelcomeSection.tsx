@@ -40,8 +40,6 @@ export default function WelcomeSection() {
           alt="Welcome Mobile"
           loading="eager"
           decoding="async"
-          fetchPriority="high"
-          sizes="(max-width: 768px) 100vw, 576px"
         />
       </figure>
 
