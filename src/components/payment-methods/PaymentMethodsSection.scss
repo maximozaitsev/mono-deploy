@@ -1,5 +1,4 @@
 @import "../../styles/colors.scss";
-@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .payment-methods-section {
@@ -44,13 +43,13 @@
         display: table-row;
         height: 60px;
         color: $text-color-primary;
-        font-family: $font-primary;
         font-size: 18px;
         font-style: normal;
         line-height: normal;
 
         th {
           font-weight: $font-weight-regular;
+          padding: 0 4px;
 
           &:first-child {
             border-top-left-radius: $border-radius;
@@ -61,6 +60,14 @@
             border-top-right-radius: $border-radius;
             border-bottom-right-radius: $border-radius;
           }
+        }
+      }
+
+      @media (max-width: 1180px) {
+        tr {
+          font-size: 1rem;
+          word-break: break-word;
+          hyphens: auto;
         }
       }
     }
@@ -76,6 +83,12 @@
           border-top: $border-width solid $border-color;
           border-bottom: $border-width solid $border-color;
           line-height: normal !important;
+
+          @media (max-width: 1180px) {
+            font-size: 1rem;
+            word-break: break-word;
+            hyphens: auto;
+          }
 
           &:first-child {
             display: flex;
@@ -103,7 +116,14 @@
 
         button {
           width: 168px;
-          box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
+          // box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
+          padding: 0 4px;
+
+          @media (max-width: 1180px) {
+            font-size: 0.8rem;
+            width: 130px;
+            padding: 0 4px;
+          }
 
           @media (max-width: 420px) {
             width: auto;
@@ -122,7 +142,7 @@
 
     .payment-method-card {
       .payment-method-header {
-        background: $color-background-fourth;
+        background: $color-background-third;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -154,7 +174,7 @@
       }
 
       .payment-method-details {
-        background: $color-background-third;
+        // background: $color-background-third;
         display: flex;
         flex-direction: column;
         padding: 8px 16px;
@@ -175,7 +195,7 @@
           }
 
           strong {
-            background: $color-button-large;
+            background: #ffbd4a;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -195,6 +215,10 @@
   }
 }
 
-.payment-methods-section .mobile-payment-methods .payment-method-card .payment-method-details p {
+.payment-methods-section
+  .mobile-payment-methods
+  .payment-method-card
+  .payment-method-details
+  p {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
