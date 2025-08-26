@@ -3,16 +3,8 @@ import localFont from "next/font/local";
 
 export const roboto = localFont({
   src: [
-    {
-      path: "../../public/fonts/Roboto/Roboto-500.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/Roboto/Roboto-900.ttf",
-      weight: "900",
-      style: "normal",
-    },
+    { path: "../../public/fonts/Roboto/Roboto-500.ttf", weight: "500", style: "normal" },
+    { path: "../../public/fonts/Roboto/Roboto-900.ttf", weight: "900", style: "normal" }
   ],
   variable: "--font-primary",
   display: "swap",
@@ -20,29 +12,12 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const cinzel = localFont({
+export const open_sans = localFont({
   src: [
-    {
-      path: "../../public/fonts/Cinzel/Cinzel-VAR.ttf",
-      weight: "100 900",
-      style: "normal",
-    },
+    { path: "../../public/fonts/OpenSans/OpenSans-700.ttf", weight: "700", style: "normal" },
+    { path: "../../public/fonts/OpenSans/OpenSans-800.ttf", weight: "800", style: "normal" }
   ],
   variable: "--font-secondary",
-  display: "swap",
-  preload: true,
-  adjustFontFallback: false,
-});
-
-export const beVietnamPro = localFont({
-  src: [
-    {
-      path: "../../public/fonts/BeVietnamPro-Black.ttf",
-      weight: "100 900",
-      style: "normal",
-    },
-  ],
-  variable: "--font-third",
   display: "swap",
   preload: true,
   adjustFontFallback: false,

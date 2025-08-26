@@ -2,7 +2,7 @@
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
-const url = "spinogambinoonline.com";
+const url = "allslots-casino.net";
 
 const withPWA = nextPWA({
   dest: "public",

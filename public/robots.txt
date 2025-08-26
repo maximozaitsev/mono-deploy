@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://spinogambinoonline.com/
-Sitemap: https://spinogambinoonline.com/sitemap.xml
+Host: https://allslots-casino.net/
+Sitemap: https://allslots-casino.net/sitemap.xml

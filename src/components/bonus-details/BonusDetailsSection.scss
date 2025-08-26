@@ -54,7 +54,7 @@
   }
 
   @media (max-width: 500px) {
-    grid-template-columns: 33% 22% 22% 23%;
+    grid-template-columns: 36% 20% 22% 22%;
     font-size: 1rem !important;
   }
 }
@@ -350,24 +350,20 @@
   }
 }
 
-
-
-
-
 /* Theme Styles Start */
 .accordion-title,
 .accordion-value {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 .accordion-title::after {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .cell {
   &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 /* Theme Styles End */
