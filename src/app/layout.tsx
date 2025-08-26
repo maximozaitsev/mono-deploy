@@ -1,5 +1,5 @@
 // /src/app/layout.tsx
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
@@ -56,10 +56,7 @@ function extractMeta(obj: Record<string, any>): {
   return { title: title || "Title", description: description || "Description" };
 }
 
-async function readContentMeta(
-  lang: string,
-  baseUrl?: string
-): Promise<{ title: string; description: string }> {
+async function readContentMeta(lang: string, baseUrl?: string) {
   const fsPath = path.join(
     process.cwd(),
     "public",
@@ -76,10 +73,7 @@ async function readContentMeta(
       const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
         cache: "no-store",
       });
-      if (res.ok) {
-        const json = (await res.json()) as Record<string, any>;
-        return extractMeta(json);
-      }
+      if (res.ok) return extractMeta((await res.json()) as Record<string, any>);
     } catch {}
   }
   return { title: "Title", description: "Description" };
@@ -96,10 +90,7 @@ async function readManifest(): Promise<{
   });
 }
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
+// ⛔️ Нет export const viewport — всё вручную в <head>
 
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
@@ -186,12 +177,19 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
+        {/* наш явный viewport + корректный next-size-adjust */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="next-size-adjust" content="100%" />
+
+        {/* network warmup */}
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+
+        {/* hero image preloads */}
         <link
           rel="preload"
           as="image"

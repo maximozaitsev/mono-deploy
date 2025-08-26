@@ -58,10 +58,7 @@ function extractMeta(obj: Record<string, any>): {
   return { title: title || "Title", description: description || "Description" };
 }
 
-async function readContentMeta(
-  lang: string,
-  baseUrl?: string
-): Promise<{ title: string; description: string }> {
+async function readContentMeta(lang: string, baseUrl?: string) {
   const fsPath = path.join(
     process.cwd(),
     "public",
@@ -78,16 +75,13 @@ async function readContentMeta(
       const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
         cache: "no-store",
       });
-      if (res.ok) {
-        const json = (await res.json()) as Record<string, any>;
-        return extractMeta(json);
-      }
+      if (res.ok) return extractMeta((await res.json()) as Record<string, any>);
     } catch {}
   }
-
   return { title: "Title", description: "Description" };
 }
 
+// ⛔️ Здесь НЕТ viewport / next-size-adjust
 export async function generateMetadata({
   params,
 }: {
