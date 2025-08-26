@@ -1,5 +1,5 @@
 // /src/app/layout.tsx
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
@@ -96,6 +96,11 @@ async function readManifest(): Promise<{
   });
 }
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
   const { languages, defaultLang } = await readManifest();
@@ -163,7 +168,6 @@ export async function generateMetadata(): Promise<Metadata> {
         { url: "/icons/ico-152.png", sizes: "152x152" },
       ],
     },
-    other: { "next-size-adjust": "100%" },
   };
 }
 
@@ -181,8 +185,6 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="next-size-adjust" content="100%" />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"

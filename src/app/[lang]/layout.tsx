@@ -1,4 +1,3 @@
-// src/app/[lang]/layout.tsx
 import type { Metadata } from "next";
 import path from "node:path";
 import fs from "node:fs/promises";
@@ -143,10 +142,7 @@ export async function generateMetadata({
       description,
       images: [ogImage],
     },
-    other: {
-      language: languageName,
-      "next-size-adjust": "100%",
-    },
+    other: { language: languageName },
   };
 }
 
