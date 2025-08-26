@@ -1,4 +1,3 @@
-// /src/app/[lang]/layout.tsx
 import type { Metadata } from "next";
 import path from "node:path";
 import fs from "node:fs/promises";
