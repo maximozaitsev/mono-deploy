@@ -1,5 +1,5 @@
 // /src/app/layout.tsx
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
@@ -68,9 +68,8 @@ async function readContentMeta(
   );
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
-  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
+  if (fromFs.title !== "Title" || fromFs.description !== "Description")
     return fromFs;
-  }
 
   if (baseUrl) {
     try {
@@ -83,7 +82,6 @@ async function readContentMeta(
       }
     } catch {}
   }
-
   return { title: "Title", description: "Description" };
 }
 
@@ -98,18 +96,12 @@ async function readManifest(): Promise<{
   });
 }
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
-
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
   const { languages, defaultLang } = await readManifest();
   const { title, description } = await readContentMeta(defaultLang, baseUrl);
 
   const canonical = baseUrl ? `${baseUrl}/` : "/";
-
   const alternatesLanguages: Record<string, string> = {};
   for (const geo of languages) {
     const { htmlLang: hreflang } = getLocaleMeta(geo);
@@ -131,10 +123,7 @@ export async function generateMetadata(): Promise<Metadata> {
     manifest: "/manifest.json",
     title,
     description,
-    alternates: {
-      canonical,
-      languages: alternatesLanguages,
-    },
+    alternates: { canonical, languages: alternatesLanguages },
     openGraph: {
       locale: ogLocale,
       type: "website",
@@ -174,6 +163,7 @@ export async function generateMetadata(): Promise<Metadata> {
         { url: "/icons/ico-152.png", sizes: "152x152" },
       ],
     },
+    other: { "next-size-adjust": "100%" },
   };
 }
 
@@ -191,6 +181,7 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="next-size-adjust" content="100%" />
         <link
           rel="preconnect"
@@ -198,12 +189,6 @@ export default async function RootLayout({
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
-        <link
-          rel="preload"
-          as="image"
-          href="/block-images/welcome.webp"
-          media="(min-width: 769px)"
-        />
         <link
           rel="preload"
           as="image"

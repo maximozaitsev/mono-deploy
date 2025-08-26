@@ -68,12 +68,10 @@ async function readContentMeta(
     "content",
     `content.${lang}.json`
   );
-
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
-  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
+  if (fromFs.title !== "Title" || fromFs.description !== "Description")
     return fromFs;
-  }
 
   if (baseUrl) {
     try {
@@ -86,7 +84,6 @@ async function readContentMeta(
       }
     } catch {}
   }
-
   return { title: "Title", description: "Description" };
 }
 
@@ -148,6 +145,7 @@ export async function generateMetadata({
     },
     other: {
       language: languageName,
+      "next-size-adjust": "100%",
     },
   };
 }
