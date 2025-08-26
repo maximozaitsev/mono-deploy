@@ -1,5 +1,5 @@
 // /src/app/layout.tsx
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
@@ -9,7 +9,8 @@ import path from "node:path";
 import { headers, cookies } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
-import * as fonts from "./fonts";
+// если у вас есть файл с next/font — можно подключить и передать класс/переменные в <body>
+import * as fonts from "./fonts"; // опционально: удалите строку, если файла нет
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -28,6 +29,13 @@ async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
   }
 }
 
+type LangManifest = { languages: string[]; defaultLang: string };
+
+async function readManifest(): Promise<LangManifest> {
+  const p = path.join(process.cwd(), "public", "content", "languages.json");
+  return readJSON<LangManifest>(p, { languages: [], defaultLang: "en" });
+}
+
 function extractMeta(obj: Record<string, any>): {
   title: string;
   description: string;
@@ -41,25 +49,23 @@ function extractMeta(obj: Record<string, any>): {
   ];
   let title = "";
   let description = "";
-  for (const k of titleKeys) {
+  for (const k of titleKeys)
     if (typeof obj[k] === "string" && obj[k].trim()) {
       title = obj[k].trim();
       break;
     }
-  }
-  for (const k of descKeys) {
+  for (const k of descKeys)
     if (typeof obj[k] === "string" && obj[k].trim()) {
       description = obj[k].trim();
       break;
     }
-  }
-  return { title: title || "Title", description: description || "Description" };
+  return {
+    title: title || PROJECT_NAME,
+    description: description || PROJECT_NAME,
+  };
 }
 
-async function readContentMeta(
-  lang: string,
-  baseUrl?: string
-): Promise<{ title: string; description: string }> {
+async function readContentMeta(lang: string, baseUrl?: string) {
   const fsPath = path.join(
     process.cwd(),
     "public",
@@ -68,37 +74,25 @@ async function readContentMeta(
   );
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
-  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
+  if (fromFs.title !== PROJECT_NAME || fromFs.description !== PROJECT_NAME)
     return fromFs;
-  }
 
   if (baseUrl) {
     try {
       const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
         cache: "no-store",
       });
-      if (res.ok) {
-        const json = (await res.json()) as Record<string, any>;
-        return extractMeta(json);
-      }
+      if (res.ok) return extractMeta((await res.json()) as Record<string, any>);
     } catch {}
   }
-
-  return { title: "Title", description: "Description" };
+  return { title: PROJECT_NAME, description: PROJECT_NAME };
 }
 
-async function readManifest(): Promise<{
-  languages: string[];
-  defaultLang: string;
-}> {
-  const p = path.join(process.cwd(), "public", "content", "languages.json");
-  return readJSON<{ languages: string[]; defaultLang: string }>(p, {
-    languages: [],
-    defaultLang: "au",
-  });
-}
-
-// ⛔️ важное: НЕ объявляем export const viewport — всё задаём вручную в <head>
+/** ✅ Даём Next сгенерировать единственный корректный <meta name="viewport"> */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
@@ -106,7 +100,6 @@ export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = await readContentMeta(defaultLang, baseUrl);
 
   const canonical = baseUrl ? `${baseUrl}/` : "/";
-
   const alternatesLanguages: Record<string, string> = {};
   for (const geo of languages) {
     const { htmlLang: hreflang } = getLocaleMeta(geo);
@@ -118,7 +111,7 @@ export async function generateMetadata(): Promise<Metadata> {
       ? "/"
       : `/${geo}`;
   }
-  alternatesLanguages["x-default"] = baseUrl ? `${baseUrl}/` : "/";
+  alternatesLanguages["x-default"] = canonical;
 
   const { ogLocale } = getLocaleMeta(defaultLang);
   const siteName = PROJECT_NAME;
@@ -128,10 +121,7 @@ export async function generateMetadata(): Promise<Metadata> {
     manifest: "/manifest.json",
     title,
     description,
-    alternates: {
-      canonical,
-      languages: alternatesLanguages,
-    },
+    alternates: { canonical, languages: alternatesLanguages },
     openGraph: {
       locale: ogLocale,
       type: "website",
@@ -171,50 +161,27 @@ export async function generateMetadata(): Promise<Metadata> {
         { url: "/icons/ico-152.png", sizes: "152x152" },
       ],
     },
+    // Если нужно: other: { language: "English" } — но не добавляем лишних meta вручную
   };
 }
 
 export default async function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: {
+  children: React.ReactNode;
+}) {
   const { languages, defaultLang } = await readManifest();
   const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
   const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
-  const fontVars = Object.values(fonts)
-    .map((f) => f.variable)
+
+  const fontVars = (Object.values(fonts || {}) as any[])
+    .map((f) => f?.variable)
+    .filter(Boolean)
     .join(" ");
 
   return (
     <html lang={htmlLang} suppressHydrationWarning>
-      <head>
-        {/* Явно задаём корректные meta, чтобы Next не подставлял свои */}
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="next-size-adjust" content="100%" />
-
-        {/* network warmup */}
-        <link
-          rel="preconnect"
-          href="https://api.adkey-seo.com"
-          crossOrigin=""
-        />
-        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
-
-        {/* hero image preloads (без imagesrcset/imagesizes, чтобы валидатор не ругался) */}
-        <link
-          rel="preload"
-          as="image"
-          href="/block-images/welcome.webp"
-          media="(min-width: 769px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/block-images/welcome-mobile.webp"
-          media="(max-width: 768px)"
-        />
-      </head>
       <body className={fontVars}>{children}</body>
     </html>
   );
