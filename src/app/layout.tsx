@@ -8,6 +8,7 @@ import path from "node:path";
 import { headers, cookies } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
+import * as fonts from "./fonts";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -33,25 +34,53 @@ async function readManifest(): Promise<LangManifest> {
   return readJSON<LangManifest>(p, { languages: [], defaultLang: "en" });
 }
 
-function extractMeta(obj: Record<string, any>): { title: string; description: string } {
+function extractMeta(obj: Record<string, any>): {
+  title: string;
+  description: string;
+} {
   const titleKeys = ["meta-title", "metaTitle", "ogTitle", "title"];
-  const descKeys  = ["meta-description", "metaDescription", "description", "metaDesc"];
-  let title = ""; let description = "";
-  for (const k of titleKeys) if (typeof obj[k] === "string" && obj[k].trim()) { title = obj[k].trim(); break; }
-  for (const k of descKeys)  if (typeof obj[k] === "string" && obj[k].trim()) { description = obj[k].trim(); break; }
-  return { title: title || PROJECT_NAME, description: description || PROJECT_NAME };
+  const descKeys = [
+    "meta-description",
+    "metaDescription",
+    "description",
+    "metaDesc",
+  ];
+  let title = "";
+  let description = "";
+  for (const k of titleKeys)
+    if (typeof obj[k] === "string" && obj[k].trim()) {
+      title = obj[k].trim();
+      break;
+    }
+  for (const k of descKeys)
+    if (typeof obj[k] === "string" && obj[k].trim()) {
+      description = obj[k].trim();
+      break;
+    }
+  return {
+    title: title || PROJECT_NAME,
+    description: description || PROJECT_NAME,
+  };
 }
 
 async function readContentMeta(lang: string, baseUrl?: string) {
-  const fsPath = path.join(process.cwd(), "public", "content", `content.${lang}.json`);
+  const fsPath = path.join(
+    process.cwd(),
+    "public",
+    "content",
+    `content.${lang}.json`
+  );
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
-  if (fromFs.title !== PROJECT_NAME || fromFs.description !== PROJECT_NAME) return fromFs;
+  if (fromFs.title !== PROJECT_NAME || fromFs.description !== PROJECT_NAME)
+    return fromFs;
 
   if (baseUrl) {
     try {
-      const res = await fetch(`${baseUrl}/content/content.${lang}.json`, { cache: "no-store" });
-      if (res.ok) return extractMeta(await res.json() as Record<string, any>);
+      const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
+        cache: "no-store",
+      });
+      if (res.ok) return extractMeta((await res.json()) as Record<string, any>);
     } catch {}
   }
   return { title: PROJECT_NAME, description: PROJECT_NAME };
@@ -73,14 +102,18 @@ export async function generateMetadata(): Promise<Metadata> {
   for (const geo of languages) {
     const { htmlLang: hreflang } = getLocaleMeta(geo);
     alternatesLanguages[hreflang] = baseUrl
-      ? geo === defaultLang ? `${baseUrl}/` : `${baseUrl}/${geo}`
-      : geo === defaultLang ? "/" : `/${geo}`;
+      ? geo === defaultLang
+        ? `${baseUrl}/`
+        : `${baseUrl}/${geo}`
+      : geo === defaultLang
+      ? "/"
+      : `/${geo}`;
   }
   alternatesLanguages["x-default"] = canonical;
 
   const { ogLocale } = getLocaleMeta(defaultLang);
   const siteName = PROJECT_NAME;
-  const ogImage  = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
+  const ogImage = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
 
   return {
     manifest: "/manifest.json",
@@ -110,16 +143,16 @@ export async function generateMetadata(): Promise<Metadata> {
         { url: "/icons/ico-120.png", type: "image/png", sizes: "120x120" },
         { url: "/icons/ico-144.png", type: "image/png", sizes: "144x144" },
         { url: "/icons/ico-152.png", type: "image/png", sizes: "152x152" },
-        { url: "/icons/ico-57.png",  type: "image/png", sizes: "57x57"  },
-        { url: "/icons/ico-60.png",  type: "image/png", sizes: "60x60"  },
-        { url: "/icons/ico-72.png",  type: "image/png", sizes: "72x72"  },
-        { url: "/icons/ico-76.png",  type: "image/png", sizes: "76x76"  },
+        { url: "/icons/ico-57.png", type: "image/png", sizes: "57x57" },
+        { url: "/icons/ico-60.png", type: "image/png", sizes: "60x60" },
+        { url: "/icons/ico-72.png", type: "image/png", sizes: "72x72" },
+        { url: "/icons/ico-76.png", type: "image/png", sizes: "76x76" },
       ],
       apple: [
-        { url: "/icons/ico-57.png",  sizes: "57x57"  },
-        { url: "/icons/ico-60.png",  sizes: "60x60"  },
-        { url: "/icons/ico-72.png",  sizes: "72x72"  },
-        { url: "/icons/ico-76.png",  sizes: "76x76"  },
+        { url: "/icons/ico-57.png", sizes: "57x57" },
+        { url: "/icons/ico-60.png", sizes: "60x60" },
+        { url: "/icons/ico-72.png", sizes: "72x72" },
+        { url: "/icons/ico-76.png", sizes: "76x76" },
         { url: "/icons/ico-114.png", sizes: "114x114" },
         { url: "/icons/ico-120.png", sizes: "120x120" },
         { url: "/icons/ico-144.png", sizes: "144x144" },
@@ -129,15 +162,22 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const { languages, defaultLang } = await readManifest();
   const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
   const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
+    const fontVars = Object.values(fonts)
+    .map((f) => f.variable)
+    .join(" ");
 
   return (
     <html lang={htmlLang} suppressHydrationWarning>
-      <body>{children}</body>
+      <body className={fontVars}>{children}</body>
     </html>
   );
 }
