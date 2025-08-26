@@ -1,4 +1,3 @@
-// src/app/fonts.ts
 import localFont from "next/font/local";
 
 export const roboto = localFont({
@@ -9,7 +8,7 @@ export const roboto = localFont({
   variable: "--font-primary",
   display: "swap",
   preload: true,
-  adjustFontFallback: false, // <— ключевая строчка
+  adjustFontFallback: false, 
 });
 
 export const poppins = localFont({
@@ -20,5 +19,5 @@ export const poppins = localFont({
   variable: "--font-secondary",
   display: "swap",
   preload: true,
-  adjustFontFallback: false, // <— и здесь
+  adjustFontFallback: false,
 });

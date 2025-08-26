@@ -1,3 +1,4 @@
+// /src/app/layout.tsx
 import type { Metadata, Viewport } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
@@ -9,8 +10,6 @@ import { headers, cookies } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import * as fonts from "./fonts";
-
-/* ---------- utils ---------- */
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -29,13 +28,6 @@ async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
   }
 }
 
-type LangManifest = { languages: string[]; defaultLang: string };
-
-async function readManifest(): Promise<LangManifest> {
-  const p = path.join(process.cwd(), "public", "content", "languages.json");
-  return readJSON<LangManifest>(p, { languages: [], defaultLang: "en" });
-}
-
 function extractMeta(obj: Record<string, any>): {
   title: string;
   description: string;
@@ -49,23 +41,25 @@ function extractMeta(obj: Record<string, any>): {
   ];
   let title = "";
   let description = "";
-  for (const k of titleKeys)
+  for (const k of titleKeys) {
     if (typeof obj[k] === "string" && obj[k].trim()) {
       title = obj[k].trim();
       break;
     }
-  for (const k of descKeys)
+  }
+  for (const k of descKeys) {
     if (typeof obj[k] === "string" && obj[k].trim()) {
       description = obj[k].trim();
       break;
     }
-  return {
-    title: title || PROJECT_NAME,
-    description: description || PROJECT_NAME,
-  };
+  }
+  return { title: title || "Title", description: description || "Description" };
 }
 
-async function readContentMeta(lang: string, baseUrl?: string) {
+async function readContentMeta(
+  lang: string,
+  baseUrl?: string
+): Promise<{ title: string; description: string }> {
   const fsPath = path.join(
     process.cwd(),
     "public",
@@ -74,21 +68,35 @@ async function readContentMeta(lang: string, baseUrl?: string) {
   );
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
-  if (fromFs.title !== PROJECT_NAME || fromFs.description !== PROJECT_NAME)
+  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
     return fromFs;
+  }
 
   if (baseUrl) {
     try {
       const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
         cache: "no-store",
       });
-      if (res.ok) return extractMeta((await res.json()) as Record<string, any>);
+      if (res.ok) {
+        const json = (await res.json()) as Record<string, any>;
+        return extractMeta(json);
+      }
     } catch {}
   }
-  return { title: PROJECT_NAME, description: PROJECT_NAME };
+
+  return { title: "Title", description: "Description" };
 }
 
-/* ---------- Metadata API ---------- */
+async function readManifest(): Promise<{
+  languages: string[];
+  defaultLang: string;
+}> {
+  const p = path.join(process.cwd(), "public", "content", "languages.json");
+  return readJSON<{ languages: string[]; defaultLang: string }>(p, {
+    languages: [],
+    defaultLang: "au",
+  });
+}
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -101,6 +109,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = await readContentMeta(defaultLang, baseUrl);
 
   const canonical = baseUrl ? `${baseUrl}/` : "/";
+
   const alternatesLanguages: Record<string, string> = {};
   for (const geo of languages) {
     const { htmlLang: hreflang } = getLocaleMeta(geo);
@@ -112,7 +121,7 @@ export async function generateMetadata(): Promise<Metadata> {
       ? "/"
       : `/${geo}`;
   }
-  alternatesLanguages["x-default"] = canonical;
+  alternatesLanguages["x-default"] = baseUrl ? `${baseUrl}/` : "/";
 
   const { ogLocale } = getLocaleMeta(defaultLang);
   const siteName = PROJECT_NAME;
@@ -122,7 +131,10 @@ export async function generateMetadata(): Promise<Metadata> {
     manifest: "/manifest.json",
     title,
     description,
-    alternates: { canonical, languages: alternatesLanguages },
+    alternates: {
+      canonical,
+      languages: alternatesLanguages,
+    },
     openGraph: {
       locale: ogLocale,
       type: "website",
@@ -165,25 +177,39 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-/* ---------- Root layout ---------- */
-
 export default async function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: Readonly<{ children: React.ReactNode }>) {
   const { languages, defaultLang } = await readManifest();
   const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
   const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
-
-  // Класс с CSS-переменными шрифтов
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
 
   return (
     <html lang={htmlLang} suppressHydrationWarning>
+      <head>
+        <link
+          rel="preconnect"
+          href="https://api.adkey-seo.com"
+          crossOrigin=""
+        />
+        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome.webp"
+          media="(min-width: 769px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome-mobile.webp"
+          media="(max-width: 768px)"
+        />
+      </head>
       <body className={fontVars}>{children}</body>
     </html>
   );
