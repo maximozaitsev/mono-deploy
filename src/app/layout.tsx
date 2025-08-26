@@ -8,7 +8,7 @@ import path from "node:path";
 import { headers, cookies } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
-// import * as fonts from "./fonts";
+import * as fonts from "./fonts";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -171,13 +171,13 @@ export default async function RootLayout({
   const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
   const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
-  //   const fontVars = Object.values(fonts)
-  //   .map((f) => f.variable)
-  //   .join(" ");
+    const fontVars = Object.values(fonts)
+    .map((f) => f.variable)
+    .join(" ");
 
   return (
     <html lang={htmlLang} suppressHydrationWarning>
-      <body /*className={fontVars}*/>{children}</body>
+      <body className={fontVars}>{children}</body>
     </html>
   );
 }
