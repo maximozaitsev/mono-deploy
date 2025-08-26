@@ -10,6 +10,8 @@ import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import * as fonts from "./fonts";
 
+/* ---------- utils ---------- */
+
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
   const h = headers();
@@ -86,7 +88,8 @@ async function readContentMeta(lang: string, baseUrl?: string) {
   return { title: PROJECT_NAME, description: PROJECT_NAME };
 }
 
-/** Единственный корректный viewport — через Metadata API */
+/* ---------- Metadata API ---------- */
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -162,6 +165,8 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+/* ---------- Root layout ---------- */
+
 export default async function RootLayout({
   children,
 }: {
@@ -171,7 +176,9 @@ export default async function RootLayout({
   const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
   const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
-    const fontVars = Object.values(fonts)
+
+  // Класс с CSS-переменными шрифтов
+  const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
 
