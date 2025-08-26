@@ -33,15 +33,16 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
-      <figure className={styles.mobileFigure} aria-hidden>
+      <figure className={styles.mobileFigure} aria-hidden="true">
         <img
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
+          srcSet="/block-images/welcome-mobile.webp 576w, /block-images/welcome.webp 1200w"
+          sizes="(max-width: 768px) 100vw, 576px"
           alt="Welcome Mobile"
           loading="eager"
           decoding="async"
           fetchPriority="high"
-          sizes="(max-width: 768px) 100vw, 576px"
         />
       </figure>
 
