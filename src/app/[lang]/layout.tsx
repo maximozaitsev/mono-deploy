@@ -58,30 +58,39 @@ function extractMeta(obj: Record<string, any>): {
   return { title: title || "Title", description: description || "Description" };
 }
 
-async function readContentMeta(lang: string, baseUrl?: string) {
+async function readContentMeta(
+  lang: string,
+  baseUrl?: string
+): Promise<{ title: string; description: string }> {
   const fsPath = path.join(
     process.cwd(),
     "public",
     "content",
     `content.${lang}.json`
   );
+
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
-  if (fromFs.title !== "Title" || fromFs.description !== "Description")
+  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
     return fromFs;
+  }
 
   if (baseUrl) {
     try {
       const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
         cache: "no-store",
       });
-      if (res.ok) return extractMeta((await res.json()) as Record<string, any>);
+      if (res.ok) {
+        const json = (await res.json()) as Record<string, any>;
+        return extractMeta(json);
+      }
     } catch {}
   }
+
   return { title: "Title", description: "Description" };
 }
 
-// ⛔️ Здесь НЕТ viewport / next-size-adjust
+// ⛔️ Здесь тоже НЕ объявляем export const viewport — root уже вставляет корректные meta
 export async function generateMetadata({
   params,
 }: {
@@ -122,7 +131,10 @@ export async function generateMetadata({
     manifest: "/manifest.json",
     title,
     description,
-    alternates: { canonical, languages: alternatesLanguages },
+    alternates: {
+      canonical,
+      languages: alternatesLanguages,
+    },
     openGraph: {
       locale: ogLocale,
       type: "website",
@@ -138,7 +150,9 @@ export async function generateMetadata({
       description,
       images: [ogImage],
     },
-    other: { language: languageName },
+    other: {
+      language: languageName,
+    },
   };
 }
 

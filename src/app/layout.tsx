@@ -56,7 +56,10 @@ function extractMeta(obj: Record<string, any>): {
   return { title: title || "Title", description: description || "Description" };
 }
 
-async function readContentMeta(lang: string, baseUrl?: string) {
+async function readContentMeta(
+  lang: string,
+  baseUrl?: string
+): Promise<{ title: string; description: string }> {
   const fsPath = path.join(
     process.cwd(),
     "public",
@@ -65,17 +68,22 @@ async function readContentMeta(lang: string, baseUrl?: string) {
   );
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
-  if (fromFs.title !== "Title" || fromFs.description !== "Description")
+  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
     return fromFs;
+  }
 
   if (baseUrl) {
     try {
       const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
         cache: "no-store",
       });
-      if (res.ok) return extractMeta((await res.json()) as Record<string, any>);
+      if (res.ok) {
+        const json = (await res.json()) as Record<string, any>;
+        return extractMeta(json);
+      }
     } catch {}
   }
+
   return { title: "Title", description: "Description" };
 }
 
@@ -90,7 +98,7 @@ async function readManifest(): Promise<{
   });
 }
 
-// ⛔️ Нет export const viewport — всё вручную в <head>
+// ⛔️ важное: НЕ объявляем export const viewport — всё задаём вручную в <head>
 
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
@@ -120,7 +128,10 @@ export async function generateMetadata(): Promise<Metadata> {
     manifest: "/manifest.json",
     title,
     description,
-    alternates: { canonical, languages: alternatesLanguages },
+    alternates: {
+      canonical,
+      languages: alternatesLanguages,
+    },
     openGraph: {
       locale: ogLocale,
       type: "website",
@@ -177,7 +188,8 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
-        {/* наш явный viewport + корректный next-size-adjust */}
+        {/* Явно задаём корректные meta, чтобы Next не подставлял свои */}
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="next-size-adjust" content="100%" />
 
@@ -189,7 +201,7 @@ export default async function RootLayout({
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
 
-        {/* hero image preloads */}
+        {/* hero image preloads (без imagesrcset/imagesizes, чтобы валидатор не ругался) */}
         <link
           rel="preload"
           as="image"
