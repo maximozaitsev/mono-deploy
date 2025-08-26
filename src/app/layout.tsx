@@ -56,7 +56,10 @@ function extractMeta(obj: Record<string, any>): {
   return { title: title || "Title", description: description || "Description" };
 }
 
-async function readContentMeta(lang: string, baseUrl?: string) {
+async function readContentMeta(
+  lang: string,
+  baseUrl?: string
+): Promise<{ title: string; description: string }> {
   const fsPath = path.join(
     process.cwd(),
     "public",
@@ -189,6 +192,12 @@ export default async function RootLayout({
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome.webp"
+          media="(min-width: 769px)"
+        />
         <link
           rel="preload"
           as="image"

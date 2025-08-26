@@ -58,7 +58,10 @@ function extractMeta(obj: Record<string, any>): {
   return { title: title || "Title", description: description || "Description" };
 }
 
-async function readContentMeta(lang: string, baseUrl?: string) {
+async function readContentMeta(
+  lang: string,
+  baseUrl?: string
+): Promise<{ title: string; description: string }> {
   const fsPath = path.join(
     process.cwd(),
     "public",
@@ -81,8 +84,10 @@ async function readContentMeta(lang: string, baseUrl?: string) {
       }
     } catch {}
   }
+
   return { title: "Title", description: "Description" };
 }
+
 export async function generateMetadata({
   params,
 }: {
