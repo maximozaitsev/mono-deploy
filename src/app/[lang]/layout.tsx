@@ -1,5 +1,5 @@
 // src/app/[lang]/layout.tsx
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import path from "node:path";
 import fs from "node:fs/promises";
 import { headers } from "next/headers";
@@ -90,11 +90,6 @@ async function readContentMeta(
   return { title: "Title", description: "Description" };
 }
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
-
 export async function generateMetadata({
   params,
 }: {
@@ -135,10 +130,7 @@ export async function generateMetadata({
     manifest: "/manifest.json",
     title,
     description,
-    alternates: {
-      canonical,
-      languages: alternatesLanguages,
-    },
+    alternates: { canonical, languages: alternatesLanguages },
     openGraph: {
       locale: ogLocale,
       type: "website",
