@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .offerCard {
@@ -9,7 +10,7 @@
   align-items: center;
   gap: 16px;
 
-  outline: $border-width solid $color-border-primary;
+  outline: $border-width solid $border-color;
   border-radius: $border-radius;
   background: $color-background-third;
 
@@ -23,29 +24,31 @@
   h3 {
     color: $text-color-secondary;
     text-align: center;
+    font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
   }
 
-  .h4Heading {
-    text-align: center;
+  h4 {
+    font-family: $font-primary;
     font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: $color-button-large;
+    // color: $color-button-large;
 
-    // background: $color-button-large;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
+    background: $color-button-large;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   p {
     color: $text-color-secondary;
     text-align: center;
+    font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
     font-weight: $font-weight-regular;
@@ -60,7 +63,6 @@
     margin-top: auto;
     margin-left: -20px;
     margin-right: -20px;
-    max-width: 218px;
   }
 
   @media (max-width: 768px) {
@@ -76,7 +78,7 @@
       display: none;
     }
 
-    .h4Heading {
+    h4 {
       margin-bottom: -8px;
     }
 

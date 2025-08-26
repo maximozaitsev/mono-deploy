@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://xyescasino-online.com/
-Sitemap: https://xyescasino-online.com/sitemap.xml
+Host: https://great-blue-heron-casino.com/
+Sitemap: https://great-blue-heron-casino.com/sitemap.xml

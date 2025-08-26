@@ -1,55 +1,24 @@
 import React, { useEffect, useState } from "react";
 
 interface LogoProps {
-  svgPath?: string;
-  desktopSrc?: string;
-  mobileSrc?: string;
-  gradientIdPrefix?: string;
-  onClick?: () => void;
+  svgPath: string;
+  gradientIdPrefix: string;
+  onClick: () => void;
   alt?: string;
 }
 
-const Logo: React.FC<LogoProps> = ({
+const Logo = ({
   svgPath,
-  desktopSrc,
-  mobileSrc,
-  gradientIdPrefix = "logo",
+  gradientIdPrefix,
   onClick,
   alt = "Logo",
-}) => {
-  if (desktopSrc) {
-    return (
-      <picture
-        onClick={onClick}
-        style={{
-          cursor: onClick ? "pointer" : "default",
-          display: "inline-block",
-        }}
-      >
-        {mobileSrc && <source media="(max-width: 768px)" srcSet={mobileSrc} />}
-        <img
-          src={desktopSrc}
-          alt={alt}
-          loading="eager"
-          decoding="async"
-          style={{ display: "block" }}
-        />
-      </picture>
-    );
-  }
-
+}: LogoProps) => {
   const [svgContent, setSvgContent] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!svgPath) return;
-
-    let isCancelled = false;
-
     fetch(svgPath)
       .then((response) => response.text())
       .then((svgText) => {
-        if (isCancelled) return;
-
         const parser = new DOMParser();
         const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
         const svgElement = svgDoc.querySelector("svg");
@@ -95,24 +64,16 @@ const Logo: React.FC<LogoProps> = ({
         setSvgContent(updatedSvgText);
       })
       .catch((error) => console.error("Error loading SVG:", error));
-
-    return () => {
-      isCancelled = true;
-    };
   }, [svgPath, gradientIdPrefix]);
 
-  if (!svgPath) {
-    return null;
-  }
-
   if (!svgContent) {
-    return <span aria-label={alt} role="img" />;
+    return <div></div>;
   }
 
   return (
     <div
       onClick={onClick}
-      style={{ cursor: onClick ? "pointer" : "default" }}
+      style={{ cursor: "pointer" }}
       role="img"
       aria-label={alt}
       dangerouslySetInnerHTML={{ __html: svgContent }}

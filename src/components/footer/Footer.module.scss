@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../../public/fonts/fonts.scss";
 
 .footer {
   position: relative;
@@ -73,6 +74,7 @@
 
   .copyright {
     color: rgba(255, 255, 255, 0.34);
+    font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
     line-height: 40px;

@@ -4,15 +4,11 @@ import { useMemo } from "react";
 import supportImage from "../../../public/block-images/support.webp";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
-import { PROJECT_NAME } from "@/config/projectConfig";
-import { getProjectGeoForLang } from "@/utils/localeMap";
-import { useParams } from "next/navigation";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./SupportSection.module.scss";
 
 export default function SupportSection() {
   const { data, loading, error } = useContentData();
-  const params = useParams();
-  const currentGeo = getProjectGeoForLang(params?.lang as string);
 
   const supportData = useMemo(() => {
     if (!data?.support) return null;
@@ -22,9 +18,9 @@ export default function SupportSection() {
     return { sectionTitle, blocks };
   }, [data]);
 
-  if (loading) return null;
-  if (error) return null;
-  if (!supportData) return null;
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error loading content.</p>;
+  if (!supportData) return <p>Support section data is not available.</p>;
 
   return (
     <section className={`${styles.supportSection} section`}>
@@ -41,8 +37,8 @@ export default function SupportSection() {
           <div className={styles.rightImage}>
             <img
               src={supportImage.src}
-              alt={`${PROJECT_NAME} ${currentGeo} Support`}
-              title={`${PROJECT_NAME} ${currentGeo} Support`}
+              alt={PROJECT_NAME + " " + PROJECT_GEO + " Support"}
+              title={PROJECT_NAME + " " + PROJECT_GEO + " Support"}
               loading="lazy"
             />
           </div>
