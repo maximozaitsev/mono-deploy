@@ -1,5 +1,5 @@
 // /src/app/layout.tsx
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
@@ -56,10 +56,7 @@ function extractMeta(obj: Record<string, any>): {
   return { title: title || "Title", description: description || "Description" };
 }
 
-async function readContentMeta(
-  lang: string,
-  baseUrl?: string
-): Promise<{ title: string; description: string }> {
+async function readContentMeta(lang: string, baseUrl?: string) {
   const fsPath = path.join(
     process.cwd(),
     "public",
@@ -76,30 +73,19 @@ async function readContentMeta(
       const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
         cache: "no-store",
       });
-      if (res.ok) {
-        const json = (await res.json()) as Record<string, any>;
-        return extractMeta(json);
-      }
+      if (res.ok) return extractMeta((await res.json()) as Record<string, any>);
     } catch {}
   }
   return { title: "Title", description: "Description" };
 }
 
-async function readManifest(): Promise<{
-  languages: string[];
-  defaultLang: string;
-}> {
+async function readManifest() {
   const p = path.join(process.cwd(), "public", "content", "languages.json");
   return readJSON<{ languages: string[]; defaultLang: string }>(p, {
     languages: [],
     defaultLang: "au",
   });
 }
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
 
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
@@ -173,7 +159,9 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: {
+  children: React.ReactNode;
+}) {
   const { languages, defaultLang } = await readManifest();
   const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
   const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
@@ -185,6 +173,7 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"

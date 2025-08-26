@@ -1,3 +1,4 @@
+// /src/app/[lang]/layout.tsx
 import type { Metadata } from "next";
 import path from "node:path";
 import fs from "node:fs/promises";
@@ -17,8 +18,7 @@ type LangManifest = { languages: string[]; defaultLang: string };
 
 async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
   try {
-    const raw = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(raw) as T;
+    return JSON.parse(await fs.readFile(filePath, "utf-8")) as T;
   } catch {
     return fallback;
   }
@@ -29,10 +29,7 @@ async function readManifest(): Promise<LangManifest> {
   return readJSON<LangManifest>(p, { languages: [], defaultLang: "au" });
 }
 
-function extractMeta(obj: Record<string, any>): {
-  title: string;
-  description: string;
-} {
+function extractMeta(obj: Record<string, any>) {
   const titleKeys = ["meta-title", "metaTitle", "ogTitle", "title"];
   const descKeys = [
     "meta-description",
@@ -57,18 +54,14 @@ function extractMeta(obj: Record<string, any>): {
   return { title: title || "Title", description: description || "Description" };
 }
 
-async function readContentMeta(
-  lang: string,
-  baseUrl?: string
-): Promise<{ title: string; description: string }> {
+async function readContentMeta(lang: string, baseUrl?: string) {
   const fsPath = path.join(
     process.cwd(),
     "public",
     "content",
     `content.${lang}.json`
   );
-  const fsJson = await readJSON<Record<string, any>>(fsPath, {});
-  const fromFs = extractMeta(fsJson);
+  const fromFs = extractMeta(await readJSON<Record<string, any>>(fsPath, {}));
   if (fromFs.title !== "Title" || fromFs.description !== "Description")
     return fromFs;
 
@@ -77,10 +70,7 @@ async function readContentMeta(
       const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
         cache: "no-store",
       });
-      if (res.ok) {
-        const json = (await res.json()) as Record<string, any>;
-        return extractMeta(json);
-      }
+      if (res.ok) return extractMeta(await res.json());
     } catch {}
   }
   return { title: "Title", description: "Description" };
