@@ -18,7 +18,8 @@ type LangManifest = { languages: string[]; defaultLang: string };
 
 async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
   try {
-    return JSON.parse(await fs.readFile(filePath, "utf-8")) as T;
+    const raw = await fs.readFile(filePath, "utf-8");
+    return JSON.parse(raw) as T;
   } catch {
     return fallback;
   }
@@ -29,7 +30,10 @@ async function readManifest(): Promise<LangManifest> {
   return readJSON<LangManifest>(p, { languages: [], defaultLang: "au" });
 }
 
-function extractMeta(obj: Record<string, any>) {
+function extractMeta(obj: Record<string, any>): {
+  title: string;
+  description: string;
+} {
   const titleKeys = ["meta-title", "metaTitle", "ogTitle", "title"];
   const descKeys = [
     "meta-description",
@@ -61,7 +65,8 @@ async function readContentMeta(lang: string, baseUrl?: string) {
     "content",
     `content.${lang}.json`
   );
-  const fromFs = extractMeta(await readJSON<Record<string, any>>(fsPath, {}));
+  const fsJson = await readJSON<Record<string, any>>(fsPath, {});
+  const fromFs = extractMeta(fsJson);
   if (fromFs.title !== "Title" || fromFs.description !== "Description")
     return fromFs;
 
@@ -70,12 +75,14 @@ async function readContentMeta(lang: string, baseUrl?: string) {
       const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
         cache: "no-store",
       });
-      if (res.ok) return extractMeta(await res.json());
+      if (res.ok) {
+        const json = (await res.json()) as Record<string, any>;
+        return extractMeta(json);
+      }
     } catch {}
   }
   return { title: "Title", description: "Description" };
 }
-
 export async function generateMetadata({
   params,
 }: {
