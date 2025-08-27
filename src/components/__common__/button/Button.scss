@@ -73,7 +73,9 @@
     }
   }
 
-  &:hover {
-    transform: scale(1.07);
+  @media (min-width: 769px) {
+    &:hover {
+      transform: scale(1.07);
+    }
   }
 }
