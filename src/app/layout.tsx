@@ -245,6 +245,29 @@ export default async function RootLayout({
         {/* Resource hints for better performance */}
         <link rel="prefetch" href="/manifest.json" />
         <link rel="prefetch" href="/content/languages.json" />
+        
+        {/* Preload critical fonts */}
+        <link
+          rel="preload"
+          href="/fonts/Roboto/Roboto-500.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        
+        {/* Preload critical JavaScript */}
+        <link
+          rel="modulepreload"
+          href="/_next/static/chunks/webpack.js"
+          as="script"
+        />
+        
+        {/* HTTP/2 Server Push hints */}
+        <link rel="preload" href="/_next/static/chunks/main.js" as="script" />
+        <link rel="preload" href="/_next/static/chunks/pages/_app.js" as="script" />
+        
+        {/* Preload API endpoints */}
+        <link rel="prefetch" href="https://api.adkey-seo.com/api/website/get-website" />
       </head>
       <body className={fontVars}>
         {children}

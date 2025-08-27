@@ -6,6 +6,11 @@
   --font-primary: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-secondary: 'Mogra', cursive;
   --font-third: 'Montserrat', sans-serif;
+  
+  // Performance optimizations
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
 }
 
 // Critical layout styles
@@ -15,6 +20,8 @@
 
 html {
   scroll-behavior: smooth;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -24,6 +31,9 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
 }
 
 // Critical container styles
@@ -31,11 +41,13 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 // Critical section styles
 .section {
   padding: 60px 0;
+  position: relative;
 }
 
 // Critical welcome section styles (above the fold)
@@ -46,6 +58,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .mobileFigure {
@@ -63,6 +76,8 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .welcomeBg {
@@ -74,6 +89,7 @@ body {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
 }
 
 .welcomeContent {
@@ -81,6 +97,7 @@ body {
   color: white;
   max-width: 800px;
   padding: 20px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .welcomeText h2 {
@@ -88,6 +105,7 @@ body {
   font-weight: 900;
   margin: 0 0 20px 0;
   line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 // Critical button styles
@@ -100,18 +118,25 @@ body {
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--transition-normal);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-primary {
   background: linear-gradient(135deg, #ff6b6b, #ee5a24);
   color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
 }
 
 // Loading skeleton
@@ -128,6 +153,28 @@ body {
   }
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Performance optimizations
+.will-change-transform {
+  will-change: transform;
+}
+
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
 // Critical responsive styles
 @media (max-width: 768px) {
   .section {
@@ -140,5 +187,34 @@ body {
   
   .welcomeContent {
     padding: 15px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+}
+
+// Print styles for better performance
+@media print {
+  .welcomeSection {
+    min-height: auto;
+    page-break-inside: avoid;
+  }
+  
+  .mobileFigure {
+    display: none;
+  }
+}
+
+// Reduced motion for accessibility
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .welcomeContent {
+    animation: none;
   }
 }

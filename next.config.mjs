@@ -98,6 +98,10 @@ const nextConfig = {
             key: "X-XSS-Protection",
             value: "1; mode=block",
           },
+          {
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
+          },
         ],
       },
       {
@@ -106,6 +110,10 @@ const nextConfig = {
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
+          },
+          {
+            key: "Vary",
+            value: "Accept-Encoding",
           },
         ],
       },
@@ -116,6 +124,10 @@ const nextConfig = {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
           },
+          {
+            key: "Accept-Ranges",
+            value: "bytes",
+          },
         ],
       },
       {
@@ -124,6 +136,10 @@ const nextConfig = {
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
+          },
+          {
+            key: "Accept-Ranges",
+            value: "bytes",
           },
         ],
       },
@@ -134,6 +150,10 @@ const nextConfig = {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
           },
+          {
+            key: "Accept-Ranges",
+            value: "bytes",
+          },
         ],
       },
       {
@@ -142,6 +162,10 @@ const nextConfig = {
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
+          },
+          {
+            key: "Accept-Ranges",
+            value: "bytes",
           },
         ],
       },
@@ -152,6 +176,10 @@ const nextConfig = {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
           },
+          {
+            key: "Accept-Ranges",
+            value: "bytes",
+          },
         ],
       },
       {
@@ -161,6 +189,10 @@ const nextConfig = {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
           },
+          {
+            key: "Accept-Ranges",
+            value: "bytes",
+          },
         ],
       },
       {
@@ -169,6 +201,36 @@ const nextConfig = {
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
+          },
+          {
+            key: "Accept-Ranges",
+            value: "bytes",
+          },
+        ],
+      },
+      {
+        source: "/fonts/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+          {
+            key: "Access-Control-Allow-Origin",
+            value: "*",
+          },
+        ],
+      },
+      {
+        source: "/api/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=300, s-maxage=600",
+          },
+          {
+            key: "Vary",
+            value: "Accept-Encoding",
           },
         ],
       },

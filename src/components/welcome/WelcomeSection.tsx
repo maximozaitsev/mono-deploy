@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, useRef } from "react";
+import Image from "next/image";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
@@ -11,12 +12,33 @@ export default function WelcomeSection() {
   const [firstOfferId, setFirstOfferId] = useState<string>("");
   const [offerLink, setOfferLink] = useState<string>("");
   const [isLoading, setIsLoading] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
   const { t } = useStaticT();
 
   // Memoize the button URL to prevent unnecessary re-renders
   const buttonUrl = useMemo(() => {
     return firstOfferId ? `/casino/${firstOfferId}` : offerLink;
   }, [firstOfferId, offerLink]);
+
+  // Intersection Observer for performance optimization
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const fetchWelcomeBonus = async () => {
@@ -39,20 +61,24 @@ export default function WelcomeSection() {
 
   return (
     <section
+      ref={sectionRef}
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
       <figure className={styles.mobileFigure} aria-hidden>
-        <img
-          className={styles.mobileImage}
-          src="/block-images/welcome-mobile.webp"
-          alt="Welcome Mobile"
-          loading="eager"
-          decoding="async"
-          fetchPriority="high"
-          width={768}
-          height={600}
-        />
+        {isVisible && (
+          <Image
+            className={styles.mobileImage}
+            src="/block-images/welcome-mobile.webp"
+            alt="Welcome Mobile"
+            fill
+            priority
+            sizes="100vw"
+            quality={85}
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+          />
+        )}
       </figure>
 
       <div className={styles.welcomeBg}>
