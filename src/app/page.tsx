@@ -10,25 +10,10 @@ import { Provider } from "@/types/provider";
 import fs from "node:fs/promises";
 import path from "node:path";
 
-/** ВАЖНО: плейсхолдер с фиксированным размером для предотвращения CLS */
 const TopCasinosSection = dynamic(
   () => import("@/components/top-casinos/TopCasinosSection"),
-  {
-    ssr: false,
-    loading: () => (
-      <section
-        id="top-casinos-section"
-        className="section container"
-        style={{
-          /** резерв по высоте (под реальные карточки на мобиле/таблете) */
-          minHeight: 640,
-        }}
-        aria-hidden
-      />
-    ),
-  }
+  { ssr: false, loading: () => null }
 );
-
 const MobileSection = dynamic(
   () => import("@/components/mobile-version/MobileSection"),
   { ssr: false, loading: () => null }

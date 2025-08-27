@@ -12,41 +12,16 @@
   }
 }
 
-/* Десктопный фон как «раньше», без cover */
 .welcomeBg {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 90rem;
-  margin: 0 auto;
-  height: 540px; /* фикс высота → нет CLS */
-
-  background-image: none; /* базово без фона */
+  background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
   background-position: right 160px center;
-  background-size: auto;
-
-  @media (min-width: 769px) {
-    background-image: url("/block-images/welcome.webp");
-    background-size: auto;
-  }
-
-  @media (max-width: 1280px) and (min-width: 991px) {
-    background-size: 50% auto;
-    background-position: right 20px center;
-  }
-
-  @media (max-width: 990px) and (min-width: 769px) {
-    background-size: 45% auto;
-    background-position: right 20px center;
-  }
-
-  @media (max-width: 768px) {
-    height: auto;
-    justify-content: flex-end;
-    background: none;
-    margin: 0 auto 24px auto;
-  }
+  max-width: 90rem;
+  margin: 0 auto;
+  height: 540px;
 
   & :global(.container) {
     display: flex;
@@ -54,25 +29,42 @@
     justify-content: center;
     width: 100%;
   }
+
+  @media (max-width: 1280px) {
+    background-size: 50% auto;
+    background-position: right 20px center;
+  }
+
+  @media (max-width: 990px) {
+    background-size: 45% auto;
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
+    justify-content: flex-end;
+    background-image: none;
+    background-size: auto;
+    background-position: initial;
+    margin: 0 auto 24px auto;
+  }
 }
 
-/* MOBILE-FIRST: по умолчанию показываем, на десктопе скрываем */
 .mobileFigure {
-  display: block;
-  margin: 8px auto 0 auto;
-  width: min(100vw, 576px);
-  aspect-ratio: 576 / 315;
+  display: none;
+  margin: 0;
 
-  @media (min-width: 769px) {
-    display: none;
+  @media (max-width: 768px) {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 
 .mobileImage {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  display: inline-block;
+  width: 100vw;
+  max-width: 576px;
+  height: auto;
 }
 
 .welcomeContent {
@@ -98,6 +90,7 @@
   gap: 48px;
   width: 410px;
   max-width: 50%;
+  // margin-left: -20px;
 
   .bonusText {
     display: none;
@@ -131,12 +124,22 @@
   font-family: var(--font-secondary);
   color: $text-color-primary;
   font-size: 32px;
+  font-style: normal;
   font-weight: $font-weight-black;
+  line-height: normal;
   text-transform: uppercase;
 
   @media (max-width: 768px) {
     font-size: 24px;
+    font-weight: $font-weight-black;
+    // color: $text-color-welcome;
+
+    // background: $text-color-welcome;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
+
   @media (max-width: 380px) {
     font-size: 20px;
   }

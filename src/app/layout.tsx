@@ -1,6 +1,8 @@
 // /src/app/layout.tsx
 import type { Metadata, Viewport } from "next";
 import "./globals.scss";
+import "../styles/colors.scss";
+import "../styles/variables.scss";
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -39,16 +41,18 @@ function extractMeta(obj: Record<string, any>): {
   ];
   let title = "";
   let description = "";
-  for (const k of titleKeys)
+  for (const k of titleKeys) {
     if (typeof obj[k] === "string" && obj[k].trim()) {
       title = obj[k].trim();
       break;
     }
-  for (const k of descKeys)
+  }
+  for (const k of descKeys) {
     if (typeof obj[k] === "string" && obj[k].trim()) {
       description = obj[k].trim();
       break;
     }
+  }
   return { title: title || "Title", description: description || "Description" };
 }
 
@@ -64,8 +68,9 @@ async function readContentMeta(
   );
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
-  if (fromFs.title !== "Title" || fromFs.description !== "Description")
+  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
     return fromFs;
+  }
 
   if (baseUrl) {
     try {
@@ -78,6 +83,7 @@ async function readContentMeta(
       }
     } catch {}
   }
+
   return { title: "Title", description: "Description" };
 }
 
@@ -92,7 +98,10 @@ async function readManifest(): Promise<{
   });
 }
 
-export const viewport: Viewport = { width: "device-width", initialScale: 1 };
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
@@ -100,6 +109,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const { title, description } = await readContentMeta(defaultLang, baseUrl);
 
   const canonical = baseUrl ? `${baseUrl}/` : "/";
+
   const alternatesLanguages: Record<string, string> = {};
   for (const geo of languages) {
     const { htmlLang: hreflang } = getLocaleMeta(geo);
@@ -121,7 +131,10 @@ export async function generateMetadata(): Promise<Metadata> {
     manifest: "/manifest.json",
     title,
     description,
-    alternates: { canonical, languages: alternatesLanguages },
+    alternates: {
+      canonical,
+      languages: alternatesLanguages,
+    },
     openGraph: {
       locale: ogLocale,
       type: "website",
@@ -184,22 +197,17 @@ export default async function RootLayout({
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
-
-        {/* Десктопный фон героя — только десктоп */}
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
         />
-
-        {/* Мобильный hero — preload только на мобиле (один файл) */}
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-          fetchPriority="high"
         />
       </head>
       <body className={fontVars}>{children}</body>

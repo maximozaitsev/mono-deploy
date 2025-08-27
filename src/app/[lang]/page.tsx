@@ -10,22 +10,10 @@ import { Provider } from "@/types/provider";
 import fs from "node:fs/promises";
 import path from "node:path";
 
-/** Плейсхолдер для TopCasinos — предотвращает CLS */
 const TopCasinosSection = dynamic(
   () => import("@/components/top-casinos/TopCasinosSection"),
-  {
-    ssr: false,
-    loading: () => (
-      <section
-        id="top-casinos-section"
-        className="section container"
-        style={{ minHeight: 640 }}
-        aria-hidden
-      />
-    ),
-  }
+  { ssr: false, loading: () => null }
 );
-
 const MobileSection = dynamic(
   () => import("@/components/mobile-version/MobileSection"),
   { ssr: false, loading: () => null }
@@ -115,8 +103,12 @@ export default async function LangPage({
   const { languages, defaultLang } = manifest;
   const lang = params.lang;
 
-  if (lang === defaultLang) redirect("/");
-  if (!languages.includes(lang)) notFound();
+  if (lang === defaultLang) {
+    redirect("/");
+  }
+  if (!languages.includes(lang)) {
+    notFound();
+  }
 
   const games = await fetchGames("gambling");
   const providers: Provider[] = await fetchProviders();

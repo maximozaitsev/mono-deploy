@@ -32,6 +32,7 @@ body {
   @media (max-width: 1180px) {
     padding: 0 40px;
   }
+
   @media (max-width: 375px) {
     padding: 0 20px;
   }
@@ -49,47 +50,23 @@ body {
   @media (max-width: 1120px) {
     margin-bottom: 64px;
   }
+
   @media (max-width: 768px) {
     gap: 40px;
   }
+
   @media (max-width: 420px) {
     margin-bottom: 72px;
   }
 }
 
-/* ===== Anti-CLS медиастили ===== */
-
-/* Картинки — блочные, чтобы не добавляли «лишнюю» линию */
-img {
-  display: block;
-}
-
-/* Если у тега есть width/height → высота авто (без «растягивания») */
-img[width][height] {
-  height: auto;
-}
-
-/* Частый кейс из отчётов: .app-image (телефон, иконки и пр.)
-   Резервируем квадрат 1/1 — Lighthouse больше не фиксит "нет явного размера" */
-.app-image {
-  width: 100%;
-  max-width: 348px; /* соответствует реальному ассету из отчёта */
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
-
-/* Можно заодно зарезервировать место под Top Casinos,
-   если компонента ещё не отрендерилась (подстраховка к placeholder'у) */
-#top-casinos-section {
-  min-height: 640px;
-}
-
-/* ===== Типографика (без изменений) ===== */
 .h2-heading {
   color: $text-color-secondary;
   font-family: $font-secondary;
   font-size: 56px;
+  font-style: normal;
   font-weight: $font-weight-bold;
+  line-height: normal;
   text-transform: uppercase;
   word-break: break-word;
   hyphens: auto;
@@ -102,6 +79,7 @@ img[width][height] {
     font-size: 32px;
     font-weight: $font-weight-black;
   }
+
   @media (max-width: 570px) {
     font-size: 26px;
   }
@@ -111,7 +89,9 @@ img[width][height] {
   color: $text-color-primary;
   font-family: $font-secondary;
   font-size: 40px;
+  font-style: normal;
   font-weight: $font-weight-bold;
+  line-height: normal;
   text-transform: uppercase;
   word-break: break-word;
   hyphens: auto;
@@ -120,6 +100,7 @@ img[width][height] {
     font-size: 24px;
     font-weight: $font-weight-black;
   }
+
   @media (max-width: 570px) {
     font-size: 20px;
   }
@@ -129,7 +110,9 @@ img[width][height] {
   color: $text-color-secondary;
   font-family: $font-secondary;
   font-size: 24px;
+  font-style: normal;
   font-weight: $font-weight-bold;
+  line-height: normal;
   text-transform: uppercase;
   word-break: break-word;
   hyphens: auto;
@@ -139,8 +122,8 @@ img[width][height] {
   }
 
   @media (max-width: 768px) {
-    font-size: 18px;
     font-weight: $font-weight-black;
+    font-size: 18px;
   }
 }
 
@@ -148,6 +131,7 @@ img[width][height] {
   color: $text-color-primary;
   font-family: $font-primary;
   font-size: 20px;
+  font-style: normal;
   font-weight: $font-weight-regular;
   line-height: 40px;
 
@@ -169,14 +153,17 @@ img[width][height] {
   text-align: center;
 
   h2 {
+    margin-top: 3rem;
     margin-top: auto;
   }
+
   p {
     font-family: $font-primary;
     color: $text-color-secondary;
     font-size: 28px;
     font-weight: $font-weight-regular;
   }
+
   button {
     align-self: center;
     margin-bottom: auto;
