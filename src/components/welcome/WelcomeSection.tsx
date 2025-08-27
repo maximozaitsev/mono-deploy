@@ -20,8 +20,8 @@ export default function WelcomeSection() {
         setWelcomeBonus(bonus);
         setFirstOfferId(String(offersData.offers[0]?.id ?? ""));
         setOfferLink(offersData.offers[0]?.link || "");
-      } catch (err) {
-        console.error("Failed to fetch welcome bonus:", err);
+      } catch (e) {
+        console.error("Failed to fetch welcome bonus:", e);
       }
     })();
   }, []);
@@ -31,21 +31,22 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
-      {/* Мобильный вариант — реальная картинка, быстрая и лёгкая */}
       <figure className={styles.mobileFigure} aria-hidden>
         <img
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
+          srcSet="/block-images/welcome-mobile-412.webp 412w, /block-images/welcome-mobile.webp 576w"
+          sizes="(max-width: 576px) 100vw, 576px"
           alt="Welcome Mobile"
+          width={576}
+          height={315}
           loading="eager"
           decoding="async"
           fetchPriority="high"
-          width={576}
-          height={315}
         />
       </figure>
 
-      {/* Десктопный фон задаётся в CSS (мобилка здесь без фона) */}
+      {/* Десктопный фон задаётся в CSS (на мобиле — отсутствует) */}
       <div className={styles.welcomeBg}>
         <div className="container">
           <div className={styles.welcomeContent}>

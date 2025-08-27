@@ -184,11 +184,24 @@ export default async function RootLayout({
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+
+        {/* десктопный фон — только на десктопе */}
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
+        />
+
+        {/* мобильный hero — preload только на мобиле, с camelCase атрибутами */}
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome-mobile.webp"
+          media="(max-width: 768px)"
+          imageSrcSet="/block-images/welcome-mobile-412.webp 412w, /block-images/welcome-mobile.webp 576w"
+          imageSizes="(max-width: 576px) 100vw, 576px"
+          fetchPriority="high"
         />
       </head>
       <body className={fontVars}>{children}</body>
