@@ -13,19 +13,17 @@ export default function WelcomeSection() {
   const { t } = useStaticT();
 
   useEffect(() => {
-    const fetchWelcomeBonus = async () => {
+    (async () => {
       try {
         const offersData = await fetchOffers();
         const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
         setWelcomeBonus(bonus);
         setFirstOfferId(String(offersData.offers[0]?.id ?? ""));
         setOfferLink(offersData.offers[0]?.link || "");
-      } catch (error) {
-        console.error("Failed to fetch welcome bonus:", error);
+      } catch (err) {
+        console.error("Failed to fetch welcome bonus:", err);
       }
-    };
-
-    fetchWelcomeBonus();
+    })();
   }, []);
 
   return (
@@ -33,6 +31,7 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
+      {/* Мобильный вариант — реальная картинка, быстрая и лёгкая */}
       <figure className={styles.mobileFigure} aria-hidden>
         <img
           className={styles.mobileImage}
@@ -41,9 +40,12 @@ export default function WelcomeSection() {
           loading="eager"
           decoding="async"
           fetchPriority="high"
+          width={576}
+          height={315}
         />
       </figure>
 
+      {/* Десктопный фон задаётся в CSS (мобилка здесь без фона) */}
       <div className={styles.welcomeBg}>
         <div className="container">
           <div className={styles.welcomeContent}>
@@ -58,7 +60,7 @@ export default function WelcomeSection() {
                 <Button
                   text={t.claimBonus}
                   variant="primary"
-                  useNavigation={true}
+                  useNavigation
                   url={firstOfferId ? `/casino/${firstOfferId}` : offerLink}
                   openInNewTab
                 />

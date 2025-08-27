@@ -41,20 +41,18 @@ function extractMeta(obj: Record<string, any>): {
     "description",
     "metaDesc",
   ];
-  let title = "";
-  let description = "";
-  for (const k of titleKeys) {
+  let title = "",
+    description = "";
+  for (const k of titleKeys)
     if (typeof obj[k] === "string" && obj[k].trim()) {
       title = obj[k].trim();
       break;
     }
-  }
-  for (const k of descKeys) {
+  for (const k of descKeys)
     if (typeof obj[k] === "string" && obj[k].trim()) {
       description = obj[k].trim();
       break;
     }
-  }
   return { title: title || "Title", description: description || "Description" };
 }
 
@@ -68,12 +66,10 @@ async function readContentMeta(
     "content",
     `content.${lang}.json`
   );
-
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
-  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
+  if (fromFs.title !== "Title" || fromFs.description !== "Description")
     return fromFs;
-  }
 
   if (baseUrl) {
     try {
@@ -86,14 +82,10 @@ async function readContentMeta(
       }
     } catch {}
   }
-
   return { title: "Title", description: "Description" };
 }
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
+export const viewport: Viewport = { width: "device-width", initialScale: 1 };
 
 export async function generateMetadata({
   params,
@@ -135,10 +127,7 @@ export async function generateMetadata({
     manifest: "/manifest.json",
     title,
     description,
-    alternates: {
-      canonical,
-      languages: alternatesLanguages,
-    },
+    alternates: { canonical, languages: alternatesLanguages },
     openGraph: {
       locale: ogLocale,
       type: "website",
@@ -154,9 +143,7 @@ export async function generateMetadata({
       description,
       images: [ogImage],
     },
-    other: {
-      language: languageName,
-    },
+    other: { language: languageName },
   };
 }
 
@@ -165,5 +152,17 @@ export default function LangLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <head>
+        <link
+          rel="preconnect"
+          href="https://api.adkey-seo.com"
+          crossOrigin=""
+        />
+        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+      </head>
+      {children}
+    </>
+  );
 }

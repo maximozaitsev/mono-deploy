@@ -10,66 +10,69 @@ import { Provider } from "@/types/provider";
 import fs from "node:fs/promises";
 import path from "node:path";
 
+/* Ниже фолда — динамически, но SSR: true + скелеты одинаковой высоты */
 const TopCasinosSection = dynamic(
   () => import("@/components/top-casinos/TopCasinosSection"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 560 }} /> }
 );
 const MobileSection = dynamic(
   () => import("@/components/mobile-version/MobileSection"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 420 }} /> }
 );
 const TopGamesSection = dynamic(
   () => import("@/components/top-games/TopGamesSection"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 560 }} /> }
 );
 const BonusDetailsSection = dynamic(
   () => import("@/components/bonus-details/BonusDetailsSection"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 420 }} /> }
 );
 const AboutSection = dynamic(() => import("@/components/about/AboutSection"), {
-  ssr: false,
-  loading: () => null,
+  ssr: true,
+  loading: () => <div style={{ minHeight: 560 }} />,
 });
 const PaymentMethodsSection = dynamic(
   () => import("@/components/payment-methods/PaymentMethodSection"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 480 }} /> }
 );
 const LicensesSection = dynamic(
   () => import("@/components/license/LicensesSection"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 320 }} /> }
 );
 const ProvidersSection = dynamic(
   () => import("@/components/providers/ProvidersSection"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 560 }} /> }
 );
 const AppSection = dynamic(() => import("@/components/mobile-app/AppSection"), {
-  ssr: false,
-  loading: () => null,
+  ssr: true,
+  loading: () => <div style={{ minHeight: 420 }} />,
 });
 const FAQSection = dynamic(() => import("@/components/faq/FAQSection"), {
-  ssr: false,
-  loading: () => null,
+  ssr: true,
+  loading: () => <div style={{ minHeight: 560 }} />,
 });
 const GamesToPlay = dynamic(
   () => import("@/components/games-to-play/GamesToPlay"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 420 }} /> }
 );
 const SupportSection = dynamic(
   () => import("@/components/support/SupportSection"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 320 }} /> }
 );
 const PromotionsSection = dynamic(
   () => import("@/components/promotion/PromotionsSection"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 560 }} /> }
 );
 const AdvantageSection = dynamic(
   () => import("@/components/advantage/AdvantageSection"),
-  { ssr: false, loading: () => null }
+  { ssr: true, loading: () => <div style={{ minHeight: 420 }} /> }
 );
 const Footer = dynamic(() => import("@/components/footer/Footer"), {
-  ssr: false,
-  loading: () => null,
+  ssr: true,
+  loading: () => <div style={{ minHeight: 280 }} />,
 });
+
+export const revalidate = 180; // даём ISR вместо полного динамизма
 
 export default async function HomePage() {
   type LangManifest = { languages: string[]; defaultLang: string };
@@ -102,6 +105,7 @@ export default async function HomePage() {
 
   return (
     <main>
+      {/* Above the fold — обычный SSR */}
       <Header
         languages={manifest.languages}
         defaultLang={manifest.defaultLang}
@@ -109,6 +113,8 @@ export default async function HomePage() {
       />
       <WelcomeSection />
       <H1Section />
+
+      {/* Below the fold — динамика с SSR и скелетами фиксированной высоты */}
       <TopCasinosSection />
       <BonusDetailsSection />
       <MobileSection />
