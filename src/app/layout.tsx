@@ -1,9 +1,6 @@
 // /src/app/layout.tsx
 import type { Metadata, Viewport } from "next";
 import "./globals.scss";
-// (при желании можно убрать эти 2 импорта, чтобы меньше css-чанков)
-// import "../styles/colors.scss";
-// import "../styles/variables.scss";
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -42,18 +39,16 @@ function extractMeta(obj: Record<string, any>): {
   ];
   let title = "";
   let description = "";
-  for (const k of titleKeys) {
+  for (const k of titleKeys)
     if (typeof obj[k] === "string" && obj[k].trim()) {
       title = obj[k].trim();
       break;
     }
-  }
-  for (const k of descKeys) {
+  for (const k of descKeys)
     if (typeof obj[k] === "string" && obj[k].trim()) {
       description = obj[k].trim();
       break;
     }
-  }
   return { title: title || "Title", description: description || "Description" };
 }
 
@@ -97,10 +92,7 @@ async function readManifest(): Promise<{
   });
 }
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
+export const viewport: Viewport = { width: "device-width", initialScale: 1 };
 
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
@@ -201,14 +193,12 @@ export default async function RootLayout({
           media="(min-width: 769px)"
         />
 
-        {/* Мобильный hero — preload только на мобиле (camelCase атрибуты) */}
+        {/* Мобильный hero — preload только на мобиле (один файл) */}
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-          imageSrcSet="/block-images/welcome-mobile-412.webp 412w, /block-images/welcome-mobile.webp 576w"
-          imageSizes="(max-width: 576px) 100vw, 576px"
           fetchPriority="high"
         />
       </head>

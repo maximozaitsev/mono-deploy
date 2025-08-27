@@ -31,7 +31,7 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
-      {/* MOBILE-FIRST: по умолчанию виден (чтобы не ждать CSS) */}
+      {/* MOBILE-FIRST: виден без ожидания CSS */}
       <figure
         className={styles.mobileFigure}
         aria-hidden
@@ -40,8 +40,6 @@ export default function WelcomeSection() {
         <img
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
-          srcSet="/block-images/welcome-mobile-412.webp 412w, /block-images/welcome-mobile.webp 576w"
-          sizes="(max-width: 576px) 100vw, 576px"
           alt="Welcome Mobile"
           width={576}
           height={315}
