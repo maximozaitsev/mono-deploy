@@ -10,68 +10,78 @@ import { Provider } from "@/types/provider";
 import fs from "node:fs/promises";
 import path from "node:path";
 
+/** Плейсхолдер для TopCasinos — предотвращает CLS */
 const TopCasinosSection = dynamic(
   () => import("@/components/top-casinos/TopCasinosSection"),
-  { ssr: true, loading: () => <div style={{ minHeight: 560 }} /> }
+  {
+    ssr: false,
+    loading: () => (
+      <section
+        id="top-casinos-section"
+        className="section container"
+        style={{ minHeight: 640 }}
+        aria-hidden
+      />
+    ),
+  }
 );
+
 const MobileSection = dynamic(
   () => import("@/components/mobile-version/MobileSection"),
-  { ssr: true, loading: () => <div style={{ minHeight: 420 }} /> }
+  { ssr: false, loading: () => null }
 );
 const TopGamesSection = dynamic(
   () => import("@/components/top-games/TopGamesSection"),
-  { ssr: true, loading: () => <div style={{ minHeight: 560 }} /> }
+  { ssr: false, loading: () => null }
 );
 const BonusDetailsSection = dynamic(
   () => import("@/components/bonus-details/BonusDetailsSection"),
-  { ssr: true, loading: () => <div style={{ minHeight: 420 }} /> }
+  { ssr: false, loading: () => null }
 );
 const AboutSection = dynamic(() => import("@/components/about/AboutSection"), {
-  ssr: true,
-  loading: () => <div style={{ minHeight: 560 }} />,
+  ssr: false,
+  loading: () => null,
 });
 const PaymentMethodsSection = dynamic(
   () => import("@/components/payment-methods/PaymentMethodSection"),
-  { ssr: true, loading: () => <div style={{ minHeight: 480 }} /> }
+  { ssr: false, loading: () => null }
 );
 const LicensesSection = dynamic(
   () => import("@/components/license/LicensesSection"),
-  { ssr: true, loading: () => <div style={{ minHeight: 320 }} /> }
+  { ssr: false, loading: () => null }
 );
 const ProvidersSection = dynamic(
   () => import("@/components/providers/ProvidersSection"),
-  { ssr: true, loading: () => <div style={{ minHeight: 560 }} /> }
+  { ssr: false, loading: () => null }
 );
 const AppSection = dynamic(() => import("@/components/mobile-app/AppSection"), {
-  ssr: true,
-  loading: () => <div style={{ minHeight: 420 }} />,
+  ssr: false,
+  loading: () => null,
 });
 const FAQSection = dynamic(() => import("@/components/faq/FAQSection"), {
-  ssr: true,
-  loading: () => <div style={{ minHeight: 560 }} />,
+  ssr: false,
+  loading: () => null,
 });
 const GamesToPlay = dynamic(
   () => import("@/components/games-to-play/GamesToPlay"),
-  { ssr: true, loading: () => <div style={{ minHeight: 420 }} /> }
+  { ssr: false, loading: () => null }
 );
 const SupportSection = dynamic(
   () => import("@/components/support/SupportSection"),
-  { ssr: true, loading: () => <div style={{ minHeight: 320 }} /> }
+  { ssr: false, loading: () => null }
 );
 const PromotionsSection = dynamic(
   () => import("@/components/promotion/PromotionsSection"),
-  { ssr: true, loading: () => <div style={{ minHeight: 560 }} /> }
+  { ssr: false, loading: () => null }
 );
 const AdvantageSection = dynamic(
   () => import("@/components/advantage/AdvantageSection"),
-  { ssr: true, loading: () => <div style={{ minHeight: 420 }} /> }
+  { ssr: false, loading: () => null }
 );
 const Footer = dynamic(() => import("@/components/footer/Footer"), {
-  ssr: true,
-  loading: () => <div style={{ minHeight: 280 }} />,
+  ssr: false,
+  loading: () => null,
 });
-
-export const revalidate = 180;
 
 export default async function LangPage({
   params,
@@ -120,7 +130,6 @@ export default async function LangPage({
       />
       <WelcomeSection />
       <H1Section />
-
       <TopCasinosSection />
       <BonusDetailsSection />
       <MobileSection />
