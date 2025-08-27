@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
+import "../styles/critical.scss";
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -11,6 +12,7 @@ import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 
 import * as fonts from "./fonts";
+import { getPerformanceMonitor } from "../utils/performance";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -106,6 +108,8 @@ async function readManifest(): Promise<{
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -197,26 +201,81 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
+        {/* DNS prefetch for external domains */}
+        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+        
+        {/* Preconnect for critical resources */}
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
           crossOrigin=""
         />
-        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+        
+        {/* Preload critical images */}
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
+          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
+          fetchPriority="high"
         />
+        
+        {/* Preload critical CSS */}
+        <link
+          rel="preload"
+          href="/_next/static/css/app/layout.css"
+          as="style"
+        />
+        
+        {/* Preload logo for better LCP */}
+        <link
+          rel="preload"
+          as="image"
+          href="/logo.svg"
+          fetchPriority="high"
+        />
+        
+        {/* Resource hints for better performance */}
+        <link rel="prefetch" href="/manifest.json" />
+        <link rel="prefetch" href="/content/languages.json" />
       </head>
-      <body className={fontVars}>{children}</body>
+      <body className={fontVars}>
+        {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Initialize performance monitoring
+              if (typeof window !== 'undefined') {
+                window.addEventListener('load', () => {
+                  setTimeout(() => {
+                    console.log('Performance monitoring initialized');
+                  }, 100);
+                });
+                
+                // Register service worker
+                if ('serviceWorker' in navigator) {
+                  window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/sw.js')
+                      .then((registration) => {
+                        console.log('SW registered: ', registration);
+                      })
+                      .catch((registrationError) => {
+                        console.log('SW registration failed: ', registrationError);
+                      });
+                  });
+                }
+              }
+            `,
+          }}
+        />
+      </body>
     </html>
   );
 }

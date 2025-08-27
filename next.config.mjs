@@ -28,11 +28,39 @@ const withPWA = nextPWA({
         urlPattern: new RegExp(`^${url}/_next/static/.*?/buildManifest\\.js$`),
         handler: "NetworkOnly",
       },
+      {
+        urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp)$/,
+        handler: "CacheFirst",
+        options: {
+          cacheName: "images",
+          expiration: {
+            maxEntries: 100,
+            maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+          },
+        },
+      },
+      {
+        urlPattern: /^https:\/\/api\.adkey-seo\.com\/.*/,
+        handler: "StaleWhileRevalidate",
+        options: {
+          cacheName: "api-cache",
+          expiration: {
+            maxEntries: 50,
+            maxAgeSeconds: 5 * 60, // 5 minutes
+          },
+        },
+      },
     ],
   },
 });
 
 const nextConfig = {
+  // Performance optimizations
+  compress: true,
+  poweredByHeader: false,
+  generateEtags: false,
+  
+  // Image optimization
   images: {
     remotePatterns: [
       {
@@ -44,7 +72,11 @@ const nextConfig = {
         hostname: url,
       },
     ],
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
   },
+  
+  // Headers for better caching and security
   headers: async () => {
     return [
       {
@@ -54,16 +86,108 @@ const nextConfig = {
             key: "Referrer-Policy",
             value: "no-referrer",
           },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            key: "X-Frame-Options",
+            value: "DENY",
+          },
+          {
+            key: "X-XSS-Protection",
+            value: "1; mode=block",
+          },
+        ],
+      },
+      {
+        source: "/_next/static/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/(.*\\.jpg)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/(.*\\.jpeg)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/(.*\\.png)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/(.*\\.gif)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/(.*\\.webp)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/(.*\\.svg)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/(.*\\.ico)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
         ],
       },
     ];
   },
+  
+  // Webpack optimizations
   webpack(config, options) {
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
+    
     return config;
+  },
+  
+  // Experimental features for better performance
+  experimental: {
+    optimizePackageImports: ['react', 'react-dom'],
   },
 };
 

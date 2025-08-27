@@ -16,7 +16,7 @@ export const roboto = localFont({
   ],
   variable: "--font-primary",
   display: "swap",
-  preload: true,
+  preload: true, // Keep primary font preloaded
   adjustFontFallback: false,
 });
 
@@ -30,7 +30,7 @@ export const mogra = localFont({
   ],
   variable: "--font-secondary",
   display: "swap",
-  preload: true,
+  preload: false, // Don't preload secondary font
   adjustFontFallback: false,
 });
 
@@ -44,6 +44,6 @@ export const monserrat = localFont({
   ],
   variable: "--font-third",
   display: "swap",
-  preload: true,
+  preload: false, // Don't preload tertiary font
   adjustFontFallback: false,
 });

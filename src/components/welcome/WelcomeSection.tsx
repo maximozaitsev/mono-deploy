@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
@@ -10,11 +10,18 @@ export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
   const [firstOfferId, setFirstOfferId] = useState<string>("");
   const [offerLink, setOfferLink] = useState<string>("");
+  const [isLoading, setIsLoading] = useState(true);
   const { t } = useStaticT();
+
+  // Memoize the button URL to prevent unnecessary re-renders
+  const buttonUrl = useMemo(() => {
+    return firstOfferId ? `/casino/${firstOfferId}` : offerLink;
+  }, [firstOfferId, offerLink]);
 
   useEffect(() => {
     const fetchWelcomeBonus = async () => {
       try {
+        setIsLoading(true);
         const offersData = await fetchOffers();
         const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
         setWelcomeBonus(bonus);
@@ -22,6 +29,8 @@ export default function WelcomeSection() {
         setOfferLink(offersData.offers[0]?.link || "");
       } catch (error) {
         console.error("Failed to fetch welcome bonus:", error);
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -41,6 +50,8 @@ export default function WelcomeSection() {
           loading="eager"
           decoding="async"
           fetchPriority="high"
+          width={768}
+          height={600}
         />
       </figure>
 
@@ -54,14 +65,17 @@ export default function WelcomeSection() {
               <h2 className={styles.bonusText}>
                 {t.exclusiveWelcomeOfferOf} {welcomeBonus}
               </h2>
-              {(firstOfferId || offerLink) && (
+              {(firstOfferId || offerLink) && !isLoading && (
                 <Button
                   text={t.claimBonus}
                   variant="primary"
                   useNavigation={true}
-                  url={firstOfferId ? `/casino/${firstOfferId}` : offerLink}
+                  url={buttonUrl}
                   openInNewTab
                 />
+              )}
+              {isLoading && (
+                <div className="h-12 bg-gray-200 animate-pulse rounded" />
               )}
             </div>
           </div>
