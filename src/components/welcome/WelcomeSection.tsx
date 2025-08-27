@@ -31,7 +31,12 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
-      <figure className={styles.mobileFigure} aria-hidden>
+      {/* MOBILE-FIRST: по умолчанию виден (чтобы не ждать CSS) */}
+      <figure
+        className={styles.mobileFigure}
+        aria-hidden
+        style={{ width: "min(100vw, 576px)", margin: "8px auto 0" }}
+      >
         <img
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
@@ -43,10 +48,11 @@ export default function WelcomeSection() {
           loading="eager"
           decoding="async"
           fetchPriority="high"
+          style={{ width: "100%", height: "auto" }}
         />
       </figure>
 
-      {/* Десктопный фон задаётся в CSS (на мобиле — отсутствует) */}
+      {/* Десктопный фон задаётся в CSS и не грузится на мобиле */}
       <div className={styles.welcomeBg}>
         <div className="container">
           <div className={styles.welcomeContent}>

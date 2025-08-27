@@ -12,19 +12,19 @@
   }
 }
 
-/* Десктоп: фон как «раньше», без cover */
+/* Десктопный фон как «раньше», без cover */
 .welcomeBg {
   display: flex;
   justify-content: center;
   width: 100%;
   max-width: 90rem;
   margin: 0 auto;
-  height: 540px;
+  height: 540px; /* фикс высота → нет CLS */
 
-  background-image: none; /* по умолчанию без фона */
+  background-image: none; /* базово без фона */
   background-repeat: no-repeat;
   background-position: right 160px center;
-  background-size: auto; /* критично: не растягиваем */
+  background-size: auto;
 
   @media (min-width: 769px) {
     background-image: url("/block-images/welcome.webp");
@@ -35,6 +35,7 @@
     background-size: 50% auto;
     background-position: right 20px center;
   }
+
   @media (max-width: 990px) and (min-width: 769px) {
     background-size: 45% auto;
     background-position: right 20px center;
@@ -55,19 +56,15 @@
   }
 }
 
-/* Мобильный контейнер: точная ширина и aspect → без «oversized image» */
+/* MOBILE-FIRST: по умолчанию показываем, на десктопе скрываем */
 .mobileFigure {
-  display: none;
-  margin: 0;
+  display: block;
+  margin: 8px auto 0 auto;
+  width: min(100vw, 576px);
+  aspect-ratio: 576 / 315;
 
-  @media (max-width: 768px) {
-    display: block;
-    /* адаптивно: до ширины экрана, но не больше исходных 576px */
-    width: min(100vw, 576px);
-    margin: 8px auto 0 auto;
-
-    /* резерв под высоту (576x315 ≈ 1.83) — без скачков макета */
-    aspect-ratio: 576 / 315;
+  @media (min-width: 769px) {
+    display: none;
   }
 }
 

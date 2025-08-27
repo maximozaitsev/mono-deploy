@@ -1,6 +1,9 @@
 // /src/app/layout.tsx
 import type { Metadata, Viewport } from "next";
 import "./globals.scss";
+// (при желании можно убрать эти 2 импорта, чтобы меньше css-чанков)
+// import "../styles/colors.scss";
+// import "../styles/variables.scss";
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -39,16 +42,18 @@ function extractMeta(obj: Record<string, any>): {
   ];
   let title = "";
   let description = "";
-  for (const k of titleKeys)
+  for (const k of titleKeys) {
     if (typeof obj[k] === "string" && obj[k].trim()) {
       title = obj[k].trim();
       break;
     }
-  for (const k of descKeys)
+  }
+  for (const k of descKeys) {
     if (typeof obj[k] === "string" && obj[k].trim()) {
       description = obj[k].trim();
       break;
     }
+  }
   return { title: title || "Title", description: description || "Description" };
 }
 
@@ -92,7 +97,10 @@ async function readManifest(): Promise<{
   });
 }
 
-export const viewport: Viewport = { width: "device-width", initialScale: 1 };
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
@@ -185,7 +193,7 @@ export default async function RootLayout({
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
 
-        {/* десктопный фон — только на десктопе */}
+        {/* Десктопный фон героя — только десктоп */}
         <link
           rel="preload"
           as="image"
@@ -193,7 +201,7 @@ export default async function RootLayout({
           media="(min-width: 769px)"
         />
 
-        {/* мобильный hero — preload только на мобиле, с camelCase атрибутами */}
+        {/* Мобильный hero — preload только на мобиле (camelCase атрибуты) */}
         <link
           rel="preload"
           as="image"
