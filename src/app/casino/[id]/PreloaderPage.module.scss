@@ -1,0 +1,14 @@
+.preloaderPage {
+  height: calc(100vh + 268px);
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.spinnerContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}

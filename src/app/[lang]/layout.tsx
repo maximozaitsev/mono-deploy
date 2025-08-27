@@ -6,6 +6,10 @@ import { headers } from "next/headers";
 import { getLocaleMeta } from "@/utils/localeMap";
 import { PROJECT_NAME } from "@/config/projectConfig";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const runtime = "nodejs";
+
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
   const h = headers();

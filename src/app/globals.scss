@@ -68,8 +68,9 @@ body {
   font-weight: $font-weight-bold;
   line-height: normal;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   word-break: break-word;
-  hyphens: auto;
 
   &.white {
     color: $text-color-primary;
@@ -93,8 +94,9 @@ body {
   font-weight: $font-weight-bold;
   line-height: normal;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   word-break: break-word;
-  hyphens: auto;
 
   @media (max-width: 768px) {
     font-size: 24px;
@@ -114,8 +116,9 @@ body {
   font-weight: $font-weight-bold;
   line-height: normal;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   word-break: break-word;
-  hyphens: auto;
 
   &.white {
     color: $text-color-primary;
