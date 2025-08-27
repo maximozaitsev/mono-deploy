@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://allslots-casino.net/
-Sitemap: https://allslots-casino.net/sitemap.xml
+Host: https://ozwin-casino-win.com/
+Sitemap: https://ozwin-casino-win.com/sitemap.xml

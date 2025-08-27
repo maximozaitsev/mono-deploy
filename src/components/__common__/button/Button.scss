@@ -4,7 +4,7 @@
 
 .button {
   cursor: pointer;
-  font-family: $font-secondary;
+  font-family: $font-third;
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-style: normal;
   font-weight: $font-weight-black;
@@ -73,9 +73,7 @@
     }
   }
 
-  @media (min-width: 769px) {
-    &:hover {
-      transform: scale(1.07);
-    }
+  &:hover {
+    transform: scale(1.07);
   }
 }
