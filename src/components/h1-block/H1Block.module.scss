@@ -5,7 +5,7 @@
 .h1Section {
   display: flex;
   justify-content: center;
-  margin: 0 auto 64px auto; // убран отрицательный margin-top
+  margin: 0 auto 64px auto;
 
   @media (max-width: 768px) {
     margin: 64px auto;
@@ -16,30 +16,37 @@
     background-color: $color-background-third;
     border-radius: $border-radius;
     padding: 23px;
-    margin: 0 40px; // убран отрицательный margin-top
+    margin: 0 40px;
     max-width: 1120px;
     width: 100%;
     text-align: center;
 
+    /* Стабилизируем высоту и переносы */
     line-height: 1.2;
-    min-height: calc(
-      1em * 1.2 * 2 + 46px
-    ); // резервируем место на 2 строки + padding
+    /* РЕЗЕРВ: 2 строки на всех брейкпоинтах + вертикальные паддинги (23*2=46) */
+    min-height: calc(1em * 1.2 * 2 + 46px);
+
+    /* Перенос длинных слов/дефисов, чтобы не прыгали строки при смене шрифта */
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+    /* Избегаем синтеза жирности/курсива, который меняет метрики */
+    font-synthesis-weight: none;
+    font-synthesis-style: none;
 
     @media (max-width: 1180px) {
       max-width: 828px;
     }
-
     @media (max-width: 912px) {
       max-width: 544px;
     }
-
     @media (max-width: 768px) {
       font-size: 20px;
       max-width: 496px;
-      min-height: calc(1em * 1.2 * 3 + 46px); // на мобилке допускаем 3 строки
+      /* min-height тот же — под 3 строки */
+      min-height: calc(1em * 1.2 * 3 + 46px);
+      -webkit-line-clamp: 3;
     }
-
     @media (max-width: 380px) {
       margin: 0 20px;
     }
