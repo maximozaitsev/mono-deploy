@@ -1,3 +1,4 @@
+// /src/app/page.tsx
 import Header from "../components/header/Header";
 import WelcomeSection from "../components/welcome/WelcomeSection";
 import H1Section from "../components/h1-block/H1Block";
@@ -12,19 +13,31 @@ import path from "node:path";
 
 const TopCasinosSection = dynamic(
   () => import("@/components/top-casinos/TopCasinosSection"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const MobileSection = dynamic(
   () => import("@/components/mobile-version/MobileSection"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const TopGamesSection = dynamic(
   () => import("@/components/top-games/TopGamesSection"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const BonusDetailsSection = dynamic(
   () => import("@/components/bonus-details/BonusDetailsSection"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const AboutSection = dynamic(() => import("@/components/about/AboutSection"), {
   ssr: false,
@@ -32,15 +45,24 @@ const AboutSection = dynamic(() => import("@/components/about/AboutSection"), {
 });
 const PaymentMethodsSection = dynamic(
   () => import("@/components/payment-methods/PaymentMethodSection"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const LicensesSection = dynamic(
   () => import("@/components/license/LicensesSection"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const ProvidersSection = dynamic(
   () => import("@/components/providers/ProvidersSection"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const AppSection = dynamic(() => import("@/components/mobile-app/AppSection"), {
   ssr: false,
@@ -52,19 +74,31 @@ const FAQSection = dynamic(() => import("@/components/faq/FAQSection"), {
 });
 const GamesToPlay = dynamic(
   () => import("@/components/games-to-play/GamesToPlay"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const SupportSection = dynamic(
   () => import("@/components/support/SupportSection"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const PromotionsSection = dynamic(
   () => import("@/components/promotion/PromotionsSection"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const AdvantageSection = dynamic(
   () => import("@/components/advantage/AdvantageSection"),
-  { ssr: false, loading: () => null }
+  {
+    ssr: false,
+    loading: () => null,
+  }
 );
 const Footer = dynamic(() => import("@/components/footer/Footer"), {
   ssr: false,

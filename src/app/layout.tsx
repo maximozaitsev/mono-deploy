@@ -101,10 +101,7 @@ async function readManifest(): Promise<{
   });
 }
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
+export const viewport: Viewport = { width: "device-width", initialScale: 1 };
 
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
@@ -185,11 +182,6 @@ export default async function RootLayout({
           media="(max-width: 768px)"
           fetchPriority="high"
         />
-
-        {/*
-          Важно: не добавляем второй preload на /block-images/welcome-mobile.webp
-          и НЕ используем `priority` у <Image> в секции — чтобы не дублировать прелоад.
-        */}
       </head>
       <body className={fontVars}>{children}</body>
     </html>
