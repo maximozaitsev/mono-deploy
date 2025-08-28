@@ -2,27 +2,40 @@
 @import "../../styles/variables.scss";
 
 .welcomeSection {
-  background: #171717;
-  margin-bottom: 140px;
   width: 100%;
+  margin-bottom: 140px;
+  background: #171717;
+
+  @media (max-width: 1120px) {
+    margin-bottom: 64px;
+  }
 
   @media (max-width: 768px) {
     margin-bottom: 62px;
-    gap: 20px;
+  }
+
+  @media (max-width: 420px) {
+    margin-bottom: 72px;
   }
 }
+
+/* --- Desktop background image block --- */
 
 .welcomeBg {
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+
+  /* крупный фон для десктопа */
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
   background-position: right 160px center;
-  max-width: 90rem;
-  margin: 0 auto;
+  background-size: auto;
   height: 540px;
 
+  /* container внутри секции */
   & :global(.container) {
     display: flex;
     flex-direction: column;
@@ -41,13 +54,14 @@
 
   @media (max-width: 768px) {
     height: auto;
-    justify-content: flex-end;
     background-image: none;
     background-size: auto;
     background-position: initial;
     margin: 0 auto 24px auto;
   }
 }
+
+/* --- Mobile image (LCP on small screens) --- */
 
 .mobileFigure {
   display: none;
@@ -66,23 +80,25 @@
   max-width: 542px;
   height: auto;
   margin-top: 9px;
+
+  @media (max-width: 380px) {
+    max-width: 100%;
+  }
 }
 
+/* --- Content block --- */
+
 .welcomeContent {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
   position: relative;
   z-index: 1;
   max-width: 72.5rem;
-
-  @media (max-width: 768px) {
-    button {
-      align-self: center;
-      max-height: 77px;
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  content-visibility: auto;
 }
+
+/* --- Text + CTA (one heading only) --- */
 
 .welcomeText {
   display: flex;
@@ -91,11 +107,6 @@
   gap: 48px;
   width: 410px;
   max-width: 50%;
-  // margin-left: -20px;
-
-  .bonusText {
-    display: none;
-  }
 
   @media (max-width: 1280px) {
     margin-left: 0;
@@ -108,11 +119,9 @@
     align-items: center;
     text-align: center;
 
-    .bonusText {
-      display: block;
-    }
-    .offerText {
-      display: none;
+    button {
+      align-self: center;
+      max-height: 77px;
     }
   }
 
@@ -129,16 +138,10 @@
   font-weight: $font-weight-black;
   line-height: normal;
   text-transform: uppercase;
+  word-break: break-word;
 
   @media (max-width: 768px) {
     font-size: 24px;
-    font-weight: $font-weight-black;
-    // color: $text-color-welcome;
-
-    // background: $text-color-welcome;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
   }
 
   @media (max-width: 380px) {
