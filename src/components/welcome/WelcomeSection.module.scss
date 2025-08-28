@@ -2,7 +2,7 @@
 @import "../../styles/variables.scss";
 
 .welcomeSection {
-  background: #021d14;
+  background: #171717;
   margin-bottom: 140px;
   width: 100%;
 
@@ -63,8 +63,9 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 576px;
+  max-width: 542px;
   height: auto;
+  margin-top: 9px;
 }
 
 .welcomeContent {

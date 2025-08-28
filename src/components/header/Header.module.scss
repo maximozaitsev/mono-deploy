@@ -16,7 +16,7 @@
   @media (max-width: 768px) {
     height: 96px;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 420px) {
     padding: 5px 10px;
     height: 64px;
   }
@@ -41,7 +41,7 @@
 
   .headerButton {
     height: $header-button-height;
-    font-family: var(--font-third);
+    font-family: var(--font-secondary);
     font-weight: $font-weight-black;
     font-size: 14px;
     padding: 12px 4px;
@@ -54,6 +54,10 @@
       background: $color-button-small;
       width: $header-button-large-small;
       color: $text-color-button-small;
+
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: #edb52b;
     }
 
     &.signup {
@@ -101,7 +105,7 @@
     }
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 420px) {
     .headerButton {
       &.signup {
         width: auto;

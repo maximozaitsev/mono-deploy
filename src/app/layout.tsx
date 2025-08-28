@@ -3,20 +3,13 @@ import type { Metadata, Viewport } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
-import "../styles/critical.scss";
 
 import fs from "node:fs/promises";
 import path from "node:path";
 import { headers, cookies } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
-
 import * as fonts from "./fonts";
-import { getPerformanceMonitor } from "../utils/performance";
-
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
-export const runtime = "nodejs";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -108,8 +101,6 @@ async function readManifest(): Promise<{
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 5,
-  userScalable: true,
 };
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -181,7 +172,6 @@ export async function generateMetadata(): Promise<Metadata> {
         { url: "/icons/ico-120.png", sizes: "120x120" },
         { url: "/icons/ico-144.png", sizes: "144x144" },
         { url: "/icons/ico-152.png", sizes: "152x152" },
-        { url: "/icons/ico-180.png", sizes: "180x180" },
       ],
     },
   };
@@ -201,104 +191,26 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
-        {/* DNS prefetch for external domains */}
-        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
-        
-        {/* Preconnect for critical resources */}
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
           crossOrigin=""
         />
-        
-        {/* Preload critical images */}
+        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
-          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-          fetchPriority="high"
         />
-        
-        {/* Preload critical CSS */}
-        <link
-          rel="preload"
-          href="/_next/static/css/app/layout.css"
-          as="style"
-        />
-        
-        {/* Preload logo for better LCP */}
-        <link
-          rel="preload"
-          as="image"
-          href="/logo.svg"
-          fetchPriority="high"
-        />
-        
-        {/* Resource hints for better performance */}
-        <link rel="prefetch" href="/manifest.json" />
-        <link rel="prefetch" href="/content/languages.json" />
-        
-        {/* Preload critical fonts */}
-        <link
-          rel="preload"
-          href="/fonts/Roboto/Roboto-500.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
-        
-        {/* Preload critical JavaScript */}
-        <link
-          rel="modulepreload"
-          href="/_next/static/chunks/webpack.js"
-          as="script"
-        />
-        
-        {/* HTTP/2 Server Push hints */}
-        <link rel="preload" href="/_next/static/chunks/main.js" as="script" />
-        <link rel="preload" href="/_next/static/chunks/pages/_app.js" as="script" />
-        
-        {/* Preload API endpoints */}
-        <link rel="prefetch" href="https://api.adkey-seo.com/api/website/get-website" />
       </head>
-      <body className={fontVars}>
-        {children}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Initialize performance monitoring
-              if (typeof window !== 'undefined') {
-                window.addEventListener('load', () => {
-                  setTimeout(() => {
-                    console.log('Performance monitoring initialized');
-                  }, 100);
-                });
-                
-                // Register service worker
-                if ('serviceWorker' in navigator) {
-                  window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/sw.js')
-                      .then((registration) => {
-                        console.log('SW registered: ', registration);
-                      })
-                      .catch((registrationError) => {
-                        console.log('SW registration failed: ', registrationError);
-                      });
-                  });
-                }
-              }
-            `,
-          }}
-        />
-      </body>
+      <body className={fontVars}>{children}</body>
     </html>
   );
 }

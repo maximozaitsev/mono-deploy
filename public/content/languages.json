@@ -1,11 +1,8 @@
 {
   "languages": [
     "au",
-    "ca",
-    "nl",
-    "nz",
-    "us",
-    "es"
+    "fr",
+    "us"
   ],
   "defaultLang": "au"
 }

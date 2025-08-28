@@ -1,71 +1,92 @@
 {
-  "meta-title": "Ozwin Casino USA – Secure Online Gaming and Big Bonuses Today",
-  "meta-description": "Ozwin Casino USA delivers top-tier slots, table games, and jackpots with safe banking and fast payouts. Sign up today to claim exclusive bonuses and start playing instantly!",
-  "title": "Ozwin Casino USA – Play, Win, and Experience Premium Online Gaming",
+  "meta-title": "Olympia Casino USA – Top Games, Secure Payments and Fast Play",
+  "meta-description": "Olympia Casino US delivers premium slots, live tables, and fast, secure payments for local players. Sign up today and start playing with top bonuses and 24/7 support!",
+  "title": "Olympia Casino USA – Experience Elite Gaming, Fast Payouts, and Big Wins",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "200% deposit match",
-        "25%–50% payback",
-        "130% bonus and 30 free spins"
+        "100% match bonus",
+        "75 free spins",
+        "special 120% deposit bonus"
       ]
     },
     {
       "type": "paragraph",
-      "text": "Ozwin Casino is a sophisticated online casino for safe and fun gambling. Classic slots, video slots, table games, and live dealers are licensed and regulated for fair play. It provides many payment methods, appealing rewards, and excellent customer service to new and experienced players for a seamless and enjoyable playing experience."
+      "text": "Olympia Casino is a sophisticated online gaming site that offers a lot of different casino games in a safe and legal setting. It has a number of games, such traditional and video slots, live dealer tables, and new releases from top software companies. Easy to use and fast loading are its other qualities. The platform emphasizes ethical gambling, fair play, and strict data privacy. This ensures user safety and clarity. Olympia Casino is a great place for both novice and seasoned gamers since it has numerous payment choices, works on mobile devices, and offers help 24 hours a day."
     }
   ],
   "about": {
-    "Ozwin Casino Registration Process": [
+    "Olympia Casino Registration Process": [
       {
         "type": "paragraph",
-        "text": "Starting at Ozwin Casino is easy. Create your account and start playing with these simple steps."
+        "text": "Olympia Casino has an easy signup process. The sign-up procedure takes minutes, so users may start playing games and promotions right away."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Steps to Register:"
+        "text": "Registration Steps:"
       },
       {
         "type": "list",
         "style": "unordered",
         "items": [
-          "Visit the official Ozwin Casino website",
+          "Visit the Olympia Casino website",
           "Click on the “Sign Up” button",
           "Enter your personal details",
-          "Set a username and password",
-          "Agree to the terms and conditions",
+          "Create a username and password",
           "Confirm your email address",
-          "Log in and start playing"
+          "Agree to the terms and conditions",
+          "Complete the registration"
         ]
       }
     ],
-    "About Ozwin Casino Login": [
+    "About Olympia Casino Login": [
       {
         "type": "paragraph",
-        "text": "Simple and secure Ozwin Casino account access. Players log in by providing their email address and password on the official website. Data is protected on the platform, keeping users safe. Logged-in gamers may rapidly access their dashboard to browse games, modify account settings, claim bonuses, and deposit or withdraw without delays."
+        "text": "Olympia Casino login is simple and secure, so players can quickly access their accounts and favorite games. Log in to the official website using the top login box. Enter your email and password to log in, then click \"Confirm.\" The platform uses robust encryption and fast password recovery to ensure a seamless and secure login experience."
       }
     ],
     "Deposit Methods": [
       {
         "type": "paragraph",
-        "text": "Ozwin Casino offers many safe, fee-free deposit alternatives for Australian players. These include Visa and MasterCard credit/debit cards, which need $20 and credit the gaming account immediately. Prepaid solutions like Neosurf offer $10 deposits for privacy and convenience. Digital and voucher-based techniques enhance options: CashtoCode eVouchers start at $25, and eZeeWallet receives deposits from $10 and is quick. Bitcoin, Litecoin, and Bitcoin Cash are accepted with a minimum deposit of $25 and quick account credit."
+        "text": "Olympia Casino supports a solid range of convenient and fee-free deposit options, including Credit Card (Visa/MasterCard), Siru Mobile, CashtoCode, Piastrix, NeoSurf, EcoPayZ, MuchBetter, SticPay, MiFinity, AstroPay, Jeton, eZeeWallet, and Coinspaid (for cryptocurrencies such as BTC, BCH, ETH, DOG, LTC, USDT). All of these methods process instantly. Minimum deposit thresholds vary depending on the method—typically starting at:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "EUR 20 for cards and most e-wallets,",
+          "EUR 5 for Siru Mobile,",
+          "cryptocurrency deposits through Coinspaid start at the equivalent of 0.0002 BTC (or similar depending on the coin)"
+        ]
       }
     ],
     "Withdrawal Methods": [
       {
         "type": "paragraph",
-        "text": "If you want to pay out, Ozwin Casino has reliable choices with defined thresholds. The minimum withdrawal amount is $100, and bank transfers take up to 15 days and cost $50. Bitcoin withdrawals take two business days, need $100, have no fees, and provide immediate credit. eZeeWallet allows rapid, free digital wallet withdrawals. Like Bitcoin, withdrawals need $100, take two business days, and credit the eZeeWallet account immediately."
+        "text": "Many withdrawal options are immediate or within minutes. Credit Card, Bank Transfer, MuchBetter, Piastrix, EcoPayZ, MiFinity, Jeton, and Coinspaid handle BTC, BCH, ETH, DOG, LTC, and USDT withdrawals. The minimum withdrawal amount is usually:"
+      },
+      {
+        "type": "list",
+        "style": "unordered",
+        "items": [
+          "EUR 10 for e-wallets and Coinspaid crypto options,",
+          "EUR 200 for Bank Transfer,"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "while upper limits vary by currency and method. The platform processes withdrawals within 12 hours, however external circumstances may delay them."
       }
     ]
   },
   "advantages": {
-    "Ozwin Casino Advantages": [
+    "Olympia Сasino Advantages": [
       {
         "type": "paragraph",
-        "text": "Ozwin Casino offers a range of features that make it appealing to many players, though there are also a few areas that may not suit everyone."
+        "text": "Olympia Casino has several features that improve online gambling. Its key pros and cons are:"
       },
       {
         "type": "heading",
@@ -76,12 +97,13 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "Licensed and secure platform",
-          "Wide selection of slots and table games",
+          "Wide variety of casino games",
           "User-friendly interface",
-          "Attractive welcome bonuses and promotions",
-          "Multiple payment options, including crypto",
-          "24/7 customer support"
+          "Mobile-friendly platform",
+          "Fast deposits and withdrawals",
+          "Secure and licensed environment",
+          "24/7 customer support",
+          "Regular promotions and bonuses"
         ]
       },
       {
@@ -93,152 +115,143 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "Limited live dealer game options",
-          "Restricted in some countries",
-          "No dedicated mobile app"
+          "Limited country availability",
+          "Some payment methods not supported",
+          "Wagering requirements on bonuses"
         ]
       }
     ]
   },
   "games-to-play": {
-    "Games Available to Play at Ozwin Casino": [
+    "Games Available to Play at Olympia Casino": [
       {
         "type": "paragraph",
-        "text": "From immersive slots and slots to strategic table games and more, Ozwin Casino offers a diverse and dynamic game library with over 250 titles."
+        "text": "Olympia Casino has a huge selection of games to choose from, including live-dealer games, exciting jackpot slots, and classic table games. You don't have to download any extra software to use the platform on both desktop and mobile browsers."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "slots"
+        "text": "Live Casino"
       },
       {
         "type": "paragraph",
-        "text": "Ozwin Casino offers a diverse collection of slots and slots for all gamers. The platform has classic three-reel games and current five- and six-reel slots with amazing graphics and fun bonus features. Popular games include Cash Bandits 3, Fortunate Buddha, Plentiful Treasure, and Sweet 16 Blast. These games include different themes, unique mechanisms, and seamless gameplay, making them appropriate for casual and high rollers searching for a fun and exciting gaming session."
+        "text": "Olympia Casino's live casino is totally immersive and open 24/7 to satisfy players. Leading gaming studios broadcast in HD for seamless performance and amazing graphics. Crazy Time, Monopoly Live, Immersive Roulette, Casino Hold'em, Dream Catcher, and Lightning Blackjack are featured by professional dealers in a lively casino atmosphere. The live segment is great for novices trying live games and experienced players seeking high-stakes action because to its diversity."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Table Games"
+        "text": "Roulette"
       },
       {
         "type": "paragraph",
-        "text": "Ozwin Casino offers several traditional table games. The portal offers European Blackjack, Perfect Pairs, Pontoon, baccarat, and roulette in European and American variants. Pai Gow Poker, Caribbean Stud, and Three Card Rummy combine strategy and chance. The user-friendly interface makes games smooth, and betting limits are adaptable for novices and experts."
+        "text": "Olympia Casino's roulette is a classic game with several versions to suit various players. Live dealer and RNG versions of European, American, and French roulette are available. Fast and intuitive gaming with sharp visuals and responsive mechanics for every spin is made possible by the smooth interface and dependable software. The diversity of tables guarantees that everyone may find a suitable roulette game, whether they favor conventional or fast-paced."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Video Poker"
+        "text": "Slots"
       },
       {
         "type": "paragraph",
-        "text": "Ozwin Casino's video poker combines slot simplicity and poker strategy, making it a popular pick. The collection comprises Jacks or Better, Deuces Wild, Aces and Eights, Bonus Poker, and Double Jackpot Poker. Players can choose their participation level with single-hand and multi-hand options. Video poker's strategic aspect allows poker players to apply their talents and increase their odds."
+        "text": "Olympia Casino is known for its big and diversified slot assortment. The library include traditional, video, and themed slots with bright visuals and fun bonuses. Aloha King Elvis, Big Wild Buffalo, Savage Buffalo, Egypt Fire, Warrior's Luck, and Elvis Grog are known for their unique features and high-quality gameplay. Demo versions of many slots let players practice before playing for real. slots also contribute 100% to bonus wagering requirements, making them ideal for promotion clearance."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Specialty Games"
+        "text": "Table Games (RNG)"
       },
       {
         "type": "paragraph",
-        "text": "For those wanting diversity, Ozwin Casino offers specialist games. Keno, bingo, scratch cards, and arcade games offer fast-paced, simple amusement. Players wishing to relax from slots or table games while still winning might try these games. Simple principles and rapid gameplay make them perfect for informal sessions between more sophisticated games."
+        "text": "For those who like traditional casino games without live dealers, Olympia Casino has several RNG table games. Play traditional Baccarat, Blackjack, Roulette, Burn Blackjack, and Baccarat Pro. For seamless play and fair results, Play'n GO, BGaming, and BetSoft power these games using validated random number generators. Table games are wonderful for strategic play and home casino fun, but they only count 5% toward bonus wagering."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Progressive Jackpot slots"
+        "text": "Jackpot (Progressive slots)"
       },
       {
         "type": "paragraph",
-        "text": "Progressive jackpot slots at Ozwin Casino are a standout for big-win seekers. Prize pools may increase to life-changing amounts in these games. Aztec's Millions, Shopping Spree II, Megasaur, Spirit of the Inca, and Jackpot Cleopatra's Gold are popular jackpot games. Each spin raises the jackpot until one player wins, adding tension to each round. Progressive slots are popular with high-stakes gamers due of their volatility and possible prizes."
+        "text": "Olympia Casino includes a jackpot area for life-changing prizes. Might of Zeus, Jackpot Raiders, Fairie Spells, Charms and Clovers, and Dragon King are among the popular progressive jackpot games in this collection. Jackpot slots are usually only playable for real money and do not contribute to bonus wagering. This Olympia Casino segment is one of the most fascinating because to its excitement, high jackpots, and superb gaming mechanics."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Ozwin Casino Bonuses and Promotions": [
+    "Olympia Casino Bonuses and Promotions": [
       {
         "type": "paragraph",
-        "text": "Ozwin Casino provides several promotions for new and existing players. These offerings include significant welcome bonuses, interesting tournaments, referral incentives, weekly benefits, cashback choices, and game-specific promos to improve the player experience in Australian dollars."
+        "text": "Olympia Casino provides new players a Welcome Bonus Package with many levels, as well as a selection of dynamic reload offers, special incentives, and a VIP program that rewards players. Each promotion has clear phrases and real numbers, which makes it easy to understand and flexible enough to work with various playing styles."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Buddha’s Blessings"
+        "text": "First Deposit Bonus"
       },
       {
         "type": "paragraph",
-        "text": "The Ozwin Casino “Tourneys” area has one of the most intriguing slot tournaments, Buddha's Blessings. It gives slot players a chance to compete for big prizes. The basic advertising site doesn't contain anything, however this event usually has a shared prize pool where participants compete for the top game scores. Since each spin contributes toward your ultimate ranking, the tournament concept adds excitement. Prize payouts are usually large, making it suitable to both casual players looking for fun and big rollers who like leaderboard competition."
+        "text": "Olympia Casino offers new players a 100% match bonus up to $10,000 and 75 free spins on selected slots. This first deposit bonus gives novices a solid start, whether they play slots or table games. You must deposit $30 to activate the deal. After depositing, bonus monies and free spins are credited immediately for play. This first tier of the welcome package lays the framework for future incentives, allowing users to maximize their gameplay potential immediately."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Invite a Friend"
+        "text": "Second Deposit Bonus"
       },
       {
         "type": "paragraph",
-        "text": "Ozwin Casino's Invite a Friend campaign rewards sharing your gaming experience. Players may invite friends from the main menu by clicking ‘Refer a Friend’. The original player earns a $50 bonus when a referred friend registers and deposits at least $20. This bonus may be utilized on slots and table games across the platform. No restriction on friends invited makes this campaign intriguing because of the endless earning possibilities. It's easy to make extra playing money while exposing others to the platform's features and pleasure."
+        "text": "Olympia Casino's second deposit bonus adds 75% up to $6,000 and 150 free spins to the initial experience. Players must use the TWO promo code and deposit at least $40 to receive this incentive. This bonus boosts the first deposit and gives you many spins on popular slots. This second-tier bonus keeps players motivated to play and win with clear rules and speedy crediting."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Regal Reels"
+        "text": "Third Deposit Bonus"
       },
       {
         "type": "paragraph",
-        "text": "Regal Reels celebrates Ozwin Casino's new game launches. Players receive unique promotional offers in their mailbox when new titles are introduced. These deals usually include free spins or matching deposit bonuses for the new game, offering gamers a chance to test something new without risk. Regal Reels keeps gaming interesting by promoting discovery of new titles. Regular players may test new games with extra value to stay ahead of the curve, making every release seem special."
+        "text": "Olympia Casino offers a huge 100% match bonus up to $5,000 and 300 free spins for the third deposit. The THREE promo code and $50 deposit are required to activate the promotion. This bundle rewards users who stay on the platform. Players can increase their earnings by playing a variety of games with bonus dollars and free spins, from high-RTP slots to table games."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Welcome Bonus #1"
+        "text": "Fourth Deposit Bonus"
       },
       {
         "type": "paragraph",
-        "text": "New depositors at Ozwin Casino receive a hefty Welcome Bonus #1. This bundle includes 50 Bubble Bubble 2 free spins and a 200% deposit match up to $2,000. First deposits of $500 increase the playing sum to $1,500 and include free spins. Newcomers to the site will love this offer since it combines large bonus dollars with spins on a popular slot with interesting features and profitable mechanics. Clear conditions and quick activation set a good casino start."
+        "text": "A 100% bonus up to $10,000 and 75 free spins on the fourth deposit complete the welcome package. Players that complete the full welcome sequence receive significant value in this last tier, completing one of the most comprehensive beginning packages. By now, players can use Olympia Casino's stable and user-friendly platform with a larger bankroll and lots of spins to test new or favorite games."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Welcome Bonus #2"
+        "text": "Live Casino Reload Bonus (Promo Code: LIVE)"
       },
       {
         "type": "paragraph",
-        "text": "The Welcome Bonus #2 is similar to the first but designed for Cash Bandits 2 enthusiasts. This deal includes 50 slot free spins and a 200% deposit match up to $2,000. New players may get up to $4,000 in matched cash and 100 free spins across two top games with the initial bonus. This dual-offer structure gives players diversity and value straight away, giving it a hefty welcome package compared to other online casinos."
+        "text": "Live casino fans get a 100% reload bonus up to $1,000 at Olympia Casino for live dealer games. Players who appreciate real-time games like blackjack, baccarat, and roulette will love this $25 minimum deposit deal. The incentive allows live-action table fans to extend their sessions and place more strategic wagers on high-quality, professionally presented games."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "OzDeal: 3 for 2"
+        "text": "Weekly Reload Offers"
       },
       {
         "type": "paragraph",
-        "text": "Regular Friday promotions like OzDeal: 3 for 2 boost weekly deposits. This deal gives gamers three bonus packages for two deposits, providing them an extra boost without cost. This bargain arrives in players' inboxes every Friday and maximizes gaming before the weekend. It appeals to frequent players who like to maintain their balance up to play the platform's many slots, table games, and speciality games."
+        "text": "Olympia Casino thrills loyal players with weekly reload promotions. With the offer code MONDAY, a $30 deposit gets up to 50 free spins on Mondays, perfect for starting the week. Players may try popular slots for free on Wednesdays with 15 no-deposit free spins. With the FRIDAY promo code, deposits from $20 receive a 25% bonus up to $100, giving you extra funds for the weekend. Weekly promotions give loyal gamers great rewards and extra playing time."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "A Sunday Kind of Win"
+        "text": "High-Roller Bonus (Promo Code: HIGHROLLER)"
       },
       {
         "type": "paragraph",
-        "text": "A Sunday Kind of Win is an Ozwin Casino exclusive on Sundays. Active casino players receive a free bonus every Sunday by email. Regardless of size or nature, bonuses are a pleasant way to start the week. Free spins, deposit matches, and surprise payouts are used to keep active players motivated. Rewarding loyalty and making Sundays the highlight of the gaming week is simple but effective."
+        "text": "Heavy bettors get a 100% match up to $10,000 with the High-Roller Bonus. High-stakes gamers can get this deal with a $125 deposit. This offer appeals to experienced players seeking more thrills and profits in premium games with no cashout limits. High-rollers can play their favorite games with a boost because the bonus is processed promptly."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Cash Boomerang"
+        "text": "Special Bonuses"
       },
       {
         "type": "paragraph",
-        "text": "The Cash Boomerang campaign provides cashback to reduce losses. According to current gaming and deposit behavior, players might get 25%–50% payback on net losses. Players must contact Ozwin's live chat support to activate the cashback, which is done immediately. This offer provides a financial buffer for bad luck, making it one of the site's most player-friendly features. It gives gamers a sense of security by allowing them to recover a large amount of lost money."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "slot of the Month – Koality Game (August)"
-      },
-      {
-        "type": "paragraph",
-        "text": "Koality Game is Ozwin Casino's August slot of the Month. This slot offers a daily 130% bonus and 30 free spins, making it appealing for frequent play. This daily reward system guarantees active players profit while playing one of the platform's most popular and engaging games. Ozwin highlights a title each month to keep gaming fresh and encourage users to discover new or featured content while enjoying increased incentives and winning potential."
+        "text": "Olympia Casino also offers action-based bonuses. Players can deposit $50 and spin for random cash or 655 free spins with the promo code WHEEL in the Spin-the-Wheel offer. Players may enjoy flawless gameplay on the go by using the mobile app with the promo code READY and receiving 10 free spins. A special 120% deposit bonus and 30 free spins are provided to Telegram followers of the casino, delivering exclusive prizes and greater platform participation. The promo code BISON activates the Buffalo Hunt Bonus, giving players 300 free spins on the Buffalo Hunt slot, making it a popular choice for feature-rich, high-payout games."
       }
     ]
   },
@@ -246,7 +259,7 @@
     "Support": [
       {
         "type": "paragraph",
-        "text": "Customer help is available 24/7 by live chat, email, and scheduled callback. Email responses take 24–48 hours, but live chat replies immediately. The site has a large FAQ area for deposits, withdrawals, games, and promotions."
+        "text": "You may get help from Olympia Casino 24 hours a day, 7 days a week using Live Chat, Email (support@olympia.casino), and Telegram (@OlympiaCasinoSupport_bot). Depending on availability, some areas may also have WhatsApp support (for example, +380683053137)."
       }
     ]
   },
@@ -255,47 +268,38 @@
       {
         "type": "heading",
         "level": 3,
-        "text": "Can I play games for free without registering?"
+        "text": "How quickly are withdrawals processed?"
       },
       {
         "type": "paragraph",
-        "text": "Yes, demo versions are available. On desktop, you can play without an account; on mobile, use “Practice Mode” after creating a free account."
+        "text": "Olympia Casino processes most withdrawals within 12 hours, with some methods completing in 1-7 hours or instantly."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "What is the maximum bet allowed when using a bonus?"
+        "text": "Are there withdrawal caps for progressive jackpot wins?"
       },
       {
         "type": "paragraph",
-        "text": "When wagering bonus funds, the maximum bet is capped at $10 unless otherwise specified."
+        "text": "Yes—progressive jackpot wins are subject to withdrawal limits, even for large payouts."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "How many casino accounts am I allowed to have?"
+        "text": "Is there fairness and RNG reliability?"
       },
       {
         "type": "paragraph",
-        "text": "Each player is permitted one legal account only at Ozwin Casino."
+        "text": "All games have verified RNGs and are audited for fairness."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Can I cancel or reverse a withdrawal request?"
+        "text": "What languages does customer support chat support?"
       },
       {
         "type": "paragraph",
-        "text": "Yes, if your withdrawal is still marked “pending,” you can cancel or modify it via the Cashier section."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "What do I do if my deposit hasn’t appeared?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Log out and back in; allow up to 10 minutes for processing. If still unresolved, contact customer support."
+        "text": "Live chat support is available in English, Portuguese, and Spanish for convenient assistance."
       }
     ]
   },
@@ -303,31 +307,31 @@
     "Software Technologies": [
       {
         "type": "paragraph",
-        "text": "Ozwin Casino uses only RealTime Gaming (RTG) games, a trusted source. The RTG software powers slots, table games, video poker, speciality games, and progressive jackpots. A strong, fair RNG powers all products."
+        "text": "Olympia Casino has games from over 60 software companies, including big brands like Evolution Gaming, NetEnt, Pragmatic Play, Booming Games, Yggdrasil, Play'n Go, Ezugi, and BGaming. These companies offer live, RNG, and jackpot games."
       }
     ],
     "Security": [
       {
         "type": "paragraph",
-        "text": "To protect player data and financial activities, the site uses SSL encryption methods like large banks. Its Curacao Gaming Commission operating license ensures compliance with casino regulations. Additional fairness is maintained by independent audits and stated RTP rates of 96.6%."
+        "text": "The site has a Curacao e-Gaming license and employs 128-bit SSL encryption for transactions. All games use confirmed RNGs and are regularly fairness-checked."
       }
     ],
     "Casino App": [
       {
         "type": "paragraph",
-        "text": "Ozwin does not have a download, but its site is suited for Android, iOS, and desktop browsers via instant-play. Australian gamers can install the mobile version as a shortcut or PWA (Progressive Web App) for faster access and better performance on smartphones."
+        "text": "There is no native mobile or desktop app for Olympia Casino. Instead, users can install a Progressive Web App (PWA) from their browser on both iOS and Android devices. This lets them utilize the app without having to download it. The mobile experience is completely based on the browser and works best on mobile devices."
       }
     ],
     "Languages": [
       {
         "type": "paragraph",
-        "text": "Games, banking, support, and navigation are all in English. No other languages are available for localization."
+        "text": "The interface works with at least four languages, but the exact list isn't clear. Some sources say that multilingual support is possible, and four languages are known to be available."
       }
     ],
     "Currencies": [
       {
         "type": "paragraph",
-        "text": "Ozwin offers AUD and USD deposits and withdrawals. These currencies allow Australian gamers to transact across banking channels, including crypto."
+        "text": "Players can utilize USD, CAD, AUD, EUR, NZD, PLN, BRL, and NOK."
       }
     ]
   }

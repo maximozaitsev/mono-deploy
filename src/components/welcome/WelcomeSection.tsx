@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState, useMemo, useRef } from "react";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
@@ -11,39 +10,11 @@ export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
   const [firstOfferId, setFirstOfferId] = useState<string>("");
   const [offerLink, setOfferLink] = useState<string>("");
-  const [isLoading, setIsLoading] = useState(true);
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
   const { t } = useStaticT();
-
-  // Memoize the button URL to prevent unnecessary re-renders
-  const buttonUrl = useMemo(() => {
-    return firstOfferId ? `/casino/${firstOfferId}` : offerLink;
-  }, [firstOfferId, offerLink]);
-
-  // Intersection Observer for performance optimization
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     const fetchWelcomeBonus = async () => {
       try {
-        setIsLoading(true);
         const offersData = await fetchOffers();
         const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
         setWelcomeBonus(bonus);
@@ -51,8 +22,6 @@ export default function WelcomeSection() {
         setOfferLink(offersData.offers[0]?.link || "");
       } catch (error) {
         console.error("Failed to fetch welcome bonus:", error);
-      } finally {
-        setIsLoading(false);
       }
     };
 
@@ -61,24 +30,18 @@ export default function WelcomeSection() {
 
   return (
     <section
-      ref={sectionRef}
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
       <figure className={styles.mobileFigure} aria-hidden>
-        {isVisible && (
-          <Image
-            className={styles.mobileImage}
-            src="/block-images/welcome-mobile.webp"
-            alt="Welcome Mobile"
-            fill
-            priority
-            sizes="100vw"
-            quality={85}
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-          />
-        )}
+        <img
+          className={styles.mobileImage}
+          src="/block-images/welcome-mobile.webp"
+          alt="Welcome Mobile"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+        />
       </figure>
 
       <div className={styles.welcomeBg}>
@@ -91,17 +54,14 @@ export default function WelcomeSection() {
               <h2 className={styles.bonusText}>
                 {t.exclusiveWelcomeOfferOf} {welcomeBonus}
               </h2>
-              {(firstOfferId || offerLink) && !isLoading && (
+              {(firstOfferId || offerLink) && (
                 <Button
                   text={t.claimBonus}
                   variant="primary"
                   useNavigation={true}
-                  url={buttonUrl}
+                  url={firstOfferId ? `/casino/${firstOfferId}` : offerLink}
                   openInNewTab
                 />
-              )}
-              {isLoading && (
-                <div className="h-12 bg-gray-200 animate-pulse rounded" />
               )}
             </div>
           </div>
