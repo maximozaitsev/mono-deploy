@@ -9,7 +9,10 @@ const WelcomeBonusClient = dynamic(() => import("./WelcomeBonusClient"), {
 
 export default function WelcomeSection() {
   return (
-    <section id="welcome-section" className={`${styles.welcomeSection} section`}>
+    <section
+      id="welcome-section"
+      className={`${styles.welcomeSection} section`}
+    >
       <figure className={styles.mobileFigure} aria-hidden>
         <Image
           className={styles.mobileImage}
@@ -17,7 +20,8 @@ export default function WelcomeSection() {
           alt="Welcome Mobile"
           priority
           sizes="(max-width: 768px) 100vw, 0"
-          fetchPriority="high"
+          unoptimized // ← главное изменение: минуем /_next/image
+          placeholder="blur" // статический import даёт blurDataURL — улучшит перцепцию
         />
       </figure>
       <div className={styles.welcomeBg}>
