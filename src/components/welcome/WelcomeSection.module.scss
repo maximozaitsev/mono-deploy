@@ -5,6 +5,7 @@
   width: 100%;
   margin-bottom: 140px;
   background: #171717;
+  overflow: visible;
 
   @media (max-width: 1120px) {
     margin-bottom: 64px;
@@ -27,6 +28,8 @@
   width: 100%;
   max-width: 90rem;
   margin: 0 auto;
+  position: relative;
+  overflow: visible;
 
   /* крупный фон для десктопа */
   background-image: url("/block-images/welcome.webp");
@@ -71,6 +74,8 @@
     display: block;
     width: 100%;
     text-align: center;
+    overflow: visible;
+    position: relative;
   }
 }
 
@@ -91,6 +96,7 @@
 .welcomeContent {
   position: relative;
   z-index: 1;
+  overflow: visible;
   max-width: 72.5rem;
   display: flex;
   flex-direction: column;
@@ -107,6 +113,8 @@
   gap: 48px;
   width: 410px;
   max-width: 50%;
+  position: relative;
+  overflow: visible;
 
   @media (max-width: 1280px) {
     margin-left: 0;
@@ -127,6 +135,20 @@
 
   @media (max-width: 380px) {
     gap: 20px;
+  }
+
+  :global(button) {
+    position: relative;
+    z-index: 2;
+    will-change: transform;
+    transform-origin: center;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  :global(button:hover) {
+    /* убираем возможный scale из общего Button в этом блоке, чтобы не клипалось */
+    transform: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   }
 }
 

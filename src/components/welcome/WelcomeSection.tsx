@@ -4,16 +4,17 @@ import Image from "next/image";
 import styles from "./WelcomeSection.module.scss";
 import mobileImg from "../../../public/block-images/welcome-mobile.webp";
 
-const WelcomeBonusClient = dynamic(() => import("./WelcomeBonusClient"), {
-  ssr: false,
-});
+const WelcomeBonusClient = dynamic(() => import("./WelcomeBonusClient"), { ssr: false });
 
 export default function WelcomeSection() {
   return (
     <section
       id="welcome-section"
+      aria-labelledby="welcome-heading"
       className={`${styles.welcomeSection} section`}
     >
+      <h2 id="welcome-heading" className="sr-only">Welcome</h2>
+
       <figure className={styles.mobileFigure} aria-hidden>
         <Image
           className={styles.mobileImage}
