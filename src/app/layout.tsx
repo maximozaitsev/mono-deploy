@@ -11,6 +11,9 @@ import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import * as fonts from "./fonts";
 
+// мобайл LCP картинка — импортируем, чтобы прелоадить ровно тот же URL (/_next/static/media/...)
+import mobileImg from "../../public/block-images/welcome-mobile.webp";
+
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
   const h = headers();
@@ -131,10 +134,7 @@ export async function generateMetadata(): Promise<Metadata> {
     manifest: "/manifest.json",
     title,
     description,
-    alternates: {
-      canonical,
-      languages: alternatesLanguages,
-    },
+    alternates: { canonical, languages: alternatesLanguages },
     openGraph: {
       locale: ogLocale,
       type: "website",
@@ -143,36 +143,6 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName,
       description,
       images: [{ url: ogImage, width: 1200, height: 630, alt: siteName }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [ogImage],
-    },
-    icons: {
-      icon: [
-        { url: "/icons/ico-192.png", type: "image/png", sizes: "192x192" },
-        { url: "/icons/ico-512.png", type: "image/png", sizes: "512x512" },
-        { url: "/icons/ico-114.png", type: "image/png", sizes: "114x114" },
-        { url: "/icons/ico-120.png", type: "image/png", sizes: "120x120" },
-        { url: "/icons/ico-144.png", type: "image/png", sizes: "144x144" },
-        { url: "/icons/ico-152.png", type: "image/png", sizes: "152x152" },
-        { url: "/icons/ico-57.png", type: "image/png", sizes: "57x57" },
-        { url: "/icons/ico-60.png", type: "image/png", sizes: "60x60" },
-        { url: "/icons/ico-72.png", type: "image/png", sizes: "72x72" },
-        { url: "/icons/ico-76.png", type: "image/png", sizes: "76x76" },
-      ],
-      apple: [
-        { url: "/icons/ico-57.png", sizes: "57x57" },
-        { url: "/icons/ico-60.png", sizes: "60x60" },
-        { url: "/icons/ico-72.png", sizes: "72x72" },
-        { url: "/icons/ico-76.png", sizes: "76x76" },
-        { url: "/icons/ico-114.png", sizes: "114x114" },
-        { url: "/icons/ico-120.png", sizes: "120x120" },
-        { url: "/icons/ico-144.png", sizes: "144x144" },
-        { url: "/icons/ico-152.png", sizes: "152x152" },
-      ],
     },
   };
 }
@@ -191,24 +161,35 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
+        {/* сети для внешнего API */}
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+
+        {/* ДЕСКТОПНЫЙ фон: совпадает с CSS background-image в .welcomeBg */}
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
         />
+
+        {/* МОБИЛЬНЫЙ LCP: прелоадим ТОТ ЖЕ URL, который вернёт <Image unoptimized> */}
         <link
           rel="preload"
           as="image"
-          href="/block-images/welcome-mobile.webp"
+          href={mobileImg.src}
           media="(max-width: 768px)"
+          fetchPriority="high"
         />
+
+        {/*
+          Важно: не добавляем второй preload на /block-images/welcome-mobile.webp
+          и НЕ используем `priority` у <Image> в секции — чтобы не дублировать прелоад.
+        */}
       </head>
       <body className={fontVars}>{children}</body>
     </html>

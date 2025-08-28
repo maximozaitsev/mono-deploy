@@ -1,3 +1,4 @@
+// src/components/welcome/WelcomeSection.tsx
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import styles from "./WelcomeSection.module.scss";
@@ -18,12 +19,13 @@ export default function WelcomeSection() {
           className={styles.mobileImage}
           src={mobileImg}
           alt="Welcome Mobile"
-          priority
           sizes="(max-width: 768px) 100vw, 0"
-          unoptimized // ← главное изменение: минуем /_next/image
-          placeholder="blur" // статический import даёт blurDataURL — улучшит перцепцию
+          unoptimized
+          placeholder="blur"
+          fetchPriority="high"
         />
       </figure>
+
       <div className={styles.welcomeBg}>
         <div className="container">
           <div className={styles.welcomeContent}>
