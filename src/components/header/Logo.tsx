@@ -1,10 +1,12 @@
 // src/components/header/Logo.tsx
-// Серверо-безопасный логотип без хуков
 interface LogoProps {
   desktopSrc: string;
   mobileSrc?: string;
   alt?: string;
-  onClick?: () => void; // поддерживается, если оборачиваешь в клиентский обработчик
+  onClick?: () => void;
+  loading?: "eager" | "lazy";
+  width?: number;
+  height?: number;
 }
 
 export default function Logo({
@@ -12,6 +14,9 @@ export default function Logo({
   mobileSrc,
   alt = "Logo",
   onClick,
+  loading = "eager",
+  width,
+  height,
 }: LogoProps) {
   return (
     <picture
@@ -25,9 +30,10 @@ export default function Logo({
       <img
         src={desktopSrc}
         alt={alt}
-        loading="eager"
+        loading={loading}
         decoding="async"
         style={{ display: "block" }}
+        {...(width && height ? { width, height } : {})}
       />
     </picture>
   );
