@@ -22,6 +22,7 @@ export default function WelcomeSection() {
           sizes="(max-width: 768px) 100vw, 0"
           unoptimized
           placeholder="blur"
+          loading="eager"
           fetchPriority="high"
         />
       </figure>
