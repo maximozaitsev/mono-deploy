@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://olympia-casino.org/
-Sitemap: https://olympia-casino.org/sitemap.xml
+Host: https://fezbet-casino-online.com/
+Sitemap: https://fezbet-casino-online.com/sitemap.xml

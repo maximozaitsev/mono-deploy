@@ -1,30 +1,39 @@
-import { Game } from "@/types/game";
-import { getJsonWithRetry } from "@/utils/http";
-import { getOrFetch, getStale } from "@/utils/apiCache";
+import axios from "axios";
+import { Game } from "../types/game";
 
-const TTL_MS = 30_000;
-const STALE_MS = 60_000;
+const MAX_RETRIES = 3;
+const RETRY_DELAY = 1000;
 
 export async function fetchGames(type: string): Promise<Game[]> {
-  const key = `games:${type}`;
-  try {
-    const data = await getOrFetch<Game[]>(key, TTL_MS, async () => {
-      const games = await getJsonWithRetry<Game[]>(
+  let retries = 0;
+
+  while (retries < MAX_RETRIES) {
+    try {
+      const response = await axios.get(
         `https://api.adkey-seo.com/api/website/get-games/${type}`
       );
-      return games.map((game) => {
-        const imageUrl = `https://api.adkey-seo.com/storage/images/games/${game.image}`;
-        return {
-          ...game,
-          image: imageUrl,
-          optimizedImage: `${imageUrl}?format=webp&width=332&height=179`,
-        };
-      });
-    });
-    return data;
-  } catch {
-    const stale = getStale<Game[]>(key, STALE_MS);
-    if (stale) return stale;
-    return [];
+      const games = response.data;
+
+      const updatedGames = games.map((game: Game) => ({
+        ...game,
+        image: `https://api.adkey-seo.com/storage/images/games/${game.image}`,
+      }));
+
+      return updatedGames;
+    } catch (error: any) {
+      if (error.response?.status === 429 && retries < MAX_RETRIES) {
+        retries++;
+        console.warn(
+          `Rate limit hit, retrying in ${RETRY_DELAY * retries}ms...`
+        );
+        await new Promise((resolve) =>
+          setTimeout(resolve, RETRY_DELAY * retries)
+        );
+      } else {
+        throw error;
+      }
+    }
   }
+
+  throw new Error("Max retries exceeded");
 }

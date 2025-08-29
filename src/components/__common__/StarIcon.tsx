@@ -1,105 +1,37 @@
-import React, { useEffect, useId, useState } from "react";
-
-export interface GradientResult {
-  fill: string;
-  gradientElement: React.ReactNode;
-}
-
-export function computeGradient(
-  gradientString: string,
-  gradientId: string
-): GradientResult | null {
-  const cleanedGradient = gradientString.replace(/;$/, "");
-
-  const gradientRegex = /linear-gradient\(([^,]+),\s*(.+)\)/i;
-  const match = cleanedGradient.match(gradientRegex);
-  if (!match) return null;
-
-  const angleString = match[1].trim();
-  const stopsString = match[2].trim();
-
-  const angleDeg = parseFloat(angleString);
-  const rad = (angleDeg - 90) * (Math.PI / 180);
-  const x2 = 0.5 + 0.5 * Math.cos(rad);
-  const y2 = 0.5 + 0.5 * Math.sin(rad);
-  const x1 = 1 - x2;
-  const y1 = 1 - y2;
-
-  const rawStops = stopsString.split(/,\s*/);
-
-  type Stop = { color: string; offset?: string };
-  const parsed: Stop[] = rawStops.map((stop) => {
-    const parts = stop.trim().split(/\s+/);
-    const color = parts[0];
-    const offset = parts[1];
-    return { color, offset };
-  });
-
-  const n = parsed.length;
-  for (let i = 0; i < n; i++) {
-    if (!parsed[i].offset) {
-      const pct = (i / (n - 1)) * 100;
-      parsed[i].offset = `${pct}%`;
-    }
-  }
-
-  const gradientElement = (
-    <defs>
-      <linearGradient
-        id={gradientId}
-        x1={`${x1 * 100}%`}
-        y1={`${y1 * 100}%`}
-        x2={`${x2 * 100}%`}
-        y2={`${y2 * 100}%`}
-      >
-        {parsed.map((s, index) => (
-          <stop key={index} offset={s.offset} stopColor={s.color} />
-        ))}
-      </linearGradient>
-    </defs>
-  );
-
-  return {
-    fill: `url(#${gradientId})`,
-    gradientElement,
-  };
-}
+import React, { useId, useEffect, useState } from "react";
+import { computeGradient } from "../../utils/gradientUtils";
 
 interface StarIconProps {
   fill?: string;
-  width?: number;
-  height?: number;
 }
 
-const StarIcon: React.FC<StarIconProps> = ({
-  fill,
-  width = 30,
-  height = 30,
-}) => {
+const StarIcon: React.FC<StarIconProps> = ({ fill }) => {
   const [computedFill, setComputedFill] = useState<string>("");
   const gradientId = useId();
 
   useEffect(() => {
-    let src = fill;
-    if (!src) {
+    if (fill) {
+      if (fill.startsWith("var(")) {
+        const varName = fill.slice(4, -1).trim();
+        const cssFill = getComputedStyle(document.documentElement)
+          .getPropertyValue(varName)
+          .trim();
+        setComputedFill(cssFill || fill);
+      } else {
+        setComputedFill(fill);
+      }
+    } else {
       const cssFill = getComputedStyle(document.documentElement)
         .getPropertyValue("--color-star-icon")
         .trim();
-      src = cssFill || "#F6C946";
-    } else if (src.startsWith("var(")) {
-      const varName = src.slice(4, -1).trim();
-      const cssFill = getComputedStyle(document.documentElement)
-        .getPropertyValue(varName)
-        .trim();
-      src = cssFill || src;
+      setComputedFill(cssFill || "#F6C946");
     }
-    setComputedFill(src || "#F6C946");
   }, [fill]);
 
-  let gradientElement: React.ReactNode = null;
+  let gradientElement = null;
   let fillValue = computedFill;
 
-  if (computedFill && computedFill.startsWith("linear-gradient")) {
+  if (computedFill.startsWith("linear-gradient")) {
     const result = computeGradient(computedFill, gradientId);
     if (result) {
       fillValue = result.fill;
@@ -109,14 +41,12 @@ const StarIcon: React.FC<StarIconProps> = ({
 
   return (
     <svg
-      width={width}
-      height={height}
+      width="30"
+      height="30"
       viewBox="0 0 30 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ width: `${width}px`, height: `${height}px`, flexShrink: 0 }}
-      aria-hidden="true"
-      focusable="false"
+      style={{ width: "30px", height: "30px", flexShrink: 0 }}
     >
       {gradientElement}
       <path

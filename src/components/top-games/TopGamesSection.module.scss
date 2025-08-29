@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .topGames {
@@ -47,15 +48,10 @@
   border-radius: $border-radius;
   border: $border-width solid $border-color;
   transition: transform 0.5s ease;
-  contain: content;
-  content-visibility: auto;
-  contain-intrinsic-size: 264px 142px;
-  backface-visibility: hidden;
   max-width: 264px;
   max-height: 142px;
 
   &:hover {
-    will-change: transform;
     transform: scale(1.05);
     outline: 2px solid rgba(0, 0, 0, 0.4);
   }
@@ -84,7 +80,6 @@
 
     &.visible {
       opacity: 1;
-      will-change: opacity;
     }
 
     &:hover {
@@ -98,6 +93,7 @@
 
   .gameName {
     text-align: center;
+    font-family: $font-primary;
     color: $text-color-fourth;
     // background: $text-color-fourth;
     // background-clip: text;
@@ -121,6 +117,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    font-family: $font-primary;
     font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
@@ -174,11 +171,5 @@
   @media (max-width: 1200px) {
     max-width: none;
     max-height: none;
-  }
-}
-
-@media (hover: none) {
-  .gameItem {
-    transition: none;
   }
 }

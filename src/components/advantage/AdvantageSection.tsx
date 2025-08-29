@@ -13,29 +13,13 @@ export default function AdvantageSection() {
   const [closingParagraphs, setClosingParagraphs] = useState<string[][]>([]);
 
   useEffect(() => {
-    const load = async () => {
-      try {
-        const manifestRes = await fetch("/content/languages.json", {
-          cache: "no-cache",
-        });
-        const manifest = await manifestRes.json();
-        const parts = window.location.pathname.split("/").filter(Boolean);
-        const first = parts[0];
-        const lang =
-          first &&
-          manifest.languages.includes(first) &&
-          first !== manifest.defaultLang
-            ? first
-            : manifest.defaultLang;
-        const res = await fetch(`/content/content.${lang}.json`, {
-          cache: "no-cache",
-        });
-        const data = await res.json();
-
+    import("../../content/content.json")
+      .then((data) => {
         const advantagesEntries = Object.entries(data.advantages) as [
           string,
           any
         ][];
+
         if (advantagesEntries.length > 0) {
           const [firstKey, section] = advantagesEntries[0];
           setSectionTitle(firstKey);
@@ -65,12 +49,8 @@ export default function AdvantageSection() {
             )
           );
         }
-      } catch (error) {
-        console.error("Ошибка загрузки JSON:", error);
-      }
-    };
-
-    load();
+      })
+      .catch((error) => console.error("Ошибка загрузки JSON:", error));
   }, []);
 
   function groupParagraphs(blocks: any[], stopAtType: string) {
@@ -115,7 +95,9 @@ export default function AdvantageSection() {
 
         <div className={styles.columns}>
           <div className={styles.column}>
-            {advantagesTitle && <p className="h4-heading">{advantagesTitle}</p>}
+            {advantagesTitle && (
+              <h4 className="h4-heading">{advantagesTitle}</h4>
+            )}
             <ul className="paragraph-text black">
               {advantagesList.map((advantage, index) => (
                 <li key={index}>{advantage}</li>
@@ -124,7 +106,7 @@ export default function AdvantageSection() {
           </div>
           <div className={styles.column}>
             {disadvantagesTitle && (
-              <p className="h4-heading">{disadvantagesTitle}</p>
+              <h4 className="h4-heading">{disadvantagesTitle}</h4>
             )}
             <ul className="paragraph-text black">
               {disadvantagesList.map((disadvantage, index) => (

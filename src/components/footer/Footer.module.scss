@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../../public/fonts/fonts.scss";
 
 .footer {
   position: relative;
@@ -27,14 +28,14 @@
           left: 160px;
 
           // svg {
-          // margin-top: -8px;
+            // margin-top: -8px;
 
-          // @media (max-width: 768px) {
-          //   margin-top: 0px;
-          // }
+            // @media (max-width: 768px) {
+            //   margin-top: 0px;
+            // }
           // }
 
-          @media (max-width: 1620px) {
+          @media (max-width: 1420px) {
             position: static;
             display: flex;
             width: 100%;
@@ -73,6 +74,7 @@
 
   .copyright {
     color: rgba(255, 255, 255, 0.34);
+    font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
     line-height: 40px;

@@ -1,39 +1,53 @@
-// src/components/welcome/WelcomeSection.tsx
-import dynamic from "next/dynamic";
-import Image from "next/image";
-import styles from "./WelcomeSection.module.scss";
-import mobileImg from "../../../public/block-images/welcome-mobile.webp";
+"use client";
 
-const WelcomeBonusClient = dynamic(() => import("./WelcomeBonusClient"), { ssr: false });
+import { useEffect, useState } from "react";
+import Button from "../__common__/button/Button";
+import styles from "./WelcomeSection.module.scss";
+import { fetchOffers } from "@/utils/fetchOffers";
 
 export default function WelcomeSection() {
+  const [welcomeBonus, setWelcomeBonus] = useState("");
+  const [offerLink, setOfferLink] = useState("");
+
+  useEffect(() => {
+    const fetchWelcomeBonus = async () => {
+      try {
+        const offersData = await fetchOffers();
+        const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
+        setWelcomeBonus(bonus);
+        const link = offersData.offers[0]?.link || "";
+        setOfferLink(link);
+      } catch (error) {
+        console.error("Failed to fetch welcome bonus:", error);
+      }
+    };
+
+    fetchWelcomeBonus();
+  }, []);
+
   return (
     <section
       id="welcome-section"
-      aria-labelledby="welcome-heading"
       className={`${styles.welcomeSection} section`}
     >
-      <h2 id="welcome-heading" className="sr-only">Welcome</h2>
-
-      <figure className={styles.mobileFigure} aria-hidden>
-        <Image
-          className={styles.mobileImage}
-          src={mobileImg}
-          alt="Welcome Mobile"
-          sizes="(max-width: 768px) 100vw, 0"
-          unoptimized
-          placeholder="blur"
-          loading="eager"
-          fetchPriority="high"
-        />
-      </figure>
-
-      <div className={styles.welcomeBg}>
-        <div className="container">
-          <div className={styles.welcomeContent}>
-            <div className={styles.welcomeText}>
-              <WelcomeBonusClient />
-            </div>
+      <div className="container">
+        <div className={styles.welcomeContent}>
+          <div className={styles.welcomeText}>
+            <h2>Welcome Bonus</h2>
+            <p className={styles.offerText}>
+              Exclusive welcome offer of {welcomeBonus}
+            </p>
+            <p className={styles.bonusText}>
+              Exclusive welcome bonus of {welcomeBonus}
+            </p>
+            {offerLink && (
+              <Button
+                text="claim bonus"
+                variant="primary"
+                url={offerLink}
+                openInNewTab
+              />
+            )}
           </div>
         </div>
       </div>

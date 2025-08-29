@@ -1,5 +1,5 @@
 @import "../styles/colors";
-@import "@/styles/_fonts-bridge.scss";
+@import "../../public/fonts/fonts";
 @import "../styles/variables";
 
 :root {
@@ -68,8 +68,9 @@ body {
   font-weight: $font-weight-bold;
   line-height: normal;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   word-break: break-word;
-  hyphens: auto;
 
   &.white {
     color: $text-color-primary;
@@ -77,7 +78,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 32px;
-    // font-weight: $font-weight-black;
+    font-weight: $font-weight-bold;
   }
 
   @media (max-width: 570px) {
@@ -93,12 +94,13 @@ body {
   font-weight: $font-weight-bold;
   line-height: normal;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   word-break: break-word;
-  hyphens: auto;
 
   @media (max-width: 768px) {
     font-size: 24px;
-    // font-weight: $font-weight-black;
+    font-weight: $font-weight-bold;
   }
 
   @media (max-width: 570px) {
@@ -114,15 +116,16 @@ body {
   font-weight: $font-weight-bold;
   line-height: normal;
   text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   word-break: break-word;
-  hyphens: auto;
 
   &.white {
     color: $text-color-primary;
   }
 
   @media (max-width: 768px) {
-    // font-weight: $font-weight-black;
+    font-weight: $font-weight-bold;
     font-size: 18px;
   }
 }
@@ -175,16 +178,4 @@ body {
       line-height: 26px;
     }
   }
-}
-
-.sr-only {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
 }

@@ -1,40 +1,84 @@
-// src/components/header/Logo.tsx
+import React, { useEffect, useState } from "react";
+
 interface LogoProps {
-  desktopSrc: string;
-  mobileSrc?: string;
+  svgPath: string;
+  gradientIdPrefix: string;
+  onClick: () => void;
   alt?: string;
-  onClick?: () => void;
-  loading?: "eager" | "lazy";
-  width?: number;
-  height?: number;
 }
 
-export default function Logo({
-  desktopSrc,
-  mobileSrc,
-  alt = "Logo",
+const Logo = ({
+  svgPath,
+  gradientIdPrefix,
   onClick,
-  loading = "eager",
-  width,
-  height,
-}: LogoProps) {
+  alt = "Logo",
+}: LogoProps) => {
+  const [svgContent, setSvgContent] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch(svgPath)
+      .then((response) => response.text())
+      .then((svgText) => {
+        const parser = new DOMParser();
+        const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
+        const svgElement = svgDoc.querySelector("svg");
+
+        if (!svgElement) {
+          console.error("Invalid SVG file");
+          return;
+        }
+
+        const gradients = svgElement.querySelectorAll(
+          "linearGradient, radialGradient"
+        );
+        gradients.forEach((gradient) => {
+          const originalId = gradient.getAttribute("id");
+          if (originalId) {
+            const newId = `${gradientIdPrefix}_${originalId}`;
+            gradient.setAttribute("id", newId);
+
+            svgElement
+              .querySelectorAll(`[fill="url(#${originalId})"]`)
+              .forEach((el) => {
+                el.setAttribute("fill", `url(#${newId})`);
+              });
+            svgElement
+              .querySelectorAll(`[stroke="url(#${originalId})"]`)
+              .forEach((el) => {
+                el.setAttribute("stroke", `url(#${newId})`);
+              });
+          }
+
+          const stops = gradient.querySelectorAll("stop");
+          stops.forEach((stop, index) => {
+            if (!stop.hasAttribute("offset")) {
+              const offsetValue =
+                stops.length > 1 ? index / (stops.length - 1) : 0;
+              stop.setAttribute("offset", offsetValue.toString());
+            }
+          });
+        });
+
+        const serializer = new XMLSerializer();
+        const updatedSvgText = serializer.serializeToString(svgElement);
+        setSvgContent(updatedSvgText);
+      })
+      .catch((error) => console.error("Error loading SVG:", error));
+  }, [svgPath, gradientIdPrefix]);
+
+  if (!svgContent) {
+    return <div></div>;
+  }
+
   return (
-    <picture
+    <div
       onClick={onClick}
-      style={{
-        cursor: onClick ? "pointer" : "default",
-        display: "inline-block",
-      }}
-    >
-      {mobileSrc && <source media="(max-width: 768px)" srcSet={mobileSrc} />}
-      <img
-        src={desktopSrc}
-        alt={alt}
-        loading={loading}
-        decoding="async"
-        style={{ display: "block" }}
-        {...(width && height ? { width, height } : {})}
-      />
-    </picture>
+      style={{ cursor: "pointer" }}
+      role="img"
+      aria-label={alt}
+      dangerouslySetInnerHTML={{ __html: svgContent }}
+    />
   );
-}
+};
+
+export default Logo;

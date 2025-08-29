@@ -1,49 +1,123 @@
-// src/components/header/Header.tsx
-// Серверный компонент (без "use client")
-import dynamic from "next/dynamic";
+"use client";
+
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import Logo from "./Logo";
+import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import styles from "./Header.module.scss";
-import Logo from "./Logo";
+import { usePathname } from "next/navigation";
+import { fetchOffers } from "../../utils/fetchOffers";
 
-// Клиентские острова
-const ClientScrollToWelcome = dynamic(() => import("./ClientScrollToWelcome"), {
-  ssr: false,
-});
-const ClientHeaderControls = dynamic(() => import("./ClientHeaderControls"), {
-  ssr: false,
-});
+const navItems = [
+  { label: "Games", path: "/games" },
+  { label: "Bonus", path: "/bonus" },
+  { label: "App", path: "/app" },
+  { label: "Log In", path: "/login" },
+];
 
-interface HeaderProps {
-  languages: string[];
-  defaultLang: string;
-  currentLang: string;
-}
+const Header = () => {
+  const { handleNavigation } = useNavigateWithPreloader();
+  const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
-export default function Header({
-  languages = [],
-  defaultLang = "en",
-  currentLang = "en",
-}: HeaderProps) {
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleSignInClick = async () => {
+    try {
+      const { offers } = await fetchOffers();
+      window.open(`/casino/${offers[0].id}`, "_blank", "noopener,noreferrer");
+    } catch (error) {
+      console.error("Error opening preloader:", error);
+    }
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
+  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
+
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <ClientScrollToWelcome
-          ariaLabel={`${PROJECT_NAME} Logo - Scroll to welcome section`}
-          className={styles.logoButton}
-        >
-          <Logo
-            desktopSrc="/logo.svg"
-            mobileSrc="/logo-mobile.svg"
-            alt={`${PROJECT_NAME} Logo`}
-          />
-        </ClientScrollToWelcome>
+        {isMobile && (
+          <button
+            className={`${styles.burger} ${isMenuOpen ? styles.open : ""}`}
+            onClick={toggleMenu}
+            aria-label="Toggle navigation menu"
+          >
+            <span className={styles.burgerLine} />
+            <span className={styles.burgerLine} />
+            <span className={styles.burgerLine} />
+          </button>
+        )}
 
-        <ClientHeaderControls
-          languages={languages}
-          defaultLang={defaultLang}
-          currentLang={currentLang}
-        />
+        <Link href="/">
+          <Logo
+            svgPath={logoPath}
+            gradientIdPrefix="header"
+            alt={`${PROJECT_NAME} Logo`}
+            onClick={() => {}}
+          />
+        </Link>
+        <div className={styles.spacer} />
+
+        {!isMobile && (
+          <ul className={styles.navList}>
+            {navItems.map((item) => (
+              <li key={item.path} className={styles.navItem}>
+                <Link
+                  href={item.path}
+                  className={`${styles.navLink} ${
+                    pathname === item.path ? styles.activeNavLink : ""
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        <div className={styles.headerButtons}>
+          <button
+            className={`${styles.headerButton} ${styles.playNow}`}
+            onClick={handleSignInClick}
+          >
+            Play Now
+          </button>
+        </div>
+
+        {isMobile && (
+          <div
+            className={`${styles.menuItems} ${isMenuOpen ? styles.open : ""}`}
+          >
+            <ul className={styles.navListMobile}>
+              {navItems.map((item) => (
+                <li key={item.path} className={styles.navItem}>
+                  <Link
+                    href={item.path}
+                    className={`${styles.navLink} ${
+                      pathname === item.path ? styles.activeNavLink : ""
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </nav>
     </header>
   );
-}
+};
+
+export default Header;
