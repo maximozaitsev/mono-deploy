@@ -1,9 +1,18 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useNavigateWithPreloader } from "../../../utils/navigationUtils";
 import "./Button.scss";
 import { fetchOffers } from "../../../utils/fetchOffers";
+
+// простой in-memory кэш, чтобы не ждать сеть при каждом клике
+let offersCache: Array<{ id: string | number; link?: string }> | null = null;
+const getOffersCached = async () => {
+  if (offersCache) return offersCache;
+  const { offers } = await fetchOffers();
+  offersCache = offers ?? [];
+  return offersCache;
+};
 
 type ButtonProps = {
   text: string;
@@ -29,44 +38,68 @@ const Button: React.FC<ButtonProps> = ({
   url,
 }) => {
   const { handleNavigation } = useNavigateWithPreloader();
+  const lastOpenedWinRef = useRef<Window | null>(null);
+
+  // префетчим офферы при маунте, чтобы клики были синхронными
+  useEffect(() => {
+    getOffersCached().catch(() => {});
+  }, []);
+
+  const openCasinoByOfferSync = (desiredLink?: string) => {
+    // пытаемся синхронно определить целевой оффер из кэша
+    const list = offersCache ?? [];
+    const target =
+      (desiredLink && list.find((o) => o.link === desiredLink)) ||
+      list[0] ||
+      null;
+
+    if (target?.id != null) {
+      window.open(
+        `/casino/${String(target.id)}`,
+        "_blank",
+        "noopener,noreferrer"
+      );
+      return true;
+    }
+    return false;
+  };
 
   const handleClick = async () => {
     if (openInNewTab) {
       if (url?.startsWith("http")) {
         if (onClick) onClick();
 
-        const newWindow = window.open(
-          "about:blank",
-          "_blank",
-          "noopener,noreferrer"
-        );
+        // 1) пытаемся открыть сразу (синхронно) из кэша
+        const opened = openCasinoByOfferSync(url);
+        if (opened) return;
 
+        // 2) fallback для Safari: открываем вкладку прямо сейчас,
+        // затем асинхронно редиректим её, когда дотянем офферы
+        const win = window.open("/casino", "_blank", "noopener,noreferrer");
+        lastOpenedWinRef.current = win;
         try {
-          const { offers } = await fetchOffers();
-          const targetOffer = offers.find((o) => o.link === url) || offers[0];
-          if (newWindow) {
-            newWindow.location.href = `/casino/${targetOffer.id}`;
+          const offers = await getOffersCached();
+          const target =
+            (url && offers.find((o) => o.link === url)) || offers[0];
+          if (target?.id != null && win) {
+            win.location.href = `/casino/${String(target.id)}`;
           }
         } catch (error) {
           console.error("Error fetching offers for new tab:", error);
-          if (newWindow) {
-            newWindow.close();
-          }
         }
-        return;
       } else if (useNavigation && url) {
+        // внутренние ссылки можно открывать сразу
         window.open(url, "_blank", "noopener,noreferrer");
       } else if (useNavigation && navigateHome) {
         window.open("/", "_blank", "noopener,noreferrer");
       } else if (useNavigation) {
+        // открыть сразу /casino, потом попытаться редиректнуть по офферу (опционально)
+        const win = window.open("/casino", "_blank", "noopener,noreferrer");
+        lastOpenedWinRef.current = win;
         try {
-          const { offers } = await fetchOffers();
-          if (offers.length > 0) {
-            window.open(
-              `/casino/${offers[0].id}`,
-              "_blank",
-              "noopener,noreferrer"
-            );
+          const offers = await getOffersCached();
+          if (offers.length > 0 && win) {
+            win.location.href = `/casino/${String(offers[0].id)}`;
           }
         } catch (error) {
           console.error("Error fetching first offer for new tab:", error);
@@ -77,6 +110,7 @@ const Button: React.FC<ButtonProps> = ({
       return;
     }
 
+    // НЕ new tab — оставляем прежнюю логика, но без блокируемых вызовов
     if (url?.startsWith("http")) {
       const a = document.createElement("a");
       a.href = url;

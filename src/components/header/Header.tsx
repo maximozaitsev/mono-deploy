@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
-import { useNavigateWithPreloader } from "../../utils/navigationUtils";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import styles from "./Header.module.scss";
 import { usePathname } from "next/navigation";
@@ -17,37 +16,61 @@ const navItems = [
 ];
 
 const Header = () => {
-  const { handleNavigation } = useNavigateWithPreloader();
   const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [offerId, setOfferId] = useState<string>("");
   const pathname = usePathname();
+
+  // держим ссылку на последнюю открытую вкладку для возможного редиректа
+  const lastOpenedWinRef = useRef<Window | null>(null);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
     window.addEventListener("resize", handleResize);
+
+    // префетчим офферы заранее, чтобы к моменту клика у нас был id
+    (async () => {
+      try {
+        const { offers } = await fetchOffers();
+        const first = offers?.[0];
+        setOfferId(first && first.id != null ? String(first.id) : "");
+      } catch (e) {
+        console.error("Failed to prefetch offers in header:", e);
+      }
+    })();
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const handleSignInClick = async () => {
-    const newWindow = window.open(
-      "about:blank",
-      "_blank",
-      "noopener,noreferrer"
-    );
+    // ВАЖНО: window.open вызываем синхронно в ответ на клик (popup-safe).
+    // Если id уже известен — открываем сразу конечный URL.
+    // Если нет — открываем промежуточно /casino и позже редиректим.
     try {
-      const { offers } = await fetchOffers();
-      const target = offers?.[0];
-      if (newWindow && target) {
-        newWindow.location.href = `/casino/${target.id}`;
-      } else if (newWindow) {
-        newWindow.close();
+      if (offerId) {
+        window.open(`/casino/${offerId}`, "_blank", "noopener,noreferrer");
+        return;
+      }
+
+      // fallback: открываем окно сразу, чтобы Safari не заблокировал,
+      // а потом пытаемся узнать оффер и редиректим это же окно.
+      const win = window.open("/casino", "_blank", "noopener,noreferrer");
+      lastOpenedWinRef.current = win;
+
+      // пробуем дотянуть офферы ещё раз (может не успели на маунте)
+      try {
+        const { offers } = await fetchOffers();
+        const first = offers?.[0];
+        if (first?.id != null && win) {
+          win.location.href = `/casino/${String(first.id)}`;
+        }
+      } catch (e) {
+        // ничего — останется просто /casino
+        console.error("Failed to fetch offers after opening window:", e);
       }
     } catch (error) {
-      console.error("Error opening preloader:", error);
-      if (newWindow) {
-        newWindow.close();
-      }
+      console.error("Error opening Play Now:", error);
     }
   };
 
