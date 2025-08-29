@@ -30,11 +30,24 @@ const Header = () => {
   }, []);
 
   const handleSignInClick = async () => {
+    const newWindow = window.open(
+      "about:blank",
+      "_blank",
+      "noopener,noreferrer"
+    );
     try {
       const { offers } = await fetchOffers();
-      window.open(`/casino/${offers[0].id}`, "_blank", "noopener,noreferrer");
+      const target = offers?.[0];
+      if (newWindow && target) {
+        newWindow.location.href = `/casino/${target.id}`;
+      } else if (newWindow) {
+        newWindow.close();
+      }
     } catch (error) {
       console.error("Error opening preloader:", error);
+      if (newWindow) {
+        newWindow.close();
+      }
     }
   };
 

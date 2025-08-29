@@ -34,17 +34,26 @@ const Button: React.FC<ButtonProps> = ({
     if (openInNewTab) {
       if (url?.startsWith("http")) {
         if (onClick) onClick();
+
+        const newWindow = window.open(
+          "about:blank",
+          "_blank",
+          "noopener,noreferrer"
+        );
+
         try {
           const { offers } = await fetchOffers();
           const targetOffer = offers.find((o) => o.link === url) || offers[0];
-          window.open(
-            `/casino/${targetOffer.id}`,
-            "_blank",
-            "noopener,noreferrer"
-          );
+          if (newWindow) {
+            newWindow.location.href = `/casino/${targetOffer.id}`;
+          }
         } catch (error) {
           console.error("Error fetching offers for new tab:", error);
+          if (newWindow) {
+            newWindow.close();
+          }
         }
+        return;
       } else if (useNavigation && url) {
         window.open(url, "_blank", "noopener,noreferrer");
       } else if (useNavigation && navigateHome) {
