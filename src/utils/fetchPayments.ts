@@ -1,30 +1,27 @@
+import { getJsonWithRetry } from "@/utils/http";
 import { PaymentMethod } from "@/types/payment";
+import { getOrFetch, getStale } from "@/utils/apiCache";
 
 const baseUrl = "https://api.adkey-seo.com/storage/images/payments/";
+const TTL_MS = 60_000;
+const STALE_MS = 120_000;
 
 export async function fetchPayments(): Promise<PaymentMethod[]> {
+  const siteId = process.env.NEXT_PUBLIC_SITE_ID;
+  if (!siteId) return [];
+
+  const key = `payments:${siteId}`;
   try {
-    const siteId = process.env.NEXT_PUBLIC_SITE_ID;
-    if (!siteId) throw new Error("Missing SITE_ID in environment variables");
-
-    const response = await fetch(
-      `https://api.adkey-seo.com/api/website/get-payments/${siteId}`
-    );
-    if (!response.ok) {
-      throw new Error(`Error fetching payment methods: ${response.statusText}`);
-    }
-    const paymentMethods: PaymentMethod[] = await response.json();
-
-    const updatedPaymentMethods = paymentMethods.map(
-      (method: PaymentMethod) => ({
-        ...method,
-        image: `${baseUrl}${method.image}`,
-      })
-    );
-
-    return updatedPaymentMethods;
-  } catch (error) {
-    console.error("Error fetching payment methods:", error);
+    const data = await getOrFetch<PaymentMethod[]>(key, TTL_MS, async () => {
+      const methods = await getJsonWithRetry<PaymentMethod[]>(
+        `https://api.adkey-seo.com/api/website/get-payments/${siteId}`
+      );
+      return methods.map((m) => ({ ...m, image: `${baseUrl}${m.image}` }));
+    });
+    return data;
+  } catch {
+    const stale = getStale<PaymentMethod[]>(key, STALE_MS);
+    if (stale) return stale;
     return [];
   }
 }

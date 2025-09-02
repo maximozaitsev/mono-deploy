@@ -1,18 +1,19 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
+import { usePathname } from "next/navigation";
+import staticTranslations from "@/../public/content/static.json";
+import languages from "@/../public/content/languages.json";
 import { useNavigateWithPreloader } from "../../../utils/navigationUtils";
 import "./Button.scss";
 import { fetchOffers } from "../../../utils/fetchOffers";
 
-// простой in-memory кэш, чтобы не ждать сеть при каждом клике
-let offersCache: Array<{ id: string | number; link?: string }> | null = null;
-const getOffersCached = async () => {
-  if (offersCache) return offersCache;
-  const { offers } = await fetchOffers();
-  offersCache = offers ?? [];
-  return offersCache;
-};
+type LanguagesManifest = { languages: string[]; defaultLang: string };
+const manifest = languages as LanguagesManifest;
+const translations = staticTranslations as Record<
+  string,
+  Record<string, string>
+>;
 
 type ButtonProps = {
   text: string;
@@ -38,68 +39,46 @@ const Button: React.FC<ButtonProps> = ({
   url,
 }) => {
   const { handleNavigation } = useNavigateWithPreloader();
-  const lastOpenedWinRef = useRef<Window | null>(null);
 
-  // префетчим офферы при маунте, чтобы клики были синхронными
-  useEffect(() => {
-    getOffersCached().catch(() => {});
-  }, []);
-
-  const openCasinoByOfferSync = (desiredLink?: string) => {
-    // пытаемся синхронно определить целевой оффер из кэша
-    const list = offersCache ?? [];
-    const target =
-      (desiredLink && list.find((o) => o.link === desiredLink)) ||
-      list[0] ||
-      null;
-
-    if (target?.id != null) {
-      window.open(
-        `/casino/${String(target.id)}`,
-        "_blank",
-        "noopener,noreferrer"
-      );
-      return true;
+  const pathname = usePathname();
+  let currentLang: string = manifest.defaultLang || "en";
+  if (pathname) {
+    const parts = pathname.split("/").filter(Boolean);
+    const maybeLang = parts[0];
+    if (manifest.languages.includes(maybeLang)) {
+      currentLang = maybeLang;
     }
-    return false;
-  };
+  }
+  const displayText = translations[currentLang]?.[text] ?? text;
 
   const handleClick = async () => {
     if (openInNewTab) {
       if (url?.startsWith("http")) {
         if (onClick) onClick();
-
-        // 1) пытаемся открыть сразу (синхронно) из кэша
-        const opened = openCasinoByOfferSync(url);
-        if (opened) return;
-
-        // 2) fallback для Safari: открываем вкладку прямо сейчас,
-        // затем асинхронно редиректим её, когда дотянем офферы
-        const win = window.open("/casino", "_blank", "noopener,noreferrer");
-        lastOpenedWinRef.current = win;
         try {
-          const offers = await getOffersCached();
-          const target =
-            (url && offers.find((o) => o.link === url)) || offers[0];
-          if (target?.id != null && win) {
-            win.location.href = `/casino/${String(target.id)}`;
-          }
+          const { offers } = await fetchOffers();
+          const targetOffer = offers.find((o) => o.link === url) || offers[0];
+          window.open(
+            `/casino/${targetOffer.id}`,
+            "_blank",
+            "noopener,noreferrer"
+          );
         } catch (error) {
           console.error("Error fetching offers for new tab:", error);
         }
       } else if (useNavigation && url) {
-        // внутренние ссылки можно открывать сразу
         window.open(url, "_blank", "noopener,noreferrer");
       } else if (useNavigation && navigateHome) {
         window.open("/", "_blank", "noopener,noreferrer");
       } else if (useNavigation) {
-        // открыть сразу /casino, потом попытаться редиректнуть по офферу (опционально)
-        const win = window.open("/casino", "_blank", "noopener,noreferrer");
-        lastOpenedWinRef.current = win;
         try {
-          const offers = await getOffersCached();
-          if (offers.length > 0 && win) {
-            win.location.href = `/casino/${String(offers[0].id)}`;
+          const { offers } = await fetchOffers();
+          if (offers.length > 0) {
+            window.open(
+              `/casino/${offers[0].id}`,
+              "_blank",
+              "noopener,noreferrer"
+            );
           }
         } catch (error) {
           console.error("Error fetching first offer for new tab:", error);
@@ -110,7 +89,6 @@ const Button: React.FC<ButtonProps> = ({
       return;
     }
 
-    // НЕ new tab — оставляем прежнюю логика, но без блокируемых вызовов
     if (url?.startsWith("http")) {
       const a = document.createElement("a");
       a.href = url;
@@ -136,7 +114,7 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       disabled={disabled}
     >
-      {text}
+      {displayText}
     </button>
   );
 };

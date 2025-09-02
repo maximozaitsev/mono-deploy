@@ -1,0 +1,42 @@
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
+
+.h1Section {
+  display: flex;
+  justify-content: center;
+  margin: -64px auto 64px auto;
+
+  @media (max-width: 768px) {
+    margin: 64px auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: $font-weight-black;
+    background-color: $color-background-third;
+    border-radius: $border-radius;
+    padding: 23px;
+    margin: -12px 40px 0;
+    max-width: 1120px;
+    width: 100%;
+    text-align: center;
+
+    @media (max-width: 1180px) {
+      max-width: 828px;
+    }
+
+    @media (max-width: 912px) {
+      max-width: 544px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      margin: -24px 40px 0;
+      max-width: 496px;
+    }
+
+    @media (max-width: 380px) {
+      margin: 0 20px;
+    }
+  }
+}

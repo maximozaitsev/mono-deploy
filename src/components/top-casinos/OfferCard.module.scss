@@ -1,5 +1,4 @@
 @import "../../styles/colors.scss";
-@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .offerCard {
@@ -14,27 +13,29 @@
   border-radius: $border-radius;
   background: $color-background-third;
 
-  img {
+  .logo {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
+    width: 160px;
+    height: auto;
+    display: block;
   }
 
   h3 {
     color: $text-color-secondary;
     text-align: center;
-    font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
   }
 
-  h4 {
-    font-family: $font-primary;
+  .h4Heading {
+    text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: #ff6400;
+    color: $color-button-large;
 
     // background: $color-button-large;
     // background-clip: text;
@@ -45,7 +46,6 @@
   p {
     color: $text-color-secondary;
     text-align: center;
-    font-family: $font-primary;
     font-size: 20px;
     font-style: normal;
     font-weight: $font-weight-regular;
@@ -58,10 +58,9 @@
 
   button {
     margin-top: auto;
-    // padding: 4px 32px !important;
     margin-left: -20px;
     margin-right: -20px;
-    // width: 206px;
+    max-width: 218px;
   }
 
   @media (max-width: 768px) {
@@ -69,7 +68,7 @@
     height: 264px;
     padding: 16px;
 
-    img {
+    .logo {
       width: 160px;
     }
 
@@ -77,7 +76,7 @@
       display: none;
     }
 
-    h4 {
+    .h4Heading {
       margin-bottom: -8px;
     }
 

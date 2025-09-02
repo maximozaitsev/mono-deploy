@@ -1,5 +1,4 @@
 @import "../../styles/colors.scss";
-@import "../../../public/fonts/fonts.scss";
 @import "../../styles/variables.scss";
 
 .bonus-details-section {
@@ -21,10 +20,13 @@
   width: 100%;
   display: grid;
   row-gap: 24px;
+  contain: content;
 }
 
 .row {
   display: grid;
+  content-visibility: auto;
+  contain-intrinsic-size: 88px auto;
   grid-template-columns: 18% 22% 12% 13% 12% 23%;
   align-items: center;
   border-radius: $border-radius;
@@ -32,13 +34,14 @@
   .secondary {
     width: 218px;
     height: 56px;
-    box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
     margin-top: -3px;
     margin-left: 6px;
-    padding: 0;
+    padding: 5px;
   }
 
   @media (max-width: 1080px) {
+    word-break: break-word;
+    hyphens: auto;
     grid-template-columns: 25% 15% 15% 15% 30%;
   }
 
@@ -49,11 +52,15 @@
       width: auto;
     }
   }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 36% 20% 22% 22%;
+    font-size: 1rem !important;
+  }
 }
 
 .cell {
   color: $text-color-secondary;
-  font-family: $font-primary;
   background: $color-background-third;
   font-size: 20px;
   font-style: normal;
@@ -90,6 +97,10 @@
 
   .offerImage {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
+    width: 140px;
+    height: auto;
+    max-width: 100%;
+    display: block;
   }
 
   @media (max-width: 850px) {
@@ -131,7 +142,6 @@
   display: grid;
   grid-template-columns: 18% 82%;
   color: $text-color-secondary;
-  font-family: $font-primary;
   font-size: 20px;
   font-style: normal;
   font-weight: $font-weight-regular;
@@ -225,7 +235,8 @@
     font-size: 16px;
 
     button {
-      width: auto !important;
+      width: auto;
+      padding: 0 4px !important;
     }
   }
 
@@ -258,13 +269,17 @@
   height: 88px;
   background: $color-background-fourth;
   color: $text-color-primary;
-  font-family: $font-primary;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   position: relative;
-  box-shadow: 0px 4px 8px 0px rgba(0, 4, 13, 0.2);
+  word-break: break-word;
+  hyphens: auto;
+
+  @media (max-width: 1220px) {
+    font-size: 20px;
+  }
 
   @media (max-width: 850px) {
     font-size: 18px;
@@ -334,13 +349,6 @@
     }
   }
 }
-
-
-
-
-
-
-
 
 /* Theme Styles Start */
 .accordion-title,
