@@ -72,8 +72,6 @@ export default function Footer() {
                       key={index}
                       src={logo.src}
                       alt={logo.name}
-                      width={logo.w}
-                      height={logo.h}
                       decoding="async"
                       className={styles.partnerLogo}
                       loading="lazy"
