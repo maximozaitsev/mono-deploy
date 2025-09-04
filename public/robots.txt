@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://nitro-cassino.com/
-Sitemap: https://nitro-cassino.com/sitemap.xml
+Host: https://roby-casino-online.com/
+Sitemap: https://roby-casino-online.com/sitemap.xml

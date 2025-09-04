@@ -10,9 +10,10 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const rubik = localFont({
+export const saira = localFont({
   src: [
-    { path: "../../public/fonts/Rubik/Rubik-VAR.ttf", weight: "100 900", style: "normal" }
+    { path: "../../public/fonts/Saira/Saira-700.ttf", weight: "700", style: "normal" },
+    { path: "../../public/fonts/Saira/Saira-900.ttf", weight: "900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",

@@ -16,7 +16,7 @@
   @media (max-width: 768px) {
     height: 96px;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 420px) {
     padding: 5px 10px;
     height: 64px;
   }
@@ -100,8 +100,7 @@
       }
     }
   }
-
-  @media (max-width: 380px) {
+  @media (max-width: 420px) {
     .headerButton {
       &.signup {
         width: auto;

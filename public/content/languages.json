@@ -1,11 +1,4 @@
 {
-  "languages": [
-    "ca",
-    "fi",
-    "no",
-    "pl",
-    "ro",
-    "us"
-  ],
-  "defaultLang": "ca"
+  "languages": ["en", "de", "es", "fr", "it"],
+  "defaultLang": "en"
 }
