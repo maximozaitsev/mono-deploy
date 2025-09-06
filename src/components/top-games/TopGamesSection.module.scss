@@ -1,5 +1,5 @@
-@import "../../styles/colors.scss";
-@import "../../styles/variables.scss";
+@import "@/styles/colors.scss";
+@import "@/styles/variables.scss";
 
 .topGames {
   display: flex;
@@ -34,6 +34,7 @@
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
   }
 
   @media (max-width: 480px) {
@@ -56,7 +57,7 @@
 
   &:hover {
     will-change: transform;
-    transform: scale(1.05);
+    transform: scale(1.03);
     outline: 2px solid rgba(0, 0, 0, 0.4);
   }
 
@@ -177,6 +178,7 @@
   }
 }
 
+/* Avoid hover work on touch devices */
 @media (hover: none) {
   .gameItem {
     transition: none;

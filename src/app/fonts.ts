@@ -10,10 +10,9 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const saira = localFont({
+export const inter = localFont({
   src: [
-    { path: "../../public/fonts/Saira/Saira-700.ttf", weight: "700", style: "normal" },
-    { path: "../../public/fonts/Saira/Saira-900.ttf", weight: "900", style: "normal" }
+    { path: "../../public/fonts/Inter/Inter-VAR.ttf", weight: "100 900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",

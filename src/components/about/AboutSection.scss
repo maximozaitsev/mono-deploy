@@ -1,5 +1,5 @@
-@use "../../styles/colors.scss" as *;
-@use "../../styles/lists" as lists;
+@use "@/styles/colors.scss" as *;
+@use "@/styles/lists" as lists;
 
 .about-section {
   background: $color-background-secondary;
