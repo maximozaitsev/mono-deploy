@@ -1527,7 +1527,7 @@
       },
       {
         "type": "paragraph",
-        "text": ["<strong>Forgotten Password</strong>"]
+        "text": "<strong>Forgotten Password</strong>"
       },
       {
         "type": "paragraph",
@@ -1543,7 +1543,7 @@
       },
       {
         "type": "paragraph",
-        "text": ["<strong>Cookie Errors</strong>"]
+        "text": "<strong>Cookie Errors</strong>"
       },
       {
         "type": "paragraph",
@@ -1551,7 +1551,7 @@
       },
       {
         "type": "paragraph",
-        "text": ["<strong>Device Compatibility Issues</strong>"]
+        "text": "<strong>Device Compatibility Issues</strong>"
       },
       {
         "type": "paragraph",
@@ -1559,7 +1559,7 @@
       },
       {
         "type": "paragraph",
-        "text": ["<strong>App Glitches</strong>"]
+        "text": "<strong>App Glitches</strong>"
       },
       {
         "type": "paragraph",
@@ -1620,7 +1620,7 @@
       },
       {
         "type": "paragraph",
-        "text": ["<strong>How do I register for a VidaVegas account?</strong>"]
+        "text": "<strong>How do I register for a VidaVegas account?</strong>"
       },
       {
         "type": "paragraph",
@@ -1628,7 +1628,7 @@
       },
       {
         "type": "paragraph",
-        "text": ["<strong>What should I do if I forget my password?</strong>"]
+        "text": "<strong>What should I do if I forget my password?</strong>"
       },
       {
         "type": "paragraph",
@@ -1636,9 +1636,7 @@
       },
       {
         "type": "paragraph",
-        "text": [
-          "<strong>Can I log into VidaVegas from multiple devices?</strong>"
-        ]
+        "text": "<strong>Can I log into VidaVegas from multiple devices?</strong>"
       },
       {
         "type": "paragraph",
@@ -1646,7 +1644,7 @@
       },
       {
         "type": "paragraph",
-        "text": ["<strong>How does VidaVegas keep my account secure?</strong>"]
+        "text": "<strong>How does VidaVegas keep my account secure?</strong>"
       },
       {
         "type": "paragraph",
@@ -1654,7 +1652,7 @@
       },
       {
         "type": "paragraph",
-        "text": ["<strong>What are the benefits of the VIP program?</strong>"]
+        "text": "<strong>What are the benefits of the VIP program?</strong>"
       },
       {
         "type": "paragraph",
