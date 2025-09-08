@@ -49,11 +49,19 @@ const Header = () => {
     }
   };
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
-  };
-
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
   const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
+
+  const handleLogoClick: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      try {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } catch {
+        window.scrollTo(0, 0);
+      }
+    }
+  };
 
   return (
     <header className={styles.header}>
@@ -69,8 +77,11 @@ const Header = () => {
             <span className={styles.burgerLine} />
           </button>
         )}
-
-        <Link href="/">
+        <Link
+          href="/"
+          onClick={handleLogoClick}
+          aria-label={`${PROJECT_NAME} home`}
+        >
           <Logo
             svgPath={logoPath}
             gradientIdPrefix="header"
@@ -78,6 +89,7 @@ const Header = () => {
             onClick={() => {}}
           />
         </Link>
+
         <div className={styles.spacer} />
 
         {!isMobile && (

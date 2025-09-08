@@ -9,6 +9,7 @@
 
   @media (max-width: 768px) {
     margin-bottom: 62px;
+    gap: 20px;
   }
 }
 
@@ -31,13 +32,9 @@
     width: 100%;
   }
 
-  @media (max-width: 1180px) {
+  @media (max-width: 1280px) {
     background-size: 50% auto;
     background-position: right 20px center;
-  }
-
-  @media (max-width: 1020px) {
-    background-position: right 0px center;
   }
 
   @media (max-width: 990px) {
@@ -45,27 +42,31 @@
   }
 
   @media (max-width: 768px) {
-    padding-top: 21rem;
     height: auto;
     justify-content: flex-end;
-    background-size: auto 64%;
-    background-position: top center;
+    background-image: none;
+    background-size: auto;
+    background-position: initial;
     margin: 0 auto 24px auto;
   }
+}
 
-  @media (max-width: 576px) {
-    background-image: url("/block-images/welcome-mobile.webp");
-  }
+.mobileFigure {
+  display: none;
+  margin: 0;
 
-  @media (max-width: 530px) {
-    background-size: auto 50%;
-    padding-top: 14.35rem;
+  @media (max-width: 768px) {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
+}
 
-  @media (max-width: 380px) {
-    background-size: auto 55%;
-    padding-top: 12.35rem;
-  }
+.mobileImage {
+  display: inline-block;
+  width: 100vw;
+  max-width: 576px;
+  height: auto;
 }
 
 .welcomeContent {
@@ -91,10 +92,7 @@
   gap: 48px;
   width: 410px;
   max-width: 50%;
-
-  @media (max-width: 768px) {
-    min-width: 248px !important;
-  }
+  // margin-left: -20px;
 
   .bonusText {
     display: none;
@@ -124,20 +122,24 @@
   }
 }
 
-.welcomeText p {
-  font-family: $font-primary;
-  color: #fff;
+.welcomeText h2 {
+  font-family: var(--font-secondary);
+  color: $text-color-primary;
   font-size: 32px;
   font-style: normal;
   font-weight: $font-weight-black;
-  text-transform: uppercase;
   line-height: normal;
+  text-transform: uppercase;
 
   @media (max-width: 768px) {
     font-size: 24px;
-    font-family: $font-secondary;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: $font-weight-black;
+    // color: $text-color-welcome;
+
+    // background: $text-color-welcome;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   @media (max-width: 380px) {

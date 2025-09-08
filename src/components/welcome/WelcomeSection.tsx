@@ -7,13 +7,20 @@ import { fetchOffers } from "@/utils/fetchOffers";
 
 export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
+  const [firstOfferId, setFirstOfferId] = useState<string>("");
+  const [offerLink, setOfferLink] = useState<string>("");
 
   useEffect(() => {
     const fetchWelcomeBonus = async () => {
       try {
         const offersData = await fetchOffers();
-        const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
+        const first = offersData?.offers?.[0];
+
+        const bonus = first?.bonuses?.welcome_bonus || "";
         setWelcomeBonus(bonus);
+
+        setFirstOfferId(String(first?.id ?? ""));
+        setOfferLink(first?.link || "");
       } catch (error) {
         console.error("Failed to fetch welcome bonus:", error);
       }
@@ -27,17 +34,37 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
+      <figure className={styles.mobileFigure} aria-hidden>
+        <img
+          className={styles.mobileImage}
+          src="/block-images/welcome-mobile.webp"
+          alt="Welcome Mobile"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+        />
+      </figure>
+
       <div className={styles.welcomeBg}>
         <div className="container">
           <div className={styles.welcomeContent}>
             <div className={styles.welcomeText}>
-              <p className={styles.offerText}>
+              <h2 className={styles.offerText}>
                 Exclusive welcome offer of {welcomeBonus}
-              </p>
-              <p className={styles.bonusText}>
+              </h2>
+              <h2 className={styles.bonusText}>
                 Exclusive welcome bonus of {welcomeBonus}
-              </p>
-              <Button text="claim bonus" variant="primary" />
+              </h2>
+
+              {(firstOfferId || offerLink) && (
+                <Button
+                  text="claim bonus"
+                  variant="primary"
+                  useNavigation={true}
+                  url={firstOfferId ? `/casino/${firstOfferId}` : offerLink}
+                  openInNewTab
+                />
+              )}
             </div>
           </div>
         </div>
