@@ -10,9 +10,9 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const inter = localFont({
+export const roboto_condensed = localFont({
   src: [
-    { path: "../../public/fonts/Inter/Inter-VAR.ttf", weight: "100 900", style: "normal" }
+    { path: "../../public/fonts/RobotoCondensed/RobotoCondensed-VAR.ttf", weight: "100 900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",

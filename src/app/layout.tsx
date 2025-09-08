@@ -4,10 +4,12 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "vidavegas-casino.com";
-const ogTitle = "VidaVegas Casino Canada – Trusted Online Slots, Live Games & Bonuses";
-const ogSiteName = "VidaVegas Casino";
-const metaDescription = "VidaVegas Casino Canada delivers licensed slots, table games, and live dealer action with secure payments and strong protection. Explore exclusive bonuses and start playing today\\!";
+const url = "winrolla-online.com";
+const ogTitle =
+  "Winrolla Casino Canada – Licensed Gaming, Slots, Live & Bonuses";
+const ogSiteName = "Winrolla Casino";
+const metaDescription =
+  "Winrolla Casino Canada brings trusted licensed play with slots, live dealers, and betting. Explore secure payments and exclusive offers today – join now for real rewards.";
 
 const locale = "en-CA";
 const language = "English";

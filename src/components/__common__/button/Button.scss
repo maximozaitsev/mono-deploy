@@ -6,15 +6,15 @@
   cursor: pointer;
   font-family: $font-secondary;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-style: normal;
+  font-style: italic;
   font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
 
   &.primary {
-    // outline: 4px solid;
-    // outline-offset: -4px;
-    // outline-color: #f9f8f83b;
+    outline: 4px solid;
+    outline-offset: -4px;
+    outline-color: #fedd39;
 
     border-radius: $button-large-border-radius;
     background: $color-button-large;
@@ -48,9 +48,9 @@
   }
 
   &.secondary {
-    // outline: 3px solid;
-    // outline-offset: -3px;
-    // outline-color: #2e2e2e3b;
+    outline: 3px solid;
+    outline-offset: -3px;
+    outline-color: #609cff;
 
     border-radius: $button-small-border-radius;
     padding: 0 32px;

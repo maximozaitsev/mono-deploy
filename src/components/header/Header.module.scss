@@ -1,6 +1,6 @@
 @import "@/styles/colors.scss";
-@import "@/styles/_fonts-bridge.scss";
 @import "@/styles/variables.scss";
+@import "@/styles/_fonts-bridge.scss";
 
 .spacer {
   flex: 1;
@@ -52,9 +52,10 @@
   display: flex;
   gap: 24px;
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 28px;
   list-style: none;
   padding: 0;
+  font-style: italic;
 
   @media (max-width: 850px) {
     gap: 10px;
@@ -72,8 +73,8 @@
 }
 
 .navLink {
-  color: $text-color-primary;
   font-family: $font-secondary;
+  color: $text-color-primary;
   background: none;
   border: none;
   font-weight: $font-weight-black;
@@ -83,12 +84,12 @@
   text-decoration: none;
 
   &:hover {
-    color: $color-button-large;
+    color: #fedd39;
   }
 }
 
 .activeNavLink {
-  color: $color-button-large;
+  color: #fedd39;
 }
 
 @media (max-width: 768px) {
@@ -109,6 +110,7 @@
     font-family: $font-secondary;
     height: $header-button-height;
     font-weight: $font-weight-black;
+    font-style: italic;
     font-size: 14px;
     padding: 12px 32px;
     border-radius: $header-button-border-radius;
@@ -120,6 +122,10 @@
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
+
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: #fedd39;
     }
 
     &:hover {

@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://vidavegas-casino.com/
-Sitemap: https://vidavegas-casino.com/sitemap.xml
+Host: https://winrolla-online.com/
+Sitemap: https://winrolla-online.com/sitemap.xml

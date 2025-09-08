@@ -9,9 +9,12 @@
   align-items: center;
   gap: 16px;
 
-  outline: $border-width solid $border-color;
+  border: 3px solid transparent;
+  background: linear-gradient($color-background-third, $color-background-third)
+      padding-box,
+    linear-gradient(180deg, #a599b8 0%, #27202f 100%) border-box;
   border-radius: $border-radius;
-  background: $color-background-third;
+  // background: $color-background-third;
 
   .logo {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
@@ -34,7 +37,7 @@
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: $color-button-large;
+    color: #ff3666;
   }
 
   p {

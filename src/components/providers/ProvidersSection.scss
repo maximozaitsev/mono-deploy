@@ -31,9 +31,10 @@
     align-items: center;
     height: auto;
     padding: 1rem;
-    border: $border-width solid $border-color;
+    border: 3px solid transparent;
     border-radius: $border-radius;
-    background-color: $color-background-providers-blocks;
+    background: linear-gradient(180deg, #1b1620 0%, #473a56 100%) padding-box,
+      linear-gradient(180deg, #a599b8 0%, #27202f 100%) border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 88px;
 
