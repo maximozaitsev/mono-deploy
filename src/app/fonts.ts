@@ -10,9 +10,9 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const roboto_condensed = localFont({
+export const outfit = localFont({
   src: [
-    { path: "../../public/fonts/RobotoCondensed/RobotoCondensed-VAR.ttf", weight: "100 900", style: "normal" }
+    { path: "../../public/fonts/Outfit/Outfit-VAR.ttf", weight: "100 900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",

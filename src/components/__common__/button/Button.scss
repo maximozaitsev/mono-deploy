@@ -4,17 +4,17 @@
 
 .button {
   cursor: pointer;
-  font-family: $font-secondary;
+  font-family: $font-primary;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-style: italic;
+  font-style: normal;
   font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
 
   &.primary {
-    outline: 4px solid;
-    outline-offset: -4px;
-    outline-color: #fedd39;
+    // outline: 4px solid;
+    // outline-offset: -4px;
+    // outline-color: #f9f8f83b;
 
     border-radius: $button-large-border-radius;
     background: $color-button-large;
@@ -23,6 +23,8 @@
     border: none;
     height: 82px;
     width: 340px;
+
+    box-shadow: 0px 8px 0px 0px #972c0b;
 
     @media (max-width: 768px) {
       border-radius: $button-large-border-radius-mobile;
@@ -48,9 +50,9 @@
   }
 
   &.secondary {
-    outline: 3px solid;
-    outline-offset: -3px;
-    outline-color: #609cff;
+    // outline: 3px solid;
+    // outline-offset: -3px;
+    // outline-color: #2e2e2e3b;
 
     border-radius: $button-small-border-radius;
     padding: 0 32px;
@@ -59,6 +61,8 @@
     font-size: 20px;
     border: none;
     height: 52px;
+
+    box-shadow: 0px 6px 0px 0px #07601d;
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;

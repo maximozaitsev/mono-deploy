@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://winrolla-online.com/
-Sitemap: https://winrolla-online.com/sitemap.xml
+Host: https://tucancasino-online.com/
+Sitemap: https://tucancasino-online.com/sitemap.xml
