@@ -34,6 +34,7 @@ const withPWA = nextPWA({
 
 const nextConfig = {
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
