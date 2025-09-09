@@ -216,7 +216,7 @@
       display: flex;
       justify-content: flex-end;
       border-bottom: none;
-      padding: 16px 0 0 !important;
+      padding: 16px 0 6px !important;
       &::after {
         display: none;
       }
@@ -344,8 +344,6 @@
     }
   }
 }
-
-
 
 /* Theme Styles Start */
 .accordion-title,
