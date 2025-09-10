@@ -1,14 +1,18 @@
+"use client";
+
 import licenceImage from "../../../public/block-images/license.webp";
-import contentData from "../../content/content.json";
+import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
-import { parseSections } from "../../utils/parseSections";
+import { useParsedSections } from "../../utils/parseSections";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./LicensesSection.module.scss";
 
 export default function LicensesSection() {
-  const content = contentData;
-  const { licenses } = parseSections(content?.sections || {});
+  const { data: content, loading, error } = useContentData();
+  const { licenses } = useParsedSections(content?.sections || {});
 
+  if (loading) return <p></p>;
+  if (error) return <p>Error loading content.</p>;
   if (!licenses) return <p>Licenses section data is not available.</p>;
 
   return (

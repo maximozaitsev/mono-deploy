@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import styles from "./Header.module.scss";
 import { usePathname } from "next/navigation";
-import { useOffers } from "@/contexts/OffersContext";
+import { fetchOffers } from "../../utils/fetchOffers";
 
 const navItems = [
   { label: "Games", path: "/games" },
@@ -18,35 +18,49 @@ const navItems = [
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [offerId, setOfferId] = useState("");
+  const [offerLink, setOfferLink] = useState("");
   const pathname = usePathname();
-  const { data: offersData } = useOffers();
 
-  const memoizedNavItems = useMemo(() => navItems, []);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
+  // Memoize resize handler
+  const handleResize = useCallback(() => {
+    setIsMobile(window.innerWidth < 768);
   }, []);
 
-  const firstOffer = offersData?.offers?.[0];
-  const offerId = firstOffer && firstOffer.id != null ? String(firstOffer.id) : "";
-  const offerLink = firstOffer?.link || "";
+  // Memoize offer fetching
+  const fetchOffersData = useCallback(async () => {
+    try {
+      const { offers } = await fetchOffers();
+      const first = offers?.[0];
+      setOfferId(first && first.id != null ? String(first.id) : "");
+      setOfferLink(first?.link || "");
+    } catch (e) {
+      console.error("Failed to prefetch offers in header:", e);
+    }
+  }, []);
 
-  const handleSignInClick = () => {
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    fetchOffersData();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [handleResize, fetchOffersData]);
+
+  const handleSignInClick = useCallback(() => {
     try {
       window.open(`/casino/${offerId}`, "_blank", "noopener,noreferrer");
     } catch (error) {
       console.error("Error opening Play Now:", error);
     }
-  };
+  }, [offerId]);
 
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
-  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
+  const toggleMenu = useCallback(() => setIsMenuOpen((prev) => !prev), []);
+  
+  // Memoize logo path
+  const logoPath = useMemo(() => isMobile ? "/logo-mobile.svg" : "/logo.svg", [isMobile]);
 
-  const handleLogoClick: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
+  const handleLogoClick: React.MouseEventHandler<HTMLAnchorElement> = useCallback((e) => {
     if (pathname === "/") {
       e.preventDefault();
       try {
@@ -55,7 +69,7 @@ const Header = () => {
         window.scrollTo(0, 0);
       }
     }
-  };
+  }, [pathname]);
 
   return (
     <header className={styles.header}>
@@ -88,7 +102,7 @@ const Header = () => {
 
         {!isMobile && (
           <ul className={styles.navList}>
-            {memoizedNavItems.map((item) => (
+            {navItems.map((item) => (
               <li key={item.path} className={styles.navItem}>
                 <Link
                   href={item.path}
@@ -117,7 +131,7 @@ const Header = () => {
             className={`${styles.menuItems} ${isMenuOpen ? styles.open : ""}`}
           >
             <ul className={styles.navListMobile}>
-              {memoizedNavItems.map((item) => (
+              {navItems.map((item) => (
                 <li key={item.path} className={styles.navItem}>
                   <Link
                     href={item.path}

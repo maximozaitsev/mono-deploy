@@ -13,12 +13,24 @@ interface ProvidersSectionProps {
 export default function ProvidersSection({
   initialProviders,
 }: ProvidersSectionProps) {
+  const [providers, setProviders] = useState<Provider[]>(initialProviders);
+
+  useEffect(() => {
+    async function updateProviders() {
+      const updatedProviders = await fetchProviders();
+      setProviders(updatedProviders);
+    }
+
+    if (!initialProviders.length) {
+      updateProviders();
+    }
+  }, [initialProviders]);
 
   return (
     <section className="providers-section section container">
       <h2 className="h2-heading">Software Providers</h2>
       <div className="providers-grid">
-        {initialProviders.map((provider) => (
+        {providers.map((provider) => (
           <div key={provider.id} className="provider-block">
             <img
               src={provider.image}

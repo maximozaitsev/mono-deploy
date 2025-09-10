@@ -17,11 +17,15 @@
 
 html {
   scroll-behavior: smooth;
+  font-display: swap;
 }
 
 body {
   background: $color-background;
   font-family: $font-primary;
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -46,9 +50,6 @@ body {
   width: 100%;
   margin-bottom: 140px;
   scroll-margin-top: 99px;
-  contain: layout style paint;
-  content-visibility: auto;
-  contain-intrinsic-size: 0 500px;
 
   @media (max-width: 1120px) {
     margin-bottom: 64px;

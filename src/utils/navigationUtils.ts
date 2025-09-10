@@ -1,9 +1,8 @@
 import { useRouter } from "next/navigation";
-import { useOffers } from "@/contexts/OffersContext";
+import { fetchOffers } from "@/utils/fetchOffers";
 
 export const useNavigateWithPreloader = () => {
   const router = useRouter();
-  const { data: offersData } = useOffers();
 
   const handleNavigation = async (
     url: string,
@@ -15,11 +14,15 @@ export const useNavigateWithPreloader = () => {
     }
 
     if (navigateToFirstOffer) {
-      const offers = offersData?.offers || [];
-      if (offers.length > 0) {
-        const firstOfferId = offers[0].id;
-        router.push(`/casino/${firstOfferId}`);
-        return;
+      try {
+        const { offers } = await fetchOffers();
+        if (offers.length > 0) {
+          const firstOfferId = offers[0].id;
+          router.push(`/casino/${firstOfferId}`);
+          return;
+        }
+      } catch (error) {
+        console.error("Error fetching first offer:", error);
       }
     }
 

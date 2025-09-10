@@ -2,8 +2,8 @@
 
 import React from "react";
 import { useNavigateWithPreloader } from "../../../utils/navigationUtils";
-import { useOffers } from "@/contexts/OffersContext";
 import "./Button.scss";
+import { fetchOffers } from "../../../utils/fetchOffers";
 
 type ButtonProps = {
   text: string;
@@ -29,33 +29,38 @@ const Button: React.FC<ButtonProps> = ({
   url,
 }) => {
   const { handleNavigation } = useNavigateWithPreloader();
-  const { data: offersData } = useOffers();
 
   const handleClick = async () => {
     if (openInNewTab) {
       if (url?.startsWith("http")) {
         if (onClick) onClick();
-        const offers = offersData?.offers || [];
-        const targetOffer = offers.find((o) => o.link === url) || offers[0];
-        if (targetOffer) {
+        try {
+          const { offers } = await fetchOffers();
+          const targetOffer = offers.find((o) => o.link === url) || offers[0];
           window.open(
             `/casino/${targetOffer.id}`,
             "_blank",
             "noopener,noreferrer"
           );
+        } catch (error) {
+          console.error("Error fetching offers for new tab:", error);
         }
       } else if (useNavigation && url) {
         window.open(url, "_blank", "noopener,noreferrer");
       } else if (useNavigation && navigateHome) {
         window.open("/", "_blank", "noopener,noreferrer");
       } else if (useNavigation) {
-        const offers = offersData?.offers || [];
-        if (offers.length > 0) {
-          window.open(
-            `/casino/${offers[0].id}`,
-            "_blank",
-            "noopener,noreferrer"
-          );
+        try {
+          const { offers } = await fetchOffers();
+          if (offers.length > 0) {
+            window.open(
+              `/casino/${offers[0].id}`,
+              "_blank",
+              "noopener,noreferrer"
+            );
+          }
+        } catch (error) {
+          console.error("Error fetching first offer for new tab:", error);
         }
       } else if (onClick) {
         onClick();

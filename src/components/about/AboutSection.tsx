@@ -1,38 +1,46 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import aboutImage from "../../../public/block-images/laptop.webp";
+import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import "./AboutSection.scss";
 
-// Импортируем контент напрямую
-import content from "../../content/content.json";
-
 export default function AboutSection() {
-  // Обрабатываем данные на сервере
-  const aboutEntries = Object.entries(content.about) as [string, any][];
-  
-  let aboutSections: any = {};
-  let depositSection: any = null;
-  let withdrawalSection: any = null;
+  const { data: content, loading, error } = useContentData();
+  const [aboutSections, setAboutSections] = useState<any>({});
+  const [depositSection, setDepositSection] = useState<any>(null);
+  const [withdrawalSection, setWithdrawalSection] = useState<any>(null);
 
-  if (aboutEntries.length > 2) {
-    const depositTitle = aboutEntries[aboutEntries.length - 2][0];
-    const withdrawalTitle = aboutEntries[aboutEntries.length - 1][0];
+  useEffect(() => {
+    if (content) {
+      const aboutEntries = Object.entries(content.about) as [string, any][];
+      if (aboutEntries.length > 2) {
+        const depositTitle = aboutEntries[aboutEntries.length - 2][0];
+        const withdrawalTitle = aboutEntries[aboutEntries.length - 1][0];
 
-    depositSection = {
-      title: depositTitle,
-      content: aboutEntries[aboutEntries.length - 2][1],
-    };
-    withdrawalSection = {
-      title: withdrawalTitle,
-      content: aboutEntries[aboutEntries.length - 1][1],
-    };
+        setDepositSection({
+          title: depositTitle,
+          content: aboutEntries[aboutEntries.length - 2][1],
+        });
+        setWithdrawalSection({
+          title: withdrawalTitle,
+          content: aboutEntries[aboutEntries.length - 1][1],
+        });
 
-    // Оставляем только секции до Deposits и Withdrawals
-    const filteredAbout = aboutEntries.slice(0, aboutEntries.length - 2);
-    aboutSections = Object.fromEntries(filteredAbout);
-  } else {
-    aboutSections = content.about;
-  }
+        // Оставляем только секции до Deposits и Withdrawals
+        const filteredAbout = aboutEntries.slice(0, aboutEntries.length - 2);
+        setAboutSections(Object.fromEntries(filteredAbout));
+      } else {
+        setAboutSections(content.about);
+      }
+    }
+  }, [content]);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error loading content.</p>;
+  if (!content) return <p>No content available.</p>;
 
   return (
     <section className="about-section section">

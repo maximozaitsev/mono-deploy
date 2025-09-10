@@ -1,22 +1,28 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import { Offer } from "../../types/offer";
 import OfferCard from "./OfferCard";
 import Button from "../__common__/button/Button";
-import { useOffers } from "@/contexts/OffersContext";
+import { fetchOffers } from "@/utils/fetchOffers";
 import "./TopCasinosSection.scss";
 
 const TopCasinosSection: React.FC = () => {
+  const [country, setCountry] = useState<string>("");
+  const [offers, setOffers] = useState<Offer[]>([]);
   const [showAll, setShowAll] = useState<boolean>(false);
-  const { data: offersData } = useOffers();
 
-  const country = offersData?.country || "";
-  const offers = offersData?.offers || [];
-  
-  const visibleOffers = useMemo(() => {
-    return showAll ? offers : offers.slice(0, 8);
-  }, [showAll, offers]);
+  useEffect(() => {
+    const loadOffers = async () => {
+      const { country, offers } = await fetchOffers();
+      setCountry(country);
+      setOffers(offers);
+    };
+
+    loadOffers();
+  }, []);
+
+  const visibleOffers = showAll ? offers : offers.slice(0, 8);
 
   return (
     <section

@@ -15,7 +15,21 @@ interface PaymentMethodsSectionProps {
 const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
   initialPaymentMethods,
 }) => {
+  const [paymentMethods, setPaymentMethods] = useState<PaymentMethod[]>(
+    initialPaymentMethods
+  );
   const [isMobileView, setIsMobileView] = useState<boolean>(false);
+
+  useEffect(() => {
+    async function updatePaymentMethods() {
+      const updatedMethods = await fetchPayments();
+      setPaymentMethods(updatedMethods);
+    }
+
+    if (!initialPaymentMethods.length) {
+      updatePaymentMethods();
+    }
+  }, [initialPaymentMethods]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,7 +47,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
       <h2 className="h2-heading">Payment methods</h2>
       {isMobileView ? (
         <div className="mobile-payment-methods">
-          {initialPaymentMethods.map((method) => (
+          {paymentMethods.map((method) => (
             <div key={method.payment_id} className="payment-method-card">
               <div className="payment-method-header">
                 <Image
@@ -81,7 +95,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
             </tr>
           </thead>
           <tbody>
-            {initialPaymentMethods.map((method) => (
+            {paymentMethods.map((method) => (
               <tr className="paragraph-text black" key={method.payment_id}>
                 <td>
                   <Image

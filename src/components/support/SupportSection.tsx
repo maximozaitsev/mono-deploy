@@ -1,20 +1,25 @@
+"use client";
+
+import { useMemo } from "react";
 import supportImage from "../../../public/block-images/support.webp";
-import contentData from "../../content/content.json";
+import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./SupportSection.module.scss";
 
 export default function SupportSection() {
-  const data = contentData;
-  
-  const supportData = (() => {
+  const { data, loading, error } = useContentData();
+
+  const supportData = useMemo(() => {
     if (!data?.support) return null;
     const supportEntries = Object.entries(data.support) as [string, any][];
     if (supportEntries.length === 0) return null;
     const [sectionTitle, blocks] = supportEntries[0];
     return { sectionTitle, blocks };
-  })();
+  }, [data]);
 
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error loading content.</p>;
   if (!supportData) return <p>Support section data is not available.</p>;
 
   return (
