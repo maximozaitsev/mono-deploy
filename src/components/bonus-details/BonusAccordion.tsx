@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Offer } from "../../types/offer";
 import Button from "../__common__/button/Button";
@@ -13,7 +13,13 @@ interface BonusAccordionProps {
 
 const BonusAccordion: React.FC<BonusAccordionProps> = ({ offers }) => {
   const [openOffers, setOpenOffers] = useState<number[]>([]);
-  const [displayedOffers, setDisplayedOffers] = useState<Offer[]>(offers?.slice(0, 6) || []);
+  const [displayedOffers, setDisplayedOffers] = useState<Offer[]>([]);
+
+  useEffect(() => {
+    if (offers && offers.length > 0) {
+      setDisplayedOffers(offers.slice(0, 6));
+    }
+  }, [offers]);
 
   const toggleAccordion = (id: number) => {
     if (openOffers.includes(id)) {

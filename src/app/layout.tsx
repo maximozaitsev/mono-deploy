@@ -56,20 +56,25 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <head>
-        <meta name="language" content={language} />
-        <link
-          rel="preconnect"
-          href="https://api.adkey-seo.com"
-          crossOrigin=""
-        />
-        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
-        <link rel="icon" href="/icons/ico-192.png" />
-        <link rel="apple-touch-icon" href="/icons/ico-180.png" sizes="180x180" />
-        <link rel="apple-touch-icon" href="/icons/ico-152.png" sizes="152x152" />
-        <link rel="apple-touch-icon" href="/icons/ico-120.png" sizes="120x120" />
-        <link rel="apple-touch-icon" href="/icons/ico-76.png" sizes="76x76" />
-      </head>
+              <head>
+                <meta name="language" content={language} />
+                <link
+                  rel="preconnect"
+                  href="https://api.adkey-seo.com"
+                  crossOrigin=""
+                />
+                <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+                <link rel="icon" href="/icons/ico-192.png" />
+                <link rel="apple-touch-icon" href="/icons/ico-180.png" sizes="180x180" />
+                <link rel="apple-touch-icon" href="/icons/ico-152.png" sizes="152x152" />
+                <link rel="apple-touch-icon" href="/icons/ico-120.png" sizes="120x120" />
+                <link rel="apple-touch-icon" href="/icons/ico-76.png" sizes="76x76" />
+                <link rel="preload" as="image" href="/block-images/welcome-mobile.webp" fetchPriority="high" />
+                <link rel="preload" as="image" href="https://api.adkey-seo.com/storage/images/offers/Crownplay_dark-180487395_1743606668.webp?format=webp&width=160&height=64" fetchPriority="high" />
+                <link rel="preload" as="image" href="https://api.adkey-seo.com/storage/images/offers/logo-1xbet-742023447_1668642977.webp?format=webp&width=160&height=64" fetchPriority="high" />
+                <link rel="preload" as="image" href="https://api.adkey-seo.com/storage/images/games/VikingsGoWild-1904749154_1752067663.webp?format=webp&width=332&height=179" fetchPriority="high" />
+                <link rel="preload" as="image" href="https://api.adkey-seo.com/storage/images/games/Thunderstruck-2-2052200375_1752067501.webp?format=webp&width=332&height=179" fetchPriority="high" />
+              </head>
       <body className={fontVars}>
         <OffersProvider initialData={offersData}>
           {children}
