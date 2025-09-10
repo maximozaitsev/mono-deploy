@@ -7,7 +7,6 @@ export const roboto = localFont({
   ],
   variable: "--font-primary",
   display: "swap",
-  preload: true,
   fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
   adjustFontFallback: "Arial",
 });
@@ -19,7 +18,6 @@ export const nunito_sans = localFont({
   ],
   variable: "--font-secondary",
   display: "swap",
-  preload: true,
   fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"],
   adjustFontFallback: "Arial",
 });

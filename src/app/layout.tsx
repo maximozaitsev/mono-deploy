@@ -64,45 +64,6 @@ export default async function RootLayout({
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
-        <link
-          rel="preload"
-          as="image"
-          href="/block-images/welcome.webp"
-          media="(min-width: 769px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/block-images/welcome-mobile.webp"
-          media="(max-width: 768px)"
-        />
-        <link
-          rel="preload"
-          as="font"
-          href="/fonts/Roboto/woff2/Roboto-500.woff2"
-          type="font/woff2"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          as="font"
-          href="/fonts/NunitoSans/woff2/NunitoSans-700.woff2"
-          type="font/woff2"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          as="font"
-          href="/fonts/Roboto/woff2/Roboto-900.woff2"
-          type="font/woff2"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          as="style"
-          href="/_next/static/css/app/layout.css"
-        />
-
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-180.png" sizes="180x180" />
         <link rel="apple-touch-icon" href="/icons/ico-152.png" sizes="152x152" />
