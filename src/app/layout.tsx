@@ -76,9 +76,17 @@ export default async function RootLayout({
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
         />
+        <link
+          rel="preload"
+          as="style"
+          href="/_next/static/css/app/layout.css"
+        />
 
         <link rel="icon" href="/icons/ico-192.png" />
-        <link rel="apple-touch-icon" href="/icons/ico-192.png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/icons/ico-180.png" sizes="180x180" />
+        <link rel="apple-touch-icon" href="/icons/ico-152.png" sizes="152x152" />
+        <link rel="apple-touch-icon" href="/icons/ico-120.png" sizes="120x120" />
+        <link rel="apple-touch-icon" href="/icons/ico-76.png" sizes="76x76" />
       </head>
       <body className={fontVars}>
         <OffersProvider initialData={offersData}>

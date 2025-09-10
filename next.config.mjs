@@ -33,6 +33,8 @@ const withPWA = nextPWA({
 });
 
 const nextConfig = {
+  compress: true,
+  poweredByHeader: false,
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -90,6 +92,10 @@ const nextConfig = {
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
+          },
+          {
+            key: "Content-Encoding",
+            value: "gzip",
           },
         ],
       },
