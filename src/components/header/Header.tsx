@@ -6,7 +6,7 @@ import Logo from "./Logo";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import styles from "./Header.module.scss";
 import { usePathname } from "next/navigation";
-import { fetchOffers } from "../../utils/fetchOffers";
+import { useOffers } from "@/contexts/OffersContext";
 
 const navItems = [
   { label: "Games", path: "/games" },
@@ -18,28 +18,20 @@ const navItems = [
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [offerId, setOfferId] = useState("");
-  const [offerLink, setOfferLink] = useState("");
   const pathname = usePathname();
+  const { data: offersData } = useOffers();
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
     window.addEventListener("resize", handleResize);
 
-    (async () => {
-      try {
-        const { offers } = await fetchOffers();
-        const first = offers?.[0];
-        setOfferId(first && first.id != null ? String(first.id) : "");
-        setOfferLink(first?.link || "");
-      } catch (e) {
-        console.error("Failed to prefetch offers in header:", e);
-      }
-    })();
-
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const firstOffer = offersData?.offers?.[0];
+  const offerId = firstOffer && firstOffer.id != null ? String(firstOffer.id) : "";
+  const offerLink = firstOffer?.link || "";
 
   const handleSignInClick = () => {
     try {

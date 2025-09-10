@@ -3,6 +3,8 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
+import { OffersProvider } from "../contexts/OffersContext";
+import { fetchOffers } from "../utils/fetchOffers";
 
 const url = "7bitcasino-wins.com";
 const ogTitle = "7Bit Casino Canada Games: Gaming Experience, Live Dealers and Bonuses";
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -48,6 +50,10 @@ export default function RootLayout({
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
+  
+  // Загружаем данные offers на сервере
+  const offersData = await fetchOffers();
+
   return (
     <html lang={locale}>
       <head>
@@ -72,43 +78,13 @@ export default function RootLayout({
         />
 
         <link rel="icon" href="/icons/ico-192.png" />
-        <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
-        <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
-        <link rel="apple-touch-icon" href="/icons/ico-72.png" sizes="72x72" />
-        <link rel="apple-touch-icon" href="/icons/ico-76.png" sizes="76x76" />
-        <link
-          rel="apple-touch-icon"
-          href="/icons/ico-114.png"
-          sizes="114x114"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="/icons/ico-120.png"
-          sizes="120x120"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="/icons/ico-144.png"
-          sizes="144x144"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="/icons/ico-152.png"
-          sizes="152x152"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="/icons/ico-180.png"
-          sizes="180x180"
-        />
-        <link
-          rel="icon"
-          href="/icons/ico-192.png"
-          type="image/png"
-          sizes="192x192"
-        />
+        <link rel="apple-touch-icon" href="/icons/ico-192.png" sizes="192x192" />
       </head>
-      <body className={fontVars}>{children}</body>
+      <body className={fontVars}>
+        <OffersProvider initialData={offersData}>
+          {children}
+        </OffersProvider>
+      </body>
     </html>
   );
 }

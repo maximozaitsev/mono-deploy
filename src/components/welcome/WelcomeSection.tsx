@@ -1,33 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useOffers } from "@/contexts/OffersContext";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
-import { fetchOffers } from "@/utils/fetchOffers";
 
 export default function WelcomeSection() {
-  const [welcomeBonus, setWelcomeBonus] = useState("");
-  const [firstOfferId, setFirstOfferId] = useState<string>("");
-  const [offerLink, setOfferLink] = useState<string>("");
-
-  useEffect(() => {
-    const fetchWelcomeBonus = async () => {
-      try {
-        const offersData = await fetchOffers();
-        const first = offersData?.offers?.[0];
-
-        const bonus = first?.bonuses?.welcome_bonus || "";
-        setWelcomeBonus(bonus);
-
-        setFirstOfferId(String(first?.id ?? ""));
-        setOfferLink(first?.link || "");
-      } catch (error) {
-        console.error("Failed to fetch welcome bonus:", error);
-      }
-    };
-
-    fetchWelcomeBonus();
-  }, []);
+  const { data: offersData } = useOffers();
+  
+  const firstOffer = offersData?.offers?.[0];
+  const welcomeBonus = firstOffer?.bonuses?.welcome_bonus || "";
+  const firstOfferId = String(firstOffer?.id ?? "");
+  const offerLink = firstOffer?.link || "";
 
   return (
     <section

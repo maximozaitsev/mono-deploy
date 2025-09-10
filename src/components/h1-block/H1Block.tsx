@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import styles from "./H1Block.module.scss";
 import siteData from "@/content/siteData.json";

@@ -2,8 +2,8 @@ import { getJsonWithRetry } from "@/utils/http";
 import { HomePageProps, Offer } from "@/types/offer";
 import { getOrFetch, getStale } from "@/utils/apiCache";
 
-const TTL_MS = 60_000;
-const STALE_MS = 120_000;
+const TTL_MS = 300_000; // 5 minutes
+const STALE_MS = 600_000; // 10 minutes
 
 export async function fetchOffers(): Promise<HomePageProps> {
   const siteId = process.env.NEXT_PUBLIC_SITE_ID;
