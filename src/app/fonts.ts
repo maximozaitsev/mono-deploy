@@ -10,9 +10,10 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const outfit = localFont({
+export const nunito_sans = localFont({
   src: [
-    { path: "../../public/fonts/Outfit/Outfit-VAR.ttf", weight: "100 900", style: "normal" }
+    { path: "../../public/fonts/NunitoSans/NunitoSans-700.ttf", weight: "700", style: "normal" },
+    { path: "../../public/fonts/NunitoSans/NunitoSans-900.ttf", weight: "900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",

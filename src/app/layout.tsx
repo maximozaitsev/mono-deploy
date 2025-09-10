@@ -4,12 +4,12 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "tucancasino-online.com";
-const ogTitle = "Tucan Casino Review 2025: Bonuses, Games, Payouts, and More";
-const ogSiteName = "Tucan Casino";
-const metaDescription = "A UK-focused Tucan Casino review for 2025\\. See how the welcome bonus works, which games are worth your time, what the banking looks like, mobile options, and the fine print that matters before you play.";
+const url = "7bitcasino-wins.com";
+const ogTitle = "7Bit Casino Canada Games: Gaming Experience, Live Dealers and Bonuses";
+const ogSiteName = "7bitcasino Casino";
+const metaDescription = "Explore the gaming opportunities of 7Bit Casino Games. A range of games, live dealers, jackpots. Enjoy your favorite casino games and get a chance to win big";
 
-const locale = "en-GB";
+const locale = "en";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

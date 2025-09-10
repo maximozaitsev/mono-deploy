@@ -1,7 +1,6 @@
 @import "@/styles/colors.scss";
 @import "@/styles/variables.scss";
 @import "@/styles/_fonts-bridge.scss";
-
 .spacer {
   flex: 1;
 }
@@ -52,7 +51,7 @@
   display: flex;
   gap: 24px;
   margin-left: auto;
-  margin-right: 48px;
+  margin-right: 31px;
   list-style: none;
   padding: 0;
 
@@ -83,12 +82,12 @@
   text-decoration: none;
 
   &:hover {
-    color: #ffa645;
+    color: $color-button-large;
   }
 }
 
 .activeNavLink {
-  color: #ffa645;
+  color: $color-button-large;
 }
 
 @media (max-width: 768px) {
@@ -108,9 +107,8 @@
   .headerButton {
     height: $header-button-height;
     font-weight: $font-weight-black;
-    font-family: $font-secondary;
     font-size: 14px;
-    padding: 12px 32px;
+    padding: 13.5px 32px;
     border-radius: $header-button-border-radius;
     border: none;
     cursor: pointer;
@@ -120,8 +118,6 @@
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
-
-      box-shadow: 0px 4px 0px 0px #972c0b;
     }
 
     &:hover {
@@ -132,6 +128,7 @@
     gap: 8px;
 
     .headerButton {
+      font-family: $font-secondary;
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
       font-size: 10px;

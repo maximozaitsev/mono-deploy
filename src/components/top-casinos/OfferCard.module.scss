@@ -34,12 +34,7 @@
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    // color: $color-button-large;
-
-    background: $color-button-large;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: $color-button-large;
   }
 
   p {

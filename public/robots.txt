@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://tucancasino-online.com/
-Sitemap: https://tucancasino-online.com/sitemap.xml
+Host: https://7bitcasino-wins.com/
+Sitemap: https://7bitcasino-wins.com/sitemap.xml

@@ -24,8 +24,6 @@
     height: 82px;
     width: 340px;
 
-    box-shadow: 0px 8px 0px 0px #972c0b;
-
     @media (max-width: 768px) {
       border-radius: $button-large-border-radius-mobile;
       font-size: 24px;
@@ -61,8 +59,6 @@
     font-size: 20px;
     border: none;
     height: 52px;
-
-    box-shadow: 0px 6px 0px 0px #07601d;
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;
