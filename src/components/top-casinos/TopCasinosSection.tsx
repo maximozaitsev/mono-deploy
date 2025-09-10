@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Offer } from "../../types/offer";
 import OfferCard from "./OfferCard";
 import Button from "../__common__/button/Button";
@@ -13,7 +13,10 @@ const TopCasinosSection: React.FC = () => {
 
   const country = offersData?.country || "";
   const offers = offersData?.offers || [];
-  const visibleOffers = showAll ? offers : offers.slice(0, 8);
+  
+  const visibleOffers = useMemo(() => {
+    return showAll ? offers : offers.slice(0, 8);
+  }, [showAll, offers]);
 
   return (
     <section

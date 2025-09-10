@@ -90,6 +90,18 @@ export default async function RootLayout({
           type="font/woff2"
           crossOrigin=""
         />
+        <link
+          rel="preload"
+          as="font"
+          href="/fonts/Roboto/woff2/Roboto-900.woff2"
+          type="font/woff2"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          as="style"
+          href="/_next/static/css/app/layout.css"
+        />
 
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-180.png" sizes="180x180" />

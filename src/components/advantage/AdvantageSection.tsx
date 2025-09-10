@@ -1,80 +1,70 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import styles from "./AdvantageSection.module.scss";
 
-export default function AdvantageSection() {
-  const [sectionTitle, setSectionTitle] = useState<string>("");
-  const [introParagraphs, setIntroParagraphs] = useState<string[][]>([]);
-  const [advantagesTitle, setAdvantagesTitle] = useState<string>("");
-  const [advantagesList, setAdvantagesList] = useState<string[]>([]);
-  const [disadvantagesTitle, setDisadvantagesTitle] = useState<string>("");
-  const [disadvantagesList, setDisadvantagesList] = useState<string[]>([]);
-  const [closingParagraphs, setClosingParagraphs] = useState<string[][]>([]);
+// Импортируем контент напрямую
+import content from "../../content/content.json";
 
-  useEffect(() => {
-    import("../../content/content.json")
-      .then((data) => {
-        const advantagesEntries = Object.entries(data.advantages) as [
-          string,
-          any
-        ][];
+function groupParagraphs(blocks: any[], stopAtType: string) {
+  const grouped: string[][] = [];
+  let tempGroup: string[] = [];
 
-        if (advantagesEntries.length > 0) {
-          const [firstKey, section] = advantagesEntries[0];
-          setSectionTitle(firstKey);
-
-          setIntroParagraphs(groupParagraphs(section, "list"));
-
-          const headingBlocks = section.filter(
-            (block: any) => block.type === "heading" && block.level === 3
-          );
-          const listBlocks = section.filter(
-            (block: any) => block.type === "list"
-          );
-
-          if (headingBlocks.length >= 2 && listBlocks.length >= 2) {
-            setAdvantagesTitle(headingBlocks[0].text);
-            setAdvantagesList(listBlocks[0].items);
-            setDisadvantagesTitle(headingBlocks[1].text);
-            setDisadvantagesList(listBlocks[1].items);
-          }
-
-          setClosingParagraphs(
-            groupParagraphs(
-              section.slice(
-                section.findIndex((b: any) => b.type === "list") + 2
-              ),
-              ""
-            )
-          );
-        }
-      })
-      .catch((error) => console.error("Ошибка загрузки JSON:", error));
-  }, []);
-
-  function groupParagraphs(blocks: any[], stopAtType: string) {
-    const grouped: string[][] = [];
-    let tempGroup: string[] = [];
-
-    for (const block of blocks) {
-      if (block.type === "paragraph") {
-        tempGroup.push(block.text);
-      } else if (block.type === stopAtType) {
-        break;
-      } else {
-        if (tempGroup.length > 0) {
-          grouped.push(tempGroup);
-          tempGroup = [];
-        }
+  for (const block of blocks) {
+    if (block.type === "paragraph") {
+      tempGroup.push(block.text);
+    } else if (block.type === stopAtType) {
+      break;
+    } else {
+      if (tempGroup.length > 0) {
+        grouped.push(tempGroup);
+        tempGroup = [];
       }
     }
+  }
 
-    if (tempGroup.length > 0) {
-      grouped.push(tempGroup);
+  if (tempGroup.length > 0) {
+    grouped.push(tempGroup);
+  }
+
+  return grouped;
+}
+
+export default function AdvantageSection() {
+  // Обрабатываем данные на сервере
+  const advantagesEntries = Object.entries(content.advantages) as [string, any][];
+  
+  let sectionTitle = "";
+  let introParagraphs: string[][] = [];
+  let advantagesTitle = "";
+  let advantagesList: string[] = [];
+  let disadvantagesTitle = "";
+  let disadvantagesList: string[] = [];
+  let closingParagraphs: string[][] = [];
+
+  if (advantagesEntries.length > 0) {
+    const [firstKey, section] = advantagesEntries[0];
+    sectionTitle = firstKey;
+
+    introParagraphs = groupParagraphs(section, "list");
+
+    const headingBlocks = section.filter(
+      (block: any) => block.type === "heading" && block.level === 3
+    );
+    const listBlocks = section.filter(
+      (block: any) => block.type === "list"
+    );
+
+    if (headingBlocks.length >= 2 && listBlocks.length >= 2) {
+      advantagesTitle = headingBlocks[0].text;
+      advantagesList = listBlocks[0].items;
+      disadvantagesTitle = headingBlocks[1].text;
+      disadvantagesList = listBlocks[1].items;
     }
 
-    return grouped;
+    closingParagraphs = groupParagraphs(
+      section.slice(
+        section.findIndex((b: any) => b.type === "list") + 2
+      ),
+      ""
+    );
   }
 
   return (
