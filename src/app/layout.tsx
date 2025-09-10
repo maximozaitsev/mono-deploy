@@ -78,21 +78,6 @@ export default async function RootLayout({
         />
         <link
           rel="preload"
-          as="style"
-          href="/_next/static/css/app/layout.css"
-        />
-        <link
-          rel="preload"
-          as="script"
-          href="/_next/static/chunks/webpack.js"
-        />
-        <link
-          rel="preload"
-          as="script"
-          href="/_next/static/chunks/main.js"
-        />
-        <link
-          rel="preload"
           as="font"
           href="/fonts/Roboto/woff2/Roboto-500.woff2"
           type="font/woff2"

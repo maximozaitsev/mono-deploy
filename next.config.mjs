@@ -35,6 +35,7 @@ const withPWA = nextPWA({
 const nextConfig = {
   compress: true,
   poweredByHeader: false,
+  swcMinify: true,
   images: {
     unoptimized: true,
     remotePatterns: [

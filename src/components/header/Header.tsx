@@ -21,6 +21,8 @@ const Header = () => {
   const pathname = usePathname();
   const { data: offersData } = useOffers();
 
+  const memoizedNavItems = useMemo(() => navItems, []);
+
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
@@ -86,7 +88,7 @@ const Header = () => {
 
         {!isMobile && (
           <ul className={styles.navList}>
-            {navItems.map((item) => (
+            {memoizedNavItems.map((item) => (
               <li key={item.path} className={styles.navItem}>
                 <Link
                   href={item.path}
@@ -115,7 +117,7 @@ const Header = () => {
             className={`${styles.menuItems} ${isMenuOpen ? styles.open : ""}`}
           >
             <ul className={styles.navListMobile}>
-              {navItems.map((item) => (
+              {memoizedNavItems.map((item) => (
                 <li key={item.path} className={styles.navItem}>
                   <Link
                     href={item.path}
