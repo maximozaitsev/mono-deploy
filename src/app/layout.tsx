@@ -81,6 +81,30 @@ export default async function RootLayout({
           as="style"
           href="/_next/static/css/app/layout.css"
         />
+        <link
+          rel="preload"
+          as="script"
+          href="/_next/static/chunks/webpack.js"
+        />
+        <link
+          rel="preload"
+          as="script"
+          href="/_next/static/chunks/main.js"
+        />
+        <link
+          rel="preload"
+          as="font"
+          href="/fonts/Roboto/woff2/Roboto-500.woff2"
+          type="font/woff2"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          as="font"
+          href="/fonts/NunitoSans/woff2/NunitoSans-700.woff2"
+          type="font/woff2"
+          crossOrigin=""
+        />
 
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-180.png" sizes="180x180" />

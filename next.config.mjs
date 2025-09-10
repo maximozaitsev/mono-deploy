@@ -57,6 +57,14 @@ const nextConfig = {
             key: "Referrer-Policy",
             value: "no-referrer",
           },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            key: "X-Frame-Options",
+            value: "DENY",
+          },
         ],
       },
       {
@@ -93,9 +101,14 @@ const nextConfig = {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
           },
+        ],
+      },
+      {
+        source: "/_next/static/(.*)",
+        headers: [
           {
-            key: "Content-Encoding",
-            value: "gzip",
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
@@ -106,6 +119,23 @@ const nextConfig = {
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
+    
+    // Оптимизация для production
+    if (options.isServer === false) {
+      config.optimization.splitChunks = {
+        ...config.optimization.splitChunks,
+        cacheGroups: {
+          ...config.optimization.splitChunks.cacheGroups,
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all',
+            priority: 10,
+          },
+        },
+      };
+    }
+    
     return config;
   },
 };
