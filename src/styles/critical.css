@@ -1,0 +1,77 @@
+/* Critical CSS for above-the-fold content */
+.welcomeSection {
+  background: #1e1e20;
+  margin-bottom: 140px;
+  width: 100%;
+}
+
+.mobileFigure {
+  display: none;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .welcomeSection {
+    margin-bottom: 62px;
+    gap: 20px;
+  }
+  
+  .mobileFigure {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.mobileImage {
+  display: inline-block;
+  width: 100vw;
+  max-width: 576px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.welcomeBg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("/block-images/welcome.webp");
+  background-repeat: no-repeat;
+  background-position: right 110px center;
+  max-width: 90rem;
+  margin: 0 auto;
+  height: 540px;
+}
+
+@media (max-width: 768px) {
+  .welcomeBg {
+    height: auto;
+    justify-content: flex-end;
+    background-image: none;
+    background-size: auto;
+    background-position: initial;
+    margin: 0 auto 24px auto;
+  }
+}
+
+/* Critical font loading */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-VAR.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-500.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto/Roboto-900.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+}

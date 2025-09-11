@@ -67,6 +67,8 @@
   width: 100vw;
   max-width: 576px;
   height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .welcomeContent {

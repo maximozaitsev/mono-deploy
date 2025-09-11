@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
+import "../styles/critical.css";
 import * as fonts from "./fonts";
 
 const url = "highroller-casino-luck.com";
@@ -63,12 +64,35 @@ export default function RootLayout({
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
+          fetchpriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
+          fetchpriority="high"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Inter/Inter-VAR.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Roboto/Roboto-500.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Roboto/Roboto-900.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         />
 
         <link rel="icon" href="/icons/ico-192.png" />
