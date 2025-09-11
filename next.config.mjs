@@ -21,52 +21,12 @@ const withPWA = nextPWA({
           cacheName: "static-resources",
           expiration: {
             maxEntries: 50,
-            maxAgeSeconds: 31536000,
           },
         },
       },
       {
         urlPattern: new RegExp(`^${url}/_next/static/.*?/buildManifest\\.js$`),
         handler: "NetworkOnly",
-      },
-      {
-        urlPattern: new RegExp(`^https://api\\.adkey-seo\\.com/.*`),
-        handler: "StaleWhileRevalidate",
-        options: {
-          cacheName: "api-cache",
-          expiration: {
-            maxEntries: 100,
-            maxAgeSeconds: 86400, // 24 hours
-          },
-          cacheableResponse: {
-            statuses: [0, 200],
-          },
-        },
-      },
-      {
-        urlPattern: new RegExp(`^https://api\\.adkey-seo\\.com/.*\\.(webp|jpg|jpeg|png|gif)$`),
-        handler: "CacheFirst",
-        options: {
-          cacheName: "api-images-cache",
-          expiration: {
-            maxEntries: 200,
-            maxAgeSeconds: 2592000, // 30 days
-          },
-          cacheableResponse: {
-            statuses: [0, 200],
-          },
-        },
-      },
-      {
-        urlPattern: new RegExp(`^${url}/block-images/.*`),
-        handler: "CacheFirst",
-        options: {
-          cacheName: "images-cache",
-          expiration: {
-            maxEntries: 50,
-            maxAgeSeconds: 31536000, // 1 year
-          },
-        },
       },
     ],
   },
@@ -97,112 +57,13 @@ const nextConfig = {
           },
         ],
       },
-      {
-        source: "/_next/static/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/block-images/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/icons/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/fonts/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
     ];
   },
-  compiler: {
-    removeConsole: process.env.NODE_ENV === "production",
-  },
-  output: 'standalone',
-  experimental: {
-    optimizePackageImports: ["@svgr/webpack"],
-    turbo: {
-      rules: {
-        "*.svg": {
-          loaders: ["@svgr/webpack"],
-          as: "*.js",
-        },
-      },
-    },
-  },
-  swcMinify: true,
   webpack(config, options) {
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
-
-    if (options.isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-      };
-    }
-
-    // Optimize bundle splitting and tree shaking
-    if (!options.isServer) {
-      config.optimization.splitChunks = {
-        chunks: 'all',
-        minSize: 20000,
-        maxSize: 244000,
-        cacheGroups: {
-          default: {
-            minChunks: 2,
-            priority: -20,
-            reuseExistingChunk: true,
-          },
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendors',
-            priority: -10,
-            chunks: 'all',
-            maxSize: 244000,
-          },
-          react: {
-            test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
-            name: 'react',
-            priority: 20,
-            chunks: 'all',
-          },
-          next: {
-            test: /[\\/]node_modules[\\/]next[\\/]/,
-            name: 'next',
-            priority: 15,
-            chunks: 'all',
-          },
-        },
-      };
-      
-      // Enable tree shaking
-      config.optimization.usedExports = true;
-      config.optimization.sideEffects = false;
-    }
-
     return config;
   },
 };

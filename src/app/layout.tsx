@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
-import "../styles/critical.css";
 import * as fonts from "./fonts";
 
 const url = "highroller-casino-luck.com";
@@ -53,41 +52,6 @@ export default function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="language" content={language} />
-        <style dangerouslySetInnerHTML={{
-          __html: `
-            *{box-sizing:border-box}
-            body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif}
-            .welcomeSection{background:#1e1e20;margin-bottom:140px;width:100%}
-            .mobileFigure{display:none;margin:0}
-            .mobileImage{display:inline-block;width:100vw;max-width:576px;height:315px;object-fit:cover;object-position:center}
-            .welcomeBg{display:flex;justify-content:center;width:100%;background-image:url("/block-images/welcome.webp");background-repeat:no-repeat;background-position:right 110px center;max-width:90rem;margin:0 auto;height:540px}
-            .welcomeContent{display:flex;flex-direction:column;gap:3rem;position:relative;z-index:1;max-width:72.5rem}
-            .welcomeText{display:flex;flex-direction:column;align-items:flex-start;gap:48px;width:410px;max-width:50%}
-            .welcomeText h2{font-family:Roboto,sans-serif;color:#fff;font-size:32px;font-weight:900;line-height:normal;text-transform:uppercase;margin:0}
-            .bonusText{display:none}
-            .h1Section{display:flex;justify-content:center;margin:-76px auto 136px auto}
-            .h1Section h1{font-family:Roboto,sans-serif;font-weight:900;color:#fff;font-size:28px;text-transform:uppercase;background-color:#2a2a2c;border-radius:8px;padding:23px;max-width:1120px;width:100%;text-align:center;margin:0}
-            .app-image{width:348px;height:348px;object-fit:contain}
-            @media (max-width:768px){
-              .welcomeSection{margin-bottom:62px;gap:20px}
-              .mobileFigure{display:block;width:100%;text-align:center}
-              .welcomeBg{height:auto;justify-content:flex-end;background-image:none;background-size:auto;background-position:initial;margin:0 auto 24px auto}
-              .welcomeContent button{align-self:center;max-height:77px}
-              .welcomeText{width:100%;max-width:100%;gap:24px;align-items:center;text-align:center}
-              .welcomeText h2{font-size:24px}
-              .bonusText{display:block}
-              .offerText{display:none}
-              .h1Section{margin:64px auto}
-              .h1Section h1{font-size:20px;margin:-24px 40px 0;max-width:496px;padding:16px}
-              .app-image{width:100%;height:auto;max-width:348px}
-            }
-            @media (max-width:380px){
-              .welcomeText{gap:20px}
-              .welcomeText h2{font-size:20px}
-              .h1Section h1{margin:0 20px}
-            }
-          `
-        }} />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
@@ -97,43 +61,14 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/block-images/welcome-mobile.webp"
-          media="(max-width: 768px)"
-          fetchPriority="high"
-        />
-        <link
-          rel="preload"
-          as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
-          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
-          href="/_next/static/media/phone-mobile.4399de13.webp"
-          fetchPriority="low"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Inter/Inter-VAR.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Roboto/Roboto-900.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Roboto/Roboto-500.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
+          href="/block-images/welcome-mobile.webp"
+          media="(max-width: 768px)"
         />
 
         <link rel="icon" href="/icons/ico-192.png" />

@@ -41,10 +41,7 @@ export default function AppSection() {
               alt={PROJECT_NAME + " App"}
               title={PROJECT_NAME + " " + PROJECT_GEO}
               className={styles.imageMobile}
-              width="348"
-              height="348"
               loading="lazy"
-              decoding="async"
             />
             {app.appContent.map((group, index) => (
               <div key={index} className={styles.paragraphGroup}>

@@ -26,28 +26,7 @@ export default function WelcomeSection() {
       }
     };
 
-    // Delay non-critical data fetching to improve LCP - wait for page to be fully loaded
-    const timeoutId = setTimeout(() => {
-      if (typeof window !== 'undefined') {
-        if (document.readyState === 'complete') {
-          if ('requestIdleCallback' in window) {
-            requestIdleCallback(fetchWelcomeBonus, { timeout: 3000 });
-          } else {
-            fetchWelcomeBonus();
-          }
-        } else {
-          window.addEventListener('load', () => {
-            if ('requestIdleCallback' in window) {
-              requestIdleCallback(fetchWelcomeBonus, { timeout: 3000 });
-            } else {
-              fetchWelcomeBonus();
-            }
-          }, { once: true });
-        }
-      }
-    }, 500);
-
-    return () => clearTimeout(timeoutId);
+    fetchWelcomeBonus();
   }, []);
 
   return (
@@ -60,8 +39,6 @@ export default function WelcomeSection() {
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
           alt="Welcome Mobile"
-          width="576"
-          height="315"
           loading="eager"
           decoding="async"
           fetchPriority="high"

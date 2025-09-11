@@ -75,11 +75,10 @@ export default function MobileSection() {
               src={mobileAppImageMobile.src}
               alt={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
               title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
-              width="348"
-              height="348"
+              width={mobileAppImageMobile.width}
+              height={mobileAppImageMobile.height}
               className="app-image"
               loading="lazy"
-              decoding="async"
             />
           </div>
           <div className="app-buttons">
