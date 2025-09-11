@@ -34,8 +34,7 @@ const withPWA = nextPWA({
 
 const nextConfig = {
   images: {
-    unoptimized: false,
-    formats: ['image/webp', 'image/avif'],
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
