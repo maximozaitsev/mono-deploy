@@ -10,7 +10,7 @@ const withPWA = nextPWA({
   aggressiveFrontEndNavCaching: true,
   reloadOnOnline: true,
   swcMinify: true,
-  disable: false,
+  disable: process.env.NODE_ENV !== "production",
   workboxOptions: {
     disableDevLogs: true,
     runtimeCaching: [
