@@ -59,6 +59,8 @@
     display: block;
     width: 100%;
     text-align: center;
+    /* Reserve space to reduce CLS */
+    min-height: 240px;
   }
 }
 
@@ -67,6 +69,7 @@
   width: 100vw;
   max-width: 576px;
   height: auto;
+  aspect-ratio: 3 / 2;
 }
 
 .welcomeContent {
