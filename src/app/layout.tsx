@@ -38,6 +38,13 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icons/ico-192.png",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  verification: {
+    google: "google-site-verification",
+  },
 };
 
 export default function RootLayout({
@@ -52,25 +59,50 @@ export default function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="language" content={language} />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        
+        {/* DNS prefetch and preconnect for external resources */}
+        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
           crossOrigin=""
         />
-        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+        
+        {/* Preload critical fonts */}
+        <link
+          rel="preload"
+          href="/fonts/Roboto/Roboto-500.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/NunitoSans/NunitoSans-700.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        
+        {/* Preload critical images */}
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
+          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
+          fetchPriority="high"
         />
 
+        {/* Favicon and app icons */}
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
         <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
