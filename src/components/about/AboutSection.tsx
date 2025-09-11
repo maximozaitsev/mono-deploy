@@ -31,7 +31,11 @@ export default function AboutSection() {
 
         // Оставляем только секции до Deposits и Withdrawals
         const filteredAbout = aboutEntries.slice(0, aboutEntries.length - 2);
-        setAboutSections(Object.fromEntries(filteredAbout));
+        const filteredAboutObj = filteredAbout.reduce((acc: Record<string, any>, [k, v]) => {
+          acc[k] = v;
+          return acc;
+        }, {} as Record<string, any>);
+        setAboutSections(filteredAboutObj);
       } else {
         setAboutSections(content.about);
       }

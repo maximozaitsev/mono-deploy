@@ -108,7 +108,27 @@ export default function RootLayout({
           sizes="192x192"
         />
       </head>
-      <body className={fontVars}>{children}</body>
+      <body className={fontVars}>
+        {children}
+        {process.env.NODE_ENV === "production" && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              (function(){
+                if ('serviceWorker' in navigator) {
+                  window.addEventListener('load', function() {
+                    var delay = 'requestIdleCallback' in window ? requestIdleCallback : function(cb){setTimeout(cb, 2000)};
+                    delay(function(){
+                      navigator.serviceWorker.register('/sw.js');
+                    });
+                  });
+                }
+              })();
+            `,
+            }}
+          />
+        )}
+      </body>
     </html>
   );
 }

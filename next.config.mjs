@@ -11,6 +11,8 @@ const withPWA = nextPWA({
   reloadOnOnline: true,
   swcMinify: true,
   disable: process.env.NODE_ENV !== "production",
+  // We'll register SW manually to keep workbox-window out of the main bundle
+  register: false,
   workboxOptions: {
     disableDevLogs: true,
     runtimeCaching: [
