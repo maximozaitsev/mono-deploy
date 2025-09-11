@@ -33,6 +33,16 @@ const withPWA = nextPWA({
 });
 
 const nextConfig = {
+  // Modern browsers support - no polyfills needed
+  swcMinify: true, // Use SWC
+  compiler: {
+    // Remove console logs in production
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+  // Disable polyfills for modern browsers
+  experimental: {
+    esmExternals: true,
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -64,6 +74,25 @@ const nextConfig = {
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
+    
+    // Optimize for modern browsers
+    if (options.isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+      };
+    }
+    
+    // Disable polyfills for modern browsers
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      // Disable core-js polyfills
+      'core-js': false,
+    };
+    
+    
     return config;
   },
 };
