@@ -129,7 +129,6 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === "production",
   },
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['@svgr/webpack'],
   },
   webpack(config, options) {

@@ -64,14 +64,14 @@ export default function RootLayout({
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
-          fetchpriority="high"
+          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-          fetchpriority="high"
+          fetchPriority="high"
         />
         <link
           rel="preload"
