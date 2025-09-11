@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import Image from "next/image";
 import supportImage from "../../../public/block-images/support.webp";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
@@ -35,11 +36,15 @@ export default function SupportSection() {
             ))}
           </div>
           <div className={styles.rightImage}>
-            <img
+            <Image
               src={supportImage.src}
               alt={PROJECT_NAME + " " + PROJECT_GEO + " Support"}
               title={PROJECT_NAME + " " + PROJECT_GEO + " Support"}
+              width={500}
+              height={400}
+              quality={85}
               loading="lazy"
+              sizes="(max-width: 768px) 100vw, 500px"
             />
           </div>
         </div>

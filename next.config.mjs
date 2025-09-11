@@ -7,7 +7,7 @@ const url = "7bitcasino-wins.com";
 const withPWA = nextPWA({
   dest: "public",
   cacheOnFrontEndNav: true,
-  aggressiveFrontEndNavCaching: true,
+  aggressiveFrontEndNavCaching: false, // Отключаем агрессивное кэширование для лучшей производительности
   reloadOnOnline: true,
   swcMinify: true,
   disable: false,
@@ -20,13 +20,21 @@ const withPWA = nextPWA({
         options: {
           cacheName: "static-resources",
           expiration: {
-            maxEntries: 50,
+            maxEntries: 30, // Уменьшаем количество кэшируемых файлов
+            maxAgeSeconds: 60 * 60 * 24 * 7, // 7 дней вместо бесконечности
           },
         },
       },
       {
         urlPattern: new RegExp(`^${url}/_next/static/.*?/buildManifest\\.js$`),
-        handler: "NetworkOnly",
+        handler: "NetworkFirst", // Меняем на NetworkFirst для лучшей производительности
+        options: {
+          cacheName: "build-manifest",
+          expiration: {
+            maxEntries: 5,
+            maxAgeSeconds: 60 * 60 * 24, // 1 день
+          },
+        },
       },
     ],
   },
@@ -34,7 +42,10 @@ const withPWA = nextPWA({
 
 const nextConfig = {
   images: {
-    unoptimized: true,
+    unoptimized: false,
+    formats: ['image/webp', 'image/avif'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     remotePatterns: [
       {
         protocol: "https",
@@ -53,10 +64,14 @@ const nextConfig = {
       "axios",
       "sharp",
     ],
+    scrollRestoration: true,
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
+  poweredByHeader: false,
+  generateEtags: false,
+  compress: true,
   headers: async () => {
     return [
       {
@@ -98,6 +113,15 @@ const nextConfig = {
           },
         ],
       },
+      {
+        source: "/images/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
     ];
   },
   webpack(config, options) {
@@ -105,6 +129,12 @@ const nextConfig = {
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
+    
+    // Optimize bundle size
+    if (options.isServer) {
+      config.externals = [...(config.externals || []), 'sharp'];
+    }
+    
     return config;
   },
 };
