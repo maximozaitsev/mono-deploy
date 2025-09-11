@@ -5,9 +5,9 @@ import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
 const url = "highroller-casino-luck.com";
-const ogTitle = "HighRoller Casino: Premium Online Gaming Experience\\!";
+const ogTitle = "HighRoller Casino: Premium Online Gaming Experience!";
 const ogSiteName = "HighRoller Casino";
-const metaDescription = "Join HighRoller Casino and discover a world of top-tier games, generous bonuses, and unparalleled service. Dive into gaming excellence today\\!";
+const metaDescription = "Join HighRoller Casino and discover a world of top-tier games, generous bonuses, and unparalleled service. Dive into gaming excellence today!";
 
 const locale = "en-CA";
 const language = "English";
