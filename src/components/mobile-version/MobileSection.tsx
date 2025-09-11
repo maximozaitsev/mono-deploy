@@ -132,6 +132,8 @@ export default function MobileSection() {
             src={mobileAppImage.src}
             alt={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
             title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
+            width={mobileAppImage.width}
+            height={mobileAppImage.height}
             className="app-image"
             loading="lazy"
           />
