@@ -44,6 +44,20 @@ const withPWA = nextPWA({
         },
       },
       {
+        urlPattern: new RegExp(`^https://api\\.adkey-seo\\.com/.*\\.(webp|jpg|jpeg|png|gif)$`),
+        handler: "CacheFirst",
+        options: {
+          cacheName: "api-images-cache",
+          expiration: {
+            maxEntries: 200,
+            maxAgeSeconds: 2592000, // 30 days
+          },
+          cacheableResponse: {
+            statuses: [0, 200],
+          },
+        },
+      },
+      {
         urlPattern: new RegExp(`^${url}/block-images/.*`),
         handler: "CacheFirst",
         options: {
@@ -124,6 +138,7 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
+  output: 'standalone',
   experimental: {
     optimizePackageImports: ["@svgr/webpack"],
     turbo: {
@@ -149,7 +164,7 @@ const nextConfig = {
       };
     }
 
-    // Optimize bundle splitting
+    // Optimize bundle splitting and tree shaking
     if (!options.isServer) {
       config.optimization.splitChunks = {
         chunks: 'all',
@@ -182,6 +197,10 @@ const nextConfig = {
           },
         },
       };
+      
+      // Enable tree shaking
+      config.optimization.usedExports = true;
+      config.optimization.sideEffects = false;
     }
 
     return config;

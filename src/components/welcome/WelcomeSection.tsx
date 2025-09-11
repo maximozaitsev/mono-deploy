@@ -26,14 +26,26 @@ export default function WelcomeSection() {
       }
     };
 
-    // Delay non-critical data fetching to improve LCP
+    // Delay non-critical data fetching to improve LCP - wait for page to be fully loaded
     const timeoutId = setTimeout(() => {
-      if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
-        requestIdleCallback(fetchWelcomeBonus, { timeout: 2000 });
-      } else {
-        fetchWelcomeBonus();
+      if (typeof window !== 'undefined') {
+        if (document.readyState === 'complete') {
+          if ('requestIdleCallback' in window) {
+            requestIdleCallback(fetchWelcomeBonus, { timeout: 3000 });
+          } else {
+            fetchWelcomeBonus();
+          }
+        } else {
+          window.addEventListener('load', () => {
+            if ('requestIdleCallback' in window) {
+              requestIdleCallback(fetchWelcomeBonus, { timeout: 3000 });
+            } else {
+              fetchWelcomeBonus();
+            }
+          }, { once: true });
+        }
       }
-    }, 100);
+    }, 500);
 
     return () => clearTimeout(timeoutId);
   }, []);
