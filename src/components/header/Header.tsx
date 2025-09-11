@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useCallback, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { PROJECT_NAME } from "@/config/projectConfig";
@@ -22,45 +22,37 @@ const Header = () => {
   const [offerLink, setOfferLink] = useState("");
   const pathname = usePathname();
 
-  // Memoize resize handler
-  const handleResize = useCallback(() => {
-    setIsMobile(window.innerWidth < 768);
-  }, []);
-
-  // Memoize offer fetching
-  const fetchOffersData = useCallback(async () => {
-    try {
-      const { offers } = await fetchOffers();
-      const first = offers?.[0];
-      setOfferId(first && first.id != null ? String(first.id) : "");
-      setOfferLink(first?.link || "");
-    } catch (e) {
-      console.error("Failed to prefetch offers in header:", e);
-    }
-  }, []);
-
   useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
     handleResize();
     window.addEventListener("resize", handleResize);
-    fetchOffersData();
+
+    (async () => {
+      try {
+        const { offers } = await fetchOffers();
+        const first = offers?.[0];
+        setOfferId(first && first.id != null ? String(first.id) : "");
+        setOfferLink(first?.link || "");
+      } catch (e) {
+        console.error("Failed to prefetch offers in header:", e);
+      }
+    })();
 
     return () => window.removeEventListener("resize", handleResize);
-  }, [handleResize, fetchOffersData]);
+  }, []);
 
-  const handleSignInClick = useCallback(() => {
+  const handleSignInClick = () => {
     try {
       window.open(`/casino/${offerId}`, "_blank", "noopener,noreferrer");
     } catch (error) {
       console.error("Error opening Play Now:", error);
     }
-  }, [offerId]);
+  };
 
-  const toggleMenu = useCallback(() => setIsMenuOpen((prev) => !prev), []);
-  
-  // Memoize logo path
-  const logoPath = useMemo(() => isMobile ? "/logo-mobile.svg" : "/logo.svg", [isMobile]);
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
 
-  const handleLogoClick: React.MouseEventHandler<HTMLAnchorElement> = useCallback((e) => {
+  const handleLogoClick: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
     if (pathname === "/") {
       e.preventDefault();
       try {
@@ -69,7 +61,7 @@ const Header = () => {
         window.scrollTo(0, 0);
       }
     }
-  }, [pathname]);
+  };
 
   return (
     <header className={styles.header}>

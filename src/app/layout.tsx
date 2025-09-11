@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
-import "../styles/critical.scss";
 import * as fonts from "./fonts";
 
 const url = "7bitcasino-wins.com";
@@ -71,35 +70,6 @@ export default function RootLayout({
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
         />
-        <link
-          rel="preload"
-          as="image"
-          href="/logo.svg"
-          media="(min-width: 769px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/logo-mobile.svg"
-          media="(max-width: 768px)"
-        />
-        
-        {/* Preload critical fonts */}
-        <link
-          rel="preload"
-          href="/fonts/Roboto/Roboto-500.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
-               <link
-                 rel="preload"
-                 href="/fonts/NunitoSans/NunitoSans-700.ttf"
-                 as="font"
-                 type="font/ttf"
-                 crossOrigin="anonymous"
-               />
-
 
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />

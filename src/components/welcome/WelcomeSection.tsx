@@ -42,8 +42,6 @@ export default function WelcomeSection() {
           loading="eager"
           decoding="async"
           fetchPriority="high"
-          width={576}
-          height={324}
         />
       </figure>
 

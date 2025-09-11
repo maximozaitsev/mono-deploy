@@ -17,15 +17,11 @@
 
 html {
   scroll-behavior: smooth;
-  font-display: swap;
 }
 
 body {
   background: $color-background;
   font-family: $font-primary;
-  font-display: swap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
