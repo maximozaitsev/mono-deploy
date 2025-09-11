@@ -21,7 +21,7 @@ const withPWA = nextPWA({
           cacheName: "static-resources",
           expiration: {
             maxEntries: 50,
-            maxAgeSeconds: 31536000, 
+            maxAgeSeconds: 31536000,
           },
         },
       },
@@ -60,8 +60,8 @@ const withPWA = nextPWA({
 
 const nextConfig = {
   images: {
-    unoptimized: false,
-    formats: ['image/webp', 'image/avif'],
+    unoptimized: true,
+    formats: ["image/webp", "image/avif"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000, // 1 year
@@ -129,21 +129,21 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === "production",
   },
   experimental: {
-    optimizePackageImports: ['@svgr/webpack'],
+    optimizePackageImports: ["@svgr/webpack"],
   },
   webpack(config, options) {
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
-    
+
     if (options.isServer) {
       config.resolve.fallback = {
         ...config.resolve.fallback,
         fs: false,
       };
     }
-    
+
     return config;
   },
 };
