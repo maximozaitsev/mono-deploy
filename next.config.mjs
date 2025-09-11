@@ -61,10 +61,6 @@ const withPWA = nextPWA({
 const nextConfig = {
   images: {
     unoptimized: true,
-    formats: ["image/webp", "image/avif"],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 31536000, // 1 year
     remotePatterns: [
       {
         protocol: "https",
@@ -130,7 +126,16 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ["@svgr/webpack"],
+    turbo: {
+      rules: {
+        "*.svg": {
+          loaders: ["@svgr/webpack"],
+          as: "*.js",
+        },
+      },
+    },
   },
+  swcMinify: true,
   webpack(config, options) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -141,6 +146,41 @@ const nextConfig = {
       config.resolve.fallback = {
         ...config.resolve.fallback,
         fs: false,
+      };
+    }
+
+    // Optimize bundle splitting
+    if (!options.isServer) {
+      config.optimization.splitChunks = {
+        chunks: 'all',
+        minSize: 20000,
+        maxSize: 244000,
+        cacheGroups: {
+          default: {
+            minChunks: 2,
+            priority: -20,
+            reuseExistingChunk: true,
+          },
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            priority: -10,
+            chunks: 'all',
+            maxSize: 244000,
+          },
+          react: {
+            test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+            name: 'react',
+            priority: 20,
+            chunks: 'all',
+          },
+          next: {
+            test: /[\\/]node_modules[\\/]next[\\/]/,
+            name: 'next',
+            priority: 15,
+            chunks: 'all',
+          },
+        },
       };
     }
 

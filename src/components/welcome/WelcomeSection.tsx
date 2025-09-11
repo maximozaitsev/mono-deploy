@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
@@ -27,12 +26,16 @@ export default function WelcomeSection() {
       }
     };
 
-    // Use requestIdleCallback for non-critical data fetching
-    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
-      requestIdleCallback(fetchWelcomeBonus);
-    } else {
-      setTimeout(fetchWelcomeBonus, 0);
-    }
+    // Delay non-critical data fetching to improve LCP
+    const timeoutId = setTimeout(() => {
+      if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+        requestIdleCallback(fetchWelcomeBonus, { timeout: 2000 });
+      } else {
+        fetchWelcomeBonus();
+      }
+    }, 100);
+
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
@@ -41,15 +44,15 @@ export default function WelcomeSection() {
       className={`${styles.welcomeSection} section`}
     >
       <figure className={styles.mobileFigure} aria-hidden>
-        <Image
+        <img
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
           alt="Welcome Mobile"
-          width={576}
-          height={315}
-          priority
-          quality={85}
-          sizes="(max-width: 768px) 100vw, (max-width: 576px) 576px, 576px"
+          width="576"
+          height="315"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
         />
       </figure>
 
