@@ -4,12 +4,12 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "7bitcasino-wins.com";
-const ogTitle = "7Bit Casino Canada Games: Gaming Experience, Live Dealers and Bonuses";
-const ogSiteName = "7bitcasino Casino";
-const metaDescription = "Explore the gaming opportunities of 7Bit Casino Games. A range of games, live dealers, jackpots. Enjoy your favorite casino games and get a chance to win big";
+const url = "highroller-casino-luck.com";
+const ogTitle = "HighRoller Casino: Premium Online Gaming Experience\\!";
+const ogSiteName = "HighRoller Casino";
+const metaDescription = "Join HighRoller Casino and discover a world of top-tier games, generous bonuses, and unparalleled service. Dive into gaming excellence today\\!";
 
-const locale = "en";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
