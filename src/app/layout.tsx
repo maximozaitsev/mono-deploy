@@ -38,13 +38,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icons/ico-192.png",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  verification: {
-    google: "google-site-verification",
-  },
 };
 
 export default function RootLayout({
@@ -59,50 +52,61 @@ export default function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="language" content={language} />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="next-size-adjust" content="true" />
-        
-        {/* DNS prefetch and preconnect for external resources */}
-        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
           crossOrigin=""
         />
-        
-        {/* Preload only the most critical font */}
-        <link
-          rel="preload"
-          href="/fonts/Roboto/Roboto-500.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        
-        {/* Preload only the most critical image */}
+        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
-          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-          fetchPriority="high"
         />
 
-        {/* Optimized favicon and app icons */}
-        <link rel="icon" href="/icons/ico-192.png" type="image/png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="/icons/ico-180.png" sizes="180x180" />
-        <link rel="apple-touch-icon" href="/icons/ico-152.png" sizes="152x152" />
-        <link rel="apple-touch-icon" href="/icons/ico-120.png" sizes="120x120" />
-        <link rel="apple-touch-icon" href="/icons/ico-76.png" sizes="76x76" />
+        <link rel="icon" href="/icons/ico-192.png" />
+        <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
         <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
+        <link rel="apple-touch-icon" href="/icons/ico-72.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="/icons/ico-76.png" sizes="76x76" />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/ico-114.png"
+          sizes="114x114"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/ico-120.png"
+          sizes="120x120"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/ico-144.png"
+          sizes="144x144"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/ico-152.png"
+          sizes="152x152"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/ico-180.png"
+          sizes="180x180"
+        />
+        <link
+          rel="icon"
+          href="/icons/ico-192.png"
+          type="image/png"
+          sizes="192x192"
+        />
       </head>
       <body className={fontVars}>{children}</body>
     </html>
