@@ -1,175 +1,51 @@
-"use client";
-
-import { Suspense } from "react";
-import dynamic from "next/dynamic";
-import { fetchOffers } from "@/utils/fetchOffers";
+import Header from "../components/header/Header";
+import WelcomeSection from "../components/welcome/WelcomeSection";
+import H1Section from "../components/h1-block/H1Block";
+import TopCasinosSection from "../components/top-casinos/TopCasinosSection";
+import MobileSection from "@/components/mobile-version/MobileSection";
+import TopGamesSection from "@/components/top-games/TopGamesSection";
+import BonusDetailsSection from "@/components/bonus-details/BonusDetailsSection";
+import AboutSection from "@/components/about/AboutSection";
+import PaymentMethodsSection from "@/components/payment-methods/PaymentMethodSection";
+import LicensesSection from "@/components/license/LicensesSection";
+import ProvidersSection from "@/components/providers/ProvidersSection";
+import AppSection from "@/components/mobile-app/AppSection";
+import FAQSection from "@/components/faq/FAQSection";
+import GamesToPlay from "@/components/games-to-play/GamesToPlay";
+import SupportSection from "@/components/support/SupportSection";
+import PromotionsSection from "@/components/promotion/PromotionsSection";
+import AdvantageSection from "@/components/advantage/AdvantageSection";
+import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
 import { fetchProviders } from "@/utils/fetchProviders";
-import { fetchPayments } from "@/utils/fetchPayments";
-import WelcomeSection from "@/components/welcome/WelcomeSection";
-import H1Block from "@/components/h1-block/H1Block";
+import { Provider } from "@/types/provider";
 
-// Lazy load non-critical components
-const TopCasinosSection = dynamic(() => import("@/components/top-casinos/TopCasinosSection"), {
-  loading: () => <div style={{ minHeight: '400px', background: '#1e1e20' }} />,
-  ssr: false
-});
+import "./globals.scss";
 
-const TopGamesSection = dynamic(() => import("@/components/top-games/TopGamesSection"), {
-  loading: () => <div style={{ minHeight: '300px', background: '#1e1e20' }} />,
-  ssr: false
-});
+export default async function HomePage() {
+  const games = await fetchGames("gambling");
+  const providers: Provider[] = await fetchProviders();
 
-const AboutSection = dynamic(() => import("@/components/about/AboutSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const MobileSection = dynamic(() => import("@/components/mobile-version/MobileSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const AppSection = dynamic(() => import("@/components/mobile-app/AppSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const AdvantageSection = dynamic(() => import("@/components/advantage/AdvantageSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const PaymentMethodSection = dynamic(() => import("@/components/payment-methods/PaymentMethodSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const ProvidersSection = dynamic(() => import("@/components/providers/ProvidersSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const BonusDetailsSection = dynamic(() => import("@/components/bonus-details/BonusDetailsSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const PromotionsSection = dynamic(() => import("@/components/promotion/PromotionsSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const LicensesSection = dynamic(() => import("@/components/license/LicensesSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const SupportSection = dynamic(() => import("@/components/support/SupportSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const FAQSection = dynamic(() => import("@/components/faq/FAQSection"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-const Footer = dynamic(() => import("@/components/footer/Footer"), {
-  loading: () => <div style={{ minHeight: '200px', background: '#1e1e20' }} />,
-  ssr: false
-});
-
-// Critical CSS for layout
-const layoutCSS = `
-  body {
-    margin: 0;
-    padding: 0;
-    background: #1e1e20;
-    color: #ffffff;
-    font-family: var(--font-primary), Arial, sans-serif;
-  }
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  .section {
-    padding: 40px 0;
-  }
-  @media (max-width: 768px) {
-    .section {
-      padding: 20px 0;
-    }
-  }
-`;
-
-export default function HomePageOptimized() {
   return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: layoutCSS }} />
-      <main>
-        {/* Critical above-the-fold content */}
-        <WelcomeSection />
-        <H1Block />
-        
-        {/* Lazy loaded content */}
-        <Suspense fallback={<div style={{ minHeight: '400px', background: '#1e1e20' }} />}>
-          <TopCasinosSection />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '300px', background: '#1e1e20' }} />}>
-          <TopGamesSection games={[]} />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <AboutSection />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <MobileSection />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <AppSection />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <AdvantageSection />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <PaymentMethodSection initialPaymentMethods={[]} />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <ProvidersSection initialProviders={[]} />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <BonusDetailsSection />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <PromotionsSection />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <LicensesSection />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <SupportSection />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <FAQSection />
-        </Suspense>
-        
-        <Suspense fallback={<div style={{ minHeight: '200px', background: '#1e1e20' }} />}>
-          <Footer />
-        </Suspense>
-      </main>
-    </>
+    <main>
+      <Header />
+      <WelcomeSection />
+      <H1Section pageKey="home" />
+      <TopCasinosSection />
+      <BonusDetailsSection />
+      <MobileSection />
+      <TopGamesSection games={games} />
+      <AboutSection />
+      <PaymentMethodsSection initialPaymentMethods={[]} />
+      <LicensesSection />
+      <ProvidersSection initialProviders={providers} />
+      <AppSection />
+      <FAQSection />
+      <GamesToPlay />
+      <SupportSection />
+      <PromotionsSection />
+      <AdvantageSection />
+      <Footer />
+    </main>
   );
 }

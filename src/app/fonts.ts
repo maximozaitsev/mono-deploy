@@ -7,17 +7,15 @@ export const roboto = localFont({
   variable: "--font-primary",
   display: "swap",
   preload: true,
-  fallback: ["Arial", "sans-serif"],
-  adjustFontFallback: "Arial",
+  adjustFontFallback: false,
 });
 
-export const inter = localFont({
+export const cinzel = localFont({
   src: [
-    { path: "../../public/fonts/Inter/Inter-VAR.woff2", weight: "100 900", style: "normal" }
+    { path: "../../public/fonts/Cinzel/Cinzel-VAR.woff2", weight: "100 900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",
   preload: true,
-  fallback: ["Arial", "sans-serif"],
-  adjustFontFallback: "Arial",
+  adjustFontFallback: false,
 });

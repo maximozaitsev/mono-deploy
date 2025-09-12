@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://highroller-casino-luck.com/
-Sitemap: https://highroller-casino-luck.com/sitemap.xml
+Host: https://kingdom-casino-win.com/
+Sitemap: https://kingdom-casino-win.com/sitemap.xml

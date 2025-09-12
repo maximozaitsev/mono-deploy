@@ -2,7 +2,7 @@
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
-const url = "highroller-casino-luck.com";
+const url = "kingdom-casino-win.com";
 
 const withPWA = nextPWA({
   dest: "public",
@@ -33,25 +33,8 @@ const withPWA = nextPWA({
 });
 
 const nextConfig = {
-  // Super aggressive performance optimizations
-  swcMinify: true,
-  experimental: {
-    esmExternals: true,
-    optimizePackageImports: ['@/components'],
-  },
-  compiler: {
-    removeConsole: process.env.NODE_ENV === "production",
-  },
-  poweredByHeader: false,
-  generateEtags: false,
-  compress: true,
-  
-  // Image optimizations
   images: {
     unoptimized: true,
-    formats: ["image/avif", "image/webp"],
-    deviceSizes: [400, 576, 768, 1024, 1200, 1920],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     remotePatterns: [
       {
         protocol: "https",
@@ -63,92 +46,24 @@ const nextConfig = {
       },
     ],
   },
-  
-  // Headers for performance
   headers: async () => {
     return [
       {
         source: "/(.*)",
         headers: [
           {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "DENY",
-          },
-          {
-            key: "X-XSS-Protection",
-            value: "1; mode=block",
-          },
-          {
             key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
-          {
-            key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=()",
-          },
-        ],
-      },
-      {
-        source: "/_next/static/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/block-images/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            value: "no-referrer",
           },
         ],
       },
     ];
   },
-  
-  // Webpack optimizations
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      // Production client-side optimizations
-      config.optimization.splitChunks = {
-        chunks: 'all',
-        cacheGroups: {
-          default: false,
-          vendors: false,
-          // Critical bundle
-          critical: {
-            name: 'critical',
-            chunks: 'all',
-            test: /[\\/]node_modules[\\/](react|react-dom|next)[\\/]/,
-            priority: 40,
-            enforce: true,
-          },
-          // Common bundle
-          common: {
-            name: 'common',
-            minChunks: 2,
-            chunks: 'all',
-            priority: 30,
-            enforce: true,
-          },
-          // Vendor bundle
-          vendor: {
-            name: 'vendor',
-            test: /[\\/]node_modules[\\/]/,
-            chunks: 'all',
-            priority: 20,
-            enforce: true,
-          },
-        },
-      };
-    }
+  webpack(config, options) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
     return config;
   },
 };

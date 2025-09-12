@@ -1,6 +1,5 @@
 @import "@/styles/colors.scss";
 @import "@/styles/variables.scss";
-@import "@/styles/_fonts-bridge.scss";
 
 .spacer {
   flex: 1;
@@ -52,7 +51,7 @@
   display: flex;
   gap: 24px;
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 31px;
   list-style: none;
   padding: 0;
 
@@ -72,7 +71,6 @@
 }
 
 .navLink {
-  font-family: $font-secondary;
   color: $text-color-primary;
   background: none;
   border: none;
@@ -106,7 +104,6 @@
   gap: 24px;
 
   .headerButton {
-    font-family: $font-secondary;
     height: $header-button-height;
     font-weight: $font-weight-black;
     font-size: 14px;

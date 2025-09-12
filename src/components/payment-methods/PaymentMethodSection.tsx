@@ -16,7 +16,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
   initialPaymentMethods,
 }) => {
   const [paymentMethods, setPaymentMethods] = useState<PaymentMethod[]>(
-    initialPaymentMethods || []
+    initialPaymentMethods
   );
   const [isMobileView, setIsMobileView] = useState<boolean>(false);
 
@@ -95,7 +95,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
             </tr>
           </thead>
           <tbody>
-            {paymentMethods && paymentMethods.length > 0 ? paymentMethods.map((method) => (
+            {paymentMethods.map((method) => (
               <tr className="paragraph-text black" key={method.payment_id}>
                 <td>
                   <Image
@@ -117,13 +117,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                   <Button text="Deposit" variant="secondary" openInNewTab />
                 </td>
               </tr>
-            )) : (
-              <tr>
-                <td colSpan={6} style={{ textAlign: 'center', padding: '20px' }}>
-                  Loading payment methods...
-                </td>
-              </tr>
-            )}
+            ))}
           </tbody>
         </table>
       )}
