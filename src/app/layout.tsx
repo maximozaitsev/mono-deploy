@@ -70,6 +70,8 @@ export default function RootLayout({
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
           fetchPriority="high"
+          imagesrcset="/block-images/welcome-mobile.webp 576w"
+          imagesizes="(max-width: 768px) 100vw, 576px"
         />
         <style dangerouslySetInnerHTML={{
           __html: `
@@ -78,6 +80,14 @@ export default function RootLayout({
                 min-height: 240px;
                 aspect-ratio: 3 / 2;
                 contain: layout style paint;
+              }
+              .WelcomeSection_mobileImage__M3QiS {
+                will-change: auto;
+                transform: translateZ(0);
+                backface-visibility: hidden;
+                perspective: 1000px;
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
               }
             }
           `
