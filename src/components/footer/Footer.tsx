@@ -63,6 +63,25 @@ export default function Footer() {
                 .slice(start, start + (start === 0 ? 7 : 5))
                 .map((logo, idx) => {
                   const index = start + idx;
+                  // natural packing: no extra wrapper, explicit width/height per icon
+                  const sizeMap: Record<string, { w: number; h: number; wm: number; hm: number }> = {
+                    "MasterCard": { w: 54, h: 32, wm: 38, hm: 22 },
+                    "Visa": { w: 96, h: 32, wm: 66, hm: 22 },
+                    "Neteller": { w: 180, h: 32, wm: 124, hm: 22 },
+                    "Skrill": { w: 96, h: 32, wm: 66, hm: 22 },
+                    "Bitcoin": { w: 32, h: 32, wm: 22, hm: 22 },
+                    "Litecoin": { w: 32, h: 32, wm: 22, hm: 22 },
+                    "Ethereum": { w: 32, h: 32, wm: 22, hm: 22 },
+                    "GPWA": { w: 90, h: 32, wm: 62, hm: 22 },
+                    "GambleAware": { w: 128, h: 16, wm: 94, hm: 12 },
+                    "GamCare": { w: 116, h: 32, wm: 80, hm: 22 },
+                    "Gambling-Therapy": { w: 78, h: 28, wm: 56, hm: 20 },
+                    "Gamban": { w: 108, h: 32, wm: 74, hm: 22 },
+                    "BetBlocker": { w: 200, h: 32, wm: 138, hm: 22 },
+                    "iTech-Labs": { w: 32, h: 32, wm: 22, hm: 22 },
+                    "eCOGRA": { w: 108, h: 32, wm: 74, hm: 22 },
+                  };
+                  const s = sizeMap[logo.name] ?? { w: 96, h: 32, wm: 80, hm: 24 };
                   return (
                     <img
                       key={index}
@@ -77,6 +96,9 @@ export default function Footer() {
                       onMouseEnter={() => setHoveredLogoIndex(index)}
                       onMouseLeave={() => setHoveredLogoIndex(null)}
                       loading="lazy"
+                      width={isMobile ? s.wm : s.w}
+                      height={isMobile ? s.hm : s.h}
+                      decoding="async"
                     />
                   );
                 })}
