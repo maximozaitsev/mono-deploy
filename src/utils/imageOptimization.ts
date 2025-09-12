@@ -20,7 +20,7 @@ export function optimizeImageUrl(
   originalUrl: string,
   options: ImageOptimizationOptions = {}
 ): string {
-  if (!originalUrl) return originalUrl;
+  if (!originalUrl || typeof originalUrl !== 'string') return originalUrl;
   
   const {
     width,
@@ -48,25 +48,31 @@ export function optimizeImageUrl(
   }
 
   // For other URLs, add optimization parameters directly
-  const url = new URL(originalUrl);
-  
-  if (format) {
-    url.searchParams.set('format', format);
-  }
-  
-  if (width) {
-    url.searchParams.set('width', width.toString());
-  }
-  
-  if (height) {
-    url.searchParams.set('height', height.toString());
-  }
-  
-  if (quality) {
-    url.searchParams.set('quality', quality.toString());
-  }
+  try {
+    const url = new URL(originalUrl);
+    
+    if (format) {
+      url.searchParams.set('format', format);
+    }
+    
+    if (width) {
+      url.searchParams.set('width', width.toString());
+    }
+    
+    if (height) {
+      url.searchParams.set('height', height.toString());
+    }
+    
+    if (quality) {
+      url.searchParams.set('quality', quality.toString());
+    }
 
-  return url.toString();
+    return url.toString();
+  } catch (error) {
+    // If URL parsing fails, return original URL
+    console.warn('Failed to parse URL:', originalUrl, error);
+    return originalUrl;
+  }
 }
 
 /**

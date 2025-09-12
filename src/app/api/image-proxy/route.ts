@@ -1,14 +1,20 @@
 import { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
-  const { searchParams } = new URL(request.url);
-  const imageUrl = searchParams.get("url");
-
-  if (!imageUrl) {
-    return new Response("Missing image URL", { status: 400 });
-  }
-
   try {
+    const { searchParams } = new URL(request.url);
+    const imageUrl = searchParams.get("url");
+
+    if (!imageUrl) {
+      return new Response("Missing image URL", { status: 400 });
+    }
+
+    // Validate URL
+    try {
+      new URL(imageUrl);
+    } catch {
+      return new Response("Invalid image URL", { status: 400 });
+    }
     // Fetch the image from the external API
     const response = await fetch(imageUrl, {
       headers: {
