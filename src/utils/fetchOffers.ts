@@ -12,8 +12,9 @@ export async function fetchOffers(): Promise<HomePageProps> {
   const key = `offers:${siteId}`;
   try {
     const data = await getOrFetch<HomePageProps>(key, TTL_MS, async () => {
+      // Route through local API to enable response compression and caching
       const res = await getJsonWithRetry<any>(
-        `https://api.adkey-seo.com/api/website/get-website/${siteId}`
+        `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/api/website/${siteId}`
       );
       const website = res?.website ?? {};
       const offers = (res?.offers ?? []) as Offer[];
