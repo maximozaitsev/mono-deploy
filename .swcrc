@@ -1,0 +1,49 @@
+{
+  "jsc": {
+    "target": "es2022",
+    "parser": {
+      "syntax": "ecmascript",
+      "jsx": true,
+      "dynamicImport": true,
+      "privateMethod": true,
+      "functionBind": true,
+      "exportDefaultFrom": true,
+      "exportNamespaceFrom": true,
+      "decorators": true,
+      "decoratorsBeforeExport": true,
+      "topLevelAwait": true,
+      "importMeta": true
+    },
+    "transform": {
+      "react": {
+        "runtime": "automatic"
+      }
+    },
+    "experimental": {
+      "plugins": []
+    }
+  },
+  "env": {
+    "targets": {
+      "chrome": "90",
+      "firefox": "88",
+      "safari": "15.4",
+      "edge": "90"
+    },
+    "coreJs": false,
+    "shippedProposals": true,
+    "exclude": [
+      "es.array.at",
+      "es.array.flat",
+      "es.array.flat-map",
+      "es.object.from-entries",
+      "es.object.has-own",
+      "es.string.trim-end",
+      "es.string.trim-start"
+    ]
+  },
+  "module": {
+    "type": "es6"
+  },
+  "minify": true
+}

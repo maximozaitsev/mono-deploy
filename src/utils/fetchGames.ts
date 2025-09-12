@@ -1,6 +1,7 @@
 import { Game } from "@/types/game";
 import { getJsonWithRetry } from "@/utils/http";
 import { getOrFetch, getStale } from "@/utils/apiCache";
+import { imageOptimizations } from "./imageOptimization";
 
 const TTL_MS = 30_000;
 const STALE_MS = 60_000;

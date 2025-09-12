@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { Provider } from "@/types/provider";
 import { fetchProviders } from "@/utils/fetchProviders";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
@@ -13,7 +14,7 @@ interface ProvidersSectionProps {
 export default function ProvidersSection({
   initialProviders,
 }: ProvidersSectionProps) {
-  const [providers, setProviders] = useState<Provider[]>(initialProviders);
+  const [providers, setProviders] = useState<Provider[]>(initialProviders || []);
 
   useEffect(() => {
     async function updateProviders() {
@@ -30,17 +31,24 @@ export default function ProvidersSection({
     <section className="providers-section section container">
       <h2 className="h2-heading">Software Providers</h2>
       <div className="providers-grid">
-        {providers.map((provider) => (
+        {providers && providers.length > 0 ? providers.map((provider) => (
           <div key={provider.id} className="provider-block">
-            <img
+            <Image
               src={provider.image}
               alt={provider.name}
               title={provider.name + " in " + PROJECT_NAME + " " + PROJECT_GEO}
               className="provider-image"
+              width={120}
+              height={60}
+              quality={85}
               loading="lazy"
             />
           </div>
-        ))}
+        )) : (
+          <div style={{ textAlign: 'center', padding: '20px' }}>
+            Loading providers...
+          </div>
+        )}
       </div>
     </section>
   );

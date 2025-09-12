@@ -16,6 +16,17 @@ interface TopGamesProps {
 export default function TopGamesSection({ games }: TopGamesProps) {
   const [hoveredGame, setHoveredGame] = useState<number | null>(null);
 
+  if (!games || !Array.isArray(games) || games.length === 0) {
+    return (
+      <section id="games" className={`${styles.topGames} container`}>
+        <h2 className="h2-heading">Top Games</h2>
+        <div className={styles.grid}>
+          <div>Loading games...</div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="games" className={`${styles.topGames} container`}>
       <h2 className="h2-heading">Top Games</h2>

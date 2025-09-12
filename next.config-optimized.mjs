@@ -37,6 +37,7 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     esmExternals: true,
+    optimizeCss: true,
     optimizePackageImports: ['@/components'],
   },
   compiler: {

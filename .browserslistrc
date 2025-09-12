@@ -1,0 +1,10 @@
+# Modern browsers for better performance
+Chrome >= 90
+Firefox >= 88
+Safari >= 15.4
+Edge >= 90
+
+# Exclude legacy browsers
+not dead
+not IE 11
+not op_mini all

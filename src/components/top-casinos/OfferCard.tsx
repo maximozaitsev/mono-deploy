@@ -5,6 +5,7 @@ import Image from "next/image";
 import Button from "../__common__/button/Button";
 import { Offer } from "../../types/offer";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { responsiveSizes } from "../../utils/imageOptimization";
 import styles from "./OfferCard.module.scss";
 
 interface OfferCardProps {
@@ -24,7 +25,7 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
         title={`${offer.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
         width={160}
         height={64}
-        sizes="160px"
+        sizes={responsiveSizes.offerCard}
         priority={priority}
         loading={priority ? "eager" : "lazy"}
         decoding="async"

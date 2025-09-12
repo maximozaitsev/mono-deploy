@@ -7,7 +7,8 @@ export const roboto = localFont({
   variable: "--font-primary",
   display: "swap",
   preload: true,
-  adjustFontFallback: false,
+  fallback: ["Arial", "sans-serif"],
+  adjustFontFallback: "Arial",
 });
 
 export const inter = localFont({
@@ -17,5 +18,6 @@ export const inter = localFont({
   variable: "--font-secondary",
   display: "swap",
   preload: true,
-  adjustFontFallback: false,
+  fallback: ["Arial", "sans-serif"],
+  adjustFontFallback: "Arial",
 });

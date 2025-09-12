@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import aboutImage from "../../../public/block-images/laptop.webp";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { responsiveSizes } from "../../utils/imageOptimization";
 import "./AboutSection.scss";
 
 export default function AboutSection() {
@@ -55,10 +57,14 @@ export default function AboutSection() {
           </div>
 
           <div className="about-image">
-            <img
+            <Image
               src={aboutImage.src}
               alt={PROJECT_NAME + " " + PROJECT_GEO + " Desktop"}
               title={PROJECT_NAME + " " + PROJECT_GEO + " Desktop"}
+              width={aboutImage.width}
+              height={aboutImage.height}
+              quality={85}
+              sizes={responsiveSizes.twoColumn}
               loading="lazy"
             />
           </div>

@@ -6,9 +6,13 @@
   display: flex;
   justify-content: center;
   margin: -76px auto 136px auto;
+  /* Reserve space to prevent CLS */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 96px;
 
   @media (max-width: 768px) {
     margin: 64px auto;
+    contain-intrinsic-size: auto 72px;
   }
 
   h1 {
@@ -24,6 +28,9 @@
     max-width: 1120px;
     width: 100%;
     text-align: center;
+    /* Reserve space to prevent CLS */
+    content-visibility: auto;
+    contain-intrinsic-size: auto 96px;
 
     @media (max-width: 1180px) {
       max-width: 828px;
@@ -38,6 +45,7 @@
       margin: -24px 40px 0;
       max-width: 496px;
       padding: 16px;
+      contain-intrinsic-size: auto 72px;
     }
 
     @media (max-width: 380px) {
