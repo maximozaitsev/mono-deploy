@@ -6,7 +6,9 @@
   display: flex;
   justify-content: center;
   margin: 24px auto 136px auto;
-  min-height: 120px; /* reserve space for heading to reduce CLS */
+  /* Reserve space without stretching using intrinsic size */
+  content-visibility: auto;
+  contain-intrinsic-size: 0 120px;
 
   @media (max-width: 768px) {
     margin: 64px auto;
@@ -26,7 +28,7 @@
     max-width: 1120px;
     width: 100%;
     text-align: center;
-    min-height: 96px;
+    /* No forced height; let intrinsic size reservation handle placeholder */
 
     @media (max-width: 1180px) {
       max-width: 828px;
