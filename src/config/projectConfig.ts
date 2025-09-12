@@ -1,3 +1,3 @@
-export const PROJECT_NAME = "Kingdom Casino";
-export const PROJECT_GEO = "Global";
-export const PROJECT_URL = "kingdom-casino-win.com";
+export const PROJECT_NAME = "HighRoller Casino";
+export const PROJECT_GEO = "Canada";
+export const PROJECT_URL = "highroller-casino-luck.com";

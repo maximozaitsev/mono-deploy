@@ -35,32 +35,14 @@ export default function WelcomeSection() {
       className={`${styles.welcomeSection} section`}
     >
       <figure className={styles.mobileFigure} aria-hidden>
-        <picture>
-          {/* AVIF format - оптимизированное сжатие для мобильных */}
-          <source
-            media="(max-width: 768px)"
-            srcSet="/block-images/welcome-mobile-380.avif"
-            type="image/avif"
-          />
-          
-          {/* Fallback для старых браузеров и десктопа */}
-          <img
-            className={styles.mobileImage}
-            src="/block-images/welcome-mobile.webp"
-            alt="Welcome Mobile"
-            width="576"
-            height="315"
-            loading="eager"
-            decoding="async"
-            fetchPriority="high"
-            onLoad={() => {
-              console.log('Welcome image loaded successfully');
-            }}
-            onError={(e) => {
-              console.error('Failed to load welcome image:', e);
-            }}
-          />
-        </picture>
+        <img
+          className={styles.mobileImage}
+          src="/block-images/welcome-mobile.webp"
+          alt="Welcome Mobile"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+        />
       </figure>
 
       <div className={styles.welcomeBg}>

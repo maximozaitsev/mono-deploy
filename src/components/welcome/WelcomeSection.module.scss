@@ -3,7 +3,7 @@
 @import "@/styles/_fonts-bridge.scss";
 
 .welcomeSection {
-  background: #202021;
+  background: #1e1e20;
   margin-bottom: 140px;
   width: 100%;
 
@@ -20,7 +20,7 @@
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
   // background-size: 55% auto;
-  background-position: right 131px center;
+  background-position: right 110px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -64,13 +64,9 @@
 
 .mobileImage {
   display: inline-block;
-  width: 100vw !important;
-  max-width: 576px !important;
-  height: auto !important;
-  object-fit: cover;
-  object-position: center;
-  will-change: transform;
-  transform: translateZ(0);
+  width: 100vw;
+  max-width: 576px;
+  height: auto;
 }
 
 .welcomeContent {

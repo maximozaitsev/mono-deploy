@@ -4,12 +4,12 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "kingdom-casino-win.com";
-const ogTitle = "Kingdom Casino: Where Royal Gaming Awaits!";
-const ogSiteName = "Kingdom Casino";
-const metaDescription = "Dive into a regal gaming adventure at Kingdom Casino! Explore top-tier games, secure transactions, and 24/7 support. Your throne awaits!";
+const url = "highroller-casino-luck.com";
+const ogTitle = "HighRoller Casino: Premium Online Gaming Experience!";
+const ogSiteName = "HighRoller Casino";
+const metaDescription = "Join HighRoller Casino and discover a world of top-tier games, generous bonuses, and unparalleled service. Dive into gaming excellence today!";
 
-const locale = "en";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
