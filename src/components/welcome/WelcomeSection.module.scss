@@ -3,7 +3,7 @@
 @import "@/styles/_fonts-bridge.scss";
 
 .welcomeSection {
-  background: #1e1e20;
+  background: #1f1603;
   margin-bottom: 140px;
   width: 100%;
 
@@ -17,23 +17,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-image: url("/block-images/welcome-380.avif");
+  background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
   // background-size: 55% auto;
-  background-position: right 110px center;
+  background-position: right 160px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
-
-  // Fallback для браузеров без поддержки AVIF
-  @supports not (background-image: url("/block-images/welcome-380.avif")) {
-    background-image: url("/block-images/welcome.webp");
-  }
-
-  // Для экранов больше 380px показываем оригинальное изображение
-  @media (min-width: 381px) {
-    background-image: url("/block-images/welcome.webp");
-  }
 
   & :global(.container) {
     display: flex;

@@ -4,12 +4,12 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "highroller-casino-luck.com";
-const ogTitle = "HighRoller Casino: Premium Online Gaming Experience!";
-const ogSiteName = "HighRoller Casino";
-const metaDescription = "Join HighRoller Casino and discover a world of top-tier games, generous bonuses, and unparalleled service. Dive into gaming excellence today!";
+const url = "casinoprestige-online.com";
+const ogTitle = "Casino Prestige UK Review 2025: Bonuses, Games, Payments & Safety";
+const ogSiteName = "Casino Prestige";
+const metaDescription = "A practical, up-to-date review of Casino Prestige for UK players: discover welcome offers, game portfolio, deposit & withdrawal options, licensing status, mobile access and support. Read verified facts before you play.";
 
-const locale = "en-CA";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
@@ -61,22 +61,14 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/block-images/welcome-380.avif"
-          media="(max-width: 380px)"
-          type="image/avif"
-        />
-        <link
-          rel="preload"
-          as="image"
           href="/block-images/welcome.webp"
-          media="(min-width: 381px)"
+          media="(min-width: 769px)"
         />
         <link
           rel="preload"
           as="image"
-          href="/block-images/welcome-mobile-380.avif"
+          href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-          type="image/avif"
         />
 
         <link rel="icon" href="/icons/ico-192.png" />
