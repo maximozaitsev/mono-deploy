@@ -64,6 +64,10 @@
     /* Reserve space to reduce CLS */
     min-height: 240px;
   }
+
+  @media (max-width: 380px) {
+    min-height: 120px;
+  }
 }
 
 .mobileImage {
