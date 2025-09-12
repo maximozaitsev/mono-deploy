@@ -22,7 +22,8 @@ export async function fetchOffers(): Promise<HomePageProps> {
         return {
           ...offer,
           logo: logoUrl,
-          optimizedLogo: `${logoUrl}?format=webp&width=160&height=64`,
+          // Provide optimized variants; Next/Image picks best via sizes
+          optimizedLogo: `${logoUrl}?format=webp&width=190&height=76`,
         };
       });
       return { country: website.country_name ?? "", offers: updatedOffers };
