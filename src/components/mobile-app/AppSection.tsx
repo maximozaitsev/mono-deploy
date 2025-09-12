@@ -40,6 +40,8 @@ export default function AppSection() {
               src={AppImageMobile.src}
               alt={PROJECT_NAME + " App"}
               title={PROJECT_NAME + " " + PROJECT_GEO}
+              width={AppImageMobile.width}
+              height={AppImageMobile.height}
               className={styles.imageMobile}
               loading="lazy"
             />
@@ -96,6 +98,8 @@ export default function AppSection() {
               src={AppImage.src}
               alt={PROJECT_NAME + " " + PROJECT_GEO + " App"}
               title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
+              width={AppImage.width}
+              height={AppImage.height}
               className={styles.image}
               loading="lazy"
             />
