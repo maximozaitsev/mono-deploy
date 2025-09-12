@@ -47,7 +47,7 @@ const nextConfig = {
   },
   images: {
     // Enable Next.js Image Optimization for external logos
-    unoptimized: false,
+    unoptimized: true,
     formats: ["image/avif", "image/webp"],
     deviceSizes: [160, 190, 320, 640, 828, 1080, 1200],
     imageSizes: [64, 76],
