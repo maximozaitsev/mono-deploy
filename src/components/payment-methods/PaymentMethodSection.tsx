@@ -52,7 +52,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
             <div key={method.payment_id} className="payment-method-card">
               <div className="payment-method-header">
                 <Image
-                  src={imageOptimizations.paymentMethodMobile(method.image)}
+                  src={method.image}
                   alt={method.name}
                   title={
                     method.name + " in " + PROJECT_NAME + " " + PROJECT_GEO
@@ -101,7 +101,7 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
               <tr className="paragraph-text black" key={method.payment_id}>
                 <td>
                   <Image
-                    src={imageOptimizations.paymentMethod(method.image)}
+                    src={method.image}
                     alt={method.name}
                     title={
                       method.name + " in " + PROJECT_NAME + " " + PROJECT_GEO

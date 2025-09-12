@@ -1,6 +1,7 @@
 import { getJsonWithRetry } from "@/utils/http";
 import { HomePageProps, Offer } from "@/types/offer";
 import { getOrFetch, getStale } from "@/utils/apiCache";
+import { imageOptimizations } from "./imageOptimization";
 
 const TTL_MS = 60_000;
 const STALE_MS = 120_000;
@@ -23,8 +24,8 @@ export async function fetchOffers(): Promise<HomePageProps> {
         return {
           ...offer,
           logo: logoUrl,
-          // Provide optimized variants; Next/Image picks best via sizes
-          optimizedLogo: `${logoUrl}?format=webp&width=190&height=76`,
+          // Use our image optimization utility for caching
+          optimizedLogo: imageOptimizations.offerLogo(logoUrl),
         };
       });
       return { country: website.country_name ?? "", offers: updatedOffers };

@@ -1,6 +1,7 @@
 import { Game } from "@/types/game";
 import { getJsonWithRetry } from "@/utils/http";
 import { getOrFetch, getStale } from "@/utils/apiCache";
+import { imageOptimizations } from "./imageOptimization";
 
 const TTL_MS = 30_000;
 const STALE_MS = 60_000;
@@ -18,8 +19,8 @@ export async function fetchGames(type: string): Promise<Game[]> {
         return {
           ...game,
           image: imageUrl,
-          // Match TopGames card size to avoid over-fetching
-          optimizedImage: `${imageUrl}?format=webp&width=264&height=142`,
+          // Use our image optimization utility for caching
+          optimizedImage: imageOptimizations.gameImage(imageUrl),
         };
       });
     });

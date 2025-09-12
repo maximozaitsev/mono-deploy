@@ -37,7 +37,7 @@ export default function TopGamesSection({ games }: TopGamesProps) {
             >
               <div className={styles.imageWrap}>
                 <Image
-                  src={(game as any).optimizedImage || imageOptimizations.gameImage(game.image)}
+                  src={(game as any).optimizedImage || game.image}
                   alt={game.name}
                   title={`${game.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
                   width={264}

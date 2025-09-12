@@ -59,7 +59,7 @@ const BonusDetailsSection: React.FC = () => {
           <div key={offer.id} className="row">
             <div className="cell">
               <Image
-                src={imageOptimizations.bonusLogo(offer.logo)}
+                src={offer.logo}
                 className="offerImage"
                 alt={offer.name}
                 title={offer.name + " in " + PROJECT_NAME + " " + PROJECT_GEO}

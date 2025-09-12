@@ -14,8 +14,8 @@ interface OfferCardProps {
 }
 
 const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
-  // Use optimized logo URL
-  const logoSrc = (offer as any).optimizedLogo || imageOptimizations.offerLogo(offer.logo);
+  // Use optimized logo URL from API or fallback to optimization
+  const logoSrc = (offer as any).optimizedLogo || offer.logo;
 
   return (
     <div className={styles.offerCard}>

@@ -1,6 +1,7 @@
 import { Provider } from "@/types/provider";
 import { getJsonWithRetry } from "@/utils/http";
 import { getOrFetch, getStale } from "@/utils/apiCache";
+import { imageOptimizations } from "./imageOptimization";
 
 const TTL_MS = 60_000;
 const STALE_MS = 120_000;
@@ -17,7 +18,8 @@ export async function fetchProviders(): Promise<Provider[]> {
         return {
           ...provider,
           image: logoUrl,
-          optimizedLogo: `${logoUrl}?format=webp&width=135&height=60`,
+          // Use our image optimization utility for caching
+          optimizedLogo: imageOptimizations.providerImage(logoUrl),
         };
       });
     });

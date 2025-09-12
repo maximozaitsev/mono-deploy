@@ -35,7 +35,7 @@ export default function ProvidersSection({
         {providers.map((provider) => (
           <div key={provider.id} className="provider-block">
             <Image
-              src={imageOptimizations.providerImage(provider.image)}
+              src={provider.image}
               alt={provider.name}
               title={provider.name + " in " + PROJECT_NAME + " " + PROJECT_GEO}
               className="provider-image"
