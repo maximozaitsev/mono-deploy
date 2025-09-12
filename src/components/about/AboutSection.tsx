@@ -5,8 +5,6 @@ import aboutImage from "../../../public/block-images/laptop.webp";
 import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
-import { responsiveSizes } from "../../utils/imageOptimization";
-import Image from "next/image";
 import "./AboutSection.scss";
 
 export default function AboutSection() {
@@ -33,11 +31,7 @@ export default function AboutSection() {
 
         // Оставляем только секции до Deposits и Withdrawals
         const filteredAbout = aboutEntries.slice(0, aboutEntries.length - 2);
-        const filteredAboutObj = filteredAbout.reduce((acc: Record<string, any>, [k, v]) => {
-          acc[k] = v;
-          return acc;
-        }, {} as Record<string, any>);
-        setAboutSections(filteredAboutObj);
+        setAboutSections(Object.fromEntries(filteredAbout));
       } else {
         setAboutSections(content.about);
       }
@@ -61,14 +55,11 @@ export default function AboutSection() {
           </div>
 
           <div className="about-image">
-            <Image
+            <img
               src={aboutImage.src}
               alt={PROJECT_NAME + " " + PROJECT_GEO + " Desktop"}
               title={PROJECT_NAME + " " + PROJECT_GEO + " Desktop"}
-              width={aboutImage.width}
-              height={aboutImage.height}
-              quality={85}
-              sizes={responsiveSizes.twoColumn}
+              loading="lazy"
             />
           </div>
         </div>

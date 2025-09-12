@@ -6,7 +6,6 @@ import { PaymentMethod } from "@/types/payment";
 import { fetchPayments } from "@/utils/fetchPayments";
 import Button from "../__common__/button/Button";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
-import { imageOptimizations } from "../../utils/imageOptimization";
 import "./PaymentMethodsSection.scss";
 
 interface PaymentMethodsSectionProps {
@@ -59,7 +58,6 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                   }
                   width={84}
                   height={64}
-                  quality={85}
                 />
                 <Button text="Deposit" variant="secondary" openInNewTab />
               </div>
@@ -108,7 +106,6 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
                     }
                     width={120}
                     height={70}
-                    quality={85}
                   />
                 </td>
                 <td>{method.type}</td>

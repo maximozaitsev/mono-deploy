@@ -10,9 +10,7 @@ const withPWA = nextPWA({
   aggressiveFrontEndNavCaching: true,
   reloadOnOnline: true,
   swcMinify: true,
-  disable: process.env.NODE_ENV !== "production",
-  // We'll register SW manually to keep workbox-window out of the main bundle
-  register: false,
+  disable: false,
   workboxOptions: {
     disableDevLogs: true,
     runtimeCaching: [
@@ -35,22 +33,8 @@ const withPWA = nextPWA({
 });
 
 const nextConfig = {
-  // Modern browsers support - no polyfills needed
-  swcMinify: true, // Use SWC
-  compiler: {
-    // Remove console logs in production
-    removeConsole: process.env.NODE_ENV === "production",
-  },
-  // Disable polyfills for modern browsers
-  experimental: {
-    esmExternals: true,
-  },
   images: {
-    // Enable Next.js Image Optimization for external logos
     unoptimized: true,
-    formats: ["image/avif", "image/webp"],
-    deviceSizes: [160, 190, 320, 640, 828, 1080, 1200],
-    imageSizes: [64, 76],
     remotePatterns: [
       {
         protocol: "https",
@@ -80,25 +64,6 @@ const nextConfig = {
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
-    
-    // Optimize for modern browsers
-    if (options.isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-        net: false,
-        tls: false,
-      };
-    }
-    
-    // Disable polyfills for modern browsers
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      // Disable core-js polyfills
-      'core-js': false,
-    };
-    
-    
     return config;
   },
 };

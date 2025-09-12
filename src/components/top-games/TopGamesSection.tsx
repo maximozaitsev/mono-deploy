@@ -5,7 +5,6 @@ import { Game } from "@/types/game";
 import Button from "../__common__/button/Button";
 import PlayIcon from "../__common__/PlayIcon";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
-import { imageOptimizations, responsiveSizes } from "../../utils/imageOptimization";
 import styles from "./TopGamesSection.module.scss";
 import Image from "next/image";
 import Link from "next/link";
@@ -42,9 +41,16 @@ export default function TopGamesSection({ games }: TopGamesProps) {
                   title={`${game.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
                   width={264}
                   height={142}
-                  sizes={responsiveSizes.gameGrid}
+                  sizes="
+                    (min-width: 1200px) 25vw,
+                    (min-width: 890px) 33vw,
+                    (min-width: 768px) 50vw,
+                    100vw
+                  "
                   priority={idx < 2}
-                  quality={85}
+                  loading={idx < 2 ? "eager" : "lazy"}
+                  decoding="async"
+                  fetchPriority={idx < 2 ? "high" : "auto"}
                   style={{ width: "100%", height: "auto", objectFit: "cover" }}
                 />
               </div>

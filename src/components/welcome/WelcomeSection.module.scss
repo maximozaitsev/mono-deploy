@@ -4,9 +4,11 @@
 
 .welcomeSection {
   background: #1e1e20;
+  margin-bottom: 140px;
   width: 100%;
 
   @media (max-width: 768px) {
+    margin-bottom: 62px;
     gap: 20px;
   }
 }
@@ -28,10 +30,6 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-
-    @media (max-width: 768px) {
-      padding: 20px 40px;
-    }
   }
 
   @media (max-width: 1280px) {
@@ -61,14 +59,6 @@
     display: block;
     width: 100%;
     text-align: center;
-    /* Reserve exact space to prevent CLS */
-    min-height: 240px;
-    aspect-ratio: 3 / 2;
-    contain: layout style paint;
-  }
-
-  @media (max-width: 380px) {
-    min-height: 120px;
   }
 }
 
@@ -77,15 +67,6 @@
   width: 100vw;
   max-width: 576px;
   height: auto;
-  /* Optimize rendering performance */
-  will-change: auto;
-  transform: translateZ(0);
-  /* Force hardware acceleration */
-  backface-visibility: hidden;
-  perspective: 1000px;
-  /* Optimize image rendering */
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
 }
 
 .welcomeContent {

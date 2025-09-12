@@ -69,29 +69,7 @@ export default function RootLayout({
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-          fetchPriority="high"
-          imageSrcSet="/block-images/welcome-mobile.webp 576w"
-          imageSizes="(max-width: 768px) 100vw, 576px"
         />
-        <style dangerouslySetInnerHTML={{
-          __html: `
-            @media (max-width: 768px) {
-              .WelcomeSection_mobileFigure__GTuqC {
-                min-height: 240px;
-                aspect-ratio: 3 / 2;
-                contain: layout style paint;
-              }
-              .WelcomeSection_mobileImage__M3QiS {
-                will-change: auto;
-                transform: translateZ(0);
-                backface-visibility: hidden;
-                perspective: 1000px;
-                image-rendering: -webkit-optimize-contrast;
-                image-rendering: crisp-edges;
-              }
-            }
-          `
-        }} />
 
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
@@ -130,27 +108,7 @@ export default function RootLayout({
           sizes="192x192"
         />
       </head>
-      <body className={fontVars}>
-        {children}
-        {process.env.NODE_ENV === "production" && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              (function(){
-                if ('serviceWorker' in navigator) {
-                  window.addEventListener('load', function() {
-                    var delay = 'requestIdleCallback' in window ? requestIdleCallback : function(cb){setTimeout(cb, 2000)};
-                    delay(function(){
-                      navigator.serviceWorker.register('/sw.js');
-                    });
-                  });
-                }
-              })();
-            `,
-            }}
-          />
-        )}
-      </body>
+      <body className={fontVars}>{children}</body>
     </html>
   );
 }

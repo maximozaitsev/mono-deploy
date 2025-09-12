@@ -1,7 +1,6 @@
 import { getJsonWithRetry } from "@/utils/http";
 import { PaymentMethod } from "@/types/payment";
 import { getOrFetch, getStale } from "@/utils/apiCache";
-import { imageOptimizations } from "./imageOptimization";
 
 const baseUrl = "https://api.adkey-seo.com/storage/images/payments/";
 const TTL_MS = 60_000;
@@ -17,10 +16,7 @@ export async function fetchPayments(): Promise<PaymentMethod[]> {
       const methods = await getJsonWithRetry<PaymentMethod[]>(
         `https://api.adkey-seo.com/api/website/get-payments/${siteId}`
       );
-      return methods.map((m) => ({ 
-        ...m, 
-        image: imageOptimizations.paymentMethod(`${baseUrl}${m.image}`)
-      }));
+      return methods.map((m) => ({ ...m, image: `${baseUrl}${m.image}` }));
     });
     return data;
   } catch {

@@ -1,7 +1,6 @@
 import { getJsonWithRetry } from "@/utils/http";
 import { HomePageProps, Offer } from "@/types/offer";
 import { getOrFetch, getStale } from "@/utils/apiCache";
-import { imageOptimizations } from "./imageOptimization";
 
 const TTL_MS = 60_000;
 const STALE_MS = 120_000;
@@ -13,7 +12,6 @@ export async function fetchOffers(): Promise<HomePageProps> {
   const key = `offers:${siteId}`;
   try {
     const data = await getOrFetch<HomePageProps>(key, TTL_MS, async () => {
-      // Back to upstream API directly
       const res = await getJsonWithRetry<any>(
         `https://api.adkey-seo.com/api/website/get-website/${siteId}`
       );
@@ -24,8 +22,7 @@ export async function fetchOffers(): Promise<HomePageProps> {
         return {
           ...offer,
           logo: logoUrl,
-          // Use our image optimization utility for caching
-          optimizedLogo: imageOptimizations.offerLogo(logoUrl),
+          optimizedLogo: `${logoUrl}?format=webp&width=160&height=64`,
         };
       });
       return { country: website.country_name ?? "", offers: updatedOffers };

@@ -64,7 +64,6 @@ export default function Footer() {
                 .slice(start, start + (start === 0 ? 7 : 5))
                 .map((logo, idx) => {
                   const index = start + idx;
-                  // natural packing: no extra wrapper, explicit width/height per icon
                   const sizeMap: Record<string, { w: number; h: number; wm: number; hm: number }> = {
                     "MasterCard": { w: 54, h: 32, wm: 38, hm: 22 },
                     "Visa": { w: 96, h: 32, wm: 66, hm: 22 },

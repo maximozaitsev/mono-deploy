@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import AppImage from "../../../public/block-images/app.webp";
 import AppImageMobile from "../../../public/block-images/app-mobile.webp";
 import { fetchOffers } from "@/utils/fetchOffers";
@@ -9,7 +8,6 @@ import useContentData from "../../utils/useContentData";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { useParsedSections } from "../../utils/parseSections";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
-import { responsiveSizes } from "../../utils/imageOptimization";
 import styles from "./AppSection.module.scss";
 
 export default function AppSection() {
@@ -38,15 +36,12 @@ export default function AppSection() {
         <div className={styles.topRow}>
           <div className={styles.textBlock}>
             {app.appTitle && <h3 className="h3-heading">{app.appTitle}</h3>}
-            <Image
+            <img
               src={AppImageMobile.src}
               alt={PROJECT_NAME + " App"}
               title={PROJECT_NAME + " " + PROJECT_GEO}
               className={styles.imageMobile}
-              width={AppImageMobile.width}
-              height={AppImageMobile.height}
-              quality={85}
-              sizes={responsiveSizes.twoColumn}
+              loading="lazy"
             />
             {app.appContent.map((group, index) => (
               <div key={index} className={styles.paragraphGroup}>
@@ -67,14 +62,12 @@ export default function AppSection() {
                   }
                 }}
               >
-                <Image
+                <img
                   className={styles.googlePlay}
                   src="/assets/google-play.svg"
                   alt="Download on the Google Play"
                   title={PROJECT_NAME + " " + PROJECT_GEO + " in Google Play"}
-                  width={181}
-                  height={53}
-                  quality={100}
+                  loading="lazy"
                 />
               </button>
               <button
@@ -88,28 +81,23 @@ export default function AppSection() {
                   }
                 }}
               >
-                <Image
+                <img
                   className={styles.appStore}
                   src="/assets/app-store.svg"
                   alt="Download on the App Store"
                   title={PROJECT_NAME + " " + PROJECT_GEO + " in App Store"}
-                  width={181}
-                  height={53}
-                  quality={100}
+                  loading="lazy"
                 />
               </button>
             </div>
           </div>
           <div className={styles.imageBlock}>
-            <Image
+            <img
               src={AppImage.src}
               alt={PROJECT_NAME + " " + PROJECT_GEO + " App"}
               title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
               className={styles.image}
-              width={AppImage.width}
-              height={AppImage.height}
-              quality={85}
-              sizes={responsiveSizes.twoColumn}
+              loading="lazy"
             />
           </div>
         </div>

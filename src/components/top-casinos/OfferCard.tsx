@@ -5,7 +5,6 @@ import Image from "next/image";
 import Button from "../__common__/button/Button";
 import { Offer } from "../../types/offer";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
-import { imageOptimizations, responsiveSizes } from "../../utils/imageOptimization";
 import styles from "./OfferCard.module.scss";
 
 interface OfferCardProps {
@@ -14,7 +13,6 @@ interface OfferCardProps {
 }
 
 const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
-  // Use optimized logo URL from API or fallback to optimization
   const logoSrc = (offer as any).optimizedLogo || offer.logo;
 
   return (
@@ -24,11 +22,13 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
         src={logoSrc}
         alt={offer.name}
         title={`${offer.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
-        width={190}
-        height={76}
-        sizes={responsiveSizes.offerCard}
+        width={160}
+        height={64}
+        sizes="160px"
         priority={priority}
-        quality={85}
+        loading={priority ? "eager" : "lazy"}
+        decoding="async"
+        fetchPriority={priority ? "high" : "auto"}
       />
       <h3>{offer.name}</h3>
       <h4>Welcome bonus</h4>

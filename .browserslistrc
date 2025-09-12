@@ -1,9 +1,0 @@
-# Modern browsers only - no polyfills needed
-Chrome >= 110
-Firefox >= 110
-Safari >= 15.4
-iOS >= 15.4
-Edge >= 110
-not dead
-not IE 11
-not op_mini all

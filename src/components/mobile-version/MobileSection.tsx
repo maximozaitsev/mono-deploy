@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { fetchOffers } from "@/utils/fetchOffers";
 import mobileAppImage from "../../../public/block-images/phone.webp";
 import mobileAppImageMobile from "../../../public/block-images/phone-mobile.webp";
@@ -9,7 +8,6 @@ import StarIcon from "../__common__/StarIcon";
 import Button from "../__common__/button/Button";
 import { useNavigateWithPreloader } from "@/utils/navigationUtils";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
-import { responsiveSizes } from "../../utils/imageOptimization";
 import "./MobileSection.scss";
 
 export default function MobileSection() {
@@ -73,15 +71,14 @@ export default function MobileSection() {
         <div className="app-info-block">
           <h3 className="h3-heading">{PROJECT_NAME} App</h3>
           <div className="mobile-image show-1080">
-            <Image
+            <img
               src={mobileAppImageMobile.src}
               alt={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
               title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
               width={mobileAppImageMobile.width}
               height={mobileAppImageMobile.height}
               className="app-image"
-              quality={85}
-              sizes={responsiveSizes.twoColumn}
+              loading="lazy"
             />
           </div>
           <div className="app-buttons">
@@ -97,13 +94,13 @@ export default function MobileSection() {
                 }
               }}
             >
-              <Image
+              <img
                 src="/assets/app-store.svg"
                 alt="Download on the App Store"
                 title={PROJECT_NAME + " " + PROJECT_GEO + " in App Store"}
                 width={181}
                 height={53}
-                quality={100}
+                loading="lazy"
               />
             </button>
             <button
@@ -118,28 +115,25 @@ export default function MobileSection() {
                 }
               }}
             >
-              <Image
+              <img
                 src="/assets/google-play.svg"
                 alt="Download on the Google Play"
                 title={PROJECT_NAME + " " + PROJECT_GEO + " in Google Play"}
                 width={181}
                 height={53}
-                quality={100}
+                loading="lazy"
               />
             </button>
           </div>
         </div>
 
         <div className="mobile-image hide-1080">
-          <Image
+          <img
             src={mobileAppImage.src}
             alt={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
             title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
-            width={mobileAppImage.width}
-            height={mobileAppImage.height}
             className="app-image"
-            quality={85}
-              sizes={responsiveSizes.twoColumn}
+            loading="lazy"
           />
         </div>
       </div>

@@ -1,11 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
-import { responsiveSizes } from "../../utils/imageOptimization";
 
 export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
@@ -34,22 +32,16 @@ export default function WelcomeSection() {
   return (
     <section
       id="welcome-section"
-      className={styles.welcomeSection}
+      className={`${styles.welcomeSection} section`}
     >
       <figure className={styles.mobileFigure} aria-hidden>
-        <Image
+        <img
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
           alt="Welcome Mobile"
-          width={576}
-          height={384}
-          priority
-          quality={75}
-          sizes="(max-width: 768px) 100vw, 576px"
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-          decoding="sync"
           loading="eager"
+          decoding="async"
+          fetchPriority="high"
         />
       </figure>
 
