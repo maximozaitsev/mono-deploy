@@ -34,7 +34,20 @@ export function optimizeImageUrl(
     return originalUrl;
   }
 
-  // For external URLs, add optimization parameters
+  // For external URLs, route through our image proxy for caching
+  if (originalUrl.startsWith('http')) {
+    // Add optimization parameters to the original URL first
+    const optimizedUrl = new URL(originalUrl);
+    if (format) optimizedUrl.searchParams.set('format', format);
+    if (width) optimizedUrl.searchParams.set('width', width.toString());
+    if (height) optimizedUrl.searchParams.set('height', height.toString());
+    if (quality) optimizedUrl.searchParams.set('quality', quality.toString());
+    
+    // Create proxy URL (will be resolved at runtime)
+    return `/api/image-proxy?url=${encodeURIComponent(optimizedUrl.toString())}`;
+  }
+
+  // For other URLs, add optimization parameters directly
   const url = new URL(originalUrl);
   
   if (format) {
@@ -123,6 +136,20 @@ export const imageOptimizations = {
  */
 export function isOptimizedImageUrl(url: string): boolean {
   return url.includes('format=') || url.includes('width=') || url.includes('quality=');
+}
+
+/**
+ * Check if URL is external (needs proxy)
+ */
+export function isExternalUrl(url: string): boolean {
+  return url.startsWith('http://') || url.startsWith('https://');
+}
+
+/**
+ * Check if URL is already proxied
+ */
+export function isProxiedUrl(url: string): boolean {
+  return url.includes('/api/image-proxy');
 }
 
 /**
