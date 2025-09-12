@@ -5,13 +5,15 @@
 .h1Section {
   display: flex;
   justify-content: center;
-  margin: 24px auto 136px auto;
+  /* Spacing: 64px gap from Welcome; 64+70=134px to Top Casinos */
+  margin: 64px auto 134px auto;
   /* Reserve space without stretching using intrinsic size */
   content-visibility: auto;
   contain-intrinsic-size: 0 120px;
 
   @media (max-width: 768px) {
-    margin: 64px auto;
+    /* Mobile spacing: 40px to Welcome; 40+54=94px to Top Casinos */
+    margin: 40px auto 70px auto;
   }
 
   h1 {

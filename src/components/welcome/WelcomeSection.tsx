@@ -32,7 +32,7 @@ export default function WelcomeSection() {
   return (
     <section
       id="welcome-section"
-      className={`${styles.welcomeSection} section`}
+      className={styles.welcomeSection}
     >
       <figure className={styles.mobileFigure} aria-hidden>
         <img
