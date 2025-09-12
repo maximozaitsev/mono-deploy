@@ -7,13 +7,14 @@
   justify-content: center;
   /* Spacing: 64px gap from Welcome; 64+70=134px to Top Casinos */
   margin: 64px auto 134px auto;
-  /* Reserve space without stretching using intrinsic size */
+  /* Reserve placeholder only until paint; doesn't force height after */
   content-visibility: auto;
-  contain-intrinsic-size: 0 120px;
+  contain-intrinsic-size: auto 96px;
 
   @media (max-width: 768px) {
-    /* Mobile spacing: 40px to Welcome; 40+54=94px to Top Casinos */
+    /* Mobile spacing: Welcome→H1 40px; H1→Top 70px (per pixel-perfect) */
     margin: 40px auto 70px auto;
+    contain-intrinsic-size: auto 72px;
   }
 
   h1 {
@@ -30,7 +31,7 @@
     max-width: 1120px;
     width: 100%;
     text-align: center;
-    /* No forced height; let intrinsic size reservation handle placeholder */
+    /* No forced height; natural height follows text */
 
     @media (max-width: 1180px) {
       max-width: 828px;
@@ -45,7 +46,6 @@
       margin: 0 40px 0;
       max-width: 496px;
       padding: 16px;
-      min-height: 64px;
     }
 
     @media (max-width: 380px) {
