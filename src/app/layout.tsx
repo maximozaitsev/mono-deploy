@@ -70,8 +70,8 @@ export default function RootLayout({
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
           fetchPriority="high"
-          imagesrcset="/block-images/welcome-mobile.webp 576w"
-          imagesizes="(max-width: 768px) 100vw, 576px"
+          imageSrcSet="/block-images/welcome-mobile.webp 576w"
+          imageSizes="(max-width: 768px) 100vw, 576px"
         />
         <style dangerouslySetInnerHTML={{
           __html: `
