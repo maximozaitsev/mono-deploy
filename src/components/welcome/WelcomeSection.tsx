@@ -36,52 +36,17 @@ export default function WelcomeSection() {
     >
       <figure className={styles.mobileFigure} aria-hidden>
         <picture>
-          {/* AVIF format - лучший сжатие */}
+          {/* AVIF format - оптимизированное сжатие для мобильных */}
           <source
-            media="(max-width: 240px)"
-            srcSet="/block-images/welcome-mobile-240.avif"
-            type="image/avif"
-          />
-          <source
-            media="(max-width: 320px)"
-            srcSet="/block-images/welcome-mobile-320.avif"
-            type="image/avif"
-          />
-          <source
-            media="(max-width: 480px)"
-            srcSet="/block-images/welcome-mobile-480.avif"
-            type="image/avif"
-          />
-          <source
-            srcSet="/block-images/welcome-mobile-576.avif"
+            media="(max-width: 768px)"
+            srcSet="/block-images/welcome-mobile-380.avif"
             type="image/avif"
           />
           
-          {/* WebP format - хорошее сжатие */}
-          <source
-            media="(max-width: 240px)"
-            srcSet="/block-images/welcome-mobile-240.webp"
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 320px)"
-            srcSet="/block-images/welcome-mobile-320.webp"
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 480px)"
-            srcSet="/block-images/welcome-mobile-480.webp"
-            type="image/webp"
-          />
-          <source
-            srcSet="/block-images/welcome-mobile-576.webp"
-            type="image/webp"
-          />
-          
-          {/* Fallback для старых браузеров */}
+          {/* Fallback для старых браузеров и десктопа */}
           <img
             className={styles.mobileImage}
-            src="/block-images/welcome-mobile-576.webp"
+            src="/block-images/welcome-mobile.webp"
             alt="Welcome Mobile"
             width="576"
             height="315"
