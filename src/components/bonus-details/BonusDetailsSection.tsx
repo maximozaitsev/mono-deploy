@@ -7,6 +7,7 @@ import { fetchOffers } from "@/utils/fetchOffers";
 import Button from "../__common__/button/Button";
 import InfoIcon from "../__common__/InfoIcon";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { imageOptimizations } from "../../utils/imageOptimization";
 import "./BonusDetailsSection.scss";
 
 const BonusDetailsSection: React.FC = () => {
@@ -58,14 +59,14 @@ const BonusDetailsSection: React.FC = () => {
           <div key={offer.id} className="row">
             <div className="cell">
               <Image
-                src={offer.logo}
+                src={imageOptimizations.bonusLogo(offer.logo)}
                 className="offerImage"
                 alt={offer.name}
                 title={offer.name + " in " + PROJECT_NAME + " " + PROJECT_GEO}
                 width={140}
                 height={56}
                 style={{ maxWidth: "100%", height: "auto" }}
-                quality={100}
+                quality={85}
               />
             </div>
             <div className="cell hide-1020">Welcome Bonus</div>

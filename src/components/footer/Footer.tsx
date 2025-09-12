@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import Logo from "../header/Logo";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./Footer.module.scss";
@@ -83,7 +84,7 @@ export default function Footer() {
                   };
                   const s = sizeMap[logo.name] ?? { w: 96, h: 32, wm: 80, hm: 24 };
                   return (
-                    <img
+                    <Image
                       key={index}
                       src={logo.src}
                       alt={logo.name}
@@ -95,10 +96,9 @@ export default function Footer() {
                       }}
                       onMouseEnter={() => setHoveredLogoIndex(index)}
                       onMouseLeave={() => setHoveredLogoIndex(null)}
-                      loading="lazy"
                       width={isMobile ? s.wm : s.w}
                       height={isMobile ? s.hm : s.h}
-                      decoding="async"
+                      quality={100}
                     />
                   );
                 })}

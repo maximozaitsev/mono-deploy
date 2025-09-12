@@ -6,6 +6,7 @@ import { PaymentMethod } from "@/types/payment";
 import { fetchPayments } from "@/utils/fetchPayments";
 import Button from "../__common__/button/Button";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { imageOptimizations } from "../../utils/imageOptimization";
 import "./PaymentMethodsSection.scss";
 
 interface PaymentMethodsSectionProps {
@@ -51,13 +52,14 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
             <div key={method.payment_id} className="payment-method-card">
               <div className="payment-method-header">
                 <Image
-                  src={method.image}
+                  src={imageOptimizations.paymentMethodMobile(method.image)}
                   alt={method.name}
                   title={
                     method.name + " in " + PROJECT_NAME + " " + PROJECT_GEO
                   }
                   width={84}
                   height={64}
+                  quality={85}
                 />
                 <Button text="Deposit" variant="secondary" openInNewTab />
               </div>
@@ -99,13 +101,14 @@ const PaymentMethodsSection: React.FC<PaymentMethodsSectionProps> = ({
               <tr className="paragraph-text black" key={method.payment_id}>
                 <td>
                   <Image
-                    src={method.image}
+                    src={imageOptimizations.paymentMethod(method.image)}
                     alt={method.name}
                     title={
                       method.name + " in " + PROJECT_NAME + " " + PROJECT_GEO
                     }
                     width={120}
                     height={70}
+                    quality={85}
                   />
                 </td>
                 <td>{method.type}</td>

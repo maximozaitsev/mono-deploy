@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
+import { responsiveSizes } from "../../utils/imageOptimization";
 
 export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
@@ -35,15 +37,15 @@ export default function WelcomeSection() {
       className={styles.welcomeSection}
     >
       <figure className={styles.mobileFigure} aria-hidden>
-        <img
+        <Image
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
           alt="Welcome Mobile"
           width={768}
           height={512}
-          loading="eager"
-          decoding="async"
-          fetchPriority="high"
+          priority
+          quality={85}
+          sizes={responsiveSizes.hero}
         />
       </figure>
 
