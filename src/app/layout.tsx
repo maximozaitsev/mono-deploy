@@ -69,7 +69,19 @@ export default function RootLayout({
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
+          fetchPriority="high"
         />
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            @media (max-width: 768px) {
+              .WelcomeSection_mobileFigure__GTuqC {
+                min-height: 240px;
+                aspect-ratio: 3 / 2;
+                contain: layout style paint;
+              }
+            }
+          `
+        }} />
 
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
