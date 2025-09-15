@@ -6,9 +6,6 @@
   display: flex;
   justify-content: center;
   margin: -76px auto 136px auto;
-  
-  // Резервируем место для предотвращения CLS
-  contain: layout style;
 
   @media (max-width: 768px) {
     margin: 64px auto;
@@ -28,17 +25,14 @@
     width: 100%;
     text-align: center;
 
-    // Зарезервировать место под 2 строки для десктопа
-    min-height: 2lh; // 2 строки (line-height units)
+    min-height: 2lh;
     line-height: 1.2;
-    
-    // Fallback для загрузки шрифтов
-    font-display: swap;
-    
-    // Skeleton для пустого состояния
+    height: auto;
+    min-height: 2lh;
+
     &:empty::before {
-      content: "Loading...";
-      opacity: 0.3;
+      content: "";
+      opacity: 0.5;
     }
 
     @media (max-width: 1180px) {
@@ -55,15 +49,15 @@
       max-width: 496px;
       padding: 16px;
 
-      // Зарезервировать место под 3 строки для мобилки
-      min-height: 3lh; // 3 строки (line-height units)
+      min-height: 3lh;
+      height: auto;
     }
 
     @media (max-width: 420px) {
       margin: 0 20px;
-      
-      // Зарезервировать место под 3 строки для маленьких экранов
-      min-height: 3lh; // 3 строки (line-height units)
+
+      min-height: 3lh;
+      height: auto;
     }
   }
 }
