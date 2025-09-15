@@ -14,21 +14,28 @@ interface Props {
   className?: string;
 }
 
-// Предварительно получаем h1 текст для главной страницы
-const getH1Text = (pageKey?: keyof typeof siteData, blocks?: Block[]): string => {
+const getH1Text = (
+  pageKey?: keyof typeof siteData,
+  blocks?: Block[]
+): string => {
   if (blocks) {
-    return blocks.find((b) => b.type === "heading" && b.level === 1)?.text || "";
+    return (
+      blocks.find((b) => b.type === "heading" && b.level === 1)?.text || ""
+    );
   }
-  
+
   if (pageKey && siteData[pageKey]) {
-    return siteData[pageKey].blocks?.find((b) => b.type === "heading" && b.level === 1)?.text || "";
+    return (
+      siteData[pageKey].blocks?.find(
+        (b) => b.type === "heading" && b.level === 1
+      )?.text || ""
+    );
   }
-  
+
   return "";
 };
 
 export default function H1Section({ blocks, pageKey, className }: Props) {
-  // Получаем текст синхронно, чтобы избежать CLS
   const h1Text = getH1Text(pageKey, blocks);
 
   return (

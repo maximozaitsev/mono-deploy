@@ -70,6 +70,22 @@ export default function RootLayout({
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
         />
+        
+        {/* Preload fonts to prevent CLS */}
+        <link
+          rel="preload"
+          href="/fonts/Roboto/Roboto-900.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href="/fonts/Nunito/Nunito-VAR.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
 
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
