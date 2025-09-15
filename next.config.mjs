@@ -15,9 +15,10 @@ const withPWA = nextPWA({
   skipWaiting: true,
   buildExcludes: [/middleware-manifest\.json$/],
   workboxOptions: {
-    disableDevLogs: true,
+    disableDevLogs: false,
     skipWaiting: true,
     clientsClaim: true,
+    navigateFallback: null,
     runtimeCaching: [
       {
         urlPattern: new RegExp(`^${url}/_next/static/.*`),
@@ -40,12 +41,20 @@ const withPWA = nextPWA({
         options: {
           cacheName: "api-images",
           expiration: {
-            maxEntries: 500,
+            maxEntries: 1000,
             maxAgeSeconds: 365 * 24 * 60 * 60, // 1 год
           },
           cacheableResponse: {
             statuses: [0, 200],
           },
+          plugins: [
+            {
+              cacheWillUpdate: async ({ request, response }) => {
+                // Кешируем все успешные ответы
+                return response && response.status === 200 ? response : null;
+              },
+            },
+          ],
         },
       },
       // Кеширование API данных
@@ -67,12 +76,20 @@ const withPWA = nextPWA({
         options: {
           cacheName: "images",
           expiration: {
-            maxEntries: 1000,
+            maxEntries: 2000,
             maxAgeSeconds: 365 * 24 * 60 * 60, // 1 год
           },
           cacheableResponse: {
             statuses: [0, 200],
           },
+          plugins: [
+            {
+              cacheWillUpdate: async ({ request, response }) => {
+                // Кешируем все успешные ответы для изображений
+                return response && response.status === 200 ? response : null;
+              },
+            },
+          ],
         },
       },
     ],
@@ -196,6 +213,85 @@ const nextConfig = {
                 {
                   key: "Cache-Control",
                   value: "public, max-age=31536000, immutable",
+                },
+              ],
+            },
+            // Дополнительные заголовки для всех изображений
+            {
+              source: "/(.*\\.webp)",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=31536000, immutable",
+                },
+                {
+                  key: "Vary",
+                  value: "Accept-Encoding",
+                },
+              ],
+            },
+            {
+              source: "/(.*\\.jpg)",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=31536000, immutable",
+                },
+                {
+                  key: "Vary",
+                  value: "Accept-Encoding",
+                },
+              ],
+            },
+            {
+              source: "/(.*\\.jpeg)",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=31536000, immutable",
+                },
+                {
+                  key: "Vary",
+                  value: "Accept-Encoding",
+                },
+              ],
+            },
+            {
+              source: "/(.*\\.png)",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=31536000, immutable",
+                },
+                {
+                  key: "Vary",
+                  value: "Accept-Encoding",
+                },
+              ],
+            },
+            {
+              source: "/(.*\\.gif)",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=31536000, immutable",
+                },
+                {
+                  key: "Vary",
+                  value: "Accept-Encoding",
+                },
+              ],
+            },
+            {
+              source: "/(.*\\.svg)",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=31536000, immutable",
+                },
+                {
+                  key: "Vary",
+                  value: "Accept-Encoding",
                 },
               ],
             },
