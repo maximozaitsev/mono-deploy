@@ -67,21 +67,6 @@
   width: 100vw;
   max-width: 576px;
   height: auto;
-
-  @media (max-width: 440px) {
-    display: none;
-  }
-}
-
-.mobileImage380 {
-  display: none;
-  width: 100vw;
-  max-width: 576px;
-  height: auto;
-
-  @media (max-width: 440px) {
-    display: inline-block;
-  }
 }
 
 .welcomeContent {
