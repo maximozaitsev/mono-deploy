@@ -68,7 +68,13 @@ export default function RootLayout({
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
-          media="(max-width: 768px)"
+          media="(min-width: 441px) and (max-width: 768px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome-mobile-380.avif"
+          media="(max-width: 440px)"
         />
 
         <link rel="icon" href="/icons/ico-192.png" />
