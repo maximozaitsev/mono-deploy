@@ -11,6 +11,8 @@ const withPWA = nextPWA({
   reloadOnOnline: true,
   swcMinify: true,
   disable: false,
+  register: true,
+  skipWaiting: true,
   workboxOptions: {
     disableDevLogs: true,
     runtimeCaching: [
@@ -35,8 +37,8 @@ const withPWA = nextPWA({
         options: {
           cacheName: "api-images",
           expiration: {
-            maxEntries: 100,
-            maxAgeSeconds: 30 * 24 * 60 * 60, // 30 дней
+            maxEntries: 200,
+            maxAgeSeconds: 365 * 24 * 60 * 60, // 1 год
           },
           cacheableResponse: {
             statuses: [0, 200],
