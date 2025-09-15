@@ -28,6 +28,33 @@ const withPWA = nextPWA({
         urlPattern: new RegExp(`^${url}/_next/static/.*?/buildManifest\\.js$`),
         handler: "NetworkOnly",
       },
+      // Кеширование изображений API
+      {
+        urlPattern: new RegExp(`^https://api\\.adkey-seo\\.com/.*\\.(webp|jpg|jpeg|png|gif)$`),
+        handler: "CacheFirst",
+        options: {
+          cacheName: "api-images",
+          expiration: {
+            maxEntries: 100,
+            maxAgeSeconds: 30 * 24 * 60 * 60, // 30 дней
+          },
+          cacheableResponse: {
+            statuses: [0, 200],
+          },
+        },
+      },
+      // Кеширование API данных
+      {
+        urlPattern: new RegExp(`^https://api\\.adkey-seo\\.com/.*`),
+        handler: "StaleWhileRevalidate",
+        options: {
+          cacheName: "api-data",
+          expiration: {
+            maxEntries: 50,
+            maxAgeSeconds: 24 * 60 * 60, // 24 часа
+          },
+        },
+      },
     ],
   },
 });
@@ -65,6 +92,26 @@ const nextConfig = {
           {
             key: "Referrer-Policy",
             value: "no-referrer",
+          },
+        ],
+      },
+      // Кеширование статических ресурсов
+      {
+        source: "/_next/static/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      // Кеширование изображений
+      {
+        source: "/(.*\\.(webp|jpg|jpeg|png|gif|svg|ico))",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=2592000, stale-while-revalidate=86400",
           },
         ],
       },
