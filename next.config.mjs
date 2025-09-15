@@ -14,11 +14,14 @@ const withPWA = nextPWA({
   register: true,
   skipWaiting: true,
   buildExcludes: [/middleware-manifest\.json$/],
+  publicExcludes: ["!robots.txt", "!sitemap.xml"],
   workboxOptions: {
     disableDevLogs: false,
     skipWaiting: true,
     clientsClaim: true,
     navigateFallback: null,
+    cleanupOutdatedCaches: true,
+    offlineGoogleAnalytics: false,
     runtimeCaching: [
       {
         urlPattern: new RegExp(`^${url}/_next/static/.*`),
