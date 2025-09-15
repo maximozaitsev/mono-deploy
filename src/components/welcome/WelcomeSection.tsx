@@ -35,14 +35,21 @@ export default function WelcomeSection() {
       className={`${styles.welcomeSection} section`}
     >
       <figure className={styles.mobileFigure} aria-hidden>
-        <img
-          className={styles.mobileImage}
-          src="/block-images/welcome-mobile.webp"
-          alt="Welcome Mobile"
-          loading="eager"
-          decoding="async"
-          fetchPriority="high"
-        />
+        <picture>
+          <source
+            media="(max-width: 379px)"
+            srcSet="/block-images/welcome-mobile-380.avif"
+            type="image/avif"
+          />
+          <img
+            className={styles.mobileImage}
+            src="/block-images/welcome-mobile.webp"
+            alt="Welcome Mobile"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
+          />
+        </picture>
       </figure>
 
       <div className={styles.welcomeBg}>
