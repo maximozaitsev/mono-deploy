@@ -13,8 +13,11 @@ const withPWA = nextPWA({
   disable: false,
   register: true,
   skipWaiting: true,
+  buildExcludes: [/middleware-manifest\.json$/],
   workboxOptions: {
     disableDevLogs: true,
+    skipWaiting: true,
+    clientsClaim: true,
     runtimeCaching: [
       {
         urlPattern: new RegExp(`^${url}/_next/static/.*`),
@@ -37,7 +40,7 @@ const withPWA = nextPWA({
         options: {
           cacheName: "api-images",
           expiration: {
-            maxEntries: 200,
+            maxEntries: 500,
             maxAgeSeconds: 365 * 24 * 60 * 60, // 1 год
           },
           cacheableResponse: {
@@ -52,8 +55,23 @@ const withPWA = nextPWA({
         options: {
           cacheName: "api-data",
           expiration: {
-            maxEntries: 50,
-            maxAgeSeconds: 24 * 60 * 60, // 24 часа
+            maxEntries: 100,
+            maxAgeSeconds: 7 * 24 * 60 * 60, // 7 дней
+          },
+        },
+      },
+      // Дополнительное кеширование для всех изображений
+      {
+        urlPattern: new RegExp(`.*\\.(webp|jpg|jpeg|png|gif|svg)$`),
+        handler: "CacheFirst",
+        options: {
+          cacheName: "images",
+          expiration: {
+            maxEntries: 1000,
+            maxAgeSeconds: 365 * 24 * 60 * 60, // 1 год
+          },
+          cacheableResponse: {
+            statuses: [0, 200],
           },
         },
       },
@@ -162,15 +180,25 @@ const nextConfig = {
           },
         ],
       },
-      {
-        source: "/(.*\\.ico)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=2592000, stale-while-revalidate=86400",
-          },
-        ],
-      },
+            {
+              source: "/(.*\\.ico)",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=2592000, stale-while-revalidate=86400",
+                },
+              ],
+            },
+            // Кеширование для API изображений (если они проксируются)
+            {
+              source: "/api/images/(.*)",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=31536000, immutable",
+                },
+              ],
+            },
     ];
   },
   webpack(config, { dev, isServer }) {
