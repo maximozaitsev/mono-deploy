@@ -4,11 +4,10 @@
 
 .welcomeSection {
   background: #1f1603;
-  margin-bottom: 140px;
+  margin-bottom: 0;
   width: 100%;
 
   @media (max-width: 768px) {
-    margin-bottom: 62px;
     gap: 20px;
   }
 }
