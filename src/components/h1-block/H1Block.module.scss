@@ -28,6 +28,16 @@
     // Зарезервировать место под 2 строки для десктопа
     min-height: 2lh; // 2 строки (line-height units)
     line-height: 1.2;
+    
+    // Дополнительная фиксация высоты для предотвращения CLS
+    height: auto;
+    min-height: 2lh;
+    
+    // Skeleton loader для состояния загрузки
+    &:empty::before {
+      content: "Loading...";
+      opacity: 0.5;
+    }
 
     @media (max-width: 1180px) {
       max-width: 828px;
@@ -45,6 +55,7 @@
       
       // Зарезервировать место под 3 строки для планшета
       min-height: 3lh; // 3 строки (line-height units)
+      height: auto;
     }
 
     @media (max-width: 420px) {
@@ -52,6 +63,7 @@
       
       // Зарезервировать место под 3 строки для мобильных устройств
       min-height: 3lh; // 3 строки (line-height units)
+      height: auto;
     }
   }
 }
