@@ -9,7 +9,18 @@
 
   @media (max-width: 768px) {
     gap: 20px;
-    height: 530px;
+  }
+
+  @media (max-width: 420px) {
+    height: 475px;
+  }
+
+  @media (max-width: 380px) {
+    height: 384px;
+  }
+
+  @media (max-width: 320px) {
+    height: auto;
   }
 }
 
