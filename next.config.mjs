@@ -33,6 +33,17 @@ const withPWA = nextPWA({
 });
 
 const nextConfig = {
+  // Оптимизация для современных браузеров
+  swcMinify: true,
+  compiler: {
+    // Удаляем console.log в продакшене
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+  // Настройки для современных браузеров
+  experimental: {
+    // Используем современный JavaScript
+    esmExternals: true,
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -59,11 +70,26 @@ const nextConfig = {
       },
     ];
   },
-  webpack(config, options) {
+  webpack(config, { dev, isServer }) {
+    // SVG loader
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
+
+    // Оптимизация для современных браузеров
+    if (!dev && !isServer) {
+      // Настройки для современных браузеров
+      config.target = ['web', 'es2020'];
+      
+      // Минимизация полифиллов
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        // Отключаем полифиллы для современных браузеров
+        'core-js': false,
+      };
+    }
+
     return config;
   },
 };
