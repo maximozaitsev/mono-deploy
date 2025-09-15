@@ -43,6 +43,14 @@ export default function WelcomeSection() {
           decoding="async"
           fetchPriority="high"
         />
+        <img
+          className={styles.mobileImage380}
+          src="/block-images/welcome-mobile-380.avif"
+          alt="Welcome Mobile 380"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+        />
       </figure>
 
       <div className={styles.welcomeBg}>
