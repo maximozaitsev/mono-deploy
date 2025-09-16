@@ -39,8 +39,6 @@ export default function WelcomeSection() {
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
           alt="Welcome Mobile"
-          width={576}
-          height={315}
           loading="eager"
           decoding="async"
           fetchPriority="high"

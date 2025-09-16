@@ -15,14 +15,9 @@
 
   .logo {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
-    width: 190px;
-    height: 76px;
+    width: 160px;
+    height: auto;
     display: block;
-
-    @media (max-width: 768px) {
-      width: 160px;
-      height: 64px;
-    }
   }
 
   h3 {
@@ -39,7 +34,7 @@
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
-    color: #cda53c;
+    color: $color-button-large;
   }
 
   p {

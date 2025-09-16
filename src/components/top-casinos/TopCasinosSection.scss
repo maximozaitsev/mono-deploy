@@ -1,6 +1,4 @@
 .top-casinos-section {
-  margin-top: 70px + 64px;
-
   .offers-grid {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +10,6 @@
   }
 
   @media (max-width: 768px) {
-    margin-top: 30px + 40px;
     padding: 24px 40px;
 
     .offers-grid {

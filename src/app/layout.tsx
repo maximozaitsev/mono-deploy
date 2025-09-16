@@ -4,12 +4,12 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "casinoprestige-online.com";
-const ogTitle = "Casino Prestige UK Review 2025: Bonuses, Games, Payments & Safety";
-const ogSiteName = "Casino Prestige";
-const metaDescription = "A practical, up-to-date review of Casino Prestige for UK players: discover welcome offers, game portfolio, deposit & withdrawal options, licensing status, mobile access and support. Read verified facts before you play.";
+const url = "highroller-casino-luck.com";
+const ogTitle = "HighRoller Casino: Premium Online Gaming Experience!";
+const ogSiteName = "HighRoller Casino";
+const metaDescription = "Join HighRoller Casino and discover a world of top-tier games, generous bonuses, and unparalleled service. Dive into gaming excellence today!";
 
-const locale = "en-GB";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
