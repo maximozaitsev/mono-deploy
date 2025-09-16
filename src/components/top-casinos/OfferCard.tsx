@@ -22,8 +22,8 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
         src={logoSrc}
         alt={offer.name}
         title={`${offer.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
-        width={160}
-        height={64}
+        width={190}
+        height={76}
         sizes="160px"
         priority={priority}
         loading={priority ? "eager" : "lazy"}

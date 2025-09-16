@@ -5,10 +5,10 @@
 .h1Section {
   display: flex;
   justify-content: center;
-  margin: -76px auto 136px auto;
+  margin: 64px auto 0 auto;
 
   @media (max-width: 768px) {
-    margin: 64px auto;
+    margin: 40px auto 0 auto;
   }
 
   h1 {
@@ -35,12 +35,12 @@
 
     @media (max-width: 768px) {
       font-size: 20px;
-      margin: -24px 40px 0;
+      margin: 0 40px;
       max-width: 496px;
       padding: 16px;
     }
 
-    @media (max-width: 380px) {
+    @media (max-width: 420px) {
       margin: 0 20px;
     }
   }
