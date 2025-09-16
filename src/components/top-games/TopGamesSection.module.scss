@@ -44,16 +44,14 @@
 
 .gameItem {
   position: relative;
-  overflow: hidden;
   border-radius: $border-radius;
   border: $border-width solid $border-color;
   transition: transform 0.5s ease;
-  contain: content;
   content-visibility: auto;
   contain-intrinsic-size: 264px 142px;
   backface-visibility: hidden;
-  max-width: 264px;
-  max-height: 142px;
+  width: 100%;
+  aspect-ratio: 264 / 142;
 
   &:hover {
     will-change: transform;
@@ -61,10 +59,12 @@
     outline: 2px solid rgba(0, 0, 0, 0.4);
   }
 
-  .gameImage {
+  .imageWrap {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    position: relative;
+    border-radius: $border-radius;
+    overflow: hidden;
   }
 
   .overlay {
@@ -173,8 +173,7 @@
   }
 
   @media (max-width: 1200px) {
-    max-width: none;
-    max-height: none;
+    aspect-ratio: 264 / 142;
   }
 }
 

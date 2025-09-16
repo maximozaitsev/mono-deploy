@@ -5,9 +5,11 @@ import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
 const url = "playnow-casino.com";
-const ogTitle = "Kingdom Casino: Where Royal Gaming Awaits!";
+const ogTitle =
+  "Review of online casino Play Now Casino for beginners and experienced players from Canada.";
 const ogSiteName = "Playnow Casino";
-const metaDescription = "Dive into a regal gaming adventure at Kingdom Casino! Explore top-tier games, secure transactions, and 24/7 support. Your throne awaits!";
+const metaDescription =
+  "To play on the site, register on the gaming platform and get the Play Now Casino bonus. The best choice of entertainment for players is in the Play Now Casino review.";
 
 const locale = "en";
 const language = "English";
