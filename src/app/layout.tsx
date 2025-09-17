@@ -4,12 +4,10 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "playnow-casino.com";
-const ogTitle =
-  "Review of online casino Play Now Casino for beginners and experienced players from Canada.";
-const ogSiteName = "Playnow Casino";
-const metaDescription =
-  "To play on the site, register on the gaming platform and get the Play Now Casino bonus. The best choice of entertainment for players is in the Play Now Casino review.";
+const url = "jackpot-city-casino.com";
+const ogTitle = "Jackpot City Canada: Detailed Overview of Online Casino";
+const ogSiteName = "Jackpot City Casino";
+const metaDescription = "Jackpot City Canada: range of games, bonuses and loyalty program. Overview of online casino features.";
 
 const locale = "en";
 const language = "English";

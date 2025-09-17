@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://playnow-casino.com/
-Sitemap: https://playnow-casino.com/sitemap.xml
+Host: https://jackpot-city-casino.com/
+Sitemap: https://jackpot-city-casino.com/sitemap.xml
