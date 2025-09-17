@@ -4,10 +4,10 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "jackpot-city-casino.com";
-const ogTitle = "Jackpot City Canada: Detailed Overview of Online Casino";
-const ogSiteName = "Jackpot City Casino";
-const metaDescription = "Jackpot City Canada: range of games, bonuses and loyalty program. Overview of online casino features.";
+const url = "spincasino-pro.com";
+const ogTitle = "Spin Casino welcomes players with the best bonus offers.";
+const ogSiteName = "Spin Casino";
+const metaDescription = "Register at Spin Casino and get fantastic bonus offers for playing. A massive collection of games from leading providers on the casino site.";
 
 const locale = "en";
 const language = "English";

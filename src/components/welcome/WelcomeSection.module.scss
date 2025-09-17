@@ -3,7 +3,7 @@
 @import "@/styles/_fonts-bridge.scss";
 
 .welcomeSection {
-  background: linear-gradient(270deg, #ff5724 0%, #460080 100%);
+  background: #353535;
   margin-bottom: 0;
   width: 100%;
 
@@ -44,7 +44,7 @@
   }
 
   @media (max-width: 1280px) {
-    background-size: 40% auto;
+    background-size: 50% auto;
     background-position: right 20px center;
   }
 

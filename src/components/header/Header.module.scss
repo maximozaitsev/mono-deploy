@@ -52,7 +52,7 @@
   display: flex;
   gap: 24px;
   margin-left: auto;
-  margin-right: 33px;
+  margin-right: 48px;
   list-style: none;
   padding: 0;
 
@@ -83,12 +83,12 @@
   text-decoration: none;
 
   &:hover {
-    color: $color-button-large;
+    color: #fa6561;
   }
 }
 
 .activeNavLink {
-  color: $color-button-large;
+  color: #fa6561;
 }
 
 @media (max-width: 768px) {
