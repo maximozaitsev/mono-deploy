@@ -3,7 +3,7 @@
 @import "@/styles/_fonts-bridge.scss";
 
 .welcomeSection {
-  background: #353535;
+  background: #d25101;
   margin-bottom: 0;
   width: 100%;
 
@@ -31,7 +31,7 @@
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
   // background-size: 55% auto;
-  background-position: right 160px center;
+  background-position: right 106px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -76,7 +76,7 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 576px;
+  max-width: 558px;
   height: auto;
 }
 
@@ -144,7 +144,7 @@
 
   @media (max-width: 768px) {
     font-size: 24px;
-    font-weight: $font-weight-black;
+    font-weight: $font-weight-bold;
     // color: $text-color-welcome;
 
     // background: $text-color-welcome;

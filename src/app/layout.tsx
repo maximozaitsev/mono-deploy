@@ -4,13 +4,12 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "spincasino-pro.com";
-const ogTitle = "Spin Casino welcomes players with the best bonus offers.";
-const ogSiteName = "Spin Casino";
-const metaDescription =
-  "Register at Spin Casino and get fantastic bonus offers for playing. A massive collection of games from leading providers on the casino site.";
+const url = "aladdin-slots.com";
+const ogTitle = "Aladdin Slots Casino Review UK: Free Spins, Daily Wheel, Fast Cashier";
+const ogSiteName = "Aladdin Slots Casino";
+const metaDescription = "UK review of Aladdin Slots: welcome up to 500 Free Spins, Daily Wheel, weekly promos, PayPal & e-wallets, debit-only withdrawals, and the rules that actually matter.";
 
-const locale = "en-CA";
+const locale = "en-GB";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

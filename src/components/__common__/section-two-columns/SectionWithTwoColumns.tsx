@@ -12,7 +12,7 @@ export default function SectionWithTwoColumns({
   jsonKey,
 }: SectionWithTwoColumnsProps) {
   const [sectionTitle, setSectionTitle] = useState<string>("");
-  const [introContent, setIntroContent] = useState<string[][]>([]);
+  const [introContent, setIntroContent] = useState<any[][]>([]);
   const [leftColumnContent, setLeftColumnContent] = useState<any[]>([]);
   const [rightColumnContent, setRightColumnContent] = useState<any[]>([]);
 
@@ -57,13 +57,13 @@ export default function SectionWithTwoColumns({
       .catch((error) => console.error("Ошибка загрузки JSON:", error));
   }, [jsonKey]);
 
-  function groupParagraphs(blocks: any[]): string[][] {
-    const grouped: string[][] = [];
-    let tempGroup: string[] = [];
+  function groupParagraphs(blocks: any[]): any[][] {
+    const grouped: any[][] = [];
+    let tempGroup: any[] = [];
 
     for (const block of blocks) {
-      if (block.type === "paragraph") {
-        tempGroup.push(block.text);
+      if (block.type === "paragraph" || block.type === "list") {
+        tempGroup.push(block);
       } else {
         if (tempGroup.length > 0) {
           grouped.push(tempGroup);
@@ -87,13 +87,31 @@ export default function SectionWithTwoColumns({
         {introContent.length > 0 &&
           introContent.map((group, index) => (
             <div key={index} className={styles.paragraphGroup}>
-              {group.map((text, i) => (
-                <p
-                  key={i}
-                  className="paragraph-text"
-                  dangerouslySetInnerHTML={{ __html: text }}
-                />
-              ))}
+              {group.map((block, i) => {
+                if (block.type === "paragraph") {
+                  return (
+                    <p
+                      key={i}
+                      className="paragraph-text"
+                      dangerouslySetInnerHTML={{ __html: block.text }}
+                    />
+                  );
+                } else if (block.type === "list") {
+                  const ListTag = block.style === "ordered" ? "ol" : "ul";
+                  return (
+                    <ListTag key={i} className="styled-list">
+                      {block.items.map((item: string, itemIndex: number) => (
+                        <li
+                          key={itemIndex}
+                          className="paragraph-text"
+                          dangerouslySetInnerHTML={{ __html: item }}
+                        />
+                      ))}
+                    </ListTag>
+                  );
+                }
+                return null;
+              })}
             </div>
           ))}
 

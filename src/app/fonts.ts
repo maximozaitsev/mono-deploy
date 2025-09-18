@@ -10,9 +10,10 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const baloo_2 = localFont({
+export const poppins = localFont({
   src: [
-    { path: "../../public/fonts/Baloo2/Baloo2-VAR.woff2", weight: "100 900", style: "normal" }
+    { path: "../../public/fonts/Poppins/Poppins-700.woff2", weight: "700", style: "normal" },
+    { path: "../../public/fonts/Poppins/Poppins-900.woff2", weight: "900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",
