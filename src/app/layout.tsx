@@ -7,9 +7,10 @@ import * as fonts from "./fonts";
 const url = "spincasino-pro.com";
 const ogTitle = "Spin Casino welcomes players with the best bonus offers.";
 const ogSiteName = "Spin Casino";
-const metaDescription = "Register at Spin Casino and get fantastic bonus offers for playing. A massive collection of games from leading providers on the casino site.";
+const metaDescription =
+  "Register at Spin Casino and get fantastic bonus offers for playing. A massive collection of games from leading providers on the casino site.";
 
-const locale = "en";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
