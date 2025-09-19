@@ -4,10 +4,10 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "aladdin-slots.com";
-const ogTitle = "Aladdin Slots Casino Review UK: Free Spins, Daily Wheel, Fast Cashier";
-const ogSiteName = "Aladdin Slots Casino";
-const metaDescription = "UK review of Aladdin Slots: welcome up to 500 Free Spins, Daily Wheel, weekly promos, PayPal & e-wallets, debit-only withdrawals, and the rules that actually matter.";
+const url = "ahti-games-casino.com";
+const ogTitle = "AHTI Games Casino Review UK 2025 – Super Spins Welcome & 2,000+ Games";
+const ogSiteName = "AHTI Games Casino";
+const metaDescription = "UK-focused review of AHTI Games for 2025\\. Super Spins on Book of Dead, 2,000+ games, quick verification, smooth mobile play, pearl-tier VIP, safer-gambling tools, and the rules that actually matter.";
 
 const locale = "en-GB";
 const language = "English";
