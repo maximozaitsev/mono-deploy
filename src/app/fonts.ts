@@ -10,9 +10,10 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const montserrat = localFont({
+export const open_sans = localFont({
   src: [
-    { path: "../../public/fonts/Montserrat/Montserrat-VAR.woff2", weight: "100 900", style: "normal" }
+    { path: "../../public/fonts/OpenSans/OpenSans-700.woff2", weight: "700", style: "normal" },
+    { path: "../../public/fonts/OpenSans/OpenSans-800.woff2", weight: "800", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",

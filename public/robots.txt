@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://ahti-games-casino.com/
-Sitemap: https://ahti-games-casino.com/sitemap.xml
+Host: https://betgrouse-casino.com/
+Sitemap: https://betgrouse-casino.com/sitemap.xml
