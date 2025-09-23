@@ -4,10 +4,10 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "betgrouse-casino.com";
-const ogTitle = "Betgrouse Casino UK: Slots, Live Games, Bonuses & Mobile Play";
-const ogSiteName = "Betgrouse Casino";
-const metaDescription = "Betgrouse Casino UK offers slots, sports betting, table games, and instant wins. Enjoy safe gaming, exclusive bonuses, and a seamless mobile experience for UK players.";
+const url = "crystal-slots-online.com";
+const ogTitle = "Crystal Slots Casino Review 2025 – 500 Free Bonus Spins & 7.000+ Games";
+const ogSiteName = "Crystal Slots Casino";
+const metaDescription = "UK guide to Crystal Slots in 2025\\. Explore the 200 Free Spins welcome bonus, jackpots, daily rewards, tournaments, loyalty club, mobile play, banking, and more.";
 
 const locale = "en-GB";
 const language = "English";
