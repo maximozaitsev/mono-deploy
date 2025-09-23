@@ -47,6 +47,7 @@
 
   @media (max-width: 850px) {
     grid-template-columns: 36% 22% 22% 20%;
+    border-radius: 0px;
 
     button {
       width: auto;
@@ -275,6 +276,7 @@
   position: relative;
   word-break: break-word;
   hyphens: auto;
+  border-radius: $border-radius;
 
   @media (max-width: 850px) {
     font-size: 18px;
@@ -344,8 +346,6 @@
     }
   }
 }
-
-
 
 /* Theme Styles Start */
 .accordion-title,
