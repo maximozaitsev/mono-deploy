@@ -5,9 +5,10 @@ import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
 const url = "fortune-ruby.com";
-const ogTitle = "Crystal Slots Casino Review 2025 – 500 Free Bonus Spins & 7.000+ Games";
+const ogTitle = "Ruby Fortune Is the Number 1 Choice for players.";
 const ogSiteName = "Fortune Ruby Casino";
-const metaDescription = "UK guide to Crystal Slots in 2025\\. Explore the 200 Free Spins welcome bonus, jackpots, daily rewards, tournaments, loyalty club, mobile play, banking, and more.";
+const metaDescription =
+  "Casino Ruby Fortune is a unique player experience on a new and promising platform. A no-deposit bonus is available after Ruby Fortune Login.";
 
 const locale = "en";
 const language = "English";
