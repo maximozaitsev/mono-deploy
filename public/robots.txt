@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://crystal-slots-online.com/
-Sitemap: https://crystal-slots-online.com/sitemap.xml
+Host: https://fortune-ruby.com/
+Sitemap: https://fortune-ruby.com/sitemap.xml

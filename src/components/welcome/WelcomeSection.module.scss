@@ -3,7 +3,7 @@
 @import "@/styles/_fonts-bridge.scss";
 
 .welcomeSection {
-  background: #0c101c;
+  background: #3d383f;
   margin-bottom: 0;
   width: 100%;
 
@@ -16,7 +16,7 @@
   }
 
   @media (max-width: 380px) {
-    height: 415px;
+    height: 385px;
   }
 
   @media (max-width: 375px) {
@@ -31,7 +31,7 @@
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
   // background-size: 55% auto;
-  background-position: right 130px top 30px;
+  background-position: right 160px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;

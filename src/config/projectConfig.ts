@@ -1,3 +1,3 @@
-export const PROJECT_NAME = "Crystal Slots Casino";
-export const PROJECT_GEO = "United Kingdom";
-export const PROJECT_URL = "crystal-slots-online.com";
+export const PROJECT_NAME = "Fortune Ruby Casino";
+export const PROJECT_GEO = "Global";
+export const PROJECT_URL = "fortune-ruby.com";

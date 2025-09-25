@@ -47,7 +47,6 @@
 
   @media (max-width: 850px) {
     grid-template-columns: 36% 22% 22% 20%;
-    border-radius: 0px;
 
     button {
       width: auto;
@@ -276,7 +275,6 @@
   position: relative;
   word-break: break-word;
   hyphens: auto;
-  border-radius: $border-radius;
 
   @media (max-width: 850px) {
     font-size: 18px;
@@ -347,20 +345,22 @@
   }
 }
 
+
+
 /* Theme Styles Start */
 .accordion-title,
 .accordion-value {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   &::after {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 .accordion-title::after {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .cell {
   &::after {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
 /* Theme Styles End */

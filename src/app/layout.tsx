@@ -4,12 +4,12 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "crystal-slots-online.com";
+const url = "fortune-ruby.com";
 const ogTitle = "Crystal Slots Casino Review 2025 – 500 Free Bonus Spins & 7.000+ Games";
-const ogSiteName = "Crystal Slots Casino";
+const ogSiteName = "Fortune Ruby Casino";
 const metaDescription = "UK guide to Crystal Slots in 2025\\. Explore the 200 Free Spins welcome bonus, jackpots, daily rewards, tournaments, loyalty club, mobile play, banking, and more.";
 
-const locale = "en-GB";
+const locale = "en";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
