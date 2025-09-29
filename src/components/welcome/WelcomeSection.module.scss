@@ -1,26 +1,14 @@
-@import "@/styles/colors.scss";
-@import "@/styles/variables.scss";
-@import "@/styles/_fonts-bridge.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 .welcomeSection {
-  background: #3d383f;
-  margin-bottom: 0;
+  background: #211249;
+  margin-bottom: 140px;
   width: 100%;
 
   @media (max-width: 768px) {
+    margin-bottom: 62px;
     gap: 20px;
-  }
-
-  @media (max-width: 420px) {
-    height: 475px;
-  }
-
-  @media (max-width: 380px) {
-    height: 385px;
-  }
-
-  @media (max-width: 375px) {
-    height: auto;
   }
 }
 
@@ -30,8 +18,7 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  // background-size: 55% auto;
-  background-position: right 160px center;
+  background-position: right 61px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -76,7 +63,8 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 576px;
+  max-width: 552px;
+  margin-top: 6px;
   height: auto;
 }
 

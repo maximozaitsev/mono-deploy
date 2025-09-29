@@ -1,3 +1,9 @@
-export const PROJECT_NAME = "Ruby Fortune Casino";
-export const PROJECT_GEO = "Global";
-export const PROJECT_URL = "fortune-ruby.com";
+import languagesJson from "../../public/content/languages.json";
+import { getProjectGeoForLang } from "../utils/localeMap";
+
+export const PROJECT_NAME = "SlotsDJ";
+export const PROJECT_URL = "slotsdj-online.com";
+
+export const PROJECT_GEO = getProjectGeoForLang(
+  languagesJson.defaultLang || "au"
+);

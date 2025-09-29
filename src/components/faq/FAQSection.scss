@@ -1,6 +1,5 @@
-@import "@/styles/colors.scss";
-@import "@/styles/variables.scss";
-@import "@/styles/_fonts-bridge.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 .faq-section {
   display: block;
@@ -13,7 +12,6 @@
 
     .faq-question {
       color: $text-color-secondary;
-      font-family: $font-secondary;
       background: $color-background-third;
       font-size: 24px;
       font-weight: $font-weight-bold;
@@ -41,7 +39,6 @@
 
     .faq-answer {
       color: $text-color-secondary;
-      font-family: $font-primary;
       font-size: 20px;
       font-weight: $font-weight-regular;
       line-height: 30px;

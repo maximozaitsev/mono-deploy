@@ -12,20 +12,36 @@ export default function SectionWithTwoColumns({
   jsonKey,
 }: SectionWithTwoColumnsProps) {
   const [sectionTitle, setSectionTitle] = useState<string>("");
-  const [introContent, setIntroContent] = useState<any[][]>([]);
+  const [introContent, setIntroContent] = useState<string[][]>([]);
   const [leftColumnContent, setLeftColumnContent] = useState<any[]>([]);
   const [rightColumnContent, setRightColumnContent] = useState<any[]>([]);
 
   useEffect(() => {
-    import("../../../content/content.json")
-      .then((data) => {
+    const load = async () => {
+      try {
+        const manifestRes = await fetch("/content/languages.json", {
+          cache: "no-cache",
+        });
+        const manifest = await manifestRes.json();
+        const parts = window.location.pathname.split("/").filter(Boolean);
+        const first = parts[0];
+        const lang =
+          first &&
+          manifest.languages.includes(first) &&
+          first !== manifest.defaultLang
+            ? first
+            : manifest.defaultLang;
+        const res = await fetch(`/content/content.${lang}.json`, {
+          cache: "no-cache",
+        });
+        const data = await res.json();
+
         const sectionData = data[jsonKey];
         if (!sectionData) {
           console.error(`Ошибка: ключ "${jsonKey}" отсутствует в JSON`);
           return;
         }
         const sectionEntries = Object.entries(sectionData) as [string, any][];
-
         if (sectionEntries.length > 0) {
           const [firstKey, section] = sectionEntries[0];
           setSectionTitle(firstKey);
@@ -33,7 +49,6 @@ export default function SectionWithTwoColumns({
           const firstH3Index = section.findIndex(
             (block: any) => block.type === "heading" && block.level === 3
           );
-
           const introBlocks =
             firstH3Index !== -1 ? section.slice(0, firstH3Index) : section;
           setIntroContent(groupParagraphs(introBlocks));
@@ -53,17 +68,21 @@ export default function SectionWithTwoColumns({
           setLeftColumnContent(h3Sections.slice(0, midIndex));
           setRightColumnContent(h3Sections.slice(midIndex));
         }
-      })
-      .catch((error) => console.error("Ошибка загрузки JSON:", error));
+      } catch (error) {
+        console.error("Ошибка загрузки JSON:", error);
+      }
+    };
+
+    load();
   }, [jsonKey]);
 
-  function groupParagraphs(blocks: any[]): any[][] {
-    const grouped: any[][] = [];
-    let tempGroup: any[] = [];
+  function groupParagraphs(blocks: any[]): string[][] {
+    const grouped: string[][] = [];
+    let tempGroup: string[] = [];
 
     for (const block of blocks) {
-      if (block.type === "paragraph" || block.type === "list") {
-        tempGroup.push(block);
+      if (block.type === "paragraph") {
+        tempGroup.push(block.text);
       } else {
         if (tempGroup.length > 0) {
           grouped.push(tempGroup);
@@ -87,31 +106,13 @@ export default function SectionWithTwoColumns({
         {introContent.length > 0 &&
           introContent.map((group, index) => (
             <div key={index} className={styles.paragraphGroup}>
-              {group.map((block, i) => {
-                if (block.type === "paragraph") {
-                  return (
-                    <p
-                      key={i}
-                      className="paragraph-text"
-                      dangerouslySetInnerHTML={{ __html: block.text }}
-                    />
-                  );
-                } else if (block.type === "list") {
-                  const ListTag = block.style === "ordered" ? "ol" : "ul";
-                  return (
-                    <ListTag key={i} className="styled-list">
-                      {block.items.map((item: string, itemIndex: number) => (
-                        <li
-                          key={itemIndex}
-                          className="paragraph-text"
-                          dangerouslySetInnerHTML={{ __html: item }}
-                        />
-                      ))}
-                    </ListTag>
-                  );
-                }
-                return null;
-              })}
+              {group.map((text, i) => (
+                <p
+                  key={i}
+                  className="paragraph-text"
+                  dangerouslySetInnerHTML={{ __html: text }}
+                />
+              ))}
             </div>
           ))}
 
