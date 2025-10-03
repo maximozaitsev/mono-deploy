@@ -1,14 +1,12 @@
-import React from "react";
-
 interface ArrowDownProps {
   size?: number;
   color?: string;
 }
 
-const ArrowDown: React.FC<ArrowDownProps> = ({
+const ArrowDown = ({
   size = 24,
   color = "currentColor",
-}) => {
+}: ArrowDownProps) => {
   return (
     <svg
       width={size}
