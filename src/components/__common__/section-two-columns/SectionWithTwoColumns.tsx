@@ -1,110 +1,26 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import TwoColumns from "../two-columns/TwoColumns";
+import { getContentData, parseSectionWithTwoColumnsData } from "../../../utils/serverContent";
 import styles from "./SectionWithTwoColumns.module.scss";
 
 interface SectionWithTwoColumnsProps {
   jsonKey: string;
+  lang: string;
 }
 
-export default function SectionWithTwoColumns({
+export default async function SectionWithTwoColumns({
   jsonKey,
+  lang,
 }: SectionWithTwoColumnsProps) {
-  const [sectionTitle, setSectionTitle] = useState<string>("");
-  const [introContent, setIntroContent] = useState<string[][]>([]);
-  const [leftColumnContent, setLeftColumnContent] = useState<any[]>([]);
-  const [rightColumnContent, setRightColumnContent] = useState<any[]>([]);
-
-  useEffect(() => {
-    const load = async () => {
-      try {
-        const manifestRes = await fetch("/content/languages.json", {
-          cache: "no-cache",
-        });
-        const manifest = await manifestRes.json();
-        const parts = window.location.pathname.split("/").filter(Boolean);
-        const first = parts[0];
-        const lang =
-          first &&
-          manifest.languages.includes(first) &&
-          first !== manifest.defaultLang
-            ? first
-            : manifest.defaultLang;
-        const res = await fetch(`/content/content.${lang}.json`, {
-          cache: "no-cache",
-        });
-        const data = await res.json();
-
-        const sectionData = data[jsonKey];
-        if (!sectionData) {
-          console.error(`Ошибка: ключ "${jsonKey}" отсутствует в JSON`);
-          return;
-        }
-        const sectionEntries = Object.entries(sectionData) as [string, any][];
-        if (sectionEntries.length > 0) {
-          const [firstKey, section] = sectionEntries[0];
-          setSectionTitle(firstKey);
-
-          const firstH3Index = section.findIndex(
-            (block: any) => block.type === "heading" && block.level === 3
-          );
-          const introBlocks =
-            firstH3Index !== -1 ? section.slice(0, firstH3Index) : section;
-          setIntroContent(groupParagraphs(introBlocks));
-
-          const h3Sections = section
-            .slice(firstH3Index)
-            .reduce((acc: any[], block: any) => {
-              if (block.type === "heading" && block.level === 3) {
-                acc.push({ heading: block.text, items: [] });
-              } else if (acc.length > 0) {
-                acc[acc.length - 1].items.push(block);
-              }
-              return acc;
-            }, []);
-
-          const midIndex = Math.ceil(h3Sections.length / 2);
-          setLeftColumnContent(h3Sections.slice(0, midIndex));
-          setRightColumnContent(h3Sections.slice(midIndex));
-        }
-      } catch (error) {
-        console.error("Ошибка загрузки JSON:", error);
-      }
-    };
-
-    load();
-  }, [jsonKey]);
-
-  function groupParagraphs(blocks: any[]): string[][] {
-    const grouped: string[][] = [];
-    let tempGroup: string[] = [];
-
-    for (const block of blocks) {
-      if (block.type === "paragraph") {
-        tempGroup.push(block.text);
-      } else {
-        if (tempGroup.length > 0) {
-          grouped.push(tempGroup);
-          tempGroup = [];
-        }
-      }
-    }
-
-    if (tempGroup.length > 0) {
-      grouped.push(tempGroup);
-    }
-
-    return grouped;
-  }
+  const content = await getContentData(lang);
+  const sectionData = parseSectionWithTwoColumnsData(content, jsonKey);
 
   return (
     <section className={`${styles.sectionContainer} section`}>
       <div className="container">
-        <h2 className="h2-heading white">{sectionTitle || "Section"}</h2>
+        <h2 className="h2-heading white">{sectionData.sectionTitle || "Section"}</h2>
 
-        {introContent.length > 0 &&
-          introContent.map((group, index) => (
+        {sectionData.introContent.length > 0 &&
+          sectionData.introContent.map((group, index) => (
             <div key={index} className={styles.paragraphGroup}>
               {group.map((text, i) => (
                 <p
@@ -117,7 +33,7 @@ export default function SectionWithTwoColumns({
           ))}
 
         <TwoColumns
-          leftColumnContent={leftColumnContent.map((section) => ({
+          leftColumnContent={sectionData.leftColumnContent.map((section: any) => ({
             heading: section.heading,
             items: section.items.map((block: any) => ({
               type: block.type === "list" ? "list" : "text",
@@ -125,7 +41,7 @@ export default function SectionWithTwoColumns({
               style: block.style,
             })),
           }))}
-          rightColumnContent={rightColumnContent.map((section) => ({
+          rightColumnContent={sectionData.rightColumnContent.map((section: any) => ({
             heading: section.heading,
             items: section.items.map((block: any) => ({
               type: block.type === "list" ? "list" : "text",

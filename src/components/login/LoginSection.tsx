@@ -1,46 +1,14 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import useContentData from "../../utils/useContentData";
+import { getContentData, parseLoginData } from "../../utils/serverContent";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
-import { useStaticT } from "@/utils/i18n";
 import "./LoginSection.scss";
 
-export default function LoginSection() {
-  const { data: content, loading, error } = useContentData();
-  const [aboutSections, setAboutSections] = useState<any>({});
-  const [depositSection, setDepositSection] = useState<any>(null);
-  const [withdrawalSection, setWithdrawalSection] = useState<any>(null);
+interface LoginSectionProps {
+  lang: string;
+}
 
-  const { t } = useStaticT();
-
-  useEffect(() => {
-    if (content) {
-      const aboutEntries = Object.entries(content.about) as [string, any][];
-      if (aboutEntries.length > 2) {
-        const depositTitle = aboutEntries[aboutEntries.length - 2][0];
-        const withdrawalTitle = aboutEntries[aboutEntries.length - 1][0];
-
-        setDepositSection({
-          title: depositTitle,
-          content: aboutEntries[aboutEntries.length - 2][1],
-        });
-        setWithdrawalSection({
-          title: withdrawalTitle,
-          content: aboutEntries[aboutEntries.length - 1][1],
-        });
-
-        const filteredAbout = aboutEntries.slice(0, aboutEntries.length - 2);
-        setAboutSections(Object.fromEntries(filteredAbout));
-      } else {
-        setAboutSections(content.about);
-      }
-    }
-  }, [content]);
-
-  if (loading) return null;
-  if (error) return null;
-  if (!content) return null;
+export default async function LoginSection({ lang }: LoginSectionProps) {
+  const content = await getContentData(lang);
+  const { aboutSections, depositSection, withdrawalSection } = parseLoginData(content);
 
   return (
     <section className="login-section section">

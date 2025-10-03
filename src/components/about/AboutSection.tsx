@@ -1,43 +1,23 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import aboutImage from "../../../public/block-images/laptop.webp";
-import useContentData from "../../utils/useContentData";
+import { getContentData, getStaticTranslations, getProjectGeo } from "../../utils/serverContent";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { PROJECT_NAME } from "@/config/projectConfig";
-import { usePathname } from "next/navigation";
-import { getProjectGeoForLang } from "@/utils/localeMap";
-import { useStaticT } from "@/utils/i18n";
 import "./AboutSection.scss";
 
-export default function AboutSection() {
-  const { data: content, loading, error } = useContentData();
-  const pathname = usePathname();
-  const [projectGeo, setProjectGeo] = useState<string>("");
+interface AboutSectionProps {
+  lang: string;
+}
 
-  const { t } = useStaticT();
+export default async function AboutSection({ lang }: AboutSectionProps) {
+  const [content, translations] = await Promise.all([
+    getContentData(lang),
+    getStaticTranslations(lang)
+  ]);
 
-  useEffect(() => {
-    async function resolveGeo() {
-      try {
-        const res = await fetch("/content/languages.json", {
-          cache: "no-cache",
-        });
-        const manifest = await res.json();
-        const seg = (pathname || "").split("/").filter(Boolean)[0];
-        const lang =
-          seg && manifest.languages.includes(seg) ? seg : manifest.defaultLang;
-        setProjectGeo(getProjectGeoForLang(lang));
-      } catch {
-        setProjectGeo("");
-      }
-    }
-    resolveGeo();
-  }, [pathname]);
+  if (!content?.intro) return null;
 
-  if (loading) return null;
-  if (error) return null;
-  if (!content) return null;
+  const projectGeo = getProjectGeo(lang);
+  const t = translations;
 
   return (
     <section className="about-section section">

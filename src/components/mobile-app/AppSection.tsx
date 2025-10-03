@@ -1,40 +1,26 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import AppImage from "../../../public/block-images/app.webp";
 import AppImageMobile from "../../../public/block-images/app-mobile.webp";
-import { fetchOffers } from "@/utils/fetchOffers";
-import useContentData from "../../utils/useContentData";
+import { getContentData, parseAppData, getProjectGeo, getFirstOfferId } from "../../utils/serverContent";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
-import { useParsedSections } from "../../utils/parseSections";
 import { PROJECT_NAME } from "@/config/projectConfig";
-import { getProjectGeoForLang } from "@/utils/localeMap";
-import { usePathname } from "next/navigation";
+import AppButtons from "./AppButtons";
 import styles from "./AppSection.module.scss";
 
-export default function AppSection() {
-  const [firstOfferId, setFirstOfferId] = useState<number | null>(null);
+interface AppSectionProps {
+  lang: string;
+}
 
-  const pathname = usePathname();
-  const langFromUrl = (pathname?.split("/")?.[1] || "").toLowerCase();
-  const PROJECT_GEO_DYNAMIC = getProjectGeoForLang(langFromUrl);
+export default async function AppSection({ lang }: AppSectionProps) {
+  const [content, firstOfferId] = await Promise.all([
+    getContentData(lang),
+    getFirstOfferId()
+  ]);
+  
+  const app = parseAppData(content);
 
-  useEffect(() => {
-    fetchOffers()
-      .then(({ offers }) => {
-        if (offers.length > 0) {
-          setFirstOfferId(offers[0].id);
-        }
-      })
-      .catch((error) => console.error("Error fetching first offer ID:", error));
-  }, []);
-
-  const { data: content, loading, error } = useContentData();
-  const { app } = useParsedSections(content?.sections || {});
-
-  if (loading) return null;
-  if (error) return null;
   if (!app) return null;
+
+  const projectGeo = getProjectGeo(lang);
 
   return (
     <section id="mobile" className={`${styles.appSection} section`}>
@@ -44,8 +30,8 @@ export default function AppSection() {
             {app.appTitle && <h3 className="h3-heading">{app.appTitle}</h3>}
             <img
               src={AppImageMobile.src}
-              alt={PROJECT_NAME + " App"}
-              title={PROJECT_NAME + " " + PROJECT_GEO_DYNAMIC}
+              alt={`${PROJECT_NAME} App`}
+              title={`${PROJECT_NAME} ${projectGeo}`}
               className={styles.imageMobile}
               loading="lazy"
             />
@@ -56,56 +42,13 @@ export default function AppSection() {
                 ))}
               </div>
             ))}
-            <div className={styles.buttons}>
-              <button
-                onClick={() => {
-                  if (firstOfferId) {
-                    window.open(
-                      `/casino/${firstOfferId}`,
-                      "_blank",
-                      "noopener,noreferrer"
-                    );
-                  }
-                }}
-              >
-                <img
-                  className={styles.googlePlay}
-                  src="/assets/google-play.svg"
-                  alt="Download on the Google Play"
-                  title={
-                    PROJECT_NAME + " " + PROJECT_GEO_DYNAMIC + " in Google Play"
-                  }
-                  loading="lazy"
-                />
-              </button>
-              <button
-                onClick={() => {
-                  if (firstOfferId) {
-                    window.open(
-                      `/casino/${firstOfferId}`,
-                      "_blank",
-                      "noopener,noreferrer"
-                    );
-                  }
-                }}
-              >
-                <img
-                  className={styles.appStore}
-                  src="/assets/app-store.svg"
-                  alt="Download on the App Store"
-                  title={
-                    PROJECT_NAME + " " + PROJECT_GEO_DYNAMIC + " in App Store"
-                  }
-                  loading="lazy"
-                />
-              </button>
-            </div>
+            <AppButtons lang={lang} firstOfferId={firstOfferId} />
           </div>
           <div className={styles.imageBlock}>
             <img
               src={AppImage.src}
-              alt={PROJECT_NAME + " " + PROJECT_GEO_DYNAMIC + " App"}
-              title={PROJECT_NAME + " " + PROJECT_GEO_DYNAMIC + " Mobile"}
+              alt={`${PROJECT_NAME} ${projectGeo} App`}
+              title={`${PROJECT_NAME} ${projectGeo} Mobile`}
               className={styles.image}
               loading="lazy"
             />
@@ -117,7 +60,7 @@ export default function AppSection() {
             {app.languagesTitle && (
               <h3 className="h3-heading">{app.languagesTitle}</h3>
             )}
-            {app.languagesContent.map((block, index) => (
+            {app.languagesContent.map((block: any, index: number) => (
               <BlockRenderer key={index} block={block} />
             ))}
           </div>
@@ -125,7 +68,7 @@ export default function AppSection() {
             {app.currenciesTitle && (
               <h3 className="h3-heading">{app.currenciesTitle}</h3>
             )}
-            {app.currenciesContent.map((block, index) => (
+            {app.currenciesContent.map((block: any, index: number) => (
               <BlockRenderer key={index} block={block} />
             ))}
           </div>

@@ -54,18 +54,18 @@ export default async function HomePage() {
         currentLang={currentLang}
       />
       <WelcomeSection />
-      <H1Section />
+      <H1Section lang={currentLang} />
       <TopCasinosSection />
       <BonusDetailsSection />
-      <AboutSection />
-      <TopGamesSection games={games} />
-      <AdvantageSection />
-      <LoginSection />
-      <AppSection />
+      <AboutSection lang={currentLang} />
+      <TopGamesSection games={games} lang={currentLang} />
+      <AdvantageSection lang={currentLang} />
+      <LoginSection lang={currentLang} />
+      <AppSection lang={currentLang} />
       <FAQSection />
-      <GamesToPlay />
-      <SupportSection />
-      <PromotionsSection />
+      <GamesToPlay lang={currentLang} />
+      <SupportSection lang={currentLang} />
+      <PromotionsSection lang={currentLang} />
       <Footer />
     </main>
   );

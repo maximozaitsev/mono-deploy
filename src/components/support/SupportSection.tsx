@@ -1,30 +1,20 @@
-"use client";
-
-import { useMemo } from "react";
 import supportImage from "../../../public/block-images/support.webp";
-import useContentData from "../../utils/useContentData";
+import { getContentData, parseSupportData, getProjectGeo } from "../../utils/serverContent";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { PROJECT_NAME } from "@/config/projectConfig";
-import { getProjectGeoForLang } from "@/utils/localeMap";
-import { useParams } from "next/navigation";
 import styles from "./SupportSection.module.scss";
 
-export default function SupportSection() {
-  const { data, loading, error } = useContentData();
-  const params = useParams();
-  const currentGeo = getProjectGeoForLang(params?.lang as string);
+interface SupportSectionProps {
+  lang: string;
+}
 
-  const supportData = useMemo(() => {
-    if (!data?.support) return null;
-    const supportEntries = Object.entries(data.support) as [string, any][];
-    if (supportEntries.length === 0) return null;
-    const [sectionTitle, blocks] = supportEntries[0];
-    return { sectionTitle, blocks };
-  }, [data]);
+export default async function SupportSection({ lang }: SupportSectionProps) {
+  const content = await getContentData(lang);
+  const supportData = parseSupportData(content);
 
-  if (loading) return null;
-  if (error) return null;
   if (!supportData) return null;
+
+  const currentGeo = getProjectGeo(lang);
 
   return (
     <section className={`${styles.supportSection} section`}>
