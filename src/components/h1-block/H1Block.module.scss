@@ -13,7 +13,7 @@
   h1 {
     font-size: 28px;
     font-weight: $font-weight-black;
-    background-color: $color-background-third;
+    background: url("../../../public/bg.png"), $color-background-third;
     border-radius: $border-radius;
     padding: 23px;
     margin: -12px 40px 0;

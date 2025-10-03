@@ -2,74 +2,21 @@ import Header from "@/components/header/Header";
 import { notFound, redirect } from "next/navigation";
 import WelcomeSection from "@/components/welcome/WelcomeSection";
 import H1Section from "@/components/h1-block/H1Block";
-
-import dynamic from "next/dynamic";
+import TopCasinosSection from "@/components/top-casinos/TopCasinosSection";
+import TopGamesSection from "@/components/top-games/TopGamesSection";
+import BonusDetailsSection from "@/components/bonus-details/BonusDetailsSection";
+import AboutSection from "@/components/about/AboutSection";
+import LoginSection from "@/components/login/LoginSection";
+import AppSection from "@/components/mobile-app/AppSection";
+import FAQSection from "@/components/faq/FAQSection";
+import GamesToPlay from "@/components/games-to-play/GamesToPlay";
+import SupportSection from "@/components/support/SupportSection";
+import PromotionsSection from "@/components/promotion/PromotionsSection";
+import AdvantageSection from "@/components/advantage/AdvantageSection";
+import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
-import { fetchProviders } from "@/utils/fetchProviders";
-import { Provider } from "@/types/provider";
 import fs from "node:fs/promises";
 import path from "node:path";
-
-const TopCasinosSection = dynamic(
-  () => import("@/components/top-casinos/TopCasinosSection"),
-  { ssr: false, loading: () => null }
-);
-const MobileSection = dynamic(
-  () => import("@/components/mobile-version/MobileSection"),
-  { ssr: false, loading: () => null }
-);
-const TopGamesSection = dynamic(
-  () => import("@/components/top-games/TopGamesSection"),
-  { ssr: false, loading: () => null }
-);
-const BonusDetailsSection = dynamic(
-  () => import("@/components/bonus-details/BonusDetailsSection"),
-  { ssr: false, loading: () => null }
-);
-const AboutSection = dynamic(() => import("@/components/about/AboutSection"), {
-  ssr: false,
-  loading: () => null,
-});
-const PaymentMethodsSection = dynamic(
-  () => import("@/components/payment-methods/PaymentMethodSection"),
-  { ssr: false, loading: () => null }
-);
-const LicensesSection = dynamic(
-  () => import("@/components/license/LicensesSection"),
-  { ssr: false, loading: () => null }
-);
-const ProvidersSection = dynamic(
-  () => import("@/components/providers/ProvidersSection"),
-  { ssr: false, loading: () => null }
-);
-const AppSection = dynamic(() => import("@/components/mobile-app/AppSection"), {
-  ssr: false,
-  loading: () => null,
-});
-const FAQSection = dynamic(() => import("@/components/faq/FAQSection"), {
-  ssr: false,
-  loading: () => null,
-});
-const GamesToPlay = dynamic(
-  () => import("@/components/games-to-play/GamesToPlay"),
-  { ssr: false, loading: () => null }
-);
-const SupportSection = dynamic(
-  () => import("@/components/support/SupportSection"),
-  { ssr: false, loading: () => null }
-);
-const PromotionsSection = dynamic(
-  () => import("@/components/promotion/PromotionsSection"),
-  { ssr: false, loading: () => null }
-);
-const AdvantageSection = dynamic(
-  () => import("@/components/advantage/AdvantageSection"),
-  { ssr: false, loading: () => null }
-);
-const Footer = dynamic(() => import("@/components/footer/Footer"), {
-  ssr: false,
-  loading: () => null,
-});
 
 export default async function LangPage({
   params,
@@ -111,7 +58,6 @@ export default async function LangPage({
   }
 
   const games = await fetchGames("gambling");
-  const providers: Provider[] = await fetchProviders();
 
   return (
     <main>
@@ -124,18 +70,15 @@ export default async function LangPage({
       <H1Section />
       <TopCasinosSection />
       <BonusDetailsSection />
-      <MobileSection />
-      <TopGamesSection games={games} />
       <AboutSection />
-      <PaymentMethodsSection initialPaymentMethods={[]} />
-      <LicensesSection />
-      <ProvidersSection initialProviders={providers} />
+      <TopGamesSection games={games} />
+      <AdvantageSection />
+      <LoginSection />
       <AppSection />
       <FAQSection />
       <GamesToPlay />
       <SupportSection />
       <PromotionsSection />
-      <AdvantageSection />
       <Footer />
     </main>
   );

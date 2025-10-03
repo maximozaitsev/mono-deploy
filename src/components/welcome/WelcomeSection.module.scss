@@ -2,7 +2,7 @@
 @import "../../styles/variables.scss";
 
 .welcomeSection {
-  background: #211249;
+  background: $color-background-welcome;
   margin-bottom: 140px;
   width: 100%;
 
@@ -18,7 +18,7 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 61px center;
+  background-position: right 160px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -63,8 +63,8 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 552px;
-  margin-top: 6px;
+  max-width: 542px;
+  margin-top: 9px;
   height: auto;
 }
 
@@ -125,7 +125,7 @@
   font-family: var(--font-secondary);
   color: $text-color-primary;
   font-size: 32px;
-  font-style: normal;
+  font-style: italic;
   font-weight: $font-weight-black;
   line-height: normal;
   text-transform: uppercase;

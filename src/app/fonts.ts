@@ -10,9 +10,9 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const dm_sans = localFont({
+export const fira_sans = localFont({
   src: [
-    { path: "../../public/fonts/DMSans/DMSans-VAR.woff2", weight: "100 900", style: "normal" }
+    { path: "../../public/fonts/FiraSans/FiraSans-900.woff2", weight: "900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",
