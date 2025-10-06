@@ -75,7 +75,7 @@ export default async function LangPage({
       <AdvantageSection lang={lang} />
       <LoginSection lang={lang} />
       <AppSection lang={lang} />
-      <FAQSection />
+      <FAQSection lang={lang} />
       <GamesToPlay lang={lang} />
       <SupportSection lang={lang} />
       <PromotionsSection lang={lang} />

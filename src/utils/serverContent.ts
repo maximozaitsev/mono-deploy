@@ -292,6 +292,30 @@ export function parseAppData(data: any) {
 }
 
 
+export function parseFAQData(data: any) {
+  if (!data?.faq) return { faqTitle: "", faqs: [] };
+
+  const faqEntries = Object.entries(data.faq) as [string, any][];
+  if (faqEntries.length === 0) return { faqTitle: "", faqs: [] };
+
+  const [title, faqContent] = faqEntries[0];
+  const faqTitle = title;
+
+  const items: { question: string; answer: string }[] = [];
+  for (let i = 0; i < faqContent.length; i++) {
+    if (faqContent[i].type === "heading" && faqContent[i].level === 3) {
+      const question = faqContent[i].text;
+      const answer =
+        faqContent[i + 1]?.type === "paragraph"
+          ? faqContent[i + 1].text
+          : "";
+      items.push({ question, answer });
+    }
+  }
+
+  return { faqTitle, faqs: items };
+}
+
 export async function getFirstOfferId(): Promise<number | null> {
   try {
     const { fetchOffers } = await import("./fetchOffers");

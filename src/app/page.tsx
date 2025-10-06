@@ -62,7 +62,7 @@ export default async function HomePage() {
       <AdvantageSection lang={currentLang} />
       <LoginSection lang={currentLang} />
       <AppSection lang={currentLang} />
-      <FAQSection />
+      <FAQSection lang={currentLang} />
       <GamesToPlay lang={currentLang} />
       <SupportSection lang={currentLang} />
       <PromotionsSection lang={currentLang} />
