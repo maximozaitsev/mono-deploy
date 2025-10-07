@@ -7,7 +7,7 @@ import BonusDetailsSection from "@/components/bonus-details/BonusDetailsSection"
 import AboutSection from "@/components/about/AboutSection";
 import LoginSection from "@/components/login/LoginSection";
 import AppSectionWrapper from "@/components/mobile-app/AppSectionWrapper";
-import FAQSectionWrapper from "@/components/faq/FAQSectionWrapper";
+import FAQSection from "@/components/faq/FAQSection";
 import GamesToPlay from "@/components/games-to-play/GamesToPlay";
 import SupportSection from "@/components/support/SupportSection";
 import PromotionsSection from "@/components/promotion/PromotionsSection";
@@ -32,7 +32,7 @@ export default async function HomePage() {
       <AdvantageSection />
       <LoginSection />
       <AppSectionWrapper />
-      <FAQSectionWrapper />
+      <FAQSection />
       <GamesToPlay />
       <SupportSection />
       <PromotionsSection />
