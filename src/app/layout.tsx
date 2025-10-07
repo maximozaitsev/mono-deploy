@@ -5,9 +5,9 @@ import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
 const url = "boomerang-australia-casino.com";
-const ogTitle = "CoolCat Casino Canada: Review of Gaming Capabilities and Bonus Features";
+const ogTitle = "Boomerang Casino Australia: Exciting gambling practices";
 const ogSiteName = "Boomerang Casino";
-const metaDescription = "CoolCat Casino Canada: what you need to know about the popular service. Welcome bonuses, VIP promotions, range of games, payment methods and other useful information for beginners and experienced gamblers";
+const metaDescription = "Join Boomerang Casino for thrilling iGaming. Sign up now and dive into a world of big wins!";
 
 const locale = "en-AU";
 const language = "English";

@@ -65,7 +65,7 @@ export function parseAboutContent(data: any) {
   if (!data?.intro) return { title: "", intro: [] };
 
   return {
-    title: "About",
+    title: data.title || "About",
     intro: data.intro,
   };
 }
@@ -89,9 +89,11 @@ export function parseAdvantageContent(data: any) {
   const sectionTitle = firstKey;
   
   // Исправляем groupParagraphs для правильного возврата строк
-  const introParagraphs = groupParagraphs(section, "list").map(group => 
-    group.map(block => block.text || "")
-  );
+  const introParagraphs = groupParagraphs(section, "list")
+    .map(group => 
+      group.map(block => block.text || "")
+    )
+    .filter(group => group.some(text => text.trim() !== ""));
 
   const headingBlocks = section.filter(
     (block: any) => block.type === "heading" && block.level === 3
@@ -113,9 +115,11 @@ export function parseAdvantageContent(data: any) {
   const closingParagraphs = groupParagraphs(
     section.slice(section.findIndex((b: any) => b.type === "list") + 2),
     ""
-  ).map(group => 
-    group.map(block => block.text || "")
-  );
+  )
+    .map(group => 
+      group.map(block => block.text || "")
+    )
+    .filter(group => group.some(text => text.trim() !== ""));
 
   return {
     sectionTitle,
