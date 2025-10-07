@@ -1,18 +1,34 @@
+import React from "react";
 import styles from "./H1Block.module.scss";
-import { getContentData } from "../../utils/serverContent";
+import siteData from "@/content/siteData.json";
 
-interface H1SectionProps {
-  lang: string;
+export interface Block {
+  type: string;
+  level?: number;
+  text?: string;
 }
 
-export default async function H1Section({ lang }: H1SectionProps) {
-  const content = await getContentData(lang);
+interface Props {
+  blocks?: Block[];
+  pageKey?: keyof typeof siteData;
+  className?: string;
+}
 
-  if (!content?.title) return null;
+export default function H1Section({ blocks, pageKey, className }: Props) {
+  const contentBlocks =
+    blocks ?? (pageKey ? siteData[pageKey].blocks : undefined);
+  const h1Text =
+    contentBlocks?.find((b) => b.type === "heading" && b.level === 1)?.text ||
+    "";
+
+  if (!h1Text) return null;
 
   return (
-    <section id="h1-section" className={styles.h1Section}>
-      <h1 className="h2-heading">{content.title}</h1>
+    <section
+      id="h1-section"
+      className={`${styles.h1Section} ${className ?? ""}`.trim()}
+    >
+      <h1>{h1Text}</h1>
     </section>
   );
 }

@@ -1,22 +1,26 @@
-@import "../../styles/colors.scss";
-@import "../../styles/variables.scss";
+@import "@/styles/colors.scss";
+@import "@/styles/variables.scss";
+@import "@/styles/_fonts-bridge.scss";
 
 .h1Section {
   display: flex;
   justify-content: center;
-  margin: -64px auto 64px auto;
+  margin: 64px auto 0 auto;
 
   @media (max-width: 768px) {
-    margin: 64px auto;
+    margin: 40px auto 0 auto;
   }
 
   h1 {
-    font-size: 28px;
+    font-family: $font-secondary;
     font-weight: $font-weight-black;
-    background: url("../../../public/bg.png"), $color-background-third;
+    color: $text-color-primary;
+    font-size: 28px;
+    text-transform: uppercase;
+
+    background-color: $color-background-third;
     border-radius: $border-radius;
     padding: 23px;
-    margin: -12px 40px 0;
     max-width: 1120px;
     width: 100%;
     text-align: center;
@@ -25,18 +29,18 @@
       max-width: 828px;
     }
 
-    @media (max-width: 912px) {
+    @media (max-width: 913px) {
       max-width: 544px;
     }
 
     @media (max-width: 768px) {
       font-size: 20px;
-      margin: -24px 40px 0;
+      margin: 0 40px;
       max-width: 496px;
       padding: 16px;
     }
 
-    @media (max-width: 380px) {
+    @media (max-width: 420px) {
       margin: 0 20px;
     }
   }

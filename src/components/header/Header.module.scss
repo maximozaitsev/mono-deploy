@@ -1,5 +1,10 @@
-@import "../../styles/colors.scss";
-@import "../../styles/variables.scss";
+@import "@/styles/colors.scss";
+@import "@/styles/variables.scss";
+@import "@/styles/_fonts-bridge.scss";
+
+.spacer {
+  flex: 1;
+}
 
 .header {
   display: flex;
@@ -10,12 +15,26 @@
   z-index: 1000;
   height: 96px;
 
+  svg {
+    margin-top: 4px;
+
+    @media (max-width: 1080px) {
+      margin-top: 0px;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 4px;
+    }
+  }
+
   @media (max-width: 1080px) {
     padding: 24px 40px;
   }
+
   @media (max-width: 768px) {
     height: 96px;
   }
+
   @media (max-width: 380px) {
     padding: 5px 10px;
     height: 64px;
@@ -29,10 +48,57 @@
   width: 100%;
 }
 
-.arrowButton {
-  background: transparent;
+.navList {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: 48px;
+  list-style: none;
+  padding: 0;
+
+  @media (max-width: 850px) {
+    gap: 10px;
+    margin-right: 10px;
+  }
+}
+
+.navListMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  font-family: $font-secondary;
+  color: $text-color-primary;
+  background: none;
   border: none;
+  font-weight: $font-weight-black;
+  font-size: 16px;
   cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-button-large;
+  }
+}
+
+.activeNavLink {
+  color: $color-button-large;
+}
+
+@media (max-width: 768px) {
+  .navList {
+    display: none;
+  }
+  .navLink {
+    font-size: 32px;
+    padding: 6px 16px;
+  }
 }
 
 .headerButtons {
@@ -40,36 +106,26 @@
   gap: 24px;
 
   .headerButton {
+    font-family: $font-secondary;
     height: $header-button-height;
-    font-family: var(--font-secondary);
     font-weight: $font-weight-black;
-    font-style: italic;
     font-size: 14px;
-    padding: 12px 4px;
+    padding: 12px 32px;
     border-radius: $header-button-border-radius;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
-    &.login {
-      background: $color-button-small;
-      width: $header-button-large-small;
-      color: $text-color-button-small;
-      box-shadow: 0px -4px 0px 0px #e6720d inset;
-    }
-
-    &.signup {
+    &.playNow {
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
-      box-shadow: 0px -4px 0px 0px #03991b inset;
     }
 
     &:hover {
       transform: scale(1.05);
     }
   }
-
   @media (max-width: 768px) {
     gap: 8px;
 
@@ -77,28 +133,17 @@
       height: $header-button-height-mobile;
       border-radius: $header-button-border-radius-mobile;
       font-size: 10px;
-      padding: 8px 2px;
+      padding: 8px 16px;
 
-      &.login {
-        width: $header-button-large-small-mobile;
-      }
-      &.signup {
+      &.playNow {
         width: $header-button-large-width-mobile;
-      }
-    }
-  }
-
-  @media (max-width: 575px) {
-    .headerButton {
-      &.login {
-        display: none;
       }
     }
   }
 
   @media (max-width: 500px) {
     .headerButton {
-      &.signup {
+      &.playNow {
         display: inline-block;
       }
     }
@@ -106,7 +151,7 @@
 
   @media (max-width: 380px) {
     .headerButton {
-      &.signup {
+      &.playNow {
         width: auto;
         height: auto;
       }
@@ -114,96 +159,79 @@
   }
 }
 
-.langControl {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: transparent;
-  margin-right: 8px;
-
-  .langPicker {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-
-    svg {
-      pointer-events: none;
-    }
-  }
-
-  select {
-    background: transparent;
-    border: none;
-    font-family: var(--font-primary);
-    font-weight: $font-weight-regular;
-    font-size: 20px;
-    color: $text-color-primary;
-    padding: 0 5px 0 0;
-    outline: none;
-    appearance: none;
-    cursor: pointer;
-    -webkit-text-fill-color: currentColor;
-  }
+.burger {
+  background: none;
+  border: none;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin-right: 10px;
+  cursor: pointer;
 
   @media (max-width: 768px) {
-    margin-right: 2px;
-    gap: 0px;
+    display: flex;
+  }
+}
 
-    svg {
-      scale: 0.8;
+.burgerLine {
+  width: 100%;
+  height: 3px;
+  background-color: $text-color-primary;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.open {
+  .burgerLine:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .burgerLine:nth-child(2) {
+    opacity: 0;
+  }
+  .burgerLine:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .menuItems {
+    flex-direction: column;
+    text-align: center;
+    background: $color-background-header;
+    position: fixed;
+    top: 96px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 96px);
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: nowrap;
+    z-index: 1000;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    &.open {
+      transform: translateX(0);
     }
-
-    select {
-      font-size: 16px;
-      padding: 2px 4px;
-    }
   }
 }
 
-.langControl select {
-  color-scheme: light;
-}
-
-.langControl select option {
-  background-color: var(--dropdown-bg, #ffffff);
-  color: var(--dropdown-fg, #111111);
-}
-
-.langControl select option:checked,
-.langControl select option:focus,
-.langControl select option:hover {
-  background-color: var(--dropdown-hover, #f0f0f0);
-  color: var(--dropdown-fg, #111111);
-}
-
-@media (prefers-color-scheme: dark) {
-  .langControl select {
-    color-scheme: light;
-  }
-  .langControl select option {
-    background-color: var(--dropdown-bg-dark, #1e1e1e);
-    color: var(--dropdown-fg-dark, #ffffff);
-  }
-  .langControl select option:checked,
-  .langControl select option:focus,
-  .langControl select option:hover {
-    background-color: var(--dropdown-hover-dark, #2a2a2a);
-    color: var(--dropdown-fg-dark, #ffffff);
+@media (max-width: 380px) {
+  .menuItems {
+    top: 64px;
+    height: calc(100vh - 64px);
   }
 }
 
-@media (forced-colors: active) {
-  .langControl select,
-  .langControl select option {
-    forced-color-adjust: none;
-    background-color: Canvas !important;
-    color: CanvasText !important;
-    border-color: CanvasText !important;
-  }
-}
-
-.langControl select::-ms-expand {
+.hidden {
   display: none;
 }

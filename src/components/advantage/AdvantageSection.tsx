@@ -1,21 +1,17 @@
 import styles from "./AdvantageSection.module.scss";
-import { getContentData, parseAdvantageData } from "../../utils/serverContent";
+import { getContentData, parseAdvantageContent } from "../../utils/serverContent";
 
-interface AdvantageSectionProps {
-  lang: string;
-}
-
-export default async function AdvantageSection({ lang }: AdvantageSectionProps) {
-  const content = await getContentData(lang);
-  const advantageData = parseAdvantageData(content);
+export default async function AdvantageSection() {
+  const contentData = await getContentData();
+  const content = parseAdvantageContent(contentData);
 
   return (
     <section className={`${styles.advantageSection} section`}>
       <div className="container">
-        <h2 className="h2-heading">{advantageData.sectionTitle || "Advantages"}</h2>
+        <h2 className="h2-heading">{content.sectionTitle || "Advantages"}</h2>
 
-        {advantageData.introParagraphs.length > 0 &&
-          advantageData.introParagraphs.map((group, index) => (
+        {content.introParagraphs.length > 0 &&
+          content.introParagraphs.map((group, index) => (
             <div key={index} className={styles.paragraphGroup}>
               {group.map((text, i) => (
                 <p key={i} className="paragraph-text black">
@@ -27,27 +23,29 @@ export default async function AdvantageSection({ lang }: AdvantageSectionProps) 
 
         <div className={styles.columns}>
           <div className={styles.column}>
-            {advantageData.advantagesTitle && <p className="h4-heading">{advantageData.advantagesTitle}</p>}
+            {content.advantagesTitle && (
+              <h4 className="h4-heading">{content.advantagesTitle}</h4>
+            )}
             <ul className="paragraph-text black">
-              {advantageData.advantagesList.map((advantage, index) => (
+              {content.advantagesList.map((advantage, index) => (
                 <li key={index}>{advantage}</li>
               ))}
             </ul>
           </div>
           <div className={styles.column}>
-            {advantageData.disadvantagesTitle && (
-              <p className="h4-heading">{advantageData.disadvantagesTitle}</p>
+            {content.disadvantagesTitle && (
+              <h4 className="h4-heading">{content.disadvantagesTitle}</h4>
             )}
             <ul className="paragraph-text black">
-              {advantageData.disadvantagesList.map((disadvantage, index) => (
+              {content.disadvantagesList.map((disadvantage, index) => (
                 <li key={index}>{disadvantage}</li>
               ))}
             </ul>
           </div>
         </div>
 
-        {advantageData.closingParagraphs.length > 0 &&
-          advantageData.closingParagraphs.map((group, index) => (
+        {content.closingParagraphs.length > 0 &&
+          content.closingParagraphs.map((group, index) => (
             <div key={index} className={styles.paragraphGroup}>
               {group.map((text, i) => (
                 <p key={i} className="paragraph-text black">

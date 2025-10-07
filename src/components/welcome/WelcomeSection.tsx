@@ -4,22 +4,23 @@ import { useEffect, useState } from "react";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
-import { useStaticT } from "@/utils/i18n";
 
 export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
   const [firstOfferId, setFirstOfferId] = useState<string>("");
   const [offerLink, setOfferLink] = useState<string>("");
-  const { t } = useStaticT();
 
   useEffect(() => {
     const fetchWelcomeBonus = async () => {
       try {
         const offersData = await fetchOffers();
-        const bonus = offersData.offers[0]?.bonuses.welcome_bonus || "";
+        const first = offersData?.offers?.[0];
+
+        const bonus = first?.bonuses?.welcome_bonus || "";
         setWelcomeBonus(bonus);
-        setFirstOfferId(String(offersData.offers[0]?.id ?? ""));
-        setOfferLink(offersData.offers[0]?.link || "");
+
+        setFirstOfferId(String(first?.id ?? ""));
+        setOfferLink(first?.link || "");
       } catch (error) {
         console.error("Failed to fetch welcome bonus:", error);
       }
@@ -49,14 +50,15 @@ export default function WelcomeSection() {
           <div className={styles.welcomeContent}>
             <div className={styles.welcomeText}>
               <h2 className={styles.offerText}>
-                {t.exclusiveWelcomeOfferOf} {welcomeBonus}
+                Exclusive welcome offer of {welcomeBonus}
               </h2>
               <h2 className={styles.bonusText}>
-                {t.exclusiveWelcomeOfferOf} {welcomeBonus}
+                Exclusive welcome bonus of {welcomeBonus}
               </h2>
+
               {(firstOfferId || offerLink) && (
                 <Button
-                  text={t.claimBonus}
+                  text="claim bonus"
                   variant="primary"
                   useNavigation={true}
                   url={firstOfferId ? `/casino/${firstOfferId}` : offerLink}

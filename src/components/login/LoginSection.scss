@@ -1,11 +1,23 @@
-@use "../../styles/colors.scss" as *;
-@use "../../styles/lists" as lists;
+@use "@/styles/colors.scss" as *;
+@use "@/styles/lists" as lists;
 
 .login-section {
+  background: $color-background;
+
   .container {
     display: flex;
     flex-direction: column;
     gap: 48px;
+
+    @media (max-width: 1220px) {
+      padding: 40px 40px;
+      gap: 40px;
+    }
+
+    @media (max-width: 375px) {
+      padding: 40px 20px;
+      gap: 40px;
+    }
   }
 
   .about-text {

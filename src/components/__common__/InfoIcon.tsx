@@ -1,4 +1,6 @@
-const InfoIcon = () => (
+import React from "react";
+
+const InfoIcon: React.FC = () => (
   <svg
     width="24"
     height="24"
