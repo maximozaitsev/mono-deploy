@@ -1,5 +1,0 @@
-User-agent: * 
-Allow: / 
-Disallow: /casino/
-Host: https://big-clash-casino.com/
-Sitemap: https://big-clash-casino.com/sitemap.xml
