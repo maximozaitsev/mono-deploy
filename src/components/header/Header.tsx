@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { fetchOffers } from "../../utils/fetchOffers";
 
 const navItems = [
+  { label: "Games", path: "/games" },
   { label: "Bonus", path: "/bonus" },
   { label: "App", path: "/app" },
   { label: "Log In", path: "/login" },

@@ -4,14 +4,13 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "yabby-casino-australia.com";
-const ogTitle = "Yabby Casino Comprehensive Review: Thrills & Wins Await You";
-const ogSiteName = "Yabby Casino";
-const metaDescription =
-  "Yabby Casino is a spot for winning big. Join Yabby Casino for top games, protected transactions, and generous bonuses.";
+const url = "big-clash-casino.com";
+const ogTitle = "Title";
+const ogSiteName = "BigClash Casino";
+const metaDescription = "Description";
 
-const locale = "en-AU";
-const language = "English";
+const locale = "undefined";
+const language = "undefined";
 const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {

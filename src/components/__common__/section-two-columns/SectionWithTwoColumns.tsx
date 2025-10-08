@@ -1,4 +1,6 @@
-import { getContentData, parseSectionWithTwoColumnsData } from "../../../utils/serverContent";
+"use client";
+
+import { useEffect, useState } from "react";
 import TwoColumns from "../two-columns/TwoColumns";
 import styles from "./SectionWithTwoColumns.module.scss";
 
@@ -6,23 +8,86 @@ interface SectionWithTwoColumnsProps {
   jsonKey: string;
 }
 
-export default async function SectionWithTwoColumns({
+export default function SectionWithTwoColumns({
   jsonKey,
 }: SectionWithTwoColumnsProps) {
-  const contentData = await getContentData();
-  const sectionData = parseSectionWithTwoColumnsData(contentData, jsonKey);
+  const [sectionTitle, setSectionTitle] = useState<string>("");
+  const [introContent, setIntroContent] = useState<any[][]>([]);
+  const [leftColumnContent, setLeftColumnContent] = useState<any[]>([]);
+  const [rightColumnContent, setRightColumnContent] = useState<any[]>([]);
+
+  useEffect(() => {
+    import("../../../content/content.json")
+      .then((data) => {
+        const sectionData = data[jsonKey];
+        if (!sectionData) {
+          console.error(`Ошибка: ключ "${jsonKey}" отсутствует в JSON`);
+          return;
+        }
+        const sectionEntries = Object.entries(sectionData) as [string, any][];
+
+        if (sectionEntries.length > 0) {
+          const [firstKey, section] = sectionEntries[0];
+          setSectionTitle(firstKey);
+
+          const firstH3Index = section.findIndex(
+            (block: any) => block.type === "heading" && block.level === 3
+          );
+
+          const introBlocks =
+            firstH3Index !== -1 ? section.slice(0, firstH3Index) : section;
+          setIntroContent(groupParagraphs(introBlocks));
+
+          const h3Sections = section
+            .slice(firstH3Index)
+            .reduce((acc: any[], block: any) => {
+              if (block.type === "heading" && block.level === 3) {
+                acc.push({ heading: block.text, items: [] });
+              } else if (acc.length > 0) {
+                acc[acc.length - 1].items.push(block);
+              }
+              return acc;
+            }, []);
+
+          const midIndex = Math.ceil(h3Sections.length / 2);
+          setLeftColumnContent(h3Sections.slice(0, midIndex));
+          setRightColumnContent(h3Sections.slice(midIndex));
+        }
+      })
+      .catch((error) => console.error("Ошибка загрузки JSON:", error));
+  }, [jsonKey]);
+
+  function groupParagraphs(blocks: any[]): any[][] {
+    const grouped: any[][] = [];
+    let tempGroup: any[] = [];
+
+    for (const block of blocks) {
+      if (block.type === "paragraph" || block.type === "list") {
+        tempGroup.push(block);
+      } else {
+        if (tempGroup.length > 0) {
+          grouped.push(tempGroup);
+          tempGroup = [];
+        }
+      }
+    }
+
+    if (tempGroup.length > 0) {
+      grouped.push(tempGroup);
+    }
+
+    return grouped;
+  }
 
   return (
     <section className={`${styles.sectionContainer} section`}>
       <div className="container">
-        <h2 className="h2-heading white">
-          {sectionData.sectionTitle || "Section"}
-        </h2>
+        <h2 className="h2-heading white">{sectionTitle || "Section"}</h2>
 
-        {sectionData.introContent.length > 0 &&
-          sectionData.introContent.map((group: any, index: number) => (
+        {introContent.length > 0 &&
+          introContent.map((group, index) => (
             <div key={index} className={styles.paragraphGroup}>
-              {group.map((block: any, i: number) => {
+              {group.map((block, i) => {
                 if (block.type === "paragraph") {
                   return (
                     <p
@@ -51,26 +116,22 @@ export default async function SectionWithTwoColumns({
           ))}
 
         <TwoColumns
-          leftColumnContent={sectionData.leftColumnContent.map(
-            (section: any) => ({
-              heading: section.heading,
-              items: section.items.map((block: any) => ({
-                type: block.type === "list" ? "list" : "text",
-                content: block.type === "list" ? block.items : block.text,
-                style: block.style,
-              })),
-            })
-          )}
-          rightColumnContent={sectionData.rightColumnContent.map(
-            (section: any) => ({
-              heading: section.heading,
-              items: section.items.map((block: any) => ({
-                type: block.type === "list" ? "list" : "text",
-                content: block.type === "list" ? block.items : block.text,
-                style: block.style,
-              })),
-            })
-          )}
+          leftColumnContent={leftColumnContent.map((section) => ({
+            heading: section.heading,
+            items: section.items.map((block: any) => ({
+              type: block.type === "list" ? "list" : "text",
+              content: block.type === "list" ? block.items : block.text,
+              style: block.style,
+            })),
+          }))}
+          rightColumnContent={rightColumnContent.map((section) => ({
+            heading: section.heading,
+            items: section.items.map((block: any) => ({
+              type: block.type === "list" ? "list" : "text",
+              content: block.type === "list" ? block.items : block.text,
+              style: block.style,
+            })),
+          }))}
         />
       </div>
     </section>
