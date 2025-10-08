@@ -1,0 +1,32 @@
+.top-casinos-section {
+  margin-top: 70px + 64px;
+
+  .offers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 26px;
+  }
+
+  button {
+    align-self: center;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 30px + 40px;
+    padding: 24px 40px;
+
+    .offers-grid {
+      gap: 16px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    padding: 24px 20px;
+  }
+
+  @media (max-width: 1180px) {
+    .offers-grid {
+      justify-content: center;
+    }
+  }
+}

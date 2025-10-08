@@ -1,0 +1,129 @@
+@import "@/styles/colors";
+
+.footer {
+  position: relative;
+  background: $color-background-footer;
+  display: flex;
+  padding: 24px 0;
+  text-align: center;
+
+  :global(.container) {
+    width: 100%;
+  }
+
+  .partners {
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px 18px;
+      margin-bottom: 24px;
+
+      &:first-child {
+        display: flex;
+        flex-wrap: wrap;
+
+        .logoWrapper {
+          position: absolute;
+          left: 160px;
+
+          // svg {
+            // margin-top: -8px;
+
+            // @media (max-width: 768px) {
+            //   margin-top: 0px;
+            // }
+          // }
+
+          @media (max-width: 1420px) {
+            position: static;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        gap: 11px;
+
+        @media (max-width: 768px) {
+          gap: 8px !important;
+        }
+      }
+
+      .partnerLogo {
+        mix-blend-mode: luminosity;
+        max-height: 32px;
+
+        &:hover {
+          mix-blend-mode: normal;
+        }
+
+        @media (max-width: 768px) {
+          height: 22px !important;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .copyright {
+    color: rgba(255, 255, 255, 0.34);
+    font-size: 20px;
+    font-style: normal;
+    line-height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span:first-child {
+      font-size: 32px;
+      margin-right: 16px;
+    }
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 34px;
+
+      span {
+        font-size: 18px !important;
+
+        &:first-child {
+          margin-right: 8px;
+        }
+
+        @media (max-width: 420px) {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px 0;
+
+    .partners {
+      margin-bottom: -16px;
+    }
+
+    .row {
+      flex-wrap: wrap;
+      margin-bottom: 16px !important;
+      gap: 10px !important;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .hiddenSpan {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@use "@/styles/colors.scss" as *;
+
+
+.advantageSection {
+  background: $color-background-secondary;
+  padding: 64px 0;
+
+  :global(.container) {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  @media (max-width: 768px) {
+    :global(.container) {
+      gap: 40px;
+    }
+  }
+}
+
+.columns {
+  display: flex;
+  gap: 24px;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 30%;
+
+    ul {
+      li {
+        margin-left: 24px;
+        overflow-wrap: break-word;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      gap: 24px;
+    }
+  }
+
+  @media (max-width: 570px) {
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+}
+
+.paragraphGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
