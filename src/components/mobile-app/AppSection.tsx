@@ -5,7 +5,6 @@ import AppImage from "../../../public/block-images/app.webp";
 import AppImageMobile from "../../../public/block-images/app-mobile.webp";
 import { fetchOffers } from "@/utils/fetchOffers";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
-import { getContentData, parseAppContent } from "../../utils/serverContent";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./AppSection.module.scss";
 

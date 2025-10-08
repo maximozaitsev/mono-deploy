@@ -87,13 +87,11 @@ export function parseAdvantageContent(data: any) {
 
   const [firstKey, section] = advantagesEntries[0];
   const sectionTitle = firstKey;
-  
+
   // Исправляем groupParagraphs для правильного возврата строк
   const introParagraphs = groupParagraphs(section, "list")
-    .map(group => 
-      group.map(block => block.text || "")
-    )
-    .filter(group => group.some(text => text.trim() !== ""));
+    .map((group) => group.map((block) => block.text || ""))
+    .filter((group) => group.some((text) => text.trim() !== ""));
 
   const headingBlocks = section.filter(
     (block: any) => block.type === "heading" && block.level === 3
@@ -116,10 +114,8 @@ export function parseAdvantageContent(data: any) {
     section.slice(section.findIndex((b: any) => b.type === "list") + 2),
     ""
   )
-    .map(group => 
-      group.map(block => block.text || "")
-    )
-    .filter(group => group.some(text => text.trim() !== ""));
+    .map((group) => group.map((block) => block.text || ""))
+    .filter((group) => group.some((text) => text.trim() !== ""));
 
   return {
     sectionTitle,
@@ -198,15 +194,16 @@ export function parseSupportContent(data: any) {
 }
 
 export function parseAppContent(data: any) {
-  if (!data?.sections) return {
-    appTitle: "",
-    appContent: [],
-    buttons: [],
-    languagesTitle: "",
-    languagesContent: [],
-    currenciesTitle: "",
-    currenciesContent: [],
-  };
+  if (!data?.sections)
+    return {
+      appTitle: "",
+      appContent: [],
+      buttons: [],
+      languagesTitle: "",
+      languagesContent: [],
+      currenciesTitle: "",
+      currenciesContent: [],
+    };
 
   const entries = Object.entries(data.sections) as [string, any][];
 

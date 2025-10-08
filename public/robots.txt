@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://boomerang-australia-casino.com/
-Sitemap: https://boomerang-australia-casino.com/sitemap.xml
+Host: https://yabby-casino-australia.com/
+Sitemap: https://yabby-casino-australia.com/sitemap.xml

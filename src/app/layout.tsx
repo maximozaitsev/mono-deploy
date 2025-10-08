@@ -4,10 +4,11 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "boomerang-australia-casino.com";
-const ogTitle = "Boomerang Casino Australia: Exciting gambling practices";
-const ogSiteName = "Boomerang Casino";
-const metaDescription = "Join Boomerang Casino for thrilling iGaming. Sign up now and dive into a world of big wins!";
+const url = "yabby-casino-australia.com";
+const ogTitle = "Yabby Casino Comprehensive Review: Thrills & Wins Await You";
+const ogSiteName = "Yabby Casino";
+const metaDescription =
+  "Yabby Casino is a spot for winning big. Join Yabby Casino for top games, protected transactions, and generous bonuses.";
 
 const locale = "en-AU";
 const language = "English";
