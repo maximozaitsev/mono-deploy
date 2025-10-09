@@ -30,17 +30,13 @@ export default function AppSection({ content }: AppSectionProps) {
       <div className="container">
         <div className={styles.topRow}>
           <div className={styles.textBlock}>
-            {content.appTitle && (
-              <h3 className="h3-heading">{content.appTitle}</h3>
-            )}
+            {content.appTitle && <h3 className="h3-heading">{content.appTitle}</h3>}
             <img
               src={AppImageMobile.src}
               alt={PROJECT_NAME + " App"}
               title={PROJECT_NAME + " " + PROJECT_GEO}
               className={styles.imageMobile}
               loading="lazy"
-              width={496}
-              height={210}
             />
             {content.appContent.map((group: any, index: number) => (
               <div key={index} className={styles.paragraphGroup}>

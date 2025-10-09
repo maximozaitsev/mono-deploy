@@ -1,35 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
-
-// Preload the mobile image aggressively
-const preloadMobileImage = () => {
-  const img = new window.Image();
-  img.src = "/block-images/welcome-mobile.webp";
-  img.loading = "eager";
-  img.fetchPriority = "high";
-};
 
 export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
   const [firstOfferId, setFirstOfferId] = useState<string>("");
   const [offerLink, setOfferLink] = useState<string>("");
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Preload mobile image immediately with multiple strategies
-    preloadMobileImage();
-    
-    // Additional preload using fetch
-    fetch("/block-images/welcome-mobile.webp", { 
-      method: "GET",
-      cache: "force-cache"
-    }).catch(() => {}); // Silent fail
-    
     const fetchWelcomeBonus = async () => {
       try {
         const offersData = await fetchOffers();
@@ -42,8 +23,6 @@ export default function WelcomeSection() {
         setOfferLink(first?.link || "");
       } catch (error) {
         console.error("Failed to fetch welcome bonus:", error);
-      } finally {
-        setIsLoading(false);
       }
     };
 
@@ -55,19 +34,14 @@ export default function WelcomeSection() {
       id="welcome-section"
       className={`${styles.welcomeSection} section`}
     >
-      <h1 className={styles.srOnly}>Welcome to Yabby Casino</h1>
       <figure className={styles.mobileFigure} aria-hidden>
-        <Image
+        <img
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
           alt="Welcome Mobile"
-          priority
-          quality={85}
-          width={576}
-          height={262}
-          sizes="(max-width: 480px) 100vw, (max-width: 576px) 100vw, 576px"
-          placeholder="blur"
-          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTc2IiBoZWlnaHQ9IjI2MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PC9zdmc+"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
         />
       </figure>
 
@@ -75,23 +49,14 @@ export default function WelcomeSection() {
         <div className="container">
           <div className={styles.welcomeContent}>
             <div className={styles.welcomeText}>
-              {isLoading ? (
-                <>
-                  <div className={styles.skeletonText}></div>
-                  <div className={styles.skeletonText}></div>
-                </>
-              ) : (
-                <>
-                  <h2 className={styles.offerText}>
-                    Exclusive welcome offer of {welcomeBonus}
-                  </h2>
-                  <h2 className={styles.bonusText}>
-                    Exclusive welcome bonus of {welcomeBonus}
-                  </h2>
-                </>
-              )}
+              <h2 className={styles.offerText}>
+                Exclusive welcome offer of {welcomeBonus}
+              </h2>
+              <h2 className={styles.bonusText}>
+                Exclusive welcome bonus of {welcomeBonus}
+              </h2>
 
-              {(firstOfferId || offerLink) && !isLoading && (
+              {(firstOfferId || offerLink) && (
                 <Button
                   text="claim bonus"
                   variant="primary"
