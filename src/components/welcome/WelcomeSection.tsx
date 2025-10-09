@@ -9,6 +9,7 @@ export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
   const [firstOfferId, setFirstOfferId] = useState<string>("");
   const [offerLink, setOfferLink] = useState<string>("");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchWelcomeBonus = async () => {
@@ -23,6 +24,8 @@ export default function WelcomeSection() {
         setOfferLink(first?.link || "");
       } catch (error) {
         console.error("Failed to fetch welcome bonus:", error);
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -42,6 +45,9 @@ export default function WelcomeSection() {
           loading="eager"
           decoding="async"
           fetchPriority="high"
+          width={576}
+          height={262}
+          sizes="(max-width: 480px) 100vw, (max-width: 576px) 100vw, 576px"
         />
       </figure>
 
@@ -49,14 +55,23 @@ export default function WelcomeSection() {
         <div className="container">
           <div className={styles.welcomeContent}>
             <div className={styles.welcomeText}>
-              <h2 className={styles.offerText}>
-                Exclusive welcome offer of {welcomeBonus}
-              </h2>
-              <h2 className={styles.bonusText}>
-                Exclusive welcome bonus of {welcomeBonus}
-              </h2>
+              {isLoading ? (
+                <>
+                  <div className={styles.skeletonText}></div>
+                  <div className={styles.skeletonText}></div>
+                </>
+              ) : (
+                <>
+                  <h2 className={styles.offerText}>
+                    Exclusive welcome offer of {welcomeBonus}
+                  </h2>
+                  <h2 className={styles.bonusText}>
+                    Exclusive welcome bonus of {welcomeBonus}
+                  </h2>
+                </>
+              )}
 
-              {(firstOfferId || offerLink) && (
+              {(firstOfferId || offerLink) && !isLoading && (
                 <Button
                   text="claim bonus"
                   variant="primary"

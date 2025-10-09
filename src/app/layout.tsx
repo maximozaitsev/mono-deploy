@@ -59,17 +59,34 @@ export default function RootLayout({
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
+          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/logo.svg"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/logo-mobile.svg"
+          media="(max-width: 768px)"
+          fetchPriority="high"
         />
 
         <link rel="icon" href="/icons/ico-192.png" />

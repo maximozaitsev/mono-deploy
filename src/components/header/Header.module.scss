@@ -14,9 +14,13 @@
   top: 0;
   z-index: 1000;
   height: 96px;
+  min-height: 96px; // Prevent layout shift during loading
 
   svg {
     margin-top: 4px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
 
     @media (max-width: 1080px) {
       margin-top: 0px;
@@ -33,11 +37,13 @@
 
   @media (max-width: 768px) {
     height: 96px;
+    min-height: 96px;
   }
 
   @media (max-width: 380px) {
     padding: 5px 10px;
     height: 64px;
+    min-height: 64px;
   }
 }
 
