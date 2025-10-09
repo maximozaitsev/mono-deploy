@@ -55,6 +55,10 @@
   width: 100%;
   height: 262px; // Reserve space to prevent layout shift
   overflow: hidden;
+  position: relative;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
 
   @media (max-width: 768px) {
     display: block;
@@ -71,6 +75,11 @@
   height: 262px; // Fixed height to prevent layout shift
   object-fit: cover;
   object-position: center;
+  will-change: transform; // Optimize for rendering
+  transform: translateZ(0); // Force hardware acceleration
+  backface-visibility: hidden; // Optimize rendering
+  image-rendering: -webkit-optimize-contrast; // Better image rendering
+  image-rendering: crisp-edges;
 
   @media (max-width: 480px) {
     width: 100vw;
@@ -161,6 +170,18 @@
   100% {
     background-position: -200% 0;
   }
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .welcomeText h2 {

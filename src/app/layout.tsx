@@ -66,27 +66,59 @@ export default function RootLayout({
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
-          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-          fetchPriority="high"
         />
+        <link
+          rel="prefetch"
+          href="/block-images/welcome-mobile.webp"
+          media="(max-width: 768px)"
+        />
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            @media (max-width: 768px) {
+              .WelcomeSection_mobileImage__M3QiS {
+                content-visibility: auto;
+                contain-intrinsic-size: 576px 262px;
+                will-change: transform;
+                transform: translateZ(0);
+                backface-visibility: hidden;
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+              }
+            }
+            /* Critical CSS for mobile image loading */
+            @media (max-width: 768px) {
+              .WelcomeSection_mobileFigure__M3QiS {
+                display: block;
+                width: 100%;
+                height: 262px;
+                overflow: hidden;
+                background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+                background-size: 200% 100%;
+                animation: loading 1.5s infinite;
+              }
+            }
+            @keyframes loading {
+              0% { background-position: 200% 0; }
+              100% { background-position: -200% 0; }
+            }
+          `
+        }} />
         <link
           rel="preload"
           as="image"
           href="/logo.svg"
-          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/logo-mobile.svg"
           media="(max-width: 768px)"
-          fetchPriority="high"
         />
 
         <link rel="icon" href="/icons/ico-192.png" />
