@@ -72,11 +72,11 @@
 }
 
 .navLink {
-  font-family: $font-secondary;
+  font-family: $font-third;
   color: $text-color-primary;
   background: none;
   border: none;
-  font-weight: $font-weight-black;
+  font-weight: 700;
   font-size: 16px;
   cursor: pointer;
   transition: color 0.3s ease;
