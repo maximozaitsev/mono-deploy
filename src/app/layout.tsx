@@ -4,13 +4,12 @@ import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
-const url = "yabby-casino-australia.com";
-const ogTitle = "Yabby Casino Comprehensive Review: Thrills & Wins Await You";
-const ogSiteName = "Yabby Casino";
-const metaDescription =
-  "Yabby Casino is a spot for winning big. Join Yabby Casino for top games, protected transactions, and generous bonuses.";
+const url = "goodman-casino.net";
+const ogTitle = "Goodman Casino online casino review for beginners and experienced players.";
+const ogSiteName = "Goodman Casino";
+const metaDescription = "To play on the site, register on the gambling platform and get the Goodman Casino bonus. The best choice of entertainment for players is in the Goodman Casino review.";
 
-const locale = "en-AU";
+const locale = "en";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 

@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://yabby-casino-australia.com/
-Sitemap: https://yabby-casino-australia.com/sitemap.xml
+Host: https://goodman-casino.net/
+Sitemap: https://goodman-casino.net/sitemap.xml

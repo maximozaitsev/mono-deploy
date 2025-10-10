@@ -1,3 +1,3 @@
-export const PROJECT_NAME = "Yabby Casino";
-export const PROJECT_GEO = "Australia";
-export const PROJECT_URL = "yabby-casino-australia.com";
+export const PROJECT_NAME = "Goodman Casino";
+export const PROJECT_GEO = "Global";
+export const PROJECT_URL = "goodman-casino.net";
