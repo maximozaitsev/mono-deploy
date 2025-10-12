@@ -63,49 +63,13 @@ export default function RootLayout({
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
-          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-          fetchPriority="high"
         />
-        
-        {/* Preload critical fonts */}
-        <link
-          rel="preload"
-          href="/fonts/Inter/Inter-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Roboto/Roboto-Bold.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        
-        {/* Critical CSS for above-the-fold content */}
-        <style dangerouslySetInnerHTML={{
-          __html: `
-            * { margin: 0; padding: 0; box-sizing: border-box; }
-            body { background: #0a0a0a; font-family: 'Inter', sans-serif; }
-            .container { max-width: 1120px; width: 100%; margin: 0 auto; }
-            .section { display: flex; flex-direction: column; gap: 48px; align-items: flex-start; width: 100%; margin-bottom: 140px; }
-            .h2-heading { color: #ffd700; font-family: 'Roboto', sans-serif; font-size: 56px; font-weight: 700; text-transform: uppercase; }
-            .h3-heading { color: #ffffff; font-family: 'Roboto', sans-serif; font-size: 40px; font-weight: 700; text-transform: uppercase; }
-            .paragraph-text { color: #ffffff; font-family: 'Inter', sans-serif; font-size: 20px; line-height: 40px; }
-            @media (max-width: 768px) {
-              .h2-heading { font-size: 32px; }
-              .h3-heading { font-size: 24px; }
-              .paragraph-text { font-size: 18px; line-height: 32px; }
-            }
-          `
-        }} />
 
         <link rel="icon" href="/icons/ico-192.png" />
         <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />

@@ -27,7 +27,8 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
         sizes="160px"
         priority={priority}
         loading={priority ? "eager" : "lazy"}
-        quality={85}
+        decoding="async"
+        fetchPriority={priority ? "high" : "auto"}
       />
       <h3>{offer.name}</h3>
       <h4>Welcome bonus</h4>

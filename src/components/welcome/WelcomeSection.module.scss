@@ -3,7 +3,6 @@
 
 .welcomeSection {
   background: $color-background-welcome;
-  margin-bottom: 140px;
   width: 100%;
 
   @media (max-width: 768px) {
@@ -46,6 +45,7 @@
     background-size: auto;
     background-position: initial;
     margin: 0 auto 24px auto;
+    padding-bottom: 20px;
   }
 }
 

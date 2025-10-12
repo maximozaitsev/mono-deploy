@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
@@ -31,21 +30,15 @@ export default function WelcomeSection() {
   }, []);
 
   return (
-    <section
-      id="welcome-section"
-      className={`${styles.welcomeSection} section`}
-    >
+    <section id="welcome-section" className={styles.welcomeSection}>
       <figure className={styles.mobileFigure} aria-hidden>
-        <Image
+        <img
           className={styles.mobileImage}
           src="/block-images/welcome-mobile.webp"
           alt="Welcome Mobile"
-          priority
-          quality={85}
-          width={375}
-          height={667}
-          sizes="(max-width: 768px) 100vw, 0vw"
-          style={{ width: '100%', height: 'auto' }}
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
         />
       </figure>
 

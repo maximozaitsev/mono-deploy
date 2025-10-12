@@ -28,7 +28,7 @@ export default function H1Section({ blocks, pageKey, className }: Props) {
       id="h1-section"
       className={`${styles.h1Section} ${className ?? ""}`.trim()}
     >
-      <h1 style={{ minHeight: '1.2em', lineHeight: '1.2' }}>{h1Text}</h1>
+      <h1>{h1Text}</h1>
     </section>
   );
 }
