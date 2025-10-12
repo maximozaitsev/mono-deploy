@@ -37,6 +37,9 @@ export default function AppSection({ content }: AppSectionProps) {
               title={PROJECT_NAME + " " + PROJECT_GEO}
               className={styles.imageMobile}
               loading="lazy"
+              width={496}
+              height={400}
+              style={{ width: '100%', height: 'auto' }}
             />
             {content.appContent.map((group: any, index: number) => (
               <div key={index} className={styles.paragraphGroup}>
@@ -63,6 +66,9 @@ export default function AppSection({ content }: AppSectionProps) {
                   alt="Download on the Google Play"
                   title={PROJECT_NAME + " " + PROJECT_GEO + " in Google Play"}
                   loading="lazy"
+                  width={181}
+                  height={53}
+                  style={{ width: 'auto', height: '53px' }}
                 />
               </button>
               <button
@@ -82,6 +88,9 @@ export default function AppSection({ content }: AppSectionProps) {
                   alt="Download on the App Store"
                   title={PROJECT_NAME + " " + PROJECT_GEO + " in App Store"}
                   loading="lazy"
+                  width={181}
+                  height={53}
+                  style={{ width: 'auto', height: '53px' }}
                 />
               </button>
             </div>
@@ -93,6 +102,9 @@ export default function AppSection({ content }: AppSectionProps) {
               title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
               className={styles.image}
               loading="lazy"
+              width={600}
+              height={400}
+              style={{ width: '100%', height: 'auto' }}
             />
           </div>
         </div>

@@ -26,6 +26,9 @@ export default async function SupportSection() {
               alt={PROJECT_NAME + " " + PROJECT_GEO + " Support"}
               title={PROJECT_NAME + " " + PROJECT_GEO + " Support"}
               loading="lazy"
+              width={400}
+              height={300}
+              style={{ width: '100%', height: 'auto' }}
             />
           </div>
         </div>

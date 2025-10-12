@@ -1,3 +1,4 @@
+import Image from "next/image";
 import aboutImage from "../../../public/block-images/laptop.webp";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
@@ -21,11 +22,16 @@ export default async function AboutSection() {
           </div>
 
           <div className="about-image">
-            <img
-              src={aboutImage.src}
+            <Image
+              src={aboutImage}
               alt={PROJECT_NAME + " " + PROJECT_GEO + " Desktop"}
               title={PROJECT_NAME + " " + PROJECT_GEO + " Desktop"}
               loading="lazy"
+              quality={85}
+              width={800}
+              height={600}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ width: '100%', height: 'auto' }}
             />
           </div>
         </div>

@@ -49,8 +49,7 @@ export default function TopGamesSection({ games }: TopGamesProps) {
                   "
                   priority={idx < 2}
                   loading={idx < 2 ? "eager" : "lazy"}
-                  decoding="async"
-                  fetchPriority={idx < 2 ? "high" : "auto"}
+                  quality={85}
                   style={{ width: "100%", height: "auto", objectFit: "cover" }}
                 />
               </div>
