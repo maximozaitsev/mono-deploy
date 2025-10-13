@@ -5,6 +5,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px 26px;
+    /* Reserve space to prevent CLS until images render */
+    min-height: 600px;
   }
 
   button {
@@ -17,6 +19,7 @@
 
     .offers-grid {
       gap: 16px;
+      min-height: 560px;
     }
   }
 

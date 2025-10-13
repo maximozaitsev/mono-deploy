@@ -1,7 +1,12 @@
 import Header from "../components/header/Header";
 import WelcomeSection from "../components/welcome/WelcomeSection";
 import H1Section from "../components/h1-block/H1Block";
-import TopCasinosSection from "../components/top-casinos/TopCasinosSection";
+import dynamic from "next/dynamic";
+import TopCasinosSkeleton from "@/components/top-casinos/TopCasinosSkeleton";
+const TopCasinosSection = dynamic(
+  () => import("@/components/top-casinos/TopCasinosSection"),
+  { ssr: false, loading: () => <TopCasinosSkeleton /> }
+);
 import TopGamesSection from "@/components/top-games/TopGamesSection";
 import BonusDetailsSection from "@/components/bonus-details/BonusDetailsSection";
 import AboutSection from "@/components/about/AboutSection";
