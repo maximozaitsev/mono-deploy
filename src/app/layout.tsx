@@ -69,6 +69,7 @@ export default function RootLayout({
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
+          imageSizes="(max-width: 480px) 100vw, (max-width: 768px) 520px, 0px"
         />
 
         <link rel="icon" href="/icons/ico-192.png" />

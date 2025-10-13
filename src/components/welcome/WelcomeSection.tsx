@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
+import Image from "next/image";
+import WelcomeMobile from "../../../public/block-images/welcome-mobile.webp";
 
 export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
@@ -32,13 +34,14 @@ export default function WelcomeSection() {
   return (
     <section id="welcome-section" className={styles.welcomeSection}>
       <figure className={styles.mobileFigure} aria-hidden>
-        <img
+        <Image
           className={styles.mobileImage}
-          src="/block-images/welcome-mobile.webp"
+          src={WelcomeMobile}
           alt="Welcome Mobile"
-          loading="eager"
-          decoding="async"
-          fetchPriority="high"
+          priority
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 520px, 0px"
+          placeholder="empty"
+          quality={80}
         />
       </figure>
 
