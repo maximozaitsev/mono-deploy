@@ -3,18 +3,11 @@
 
 .login-section {
   background: $color-background;
-  color: $text-color-secondary !important;
-
-  // Override all text elements to use secondary color
-  * {
-    color: $text-color-secondary !important;
-  }
 
   .container {
     display: flex;
     flex-direction: column;
     gap: 48px;
-    color: $text-color-secondary !important;
 
     @media (max-width: 1220px) {
       padding: 40px 40px;
@@ -32,19 +25,9 @@
     flex-direction: column;
     gap: 1.5rem;
     @include lists.common-list-styles(1.5rem);
-    color: $text-color-secondary !important;
-
-    .h3-heading {
-      color: $text-color-secondary !important;
-    }
 
     .h4-heading {
-      color: $text-color-secondary;
-    }
-
-    // Ensure all text elements use secondary color
-    p, span, div, li, ul, ol {
-      color: $text-color-secondary !important;
+      color: $text-color-primary;
     }
   }
 
@@ -53,7 +36,6 @@
     flex-direction: row;
     gap: 3rem;
     justify-content: space-between;
-    color: $text-color-secondary !important;
 
     .deposit-section,
     .withdrawal-section {
@@ -61,18 +43,8 @@
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-      color: $text-color-secondary !important;
 
       @include lists.common-list-styles(1rem);
-
-      .h3-heading {
-        color: $text-color-secondary !important;
-      }
-
-      // Ensure all text elements use secondary color
-      p, span, div, li, ul, ol {
-        color: $text-color-secondary !important;
-      }
     }
 
     @media (max-width: 768px) {

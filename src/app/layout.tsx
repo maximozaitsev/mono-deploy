@@ -6,12 +6,13 @@ import * as fonts from "./fonts";
 import welcomeMobile from "../../public/block-images/welcome-mobile.webp";
 import welcomeDesktop from "../../public/block-images/welcome.webp";
 
-const url = "goodman-casino.net";
-const ogTitle = "Goodman Casino online casino review for beginners and experienced players.";
-const ogSiteName = "Goodman Casino";
-const metaDescription = "To play on the site, register on the gambling platform and get the Goodman Casino bonus. The best choice of entertainment for players is in the Goodman Casino review.";
+const url = "yabby-casino-australia.com";
+const ogTitle = "Yabby Casino Comprehensive Review: Thrills & Wins Await You";
+const ogSiteName = "Yabby Casino";
+const metaDescription =
+  "Yabby Casino is a spot for winning big. Join Yabby Casino for top games, protected transactions, and generous bonuses.";
 
-const locale = "en";
+const locale = "en-AU";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
@@ -60,7 +61,12 @@ export default function RootLayout({
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
-        <link rel="preload" as="image" href={welcomeDesktop.src} media="(min-width: 769px)" />
+        <link
+          rel="preload"
+          as="image"
+          href={welcomeDesktop.src}
+          media="(min-width: 769px)"
+        />
         <link
           rel="preload"
           as="image"

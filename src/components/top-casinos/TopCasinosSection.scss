@@ -1,3 +1,6 @@
+@import "@/styles/colors.scss";
+@import "@/styles/variables.scss";
+
 .top-casinos-section {
   margin-top: 70px + 64px;
 
@@ -5,8 +8,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px 26px;
-    /* Reserve space to prevent CLS until images render */
     min-height: 600px;
+
+    @media (max-width: 575px) {
+      width: 100%;
+    }
   }
 
   button {
@@ -31,5 +37,22 @@
     .offers-grid {
       justify-content: center;
     }
+  }
+}
+
+.skeleton-card {
+  width: 260px;
+  height: 355px;
+  border-radius: $border-radius;
+  background: $color-background-third;
+  outline: $border-width solid $border-color;
+
+  @media (max-width: 768px) {
+    width: 240px;
+    height: 264px;
+  }
+
+  @media (max-width: 575px) {
+    width: 100%;
   }
 }
