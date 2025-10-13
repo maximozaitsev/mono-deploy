@@ -3,6 +3,8 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
+import welcomeMobile from "../../public/block-images/welcome-mobile.webp";
+import welcomeDesktop from "../../public/block-images/welcome.webp";
 
 const url = "goodman-casino.net";
 const ogTitle = "Goodman Casino online casino review for beginners and experienced players.";
@@ -58,16 +60,11 @@ export default function RootLayout({
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
+        <link rel="preload" as="image" href={welcomeDesktop.src} media="(min-width: 769px)" />
         <link
           rel="preload"
           as="image"
-          href="/block-images/welcome.webp"
-          media="(min-width: 769px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/block-images/welcome-mobile.webp"
+          href={welcomeMobile.src}
           media="(max-width: 768px)"
           imageSizes="(max-width: 480px) 100vw, (max-width: 768px) 520px, 0px"
         />
