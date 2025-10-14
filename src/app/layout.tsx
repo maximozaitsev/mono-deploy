@@ -3,16 +3,13 @@ import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
 import * as fonts from "./fonts";
-import welcomeMobile from "../../public/block-images/welcome-mobile.webp";
-import welcomeDesktop from "../../public/block-images/welcome.webp";
 
-const url = "yabby-casino-australia.com";
-const ogTitle = "Yabby Casino Comprehensive Review: Thrills & Wins Await You";
-const ogSiteName = "Yabby Casino";
-const metaDescription =
-  "Yabby Casino is a spot for winning big. Join Yabby Casino for top games, protected transactions, and generous bonuses.";
+const url = "rich-palms-casino.net";
+const ogTitle = "Goodman Casino online casino review for beginners and experienced players.";
+const ogSiteName = "Rich Palms Casino";
+const metaDescription = "To play on the site, register on the gambling platform and get the Goodman Casino bonus. The best choice of entertainment for players is in the Goodman Casino review.";
 
-const locale = "en-AU";
+const locale = "en";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
@@ -64,15 +61,14 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href={welcomeDesktop.src}
+          href="/block-images/welcome.webp"
           media="(min-width: 769px)"
         />
         <link
           rel="preload"
           as="image"
-          href={welcomeMobile.src}
+          href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-          imageSizes="(max-width: 480px) 100vw, (max-width: 768px) 520px, 0px"
         />
 
         <link rel="icon" href="/icons/ico-192.png" />

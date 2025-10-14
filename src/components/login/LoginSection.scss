@@ -26,8 +26,8 @@
     gap: 1.5rem;
     @include lists.common-list-styles(1.5rem);
 
-    .h4-heading {
-      color: $text-color-primary;
+    .paragraph-text {
+      color: $text-color-secondary;
     }
   }
 
@@ -45,6 +45,10 @@
       gap: 1.5rem;
 
       @include lists.common-list-styles(1rem);
+
+      .paragraph-text {
+        color: $text-color-secondary;
+      }
     }
 
     @media (max-width: 768px) {

@@ -12,7 +12,7 @@ export default async function LoginSection() {
         {Object.entries(content.aboutSections).map(
           ([sectionTitle, sectionContent]: [string, any], index) => (
             <div key={index} className="about-text">
-              <h3 className="h3-heading">{sectionTitle}</h3>
+              <h3 className="h3-heading black">{sectionTitle}</h3>
               {sectionContent.map((block: any, idx: number) => (
                 <BlockRenderer key={idx} block={block} />
               ))}
@@ -24,7 +24,7 @@ export default async function LoginSection() {
           <div className="deposit-withdrawal">
             {content.depositSection && (
               <div className="deposit-section">
-                <h3 className="h3-heading">{content.depositSection.title}</h3>
+                <h3 className="h3-heading black">{content.depositSection.title}</h3>
                 {content.depositSection.content.map((block: any, idx: number) => (
                   <BlockRenderer key={idx} block={block} />
                 ))}
@@ -32,7 +32,7 @@ export default async function LoginSection() {
             )}
             {content.withdrawalSection && (
               <div className="withdrawal-section">
-                <h3 className="h3-heading">{content.withdrawalSection.title}</h3>
+                <h3 className="h3-heading black">{content.withdrawalSection.title}</h3>
                 {content.withdrawalSection.content.map((block: any, idx: number) => (
                   <BlockRenderer key={idx} block={block} />
                 ))}

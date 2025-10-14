@@ -5,7 +5,7 @@ import WelcomeSection from "@/components/welcome/WelcomeSection";
 import H1Section from "@/components/h1-block/H1Block";
 import TopCasinosSection from "@/components/top-casinos/TopCasinosSection";
 import Footer from "@/components/footer/Footer";
-import siteData from "@/content/siteData.json";
+import siteData from "../../../public/content/siteData.json";
 import { PageRenderer } from "@/components/__common__/renderers/PageRenderer";
 import { PROJECT_URL, PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 

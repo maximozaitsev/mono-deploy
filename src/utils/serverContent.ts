@@ -9,7 +9,7 @@ export async function getContentData(): Promise<ContentData> {
   try {
     const contentPath = path.join(
       process.cwd(),
-      "src",
+      "public",
       "content",
       "content.json"
     );
@@ -25,7 +25,7 @@ export async function getSiteData(): Promise<ContentData> {
   try {
     const siteDataPath = path.join(
       process.cwd(),
-      "src",
+      "public",
       "content",
       "siteData.json"
     );
