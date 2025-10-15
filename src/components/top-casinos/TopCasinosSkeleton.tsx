@@ -8,7 +8,7 @@ export default function TopCasinosSkeleton() {
       <h2 className="h2-heading" aria-hidden>
         Top Casinos
       </h2>
-      <div className="offers-grid">
+      <div className="offers-grid skeleton-grid">
         {Array.from({ length: 8 }).map((_, i) => (
           <div key={i} className="skeleton-card" />
         ))}

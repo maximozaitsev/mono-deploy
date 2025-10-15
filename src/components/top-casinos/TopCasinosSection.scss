@@ -46,6 +46,7 @@
   border-radius: $border-radius;
   background: $color-background-third;
   outline: $border-width solid $border-color;
+  animation: pulse 1.5s ease-in-out infinite;
 
   @media (max-width: 768px) {
     width: 240px;
@@ -54,5 +55,32 @@
 
   @media (max-width: 575px) {
     width: 100%;
+    max-width: 264px;
+  }
+}
+
+.skeleton-grid {
+  // Скрываем лишние карточки на разных разрешениях
+  .skeleton-card {
+    &:nth-child(n+7) {
+      @media (max-width: 1180px) {
+        display: none;
+      }
+    }
+    
+    &:nth-child(n+7) {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
   }
 }
