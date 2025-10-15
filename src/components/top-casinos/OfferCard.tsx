@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Button from "../__common__/button/Button";
 import { Offer } from "../../types/offer";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { createSrcSet } from "@/utils/imageOptimization";
 import styles from "./OfferCard.module.scss";
 
 interface OfferCardProps {
@@ -14,18 +14,25 @@ interface OfferCardProps {
 
 const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
   const logoSrc = (offer as any).optimizedLogo || offer.logo;
+  const mobileLogoSrc = (offer as any).mobileLogo;
+  const logoSizes = (offer as any).optimizedLogoSizes;
+  
+  // Создаем более точный srcSet с правильными размерами
+  const srcSet = logoSizes ? 
+    `${logoSizes.mobile} 160w, ${logoSizes.desktop} 190w, ${logoSizes.retina} 380w` : 
+    undefined;
 
   return (
     <div className={styles.offerCard}>
-      <Image
+      <img
         className={styles.logo}
         src={logoSrc}
+        srcSet={srcSet}
         alt={offer.name}
         title={`${offer.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
         width={190}
         height={76}
-        sizes="160px"
-        priority={priority}
+        sizes="(max-width: 768px) 160px, (max-width: 1200px) 190px, 190px"
         loading={priority ? "eager" : "lazy"}
         decoding="async"
         fetchPriority={priority ? "high" : "auto"}
