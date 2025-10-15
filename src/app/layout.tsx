@@ -5,9 +5,10 @@ import "../styles/variables.scss";
 import * as fonts from "./fonts";
 
 const url = "rich-palms-casino.net";
-const ogTitle = "Goodman Casino online casino review for beginners and experienced players.";
+const ogTitle = "Rich Palms Casino | Games & Bonuses | Login to Win";
 const ogSiteName = "Rich Palms Casino";
-const metaDescription = "To play on the site, register on the gambling platform and get the Goodman Casino bonus. The best choice of entertainment for players is in the Goodman Casino review.";
+const metaDescription =
+  "Become richer by winning premium games at Rich Palms Casino. Try your luck and enjoy the best gaming experience with other players.";
 
 const locale = "en";
 const language = "English";
