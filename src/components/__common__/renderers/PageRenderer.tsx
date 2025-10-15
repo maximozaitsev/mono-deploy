@@ -92,7 +92,7 @@ export const PageRenderer: React.FC<Props> = ({ blocks, pageKey }) => {
                     {`${PROJECT_NAME} ${pageKey ?? ""}`.trim()}
                   </h2>
                 ) : (
-                  <h2 className="h2-heading white">{replaceCurrentYear(titleBlock.text)}</h2>
+                  <h2 className="h2-heading white">{replaceCurrentYear(titleBlock.text ?? "")}</h2>
                 )}
                 {introItems.map((b, idx) => {
                   if (b.type === "paragraph") {
@@ -131,7 +131,7 @@ export const PageRenderer: React.FC<Props> = ({ blocks, pageKey }) => {
                     {`${PROJECT_NAME} ${pageKey ?? ""}`.trim()}
                   </h2>
                 ) : (
-                  <h2 className="h2-heading white">{replaceCurrentYear(titleBlock.text)}</h2>
+                  <h2 className="h2-heading white">{replaceCurrentYear(titleBlock.text ?? "")}</h2>
                 )}
                 {introItems.map((b, idx) => {
                   if (b.type === "paragraph") {

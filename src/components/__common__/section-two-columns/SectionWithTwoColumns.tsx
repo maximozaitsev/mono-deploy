@@ -29,7 +29,7 @@ export default async function SectionWithTwoColumns({
                     <p
                       key={i}
                       className="paragraph-text"
-                      dangerouslySetInnerHTML={{ __html: replaceCurrentYear(block.text) }}
+                      dangerouslySetInnerHTML={{ __html: replaceCurrentYear(block.text ?? "") }}
                     />
                   );
                 } else if (block.type === "list") {
