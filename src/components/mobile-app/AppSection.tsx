@@ -41,6 +41,8 @@ export default function AppSection({ content }: AppSectionProps) {
               alt={PROJECT_NAME + " App"}
               title={PROJECT_NAME + " " + PROJECT_GEO}
               className={styles.imageMobile}
+              width={496}
+              height={310}
               loading="lazy"
             />
             {content.appContent.map((group: any, index: number) => (
