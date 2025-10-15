@@ -8,17 +8,18 @@ import Footer from "@/components/footer/Footer";
 import siteData from "../../../public/content/siteData.json";
 import { PageRenderer } from "@/components/__common__/renderers/PageRenderer";
 import { PROJECT_URL, PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { replaceCurrentYear } from "@/utils/yearReplacer";
 
 export const metadata: Metadata = {
   metadataBase: new URL(`https://${PROJECT_URL}`),
-  title: siteData.app.title,
-  description: siteData.app.description,
+  title: replaceCurrentYear(siteData.app.title),
+  description: replaceCurrentYear(siteData.app.description),
   alternates: {
     canonical: `https://${PROJECT_URL}/app`,
   },
   openGraph: {
-    title: siteData.app.title,
-    description: siteData.app.description,
+    title: replaceCurrentYear(siteData.app.title),
+    description: replaceCurrentYear(siteData.app.description),
     url: `https://${PROJECT_URL}/app`,
     siteName: PROJECT_NAME,
     images: [
@@ -31,8 +32,8 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    title: siteData.app.title,
-    description: siteData.app.description,
+    title: replaceCurrentYear(siteData.app.title),
+    description: replaceCurrentYear(siteData.app.description),
     images: [`https://${PROJECT_URL}/og-image.webp`],
   },
 };

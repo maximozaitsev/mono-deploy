@@ -1,4 +1,5 @@
 import React from "react";
+import { replaceCurrentYear } from "../../../utils/yearReplacer";
 
 interface ListRendererProps {
   items: string[];
@@ -18,7 +19,7 @@ export const ListRenderer: React.FC<ListRendererProps> = ({
           <li
             key={index}
             className="paragraph-text"
-            dangerouslySetInnerHTML={{ __html: item }}
+            dangerouslySetInnerHTML={{ __html: replaceCurrentYear(item) }}
           />
         ))}
       </ol>
@@ -30,7 +31,7 @@ export const ListRenderer: React.FC<ListRendererProps> = ({
           <li
             key={index}
             className="paragraph-text"
-            dangerouslySetInnerHTML={{ __html: item }}
+            dangerouslySetInnerHTML={{ __html: replaceCurrentYear(item) }}
           />
         ))}
       </ul>

@@ -2,13 +2,15 @@ import { Metadata } from "next";
 import "./globals.scss";
 import "../styles/colors.scss";
 import "../styles/variables.scss";
+import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
 const url = "rich-palms-casino.net";
-const ogTitle = "Rich Palms Casino | Games & Bonuses | Login to Win";
-const ogSiteName = "Rich Palms Casino";
+const ogTitle =
+  "Rich {{CURRENT_YEAR}} Palms Casino | Games & Bonuses | Login to Win";
+const ogSiteName = "Rich {{CURRENT_YEAR}} Palms Casino";
 const metaDescription =
-  "Become richer by winning premium games at Rich Palms Casino. Try your luck and enjoy the best gaming experience with other players.";
+  "Become {{CURRENT_YEAR}} richer by winning premium games at Rich Palms Casino. Try your luck and enjoy the best gaming experience with other players.";
 
 const locale = "en";
 const language = "English";
@@ -16,8 +18,8 @@ const ogImage = `https://${url}/og-image.webp`;
 
 export const metadata: Metadata = {
   manifest: "/manifest.json",
-  title: ogTitle,
-  description: metaDescription,
+  title: replaceCurrentYear(ogTitle),
+  description: replaceCurrentYear(metaDescription),
   alternates: {
     canonical: `https://${url}`,
   },
@@ -25,8 +27,8 @@ export const metadata: Metadata = {
     locale: locale,
     type: "website",
     url: `https://${url}`,
-    title: ogTitle,
-    description: metaDescription,
+    title: replaceCurrentYear(ogTitle),
+    description: replaceCurrentYear(metaDescription),
     images: [
       {
         url: ogImage,

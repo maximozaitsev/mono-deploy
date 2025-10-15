@@ -1,4 +1,5 @@
 import React from "react";
+import { replaceCurrentYear } from "../../../utils/yearReplacer";
 import styles from "./TwoColumns.module.scss";
 
 export type ColumnItem = {
@@ -32,7 +33,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
               <p
                 key={index}
                 className="paragraph-text"
-                dangerouslySetInnerHTML={{ __html: item.content as string }}
+                dangerouslySetInnerHTML={{ __html: replaceCurrentYear(item.content as string) }}
               />
             );
           } else if (item.type === "list") {
@@ -43,7 +44,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
                   <li
                     key={i}
                     className="paragraph-text"
-                    dangerouslySetInnerHTML={{ __html: listItem }}
+                    dangerouslySetInnerHTML={{ __html: replaceCurrentYear(listItem) }}
                   />
                 ))}
               </ListTag>
@@ -60,7 +61,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
       <div className={styles.column}>
         {leftColumnContent.map((content, index) => (
           <div className={styles.innerDiv} key={index}>
-            <h3 className="h3-heading">{content.heading}</h3>
+            <h3 className="h3-heading">{replaceCurrentYear(content.heading)}</h3>
             {renderContent(content.items)}
           </div>
         ))}
@@ -69,7 +70,7 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
       <div className={styles.column}>
         {rightColumnContent.map((content, index) => (
           <div className={styles.innerDiv} key={index}>
-            <h3 className="h3-heading">{content.heading}</h3>
+            <h3 className="h3-heading">{replaceCurrentYear(content.heading)}</h3>
             {renderContent(content.items)}
           </div>
         ))}

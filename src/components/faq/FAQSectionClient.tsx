@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import PlusIcon from "../__common__/PlusIcon";
 import MinusIcon from "../__common__/MinusIcon";
+import { replaceCurrentYear } from "../../utils/yearReplacer";
 import "./FAQSection.scss";
 
 interface FAQItem {
@@ -43,7 +44,7 @@ export default function FAQSectionClient({ content }: FAQSectionClientProps) {
 
   return (
     <section className="faq-section section container">
-      <h2 className="h2-heading">{content.faqTitle || "FAQ"}</h2>
+      <h2 className="h2-heading">{replaceCurrentYear(content.faqTitle || "FAQ")}</h2>
       {content.faqs.map((faq: FAQItem, index: number) => (
         <div key={index} className="faq-item">
           <div className="faq-question" onClick={() => toggleAccordion(index)}>
@@ -54,7 +55,7 @@ export default function FAQSectionClient({ content }: FAQSectionClientProps) {
                 <PlusIcon size={32} />
               )}
             </span>
-            {faq.question}
+            {replaceCurrentYear(faq.question)}
           </div>
           <div
             ref={(el) => {
@@ -64,7 +65,7 @@ export default function FAQSectionClient({ content }: FAQSectionClientProps) {
               activeIndices.includes(index) ? "active" : ""
             }`}
           >
-            <p dangerouslySetInnerHTML={{ __html: faq.answer }} />
+            <p dangerouslySetInnerHTML={{ __html: replaceCurrentYear(faq.answer) }} />
           </div>
         </div>
       ))}

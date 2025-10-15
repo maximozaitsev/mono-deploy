@@ -1,5 +1,6 @@
 import { getContentData, parseSectionWithTwoColumnsData } from "../../../utils/serverContent";
 import TwoColumns from "../two-columns/TwoColumns";
+import { replaceCurrentYear } from "../../../utils/yearReplacer";
 import styles from "./SectionWithTwoColumns.module.scss";
 
 interface SectionWithTwoColumnsProps {
@@ -16,7 +17,7 @@ export default async function SectionWithTwoColumns({
     <section className={`${styles.sectionContainer} section`}>
       <div className="container">
         <h2 className="h2-heading white">
-          {sectionData.sectionTitle || "Section"}
+          {replaceCurrentYear(sectionData.sectionTitle || "Section")}
         </h2>
 
         {sectionData.introContent.length > 0 &&
@@ -28,7 +29,7 @@ export default async function SectionWithTwoColumns({
                     <p
                       key={i}
                       className="paragraph-text"
-                      dangerouslySetInnerHTML={{ __html: block.text }}
+                      dangerouslySetInnerHTML={{ __html: replaceCurrentYear(block.text) }}
                     />
                   );
                 } else if (block.type === "list") {
@@ -39,7 +40,7 @@ export default async function SectionWithTwoColumns({
                         <li
                           key={itemIndex}
                           className="paragraph-text"
-                          dangerouslySetInnerHTML={{ __html: item }}
+                          dangerouslySetInnerHTML={{ __html: replaceCurrentYear(item) }}
                         />
                       ))}
                     </ListTag>

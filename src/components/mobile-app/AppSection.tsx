@@ -6,6 +6,7 @@ import AppImageMobile from "../../../public/block-images/app-mobile.webp";
 import { fetchOffers } from "@/utils/fetchOffers";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
+import { replaceCurrentYear } from "../../utils/yearReplacer";
 import styles from "./AppSection.module.scss";
 
 interface AppSectionProps {
@@ -30,7 +31,11 @@ export default function AppSection({ content }: AppSectionProps) {
       <div className="container">
         <div className={styles.topRow}>
           <div className={styles.textBlock}>
-            {content.appTitle && <h3 className="h3-heading">{content.appTitle}</h3>}
+            {content.appTitle && (
+              <h3 className="h3-heading">
+                {replaceCurrentYear(content.appTitle)}
+              </h3>
+            )}
             <img
               src={AppImageMobile.src}
               alt={PROJECT_NAME + " App"}
@@ -100,7 +105,9 @@ export default function AppSection({ content }: AppSectionProps) {
         <div className={styles.columns}>
           <div className={styles.column}>
             {content.languagesTitle && (
-              <h3 className="h3-heading">{content.languagesTitle}</h3>
+              <h3 className="h3-heading">
+                {replaceCurrentYear(content.languagesTitle)}
+              </h3>
             )}
             {content.languagesContent.map((block: any, index: number) => (
               <BlockRenderer key={index} block={block} />
@@ -108,7 +115,9 @@ export default function AppSection({ content }: AppSectionProps) {
           </div>
           <div className={styles.column}>
             {content.currenciesTitle && (
-              <h3 className="h3-heading">{content.currenciesTitle}</h3>
+              <h3 className="h3-heading">
+                {replaceCurrentYear(content.currenciesTitle)}
+              </h3>
             )}
             {content.currenciesContent.map((block: any, index: number) => (
               <BlockRenderer key={index} block={block} />
