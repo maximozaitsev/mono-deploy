@@ -63,13 +63,14 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 576px;
+  max-width: 520px;
   margin-top: 0px;
   height: auto;
 
   @media (max-width: 480px) {
     width: 100vw;
-    max-width: 450px;
+    max-width: 480px;
+    height: 262px;
     object-fit: cover;
     object-position: center;
   }
@@ -102,8 +103,6 @@
   gap: 48px;
   width: 410px;
   max-width: 50%;
-  margin-top: 20px;
-
   // margin-left: -20px;
 
   .bonusText {

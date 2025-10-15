@@ -32,11 +32,7 @@ const TopCasinosSection: React.FC = () => {
       <h2 className="h2-heading">Top Casinos {country}</h2>
       <div className="offers-grid">
         {visibleOffers.map((offer, idx) => (
-          <OfferCard
-            key={offer.id}
-            offer={offer}
-            priority={idx < 2}
-          />
+          <OfferCard key={offer.id} offer={offer} priority={idx < 2} />
         ))}
       </div>
       {!showAll && (
