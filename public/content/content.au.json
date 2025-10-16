@@ -375,6 +375,20 @@
         "text": "On the gameplay side, titles come from providers with independently tested RNGs. Responsible-play tools live inside the profile panel: deposit caps you can set and lower instantly, session reminders, short cool-offs, and full self-exclusion if you need a longer break. These aren’t buried; they’re where a user will actually find them."
       }
     ],
+    "App": [
+      {
+        "type": "paragraph",
+        "text": "Spinmacho is made for the browser you already use. Open it in Chrome or Safari and the site adapts to your screen without squeezing text into any size. Content groups stack into a neat scroll; the header stays readable; and the deposit button appears where you’d expect, not two screens down."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you want one-tap access, add it to your home screen. The shortcut launches in full-screen, remembers where you left off in the lobby, and keeps the games list cached enough that you aren’t watching a spinner between every category jump. Pokies, live tables, and crash titles run smoothly on 4G; if your signal fluctuates, streams lower their quality quietly rather than stalling mid-hand."
+      },
+      {
+        "type": "paragraph",
+        "text": "Banking on mobile is practical: deposit and withdrawal forms are trimmed for thumbs, camera uploads for verification take seconds, and live chat opens in-place so you don’t lose your spot. It’s the same platform on a smaller canvas, not a cut-down version."
+      }
+    ],
     "Languages": [
       {
         "type": "paragraph",
@@ -389,20 +403,6 @@
       {
         "type": "paragraph",
         "text": "For Australian players, AUD is the base. Balances, bonuses, and cashier screens speak dollars without detours. You can see other currencies in the global version of the cashier, but if you register from Australia and choose AUD at the start, everything aligns to that choice. Pick your currency once and treat it as locked; it keeps accounting simple, especially when you rotate between casino and sportsbook."
-      }
-    ],
-    "App": [
-      {
-        "type": "paragraph",
-        "text": "Spinmacho is made for the browser you already use. Open it in Chrome or Safari and the site adapts to your screen without squeezing text into any size. Content groups stack into a neat scroll; the header stays readable; and the deposit button appears where you’d expect, not two screens down."
-      },
-      {
-        "type": "paragraph",
-        "text": "If you want one-tap access, add it to your home screen. The shortcut launches in full-screen, remembers where you left off in the lobby, and keeps the games list cached enough that you aren’t watching a spinner between every category jump. Pokies, live tables, and crash titles run smoothly on 4G; if your signal fluctuates, streams lower their quality quietly rather than stalling mid-hand."
-      },
-      {
-        "type": "paragraph",
-        "text": "Banking on mobile is practical: deposit and withdrawal forms are trimmed for thumbs, camera uploads for verification take seconds, and live chat opens in-place so you don’t lose your spot. It’s the same platform on a smaller canvas, not a cut-down version."
       }
     ]
   }

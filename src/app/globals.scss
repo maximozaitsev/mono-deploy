@@ -95,6 +95,10 @@ body {
   word-break: break-word;
   hyphens: auto;
 
+  &.black {
+    color: $text-color-secondary;
+  }
+
   @media (max-width: 768px) {
     font-size: 24px;
     // font-weight: $font-weight-black;
