@@ -12,9 +12,10 @@ import Link from "next/link";
 
 interface TopGamesProps {
   games: Game[];
+  lang: string;
 }
 
-export default function TopGamesSection({ games }: TopGamesProps) {
+export default function TopGamesSection({ games, lang }: TopGamesProps) {
   const [hoveredGame, setHoveredGame] = useState<number | null>(null);
   const { t } = useStaticT();
 
