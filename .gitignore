@@ -1,0 +1,11 @@
+node_modules/
+.next/
+package-lock.json
+yarn*
+*.d.ts
+sw*
+workbox-*
+swe-worker-*.js
+public/sw*
+public/workbox-*
+public/swe-worker-*.js
