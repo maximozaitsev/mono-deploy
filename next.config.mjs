@@ -33,7 +33,6 @@ const withPWA = nextPWA({
 });
 
 const nextConfig = {
-  // Оптимизация изображений
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -47,21 +46,6 @@ const nextConfig = {
       },
     ],
   },
-  
-  // Оптимизация компилятора для production
-  compiler: {
-    removeConsole: process.env.NODE_ENV === "production",
-  },
-  
-  // Включение SWC минификации (по умолчанию в Next.js 14)
-  swcMinify: true,
-  
-  // Экспериментальные функции для оптимизации
-  experimental: {
-    optimizePackageImports: ['@svgr/webpack'],
-  },
-  
-  // Безопасность заголовков
   headers: async () => {
     return [
       {
@@ -75,15 +59,11 @@ const nextConfig = {
       },
     ];
   },
-  
-  // Webpack конфигурация
   webpack(config, options) {
-    // SVG обработка
     config.module.rules.push({
       test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
-    
     return config;
   },
 };
