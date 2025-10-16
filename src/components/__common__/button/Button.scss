@@ -76,4 +76,10 @@
   &:hover {
     transform: scale(1.07);
   }
+
+  @media (max-width: 768px) {
+    &:hover {
+      transform: none;
+    }
+  }
 }

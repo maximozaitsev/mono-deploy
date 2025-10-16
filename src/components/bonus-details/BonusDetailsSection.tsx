@@ -150,6 +150,7 @@ const BonusDetailsSection: React.FC = () => {
                         variant="secondary"
                         useNavigation={true}
                         url={`/casino/${offer.id}`}
+                        openInNewTab
                       />
                     </div>
                   </div>
