@@ -36,10 +36,12 @@ export default function Footer() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const scrollToWelcomeSection = () => {
-    document
-      .getElementById("welcome-section")
-      ?.scrollIntoView({ behavior: "smooth" });
+  const scrollToTop = () => {
+    try {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch {
+      window.scrollTo(0, 0);
+    }
   };
 
   const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
@@ -55,7 +57,7 @@ export default function Footer() {
                   <Logo
                     svgPath={logoPath}
                     gradientIdPrefix="footer"
-                    onClick={scrollToWelcomeSection}
+                    onClick={scrollToTop}
                     alt={`${PROJECT_NAME} Logo`}
                   />
                 </div>
