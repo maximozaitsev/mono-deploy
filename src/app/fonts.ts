@@ -10,9 +10,9 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const merriweather_sans = localFont({
+export const rubik = localFont({
   src: [
-    { path: "../../public/fonts/MerriweatherSans/MerriweatherSans-VAR.woff2", weight: "100 900", style: "normal" }
+    { path: "../../public/fonts/Rubik/Rubik-VAR.woff2", weight: "100 900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",

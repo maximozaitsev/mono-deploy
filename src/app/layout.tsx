@@ -5,12 +5,12 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "hellspin-casino-australia.com";
+const url = "getslots-casino.com";
 const ogTitle = "Hell Spin Casino Australia: Top Bonuses and Games";
-const ogSiteName = "Hellspin Casino";
+const ogSiteName = "Getslots Casino";
 const metaDescription = "Experience thrilling Hell Spin Casino games and exclusive bonuses, your destination for online gaming fun.";
 
-const locale = "en-AU";
+const locale = "en";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
