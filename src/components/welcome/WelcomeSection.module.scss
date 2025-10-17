@@ -16,7 +16,7 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 120px center;
+  background-position: right 160px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -102,7 +102,7 @@
   gap: 48px;
   width: 410px;
   max-width: 50%;
-  margin-top: 20px;
+
   // margin-left: -20px;
 
   .bonusText {
@@ -119,6 +119,7 @@
     gap: 24px;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
 
     .bonusText {
       display: block;
