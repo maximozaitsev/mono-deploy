@@ -6,9 +6,10 @@ import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
 const url = "getslots-casino.com";
-const ogTitle = "Hell Spin Casino Australia: Top Bonuses and Games";
+const ogTitle = "GetSlots Casino Games, Banking, Promotions, Mobile";
 const ogSiteName = "Getslots Casino";
-const metaDescription = "Experience thrilling Hell Spin Casino games and exclusive bonuses, your destination for online gaming fun.";
+const metaDescription =
+  "Have a look at GetSlots Casino with this review. All sides of the gambling process are revealed. These include banking, bonuses, games and mobile compatibility.";
 
 const locale = "en";
 const language = "English";

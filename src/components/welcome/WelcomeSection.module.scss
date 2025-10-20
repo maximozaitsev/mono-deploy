@@ -67,7 +67,7 @@
   height: auto;
 
   @media (max-width: 480px) {
-    width: 100vw;
+    width: auto;
     max-width: 480px;
     height: 262px;
     object-fit: cover;
@@ -76,6 +76,7 @@
 
   @media (max-width: 400px) {
     height: 200px;
+    margin-top: 10px;
   }
 }
 
