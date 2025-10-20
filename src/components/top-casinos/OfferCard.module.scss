@@ -1,5 +1,5 @@
-@import "@/styles/colors.scss";
-@import "@/styles/variables.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 .offerCard {
   display: flex;
@@ -9,20 +9,14 @@
   align-items: center;
   gap: 16px;
 
-  outline: $border-width solid $border-color;
   border-radius: $border-radius;
   background: $color-background-third;
 
   .logo {
     filter: drop-shadow(0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.75));
-    width: 190px;
-    height: 76px;
+    width: 160px;
+    height: auto;
     display: block;
-
-    @media (max-width: 768px) {
-      width: 160px;
-      height: 64px;
-    }
   }
 
   h3 {
@@ -34,12 +28,18 @@
     line-height: normal;
   }
 
-  h4 {
+  .h4Heading {
+    text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: $font-weight-regular;
     line-height: normal;
     color: $color-button-large;
+
+    // background: $color-button-large;
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   p {
@@ -59,11 +59,12 @@
     margin-top: auto;
     margin-left: -20px;
     margin-right: -20px;
+    max-width: 218px;
   }
 
   @media (max-width: 768px) {
     width: 240px;
-    height: 264px;
+    height: auto;
     padding: 16px;
 
     .logo {
@@ -74,7 +75,7 @@
       display: none;
     }
 
-    h4 {
+    .h4Heading {
       margin-bottom: -8px;
     }
 

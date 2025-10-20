@@ -1,10 +1,14 @@
-import { getContentData, parseFAQContent } from "../../utils/serverContent";
-import FAQSectionClient from "./FAQSectionClient";
+import { getContentData, parseFAQData } from "../../utils/serverContent";
+import FAQClient from "./FAQClient";
 import "./FAQSection.scss";
 
-export default async function FAQSection() {
-  const contentData = await getContentData();
-  const content = parseFAQContent(contentData);
+interface FAQSectionProps {
+  lang: string;
+}
 
-  return <FAQSectionClient content={content} />;
+export default async function FAQSection({ lang }: FAQSectionProps) {
+  const content = await getContentData(lang);
+  const { faqTitle, faqs } = parseFAQData(content);
+
+  return <FAQClient faqTitle={faqTitle} faqs={faqs} />;
 }

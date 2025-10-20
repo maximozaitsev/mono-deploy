@@ -62,10 +62,13 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 576px;
+  max-width: 522px;
   margin-top: 0px;
   height: auto;
-  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    margin-top: 15px;
+  }
 
   @media (max-width: 480px) {
     width: 100vw;
@@ -121,6 +124,7 @@
     align-items: center;
     text-align: center;
     margin-top: 20px;
+
     .bonusText {
       display: block;
     }

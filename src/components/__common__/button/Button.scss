@@ -1,6 +1,6 @@
-@import "@/styles/colors.scss";
-@import "@/styles/variables.scss";
+@import "../../../styles/colors.scss";
 @import "@/styles/_fonts-bridge.scss";
+@import "../../../styles/variables.scss";
 
 .button {
   cursor: pointer;
@@ -59,6 +59,8 @@
     font-size: 20px;
     border: none;
     height: 52px;
+    line-height: 0.93;
+    outline: 3px solid #f6ff00;
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;
@@ -74,5 +76,11 @@
 
   &:hover {
     transform: scale(1.07);
+  }
+
+  @media (max-width: 768px) {
+    &:hover {
+      transform: none;
+    }
   }
 }
