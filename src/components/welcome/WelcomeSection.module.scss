@@ -65,9 +65,10 @@
   max-width: 576px;
   margin-top: 0px;
   height: auto;
+  margin-top: 10px;
 
   @media (max-width: 480px) {
-    width: auto;
+    width: 100vw;
     max-width: 480px;
     height: 262px;
     object-fit: cover;
@@ -76,7 +77,6 @@
 
   @media (max-width: 400px) {
     height: 200px;
-    margin-top: 10px;
   }
 }
 
