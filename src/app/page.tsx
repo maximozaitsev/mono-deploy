@@ -1,6 +1,6 @@
-import Header from "@/components/header/Header";
-import WelcomeSection from "@/components/welcome/WelcomeSection";
-import H1Section from "@/components/h1-block/H1Block";
+import Header from "../components/header/Header";
+import WelcomeSection from "../components/welcome/WelcomeSection";
+import H1Section from "../components/h1-block/H1Block";
 import TopCasinosSection from "@/components/top-casinos/TopCasinosSection";
 import TopGamesSection from "@/components/top-games/TopGamesSection";
 import BonusDetailsSection from "@/components/bonus-details/BonusDetailsSection";
@@ -15,9 +15,34 @@ import AdvantageSection from "@/components/advantage/AdvantageSection";
 import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
 
-export default async function RootPage() {
-  // Hardcoded to avoid file reading errors
-  const manifest = { languages: ['en', 'de', 'es', 'fr', 'it'], defaultLang: "en" };
+import fs from "node:fs/promises";
+import path from "node:path";
+
+export default async function HomePage() {
+  type LangManifest = { languages: string[]; defaultLang: string };
+  let manifest: LangManifest = { languages: [], defaultLang: "en" };
+  try {
+    const manifestPath = path.join(
+      process.cwd(),
+      "public",
+      "content",
+      "languages.json"
+    );
+    const raw = await fs.readFile(manifestPath, "utf-8");
+    const parsed = JSON.parse(raw) as Partial<LangManifest>;
+    if (
+      Array.isArray(parsed.languages) &&
+      typeof parsed.defaultLang === "string"
+    ) {
+      manifest = {
+        languages: parsed.languages,
+        defaultLang: parsed.defaultLang,
+      };
+    }
+  } catch {
+    manifest = { languages: ["en"], defaultLang: "en" };
+  }
+
   const currentLang = manifest.defaultLang;
   const games = await fetchGames("gambling");
 

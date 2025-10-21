@@ -11,7 +11,6 @@ import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
-import LangUpdater from "../components/LangUpdater";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -182,22 +181,13 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const { languages, defaultLang } = await readManifest();
+  const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
+  const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
+  const { htmlLang } = getLocaleMeta(geo);
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
-
-  // Get language from header set by middleware
-  const headersList = headers();
-  const headerLang = headersList.get("x-lang")?.toLowerCase() || "en";
-  
-  // Hardcoded language mapping
-  let htmlLang = "en-US"; // default
-  if (headerLang === "de") htmlLang = "de-DE";
-  else if (headerLang === "es") htmlLang = "es-ES";
-  else if (headerLang === "fr") htmlLang = "fr-FR";
-  else if (headerLang === "it") htmlLang = "it-IT";
-  
-  console.log("RootLayout:", { headerLang, htmlLang });
 
   return (
     <html lang={htmlLang} suppressHydrationWarning>
@@ -221,10 +211,7 @@ export default async function RootLayout({
           media="(max-width: 768px)"
         />
       </head>
-      <body className={fontVars}>
-        <LangUpdater />
-        {children}
-      </body>
+      <body className={fontVars}>{children}</body>
     </html>
   );
 }

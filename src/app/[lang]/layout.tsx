@@ -27,8 +27,8 @@ async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
 }
 
 async function readManifest(): Promise<LangManifest> {
-  // Hardcoded to avoid file reading errors
-  return { languages: ['en', 'de', 'es', 'fr', 'it'], defaultLang: "en" };
+  const p = path.join(process.cwd(), "public", "content", "languages.json");
+  return readJSON<LangManifest>(p, { languages: [], defaultLang: "au" });
 }
 
 function extractMeta(obj: Record<string, any>): {
@@ -163,16 +163,8 @@ export async function generateMetadata({
 
 export default function LangLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
 }) {
-  const { lang } = params;
-  
-  console.log("LangLayout:", { lang });
-
-  // This won't work for setting html lang, but let's try a different approach
-  // We need to use a different strategy
   return <>{children}</>;
 }
