@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
+import { useRouter } from "next/navigation";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import { fetchOffers } from "../../utils/fetchOffers";
 import { useStaticT, applyLocaleToDOM } from "@/utils/i18n";
@@ -23,12 +24,16 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
   const [selectedLang, setSelectedLang] = useState(currentLang || "en");
   const selectRef = useRef<HTMLSelectElement>(null);
+  const router = useRouter();
 
   const { t } = useStaticT();
 
   useEffect(() => {
-    applyLocaleToDOM(selectedLang);
-  }, [selectedLang]);
+    // Применяем язык только если он изменился
+    if (selectedLang !== currentLang) {
+      applyLocaleToDOM(selectedLang);
+    }
+  }, [selectedLang, currentLang]);
 
   useEffect(() => {
     setSelectedLang(currentLang || "en");
@@ -37,9 +42,9 @@ const Header: React.FC<HeaderProps> = ({
   const handleLanguageChange = (lang: string) => {
     setSelectedLang(lang);
     if (lang === defaultLang) {
-      window.location.href = "/";
+      router.push("/");
     } else {
-      window.location.href = `/${lang}/`;
+      router.push(`/${lang}/`);
     }
   };
 
