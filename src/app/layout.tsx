@@ -6,7 +6,7 @@ import "../styles/variables.scss";
 
 import fs from "node:fs/promises";
 import path from "node:path";
-import { headers, cookies } from "next/headers";
+import { headers } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import { replaceCurrentYear } from "../utils/yearReplacer";
@@ -182,8 +182,12 @@ export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const { languages, defaultLang } = await readManifest();
-  const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
-  const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
+  
+  // Определяем язык из заголовка, установленного в middleware
+  const headersList = headers();
+  const urlLang = headersList.get("x-lang") || "";
+  const geo = languages.includes(urlLang) ? urlLang : defaultLang;
+  
   const { htmlLang } = getLocaleMeta(geo);
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)

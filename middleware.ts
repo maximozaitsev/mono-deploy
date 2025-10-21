@@ -7,7 +7,12 @@ export function middleware(req: NextRequest) {
   const seg = url.pathname.split("/").filter(Boolean)[0] || "";
   const res = NextResponse.next();
 
+  // Устанавливаем cookie для совместимости
   res.cookies.set("lang", seg, { path: "/" });
+  
+  // Добавляем заголовок с языком для использования в layout
+  res.headers.set("x-lang", seg);
+  
   return res;
 }
 

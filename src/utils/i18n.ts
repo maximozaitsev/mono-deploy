@@ -217,7 +217,11 @@ export function applyLocaleToDOM(langOrGeo: string) {
     (langOrGeo || "").toLowerCase()
   );
 
-  document.documentElement.setAttribute("lang", htmlLang);
+  // Проверяем, нужно ли обновлять язык
+  const currentLang = document.documentElement.getAttribute("lang");
+  if (currentLang !== htmlLang) {
+    document.documentElement.setAttribute("lang", htmlLang);
+  }
 
   let metaOg = document.querySelector('meta[property="og:locale"]');
   if (!metaOg) {
