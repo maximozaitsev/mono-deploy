@@ -7,7 +7,7 @@ import { Offer } from "../../types/offer";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import { getProjectGeoForLang } from "@/utils/localeMap";
 import styles from "./OfferCard.module.scss";
-import { useStaticT } from "@/utils/i18n";
+import { useTranslations } from 'next-intl';
 
 interface OfferCardProps {
   offer: Offer;
@@ -15,10 +15,10 @@ interface OfferCardProps {
 }
 
 const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
-  const { t, currentLang } = useStaticT();
+  const t = useTranslations();
 
   const logoSrc = (offer as any).optimizedLogo || offer.logo;
-  const geo = getProjectGeoForLang(currentLang);
+  const geo = getProjectGeoForLang('en'); // Используем дефолтную локаль
 
   return (
     <div className={styles.offerCard}>
@@ -36,10 +36,10 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
         fetchPriority={priority ? "high" : "auto"}
       />
       <h3>{offer.name}</h3>
-      <p className={styles.h4Heading}>{t.welcomeBonus}</p>
+      <p className={styles.h4Heading}>{t('welcomeBonus')}</p>
       <p>{offer.bonuses.welcome_bonus}</p>
       <Button
-        text={t.claimBonus}
+        text={t('claimBonus')}
         variant="secondary"
         useNavigation={true}
         url={`/casino/${offer.id}`}

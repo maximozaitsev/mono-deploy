@@ -3,7 +3,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import { fetchOffers } from "../../utils/fetchOffers";
-import { useStaticT, applyLocaleToDOM } from "@/utils/i18n";
+import { useTranslations } from 'next-intl';
+import { applyLocaleToDOM } from "@/utils/i18n";
 import Logo from "./Logo";
 import GlobeIcon from "@/components/__common__/Globe";
 import ArrowDownIcon from "@/components/__common__/ArrowDown";
@@ -24,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({
   const [selectedLang, setSelectedLang] = useState(currentLang || "en");
   const selectRef = useRef<HTMLSelectElement>(null);
 
-  const { t } = useStaticT();
+  const t = useTranslations();
 
   useEffect(() => {
     applyLocaleToDOM(selectedLang);
@@ -144,13 +145,13 @@ const Header: React.FC<HeaderProps> = ({
             className={`${styles.headerButton} ${styles.login}`}
             onClick={handleSignInClick}
           >
-            {t.logIn}
+            {t('logIn')}
           </button>
           <button
             className={`${styles.headerButton} ${styles.signup}`}
             onClick={handleSignInClick}
           >
-            {t.signUp}
+            {t('signUp')}
           </button>
         </div>
       </nav>

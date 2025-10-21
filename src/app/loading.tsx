@@ -1,7 +1,7 @@
 "use client";
 
 import Spinner from "@/components/__common__/loader/Spinner";
-import Header from "@/components/header/Header";
+import HeaderSimple from "@/components/header/HeaderSimple";
 import { usePathname } from "next/navigation";
 import manifestData from "../../public/content/languages.json";
 
@@ -24,7 +24,7 @@ export default function RootLoading() {
         flexDirection: "column",
       }}
     >
-      <Header
+      <HeaderSimple
         languages={languages}
         defaultLang={defaultLang}
         currentLang={currentLang}

@@ -6,14 +6,14 @@ import OfferCard from "./OfferCard";
 import Button from "../__common__/button/Button";
 import { fetchOffers } from "@/utils/fetchOffers";
 import "./TopCasinosSection.scss";
-import { useStaticT } from "@/utils/i18n";
+import { useTranslations } from 'next-intl';
 
 const TopCasinosSection: React.FC = () => {
   const [country, setCountry] = useState<string>("");
   const [offers, setOffers] = useState<Offer[]>([]);
   const [showAll, setShowAll] = useState<boolean>(false);
 
-  const { t } = useStaticT();
+  const t = useTranslations();
 
   useEffect(() => {
     const loadOffers = async () => {
@@ -33,7 +33,7 @@ const TopCasinosSection: React.FC = () => {
       className="top-casinos-section section container"
     >
       <h2 className="h2-heading">
-        {t.topCasinos || "Top Casinos"} {country}
+        {t('topCasinos')} {country}
       </h2>
       <div className="offers-grid">
         {visibleOffers.map((offer, idx) => (
@@ -42,7 +42,7 @@ const TopCasinosSection: React.FC = () => {
       </div>
       {!showAll && (
         <Button
-          text={t.allCasino || "All Casino"}
+          text={t('allCasino')}
           variant="primary"
           onClick={() => setShowAll(true)}
           useNavigation={false}

@@ -1,6 +1,6 @@
 import path from "node:path";
 import fs from "node:fs/promises";
-import Header from "@/components/header/Header";
+import HeaderSimple from "@/components/header/HeaderSimple";
 import Button from "@/components/__common__/button/Button";
 import "./globals.scss";
 
@@ -24,7 +24,7 @@ export default async function Custom404() {
 
   return (
     <div className="not-found">
-      <Header languages={languages} defaultLang={defaultLang} currentLang={currentLang} />
+      <HeaderSimple languages={languages} defaultLang={defaultLang} currentLang={currentLang} />
       <h2 className="h2-heading">404</h2>
       <p>The page you were looking for does not exist.</p>
       <p>You may have mistyped the address or the page may have moved.</p>
