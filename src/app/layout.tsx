@@ -11,6 +11,7 @@ import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
+import LanguageSetter from "../components/LanguageSetter";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -181,61 +182,17 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const { languages, defaultLang } = await readManifest();
-  
-  // Определяем язык из заголовка, установленного в middleware, с fallback на cookie
-  const headersList = headers();
-  const urlLang = headersList.get("x-lang") || "";
-  const cookieLang = cookies().get("lang")?.value || "";
-  
-  // Если заголовок не найден, попробуем определить язык из URL
-  let lang = urlLang || cookieLang;
-  if (!lang) {
-    const pathname = headersList.get("x-pathname") || "";
-    const segments = pathname.split("/").filter(Boolean);
-    const firstSegment = segments[0] || "";
-    if (languages.includes(firstSegment)) {
-      lang = firstSegment;
-    }
-  }
-  
-  // Если все еще не найден язык, попробуем определить из URL напрямую
-  if (!lang) {
-    const pathname = headersList.get("x-pathname") || "";
-    const segments = pathname.split("/").filter(Boolean);
-    const firstSegment = segments[0] || "";
-    if (languages.includes(firstSegment)) {
-      lang = firstSegment;
-    }
-  }
-  
-  // Если все еще не найден язык, попробуем определить из URL напрямую
-  if (!lang) {
-    const pathname = headersList.get("x-pathname") || "";
-    const segments = pathname.split("/").filter(Boolean);
-    const firstSegment = segments[0] || "";
-    if (languages.includes(firstSegment)) {
-      lang = firstSegment;
-    }
-  }
-  
-  // Если все еще не найден язык, попробуем определить из URL напрямую
-  if (!lang) {
-    const pathname = headersList.get("x-pathname") || "";
-    const segments = pathname.split("/").filter(Boolean);
-    const firstSegment = segments[0] || "";
-    if (languages.includes(firstSegment)) {
-      lang = firstSegment;
-    }
-  }
-  
-  const geo = languages.includes(lang) ? lang : defaultLang;
-  
-  
-  const { htmlLang } = getLocaleMeta(geo);
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
+
+  // Читаем языки из конфига
+  const { languages, defaultLang } = await readManifest();
+  
+  // Читаем язык из cookie
+  const cookieLang = cookies().get("lang")?.value || "";
+  const currentLang = languages.includes(cookieLang) ? cookieLang : defaultLang;
+  const { htmlLang } = getLocaleMeta(currentLang);
 
   return (
     <html lang={htmlLang} suppressHydrationWarning>
@@ -259,7 +216,10 @@ export default async function RootLayout({
           media="(max-width: 768px)"
         />
       </head>
-      <body className={fontVars}>{children}</body>
+      <body className={fontVars}>
+        <LanguageSetter languages={languages} defaultLang={defaultLang} />
+        {children}
+      </body>
     </html>
   );
 }
