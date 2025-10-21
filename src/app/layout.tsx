@@ -182,15 +182,22 @@ export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const { languages, defaultLang } = await readManifest();
-  const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
-  const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
+  
+  // Получаем информацию из middleware
+  const h = headers();
+  const detectedLang = h.get("x-detected-lang") || defaultLang;
+  const isLanguageRoute = h.get("x-is-language-route") === "true";
+  
+  // Используем язык, определенный middleware
+  const geo = languages.includes(detectedLang) ? detectedLang : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
+  
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
 
   return (
-    <html suppressHydrationWarning>
+    <html lang={htmlLang} suppressHydrationWarning>
       <head>
         <link
           rel="preconnect"

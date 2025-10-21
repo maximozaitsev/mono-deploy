@@ -161,23 +161,10 @@ export async function generateMetadata({
   };
 }
 
-export default async function LangLayout({
+export default function LangLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
 }) {
-  const { languages, defaultLang } = await readManifest();
-  const currentLang = params.lang;
-  
-  // Если язык не найден в списке, используем дефолтный
-  const validLang = languages.includes(currentLang) ? currentLang : defaultLang;
-  const { htmlLang } = getLocaleMeta(validLang);
-
-  return (
-    <html lang={htmlLang} suppressHydrationWarning>
-      <body>{children}</body>
-    </html>
-  );
+  return <>{children}</>;
 }
