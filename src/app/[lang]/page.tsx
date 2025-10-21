@@ -15,44 +15,23 @@ import PromotionsSection from "@/components/promotion/PromotionsSection";
 import AdvantageSection from "@/components/advantage/AdvantageSection";
 import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
-import fs from "node:fs/promises";
-import path from "node:path";
 
 export default async function LangPage({
   params,
 }: {
   params: { lang: string };
 }) {
-  type LangManifest = { languages: string[]; defaultLang: string };
-  let manifest: LangManifest = { languages: [], defaultLang: "en" };
-  try {
-    const manifestPath = path.join(
-      process.cwd(),
-      "public",
-      "content",
-      "languages.json"
-    );
-    const raw = await fs.readFile(manifestPath, "utf-8");
-    const parsed = JSON.parse(raw) as Partial<LangManifest>;
-    if (
-      Array.isArray(parsed.languages) &&
-      typeof parsed.defaultLang === "string"
-    ) {
-      manifest = {
-        languages: parsed.languages,
-        defaultLang: parsed.defaultLang,
-      };
-    }
-  } catch {
-    manifest = { languages: ["en"], defaultLang: "en" };
-  }
+  // Hardcoded to avoid file reading errors
+  const manifest = { languages: ['en', 'de', 'es', 'fr', 'it'], defaultLang: "en" };
 
   const { languages, defaultLang } = manifest;
   const lang = params.lang;
 
+  // If this is the default language, redirect to root
   if (lang === defaultLang) {
     redirect("/");
   }
+
   if (!languages.includes(lang)) {
     notFound();
   }
