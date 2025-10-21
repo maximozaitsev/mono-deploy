@@ -27,6 +27,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @media (max-width: 380px) {
+    img {
+      width: 130px;
+    }
+  }
 }
 
 .arrowButton {
@@ -55,15 +61,15 @@
       width: $header-button-large-small;
       color: $text-color-button-small;
 
-      outline: 2px solid #f6ff00;
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: #f6ff00;
     }
 
     &.signup {
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
-
-      outline: 2px solid #f6ff00;
     }
 
     &:hover {

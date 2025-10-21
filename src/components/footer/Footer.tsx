@@ -39,10 +39,8 @@ export default function Footer() {
     : manifest.defaultLang;
   const dynamicGeo = getProjectGeoForLang(currentLang);
 
-  const scrollToWelcomeSection = () => {
-    document
-      .getElementById("welcome-section")
-      ?.scrollIntoView({ behavior: "smooth" });
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -57,7 +55,7 @@ export default function Footer() {
                     desktopSrc="/logo.svg"
                     mobileSrc="/logo-mobile.svg"
                     alt={`${PROJECT_NAME} Logo`}
-                    onClick={scrollToWelcomeSection}
+                    onClick={scrollToTop}
                     loading="lazy"
                   />
                 </div>

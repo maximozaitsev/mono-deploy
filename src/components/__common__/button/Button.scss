@@ -48,9 +48,9 @@
   }
 
   &.secondary {
-    // outline: 3px solid;
-    // outline-offset: -3px;
-    // outline-color: #2e2e2e3b;
+    outline: 3px solid;
+    outline-offset: -3px;
+    outline-color: #f6ff00;
 
     border-radius: $button-small-border-radius;
     padding: 0 32px;
@@ -60,7 +60,6 @@
     border: none;
     height: 52px;
     line-height: 0.93;
-    outline: 3px solid #f6ff00;
 
     @media (max-width: 768px) {
       border-radius: $button-small-border-radius-mobile;

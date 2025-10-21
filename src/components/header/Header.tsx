@@ -72,9 +72,8 @@ const Header: React.FC<HeaderProps> = ({
     }
   };
 
-  const scrollToWelcomeSection = () => {
-    const el = document.getElementById("welcome-section");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -82,9 +81,9 @@ const Header: React.FC<HeaderProps> = ({
       <nav className={styles.navbar}>
         <button
           type="button"
-          onClick={scrollToWelcomeSection}
+          onClick={scrollToTop}
           className={styles.logoButton}
-          aria-label={`${PROJECT_NAME} Logo - Scroll to welcome section`}
+          aria-label={`${PROJECT_NAME} Logo - Scroll to top`}
           style={{ background: "none", border: "none" }}
         >
           <Logo
