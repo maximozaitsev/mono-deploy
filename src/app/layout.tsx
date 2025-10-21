@@ -190,7 +190,7 @@ export default async function RootLayout({
     .join(" ");
 
   return (
-    <html lang={htmlLang} suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <head>
         <link
           rel="preconnect"
