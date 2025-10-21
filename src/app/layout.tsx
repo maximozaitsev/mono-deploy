@@ -11,7 +11,6 @@ import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
-import LangUpdater from "../components/LangUpdater";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -212,10 +211,7 @@ export default async function RootLayout({
           media="(max-width: 768px)"
         />
       </head>
-      <body className={fontVars}>
-        <LangUpdater languages={languages} />
-        {children}
-      </body>
+      <body className={fontVars}>{children}</body>
     </html>
   );
 }

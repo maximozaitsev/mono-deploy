@@ -8,7 +8,6 @@ export function middleware(req: NextRequest) {
   const res = NextResponse.next();
 
   res.cookies.set("lang", seg, { path: "/" });
-  res.headers.set("x-pathname", url.pathname);
   return res;
 }
 
