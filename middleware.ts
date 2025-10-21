@@ -11,40 +11,25 @@ export function middleware(req: NextRequest) {
   const segments = pathname.split("/").filter(Boolean);
   const firstSegment = segments[0] || "";
   
-  // Если первый сегмент - это поддерживаемый язык
+  // Определяем язык
+  let lang = DEFAULT_LANG;
   if (SUPPORTED_LANGUAGES.includes(firstSegment)) {
-    const res = NextResponse.next();
-    res.cookies.set("lang", firstSegment, { path: "/" });
-    res.headers.set("x-lang", firstSegment);
-    return res;
+    lang = firstSegment;
   }
   
-  // Если это корневой путь, перенаправляем на дефолтный язык
-  if (pathname === "/") {
-    const res = NextResponse.redirect(new URL(`/${DEFAULT_LANG}`, req.url));
-    res.cookies.set("lang", DEFAULT_LANG, { path: "/" });
-    res.headers.set("x-lang", DEFAULT_LANG);
-    return res;
-  }
-  
-  // Если первый сегмент не является поддерживаемым языком, но это не корневой путь
-  // (например, статические файлы), просто продолжаем
-  if (!SUPPORTED_LANGUAGES.includes(firstSegment)) {
-    const res = NextResponse.next();
-    res.cookies.set("lang", DEFAULT_LANG, { path: "/" });
-    res.headers.set("x-lang", DEFAULT_LANG);
-    return res;
-  }
-  
-  // Для всех остальных случаев
+  // Создаем ответ
   const res = NextResponse.next();
-  res.cookies.set("lang", DEFAULT_LANG, { path: "/" });
-  res.headers.set("x-lang", DEFAULT_LANG);
+  
+  // Устанавливаем cookie и заголовки
+  res.cookies.set("lang", lang, { path: "/" });
+  res.headers.set("x-lang", lang);
+  res.headers.set("x-pathname", pathname);
+  
   return res;
 }
 
 export const config = {
   matcher: [
-    "/((?!_next|favicon.ico|icons|og-image.webp|manifest.json|robots.txt|sitemap.xml).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|icons|og-image.webp|manifest.json|robots.txt|sitemap.xml|sw.js|sw.js.map|swe-worker-development.js|workbox-*.js|workbox-*.js.map).*)",
   ],
 };

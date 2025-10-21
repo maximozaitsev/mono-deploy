@@ -6,7 +6,7 @@ import "../styles/variables.scss";
 
 import fs from "node:fs/promises";
 import path from "node:path";
-import { headers } from "next/headers";
+import { headers, cookies } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import { replaceCurrentYear } from "../utils/yearReplacer";
@@ -183,10 +183,54 @@ export default async function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const { languages, defaultLang } = await readManifest();
   
-  // Определяем язык из заголовка, установленного в middleware
+  // Определяем язык из заголовка, установленного в middleware, с fallback на cookie
   const headersList = headers();
   const urlLang = headersList.get("x-lang") || "";
-  const geo = languages.includes(urlLang) ? urlLang : defaultLang;
+  const cookieLang = cookies().get("lang")?.value || "";
+  
+  // Если заголовок не найден, попробуем определить язык из URL
+  let lang = urlLang || cookieLang;
+  if (!lang) {
+    const pathname = headersList.get("x-pathname") || "";
+    const segments = pathname.split("/").filter(Boolean);
+    const firstSegment = segments[0] || "";
+    if (languages.includes(firstSegment)) {
+      lang = firstSegment;
+    }
+  }
+  
+  // Если все еще не найден язык, попробуем определить из URL напрямую
+  if (!lang) {
+    const pathname = headersList.get("x-pathname") || "";
+    const segments = pathname.split("/").filter(Boolean);
+    const firstSegment = segments[0] || "";
+    if (languages.includes(firstSegment)) {
+      lang = firstSegment;
+    }
+  }
+  
+  // Если все еще не найден язык, попробуем определить из URL напрямую
+  if (!lang) {
+    const pathname = headersList.get("x-pathname") || "";
+    const segments = pathname.split("/").filter(Boolean);
+    const firstSegment = segments[0] || "";
+    if (languages.includes(firstSegment)) {
+      lang = firstSegment;
+    }
+  }
+  
+  // Если все еще не найден язык, попробуем определить из URL напрямую
+  if (!lang) {
+    const pathname = headersList.get("x-pathname") || "";
+    const segments = pathname.split("/").filter(Boolean);
+    const firstSegment = segments[0] || "";
+    if (languages.includes(firstSegment)) {
+      lang = firstSegment;
+    }
+  }
+  
+  const geo = languages.includes(lang) ? lang : defaultLang;
+  
   
   const { htmlLang } = getLocaleMeta(geo);
   const fontVars = Object.values(fonts)
