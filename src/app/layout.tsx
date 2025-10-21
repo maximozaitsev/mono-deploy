@@ -11,7 +11,7 @@ import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
-import LanguageSetter from "../components/LanguageSetter";
+import LangUpdater from "../components/LangUpdater";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -182,17 +182,13 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const { languages, defaultLang } = await readManifest();
+  const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
+  const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
+  const { htmlLang } = getLocaleMeta(geo);
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
-
-  // Читаем языки из конфига
-  const { languages, defaultLang } = await readManifest();
-  
-  // Читаем язык из cookie
-  const cookieLang = cookies().get("lang")?.value || "";
-  const currentLang = languages.includes(cookieLang) ? cookieLang : defaultLang;
-  const { htmlLang } = getLocaleMeta(currentLang);
 
   return (
     <html lang={htmlLang} suppressHydrationWarning>
@@ -217,7 +213,7 @@ export default async function RootLayout({
         />
       </head>
       <body className={fontVars}>
-        <LanguageSetter languages={languages} defaultLang={defaultLang} />
+        <LangUpdater languages={languages} />
         {children}
       </body>
     </html>
