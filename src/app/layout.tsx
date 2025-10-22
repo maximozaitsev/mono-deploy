@@ -182,29 +182,16 @@ export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const { languages, defaultLang } = await readManifest();
-  const h = headers();
   const c = cookies();
-
-  // TEMP: list all headers to find path-bearing header in dev
-  try {
-    const keys = Array.from(h.keys()).join(", ");
-    console.log(`[SSR] headers keys: ${keys}`);
-  } catch {}
-
-  const segHeader = (h.get("x-geo-lang") || "").toLowerCase();
-  const mwPathname = h.get("x-mw-pathname") || "";
-  const segFromPath = mwPathname.split("/").filter(Boolean)[0]?.toLowerCase() || "";
   const cookieLang = (c.get("lang")?.value || "").toLowerCase();
 
-  const seg = segHeader || segFromPath || cookieLang;
+  // Parse first segment from request URL via NEXT_URL env fallback in prod, else from cookie only
+  const reqUrl = process.env.NEXT_URL || "";
+  const segFromEnv = reqUrl.split("/").filter(Boolean)[0]?.toLowerCase() || "";
+
+  const seg = segFromEnv || cookieLang;
   const geo = languages.includes(seg) ? seg : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
-
-  try {
-    console.log(
-      `[SSR] x-geo-lang="${segHeader}" cookie="${cookieLang}" path="${mwPathname}" -> using geo="${geo}" html.lang="${htmlLang}"`
-    );
-  } catch {}
 
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
