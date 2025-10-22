@@ -7,7 +7,7 @@ import { fetchOffers } from "@/utils/fetchOffers";
 import Spinner from "@/components/__common__/loader/Spinner";
 import manifestData from "../../../../public/content/languages.json";
 
-const Header = dynamic(() => import("@/components/header/HeaderSimple"), {
+const Header = dynamic(() => import("@/components/header/Header"), {
   ssr: false,
 });
 const Footer = dynamic(() => import("@/components/footer/Footer"), {

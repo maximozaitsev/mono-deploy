@@ -3,11 +3,11 @@
 import Spinner from "@/components/__common__/loader/Spinner";
 import Header from "@/components/header/Header";
 import { usePathname } from "next/navigation";
-import manifestData from "../../public/content/languages.json";
+import manifestData from "../../../public/content/languages.json";
 
 type LangManifest = { languages: string[]; defaultLang: string };
 
-export default function RootLoading() {
+export default function LangLoading() {
   const pathname = usePathname();
   const { languages = [], defaultLang = "en" } =
     (manifestData as LangManifest) || {};

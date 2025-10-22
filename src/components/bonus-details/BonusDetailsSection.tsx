@@ -10,14 +10,14 @@ import { PROJECT_NAME } from "@/config/projectConfig";
 import { getProjectGeoForLang } from "@/utils/localeMap";
 import "./BonusDetailsSection.scss";
 
-import { useTranslations } from 'next-intl';
+import { useStaticT } from "@/utils/i18n";
 
 const BonusDetailsSection: React.FC = () => {
   const [offers, setOffers] = useState<Offer[]>([]);
   const [openOffers, setOpenOffers] = useState<number[]>([]);
   const [displayedOffers, setDisplayedOffers] = useState<Offer[]>([]);
 
-  const t = useTranslations();
+  const { t, currentLang } = useStaticT();
 
   useEffect(() => {
     const loadOffers = async () => {
@@ -46,21 +46,21 @@ const BonusDetailsSection: React.FC = () => {
 
   return (
     <section id="bonuses" className="bonus-details-section section container">
-      <h2 className="h2-heading">{t('bonusDetails')}</h2>
+      <h2 className="h2-heading">{t.bonusDetails}</h2>
 
       <div className="table">
         <div className="head-row row">
-          <div className="headerCell">{t('casino')}</div>
-          <div className="headerCell hide-1020">{t('bonuses')}</div>
-          <div className="headerCell">{t('rate')}</div>
-          <div className="headerCell">{t('freeSpins')}</div>
-          <div className="headerCell">{t('moreInfo')}</div>
-          <div className="headerCell hide-768">{t('get')}</div>
+          <div className="headerCell">{t.casino}</div>
+          <div className="headerCell hide-1020">{t.bonuses}</div>
+          <div className="headerCell">{t.rate}</div>
+          <div className="headerCell">{t.freeSpins}</div>
+          <div className="headerCell">{t.moreInfo}</div>
+          <div className="headerCell hide-768">{t.get}</div>
         </div>
 
         {displayedOffers.map((offer, idx) => {
           const logoSrc = (offer as any).optimizedLogo || offer.logo;
-          const geo = getProjectGeoForLang('en'); // Используем дефолтную локаль
+          const geo = getProjectGeoForLang(currentLang);
 
           return (
             <div key={offer.id} className="row">
@@ -81,7 +81,7 @@ const BonusDetailsSection: React.FC = () => {
                 />
               </div>
 
-              <div className="cell hide-1020">{t('welcomeBonus')}</div>
+              <div className="cell hide-1020">{t.welcomeBonus}</div>
               <div className="cell">
                 {renderValueOrDash(offer.bonuses.rate)}
               </div>
@@ -95,10 +95,10 @@ const BonusDetailsSection: React.FC = () => {
                   type="button"
                   onClick={() => toggleAccordion(offer.id)}
                   className="icon-button"
-                  aria-label={`${t('moreInfo')}: ${offer.name}`}
+                  aria-label={`${t.moreInfo}: ${offer.name}`}
                   aria-expanded={openOffers.includes(offer.id)}
                   aria-controls={`acc-${offer.id}`}
-                  title={t('moreInfo')}
+                  title={t.moreInfo}
                 >
                   <span aria-hidden="true">
                     <InfoIcon />
@@ -108,7 +108,7 @@ const BonusDetailsSection: React.FC = () => {
 
               <div className="cell hide-768 last-cell">
                 <Button
-                  text={t('getTheBonus')}
+                  text={t.getTheBonus}
                   variant="secondary"
                   useNavigation={true}
                   url={`/casino/${offer.id}`}
@@ -121,22 +121,22 @@ const BonusDetailsSection: React.FC = () => {
                   className="accordion"
                   id={`acc-${offer.id}`}
                   role="region"
-                  aria-label={`${offer.name} ${t('bonusDetails')}`}
+                  aria-label={`${offer.name} ${t.bonusDetails}`}
                 >
                   <div className="accordion-item">
-                    <div className="accordion-title">{t('maximumAmount')}:</div>
+                    <div className="accordion-title">{t.maximumAmount}:</div>
                     <div className="accordion-value">
                       {renderValueOrDash(offer.bonuses.amount)}
                     </div>
                   </div>
                   <div className="accordion-item">
-                    <div className="accordion-title">{t('wager')}:</div>
+                    <div className="accordion-title">{t.wager}:</div>
                     <div className="accordion-value">
                       {renderValueOrDash(offer.wager)}
                     </div>
                   </div>
                   <div className="accordion-item">
-                    <div className="accordion-title">{t('bonusCode')}:</div>
+                    <div className="accordion-title">{t.bonusCode}:</div>
                     <div className="accordion-value">
                       {renderValueOrDash(offer.bonus_code)}
                     </div>
@@ -146,7 +146,7 @@ const BonusDetailsSection: React.FC = () => {
                     <div className="accordion-title last-cell"></div>
                     <div className="accordion-value last-cell">
                       <Button
-                        text={t('getTheBonus')}
+                        text={t.getTheBonus}
                         variant="secondary"
                         useNavigation={true}
                         url={`/casino/${offer.id}`}
@@ -162,7 +162,7 @@ const BonusDetailsSection: React.FC = () => {
       </div>
 
       <Button
-        text={t('refresh')}
+        text={t.refresh}
         variant="primary"
         onClick={shuffleOffers}
         useNavigation={false}

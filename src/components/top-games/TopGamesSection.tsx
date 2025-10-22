@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from 'next-intl';
+import { useStaticT } from "@/utils/i18n";
 import { Game } from "@/types/game";
 import Button from "../__common__/button/Button";
 import PlayIcon from "../__common__/PlayIcon";
@@ -17,11 +17,11 @@ interface TopGamesProps {
 
 export default function TopGamesSection({ games, lang }: TopGamesProps) {
   const [hoveredGame, setHoveredGame] = useState<number | null>(null);
-  const t = useTranslations();
+  const { t } = useStaticT();
 
   return (
     <section id="games" className={`${styles.topGames} container`}>
-      <h2 className="h2-heading">{t('topGames')}</h2>
+      <h2 className="h2-heading">{t.topGames || "Top Games"}</h2>
       <div className={styles.grid}>
         {games.map((game, idx) => (
           <div
@@ -67,14 +67,14 @@ export default function TopGamesSection({ games, lang }: TopGamesProps) {
                   <span className={styles.playIcon}>
                     <PlayIcon />
                   </span>
-                  {t('playNow')}
+                  {t.playNow || "Play Now"}
                 </p>
               </div>
             </Link>
           </div>
         ))}
       </div>
-      <Button text={t('allGames')} variant="primary" openInNewTab />
+      <Button text={t.allGames || "All Games"} variant="primary" openInNewTab />
     </section>
   );
 }

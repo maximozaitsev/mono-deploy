@@ -1,6 +1,5 @@
 import aboutImage from "../../../public/block-images/laptop.webp";
-import { getContentData, getProjectGeo } from "../../utils/serverContent";
-import { getTranslations } from 'next-intl/server';
+import { getContentData, getStaticTranslations, getProjectGeo } from "../../utils/serverContent";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
 import { replaceCurrentYear } from "../../utils/yearReplacer";
 import { PROJECT_NAME } from "@/config/projectConfig";
@@ -11,20 +10,21 @@ interface AboutSectionProps {
 }
 
 export default async function AboutSection({ lang }: AboutSectionProps) {
-  const [content, t] = await Promise.all([
+  const [content, translations] = await Promise.all([
     getContentData(lang),
-    getTranslations()
+    getStaticTranslations(lang)
   ]);
 
   if (!content?.intro) return null;
 
   const projectGeo = getProjectGeo(lang);
+  const t = translations;
 
   return (
     <section className="about-section section">
       <div className="container">
         <h2 className="h2-heading white">
-          {replaceCurrentYear(`${PROJECT_NAME} ${t('overview')}`)}
+          {replaceCurrentYear(`${PROJECT_NAME} ${t.overview || "Overview"}`)}
         </h2>
 
         <div className="about-content">

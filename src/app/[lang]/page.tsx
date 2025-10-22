@@ -1,6 +1,7 @@
-import Header from "../components/header/Header";
-import WelcomeSection from "../components/welcome/WelcomeSection";
-import H1Section from "../components/h1-block/H1Block";
+import Header from "@/components/header/Header";
+import { notFound, redirect } from "next/navigation";
+import WelcomeSection from "@/components/welcome/WelcomeSection";
+import H1Section from "@/components/h1-block/H1Block";
 import TopCasinosSection from "@/components/top-casinos/TopCasinosSection";
 import TopGamesSection from "@/components/top-games/TopGamesSection";
 import BonusDetailsSection from "@/components/bonus-details/BonusDetailsSection";
@@ -14,11 +15,14 @@ import PromotionsSection from "@/components/promotion/PromotionsSection";
 import AdvantageSection from "@/components/advantage/AdvantageSection";
 import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
-
 import fs from "node:fs/promises";
 import path from "node:path";
 
-export default async function HomePage() {
+export default async function LangPage({
+  params,
+}: {
+  params: { lang: string };
+}) {
   type LangManifest = { languages: string[]; defaultLang: string };
   let manifest: LangManifest = { languages: [], defaultLang: "en" };
   try {
@@ -43,29 +47,38 @@ export default async function HomePage() {
     manifest = { languages: ["en"], defaultLang: "en" };
   }
 
-  const currentLang = manifest.defaultLang;
+  const { languages, defaultLang } = manifest;
+  const lang = params.lang;
+
+  if (lang === defaultLang) {
+    redirect("/");
+  }
+  if (!languages.includes(lang)) {
+    notFound();
+  }
+
   const games = await fetchGames("gambling");
 
   return (
     <main>
       <Header
-        languages={manifest.languages}
-        defaultLang={manifest.defaultLang}
-        currentLang={currentLang}
+        languages={languages}
+        defaultLang={defaultLang}
+        currentLang={lang}
       />
       <WelcomeSection />
-      <H1Section lang={currentLang} />
+      <H1Section lang={lang} />
       <TopCasinosSection />
       <BonusDetailsSection />
-      <AboutSection lang={currentLang} />
-      <TopGamesSection games={games} lang={currentLang} />
-      <AdvantageSection lang={currentLang} />
-      <LoginSection lang={currentLang} />
-      <AppSection lang={currentLang} />
-      <FAQSection lang={currentLang} />
-      <GamesToPlay lang={currentLang} />
-      <SupportSection lang={currentLang} />
-      <PromotionsSection lang={currentLang} />
+      <AboutSection lang={lang} />
+      <TopGamesSection games={games} lang={lang} />
+      <AdvantageSection lang={lang} />
+      <LoginSection lang={lang} />
+      <AppSection lang={lang} />
+      <FAQSection lang={lang} />
+      <GamesToPlay lang={lang} />
+      <SupportSection lang={lang} />
+      <PromotionsSection lang={lang} />
       <Footer />
     </main>
   );

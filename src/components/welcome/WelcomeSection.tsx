@@ -4,13 +4,13 @@ import { useEffect, useState } from "react";
 import Button from "../__common__/button/Button";
 import styles from "./WelcomeSection.module.scss";
 import { fetchOffers } from "@/utils/fetchOffers";
-import { useTranslations } from 'next-intl';
+import { useStaticT } from "@/utils/i18n";
 
 export default function WelcomeSection() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
   const [firstOfferId, setFirstOfferId] = useState<string>("");
   const [offerLink, setOfferLink] = useState<string>("");
-  const t = useTranslations();
+  const { t } = useStaticT();
 
   useEffect(() => {
     const fetchWelcomeBonus = async () => {
@@ -46,14 +46,14 @@ export default function WelcomeSection() {
           <div className={styles.welcomeContent}>
             <div className={styles.welcomeText}>
               <h2 className={styles.offerText}>
-                {t('exclusiveWelcomeOfferOf')} {welcomeBonus}
+                {t.exclusiveWelcomeOfferOf} {welcomeBonus}
               </h2>
               <h2 className={styles.bonusText}>
-                {t('exclusiveWelcomeOfferOf')} {welcomeBonus}
+                {t.exclusiveWelcomeOfferOf} {welcomeBonus}
               </h2>
               {(firstOfferId || offerLink) && (
                 <Button
-                  text={t('claimBonus')}
+                  text={t.claimBonus}
                   variant="primary"
                   useNavigation={true}
                   url={firstOfferId ? `/casino/${firstOfferId}` : offerLink}
