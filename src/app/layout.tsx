@@ -11,10 +11,6 @@ import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
-import LanguageDebugLogger from "@/components/debug/LanguageDebugLogger";
-
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -61,15 +57,10 @@ function extractMeta(obj: Record<string, any>): {
   return { title: title || "Title", description: description || "Description" };
 }
 
-const contentMetaCache = new Map<string, { title: string; description: string }>();
-
 async function readContentMeta(
   lang: string,
   baseUrl?: string
 ): Promise<{ title: string; description: string }> {
-  const key = `content:${lang}`;
-  const cached = contentMetaCache.get(key);
-  if (cached) return cached;
   const fsPath = path.join(
     process.cwd(),
     "public",
@@ -79,7 +70,6 @@ async function readContentMeta(
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
   if (fromFs.title !== "Title" || fromFs.description !== "Description") {
-    contentMetaCache.set(key, fromFs);
     return fromFs;
   }
 
@@ -90,9 +80,7 @@ async function readContentMeta(
       });
       if (res.ok) {
         const json = (await res.json()) as Record<string, any>;
-        const extracted = extractMeta(json);
-        contentMetaCache.set(key, extracted);
-        return extracted;
+        return extractMeta(json);
       }
     } catch {}
   }
@@ -100,20 +88,15 @@ async function readContentMeta(
   return { title: "Title", description: "Description" };
 }
 
-let manifestCache: { languages: string[]; defaultLang: string } | null = null;
-
 async function readManifest(): Promise<{
   languages: string[];
   defaultLang: string;
 }> {
-  if (manifestCache) return manifestCache;
   const p = path.join(process.cwd(), "public", "content", "languages.json");
-  const m = await readJSON<{ languages: string[]; defaultLang: string }>(p, {
+  return readJSON<{ languages: string[]; defaultLang: string }>(p, {
     languages: [],
     defaultLang: "au",
   });
-  manifestCache = m;
-  return m;
 }
 
 export const viewport: Viewport = {
@@ -144,16 +127,6 @@ export async function generateMetadata(): Promise<Metadata> {
   const { ogLocale } = getLocaleMeta(defaultLang);
   const siteName = PROJECT_NAME;
   const ogImage = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
-
-  try {
-    console.log("[SSR] root generateMetadata", {
-      baseUrl,
-      defaultLang,
-      languagesCount: languages.length,
-      canonical,
-      ogLocale,
-    });
-  } catch {}
 
   return {
     manifest: "/manifest.json",
@@ -209,33 +182,16 @@ export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const { languages, defaultLang } = await readManifest();
-  const h = headers();
-  const headerGeo = h.get("x-geo")?.toLowerCase() || "";
-  const path = h.get("x-url-pathname") || "/";
-  const seg = path.split("/").filter(Boolean)[0]?.toLowerCase() || "";
-  const cookieGeo = cookies().get("lang")?.value?.toLowerCase() || "";
-  const candidate = headerGeo || seg || cookieGeo;
-  const geo = languages.includes(candidate) ? candidate : defaultLang;
+  const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
+  const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
 
-  try {
-    const debugHeaders = {
-      "x-matched-path": h.get("x-matched-path") || null,
-      "rsc-path": h.get("rsc") || null,
-      "next-url": h.get("next-url") || null,
-    };
-    console.log("[SSR] RootLayout", { headerGeo: headerGeo || null, path, seg, selectedGeo: geo, htmlLang, debugHeaders });
-  } catch {}
-
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
-        {/* SSR debug: selected geo/lang */}
-        <meta name="x-debug-geo" content={geo} />
-        <meta name="x-debug-lang" content={htmlLang} />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
@@ -255,10 +211,7 @@ export default async function RootLayout({
           media="(max-width: 768px)"
         />
       </head>
-      <body className={fontVars}>
-        <LanguageDebugLogger />
-        {children}
-      </body>
+      <body className={fontVars}>{children}</body>
     </html>
   );
 }

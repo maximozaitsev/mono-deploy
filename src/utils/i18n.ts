@@ -49,13 +49,6 @@ export function setActiveLang(lang: string, manifest: LangManifest): string {
   }
 
   applyLocaleToDOM(finalLang);
-  try {
-    // Debug: log client-side language switch
-    console.debug("[i18n] setActiveLang", {
-      requested: lang,
-      final: finalLang,
-    });
-  } catch {}
   return finalLang;
 }
 
@@ -81,9 +74,6 @@ export function getActiveLang(
 export function initLocale(manifest: LangManifest, pathname?: string): string {
   const lang = getActiveLang(manifest, pathname);
   applyLocaleToDOM(lang);
-  try {
-    console.debug("[i18n] initLocale", { pathname, lang });
-  } catch {}
   return lang;
 }
 
@@ -228,9 +218,6 @@ export function applyLocaleToDOM(langOrGeo: string) {
   );
 
   document.documentElement.setAttribute("lang", htmlLang);
-  try {
-    console.debug("[i18n] applyLocaleToDOM", { htmlLang, ogLocale, languageName });
-  } catch {}
 
   let metaOg = document.querySelector('meta[property="og:locale"]');
   if (!metaOg) {
