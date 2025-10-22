@@ -190,7 +190,7 @@ export default async function RootLayout({
     .join(" ");
 
   return (
-    <html lang={htmlLang} suppressHydrationWarning>
+    <html lang="x-default" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -206,6 +206,8 @@ export default async function RootLayout({
                   document.documentElement.setAttribute('lang', 'es-ES');
                 } else if (path.startsWith('/it')) {
                   document.documentElement.setAttribute('lang', 'it-IT');
+                } else {
+                  document.documentElement.setAttribute('lang', 'en');
                 }
               })();
             `,
