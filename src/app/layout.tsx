@@ -195,33 +195,12 @@ export default async function RootLayout({
     .map((f) => f.variable)
     .join(" ");
 
+  // Force correct lang for /de routes
+  const finalLang = seg === 'de' ? 'de-DE' : htmlLang;
+
   return (
-    <html lang={htmlLang} suppressHydrationWarning>
+    <html lang={finalLang} suppressHydrationWarning>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Nuclear option: replace entire HTML before validator
-              (function() {
-                const path = window.location.pathname;
-                let targetLang = 'en';
-                if (path.startsWith('/de')) targetLang = 'de-DE';
-                else if (path.startsWith('/fr')) targetLang = 'fr-FR';
-                else if (path.startsWith('/es')) targetLang = 'es-ES';
-                else if (path.startsWith('/it')) targetLang = 'it-IT';
-                
-                // Replace the entire document HTML
-                const currentHtml = document.documentElement.outerHTML;
-                const newHtml = currentHtml.replace(/<html[^>]*>/, '<html lang="' + targetLang + '">');
-                if (newHtml !== currentHtml) {
-                  document.open();
-                  document.write(newHtml);
-                  document.close();
-                }
-              })();
-            `,
-          }}
-        />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
