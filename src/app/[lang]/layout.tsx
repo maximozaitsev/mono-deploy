@@ -26,9 +26,13 @@ async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
   }
 }
 
+let manifestCache: LangManifest | null = null;
 async function readManifest(): Promise<LangManifest> {
+  if (manifestCache) return manifestCache;
   const p = path.join(process.cwd(), "public", "content", "languages.json");
-  return readJSON<LangManifest>(p, { languages: [], defaultLang: "au" });
+  const m = await readJSON<LangManifest>(p, { languages: [], defaultLang: "au" });
+  manifestCache = m;
+  return m;
 }
 
 function extractMeta(obj: Record<string, any>): {
@@ -59,10 +63,15 @@ function extractMeta(obj: Record<string, any>): {
   return { title: title || "Title", description: description || "Description" };
 }
 
+const contentMetaCache = new Map<string, { title: string; description: string }>();
+
 async function readContentMeta(
   lang: string,
   baseUrl?: string
 ): Promise<{ title: string; description: string }> {
+  const key = `content:${lang}`;
+  const cached = contentMetaCache.get(key);
+  if (cached) return cached;
   const fsPath = path.join(
     process.cwd(),
     "public",
@@ -73,6 +82,7 @@ async function readContentMeta(
   const fsJson = await readJSON<Record<string, any>>(fsPath, {});
   const fromFs = extractMeta(fsJson);
   if (fromFs.title !== "Title" || fromFs.description !== "Description") {
+    contentMetaCache.set(key, fromFs);
     return fromFs;
   }
 
@@ -83,7 +93,9 @@ async function readContentMeta(
       });
       if (res.ok) {
         const json = (await res.json()) as Record<string, any>;
-        return extractMeta(json);
+        const extracted = extractMeta(json);
+        contentMetaCache.set(key, extracted);
+        return extracted;
       }
     } catch {}
   }
@@ -131,6 +143,15 @@ export async function generateMetadata({
   alternatesLanguages["x-default"] = baseUrl ? `${baseUrl}/` : "/";
 
   const ogImage = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
+
+  try {
+    console.log("[SSR] [lang] generateMetadata", {
+      baseUrl,
+      currentGeo,
+      canonical,
+      ogLocale,
+    });
+  } catch {}
 
   return {
     manifest: "/manifest.json",
