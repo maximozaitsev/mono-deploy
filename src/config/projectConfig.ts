@@ -1,9 +1,3 @@
-import languagesJson from "../../public/content/languages.json";
-import { getProjectGeoForLang } from "../utils/localeMap";
-
-export const PROJECT_NAME = "Parimatch Casino";
-export const PROJECT_URL = "parimatch-online.com";
-
-export const PROJECT_GEO = getProjectGeoForLang(
-  languagesJson.defaultLang || "au"
-);
+export const PROJECT_NAME = "WinOlympia Casino";
+export const PROJECT_GEO = "United Kingdom";
+export const PROJECT_URL = "winolympia-online.com";

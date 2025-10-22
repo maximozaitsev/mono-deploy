@@ -1,47 +1,50 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import Logo from "../header/Logo";
-import { PROJECT_NAME } from "@/config/projectConfig";
-import { getProjectGeoForLang } from "@/utils/localeMap";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./Footer.module.scss";
-import { usePathname } from "next/navigation";
-import manifestData from "../../../public/content/languages.json";
-
-type LangManifest = { languages: string[]; defaultLang: string };
-const manifest = manifestData as LangManifest;
 
 const partnerLogos = [
-  { name: "MasterCard", src: "/footer-assets/master-card.svg", w: 54, h: 32 },
-  { name: "Visa", src: "/footer-assets/visa.svg", w: 90, h: 32 },
-  { name: "Neteller", src: "/footer-assets/neteller.svg", w: 180, h: 32 },
-  { name: "Skrill", src: "/footer-assets/skrill.svg", w: 96, h: 32 },
-  { name: "Bitcoin", src: "/footer-assets/btc.svg", w: 32, h: 32 },
-  { name: "Litecoin", src: "/footer-assets/ltc.svg", w: 32, h: 32 },
-  { name: "Ethereum", src: "/footer-assets/eth.svg", w: 32, h: 32 },
-  { name: "GPWA", src: "/footer-assets/gpwa.svg", w: 90, h: 32 },
-  { name: "GambleAware", src: "/footer-assets/gambleaware.svg", w: 128, h: 16 },
-  { name: "GamCare", src: "/footer-assets/gamcare.svg", w: 116, h: 32 },
-  { name: "Gambling-Therapy", src: "/footer-assets/gambling-therapy.svg", w: 78, h: 28 },
-  { name: "Gamban", src: "/footer-assets/gamban.svg", w: 108, h: 32 },
-  { name: "BetBlocker", src: "/footer-assets/betblocker.svg", w: 200, h: 32 },
-  { name: "iTech-Labs", src: "/footer-assets/itech-labs.svg", w: 32, h: 32 },
-  { name: "eCOGRA", src: "/footer-assets/ecogra.svg", w: 108, h: 32 },
+  { name: "MasterCard", src: "/footer-assets/master-card.svg" },
+  { name: "Visa", src: "/footer-assets/visa.svg" },
+  { name: "Neteller", src: "/footer-assets/neteller.svg" },
+  { name: "Skrill", src: "/footer-assets/skrill.svg" },
+  { name: "Bitcoin", src: "/footer-assets/btc.svg" },
+  { name: "Litecoin", src: "/footer-assets/ltc.svg" },
+  { name: "Ethereum", src: "/footer-assets/eth.svg" },
+  { name: "GPWA", src: "/footer-assets/gpwa.svg" },
+  { name: "GambleAware", src: "/footer-assets/gambleaware.svg" },
+  { name: "GamCare", src: "/footer-assets/gamcare.svg" },
+  { name: "Gambling-Therapy", src: "/footer-assets/gambling-therapy.svg" },
+  { name: "Gamban", src: "/footer-assets/gamban.svg" },
+  { name: "BetBlocker", src: "/footer-assets/betblocker.svg" },
+  { name: "iTech-Labs", src: "/footer-assets/itech-labs.svg" },
+  { name: "eCOGRA", src: "/footer-assets/ecogra.svg" },
 ];
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [hoveredLogoIndex, setHoveredLogoIndex] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  const pathname = usePathname();
-  const firstSeg = pathname?.split("/").filter(Boolean)[0] || "";
-  const currentLang = manifest.languages.includes(firstSeg)
-    ? firstSeg
-    : manifest.defaultLang;
-  const dynamicGeo = getProjectGeoForLang(currentLang);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    try {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch {
+      window.scrollTo(0, 0);
+    }
   };
+
+  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
 
   return (
     <footer className={styles.footer}>
@@ -52,35 +55,57 @@ export default function Footer() {
               {start === 0 && (
                 <div className={styles.logoWrapper}>
                   <Logo
-                    desktopSrc="/logo.svg"
-                    mobileSrc="/logo-mobile.svg"
-                    alt={`${PROJECT_NAME} Logo`}
+                    svgPath={logoPath}
+                    gradientIdPrefix="footer"
                     onClick={scrollToTop}
-                    loading="lazy"
+                    alt={`${PROJECT_NAME} Logo`}
                   />
                 </div>
               )}
-
               {partnerLogos
                 .slice(start, start + (start === 0 ? 7 : 5))
                 .map((logo, idx) => {
                   const index = start + idx;
+                  const sizeMap: Record<string, { w: number; h: number; wm: number; hm: number }> = {
+                    "MasterCard": { w: 54, h: 32, wm: 38, hm: 22 },
+                    "Visa": { w: 96, h: 32, wm: 66, hm: 22 },
+                    "Neteller": { w: 180, h: 32, wm: 124, hm: 22 },
+                    "Skrill": { w: 96, h: 32, wm: 66, hm: 22 },
+                    "Bitcoin": { w: 32, h: 32, wm: 22, hm: 22 },
+                    "Litecoin": { w: 32, h: 32, wm: 22, hm: 22 },
+                    "Ethereum": { w: 32, h: 32, wm: 22, hm: 22 },
+                    "GPWA": { w: 90, h: 32, wm: 62, hm: 22 },
+                    "GambleAware": { w: 128, h: 16, wm: 94, hm: 12 },
+                    "GamCare": { w: 116, h: 32, wm: 80, hm: 22 },
+                    "Gambling-Therapy": { w: 78, h: 28, wm: 56, hm: 20 },
+                    "Gamban": { w: 108, h: 32, wm: 74, hm: 22 },
+                    "BetBlocker": { w: 200, h: 32, wm: 138, hm: 22 },
+                    "iTech-Labs": { w: 32, h: 32, wm: 22, hm: 22 },
+                    "eCOGRA": { w: 108, h: 32, wm: 74, hm: 22 },
+                  };
+                  const s = sizeMap[logo.name] ?? { w: 96, h: 32, wm: 80, hm: 24 };
                   return (
-                    <img
+                    <Image
                       key={index}
                       src={logo.src}
                       alt={logo.name}
-                      decoding="async"
+                      title={`${logo.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
                       className={styles.partnerLogo}
-                      loading="lazy"
-                      title={`${logo.name} in ${PROJECT_NAME} ${dynamicGeo}`}
+                      style={{
+                        mixBlendMode:
+                          hoveredLogoIndex === index ? "normal" : "luminosity",
+                      }}
+                      onMouseEnter={() => setHoveredLogoIndex(index)}
+                      onMouseLeave={() => setHoveredLogoIndex(null)}
+                      width={isMobile ? s.wm : s.w}
+                      height={isMobile ? s.hm : s.h}
+                      quality={100}
                     />
                   );
                 })}
             </div>
           ))}
         </div>
-
         <p className={styles.copyright}>
           <span>18+</span>{" "}
           <span className={styles.hiddenSpan}>Copyright © {currentYear}</span>
