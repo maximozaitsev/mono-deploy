@@ -6,7 +6,7 @@ import "../styles/variables.scss";
 
 import fs from "node:fs/promises";
 import path from "node:path";
-import { headers, cookies } from "next/headers";
+import { headers } from "next/headers";
 import { getLocaleMeta } from "../utils/localeMap";
 import { PROJECT_NAME } from "../config/projectConfig";
 import { replaceCurrentYear } from "../utils/yearReplacer";
@@ -183,23 +183,15 @@ export default async function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const { languages, defaultLang } = await readManifest();
   const h = headers();
-  const path = h.get("x-url-pathname") || "/";
-  const seg = path.split("/").filter(Boolean)[0]?.toLowerCase() || "";
-  const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
-  
-  // Determine language from URL segment or cookie
-  const candidate = seg || cookieLang;
-  const geo = languages.includes(candidate) ? candidate : defaultLang;
+  const seg = (h.get("x-geo-lang") || "").toLowerCase();
+  const geo = languages.includes(seg) ? seg : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
 
-  // Force correct lang for /de routes
-  const finalLang = seg === 'de' ? 'de-DE' : htmlLang;
-
   return (
-    <html lang={finalLang} suppressHydrationWarning>
+    <html lang={htmlLang} suppressHydrationWarning>
       <head>
         <link
           rel="preconnect"
