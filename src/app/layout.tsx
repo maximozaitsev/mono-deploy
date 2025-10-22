@@ -182,37 +182,22 @@ export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const { languages, defaultLang } = await readManifest();
+  const h = headers();
+  const path = h.get("x-url-pathname") || "/";
+  const seg = path.split("/").filter(Boolean)[0]?.toLowerCase() || "";
   const cookieLang = cookies().get("lang")?.value?.toLowerCase() || "";
-  const geo = languages.includes(cookieLang) ? cookieLang : defaultLang;
+  
+  // Determine language from URL segment or cookie
+  const candidate = seg || cookieLang;
+  const geo = languages.includes(candidate) ? candidate : defaultLang;
   const { htmlLang } = getLocaleMeta(geo);
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
 
   return (
-    <html lang="x-default" suppressHydrationWarning>
+    <html lang={htmlLang} suppressHydrationWarning>
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Override lang attribute immediately for validator compliance
-              (function() {
-                const path = window.location.pathname;
-                if (path.startsWith('/de')) {
-                  document.documentElement.setAttribute('lang', 'de-DE');
-                } else if (path.startsWith('/fr')) {
-                  document.documentElement.setAttribute('lang', 'fr-FR');
-                } else if (path.startsWith('/es')) {
-                  document.documentElement.setAttribute('lang', 'es-ES');
-                } else if (path.startsWith('/it')) {
-                  document.documentElement.setAttribute('lang', 'it-IT');
-                } else {
-                  document.documentElement.setAttribute('lang', 'en');
-                }
-              })();
-            `,
-          }}
-        />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"

@@ -168,21 +168,5 @@ export default function LangLayout({
   children: React.ReactNode;
   params: { lang: string };
 }) {
-  const { htmlLang } = getLocaleMeta(params.lang);
-  
-  return (
-    <html lang={htmlLang} suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Ensure correct lang for validator
-              document.documentElement.setAttribute('lang', '${htmlLang}');
-            `,
-          }}
-        />
-      </head>
-      <body>{children}</body>
-    </html>
-  );
+  return <>{children}</>;
 }
