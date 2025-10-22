@@ -192,6 +192,25 @@ export default async function RootLayout({
   return (
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Override lang attribute immediately for validator compliance
+              (function() {
+                const path = window.location.pathname;
+                if (path.startsWith('/de')) {
+                  document.documentElement.setAttribute('lang', 'de-DE');
+                } else if (path.startsWith('/fr')) {
+                  document.documentElement.setAttribute('lang', 'fr-FR');
+                } else if (path.startsWith('/es')) {
+                  document.documentElement.setAttribute('lang', 'es-ES');
+                } else if (path.startsWith('/it')) {
+                  document.documentElement.setAttribute('lang', 'it-IT');
+                }
+              })();
+            `,
+          }}
+        />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
@@ -209,22 +228,6 @@ export default async function RootLayout({
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Override lang attribute for validator compliance
-              if (window.location.pathname.startsWith('/de')) {
-                document.documentElement.setAttribute('lang', 'de-DE');
-              } else if (window.location.pathname.startsWith('/fr')) {
-                document.documentElement.setAttribute('lang', 'fr-FR');
-              } else if (window.location.pathname.startsWith('/es')) {
-                document.documentElement.setAttribute('lang', 'es-ES');
-              } else if (window.location.pathname.startsWith('/it')) {
-                document.documentElement.setAttribute('lang', 'it-IT');
-              }
-            `,
-          }}
         />
       </head>
       <body className={fontVars}>{children}</body>
