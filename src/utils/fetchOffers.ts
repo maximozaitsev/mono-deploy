@@ -19,11 +19,17 @@ export async function fetchOffers(): Promise<HomePageProps> {
       const offers = (res?.offers ?? []) as Offer[];
       const updatedOffers = offers.map((offer) => {
         const logoUrl = `https://api.adkey-seo.com/storage/images/offers/${offer.logo}`;
+        const logoMobile = `${logoUrl}?format=webp&width=160&height=64`;
+        const logoDesktop = `${logoUrl}?format=webp&width=190&height=76`;
         return {
           ...offer,
           logo: logoUrl,
-          optimizedLogo: `${logoUrl}?format=webp&width=160&height=64`,
-        };
+          // keep backward compat
+          optimizedLogo: logoMobile,
+          // new responsive variants
+          logoMobile,
+          logoDesktop,
+        } as Offer & { logoMobile: string; logoDesktop: string; optimizedLogo?: string };
       });
       return { country: website.country_name ?? "", offers: updatedOffers };
     });

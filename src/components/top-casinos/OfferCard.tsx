@@ -14,43 +14,25 @@ interface OfferCardProps {
   lang?: string;
 }
 
-function buildSrcSet(url: string): { src: string; srcSet: string } {
-  try {
-    const u = new URL(url);
-    // Base 1x
-    const oneX = new URL(u.toString());
-    oneX.searchParams.set("format", "webp");
-    oneX.searchParams.set("width", "160");
-    oneX.searchParams.set("height", "64");
-    // 2x for retina
-    const twoX = new URL(u.toString());
-    twoX.searchParams.set("format", "webp");
-    twoX.searchParams.set("width", "320");
-    twoX.searchParams.set("height", "128");
-    return { src: oneX.toString(), srcSet: `${oneX.toString()} 1x, ${twoX.toString()} 2x` };
-  } catch {
-    return { src: url, srcSet: `${url} 1x` };
-  }
-}
-
 const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false, lang = "en" }) => {
   const t = useTranslations();
   const currentLang = lang;
 
-  const logoBase = (offer as any).optimizedLogo || offer.logo;
-  const { src: logoSrc, srcSet: logoSrcSet } = buildSrcSet(logoBase);
+  const logoMobile = (offer as any).logoMobile || (offer as any).optimizedLogo || `${offer.logo}?format=webp&width=160&height=64`;
+  const logoDesktop = (offer as any).logoDesktop || `${offer.logo}?format=webp&width=190&height=76`;
   const geo = getProjectGeoForLang(currentLang);
 
   return (
     <div className={styles.offerCard}>
       <img
         className={styles.logo}
-        src={logoSrc}
-        srcSet={logoSrcSet}
+        src={logoMobile}
+        srcSet={`${logoMobile} 160w, ${logoDesktop} 190w`}
+        sizes="(max-width: 768px) 160px, 190px"
         alt={offer.name}
         title={`${offer.name} in ${PROJECT_NAME} ${geo}`}
-        width={160}
-        height={64}
+        width={190}
+        height={76}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
         fetchPriority={priority ? "high" : "auto"}

@@ -225,18 +225,7 @@ export default async function RootLayout({
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
-        <link
-          rel="preload"
-          as="image"
-          href="/block-images/welcome.webp"
-          media="(min-width: 769px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/block-images/welcome-mobile.webp"
-          media="(max-width: 768px)"
-        />
+        <link rel="preload" as="image" href="/block-images/welcome-mobile.webp" media="(max-width: 768px)" />
       </head>
       <body className={fontVars}>
         <NextIntlClientProvider messages={messages as any} locale={locale} timeZone={"UTC"}>

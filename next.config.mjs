@@ -36,6 +36,13 @@ const withPWA = nextPWA({
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig = {
+  experimental: {
+    optimizePackageImports: [
+      "react",
+      "react-dom",
+      "next-intl",
+    ],
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
