@@ -2,6 +2,7 @@
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
+import createNextIntlPlugin from "next-intl/plugin";
 const url = "parimatch-online.com";
 
 const withPWA = nextPWA({
@@ -32,6 +33,7 @@ const withPWA = nextPWA({
   },
 });
 
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig = {
   images: {
@@ -69,4 +71,4 @@ const nextConfig = {
   },
 };
 
-export default withPWA(nextConfig);
+export default withNextIntl(withPWA(nextConfig));
