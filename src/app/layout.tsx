@@ -13,6 +13,7 @@ import { getLocaleMeta } from "@/utils/localeMap";
 import * as fonts from "./fonts";
 import HtmlLangSync from "@/components/HtmlLangSync";
 import { getLocale } from "next-intl/server";
+import { cookies } from "next/headers";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -180,20 +181,31 @@ export default async function RootLayout({
     }
   } catch {}
 
+  // Cookie override (middleware sets NEXT_LOCALE)
+  try {
+    const cookieLocale = cookies().get("NEXT_LOCALE")?.value?.toLowerCase() || "";
+    if (supportedLocales.includes(cookieLocale)) {
+      locale = cookieLocale;
+      resolvedBy = "cookie";
+    }
+    try { console.log("[layout] cookieLocale=", cookieLocale); } catch {}
+  } catch {}
+
   // Deterministic override from request path (validator/SSR-safe)
   try {
     const h = headers();
     const requestPath =
+      h.get("x-forwarded-uri") ||
+      h.get("next-url") ||
       h.get("x-invoke-path") ||
       h.get("x-matched-path") ||
-      h.get("next-url") ||
-      h.get("x-forwarded-uri") ||
       "/";
     const seg = String(requestPath).split("/").filter(Boolean)[0]?.toLowerCase() || "";
     if (supportedLocales.includes(seg)) {
       locale = seg;
       resolvedBy = "path";
     }
+    try { console.log("[layout] requestPath=", requestPath, "seg=", seg); } catch {}
   } catch {}
 
   const messages = await getDictionary(locale);
