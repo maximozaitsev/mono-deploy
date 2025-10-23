@@ -17,8 +17,8 @@ export async function fetchGames(type: string): Promise<Game[]> {
         return {
           ...game,
           image: upstream,
-          optimizedImage: `/api/img?src=${encodeURIComponent(upstream)}&w=264&h=142&f=webp&q=82`,
-          optimizedImage2x: `/api/img?src=${encodeURIComponent(upstream)}&w=528&h=284&f=webp&q=82`,
+          optimizedImage: `/api/img?src=${encodeURIComponent(upstream)}&w=264&h=142&f=webp&q=82&fit=cover`,
+          optimizedImage2x: `/api/img?src=${encodeURIComponent(upstream)}&w=528&h=284&f=webp&q=82&fit=cover`,
         } as Game & { optimizedImage2x: string };
       });
     });

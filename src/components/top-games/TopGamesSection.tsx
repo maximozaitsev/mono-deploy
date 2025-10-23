@@ -39,6 +39,7 @@ export default function TopGamesSection({ games, lang }: TopGamesProps) {
             >
               <div className={styles.imageWrap}>
                 <img
+                  className={styles.gameImage}
                   src={(game as any).optimizedImage || game.image}
                   srcSet={`${(game as any).optimizedImage || game.image} 264w, ${(game as any).optimizedImage2x || (game as any).optimizedImage || game.image} 528w`}
                   sizes="(max-width: 768px) 100vw, 264px"
@@ -49,7 +50,6 @@ export default function TopGamesSection({ games, lang }: TopGamesProps) {
                   loading={idx < 2 ? "eager" : "lazy"}
                   decoding="async"
                   fetchPriority={idx < 2 ? "high" : "auto"}
-                  style={{ width: "100%", height: "auto", objectFit: "cover" }}
                 />
               </div>
               <div

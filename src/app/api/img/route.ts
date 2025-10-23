@@ -15,6 +15,7 @@ export async function GET(req: Request) {
     const h = Number(searchParams.get("h") || "0");
     const format = (searchParams.get("f") || "webp").toLowerCase();
     const q = Math.max(1, Math.min(100, Number(searchParams.get("q") || "82")));
+    const fitParam = (searchParams.get("fit") || "contain").toLowerCase();
 
     if (!src) return badRequest("Missing src");
     if (!w || !h) return badRequest("Missing or invalid w/h");
@@ -39,13 +40,21 @@ export async function GET(req: Request) {
     const arrayBuffer = await res.arrayBuffer();
     const input = Buffer.from(arrayBuffer);
 
-    let pipeline = sharp(input).resize({
+    const fitAllowed = new Set(["cover", "contain", "fill", "inside", "outside"]);
+    const fit = (fitAllowed.has(fitParam) ? fitParam : "contain") as keyof sharp.FitEnum;
+
+    let resizeOpts: sharp.ResizeOptions = {
       width: w,
       height: h,
-      fit: "contain",
+      fit,
+      position: "centre",
       withoutEnlargement: true,
-      background: { r: 0, g: 0, b: 0, alpha: 0 },
-    });
+    };
+    if (fit === "contain") {
+      resizeOpts.background = { r: 0, g: 0, b: 0, alpha: 0 };
+    }
+
+    let pipeline = sharp(input).resize(resizeOpts);
 
     let contentType = "image/webp";
     switch (format) {

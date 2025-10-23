@@ -51,8 +51,8 @@
   content-visibility: auto;
   contain-intrinsic-size: 264px 142px;
   backface-visibility: hidden;
-  max-width: 264px;
-  max-height: 142px;
+  width: 100%;
+  aspect-ratio: 264 / 142;
 
   &:hover {
     will-change: transform;
@@ -62,7 +62,8 @@
 
   .gameImage {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
   }
 
@@ -172,8 +173,6 @@
   }
 
   @media (max-width: 1200px) {
-    max-width: none;
-    max-height: none;
   }
 }
 
