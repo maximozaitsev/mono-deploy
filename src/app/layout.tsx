@@ -124,17 +124,28 @@ export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
   const canonical = baseUrl ? `${baseUrl}/` : "/";
   const ogImage = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
+
+  // Derive title/description for the default locale to ensure <title> exists on '/'
+  const defaultGeo = defaultLocale;
+  const { title, description } = await readContentMeta(defaultGeo, baseUrl);
+
   return {
+    title,
+    description,
     manifest: "/manifest.json",
     alternates: { canonical },
     openGraph: {
       type: "website",
       url: canonical,
       images: [{ url: ogImage, width: 1200, height: 630, alt: "" }],
+      title,
+      description,
     },
     twitter: {
       card: "summary_large_image",
       images: [ogImage],
+      title,
+      description,
     },
     icons: {
       icon: [
