@@ -1,21 +1,38 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Offer } from "../../types/offer";
 import OfferCard from "./OfferCard";
 import Button from "../__common__/button/Button";
 import "./TopCasinosSection.scss";
 import { useTranslations } from "next-intl";
+import { fetchOffers } from "@/utils/fetchOffers";
 
 type Props = {
-  country: string;
-  offers: Offer[];
   lang: string;
 };
 
-const TopCasinosSection: React.FC<Props> = ({ country, offers, lang }) => {
+const TopCasinosSection: React.FC<Props> = ({ lang }) => {
+  const [country, setCountry] = useState<string>("");
+  const [offers, setOffers] = useState<Offer[]>([]);
   const [showAll, setShowAll] = useState<boolean>(false);
   const t = useTranslations();
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const { country, offers } = await fetchOffers();
+        if (!cancelled) {
+          setCountry(country);
+          setOffers(offers);
+        }
+      } catch {}
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const visibleOffers = showAll ? offers : offers.slice(0, 8);
 
