@@ -12,7 +12,6 @@
     "@ducanh2912/next-pwa": "^10.2.9",
     "@svgr/webpack": "^8.1.0",
     "axios": "^1.7.7",
-    "next-intl": "^3.16.2",
     "next": "^14.2.11",
     "react": "^18",
     "react-dom": "^18",
