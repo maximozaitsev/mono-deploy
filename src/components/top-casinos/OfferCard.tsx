@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Button from "../__common__/button/Button";
 import { Offer } from "../../types/offer";
 import { PROJECT_NAME } from "@/config/projectConfig";
@@ -15,24 +14,43 @@ interface OfferCardProps {
   lang?: string;
 }
 
+function buildSrcSet(url: string): { src: string; srcSet: string } {
+  try {
+    const u = new URL(url);
+    // Base 1x
+    const oneX = new URL(u.toString());
+    oneX.searchParams.set("format", "webp");
+    oneX.searchParams.set("width", "160");
+    oneX.searchParams.set("height", "64");
+    // 2x for retina
+    const twoX = new URL(u.toString());
+    twoX.searchParams.set("format", "webp");
+    twoX.searchParams.set("width", "320");
+    twoX.searchParams.set("height", "128");
+    return { src: oneX.toString(), srcSet: `${oneX.toString()} 1x, ${twoX.toString()} 2x` };
+  } catch {
+    return { src: url, srcSet: `${url} 1x` };
+  }
+}
+
 const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false, lang = "en" }) => {
   const t = useTranslations();
   const currentLang = lang;
 
-  const logoSrc = (offer as any).optimizedLogo || offer.logo;
+  const logoBase = (offer as any).optimizedLogo || offer.logo;
+  const { src: logoSrc, srcSet: logoSrcSet } = buildSrcSet(logoBase);
   const geo = getProjectGeoForLang(currentLang);
 
   return (
     <div className={styles.offerCard}>
-      <Image
+      <img
         className={styles.logo}
         src={logoSrc}
+        srcSet={logoSrcSet}
         alt={offer.name}
         title={`${offer.name} in ${PROJECT_NAME} ${geo}`}
         width={160}
         height={64}
-        sizes="160px"
-        priority={priority}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
         fetchPriority={priority ? "high" : "auto"}
