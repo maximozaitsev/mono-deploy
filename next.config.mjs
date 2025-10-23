@@ -2,7 +2,8 @@
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
-const url = "winolympia-online.com";
+import createNextIntlPlugin from "next-intl/plugin";
+const url = "parimatch-online.com";
 
 const withPWA = nextPWA({
   dest: "public",
@@ -31,6 +32,9 @@ const withPWA = nextPWA({
     ],
   },
 });
+
+// Register next-intl plugin to provide the i18n config (src/i18n.ts)
+const withNextIntl = createNextIntlPlugin("./src/i18n.ts");
 
 const nextConfig = {
   images: {
@@ -68,4 +72,4 @@ const nextConfig = {
   },
 };
 
-export default withPWA(nextConfig);
+export default withNextIntl(withPWA(nextConfig));

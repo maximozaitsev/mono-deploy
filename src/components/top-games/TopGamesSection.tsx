@@ -1,24 +1,25 @@
 "use client";
 
 import { useState } from "react";
-import { Game } from "@/types/game";
 import Button from "../__common__/button/Button";
-import PlayIcon from "../__common__/PlayIcon";
-import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./TopGamesSection.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Game } from "@/types/game";
 
 interface TopGamesProps {
   games: Game[];
+  lang: string;
 }
 
-export default function TopGamesSection({ games }: TopGamesProps) {
+export default function TopGamesSection({ games, lang }: TopGamesProps) {
   const [hoveredGame, setHoveredGame] = useState<number | null>(null);
+  const t = useTranslations();
 
   return (
     <section id="games" className={`${styles.topGames} container`}>
-      <h2 className="h2-heading">Top Games</h2>
+      <h2 className="h2-heading">{t("topGames", { default: "Top Games" })}</h2>
       <div className={styles.grid}>
         {games.map((game, idx) => (
           <div
@@ -38,7 +39,7 @@ export default function TopGamesSection({ games }: TopGamesProps) {
                 <Image
                   src={(game as any).optimizedImage || game.image}
                   alt={game.name}
-                  title={`${game.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
+                  title={`${game.name}`}
                   width={264}
                   height={142}
                   sizes="
@@ -61,17 +62,14 @@ export default function TopGamesSection({ games }: TopGamesProps) {
               >
                 <h3 className={styles.gameName}>{game.name}</h3>
                 <p className={styles.playButton}>
-                  <span className={styles.playIcon}>
-                    <PlayIcon />
-                  </span>
-                  Play Now
+                  {t("playNow", { default: "Play Now" })}
                 </p>
               </div>
             </Link>
           </div>
         ))}
       </div>
-      <Button text="All Games" variant="primary" openInNewTab />
+      <Button text={t("allGames", { default: "All Games" })} variant="primary" openInNewTab />
     </section>
   );
 }

@@ -1,9 +1,12 @@
 "use client";
 
 import React from "react";
+import { usePathname } from "next/navigation";
 import { useNavigateWithPreloader } from "../../../utils/navigationUtils";
 import "./Button.scss";
 import { fetchOffers } from "../../../utils/fetchOffers";
+
+type LanguagesManifest = { languages: string[]; defaultLang: string };
 
 type ButtonProps = {
   text: string;
@@ -29,6 +32,9 @@ const Button: React.FC<ButtonProps> = ({
   url,
 }) => {
   const { handleNavigation } = useNavigateWithPreloader();
+
+  const pathname = usePathname();
+  const displayText = text;
 
   const handleClick = async () => {
     if (openInNewTab) {
@@ -93,7 +99,7 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       disabled={disabled}
     >
-      {text}
+      {displayText}
     </button>
   );
 };
