@@ -7,13 +7,13 @@ import "../styles/variables.scss";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { headers } from "next/headers";
-import { NextIntlClientProvider } from "next-intl";
 import { locales as supportedLocales, defaultLocale } from "@/config/i18n";
 import { getLocaleMeta } from "@/utils/localeMap";
 import * as fonts from "./fonts";
 import HtmlLangSync from "@/components/HtmlLangSync";
 import { getLocale } from "next-intl/server";
 import { cookies } from "next/headers";
+import { NextIntlClientProvider } from "next-intl";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -102,6 +102,17 @@ async function readManifest(): Promise<{
   });
 }
 
+async function getDictionary(lang: string) {
+  try {
+    const staticPath = path.join(process.cwd(), "public", "content", "static.json");
+    const raw = await fs.readFile(staticPath, "utf-8");
+    const json = JSON.parse(raw) as Record<string, Record<string, string>>;
+    return json[lang] || {};
+  } catch {
+    return {};
+  }
+}
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -159,17 +170,6 @@ export default async function RootLayout({
     .map((f) => f.variable)
     .join(" ");
 
-  async function getDictionary(lang: string) {
-    try {
-      const staticPath = path.join(process.cwd(), "public", "content", "static.json");
-      const raw = await fs.readFile(staticPath, "utf-8");
-      const json = JSON.parse(raw) as Record<string, Record<string, string>>;
-      return json[lang] || {};
-    } catch {
-      return {};
-    }
-  }
-
   // Use next-intl to resolve locale for SSR
   let locale = defaultLocale;
   let resolvedBy = "default";
@@ -208,12 +208,13 @@ export default async function RootLayout({
     try { console.log("[layout] requestPath=", requestPath, "seg=", seg); } catch {}
   } catch {}
 
-  const messages = await getDictionary(locale);
   const { htmlLang } = getLocaleMeta(locale);
   try {
     // eslint-disable-next-line no-console
     console.log("[layout] getLocale=", locale, "resolvedBy=", resolvedBy);
   } catch {}
+
+  const messages = await getDictionary(locale);
 
   return (
     <html lang={htmlLang} suppressHydrationWarning>

@@ -6,6 +6,8 @@ import { headers } from "next/headers";
 import { getLocaleMeta } from "@/utils/localeMap";
 import { PROJECT_NAME } from "@/config/projectConfig";
 import { replaceCurrentYear } from "@/utils/yearReplacer";
+import { NextIntlClientProvider } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -165,12 +167,31 @@ export async function generateMetadata({
   };
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
-  return <>{children}</>;
+  const locale = (params.locale || "").toLowerCase();
+  // Ensure next-intl picks up the locale for this request
+  setRequestLocale(locale);
+
+  // Load static UI translations from public/content/static.json
+  let messages: Record<string, string> = {};
+  try {
+    const staticPath = path.join(process.cwd(), "public", "content", "static.json");
+    const raw = await fs.readFile(staticPath, "utf-8");
+    const json = JSON.parse(raw) as Record<string, Record<string, string>>;
+    messages = json[locale] || {};
+  } catch {}
+
+  return (
+    <NextIntlClientProvider messages={messages as any} locale={locale} timeZone={"UTC"}>
+      {children}
+    </NextIntlClientProvider>
+  );
 }
 
 
