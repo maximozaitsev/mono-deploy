@@ -103,9 +103,7 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  try {
-    console.log("[[locale]/layout] params.locale=", params.locale);
-  } catch {}
+  
   const baseUrl = getBaseUrl();
   const currentGeo = (params.locale || "").toLowerCase();
 

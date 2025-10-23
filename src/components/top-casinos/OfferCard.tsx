@@ -12,11 +12,12 @@ import { useTranslations } from "next-intl";
 interface OfferCardProps {
   offer: Offer;
   priority?: boolean;
+  lang?: string;
 }
 
-const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false }) => {
+const OfferCard: React.FC<OfferCardProps> = ({ offer, priority = false, lang = "en" }) => {
   const t = useTranslations();
-  const currentLang = typeof window !== "undefined" ? window.location.pathname.split("/").filter(Boolean)[0] || "en" : "en";
+  const currentLang = lang;
 
   const logoSrc = (offer as any).optimizedLogo || offer.logo;
   const geo = getProjectGeoForLang(currentLang);

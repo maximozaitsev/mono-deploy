@@ -16,7 +16,9 @@ const withPWA = nextPWA({
     disableDevLogs: true,
     runtimeCaching: [
       {
-        urlPattern: new RegExp(`^${url}/_next/static/.*`),
+        urlPattern: ({ url: u }) =>
+          (u.origin === self.location.origin || u.hostname === url) &&
+          /\/_next\/static\//.test(u.pathname),
         handler: "CacheFirst",
         options: {
           cacheName: "static-resources",
@@ -26,7 +28,9 @@ const withPWA = nextPWA({
         },
       },
       {
-        urlPattern: new RegExp(`^${url}/_next/static/.*?/buildManifest\\.js$`),
+        urlPattern: ({ url: u }) =>
+          (u.origin === self.location.origin || u.hostname === url) &&
+          /\/_next\/static\/.*?\/buildManifest\.js$/.test(u.pathname),
         handler: "NetworkOnly",
       },
     ],

@@ -6,10 +6,9 @@ import { PROJECT_NAME } from "@/config/projectConfig";
 import { getProjectGeoForLang } from "@/utils/localeMap";
 import styles from "./Footer.module.scss";
 import { usePathname } from "next/navigation";
-import manifestData from "../../../public/content/languages.json";
+import { locales as languages, defaultLocale } from "@/config/i18n";
 
-type LangManifest = { languages: string[]; defaultLang: string };
-const manifest = manifestData as LangManifest;
+const manifest = { languages, defaultLang: defaultLocale };
 
 const partnerLogos = [
   { name: "MasterCard", src: "/footer-assets/master-card.svg", w: 54, h: 32 },
@@ -34,7 +33,7 @@ export default function Footer() {
 
   const pathname = usePathname();
   const firstSeg = pathname?.split("/").filter(Boolean)[0] || "";
-  const currentLang = manifest.languages.includes(firstSeg)
+  const currentLang = manifest.languages.includes(firstSeg as any)
     ? firstSeg
     : manifest.defaultLang;
   const dynamicGeo = getProjectGeoForLang(currentLang);

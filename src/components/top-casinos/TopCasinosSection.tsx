@@ -1,43 +1,30 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Offer } from "../../types/offer";
 import OfferCard from "./OfferCard";
 import Button from "../__common__/button/Button";
-import { fetchOffers } from "@/utils/fetchOffers";
 import "./TopCasinosSection.scss";
 import { useTranslations } from "next-intl";
 
-const TopCasinosSection: React.FC = () => {
-  const [country, setCountry] = useState<string>("");
-  const [offers, setOffers] = useState<Offer[]>([]);
+type Props = {
+  country: string;
+  offers: Offer[];
+  lang: string;
+};
+
+const TopCasinosSection: React.FC<Props> = ({ country, offers, lang }) => {
   const [showAll, setShowAll] = useState<boolean>(false);
-
   const t = useTranslations();
-
-  useEffect(() => {
-    const loadOffers = async () => {
-      const { country, offers } = await fetchOffers();
-      setCountry(country);
-      setOffers(offers);
-    };
-
-    loadOffers();
-  }, []);
 
   const visibleOffers = showAll ? offers : offers.slice(0, 8);
 
   return (
-    <section
-      id="top-casinos-section"
-      className="top-casinos-section section container"
-    >
-      <h2 className="h2-heading">
-        {t("topCasinos", { default: "Top Casinos" })} {country}
-      </h2>
+    <section id="top-casinos-section" className="top-casinos-section section container">
+      <h2 className="h2-heading">{t("topCasinos", { default: "Top Casinos" })} {country}</h2>
       <div className="offers-grid">
         {visibleOffers.map((offer, idx) => (
-          <OfferCard key={offer.id} offer={offer} priority={idx < 2} />
+          <OfferCard key={offer.id} offer={offer} priority={idx < 2} lang={lang} />
         ))}
       </div>
       {!showAll && (

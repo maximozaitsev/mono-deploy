@@ -14,6 +14,7 @@ import PromotionsSection from "@/components/promotion/PromotionsSection";
 import AdvantageSection from "@/components/advantage/AdvantageSection";
 import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
+import { fetchOffers } from "@/utils/fetchOffers";
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -37,7 +38,10 @@ export default async function LocalePage({ params }: { params: { locale: string 
     manifest = { languages: ["en"], defaultLang: "en" };
   }
 
-  const games = await fetchGames("gambling");
+  const [games, offersData] = await Promise.all([
+    fetchGames("gambling"),
+    fetchOffers(),
+  ]);
 
   return (
     <main>
@@ -48,7 +52,7 @@ export default async function LocalePage({ params }: { params: { locale: string 
       />
       <WelcomeSection />
       <H1Section lang={currentLang} />
-      <TopCasinosSection />
+      <TopCasinosSection country={offersData.country} offers={offersData.offers} lang={currentLang} />
       <BonusDetailsSection />
       <AboutSection lang={currentLang} />
       <TopGamesSection games={games} lang={currentLang} />

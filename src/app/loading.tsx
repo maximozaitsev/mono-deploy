@@ -3,17 +3,14 @@
 import Spinner from "@/components/__common__/loader/Spinner";
 import Header from "@/components/header/Header";
 import { usePathname } from "next/navigation";
-import manifestData from "../../public/content/languages.json";
-
-type LangManifest = { languages: string[]; defaultLang: string };
+import { locales as languages, defaultLocale } from "@/config/i18n";
 
 export default function RootLoading() {
   const pathname = usePathname();
-  const { languages = [], defaultLang = "en" } =
-    (manifestData as LangManifest) || {};
+  const defaultLang = defaultLocale;
 
   const firstSeg = pathname?.split("/").filter(Boolean)[0] || "";
-  const currentLang = languages.includes(firstSeg) ? firstSeg : defaultLang;
+  const currentLang = languages.includes(firstSeg as any) ? firstSeg : defaultLang;
 
   return (
     <div

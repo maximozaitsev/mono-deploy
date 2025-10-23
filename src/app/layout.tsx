@@ -195,7 +195,6 @@ export default async function RootLayout({
       locale = cookieLocale;
       resolvedBy = "cookie";
     }
-    try { console.log("[layout] cookieLocale=", cookieLocale); } catch {}
   } catch {}
   try {
     const h = headers();
@@ -210,13 +209,10 @@ export default async function RootLayout({
       locale = seg;
       resolvedBy = "path";
     }
-    try { console.log("[layout] requestPath=", requestPath, "seg=", seg); } catch {}
   } catch {}
 
   const { htmlLang } = getLocaleMeta(locale);
-  try {
-    console.log("[layout] getLocale=", locale, "resolvedBy=", resolvedBy);
-  } catch {}
+  
 
   const messages = await getDictionary(locale);
 
