@@ -171,20 +171,36 @@ export default async function RootLayout({
 
   // Use next-intl to resolve locale for SSR
   let locale = defaultLocale;
+  let resolvedBy = "default";
   try {
-    locale = await getLocale();
-    if (!supportedLocales.includes(locale)) {
-      locale = defaultLocale;
+    const intlLocale = await getLocale();
+    if (supportedLocales.includes(intlLocale)) {
+      locale = intlLocale;
+      resolvedBy = "next-intl";
     }
-  } catch {
-    locale = defaultLocale;
-  }
+  } catch {}
+
+  // Deterministic override from request path (validator/SSR-safe)
+  try {
+    const h = headers();
+    const requestPath =
+      h.get("x-invoke-path") ||
+      h.get("x-matched-path") ||
+      h.get("next-url") ||
+      h.get("x-forwarded-uri") ||
+      "/";
+    const seg = String(requestPath).split("/").filter(Boolean)[0]?.toLowerCase() || "";
+    if (supportedLocales.includes(seg)) {
+      locale = seg;
+      resolvedBy = "path";
+    }
+  } catch {}
 
   const messages = await getDictionary(locale);
   const { htmlLang } = getLocaleMeta(locale);
   try {
     // eslint-disable-next-line no-console
-    console.log("[layout] getLocale=", locale);
+    console.log("[layout] getLocale=", locale, "resolvedBy=", resolvedBy);
   } catch {}
 
   return (
