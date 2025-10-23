@@ -38,19 +38,14 @@ export default function TopGamesSection({ games, lang }: TopGamesProps) {
               aria-label={`${game.name} – open offer`}
             >
               <div className={styles.imageWrap}>
-                <Image
+                <img
                   src={(game as any).optimizedImage || game.image}
+                  srcSet={`${(game as any).optimizedImage || game.image} 264w, ${(game as any).optimizedImage2x || (game as any).optimizedImage || game.image} 528w`}
+                  sizes="(max-width: 768px) 100vw, 264px"
                   alt={game.name}
                   title={`${game.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
                   width={264}
                   height={142}
-                  sizes="
-                    (min-width: 1200px) 25vw,
-                    (min-width: 890px) 33vw,
-                    (min-width: 768px) 50vw,
-                    100vw
-                  "
-                  priority={idx < 2}
                   loading={idx < 2 ? "eager" : "lazy"}
                   decoding="async"
                   fetchPriority={idx < 2 ? "high" : "auto"}

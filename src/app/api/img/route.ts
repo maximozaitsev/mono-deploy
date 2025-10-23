@@ -73,7 +73,7 @@ export async function GET(req: Request) {
       status: 200,
       headers: {
         "Content-Type": contentType,
-        "Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate=604800",
+        "Cache-Control": "public, max-age=31536000, immutable",
       },
     });
   } catch (e: any) {
