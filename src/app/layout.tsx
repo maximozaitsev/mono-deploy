@@ -9,10 +9,10 @@ import path from "node:path";
 import { headers } from "next/headers";
 import { NextIntlClientProvider } from "next-intl";
 import { locales as supportedLocales, defaultLocale } from "@/config/i18n";
-import { cookies } from "next/headers";
 import { getLocaleMeta } from "@/utils/localeMap";
 import * as fonts from "./fonts";
 import HtmlLangSync from "@/components/HtmlLangSync";
+import { getLocale } from "next-intl/server";
 
 function getBaseUrl(): string | undefined {
   if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
@@ -169,14 +169,17 @@ export default async function RootLayout({
     }
   }
 
-  const h = headers();
-  const pathLocale = h.get("x-invoke-path")
-    || h.get("x-matched-path")
-    || h.get("next-url")
-    || h.get("x-forwarded-uri")
-    || "/";
-  const seg = String(pathLocale).split("/").filter(Boolean)[0]?.toLowerCase() || "";
-  const locale = supportedLocales.includes(seg) ? seg : defaultLocale;
+  // Use next-intl to resolve locale for SSR
+  let locale = defaultLocale;
+  try {
+    locale = await getLocale();
+    if (!supportedLocales.includes(locale)) {
+      locale = defaultLocale;
+    }
+  } catch {
+    locale = defaultLocale;
+  }
+
   const messages = await getDictionary(locale);
   const { htmlLang } = getLocaleMeta(locale);
   try {
