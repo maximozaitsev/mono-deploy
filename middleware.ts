@@ -1,4 +1,3 @@
-// middleware.ts
 import createMiddleware from "next-intl/middleware";
 import { locales, defaultLocale } from "@/config/i18n";
 import type { NextRequest } from "next/server";
@@ -15,7 +14,6 @@ export default function middleware(req: NextRequest) {
     const pathname = req.nextUrl.pathname || "/";
     const seg = pathname.split("/").filter(Boolean)[0]?.toLowerCase() || "";
     const locale = locales.includes(seg) ? seg : defaultLocale;
-    // Persist locale for SSR consumers
     res.cookies.set("NEXT_LOCALE", locale, { path: "/" });
   } catch {}
   return res;

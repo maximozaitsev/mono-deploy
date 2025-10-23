@@ -1,4 +1,3 @@
-// src/app/[locale]/page.tsx
 import Header from "@/components/header/Header";
 import WelcomeSection from "@/components/welcome/WelcomeSection";
 import H1Section from "@/components/h1-block/H1Block";

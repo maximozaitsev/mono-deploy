@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Button from "../__common__/button/Button";
+import PlayIcon from "../__common__/PlayIcon";
+import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import styles from "./TopGamesSection.module.scss";
 import Image from "next/image";
 import Link from "next/link";
@@ -39,7 +41,7 @@ export default function TopGamesSection({ games, lang }: TopGamesProps) {
                 <Image
                   src={(game as any).optimizedImage || game.image}
                   alt={game.name}
-                  title={`${game.name}`}
+                  title={`${game.name} in ${PROJECT_NAME} ${PROJECT_GEO}`}
                   width={264}
                   height={142}
                   sizes="
@@ -62,6 +64,9 @@ export default function TopGamesSection({ games, lang }: TopGamesProps) {
               >
                 <h3 className={styles.gameName}>{game.name}</h3>
                 <p className={styles.playButton}>
+                  <span className={styles.playIcon}>
+                    <PlayIcon />
+                  </span>{" "}
                   {t("playNow", { default: "Play Now" })}
                 </p>
               </div>
@@ -69,7 +74,11 @@ export default function TopGamesSection({ games, lang }: TopGamesProps) {
           </div>
         ))}
       </div>
-      <Button text={t("allGames", { default: "All Games" })} variant="primary" openInNewTab />
+      <Button
+        text={t("allGames", { default: "All Games" })}
+        variant="primary"
+        openInNewTab
+      />
     </section>
   );
 }

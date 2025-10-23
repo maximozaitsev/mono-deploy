@@ -1,4 +1,3 @@
-// src/app/[locale]/loading.tsx
 import Spinner from "@/components/__common__/loader/Spinner";
 
 export default function Loading() {

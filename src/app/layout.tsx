@@ -124,8 +124,6 @@ export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
   const canonical = baseUrl ? `${baseUrl}/` : "/";
   const ogImage = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
-
-  // Derive title/description for the default locale to ensure <title> exists on '/'
   const defaultGeo = defaultLocale;
   const { title, description } = await readContentMeta(defaultGeo, baseUrl);
 
@@ -181,7 +179,6 @@ export default async function RootLayout({
     .map((f) => f.variable)
     .join(" ");
 
-  // Use next-intl to resolve locale for SSR
   let locale = defaultLocale;
   let resolvedBy = "default";
   try {
@@ -192,7 +189,6 @@ export default async function RootLayout({
     }
   } catch {}
 
-  // Cookie override (middleware sets NEXT_LOCALE)
   try {
     const cookieLocale = cookies().get("NEXT_LOCALE")?.value?.toLowerCase() || "";
     if (supportedLocales.includes(cookieLocale)) {
@@ -201,8 +197,6 @@ export default async function RootLayout({
     }
     try { console.log("[layout] cookieLocale=", cookieLocale); } catch {}
   } catch {}
-
-  // Deterministic override from request path (validator/SSR-safe)
   try {
     const h = headers();
     const requestPath =
@@ -221,7 +215,6 @@ export default async function RootLayout({
 
   const { htmlLang } = getLocaleMeta(locale);
   try {
-    // eslint-disable-next-line no-console
     console.log("[layout] getLocale=", locale, "resolvedBy=", resolvedBy);
   } catch {}
 

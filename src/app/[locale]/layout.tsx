@@ -104,7 +104,6 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   try {
-    // eslint-disable-next-line no-console
     console.log("[[locale]/layout] params.locale=", params.locale);
   } catch {}
   const baseUrl = getBaseUrl();
@@ -175,10 +174,8 @@ export default async function LocaleLayout({
   params: { locale: string };
 }) {
   const locale = (params.locale || "").toLowerCase();
-  // Ensure next-intl picks up the locale for this request
   setRequestLocale(locale);
-
-  // Load static UI translations from public/content/static.json
+  
   let messages: Record<string, string> = {};
   try {
     const staticPath = path.join(process.cwd(), "public", "content", "static.json");
