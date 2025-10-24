@@ -9,13 +9,3 @@ export const roboto = localFont({
   preload: true,
   adjustFontFallback: false,
 });
-
-export const montserrat = localFont({
-  src: [
-    { path: "../../public/fonts/Montserrat/Montserrat-VAR.woff2", weight: "100 900", style: "normal" }
-  ],
-  variable: "--font-secondary",
-  display: "swap",
-  preload: true,
-  adjustFontFallback: false,
-});

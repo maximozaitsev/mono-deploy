@@ -13,13 +13,12 @@ export async function fetchGames(type: string): Promise<Game[]> {
         `https://api.adkey-seo.com/api/website/get-games/${type}`
       );
       return games.map((game) => {
-        const upstream = `https://api.adkey-seo.com/storage/images/games/${game.image}`;
+        const imageUrl = `https://api.adkey-seo.com/storage/images/games/${game.image}`;
         return {
           ...game,
-          image: upstream,
-          optimizedImage: `/api/img?src=${encodeURIComponent(upstream)}&w=264&h=142&f=webp&q=82&fit=cover`,
-          optimizedImage2x: `/api/img?src=${encodeURIComponent(upstream)}&w=528&h=284&f=webp&q=82&fit=cover`,
-        } as Game & { optimizedImage2x: string };
+          image: imageUrl,
+          optimizedImage: `${imageUrl}?format=webp&width=332&height=179`,
+        };
       });
     });
     return data;
