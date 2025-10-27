@@ -9,3 +9,13 @@ export const roboto = localFont({
   preload: true,
   adjustFontFallback: false,
 });
+
+export const gilroy = localFont({
+  src: [
+    { path: "../../public/fonts/Gilroy/Gilroy-Bold.woff", weight: "800", style: "normal" },
+  ],
+  variable: "--font-secondary",
+  display: "swap",
+  preload: true,
+  adjustFontFallback: false,
+});
