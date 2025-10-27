@@ -10,9 +10,9 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const gilroy = localFont({
+export const montserrat = localFont({
   src: [
-    { path: "../../public/fonts/Gilroy/Gilroy-Bold.woff", weight: "800", style: "normal" },
+    { path: "../../public/fonts/Montserrat/Montserrat-VAR.woff2", weight: "100 900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",

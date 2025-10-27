@@ -2,7 +2,8 @@
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
-const url = "playfrank-casino.com";
+import createNextIntlPlugin from "next-intl/plugin";
+const url = "parimatch-online.com";
 
 const withPWA = nextPWA({
   dest: "public",
@@ -32,7 +33,16 @@ const withPWA = nextPWA({
   },
 });
 
+const withNextIntl = createNextIntlPlugin();
+
 const nextConfig = {
+  experimental: {
+    optimizePackageImports: [
+      "react",
+      "react-dom",
+      "next-intl",
+    ],
+  },
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -51,10 +61,21 @@ const nextConfig = {
       {
         source: "/(.*)",
         headers: [
-          {
-            key: "Referrer-Policy",
-            value: "no-referrer",
-          },
+          { key: "Referrer-Policy", value: "no-referrer" },
+        ],
+      },
+      // Long-term immutable cache for static public assets
+      {
+        source: "/(block-images|icons|footer-assets|fonts)/(.*)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      // Next.js build assets
+      {
+        source: "/_next/static/(.*)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
       },
     ];
@@ -68,4 +89,4 @@ const nextConfig = {
   },
 };
 
-export default withPWA(nextConfig);
+export default withNextIntl(withPWA(nextConfig));
