@@ -1,5 +1,6 @@
-@import "../../styles/colors.scss";
-@import "../../styles/variables.scss";
+@import "@/styles/colors.scss";
+@import "@/styles/variables.scss";
+@import "@/styles/_fonts-bridge.scss";
 
 .h1Section {
   display: flex;
@@ -11,14 +12,15 @@
   }
 
   h1 {
-    font-size: 28px;
+    font-family: $font-secondary;
     font-weight: $font-weight-black;
-    color: $text-color-primary;
+    color: $text-color-secondary;
+    font-size: 28px;
     text-transform: uppercase;
 
     background-color: $color-background-third;
     border-radius: $border-radius;
-    padding: 23px;
+    padding: 32px;
     max-width: 1120px;
     width: 100%;
     text-align: center;
@@ -35,7 +37,7 @@
       font-size: 20px;
       margin: 0 40px;
       max-width: 496px;
-      padding: 16px;
+      padding: 26px;
     }
 
     @media (max-width: 420px) {

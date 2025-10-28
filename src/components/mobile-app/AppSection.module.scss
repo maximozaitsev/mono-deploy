@@ -1,5 +1,5 @@
-@use "../../styles/colors" as *;
-@use "../../styles/lists" as lists;
+@use "@/styles/colors" as *;
+@use "@/styles/lists" as lists;
 
 .appSection {
   background: $color-background-secondary;
@@ -60,9 +60,8 @@
 
     .image {
       position: absolute;
-      top: -50px;
+      top: -0px;
       right: -13px;
-      scale: 0.9;
       overflow: hidden;
       height: auto;
     }

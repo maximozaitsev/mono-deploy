@@ -1,0 +1,13 @@
+.preloaderPage {
+  height: calc(100vh + 268px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
