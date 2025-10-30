@@ -57,7 +57,8 @@
     color: $text-color-button-small;
     border: 4px solid transparent;
     background: linear-gradient(#ced4db, #ced4db) padding-box,
-      linear-gradient(180deg, #fb6d12 0%, #df2d2a 100%);
+      linear-gradient(180deg, #fb6d12 0%, #df2d2a 100%) border-box;
+    background-clip: padding-box, border-box;
 
     overflow: hidden;
     line-height: 0.93;
