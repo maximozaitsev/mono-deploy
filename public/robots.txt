@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://karamba-online.com/
-Sitemap: https://karamba-online.com/sitemap.xml
+Host: https://plazaroyal-casino.com/
+Sitemap: https://plazaroyal-casino.com/sitemap.xml

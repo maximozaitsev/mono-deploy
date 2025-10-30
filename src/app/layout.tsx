@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "karamba-online.com";
-const ogTitle = "Karamba Casino Review UK 2025 – Slots That Hit, UK-friendly Banking";
-const ogSiteName = "Karamba Casino";
-const metaDescription = "A straight-talk UK review of Karamba in 2025: what the welcome really gives you, how sign-up and cash-outs feel, the slot/live mix, mobile flow, support, and the real pros/cons.";
+const url = "plazaroyal-casino.com";
+const ogTitle = "Plaza Royal Casino UK – Bonuses, Rewards, and Free Spins Guide";
+const ogSiteName = "Plaza Royal Casino";
+const metaDescription = "Plaza Royal Casino UK brings new players generous bonuses and free spins across top-rated games. Explore the welcome offer, loyalty rewards, and daily promotions for continuous excitement and value — join today and elevate your online casino experience.";
 
 const locale = "en-GB";
 const language = "English";
