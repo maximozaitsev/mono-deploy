@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 import { getLocaleMeta } from "@/utils/localeMap";
 
 interface HtmlLangSyncProps {
-  defaultLocale?: string;
+  defaultLocale: string;
 }
 
-export default function HtmlLangSync({ defaultLocale = "en" }: HtmlLangSyncProps) {
+export default function HtmlLangSync({ defaultLocale }: HtmlLangSyncProps) {
   const pathname = usePathname();
 
   useEffect(() => {
