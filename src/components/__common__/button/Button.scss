@@ -1,6 +1,6 @@
-@import "@/styles/colors.scss";
-@import "@/styles/variables.scss";
+@import "../../../styles/colors.scss";
 @import "@/styles/_fonts-bridge.scss";
+@import "../../../styles/variables.scss";
 
 .button {
   cursor: pointer;
@@ -48,19 +48,17 @@
   }
 
   &.secondary {
-    position: relative;
-    z-index: 0;
+    // outline: 3px solid;
+    // outline-offset: -3px;
+    // outline-color: #2e2e2e3b;
+
     border-radius: $button-small-border-radius;
     padding: 0 32px;
-    height: 52px;
-    font-size: 20px;
+    background: $color-button-small;
     color: $text-color-button-small;
-    border: 4px solid transparent;
-    background: linear-gradient(#ced4db, #ced4db) padding-box,
-      linear-gradient(180deg, #fb6d12 0%, #df2d2a 100%) border-box;
-    background-clip: padding-box, border-box;
-
-    overflow: hidden;
+    font-size: 20px;
+    border: none;
+    height: 52px;
     line-height: 0.93;
 
     @media (max-width: 768px) {
@@ -77,5 +75,11 @@
 
   &:hover {
     transform: scale(1.07);
+  }
+
+  @media (max-width: 768px) {
+    &:hover {
+      transform: none;
+    }
   }
 }

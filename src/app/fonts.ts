@@ -10,10 +10,10 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const poppins = localFont({
+export const noto_sans = localFont({
   src: [
-    { path: "../../public/fonts/Poppins/Poppins-700.woff2", weight: "700", style: "normal" },
-    { path: "../../public/fonts/Poppins/Poppins-900.woff2", weight: "900", style: "normal" }
+    { path: "../../public/fonts/NotoSans/NotoSans-700.woff2", weight: "700", style: "normal" },
+    { path: "../../public/fonts/NotoSans/NotoSans-900.woff2", weight: "900", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",

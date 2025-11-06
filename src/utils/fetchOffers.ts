@@ -18,12 +18,16 @@ export async function fetchOffers(): Promise<HomePageProps> {
       const website = res?.website ?? {};
       const offers = (res?.offers ?? []) as Offer[];
       const updatedOffers = offers.map((offer) => {
-        const logoUrl = `https://api.adkey-seo.com/storage/images/offers/${offer.logo}`;
+        const upstream = `https://api.adkey-seo.com/storage/images/offers/${offer.logo}`;
+        const logoMobile = `/api/img?src=${encodeURIComponent(upstream)}&w=160&h=64&f=webp&q=82`;
+        const logoDesktop = `/api/img?src=${encodeURIComponent(upstream)}&w=190&h=76&f=webp&q=82`;
         return {
           ...offer,
-          logo: logoUrl,
-          optimizedLogo: `${logoUrl}?format=webp&width=160&height=64`,
-        };
+          logo: upstream,
+          optimizedLogo: logoMobile,
+          logoMobile,
+          logoDesktop,
+        } as Offer & { logoMobile: string; logoDesktop: string; optimizedLogo?: string };
       });
       return { country: website.country_name ?? "", offers: updatedOffers };
     });

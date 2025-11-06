@@ -1,5 +1,5 @@
-@import "@/styles/colors.scss";
-@import "@/styles/variables.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 .topGames {
   display: flex;
@@ -25,8 +25,8 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
   gap: 24px;
-  width: 100%;
 
   @media (max-width: 890px) {
     grid-template-columns: repeat(3, 1fr);
@@ -34,7 +34,6 @@
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px 16px;
   }
 
   @media (max-width: 480px) {
@@ -44,25 +43,28 @@
 
 .gameItem {
   position: relative;
+  overflow: hidden;
   border-radius: $border-radius;
   border: $border-width solid $border-color;
   transition: transform 0.5s ease;
+  contain: content;
+  content-visibility: auto;
+  contain-intrinsic-size: 264px 142px;
   backface-visibility: hidden;
   width: 100%;
   aspect-ratio: 264 / 142;
 
   &:hover {
     will-change: transform;
-    transform: scale(1.03);
+    transform: scale(1.05);
     outline: 2px solid rgba(0, 0, 0, 0.4);
   }
 
-  .imageWrap {
+  .gameImage {
     width: 100%;
     height: 100%;
-    position: relative;
-    border-radius: $border-radius;
-    overflow: hidden;
+    object-fit: cover;
+    display: block;
   }
 
   .overlay {
@@ -80,7 +82,6 @@
     opacity: 0;
     transition: opacity 0.5s ease;
     padding: 10px;
-    border-radius: $border-radius;
 
     &.visible {
       opacity: 1;
@@ -169,10 +170,6 @@
         }
       }
     }
-  }
-
-  @media (max-width: 1200px) {
-    aspect-ratio: 264 / 142;
   }
 }
 
