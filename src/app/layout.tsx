@@ -245,7 +245,7 @@ export default async function RootLayout({
       </head>
       <body className={fontVars}>
         <NextIntlClientProvider messages={messages as any} locale={locale} timeZone={"UTC"}>
-          <HtmlLangSync />
+          <HtmlLangSync defaultLocale={defaultLocale} />
           {children}
         </NextIntlClientProvider>
       </body>

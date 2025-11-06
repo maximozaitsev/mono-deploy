@@ -4,18 +4,23 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { getLocaleMeta } from "@/utils/localeMap";
 
-export default function HtmlLangSync() {
+interface HtmlLangSyncProps {
+  defaultLocale?: string;
+}
+
+export default function HtmlLangSync({ defaultLocale = "en" }: HtmlLangSyncProps) {
   const pathname = usePathname();
 
   useEffect(() => {
     try {
       const seg =
         (pathname || "/").split("/").filter(Boolean)[0]?.toLowerCase() || "";
-      const { htmlLang } = getLocaleMeta(seg || "en");
+      const locale = seg || defaultLocale;
+      const { htmlLang } = getLocaleMeta(locale);
       document.documentElement.setAttribute("lang", htmlLang);
-      document.cookie = `NEXT_LOCALE=${seg || "en"}; path=/`;
+      document.cookie = `NEXT_LOCALE=${locale}; path=/`;
     } catch {}
-  }, [pathname]);
+  }, [pathname, defaultLocale]);
 
   return null;
 }
