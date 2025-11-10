@@ -1,20 +1,20 @@
 // colors
-$color-background: #06112e;
-$color-background-welcome: #101c3a;
-$color-background-secondary: #192b58;
-$color-background-third: #101c3a;
-$color-background-fourth: #192b58;
-$color-background-header: #192b58;
-$color-background-footer: #1e3366;
-$color-button-large: #ff4c00;
-$color-button-small: #007afe;
-
+$color-background: #ffffff;
+$color-background-welcome: linear-gradient(90deg, #110f37 0%, #6f1c3a 100%);
+$color-background-secondary: linear-gradient(90deg, #110f37 0%, #6f1c3a 100%);
+$color-background-third: #efefef;
+$color-background-fourth: #6f1c3a;
+$color-background-header: #ffffff;
+$color-background-footer: linear-gradient(90deg, #110f37 0%, #6f1c3a 100%);
+$color-button-large: linear-gradient(180deg, #ff9800 0%, #ff3300 100%);
+$color-button-small: linear-gradient(180deg, #3a68ff 0%, #0014a1 100%);
 // text color
 $text-color-primary: #fff;
-$text-color-secondary: #fff;
+$text-color-secondary: #120d3a;
 $text-color-button-large: #fff;
 $text-color-button-small: #fff;
-$text-color-loader: #ff4c00;
-$text-color-fourth: #ff4c00;
+$text-color-loader: #ff6601;
+$text-color-fourth: #ff6601;
 
-$color-faq-icon: #007afe;
+// svg colors
+$color-faq-icon: linear-gradient(180deg, #3a68ff 0%, #0014a1 100%);

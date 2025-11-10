@@ -30,8 +30,6 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const { handleNavigation } = useNavigateWithPreloader();
 
-  const displayText = text;
-
   const handleClick = async () => {
     if (openInNewTab) {
       if (url?.startsWith("http")) {
@@ -95,7 +93,7 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       disabled={disabled}
     >
-      {displayText}
+      {text}
     </button>
   );
 };

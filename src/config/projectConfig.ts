@@ -1,9 +1,4 @@
-import languagesJson from "../../public/content/languages.json";
-import { getProjectGeoForLang } from "../utils/localeMap";
-
-export const PROJECT_NAME = "NikaCasino";
-export const PROJECT_URL = "nika-casino-online.com";
-
-export const PROJECT_GEO = getProjectGeoForLang(
-  languagesJson.defaultLang || "au"
-);
+export const PROJECT_NAME = "NB Casino";
+export const PROJECT_GEO = "Canada";
+export const PROJECT_URL = "nbcasino-online.com";
+export const CASINO_MODE = "offline"; // "online" или "offline"

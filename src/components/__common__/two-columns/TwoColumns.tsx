@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./TwoColumns.module.scss";
 import { replaceCurrentYear } from "../../../utils/yearReplacer";
+import styles from "./TwoColumns.module.scss";
 
 export type ColumnItem = {
   type: "text" | "list";
@@ -25,31 +25,35 @@ const TwoColumns: React.FC<TwoColumnsProps> = ({
   columnGap = "64px",
 }) => {
   const renderContent = (items: ColumnItem[]) => {
-    return items.map((item, index) => {
-      if (item.type === "text") {
-        return (
-          <p
-            key={index}
-            className="paragraph-text"
-            dangerouslySetInnerHTML={{ __html: replaceCurrentYear(item.content as string) }}
-          />
-        );
-      } else if (item.type === "list") {
-        const ListTag = item.style === "ordered" ? "ol" : "ul";
-        return (
-          <ListTag key={index} className={styles["styled-list"]}>
-            {(item.content as string[]).map((listItem, i) => (
-              <li
-                key={i}
+    return (
+      <>
+        {items.map((item, index) => {
+          if (item.type === "text") {
+            return (
+              <p
+                key={index}
                 className="paragraph-text"
-                dangerouslySetInnerHTML={{ __html: replaceCurrentYear(listItem) }}
+                dangerouslySetInnerHTML={{ __html: replaceCurrentYear(item.content as string) }}
               />
-            ))}
-          </ListTag>
-        );
-      }
-      return null;
-    });
+            );
+          } else if (item.type === "list") {
+            const ListTag = item.style === "ordered" ? "ol" : "ul";
+            return (
+              <ListTag key={index} className={styles["styled-list"]}>
+                {(item.content as string[]).map((listItem, i) => (
+                  <li
+                    key={i}
+                    className="paragraph-text"
+                    dangerouslySetInnerHTML={{ __html: replaceCurrentYear(listItem) }}
+                  />
+                ))}
+              </ListTag>
+            );
+          }
+          return null;
+        })}
+      </>
+    );
   };
 
   return (

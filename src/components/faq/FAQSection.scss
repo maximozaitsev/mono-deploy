@@ -1,10 +1,16 @@
-@import "../../styles/colors.scss";
-@import "../../styles/variables.scss";
-@import "../../styles/fonts-bridge.scss";
+@import "@/styles/colors.scss";
+@import "@/styles/variables.scss";
+@import "@/styles/_fonts-bridge.scss";
 
 .faq-section {
+  background: $color-background-secondary;
+  padding: 64px 0;
   display: block;
   gap: 0 !important;
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
 
   .faq-item {
     margin-top: 24px;
@@ -12,12 +18,12 @@
     width: 100%;
 
     .faq-question {
-      font-family: $font-secondary;
       color: $text-color-secondary;
+      font-family: $font-secondary;
       background: $color-background-third;
       font-size: 24px;
       font-weight: $font-weight-bold;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       padding: 8px 32px;
       border-radius: $border-radius;
       cursor: pointer;
@@ -40,7 +46,8 @@
     }
 
     .faq-answer {
-      color: $text-color-secondary;
+      color: $text-color-primary;
+      font-family: $font-primary;
       font-size: 20px;
       font-weight: $font-weight-regular;
       line-height: 30px;

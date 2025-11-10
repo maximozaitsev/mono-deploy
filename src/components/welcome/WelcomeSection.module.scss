@@ -62,20 +62,16 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 512px;
-  margin-top: 0px;
+  max-width: 488px;
   height: auto;
 
   @media (max-width: 768px) {
-    margin-top: 15px;
+    margin-top: 24px;
   }
 
   @media (max-width: 480px) {
-    width: 100vw;
-    max-width: 480px;
     object-fit: cover;
     object-position: center;
-    margin-top: 0px;
   }
 
   // @media (max-width: 400px) {
@@ -124,7 +120,6 @@
     align-items: center;
     text-align: center;
     margin-top: 20px;
-
     .bonusText {
       display: block;
     }
@@ -140,12 +135,12 @@
 
 .welcomeText h2 {
   font-family: var(--font-secondary);
-  color: $text-color-secondary;
+  color: $text-color-primary;
   font-size: 32px;
   font-style: normal;
   font-weight: $font-weight-black;
   line-height: normal;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
   @media (max-width: 768px) {
     font-size: 24px;

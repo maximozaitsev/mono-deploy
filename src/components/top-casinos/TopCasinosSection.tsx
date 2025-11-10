@@ -4,49 +4,50 @@ import React, { useEffect, useState } from "react";
 import { Offer } from "../../types/offer";
 import OfferCard from "./OfferCard";
 import Button from "../__common__/button/Button";
-import "./TopCasinosSection.scss";
-import { useTranslations } from "next-intl";
 import { fetchOffers } from "@/utils/fetchOffers";
+import TopCasinosSkeleton from "./TopCasinosSkeleton";
+import "./TopCasinosSection.scss";
 
-type Props = {
-  lang: string;
-};
-
-const TopCasinosSection: React.FC<Props> = ({ lang }) => {
+const TopCasinosSection: React.FC = () => {
   const [country, setCountry] = useState<string>("");
   const [offers, setOffers] = useState<Offer[]>([]);
   const [showAll, setShowAll] = useState<boolean>(false);
-  const t = useTranslations();
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    let cancelled = false;
-    (async () => {
+    const loadOffers = async () => {
       try {
         const { country, offers } = await fetchOffers();
-        if (!cancelled) {
-          setCountry(country);
-          setOffers(offers);
-        }
-      } catch {}
-    })();
-    return () => {
-      cancelled = true;
+        setCountry(country);
+        setOffers(offers);
+      } finally {
+        setIsLoading(false);
+      }
     };
+
+    loadOffers();
   }, []);
 
   const visibleOffers = showAll ? offers : offers.slice(0, 8);
 
+  if (isLoading) {
+    return <TopCasinosSkeleton />;
+  }
+
   return (
-    <section id="top-casinos-section" className="top-casinos-section section container">
-      <h2 className="h2-heading">{t("topCasinos", { default: "Top Casinos" })} {country}</h2>
+    <section
+      id="top-casinos-section"
+      className="top-casinos-section section container"
+    >
+      <h2 className="h2-heading">Top Casinos {country}</h2>
       <div className="offers-grid">
         {visibleOffers.map((offer, idx) => (
-          <OfferCard key={offer.id} offer={offer} priority={idx < 2} lang={lang} />
+          <OfferCard key={offer.id} offer={offer} priority={idx < 2} />
         ))}
       </div>
       {!showAll && (
         <Button
-          text={t("allCasino", { default: "All Casino" })}
+          text="All Casino"
           variant="primary"
           onClick={() => setShowAll(true)}
           useNavigation={false}
