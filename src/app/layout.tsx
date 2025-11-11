@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "nbcasino-online.com";
-const ogTitle = "Casino New Brunswick Canada: Games, Hotel, and Rewards Club Insights";
-const ogSiteName = "NB Casino";
-const metaDescription = "Discover everything about Casino New Brunswick in Canada, from over 600 slot machines and classic table games to hotel stays and live entertainment. Learn how the Rewards Club, promotions, and stay‑and‑play packages add extra value to every visit.";
+const url = "riverrock-online.com";
+const ogTitle = "River Rock Casino Canada: Premier Gaming and Entertainment Resort";
+const ogSiteName = "River Rock Casino";
+const metaDescription = "Use the River Rock Casino Canada App to check loyalty points, explore events, and stay informed about special promotions. The app complements the land-based experience, giving guests convenient access to schedules, offers, and account details anytime.";
 
 const locale = "en-CA";
 const language = "English";
