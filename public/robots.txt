@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://riverrock-online.com/
-Sitemap: https://riverrock-online.com/sitemap.xml
+Host: https://niagaracasino-online.com/
+Sitemap: https://niagaracasino-online.com/sitemap.xml

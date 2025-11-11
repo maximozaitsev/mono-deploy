@@ -20,10 +20,10 @@
     .faq-question {
       color: $text-color-secondary;
       font-family: $font-secondary;
-      background: #e6e6e6;
+      background: $color-background-third;
       font-size: 24px;
       font-weight: $font-weight-bold;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       padding: 8px 32px;
       border-radius: $border-radius;
       cursor: pointer;

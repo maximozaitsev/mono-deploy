@@ -23,10 +23,6 @@
     list-style-type: disc;
   }
 
-  :global(.paragraph-text) {
-    color: $text-color-secondary !important;
-  }
-
   @media (max-width: 768px) {
     padding: 40px 0 16px 0;
     margin-bottom: 64px;

@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "riverrock-online.com";
-const ogTitle = "River Rock Casino Canada: Premier Gaming and Entertainment Resort";
-const ogSiteName = "River Rock Casino";
-const metaDescription = "Use the River Rock Casino Canada App to check loyalty points, explore events, and stay informed about special promotions. The app complements the land-based experience, giving guests convenient access to schedules, offers, and account details anytime.";
+const url = "niagaracasino-online.com";
+const ogTitle = "Casino Niagara Canada – Play, Win & Experience Iconic Gaming";
+const ogSiteName = "Niagara Casino";
+const metaDescription = "Casino Niagara Canada offers 1,300+ slots, 40+ tables, and live poker in a vibrant setting by Niagara Falls. Visit today to explore nonstop gaming, dining, and exclusive member promotions.";
 
 const locale = "en-CA";
 const language = "English";

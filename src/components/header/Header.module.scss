@@ -73,7 +73,7 @@
 
 .navLink {
   font-family: $font-secondary;
-  color: $text-color-secondary;
+  color: $text-color-primary;
   background: none;
   border: none;
   font-weight: $font-weight-black;
@@ -83,12 +83,12 @@
   text-decoration: none;
 
   &:hover {
-    color: $text-color-fourth;
+    color: #0be39d;
   }
 }
 
 .activeNavLink {
-  color: $text-color-fourth;
+  color: #0be39d;
 }
 
 @media (max-width: 768px) {

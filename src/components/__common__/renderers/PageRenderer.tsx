@@ -88,13 +88,11 @@ export const PageRenderer: React.FC<Props> = ({ blocks, pageKey }) => {
             return (
               <div key={i} className="section">
                 {titleBlock.level === 1 ? (
-                  <h2 className="h2-heading">
+                  <h2 className="h2-heading white">
                     {`${PROJECT_NAME} ${pageKey ?? ""}`.trim()}
                   </h2>
                 ) : (
-                  <h2 className="h2-heading">
-                    {replaceCurrentYear(titleBlock.text ?? "")}
-                  </h2>
+                  <h2 className="h2-heading white">{replaceCurrentYear(titleBlock.text ?? "")}</h2>
                 )}
                 {introItems.map((b, idx) => {
                   if (b.type === "paragraph") {
@@ -102,9 +100,7 @@ export const PageRenderer: React.FC<Props> = ({ blocks, pageKey }) => {
                       <p
                         key={idx}
                         className="paragraph-text"
-                        dangerouslySetInnerHTML={{
-                          __html: replaceCurrentYear(b.text!),
-                        }}
+                        dangerouslySetInnerHTML={{ __html: replaceCurrentYear(b.text!) }}
                       />
                     );
                   } else if (b.type === "list") {
@@ -131,23 +127,19 @@ export const PageRenderer: React.FC<Props> = ({ blocks, pageKey }) => {
             return (
               <div key={i} className="section">
                 {titleBlock.level === 1 ? (
-                  <h2 className="h2-heading">
+                  <h2 className="h2-heading white">
                     {`${PROJECT_NAME} ${pageKey ?? ""}`.trim()}
                   </h2>
                 ) : (
-                  <h2 className="h2-heading">
-                    {replaceCurrentYear(titleBlock.text ?? "")}
-                  </h2>
+                  <h2 className="h2-heading white">{replaceCurrentYear(titleBlock.text ?? "")}</h2>
                 )}
                 {introItems.map((b, idx) => {
                   if (b.type === "paragraph") {
                     return (
                       <p
                         key={idx}
-                        className="paragraph-text black"
-                        dangerouslySetInnerHTML={{
-                          __html: replaceCurrentYear(b.text!),
-                        }}
+                        className="paragraph-text"
+                        dangerouslySetInnerHTML={{ __html: replaceCurrentYear(b.text!) }}
                       />
                     );
                   } else if (b.type === "list") {
@@ -166,17 +158,13 @@ export const PageRenderer: React.FC<Props> = ({ blocks, pageKey }) => {
                 })}
                 {subSections.map(({ heading, items }, subIdx) => (
                   <React.Fragment key={subIdx}>
-                    {heading && (
-                      <h3 className="h3-heading">
-                        {replaceCurrentYear(heading)}
-                      </h3>
-                    )}
+                    {heading && <h3 className="h3-heading">{replaceCurrentYear(heading)}</h3>}
                     {items.map((block, idx) => {
                       if (block.type === "paragraph") {
                         return (
                           <p
                             key={idx}
-                            className="paragraph-text black"
+                            className="paragraph-text"
                             dangerouslySetInnerHTML={{
                               __html: replaceCurrentYear(block.text || ""),
                             }}

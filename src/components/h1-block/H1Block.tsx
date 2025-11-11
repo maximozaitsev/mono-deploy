@@ -17,7 +17,7 @@ interface Props {
 
 export default function H1Section({ blocks, pageKey, className }: Props) {
   const contentBlocks =
-    blocks ?? (pageKey && siteData[pageKey] ? siteData[pageKey].blocks : undefined);
+    blocks ?? (pageKey ? siteData[pageKey].blocks : undefined);
   const h1Text =
     contentBlocks?.find((b) => b.type === "heading" && b.level === 1)?.text ||
     "";
