@@ -1,72 +1,71 @@
 {
-  "title": "Where the Lights of Niagara Meet the Thrill of Every Spin",
+  "title": "Step Inside Grey Eagle Resort & Casino Canada – Where Every Spin, Card, and Moment Counts",
   "intro": [
     {
       "type": "list",
       "style": "unordered",
       "items": [
-        "$10 in free slot play",
-        "$250 Momentum Dollars for slot play",
-        "Jackpot Club available"
+        "Match Play Mania",
+        "CAD 500 prize drawings",
+        "CAD 100 for every Calgary hockey goal"
       ]
     },
     {
       "type": "paragraph",
-      "text": "Casino Niagara is one of Canada's most renowned land-based casinos. It is located at 5705 Falls Avenue in Niagara Falls, Ontario. The casino, which opened in 1996, has 95,000 square feet of space with more than 1,300 slots and 40 table games, such as blackjack, roulette, and poker. Casino Niagara is within a few minutes from Niagara Falls and has all the usual casino games and contemporary facilities for players 19 and older."
+      "text": "Grey Eagle Resort & Casino is on Tsuut'ina land at 3777 Grey Eagle Drive SW, Calgary, Alberta, T3E 3X8. It is only a few just moments from downtown Calgary. The casino is 84,000 square feet and has multiple hundred slots and tables. There are bingo halls, nice food, live shows, and fancy hotels there, so it's one of the best spots in Calgary for taking it easy and having fun."
     }
   ],
   "about": {
-    "Niagara Casino Registration Process": [
+    "Grey Eagle Casino Registration Process": [
       {
         "type": "paragraph",
-        "text": "Casino Niagara requires a simple age and identification check to enter gaming areas and membership privileges. This assures Ontario gaming compliance and loyalty program participation."
+        "text": "Grey Eagle Resort & Casino requires registration for loyalty program and gaming floor access."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Registration Steps:"
+        "text": "Registration Process:"
       },
       {
         "type": "list",
         "style": "ordered",
         "items": [
-          "Present valid government-issued photo ID",
-          "Verify age (19+) eligibility",
-          "Complete player registration form",
-          "Create a Players Advantage Club account",
-          "Receive membership card",
-          "Activate account at the kiosk",
-          "Start earning and redeeming points"
+          "Present valid photo ID and proof of age.",
+          "Fill out the loyalty desk membership form.",
+          "Contact information (name, address, email/phone).",
+          "Accept the terms and conditions of membership.",
+          "Have your loyalty card issued and activated.",
+          "Insert your card into slot machines or present it at counters."
         ]
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "About Niagara Casino Login"
+        "text": "About Grey Eagle Casino Login"
       },
       {
         "type": "paragraph",
-        "text": "Since Casino Niagara is a land-based facility, registered Players Advantage Club members may access account information at the Fallsview Casino or Casino Niagara kiosks. At these terminals, members check reward balances, recent gaming activity, and promotions using their cards. Insert the membership card into the kiosk reader, verify identification, then use the on-screen choices to manage points or print coupons."
+        "text": "Log in to Grey Eagle Resort & Casino using your member number or loyalty card on the digital kiosk or loyalty desk. Show a photo ID and answer security questions to verify. To enter the gaming floor or member services, activate your session."
       }
     ],
     "Deposit Methods": [
       {
         "type": "paragraph",
-        "text": "The cashier cage and gaming kiosks at Casino Niagara process deposits. Gaming chips and play credits may be purchased with most Canadian and international credit and debit cards. For chip purchases and cashier transactions, customers may deposit cash and exchange U.S. dollars for Canadian dollars at the cage."
+        "text": "You can deposit cash at the cashier's cage or using slot bill acceptors. On-site terminals and ATMs process debit and credit card cash-outs. The hotel front desk only accepts Visa, Mastercard, and American Express for accommodation payments. Deposits are processed instantly and recorded according to federal law for significant cash deposits (CAD 10,000+)."
       }
     ],
     "Withdrawal Methods": [
       {
         "type": "paragraph",
-        "text": "Withdrawals at Casino Niagara are conducted in cash via the cashier cage upon request, provided the guest meets identity and regulatory requirements. The casino does not permit direct cash advances on credit cards nor withdrawal of funds to third-party online wallets."
+        "text": "Cashier's cage withdrawals are mostly cash. Casino management issues verified cheques for larger winnings. No maximum cash payment or processing time is published. While cheque withdrawals may take time to verify or collect, smaller payouts are processed instantly. FINTRAC requires reporting cash transactions over CAD 10,000."
       }
     ]
   },
   "advantages": {
-    "Niagara Casino Advantages": [
+    "Grey Eagle Casino Advantages": [
       {
         "type": "paragraph",
-        "text": "Modern amenities, diverse entertainment, and a prime location beside a world-famous natural monument make Casino Niagara a dynamic gaming experience."
+        "text": "This casino-resort is situated on the outskirts of Calgary, Alberta. It has a vast gaming area, hotel rooms, restaurants, live events, and a high-limit area."
       },
       {
         "type": "heading",
@@ -77,13 +76,14 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "95,000 sq. ft. gaming floor",
-          "1,300+ slot machines",
-          "40+ table games",
-          "Central Niagara Falls location",
-          "On-site dining and bars",
-          "Live entertainment and sports viewing area",
-          "Affiliation with Fallsview Casino Resort"
+          "Extensive gaming floor (~84,000 sq ft)",
+          "Over 1,000 slot machines",
+          "High-limit gaming room",
+          "On-site hotel and resort amenities",
+          "Multiple restaurants and bars",
+          "Free parking",
+          "24-hour operations",
+          "Smoking and non-smoking zones"
         ]
       },
       {
@@ -95,18 +95,18 @@
         "type": "list",
         "style": "unordered",
         "items": [
-          "No online casino platform",
-          "Must be 19+ to enter",
-          "Crowded during peak seasons"
+          "Indoor smoking can bother nonsmokers.",
+          "Poker room hours/days are limited",
+          "Some high-stakes limits still lower than top competitors"
         ]
       }
     ]
   },
   "games-to-play": {
-    "Games Available to Play at Niagara Casino": [
+    "Games Available to Play at Grey Eagle Casino": [
       {
         "type": "paragraph",
-        "text": "New and old games are available on two floors at Casino Niagara. With approximately 95,000 square feet of gaming space, amateurs and experts may play. Ontario's strict gaming laws guarantee fairness and openness every time."
+        "text": "The Calgary Grey Eagle Resort & Casino has one of Western Canada's largest gaming floors at 84,000 square feet."
       },
       {
         "type": "heading",
@@ -115,7 +115,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Over 1,300 slot and video poker machines are on two gaming floors at Casino Niagara. Traditional three-reel slots and video slots with interactive bonus rounds are available. More than 350 linked machines to Powerbucks provide life-changing progressive jackpots. Bets range from 1 cent to $5, suiting all players. Video poker terminals, multi-game touchscreens, and themed slots from big entertainment companies make the slot floor vibrant."
+        "text": "The casino has hundreds of slot machines priced from CAD 0.01 to CAD 25. Three-reel and advanced video slots with complex graphics and features are available. Ticket-in/ticket-out lets you play and cash out quickly. For skilled players, there are progressive jackpots, themed machines, and high-limit slots."
       },
       {
         "type": "heading",
@@ -124,78 +124,155 @@
       },
       {
         "type": "paragraph",
-        "text": "Table games at the casino are overseen by skilled live dealers and include conventional and sophisticated card games. Blackjack, roulette, casino war, three-card poker, Mississippi Stud, and Ultimate Texas Hold'em are available at over 30 tables. Game-specific table limitations range from $5 to high-stakes for expert players. Lunchtime to 3:45 a.m. games provide constant action and varied play types. The open layout and real-time excitement provide gamers a Las Vegas-like experience in Canada."
+        "text": "Grey Eagle has 32 live tables with dealers in a lively casino. Blackjack, roulette, baccarat, three-card poker, and craps are popular. Table games for casual and high-stakes play are available daily from 10:00 to 3:00 a.m. Starting bets are low, while experts bet thousands."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Poker Room"
+        "text": "Poker"
       },
       {
         "type": "paragraph",
-        "text": "The Casino Niagara poker area has 18 tables for leisure and competitive players. The room has Texas Hold'em and Omaha with various blind setups for different budgets. Cash games and tournaments like the Sunday $400 buy-in are available. The poker area is focused yet convivial, with competent dealers and comfortable seats. Low-limit tables are open to beginners, while high-rollers may play premium games with greater sums."
+        "text": "A specialized poker room works in the casino from Thursday to Sunday, generally from 2:00 p.m. until 2:00 a.m. Texas Hold'em cash poker tables are available at various buy-ins. The poker portion is smaller than at big casinos, but it's pleasant and competitive, attracting locals and visitors."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Sports Betting Kiosks"
+        "text": "Craps and Specialty Games"
       },
       {
         "type": "paragraph",
-        "text": "Sports fans may find 15 sophisticated sports betting kiosks near the LEV2L Sports Bar in the casino. These machines accept bets on professional football, basketball, hockey, and international sports. Guests may make single, parlay, and prop bets using the kiosk. Large-screen screens presenting live games draw sports lovers to the region. Visitors may seamlessly switch between gambling and real-time sports without leaving the casino floor."
+        "text": "Craps is a Grey Eagle Casino favorite. Daily live craps tables include expert dealers and simple guidelines for novices. Low minimum bets allow informal gaming, but high-limit alternatives are offered for experts. In addition to craps, Pai Gow Tiles and roulette versions provide variety."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Bingo and Keno"
+      },
+      {
+        "type": "paragraph",
+        "text": "During special events or themed gaming nights, bingo and keno are sometimes offered, but they are not the main games at casinos. These games are popular with people who like to play games in a more casual setting than at a table. Keno lets you pick and win quickly between games, and bingo has low entry fees and seats for everyone."
       }
     ]
   },
   "bonuses-and-promotions": {
-    "Bonuses and Promotions at Niagara Casino": [
+    "Bonuses and Promotions at Grey Eagle Casino": [
       {
         "type": "paragraph",
-        "text": "New casino Momentum members get $10 Free Slot Play on their card. Only new members may redeem this promotion within 30 days after loading."
+        "text": "Grey Eagle Resort & Casino in Calgary, Alberta, offers seasonal and recurrent promotions with cash prizes, free slot play, and themed events. Each date-limited promotion gives gamers many opportunities to win CAD and special goodies."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "New Member Offer"
+        "text": "Cash Quest"
       },
       {
         "type": "paragraph",
-        "text": "Casino Niagara offers a special Momentum loyalty program bonus to new members. New Players Advantage Club members get $10 in free slot play on their Momentum card when they register. Use the bonus on any qualified casino slot machine to explore the gaming floor immediately. Only first-time registrants may redeem this promotion within 30 days of activation. For players 19 and older, registration is straightforward and needs government-issued documentation to verify eligibility."
+        "text": "Dates: October 1 – November 27 | Days: Every Wednesday & Thursday"
+      },
+      {
+        "type": "paragraph",
+        "text": "To win riches, Cash Quest visitors roll a huge dice and advance across a gameboard. Players may win quick prizes with each roll, but only one fortunate route rewards CAD 10,000 in cash."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Instant Win Mondays"
+        "text": "Match Play Mania"
       },
       {
         "type": "paragraph",
-        "text": "Momentum members may participate in Instant Win Mondays every Monday from 11 a.m. to 7 p.m. To win an instant prize, participants swipe their Momentum card at a promotional kiosk. On Mondays, 550 Momentum Dollars are awarded, totaling $10,000 CAD. Winners may get $250 Momentum Dollars for slot play, dining, or lodging privileges at the casino's partner locations. This weekly event adds excitement and compensates regular gamers with cash-equivalent awards."
+        "text": "Dates: September 6 – November 22 | Days: Every Saturday"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every Saturday night, Match Play Mania offers two drawings for CAD 500 to table-game fans. Match Play coupons for blackjack and roulette provide winners an advantage in nighttime play. Event boosts weekend excitement and rewards consistent players with extra betting."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Friday Night Frenzy"
+        "text": "Football Fundays"
       },
       {
         "type": "paragraph",
-        "text": "The Friday Night Frenzy event is a fun way to conclude the week with real prizes and friendly competition. Every Friday from 7 to 9 p.m., members of Momentum may play free slot tournaments. To win $100 Free Slot Play, $75 Second Place, and $50 Third Place, players have to score the most on the machines they choose. The weekly prize pool is $2,900 CAD, which draws in both new and regular players. To be able to participate in the event, players must earn two Momentum Dollars throughout the session. This is to make sure that the game is fair and active."
+        "text": "Dates: September 7 – January 4 | Days: Every Sunday"
+      },
+      {
+        "type": "paragraph",
+        "text": "Football Fundays brings sports enthusiasm to the casino floor, offering several cash prizes related to live football broadcasts. After the 11:00 AM and 2:00 PM games, visitors choose a team and enter CAD 250 and CAD 500 prize drawings. Two special swag packages are presented weekly, making Sundays a football and casino filled day."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Jackpot Club"
+        "text": "Pucks & Bucks"
       },
       {
         "type": "paragraph",
-        "text": "Casino Niagara's Jackpot Club gives big winners special chances to win bigger. Visitors who win a hand-paid jackpot of $3,000 CAD or more get a ballot entry into the casino's quarterly Jackpot Draw. The campaign offers quarterly cash and free play prizes up to $90,000. In December, a draw gave a $25,000 cash grand prize and several free play incentives. Casino Niagara recognized big winners and kept enthusiasm going after the jackpot with this program."
+        "text": "Dates: October 8 – April 16 | Days: Calgary Game Days"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pucks & Bucks at the Stage Bar offers CAD 100 for every Calgary hockey goal on game days. Free ballots must be gathered before the third period. The game ends in a CAD 250 draw, which doubles to CAD 500 if Calgary wins. The best of live hockey and casino incentives."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "Monthly Casino Promotions Calendar"
+        "text": "Trivia Night"
       },
       {
         "type": "paragraph",
-        "text": "Casino Niagara publishes Momentum member savings on its Promotions Calendar each month. Bonus slot events, free play promos, seasonal contests, and prize draws only for members are all quite popular. Players may check the calendar online or at in-casino kiosks for impending events. These monthly promos provide repeat customers constant value, making each visit more lucrative and engaging. Casino Niagara's dynamic roster keeps new and returning customers entertained every month."
+        "text": "Date: November 12 | Time: 6:00 PM – 8:00 PM"
+      },
+      {
+        "type": "paragraph",
+        "text": "Stage Bar Trivia Night lets visitors test their knowledge for cash and prizes in a lively atmosphere. Top scores in themed rounds get casino credits and bonus play coupons. The midweek activity is fun and challenging."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "80s Night"
+      },
+      {
+        "type": "paragraph",
+        "text": "Schedule: Every Third Thursday of the Month"
+      },
+      {
+        "type": "paragraph",
+        "text": "80s Night brings neon lights, classic music, and nostalgia to the casino. The Crazy 80s Cash Bash from 6:00 to 9:00 PM features live 80s-themed entertainment starting at 9:15 PM. Wear 80s clothes to win cash and concert tickets in hourly drawings."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Ladies Night"
+      },
+      {
+        "type": "paragraph",
+        "text": "Schedule: Last Wednesday of Every Month"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ladies Night features festive eating, music, and prizes. Female visitors may enjoy live entertainment and food and drink offers. Monthly drawings provide Chinook Mall gift cards and cash up to CAD 500. The occasion inspires midweek social gatherings."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Spin & Win Senior’s Day"
+      },
+      {
+        "type": "paragraph",
+        "text": "Schedule: Every Sunday & Tuesday"
+      },
+      {
+        "type": "paragraph",
+        "text": "Spin & Win Senior's Day is from 10:00 AM to 4:00 PM for age 55+ visitors. Spin a prize wheel for cash and rare gifts. The Mini-Slot Tournament on the first Tuesday of each month awards up to CAD 350 to the top 10 participants. Fun and cheerful communal play is the focus."
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Birthday Play Promotion"
+      },
+      {
+        "type": "paragraph",
+        "text": "CAD 10 Free Slot Play vouchers are available to birthday guests. The promotion may be used on the birthday or one day before or after. Just show ID at the reception desk to redeem the prize and enjoy a bespoke gaming floor celebration."
       }
     ]
   },
@@ -203,7 +280,7 @@
     "Support": [
       {
         "type": "paragraph",
-        "text": "Multiple in-person service stations around Casino Niagara handle customer assistance. The primary guest services desk handles membership, missing cards, and general concerns. Cashier cages assist with transactions, while the Players Advantage Club desk offers loyalty incentives and promotions. Phone and email help is provided throughout operation hours, and security or hospitality professionals are available 24/7 for critical concerns or visitor safety."
+        "text": "You can get help from Grey Eagle Resort & Casino by calling (403) 385-3777 or emailing info@greyeagle.ca. During business hours, support staff can help with questions about gaming, hotels, and events. There is no 24-hour live chat or help in more than one language, and all support is in English."
       }
     ]
   },
@@ -212,72 +289,69 @@
       {
         "type": "heading",
         "level": 3,
-        "text": "What year did Casino Niagara open?"
+        "text": "What is the minimum age to enter?"
       },
       {
         "type": "paragraph",
-        "text": "Casino Niagara opened on December 9, 1996, as the first government-owned casino in Ontario."
+        "text": "Visitors must be at least 18 years old to enter the gaming floor and participate in casino activities."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "How many gaming floors does the casino have?"
+        "text": "Where is the casino located?"
       },
       {
         "type": "paragraph",
-        "text": "The casino features two floors with slots, table games, and electronic roulette."
+        "text": "The Grey Eagle Resort & Casino is at 3777 Grey Eagle Drive SW, Calgary, T3E 3X8."
       },
       {
         "type": "heading",
         "level": 3,
-        "text": "What are the casino’s operating hours?"
+        "text": "Can I smoke in the casino?"
       },
       {
         "type": "paragraph",
-        "text": "Casino Niagara is open 24/7, including holidays."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "text": "Is parking available for visitors?"
+        "text": "The facility has smoking and non-smoking areas for guests."
       },
       {
         "type": "paragraph",
-        "text": "The linked Falls Avenue Resort has chargeable parking."
+        "text": "<strong>Title:</strong> Grey Eagle Casino CA – Secure Login Procedure & Member Access Guide"
       },
       {
         "type": "paragraph",
-        "text": "<strong>Title:</strong> Casino Niagara Canada – Secure Login Access and Account Guide"
-      },
-      {
-        "type": "paragraph",
-        "text": "<strong>Description:</strong> Casino Niagara Canada ensures fast and secure account access through its official login system. Learn how to log in, recover credentials, and manage your My Momentum rewards safely — get started today and enjoy seamless control over your gaming experience."
+        "text": "<strong>Description:</strong> Grey Eagle Casino Canada offers a safe and transparent login system for its members. Learn how to register, access your account, and manage rewards — experience gaming done right."
       }
     ]
   },
   "sections": {
-    "Licenses": [
+    "Casino License": [
       {
         "type": "paragraph",
-        "text": "Ontario Lottery and Gaming Corporation controls Casino Niagara for AGCO. The Niagara Gaming Bundle includes Fallsview Casino Resort. The license covers land-based slots, table games, and promotions. Fair play, responsible gambling, and provincial/federal compliance are examined regularly."
+        "text": "The Alberta Gaming, Liquor, and Cannabis (AGLC) licenses and regulates the casino. All provincial gaming fairness, security, and responsible play rules apply to this land-based institution. The Tsuut'ina Nation owns Grey Eagle Resort & Casino, which follows Canadian gambling laws and Indigenous and provincial gaming laws."
+      }
+    ],
+    "Casino License1": [
+      {
+        "type": "paragraph",
+        "text": "The Alberta Gaming, Liquor, and Cannabis (AGLC) licenses and regulates the casino. All provincial gaming fairness, security, and responsible play rules apply to this land-based institution. The Tsuut'ina Nation owns Grey Eagle Resort & Casino, which follows Canadian gambling laws and Indigenous and provincial gaming laws."
       }
     ],
     "Casino App": [
       {
         "type": "paragraph",
-        "text": "Casino Niagara has no mobile gaming or account management app. Players Advantage Club members use digital kiosks to check points, explore bargains, and print coupons. Ontario's gaming rules require land-based casinos, hence the website solely lists locations, events, and promotions."
+        "text": "Grey Eagle Resort & gaming has no listed mobile or online gaming app. The official website has a “Play Online” option, although it mostly leads to partner sites rather than a mobile platform or native app. All gambling in casinos happens on land in Calgary, Alberta."
       }
     ],
     "Languages": [
       {
         "type": "paragraph",
-        "text": "Since English is Ontario's official language, Casino Niagara's services and signs are mostly in it. However, bilingual personnel can help foreign visitors, notably Americans and Europeans. Brochures and information boards may be offered in French, reflecting Canada's bilingualism and the casino's dedication to diversity."
+        "text": "You can find out about gaming, events, hotels, and policies in English. After welcoming foreign customers, the casino does not have bilingual website versions or French, Mandarin, or Spanish translation options."
       }
     ],
     "Currencies": [
       {
         "type": "paragraph",
-        "text": "Canadian dollars are used for all Casino Niagara transactions. The casino's cash cages accept Canadian and U.S. dollars, and customers may exchange their money on-site. Gaming machines and tables use CAD solely, assuring payment and accounting consistency. Major bank credit and debit cards are allowed for certain on-site purchases and entertainment."
+        "text": "Alberta law prohibits Grey Eagle Resort & Casino from accepting non-CAD currencies. The gaming floor, cashier, and hotel accept cash, debit cards, Visa, Mastercard, and American Express for everything. No casinos take Bitcoin, other currencies, or currency exchange from one country to another."
       }
     ]
   }

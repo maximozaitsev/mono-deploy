@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "niagaracasino-online.com";
-const ogTitle = "Casino Niagara Canada – Play, Win & Experience Iconic Gaming";
-const ogSiteName = "Niagara Casino";
-const metaDescription = "Casino Niagara Canada offers 1,300+ slots, 40+ tables, and live poker in a vibrant setting by Niagara Falls. Visit today to explore nonstop gaming, dining, and exclusive member promotions.";
+const url = "greyeagle-casino.com";
+const ogTitle = "Grey Eagle Resort & Casino Canada – Premium Gaming & Entertainment";
+const ogSiteName = "Grey Eagle Casino";
+const metaDescription = "Grey Eagle Resort & Casino Canada offers world-class gaming, live shows, and fine dining just minutes from downtown Calgary. Visit today to experience real play, luxury comfort, and unforgettable excitement.";
 
 const locale = "en-CA";
 const language = "English";
