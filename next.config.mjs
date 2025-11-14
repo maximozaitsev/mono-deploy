@@ -51,10 +51,19 @@ const nextConfig = {
       {
         source: "/(.*)",
         headers: [
-          {
-            key: "Referrer-Policy",
-            value: "no-referrer",
-          },
+          { key: "Referrer-Policy", value: "no-referrer" },
+        ],
+      },
+      {
+        source: "/(block-images|icons|footer-assets|fonts)/(.*)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
+        source: "/_next/static/(.*)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
       },
     ];
