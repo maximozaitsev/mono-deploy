@@ -83,12 +83,18 @@
   text-decoration: none;
 
   &:hover {
-    color: $text-color-fourth;
+    background: $color-button-large;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
 .activeNavLink {
-  color: $text-color-fourth;
+  background: $color-button-large;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 768px) {
