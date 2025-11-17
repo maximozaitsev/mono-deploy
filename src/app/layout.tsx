@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "greyeagle-casino.com";
-const ogTitle = "Grey Eagle Resort & Casino Canada – Premium Gaming & Entertainment";
-const ogSiteName = "Grey Eagle Casino";
-const metaDescription = "Grey Eagle Resort & Casino Canada offers world-class gaming, live shows, and fine dining just minutes from downtown Calgary. Visit today to experience real play, luxury comfort, and unforgettable excitement.";
+const url = "parq-casino.com";
+const ogTitle = "Parq Casino Canada: Premier Vancouver Entertainment Destination";
+const ogSiteName = "Parq Casino";
+const metaDescription = "Parq Casino Canada offers an exceptional land-based gaming experience in Vancouver. Enjoy 24/7 excitement with hundreds of slot machines, exclusive table games, fine dining, and luxury hotels: all in one vibrant entertainment complex.";
 
 const locale = "en-CA";
 const language = "English";

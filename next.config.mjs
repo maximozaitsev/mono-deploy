@@ -2,7 +2,7 @@
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
-const url = "greyeagle-casino.com";
+const url = "parq-casino.com";
 
 const withPWA = nextPWA({
   dest: "public",
@@ -50,20 +50,24 @@ const nextConfig = {
     return [
       {
         source: "/(.*)",
-        headers: [
-          { key: "Referrer-Policy", value: "no-referrer" },
-        ],
+        headers: [{ key: "Referrer-Policy", value: "no-referrer" }],
       },
       {
         source: "/(block-images|icons|footer-assets|fonts)/(.*)",
         headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
         ],
       },
       {
         source: "/_next/static/(.*)",
         headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
         ],
       },
     ];

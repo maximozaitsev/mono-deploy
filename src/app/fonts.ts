@@ -10,10 +10,13 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const montserrat_alternates = localFont({
+export const timesNewRoman = localFont({
   src: [
-    { path: "../../public/fonts/MontserratAlternates/MontserratAlternates-700.woff2", weight: "700", style: "normal" },
-    { path: "../../public/fonts/MontserratAlternates/MontserratAlternates-800.woff2", weight: "800", style: "normal" }
+    {
+      path: "../../public/fonts/times.ttf",
+      weight: "700",
+      style: "normal",
+    },
   ],
   variable: "--font-secondary",
   display: "swap",

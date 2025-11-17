@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://greyeagle-casino.com/
-Sitemap: https://greyeagle-casino.com/sitemap.xml
+Host: https://parq-casino.com/
+Sitemap: https://parq-casino.com/sitemap.xml

@@ -205,32 +205,31 @@ export function parseAppContent(data: any) {
       currenciesContent: [],
     };
 
-  const entries = Object.entries(data.sections) as [string, any][];
+  const sections = data.sections;
 
-  if (entries.length >= 5) {
-    const titleIndex = 2;
-    const langIndex = entries.length === 5 ? 3 : 4;
-    const currIndex = entries.length === 5 ? 4 : 5;
+  const findSection = (keyword: string): [string, any] | null => {
+    for (const [key, value] of Object.entries(sections)) {
+      const lowerKey = key.toLowerCase();
+      if (lowerKey.includes("license")) continue;
+      if (lowerKey.includes(keyword.toLowerCase())) {
+        return [key, value];
+      }
+    }
+    return null;
+  };
 
-    return {
-      appTitle: entries[titleIndex][0],
-      appContent: groupParagraphs(entries[titleIndex][1]),
-      buttons: [],
-      languagesTitle: entries[langIndex][0],
-      languagesContent: entries[langIndex][1],
-      currenciesTitle: entries[currIndex][0],
-      currenciesContent: entries[currIndex][1],
-    };
-  }
+  const appSection = findSection("app");
+  const languagesSection = findSection("language");
+  const currenciesSection = findSection("currenc");
 
   return {
-    appTitle: "",
-    appContent: [],
+    appTitle: appSection ? appSection[0] : "",
+    appContent: appSection ? groupParagraphs(appSection[1]) : [],
     buttons: [],
-    languagesTitle: "",
-    languagesContent: [],
-    currenciesTitle: "",
-    currenciesContent: [],
+    languagesTitle: languagesSection ? languagesSection[0] : "",
+    languagesContent: languagesSection ? languagesSection[1] : [],
+    currenciesTitle: currenciesSection ? currenciesSection[0] : "",
+    currenciesContent: currenciesSection ? currenciesSection[1] : [],
   };
 }
 
@@ -298,8 +297,7 @@ export function parseLicenseContent(data: any) {
   }
 
   const entries = Object.entries(data.sections) as [string, any][];
-  
-  // Берем первый массив из sections
+
   if (entries.length === 0) {
     return {
       title: "",
