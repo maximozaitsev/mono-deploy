@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "centurycasino-online.com";
-const ogTitle = "Century Casinos CA Review – Edmonton, St. Albert, Calgary, Racetrack";
-const ogSiteName = "Century Casino";
-const metaDescription = "A full guide to Century Casinos across Alberta. Compare Century Casino Edmonton with St. Albert, Calgary, and Century Mile, and see how their slots and tables stack up for a real night out.";
+const url = "club-regent-online.com";
+const ogTitle = "Club Regent Casino Canada – Real Entertainment, Rewards and Events";
+const ogSiteName = "Club Regent Casino";
+const metaDescription = "Club Regent Casino Canada offers gaming, dining, and live shows under one roof in Winnipeg. Enjoy slots, table games, and exclusive Club Card bonuses. Visit today and experience real casino excitement.";
 
 const locale = "en-CA";
 const language = "English";

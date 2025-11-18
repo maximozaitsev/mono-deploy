@@ -16,7 +16,7 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 130px center;
+  background-position: right 160px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -62,11 +62,11 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 506px;
+  max-width: 544px;
   height: auto;
 
   @media (max-width: 768px) {
-    margin-top: 19px;
+    margin-top: 8px;
   }
 
   @media (max-width: 480px) {
