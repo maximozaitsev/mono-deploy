@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "parq-casino.com";
-const ogTitle = "Parq Casino Canada: Premier Vancouver Entertainment Destination";
-const ogSiteName = "Parq Casino";
-const metaDescription = "Parq Casino Canada offers an exceptional land-based gaming experience in Vancouver. Enjoy 24/7 excitement with hundreds of slot machines, exclusive table games, fine dining, and luxury hotels: all in one vibrant entertainment complex.";
+const url = "centurycasino-online.com";
+const ogTitle = "Century Casinos CA Review – Edmonton, St. Albert, Calgary, Racetrack";
+const ogSiteName = "Century Casino";
+const metaDescription = "A full guide to Century Casinos across Alberta. Compare Century Casino Edmonton with St. Albert, Calgary, and Century Mile, and see how their slots and tables stack up for a real night out.";
 
 const locale = "en-CA";
 const language = "English";
