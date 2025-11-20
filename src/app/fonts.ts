@@ -10,21 +10,11 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const trirong = localFont({
+export const montserrat = localFont({
   src: [
-    { path: "../../public/fonts/Trirong/Trirong-800.woff2", weight: "800", style: "normal" }
+    { path: "../../public/fonts/Montserrat/Montserrat-VAR.woff2", weight: "100 900", style: "normal" }
   ],
   variable: "--font-secondary",
-  display: "swap",
-  preload: true,
-  adjustFontFallback: false,
-});
-
-export const barlow = localFont({
-  src: [
-    { path: "../../public/fonts/Barlow/Barlow-ExtraBold.ttf", weight: "800", style: "normal" }
-  ],
-  variable: "--font-third",
   display: "swap",
   preload: true,
   adjustFontFallback: false,

@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "rivercree-casino-online.com";
-const ogTitle = "River Cree Casino Canada: Exciting Landing Gaming Experience";
-const ogSiteName = "River Cree Casino";
-const metaDescription = "Visit River Cree Casino in Canada for an unforgettable on-site gaming experience. Enjoy hundreds of slot machines, table games, poker rooms, live entertainment, and a vibrant casino atmosphere.";
+const url = "casinowindsor-online.com";
+const ogTitle = "Casino Windsor Canada: Caesars Windsor Resort & Entertainment";
+const ogSiteName = "Casino Windsor";
+const metaDescription = "Experience Casino Windsor Canada, a world-class Caesars resort offering luxury accommodation, thrilling gaming, fine dining, and live entertainment. Located in Ontario, it’s one of Canada’s top casino destinations for visitors and players alike.";
 
 const locale = "en-CA";
 const language = "English";
