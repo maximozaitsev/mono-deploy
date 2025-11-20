@@ -72,7 +72,7 @@
 }
 
 .navLink {
-  font-family: $font-secondary;
+  font-family: $font-third;
   color: $text-color-primary;
   background: none;
   border: none;
@@ -112,7 +112,7 @@
   gap: 24px;
 
   .headerButton {
-    font-family: $font-secondary;
+    font-family: $font-third;
     height: $header-button-height;
     font-weight: $font-weight-black;
     font-size: 14px;

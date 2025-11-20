@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "club-regent-online.com";
-const ogTitle = "Club Regent Casino Canada – Real Entertainment, Rewards and Events";
-const ogSiteName = "Club Regent Casino";
-const metaDescription = "Club Regent Casino Canada offers gaming, dining, and live shows under one roof in Winnipeg. Enjoy slots, table games, and exclusive Club Card bonuses. Visit today and experience real casino excitement.";
+const url = "rivercree-casino-online.com";
+const ogTitle = "River Cree Casino Canada: Exciting Landing Gaming Experience";
+const ogSiteName = "River Cree Casino";
+const metaDescription = "Visit River Cree Casino in Canada for an unforgettable on-site gaming experience. Enjoy hundreds of slot machines, table games, poker rooms, live entertainment, and a vibrant casino atmosphere.";
 
 const locale = "en-CA";
 const language = "English";
