@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://casinowindsor-online.com/
-Sitemap: https://casinowindsor-online.com/sitemap.xml
+Host: https://grandvilla-casino.com/
+Sitemap: https://grandvilla-casino.com/sitemap.xml

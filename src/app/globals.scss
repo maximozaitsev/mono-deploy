@@ -137,6 +137,8 @@ body {
   font-style: normal;
   font-weight: $font-weight-regular;
   line-height: 40px;
+  word-break: break-word;
+  hyphens: auto;
 
   &.black {
     color: $text-color-secondary;

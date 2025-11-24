@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "casinowindsor-online.com";
-const ogTitle = "Casino Windsor Canada: Caesars Windsor Resort & Entertainment";
-const ogSiteName = "Casino Windsor";
-const metaDescription = "Experience Casino Windsor Canada, a world-class Caesars resort offering luxury accommodation, thrilling gaming, fine dining, and live entertainment. Located in Ontario, it’s one of Canada’s top casino destinations for visitors and players alike.";
+const url = "grandvilla-casino.com";
+const ogTitle = "Grand Villa Casino Canada – Exclusive Bonuses, Draws & Dining Rewards";
+const ogSiteName = "Grand Villa Windsor";
+const metaDescription = "Grand Villa Casino Canada features bonus card offers, exclusive draws, and dining rewards for loyal players. Discover the latest cash prizes, point multipliers, and seasonal promotions today.";
 
 const locale = "en-CA";
 const language = "English";

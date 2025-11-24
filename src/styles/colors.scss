@@ -1,21 +1,21 @@
 // colors
 $color-background: #ffffff;
-$color-background-welcome: #ececec;
-$color-background-secondary: #141414;
-$color-background-third: #ececec;
-$color-background-fourth: #141414;
-$color-background-header: #141414;
-$color-background-footer: #141414;
-$color-button-large: #ff2f52;
-$color-button-small: #ffaf2f;
+$color-background-welcome: linear-gradient(90deg, #001022 0%, #0051ae 100%);
+$color-background-secondary: #002856;
+$color-background-third: #f0f0f0;
+$color-background-fourth: #002856;
+$color-background-header: #002856;
+$color-background-footer: #002856;
+$color-button-large: #f9b80a;
+$color-button-small: #f90a71;
 
 // text color
 $text-color-primary: #fff;
-$text-color-secondary: #1c1c1c;
-$text-color-button-large: #fff;
-$text-color-button-small: #1c1c1c;
-$text-color-loader: #ff2f52;
-$text-color-fourth: #ff2f52;
+$text-color-secondary: #1d1d1d;
+$text-color-button-large: #1d1d1d;
+$text-color-button-small: #fff;
+$text-color-loader: #f90a71;
+$text-color-fourth: #f90a71;
 
 // svg colors
-$color-faq-icon: #ff2f52;
+$color-faq-icon: #0077ff;

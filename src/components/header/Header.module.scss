@@ -25,6 +25,10 @@
     @media (max-width: 768px) {
       margin-top: 4px;
     }
+
+      @media (max-width: 440px) {
+      max-width: 180px;
+    }
   }
 
   @media (max-width: 1080px) {
@@ -35,7 +39,7 @@
     height: 96px;
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 440px) {
     padding: 5px 10px;
     height: 64px;
   }
@@ -155,7 +159,7 @@
     }
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 440px) {
     .headerButton {
       &.playNow {
         width: auto;
@@ -231,7 +235,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 440px) {
   .menuItems {
     top: 64px;
     height: calc(100vh - 64px);
