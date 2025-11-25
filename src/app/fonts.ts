@@ -10,10 +10,13 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const open_sans = localFont({
+export const futura = localFont({
   src: [
-    { path: "../../public/fonts/OpenSans/OpenSans-700.woff2", weight: "700", style: "normal" },
-    { path: "../../public/fonts/OpenSans/OpenSans-800.woff2", weight: "800", style: "normal" }
+    {
+      path: "../../public/fonts/Futura/FuturaCyrillicHeavy.woff",
+      weight: "600",
+      style: "normal",
+    },
   ],
   variable: "--font-secondary",
   display: "swap",

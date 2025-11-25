@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "grandvilla-casino.com";
-const ogTitle = "Grand Villa Casino Canada – Exclusive Bonuses, Draws & Dining Rewards";
-const ogSiteName = "Grand Villa Windsor";
-const metaDescription = "Grand Villa Casino Canada features bonus card offers, exclusive draws, and dining rewards for loyal players. Discover the latest cash prizes, point multipliers, and seasonal promotions today.";
+const url = "pickeringcasino-online.com";
+const ogTitle = "Pickering Casino Canada – Full Guide to Games, Bonuses & Services";
+const ogSiteName = "Pickering Casino";
+const metaDescription = "Pickering Casino Canada offers a complete land-based gaming experience with slots, tables, poker, entertainment, and real on-site rewards. Learn how the resort works, explore its features, and discover what to expect during your visit. Start reading now.";
 
 const locale = "en-CA";
 const language = "English";

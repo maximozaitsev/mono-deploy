@@ -16,7 +16,7 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 160px center;
+  background-position: right 73px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -29,7 +29,7 @@
   }
 
   @media (max-width: 1280px) {
-    background-size: 40% auto;
+    background-size: 50% auto;
     background-position: right 20px center;
   }
 
@@ -62,12 +62,12 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 508px;
+  max-width: 576px;
   height: auto;
 
-  @media (max-width: 768px) {
-    margin-top: 18px;
-  }
+  // @media (max-width: 768px) {
+  //   margin-top: 14px;
+  // }
 
   @media (max-width: 480px) {
     object-fit: cover;

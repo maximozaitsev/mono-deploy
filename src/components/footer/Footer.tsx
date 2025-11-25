@@ -44,7 +44,7 @@ export default function Footer() {
     }
   };
 
-  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
+  const logoPath = isMobile ? "/logo-footer-mobile.svg" : "/logo-footer.svg";
 
   return (
     <footer className={styles.footer}>
