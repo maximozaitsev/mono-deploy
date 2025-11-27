@@ -1,0 +1,29 @@
+@use "../../styles/colors.scss" as *;
+@use "../../styles/lists" as lists;
+
+.promotionsSection {
+  background: $color-background;
+
+  :global(.container) {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    @media (max-width: 1220px) {
+      padding: 40px 40px;
+      gap: 40px;
+    }
+  }
+
+  .promotionsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include lists.common-list-styles(1.5rem);
+  }
+
+  :global(.h3-heading),
+  :global(.h4-heading) {
+    margin-top: 1.5rem;
+  }
+}

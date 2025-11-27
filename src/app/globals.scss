@@ -1,6 +1,6 @@
-@import "@/styles/colors";
+@import "../styles/colors";
 @import "@/styles/_fonts-bridge.scss";
-@import "@/styles/variables";
+@import "../styles/variables";
 
 :root {
   --color-ico: #{$text-color-secondary};
@@ -66,7 +66,7 @@ body {
   font-style: normal;
   font-weight: $font-weight-bold;
   line-height: normal;
-  // text-transform: uppercase;
+  text-transform: uppercase;
   word-break: break-word;
   hyphens: auto;
 
@@ -76,7 +76,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 32px;
-    font-weight: $font-weight-black;
+    // font-weight: $font-weight-black;
   }
 
   @media (max-width: 570px) {
@@ -91,17 +91,13 @@ body {
   font-style: normal;
   font-weight: $font-weight-bold;
   line-height: normal;
-  // text-transform: uppercase;
+  text-transform: uppercase;
   word-break: break-word;
   hyphens: auto;
 
-  &.black {
-    color: $text-color-secondary;
-  }
-
   @media (max-width: 768px) {
     font-size: 24px;
-    font-weight: $font-weight-black;
+    // font-weight: $font-weight-black;
   }
 
   @media (max-width: 570px) {
@@ -116,7 +112,7 @@ body {
   font-style: normal;
   font-weight: $font-weight-bold;
   line-height: normal;
-  // text-transform: uppercase;
+  text-transform: uppercase;
   word-break: break-word;
   hyphens: auto;
 
@@ -125,7 +121,7 @@ body {
   }
 
   @media (max-width: 768px) {
-    font-weight: $font-weight-black;
+    // font-weight: $font-weight-black;
     font-size: 18px;
   }
 }

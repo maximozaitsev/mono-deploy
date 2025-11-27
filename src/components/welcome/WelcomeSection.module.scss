@@ -16,7 +16,7 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 73px center;
+  background-position: right 138px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -29,7 +29,7 @@
   }
 
   @media (max-width: 1280px) {
-    background-size: 50% auto;
+    background-size: 40% auto;
     background-position: right 20px center;
   }
 
@@ -62,16 +62,20 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 576px;
+  max-width: 506px;
+  margin-top: 0px;
   height: auto;
 
-  // @media (max-width: 768px) {
-  //   margin-top: 14px;
-  // }
+  @media (max-width: 768px) {
+    margin-top: 19px;
+  }
 
   @media (max-width: 480px) {
+    width: 100vw;
+    max-width: 480px;
     object-fit: cover;
     object-position: center;
+    margin-top: 0px;
   }
 
   // @media (max-width: 400px) {
@@ -100,10 +104,18 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
-  width: 410px;
+  width: 460px;
   max-width: 50%;
 
   // margin-left: -20px;
+
+  button {
+    width: 290px !important;
+
+    @media (max-width: 768px) {
+      width: 263px !important;
+    }
+  }
 
   .bonusText {
     display: none;
@@ -120,6 +132,7 @@
     align-items: center;
     text-align: center;
     margin-top: 20px;
+
     .bonusText {
       display: block;
     }
@@ -135,12 +148,12 @@
 
 .welcomeText h2 {
   font-family: var(--font-secondary);
-  color: $text-color-primary;
+  color: $text-color-secondary;
   font-size: 32px;
   font-style: normal;
   font-weight: $font-weight-black;
   line-height: normal;
-  // text-transform: uppercase;
+  text-transform: uppercase;
 
   @media (max-width: 768px) {
     font-size: 24px;

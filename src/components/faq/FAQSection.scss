@@ -1,15 +1,26 @@
-@import "@/styles/colors.scss";
+@use "../../styles/colors.scss" as *;
 @import "@/styles/variables.scss";
 @import "@/styles/_fonts-bridge.scss";
 
 .faq-section {
   background: $color-background-secondary;
-  padding: 64px 0;
   display: block;
   gap: 0 !important;
 
-  @media (max-width: 768px) {
-    padding: 40px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 0;
+
+    @media (max-width: 1220px) {
+      padding: 40px 40px;
+      gap: 40px;
+    }
+
+    @media (max-width: 375px) {
+      padding: 40px 20px;
+      gap: 40px;
+    }
   }
 
   .faq-item {
@@ -23,7 +34,7 @@
       background: $color-background-third;
       font-size: 24px;
       font-weight: $font-weight-bold;
-      // text-transform: uppercase;
+      text-transform: uppercase;
       padding: 8px 32px;
       border-radius: $border-radius;
       cursor: pointer;

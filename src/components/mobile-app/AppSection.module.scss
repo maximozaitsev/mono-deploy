@@ -1,25 +1,23 @@
-@use "@/styles/colors" as *;
-@use "@/styles/lists" as lists;
+@use "../../styles/colors" as *;
+@use "../../styles/lists" as lists;
 
 .appSection {
-  background: $color-background-secondary;
-  padding: 64px;
-
-  @media (max-width: 768px) {
-    padding: 64px 0;
-  }
+  background: $color-background;
 }
 
 .topRow {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
 
   .textBlock {
     display: flex;
     flex-direction: column;
     gap: 48px;
     width: 548px;
+
+    h3 {
+      margin-bottom: 1.5rem;
+    }
 
     .paragraphGroup {
       display: flex;
@@ -60,7 +58,7 @@
 
     .image {
       position: absolute;
-      top: -0px;
+      top: 0px;
       right: -13px;
       overflow: hidden;
       height: auto;

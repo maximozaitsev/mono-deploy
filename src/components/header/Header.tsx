@@ -1,142 +1,153 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import Logo from "./Logo";
+import React, { useEffect, useState, useRef } from "react";
 import { PROJECT_NAME } from "@/config/projectConfig";
-import styles from "./Header.module.scss";
-import { usePathname } from "next/navigation";
 import { fetchOffers } from "../../utils/fetchOffers";
+import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
+import Logo from "./Logo";
+import GlobeIcon from "@/components/__common__/Globe";
+import ArrowDownIcon from "@/components/__common__/ArrowDown";
 
-const navItems = [
-  { label: "Games", path: "/games" },
-  { label: "App", path: "/app" },
-  { label: "Log In", path: "/login" },
-];
+import styles from "./Header.module.scss";
 
-const Header = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [offerId, setOfferId] = useState("");
-  const [offerLink, setOfferLink] = useState("");
-  const pathname = usePathname();
+interface HeaderProps {
+  languages: string[];
+  defaultLang: string;
+  currentLang: string;
+}
+
+const Header: React.FC<HeaderProps> = ({
+  languages = [],
+  defaultLang = "en",
+  currentLang = "en",
+}) => {
+  const [selectedLang, setSelectedLang] = useState(currentLang || "en");
+  const selectRef = useRef<HTMLSelectElement>(null);
+
+  const t = useTranslations();
+  const router = useRouter();
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    handleResize();
-    window.addEventListener("resize", handleResize);
+    setSelectedLang(currentLang || "en");
+  }, [currentLang]);
 
-    (async () => {
-      try {
-        const { offers } = await fetchOffers();
-        const first = offers?.[0];
-        setOfferId(first && first.id != null ? String(first.id) : "");
-        setOfferLink(first?.link || "");
-      } catch (e) {
-        console.error("Failed to prefetch offers in header:", e);
-      }
-    })();
+  const handleLanguageChange = (lang: string) => {
+    setSelectedLang(lang);
+    const target = lang === defaultLang ? "/" : `/${lang}`;
+    router.push(target);
+  };
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const handleSignInClick = () => {
+  const openSelect = () => {
+    const el = selectRef.current;
+    if (!el) return;
+    el.focus();
     try {
-      window.open(`/casino/${offerId}`, "_blank", "noopener,noreferrer");
+      (el as any).showPicker?.();
+    } catch {}
+    try {
+      el.click();
+    } catch {}
+    try {
+      const ev = new KeyboardEvent("keydown", {
+        key: "ArrowDown",
+        code: "ArrowDown",
+        bubbles: true,
+      });
+      el.dispatchEvent(ev);
+    } catch {}
+  };
+
+  const handleSignInClick = async () => {
+    try {
+      const { offers } = await fetchOffers();
+      window.open(`/casino/${offers[0].id}`, "_blank", "noopener,noreferrer");
     } catch (error) {
-      console.error("Error opening Play Now:", error);
+      console.error("Error opening preloader:", error);
     }
   };
 
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
-  const logoPath = isMobile ? "/logo-mobile.svg" : "/logo.svg";
-
-  const handleLogoClick: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
-    if (pathname === "/") {
-      e.preventDefault();
-      try {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      } catch {
-        window.scrollTo(0, 0);
-      }
-    }
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        {isMobile && (
-          <button
-            className={`${styles.burger} ${isMenuOpen ? styles.open : ""}`}
-            onClick={toggleMenu}
-            aria-label="Toggle navigation menu"
-          >
-            <span className={styles.burgerLine} />
-            <span className={styles.burgerLine} />
-            <span className={styles.burgerLine} />
-          </button>
-        )}
-        <Link
-          href="/"
-          onClick={handleLogoClick}
-          aria-label={`${PROJECT_NAME} home`}
+        <button
+          type="button"
+          onClick={scrollToTop}
+          className={styles.logoButton}
+          aria-label={`${PROJECT_NAME} Logo - Scroll to top`}
+          style={{ background: "none", border: "none" }}
         >
           <Logo
-            svgPath={logoPath}
-            gradientIdPrefix="header"
+            desktopSrc="/logo.svg"
+            mobileSrc="/logo-mobile.svg"
             alt={`${PROJECT_NAME} Logo`}
             onClick={() => {}}
           />
-        </Link>
-
-        <div className={styles.spacer} />
-
-        {!isMobile && (
-          <ul className={styles.navList}>
-            {navItems.map((item) => (
-              <li key={item.path} className={styles.navItem}>
-                <Link
-                  href={item.path}
-                  className={`${styles.navLink} ${
-                    pathname === item.path ? styles.activeNavLink : ""
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
+        </button>
 
         <div className={styles.headerButtons}>
+          <div className={styles.langControl}>
+            <GlobeIcon size={24} color="var(--text-color-fourth)" />
+            <div className={styles.langPicker}>
+              <select
+                ref={selectRef}
+                className={styles.languageSelector}
+                value={selectedLang}
+                onChange={(e) => handleLanguageChange(e.target.value)}
+                aria-label="Language"
+              >
+                {languages.length > 0 ? (
+                  languages.map((lang) => (
+                    <option key={lang} value={lang}>
+                      {lang.toUpperCase()}
+                    </option>
+                  ))
+                ) : (
+                  <option value={selectedLang}>
+                    {selectedLang.toUpperCase()}
+                  </option>
+                )}
+              </select>
+              <button
+                type="button"
+                className={styles.arrowButton}
+                aria-label="Open language menu"
+                onMouseDown={(e) => {
+                  e.preventDefault();
+                  openSelect();
+                }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  openSelect();
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    openSelect();
+                  }
+                }}
+              >
+                <ArrowDownIcon size={24} color="var(--text-color-fourth)" />
+              </button>
+            </div>
+          </div>
           <button
-            className={`${styles.headerButton} ${styles.playNow}`}
+            className={`${styles.headerButton} ${styles.login}`}
             onClick={handleSignInClick}
           >
-            Play Now
+            {t("signUp")}
+          </button>
+          <button
+            className={`${styles.headerButton} ${styles.signup}`}
+            onClick={handleSignInClick}
+          >
+            {t("playNow")}
           </button>
         </div>
-
-        {isMobile && (
-          <div
-            className={`${styles.menuItems} ${isMenuOpen ? styles.open : ""}`}
-          >
-            <ul className={styles.navListMobile}>
-              {navItems.map((item) => (
-                <li key={item.path} className={styles.navItem}>
-                  <Link
-                    href={item.path}
-                    className={`${styles.navLink} ${
-                      pathname === item.path ? styles.activeNavLink : ""
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
       </nav>
     </header>
   );

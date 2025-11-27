@@ -1,6 +1,5 @@
-@import "@/styles/colors.scss";
-@import "@/styles/variables.scss";
-@import "@/styles/_fonts-bridge.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
 
 .h1Section {
   display: flex;
@@ -12,11 +11,10 @@
   }
 
   h1 {
-    font-family: $font-secondary;
-    font-weight: $font-weight-black;
-    color: $text-color-secondary;
     font-size: 28px;
-    // text-transform: uppercase;
+    font-weight: $font-weight-black;
+    color: $text-color-primary;
+    text-transform: uppercase;
 
     background-color: $color-background-third;
     border-radius: $border-radius;

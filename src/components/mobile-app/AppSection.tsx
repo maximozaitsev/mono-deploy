@@ -1,119 +1,60 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import AppImage from "../../../public/block-images/app.webp";
 import AppImageMobile from "../../../public/block-images/app-mobile.webp";
-import { fetchOffers } from "@/utils/fetchOffers";
+import { getContentData, getProjectGeo, groupContent } from "../../utils/serverContent";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
-import { PROJECT_NAME, PROJECT_GEO } from "@/config/projectConfig";
 import { replaceCurrentYear } from "../../utils/yearReplacer";
+import { PROJECT_NAME } from "@/config/projectConfig";
 import styles from "./AppSection.module.scss";
 
 interface AppSectionProps {
-  content: any;
+  lang: string;
 }
 
-export default function AppSection({ content }: AppSectionProps) {
-  const [firstOfferId, setFirstOfferId] = useState<number | null>(null);
+export default async function AppSection({ lang }: AppSectionProps) {
+  const content = await getContentData(lang);
 
-  useEffect(() => {
-    fetchOffers()
-      .then(({ offers }) => {
-        if (offers.length > 0) {
-          setFirstOfferId(offers[0].id);
-        }
-      })
-      .catch((error) => console.error("Error fetching first offer ID:", error));
-  }, []);
+  if (!content?.sections) return null;
+
+  const projectGeo = getProjectGeo(lang);
 
   return (
     <section id="mobile" className={`${styles.appSection} section`}>
       <div className="container">
         <div className={styles.topRow}>
           <div className={styles.textBlock}>
-            {content.appTitle && <h3 className="h3-heading">{replaceCurrentYear(content.appTitle)}</h3>}
+            {content.sections && Object.entries(content.sections).map(
+              ([sectionTitle, sectionContent]: [string, any], index) => {
+                const groupedContent = Array.isArray(sectionContent) ? groupContent(sectionContent) : [];
+                return (
+                  <div key={index}>
+                    <h3 className="h3-heading">{replaceCurrentYear(sectionTitle)}</h3>
+                    {groupedContent.map((group, groupIndex) => (
+                      <div key={groupIndex} className={styles.paragraphGroup}>
+                        {group.map((block: any, idx: number) => (
+                          <BlockRenderer key={idx} block={block} />
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                );
+              }
+            )}
             <img
               src={AppImageMobile.src}
-              alt={PROJECT_NAME + " App"}
-              title={PROJECT_NAME + " " + PROJECT_GEO}
+              alt={`${PROJECT_NAME} App`}
+              title={`${PROJECT_NAME} ${projectGeo}`}
               className={styles.imageMobile}
               loading="lazy"
             />
-            {content.appContent.map((group: any, index: number) => (
-              <div key={index} className={styles.paragraphGroup}>
-                {group.map((block: any, i: number) => (
-                  <BlockRenderer key={i} block={block} />
-                ))}
-              </div>
-            ))}
-            <div className={styles.buttons}>
-              <button
-                onClick={() => {
-                  if (firstOfferId) {
-                    window.open(
-                      `/casino/${firstOfferId}`,
-                      "_blank",
-                      "noopener,noreferrer"
-                    );
-                  }
-                }}
-              >
-                <img
-                  className={styles.googlePlay}
-                  src="/assets/google-play.svg"
-                  alt="Download on the Google Play"
-                  title={PROJECT_NAME + " " + PROJECT_GEO + " in Google Play"}
-                  loading="lazy"
-                />
-              </button>
-              <button
-                onClick={() => {
-                  if (firstOfferId) {
-                    window.open(
-                      `/casino/${firstOfferId}`,
-                      "_blank",
-                      "noopener,noreferrer"
-                    );
-                  }
-                }}
-              >
-                <img
-                  className={styles.appStore}
-                  src="/assets/app-store.svg"
-                  alt="Download on the App Store"
-                  title={PROJECT_NAME + " " + PROJECT_GEO + " in App Store"}
-                  loading="lazy"
-                />
-              </button>
-            </div>
           </div>
           <div className={styles.imageBlock}>
             <img
               src={AppImage.src}
-              alt={PROJECT_NAME + " " + PROJECT_GEO + " App"}
-              title={PROJECT_NAME + " " + PROJECT_GEO + " Mobile"}
+              alt={`${PROJECT_NAME} ${projectGeo} App`}
+              title={`${PROJECT_NAME} ${projectGeo} Mobile`}
               className={styles.image}
               loading="lazy"
             />
-          </div>
-        </div>
-
-        <div className={styles.columns}>
-          <div className={styles.column}>
-            {content.languagesTitle && (
-              <h3 className="h3-heading">{replaceCurrentYear(content.languagesTitle)}</h3>
-            )}
-            {content.languagesContent.map((block: any, index: number) => (
-              <BlockRenderer key={index} block={block} />
-            ))}
-          </div>
-          <div className={styles.column}>
-            {content.currenciesTitle && (
-              <h3 className="h3-heading">{replaceCurrentYear(content.currenciesTitle)}</h3>
-            )}
-            {content.currenciesContent.map((block: any, index: number) => (
-              <BlockRenderer key={index} block={block} />
-            ))}
           </div>
         </div>
       </div>
