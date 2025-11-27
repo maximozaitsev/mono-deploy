@@ -7,7 +7,6 @@ import BonusDetailsSection from "@/components/bonus-details/BonusDetailsSection"
 import AboutSection from "@/components/about/AboutSection";
 import AppSection from "@/components/mobile-app/AppSection";
 import FAQSection from "@/components/faq/FAQSection";
-import GamesToPlay from "@/components/games-to-play/GamesToPlay";
 import PromotionsSection from "@/components/promotion/PromotionsSection";
 import AdvantageSection from "@/components/advantage/AdvantageSection";
 import Footer from "@/components/footer/Footer";
