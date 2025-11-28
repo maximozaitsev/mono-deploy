@@ -117,8 +117,6 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export const dynamic = "force-dynamic";
-
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = getBaseUrl();
   const canonical = baseUrl ? `${baseUrl}/` : "/";
@@ -234,25 +232,23 @@ export default async function RootLayout({
     <html lang={htmlLang} suppressHydrationWarning>
       <head>
         <link
-          rel="preconnect"
-          href="https://api.adkey-seo.com"
-          crossOrigin=""
+          rel="preload"
+          as="image"
+          href="/block-images/welcome-mobile.webp"
+          media="(max-width: 768px)"
         />
-        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
-          fetchPriority="high"
         />
         <link
-          rel="preload"
-          as="image"
-          href="/block-images/welcome-mobile.webp"
-          media="(max-width: 768px)"
-          fetchPriority="high"
+          rel="preconnect"
+          href="https://api.adkey-seo.com"
+          crossOrigin=""
         />
+        <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
       </head>
       <body className={fontVars}>
         <NextIntlClientProvider messages={messages as any} locale={locale} timeZone={"UTC"}>
