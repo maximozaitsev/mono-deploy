@@ -1,7 +1,5 @@
 import sharp from "sharp";
 import { NextResponse } from "next/server";
-import fs from "node:fs/promises";
-import path from "node:path";
 
 function badRequest(msg: string) {
   return new NextResponse(msg, { status: 400 });
@@ -22,38 +20,25 @@ export async function GET(req: Request) {
     if (!src) return badRequest("Missing src");
     if (!w || !h) return badRequest("Missing or invalid w/h");
 
-    let input: Buffer;
-    
-    // Check if it's a local file path
-    if (src.startsWith("/") && !src.startsWith("//")) {
-      try {
-        const filePath = path.join(process.cwd(), "public", src);
-        input = await fs.readFile(filePath);
-      } catch {
-        return badRequest("Local file not found");
-      }
-    } else {
-      // Remote URL
-      let srcUrl: URL;
-      try {
-        srcUrl = new URL(src);
-      } catch {
-        return badRequest("Invalid src URL");
-      }
-      if (!ALLOWED_HOSTS.has(srcUrl.hostname)) {
-        return new NextResponse("Forbidden host", { status: 403 });
-      }
-
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 7000);
-      const res = await fetch(srcUrl, { signal: controller.signal, cache: "no-store" });
-      clearTimeout(timeout);
-      if (!res.ok) {
-        return new NextResponse(`Upstream error ${res.status}`, { status: 502 });
-      }
-      const arrayBuffer = await res.arrayBuffer();
-      input = Buffer.from(arrayBuffer);
+    let srcUrl: URL;
+    try {
+      srcUrl = new URL(src);
+    } catch {
+      return badRequest("Invalid src URL");
     }
+    if (!ALLOWED_HOSTS.has(srcUrl.hostname)) {
+      return new NextResponse("Forbidden host", { status: 403 });
+    }
+
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 7000);
+    const res = await fetch(srcUrl, { signal: controller.signal, cache: "no-store" });
+    clearTimeout(timeout);
+    if (!res.ok) {
+      return new NextResponse(`Upstream error ${res.status}`, { status: 502 });
+    }
+    const arrayBuffer = await res.arrayBuffer();
+    const input = Buffer.from(arrayBuffer);
 
     const fitAllowed = new Set(["cover", "contain", "fill", "inside", "outside"]);
     const fit = (fitAllowed.has(fitParam) ? fitParam : "contain") as keyof sharp.FitEnum;

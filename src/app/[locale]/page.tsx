@@ -17,31 +17,26 @@ import path from "node:path";
 import { locales } from "@/config/i18n";
 import { notFound } from "next/navigation";
 
+export const revalidate = 60;
+
 export default async function LocalePage({ params }: { params: { locale: string } }) {
   const currentLang = (params.locale || "").toLowerCase();
   if (!locales.includes(currentLang)) notFound();
 
-  // Parallelize file read and API call
-  const [manifestData, games] = await Promise.all([
-    (async () => {
-      type LangManifest = { languages: string[]; defaultLang: string };
-      let manifest: LangManifest = { languages: [], defaultLang: "en" };
-      try {
-        const manifestPath = path.join(process.cwd(), "public", "content", "languages.json");
-        const raw = await fs.readFile(manifestPath, "utf-8");
-        const parsed = JSON.parse(raw) as Partial<LangManifest>;
-        if (Array.isArray(parsed.languages) && typeof parsed.defaultLang === "string") {
-          manifest = { languages: parsed.languages, defaultLang: parsed.defaultLang };
-        }
-      } catch {
-        manifest = { languages: ["en"], defaultLang: "en" };
-      }
-      return manifest;
-    })(),
-    fetchGames("gambling"),
-  ]);
+  type LangManifest = { languages: string[]; defaultLang: string };
+  let manifest: LangManifest = { languages: [], defaultLang: "en" };
+  try {
+    const manifestPath = path.join(process.cwd(), "public", "content", "languages.json");
+    const raw = await fs.readFile(manifestPath, "utf-8");
+    const parsed = JSON.parse(raw) as Partial<LangManifest>;
+    if (Array.isArray(parsed.languages) && typeof parsed.defaultLang === "string") {
+      manifest = { languages: parsed.languages, defaultLang: parsed.defaultLang };
+    }
+  } catch {
+    manifest = { languages: ["en"], defaultLang: "en" };
+  }
 
-  const manifest = manifestData;
+  const games = await fetchGames("gambling");
 
   return (
     <main>

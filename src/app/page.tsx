@@ -15,6 +15,8 @@ import { fetchGames } from "@/utils/fetchGames";
 import fs from "node:fs/promises";
 import path from "node:path";
 
+export const revalidate = 60;
+
 export default async function HomePage() {
   type LangManifest = { languages: string[]; defaultLang: string };
   let manifest: LangManifest = { languages: [], defaultLang: "en" };

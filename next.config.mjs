@@ -43,11 +43,6 @@ const nextConfig = {
       "next-intl",
     ],
   },
-  compiler: {
-    removeConsole: process.env.NODE_ENV === "production" ? {
-      exclude: ["error", "warn"],
-    } : false,
-  },
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -77,12 +72,6 @@ const nextConfig = {
       },
       {
         source: "/_next/static/(.*)",
-        headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-        ],
-      },
-      {
-        source: "/api/img",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],

@@ -1,6 +1,6 @@
-@import "@/styles/colors";
+@import "../styles/colors";
 @import "@/styles/_fonts-bridge.scss";
-@import "@/styles/variables";
+@import "../styles/variables";
 
 :root {
   --color-ico: #{$text-color-secondary};
