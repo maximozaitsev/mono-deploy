@@ -1,8 +1,5 @@
-@import "../../styles/colors.scss";
-@import "../../styles/variables.scss";
-
 .welcomeSection {
-  background: $color-background-welcome;
+  background: var(--color-background-welcome);
   width: 100%;
 
   @media (max-width: 768px) {
@@ -142,16 +139,16 @@
 
 .welcomeText h2 {
   font-family: var(--font-secondary);
-  color: $text-color-secondary;
+  color: var(--text-color-secondary);
   font-size: 32px;
   font-style: normal;
-  font-weight: $font-weight-black;
+  font-weight: var(--font-weight-black);
   line-height: normal;
   text-transform: uppercase;
 
   @media (max-width: 768px) {
     font-size: 24px;
-    font-weight: $font-weight-black;
+    font-weight: var(--font-weight-black);
     // color: $text-color-welcome;
 
     // background: $text-color-welcome;

@@ -1,9 +1,6 @@
-@import "../../styles/colors.scss";
-@import "../../styles/variables.scss";
-
 .header {
   display: flex;
-  background: $color-background-header;
+  background: var(--color-background-header);
   padding: 20px 160px;
   position: sticky;
   top: 0;
@@ -46,26 +43,26 @@
   gap: 24px;
 
   .headerButton {
-    height: $header-button-height;
+    height: var(--header-button-height);
     font-family: var(--font-secondary);
-    font-weight: $font-weight-black;
+    font-weight: var(--font-weight-black);
     font-size: 14px;
     padding: 12px 0px;
-    border-radius: $header-button-border-radius;
+    border-radius: var(--header-button-border-radius);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &.login {
-      background: $color-button-small;
-      width: $header-button-large-small;
-      color: $text-color-button-small;
+      background: var(--color-button-small);
+      width: var(--header-button-large-small);
+      color: var(--text-color-button-small);
     }
 
     &.signup {
-      background: $color-button-large;
-      width: $header-button-large-width;
-      color: $text-color-button-large;
+      background: var(--color-button-large);
+      width: var(--header-button-large-width);
+      color: var(--text-color-button-large);
     }
 
     &:hover {
@@ -77,16 +74,16 @@
     gap: 8px;
 
     .headerButton {
-      height: $header-button-height-mobile;
-      border-radius: $header-button-border-radius-mobile;
+      height: var(--header-button-height-mobile);
+      border-radius: var(--header-button-border-radius-mobile);
       font-size: 10px;
       padding: 8px 4px;
 
       &.login {
-        width: $header-button-large-small-mobile;
+        width: var(--header-button-large-small-mobile);
       }
       &.signup {
-        width: $header-button-large-width-mobile;
+        width: var(--header-button-large-width-mobile);
       }
     }
   }
@@ -140,9 +137,9 @@
     background: transparent;
     border: none;
     font-family: var(--font-primary);
-    font-weight: $font-weight-regular;
+    font-weight: var(--font-weight-regular);
     font-size: 20px;
-    color: $text-color-primary;
+    color: var(--text-color-primary);
     padding: 0 5px 0 0;
     outline: none;
     appearance: none;
