@@ -1,8 +1,6 @@
 // /src/app/layout.tsx
 import type { Metadata, Viewport } from "next";
 import "./globals.scss";
-import "../styles/colors.scss";
-import "../styles/variables.scss";
 
 import fs from "node:fs/promises";
 import path from "node:path";
