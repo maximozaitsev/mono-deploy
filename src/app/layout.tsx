@@ -234,8 +234,14 @@ export default async function RootLayout({
         <link
           rel="preload"
           as="image"
+          href="/api/img?src=%2Fblock-images%2Fwelcome-mobile.webp&w=390&h=214&f=webp&q=75&fit=cover"
+          media="(max-width: 390px)"
+        />
+        <link
+          rel="preload"
+          as="image"
           href="/block-images/welcome-mobile.webp"
-          media="(max-width: 768px)"
+          media="(min-width: 391px) and (max-width: 768px)"
         />
         <link
           rel="preload"
