@@ -2,40 +2,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { getProjectGeoForLang } from "./localeMap";
 
-export interface LangManifest {
-  languages: string[];
-  defaultLang: string;
-}
-
 export interface ContentData {
   [key: string]: any;
-}
-
-export async function getLangManifest(): Promise<LangManifest> {
-  try {
-    const manifestPath = path.join(
-      process.cwd(),
-      "public",
-      "content",
-      "languages.json"
-    );
-    const raw = await fs.readFile(manifestPath, "utf-8");
-    const parsed = JSON.parse(raw) as Partial<LangManifest>;
-    
-    if (
-      Array.isArray(parsed.languages) &&
-      typeof parsed.defaultLang === "string"
-    ) {
-      return {
-        languages: parsed.languages,
-        defaultLang: parsed.defaultLang,
-      };
-    }
-  } catch (error) {
-    console.error("Error loading languages manifest:", error);
-  }
-  
-  return { languages: ["en"], defaultLang: "en" };
 }
 
 export async function getContentData(lang: string): Promise<ContentData> {
@@ -155,99 +123,6 @@ export function parseAdvantageData(data: any) {
   };
 }
 
-export function parseSupportData(data: any) {
-  if (!data?.support) return null;
-  
-  const supportEntries = Object.entries(data.support) as [string, any][];
-  if (supportEntries.length === 0) return null;
-  
-  const [sectionTitle, blocks] = supportEntries[0];
-  return { sectionTitle, blocks };
-}
-
-export function parseLoginData(data: any) {
-  if (!data?.about) return { aboutSections: {}, depositSection: null, withdrawalSection: null };
-  
-  const aboutEntries = Object.entries(data.about) as [string, any][];
-  
-  if (aboutEntries.length > 2) {
-    const depositTitle = aboutEntries[aboutEntries.length - 2][0];
-    const withdrawalTitle = aboutEntries[aboutEntries.length - 1][0];
-
-    const depositSection = {
-      title: depositTitle,
-      content: aboutEntries[aboutEntries.length - 2][1],
-    };
-    
-    const withdrawalSection = {
-      title: withdrawalTitle,
-      content: aboutEntries[aboutEntries.length - 1][1],
-    };
-
-    const filteredAbout = aboutEntries.slice(0, aboutEntries.length - 2);
-    const aboutSections = Object.fromEntries(filteredAbout);
-    
-    return { aboutSections, depositSection, withdrawalSection };
-  }
-  
-  return { aboutSections: data.about, depositSection: null, withdrawalSection: null };
-}
-
-export function parseSectionWithTwoColumnsData(data: any, jsonKey: string) {
-  const sectionData = data[jsonKey];
-  if (!sectionData) {
-    console.error(`Ошибка: ключ "${jsonKey}" отсутствует в JSON`);
-    return {
-      sectionTitle: "",
-      introContent: [],
-      leftColumnContent: [],
-      rightColumnContent: []
-    };
-  }
-  
-  const sectionEntries = Object.entries(sectionData) as [string, any][];
-  if (sectionEntries.length === 0) {
-    return {
-      sectionTitle: "",
-      introContent: [],
-      leftColumnContent: [],
-      rightColumnContent: []
-    };
-  }
-
-  const [firstKey, section] = sectionEntries[0];
-  const sectionTitle = firstKey;
-
-  const firstH3Index = section.findIndex(
-    (block: any) => block.type === "heading" && block.level === 3
-  );
-  const introBlocks =
-    firstH3Index !== -1 ? section.slice(0, firstH3Index) : section;
-  const introContent = groupParagraphs(introBlocks, "");
-
-  const h3Sections = section
-    .slice(firstH3Index)
-    .reduce((acc: any[], block: any) => {
-      if (block.type === "heading" && block.level === 3) {
-        acc.push({ heading: block.text, items: [] });
-      } else if (acc.length > 0) {
-        acc[acc.length - 1].items.push(block);
-      }
-      return acc;
-    }, []);
-
-  const midIndex = Math.ceil(h3Sections.length / 2);
-  const leftColumnContent = h3Sections.slice(0, midIndex);
-  const rightColumnContent = h3Sections.slice(midIndex);
-
-  return {
-    sectionTitle,
-    introContent,
-    leftColumnContent,
-    rightColumnContent
-  };
-}
-
 export function groupContent(blocks: any[]): any[][] {
   const grouped: any[][] = [];
   let tempGroup: any[] = [];
@@ -267,41 +142,6 @@ export function groupContent(blocks: any[]): any[][] {
   }
   return grouped;
 }
-
-export function parseAppData(data: any) {
-  if (!data?.sections) return null;
-  
-  const sections = data.sections;
-
-  const findSection = (keyword: string): [string, any] | null => {
-    for (const [key, value] of Object.entries(sections)) {
-      const lowerKey = key.toLowerCase();
-      if (lowerKey.includes("license")) continue;
-      if (lowerKey.includes(keyword.toLowerCase())) {
-        return [key, value];
-      }
-    }
-    return null;
-  };
-
-  const appSection = findSection("app");
-  const languagesSection = findSection("language");
-  const currenciesSection = findSection("currenc");
-
-  if (!appSection || !languagesSection || !currenciesSection) {
-    return null;
-  }
-
-  return {
-    appTitle: appSection[0],
-    appContent: groupContent(appSection[1]),
-    languagesTitle: languagesSection[0],
-    languagesContent: languagesSection[1],
-    currenciesTitle: currenciesSection[0],
-    currenciesContent: currenciesSection[1],
-  };
-}
-
 
 export function parseFAQData(data: any) {
   if (!data?.faq) return { faqTitle: "", faqs: [] };
@@ -327,13 +167,3 @@ export function parseFAQData(data: any) {
   return { faqTitle, faqs: items };
 }
 
-export async function getFirstOfferId(): Promise<number | null> {
-  try {
-    const { fetchOffers } = await import("./fetchOffers");
-    const { offers } = await fetchOffers();
-    return offers.length > 0 ? offers[0].id : null;
-  } catch (error) {
-    console.error("Error fetching first offer ID:", error);
-    return null;
-  }
-}

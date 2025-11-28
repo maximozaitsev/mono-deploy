@@ -29,26 +29,6 @@
     .imageMobile {
       display: none;
     }
-
-    .buttons {
-      display: flex;
-      gap: 24px;
-
-      button {
-        background: none;
-        border: none;
-        cursor: pointer;
-
-        img {
-          height: 52px;
-
-          @media (max-width: 768px) {
-            height: 53px;
-            width: 181px;
-          }
-        }
-      }
-    }
   }
 
   .imageBlock {
@@ -86,10 +66,7 @@
         width: 100%;
         height: auto;
         align-self: center;
-      }
-
-      h3 {
-        width: 80%;
+        margin: 0 auto;
       }
     }
 
@@ -107,6 +84,11 @@
 
       h3:first-child {
         font-size: 32px;
+      }
+
+      .imageMobile {
+        align-self: center;
+        margin: 0 auto;
       }
 
       .buttons {
@@ -136,29 +118,6 @@
       @media (max-width: 500px) {
         display: none;
       }
-    }
-  }
-}
-
-.columns {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  justify-content: space-between;
-
-  .column {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    @include lists.common-list-styles(1rem);
-  }
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 2.5rem;
-
-    .column {
-      width: 100%;
     }
   }
 }

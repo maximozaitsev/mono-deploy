@@ -18,8 +18,3 @@ export type HomePageProps = {
   country: string;
   offers: Offer[];
 };
-
-export type TopCasinosSectionProps = {
-  country: string;
-  offers: Offer[];
-};

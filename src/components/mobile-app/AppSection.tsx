@@ -28,6 +28,15 @@ export default async function AppSection({ lang }: AppSectionProps) {
                 return (
                   <div key={index}>
                     <h3 className="h3-heading">{replaceCurrentYear(sectionTitle)}</h3>
+                    {index === 0 && (
+                      <img
+                        src={AppImageMobile.src}
+                        alt={`${PROJECT_NAME} App`}
+                        title={`${PROJECT_NAME} ${projectGeo}`}
+                        className={styles.imageMobile}
+                        loading="lazy"
+                      />
+                    )}
                     {groupedContent.map((group, groupIndex) => (
                       <div key={groupIndex} className={styles.paragraphGroup}>
                         {group.map((block: any, idx: number) => (
@@ -39,13 +48,6 @@ export default async function AppSection({ lang }: AppSectionProps) {
                 );
               }
             )}
-            <img
-              src={AppImageMobile.src}
-              alt={`${PROJECT_NAME} App`}
-              title={`${PROJECT_NAME} ${projectGeo}`}
-              className={styles.imageMobile}
-              loading="lazy"
-            />
           </div>
           <div className={styles.imageBlock}>
             <img

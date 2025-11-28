@@ -138,6 +138,3 @@ export function getLocaleMeta(geo: string) {
   return { htmlLang, ogLocale, languageName };
 }
 
-export function allKnownGeos(): string[] {
-  return Object.keys(GEO_TO_LANG);
-}
