@@ -49,6 +49,8 @@ const nextConfig = {
       "next-intl",
     ],
   },
+  // Modern browser support - don't transpile modern JS features
+  transpilePackages: [],
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -96,8 +98,24 @@ const nextConfig = {
       use: ["@svgr/webpack"],
     });
     
-    // Optimize CSS extraction and minimize duplicates
+    // Disable polyfills for modern browsers
     if (!options.isServer) {
+      // Remove core-js and other polyfill libraries
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        'core-js': false,
+        '@babel/polyfill': false,
+        'regenerator-runtime': false,
+        'core-js/modules': false,
+        'core-js/stable': false,
+        'core-js/features': false,
+      };
+      
+      // Exclude polyfills from node_modules
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+      };
+      
       const existingCacheGroups = config.optimization?.splitChunks?.cacheGroups || {};
       config.optimization = {
         ...config.optimization,

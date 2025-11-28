@@ -1,7 +1,11 @@
 # Modern browsers only - removes unnecessary polyfills
-# Supports browsers with >0.5% market share and last 2 versions
-> 0.5%
-last 2 versions
+# Only latest versions of modern browsers (Chrome, Firefox, Safari, Edge)
+# This excludes polyfills for Array.at, Array.flat, Object.fromEntries, etc.
+last 1 Chrome versions
+last 1 Firefox versions
+last 1 Safari versions
+last 1 Edge versions
 not dead
 not IE 11
+not op_mini all
 
