@@ -17,6 +17,8 @@ import path from "node:path";
 import { locales } from "@/config/i18n";
 import { notFound } from "next/navigation";
 
+export const revalidate = 60;
+
 export default async function LocalePage({ params }: { params: { locale: string } }) {
   const currentLang = (params.locale || "").toLowerCase();
   if (!locales.includes(currentLang)) notFound();
