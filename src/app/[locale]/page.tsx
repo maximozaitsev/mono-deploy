@@ -2,15 +2,34 @@ import Header from "@/components/header/Header";
 import WelcomeSection from "@/components/welcome/WelcomeSection";
 import H1Section from "@/components/h1-block/H1Block";
 import TopCasinosSection from "@/components/top-casinos/TopCasinosSection";
-import TopGamesSection from "@/components/top-games/TopGamesSection";
-import BonusDetailsSection from "@/components/bonus-details/BonusDetailsSection";
-import AboutSection from "@/components/about/AboutSection";
-import AppSection from "@/components/mobile-app/AppSection";
-import FAQSection from "@/components/faq/FAQSection";
-import PromotionsSection from "@/components/promotion/PromotionsSection";
-import AdvantageSection from "@/components/advantage/AdvantageSection";
-import Footer from "@/components/footer/Footer";
+import dynamic from "next/dynamic";
 import { fetchGames } from "@/utils/fetchGames";
+
+// Lazy load below-the-fold components
+const TopGamesSection = dynamic(() => import("@/components/top-games/TopGamesSection"), {
+  ssr: true,
+});
+const BonusDetailsSection = dynamic(() => import("@/components/bonus-details/BonusDetailsSection"), {
+  ssr: true,
+});
+const AboutSection = dynamic(() => import("@/components/about/AboutSection"), {
+  ssr: true,
+});
+const AppSection = dynamic(() => import("@/components/mobile-app/AppSection"), {
+  ssr: true,
+});
+const FAQSection = dynamic(() => import("@/components/faq/FAQSection"), {
+  ssr: true,
+});
+const PromotionsSection = dynamic(() => import("@/components/promotion/PromotionsSection"), {
+  ssr: true,
+});
+const AdvantageSection = dynamic(() => import("@/components/advantage/AdvantageSection"), {
+  ssr: true,
+});
+const Footer = dynamic(() => import("@/components/footer/Footer"), {
+  ssr: true,
+});
 
 import fs from "node:fs/promises";
 import path from "node:path";

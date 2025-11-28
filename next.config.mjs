@@ -92,18 +92,25 @@ const nextConfig = {
     
     // Optimize CSS extraction and minimize duplicates
     if (!options.isServer) {
+      const existingCacheGroups = config.optimization?.splitChunks?.cacheGroups || {};
       config.optimization = {
         ...config.optimization,
         splitChunks: {
           ...config.optimization.splitChunks,
           cacheGroups: {
-            ...config.optimization.splitChunks?.cacheGroups,
+            ...existingCacheGroups,
+            default: {
+              ...existingCacheGroups.default,
+              minChunks: 2,
+              reuseExistingChunk: true,
+            },
             styles: {
               name: 'styles',
               test: /\.(css|scss|sass)$/,
               chunks: 'all',
               enforce: true,
               priority: 20,
+              minSize: 0,
             },
           },
         },
