@@ -61,26 +61,20 @@
 
 .mobileImage {
   display: inline-block;
-  width: 100vw;
-  max-width: 506px;
+  width: 100%;
+  max-width: 412px;
   margin-top: 0px;
   height: auto;
+  object-fit: cover;
+  object-position: center;
 
   @media (max-width: 768px) {
     margin-top: 19px;
   }
 
   @media (max-width: 480px) {
-    width: 100vw;
-    max-width: 480px;
-    object-fit: cover;
-    object-position: center;
-    margin-top: 0px;
+    max-width: 100%;
   }
-
-  // @media (max-width: 400px) {
-  //   height: 200px;
-  // }
 }
 
 .welcomeContent {
