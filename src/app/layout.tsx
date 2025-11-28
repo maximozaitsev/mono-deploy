@@ -1,8 +1,6 @@
 // /src/app/layout.tsx
 import type { Metadata, Viewport } from "next";
 import "./globals.scss";
-import "../styles/colors.scss";
-import "../styles/variables.scss";
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -246,12 +244,14 @@ export default async function RootLayout({
           as="image"
           href="/block-images/welcome.webp"
           media="(min-width: 769px)"
+          fetchPriority="high"
         />
         <link
           rel="preload"
           as="image"
           href="/block-images/welcome-mobile.webp"
           media="(max-width: 768px)"
+          fetchPriority="high"
         />
       </head>
       <body className={fontVars}>

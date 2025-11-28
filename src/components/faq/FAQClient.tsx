@@ -28,15 +28,20 @@ export default function FAQClient({ faqTitle, faqs }: FAQClientProps) {
   };
 
   useEffect(() => {
-    contentRefs.current.forEach((content, index) => {
-      if (content) {
-        if (activeIndices.includes(index)) {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } else {
-          content.style.maxHeight = "0px";
+    const rafId = requestAnimationFrame(() => {
+      contentRefs.current.forEach((content, index) => {
+        if (content) {
+          if (activeIndices.includes(index)) {
+            
+            const height = content.scrollHeight;
+            content.style.maxHeight = height + "px";
+          } else {
+            content.style.maxHeight = "0px";
+          }
         }
-      }
+      });
     });
+    return () => cancelAnimationFrame(rafId);
   }, [activeIndices]);
 
   return (
