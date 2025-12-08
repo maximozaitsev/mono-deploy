@@ -1,5 +1,8 @@
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
+
 .welcomeSection {
-  background: var(--color-background-welcome);
+  background: $color-background-welcome;
   width: 100%;
 
   @media (max-width: 768px) {
@@ -13,7 +16,7 @@
   width: 100%;
   background-image: url("/block-images/welcome.webp");
   background-repeat: no-repeat;
-  background-position: right 138px center;
+  background-position: right 160px center;
   max-width: 90rem;
   margin: 0 auto;
   height: 540px;
@@ -26,7 +29,7 @@
   }
 
   @media (max-width: 1280px) {
-    background-size: 40% auto;
+    background-size: 50% auto;
     background-position: right 20px center;
   }
 
@@ -41,7 +44,7 @@
     background-size: auto;
     background-position: initial;
     margin: 0 auto 24px auto;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
   }
 }
 
@@ -58,20 +61,22 @@
 
 .mobileImage {
   display: inline-block;
-  width: 100%;
-  max-width: 412px;
-  margin-top: 0px;
+  width: 100vw;
+  max-width: 522px;
   height: auto;
-  object-fit: cover;
-  object-position: center;
 
   @media (max-width: 768px) {
-    margin-top: 19px;
+    margin-top: 14px;
   }
 
   @media (max-width: 480px) {
-    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
+
+  // @media (max-width: 400px) {
+  //   height: 200px;
+  // }
 }
 
 .welcomeContent {
@@ -95,18 +100,10 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
-  width: 460px;
+  width: 410px;
   max-width: 50%;
 
   // margin-left: -20px;
-
-  button {
-    width: 290px !important;
-
-    @media (max-width: 768px) {
-      width: 263px !important;
-    }
-  }
 
   .bonusText {
     display: none;
@@ -123,7 +120,6 @@
     align-items: center;
     text-align: center;
     margin-top: 20px;
-
     .bonusText {
       display: block;
     }
@@ -139,16 +135,16 @@
 
 .welcomeText h2 {
   font-family: var(--font-secondary);
-  color: var(--text-color-secondary);
+  color: $text-color-secondary;
   font-size: 32px;
   font-style: normal;
-  font-weight: var(--font-weight-black);
+  font-weight: $font-weight-black;
   line-height: normal;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
   @media (max-width: 768px) {
     font-size: 24px;
-    font-weight: var(--font-weight-black);
+    font-weight: $font-weight-black;
     // color: $text-color-welcome;
 
     // background: $text-color-welcome;

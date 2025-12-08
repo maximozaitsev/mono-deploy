@@ -4,13 +4,11 @@ import { useEffect, useState } from "react";
 import Button from "../../__common__/button/Button";
 import { fetchOffers } from "@/utils/fetchOffers";
 import styles from "../WelcomeSection.module.scss";
-import { useTranslations } from "next-intl";
 
 export default function DynamicWelcomeCta() {
   const [welcomeBonus, setWelcomeBonus] = useState("");
   const [firstOfferId, setFirstOfferId] = useState<string>("");
   const [offerLink, setOfferLink] = useState<string>("");
-  const t = useTranslations();
 
   useEffect(() => {
     const fetchWelcomeBonus = async () => {
@@ -45,15 +43,15 @@ export default function DynamicWelcomeCta() {
   return (
     <>
       <h2 className={styles.offerText}>
-        {t("exclusiveWelcomeOfferOf")} {welcomeBonus}
+        Exclusive welcome offer of {welcomeBonus}
       </h2>
       <h2 className={styles.bonusText}>
-        {t("exclusiveWelcomeOfferOf")} {welcomeBonus}
+        Exclusive welcome bonus of {welcomeBonus}
       </h2>
 
       {(firstOfferId || offerLink) && (
         <Button
-          text={t("claimBonus")}
+          text="Claim Bonus"
           variant="primary"
           useNavigation={true}
           url={firstOfferId ? `/casino/${firstOfferId}` : offerLink}
@@ -63,4 +61,3 @@ export default function DynamicWelcomeCta() {
     </>
   );
 }
-

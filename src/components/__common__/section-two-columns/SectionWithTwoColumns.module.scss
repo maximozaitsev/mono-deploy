@@ -1,0 +1,44 @@
+@import "@/styles/colors.scss";
+
+.sectionContainer {
+  background: $color-background;
+
+  :global(.container) {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  @media (max-width: 1380px) {
+    word-break: break-word;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+
+    :global(.container) {
+      gap: 40px;
+    }
+  }
+  .paragraphGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    :global(.styled-list) {
+      margin-left: 1.5rem;
+      padding: 0;
+    }
+  }
+}
+
+.sectionWithDarkText {
+  :global(.paragraph-text) {
+    color: $text-color-secondary;
+  }
+
+  :global(.h2-heading),
+  :global(.h3-heading) {
+    color: $text-color-secondary;
+  }
+}

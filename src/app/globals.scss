@@ -1,53 +1,11 @@
-@import "../styles/colors";
+@import "@/styles/colors";
 @import "@/styles/_fonts-bridge.scss";
-@import "../styles/variables";
+@import "@/styles/variables";
 
 :root {
   --color-ico: #{$text-color-secondary};
   --text-color-fourth: #{$text-color-fourth};
   --color-faq-icon: #{$color-faq-icon};
-  
-  // Background colors
-  --color-background: #{$color-background};
-  --color-background-welcome: #{$color-background-welcome};
-  --color-background-secondary: #{$color-background-secondary};
-  --color-background-third: #{$color-background-third};
-  --color-background-fourth: #{$color-background-fourth};
-  --color-background-header: #{$color-background-header};
-  --color-background-footer: #{$color-background-footer};
-  
-  // Text colors
-  --text-color-primary: #{$text-color-primary};
-  --text-color-secondary: #{$text-color-secondary};
-  --text-color-button-large: #{$text-color-button-large};
-  --text-color-button-small: #{$text-color-button-small};
-  --text-color-loader: #{$text-color-loader};
-  
-  // Button colors
-  --color-button-large: #{$color-button-large};
-  --color-button-small: #{$color-button-small};
-  
-  // Border radius
-  --border-radius: #{$border-radius};
-  --button-large-border-radius: #{$button-large-border-radius};
-  --button-small-border-radius: #{$button-small-border-radius};
-  --button-large-border-radius-mobile: #{$button-large-border-radius-mobile};
-  --button-small-border-radius-mobile: #{$button-small-border-radius-mobile};
-  --header-button-border-radius: #{$header-button-border-radius};
-  --header-button-border-radius-mobile: #{$header-button-border-radius-mobile};
-  
-  // Header button sizes
-  --header-button-height: #{$header-button-height};
-  --header-button-height-mobile: #{$header-button-height-mobile};
-  --header-button-large-width: #{$header-button-large-width};
-  --header-button-large-small: #{$header-button-large-small};
-  --header-button-large-width-mobile: #{$header-button-large-width-mobile};
-  --header-button-large-small-mobile: #{$header-button-large-small-mobile};
-  
-  // Font weights
-  --font-weight-regular: #{$font-weight-regular};
-  --font-weight-bold: #{$font-weight-bold};
-  --font-weight-black: #{$font-weight-black};
 }
 
 * {
@@ -108,7 +66,7 @@ body {
   font-style: normal;
   font-weight: $font-weight-bold;
   line-height: normal;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   word-break: break-word;
   hyphens: auto;
 
@@ -118,7 +76,7 @@ body {
 
   @media (max-width: 768px) {
     font-size: 32px;
-    // font-weight: $font-weight-black;
+    font-weight: $font-weight-black;
   }
 
   @media (max-width: 570px) {
@@ -133,13 +91,17 @@ body {
   font-style: normal;
   font-weight: $font-weight-bold;
   line-height: normal;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   word-break: break-word;
   hyphens: auto;
 
+  &.black {
+    color: $text-color-secondary;
+  }
+
   @media (max-width: 768px) {
     font-size: 24px;
-    // font-weight: $font-weight-black;
+    font-weight: $font-weight-black;
   }
 
   @media (max-width: 570px) {
@@ -154,7 +116,7 @@ body {
   font-style: normal;
   font-weight: $font-weight-bold;
   line-height: normal;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   word-break: break-word;
   hyphens: auto;
 
@@ -163,7 +125,7 @@ body {
   }
 
   @media (max-width: 768px) {
-    // font-weight: $font-weight-black;
+    font-weight: $font-weight-black;
     font-size: 18px;
   }
 }

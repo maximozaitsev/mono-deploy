@@ -1,5 +1,5 @@
 User-agent: * 
 Allow: / 
 Disallow: /casino/
-Host: https://chicken-royal-online.com/
-Sitemap: https://chicken-royal-online.com/sitemap.xml
+Host: https://acecasino-online.com/
+Sitemap: https://acecasino-online.com/sitemap.xml

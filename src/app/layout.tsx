@@ -1,252 +1,115 @@
-// /src/app/layout.tsx
-import type { Metadata, Viewport } from "next";
+import { Metadata } from "next";
 import "./globals.scss";
-
-import fs from "node:fs/promises";
-import path from "node:path";
-import { headers } from "next/headers";
-import { locales as supportedLocales, defaultLocale } from "@/config/i18n";
-import { getLocaleMeta } from "@/utils/localeMap";
-import { replaceCurrentYear } from "@/utils/yearReplacer";
+import "../styles/colors.scss";
+import "../styles/variables.scss";
+import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
-import HtmlLangSync from "@/components/HtmlLangSync";
-import { getLocale } from "next-intl/server";
-import { cookies } from "next/headers";
-import { NextIntlClientProvider } from "next-intl";
 
-function getBaseUrl(): string | undefined {
-  if (process.env.SITE_URL) return `https://${process.env.SITE_URL}`;
-  const h = headers();
-  const proto = h.get("x-forwarded-proto") ?? "https";
-  const host = h.get("x-forwarded-host") ?? h.get("host") ?? undefined;
-  return host ? `${proto}://${host}` : undefined;
-}
+const url = "acecasino-online.com";
+const ogTitle = "Ace Casino: A Canadian Hub of Entertainment and Wins to Visit in 2025";
+const ogSiteName = "Ace Casino";
+const metaDescription = "Ace Casino is a licensed gambling hall in Canada. It hosts over 630+ slots and offers 12 poker rooms and 12 VLT slots. Learn how to join this casino in 2025 and what perks can you expect there.";
 
-async function readJSON<T>(filePath: string, fallback: T): Promise<T> {
-  try {
-    const raw = await fs.readFile(filePath, "utf-8");
-    return JSON.parse(raw) as T;
-  } catch {
-    return fallback;
-  }
-}
+const locale = "en-CA";
+const language = "English";
+const ogImage = `https://${url}/og-image.webp`;
 
-function extractMeta(obj: Record<string, any>): {
-  title: string;
-  description: string;
-} {
-  const titleKeys = ["meta-title", "metaTitle", "ogTitle", "title"];
-  const descKeys = [
-    "meta-description",
-    "metaDescription",
-    "description",
-    "metaDesc",
-  ];
-  let title = "";
-  let description = "";
-  for (const k of titleKeys) {
-    if (typeof obj[k] === "string" && obj[k].trim()) {
-      title = obj[k].trim();
-      break;
-    }
-  }
-  for (const k of descKeys) {
-    if (typeof obj[k] === "string" && obj[k].trim()) {
-      description = obj[k].trim();
-      break;
-    }
-  }
-  return { title: title || "Title", description: description || "Description" };
-}
-
-async function readContentMeta(
-  lang: string,
-  baseUrl?: string
-): Promise<{ title: string; description: string }> {
-  const fsPath = path.join(
-    process.cwd(),
-    "public",
-    "content",
-    `content.${lang}.json`
-  );
-  const fsJson = await readJSON<Record<string, any>>(fsPath, {});
-  const fromFs = extractMeta(fsJson);
-  if (fromFs.title !== "Title" || fromFs.description !== "Description") {
-    return fromFs;
-  }
-
-  if (baseUrl) {
-    try {
-      const res = await fetch(`${baseUrl}/content/content.${lang}.json`, {
-        cache: "no-store",
-      });
-      if (res.ok) {
-        const json = (await res.json()) as Record<string, any>;
-        return extractMeta(json);
-      }
-    } catch {}
-  }
-
-  return { title: "Title", description: "Description" };
-}
-
-async function readManifest(): Promise<{
-  languages: string[];
-  defaultLang: string;
-}> {
-  const p = path.join(process.cwd(), "public", "content", "languages.json");
-  return readJSON<{ languages: string[]; defaultLang: string }>(p, {
-    languages: [],
-    defaultLang: "au",
-  });
-}
-
-async function getDictionary(lang: string) {
-  try {
-    const staticPath = path.join(process.cwd(), "public", "content", "static.json");
-    const raw = await fs.readFile(staticPath, "utf-8");
-    const json = JSON.parse(raw) as Record<string, Record<string, string>>;
-    return json[lang] || {};
-  } catch {
-    return {};
-  }
-}
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
+export const metadata: Metadata = {
+  manifest: "/manifest.json",
+  title: replaceCurrentYear(ogTitle),
+  description: replaceCurrentYear(metaDescription),
+  alternates: {
+    canonical: `https://${url}`,
+  },
+  openGraph: {
+    locale: locale,
+    type: "website",
+    url: `https://${url}`,
+    title: replaceCurrentYear(ogTitle),
+    description: replaceCurrentYear(metaDescription),
+    images: [
+      {
+        url: ogImage,
+        width: 1200,
+        height: 630,
+        alt: ogSiteName,
+      },
+    ],
+  },
+  icons: {
+    icon: "/icons/ico-192.png",
+  },
 };
 
-export const revalidate = 60;
-
-export async function generateMetadata(): Promise<Metadata> {
-  const baseUrl = getBaseUrl();
-  const canonical = baseUrl ? `${baseUrl}/` : "/";
-  const ogImage = baseUrl ? `${baseUrl}/og-image.webp` : "/og-image.webp";
-  const defaultGeo = defaultLocale;
-  const { title, description } = await readContentMeta(defaultGeo, baseUrl);
-
-  const { languages, defaultLang } = await readManifest();
-  const alternatesLanguages: Record<string, string> = {};
-  for (const geo of languages) {
-    const { htmlLang: hreflang } = getLocaleMeta(geo);
-    alternatesLanguages[hreflang] = baseUrl
-      ? geo === defaultLang
-        ? `${baseUrl}/`
-        : `${baseUrl}/${geo}`
-      : geo === defaultLang
-      ? "/"
-      : `/${geo}`;
-  }
-  alternatesLanguages["x-default"] = baseUrl ? `${baseUrl}/` : "/";
-
-  return {
-    title: replaceCurrentYear(title),
-    description: replaceCurrentYear(description),
-    manifest: "/manifest.json",
-    alternates: {
-      canonical,
-      languages: alternatesLanguages,
-    },
-    openGraph: {
-      type: "website",
-      url: canonical,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: "" }],
-      title: replaceCurrentYear(title),
-      description: replaceCurrentYear(description),
-    },
-    twitter: {
-      card: "summary_large_image",
-      images: [ogImage],
-      title: replaceCurrentYear(title),
-      description: replaceCurrentYear(description),
-    },
-    icons: {
-      icon: [
-        { url: "/icons/ico-192.png", type: "image/png", sizes: "192x192" },
-        { url: "/icons/ico-512.png", type: "image/png", sizes: "512x512" },
-        { url: "/icons/ico-114.png", type: "image/png", sizes: "114x114" },
-        { url: "/icons/ico-120.png", type: "image/png", sizes: "120x120" },
-        { url: "/icons/ico-144.png", type: "image/png", sizes: "144x144" },
-        { url: "/icons/ico-152.png", type: "image/png", sizes: "152x152" },
-        { url: "/icons/ico-57.png", type: "image/png", sizes: "57x57" },
-        { url: "/icons/ico-60.png", type: "image/png", sizes: "60x60" },
-        { url: "/icons/ico-72.png", type: "image/png", sizes: "72x72" },
-        { url: "/icons/ico-76.png", type: "image/png", sizes: "76x76" },
-      ],
-      apple: [
-        { url: "/icons/ico-57.png", sizes: "57x57" },
-        { url: "/icons/ico-60.png", sizes: "60x60" },
-        { url: "/icons/ico-72.png", sizes: "72x72" },
-        { url: "/icons/ico-76.png", sizes: "76x76" },
-        { url: "/icons/ico-114.png", sizes: "114x114" },
-        { url: "/icons/ico-120.png", sizes: "120x120" },
-        { url: "/icons/ico-144.png", sizes: "144x144" },
-        { url: "/icons/ico-152.png", sizes: "152x152" },
-      ],
-    },
-  };
-}
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   const fontVars = Object.values(fonts)
     .map((f) => f.variable)
     .join(" ");
-
-  let locale = defaultLocale;
-  let resolvedBy = "default";
-  try {
-    const intlLocale = await getLocale();
-    if (supportedLocales.includes(intlLocale)) {
-      locale = intlLocale;
-      resolvedBy = "next-intl";
-    }
-  } catch {}
-
-  try {
-    const cookieLocale = cookies().get("NEXT_LOCALE")?.value?.toLowerCase() || "";
-    if (supportedLocales.includes(cookieLocale)) {
-      locale = cookieLocale;
-      resolvedBy = "cookie";
-    }
-  } catch {}
-  try {
-    const h = headers();
-    const requestPath =
-      h.get("x-forwarded-uri") ||
-      h.get("next-url") ||
-      h.get("x-invoke-path") ||
-      h.get("x-matched-path") ||
-      "/";
-    const seg = String(requestPath).split("/").filter(Boolean)[0]?.toLowerCase() || "";
-    if (supportedLocales.includes(seg)) {
-      locale = seg;
-      resolvedBy = "path";
-    }
-  } catch {}
-
-  const { htmlLang } = getLocaleMeta(locale);
-  const messages = await getDictionary(locale);
-
   return (
-    <html lang={htmlLang} suppressHydrationWarning>
+    <html lang={locale}>
       <head>
+        <meta name="language" content={language} />
         <link
           rel="preconnect"
           href="https://api.adkey-seo.com"
           crossOrigin=""
         />
         <link rel="dns-prefetch" href="https://api.adkey-seo.com" />
-        <link rel="preload" as="image" href="/block-images/welcome-mobile.webp" media="(max-width: 768px)" />
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome.webp"
+          media="(min-width: 769px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/block-images/welcome-mobile.webp"
+          media="(max-width: 768px)"
+        />
+
+        <link rel="icon" href="/icons/ico-192.png" />
+        <link rel="apple-touch-icon" href="/icons/ico-57.png" sizes="57x57" />
+        <link rel="apple-touch-icon" href="/icons/ico-60.png" sizes="60x60" />
+        <link rel="apple-touch-icon" href="/icons/ico-72.png" sizes="72x72" />
+        <link rel="apple-touch-icon" href="/icons/ico-76.png" sizes="76x76" />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/ico-114.png"
+          sizes="114x114"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/ico-120.png"
+          sizes="120x120"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/ico-144.png"
+          sizes="144x144"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/ico-152.png"
+          sizes="152x152"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/icons/ico-180.png"
+          sizes="180x180"
+        />
+        <link
+          rel="icon"
+          href="/icons/ico-192.png"
+          type="image/png"
+          sizes="192x192"
+        />
       </head>
-      <body className={fontVars}>
-        <NextIntlClientProvider messages={messages as any} locale={locale} timeZone={"UTC"}>
-          <HtmlLangSync defaultLocale={defaultLocale} />
-          {children}
-        </NextIntlClientProvider>
-      </body>
+      <body className={fontVars}>{children}</body>
     </html>
   );
 }

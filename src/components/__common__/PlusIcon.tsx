@@ -1,87 +1,29 @@
-import React, { useEffect, useId, useState } from "react";
-// GradientResult interface and computeGradient function from StarIcon.tsx
-interface GradientResult {
-  fill: string;
-  gradientElement: React.ReactElement;
-}
-
-function computeGradient(gradient: string, id: string): GradientResult | null {
-  // Only linear gradients are supported in this example
-  const linearMatch = gradient.match(/^linear-gradient\((.+)\)$/);
-  if (!linearMatch) return null;
-  const [direction, ...colorStops] = linearMatch[1].split(",");
-  // Convert CSS direction to SVG
-  let x1 = "0%";
-  let y1 = "0%";
-  let x2 = "100%";
-  let y2 = "0%";
-  if (direction.includes("to bottom")) {
-    x1 = "0%";
-    y1 = "0%";
-    x2 = "0%";
-    y2 = "100%";
-  } else if (direction.includes("to right")) {
-    x1 = "0%";
-    y1 = "0%";
-    x2 = "100%";
-    y2 = "0%";
-  } else if (direction.includes("to left")) {
-    x1 = "100%";
-    y1 = "0%";
-    x2 = "0%";
-    y2 = "0%";
-  } else if (direction.includes("to top")) {
-    x1 = "0%";
-    y1 = "100%";
-    x2 = "0%";
-    y2 = "0%";
-  }
-  const stops = colorStops.map((stop, i) => {
-    const [color, pos] = stop.trim().split(" ");
-    return (
-      <stop
-        key={i}
-        offset={pos || `${(i / (colorStops.length - 1)) * 100}%`}
-        stopColor={color}
-      />
-    );
-  });
-  return {
-    fill: `url(#${id})`,
-    gradientElement: (
-      <linearGradient id={id} x1={x1} y1={y1} x2={x2} y2={y2}>
-        {stops}
-      </linearGradient>
-    ),
-  };
-}
+import React, { useId, useEffect, useState } from "react";
+import { computeGradient } from "../../utils/gradientUtils";
 
 interface PlusIconProps {
-  fill?: string;
-  width?: number;
-  height?: number;
+  size?: number;
+  color?: string;
 }
 
 const PlusIcon: React.FC<PlusIconProps> = ({
-  fill,
-  width = 32,
-  height = 32,
+  size = 32,
+  color = "var(--color-faq-icon)",
 }) => {
   const [computedFill, setComputedFill] = useState<string>("");
   const gradientId = useId();
 
   useEffect(() => {
-    let src = fill ?? "var(--color-faq-icon)";
-    if (src.startsWith("var(")) {
-      const varName = src.slice(4, -1).trim();
+    if (color.startsWith("var(")) {
+      const varName = color.slice(4, -1).trim();
       const cssFill = getComputedStyle(document.documentElement)
         .getPropertyValue(varName)
         .trim();
-      setComputedFill(cssFill || src);
+      setComputedFill(cssFill || color);
     } else {
-      setComputedFill(src);
+      setComputedFill(color);
     }
-  }, [fill]);
+  }, [color]);
 
   let gradientElement = null;
   let fillValue = computedFill;
@@ -96,9 +38,8 @@ const PlusIcon: React.FC<PlusIconProps> = ({
 
   return (
     <svg
-      width={width}
-      height={height}
-      style={{ width, height }}
+      width={size}
+      height={size}
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

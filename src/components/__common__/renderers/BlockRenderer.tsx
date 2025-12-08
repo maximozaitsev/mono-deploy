@@ -21,7 +21,7 @@ const BlockRenderer: React.FC<BlockRendererProps> = ({
       );
     case "heading":
       if (block.level === 3) {
-        return <h3 className={`h3-heading ${className}`}>{replaceCurrentYear(block.text ?? "")}</h3>;
+        return <h4 className={`h4-heading ${className}`}>{replaceCurrentYear(block.text ?? "")}</h4>;
       }
       return <h3 className={`h3-heading ${className}`}>{replaceCurrentYear(block.text ?? "")}</h3>;
     case "list":

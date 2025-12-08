@@ -1,19 +1,20 @@
+import Image from "next/image";
 import styles from "./WelcomeSection.module.scss";
+import WelcomeMobile from "../../../public/block-images/welcome-mobile.webp";
 import DynamicWelcomeCta from "./_client/DynamicWelcomeCta";
 
 export default function WelcomeSection() {
   return (
     <section id="welcome-section" className={styles.welcomeSection}>
       <figure className={styles.mobileFigure} aria-hidden>
-        <img
+        <Image
           className={styles.mobileImage}
-          src="/block-images/welcome-mobile.webp"
+          src={WelcomeMobile}
           alt="Welcome Mobile"
-          width={412}
-          height={226}
-          loading="eager"
-          decoding="async"
-          fetchPriority="high"
+          priority
+          sizes="(max-width: 480px) 100vw, (max-width: 768px) 520px, 0px"
+          placeholder="empty"
+          quality={80}
         />
       </figure>
 
