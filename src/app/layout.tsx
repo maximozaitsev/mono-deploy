@@ -5,10 +5,10 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "acecasino-online.com";
-const ogTitle = "Ace Casino: A Canadian Hub of Entertainment and Wins to Visit in 2025";
-const ogSiteName = "Ace Casino";
-const metaDescription = "Ace Casino is a licensed gambling hall in Canada. It hosts over 630+ slots and offers 12 poker rooms and 12 VLT slots. Learn how to join this casino in 2025 and what perks can you expect there.";
+const url = "deerfootcasino-online.com";
+const ogTitle = "Deerfoot Inn & Casino Calgary Canada Review – Games, Bonuses, Support";
+const ogSiteName = "Deerfoot Casino";
+const metaDescription = "Explore Deerfoot Inn & Casino in Calgary, Canada: a full review of its games, bonus system, support options, player rewards, and on-site amenities. Learn how the casino operates and what to expect during your visit.";
 
 const locale = "en-CA";
 const language = "English";

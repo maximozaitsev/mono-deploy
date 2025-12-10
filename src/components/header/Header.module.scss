@@ -24,6 +24,11 @@
 
     @media (max-width: 768px) {
       margin-top: 4px;
+      margin-left: 17px;
+    }
+
+    @media (max-width: 420px) {
+      margin-left: 0px;
     }
   }
 
@@ -72,11 +77,11 @@
 }
 
 .navLink {
-  font-family: $font-primary;
-  color: $text-color-primary;
+  font-family: $font-secondary;
+  color: $text-color-secondary;
   background: none;
   border: none;
-  font-weight: 900;
+  font-weight: $font-weight-black;
   font-size: 16px;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -112,9 +117,9 @@
   gap: 24px;
 
   .headerButton {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     height: $header-button-height;
-    font-weight: 900;
+    font-weight: $font-weight-black;
     font-size: 14px;
     padding: 12px 32px;
     border-radius: $header-button-border-radius;
@@ -171,10 +176,10 @@
   display: none;
   flex-direction: column;
   justify-content: space-around;
-  width: 24px;
-  height: 24px;
+  width: 31px;
+  height: 31px;
   padding: 0;
-  margin-right: 10px;
+  margin: 0 8px;
   cursor: pointer;
 
   @media (max-width: 768px) {
@@ -185,7 +190,7 @@
 .burgerLine {
   width: 100%;
   height: 3px;
-  background-color: $text-color-primary;
+  background-color: $text-color-secondary;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 

@@ -44,7 +44,7 @@
     background-size: auto;
     background-position: initial;
     margin: 0 auto 24px auto;
-    padding-bottom: 35px;
+    padding-bottom: 34px;
   }
 }
 
@@ -62,7 +62,7 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 522px;
+  max-width: 526px;
   height: auto;
 
   @media (max-width: 768px) {
@@ -135,7 +135,7 @@
 
 .welcomeText h2 {
   font-family: var(--font-secondary);
-  color: $text-color-secondary;
+  color: $text-color-primary;
   font-size: 32px;
   font-style: normal;
   font-weight: $font-weight-black;
