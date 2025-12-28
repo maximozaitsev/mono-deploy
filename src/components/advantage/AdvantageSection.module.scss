@@ -1,8 +1,7 @@
-@use "@/styles/colors.scss" as *;
-
+@use "../../styles/colors.scss" as *;
 
 .advantageSection {
-  background: $color-background-welcome;
+  background: $color-background-secondary;
   padding: 64px 0;
 
   :global(.container) {
@@ -11,10 +10,16 @@
     gap: 48px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1220px) {
+    padding: 40px 0;
+
     :global(.container) {
       gap: 40px;
     }
+  }
+
+  @media (max-width: 375px) {
+    padding: 40px 0;
   }
 }
 

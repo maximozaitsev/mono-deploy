@@ -1,50 +1,88 @@
-import fs from "fs/promises";
-import path from "path";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { getProjectGeoForLang } from "./localeMap";
+
+export interface LangManifest {
+  languages: string[];
+  defaultLang: string;
+}
 
 export interface ContentData {
   [key: string]: any;
 }
 
-export async function getContentData(): Promise<ContentData> {
+export async function getLangManifest(): Promise<LangManifest> {
+  try {
+    const manifestPath = path.join(
+      process.cwd(),
+      "public",
+      "content",
+      "languages.json"
+    );
+    const raw = await fs.readFile(manifestPath, "utf-8");
+    const parsed = JSON.parse(raw) as Partial<LangManifest>;
+    
+    if (
+      Array.isArray(parsed.languages) &&
+      typeof parsed.defaultLang === "string"
+    ) {
+      return {
+        languages: parsed.languages,
+        defaultLang: parsed.defaultLang,
+      };
+    }
+  } catch (error) {
+    console.error("Error loading languages manifest:", error);
+  }
+  
+  return { languages: ["en"], defaultLang: "en" };
+}
+
+export async function getContentData(lang: string): Promise<ContentData> {
   try {
     const contentPath = path.join(
       process.cwd(),
       "public",
       "content",
-      "content.json"
+      `content.${lang}.json`
     );
     const raw = await fs.readFile(contentPath, "utf-8");
     return JSON.parse(raw);
   } catch (error) {
-    console.error("Error loading content:", error);
+    console.error(`Error loading content for lang ${lang}:`, error);
     return {};
   }
 }
 
-export async function getSiteData(): Promise<ContentData> {
+export async function getStaticTranslations(lang: string) {
   try {
-    const siteDataPath = path.join(
+    const staticPath = path.join(
       process.cwd(),
       "public",
       "content",
-      "siteData.json"
+      "static.json"
     );
-    const raw = await fs.readFile(siteDataPath, "utf-8");
-    return JSON.parse(raw);
+    const raw = await fs.readFile(staticPath, "utf-8");
+    const staticData = JSON.parse(raw);
+    return staticData[lang] || {};
   } catch (error) {
-    console.error("Error loading site data:", error);
+    console.error(`Error loading static translations for lang ${lang}:`, error);
     return {};
   }
 }
 
-export function groupParagraphs(blocks: any[], stopAtType?: string): any[][] {
-  const grouped: any[][] = [];
-  let tempGroup: any[] = [];
+export function getProjectGeo(lang: string): string {
+  return getProjectGeoForLang(lang);
+}
+
+export function groupParagraphs(blocks: any[], stopAtType: string): string[][] {
+  const grouped: string[][] = [];
+  let tempGroup: string[] = [];
 
   for (const block of blocks) {
-    if (block.type === "paragraph" || block.type === "list") {
-      tempGroup.push(block);
-    } else if (stopAtType && block.type === stopAtType) {
+    if (block.type === "paragraph") {
+      tempGroup.push(block.text);
+    } else if (block.type === stopAtType) {
       break;
     } else {
       if (tempGroup.length > 0) {
@@ -61,18 +99,9 @@ export function groupParagraphs(blocks: any[], stopAtType?: string): any[][] {
   return grouped;
 }
 
-export function parseAboutContent(data: any) {
-  if (!data?.intro) return { title: "", intro: [] };
-
-  return {
-    title: data.title || "About",
-    intro: data.intro,
-  };
-}
-
-export function parseAdvantageContent(data: any) {
+export function parseAdvantageData(data: any) {
   const advantagesEntries = Object.entries(data.advantages) as [string, any][];
-
+  
   if (advantagesEntries.length === 0) {
     return {
       sectionTitle: "",
@@ -81,22 +110,20 @@ export function parseAdvantageContent(data: any) {
       advantagesList: [],
       disadvantagesTitle: "",
       disadvantagesList: [],
-      closingParagraphs: [],
+      closingParagraphs: []
     };
   }
 
   const [firstKey, section] = advantagesEntries[0];
   const sectionTitle = firstKey;
-
-  // Исправляем groupParagraphs для правильного возврата строк
-  const introParagraphs = groupParagraphs(section, "list")
-    .map((group) => group.map((block) => block.text || ""))
-    .filter((group) => group.some((text) => text.trim() !== ""));
+  const introParagraphs = groupParagraphs(section, "list");
 
   const headingBlocks = section.filter(
     (block: any) => block.type === "heading" && block.level === 3
   );
-  const listBlocks = section.filter((block: any) => block.type === "list");
+  const listBlocks = section.filter(
+    (block: any) => block.type === "list"
+  );
 
   let advantagesTitle = "";
   let advantagesList: string[] = [];
@@ -111,11 +138,11 @@ export function parseAdvantageContent(data: any) {
   }
 
   const closingParagraphs = groupParagraphs(
-    section.slice(section.findIndex((b: any) => b.type === "list") + 2),
+    section.slice(
+      section.findIndex((b: any) => b.type === "list") + 2
+    ),
     ""
-  )
-    .map((group) => group.map((block) => block.text || ""))
-    .filter((group) => group.some((text) => text.trim() !== ""));
+  );
 
   return {
     sectionTitle,
@@ -124,38 +151,25 @@ export function parseAdvantageContent(data: any) {
     advantagesList,
     disadvantagesTitle,
     disadvantagesList,
-    closingParagraphs,
+    closingParagraphs
   };
 }
 
-export function parseFAQContent(data: any) {
-  if (!data?.faq) return { faqTitle: "", faqs: [] };
-
-  const faqEntries = Object.entries(data.faq) as [string, any][];
-  if (faqEntries.length === 0) return { faqTitle: "", faqs: [] };
-
-  const [title, faqContent] = faqEntries[0];
-  const faqTitle = title;
-
-  const items: { question: string; answer: string }[] = [];
-  for (let i = 0; i < faqContent.length; i++) {
-    if (faqContent[i].type === "heading" && faqContent[i].level === 3) {
-      const question = faqContent[i].text;
-      const answer =
-        faqContent[i + 1]?.type === "paragraph" ? faqContent[i + 1].text : "";
-      items.push({ question, answer });
-    }
-  }
-
-  return { faqTitle, faqs: items };
+export function parseSupportData(data: any) {
+  if (!data?.support) return null;
+  
+  const supportEntries = Object.entries(data.support) as [string, any][];
+  if (supportEntries.length === 0) return null;
+  
+  const [sectionTitle, blocks] = supportEntries[0];
+  return { sectionTitle, blocks };
 }
 
-export function parseLoginContent(data: any) {
-  if (!data?.about)
-    return { aboutSections: {}, depositSection: null, withdrawalSection: null };
-
+export function parseLoginData(data: any) {
+  if (!data?.about) return { aboutSections: {}, depositSection: null, withdrawalSection: null };
+  
   const aboutEntries = Object.entries(data.about) as [string, any][];
-
+  
   if (aboutEntries.length > 2) {
     const depositTitle = aboutEntries[aboutEntries.length - 2][0];
     const withdrawalTitle = aboutEntries[aboutEntries.length - 1][0];
@@ -164,7 +178,7 @@ export function parseLoginContent(data: any) {
       title: depositTitle,
       content: aboutEntries[aboutEntries.length - 2][1],
     };
-
+    
     const withdrawalSection = {
       title: withdrawalTitle,
       content: aboutEntries[aboutEntries.length - 1][1],
@@ -172,65 +186,11 @@ export function parseLoginContent(data: any) {
 
     const filteredAbout = aboutEntries.slice(0, aboutEntries.length - 2);
     const aboutSections = Object.fromEntries(filteredAbout);
-
+    
     return { aboutSections, depositSection, withdrawalSection };
   }
-
-  return {
-    aboutSections: data.about,
-    depositSection: null,
-    withdrawalSection: null,
-  };
-}
-
-export function parseSupportContent(data: any) {
-  if (!data?.support) return { sectionTitle: "", blocks: [] };
-
-  const supportEntries = Object.entries(data.support) as [string, any][];
-  if (supportEntries.length === 0) return { sectionTitle: "", blocks: [] };
-
-  const [sectionTitle, blocks] = supportEntries[0];
-  return { sectionTitle, blocks };
-}
-
-export function parseAppContent(data: any) {
-  if (!data?.sections)
-    return {
-      appTitle: "",
-      appContent: [],
-      buttons: [],
-      languagesTitle: "",
-      languagesContent: [],
-      currenciesTitle: "",
-      currenciesContent: [],
-    };
-
-  const sections = data.sections;
-
-  const findSection = (keyword: string): [string, any] | null => {
-    for (const [key, value] of Object.entries(sections)) {
-      const lowerKey = key.toLowerCase();
-      if (lowerKey.includes("license")) continue;
-      if (lowerKey.includes(keyword.toLowerCase())) {
-        return [key, value];
-      }
-    }
-    return null;
-  };
-
-  const appSection = findSection("app");
-  const languagesSection = findSection("language");
-  const currenciesSection = findSection("currenc");
-
-  return {
-    appTitle: appSection ? appSection[0] : "",
-    appContent: appSection ? groupParagraphs(appSection[1]) : [],
-    buttons: [],
-    languagesTitle: languagesSection ? languagesSection[0] : "",
-    languagesContent: languagesSection ? languagesSection[1] : [],
-    currenciesTitle: currenciesSection ? currenciesSection[0] : "",
-    currenciesContent: currenciesSection ? currenciesSection[1] : [],
-  };
+  
+  return { aboutSections: data.about, depositSection: null, withdrawalSection: null };
 }
 
 export function parseSectionWithTwoColumnsData(data: any, jsonKey: string) {
@@ -241,17 +201,17 @@ export function parseSectionWithTwoColumnsData(data: any, jsonKey: string) {
       sectionTitle: "",
       introContent: [],
       leftColumnContent: [],
-      rightColumnContent: [],
+      rightColumnContent: []
     };
   }
-
+  
   const sectionEntries = Object.entries(sectionData) as [string, any][];
   if (sectionEntries.length === 0) {
     return {
       sectionTitle: "",
       introContent: [],
       leftColumnContent: [],
-      rightColumnContent: [],
+      rightColumnContent: []
     };
   }
 
@@ -284,8 +244,100 @@ export function parseSectionWithTwoColumnsData(data: any, jsonKey: string) {
     sectionTitle,
     introContent,
     leftColumnContent,
-    rightColumnContent,
+    rightColumnContent
   };
+}
+
+export function groupContent(blocks: any[]): any[][] {
+  const grouped: any[][] = [];
+  let tempGroup: any[] = [];
+
+  for (const block of blocks) {
+    if (block.type === "paragraph" || block.type === "list") {
+      tempGroup.push(block);
+    } else {
+      if (tempGroup.length > 0) {
+        grouped.push(tempGroup);
+        tempGroup = [];
+      }
+    }
+  }
+  if (tempGroup.length > 0) {
+    grouped.push(tempGroup);
+  }
+  return grouped;
+}
+
+export function parseAppData(data: any) {
+  if (!data?.sections) return null;
+  
+  const entries = Object.entries(data.sections) as [string, any][];
+
+  // Need at least 4 sections: [0] = license, [1] = app, [2] = currencies, [3] = languages
+  if (entries.length < 4) {
+    return null;
+  }
+
+  // Skip first entry (license), take next 3 for app, currencies, languages
+  const appSection = entries[1];      // Second object = App
+  const currenciesSection = entries[2]; // Third object = Currencies
+  const languagesSection = entries[3]; // Fourth object = Languages
+
+  if (!appSection || !currenciesSection || !languagesSection) {
+    return null;
+  }
+
+  // Extract "App" from "App, Currencies, and Languages" if needed
+  let appTitle = appSection[0];
+  if (appTitle.includes(",")) {
+    // Take only the first part before comma
+    appTitle = appTitle.split(",")[0].trim();
+  }
+
+  return {
+    appTitle: appTitle,
+    appContent: groupContent(appSection[1]),
+    languagesTitle: languagesSection[0],
+    languagesContent: languagesSection[1],
+    currenciesTitle: currenciesSection[0],
+    currenciesContent: currenciesSection[1],
+  };
+}
+
+
+export function parseFAQData(data: any) {
+  if (!data?.faq) return { faqTitle: "", faqs: [] };
+
+  const faqEntries = Object.entries(data.faq) as [string, any][];
+  if (faqEntries.length === 0) return { faqTitle: "", faqs: [] };
+
+  const [title, faqContent] = faqEntries[0];
+  const faqTitle = title;
+
+  const items: { question: string; answer: string }[] = [];
+  for (let i = 0; i < faqContent.length; i++) {
+    if (faqContent[i].type === "heading" && faqContent[i].level === 3) {
+      const question = faqContent[i].text;
+      const answer =
+        faqContent[i + 1]?.type === "paragraph"
+          ? faqContent[i + 1].text
+          : "";
+      items.push({ question, answer });
+    }
+  }
+
+  return { faqTitle, faqs: items };
+}
+
+export async function getFirstOfferId(): Promise<number | null> {
+  try {
+    const { fetchOffers } = await import("./fetchOffers");
+    const { offers } = await fetchOffers();
+    return offers.length > 0 ? offers[0].id : null;
+  } catch (error) {
+    console.error("Error fetching first offer ID:", error);
+    return null;
+  }
 }
 
 export function parseLicenseContent(data: any) {
@@ -305,6 +357,7 @@ export function parseLicenseContent(data: any) {
     };
   }
 
+  // First object in sections goes to license
   const [title, content] = entries[0];
   return {
     title,

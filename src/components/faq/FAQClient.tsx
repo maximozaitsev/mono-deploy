@@ -4,21 +4,18 @@ import { useState, useRef, useEffect } from "react";
 import PlusIcon from "../__common__/PlusIcon";
 import MinusIcon from "../__common__/MinusIcon";
 import { replaceCurrentYear } from "../../utils/yearReplacer";
-import "./FAQSection.scss";
 
 interface FAQItem {
   question: string;
   answer: string;
 }
 
-interface FAQSectionClientProps {
-  content: {
-    faqTitle: string;
-    faqs: FAQItem[];
-  };
+interface FAQClientProps {
+  faqTitle: string;
+  faqs: FAQItem[];
 }
 
-export default function FAQSectionClient({ content }: FAQSectionClientProps) {
+export default function FAQClient({ faqTitle, faqs }: FAQClientProps) {
   const [activeIndices, setActiveIndices] = useState<number[]>([]);
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -45,16 +42,12 @@ export default function FAQSectionClient({ content }: FAQSectionClientProps) {
   return (
     <section className="faq-section section">
       <div className="container">
-        <h2 className="h2-heading white">{replaceCurrentYear(content.faqTitle || "FAQ")}</h2>
-        {content.faqs.map((faq: FAQItem, index: number) => (
+        <h2 className="h2-heading white">{replaceCurrentYear(faqTitle || "FAQ")}</h2>
+        {faqs.map((faq, index) => (
           <div key={index} className="faq-item">
             <div className="faq-question" onClick={() => toggleAccordion(index)}>
               <span className="icon">
-                {activeIndices.includes(index) ? (
-                  <MinusIcon size={32} />
-                ) : (
-                  <PlusIcon size={32} />
-                )}
+                {activeIndices.includes(index) ? <MinusIcon /> : <PlusIcon />}
               </span>
               {replaceCurrentYear(faq.question)}
             </div>

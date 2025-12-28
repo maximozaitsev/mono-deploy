@@ -1,9 +1,9 @@
-@import "@/styles/colors.scss";
-@import "@/styles/variables.scss";
-@import "@/styles/_fonts-bridge.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/fonts-bridge.scss";
 
 .faq-section {
-  background: $color-background-welcome;
+  background: $color-background-secondary;
   padding: 64px 0;
   display: block;
   gap: 0 !important;

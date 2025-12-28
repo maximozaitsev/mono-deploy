@@ -1,4 +1,4 @@
-@import "@/styles/colors.scss";
+@import "../../styles/colors.scss";
 
 .supportSection {
   background: $color-background-secondary;
@@ -14,6 +14,10 @@
 
   :global(.h2-heading) {
     margin-bottom: 48px;
+  }
+
+  :global(.paragraph-text) {
+    color: $text-color-secondary !important;
   }
 
   @media (max-width: 768px) {

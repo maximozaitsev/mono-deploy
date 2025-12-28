@@ -3,8 +3,12 @@ import { getContentData, parseLicenseContent } from "../../utils/serverContent";
 import { replaceCurrentYear } from "../../utils/yearReplacer";
 import styles from "./LicenceSection.module.scss";
 
-export default async function LicenceSection() {
-  const contentData = await getContentData();
+interface LicenceSectionProps {
+  lang: string;
+}
+
+export default async function LicenceSection({ lang }: LicenceSectionProps) {
+  const contentData = await getContentData(lang);
   const content = parseLicenseContent(contentData);
 
   if (!content.title || !content.content || content.content.length === 0) {
@@ -26,3 +30,4 @@ export default async function LicenceSection() {
     </section>
   );
 }
+

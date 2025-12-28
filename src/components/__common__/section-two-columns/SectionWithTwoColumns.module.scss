@@ -1,6 +1,7 @@
-@import "@/styles/colors.scss";
+@import "../../../styles/colors.scss";
 
 .sectionContainer {
+  // padding: 64px 0;
   background: $color-background;
 
   :global(.container) {
@@ -24,21 +25,5 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-
-    :global(.styled-list) {
-      margin-left: 1.5rem;
-      padding: 0;
-    }
-  }
-}
-
-.sectionWithDarkText {
-  :global(.paragraph-text) {
-    color: $text-color-secondary;
-  }
-
-  :global(.h2-heading),
-  :global(.h3-heading) {
-    color: $text-color-secondary;
   }
 }
