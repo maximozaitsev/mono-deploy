@@ -10,9 +10,10 @@ export const roboto = localFont({
   adjustFontFallback: false,
 });
 
-export const inter = localFont({
+export const poppins = localFont({
   src: [
-    { path: "../../public/fonts/Inter/Inter-VAR.woff2", weight: "100 900", style: "normal" }
+    { path: "../../public/fonts/Poppins/Poppins-700.woff2", weight: "700", style: "normal" },
+    { path: "../../public/fonts/Poppins/Poppins-800.woff2", weight: "800", style: "normal" }
   ],
   variable: "--font-secondary",
   display: "swap",

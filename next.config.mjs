@@ -3,7 +3,7 @@
 
 import nextPWA from "@ducanh2912/next-pwa";
 import createNextIntlPlugin from "next-intl/plugin";
-const url = "luckygemcasino-online.com";
+const url = "hugobets-online.com";
 
 const withPWA = nextPWA({
   dest: "public",
