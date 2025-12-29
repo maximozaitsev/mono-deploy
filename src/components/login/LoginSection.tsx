@@ -1,23 +1,19 @@
-import { getContentData, parseLoginData } from "../../utils/serverContent";
 import BlockRenderer from "../__common__/renderers/BlockRenderer";
+import { getContentData, parseLoginContent } from "../../utils/serverContent";
 import { replaceCurrentYear } from "../../utils/yearReplacer";
 import "./LoginSection.scss";
 
-interface LoginSectionProps {
-  lang: string;
-}
-
-export default async function LoginSection({ lang }: LoginSectionProps) {
-  const content = await getContentData(lang);
-  const { aboutSections, depositSection, withdrawalSection } = parseLoginData(content);
+export default async function LoginSection() {
+  const contentData = await getContentData();
+  const content = parseLoginContent(contentData);
 
   return (
     <section className="login-section section">
       <div className="container">
-        {Object.entries(aboutSections).map(
+        {Object.entries(content.aboutSections).map(
           ([sectionTitle, sectionContent]: [string, any], index) => (
             <div key={index} className="about-text">
-              <h3 className="h3-heading">{replaceCurrentYear(sectionTitle)}</h3>
+              <h3 className="h3-heading black">{replaceCurrentYear(sectionTitle)}</h3>
               {sectionContent.map((block: any, idx: number) => (
                 <BlockRenderer key={idx} block={block} />
               ))}
@@ -25,22 +21,30 @@ export default async function LoginSection({ lang }: LoginSectionProps) {
           )
         )}
 
-        {(depositSection || withdrawalSection) && (
+        {(content.depositSection || content.withdrawalSection) && (
           <div className="deposit-withdrawal">
-            {depositSection && (
+            {content.depositSection && (
               <div className="deposit-section">
-                <h3 className="h3-heading">{replaceCurrentYear(depositSection.title)}</h3>
-                {depositSection.content.map((block: any, idx: number) => (
-                  <BlockRenderer key={idx} block={block} />
-                ))}
+                <h3 className="h3-heading black">
+                  {replaceCurrentYear(content.depositSection.title)}
+                </h3>
+                {content.depositSection.content.map(
+                  (block: any, idx: number) => (
+                    <BlockRenderer key={idx} block={block} />
+                  )
+                )}
               </div>
             )}
-            {withdrawalSection && (
+            {content.withdrawalSection && (
               <div className="withdrawal-section">
-                <h3 className="h3-heading">{replaceCurrentYear(withdrawalSection.title)}</h3>
-                {withdrawalSection.content.map((block: any, idx: number) => (
-                  <BlockRenderer key={idx} block={block} />
-                ))}
+                <h3 className="h3-heading black">
+                  {replaceCurrentYear(content.withdrawalSection.title)}
+                </h3>
+                {content.withdrawalSection.content.map(
+                  (block: any, idx: number) => (
+                    <BlockRenderer key={idx} block={block} />
+                  )
+                )}
               </div>
             )}
           </div>

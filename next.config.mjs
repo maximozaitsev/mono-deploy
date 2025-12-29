@@ -2,8 +2,7 @@
 /** @type {import('next').NextConfig} */
 
 import nextPWA from "@ducanh2912/next-pwa";
-import createNextIntlPlugin from "next-intl/plugin";
-const url = "hugobets-online.com";
+const url = "justincasino-online.com";
 
 const withPWA = nextPWA({
   dest: "public",
@@ -33,16 +32,7 @@ const withPWA = nextPWA({
   },
 });
 
-const withNextIntl = createNextIntlPlugin();
-
 const nextConfig = {
-  experimental: {
-    optimizePackageImports: [
-      "react",
-      "react-dom",
-      "next-intl",
-    ],
-  },
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -60,20 +50,24 @@ const nextConfig = {
     return [
       {
         source: "/(.*)",
-        headers: [
-          { key: "Referrer-Policy", value: "no-referrer" },
-        ],
+        headers: [{ key: "Referrer-Policy", value: "no-referrer" }],
       },
       {
         source: "/(block-images|icons|footer-assets|fonts)/(.*)",
         headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
         ],
       },
       {
         source: "/_next/static/(.*)",
         headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
         ],
       },
     ];
@@ -87,4 +81,4 @@ const nextConfig = {
   },
 };
 
-export default withNextIntl(withPWA(nextConfig));
+export default withPWA(nextConfig);

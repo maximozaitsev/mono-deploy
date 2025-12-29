@@ -1,13 +1,4 @@
-@import "../../styles/colors.scss";
-
-.supportSection {
-  background: $color-background-secondary;
-  padding: 64px 0;
-
-  @media (max-width: 768px) {
-    padding: 40px 0;
-  }
-}
+@import "@/styles/colors.scss";
 
 .leftContent {
   width: 60%;
