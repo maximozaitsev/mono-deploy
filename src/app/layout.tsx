@@ -6,7 +6,7 @@ import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
 const url = "justincasino-online.com";
-const ogTitle = "Justin Casino Review \\- Bonuses, Games & Payments";
+const ogTitle = "Justin Casino Review \- Bonuses, Games & Payments";
 const ogSiteName = "Justin Casino";
 const metaDescription = "Comprehensive Justin Casino review for UK players covering 1000+ games, welcome bonuses, payment methods & licensing. Discover if it's right for you.";
 
