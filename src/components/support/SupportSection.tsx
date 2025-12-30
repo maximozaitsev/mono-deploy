@@ -15,7 +15,7 @@ export default async function SupportSection() {
         <div className={styles.supportContent}>
           <div className={styles.leftContent}>
             {content.sectionTitle && (
-              <h2 className="h2-heading">{replaceCurrentYear(content.sectionTitle)}</h2>
+              <h2 className="h2-heading white">{replaceCurrentYear(content.sectionTitle)}</h2>
             )}
             {content.blocks.map((block: any, index: number) => (
               <BlockRenderer key={index} block={block} />

@@ -44,7 +44,7 @@
     background-size: auto;
     background-position: initial;
     margin: 0 auto 24px auto;
-    padding-bottom: 20px;
+    padding-bottom: 36px;
   }
 }
 
@@ -62,24 +62,21 @@
 .mobileImage {
   display: inline-block;
   width: 100vw;
-  max-width: 534px;
+  max-width: 520px;
   height: auto;
 
   @media (max-width: 768px) {
-    margin-top: 12px;
+    margin-top: 16.5px;
   }
 
   @media (max-width: 480px) {
-    width: 100vw;
-    max-width: 480px;
-    height: 262px;
     object-fit: cover;
     object-position: center;
   }
 
-  @media (max-width: 400px) {
-    height: 200px;
-  }
+  // @media (max-width: 400px) {
+  //   height: 200px;
+  // }
 }
 
 .welcomeContent {
@@ -138,7 +135,7 @@
 
 .welcomeText h2 {
   font-family: var(--font-secondary);
-  color: $text-color-secondary;
+  color: $text-color-primary;
   font-size: 32px;
   font-style: normal;
   font-weight: $font-weight-black;

@@ -1,0 +1,36 @@
+@use "../../styles/colors.scss" as *;
+@use "../../styles/lists" as lists;
+
+.licensesSection {
+  background: $color-background;
+
+  .heading {
+    margin-bottom: 24px;
+    color: $text-color-secondary;
+  }
+
+  .content {
+    color: $text-color-secondary;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    :global(.paragraph-text) {
+      color: $text-color-secondary;
+    }
+
+    @include lists.common-list-styles(1rem);
+  }
+
+  @media (max-width: 768px) {
+
+    .heading {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      gap: 20px;
+    }
+  }
+}

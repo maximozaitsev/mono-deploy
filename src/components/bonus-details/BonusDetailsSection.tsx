@@ -85,7 +85,7 @@ const BonusDetailsSection: React.FC = () => {
             </div>
             <div className="cell hide-768 last-cell">
               <Button
-                text="Get The Bonus"
+                text="Get the bonus"
                 variant="secondary"
                 useNavigation={true}
                 url={`/casino/${offer.id}`}
@@ -117,7 +117,7 @@ const BonusDetailsSection: React.FC = () => {
                   <div className="accordion-title last-cell"></div>
                   <div className="accordion-value last-cell">
                     <Button
-                      text="Get The Bonus"
+                      text="Get the bonus"
                       variant="secondary"
                       useNavigation={true}
                       url={`/casino/${offer.id}`}

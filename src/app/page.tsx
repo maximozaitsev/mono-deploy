@@ -7,6 +7,7 @@ import BonusDetailsSection from "@/components/bonus-details/BonusDetailsSection"
 import AboutSection from "@/components/about/AboutSection";
 import LoginSection from "@/components/login/LoginSection";
 import AppSectionWrapper from "@/components/mobile-app/AppSectionWrapper";
+import LicenceSection from "@/components/license/LicenceSection";
 import FAQSection from "@/components/faq/FAQSection";
 import GamesToPlay from "@/components/games-to-play/GamesToPlay";
 import SupportSection from "@/components/support/SupportSection";
@@ -14,6 +15,7 @@ import PromotionsSection from "@/components/promotion/PromotionsSection";
 import AdvantageSection from "@/components/advantage/AdvantageSection";
 import Footer from "@/components/footer/Footer";
 import { fetchGames } from "@/utils/fetchGames";
+import { CASINO_MODE } from "@/config/projectConfig";
 
 import "./globals.scss";
 
@@ -32,6 +34,7 @@ export default async function HomePage() {
       <AdvantageSection />
       <LoginSection />
       <AppSectionWrapper />
+      {CASINO_MODE === "offline" && <LicenceSection />}
       <FAQSection />
       <GamesToPlay />
       <SupportSection />

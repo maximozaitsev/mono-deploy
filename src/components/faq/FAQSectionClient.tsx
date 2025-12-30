@@ -43,32 +43,34 @@ export default function FAQSectionClient({ content }: FAQSectionClientProps) {
   }, [activeIndices]);
 
   return (
-    <section className="faq-section section container">
-      <h2 className="h2-heading">{replaceCurrentYear(content.faqTitle || "FAQ")}</h2>
-      {content.faqs.map((faq: FAQItem, index: number) => (
-        <div key={index} className="faq-item">
-          <div className="faq-question" onClick={() => toggleAccordion(index)}>
-            <span className="icon">
-              {activeIndices.includes(index) ? (
-                <MinusIcon size={32} />
-              ) : (
-                <PlusIcon size={32} />
-              )}
-            </span>
-            {replaceCurrentYear(faq.question)}
+    <section className="faq-section section">
+      <div className="container">
+        <h2 className="h2-heading white">{replaceCurrentYear(content.faqTitle || "FAQ")}</h2>
+        {content.faqs.map((faq: FAQItem, index: number) => (
+          <div key={index} className="faq-item">
+            <div className="faq-question" onClick={() => toggleAccordion(index)}>
+              <span className="icon">
+                {activeIndices.includes(index) ? (
+                  <MinusIcon size={32} />
+                ) : (
+                  <PlusIcon size={32} />
+                )}
+              </span>
+              {replaceCurrentYear(faq.question)}
+            </div>
+            <div
+              ref={(el) => {
+                contentRefs.current[index] = el;
+              }}
+              className={`faq-answer ${
+                activeIndices.includes(index) ? "active" : ""
+              }`}
+            >
+              <p dangerouslySetInnerHTML={{ __html: replaceCurrentYear(faq.answer) }} />
+            </div>
           </div>
-          <div
-            ref={(el) => {
-              contentRefs.current[index] = el;
-            }}
-            className={`faq-answer ${
-              activeIndices.includes(index) ? "active" : ""
-            }`}
-          >
-            <p dangerouslySetInnerHTML={{ __html: replaceCurrentYear(faq.answer) }} />
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 }

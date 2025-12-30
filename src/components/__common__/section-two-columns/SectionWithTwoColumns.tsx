@@ -13,10 +13,15 @@ export default async function SectionWithTwoColumns({
   const contentData = await getContentData();
   const sectionData = parseSectionWithTwoColumnsData(contentData, jsonKey);
 
+  const isGamesToPlayOrPromotion = jsonKey === "games-to-play" || jsonKey === "bonuses-and-promotions";
+  const sectionClass = isGamesToPlayOrPromotion 
+    ? `${styles.sectionContainer} ${styles.sectionWithDarkText}`
+    : styles.sectionContainer;
+
   return (
-    <section className={`${styles.sectionContainer} section`}>
+    <section className={`${sectionClass} section`}>
       <div className="container">
-        <h2 className="h2-heading white">
+        <h2 className="h2-heading">
           {replaceCurrentYear(sectionData.sectionTitle || "Section")}
         </h2>
 
@@ -28,7 +33,7 @@ export default async function SectionWithTwoColumns({
                   return (
                     <p
                       key={i}
-                      className="paragraph-text"
+                      className="paragraph-text black"
                       dangerouslySetInnerHTML={{ __html: replaceCurrentYear(block.text ?? "") }}
                     />
                   );
@@ -39,7 +44,7 @@ export default async function SectionWithTwoColumns({
                       {block.items.map((item: string, itemIndex: number) => (
                         <li
                           key={itemIndex}
-                          className="paragraph-text"
+                          className="paragraph-text black"
                           dangerouslySetInnerHTML={{ __html: replaceCurrentYear(item) }}
                         />
                       ))}

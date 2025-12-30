@@ -83,12 +83,18 @@
   text-decoration: none;
 
   &:hover {
-    color: $color-button-large;
+    background: $color-button-large;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
 .activeNavLink {
-  color: $color-button-large;
+  background: $color-button-large;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 768px) {
@@ -120,6 +126,10 @@
       background: $color-button-large;
       width: $header-button-large-width;
       color: $text-color-button-large;
+
+      outline: 2px solid;
+      outline-offset: -2px;
+      outline-color: #ffffff33;
     }
 
     &:hover {

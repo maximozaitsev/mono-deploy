@@ -5,12 +5,12 @@ import "../styles/variables.scss";
 import { replaceCurrentYear } from "../utils/yearReplacer";
 import * as fonts from "./fonts";
 
-const url = "justincasino-online.com";
-const ogTitle = "Justin Casino Review \- Bonuses, Games & Payments";
-const ogSiteName = "Justin Casino";
-const metaDescription = "Comprehensive Justin Casino review for UK players covering 1000+ games, welcome bonuses, payment methods & licensing. Discover if it's right for you.";
+const url = "billybarker-casino.com";
+const ogTitle = "Billy Barker Casino Review: Slots, VIP Rewards & Player Rules";
+const ogSiteName = "Billy Barker Casino";
+const metaDescription = "If you plan a visit to Billy Barker Casino in Quesnel, BC, you should be aware of the current offers that await you. Discover available slots, $1M Powerbucks jackpots, Encore Rewards, and essential entry requirements.";
 
-const locale = "en-GB";
+const locale = "en-CA";
 const language = "English";
 const ogImage = `https://${url}/og-image.webp`;
 
