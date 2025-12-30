@@ -115,6 +115,7 @@
     &.info-cell {
       border-top-right-radius: $border-radius;
       border-bottom-right-radius: $border-radius;
+      border-right: 2px solid #0f0d0d;
 
       svg {
         @media (max-width: 768px) {
